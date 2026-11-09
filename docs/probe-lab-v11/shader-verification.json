@@ -1,0 +1,35 @@
+{
+  "scope": "Exact probe-scene.js GLSL and geometry in native offscreen EGL; not browser layout, pointer permission, speed or clinical validation.",
+  "shaderSha256": "c0399e33289547e646f94629a1fc4c57e5d3e031e88d1d34501eeecbcbf35618",
+  "shaders": [
+    {
+      "name": "VERTEX",
+      "compiled": true,
+      "log": ""
+    },
+    {
+      "name": "FRAGMENT",
+      "compiled": true,
+      "log": ""
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "views": [
+    {
+      "id": "phased",
+      "nonBackgroundPixels": 15053
+    },
+    {
+      "id": "tee",
+      "nonBackgroundPixels": 1272
+    },
+    {
+      "id": "apical",
+      "nonBackgroundPixels": 90696
+    },
+    {
+      "id": "parasternal",
+      "nonBackgroundPixels": 90643
+    }
+  ]
+}

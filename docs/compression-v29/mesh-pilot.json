@@ -1,0 +1,218 @@
+{
+  "schema": "heart-mesh-transport-pilot-v29",
+  "full": false,
+  "original": {
+    "id": "gentle",
+    "label": "Gentle detailed surface",
+    "parts": [
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-001.gz",
+        "compressedBytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-002.gz",
+        "compressedBytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-003.gz",
+        "compressedBytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-004.gz",
+        "compressedBytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-005.gz",
+        "compressedBytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-006.gz",
+        "compressedBytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-007.gz",
+        "compressedBytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-008.gz",
+        "compressedBytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-009.gz",
+        "compressedBytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "url": "./assets/fine-surface-v23/gentle.part-010.gz",
+        "compressedBytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "vertices": 12837189,
+    "triangles": 23618685,
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "trianglesBeforeEncoding": 23966575,
+    "verticesBeforeEncoding": 12987556,
+    "removedZeroAreaTriangles": 0,
+    "quantizationCollapsedTriangles": 347890,
+    "totalZeroAreaTrianglesRemoved": 347890,
+    "normalFallbackVertices": 21,
+    "quantizationMaximumMm": 0.00206329634765319,
+    "quantizationRmsMm": 0.0011949581540504947
+  },
+  "sampleVertices": 450000,
+  "sampleTriangles": 450000,
+  "methods": {
+    "positions_raw": {
+      "bytes": 2129948,
+      "ratio": 0.7888696296296296,
+      "encodeSeconds": 0.08697116700022889
+    },
+    "positions_shuffle": {
+      "bytes": 1593993,
+      "ratio": 0.5903677777777778,
+      "encodeSeconds": 0.057255919000454014
+    },
+    "positions_delta_shuffle": {
+      "bytes": 1510976,
+      "ratio": 0.5596207407407408,
+      "encodeSeconds": 0.22298455600048328
+    },
+    "positions_delta_component_shuffle": {
+      "bytes": 1514180,
+      "ratio": 0.5608074074074074,
+      "encodeSeconds": 0.25789223100036907
+    },
+    "normals_raw": {
+      "bytes": 2700484,
+      "ratio": 1.0001792592592593,
+      "encodeSeconds": 0.06273927799975354
+    },
+    "normals_q16_delta_shuffle": {
+      "bytes": 2696426,
+      "ratio": 0.9986762962962963,
+      "encodeSeconds": 0.0590560730006473
+    },
+    "normals_q16_shuffle": {
+      "bytes": 2699961,
+      "ratio": 0.9999855555555556,
+      "encodeSeconds": 0.05930035199980921
+    },
+    "normals_q12_delta_shuffle": {
+      "bytes": 2193431,
+      "ratio": 0.8123818518518519,
+      "encodeSeconds": 0.07477725599983387
+    },
+    "normals_q12_shuffle": {
+      "bytes": 2050962,
+      "ratio": 0.7596155555555556,
+      "encodeSeconds": 0.09828177700001106,
+      "angularErrorDegrees": {
+        "max": 0.023759115950190764,
+        "rms": 0.0114290504551097,
+        "p99": 0.01976925854532682
+      }
+    },
+    "normals_q11_delta_shuffle": {
+      "bytes": 2027219,
+      "ratio": 0.7508218518518519,
+      "encodeSeconds": 0.11664572700010467
+    },
+    "normals_q11_shuffle": {
+      "bytes": 1881725,
+      "ratio": 0.6969351851851852,
+      "encodeSeconds": 0.2645856670005742,
+      "angularErrorDegrees": {
+        "max": 0.047545512160944714,
+        "rms": 0.022866480547230617,
+        "p99": 0.0395464299312552
+      }
+    },
+    "normals_q10_delta_shuffle": {
+      "bytes": 1847492,
+      "ratio": 0.6842562962962963,
+      "encodeSeconds": 0.27272821299993666
+    },
+    "normals_q10_shuffle": {
+      "bytes": 1731266,
+      "ratio": 0.6412096296296297,
+      "encodeSeconds": 0.24408401899927412,
+      "angularErrorDegrees": {
+        "max": 0.09570153717346101,
+        "rms": 0.045783711202741266,
+        "p99": 0.0790680338552511
+      }
+    },
+    "normals_q9_delta_shuffle": {
+      "bytes": 1699773,
+      "ratio": 0.6295455555555556,
+      "encodeSeconds": 0.23611718399934034
+    },
+    "normals_q9_shuffle": {
+      "bytes": 1560533,
+      "ratio": 0.5779751851851852,
+      "encodeSeconds": 0.2103026980003051,
+      "angularErrorDegrees": {
+        "max": 0.19147053727435281,
+        "rms": 0.09167635825147878,
+        "p99": 0.15845148807639445
+      }
+    },
+    "normals_q8_delta_shuffle": {
+      "bytes": 1550605,
+      "ratio": 0.5742981481481482,
+      "encodeSeconds": 0.19276512600026763
+    },
+    "normals_q8_shuffle": {
+      "bytes": 1560444,
+      "ratio": 0.5779422222222222,
+      "encodeSeconds": 0.19536743099979503,
+      "angularErrorDegrees": {
+        "max": 0.3842048630370403,
+        "rms": 0.18417845744754582,
+        "p99": 0.3180876465526956
+      }
+    },
+    "indices_raw": {
+      "bytes": 1710408,
+      "ratio": 0.3167422222222222,
+      "encodeSeconds": 0.34184301899949787
+    },
+    "indices_shuffle": {
+      "bytes": 1501734,
+      "ratio": 0.2780988888888889,
+      "encodeSeconds": 0.09586608300014632
+    },
+    "indices_face_delta_shuffle": {
+      "bytes": 1831172,
+      "ratio": 0.3391059259259259,
+      "encodeSeconds": 0.5317864979997466
+    },
+    "indices_face_delta_component_shuffle": {
+      "bytes": 1945242,
+      "ratio": 0.36023,
+      "encodeSeconds": 0.5850144819996785
+    },
+    "index_delta_quantiles": {
+      "0": 0.0,
+      "0.5": 5.0,
+      "0.9": 703.0,
+      "0.95": 4632.0,
+      "0.99": 672919.01,
+      "0.999": 5678295.250977171,
+      "1": 8013864.0
+    }
+  },
+  "note": "No index, triangle, vertex order or geometry is changed by predictive transport. Normal quantization candidates are measurements only."
+}

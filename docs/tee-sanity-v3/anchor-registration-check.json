@@ -1,0 +1,212 @@
+{
+  "anchorsChecked": 20,
+  "allInExactReviewedFrame": true,
+  "allOnMeasuredTissue": true,
+  "allLabelsMatch": true,
+  "maximumNormalDistanceMm": 1.254723296877571e-07,
+  "maximumNormalizedProjectionError": 4.912161222225819e-07,
+  "minimumSourceValue": 107,
+  "minimumInteriorDistanceMm": 3.2127,
+  "results": [
+    {
+      "view": "me4c",
+      "region": "LV tissue",
+      "scalar": 140,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 1.9760931122779492e-08,
+      "maxNormalizedProjectionError": 4.912161222225819e-07,
+      "interiorDistanceMm": 8.9612
+    },
+    {
+      "view": "me4c",
+      "region": "RV tissue",
+      "scalar": 142,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 5.326695898967525e-09,
+      "maxNormalizedProjectionError": 1.5283958856859847e-07,
+      "interiorDistanceMm": 5.0022
+    },
+    {
+      "view": "mervinout",
+      "region": "RV tissue",
+      "scalar": 128,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 1.254723296877571e-07,
+      "maxNormalizedProjectionError": 2.4052901959059625e-07,
+      "interiorDistanceMm": 3.4436
+    },
+    {
+      "view": "mervinout",
+      "region": "RA tissue",
+      "scalar": 137,
+      "label": 4,
+      "inFrame": true,
+      "normalDistanceMm": 6.646022620639484e-08,
+      "maxNormalizedProjectionError": 4.400289870809537e-07,
+      "interiorDistanceMm": 3.7899
+    },
+    {
+      "view": "mervinout",
+      "region": "Pulmonary wall",
+      "scalar": 127,
+      "label": 6,
+      "inFrame": true,
+      "normalDistanceMm": 6.3544329204554205e-09,
+      "maxNormalizedProjectionError": 2.1762604784925088e-07,
+      "interiorDistanceMm": 4.0159
+    },
+    {
+      "view": "tgbasalsax",
+      "region": "LV tissue",
+      "scalar": 150,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 7.070099316271408e-08,
+      "maxNormalizedProjectionError": 2.2372195995767896e-07,
+      "interiorDistanceMm": 8.6783
+    },
+    {
+      "view": "tgbasalsax",
+      "region": "RV tissue",
+      "scalar": 129,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 8.797064772914103e-08,
+      "maxNormalizedProjectionError": 5.7977344536386255e-08,
+      "interiorDistanceMm": 3.6354
+    },
+    {
+      "view": "tgpapillary",
+      "region": "LV tissue",
+      "scalar": 132,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 5.256160748315847e-08,
+      "maxNormalizedProjectionError": 3.450646657854328e-07,
+      "interiorDistanceMm": 8.7968
+    },
+    {
+      "view": "tgpapillary",
+      "region": "RV tissue",
+      "scalar": 142,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 2.4995930133610208e-08,
+      "maxNormalizedProjectionError": 4.822675365445672e-07,
+      "interiorDistanceMm": 4.5132
+    },
+    {
+      "view": "tgapicalsax",
+      "region": "LV tissue",
+      "scalar": 153,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 5.288812989355011e-08,
+      "maxNormalizedProjectionError": 2.0815955259489982e-07,
+      "interiorDistanceMm": 7.9908
+    },
+    {
+      "view": "tgapicalsax",
+      "region": "RV tissue",
+      "scalar": 134,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 4.368324945412039e-08,
+      "maxNormalizedProjectionError": 4.180202803488742e-07,
+      "interiorDistanceMm": 4.7633
+    },
+    {
+      "view": "tgrvbasal",
+      "region": "LV tissue",
+      "scalar": 148,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 9.472297491776767e-08,
+      "maxNormalizedProjectionError": 2.547229775995419e-07,
+      "interiorDistanceMm": 9.0017
+    },
+    {
+      "view": "tgrvbasal",
+      "region": "RV tissue",
+      "scalar": 149,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 4.307106720137209e-08,
+      "maxNormalizedProjectionError": 3.0882937007703504e-07,
+      "interiorDistanceMm": 5.9171
+    },
+    {
+      "view": "tgrvbasal",
+      "region": "RA tissue",
+      "scalar": 107,
+      "label": 4,
+      "inFrame": true,
+      "normalDistanceMm": 3.1890298027327174e-08,
+      "maxNormalizedProjectionError": 4.1809063200393126e-07,
+      "interiorDistanceMm": 4.0503
+    },
+    {
+      "view": "tgrvinout",
+      "region": "RV tissue",
+      "scalar": 121,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 1.2212367007297488e-08,
+      "maxNormalizedProjectionError": 2.114490206817088e-07,
+      "interiorDistanceMm": 3.4519
+    },
+    {
+      "view": "tgrvinout",
+      "region": "RA tissue",
+      "scalar": 136,
+      "label": 4,
+      "inFrame": true,
+      "normalDistanceMm": 5.844274649329625e-09,
+      "maxNormalizedProjectionError": 4.206567301712205e-07,
+      "interiorDistanceMm": 3.8198
+    },
+    {
+      "view": "tgrvinout",
+      "region": "Pulmonary wall",
+      "scalar": 114,
+      "label": 6,
+      "inFrame": true,
+      "normalDistanceMm": 5.563465549564634e-08,
+      "maxNormalizedProjectionError": 4.477883995823717e-07,
+      "interiorDistanceMm": 3.2127
+    },
+    {
+      "view": "tgrvin",
+      "region": "LV tissue",
+      "scalar": 129,
+      "label": 1,
+      "inFrame": true,
+      "normalDistanceMm": 5.541684958095321e-09,
+      "maxNormalizedProjectionError": 4.052514867014523e-07,
+      "interiorDistanceMm": 11.6507
+    },
+    {
+      "view": "tgrvin",
+      "region": "RV tissue",
+      "scalar": 125,
+      "label": 2,
+      "inFrame": true,
+      "normalDistanceMm": 1.1598766349589097e-08,
+      "maxNormalizedProjectionError": 4.863380188568911e-07,
+      "interiorDistanceMm": 3.5464
+    },
+    {
+      "view": "tgrvin",
+      "region": "RA tissue",
+      "scalar": 127,
+      "label": 4,
+      "inFrame": true,
+      "normalDistanceMm": 8.338302813367903e-08,
+      "maxNormalizedProjectionError": 4.802027351313853e-07,
+      "interiorDistanceMm": 6.2635
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "sourceHfmDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "replaceId": "pulmonary-valve-lumen-surface",
+  "replacement": {
+    "id": "pulmonary-lumen-v29",
+    "lowerFullFineXYZ": [
+      604,
+      1080,
+      540
+    ],
+    "upperFullFineXYZ": [
+      790,
+      1360,
+      972
+    ],
+    "reviewPolicy": {
+      "path": "docs/cleanup-v29-right/patch/pulmonary-lumen-v29-policy.json",
+      "sha256": "2201548e857f6eaed97edd30695ba38647343028d99b31ab3bbd8d951f95aec4"
+    },
+    "sourceSigmaFineSamples": 0.5,
+    "baselineDisplayIntensity": 71.4,
+    "maximumReviewedDisplayIntensity": 155.0,
+    "sourceCalibratedHU": false,
+    "surface": {
+      "format": "HFM1-gzip",
+      "vertices": 233367,
+      "triangles": 514232,
+      "vertexCount": 233367,
+      "indexCount": 1542696,
+      "positionOffset": 32,
+      "normalOffset": 1400236,
+      "indexOffset": 2800440,
+      "compressedBytes": 5109781,
+      "decodedBytes": 8971224,
+      "sha256": "7cb87c4ee1c82bd99cd9956e24bdade329a22412f068c5a77a933c23608985ee",
+      "decodedSha256": "189a31dac09a9cb8a264e8d83f7b7240e6cd1b4147af5361e785d66ebd7f8570",
+      "bounds": {
+        "min": [
+          -0.16257089376449585,
+          -0.24480150640010834,
+          -0.19423440098762512
+        ],
+        "max": [
+          -0.0751417800784111,
+          -0.04111531376838684,
+          -0.06238185241818428
+        ]
+      },
+      "positionEncoding": "uint16 normalized in local world bounds",
+      "normalEncoding": "int16 normalized world XYZ",
+      "indexEncoding": "uint32",
+      "winding": "Triangle geometric normal agrees with outward encoded normal",
+      "gpuBytes": 8971188,
+      "url": "./assets/cleanup-v29-right/pulmonary-lumen-v29.hfm.gz"
+    },
+    "lowBandMask": {
+      "format": "gzip-bitset-x-zyx",
+      "lowerFullFineXYZ": [
+        604,
+        1080,
+        540
+      ],
+      "upperFullFineXYZ": [
+        790,
+        1360,
+        972
+      ],
+      "dimensionsXYZ": [
+        186,
+        280,
+        432
+      ],
+      "storageDimensionsXYZ": [
+        24,
+        280,
+        432
+      ],
+      "compressedBytes": 408027,
+      "decodedBytes": 2903040,
+      "sha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4",
+      "decodedSha256": "36199056983b11ab1902c073d32975bb1bf5194efcd4f31e982ac08dc0198413",
+      "maskedVoxels": 1139693,
+      "url": "./assets/cleanup-v29-right/pulmonary-lumen-v29-low-band.bits.gz"
+    }
+  },
+  "append": {
+    "id": "right-perivascular-v29",
+    "lowerFullFineXYZ": [
+      530,
+      815,
+      690
+    ],
+    "upperFullFineXYZ": [
+      1030,
+      1060,
+      890
+    ],
+    "reviewPolicy": {
+      "path": "docs/cleanup-v29-right/patch/right-perivascular-v29-policy.json",
+      "sha256": "e894374be88d6eaff0c73a3f8a51ad28ed1e119c0b90c998c207be8b17930cdb"
+    },
+    "sourceSigmaFineSamples": 0.5,
+    "baselineDisplayIntensity": 71.4,
+    "maximumReviewedDisplayIntensity": 110.0,
+    "sourceCalibratedHU": false,
+    "surface": {
+      "format": "HFM1-gzip",
+      "vertices": 316017,
+      "triangles": 682317,
+      "vertexCount": 316017,
+      "indexCount": 2046951,
+      "positionOffset": 32,
+      "normalOffset": 1896136,
+      "indexOffset": 3792240,
+      "compressedBytes": 7002408,
+      "decodedBytes": 11980044,
+      "sha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f",
+      "decodedSha256": "594dba5bdbbc38893d1aa8aae206dac2058b9a907d03f816b0627c774759d156",
+      "bounds": {
+        "min": [
+          -0.19754253327846527,
+          -0.17391304671764374,
+          -0.05245746672153473
+        ],
+        "max": [
+          0.03827977180480957,
+          -0.07986767590045929,
+          0.06285443902015686
+        ]
+      },
+      "positionEncoding": "uint16 normalized in local world bounds",
+      "normalEncoding": "int16 normalized world XYZ",
+      "indexEncoding": "uint32",
+      "winding": "Triangle geometric normal agrees with outward encoded normal",
+      "gpuBytes": 11980008,
+      "url": "./assets/cleanup-v29-right/right-perivascular-v29.hfm.gz"
+    },
+    "lowBandMask": {
+      "format": "gzip-bitset-x-zyx",
+      "lowerFullFineXYZ": [
+        530,
+        815,
+        690
+      ],
+      "upperFullFineXYZ": [
+        1030,
+        1060,
+        890
+      ],
+      "dimensionsXYZ": [
+        500,
+        245,
+        200
+      ],
+      "storageDimensionsXYZ": [
+        63,
+        245,
+        200
+      ],
+      "compressedBytes": 363072,
+      "decodedBytes": 3087000,
+      "sha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399",
+      "decodedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "maskedVoxels": 831493,
+      "url": "./assets/cleanup-v29-right/right-perivascular-v29-low-band.bits.gz"
+    }
+  },
+  "sourceDataUnmodified": true,
+  "sourceCalibratedHU": false,
+  "referenceScope": "Verbatim policies pin separately reproducible SFR analysis references; only the HFM and exact low-band mask are runtime assets."
+}

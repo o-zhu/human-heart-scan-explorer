@@ -1,0 +1,176 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 1011,
+    "decodedBrickReads": 1057,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "checks": [
+    {
+      "case": {
+        "id": "tricuspid-y263",
+        "axis": 1,
+        "coordinate": 1048,
+        "target": [
+          760,
+          1048,
+          1220
+        ],
+        "distance": 0.55
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.047258979206049136
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.04500062135990396,
+          0.06285759020521572,
+          -0.5953372235494043
+        ],
+        "_target": [
+          -0.08884688090737237,
+          0.0765595463137996,
+          -0.047258979206049136
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 200241,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/tricuspid-y263-fine-xyz.npy"
+    },
+    {
+      "case": {
+        "id": "pulmonary-x194",
+        "axis": 0,
+        "coordinate": 772,
+        "target": [
+          772,
+          1280,
+          750
+        ],
+        "distance": 0.55
+      },
+      "world": {
+        "center": [
+          -0.08317580340264648,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.4649024409407087,
+          -0.1592596120632152,
+          -0.20074607051155158
+        ],
+        "_target": [
+          -0.08317580340264648,
+          -0.14555765595463133,
+          -0.15689981096408315
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 291622,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/pulmonary-x194-fine-xyz.npy"
+    },
+    {
+      "case": {
+        "id": "pulmonary-x313",
+        "axis": 0,
+        "coordinate": 1248,
+        "target": [
+          1100,
+          1280,
+          710
+        ],
+        "distance": 0.6
+      },
+      "world": {
+        "center": [
+          0.14177693761814741,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.6697371876768549,
+          -0.1794088361191425,
+          -0.20473209410677595
+        ],
+        "_target": [
+          0.07183364839319469,
+          -0.164461247637051,
+          -0.15689981096408315
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 349905,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/pulmonary-x313-fine-xyz.npy"
+    }
+  ],
+  "scope": "Unchanged v27 source geometry and cleanup. Actual production color render; diagnostic Float32 world-position attachment excludes visible measured cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

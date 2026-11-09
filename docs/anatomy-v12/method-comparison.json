@@ -1,0 +1,47 @@
+{
+  "nearest-cavity": {
+    "changedVoxels": 559543,
+    "newlyAnnotatedVoxels": 126018,
+    "LVtoRV": 433261,
+    "RVtoLV": 264,
+    "counts": {
+      "0": 31762982,
+      "1": 1113400,
+      "2": 1020022,
+      "3": 461236,
+      "4": 621072,
+      "5": 200028,
+      "6": 394366
+    }
+  },
+  "exterior-geodesic": {
+    "changedVoxels": 121507,
+    "newlyAnnotatedVoxels": 121507,
+    "LVtoRV": 0,
+    "RVtoLV": 0,
+    "counts": {
+      "0": 31767493,
+      "1": 1544303,
+      "2": 585627,
+      "3": 461303,
+      "4": 620680,
+      "5": 199706,
+      "6": 393994
+    }
+  },
+  "hybrid": {
+    "changedVoxels": 185111,
+    "newlyAnnotatedVoxels": 121507,
+    "LVtoRV": 63604,
+    "RVtoLV": 0,
+    "counts": {
+      "0": 31767493,
+      "1": 1480281,
+      "2": 649649,
+      "3": 461303,
+      "4": 620680,
+      "5": 199706,
+      "6": 393994
+    }
+  }
+}

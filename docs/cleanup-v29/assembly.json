@@ -1,0 +1,168 @@
+{
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceGeometrySha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 86,
+    "decodedBrickReads": 98,
+    "cacheMaximumBricks": 8,
+    "cacheMaximumBytes": 2197000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "inputSha256": {
+    "scripts/assemble-cleanup-v29.py": "b4d38ab4a19c9c09e68f27a16792575010526ba1f45b6f77e5f19e10b61b0624",
+    "public/assets/cleanup-v28/surface-manifest.json": "b3e9a7654ace71bdad6fe94e8f5fa10811340d36c4224ec83d33f331367af7fc",
+    "public/assets/cleanup-v28/lumen-manifest.json": "59bbfff2ed2565ee98820f14f777d63041d1615841db6e80efc21a6d9bdabfb2",
+    "docs/cleanup-v29-left/patch/lvot-perivalvular-refinement-policy.json": "86c64723ae637d60bc456609e2c72e22afa9d209d9a7b31692545c4337a0336a",
+    "public/assets/cleanup-v29-left/lumen-manifest.json": "4b8add26fdb04d8abf9e442f5b560ce12a6e1a7b0b2adefbe2803b5441f4e2e2",
+    "public/assets/cleanup-v29-right/manifest-entries.json": "f83f2e20bd8eb2d01717cefdc88681dc04d6810ac4bb472c713fedbc3a3ee1cc",
+    "public/assets/ultra-volume-v7.json": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c"
+  },
+  "outputs": [
+    {
+      "path": "public/assets/cleanup-v29/atrial.bits.gz",
+      "bytes": 659082,
+      "sha256": "67628257da875503f7c6b5b246e1ac97c70bfb328f7f0da4c7a5c7505eea47b3"
+    },
+    {
+      "path": "public/assets/cleanup-v29/lumen-manifest.json",
+      "bytes": 9123,
+      "sha256": "c3b0bbd0ced2a7a176346cd25b0f3a34b1267f6a1e3677294308536e8c69149d"
+    },
+    {
+      "path": "public/assets/cleanup-v29/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 244591,
+      "sha256": "1df1b6a1807d7f84d0723e4c62dc66b3e41b6138057fffd72aea1765d0798108"
+    },
+    {
+      "path": "public/assets/cleanup-v29/lvot-perivalvular-refinement.hfm.gz",
+      "bytes": 7278090,
+      "sha256": "f2f993e2b4a60075528708dd28bf1ed208405073e8ea44874c94529e2227f560"
+    },
+    {
+      "path": "public/assets/cleanup-v29/pulmonary-lumen-v29-low-band.bits.gz",
+      "bytes": 408027,
+      "sha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4"
+    },
+    {
+      "path": "public/assets/cleanup-v29/pulmonary-lumen-v29.hfm.gz",
+      "bytes": 5109781,
+      "sha256": "7cb87c4ee1c82bd99cd9956e24bdade329a22412f068c5a77a933c23608985ee"
+    },
+    {
+      "path": "public/assets/cleanup-v29/right-perivascular-v29-low-band.bits.gz",
+      "bytes": 363072,
+      "sha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399"
+    },
+    {
+      "path": "public/assets/cleanup-v29/right-perivascular-v29.hfm.gz",
+      "bytes": 7002408,
+      "sha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f"
+    },
+    {
+      "path": "public/assets/cleanup-v29/surface-manifest.json",
+      "bytes": 12005,
+      "sha256": "b78c331768381dd4cd519008fdeb5e80f8aef9b26ad0876d126c6fc212c55144"
+    }
+  ],
+  "fourRegionsDisjoint": true,
+  "budget": {
+    "patches": 4,
+    "surfaceDecodedBytes": 38849396,
+    "maskDecodedBytes": 13217640,
+    "compressedBytes": 23959411,
+    "triangles": 2200223,
+    "vertices": 1037215,
+    "combinedDecodedBytes": 52067036,
+    "maximumCombinedDecodedBytes": 134217728,
+    "maximumMaskDecodedBytes": 16777216
+  },
+  "eachNewGzipBelowBytes": 8388608,
+  "exactV28TricuspidReused": true,
+  "exactOtherThreeV28LumenMasksReused": true,
+  "atrialAdditionalSamples": 16979,
+  "priorAtrialMaskSubsetExact": true,
+  "priorLvotLowBandExactlyPreserved": true,
+  "restoredWallSamples": 109928,
+  "restoredWallMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "restoredWallOverlapSamples": 0,
+  "patchChecks": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "sourcePolicySha256": "86c64723ae637d60bc456609e2c72e22afa9d209d9a7b31692545c4337a0336a",
+      "sourceCoreLossField": "lostProtected135Samples",
+      "sourceCoreLostSamples": 0,
+      "raw190LostSamples": 0,
+      "restoredWallOverlapSamples": 0,
+      "boxBoundaryNonBaselineSamples": 0,
+      "sourceCoreCheckStage": "Before inherited compact-component display filtering and mesh reduction."
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "sourcePolicySha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551",
+      "sourceCoreLossField": "lostProtected135Samples",
+      "sourceCoreLostSamples": 0,
+      "raw190LostSamples": 0,
+      "restoredWallOverlapSamples": 0,
+      "boxBoundaryNonBaselineSamples": 0,
+      "sourceCoreCheckStage": "Before inherited compact-component display filtering and mesh reduction."
+    },
+    {
+      "id": "pulmonary-lumen-v29",
+      "sourcePolicySha256": "2201548e857f6eaed97edd30695ba38647343028d99b31ab3bbd8d951f95aec4",
+      "sourceCoreLossField": "lostProtected155Samples",
+      "sourceCoreLostSamples": 0,
+      "raw190LostSamples": 0,
+      "restoredWallOverlapSamples": 0,
+      "boxBoundaryNonBaselineSamples": 0,
+      "sourceCoreCheckStage": "Before inherited compact-component display filtering and mesh reduction."
+    },
+    {
+      "id": "right-perivascular-v29",
+      "sourcePolicySha256": "e894374be88d6eaff0c73a3f8a51ad28ed1e119c0b90c998c207be8b17930cdb",
+      "sourceCoreLossField": "lostProtected155Samples",
+      "sourceCoreLostSamples": 0,
+      "raw190LostSamples": 0,
+      "restoredWallOverlapSamples": 0,
+      "boxBoundaryNonBaselineSamples": 0,
+      "sourceCoreCheckStage": "Before inherited compact-component display filtering and mesh reduction."
+    }
+  ],
+  "lumenChecks": [
+    {
+      "id": "atrial",
+      "sha256": "67628257da875503f7c6b5b246e1ac97c70bfb328f7f0da4c7a5c7505eea47b3",
+      "decodedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "restoredWallOverlapSamples": 0
+    },
+    {
+      "id": "arterial",
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "decodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "restoredWallOverlapSamples": 0
+    },
+    {
+      "id": "valve-region",
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "decodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "restoredWallOverlapSamples": 0
+    },
+    {
+      "id": "rv",
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "decodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "restoredWallOverlapSamples": 0
+    }
+  ],
+  "runtimeActivationChanged": false,
+  "sourceCalibratedHU": false,
+  "limitations": [
+    "Pre-component-filter source-core preservation does not establish anatomical identity or final clinical completeness.",
+    "Local display surfaces remain reversible and are not welded to the original decimated surface.",
+    "No browser performance claim follows from source or instrumented lifecycle checks."
+  ]
+}

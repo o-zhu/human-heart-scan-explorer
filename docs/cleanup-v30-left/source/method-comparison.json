@@ -1,0 +1,63 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 110,
+    "decodedBrickReads": 110,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "regions": [
+    {
+      "region": "aortic",
+      "lowerXYZ": [
+        1018,
+        1104,
+        916
+      ],
+      "upperXYZ": [
+        1176,
+        1248,
+        1076
+      ],
+      "sourceRoiSha256": "c2bf2b44243aca01653d9336e488a24df080f6dfdb7cea540aa1b77159eaaae2",
+      "medianSeconds": 1.7931010723114014,
+      "tvSeconds": 1.369699239730835,
+      "raw190Samples": 349914,
+      "foreground": {
+        "Source intensity": 2348024,
+        "Gaussian .5 / level120": 1798375,
+        "Median3 + Gaussian .5 /130": 1722626,
+        "3D TV16 / level130": 1722849
+      }
+    },
+    {
+      "region": "mitral",
+      "lowerXYZ": [
+        1110,
+        1096,
+        1030
+      ],
+      "upperXYZ": [
+        1320,
+        1264,
+        1310
+      ],
+      "sourceRoiSha256": "5678917539547b5d3add06ac938f6a4f95ee4b1d7bb24524cb4710759a3ca1f3",
+      "medianSeconds": 4.935199737548828,
+      "tvSeconds": 4.2464659214019775,
+      "raw190Samples": 793448,
+      "foreground": {
+        "Source intensity": 6367705,
+        "Gaussian .5 / level120": 4854542,
+        "Median3 + Gaussian .5 /130": 4695204,
+        "3D TV16 / level130": 4623751
+      }
+    }
+  ],
+  "scope": "Bounded contrast/regularizer comparison. Red rejected baseline support; green retained contour. No HU calibration."
+}

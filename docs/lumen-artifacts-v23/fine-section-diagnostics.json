@@ -1,0 +1,133 @@
+{
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "verifiedBricks": 390,
+  "sections": [
+    {
+      "region": "atrial-candidate",
+      "axis": "y",
+      "coordinate": 1144,
+      "boundsFullFineXYZ": [
+        [
+          1120,
+          1141,
+          500
+        ],
+        [
+          1460,
+          1148,
+          1100
+        ]
+      ],
+      "voxels": 1428000,
+      "maximum": 255,
+      "median": 50.0,
+      "aboveThreshold": 65158
+    },
+    {
+      "region": "atrial-candidate",
+      "axis": "y",
+      "coordinate": 1184,
+      "boundsFullFineXYZ": [
+        [
+          1120,
+          1181,
+          500
+        ],
+        [
+          1460,
+          1188,
+          1100
+        ]
+      ],
+      "voxels": 1428000,
+      "maximum": 255,
+      "median": 57.0,
+      "aboveThreshold": 84267
+    },
+    {
+      "region": "atrial-candidate",
+      "axis": "y",
+      "coordinate": 1224,
+      "boundsFullFineXYZ": [
+        [
+          1120,
+          1221,
+          500
+        ],
+        [
+          1460,
+          1228,
+          1100
+        ]
+      ],
+      "voxels": 1428000,
+      "maximum": 255,
+      "median": 63.0,
+      "aboveThreshold": 96141
+    },
+    {
+      "region": "outflow-candidate",
+      "axis": "x",
+      "coordinate": 940,
+      "boundsFullFineXYZ": [
+        [
+          937,
+          900,
+          240
+        ],
+        [
+          944,
+          1440,
+          840
+        ]
+      ],
+      "voxels": 2268000,
+      "maximum": 255,
+      "median": 31.0,
+      "aboveThreshold": 90562
+    },
+    {
+      "region": "outflow-candidate",
+      "axis": "x",
+      "coordinate": 980,
+      "boundsFullFineXYZ": [
+        [
+          977,
+          900,
+          240
+        ],
+        [
+          984,
+          1440,
+          840
+        ]
+      ],
+      "voxels": 2268000,
+      "maximum": 255,
+      "median": 0.0,
+      "aboveThreshold": 80946
+    },
+    {
+      "region": "outflow-candidate",
+      "axis": "x",
+      "coordinate": 1020,
+      "boundsFullFineXYZ": [
+        [
+          1017,
+          900,
+          240
+        ],
+        [
+          1024,
+          1440,
+          840
+        ]
+      ],
+      "voxels": 2268000,
+      "maximum": 255,
+      "median": 51.0,
+      "aboveThreshold": 109760
+    }
+  ],
+  "scope": "Source intensity and mesh correspondence only; material identity and artifact status remain unverified."
+}

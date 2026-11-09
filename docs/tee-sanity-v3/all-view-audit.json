@@ -1,0 +1,2458 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "1659197537",
+  "source": {
+    "url": "assets/volume-v5/heart-high-clean.raw.gz",
+    "decodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+    "dimensionsXYZ": [
+      475,
+      475,
+      530
+    ],
+    "spacingMm": 0.3176,
+    "displayValues": "uint8 windowed source; no HU calibration"
+  },
+  "labelRevision": "la-exterior-v17",
+  "labelDecodedSha256": "e29a218fdf42947a550b2c73711f66cbc4aaa0daca852f55529859e4fdb6ac54",
+  "labelDimensionsXYZ": [
+    317,
+    317,
+    354
+  ],
+  "sampling": "Exact current world plane converted to source coordinates; trilinear uint8 scalar; nearest-neighbor categorical label; same endpoint registration as viewer.",
+  "limitations": [
+    "Regional labels are approximate tissue ownership, not expert reference, blood pools, valves, individual vessels or appendages.",
+    "Compact shared septal core is colored LV by convention; raw LV/RV tissue fractions cannot decide correctness on their own.",
+    "Areas and track proximity are screening evidence for manual source inspection, not clinical accuracy or chamber-volume measurements.",
+    "The displayed source bank is windowed uint8 at 317.6 micrometers; not calibrated Hounsfield units."
+  ],
+  "views": {
+    "me5c": {
+      "aseNumber": 1,
+      "name": "Midesophageal five-chamber",
+      "currentStatus": "refined",
+      "summary": "Both ventricular/AV-junction regions are retained with a stronger LV outflow and aortic-root section; some apical foreshortening is accepted.",
+      "remainingLimits": [
+        "Some apical foreshortening is accepted for the five-chamber target."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 218422,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 44065,
+            "areaMm2": 1949.452,
+            "fraction": 0.201742
+          },
+          "LV": {
+            "tissuePixels": 64795,
+            "areaMm2": 2866.555,
+            "fraction": 0.296651
+          },
+          "RV": {
+            "tissuePixels": 36202,
+            "areaMm2": 1601.59,
+            "fraction": 0.165743
+          },
+          "LA": {
+            "tissuePixels": 28320,
+            "areaMm2": 1252.887,
+            "fraction": 0.129657
+          },
+          "RA": {
+            "tissuePixels": 17711,
+            "areaMm2": 783.541,
+            "fraction": 0.081086
+          },
+          "Aorta": {
+            "tissuePixels": 8938,
+            "areaMm2": 395.42,
+            "fraction": 0.040921
+          },
+          "PA": {
+            "tissuePixels": 18391,
+            "areaMm2": 813.625,
+            "fraction": 0.084199
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 4,
+            "within10mm": 6,
+            "minimumDistanceMm": 0.939,
+            "medianDistanceMm": 9.813,
+            "maximumDistanceMm": 15.618
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 6,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.029,
+            "medianDistanceMm": 4.839,
+            "maximumDistanceMm": 25.645
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 5,
+            "minimumDistanceMm": 7.11,
+            "medianDistanceMm": 11.526,
+            "maximumDistanceMm": 21.191
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 1,
+            "within10mm": 6,
+            "minimumDistanceMm": 0.6,
+            "medianDistanceMm": 8.491,
+            "maximumDistanceMm": 14.913
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 4.141,
+            "medianDistanceMm": 16.004,
+            "maximumDistanceMm": 26.463
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 3.152,
+            "medianDistanceMm": 24.189,
+            "maximumDistanceMm": 28.49
+          }
+        }
+      }
+    },
+    "me4c": {
+      "aseNumber": 2,
+      "name": "Midesophageal four-chamber",
+      "currentStatus": "refined",
+      "summary": "The plane now follows both AV-junction regions and the LV apex while removing the previously dominant aortic-outflow profile.",
+      "remainingLimits": [
+        "AV-junction and septal identities are approximate source landmarks, not an expert reference registration."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 213984,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 37875,
+            "areaMm2": 1675.604,
+            "fraction": 0.176999
+          },
+          "LV": {
+            "tissuePixels": 81061,
+            "areaMm2": 3586.169,
+            "fraction": 0.378818
+          },
+          "RV": {
+            "tissuePixels": 28138,
+            "areaMm2": 1244.836,
+            "fraction": 0.131496
+          },
+          "LA": {
+            "tissuePixels": 32221,
+            "areaMm2": 1425.469,
+            "fraction": 0.150577
+          },
+          "RA": {
+            "tissuePixels": 34468,
+            "areaMm2": 1524.877,
+            "fraction": 0.161077
+          },
+          "Aorta": {
+            "tissuePixels": 221,
+            "areaMm2": 9.777,
+            "fraction": 0.001033
+          },
+          "PA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 12,
+            "minimumDistanceMm": 0.14,
+            "medianDistanceMm": 3.435,
+            "maximumDistanceMm": 6.56
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 6,
+            "within10mm": 8,
+            "minimumDistanceMm": 0.311,
+            "medianDistanceMm": 5.282,
+            "maximumDistanceMm": 36.641
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 3,
+            "within10mm": 7,
+            "minimumDistanceMm": 0.23,
+            "medianDistanceMm": 5.595,
+            "maximumDistanceMm": 12.618
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 3,
+            "within10mm": 4,
+            "minimumDistanceMm": 0.137,
+            "medianDistanceMm": 15.026,
+            "maximumDistanceMm": 31.364
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 15.258,
+            "medianDistanceMm": 36.954,
+            "maximumDistanceMm": 57.536
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 27.871,
+            "medianDistanceMm": 37.446,
+            "maximumDistanceMm": 42.115
+          }
+        }
+      }
+    },
+    "mecommissural": {
+      "aseNumber": 3,
+      "name": "Midesophageal mitral commissural",
+      "currentStatus": "limited",
+      "summary": "A broader mitral-region and long-LV section replaces the outflow-containing starting plane; scallop correspondence remains unresolved.",
+      "remainingLimits": [
+        "Individual P3/A2/P1 scallops and paired papillary identities are not independently annotated."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 154763,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 23177,
+            "areaMm2": 1025.359,
+            "fraction": 0.149758
+          },
+          "LV": {
+            "tissuePixels": 91396,
+            "areaMm2": 4043.393,
+            "fraction": 0.590555
+          },
+          "RV": {
+            "tissuePixels": 2193,
+            "areaMm2": 97.019,
+            "fraction": 0.01417
+          },
+          "LA": {
+            "tissuePixels": 18603,
+            "areaMm2": 823.004,
+            "fraction": 0.120203
+          },
+          "RA": {
+            "tissuePixels": 1507,
+            "areaMm2": 66.67,
+            "fraction": 0.009737
+          },
+          "Aorta": {
+            "tissuePixels": 1300,
+            "areaMm2": 57.512,
+            "fraction": 0.0084
+          },
+          "PA": {
+            "tissuePixels": 16587,
+            "areaMm2": 733.815,
+            "fraction": 0.107177
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 12,
+            "minimumDistanceMm": 0.355,
+            "medianDistanceMm": 1.425,
+            "maximumDistanceMm": 9.381
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 12.441,
+            "medianDistanceMm": 26.397,
+            "maximumDistanceMm": 32.987
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 3,
+            "within10mm": 5,
+            "minimumDistanceMm": 0.812,
+            "medianDistanceMm": 10.348,
+            "maximumDistanceMm": 43.15
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 34.875,
+            "medianDistanceMm": 44.161,
+            "maximumDistanceMm": 49.294
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 16.613,
+            "medianDistanceMm": 27.52,
+            "maximumDistanceMm": 36.329
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 4,
+            "minimumDistanceMm": 4.35,
+            "medianDistanceMm": 13.05,
+            "maximumDistanceMm": 45.987
+          }
+        }
+      }
+    },
+    "me2c": {
+      "aseNumber": 4,
+      "name": "Midesophageal two-chamber",
+      "currentStatus": "refined",
+      "summary": "Long LA\u2013mitral-region\u2013LV continuity is retained with little right-heart tissue; visually cleaner than lower-cost candidates that resembled four-chamber sections.",
+      "remainingLimits": [
+        "Anterior/inferior wall identity is not independently registered to a living-patient TEE acquisition."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 144158,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 18277,
+            "areaMm2": 808.581,
+            "fraction": 0.126785
+          },
+          "LV": {
+            "tissuePixels": 93279,
+            "areaMm2": 4126.698,
+            "fraction": 0.647061
+          },
+          "RV": {
+            "tissuePixels": 1431,
+            "areaMm2": 63.308,
+            "fraction": 0.009927
+          },
+          "LA": {
+            "tissuePixels": 22211,
+            "areaMm2": 982.623,
+            "fraction": 0.154074
+          },
+          "RA": {
+            "tissuePixels": 2792,
+            "areaMm2": 123.519,
+            "fraction": 0.019368
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 6168,
+            "areaMm2": 272.875,
+            "fraction": 0.042786
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 11,
+            "minimumDistanceMm": 0.011,
+            "medianDistanceMm": 1.167,
+            "maximumDistanceMm": 11.389
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 10.662,
+            "medianDistanceMm": 31.864,
+            "maximumDistanceMm": 34.06
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 3,
+            "within10mm": 5,
+            "minimumDistanceMm": 1.159,
+            "medianDistanceMm": 13.307,
+            "maximumDistanceMm": 45.047
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 31.772,
+            "medianDistanceMm": 46.92,
+            "maximumDistanceMm": 57.894
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 21.382,
+            "medianDistanceMm": 39.794,
+            "maximumDistanceMm": 55.876
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 20.27,
+            "medianDistanceMm": 26.951,
+            "maximumDistanceMm": 53.799
+          }
+        }
+      }
+    },
+    "melax": {
+      "aseNumber": 5,
+      "name": "Midesophageal long-axis",
+      "currentStatus": "refined",
+      "summary": "A continuous source section connects the LV/mitral region with the LV outflow and elongated aortic root; display orientation places outflow to the right.",
+      "remainingLimits": [
+        "The collapsed LV and adjoining fibrous/valvar tissue do not reproduce a normal clinical echo cavity."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 211928,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 37827,
+            "areaMm2": 1526.696,
+            "fraction": 0.17849
+          },
+          "LV": {
+            "tissuePixels": 94955,
+            "areaMm2": 3832.38,
+            "fraction": 0.448053
+          },
+          "RV": {
+            "tissuePixels": 20662,
+            "areaMm2": 833.917,
+            "fraction": 0.097495
+          },
+          "LA": {
+            "tissuePixels": 23149,
+            "areaMm2": 934.293,
+            "fraction": 0.10923
+          },
+          "RA": {
+            "tissuePixels": 5539,
+            "areaMm2": 223.554,
+            "fraction": 0.026136
+          },
+          "Aorta": {
+            "tissuePixels": 14180,
+            "areaMm2": 572.304,
+            "fraction": 0.06691
+          },
+          "PA": {
+            "tissuePixels": 15616,
+            "areaMm2": 630.261,
+            "fraction": 0.073685
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 12,
+            "minimumDistanceMm": 0.145,
+            "medianDistanceMm": 2.238,
+            "maximumDistanceMm": 5.447
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 1.88,
+            "medianDistanceMm": 15.905,
+            "maximumDistanceMm": 21.501
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 5,
+            "within10mm": 7,
+            "minimumDistanceMm": 0.368,
+            "medianDistanceMm": 5.431,
+            "maximumDistanceMm": 24.263
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 15.969,
+            "medianDistanceMm": 23.778,
+            "maximumDistanceMm": 28.413
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 5,
+            "within10mm": 8,
+            "minimumDistanceMm": 1.446,
+            "medianDistanceMm": 3.938,
+            "maximumDistanceMm": 11.047
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 2.633,
+            "medianDistanceMm": 15.77,
+            "maximumDistanceMm": 24.833
+          }
+        }
+      }
+    },
+    "meavlax": {
+      "aseNumber": 6,
+      "name": "Midesophageal aortic valve long-axis",
+      "currentStatus": "refined",
+      "summary": "Root/cusp and proximal ascending-aortic continuity were selected together with the LA near-field region; the root axis is displayed horizontally.",
+      "remainingLimits": [
+        "Valve annulus, sinotubular junction and cusp identities are not separate measured segmentations."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 320006,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 53167,
+            "areaMm2": 1044.842,
+            "fraction": 0.166144
+          },
+          "LV": {
+            "tissuePixels": 136532,
+            "areaMm2": 2683.139,
+            "fraction": 0.426655
+          },
+          "RV": {
+            "tissuePixels": 26001,
+            "areaMm2": 510.974,
+            "fraction": 0.081252
+          },
+          "LA": {
+            "tissuePixels": 46737,
+            "areaMm2": 918.48,
+            "fraction": 0.14605
+          },
+          "RA": {
+            "tissuePixels": 3979,
+            "areaMm2": 78.196,
+            "fraction": 0.012434
+          },
+          "Aorta": {
+            "tissuePixels": 24055,
+            "areaMm2": 472.731,
+            "fraction": 0.07517
+          },
+          "PA": {
+            "tissuePixels": 29535,
+            "areaMm2": 580.424,
+            "fraction": 0.092295
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 3,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.032,
+            "medianDistanceMm": 4.733,
+            "maximumDistanceMm": 8.232
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 2.377,
+            "medianDistanceMm": 17.326,
+            "maximumDistanceMm": 23.189
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 7,
+            "within10mm": 7,
+            "minimumDistanceMm": 0.888,
+            "medianDistanceMm": 3.362,
+            "maximumDistanceMm": 24.338
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 20.523,
+            "medianDistanceMm": 26.124,
+            "maximumDistanceMm": 28.932
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 8,
+            "within10mm": 8,
+            "minimumDistanceMm": 0.372,
+            "medianDistanceMm": 1.79,
+            "maximumDistanceMm": 4.549
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 4,
+            "minimumDistanceMm": 0.963,
+            "medianDistanceMm": 13.973,
+            "maximumDistanceMm": 22.867
+          }
+        }
+      }
+    },
+    "meaaolax": {
+      "aseNumber": 7,
+      "name": "Midesophageal ascending aorta long-axis",
+      "currentStatus": "refined",
+      "summary": "A long section follows the retained ascending-aortic lumen and walls; the LA region constrains the plane azimuth.",
+      "remainingLimits": [
+        "The ascending vessel ends are specimen-truncated; no aortic arch is present."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 233678,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 63077,
+            "areaMm2": 1130.39,
+            "fraction": 0.269931
+          },
+          "LV": {
+            "tissuePixels": 19861,
+            "areaMm2": 355.925,
+            "fraction": 0.084993
+          },
+          "RV": {
+            "tissuePixels": 35120,
+            "areaMm2": 629.378,
+            "fraction": 0.150292
+          },
+          "LA": {
+            "tissuePixels": 41915,
+            "areaMm2": 751.15,
+            "fraction": 0.179371
+          },
+          "RA": {
+            "tissuePixels": 4751,
+            "areaMm2": 85.142,
+            "fraction": 0.020331
+          },
+          "Aorta": {
+            "tissuePixels": 35770,
+            "areaMm2": 641.027,
+            "fraction": 0.153074
+          },
+          "PA": {
+            "tissuePixels": 33184,
+            "areaMm2": 594.684,
+            "fraction": 0.142007
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 1.579,
+            "medianDistanceMm": 10.63,
+            "maximumDistanceMm": 13.479
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 0.136,
+            "medianDistanceMm": 11.013,
+            "maximumDistanceMm": 16.753
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 5,
+            "within10mm": 6,
+            "minimumDistanceMm": 0.207,
+            "medianDistanceMm": 4.506,
+            "maximumDistanceMm": 29.071
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 23.526,
+            "medianDistanceMm": 26.648,
+            "maximumDistanceMm": 27.52
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 10,
+            "within10mm": 10,
+            "minimumDistanceMm": 0.123,
+            "medianDistanceMm": 1.003,
+            "maximumDistanceMm": 1.759
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 3.03,
+            "medianDistanceMm": 15.481,
+            "maximumDistanceMm": 23.776
+          }
+        }
+      }
+    },
+    "meaaosax": {
+      "aseNumber": 8,
+      "name": "Midesophageal ascending aorta short-axis",
+      "currentStatus": "refined",
+      "summary": "The selected section is perpendicular to the retained ascending-aortic segment, separate from the valve-level short-axis target.",
+      "remainingLimits": [
+        "SVC and right pulmonary-artery identities are not independently established.",
+        "The nearby SVC and right pulmonary artery have not been individually verified."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 248331,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 67908,
+            "areaMm2": 1069.703,
+            "fraction": 0.273458
+          },
+          "LV": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "RV": {
+            "tissuePixels": 385,
+            "areaMm2": 6.065,
+            "fraction": 0.00155
+          },
+          "LA": {
+            "tissuePixels": 44770,
+            "areaMm2": 705.228,
+            "fraction": 0.180284
+          },
+          "RA": {
+            "tissuePixels": 51221,
+            "areaMm2": 806.846,
+            "fraction": 0.206261
+          },
+          "Aorta": {
+            "tissuePixels": 15534,
+            "areaMm2": 244.695,
+            "fraction": 0.062554
+          },
+          "PA": {
+            "tissuePixels": 68513,
+            "areaMm2": 1079.233,
+            "fraction": 0.275894
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 36.184,
+            "medianDistanceMm": 63.377,
+            "maximumDistanceMm": 89.936
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 16.858,
+            "medianDistanceMm": 51.989,
+            "maximumDistanceMm": 82.211
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 0.949,
+            "medianDistanceMm": 16.23,
+            "maximumDistanceMm": 49.301
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.227,
+            "medianDistanceMm": 15.742,
+            "maximumDistanceMm": 36.733
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 0.0,
+            "medianDistanceMm": 17.506,
+            "maximumDistanceMm": 34.029
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 4,
+            "minimumDistanceMm": 0.543,
+            "medianDistanceMm": 11.741,
+            "maximumDistanceMm": 26.172
+          }
+        }
+      }
+    },
+    "merpv": {
+      "aseNumber": 9,
+      "name": "Midesophageal right pulmonary vein",
+      "currentStatus": "limited",
+      "summary": "The closest available LA/venous-entry region was reviewed in multiple planes; the two right pulmonary-vein ostia are not individually confirmed.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 349994,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 69443,
+            "areaMm2": 1206.261,
+            "fraction": 0.198412
+          },
+          "LV": {
+            "tissuePixels": 93381,
+            "areaMm2": 1622.076,
+            "fraction": 0.266807
+          },
+          "RV": {
+            "tissuePixels": 2669,
+            "areaMm2": 46.362,
+            "fraction": 0.007626
+          },
+          "LA": {
+            "tissuePixels": 132706,
+            "areaMm2": 2305.172,
+            "fraction": 0.379166
+          },
+          "RA": {
+            "tissuePixels": 41217,
+            "areaMm2": 715.961,
+            "fraction": 0.117765
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 10578,
+            "areaMm2": 183.745,
+            "fraction": 0.030223
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 8.861,
+            "medianDistanceMm": 27.799,
+            "maximumDistanceMm": 46.704
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 37.968,
+            "medianDistanceMm": 45.065,
+            "maximumDistanceMm": 48.112
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 10,
+            "within10mm": 11,
+            "minimumDistanceMm": 0.171,
+            "medianDistanceMm": 1.718,
+            "maximumDistanceMm": 5.037
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 20.582,
+            "medianDistanceMm": 23.48,
+            "maximumDistanceMm": 26.243
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 21.996,
+            "medianDistanceMm": 32.507,
+            "maximumDistanceMm": 39.31
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 12.912,
+            "medianDistanceMm": 23.812,
+            "maximumDistanceMm": 42.028
+          }
+        }
+      }
+    },
+    "meavsax": {
+      "aseNumber": 10,
+      "name": "Midesophageal aortic valve short-axis",
+      "currentStatus": "refined",
+      "summary": "The plane is moved from ventricular/outflow tissue to the source-observed three-sinus/cusp region of the aortic root.",
+      "remainingLimits": [
+        "The root/cusp level is source-reviewed; individual cusp labels and exact annular dimensions are unvalidated."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 343132,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 80867,
+            "areaMm2": 1273.837,
+            "fraction": 0.235673
+          },
+          "LV": {
+            "tissuePixels": 31779,
+            "areaMm2": 500.591,
+            "fraction": 0.092615
+          },
+          "RV": {
+            "tissuePixels": 66455,
+            "areaMm2": 1046.815,
+            "fraction": 0.193672
+          },
+          "LA": {
+            "tissuePixels": 67285,
+            "areaMm2": 1059.89,
+            "fraction": 0.196091
+          },
+          "RA": {
+            "tissuePixels": 65977,
+            "areaMm2": 1039.286,
+            "fraction": 0.192279
+          },
+          "Aorta": {
+            "tissuePixels": 25666,
+            "areaMm2": 404.297,
+            "fraction": 0.074799
+          },
+          "PA": {
+            "tissuePixels": 5103,
+            "areaMm2": 80.384,
+            "fraction": 0.014872
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 11.656,
+            "medianDistanceMm": 35.587,
+            "maximumDistanceMm": 58.291
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 0.097,
+            "medianDistanceMm": 23.026,
+            "maximumDistanceMm": 51.14
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.141,
+            "medianDistanceMm": 14.133,
+            "maximumDistanceMm": 32.272
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.299,
+            "medianDistanceMm": 15.062,
+            "maximumDistanceMm": 42.095
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 2,
+            "within10mm": 2,
+            "minimumDistanceMm": 1.02,
+            "medianDistanceMm": 28.648,
+            "maximumDistanceMm": 58.674
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 8.997,
+            "medianDistanceMm": 28.12,
+            "maximumDistanceMm": 47.316
+          }
+        }
+      }
+    },
+    "mervinout": {
+      "aseNumber": 11,
+      "name": "Midesophageal RV inflow-outflow",
+      "currentStatus": "refined",
+      "summary": "An anatomy-fitted section connects the tricuspid-side RV with the muscular outflow/pulmonary-valve region; inflow is displayed to the left.",
+      "remainingLimits": [
+        "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 218648,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 67865,
+            "areaMm2": 1807.801,
+            "fraction": 0.310385
+          },
+          "LV": {
+            "tissuePixels": 906,
+            "areaMm2": 24.134,
+            "fraction": 0.004144
+          },
+          "RV": {
+            "tissuePixels": 57458,
+            "areaMm2": 1530.577,
+            "fraction": 0.262788
+          },
+          "LA": {
+            "tissuePixels": 21775,
+            "areaMm2": 580.047,
+            "fraction": 0.099589
+          },
+          "RA": {
+            "tissuePixels": 27759,
+            "areaMm2": 739.45,
+            "fraction": 0.126957
+          },
+          "Aorta": {
+            "tissuePixels": 15610,
+            "areaMm2": 415.822,
+            "fraction": 0.071393
+          },
+          "PA": {
+            "tissuePixels": 27275,
+            "areaMm2": 726.557,
+            "fraction": 0.124744
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 13.639,
+            "medianDistanceMm": 32.779,
+            "maximumDistanceMm": 41.046
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 7,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.237,
+            "medianDistanceMm": 2.687,
+            "maximumDistanceMm": 28.347
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 2.334,
+            "medianDistanceMm": 19.294,
+            "maximumDistanceMm": 31.75
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 6.884,
+            "medianDistanceMm": 24.425,
+            "maximumDistanceMm": 38.9
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 3,
+            "within10mm": 4,
+            "minimumDistanceMm": 1.129,
+            "medianDistanceMm": 15.607,
+            "maximumDistanceMm": 33.967
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 4,
+            "within10mm": 7,
+            "minimumDistanceMm": 1.029,
+            "medianDistanceMm": 6.116,
+            "maximumDistanceMm": 39.159
+          }
+        }
+      }
+    },
+    "memodbicaval": {
+      "aseNumber": 12,
+      "name": "Midesophageal modified bicaval tricuspid valve",
+      "currentStatus": "limited",
+      "summary": "The section is centered on RA\u2013tricuspid-region\u2013RV continuity, while individual caval and leaflet identities remain uncertain.",
+      "remainingLimits": [
+        "Caval ostia and leaflet identities remain unresolved."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 234457,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 60399,
+            "areaMm2": 1609.135,
+            "fraction": 0.257612
+          },
+          "LV": {
+            "tissuePixels": 18180,
+            "areaMm2": 484.347,
+            "fraction": 0.077541
+          },
+          "RV": {
+            "tissuePixels": 73369,
+            "areaMm2": 1954.678,
+            "fraction": 0.312932
+          },
+          "LA": {
+            "tissuePixels": 16707,
+            "areaMm2": 445.104,
+            "fraction": 0.071258
+          },
+          "RA": {
+            "tissuePixels": 65802,
+            "areaMm2": 1753.08,
+            "fraction": 0.280657
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 15.274,
+            "medianDistanceMm": 23.492,
+            "maximumDistanceMm": 27.89
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 7,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.249,
+            "medianDistanceMm": 2.556,
+            "maximumDistanceMm": 33.33
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 8.055,
+            "medianDistanceMm": 24.607,
+            "maximumDistanceMm": 28.046
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 6,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.767,
+            "medianDistanceMm": 4.111,
+            "maximumDistanceMm": 13.449
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 23.378,
+            "medianDistanceMm": 30.879,
+            "maximumDistanceMm": 39.88
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 16.313,
+            "medianDistanceMm": 40.683,
+            "maximumDistanceMm": 52.069
+          }
+        }
+      }
+    },
+    "bicaval": {
+      "aseNumber": 13,
+      "name": "Midesophageal bicaval",
+      "currentStatus": "limited",
+      "summary": "Atrial and septal-side continuity is favored over ventricular/outflow tissue; the preserved specimen does not establish both caval ostia.",
+      "remainingLimits": [
+        "Both caval ostia and continuous IAS cannot be confidently identified in the truncated specimen."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 341658,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 69599,
+            "areaMm2": 1367.034,
+            "fraction": 0.20371
+          },
+          "LV": {
+            "tissuePixels": 66111,
+            "areaMm2": 1298.524,
+            "fraction": 0.193501
+          },
+          "RV": {
+            "tissuePixels": 11283,
+            "areaMm2": 221.616,
+            "fraction": 0.033024
+          },
+          "LA": {
+            "tissuePixels": 87760,
+            "areaMm2": 1723.745,
+            "fraction": 0.256865
+          },
+          "RA": {
+            "tissuePixels": 71367,
+            "areaMm2": 1401.76,
+            "fraction": 0.208884
+          },
+          "Aorta": {
+            "tissuePixels": 810,
+            "areaMm2": 15.91,
+            "fraction": 0.002371
+          },
+          "PA": {
+            "tissuePixels": 34728,
+            "areaMm2": 682.113,
+            "fraction": 0.101646
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 11.586,
+            "medianDistanceMm": 29.759,
+            "maximumDistanceMm": 43.953
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 19.09,
+            "medianDistanceMm": 29.916,
+            "maximumDistanceMm": 39.071
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 7,
+            "within10mm": 7,
+            "minimumDistanceMm": 0.0,
+            "medianDistanceMm": 2.633,
+            "maximumDistanceMm": 18.038
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 10,
+            "within10mm": 10,
+            "minimumDistanceMm": 0.0,
+            "medianDistanceMm": 0.449,
+            "maximumDistanceMm": 3.472
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 16.009,
+            "medianDistanceMm": 22.827,
+            "maximumDistanceMm": 27.701
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 4.136,
+            "medianDistanceMm": 28.529,
+            "maximumDistanceMm": 38.126
+          }
+        }
+      }
+    },
+    "mepv": {
+      "aseNumber": 14,
+      "name": "Midesophageal right and left pulmonary veins",
+      "currentStatus": "limited",
+      "summary": "A source-reviewed LA/venous-entry plane is shown; right and left pulmonary-vein acquisitions are distinct clinical maneuvers, and all four ostia are not established here.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 352961,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 72109,
+            "areaMm2": 1252.571,
+            "fraction": 0.204297
+          },
+          "LV": {
+            "tissuePixels": 96391,
+            "areaMm2": 1674.361,
+            "fraction": 0.273092
+          },
+          "RV": {
+            "tissuePixels": 2854,
+            "areaMm2": 49.575,
+            "fraction": 0.008086
+          },
+          "LA": {
+            "tissuePixels": 130826,
+            "areaMm2": 2272.515,
+            "fraction": 0.370653
+          },
+          "RA": {
+            "tissuePixels": 39414,
+            "areaMm2": 684.642,
+            "fraction": 0.111667
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 11367,
+            "areaMm2": 197.451,
+            "fraction": 0.032205
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 8.848,
+            "medianDistanceMm": 27.755,
+            "maximumDistanceMm": 46.733
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 38.333,
+            "medianDistanceMm": 45.327,
+            "maximumDistanceMm": 48.248
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 11,
+            "within10mm": 11,
+            "minimumDistanceMm": 0.224,
+            "medianDistanceMm": 1.819,
+            "maximumDistanceMm": 4.933
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 21.042,
+            "medianDistanceMm": 23.939,
+            "maximumDistanceMm": 26.633
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 22.095,
+            "medianDistanceMm": 32.586,
+            "maximumDistanceMm": 39.35
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 13.279,
+            "medianDistanceMm": 23.59,
+            "maximumDistanceMm": 41.976
+          }
+        }
+      }
+    },
+    "melaa": {
+      "aseNumber": 15,
+      "name": "Midesophageal left atrial appendage",
+      "currentStatus": "limited",
+      "summary": "Multiple lateral-LA sections were examined. The original lateral atrial region is retained because no candidate established a more defensible LAA ostial/lobe section.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 272892,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 52100,
+            "areaMm2": 1045.65,
+            "fraction": 0.190918
+          },
+          "LV": {
+            "tissuePixels": 72293,
+            "areaMm2": 1450.925,
+            "fraction": 0.264914
+          },
+          "RV": {
+            "tissuePixels": 3524,
+            "areaMm2": 70.727,
+            "fraction": 0.012914
+          },
+          "LA": {
+            "tissuePixels": 102894,
+            "areaMm2": 2065.089,
+            "fraction": 0.37705
+          },
+          "RA": {
+            "tissuePixels": 39799,
+            "areaMm2": 798.768,
+            "fraction": 0.145842
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 2282,
+            "areaMm2": 45.8,
+            "fraction": 0.008362
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 7.515,
+            "medianDistanceMm": 23.049,
+            "maximumDistanceMm": 35.996
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 27.996,
+            "medianDistanceMm": 33.918,
+            "maximumDistanceMm": 45.736
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 10,
+            "within10mm": 11,
+            "minimumDistanceMm": 0.003,
+            "medianDistanceMm": 1.725,
+            "maximumDistanceMm": 8.038
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 11.26,
+            "medianDistanceMm": 18.614,
+            "maximumDistanceMm": 24.523
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 19.901,
+            "medianDistanceMm": 33.608,
+            "maximumDistanceMm": 44.351
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 13.523,
+            "medianDistanceMm": 30.668,
+            "maximumDistanceMm": 41.858
+          }
+        }
+      }
+    },
+    "tgbasalsax": {
+      "aseNumber": 16,
+      "name": "Transgastric basal short-axis",
+      "currentStatus": "limited",
+      "summary": "An independently oriented basal LA\u2013LV interface section shows a broader mitral-region opening and removes the dominant arterial-root star of the earlier plane.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed.",
+        "This is a mitral-region correspondence; exact leaflet/annular boundaries and the clinical fishmouth appearance remain unvalidated."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 239234,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 44436,
+            "areaMm2": 899.041,
+            "fraction": 0.185743
+          },
+          "LV": {
+            "tissuePixels": 98716,
+            "areaMm2": 1997.249,
+            "fraction": 0.412634
+          },
+          "RV": {
+            "tissuePixels": 43628,
+            "areaMm2": 882.693,
+            "fraction": 0.182365
+          },
+          "LA": {
+            "tissuePixels": 22486,
+            "areaMm2": 454.943,
+            "fraction": 0.093992
+          },
+          "RA": {
+            "tissuePixels": 17862,
+            "areaMm2": 361.389,
+            "fraction": 0.074663
+          },
+          "Aorta": {
+            "tissuePixels": 111,
+            "areaMm2": 2.246,
+            "fraction": 0.000464
+          },
+          "PA": {
+            "tissuePixels": 11995,
+            "areaMm2": 242.686,
+            "fraction": 0.050139
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 2.515,
+            "medianDistanceMm": 32.138,
+            "maximumDistanceMm": 64.762
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 4,
+            "within10mm": 5,
+            "minimumDistanceMm": 0.735,
+            "medianDistanceMm": 17.091,
+            "maximumDistanceMm": 52.748
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 2.21,
+            "medianDistanceMm": 28.905,
+            "maximumDistanceMm": 65.21
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 10.196,
+            "medianDistanceMm": 32.617,
+            "maximumDistanceMm": 57.047
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 9.528,
+            "medianDistanceMm": 31.098,
+            "maximumDistanceMm": 54.876
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.927,
+            "medianDistanceMm": 27.908,
+            "maximumDistanceMm": 70.273
+          }
+        }
+      }
+    },
+    "tgpapillary": {
+      "aseNumber": 17,
+      "name": "Transgastric midpapillary short-axis",
+      "currentStatus": "retained",
+      "summary": "The original plane is retained after broad exploration and 21 close neighbors: its two principal muscular profiles are clearer than the newly proposed level.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 170056,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 27462,
+            "areaMm2": 697.567,
+            "fraction": 0.161488
+          },
+          "LV": {
+            "tissuePixels": 88881,
+            "areaMm2": 2257.682,
+            "fraction": 0.522657
+          },
+          "RV": {
+            "tissuePixels": 53713,
+            "areaMm2": 1364.373,
+            "fraction": 0.315855
+          },
+          "LA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "RA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 2,
+            "within10mm": 2,
+            "minimumDistanceMm": 3.885,
+            "medianDistanceMm": 21.857,
+            "maximumDistanceMm": 38.261
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.866,
+            "medianDistanceMm": 18.3,
+            "maximumDistanceMm": 31.156
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 37.166,
+            "medianDistanceMm": 62.926,
+            "maximumDistanceMm": 86.411
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 28.301,
+            "medianDistanceMm": 48.752,
+            "maximumDistanceMm": 73.827
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 37.45,
+            "medianDistanceMm": 56.043,
+            "maximumDistanceMm": 78.294
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 29.285,
+            "medianDistanceMm": 63.681,
+            "maximumDistanceMm": 90.61
+          }
+        }
+      }
+    },
+    "tgapicalsax": {
+      "aseNumber": 18,
+      "name": "Transgastric apical short-axis",
+      "currentStatus": "retained",
+      "summary": "The original distal ventricular plane is retained after broad exploration and 21 close neighbors; it avoids the dominant papillary profile seen in more proximal candidates.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 131150,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 20022,
+            "areaMm2": 377.12,
+            "fraction": 0.152665
+          },
+          "LV": {
+            "tissuePixels": 72138,
+            "areaMm2": 1358.74,
+            "fraction": 0.550042
+          },
+          "RV": {
+            "tissuePixels": 38990,
+            "areaMm2": 734.388,
+            "fraction": 0.297293
+          },
+          "LA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "RA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 2.288,
+            "medianDistanceMm": 23.505,
+            "maximumDistanceMm": 57.879
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 2,
+            "within10mm": 4,
+            "minimumDistanceMm": 0.855,
+            "medianDistanceMm": 21.852,
+            "maximumDistanceMm": 52.742
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 60.687,
+            "medianDistanceMm": 86.448,
+            "maximumDistanceMm": 109.932
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 51.823,
+            "medianDistanceMm": 72.273,
+            "maximumDistanceMm": 97.349
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 60.972,
+            "medianDistanceMm": 79.565,
+            "maximumDistanceMm": 101.815
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 52.807,
+            "medianDistanceMm": 87.203,
+            "maximumDistanceMm": 114.132
+          }
+        }
+      }
+    },
+    "tgrvbasal": {
+      "aseNumber": 19,
+      "name": "Transgastric RV basal",
+      "currentStatus": "limited",
+      "summary": "A plane based on the reviewed tricuspid hinge neighborhood replaces the duplicated LV/root-level cut; exact en-face tricuspid correspondence remains partial.",
+      "remainingLimits": [
+        "The curved tricuspid hinge departs from a flat plane; this is not an annular measurement.",
+        "A flat cut cannot reproduce the curved TV hinge perfectly; a complete en-face three-leaflet view is not established."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 298815,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 51055,
+            "areaMm2": 1095.562,
+            "fraction": 0.170858
+          },
+          "LV": {
+            "tissuePixels": 65751,
+            "areaMm2": 1410.916,
+            "fraction": 0.220039
+          },
+          "RV": {
+            "tissuePixels": 68244,
+            "areaMm2": 1464.412,
+            "fraction": 0.228382
+          },
+          "LA": {
+            "tissuePixels": 31432,
+            "areaMm2": 674.483,
+            "fraction": 0.105189
+          },
+          "RA": {
+            "tissuePixels": 27932,
+            "areaMm2": 599.378,
+            "fraction": 0.093476
+          },
+          "Aorta": {
+            "tissuePixels": 31865,
+            "areaMm2": 683.774,
+            "fraction": 0.106638
+          },
+          "PA": {
+            "tissuePixels": 22536,
+            "areaMm2": 483.588,
+            "fraction": 0.075418
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 2,
+            "within10mm": 2,
+            "minimumDistanceMm": 0.019,
+            "medianDistanceMm": 31.151,
+            "maximumDistanceMm": 57.705
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 2,
+            "minimumDistanceMm": 7.532,
+            "medianDistanceMm": 16.562,
+            "maximumDistanceMm": 45.427
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 3,
+            "minimumDistanceMm": 6.852,
+            "medianDistanceMm": 21.63,
+            "maximumDistanceMm": 54.986
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 12.011,
+            "medianDistanceMm": 24.953,
+            "maximumDistanceMm": 39.564
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 3,
+            "within10mm": 4,
+            "minimumDistanceMm": 2.201,
+            "medianDistanceMm": 12.427,
+            "maximumDistanceMm": 24.907
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 0.831,
+            "medianDistanceMm": 13.588,
+            "maximumDistanceMm": 52.459
+          }
+        }
+      }
+    },
+    "tgrvinout": {
+      "aseNumber": 20,
+      "name": "Transgastric RV inflow-outflow",
+      "currentStatus": "refined",
+      "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+      "remainingLimits": [
+        "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 217558,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 67136,
+            "areaMm2": 1788.382,
+            "fraction": 0.308589
+          },
+          "LV": {
+            "tissuePixels": 904,
+            "areaMm2": 24.081,
+            "fraction": 0.004155
+          },
+          "RV": {
+            "tissuePixels": 57430,
+            "areaMm2": 1529.831,
+            "fraction": 0.263976
+          },
+          "LA": {
+            "tissuePixels": 22061,
+            "areaMm2": 587.665,
+            "fraction": 0.101403
+          },
+          "RA": {
+            "tissuePixels": 27747,
+            "areaMm2": 739.13,
+            "fraction": 0.127538
+          },
+          "Aorta": {
+            "tissuePixels": 15627,
+            "areaMm2": 416.275,
+            "fraction": 0.071829
+          },
+          "PA": {
+            "tissuePixels": 26653,
+            "areaMm2": 709.988,
+            "fraction": 0.12251
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 13.639,
+            "medianDistanceMm": 32.779,
+            "maximumDistanceMm": 41.046
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 7,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.237,
+            "medianDistanceMm": 2.687,
+            "maximumDistanceMm": 28.347
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 2.334,
+            "medianDistanceMm": 19.294,
+            "maximumDistanceMm": 31.75
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 1,
+            "minimumDistanceMm": 6.884,
+            "medianDistanceMm": 24.425,
+            "maximumDistanceMm": 38.9
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 3,
+            "within10mm": 4,
+            "minimumDistanceMm": 1.129,
+            "medianDistanceMm": 15.607,
+            "maximumDistanceMm": 33.967
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 4,
+            "within10mm": 7,
+            "minimumDistanceMm": 1.029,
+            "medianDistanceMm": 6.116,
+            "maximumDistanceMm": 39.159
+          }
+        }
+      }
+    },
+    "deeptg5c": {
+      "aseNumber": 21,
+      "name": "Deep transgastric five-chamber",
+      "currentStatus": "refined",
+      "summary": "The section brings both ventricular regions and LV outflow into one measured plane with a gastric-side presentation.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 204789,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 38714,
+            "areaMm2": 1712.722,
+            "fraction": 0.189043
+          },
+          "LV": {
+            "tissuePixels": 60450,
+            "areaMm2": 2674.331,
+            "fraction": 0.295182
+          },
+          "RV": {
+            "tissuePixels": 36574,
+            "areaMm2": 1618.048,
+            "fraction": 0.178594
+          },
+          "LA": {
+            "tissuePixels": 29973,
+            "areaMm2": 1326.017,
+            "fraction": 0.14636
+          },
+          "RA": {
+            "tissuePixels": 20173,
+            "areaMm2": 892.461,
+            "fraction": 0.098506
+          },
+          "Aorta": {
+            "tissuePixels": 9301,
+            "areaMm2": 411.48,
+            "fraction": 0.045417
+          },
+          "PA": {
+            "tissuePixels": 9604,
+            "areaMm2": 424.885,
+            "fraction": 0.046897
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 3,
+            "within10mm": 5,
+            "minimumDistanceMm": 0.005,
+            "medianDistanceMm": 11.415,
+            "maximumDistanceMm": 17.107
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 6,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.347,
+            "medianDistanceMm": 4.697,
+            "maximumDistanceMm": 25.287
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 6,
+            "minimumDistanceMm": 6.222,
+            "medianDistanceMm": 9.657,
+            "maximumDistanceMm": 21.795
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 1,
+            "within10mm": 5,
+            "minimumDistanceMm": 2.644,
+            "medianDistanceMm": 9.978,
+            "maximumDistanceMm": 15.606
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 1,
+            "within10mm": 2,
+            "minimumDistanceMm": 4.43,
+            "medianDistanceMm": 15.153,
+            "maximumDistanceMm": 24.64
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 2.046,
+            "medianDistanceMm": 24.561,
+            "maximumDistanceMm": 28.95
+          }
+        }
+      }
+    },
+    "tg2c": {
+      "aseNumber": 22,
+      "name": "Transgastric two-chamber",
+      "currentStatus": "refined",
+      "summary": "The new measured plane excludes the long aortic pathway seen previously and isolates the LA\u2013mitral-region\u2013LV sequence; the apex is displayed to the left.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 144916,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 18838,
+            "areaMm2": 833.4,
+            "fraction": 0.129993
+          },
+          "LV": {
+            "tissuePixels": 92530,
+            "areaMm2": 4093.562,
+            "fraction": 0.638508
+          },
+          "RV": {
+            "tissuePixels": 1353,
+            "areaMm2": 59.857,
+            "fraction": 0.009336
+          },
+          "LA": {
+            "tissuePixels": 23228,
+            "areaMm2": 1027.615,
+            "fraction": 0.160286
+          },
+          "RA": {
+            "tissuePixels": 3668,
+            "areaMm2": 162.274,
+            "fraction": 0.025311
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 5299,
+            "areaMm2": 234.43,
+            "fraction": 0.036566
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 11,
+            "minimumDistanceMm": 0.115,
+            "medianDistanceMm": 1.272,
+            "maximumDistanceMm": 11.01
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 10.814,
+            "medianDistanceMm": 32.018,
+            "maximumDistanceMm": 34.739
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 3,
+            "within10mm": 5,
+            "minimumDistanceMm": 0.475,
+            "medianDistanceMm": 12.605,
+            "maximumDistanceMm": 43.617
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 30.739,
+            "medianDistanceMm": 46.113,
+            "maximumDistanceMm": 57.294
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 21.178,
+            "medianDistanceMm": 39.997,
+            "maximumDistanceMm": 56.426
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 21.029,
+            "medianDistanceMm": 27.246,
+            "maximumDistanceMm": 52.89
+          }
+        }
+      }
+    },
+    "tgrvin": {
+      "aseNumber": 23,
+      "name": "Transgastric RV inflow",
+      "currentStatus": "refined",
+      "summary": "An independent TV\u2013RV-body\u2013apical-RV plane replaces the generic tilted starting frame, with RV/apical tissue to the left and the tricuspid/atrial side to the right.",
+      "remainingLimits": [
+        "Tricuspid leaflet and subvalvular identities are not individually segmented."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 205673,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 48268,
+            "areaMm2": 1564.004,
+            "fraction": 0.234683
+          },
+          "LV": {
+            "tissuePixels": 53833,
+            "areaMm2": 1744.324,
+            "fraction": 0.261741
+          },
+          "RV": {
+            "tissuePixels": 44438,
+            "areaMm2": 1439.903,
+            "fraction": 0.216061
+          },
+          "LA": {
+            "tissuePixels": 4921,
+            "areaMm2": 159.453,
+            "fraction": 0.023926
+          },
+          "RA": {
+            "tissuePixels": 54213,
+            "areaMm2": 1756.637,
+            "fraction": 0.263588
+          },
+          "Aorta": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          },
+          "PA": {
+            "tissuePixels": 0,
+            "areaMm2": 0.0,
+            "fraction": 0.0
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 0,
+            "within10mm": 3,
+            "minimumDistanceMm": 7.073,
+            "medianDistanceMm": 19.395,
+            "maximumDistanceMm": 23.349
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 8,
+            "within10mm": 9,
+            "minimumDistanceMm": 0.063,
+            "medianDistanceMm": 3.019,
+            "maximumDistanceMm": 37.32
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 11.948,
+            "medianDistanceMm": 20.066,
+            "maximumDistanceMm": 28.177
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 4,
+            "within10mm": 5,
+            "minimumDistanceMm": 0.227,
+            "medianDistanceMm": 9.707,
+            "maximumDistanceMm": 24.187
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 24.199,
+            "medianDistanceMm": 37.831,
+            "maximumDistanceMm": 52.636
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 26.893,
+            "medianDistanceMm": 44.853,
+            "maximumDistanceMm": 55.922
+          }
+        }
+      }
+    },
+    "tglax": {
+      "aseNumber": 24,
+      "name": "Transgastric long-axis",
+      "currentStatus": "refined",
+      "summary": "The section follows the long LV into its outflow/root, with the ventricular/apical side to the left and basal outflow to the right.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "metrics": {
+        "sourceTissueThreshold": 40,
+        "sourceTissuePixels": 214864,
+        "regionalTissue": {
+          "Neutral": {
+            "tissuePixels": 38001,
+            "areaMm2": 1501.905,
+            "fraction": 0.176861
+          },
+          "LV": {
+            "tissuePixels": 96798,
+            "areaMm2": 3825.726,
+            "fraction": 0.450508
+          },
+          "RV": {
+            "tissuePixels": 21190,
+            "areaMm2": 837.488,
+            "fraction": 0.098621
+          },
+          "LA": {
+            "tissuePixels": 23738,
+            "areaMm2": 938.192,
+            "fraction": 0.110479
+          },
+          "RA": {
+            "tissuePixels": 5543,
+            "areaMm2": 219.075,
+            "fraction": 0.025798
+          },
+          "Aorta": {
+            "tissuePixels": 14469,
+            "areaMm2": 571.855,
+            "fraction": 0.06734
+          },
+          "PA": {
+            "tissuePixels": 15125,
+            "areaMm2": 597.782,
+            "fraction": 0.070393
+          }
+        },
+        "approximateCavityTracks": {
+          "LV": {
+            "sourceObservations": 12,
+            "within5mm": 11,
+            "within10mm": 12,
+            "minimumDistanceMm": 0.227,
+            "medianDistanceMm": 2.379,
+            "maximumDistanceMm": 5.564
+          },
+          "RV": {
+            "sourceObservations": 12,
+            "within5mm": 1,
+            "within10mm": 3,
+            "minimumDistanceMm": 1.877,
+            "medianDistanceMm": 15.757,
+            "maximumDistanceMm": 21.35
+          },
+          "LA": {
+            "sourceObservations": 11,
+            "within5mm": 5,
+            "within10mm": 7,
+            "minimumDistanceMm": 0.517,
+            "medianDistanceMm": 5.711,
+            "maximumDistanceMm": 24.675
+          },
+          "RA": {
+            "sourceObservations": 10,
+            "within5mm": 0,
+            "within10mm": 0,
+            "minimumDistanceMm": 16.312,
+            "medianDistanceMm": 23.982,
+            "maximumDistanceMm": 28.486
+          },
+          "Aorta": {
+            "sourceObservations": 10,
+            "within5mm": 6,
+            "within10mm": 8,
+            "minimumDistanceMm": 1.567,
+            "medianDistanceMm": 3.728,
+            "maximumDistanceMm": 10.711
+          },
+          "PA": {
+            "sourceObservations": 11,
+            "within5mm": 2,
+            "within10mm": 3,
+            "minimumDistanceMm": 2.391,
+            "medianDistanceMm": 16.212,
+            "maximumDistanceMm": 24.615
+          }
+        }
+      }
+    },
+    "daosax": {
+      "aseNumber": 25,
+      "name": "Descending aorta short-axis",
+      "outsideScan": true,
+      "disposition": "No acquired CT target; must remain explicitly outside scan."
+    },
+    "daolax": {
+      "aseNumber": 26,
+      "name": "Descending aorta long-axis",
+      "outsideScan": true,
+      "disposition": "No acquired CT target; must remain explicitly outside scan."
+    },
+    "uearchlax": {
+      "aseNumber": 27,
+      "name": "Upper esophageal aortic arch long-axis",
+      "outsideScan": true,
+      "disposition": "No acquired CT target; must remain explicitly outside scan."
+    },
+    "uearchsax": {
+      "aseNumber": 28,
+      "name": "Upper esophageal aortic arch short-axis",
+      "outsideScan": true,
+      "disposition": "No acquired CT target; must remain explicitly outside scan."
+    }
+  }
+}

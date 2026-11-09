@@ -1,0 +1,51 @@
+{
+  "selected": "source-constrained-hybrid",
+  "reason": "Nearest-cavity territory cuts into thick compact septum; unrestricted tissue travel can cross shared basal wall bridges. The selected method protects the donor-specific compact LV envelope, retains RV-facing surface ownership, and limits great-vessel color to tracked source walls with explicit uncertain transition collars.",
+  "candidates": {
+    "nearest-cavity": {
+      "annotatedVoxels": 4232229,
+      "labelCounts": {
+        "0": 28225718,
+        "1": 1756339,
+        "2": 1314080,
+        "3": 409440,
+        "4": 367198,
+        "5": 230201,
+        "6": 154971
+      },
+      "neutralMeasuredSupportVoxels": 422651,
+      "disagreesWithSelectedVoxels": 314788,
+      "compactLVEnvelopeLabeledLVFraction": 0.8358456614240307
+    },
+    "tissue-geodesic": {
+      "annotatedVoxels": 4221835,
+      "labelCounts": {
+        "0": 28236112,
+        "1": 2036988,
+        "2": 1053452,
+        "3": 382830,
+        "4": 369232,
+        "5": 223863,
+        "6": 155470
+      },
+      "neutralMeasuredSupportVoxels": 433045,
+      "disagreesWithSelectedVoxels": 37635,
+      "compactLVEnvelopeLabeledLVFraction": 0.9725367729651699
+    },
+    "source-constrained-hybrid": {
+      "annotatedVoxels": 4231051,
+      "labelCounts": {
+        "0": 28226896,
+        "1": 2050548,
+        "2": 1055851,
+        "3": 374646,
+        "4": 366025,
+        "5": 218388,
+        "6": 165593
+      },
+      "neutralMeasuredSupportVoxels": 423829,
+      "disagreesWithSelectedVoxels": 0,
+      "compactLVEnvelopeLabeledLVFraction": 0.9751910844790246
+    }
+  }
+}

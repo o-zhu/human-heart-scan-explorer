@@ -1,0 +1,492 @@
+{
+  "sourceVerifiedAgainstOfficialSHA256": true,
+  "sourceClosingFrameFullyVerified": true,
+  "allGzipPayloadsRoundTripByteExactly": true,
+  "totalUniqueCompressedBytes": 67775852,
+  "quantization": {
+    "overview": [
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 679944,
+        "aboveWindowVoxels": 8927,
+        "withinWindowVoxels": 1286754,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.175333023071289,
+        "withinWindowRmse": 1.3574930429458618,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 0
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 682328,
+        "aboveWindowVoxels": 9192,
+        "withinWindowVoxels": 1284105,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1751728057861328,
+        "withinWindowRmse": 1.3573592901229858,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 1
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 687117,
+        "aboveWindowVoxels": 8904,
+        "withinWindowVoxels": 1279604,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1769607067108154,
+        "withinWindowRmse": 1.3588627576828003,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 2
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 688655,
+        "aboveWindowVoxels": 9016,
+        "withinWindowVoxels": 1277954,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1766235828399658,
+        "withinWindowRmse": 1.3588147163391113,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 3
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 687367,
+        "aboveWindowVoxels": 9289,
+        "withinWindowVoxels": 1278969,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1766304969787598,
+        "withinWindowRmse": 1.3587273359298706,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 4
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 686912,
+        "aboveWindowVoxels": 9396,
+        "withinWindowVoxels": 1279317,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1764171123504639,
+        "withinWindowRmse": 1.358351230621338,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 5
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 687899,
+        "aboveWindowVoxels": 9565,
+        "withinWindowVoxels": 1278161,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1757522821426392,
+        "withinWindowRmse": 1.3578261137008667,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 6
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 687948,
+        "aboveWindowVoxels": 9980,
+        "withinWindowVoxels": 1277697,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1768219470977783,
+        "withinWindowRmse": 1.3588624000549316,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 7
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 688809,
+        "aboveWindowVoxels": 10540,
+        "withinWindowVoxels": 1276276,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1759566068649292,
+        "withinWindowRmse": 1.3580913543701172,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 8
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 688895,
+        "aboveWindowVoxels": 10359,
+        "withinWindowVoxels": 1276371,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1768747568130493,
+        "withinWindowRmse": 1.3590366840362549,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 9
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 690218,
+        "aboveWindowVoxels": 10190,
+        "withinWindowVoxels": 1275217,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1757632493972778,
+        "withinWindowRmse": 1.3575665950775146,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 10
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 693468,
+        "aboveWindowVoxels": 9825,
+        "withinWindowVoxels": 1272332,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1778136491775513,
+        "withinWindowRmse": 1.35975182056427,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 11
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 694459,
+        "aboveWindowVoxels": 9453,
+        "withinWindowVoxels": 1271713,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1752351522445679,
+        "withinWindowRmse": 1.357373833656311,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 12
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 691457,
+        "aboveWindowVoxels": 8972,
+        "withinWindowVoxels": 1275196,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1758615970611572,
+        "withinWindowRmse": 1.3578885793685913,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 13
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 687147,
+        "aboveWindowVoxels": 8629,
+        "withinWindowVoxels": 1279849,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1768324375152588,
+        "withinWindowRmse": 1.3587157726287842,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 14
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 685269,
+        "aboveWindowVoxels": 8099,
+        "withinWindowVoxels": 1282257,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.17628014087677,
+        "withinWindowRmse": 1.3582279682159424,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 15
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 683994,
+        "aboveWindowVoxels": 8383,
+        "withinWindowVoxels": 1283248,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1769003868103027,
+        "withinWindowRmse": 1.358607530593872,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 16
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 683129,
+        "aboveWindowVoxels": 8309,
+        "withinWindowVoxels": 1284187,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1767460107803345,
+        "withinWindowRmse": 1.359044075012207,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 17
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 681015,
+        "aboveWindowVoxels": 8053,
+        "withinWindowVoxels": 1286557,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1768932342529297,
+        "withinWindowRmse": 1.3588480949401855,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 18
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 681206,
+        "aboveWindowVoxels": 8241,
+        "withinWindowVoxels": 1286178,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.175808310508728,
+        "withinWindowRmse": 1.357990026473999,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 19
+      },
+      {
+        "voxels": 1975625,
+        "belowWindowVoxels": 679944,
+        "aboveWindowVoxels": 8927,
+        "withinWindowVoxels": 1286754,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.175333023071289,
+        "withinWindowRmse": 1.3574930429458618,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 20
+      }
+    ],
+    "native-detail": [
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 379422,
+        "aboveWindowVoxels": 48110,
+        "withinWindowVoxels": 1652468,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1776058673858643,
+        "withinWindowRmse": 1.36007559299469,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 0
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 395606,
+        "aboveWindowVoxels": 51154,
+        "withinWindowVoxels": 1633240,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1778370141983032,
+        "withinWindowRmse": 1.3598966598510742,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 1
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 410263,
+        "aboveWindowVoxels": 51647,
+        "withinWindowVoxels": 1618090,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1781153678894043,
+        "withinWindowRmse": 1.3606369495391846,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 2
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 407658,
+        "aboveWindowVoxels": 55106,
+        "withinWindowVoxels": 1617236,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1762527227401733,
+        "withinWindowRmse": 1.358864188194275,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 3
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 401115,
+        "aboveWindowVoxels": 57552,
+        "withinWindowVoxels": 1621333,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1776542663574219,
+        "withinWindowRmse": 1.3599696159362793,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 4
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 396874,
+        "aboveWindowVoxels": 59233,
+        "withinWindowVoxels": 1623893,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1765258312225342,
+        "withinWindowRmse": 1.3589451313018799,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 5
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 390295,
+        "aboveWindowVoxels": 60844,
+        "withinWindowVoxels": 1628861,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.176483154296875,
+        "withinWindowRmse": 1.3590669631958008,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 6
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 382933,
+        "aboveWindowVoxels": 62859,
+        "withinWindowVoxels": 1634208,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1778875589370728,
+        "withinWindowRmse": 1.3602521419525146,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 7
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 381858,
+        "aboveWindowVoxels": 66662,
+        "withinWindowVoxels": 1631480,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1775636672973633,
+        "withinWindowRmse": 1.359882116317749,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 8
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 376123,
+        "aboveWindowVoxels": 65513,
+        "withinWindowVoxels": 1638364,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.176993727684021,
+        "withinWindowRmse": 1.3595211505889893,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 9
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 384715,
+        "aboveWindowVoxels": 63124,
+        "withinWindowVoxels": 1632161,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.177931547164917,
+        "withinWindowRmse": 1.360246181488037,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 10
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 398793,
+        "aboveWindowVoxels": 62394,
+        "withinWindowVoxels": 1618813,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.177260398864746,
+        "withinWindowRmse": 1.3597548007965088,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 11
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 404439,
+        "aboveWindowVoxels": 59592,
+        "withinWindowVoxels": 1615969,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1768250465393066,
+        "withinWindowRmse": 1.359389066696167,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 12
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 398198,
+        "aboveWindowVoxels": 56660,
+        "withinWindowVoxels": 1625142,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1765307188034058,
+        "withinWindowRmse": 1.3591151237487793,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 13
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 393121,
+        "aboveWindowVoxels": 54548,
+        "withinWindowVoxels": 1632331,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1766173839569092,
+        "withinWindowRmse": 1.3590528964996338,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 14
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 389921,
+        "aboveWindowVoxels": 50692,
+        "withinWindowVoxels": 1639387,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1776442527770996,
+        "withinWindowRmse": 1.3600794076919556,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 15
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 390469,
+        "aboveWindowVoxels": 50267,
+        "withinWindowVoxels": 1639264,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1767442226409912,
+        "withinWindowRmse": 1.359394907951355,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 16
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 384859,
+        "aboveWindowVoxels": 48236,
+        "withinWindowVoxels": 1646905,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1773910522460938,
+        "withinWindowRmse": 1.3598231077194214,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 17
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 380191,
+        "aboveWindowVoxels": 45403,
+        "withinWindowVoxels": 1654406,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1764488220214844,
+        "withinWindowRmse": 1.359177827835083,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 18
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 379811,
+        "aboveWindowVoxels": 44793,
+        "withinWindowVoxels": 1655396,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1778978109359741,
+        "withinWindowRmse": 1.3603765964508057,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 19
+      },
+      {
+        "voxels": 2080000,
+        "belowWindowVoxels": 379422,
+        "aboveWindowVoxels": 48110,
+        "withinWindowVoxels": 1652468,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1776058673858643,
+        "withinWindowRmse": 1.36007559299469,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 20
+      }
+    ],
+    "native-reference": [
+      {
+        "voxels": 15805000,
+        "belowWindowVoxels": 5526344,
+        "aboveWindowVoxels": 79716,
+        "withinWindowVoxels": 10198940,
+        "withinWindowMaxAbsoluteError": 2.35296630859375,
+        "withinWindowMeanAbsoluteError": 1.1785567998886108,
+        "withinWindowRmse": 1.3612791299819946,
+        "errorUnits": "Stored source scalar units; overview errors are relative to the 2\u00d72\u00d72 block mean.",
+        "index": 0
+      }
+    ]
+  },
+  "caveats": [
+    "Error measurements exclude clipped values and do not establish perceptual or diagnostic equivalence.",
+    "The overview uses spatial averaging; native reference and native detail do not.",
+    "Cardiac crop coverage was visually reviewed on multiple planes and phases; it is not an expert anatomical segmentation."
+  ]
+}

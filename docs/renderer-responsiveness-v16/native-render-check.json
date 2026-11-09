@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "donor": "ladaf-2021-17",
+      "source": "resident-volume",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 71660,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "source": "resident-volume",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "source": "prepared-ultra",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 66790,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "source": "prepared-ultra",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 0,
+      "clipped": false,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 0,
+      "clipped": true,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 1,
+      "clipped": false,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 1,
+      "clipped": true,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 2,
+      "clipped": false,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "mode": 2,
+      "clipped": true,
+      "tiledEqualsSinglePass": true,
+      "outputPixels": 39060,
+      "maxBandPixels": 5580
+    },
+    {
+      "donor": "s-20-29",
+      "source": "resident-volume",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 29310,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-29",
+      "source": "resident-volume",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-29",
+      "source": "prepared-ultra",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 27730,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-29",
+      "source": "prepared-ultra",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-28",
+      "source": "resident-volume",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 28923,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-28",
+      "source": "resident-volume",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-28",
+      "source": "prepared-ultra",
+      "retainedSide": false,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 27434,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    },
+    {
+      "donor": "s-20-28",
+      "source": "prepared-ultra",
+      "retainedSide": true,
+      "tiledEqualsSinglePass": true,
+      "finalCompositeEqualsSinglePass": true,
+      "capPixels": 0,
+      "movingFaceEqualsSinglePass": true,
+      "outputPixels": 289100,
+      "maxBandPixels": 15190
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "scope": "Production GLSL in native EGL. Three hash-verified measured donor volumes/caps; resident/prepared faces, retained-side occlusion, singlepass versus banded fullresolution output, complete final composition, all modes and clipped/wholeorgan coordinates. Not browser FPS or a clinical validation.",
+  "shaderSourcesSha256": "5cdc6ea331b6cb33da81a1a4ccd08cb0e929ee31c81571bba7a61a006798fad4"
+}

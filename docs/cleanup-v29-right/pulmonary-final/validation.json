@@ -1,0 +1,1438 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 377,
+    "decodedBrickReads": 377,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "capSources": [
+    {
+      "kind": "Verified original ultra-volume bricks",
+      "axis": 0,
+      "coordinate": 760
+    }
+  ],
+  "checks": [
+    {
+      "case": {
+        "id": "pulmonary-x191",
+        "axis": 0,
+        "coordinate": 760,
+        "target": [
+          760,
+          1250,
+          845
+        ],
+        "distance": 0.45
+      },
+      "changedPixels": 31342,
+      "totalPixels": 604800,
+      "reversible": true,
+      "originalOffExact": true,
+      "sourceCapSha256": "6dcb967dfd69b2b41d84451868f50eccb6446f9f517e3bf60f77d25e3e15bef0",
+      "imageHashes": {
+        "before": "06dccffeb0140daaa0c447aca60febdede61ce05190a4e0cd3e267e65dbad424",
+        "after": "054e5de3bed96b596707534e1d93fb6146a1653f3c40b1b2af365e4580d8527a"
+      },
+      "world": {
+        "center": [
+          -0.08884688090737237,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.3595807735553727,
+          -0.1118723170704533,
+          -0.178596329559288
+        ],
+        "_target": [
+          -0.08884688090737237,
+          -0.10066162570888466,
+          -0.1427221172022684
+        ],
+        "_whole": false
+      }
+    }
+  ],
+  "originalPatches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "lowerFullFineXYZ": [
+        1048,
+        944,
+        1080
+      ],
+      "upperFullFineXYZ": [
+        1212,
+        1120,
+        1372
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-policy.json",
+        "sha256": "7d3bcb3d380775d77692e3a764dcf562d0ab12ac1036b0fd761605a73a9b710e"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 140253,
+        "triangles": 282600,
+        "vertexCount": 140253,
+        "indexCount": 847800,
+        "positionOffset": 32,
+        "normalOffset": 841552,
+        "indexOffset": 1683072,
+        "compressedBytes": 2998934,
+        "decodedBytes": 5074272,
+        "sha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+        "decodedSha256": "92cec7c8107f4327e566b93a1cf6497e9e48bf36fc4da21ce9d8bfed1c2622bc",
+        "bounds": {
+          "min": [
+            0.04725898057222366,
+            0.010396975092589855,
+            -0.08081285655498505
+          ],
+          "max": [
+            0.12429111450910568,
+            0.1479206085205078,
+            0.0018903592135757208
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5074236,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          1048,
+          944,
+          1080
+        ],
+        "upperFullFineXYZ": [
+          1212,
+          1120,
+          1372
+        ],
+        "dimensionsXYZ": [
+          164,
+          176,
+          292
+        ],
+        "storageDimensionsXYZ": [
+          21,
+          176,
+          292
+        ],
+        "compressedBytes": 213638,
+        "decodedBytes": 1079232,
+        "sha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+        "decodedSha256": "ae767162fde094550f552da414ad5de04a3845282fbaa1c3025340c0ca0295cc",
+        "maskedVoxels": 581627,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "lowerFullFineXYZ": [
+        600,
+        660,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        870,
+        1040,
+        1350
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-right/patch/tricuspid-core-surface-policy.json",
+        "sha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 154271,
+        "triangles": 302706,
+        "vertexCount": 154271,
+        "indexCount": 908118,
+        "positionOffset": 32,
+        "normalOffset": 925660,
+        "indexOffset": 1851288,
+        "compressedBytes": 3210789,
+        "decodedBytes": 5483760,
+        "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+        "decodedSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+        "bounds": {
+          "min": [
+            -0.16446125507354736,
+            -0.01795841194689274,
+            -0.043005671352148056
+          ],
+          "max": [
+            -0.03733459487557411,
+            0.13752363622188568,
+            0.13610586524009705
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5483724,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          600,
+          660,
+          1020
+        ],
+        "upperFullFineXYZ": [
+          870,
+          1040,
+          1350
+        ],
+        "dimensionsXYZ": [
+          270,
+          380,
+          330
+        ],
+        "storageDimensionsXYZ": [
+          34,
+          380,
+          330
+        ],
+        "compressedBytes": 342653,
+        "decodedBytes": 4263600,
+        "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+        "decodedSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+        "maskedVoxels": 769532,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "pulmonary-valve-lumen-surface",
+      "lowerFullFineXYZ": [
+        604,
+        1080,
+        540
+      ],
+      "upperFullFineXYZ": [
+        790,
+        1360,
+        972
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-right/patch/pulmonary-valve-lumen-surface-policy.json",
+        "sha256": "ee2c10ca7d0b912c2cb71760364b6f5fc7efaac971513d3a563f69fa2c7cfd35"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 242338,
+        "triangles": 535534,
+        "vertexCount": 242338,
+        "indexCount": 1606602,
+        "positionOffset": 32,
+        "normalOffset": 1454060,
+        "indexOffset": 2908088,
+        "compressedBytes": 5324033,
+        "decodedBytes": 9334496,
+        "sha256": "01887f732cb6f8fbc2d2d2e0e53b926c022c0a696bd66c1b091dbb17b430ca3e",
+        "decodedSha256": "90f1c07ba2f9126dfc163803417cdaf31212bdc6f8df35ed336892904e991802",
+        "bounds": {
+          "min": [
+            -0.16257089376449585,
+            -0.24480150640010834,
+            -0.19423440098762512
+          ],
+          "max": [
+            -0.0751417800784111,
+            -0.04111531376838684,
+            -0.06238185241818428
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 9334464,
+        "url": "./assets/cleanup-v28/pulmonary-valve-lumen-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          604,
+          1080,
+          540
+        ],
+        "upperFullFineXYZ": [
+          790,
+          1360,
+          972
+        ],
+        "dimensionsXYZ": [
+          186,
+          280,
+          432
+        ],
+        "storageDimensionsXYZ": [
+          24,
+          280,
+          432
+        ],
+        "compressedBytes": 407714,
+        "decodedBytes": 2903040,
+        "sha256": "4ed772ebefff497501ed9500bbdcd80c91619909894171640e34af8e0426e18b",
+        "decodedSha256": "6334a47920260536ab51b007708c71ddc3550f4b304bcf073fe6d28a9d34ce5a",
+        "maskedVoxels": 970563,
+        "url": "./assets/cleanup-v28/pulmonary-valve-lumen-surface-low-band.bits.gz"
+      }
+    }
+  ],
+  "candidatePatches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "lowerFullFineXYZ": [
+        1048,
+        944,
+        1080
+      ],
+      "upperFullFineXYZ": [
+        1212,
+        1120,
+        1372
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-policy.json",
+        "sha256": "7d3bcb3d380775d77692e3a764dcf562d0ab12ac1036b0fd761605a73a9b710e"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 140253,
+        "triangles": 282600,
+        "vertexCount": 140253,
+        "indexCount": 847800,
+        "positionOffset": 32,
+        "normalOffset": 841552,
+        "indexOffset": 1683072,
+        "compressedBytes": 2998934,
+        "decodedBytes": 5074272,
+        "sha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+        "decodedSha256": "92cec7c8107f4327e566b93a1cf6497e9e48bf36fc4da21ce9d8bfed1c2622bc",
+        "bounds": {
+          "min": [
+            0.04725898057222366,
+            0.010396975092589855,
+            -0.08081285655498505
+          ],
+          "max": [
+            0.12429111450910568,
+            0.1479206085205078,
+            0.0018903592135757208
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5074236,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          1048,
+          944,
+          1080
+        ],
+        "upperFullFineXYZ": [
+          1212,
+          1120,
+          1372
+        ],
+        "dimensionsXYZ": [
+          164,
+          176,
+          292
+        ],
+        "storageDimensionsXYZ": [
+          21,
+          176,
+          292
+        ],
+        "compressedBytes": 213638,
+        "decodedBytes": 1079232,
+        "sha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+        "decodedSha256": "ae767162fde094550f552da414ad5de04a3845282fbaa1c3025340c0ca0295cc",
+        "maskedVoxels": 581627,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "lowerFullFineXYZ": [
+        600,
+        660,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        870,
+        1040,
+        1350
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-right/patch/tricuspid-core-surface-policy.json",
+        "sha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 154271,
+        "triangles": 302706,
+        "vertexCount": 154271,
+        "indexCount": 908118,
+        "positionOffset": 32,
+        "normalOffset": 925660,
+        "indexOffset": 1851288,
+        "compressedBytes": 3210789,
+        "decodedBytes": 5483760,
+        "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+        "decodedSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+        "bounds": {
+          "min": [
+            -0.16446125507354736,
+            -0.01795841194689274,
+            -0.043005671352148056
+          ],
+          "max": [
+            -0.03733459487557411,
+            0.13752363622188568,
+            0.13610586524009705
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5483724,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          600,
+          660,
+          1020
+        ],
+        "upperFullFineXYZ": [
+          870,
+          1040,
+          1350
+        ],
+        "dimensionsXYZ": [
+          270,
+          380,
+          330
+        ],
+        "storageDimensionsXYZ": [
+          34,
+          380,
+          330
+        ],
+        "compressedBytes": 342653,
+        "decodedBytes": 4263600,
+        "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+        "decodedSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+        "maskedVoxels": 769532,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "pulmonary-lumen-v29",
+      "surface": {
+        "format": "HFM1-gzip",
+        "file": "pulmonary-lumen-v29.hfm.gz",
+        "vertices": 233367,
+        "triangles": 514232,
+        "vertexCount": 233367,
+        "indexCount": 1542696,
+        "positionOffset": 32,
+        "normalOffset": 1400236,
+        "indexOffset": 2800440,
+        "compressedBytes": 5109781,
+        "decodedBytes": 8971224,
+        "sha256": "7cb87c4ee1c82bd99cd9956e24bdade329a22412f068c5a77a933c23608985ee",
+        "decodedSha256": "189a31dac09a9cb8a264e8d83f7b7240e6cd1b4147af5361e785d66ebd7f8570",
+        "bounds": {
+          "min": [
+            -0.16257089376449585,
+            -0.24480150640010834,
+            -0.19423440098762512
+          ],
+          "max": [
+            -0.0751417800784111,
+            -0.04111531376838684,
+            -0.06238185241818428
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 8971188
+      },
+      "lowerFullFineXYZ": [
+        604,
+        1080,
+        540
+      ],
+      "upperFullFineXYZ": [
+        790,
+        1360,
+        972
+      ],
+      "dimensionsXYZ": [
+        186,
+        280,
+        432
+      ],
+      "sourceSigmaFineSamples": 0.5,
+      "sourceSigmaTruncate": 3,
+      "sourceSpacingUm": 79.4,
+      "sourcePaddedRoiSha256": "17facc33b5206cd9b619ff315a10d79b5ee4cf088ca8ae6b27e35e340afaa1f7",
+      "sourceRoiSha256": "806f0b2d12128b1c88ac2ae43621fd677a6fdc3b30942b3139d0c42ab0c859c6",
+      "source": {
+        "sourceManifest": "public/assets/ultra-volume-v7.json",
+        "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+        "verifiedUniqueBricks": 151,
+        "decodedBrickReads": 151,
+        "cacheMaximumBricks": 12,
+        "cacheMaximumBytes": 3295500,
+        "sourceSpacingUm": 79.4,
+        "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+        "sourceUnchanged": true,
+        "originalQuantitativeIntensities": false
+      },
+      "baselineThreshold": 71.4,
+      "config": {
+        "id": "pulmonary-lumen-v29",
+        "sliceAxis": 0,
+        "lowerXYZ": [
+          604,
+          1080,
+          540
+        ],
+        "upperXYZ": [
+          790,
+          1360,
+          972
+        ],
+        "interiorThreshold": 120,
+        "polygonCollarSamples": 12,
+        "boxCollarSamples": 8,
+        "endCollarSamples": 12,
+        "polygons": {
+          "616": [
+            [
+              1160,
+              760
+            ],
+            [
+              1240,
+              745
+            ],
+            [
+              1290,
+              790
+            ],
+            [
+              1305,
+              850
+            ],
+            [
+              1285,
+              925
+            ],
+            [
+              1230,
+              954
+            ],
+            [
+              1160,
+              947
+            ],
+            [
+              1100,
+              882
+            ],
+            [
+              1100,
+              820
+            ]
+          ],
+          "636": [
+            [
+              1150,
+              746
+            ],
+            [
+              1200,
+              720
+            ],
+            [
+              1260,
+              704
+            ],
+            [
+              1300,
+              710
+            ],
+            [
+              1335,
+              760
+            ],
+            [
+              1338,
+              858
+            ],
+            [
+              1305,
+              944
+            ],
+            [
+              1220,
+              960
+            ],
+            [
+              1120,
+              922
+            ],
+            [
+              1092,
+              864
+            ],
+            [
+              1100,
+              810
+            ]
+          ],
+          "656": [
+            [
+              1160,
+              720
+            ],
+            [
+              1220,
+              670
+            ],
+            [
+              1265,
+              640
+            ],
+            [
+              1300,
+              645
+            ],
+            [
+              1338,
+              680
+            ],
+            [
+              1342,
+              790
+            ],
+            [
+              1333,
+              885
+            ],
+            [
+              1290,
+              954
+            ],
+            [
+              1185,
+              959
+            ],
+            [
+              1100,
+              910
+            ],
+            [
+              1090,
+              848
+            ],
+            [
+              1110,
+              787
+            ]
+          ],
+          "676": [
+            [
+              1180,
+              710
+            ],
+            [
+              1220,
+              644
+            ],
+            [
+              1280,
+              607
+            ],
+            [
+              1335,
+              615
+            ],
+            [
+              1344,
+              705
+            ],
+            [
+              1344,
+              827
+            ],
+            [
+              1323,
+              910
+            ],
+            [
+              1285,
+              960
+            ],
+            [
+              1164,
+              954
+            ],
+            [
+              1091,
+              907
+            ],
+            [
+              1090,
+              847
+            ],
+            [
+              1120,
+              787
+            ]
+          ],
+          "696": [
+            [
+              1180,
+              710
+            ],
+            [
+              1220,
+              624
+            ],
+            [
+              1288,
+              605
+            ],
+            [
+              1337,
+              620
+            ],
+            [
+              1345,
+              724
+            ],
+            [
+              1344,
+              830
+            ],
+            [
+              1335,
+              910
+            ],
+            [
+              1293,
+              959
+            ],
+            [
+              1200,
+              959
+            ],
+            [
+              1120,
+              920
+            ],
+            [
+              1091,
+              865
+            ],
+            [
+              1092,
+              800
+            ],
+            [
+              1140,
+              770
+            ]
+          ],
+          "716": [
+            [
+              1200,
+              690
+            ],
+            [
+              1240,
+              615
+            ],
+            [
+              1300,
+              605
+            ],
+            [
+              1340,
+              634
+            ],
+            [
+              1345,
+              735
+            ],
+            [
+              1346,
+              831
+            ],
+            [
+              1343,
+              918
+            ],
+            [
+              1301,
+              960
+            ],
+            [
+              1210,
+              958
+            ],
+            [
+              1140,
+              909
+            ],
+            [
+              1092,
+              867
+            ],
+            [
+              1091,
+              799
+            ],
+            [
+              1140,
+              768
+            ]
+          ],
+          "736": [
+            [
+              1218,
+              700
+            ],
+            [
+              1260,
+              630
+            ],
+            [
+              1313,
+              630
+            ],
+            [
+              1340,
+              655
+            ],
+            [
+              1347,
+              740
+            ],
+            [
+              1348,
+              836
+            ],
+            [
+              1344,
+              921
+            ],
+            [
+              1300,
+              960
+            ],
+            [
+              1230,
+              959
+            ],
+            [
+              1180,
+              900
+            ],
+            [
+              1120,
+              864
+            ],
+            [
+              1112,
+              800
+            ],
+            [
+              1180,
+              772
+            ]
+          ],
+          "756": [
+            [
+              1250,
+              740
+            ],
+            [
+              1290,
+              687
+            ],
+            [
+              1320,
+              683
+            ],
+            [
+              1340,
+              723
+            ],
+            [
+              1346,
+              826
+            ],
+            [
+              1344,
+              920
+            ],
+            [
+              1310,
+              956
+            ],
+            [
+              1250,
+              939
+            ],
+            [
+              1210,
+              880
+            ],
+            [
+              1190,
+              816
+            ]
+          ],
+          "778": [
+            [
+              1260,
+              806
+            ],
+            [
+              1291,
+              780
+            ],
+            [
+              1330,
+              780
+            ],
+            [
+              1340,
+              827
+            ],
+            [
+              1331,
+              908
+            ],
+            [
+              1290,
+              929
+            ],
+            [
+              1253,
+              886
+            ]
+          ]
+        },
+        "scope": "Retain the v28 pulmonary wall source field exactly. Apply the stronger display threshold only within serially reviewed, FloatXYZ-localized weak perivalvular veil polygons; exclude the smooth proximal arterial wall. All smoothed155 and original190 cores preserved. Not calibrated HU or a tissue identity classification.",
+        "extraThreshold": 155,
+        "extraCollarSamples": 10,
+        "extraPolygons": {
+          "626": [
+            [
+              1110,
+              810
+            ],
+            [
+              1180,
+              793
+            ],
+            [
+              1250,
+              808
+            ],
+            [
+              1290,
+              844
+            ],
+            [
+              1280,
+              905
+            ],
+            [
+              1210,
+              934
+            ],
+            [
+              1130,
+              896
+            ]
+          ],
+          "646": [
+            [
+              1113,
+              806
+            ],
+            [
+              1185,
+              802
+            ],
+            [
+              1267,
+              821
+            ],
+            [
+              1300,
+              852
+            ],
+            [
+              1270,
+              919
+            ],
+            [
+              1180,
+              926
+            ],
+            [
+              1110,
+              880
+            ]
+          ],
+          "666": [
+            [
+              1110,
+              808
+            ],
+            [
+              1174,
+              792
+            ],
+            [
+              1250,
+              810
+            ],
+            [
+              1300,
+              850
+            ],
+            [
+              1290,
+              905
+            ],
+            [
+              1230,
+              935
+            ],
+            [
+              1155,
+              918
+            ],
+            [
+              1100,
+              870
+            ]
+          ],
+          "686": [
+            [
+              1108,
+              813
+            ],
+            [
+              1180,
+              791
+            ],
+            [
+              1260,
+              814
+            ],
+            [
+              1305,
+              845
+            ],
+            [
+              1308,
+              904
+            ],
+            [
+              1240,
+              936
+            ],
+            [
+              1160,
+              923
+            ],
+            [
+              1110,
+              882
+            ]
+          ],
+          "706": [
+            [
+              1120,
+              820
+            ],
+            [
+              1190,
+              800
+            ],
+            [
+              1256,
+              819
+            ],
+            [
+              1305,
+              858
+            ],
+            [
+              1304,
+              910
+            ],
+            [
+              1240,
+              937
+            ],
+            [
+              1170,
+              920
+            ],
+            [
+              1120,
+              880
+            ]
+          ],
+          "730": [
+            [
+              1150,
+              828
+            ],
+            [
+              1200,
+              811
+            ],
+            [
+              1280,
+              835
+            ],
+            [
+              1310,
+              873
+            ],
+            [
+              1303,
+              922
+            ],
+            [
+              1240,
+              936
+            ],
+            [
+              1180,
+              909
+            ]
+          ],
+          "750": [
+            [
+              1210,
+              840
+            ],
+            [
+              1260,
+              835
+            ],
+            [
+              1305,
+              866
+            ],
+            [
+              1302,
+              919
+            ],
+            [
+              1250,
+              930
+            ],
+            [
+              1210,
+              904
+            ]
+          ]
+        }
+      },
+      "counts": {
+        "originalForeground": 7927474,
+        "refinedForeground": 6787781,
+        "removedForeground": 1139693,
+        "protected155Samples": 2945931,
+        "lostProtected155Samples": 0,
+        "raw190Samples": 1183484,
+        "lostRaw190Samples": 0,
+        "maximumLocalThreshold": 155.0,
+        "boxBoundaryNonBaselineSamples": 0
+      },
+      "serial": [
+        {
+          "fineX": 616,
+          "removedForeground": 0,
+          "maximumThreshold": 71.4000015258789
+        },
+        {
+          "fineX": 636,
+          "removedForeground": 10411,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 656,
+          "removedForeground": 12264,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 676,
+          "removedForeground": 13308,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 696,
+          "removedForeground": 11590,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 716,
+          "removedForeground": 7300,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 736,
+          "removedForeground": 2525,
+          "maximumThreshold": 155.0
+        },
+        {
+          "fineX": 756,
+          "removedForeground": 1566,
+          "maximumThreshold": 120.0
+        },
+        {
+          "fineX": 778,
+          "removedForeground": 0,
+          "maximumThreshold": 71.4000015258789
+        }
+      ],
+      "lowBandMask": {
+        "file": "pulmonary-lumen-v29-low-band.bits.gz",
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          604,
+          1080,
+          540
+        ],
+        "upperFullFineXYZ": [
+          790,
+          1360,
+          972
+        ],
+        "dimensionsXYZ": [
+          186,
+          280,
+          432
+        ],
+        "storageDimensionsXYZ": [
+          24,
+          280,
+          432
+        ],
+        "compressedBytes": 408027,
+        "decodedBytes": 2903040,
+        "sha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4",
+        "decodedSha256": "36199056983b11ab1902c073d32975bb1bf5194efcd4f31e982ac08dc0198413",
+        "maskedVoxels": 1139693
+      },
+      "unchangedBoxCollar": true,
+      "originalSourceModified": false,
+      "sourceCalibratedHU": false,
+      "limitations": [
+        "Local display refinement, not a clinical tissue label.",
+        "Original mesh remains available; replacement is reversible.",
+        "Boundary matches original source isovalue but is not welded to the decimated original mesh.",
+        "Fine-grid resampling cannot recover native 19.85 \u00b5m structure."
+      ],
+      "method": "Raise the source sigma 0.5 isovalue only inside serially reviewed polygons, with cubic smoothstep collars on polygon distance, box faces and the selected slice-axis endpoints. Extract the complete zero isosurface of source minus local threshold, so retained cores receive a source-derived surface instead of holes in the old low-threshold surface.",
+      "builder": "scripts/cleanup-v29-right/build_patch.py",
+      "upstreamBuilder": "scripts/cleanup-v28-right/adaptive_patch.py",
+      "upstreamBuilderSha256": "fa644935b5a24a8211bc634b741102dd4625740aa6d0d4585f9dbd32296f2bd1",
+      "protectedSmoothedDisplayLevel": 155,
+      "protectedOriginalDisplayLevel": 190,
+      "surfaceReference": {
+        "format": "SFR1-gzip",
+        "file": "pulmonary-lumen-v29.sfr.gz",
+        "vertices": 2654969,
+        "triangles": 5245691,
+        "vertexCount": 2654969,
+        "indexCount": 15737073,
+        "positionOffset": 32,
+        "normalOffset": 31859660,
+        "indexOffset": 47789476,
+        "compressedBytes": 51308605,
+        "decodedBytes": 110737768,
+        "sha256": "06249d3164181f6dfba965622ff85bf3735fddc6e927dd7e3d11ede2f0a9431c",
+        "decodedSha256": "8b1af32f6eb9a53ae48772a0efd754666d83e47e38366a97a5e1552380d4078a",
+        "bounds": {
+          "min": [
+            -0.16257089376449585,
+            -0.24480150640010834,
+            -0.19423440098762512
+          ],
+          "max": [
+            -0.0751417800784111,
+            -0.04111531376838684,
+            -0.06238185241818428
+          ]
+        },
+        "positionEncoding": "float32 world XYZ",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal"
+      },
+      "inheritedDetachedDisplayCleanup": {
+        "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+        "inputComponents": 29630,
+        "removedCompleteComponents": 28113,
+        "removedTriangles": 459544,
+        "removedVertices": 285846,
+        "retainedCropBoundaryComponents": 1094,
+        "largestProtected": true,
+        "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+        "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+      },
+      "meshReduction": {
+        "inputVertices": 2369123,
+        "inputTriangles": 4786147,
+        "vertices": 233454,
+        "triangles": 514809,
+        "conservativeRadiusLimitMm": 0.3176,
+        "maximumConservativeRadiusMm": 0.3176,
+        "radiusRejections": 1258952,
+        "linkRejections": 822638,
+        "frozenBoundaryVertices": true,
+        "interiorEdgeLinkConstraint": true,
+        "seconds": 16.6282,
+        "peakRssMiB": 1294.75,
+        "deliveredSourceToSurface": {
+          "samples": 12000,
+          "meanMm": 0.013853697630108141,
+          "rmsMm": 0.02071402637874019,
+          "medianMm": 0.008585564887982313,
+          "p95Mm": 0.04355258364930615,
+          "p99Mm": 0.07385478630191207,
+          "maximumSampledMm": 0.15086475527307938
+        },
+        "deliveredSurfaceToSource": {
+          "samples": 12000,
+          "meanMm": 0.011992052497568599,
+          "rmsMm": 0.016707301063265963,
+          "medianMm": 0.008302327339836943,
+          "p95Mm": 0.03550544541969667,
+          "p99Mm": 0.05133966826189523,
+          "maximumSampledMm": 0.09219131179522817
+        },
+        "quantizationMaximumErrorMm": 0.0018885106737372929,
+        "quantizationZeroAreaFacesRemoved": 577,
+        "orphanVerticesCompacted": 87,
+        "cancellingNormalFallbacks": 5,
+        "finiteSampleSeed": 2800714,
+        "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+      }
+    }
+  ],
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 1573004,
+    "removedOffscreenOrClippedTriangles": 22045681,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "pulmonary-x191",
+      "axis": 0,
+      "coordinate": 760,
+      "target": [
+        760,
+        1250,
+        845
+      ],
+      "distance": 0.45
+    }
+  },
+  "productionShaders": true,
+  "rendererSha256": "781bb1e723c2af81fbf8e54bda72769a7bee7a6fc1f4dea8076035ebeed5b574",
+  "fineSurfaceSha256": "d0feb9cea8ce33e37e410cdd6b0e10ae0e44a1b4495f103e2b27cb49a16e0f3b",
+  "scope": "Same camera, production GLSL, exact source vertices and measured source cap. This compares only bounded surface replacements. Not a clinical validation or browser-performance claim.",
+  "reviewStreaming": {
+    "trianglesPerDraw": 100000,
+    "maximumBatchVertices": 60986,
+    "maximumBatchGpuBytes": 1992818,
+    "drawCalls": 80,
+    "triangleOrderPreserved": true,
+    "sourceAttributesUnchanged": true,
+    "framebufferAndDepthPreservedBetweenBatches": true,
+    "productionShadersUnmodified": true
+  }
+}

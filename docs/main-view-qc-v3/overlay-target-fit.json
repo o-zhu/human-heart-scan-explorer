@@ -1,0 +1,546 @@
+{
+  "rv-inflow": {
+    "selected": {
+      "dr": -0.025,
+      "du": 0.0,
+      "distance": 1.7769278914403441,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.7869278914403441,
+      "target": [
+        -0.02946091414020017,
+        0.04881677236066099,
+        0.15111572802177592
+      ],
+      "imageBounds": [
+        [
+          307.88875510892876,
+          107.19240449989445
+        ],
+        [
+          649.2899252567387,
+          753.2799980686395
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.7769278914403444,
+      "overlapIntro": 196.8071995876744,
+      "overlapToolbar": 0.0,
+      "cost": 1.7769278914403444,
+      "target": [
+        -0.0056710775047258966,
+        0.05387523629489602,
+        0.15689981096408318
+      ],
+      "imageBounds": [
+        [
+          289.0064385494693,
+          107.1924044998945
+        ],
+        [
+          629.2832448940392,
+          753.2799980686395
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 414,
+      "hullVertices": 306,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "rv-outflow": {
+    "selected": {
+      "dr": -0.085,
+      "du": 0.02,
+      "distance": 1.5728059011409818,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.6077343995341278,
+      "target": [
+        0.11674997639010935,
+        0.09478417960495406,
+        -0.02060764708316805
+      ],
+      "imageBounds": [
+        [
+          329.7638796127109,
+          104.76741909935964
+        ],
+        [
+          763.7360424614964,
+          753.2799982986197
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.6459960288381525,
+      "overlapIntro": 4673.804809581063,
+      "overlapToolbar": 0.0,
+      "cost": 1.6459960288381525,
+      "target": [
+        0.03497164461247637,
+        0.10586011342155008,
+        -0.04914933837429111
+      ],
+      "imageBounds": [
+        [
+          266.33341279558675,
+          102.71999838171757
+        ],
+        [
+          672.7507901311911,
+          720.9463398804188
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 376,
+      "hullVertices": 425,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "lv-inflow": {
+    "selected": {
+      "dr": -0.025,
+      "du": 0.0,
+      "distance": 1.9779543991283703,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.9879543991283704,
+      "target": [
+        0.003361275743711735,
+        -0.0012989075707227982,
+        0.08087404072874252
+      ],
+      "imageBounds": [
+        [
+          310.78715372395226,
+          105.1343790946383
+        ],
+        [
+          686.2772467432529,
+          753.2799980757264
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.9779543991283703,
+      "overlapIntro": 223.3661287528812,
+      "overlapToolbar": 0.0,
+      "cost": 1.9779543991283703,
+      "target": [
+        0.028355387523629497,
+        -0.000945179584120992,
+        0.08128544423440454
+      ],
+      "imageBounds": [
+        [
+          294.1491778365777,
+          105.1343790946383
+        ],
+        [
+          667.7348278569705,
+          753.2799980757264
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 489,
+      "hullVertices": 482,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "lv-outflow": {
+    "selected": {
+      "dr": -0.02,
+      "du": 0.0,
+      "distance": 1.9535879494759765,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.9615879494759765,
+      "target": [
+        0.009187351787488272,
+        -0.0013297704536738638,
+        0.052009279924858695
+      ],
+      "imageBounds": [
+        [
+          293.82243692521564,
+          102.72000246828848
+        ],
+        [
+          714.7181506150077,
+          751.4134490062368
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.9535879494759767,
+      "overlapIntro": 144.98334396805876,
+      "overlapToolbar": 0.0,
+      "cost": 1.9535879494759767,
+      "target": [
+        0.028355387523629497,
+        -0.000945179584120992,
+        0.046313799621928164
+      ],
+      "imageBounds": [
+        [
+          280.18850401884157,
+          102.72000246828854
+        ],
+        [
+          699.8203677627754,
+          751.4134490062366
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 489,
+      "hullVertices": 450,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "ra-inflow": {
+    "selected": {
+      "dr": 0.0,
+      "du": 0.02,
+      "distance": 1.5180117378790288,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.5260117378790288,
+      "target": [
+        0.0004934523923583801,
+        -0.12465414103911643,
+        0.1414250571020303
+      ],
+      "imageBounds": [
+        [
+          273.2165597891156,
+          103.1990517095819
+        ],
+        [
+          674.4933355258527,
+          753.279998840143
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.5981084720759038,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.5981084720759038,
+      "target": [
+        0.0009451795841209781,
+        -0.10491493383742911,
+        0.1446124763705104
+      ],
+      "imageBounds": [
+        [
+          282.9735189386141,
+          102.72000324389391
+        ],
+        [
+          663.8531244096354,
+          721.0261983886484
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 379,
+      "hullVertices": 305,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "ra-outflow": {
+    "selected": {
+      "dr": -0.05,
+      "du": 0.075,
+      "distance": 1.4576173332130045,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.4936728459676443,
+      "target": [
+        0.06661628095485256,
+        0.03677695459545822,
+        -0.0870103553485889
+      ],
+      "imageBounds": [
+        [
+          271.2803482153928,
+          104.36253244985589
+        ],
+        [
+          810.6933776914364,
+          753.2800017838509
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.7591227764417436,
+      "overlapIntro": 911.0224555206187,
+      "overlapToolbar": 0.0,
+      "cost": 1.7591227764417436,
+      "target": [
+        0.019848771266540652,
+        0.06899810964083175,
+        -0.01701323251417769
+      ],
+      "imageBounds": [
+        [
+          267.6743946568064,
+          102.71999789383663
+        ],
+        [
+          706.0830888148729,
+          634.7647015455059
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 415,
+      "hullVertices": 403,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "la-inflow": {
+    "selected": {
+      "dr": -0.12,
+      "du": 0.0,
+      "distance": 1.4052890650452645,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.4532890650452646,
+      "target": [
+        0.19127690921902912,
+        -0.03780718336483932,
+        0.09116662746639556
+      ],
+      "imageBounds": [
+        [
+          351.6698845126792,
+          113.50189337464046
+        ],
+        [
+          816.778118370479,
+          753.2799998582196
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.4052890650452647,
+      "overlapIntro": 9000.507917644347,
+      "overlapToolbar": 0.0,
+      "cost": 1.4052890650452647,
+      "target": [
+        0.21928166351606804,
+        -0.03780718336483932,
+        -0.025519848771266535
+      ],
+      "imageBounds": [
+        [
+          234.52442687162835,
+          113.50189337464046
+        ],
+        [
+          690.116952847426,
+          753.2799998582195
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 333,
+      "hullVertices": 176,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  },
+  "la-outflow": {
+    "selected": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.5861499759770996,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.5861499759770996,
+      "target": [
+        0.02646502835538754,
+        0.15406427221172023,
+        0.008506616257088845
+      ],
+      "imageBounds": [
+        [
+          208.05593656632283,
+          226.32158110640526
+        ],
+        [
+          694.6773404721815,
+          753.2800009446742
+        ]
+      ]
+    },
+    "prior": {
+      "dr": 0.0,
+      "du": 0.0,
+      "distance": 1.5861499759770996,
+      "overlapIntro": 0.0,
+      "overlapToolbar": 0.0,
+      "cost": 1.5861499759770996,
+      "target": [
+        0.02646502835538754,
+        0.15406427221172023,
+        0.008506616257088845
+      ],
+      "imageBounds": [
+        [
+          208.05593656632283,
+          226.32158110640526
+        ],
+        [
+          694.6773404721815,
+          753.2800009446742
+        ]
+      ]
+    },
+    "marginPixels": 8,
+    "sourceHull": {
+      "rowEndpoints": 325,
+      "hullVertices": 460,
+      "sourceThreshold": 72,
+      "sourceBounds": [
+        [
+          109.0,
+          88.0,
+          14.0
+        ],
+        [
+          402.0,
+          405.0,
+          512.0
+        ]
+      ],
+      "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+    },
+    "considered": 925
+  }
+}

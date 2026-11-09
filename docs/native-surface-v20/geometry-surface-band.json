@@ -1,0 +1,245 @@
+{
+  "schema": "native-surface-band-v20.2",
+  "format": "NSB1-zstd",
+  "blocks": [
+    {
+      "startXYZ": [
+        0,
+        0,
+        0
+      ],
+      "sampleShapeZYX": [
+        65,
+        65,
+        65
+      ],
+      "activeCells": 114558,
+      "uniqueContributingSamples": 199283,
+      "availableSamples": 274625,
+      "cellMaskBytes": 32768,
+      "sampleMaskBytes": 34329,
+      "uniqueSampleValueBytes": 398566,
+      "compressedBytes": 388129,
+      "decodedBytes": 465695,
+      "path": "surface-band-deduplicated/0000_0000_0000.nsb.zst",
+      "sha256": "abe1eca72aaa5b858831ed6a93718a1e1ccd6e4bb27b76dab9afa11f77c4e563",
+      "decodedSha256": "d75ecd137edd1a3eed292f606815623d58fde0d3d3d303b3ce4978b8506d95ba",
+      "rawCornerSha256": "965fa55a73383556cb714a0ea45c6773b69538ef5dc394ec9f2a8b409333df27",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 1459136,
+      "oldDecodedBytes": 2291160
+    },
+    {
+      "startXYZ": [
+        64,
+        0,
+        0
+      ],
+      "sampleShapeZYX": [
+        65,
+        65,
+        64
+      ],
+      "activeCells": 63376,
+      "uniqueContributingSamples": 120218,
+      "availableSamples": 270400,
+      "cellMaskBytes": 32256,
+      "sampleMaskBytes": 33800,
+      "uniqueSampleValueBytes": 240436,
+      "compressedBytes": 253798,
+      "decodedBytes": 306524,
+      "path": "surface-band-deduplicated/0064_0000_0000.nsb.zst",
+      "sha256": "c94a83867e7986e6234f9ebbb8ee8597ca7969320911b93fe04eefc6ac672aa4",
+      "decodedSha256": "c0dbcecfdfd677c518fe23caac828efa336db035f84b72731f85e1ae69a91d56",
+      "rawCornerSha256": "681cf463f188eaa53507254da92932520c6bed79c412000b53322fdf8f33fe9c",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 766910,
+      "oldDecodedBytes": 1267520
+    },
+    {
+      "startXYZ": [
+        0,
+        64,
+        0
+      ],
+      "sampleShapeZYX": [
+        65,
+        64,
+        65
+      ],
+      "activeCells": 81030,
+      "uniqueContributingSamples": 144406,
+      "availableSamples": 270400,
+      "cellMaskBytes": 32256,
+      "sampleMaskBytes": 33800,
+      "uniqueSampleValueBytes": 288812,
+      "compressedBytes": 295041,
+      "decodedBytes": 354900,
+      "path": "surface-band-deduplicated/0000_0064_0000.nsb.zst",
+      "sha256": "c04a4146e35618d14eefb21a51d63a37bb7e35c70fe5b3b16dc1f08d157425d3",
+      "decodedSha256": "2bc488b61d9cd3ff341b1cfcf154c0e45bf7275a98d1ae20b8652d20ca8e0e14",
+      "rawCornerSha256": "02b429da75c9b6629184baba7e2f911436fabe74ebc2422136132c0c953de56c",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 955978,
+      "oldDecodedBytes": 1620600
+    },
+    {
+      "startXYZ": [
+        64,
+        64,
+        0
+      ],
+      "sampleShapeZYX": [
+        65,
+        64,
+        64
+      ],
+      "activeCells": 88921,
+      "uniqueContributingSamples": 157245,
+      "availableSamples": 266240,
+      "cellMaskBytes": 31752,
+      "sampleMaskBytes": 33280,
+      "uniqueSampleValueBytes": 314490,
+      "compressedBytes": 326963,
+      "decodedBytes": 379554,
+      "path": "surface-band-deduplicated/0064_0064_0000.nsb.zst",
+      "sha256": "1ffd80871070e94cfac5cf9b5f25b1d9703c913a2d35169019c3e746c8a1d211",
+      "decodedSha256": "2bff796f4b0b0bf60415e85827a50e699873bf1c071dea1f182eb5581a8f1a73",
+      "rawCornerSha256": "ca7d128af4d98cdd72e3a1d45c4bddf1a405ca7e0e0e643408411d3baeaf84f1",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 1065932,
+      "oldDecodedBytes": 1778420
+    },
+    {
+      "startXYZ": [
+        0,
+        0,
+        64
+      ],
+      "sampleShapeZYX": [
+        64,
+        65,
+        65
+      ],
+      "activeCells": 46743,
+      "uniqueContributingSamples": 94308,
+      "availableSamples": 270400,
+      "cellMaskBytes": 32256,
+      "sampleMaskBytes": 33800,
+      "uniqueSampleValueBytes": 188616,
+      "compressedBytes": 202342,
+      "decodedBytes": 254704,
+      "path": "surface-band-deduplicated/0000_0000_0064.nsb.zst",
+      "sha256": "ae6bf9f14e0787d6d3eddd41813f761d962a27ad5a1acefb1096255ab1b22cd5",
+      "decodedSha256": "34ca7d7ee9a9807a312183a9c86cdc0710070cbbe6a4973a33c7c2da727c9846",
+      "rawCornerSha256": "3f1235183c8dfb0c4df6cb950fd148581b1216223056bb2f0b8f573c1aad9292",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 574327,
+      "oldDecodedBytes": 934860
+    },
+    {
+      "startXYZ": [
+        64,
+        0,
+        64
+      ],
+      "sampleShapeZYX": [
+        64,
+        65,
+        64
+      ],
+      "activeCells": 78608,
+      "uniqueContributingSamples": 148238,
+      "availableSamples": 266240,
+      "cellMaskBytes": 31752,
+      "sampleMaskBytes": 33280,
+      "uniqueSampleValueBytes": 296476,
+      "compressedBytes": 307438,
+      "decodedBytes": 361540,
+      "path": "surface-band-deduplicated/0064_0000_0064.nsb.zst",
+      "sha256": "b9d0eb8695c5c08a2e4025632c12b291ede6859db2e3af1d78e27a100add7408",
+      "decodedSha256": "722fb3d93384aea16e0aed2eaa6cb1cdb0249ad51dc302f853984d22bdc641ed",
+      "rawCornerSha256": "f23a7f63588232a2cb6975f0cdc3f5c352d6f029a851f58a39dac8b4b268ad50",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 960168,
+      "oldDecodedBytes": 1572160
+    },
+    {
+      "startXYZ": [
+        0,
+        64,
+        64
+      ],
+      "sampleShapeZYX": [
+        64,
+        64,
+        65
+      ],
+      "activeCells": 74340,
+      "uniqueContributingSamples": 148597,
+      "availableSamples": 266240,
+      "cellMaskBytes": 31752,
+      "sampleMaskBytes": 33280,
+      "uniqueSampleValueBytes": 297194,
+      "compressedBytes": 306533,
+      "decodedBytes": 362258,
+      "path": "surface-band-deduplicated/0000_0064_0064.nsb.zst",
+      "sha256": "f79b0bb813f703789333891032c53f28ff397c16dfa5742c7df0733d75aa8200",
+      "decodedSha256": "59c2c8d4dca14787a40452b132fce6efe907ba765f523b14e8ca93ad87b3ad73",
+      "rawCornerSha256": "516c8a470214bd939f37cab13051d1e5d89d5dbc82f2c7a73740655e99aa7848",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 895474,
+      "oldDecodedBytes": 1486800
+    },
+    {
+      "startXYZ": [
+        64,
+        64,
+        64
+      ],
+      "sampleShapeZYX": [
+        64,
+        64,
+        64
+      ],
+      "activeCells": 91948,
+      "uniqueContributingSamples": 166045,
+      "availableSamples": 262144,
+      "cellMaskBytes": 31256,
+      "sampleMaskBytes": 32768,
+      "uniqueSampleValueBytes": 332090,
+      "compressedBytes": 336891,
+      "decodedBytes": 396146,
+      "path": "surface-band-deduplicated/0064_0064_0064.nsb.zst",
+      "sha256": "72c0e6b20e13a3240475eb9d6a97d3dbccb549f0abea20f2aa988ede9296aa5c",
+      "decodedSha256": "af1b4af0ec5f8413da9d561a370dc52846ef669b1193f2c23c2cac0facfe52b7",
+      "rawCornerSha256": "880cab4179074d02eeb9bd5cd062746f74e20db64adc8a5a021d502a90c0f24c",
+      "exactRawSampleRoundTrip": true,
+      "allEightActiveCellValuesReconstructedExactly": true,
+      "oldCompressedBytes": 1118604,
+      "oldDecodedBytes": 1838960
+    }
+  ],
+  "blockOwnership": "64-cell extraction blocks; a boundary sample may be present in both adjacent blocks, but never duplicated within one block.",
+  "activeCells": 639524,
+  "uniqueContributingSamplesPerBlockSum": 1178340,
+  "previousEightCornerSampleCount": 5116192,
+  "compressedBytes": 2417135,
+  "decodedBytes": 2881321,
+  "previousCompressedBytes": 7796529,
+  "previousDecodedBytes": 12790480,
+  "fullRawSliceBytes": 4194304,
+  "fullLosslessSliceCompressedBytes": 3788654,
+  "allEightActiveCellValuesReconstructedExactly": true,
+  "rawValuesChanged": false,
+  "scope": "Exact threshold17133.4 crossing cells and their raw corners only. Full immutable compressed slices remain the source for gradient halos, different thresholds and independently rerunning the extraction.",
+  "payload": "32-byte little-endian header magicNSB1/version1/sampleXYZ/activeCells/uniqueSamples/headerBytes; little-bit-order active-cell mask; sample mask; once-per-block uint16 little-endian sample values in ZYX scan order.",
+  "peakRssMiB": 151.48046875
+}

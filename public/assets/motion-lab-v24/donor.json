@@ -1,0 +1,216 @@
+{
+  "schema": "heart-motion-lab-v24.1",
+  "sourceSpacingUm": 19.85,
+  "displaySamplingUm": 79.4,
+  "worldMm": 168.30814999999998,
+  "source": "LADAF-2021-17",
+  "donorUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "sourceIndexSha256": "afc97dc2a7e8dca3304de4296a5d6436d733e0a0c1410b84f8b1e16da41e8e5a",
+  "overviewLods": [
+    {
+      "bounds": {
+        "max": [
+          0.44893265715296615,
+          0.5,
+          0.44893265715296615
+        ],
+        "min": [
+          -0.44893265715296615,
+          -0.5,
+          -0.44893265715296615
+        ]
+      },
+      "compressedBytes": 11012293,
+      "decodedBytes": 24642580,
+      "id": "overview",
+      "label": "Whole-heart display overview",
+      "lossy": true,
+      "parts": [
+        {
+          "bytes": 11012293,
+          "compressedBytes": 11012293,
+          "decodedBytes": 24642580,
+          "decodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+          "format": "HFM1",
+          "positionFlag": 1,
+          "positionFormat": "float32",
+          "sha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+          "triangles": 1499999,
+          "url": "/api/guided-native-v21/overview/whole-overview-0-f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e.hfm.gz",
+          "vertices": 369031
+        }
+      ],
+      "sampledDistances": {
+        "anatomicalAccuracyClaim": false,
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "hausdorffBound": false,
+        "originalOverviewToStoredDisplay": {
+          "maximumSampledUm": 3372.9925018356475,
+          "meanUm": 196.06974517414588,
+          "medianUm": 117.03828277217673,
+          "p95Um": 675.886870242327,
+          "p99Um": 1173.2491026197104,
+          "rmsUm": 307.2815869127226,
+          "samples": 816640
+        },
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "storedDisplayToOriginalOverview": {
+          "maximumSampledUm": 409.1335295668645,
+          "meanUm": 57.64678576775038,
+          "medianUm": 45.79234153213142,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning",
+          "p95Um": 151.8709733633329,
+          "p99Um": 224.20313435224637,
+          "rmsUm": 76.0751802062529,
+          "samples": 4096,
+          "sourceGroupsVisited": 2140
+        }
+      },
+      "simplification": {
+        "aggressiveness": 7.0,
+        "inputTriangles": 4999999,
+        "method": "fast_simplification",
+        "topologyPreserved": false,
+        "version": "0.1.13"
+      },
+      "triangles": 1499999,
+      "vertices": 369031
+    },
+    {
+      "bounds": {
+        "max": [
+          0.44893265715296615,
+          0.5,
+          0.44893265715296615
+        ],
+        "min": [
+          -0.44893265715296615,
+          -0.5,
+          -0.44893265715296615
+        ]
+      },
+      "compressedBytes": 19744361,
+      "decodedBytes": 42582052,
+      "id": "detail",
+      "label": "Whole-heart display detail",
+      "lossy": true,
+      "parts": [
+        {
+          "bytes": 19744361,
+          "compressedBytes": 19744361,
+          "decodedBytes": 42582052,
+          "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+          "format": "HFM1",
+          "positionFlag": 1,
+          "positionFormat": "float32",
+          "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+          "triangles": 2500000,
+          "url": "/api/guided-native-v21/overview/whole-detail-0-b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef.hfm.gz",
+          "vertices": 699001
+        }
+      ],
+      "sampledDistances": {
+        "anatomicalAccuracyClaim": false,
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "hausdorffBound": false,
+        "originalOverviewToStoredDisplay": {
+          "maximumSampledUm": 2669.8416765429743,
+          "meanUm": 157.8588521395828,
+          "medianUm": 97.69980833205524,
+          "p95Um": 526.0017461607808,
+          "p99Um": 922.0901611685675,
+          "rmsUm": 244.654852475455,
+          "samples": 816640
+        },
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "storedDisplayToOriginalOverview": {
+          "maximumSampledUm": 396.15779301614765,
+          "meanUm": 56.769818731319326,
+          "medianUm": 44.300191694136785,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning",
+          "p95Um": 153.56326713469826,
+          "p99Um": 224.4714723124928,
+          "rmsUm": 74.9131857308481,
+          "samples": 4096,
+          "sourceGroupsVisited": 2183
+        }
+      },
+      "simplification": {
+        "aggressiveness": 7.0,
+        "inputTriangles": 4999999,
+        "method": "fast_simplification",
+        "topologyPreserved": false,
+        "version": "0.1.13"
+      },
+      "triangles": 2500000,
+      "vertices": 699001
+    }
+  ],
+  "regions": [
+    {
+      "bytes": 178650,
+      "decodedBytes": 378601,
+      "decodedSha256": "45bf81d5e969ce7d1b41d5f875cf7bd8bc5df84c8cc580a0ee41cf8b22228599",
+      "sha256": "aac61f497b02eccd7e9a2990582439b7d337c5e549d9ef31a6f51968b013a6e1",
+      "triangles": 346106,
+      "url": "/api/guided-native-v21/tiles/35_31_36-aac61f497b02eccd7e9a2990582439b7d337c5e549d9ef31a6f51968b013a6e1.nbe.gz",
+      "vertices": 176319,
+      "xyz": [
+        35,
+        31,
+        36
+      ],
+      "label": "Native region 1",
+      "center": [
+        0.08697959665054841,
+        0.05100837362896568,
+        -0.026595117348743955
+      ]
+    },
+    {
+      "bytes": 275317,
+      "decodedBytes": 459134,
+      "decodedSha256": "924f67d11285576a48dece16c2d6754c9dff939d55f572b3b5c886e2cf728e3b",
+      "sha256": "5b89c41f2d7554b82eab7c1629ec24bb223a6f291e582539883262f53f64da56",
+      "triangles": 598064,
+      "url": "/api/guided-native-v21/tiles/29_29_33-5b89c41f2d7554b82eab7c1629ec24bb223a6f291e582539883262f53f64da56.nbe.gz",
+      "vertices": 305172,
+      "xyz": [
+        29,
+        29,
+        33
+      ],
+      "label": "Native region 2",
+      "center": [
+        -0.0035971223021582736,
+        0.005720014152612337,
+        0.0035971223021582736
+      ]
+    },
+    {
+      "bytes": 202068,
+      "decodedBytes": 395618,
+      "decodedSha256": "b8f81ac880a1ef49ad3fd67a6a8cb53b7ee849ad53f61663b1be967a8b2d1861",
+      "sha256": "cf6c8b1609affdf1637049236622aeba7dd6492c5e5badb5c09f9cf7481801c9",
+      "triangles": 398770,
+      "url": "/api/guided-native-v21/tiles/34_32_48-cf6c8b1609affdf1637049236622aeba7dd6492c5e5badb5c09f9cf7481801c9.nbe.gz",
+      "vertices": 203546,
+      "xyz": [
+        34,
+        32,
+        48
+      ],
+      "label": "Native region 3",
+      "center": [
+        0.0718834768250973,
+        0.23216181153437906,
+        -0.04169123717419507
+      ]
+    }
+  ],
+  "geometry": "Existing processed, simplified display meshes; native regions retain their archived 19.85 micrometer sampling. No additional geometric simplification or smoothing is applied by the motion viewer.",
+  "motion": "Illustrative analytic deformation; not fitted to cardiac CT or validated mechanics. The fixed specimen is the zero-deformation reference, not an identified end-diastolic state.",
+  "license": "CC BY 4.0 \u2014 Brunet et al. / ESRF Human Organ Atlas"
+}

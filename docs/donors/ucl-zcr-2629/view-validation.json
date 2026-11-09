@@ -1,0 +1,241 @@
+{
+  "passed": true,
+  "datasetId": "2298522198",
+  "sourceSampled": true,
+  "sourcePixelsChecked": 15125,
+  "maxIndependentSourcePixelError": 0,
+  "encodedAndPixelHashesVerified": 25,
+  "preparedEchoPlanes": 13,
+  "preparedFlowPlanes": 8,
+  "preparedProbePlanes": 4,
+  "annotationLabelsVerified": 6,
+  "clinicalAccuracy": "Not established; provisional source-guided candidates.",
+  "browserVerification": "Not performed by this data test.",
+  "images": [
+    {
+      "id": "a4c",
+      "width": 1526,
+      "height": 1909,
+      "bytes": 875422,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "a2c",
+      "width": 1704,
+      "height": 1906,
+      "bytes": 761640,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "a3c",
+      "width": 1422,
+      "height": 1886,
+      "bytes": 771590,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "plax",
+      "width": 1833,
+      "height": 1177,
+      "bytes": 862350,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "psax_papillary",
+      "width": 1242,
+      "height": 1215,
+      "bytes": 513088,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "psax_mitral",
+      "width": 1242,
+      "height": 1215,
+      "bytes": 468578,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "me4c",
+      "width": 1526,
+      "height": 1909,
+      "bytes": 874136,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "me2c",
+      "width": 1704,
+      "height": 1906,
+      "bytes": 762416,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "melax",
+      "width": 1422,
+      "height": 1886,
+      "bytes": 772550,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "subcostal",
+      "width": 1909,
+      "height": 1526,
+      "bytes": 876356,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "meavsax",
+      "width": 1161,
+      "height": 1319,
+      "bytes": 439180,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "bicaval",
+      "width": 1177,
+      "height": 1833,
+      "bytes": 624500,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "tgpapillary",
+      "width": 1242,
+      "height": 1215,
+      "bytes": 511906,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "rv-inflow",
+      "width": 1177,
+      "height": 1958,
+      "bytes": 842736,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "rv-outflow",
+      "width": 1799,
+      "height": 2421,
+      "bytes": 699368,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "ra-inflow",
+      "width": 1177,
+      "height": 1833,
+      "bytes": 566678,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "ra-outflow",
+      "width": 1371,
+      "height": 1364,
+      "bytes": 472188,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "lv-inflow",
+      "width": 1177,
+      "height": 1833,
+      "bytes": 862940,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "lv-outflow",
+      "width": 1269,
+      "height": 1933,
+      "bytes": 862718,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "la-inflow",
+      "width": 1177,
+      "height": 1833,
+      "bytes": 712304,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "la-outflow",
+      "width": 1251,
+      "height": 1393,
+      "bytes": 446976,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "probe-apical",
+      "width": 1528,
+      "height": 1910,
+      "bytes": 877278,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "probe-parasternal",
+      "width": 1835,
+      "height": 1179,
+      "bytes": 786518,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "probe-short-axis",
+      "width": 1243,
+      "height": 1216,
+      "bytes": 523790,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    },
+    {
+      "id": "probe-atrial",
+      "width": 1528,
+      "height": 1910,
+      "bytes": 875886,
+      "losslessPixelHash": true,
+      "sourcePixelsChecked": 605,
+      "maxSourceError": 0
+    }
+  ]
+}

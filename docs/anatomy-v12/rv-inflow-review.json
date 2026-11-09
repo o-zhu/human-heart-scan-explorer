@@ -1,0 +1,72 @@
+{
+  "presetId": "rv-inflow",
+  "metadata": "public/assets/flow-views-v5.json",
+  "sourcePlane": {
+    "center": [
+      253.999941149986,
+      182.07144726161,
+      271.74035295784
+    ],
+    "right": [
+      0.984183323974,
+      0.0,
+      0.177152998315
+    ],
+    "up": [
+      0.175627488081,
+      -0.130951757946,
+      -0.975708267117
+    ],
+    "normal": [
+      0.023198496555,
+      0.99138874166,
+      -0.128880536416
+    ],
+    "width": 386.0,
+    "height": 588.0,
+    "target": [
+      232.0,
+      186.0,
+      298.0
+    ]
+  },
+  "cameraDistance": 0.94,
+  "cameraDirectionRule": "normalize(normal + 0.24 * right + 0.10 * up)",
+  "perspectiveFactor": 0.32,
+  "measuredThresholdRaw": 17100,
+  "sourceCavityReviewRegion": "Visible surface >3 s4 voxels behind the cut plane, <=3 mm from measured RV cavity and at least 1 mm closer to RV than LV, sourceZ 266..460. This is an operational targeted region, not expert ground truth.",
+  "candidates": {
+    "baseline": {
+      "visiblePixels": 657549,
+      "rvCavityFacingReviewPixels": 156978,
+      "rvLabelsInReviewRegion": 90690,
+      "lvLabelsInReviewRegion": 39,
+      "otherLabelsInReviewRegion": 66249,
+      "LVcutFacePixels": 45656,
+      "LVsurfaceBehindPlanePixels": 304,
+      "LVsurfaceBehindPlaneRVCavityDistanceMmPercentiles": [
+        0.0,
+        0.6734133362770081,
+        6.88197660446167,
+        9.674420356750488,
+        10.287576675415039
+      ]
+    },
+    "hybrid": {
+      "visiblePixels": 657549,
+      "rvCavityFacingReviewPixels": 156978,
+      "rvLabelsInReviewRegion": 92358,
+      "lvLabelsInReviewRegion": 0,
+      "otherLabelsInReviewRegion": 64620,
+      "LVcutFacePixels": 39126,
+      "LVsurfaceBehindPlanePixels": 265,
+      "LVsurfaceBehindPlaneRVCavityDistanceMmPercentiles": [
+        3.0493245124816895,
+        5.510842800140381,
+        8.314173698425293,
+        9.674420356750488,
+        10.287576675415039
+      ]
+    }
+  }
+}

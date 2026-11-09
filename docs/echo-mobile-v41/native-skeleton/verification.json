@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "scope": "Native review of actual original and fitted reference skeleton/GI geometry.\n\nUses current production context GLSL and verified reference meshes. Diagnostic\nopacity is raised to expose intersections. These are reference-anatomy images,\nnot acquired donor anatomy, website screenshots or physical-device tests.\nRun echo-skeleton-fit-v41.py --export /dev/shm/context-fit-v41/final first.\n",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "views": [
+    "Complete skeleton",
+    "Esophagus / spine"
+  ],
+  "reference": {
+    "donorId": "ladaf-2021-17",
+    "frame": {
+      "kind": "source-anchored-illustrative-frame",
+      "donorId": "ladaf-2021-17",
+      "referenceMm": 168.0104,
+      "scale": 1,
+      "originMm": [
+        8.850718000000002,
+        6.406309599999997,
+        2.9735299999999985
+      ],
+      "left": [
+        -0.0737517260585308,
+        0.4809888820734267,
+        -0.873619126522046
+      ],
+      "superior": [
+        -0.5047294479793477,
+        -0.7735306587487353,
+        -0.3832734067453817
+      ],
+      "anterior": [
+        -0.8601214258730278,
+        0.41267422417386707,
+        0.2998184741750359
+      ],
+      "posterior": [
+        0.8601214258730278,
+        -0.41267422417386707,
+        -0.2998184741750359
+      ],
+      "landmarksMm": {
+        "leftAtrium": [
+          24.137600000000003,
+          -14.1332,
+          -8.2576
+        ],
+        "rightAtrium": [
+          -0.3176,
+          -17.3092,
+          20.644
+        ],
+        "rightAtriumSuperior": [
+          -2.2232,
+          -36.3652,
+          17.468
+        ],
+        "aorticLumen": [
+          0.6352,
+          -12.545200000000001,
+          -5.3992
+        ],
+        "aorticRoot": [
+          1.7468000000000001,
+          -9.3692,
+          -4.764
+        ],
+        "leftVentricularOutflow": [
+          7.3048,
+          1.7468000000000001,
+          -8.8928
+        ],
+        "mitralRegion": [
+          16.8328,
+          4.9228,
+          -11.7512
+        ],
+        "tricuspidRegion": [
+          0.8686360000000043,
+          7.8898191999999945,
+          17.698259999999998
+        ],
+        "leftVentricle": [
+          2.8584,
+          30.3308,
+          -13.3392
+        ],
+        "rightVentricle": [
+          -16.1976,
+          27.154799999999998,
+          18.1032
+        ],
+        "apex": [
+          -14.6096,
+          67.80760000000001,
+          -4.4464
+        ]
+      },
+      "patientOrientationValidated": false
+    },
+    "bodyTransform": {
+      "revision": "echo-bodyparts3d-context-v41",
+      "referenceOriginMm": [
+        20,
+        5,
+        8
+      ],
+      "originMm": [
+        8.850718000000002,
+        6.406309599999997,
+        2.9735299999999985
+      ],
+      "left": [
+        -0.0737517260585308,
+        0.4809888820734267,
+        -0.873619126522046
+      ],
+      "superior": [
+        -0.5047294479793477,
+        -0.7735306587487353,
+        -0.3832734067453817
+      ],
+      "anterior": [
+        -0.8601214258730278,
+        0.41267422417386707,
+        0.2998184741750359
+      ],
+      "scale": 1,
+      "bodyReferenceScale": 1,
+      "referenceMm": 168.0104,
+      "donorId": "ladaf-2021-17",
+      "patientRegistered": false,
+      "method": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform."
+    },
+    "skeletonFit": {
+      "revision": "echo-intact-skeleton-fit-v41",
+      "method": "One fixed smooth depth fit shared by the intact reference spine, ribs, sternum and clavicles.",
+      "coordinateSystem": "Patient-left, superior, anterior reference millimetres relative to the fixed body reference origin.",
+      "terms": [
+        {
+          "amplitudeMm": 14,
+          "centerMm": [
+            -20,
+            -60
+          ],
+          "radiusMm": [
+            60,
+            30
+          ]
+        },
+        {
+          "amplitudeMm": 3,
+          "centerMm": [
+            -20,
+            90
+          ],
+          "radiusMm": [
+            60,
+            35
+          ]
+        }
+      ],
+      "maximumDisplacementMm": 17,
+      "minimumJacobianDeterminant": 0.5261875683074191,
+      "topologyPreserved": true,
+      "patientRegistered": false
+    },
+    "files": {
+      "skin": {
+        "file": "skin.f32",
+        "sha256": "b5291a40eb835794173edc190d7a70979e511a449bac2ff352c5f7920b40dbcb",
+        "triangles": 4038,
+        "color": [
+          0.52,
+          0.43,
+          0.36
+        ],
+        "alpha": 0.025,
+        "gloss": 0.035
+      },
+      "bones-before": {
+        "file": "bones-before.f32",
+        "sha256": "4829e7e1e0af5cd4af1861f320358e48bd11fa203a89ce286cc1f82fddf6ea5a",
+        "triangles": 14349,
+        "color": [
+          0.74,
+          0.76,
+          0.69
+        ],
+        "alpha": 0.09,
+        "gloss": 0.065
+      },
+      "bones-after": {
+        "file": "bones-after.f32",
+        "sha256": "d560c4203bd44b962e140374ceafca321972038948814ad745a4da4ee0552ce6",
+        "triangles": 14349,
+        "color": [
+          0.74,
+          0.76,
+          0.69
+        ],
+        "alpha": 0.09,
+        "gloss": 0.065
+      },
+      "spine-before": {
+        "file": "spine-before.f32",
+        "sha256": "217417611f9ff9c2a06448749e1e40ae1b9171eaff9026ee2f405336a541e7ac",
+        "triangles": 3469,
+        "color": [
+          0.61,
+          0.68,
+          0.65
+        ],
+        "alpha": 0.075,
+        "gloss": 0.055
+      },
+      "spine-after": {
+        "file": "spine-after.f32",
+        "sha256": "bec65474d14490fd75c14b6980ac97ce237ccb792d3a4c55840d16c4f5889b39",
+        "triangles": 3469,
+        "color": [
+          0.61,
+          0.68,
+          0.65
+        ],
+        "alpha": 0.075,
+        "gloss": 0.055
+      },
+      "esophagus": {
+        "file": "esophagus.f32",
+        "sha256": "cfd59251c030e9f200d5ca0aff2f90a248730fa0767853544239b9d5f27f9154",
+        "triangles": 8448,
+        "color": [
+          0.75,
+          0.52,
+          0.49
+        ],
+        "alpha": 0.13,
+        "gloss": 0.1
+      },
+      "stomach": {
+        "file": "stomach.f32",
+        "sha256": "f2a7564ff7ecd89fd71b1fd3a7a504a8d033cee3a06ae2f551951aa844173cdd",
+        "triangles": 7680,
+        "color": [
+          0.77,
+          0.57,
+          0.5
+        ],
+        "alpha": 0.11,
+        "gloss": 0.1
+      }
+    },
+    "observedMaximumDisplacementMm": 13.998091859463072,
+    "observedMinimumJacobianDeterminant": 0.5997301198994404
+  },
+  "glError": 0,
+  "sourceHashes": {
+    "public/echo-skeleton-fit.js": "23506c0127fcccd95d23d15070e02349c18bc40846d1a39fcbef215efc69133e",
+    "public/echo-anatomy-context-v2.js": "a1998f8207408a64be6fcad39884ec1adad1ca035a1c645c30ba45f868c75868",
+    "public/tee-scene.js": "9fc9d5e494a60e6504870b7501f6174ebc88f8c1b40112c073763f21b4c695d0"
+  },
+  "shaderSha256": "20643470a53bb9342bed8d47e1a4a8cc1e83a1b402345f2e11e18e284b3d40a2"
+}

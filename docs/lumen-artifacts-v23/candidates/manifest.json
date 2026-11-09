@@ -1,0 +1,199 @@
+{
+  "status": "review-only",
+  "defaultEnabled": false,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 110,
+    "decodedBrickReads": 110,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "disclaimer": "Measured intraluminal material of uncertain identity. Not proven acquisition artifact. Exclusions are optional 3D display controls; all quantitative data and 2D source sections stay unchanged.",
+  "policy": {
+    "fieldGaussianSigmaFineVoxels": 0.8,
+    "fieldThreshold": 71.4,
+    "strongFilteredValue": 135,
+    "strongRawValue": 190,
+    "strongProtection": "Every strong-signal connected component extending outside the reviewed object envelope, plus guard, using the union from sigma0.8 and sigma0.5 fields. Bright isolated specks wholly within candidate material may be included.",
+    "compatibilityProtectionSigmas": [
+      0.8,
+      0.5
+    ],
+    "strongProtectionRadiusFineVoxels": 4,
+    "maskBoundaryRadiusFineVoxels": 2,
+    "connectivity": 26,
+    "selection": "Connected source foreground touching reviewed seeds within local ellipsoidal envelopes; anchored strong structures and neighborhoods excluded. Atrial long sheet and all attachments outside compact round-nodule envelope preserved. No global component or chamber deletion."
+  },
+  "masks": [
+    {
+      "id": "outflow",
+      "boundsFullFineXYZ": [
+        [
+          900,
+          940,
+          230
+        ],
+        [
+          1130,
+          1150,
+          420
+        ]
+      ],
+      "dimensionsXYZ": [
+        230,
+        210,
+        190
+      ],
+      "format": "gzip-u8-zyx",
+      "valueMeaning": {
+        "0": "show original material",
+        "1": "hide reviewed candidate material in optional 3D display"
+      },
+      "file": "docs/lumen-artifacts-v23/candidates/outflow-candidate-mask.raw.gz",
+      "sha256": "320f226f34279dc4734176d8c57cc9572f4a14f44764a8c6a2fa669904198571",
+      "rawSha256": "b608b2ed402c54bdff06e47f23724f3c4d3a3e0131f9bd37129be68a3f2965cd",
+      "bytes": 24922,
+      "coreVoxels": 62806,
+      "maskedVoxels": 120599,
+      "protectedVoxels": 2694032,
+      "maskedStrongSourceVoxels": 285,
+      "maskedAnchoredStrongSourceVoxels": 0,
+      "maskedAnchoredSigma05StrongVoxels": 0,
+      "maskedProtectionVoxels": 0,
+      "sourceCorePercentiles": [
+        0.0,
+        68.0,
+        78.0,
+        91.0,
+        107.0,
+        126.0,
+        255.0
+      ],
+      "sourceCoreMean": 94.3172945260007,
+      "seedSelection": [
+        {
+          "fullFineXYZ": [
+            980,
+            1030,
+            298
+          ],
+          "selectedComponent": 1
+        },
+        {
+          "fullFineXYZ": [
+            1010,
+            1040,
+            320
+          ],
+          "selectedComponent": 1
+        }
+      ],
+      "envelopes": [
+        {
+          "center": [
+            1005,
+            1030,
+            310
+          ],
+          "radius": [
+            90,
+            65,
+            60
+          ]
+        }
+      ],
+      "reviewedLimits": null,
+      "strongComponents": 1021,
+      "protectedStrongComponents": 953
+    },
+    {
+      "id": "atrial",
+      "boundsFullFineXYZ": [
+        [
+          1140,
+          1100,
+          690
+        ],
+        [
+          1320,
+          1250,
+          850
+        ]
+      ],
+      "dimensionsXYZ": [
+        180,
+        150,
+        160
+      ],
+      "format": "gzip-u8-zyx",
+      "valueMeaning": {
+        "0": "show original material",
+        "1": "hide reviewed candidate material in optional 3D display"
+      },
+      "file": "docs/lumen-artifacts-v23/candidates/atrial-candidate-mask.raw.gz",
+      "sha256": "c3eabe15a08bb92c7135b87c514714fdd66604cf2d88a827603873fc7bbc3a98",
+      "rawSha256": "046ad5ecc6fb6cfba5489d052dca337aa553427ecec5a016e656ec1e9646ff93",
+      "bytes": 14189,
+      "coreVoxels": 91347,
+      "maskedVoxels": 121374,
+      "protectedVoxels": 1165300,
+      "maskedStrongSourceVoxels": 75,
+      "maskedAnchoredStrongSourceVoxels": 0,
+      "maskedAnchoredSigma05StrongVoxels": 0,
+      "maskedProtectionVoxels": 0,
+      "sourceCorePercentiles": [
+        18.0,
+        71.0,
+        78.0,
+        86.0,
+        96.0,
+        107.0,
+        255.0
+      ],
+      "sourceCoreMean": 87.95371495506147,
+      "seedSelection": [
+        {
+          "fullFineXYZ": [
+            1230,
+            1184,
+            760
+          ],
+          "selectedComponent": 1
+        }
+      ],
+      "envelopes": [
+        {
+          "center": [
+            1235,
+            1182,
+            762
+          ],
+          "radius": [
+            53,
+            42,
+            44
+          ]
+        }
+      ],
+      "reviewedLimits": [
+        [
+          1207,
+          1100,
+          690
+        ],
+        [
+          1320,
+          1250,
+          800
+        ]
+      ],
+      "strongComponents": 469,
+      "protectedStrongComponents": 440
+    }
+  ]
+}

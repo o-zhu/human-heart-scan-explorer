@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 739,
+    "decodedBrickReads": 765,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "productionShaders": true,
+  "rendererShaderSha256": "7ac0b6a71c64b57cc351fd63623feb83596d9c51a88c7236805ec19433841438",
+  "fineSurfaceShaderSha256": "d55da2f554a1baf6c0fb9ac97c3c964ee9267e893df88a2a08f4c776917b56bd",
+  "maskManifestSha256": "8f46d7ce4dc07c41f1c50717d4fe63a60e667fb89862fae97b213bd1e4aee077",
+  "checks": [
+    {
+      "case": "atrial",
+      "lod": "balanced",
+      "changedPixels": 6336,
+      "unchangedPixels": 598464,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 64113,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            226,
+            -22,
+            433,
+            179
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            438,
+            339,
+            603,
+            503
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "6f4359e7bce0ff885edd2c5136538121cf66a2921edc8862d98bc42811862c5d"
+    },
+    {
+      "case": "atrial",
+      "lod": "detail",
+      "changedPixels": 6470,
+      "unchangedPixels": 598330,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 64113,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            226,
+            -22,
+            433,
+            179
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            438,
+            339,
+            603,
+            503
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "6f4359e7bce0ff885edd2c5136538121cf66a2921edc8862d98bc42811862c5d"
+    },
+    {
+      "case": "outflow",
+      "lod": "balanced",
+      "changedPixels": 3883,
+      "unchangedPixels": 600917,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 75850,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            158,
+            110,
+            385,
+            332
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            335,
+            515,
+            483,
+            687
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "770b1596b742912b3fa550fc8b5b4eb1075d90ff2ad9a2d8375e100371589dce"
+    },
+    {
+      "case": "outflow",
+      "lod": "detail",
+      "changedPixels": 4052,
+      "unchangedPixels": 600748,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 75850,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            158,
+            110,
+            385,
+            332
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            335,
+            515,
+            483,
+            687
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "770b1596b742912b3fa550fc8b5b4eb1075d90ff2ad9a2d8375e100371589dce"
+    }
+  ],
+  "scope": "Actual production GLSL and frozen public masks in native EGL; same-camera off/on/off and outside projected mask plus finite AO support invariance. Source cap texture bytes unchanged. Not a browser/device performance or biological accuracy claim."
+}

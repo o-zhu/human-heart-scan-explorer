@@ -1,0 +1,119 @@
+{
+  "threshold": 17133.4,
+  "source": "{source-cache}/native-surface-v20/chunks-s0/35_31_36.n5",
+  "interior_shape": [
+    108,
+    108,
+    108
+  ],
+  "methods": [
+    {
+      "name": "raw",
+      "parameter": 0,
+      "filter_seconds": 0.0,
+      "triangles": 723491,
+      "area_voxel2": 216024.12,
+      "tissue_fraction": 0.59221,
+      "components26": 2100,
+      "components_lt_27": 2027,
+      "isolated_voxels_lt27": 7040,
+      "max_component_voxels": 733495
+    },
+    {
+      "name": "gaussian_075",
+      "parameter": 0.75,
+      "filter_seconds": 0.039,
+      "triangles": 314899,
+      "area_voxel2": 100169.66,
+      "tissue_fraction": 0.58444,
+      "components26": 748,
+      "components_lt_27": 649,
+      "isolated_voxels_lt27": 3808,
+      "max_component_voxels": 720181
+    },
+    {
+      "name": "gaussian_100",
+      "parameter": 1.0,
+      "filter_seconds": 0.042,
+      "triangles": 230705,
+      "area_voxel2": 74560.49,
+      "tissue_fraction": 0.58735,
+      "components26": 317,
+      "components_lt_27": 250,
+      "isolated_voxels_lt27": 1650,
+      "max_component_voxels": 731519
+    },
+    {
+      "name": "gaussian_150",
+      "parameter": 1.5,
+      "filter_seconds": 0.048,
+      "triangles": 160231,
+      "area_voxel2": 53059.29,
+      "tissue_fraction": 0.59668,
+      "components26": 68,
+      "components_lt_27": 51,
+      "isolated_voxels_lt27": 435,
+      "max_component_voxels": 749051
+    },
+    {
+      "name": "gaussian_200",
+      "parameter": 2.0,
+      "filter_seconds": 0.054,
+      "triangles": 140266,
+      "area_voxel2": 46820.69,
+      "tissue_fraction": 0.60751,
+      "components26": 10,
+      "components_lt_27": 1,
+      "isolated_voxels_lt27": 2,
+      "max_component_voxels": 763973
+    },
+    {
+      "name": "tv_250",
+      "parameter": 250,
+      "filter_seconds": 0.713,
+      "triangles": 346215,
+      "area_voxel2": 109638.13,
+      "tissue_fraction": 0.57363,
+      "components26": 1036,
+      "components_lt_27": 939,
+      "isolated_voxels_lt27": 4602,
+      "max_component_voxels": 708092
+    },
+    {
+      "name": "tv_500",
+      "parameter": 500,
+      "filter_seconds": 0.789,
+      "triangles": 223469,
+      "area_voxel2": 73320.05,
+      "tissue_fraction": 0.5734,
+      "components26": 154,
+      "components_lt_27": 127,
+      "isolated_voxels_lt27": 770,
+      "max_component_voxels": 719333
+    },
+    {
+      "name": "tv_800",
+      "parameter": 800,
+      "filter_seconds": 0.75,
+      "triangles": 181763,
+      "area_voxel2": 60315.82,
+      "tissue_fraction": 0.57841,
+      "components26": 39,
+      "components_lt_27": 28,
+      "isolated_voxels_lt27": 311,
+      "max_component_voxels": 727041
+    },
+    {
+      "name": "tv_1200",
+      "parameter": 1200,
+      "filter_seconds": 0.745,
+      "triangles": 159935,
+      "area_voxel2": 53500.36,
+      "tissue_fraction": 0.58175,
+      "components26": 28,
+      "components_lt_27": 19,
+      "isolated_voxels_lt27": 195,
+      "max_component_voxels": 731728
+    }
+  ]
+}

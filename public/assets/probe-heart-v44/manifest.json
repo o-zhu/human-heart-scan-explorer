@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "format": "HFM1",
+  "coordinateConvention": "Acquisition XYZ -> centered world [X,Z,-Y] millimetres; HFM positions normalized by the longest high-grid sample-center extent. No anatomy registration or per-view transform.",
+  "role": "Bounded whole-heart geometry for TTE Chest Orientation only",
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "referenceMm": 168.01040000000003,
+      "sourceDimensionsXYZ": [
+        475,
+        475,
+        530
+      ],
+      "sourceSpacingUm": 79.4,
+      "residentSpacingUm": 317.6,
+      "threshold": 0.28,
+      "extent": [
+        0.8960302457466918,
+        1.0,
+        0.8960302457466918
+      ],
+      "bounds": {
+        "min": [
+          -0.44801512287334594,
+          -0.5,
+          -0.44801512287334594
+        ],
+        "max": [
+          0.44801512287334594,
+          0.5,
+          0.44801512287334594
+        ]
+      },
+      "lod": {
+        "url": "./assets/fine-surface-v19/balanced.hfm.gz",
+        "vertices": 215860,
+        "vertexCount": 215860,
+        "triangles": 497714,
+        "indexCount": 1493142,
+        "compressedBytes": 4406836,
+        "decodedBytes": 8562920,
+        "sha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+        "decodedSha256": "e00753c085938f64718ca488535390cd1235b20df68c83d9d9698ec44d0d4de2",
+        "positionOffset": 32,
+        "normalOffset": 1295192,
+        "indexOffset": 2590352
+      },
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+      "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+      "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "provenance": {
+        "sourceManifest": "public/assets/fine-surface-v19/manifest.json",
+        "sourceManifestSha256": "759393730dc713e22b81c1a2d448893dda725b285e3804b034cfb11576ca7c2b",
+        "residentManifest": "public/assets/manifest.json",
+        "residentManifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+        "method": "Reuse existing balanced whole-heart HFM byte-for-byte. No new extraction, smoothing, or simplification.",
+        "reusedExistingPayload": true,
+        "sourceDataChanged": false,
+        "originalProcessing": {
+          "experimental": true,
+          "source": "Existing verified cleaned/windowed 79.4 \u00b5m source volume; not a 19.85 \u00b5m extraction.",
+          "sourceManifest": "public/assets/ultra-volume-v7.json",
+          "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+          "verifiedSourceBricks": 5127,
+          "coordinateConvention": "Existing Ultra endpoint convention; acquisitionXYZ maps to world(x,z,-y), centered on the full source grid. No new registration correction.",
+          "densityGaussianSigmaVoxels": 0.8,
+          "densityGaussianSigmaMm": 0.06352000000000001,
+          "referenceTriangles": 162115712,
+          "slabSimplificationTriangles": 18045184,
+          "weldedTriangles": 18044992,
+          "frozenSlabBoundaries": true,
+          "slabTopologyPreserved": true,
+          "weldToleranceMm": 0.0001,
+          "maximumWeldDisplacementMm": 8.392333984375e-05,
+          "finalSimplification": "Whole-object fast_simplification 0.1.13 quadric error simplification (aggressiveness 7) creates detail; VTK quadric decimation with its volume-preservation option creates compact. Lossy, not topology-guaranteed.",
+          "positionQuantizationBits": 16,
+          "normalQuantizationBits": 16,
+          "zeroNormalPolicy": "A cancelling point normal uses the largest incident nondegenerate face normal; this only changes shading.",
+          "degenerateFacePolicy": "Remove zero-area source triangles and triangles collapsed to zero area by position quantization; individual counts recorded for each LOD.",
+          "sourceDataChanged": false,
+          "expertValidated": false
+        },
+        "originalValidation": {
+          "method": "Area-weighted sampled surface distances; not a Hausdorff bound or clinical validation.",
+          "reference": "Welded, filtered 79.4 \u00b5m intermediate after topology-preserving slab simplification; separate local raw-source audits in full report.",
+          "lossy": true,
+          "thinStructurePreservationGuaranteed": false,
+          "lods": [
+            {
+              "id": "balanced",
+              "samplesPerDirection": 50000,
+              "hostedToIntermediateP95Mm": 0.09831216219953476,
+              "intermediateToHostedP95Mm": 0.5032364164661612,
+              "hostedToIntermediateMaximumSampledMm": 0.3683128690950599,
+              "intermediateToHostedMaximumSampledMm": 6.955778256984468
+            },
+            {
+              "id": "detail",
+              "samplesPerDirection": 50000,
+              "hostedToIntermediateP95Mm": 0.06561198689115642,
+              "intermediateToHostedP95Mm": 0.11904126006701894,
+              "hostedToIntermediateMaximumSampledMm": 0.16757208391233772,
+              "intermediateToHostedMaximumSampledMm": 4.3234163772366845
+            }
+          ],
+          "details": "docs/fine-surface-v19/validation.json"
+        },
+        "coordinateConvention": "Acquisition XYZ -> centered world [X,Z,-Y] millimetres; HFM positions normalized by the longest high-grid sample-center extent. No anatomy registration or per-view transform.",
+        "qualification": "Whole-heart display geometry from 79.4 micrometre source; lossy existing compact surface, not the 437 MB finalized Ultra model or a 19.85 micrometre full-heart mesh."
+      }
+    },
+    {
+      "donorId": "s-20-29",
+      "referenceMm": 154.66464000000002,
+      "sourceDimensionsXYZ": [
+        478,
+        478,
+        487
+      ],
+      "sourceSpacingUm": 318.24,
+      "residentSpacingUm": 318.24,
+      "threshold": 0.28,
+      "extent": [
+        0.9814814814814815,
+        1.0,
+        0.9814814814814815
+      ],
+      "bounds": {
+        "min": [
+          -0.49074074074074076,
+          -0.5,
+          -0.49074074074074076
+        ],
+        "max": [
+          0.49074074074074076,
+          0.5,
+          0.49074074074074076
+        ]
+      },
+      "lod": {
+        "url": "./assets/probe-heart-v44/s-20-29.hfm.gz",
+        "vertices": 148080,
+        "vertexCount": 148080,
+        "triangles": 299956,
+        "indexCount": 899868,
+        "compressedBytes": 2880964,
+        "decodedBytes": 5376464,
+        "sha256": "1056b73b72c8243648c0c16b12d2ad1c198649b2b808a2dd18d12c981de028e3",
+        "decodedSha256": "44a07c8ca6fc621f87245ec962db4c721da01e88cd7606354948dce07717a359",
+        "positionOffset": 32,
+        "normalOffset": 888512,
+        "indexOffset": 1776992
+      },
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+      "doiUrl": "https://doi.org/10.15151/ESRF-DC-1773964017",
+      "attribution": "Human Organ Atlas Collaboration / ESRF",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "provenance": {
+        "sourceManifest": "public/assets/donors/s-20-29/manifest.json",
+        "sourceManifestSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+        "sourceParts": [
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-00.raw.gz",
+            "bytes": 413466,
+            "sha256": "8033ce9db160ebfd631bedea6d98ecb99685e1c1da8323a57d1efb497d12e80d",
+            "rawSha256": "e1c5018317e5986648e363d7d7e1d381a02be4e17d1aca9ee9a2f7c70d0b05b0",
+            "zRange": [
+              0,
+              64
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-01.raw.gz",
+            "bytes": 1825592,
+            "sha256": "db71dae62fb8d7e33f076c65da27394de859caeec4f0bc9d5d539c5ae4e25c32",
+            "rawSha256": "156f760571b21fe29fb6542467f19cfaf7d4a528e15817f54a01de8dbf47aaf2",
+            "zRange": [
+              64,
+              128
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-02.raw.gz",
+            "bytes": 2288179,
+            "sha256": "39eaa08417c3c48070035448b0b2211c1f2e8b85dfd4b5f16654306b383446fa",
+            "rawSha256": "686e2f62ed3416ce2ea88b0dded172524cd658c5377a83fbb277bcc809ed3c5e",
+            "zRange": [
+              128,
+              192
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-03.raw.gz",
+            "bytes": 2333567,
+            "sha256": "683d769dc866770273ae4d1a41dd8d48aaf8331f275cce9818844ffb98199884",
+            "rawSha256": "d75719d3caf7c9504242078237dc238e6e4738378881fc70dc68cf0d3e181082",
+            "zRange": [
+              192,
+              256
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-04.raw.gz",
+            "bytes": 2053347,
+            "sha256": "0ee0d0012808bdcaf06306c63cf8de2b95360d7baff6ee37f8a033496d43c7ad",
+            "rawSha256": "9e9178c6e448fe3d3c6a97ff1d9f9f30d66a5030e36f7398ad608781d7cea933",
+            "zRange": [
+              256,
+              320
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-05.raw.gz",
+            "bytes": 1657862,
+            "sha256": "3fac97c9578416808ce05b818aaa8c65b70f5e1d47352f60d80e1280fce85c71",
+            "rawSha256": "5f10313abbd2f7b0918d482f24aa296fd8ad500526530d889d5f6f7063a29963",
+            "zRange": [
+              320,
+              384
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-06.raw.gz",
+            "bytes": 932934,
+            "sha256": "0e65fd1b88dba286b54bc7499fb51cc98399ecb9eacf521df767db96065b51c0",
+            "rawSha256": "cdbd108b2a92e3a5706f4ff547cc663be95d886469719400619511fd07934a99",
+            "zRange": [
+              384,
+              448
+            ],
+            "predictor": "delta-x"
+          },
+          {
+            "path": "public/assets/donors/s-20-29/volume/high-clean-07.raw.gz",
+            "bytes": 42627,
+            "sha256": "078901182e90f12981ef3cbf1dddc74d4b763bdbfdfe80e46201b496af1acaa3",
+            "rawSha256": "d55485a0b50a4ec1b8a4b39780b0f8a55446dcbac7ec14315857142ba1730079",
+            "zRange": [
+              448,
+              487
+            ],
+            "predictor": "delta-x"
+          }
+        ],
+        "sourceDecodedSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+        "source": "The complete existing cleaned, windowed uint8 high display volume, at its actual recorded sample centers; not original quantitative native acquisition.",
+        "scalarFilter": {
+          "method": "Separate Gaussian float32 display field",
+          "sigmaVoxels": 0.55,
+          "sigmaMm": 0.17503200000000002,
+          "truncate": 3,
+          "mode": "nearest"
+        },
+        "isosurface": {
+          "method": "VTK FlyingEdges3D",
+          "threshold": 0.28,
+          "scalarThreshold": 71.4,
+          "referenceTriangles": 4381224
+        },
+        "simplification": {
+          "method": "VTK QuadricDecimation",
+          "targetTriangles": 300000,
+          "volumePreservation": true,
+          "boundaryWeightFactor": 100,
+          "topologyGuaranteed": false
+        },
+        "encoding": {
+          "quantizationMaximumMm": 0.0019964626551573625,
+          "quantizationRmsMm": 0.0011668223170900789,
+          "trianglesBeforeEncoding": 300000,
+          "removedZeroAreaTriangles": 40,
+          "normalFallbackVertices": 1,
+          "normalFallbackFraction": 6.753106428957321e-06,
+          "quantizationCollapsedTriangles": 4
+        },
+        "versions": {
+          "python": "3.12.14",
+          "numpy": "2.3.5",
+          "scipy": "1.17.0",
+          "vtk": "9.3.1"
+        },
+        "coordinateConvention": "Acquisition XYZ -> centered world [X,Z,-Y] millimetres; HFM positions normalized by the longest high-grid sample-center extent. No anatomy registration or per-view transform.",
+        "sourceDataChanged": false,
+        "expertValidated": false,
+        "reusedExistingPayload": false,
+        "validation": {
+          "method": "Deterministic area-weighted nearest-triangle distances against the full high-grid isosurface after the stated scalar filter; not Hausdorff or clinical accuracy bounds.",
+          "sourceToCompact": {
+            "samples": 5000,
+            "seed": 4401,
+            "medianMm": 0.021019275316489554,
+            "p95Mm": 0.08486399930787072,
+            "p99Mm": 0.16488594431361756,
+            "maximumSampledMm": 4.2725749586946185,
+            "rmsMm": 0.1242418264692745
+          },
+          "compactToSource": {
+            "samples": 5000,
+            "seed": 4402,
+            "medianMm": 0.02063745178333521,
+            "p95Mm": 0.07538708839741558,
+            "p99Mm": 0.10630414813562969,
+            "maximumSampledMm": 0.17333489319940812,
+            "rmsMm": 0.035869418716963634
+          }
+        },
+        "qualification": "Whole-heart model prepared from this donor high display grid. Lossy orientation geometry; not a fine-source or native-resolution model and not clinically registered anatomy."
+      }
+    },
+    {
+      "donorId": "s-20-28",
+      "referenceMm": 161.34080000000003,
+      "sourceDimensionsXYZ": [
+        477,
+        477,
+        509
+      ],
+      "sourceSpacingUm": 317.6,
+      "residentSpacingUm": 317.6,
+      "threshold": 0.28,
+      "extent": [
+        0.9370078740157479,
+        1.0,
+        0.9370078740157479
+      ],
+      "bounds": {
+        "min": [
+          -0.46850393700787396,
+          -0.5,
+          -0.46850393700787396
+        ],
+        "max": [
+          0.46850393700787396,
+          0.5,
+          0.46850393700787396
+        ]
+      },
+      "lod": {
+        "url": "./assets/probe-heart-v44/s-20-28.hfm.gz",
+        "vertices": 146639,
+        "vertexCount": 146639,
+        "triangles": 299940,
+        "indexCount": 899820,
+        "compressedBytes": 2865878,
+        "decodedBytes": 5358984,
+        "sha256": "1b656a9c7b86284e01c1ed32c86e6a5e458242326bff5d76541d0d2202875118",
+        "decodedSha256": "ba606e36c0efacb5c368f726370982a847341f8a8fa161fad550254759081447",
+        "positionOffset": 32,
+        "normalOffset": 879868,
+        "indexOffset": 1759704
+      },
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+      "doiUrl": "https://doi.org/10.15151/ESRF-DC-1966163810",
+      "attribution": "Human Organ Atlas Collaboration / ESRF",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "provenance": {
+        "sourceManifest": "public/assets/donors/s-20-28/manifest.json",
+        "sourceManifestSha256": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+        "sourceParts": [
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-00.raw.gz",
+            "bytes": 766691,
+            "sha256": "1603df0efbaa1427dcc4d7eaf7fed92793a0cf10369769c14360e8c955447937",
+            "rawSha256": "54c51efc0b06a8f7e32050055abf2ddd363a81af8a2b03b1d9f8a8dff3541c0c",
+            "zRange": [
+              0,
+              64
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-01.raw.gz",
+            "bytes": 1753847,
+            "sha256": "28da2fc42c88b56a5e153c74ad1de5cb40ba2740de684c22c1eca1c01592f10b",
+            "rawSha256": "a3b5219e4743630249199ce91405a6f87fda1be7205b3a5245304eb4468cde60",
+            "zRange": [
+              64,
+              128
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-02.raw.gz",
+            "bytes": 2393310,
+            "sha256": "7ab1e3072ba79161e631122a5f83e368a97009342fa44899bfed48bc86377d1c",
+            "rawSha256": "2b816d3d26447dbf1c56945c6c651a5ec14a9e54862cbf955832c7eb0107b7be",
+            "zRange": [
+              128,
+              192
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-03.raw.gz",
+            "bytes": 2622059,
+            "sha256": "244cc57c7b7596db4e90d868cf08fe2a60c6bc2876d4468bc35d748b3a1de2c2",
+            "rawSha256": "82b7db62ba449770d7873a20a38ffa5286c659bdbe9688000f64e51fec63eecc",
+            "zRange": [
+              192,
+              256
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-04.raw.gz",
+            "bytes": 2691686,
+            "sha256": "a9bcb82ce2ecc5e0aad973c93d4e02d6ee85370816614a56c98a723454780c92",
+            "rawSha256": "1c36c5061f946b3f09dfd75816563d076d4b66af8c92ea5bb5950e62ee16b870",
+            "zRange": [
+              256,
+              320
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-05.raw.gz",
+            "bytes": 2331026,
+            "sha256": "56272b416e2ddabdff273dbb960757f7f34d8f06a416eda2fe8bbffef902aa5f",
+            "rawSha256": "6ec148c1417364b81f2fa5ddd3d84318dbb2f538b7d725921efdb00f3ba60e58",
+            "zRange": [
+              320,
+              384
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-06.raw.gz",
+            "bytes": 1663292,
+            "sha256": "dd2b3e3d2a1570276ed042ce7e0b754d3371cc5156bea46150ded6fc5d61ef6a",
+            "rawSha256": "90cfca51ad42c5ad2ccec2e6ca7569e85229c4a6014851451e2e705fda319e15",
+            "zRange": [
+              384,
+              448
+            ],
+            "predictor": "delta-z"
+          },
+          {
+            "path": "public/assets/donors/s-20-28/volume/high-clean-07.raw.gz",
+            "bytes": 355126,
+            "sha256": "0f910ba4c3946f3f9819aa30f06d68fda51f0a2d947547ef814225d0f6df470d",
+            "rawSha256": "6a1284db3523b7a1d2e778ac6963479b5a9a12fa1cce5517fe6a93b1cca76e25",
+            "zRange": [
+              448,
+              509
+            ],
+            "predictor": "delta-x"
+          }
+        ],
+        "sourceDecodedSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+        "source": "The complete existing cleaned, windowed uint8 high display volume, at its actual recorded sample centers; not original quantitative native acquisition.",
+        "scalarFilter": {
+          "method": "Separate Gaussian float32 display field",
+          "sigmaVoxels": 0.55,
+          "sigmaMm": 0.17468000000000003,
+          "truncate": 3,
+          "mode": "nearest"
+        },
+        "isosurface": {
+          "method": "VTK FlyingEdges3D",
+          "threshold": 0.28,
+          "scalarThreshold": 71.4,
+          "referenceTriangles": 5706072
+        },
+        "simplification": {
+          "method": "VTK QuadricDecimation",
+          "targetTriangles": 300000,
+          "volumePreservation": true,
+          "boundaryWeightFactor": 100,
+          "topologyGuaranteed": false
+        },
+        "encoding": {
+          "quantizationMaximumMm": 0.15553047173984172,
+          "quantizationRmsMm": 0.0012712505051812885,
+          "trianglesBeforeEncoding": 300000,
+          "removedZeroAreaTriangles": 40,
+          "normalFallbackVertices": 5,
+          "normalFallbackFraction": 3.409734108934185e-05,
+          "quantizationCollapsedTriangles": 20
+        },
+        "versions": {
+          "python": "3.12.14",
+          "numpy": "2.3.5",
+          "scipy": "1.17.0",
+          "vtk": "9.3.1"
+        },
+        "coordinateConvention": "Acquisition XYZ -> centered world [X,Z,-Y] millimetres; HFM positions normalized by the longest high-grid sample-center extent. No anatomy registration or per-view transform.",
+        "sourceDataChanged": false,
+        "expertValidated": false,
+        "reusedExistingPayload": false,
+        "validation": {
+          "method": "Deterministic area-weighted nearest-triangle distances against the full high-grid isosurface after the stated scalar filter; not Hausdorff or clinical accuracy bounds.",
+          "sourceToCompact": {
+            "samples": 5000,
+            "seed": 4401,
+            "medianMm": 0.022789099105198864,
+            "p95Mm": 0.08793093192322803,
+            "p99Mm": 0.15425085704832178,
+            "maximumSampledMm": 1.8583359588722888,
+            "rmsMm": 0.06497567917904747
+          },
+          "compactToSource": {
+            "samples": 5000,
+            "seed": 4402,
+            "medianMm": 0.022506951645311152,
+            "p95Mm": 0.08168356617194657,
+            "p99Mm": 0.11538674441248323,
+            "maximumSampledMm": 0.22499237412373277,
+            "rmsMm": 0.03911811228566146
+          }
+        },
+        "qualification": "Whole-heart model prepared from this donor high display grid. Lossy orientation geometry; not a fine-source or native-resolution model and not clinically registered anatomy."
+      }
+    }
+  ],
+  "limitations": [
+    "Reference body and skin are illustrative, not donor-registered.",
+    "These meshes are separate compact display derivatives, not the finalized Ultra surface.",
+    "Original volume arrays and main reconstruction geometry are unchanged."
+  ]
+}

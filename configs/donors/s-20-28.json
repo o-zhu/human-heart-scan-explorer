@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "s-20-28",
+  "specimen": "S-20-28",
+  "datasetId": "1966162746",
+  "doi": "10.15151/ESRF-DC-1966163810",
+  "donorAge": "84",
+  "donorSex": "male",
+  "donorMedicalInfo": "died from COVID-19",
+  "metadataDirectory": "docs/donors/s-20-28",
+  "source": {
+    "format": "n5",
+    "baseUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/19.85um_complete-organ_bm18/",
+    "nativeSpacingUm": 19.85,
+    "fineLevel": "2",
+    "highLevel": "4",
+    "window": [
+      14938,
+      22708
+    ],
+    "levels": {
+      "0": {
+        "dimensionsXYZ": [
+          7613,
+          7613,
+          8128
+        ],
+        "voxelMicrons": 19.85,
+        "rawBytes": 942161492864
+      },
+      "2": {
+        "dimensionsXYZ": [
+          1904,
+          1904,
+          2032
+        ],
+        "voxelMicrons": 79.4,
+        "rawBytes": 14732877824
+      },
+      "4": {
+        "dimensionsXYZ": [
+          476,
+          476,
+          508
+        ],
+        "voxelMicrons": 317.6,
+        "rawBytes": 230201216
+      }
+    }
+  },
+  "cleanup": {
+    "thresholdRaw": 17500,
+    "connectivity": 18,
+    "marginHighVoxels": 3,
+    "samplingGuardVoxels": 1,
+    "componentPolicy": "largest"
+  },
+  "viewsConfig": null,
+  "anatomyConfig": null,
+  "defaultThreshold": 0.32972972972972975,
+  "displayWindow": {
+    "windowEnabled": true,
+    "windowLow": 0.2782496782496782,
+    "windowHigh": 0.8445302445302445,
+    "windowGamma": 0.9,
+    "capContrast": 1
+  }
+}

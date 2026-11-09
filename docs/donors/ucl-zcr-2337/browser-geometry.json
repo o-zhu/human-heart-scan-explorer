@@ -1,0 +1,52 @@
+{
+  "highDimensionsXYZ": [
+    441,
+    480,
+    424
+  ],
+  "lowDimensionsXYZ": [
+    221,
+    241,
+    213
+  ],
+  "fullFineDimensionsXYZ": [
+    1761,
+    1917,
+    1693
+  ],
+  "sourceFineDimensionsXYZ": [
+    1760,
+    1916,
+    1691
+  ],
+  "highSpacingUm": 169.92,
+  "lowSpacingUmXYZ": [
+    339.84,
+    339.13199999999995,
+    339.0384905660377
+  ],
+  "fineSpacingUm": 42.48,
+  "longestMm": 81.39168,
+  "extent": [
+    0.918580375782881,
+    0.883089770354906,
+    1.0
+  ],
+  "fineSourcePhysicalOriginUm": [
+    21.24,
+    21.24,
+    21.24
+  ],
+  "highOriginalSourceIndexShift": [
+    -0.375,
+    -0.375,
+    -0.375
+  ],
+  "paddingFineColumnsXYZ": [
+    1,
+    1,
+    2
+  ],
+  "worldMapping": "Centered physical source coordinates [X,Z,-Y], normalized by longest physical center extent.",
+  "sourceCenterConvention": "Neuroglancer N5 zero-offset cell grid: sample center=(index+0.5)*resolution*downsamplingFactor."
+}

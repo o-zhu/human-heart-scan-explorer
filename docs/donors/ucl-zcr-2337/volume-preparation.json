@@ -1,0 +1,545 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "specimen": "UCL-ZCR-2337",
+    "organ": "heart",
+    "datasetId": "2298521860",
+    "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/2298521860",
+    "doi": "10.15151/ESRF-DC-2299323283",
+    "doiUrl": "https://doi.org/10.15151/ESRF-DC-2299323283",
+    "title": "Overview at 10.62um of the heart of donor UCL-ZCR-2337, scanned at ESRF on beamline BM18.",
+    "attribution": "Human Organ Atlas Collaboration / ESRF",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "donorAge": "<18",
+    "donorSex": null,
+    "donorMedicalInfo": "Disease free",
+    "nativeDimensions": [
+      7040,
+      7664,
+      6761
+    ],
+    "nativeSpacingUm": 10.62,
+    "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2337/heart/10.62um_complete-organ_bm18/",
+    "sourceFormat": "N5",
+    "sourceScale": "s4",
+    "sourceScaleDimensions": [
+      440,
+      479,
+      423
+    ],
+    "sourceScaleSpacingUm": 169.92,
+    "sourceWindow": [
+      20264.0,
+      29567.0
+    ],
+    "sourceDtype": "uint16",
+    "sourcePhysicalOriginUm": [
+      21.24,
+      21.24,
+      21.24
+    ],
+    "sourceAxes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "sourceScaleCenterExtentUm": [
+      74764.79999999999,
+      81391.68,
+      71876.15999999999
+    ],
+    "levels": {
+      "low": {
+        "label": "Fast \u00b7 339.840 \u00b5m",
+        "dimensions": [
+          221,
+          241,
+          213
+        ],
+        "spacingUm": [
+          339.84,
+          339.13199999999995,
+          339.0384905660377
+        ],
+        "parts": [
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/low-clean.raw.gz",
+            "bytes": 2324676,
+            "uncompressedBytes": 11344593,
+            "sha256": "ae1865a366637e81cb65428fc70ac1692f3debb162339b5628907f1d4d9bdefa",
+            "rawSha256": "b2c38936baea965263aeb62686414a61e744882edb184a3b23aaf93842b8f949",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              213
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/low-original.raw.gz",
+            "bytes": 5308844,
+            "uncompressedBytes": 11344593,
+            "sha256": "fc22592601946550a4ab444706a066a6e101ef3dc0ef0bef4797c2ebd0b663af",
+            "rawSha256": "75a902feaf3c54c587f05b73d96036eeeab22163137f674e1d0733ede371ca2d",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              213
+            ]
+          }
+        ],
+        "originalCompressedBytes": 5308844,
+        "compressedBytes": 2324676,
+        "uncompressedBytes": 11344593,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          74764.79999999999,
+          81391.68,
+          71876.15999999999
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      },
+      "high": {
+        "label": "Detailed \u00b7 169.920 \u00b5m",
+        "dimensions": [
+          441,
+          480,
+          424
+        ],
+        "spacingUm": 169.92,
+        "parts": [
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-00.raw.gz",
+            "bytes": 703465,
+            "uncompressedBytes": 13547520,
+            "sha256": "78ccc190d15e208356c3d5707033cff7e7e0e25837c75b14c65d786c5dcb40e4",
+            "rawSha256": "4d3622850205c7bdc672b5940f7bbb9322a14cb8d2a361bee371ff090bca66f3",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-01.raw.gz",
+            "bytes": 2480573,
+            "uncompressedBytes": 13547520,
+            "sha256": "7849258770cde16c400129a619873c6bd07fc3c3a094e00c4bfc73b25cf0d808",
+            "rawSha256": "2249d52a6c27d35af5c23eb85b036eda19d493c8692db2c010f5c1de78844917",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-02.raw.gz",
+            "bytes": 3709719,
+            "uncompressedBytes": 13547520,
+            "sha256": "b5f8b0748f7710ad18f2ea68e6870d23e6b9700a567ebee9e7f4ae83714683d2",
+            "rawSha256": "d379383630eb891ea72c2b179e402c0c692c24e3e080c98761266798a5c26165",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-03.raw.gz",
+            "bytes": 3965598,
+            "uncompressedBytes": 13547520,
+            "sha256": "d4e8784c84998c2129da6d4ff969fe6b779609b487558b0217983c9a33ab508c",
+            "rawSha256": "d299bbb567a11294f3a67596cbeee4d492f34af0b0231c5dc004378c4aac9dc2",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-04.raw.gz",
+            "bytes": 3339559,
+            "uncompressedBytes": 13547520,
+            "sha256": "22a73e5a18769d10aeffdff4c419fca6387e95cb4383334928d97b4fe8a4f210",
+            "rawSha256": "484e6fc3e895ba45ce3e066449c42326b4a0a70748e092c6f1a88adde91e9796",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-05.raw.gz",
+            "bytes": 1330165,
+            "uncompressedBytes": 13547520,
+            "sha256": "e902f005337dcfd150656dcc1baf0f0eb3e0010e426539269904bf1e9a53d6a4",
+            "rawSha256": "0279b1d7cce95f6732669e62095e8c51f9e4d3e0c4682ef44429d0544c70b6dd",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-clean-06.raw.gz",
+            "bytes": 205869,
+            "uncompressedBytes": 8467200,
+            "sha256": "bcd86e425cbc002e82e3e8638be2169d872bc98ea7bfa636bc567b6e35781f8e",
+            "rawSha256": "8516010212a4b1c0561df1f9c4ad9f5e8c588ef233926d9d218c6ceac0f4ddca",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              384,
+              424
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-00.raw.gz",
+            "bytes": 4897076,
+            "uncompressedBytes": 13547520,
+            "sha256": "a26ffc95bc74490ff21d849b37117c962fc0f781587eda8098ef257cc841f372",
+            "rawSha256": "56ea0bbb4edec58eaf6e2c9e0f6d9fe941d7fa3f9a5cdeab320236324684a0de",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-01.raw.gz",
+            "bytes": 5826058,
+            "uncompressedBytes": 13547520,
+            "sha256": "897cf265950c4f80cafc2eef64081760db05330a66a01590dde50d28eae6f426",
+            "rawSha256": "c5fe335e729af0d8641802114104de4f615b12dc37f6251889c3387a8e2fca0b",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-02.raw.gz",
+            "bytes": 6590850,
+            "uncompressedBytes": 13547520,
+            "sha256": "a80bd181f62100a15a5b9fc0b7f8fab912a1e08b2424eec0f0e09f327dbbad97",
+            "rawSha256": "0cbb02167044928a4dde28d8030d449420a3dc8cfc15e27b203efa0dd5124cc4",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-03.raw.gz",
+            "bytes": 6417239,
+            "uncompressedBytes": 13547520,
+            "sha256": "3aefbb0a7cff167f34392ec4662e3e74ce278f77394010cac8b81b09187871ec",
+            "rawSha256": "034b05c447586d3ca4f98986d69069c935682528af77bd313869b1ddd47136c5",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-04.raw.gz",
+            "bytes": 6147392,
+            "uncompressedBytes": 13547520,
+            "sha256": "be0cee1c88708c1427c278adbcdb9b93bb730f12c29eb0ed861bb4d19b21e6f5",
+            "rawSha256": "9925f4814c17867dea3e23a3f214902f7915406a004a272cce690d19454c71f4",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-05.raw.gz",
+            "bytes": 5190697,
+            "uncompressedBytes": 13547520,
+            "sha256": "8fe9fb8d6fb8668fd74a29f1fb336b5ac94795851828b5c95567aa61adc67200",
+            "rawSha256": "273aae9ec6394dca774b1d8e7133a28d12446128857f83fcfed1162d40a82b78",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/ucl-zcr-2337/volume/high-original-06.raw.gz",
+            "bytes": 2919486,
+            "uncompressedBytes": 8467200,
+            "sha256": "b78f3b3c30fd38581b246d8901168df4e80af91c958c8ed838c4cf8c82529b8e",
+            "rawSha256": "46fdfc855884931e08f352a854e6d0163a2005519d07e0d38a05dd49bb70a51b",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              384,
+              424
+            ]
+          }
+        ],
+        "originalCompressedBytes": 37988798,
+        "compressedBytes": 15734948,
+        "uncompressedBytes": 89752320,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          74764.79999999999,
+          81391.68,
+          71876.15999999999
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      }
+    },
+    "previewLevel": "low",
+    "defaultLevel": "high",
+    "defaultThreshold": 0.4123401053423627,
+    "registration": "Fine source first sample center anchors every level. High centers use exact integer fine-index stride; preview shares endpoints. All acquired fine voxels retained; added terminal columns are zero.",
+    "registrationPadding": {
+      "sourceFineDimensionsXYZ": [
+        1760,
+        1916,
+        1691
+      ],
+      "displayFineDimensionsXYZ": [
+        1761,
+        1917,
+        1693
+      ],
+      "zeroPaddedFineColumnsXYZ": [
+        1,
+        1,
+        2
+      ],
+      "sourceVoxelsOmitted": 0
+    },
+    "processingSummary": "Authentic UCL-ZCR-2337 whole-heart voxels. Official age <18; exact age/sex not supplied. Source-specific display encoding and reversible exterior cleanup. Clinical orientation and anatomical labels require donor-specific review.",
+    "retrievedDate": "2026-11-05",
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.3693432226163603,
+      "windowHigh": 0.7993120498763839,
+      "windowGamma": 0.9,
+      "capContrast": 1
+    }
+  },
+  "compression": {
+    "low": {
+      "chosenPredictors": [
+        "delta-z"
+      ],
+      "compressedBytes": 2324676,
+      "originalCompressedBytes": 5308844,
+      "partCount": 1,
+      "roundTripExact": true
+    },
+    "high": {
+      "chosenPredictors": [
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z"
+      ],
+      "compressedBytes": 15734948,
+      "originalCompressedBytes": 37988798,
+      "partCount": 7,
+      "roundTripExact": true
+    }
+  },
+  "cleanup": {
+    "schemaVersion": 1,
+    "specimen": "UCL-ZCR-2337",
+    "datasetId": "2298521860",
+    "dimensions": [
+      221,
+      241,
+      213
+    ],
+    "volumeUrl": "assets/donors/ucl-zcr-2337/cleanup/heart-support.raw.gz",
+    "dtype": "uint8",
+    "arrayOrder": "ZYX, X fastest",
+    "values": {
+      "0": "excluded",
+      "255": "retained"
+    },
+    "physicalCenterExtentUm": [
+      74764.79999999999,
+      81391.68,
+      71876.15999999999
+    ],
+    "sourceThresholdRaw": 24100.0,
+    "sourceThresholdDisplay": 0.4123401053423627,
+    "sourceDimensions": [
+      441,
+      480,
+      424
+    ],
+    "sourceSpacingUm": 169.92,
+    "method": "Reviewed largest 18-connected source-threshold support, 3-voxel Manhattan margin and conservative sampling guard; endpoint-registered support.",
+    "componentPolicy": "largest",
+    "retainedComponentIds": [
+      17
+    ],
+    "reviewedSupportSeeds": [],
+    "reviewedHeartRoi": {
+      "sourceHighXYZ": [
+        [
+          280,
+          404
+        ],
+        [
+          134,
+          310
+        ],
+        [
+          180,
+          300
+        ]
+      ],
+      "registeredInclusiveXYZ": [
+        [
+          280,
+          405
+        ],
+        [
+          134,
+          311
+        ],
+        [
+          180,
+          301
+        ]
+      ],
+      "thresholdVoxels": 1249350,
+      "additionalCoreVoxels": 104,
+      "policy": "Preserve all above-threshold source voxels in independently inspected cardiac ROI before conservative dilation."
+    },
+    "coreConnectivity": 18,
+    "marginVoxels": 3,
+    "coreComponentVoxels": 16489755,
+    "sourceForegroundVoxels": 16506260,
+    "sourceComponents": 1110,
+    "coreVoxelsRetained": 16489755,
+    "topComponentSizes": [
+      16489651,
+      1845,
+      1808,
+      1318,
+      776,
+      712,
+      578,
+      543,
+      526,
+      503,
+      489,
+      478
+    ],
+    "rawBytes": 11344593,
+    "compressedBytes": 104348,
+    "sha256": "ab708913a0c486d2155068539d9864610805903fd205e646cebcf7e0be6e1392",
+    "intensitiesModified": false,
+    "limitations": "Exterior display support is not anatomical segmentation. Original windowed volume is available by disabling cleanup."
+  },
+  "registration": {
+    "highDimensionsXYZ": [
+      441,
+      480,
+      424
+    ],
+    "lowDimensionsXYZ": [
+      221,
+      241,
+      213
+    ],
+    "fullFineDimensionsXYZ": [
+      1761,
+      1917,
+      1693
+    ],
+    "sourceFineDimensionsXYZ": [
+      1760,
+      1916,
+      1691
+    ],
+    "highSpacingUm": 169.92,
+    "lowSpacingUmXYZ": [
+      339.84,
+      339.13199999999995,
+      339.0384905660377
+    ],
+    "fineSpacingUm": 42.48,
+    "longestMm": 81.39168,
+    "extent": [
+      0.918580375782881,
+      0.883089770354906,
+      1.0
+    ],
+    "fineSourcePhysicalOriginUm": [
+      21.24,
+      21.24,
+      21.24
+    ],
+    "highOriginalSourceIndexShift": [
+      -0.375,
+      -0.375,
+      -0.375
+    ],
+    "paddingFineColumnsXYZ": [
+      1,
+      1,
+      2
+    ],
+    "worldMapping": "Centered physical source coordinates [X,Z,-Y], normalized by longest physical center extent.",
+    "sourceCenterConvention": "Neuroglancer N5 zero-offset cell grid: sample center=(index+0.5)*resolution*downsamplingFactor."
+  },
+  "publicAssetPacking": {
+    "maximumBytes": 6590850,
+    "targetLimitBytes": 16777216,
+    "method": "Single small initial preview; independent bounded detailed z slabs with predictor reset."
+  }
+}

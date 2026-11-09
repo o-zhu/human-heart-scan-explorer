@@ -1,0 +1,177 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 142,
+    "decodedBrickReads": 180,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "frozenV27ManifestUnchanged": true,
+  "wallRestorationSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "wallRestorationSamples": 109928,
+  "candidates": [
+    {
+      "id": "pulmonary-vein-complete-sheet",
+      "fileSha256": "f3fa7005b5c46dbe1c44317d9b99512ea71f2e02e5b5d51255f26f7c746fa709",
+      "logicalSha256": "49074778b07a4fc186a6fe48b6004d2c39eb2d1d7206bd2a64058a55846221e3",
+      "selectedSamples": 622615,
+      "restorationOverlap": 0
+    },
+    {
+      "id": "appendage-complete-free-sheet",
+      "fileSha256": "b4eb7112f0420744d6c07c0b842d4cd478e0ffbf5e75e7bf6c101ae16c4e0376",
+      "logicalSha256": "3a875e883e81e0176a0f8c0cda1642b9df34a73e6163fb2645df783f324bb5ab",
+      "selectedSamples": 515659,
+      "restorationOverlap": 0
+    },
+    {
+      "id": "atrial-inlet-early-continuation",
+      "fileSha256": "e4f7ca5d646f5007d04d3c4921029589e1fec4200fb34cc0976c3cbfefabc34d",
+      "logicalSha256": "84f77081f29722b602b0f86e60b5ad2afb8169665bdb87a306bb2662f92fa8dd",
+      "selectedSamples": 980225,
+      "restorationOverlap": 0
+    }
+  ],
+  "sourceCoordinateProbes": [
+    {
+      "label": "neighboring atrial wall",
+      "xyz": [
+        1160,
+        1260,
+        865
+      ],
+      "source": 110,
+      "excluded": false
+    },
+    {
+      "label": "adjacent dense septal wall",
+      "xyz": [
+        1290,
+        1260,
+        825
+      ],
+      "source": 157,
+      "excluded": false
+    },
+    {
+      "label": "pulmonary vein dense wall",
+      "xyz": [
+        1343,
+        1216,
+        744
+      ],
+      "source": 199,
+      "excluded": false
+    },
+    {
+      "label": "restored irregular wall seed",
+      "xyz": [
+        1125,
+        990,
+        990
+      ],
+      "source": 145,
+      "excluded": false
+    },
+    {
+      "label": "restored oval wall seed",
+      "xyz": [
+        1268,
+        938,
+        995
+      ],
+      "source": 162,
+      "excluded": false
+    },
+    {
+      "label": "selected PV oval branch",
+      "xyz": [
+        1324,
+        1216,
+        760
+      ],
+      "source": 139,
+      "excluded": true
+    },
+    {
+      "label": "selected late PV free sheet",
+      "xyz": [
+        1260,
+        1308,
+        722
+      ],
+      "source": 114,
+      "excluded": true
+    },
+    {
+      "label": "early inlet selected body from production readback",
+      "xyz": [
+        1240,
+        802,
+        530
+      ],
+      "source": 125,
+      "excluded": true
+    },
+    {
+      "label": "early inlet adjacent bright wall",
+      "xyz": [
+        1220,
+        780,
+        540
+      ],
+      "source": 148,
+      "excluded": false
+    },
+    {
+      "label": "early inlet lower adjacent wall",
+      "xyz": [
+        1180,
+        820,
+        560
+      ],
+      "source": 162,
+      "excluded": false
+    },
+    {
+      "label": "early inlet free upper lobe",
+      "xyz": [
+        1253,
+        840,
+        458
+      ],
+      "source": 91,
+      "excluded": true
+    },
+    {
+      "label": "early inlet roof retained at terminal attachment",
+      "xyz": [
+        1240,
+        848,
+        445
+      ],
+      "source": 192,
+      "excluded": false
+    }
+  ],
+  "patch": {
+    "policySha256": "7d3bcb3d380775d77692e3a764dcf562d0ab12ac1036b0fd761605a73a9b710e",
+    "surfaceFormat": "HFM1-gzip",
+    "surfaceSha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+    "sourcePaddedRoiSha256": "174de493055f69b658197f720625a16b350a912d1cd0b32040967646b87b1ee4",
+    "lowBandMaskSamples": 581627,
+    "retained135Samples": 2311604,
+    "lost135Samples": 0,
+    "retainedRaw190BaselineSamples": 344798,
+    "lostRaw190Samples": 0,
+    "changedBoxBoundarySamples": 0,
+    "restorationOverlap": 0
+  },
+  "verified": true,
+  "scope": "Bitset/transport/source identity and source-core retention invariants. Production appearance and final integration are separately reviewed."
+}

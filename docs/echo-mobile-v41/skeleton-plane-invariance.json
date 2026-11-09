@@ -1,0 +1,589 @@
+{
+  "passed": true,
+  "baselineCommit": "b1e5eb16954839923d0e37841079008c99730daf",
+  "baselineAuditSha256": "38b4e2f31e194ffaedd1d707bee9c402815d042978edc4758acdde0e7557ec39",
+  "rows": 112,
+  "changedPhysicalPlanesAndInstrumentGeometry": [],
+  "failedHandoffs": 0,
+  "sourceStable": true,
+  "cases": [
+    {
+      "key": "ladaf-2021-17/tte/plax_deep/refined/baseline",
+      "baselineGeometrySha256": "26c6b32b33068c3499f969a3c090105dc6b454c0ea43aa21f025b27bce079f3f",
+      "currentGeometrySha256": "26c6b32b33068c3499f969a3c090105dc6b454c0ea43aa21f025b27bce079f3f"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax/refined/baseline",
+      "baselineGeometrySha256": "d5962125a7b5a57758d1a2ccb94352bc5508ec45d761eb771957db3f13a80356",
+      "currentGeometrySha256": "d5962125a7b5a57758d1a2ccb94352bc5508ec45d761eb771957db3f13a80356"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_av/refined/baseline",
+      "baselineGeometrySha256": "6219df76cfd175d97a08daeacc1e647d5901d2dc3214ba1140273e99e61a03ba",
+      "currentGeometrySha256": "6219df76cfd175d97a08daeacc1e647d5901d2dc3214ba1140273e99e61a03ba"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_mv/refined/baseline",
+      "baselineGeometrySha256": "da76707a9c7493ff469f7fe69c25ec77378baf5ce7f4afa677a6e738e7b1e35a",
+      "currentGeometrySha256": "da76707a9c7493ff469f7fe69c25ec77378baf5ce7f4afa677a6e738e7b1e35a"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_rvot/refined/baseline",
+      "baselineGeometrySha256": "46b77b4b22de5247b9f3bab943f3078c5a820007dae0e3cab3004408637e2f92",
+      "currentGeometrySha256": "46b77b4b22de5247b9f3bab943f3078c5a820007dae0e3cab3004408637e2f92"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_rvin/refined/baseline",
+      "baselineGeometrySha256": "c29c8b78990ca10a6af166e54b3a33f5956745b1633e8adcdfbae84f7e53d683",
+      "currentGeometrySha256": "c29c8b78990ca10a6af166e54b3a33f5956745b1633e8adcdfbae84f7e53d683"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_great/refined/baseline",
+      "baselineGeometrySha256": "46b0cc8e5e51c8f057b8845ef8613b8e6c21a111e6919066f82886f464f617e7",
+      "currentGeometrySha256": "46b0cc8e5e51c8f057b8845ef8613b8e6c21a111e6919066f82886f464f617e7"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_av/refined/baseline",
+      "baselineGeometrySha256": "8cb24f1037fa3473b11a1998454488503fe0d7786907c894d05fa79f51f315f6",
+      "currentGeometrySha256": "8cb24f1037fa3473b11a1998454488503fe0d7786907c894d05fa79f51f315f6"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_av_zoom/refined/baseline",
+      "baselineGeometrySha256": "d2be1a56653218eb2b183aa0f8ce49eeaeb45db38f9a40abdfd746bbe4f3a9bc",
+      "currentGeometrySha256": "d2be1a56653218eb2b183aa0f8ce49eeaeb45db38f9a40abdfd746bbe4f3a9bc"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_tv/refined/baseline",
+      "baselineGeometrySha256": "dd761ac00873a26de782cd893026301d9fa70e3312abd30b88674416629fcfaf",
+      "currentGeometrySha256": "dd761ac00873a26de782cd893026301d9fa70e3312abd30b88674416629fcfaf"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_pv/refined/baseline",
+      "baselineGeometrySha256": "ed05c7ab6db02a32f52bb97e3746c3f3063c56aff8b7aadc3affce793185147b",
+      "currentGeometrySha256": "ed05c7ab6db02a32f52bb97e3746c3f3063c56aff8b7aadc3affce793185147b"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_mitral/refined/baseline",
+      "baselineGeometrySha256": "571a01adb15b00743070bbf268c162068efa86b7aacec823d7f2325927d1b8e6",
+      "currentGeometrySha256": "571a01adb15b00743070bbf268c162068efa86b7aacec823d7f2325927d1b8e6"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_papillary/refined/baseline",
+      "baselineGeometrySha256": "912cc06dd963ce8a8da310177e0f77fb7b1bbd0646f903251fd344204137ef74",
+      "currentGeometrySha256": "912cc06dd963ce8a8da310177e0f77fb7b1bbd0646f903251fd344204137ef74"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_apical/refined/baseline",
+      "baselineGeometrySha256": "824b77e34f1e3402c64dc8aca5dbd4875963d00dbb28eff697e6e20fe5e62d3a",
+      "currentGeometrySha256": "824b77e34f1e3402c64dc8aca5dbd4875963d00dbb28eff697e6e20fe5e62d3a"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c/refined/baseline",
+      "baselineGeometrySha256": "dc79f6263ded78455c3affd7797bc09e021e11ad8f69824753099e9b1f68f2d2",
+      "currentGeometrySha256": "dc79f6263ded78455c3affd7797bc09e021e11ad8f69824753099e9b1f68f2d2"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_lv/refined/baseline",
+      "baselineGeometrySha256": "ad9bb7d5760d54f06484bd6ff8c12b733f111aa5f8daf248187fadb3ced69ab3",
+      "currentGeometrySha256": "ad9bb7d5760d54f06484bd6ff8c12b733f111aa5f8daf248187fadb3ced69ab3"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_rv/refined/baseline",
+      "baselineGeometrySha256": "ebcdbb5453dffcc1362fde714f6d9fa652eeb78872b0fd932c9aafb00b377314",
+      "currentGeometrySha256": "ebcdbb5453dffcc1362fde714f6d9fa652eeb78872b0fd932c9aafb00b377314"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a5c/refined/baseline",
+      "baselineGeometrySha256": "78e258b1283c975e6c3684a71f17f9f9df60f8ff45b92629ec0a3916e8728b55",
+      "currentGeometrySha256": "78e258b1283c975e6c3684a71f17f9f9df60f8ff45b92629ec0a3916e8728b55"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_cs/refined/baseline",
+      "baselineGeometrySha256": "dc271b7bc363993c6c0c00c773fee64a051f470023f370f35a2ec322c47dd224",
+      "currentGeometrySha256": "dc271b7bc363993c6c0c00c773fee64a051f470023f370f35a2ec322c47dd224"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a2c/refined/baseline",
+      "baselineGeometrySha256": "e0b2d7780407aac0a8c6b1b7784ac7a6195bd66558533d854900a38bd890e17c",
+      "currentGeometrySha256": "e0b2d7780407aac0a8c6b1b7784ac7a6195bd66558533d854900a38bd890e17c"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a2c_lv/refined/baseline",
+      "baselineGeometrySha256": "ee98fdd99de274867995b60abbab3b78f12820cf2beadcd51ddd1cc341d727e5",
+      "currentGeometrySha256": "ee98fdd99de274867995b60abbab3b78f12820cf2beadcd51ddd1cc341d727e5"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a3c/refined/baseline",
+      "baselineGeometrySha256": "f8b0dc07059e183b3fa67a890731015debfd9bc50912f22df7e90036fbc893da",
+      "currentGeometrySha256": "f8b0dc07059e183b3fa67a890731015debfd9bc50912f22df7e90036fbc893da"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a3c_lv/refined/baseline",
+      "baselineGeometrySha256": "de9b503f7ddb19704cec66c6c6a6268991d8efec6c8ede7ef045b345011ed9df",
+      "currentGeometrySha256": "de9b503f7ddb19704cec66c6c6a6268991d8efec6c8ede7ef045b345011ed9df"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_la_pv/refined/baseline",
+      "baselineGeometrySha256": "f4b418ff7bc8d1008d61817402a14b73ad08b404b73aeb67e3c12bf17a575a44",
+      "currentGeometrySha256": "f4b418ff7bc8d1008d61817402a14b73ad08b404b73aeb67e3c12bf17a575a44"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal/refined/baseline",
+      "baselineGeometrySha256": "cfb1d6c47a5502c93f800df88a7c67a1473325795caed980cc619b83293f4367",
+      "currentGeometrySha256": "cfb1d6c47a5502c93f800df88a7c67a1473325795caed980cc619b83293f4367"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal_ivc/refined/baseline",
+      "baselineGeometrySha256": "8ea5671a66d079069cd016e6fee98bf9bb4655900fc84d80ffbafa2881f160c4",
+      "currentGeometrySha256": "8ea5671a66d079069cd016e6fee98bf9bb4655900fc84d80ffbafa2881f160c4"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal_hepatic/refined/baseline",
+      "baselineGeometrySha256": "b57f2ca2272bb97122f21f951fc63494c11c23158efac6c3846a9d92fc855586",
+      "currentGeometrySha256": "b57f2ca2272bb97122f21f951fc63494c11c23158efac6c3846a9d92fc855586"
+    },
+    {
+      "key": "ladaf-2021-17/tte/ssn_arch/refined/baseline",
+      "baselineGeometrySha256": "8806968f3a952f0399b63af53ef7c1428b837a5828361a539f5330c84251dcb7",
+      "currentGeometrySha256": "8806968f3a952f0399b63af53ef7c1428b837a5828361a539f5330c84251dcb7"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me5c/refined/baseline",
+      "baselineGeometrySha256": "c2d8f33644eb1dfae649251285b83d26f2730bf84c7452cc77a3c24a8ef1d86b",
+      "currentGeometrySha256": "c2d8f33644eb1dfae649251285b83d26f2730bf84c7452cc77a3c24a8ef1d86b"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me4c/refined/baseline",
+      "baselineGeometrySha256": "9ebb741ef30c6ea76a8743abd29496b83783285535fee0aa47a6e41f43b47fcd",
+      "currentGeometrySha256": "9ebb741ef30c6ea76a8743abd29496b83783285535fee0aa47a6e41f43b47fcd"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mecommissural/refined/baseline",
+      "baselineGeometrySha256": "5d4bcfb27b0a9c32a090f85d790572ce5733e74c0d6e8eb60572b28f32e987a0",
+      "currentGeometrySha256": "5d4bcfb27b0a9c32a090f85d790572ce5733e74c0d6e8eb60572b28f32e987a0"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me2c/refined/baseline",
+      "baselineGeometrySha256": "b0b3050585c1a70fb470481041bdaeca8e644e6f3d9c39f617c7f2da8e51fb20",
+      "currentGeometrySha256": "b0b3050585c1a70fb470481041bdaeca8e644e6f3d9c39f617c7f2da8e51fb20"
+    },
+    {
+      "key": "ladaf-2021-17/tee/melax/refined/baseline",
+      "baselineGeometrySha256": "5fc34729b532b4ed8bbb7859a2bc407c0e09fa246017597a351807274f2ec0ca",
+      "currentGeometrySha256": "5fc34729b532b4ed8bbb7859a2bc407c0e09fa246017597a351807274f2ec0ca"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meavlax/refined/baseline",
+      "baselineGeometrySha256": "e29231e6f31e45fadab2099fbd6918661177a91dd69d2526fec4b8e26f8d2632",
+      "currentGeometrySha256": "e29231e6f31e45fadab2099fbd6918661177a91dd69d2526fec4b8e26f8d2632"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meaaolax/refined/baseline",
+      "baselineGeometrySha256": "ef42cce9e1ceb28924faf3b423f2e9f4ac4c6a27da173087d67d87fba1c61f22",
+      "currentGeometrySha256": "ef42cce9e1ceb28924faf3b423f2e9f4ac4c6a27da173087d67d87fba1c61f22"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meaaosax/refined/baseline",
+      "baselineGeometrySha256": "09b30661d59dadbfe9092f59c578f03629a48a6d1444d4346ced1910bb283515",
+      "currentGeometrySha256": "09b30661d59dadbfe9092f59c578f03629a48a6d1444d4346ced1910bb283515"
+    },
+    {
+      "key": "ladaf-2021-17/tee/merpv/refined/baseline",
+      "baselineGeometrySha256": "88701b75ff71e11d601e69f6bf3f9ee3a77595a86513df27c0f657295fd71641",
+      "currentGeometrySha256": "88701b75ff71e11d601e69f6bf3f9ee3a77595a86513df27c0f657295fd71641"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meavsax/refined/baseline",
+      "baselineGeometrySha256": "26b83ed48baebda336c3b258f679bd6ec76f4c2eeb20b9a0566bf0fb74a37eaa",
+      "currentGeometrySha256": "26b83ed48baebda336c3b258f679bd6ec76f4c2eeb20b9a0566bf0fb74a37eaa"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mervinout/refined/baseline",
+      "baselineGeometrySha256": "e190c9797e29730b303f3ebf6b9b97532db7ea527c91c1e8c6941009216beda0",
+      "currentGeometrySha256": "e190c9797e29730b303f3ebf6b9b97532db7ea527c91c1e8c6941009216beda0"
+    },
+    {
+      "key": "ladaf-2021-17/tee/memodbicaval/refined/baseline",
+      "baselineGeometrySha256": "3a13a85da856b2df771a08ea19053cd56752439236bbc94990bf98d3fb4c5632",
+      "currentGeometrySha256": "3a13a85da856b2df771a08ea19053cd56752439236bbc94990bf98d3fb4c5632"
+    },
+    {
+      "key": "ladaf-2021-17/tee/bicaval/refined/baseline",
+      "baselineGeometrySha256": "58636ce2b0e9a745593a3bf2b6a9f83efd152ea5ae36c67b5779743425112d28",
+      "currentGeometrySha256": "58636ce2b0e9a745593a3bf2b6a9f83efd152ea5ae36c67b5779743425112d28"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mepv/refined/baseline",
+      "baselineGeometrySha256": "c7096ace7b911abe76fa2453e6e7c9ee107cc580f88cec7b0b2ba6456df1f993",
+      "currentGeometrySha256": "c7096ace7b911abe76fa2453e6e7c9ee107cc580f88cec7b0b2ba6456df1f993"
+    },
+    {
+      "key": "ladaf-2021-17/tee/melaa/refined/baseline",
+      "baselineGeometrySha256": "3d9d3163cf92ef30dfc6510570146318fee76a70dd4515bd9cec71038e02df87",
+      "currentGeometrySha256": "3d9d3163cf92ef30dfc6510570146318fee76a70dd4515bd9cec71038e02df87"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgbasalsax/refined/baseline",
+      "baselineGeometrySha256": "3b81de63da6f13850d332571caaf9b88237782ac2d4bdf328585255c918d9600",
+      "currentGeometrySha256": "3b81de63da6f13850d332571caaf9b88237782ac2d4bdf328585255c918d9600"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgpapillary/refined/baseline",
+      "baselineGeometrySha256": "16d9e00158087096f3b3ac85a66f93e570eb66528126a502e171af95dc1c8f29",
+      "currentGeometrySha256": "16d9e00158087096f3b3ac85a66f93e570eb66528126a502e171af95dc1c8f29"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgapicalsax/refined/baseline",
+      "baselineGeometrySha256": "764843284c145d9ff11b31a2c8087f1858c2c94cea4a87221d4c99c1f42d3bf5",
+      "currentGeometrySha256": "764843284c145d9ff11b31a2c8087f1858c2c94cea4a87221d4c99c1f42d3bf5"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvbasal/refined/baseline",
+      "baselineGeometrySha256": "80c67b880d1f29049650c6a7c99011eaae40993c30bd22228e874e2039848749",
+      "currentGeometrySha256": "80c67b880d1f29049650c6a7c99011eaae40993c30bd22228e874e2039848749"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvinout/refined/baseline",
+      "baselineGeometrySha256": "9c8512602b9c4013702894b82fc4cc98c7a8bd9a256961a77a88b7be79bc6116",
+      "currentGeometrySha256": "9c8512602b9c4013702894b82fc4cc98c7a8bd9a256961a77a88b7be79bc6116"
+    },
+    {
+      "key": "ladaf-2021-17/tee/deeptg5c/refined/baseline",
+      "baselineGeometrySha256": "f12d4f63f937e16903e6bbf78acb7caae8f94eea9641b772cc839a8ac6131720",
+      "currentGeometrySha256": "f12d4f63f937e16903e6bbf78acb7caae8f94eea9641b772cc839a8ac6131720"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tg2c/refined/baseline",
+      "baselineGeometrySha256": "d5f8c0e139043bf8b2bc772f9df872fca909fd23f7b41157684da2182336a701",
+      "currentGeometrySha256": "d5f8c0e139043bf8b2bc772f9df872fca909fd23f7b41157684da2182336a701"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvin/refined/baseline",
+      "baselineGeometrySha256": "d44563f3a8df69638722c311ca7c46b94ad227ae66ff31439adcb9efbf5d82d2",
+      "currentGeometrySha256": "d44563f3a8df69638722c311ca7c46b94ad227ae66ff31439adcb9efbf5d82d2"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tglax/refined/baseline",
+      "baselineGeometrySha256": "99ce6503509e753a74225c6b395ab4c1b4856329ee6189d562a22e015e71ca64",
+      "currentGeometrySha256": "99ce6503509e753a74225c6b395ab4c1b4856329ee6189d562a22e015e71ca64"
+    },
+    {
+      "key": "ladaf-2021-17/tee/daosax/refined/baseline",
+      "baselineGeometrySha256": "dfa0c9e215287a8af93b1393253000505734bead7764f2f4d3f2d1dfe905cd1a",
+      "currentGeometrySha256": "dfa0c9e215287a8af93b1393253000505734bead7764f2f4d3f2d1dfe905cd1a"
+    },
+    {
+      "key": "ladaf-2021-17/tee/daolax/refined/baseline",
+      "baselineGeometrySha256": "dd34900ff52f2068a96891a9a65008342335c7cef01b15dc382c7312af9c55d0",
+      "currentGeometrySha256": "dd34900ff52f2068a96891a9a65008342335c7cef01b15dc382c7312af9c55d0"
+    },
+    {
+      "key": "ladaf-2021-17/tee/uearchlax/refined/baseline",
+      "baselineGeometrySha256": "99ef1656ff975a65a0aeed112b144377f4377c2ef6d3b2e1561a991ee14f0b9f",
+      "currentGeometrySha256": "99ef1656ff975a65a0aeed112b144377f4377c2ef6d3b2e1561a991ee14f0b9f"
+    },
+    {
+      "key": "ladaf-2021-17/tee/uearchsax/refined/baseline",
+      "baselineGeometrySha256": "626cd408cfd51b43f46f57a99a9b666a2d3a5386ab21ee5a72f7166b61a4e334",
+      "currentGeometrySha256": "626cd408cfd51b43f46f57a99a9b666a2d3a5386ab21ee5a72f7166b61a4e334"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_deep/previous/baseline",
+      "baselineGeometrySha256": "26c6b32b33068c3499f969a3c090105dc6b454c0ea43aa21f025b27bce079f3f",
+      "currentGeometrySha256": "26c6b32b33068c3499f969a3c090105dc6b454c0ea43aa21f025b27bce079f3f"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax/previous/baseline",
+      "baselineGeometrySha256": "d5962125a7b5a57758d1a2ccb94352bc5508ec45d761eb771957db3f13a80356",
+      "currentGeometrySha256": "d5962125a7b5a57758d1a2ccb94352bc5508ec45d761eb771957db3f13a80356"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_av/previous/baseline",
+      "baselineGeometrySha256": "6219df76cfd175d97a08daeacc1e647d5901d2dc3214ba1140273e99e61a03ba",
+      "currentGeometrySha256": "6219df76cfd175d97a08daeacc1e647d5901d2dc3214ba1140273e99e61a03ba"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_mv/previous/baseline",
+      "baselineGeometrySha256": "da76707a9c7493ff469f7fe69c25ec77378baf5ce7f4afa677a6e738e7b1e35a",
+      "currentGeometrySha256": "da76707a9c7493ff469f7fe69c25ec77378baf5ce7f4afa677a6e738e7b1e35a"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_rvot/previous/baseline",
+      "baselineGeometrySha256": "46b77b4b22de5247b9f3bab943f3078c5a820007dae0e3cab3004408637e2f92",
+      "currentGeometrySha256": "46b77b4b22de5247b9f3bab943f3078c5a820007dae0e3cab3004408637e2f92"
+    },
+    {
+      "key": "ladaf-2021-17/tte/plax_rvin/previous/baseline",
+      "baselineGeometrySha256": "c29c8b78990ca10a6af166e54b3a33f5956745b1633e8adcdfbae84f7e53d683",
+      "currentGeometrySha256": "c29c8b78990ca10a6af166e54b3a33f5956745b1633e8adcdfbae84f7e53d683"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_great/previous/baseline",
+      "baselineGeometrySha256": "46b0cc8e5e51c8f057b8845ef8613b8e6c21a111e6919066f82886f464f617e7",
+      "currentGeometrySha256": "46b0cc8e5e51c8f057b8845ef8613b8e6c21a111e6919066f82886f464f617e7"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_av/previous/baseline",
+      "baselineGeometrySha256": "8cb24f1037fa3473b11a1998454488503fe0d7786907c894d05fa79f51f315f6",
+      "currentGeometrySha256": "8cb24f1037fa3473b11a1998454488503fe0d7786907c894d05fa79f51f315f6"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_av_zoom/previous/baseline",
+      "baselineGeometrySha256": "d2be1a56653218eb2b183aa0f8ce49eeaeb45db38f9a40abdfd746bbe4f3a9bc",
+      "currentGeometrySha256": "d2be1a56653218eb2b183aa0f8ce49eeaeb45db38f9a40abdfd746bbe4f3a9bc"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_tv/previous/baseline",
+      "baselineGeometrySha256": "dd761ac00873a26de782cd893026301d9fa70e3312abd30b88674416629fcfaf",
+      "currentGeometrySha256": "dd761ac00873a26de782cd893026301d9fa70e3312abd30b88674416629fcfaf"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_pv/previous/baseline",
+      "baselineGeometrySha256": "ed05c7ab6db02a32f52bb97e3746c3f3063c56aff8b7aadc3affce793185147b",
+      "currentGeometrySha256": "ed05c7ab6db02a32f52bb97e3746c3f3063c56aff8b7aadc3affce793185147b"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_mitral/previous/baseline",
+      "baselineGeometrySha256": "571a01adb15b00743070bbf268c162068efa86b7aacec823d7f2325927d1b8e6",
+      "currentGeometrySha256": "571a01adb15b00743070bbf268c162068efa86b7aacec823d7f2325927d1b8e6"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_papillary/previous/baseline",
+      "baselineGeometrySha256": "912cc06dd963ce8a8da310177e0f77fb7b1bbd0646f903251fd344204137ef74",
+      "currentGeometrySha256": "912cc06dd963ce8a8da310177e0f77fb7b1bbd0646f903251fd344204137ef74"
+    },
+    {
+      "key": "ladaf-2021-17/tte/psax_apical/previous/baseline",
+      "baselineGeometrySha256": "824b77e34f1e3402c64dc8aca5dbd4875963d00dbb28eff697e6e20fe5e62d3a",
+      "currentGeometrySha256": "824b77e34f1e3402c64dc8aca5dbd4875963d00dbb28eff697e6e20fe5e62d3a"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c/previous/baseline",
+      "baselineGeometrySha256": "dc79f6263ded78455c3affd7797bc09e021e11ad8f69824753099e9b1f68f2d2",
+      "currentGeometrySha256": "dc79f6263ded78455c3affd7797bc09e021e11ad8f69824753099e9b1f68f2d2"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_lv/previous/baseline",
+      "baselineGeometrySha256": "ad9bb7d5760d54f06484bd6ff8c12b733f111aa5f8daf248187fadb3ced69ab3",
+      "currentGeometrySha256": "ad9bb7d5760d54f06484bd6ff8c12b733f111aa5f8daf248187fadb3ced69ab3"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_rv/previous/baseline",
+      "baselineGeometrySha256": "ebcdbb5453dffcc1362fde714f6d9fa652eeb78872b0fd932c9aafb00b377314",
+      "currentGeometrySha256": "ebcdbb5453dffcc1362fde714f6d9fa652eeb78872b0fd932c9aafb00b377314"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a5c/previous/baseline",
+      "baselineGeometrySha256": "78e258b1283c975e6c3684a71f17f9f9df60f8ff45b92629ec0a3916e8728b55",
+      "currentGeometrySha256": "78e258b1283c975e6c3684a71f17f9f9df60f8ff45b92629ec0a3916e8728b55"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_cs/previous/baseline",
+      "baselineGeometrySha256": "dc271b7bc363993c6c0c00c773fee64a051f470023f370f35a2ec322c47dd224",
+      "currentGeometrySha256": "dc271b7bc363993c6c0c00c773fee64a051f470023f370f35a2ec322c47dd224"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a2c/previous/baseline",
+      "baselineGeometrySha256": "e0b2d7780407aac0a8c6b1b7784ac7a6195bd66558533d854900a38bd890e17c",
+      "currentGeometrySha256": "e0b2d7780407aac0a8c6b1b7784ac7a6195bd66558533d854900a38bd890e17c"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a2c_lv/previous/baseline",
+      "baselineGeometrySha256": "ee98fdd99de274867995b60abbab3b78f12820cf2beadcd51ddd1cc341d727e5",
+      "currentGeometrySha256": "ee98fdd99de274867995b60abbab3b78f12820cf2beadcd51ddd1cc341d727e5"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a3c/previous/baseline",
+      "baselineGeometrySha256": "f8b0dc07059e183b3fa67a890731015debfd9bc50912f22df7e90036fbc893da",
+      "currentGeometrySha256": "f8b0dc07059e183b3fa67a890731015debfd9bc50912f22df7e90036fbc893da"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a3c_lv/previous/baseline",
+      "baselineGeometrySha256": "de9b503f7ddb19704cec66c6c6a6268991d8efec6c8ede7ef045b345011ed9df",
+      "currentGeometrySha256": "de9b503f7ddb19704cec66c6c6a6268991d8efec6c8ede7ef045b345011ed9df"
+    },
+    {
+      "key": "ladaf-2021-17/tte/a4c_la_pv/previous/baseline",
+      "baselineGeometrySha256": "f4b418ff7bc8d1008d61817402a14b73ad08b404b73aeb67e3c12bf17a575a44",
+      "currentGeometrySha256": "f4b418ff7bc8d1008d61817402a14b73ad08b404b73aeb67e3c12bf17a575a44"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal/previous/baseline",
+      "baselineGeometrySha256": "cfb1d6c47a5502c93f800df88a7c67a1473325795caed980cc619b83293f4367",
+      "currentGeometrySha256": "cfb1d6c47a5502c93f800df88a7c67a1473325795caed980cc619b83293f4367"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal_ivc/previous/baseline",
+      "baselineGeometrySha256": "8ea5671a66d079069cd016e6fee98bf9bb4655900fc84d80ffbafa2881f160c4",
+      "currentGeometrySha256": "8ea5671a66d079069cd016e6fee98bf9bb4655900fc84d80ffbafa2881f160c4"
+    },
+    {
+      "key": "ladaf-2021-17/tte/subcostal_hepatic/previous/baseline",
+      "baselineGeometrySha256": "b57f2ca2272bb97122f21f951fc63494c11c23158efac6c3846a9d92fc855586",
+      "currentGeometrySha256": "b57f2ca2272bb97122f21f951fc63494c11c23158efac6c3846a9d92fc855586"
+    },
+    {
+      "key": "ladaf-2021-17/tte/ssn_arch/previous/baseline",
+      "baselineGeometrySha256": "8806968f3a952f0399b63af53ef7c1428b837a5828361a539f5330c84251dcb7",
+      "currentGeometrySha256": "8806968f3a952f0399b63af53ef7c1428b837a5828361a539f5330c84251dcb7"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me5c/previous/baseline",
+      "baselineGeometrySha256": "c4030034b292e51707a766a527f84ef49bbfe83c51bcffb96e1cc4ab6e24e9e8",
+      "currentGeometrySha256": "c4030034b292e51707a766a527f84ef49bbfe83c51bcffb96e1cc4ab6e24e9e8"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me4c/previous/baseline",
+      "baselineGeometrySha256": "9b1819c0a9f12fa3479614c22a03c2f5c3d32e7d34c33a4e6d2cb58f11131f1f",
+      "currentGeometrySha256": "9b1819c0a9f12fa3479614c22a03c2f5c3d32e7d34c33a4e6d2cb58f11131f1f"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mecommissural/previous/baseline",
+      "baselineGeometrySha256": "2299c4e33e27684eef8be8d0a7271033abb70a37dad0da8e52af6bf87496ace9",
+      "currentGeometrySha256": "2299c4e33e27684eef8be8d0a7271033abb70a37dad0da8e52af6bf87496ace9"
+    },
+    {
+      "key": "ladaf-2021-17/tee/me2c/previous/baseline",
+      "baselineGeometrySha256": "a48f5b13f653bfb7678b26a7236a32d6c78bdefa66c3be313240697a185ab7f5",
+      "currentGeometrySha256": "a48f5b13f653bfb7678b26a7236a32d6c78bdefa66c3be313240697a185ab7f5"
+    },
+    {
+      "key": "ladaf-2021-17/tee/melax/previous/baseline",
+      "baselineGeometrySha256": "1067316b9808b7ab60f43f701b7b0eb8aa9ed9f4dd0deab2f7ee5e239bd9e11a",
+      "currentGeometrySha256": "1067316b9808b7ab60f43f701b7b0eb8aa9ed9f4dd0deab2f7ee5e239bd9e11a"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meavlax/previous/baseline",
+      "baselineGeometrySha256": "00c13f146c5a398548199032ed17be77563f4007a784941c9c8950f6a74c8b11",
+      "currentGeometrySha256": "00c13f146c5a398548199032ed17be77563f4007a784941c9c8950f6a74c8b11"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meaaolax/previous/baseline",
+      "baselineGeometrySha256": "d7b5dd18351d7c4a0d945bd33933ae257bfeab152b66101b5163e32e2c8f8ecb",
+      "currentGeometrySha256": "d7b5dd18351d7c4a0d945bd33933ae257bfeab152b66101b5163e32e2c8f8ecb"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meaaosax/previous/baseline",
+      "baselineGeometrySha256": "51e7024c0d70cf16c6aaa1f37410bba75e90866ca4b09cc3b91274964321a2f8",
+      "currentGeometrySha256": "51e7024c0d70cf16c6aaa1f37410bba75e90866ca4b09cc3b91274964321a2f8"
+    },
+    {
+      "key": "ladaf-2021-17/tee/merpv/previous/baseline",
+      "baselineGeometrySha256": "741e28ff365cd042dd2282110055db6fbbc70739e2bc8912b19215c6c5a55a2e",
+      "currentGeometrySha256": "741e28ff365cd042dd2282110055db6fbbc70739e2bc8912b19215c6c5a55a2e"
+    },
+    {
+      "key": "ladaf-2021-17/tee/meavsax/previous/baseline",
+      "baselineGeometrySha256": "5419e4dbf11cdd3dbdee1959a056188a1bdacf035c83b0bf41872c60975cad09",
+      "currentGeometrySha256": "5419e4dbf11cdd3dbdee1959a056188a1bdacf035c83b0bf41872c60975cad09"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mervinout/previous/baseline",
+      "baselineGeometrySha256": "67268447ed0ef9c4343e3c5c63dbfff9bb1dc09b2115b07131b98e0e5ffeb493",
+      "currentGeometrySha256": "67268447ed0ef9c4343e3c5c63dbfff9bb1dc09b2115b07131b98e0e5ffeb493"
+    },
+    {
+      "key": "ladaf-2021-17/tee/memodbicaval/previous/baseline",
+      "baselineGeometrySha256": "fd26e297cb92281574c252e38a3878d42d077e97fa1871555187d9cac9d45828",
+      "currentGeometrySha256": "fd26e297cb92281574c252e38a3878d42d077e97fa1871555187d9cac9d45828"
+    },
+    {
+      "key": "ladaf-2021-17/tee/bicaval/previous/baseline",
+      "baselineGeometrySha256": "85625bced9e77f18b5cf381015eb1d72d4f69d0d9ed259bc1e63cba46e1d6a84",
+      "currentGeometrySha256": "85625bced9e77f18b5cf381015eb1d72d4f69d0d9ed259bc1e63cba46e1d6a84"
+    },
+    {
+      "key": "ladaf-2021-17/tee/mepv/previous/baseline",
+      "baselineGeometrySha256": "e4651892f51ff12853b2c523824a95b7e62520e89606f7ab2ce4867de253e9b8",
+      "currentGeometrySha256": "e4651892f51ff12853b2c523824a95b7e62520e89606f7ab2ce4867de253e9b8"
+    },
+    {
+      "key": "ladaf-2021-17/tee/melaa/previous/baseline",
+      "baselineGeometrySha256": "3d9d3163cf92ef30dfc6510570146318fee76a70dd4515bd9cec71038e02df87",
+      "currentGeometrySha256": "3d9d3163cf92ef30dfc6510570146318fee76a70dd4515bd9cec71038e02df87"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgbasalsax/previous/baseline",
+      "baselineGeometrySha256": "14b04da47aef0bc9c944cdb1923f0604c7c18018dd849788614f86b49e0bea90",
+      "currentGeometrySha256": "14b04da47aef0bc9c944cdb1923f0604c7c18018dd849788614f86b49e0bea90"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgpapillary/previous/baseline",
+      "baselineGeometrySha256": "367ca2e4573e226372854f598bcb6c3104542e730710e411fc52c306cc54d208",
+      "currentGeometrySha256": "367ca2e4573e226372854f598bcb6c3104542e730710e411fc52c306cc54d208"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgapicalsax/previous/baseline",
+      "baselineGeometrySha256": "b52bcf67fbb0fa4ccbe6f21ca1d73dbef274a8bd72f1542d34b29b063d80c500",
+      "currentGeometrySha256": "b52bcf67fbb0fa4ccbe6f21ca1d73dbef274a8bd72f1542d34b29b063d80c500"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvbasal/previous/baseline",
+      "baselineGeometrySha256": "cec134f0b15989854c0f4f91c8122fdd6bf532e2e03a175de4eb1b98acf7b55d",
+      "currentGeometrySha256": "cec134f0b15989854c0f4f91c8122fdd6bf532e2e03a175de4eb1b98acf7b55d"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvinout/previous/baseline",
+      "baselineGeometrySha256": "8e8f6a9a2000976bc1f359fe4901cbc8b4ddea421c667369cf1ab003dca810c9",
+      "currentGeometrySha256": "8e8f6a9a2000976bc1f359fe4901cbc8b4ddea421c667369cf1ab003dca810c9"
+    },
+    {
+      "key": "ladaf-2021-17/tee/deeptg5c/previous/baseline",
+      "baselineGeometrySha256": "3fdf7b09e064afdf2f68533b40794bdc417568b2b3219957984a6040c172ed90",
+      "currentGeometrySha256": "3fdf7b09e064afdf2f68533b40794bdc417568b2b3219957984a6040c172ed90"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tg2c/previous/baseline",
+      "baselineGeometrySha256": "91104c91f11e83377b2a26ce8f218a09720272e3c0ce979a4c5b79ab59a181d8",
+      "currentGeometrySha256": "91104c91f11e83377b2a26ce8f218a09720272e3c0ce979a4c5b79ab59a181d8"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tgrvin/previous/baseline",
+      "baselineGeometrySha256": "2cf19029f8096aa09c1827c566997dfbe85e86f54ba6a0436c36482223759258",
+      "currentGeometrySha256": "2cf19029f8096aa09c1827c566997dfbe85e86f54ba6a0436c36482223759258"
+    },
+    {
+      "key": "ladaf-2021-17/tee/tglax/previous/baseline",
+      "baselineGeometrySha256": "1e0c1a1cbd69e34e8858f71b3e75c523bb8b5c25f332729550fe8dd721120f5c",
+      "currentGeometrySha256": "1e0c1a1cbd69e34e8858f71b3e75c523bb8b5c25f332729550fe8dd721120f5c"
+    },
+    {
+      "key": "ladaf-2021-17/tee/daosax/previous/baseline",
+      "baselineGeometrySha256": "dfa0c9e215287a8af93b1393253000505734bead7764f2f4d3f2d1dfe905cd1a",
+      "currentGeometrySha256": "dfa0c9e215287a8af93b1393253000505734bead7764f2f4d3f2d1dfe905cd1a"
+    },
+    {
+      "key": "ladaf-2021-17/tee/daolax/previous/baseline",
+      "baselineGeometrySha256": "dd34900ff52f2068a96891a9a65008342335c7cef01b15dc382c7312af9c55d0",
+      "currentGeometrySha256": "dd34900ff52f2068a96891a9a65008342335c7cef01b15dc382c7312af9c55d0"
+    },
+    {
+      "key": "ladaf-2021-17/tee/uearchlax/previous/baseline",
+      "baselineGeometrySha256": "99ef1656ff975a65a0aeed112b144377f4377c2ef6d3b2e1561a991ee14f0b9f",
+      "currentGeometrySha256": "99ef1656ff975a65a0aeed112b144377f4377c2ef6d3b2e1561a991ee14f0b9f"
+    },
+    {
+      "key": "ladaf-2021-17/tee/uearchsax/previous/baseline",
+      "baselineGeometrySha256": "626cd408cfd51b43f46f57a99a9b666a2d3a5386ab21ee5a72f7166b61a4e334",
+      "currentGeometrySha256": "626cd408cfd51b43f46f57a99a9b666a2d3a5386ab21ee5a72f7166b61a4e334"
+    }
+  ],
+  "sourceHashes": {
+    "public/echo.js": "685f9e1032e68b357fa2816c349d189e819e59484d72554f6e140f285c72e7ad",
+    "public/echo-donor-planes.js": "3adaa60cfe465f0ae162b5581895ad97c335f462e9a8ebb175b4aa6e3f367a08",
+    "public/echo-donor-calibration.js": "e11d13f8f537a0b18046bbe91ca1a4cd9f84198f329e1a007c535c24237b5e9f",
+    "public/echo-donor-support.js": "1a8a49c56245a792a8392cf49038709c0d8be4a6f2416d50f17a8622e599548a",
+    "public/tte-atlas-geometry.js": "0e371491072940caa77fee10ba8d1c9a309e002a5ac9e8429087aa4864cc6f59",
+    "public/tee-atlas-geometry.js": "77efc87844086565a5b750730029204a030ab97732c0a34e0cf91ef8b0d30748",
+    "public/tee-context-geometry.js": "bd78662cb61b68c9a324b4563c41ed1ae51bc73417d1b4ba8201b80aaedc4cf1",
+    "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+    "public/echo-acquisition-geometry.js": "c5eea5b376a3a346ae33152916c568e1bbd1a909c8eb2489ba7b9dfec86777b1",
+    "public/echo-anatomy-context-v2.js": "a1998f8207408a64be6fcad39884ec1adad1ca035a1c645c30ba45f868c75868",
+    "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+    "public/echo-tte-guidance.js": "551d9338276066d2c870d56ccff7b5707e0ad9fd05e4de0e089756b701a72545",
+    "public/probe-scene.js": "35b892dcf809258f376ee8c135e9a84659844de7ff58bb91a6adbd7e977bdcdc",
+    "public/tee-scene.js": "9fc9d5e494a60e6504870b7501f6174ebc88f8c1b40112c073763f21b4c695d0",
+    "public/echo-correspondence.js": "145bb7fc81069b4c21511d686318069ed730bc3a4e660e50493fcb01b705abfd",
+    "public/tee-alignment.js": "2982ecdd0566a8cb67f685bfd3a64689760ab1f3bef7066bc89fa79a3151dad5"
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 86,
+    "decodedBrickReads": 110,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v26",
+  "cases": [
+    {
+      "id": "laa-1236",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1236
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1236,
+          "sourcePlaneSha256": "38f1c8885c65ed2a54322bdf39d1e8c3008b1268ca92147205e013314ff13027",
+          "excludedInPlane": 9218
+        }
+      ]
+    },
+    {
+      "id": "laa-1248",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1248
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "c2c75e301092993acddbd90250dd58aeed9f5d5d31cc5478be3ad22dc4355670",
+          "excludedInPlane": 3977
+        }
+      ]
+    },
+    {
+      "id": "laa-1260",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1260
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "0b5e2f48ca9860d76f3d7f07e3e48f9ff7bcadc3c61f73020713dce741637668",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "laa-1276",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1276
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "3d683b7dbbfeecb50548af72518a8ab089d675e387be16f284c102efbe34d615",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "laa-1292",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1292
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "7cc63aeebfc9f5852a1e5fa213445a6a885734a54a68da6bbd66cbb74d22c250",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "laa-1304",
+      "title": "Lower atrial sheet",
+      "lowerXYZ": [
+        1120,
+        1000,
+        760
+      ],
+      "upperXYZ": [
+        1370,
+        1400,
+        990
+      ],
+      "ys": [
+        1304
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1304,
+          "sourcePlaneSha256": "d6ed493774f84cf6023279fd5ee9aafce8db5608bfb8182cbe409ebc0aa08c60",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1200",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1200
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "e0c7127ae36bdb1bb40251e139a8d49aa0a2743b84d05769e78ce6bce61733cd",
+          "excludedInPlane": 11957
+        }
+      ]
+    },
+    {
+      "id": "pv-1220",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1220
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "1baf173c9a9baef6b4e3906075ecd380c579828e188f59aa6ad00cbe2f4f67f7",
+          "excludedInPlane": 4711
+        }
+      ]
+    },
+    {
+      "id": "pv-1232",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1232
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1232,
+          "sourcePlaneSha256": "0e988e111df9c1044922f3a4850d37721d4bd4881b1904017df590db18b6c942",
+          "excludedInPlane": 1009
+        }
+      ]
+    },
+    {
+      "id": "pv-1248",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1248
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "9feaaf4fd5ccfd9d65aa08d34bf11270bcd366ccf89644299e2b519494d373cf",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1260",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1260
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "535f5d43b162d58053d9d825a71f4dea06776cb36bef4465618193fb641c72d8",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1276",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1276
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "5bff4723fc66e1679059dff4ca9fafd2a474967301165546a9fcba56a20e3ee3",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1292",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1292
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "080d69e5f085e481f6925c4de93c456bb8ec3c98b93e6a32a136e3bbfff82906",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1308",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1308
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1308,
+          "sourcePlaneSha256": "27ebd3967a7cf51a926b35cb3569af4ef22f9cefc0860d8e57d284b5994de348",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pv-1324",
+      "title": "Upper atrial sheet",
+      "lowerXYZ": [
+        1180,
+        1000,
+        670
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        840
+      ],
+      "ys": [
+        1324
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1324,
+          "sourcePlaneSha256": "23e42ab37e5377c15d688172601790399e2e4b306acc4bbea464d1e4d67c463f",
+          "excludedInPlane": 0
+        }
+      ]
+    }
+  ]
+}

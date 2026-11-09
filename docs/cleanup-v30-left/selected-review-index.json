@@ -1,0 +1,259 @@
+{
+  "selectedCandidate": "median145-guarded",
+  "views": [
+    {
+      "camera": {
+        "id": "valves-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1150,
+          1168,
+          1105
+        ],
+        "distance": 0.6
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y293-comparison.jpg",
+        "sha256": "3356bd86a7adf666c6ce2cf217693b6eddd178cb105c49327a3d2fabbe6bfdfd"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y293-validation.json",
+        "sha256": "2ff4b18a33682b7681461c508cf68a63fd9c663d4742698990e145791ee97ac7"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 49129,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": true,
+      "originalOffExact": true
+    },
+    {
+      "camera": {
+        "id": "valves-y293-oblique",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1150,
+          1168,
+          1105
+        ],
+        "distance": 0.64,
+        "direction": [
+          0.25,
+          0.14,
+          -1.0
+        ]
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y293-oblique-comparison.jpg",
+        "sha256": "4d6871f924b14fde922ba4992c9118e0aa11a5bbd37343dd6e1b41c549b11c0c"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y293-oblique-validation.json",
+        "sha256": "d1d636512f0e449e63d943278949404ba151209d0c7401538766984e629bed5b"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 42217,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "aortic-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1080,
+          1168,
+          990
+        ],
+        "distance": 0.3
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-comparison.jpg",
+        "sha256": "8f8269fedb1685ba4faf8c072736e372cff0fbf3b80f624f297bbf774842d530"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-validation.json",
+        "sha256": "772084430a2e75ae067bb019a628e0a7f59cf68364510a54b4e870c36bf736d3"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 76580,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "mitral-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1200,
+          1168,
+          1170
+        ],
+        "distance": 0.34
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/mitral-y293-comparison.jpg",
+        "sha256": "74412c09f0fbbc15a5f67994d34f08acf6eede3eee1e6d12f5545257e33496e7"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/mitral-y293-validation.json",
+        "sha256": "47819fed74f31206c618f3734aa477fc8859c6fa8dc08e7365eef65310dde912"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 146879,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "valves-y291",
+        "axis": 1,
+        "coordinate": 1160,
+        "target": [
+          1150,
+          1160,
+          1105
+        ],
+        "distance": 0.6
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y291-comparison.jpg",
+        "sha256": "dc63c1b8a326636c1b3ad1d632d7dda8df173575fb544f26f4e7cffbd1737f1f"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y291-validation.json",
+        "sha256": "cef1467a853bec4440eea4f4e3db3c3dcb18c6bb46ef300c66ab5662bcfab93f"
+      },
+      "sourceCapSha256": "3a34a78d9868cab8ef7ea8f2a6fd970d57a67aa2d21fa4d922771b82b443619c",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 57398,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "valves-y295",
+        "axis": 1,
+        "coordinate": 1176,
+        "target": [
+          1150,
+          1176,
+          1105
+        ],
+        "distance": 0.6
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y295-comparison.jpg",
+        "sha256": "f019aef65cd23533e3a026022bee55263c05b874c3d9a04452f0b453cab65b89"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/valves-y295-validation.json",
+        "sha256": "de60d75cd65f9ac040600e9a3ec269e9599b2c4695a6ef4d261b6cb5ee4d45ec"
+      },
+      "sourceCapSha256": "22aa3e81bd3154a01912ac2c2fddfd3b2aaee08b5117afd5ce9a807535454e54",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 46307,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "aortic-y293-oblique",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1080,
+          1168,
+          990
+        ],
+        "distance": 0.3,
+        "direction": [
+          0.35,
+          0.15,
+          -1
+        ]
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-oblique-comparison.jpg",
+        "sha256": "d8b3d93cbd9c9b62f4967592c423bf6215df80124d85611333acf1a9143b3433"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-oblique-validation.json",
+        "sha256": "bc59bab9fc6edc57761b5c9b2656d2ab9f84d4ed1a5cf2801106e79fd29b0287"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 70156,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    },
+    {
+      "camera": {
+        "id": "aortic-y293-reverse-oblique",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1080,
+          1168,
+          990
+        ],
+        "distance": 0.3,
+        "direction": [
+          -0.35,
+          0.15,
+          -1
+        ]
+      },
+      "comparison": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-reverse-oblique-comparison.jpg",
+        "sha256": "4e9de71357b1a821e205e049bf34f74a7b784ad230c988451836a0fb584d8859"
+      },
+      "receipt": {
+        "path": "docs/cleanup-v30-left/guarded-review/aortic-y293-reverse-oblique-validation.json",
+        "sha256": "c56c361826b0b2bdabbdaf1b64998f2d1289368c70b8c7ed4caa7a933253b13b"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "decodedShadingSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "changedPixels": 86945,
+      "pixelReceiptsVerified": true,
+      "fullRetainedDepth": true,
+      "reversible": null,
+      "originalOffExact": null
+    }
+  ],
+  "activationDiagnostic": {
+    "receipt": "docs/cleanup-v30-left/activation-diagnostic/aortic-y293-validation.json",
+    "sha256": "9f1645208f6a170a6136d2c58d995d3880d2750855497f816c2a91def44f3d90",
+    "beforeLocalRefinementsEnabled": false,
+    "interpretation": "Whole-heart-only diagnostic reproduces the user proximal dark strip more closely than fully active v29. It illustrates a possible inactive/incomplete local-refinement state; it does not establish the user browser state."
+  },
+  "sourceValidation": {
+    "path": "docs/cleanup-v30-left/guarded-review/source-validation.json",
+    "sha256": "9ce3634dce2bf8cac2c8545e3611432efd28088b32c9a22131feb421dd561a96"
+  },
+  "limitations": [
+    "Reproducible nearby source-registered cameras, not exact screenshot camera registration.",
+    "Finite render and source-support checks do not establish clinical anatomical correctness.",
+    "Fine pepper on continuously supported deeper source boundary remains."
+  ]
+}

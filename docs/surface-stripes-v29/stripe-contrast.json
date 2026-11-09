@@ -1,0 +1,36 @@
+{
+  "regionFineXYZ": {
+    "lower": [
+      1200,
+      880,
+      850
+    ],
+    "upper": [
+      1290,
+      1000,
+      1070
+    ]
+  },
+  "seamDistanceMaximumFineSamples": 1.5,
+  "pixels": 838,
+  "metrics": {
+    "original": {
+      "meanAbsoluteTwoPixelHighPass": 11.37941651990421,
+      "percentiles50_90_99": [
+        6.930458091334643,
+        26.71964163357084,
+        61.17245271506816
+      ]
+    },
+    "seam6": {
+      "meanAbsoluteTwoPixelHighPass": 3.0276694932449324,
+      "percentiles50_90_99": [
+        1.699402260663149,
+        5.854661906932062,
+        16.149113243245935
+      ]
+    }
+  },
+  "reductionFraction": 0.733934557369518,
+  "scope": "Local image shading metric in the reviewed smooth-wall region, using unmodified source vertex positions to identify seam pixels. Not a geometric accuracy or anatomical validation measure."
+}

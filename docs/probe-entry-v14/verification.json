@@ -1,0 +1,281 @@
+{
+  "scope": "Production geometry and every retained support sample; no browser or clinical registration claim.",
+  "sources": [
+    {
+      "donor": "ladaf-2021-17",
+      "referenceMm": 168.01040000000003,
+      "presets": [
+        {
+          "id": "apical",
+          "legacyDepthMm": 145.00000000000003,
+          "depthMm": 145.00000000000003,
+          "originMm": [
+            -20.410107639331898,
+            80.3647429111675,
+            -2.979228476219511
+          ],
+          "legacyOriginMm": [
+            -20.410107639331898,
+            80.3647429111675,
+            -2.979228476219511
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true
+        },
+        {
+          "id": "parasternal",
+          "legacyDepthMm": 135.00000000000003,
+          "depthMm": 135.00000000000003,
+          "originMm": [
+            -48.76939531689899,
+            -5.01473461081822,
+            -26.98798967260319
+          ],
+          "legacyOriginMm": [
+            -48.76939531689899,
+            -5.01473461081822,
+            -26.98798967260319
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true
+        },
+        {
+          "id": "short-axis",
+          "legacyDepthMm": 130.00000000000003,
+          "depthMm": 130.00000000000003,
+          "originMm": [
+            -40.85395504995497,
+            19.91932123894138,
+            -51.795275159844564
+          ],
+          "legacyOriginMm": [
+            -40.85395504995497,
+            19.91932123894138,
+            -51.795275159844564
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true
+        },
+        {
+          "id": "atrial",
+          "legacyDepthMm": 135.00000000000003,
+          "depthMm": 135.00000000000003,
+          "originMm": [
+            34.32266186374255,
+            -38.122681072336526,
+            -19.820080600642417
+          ],
+          "legacyOriginMm": [
+            34.32266186374255,
+            -38.122681072336526,
+            -19.820080600642417
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true
+        }
+      ]
+    },
+    {
+      "donor": "s-20-29",
+      "referenceMm": 154.66464000000002,
+      "presets": [
+        {
+          "id": "apical",
+          "legacyDepthMm": 133.4820511111217,
+          "depthMm": 163.6,
+          "originMm": [
+            52.407614768731214,
+            62.00694724524416,
+            -3.1653907018314307
+          ],
+          "legacyOriginMm": [
+            40.46201646175692,
+            47.885096877584154,
+            -2.3996824591108257
+          ],
+          "movedMm": 18.512435977772796,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2011319,
+          "legacyTipInSupport": true,
+          "tipCellClearanceMm": 7.36460084000209,
+          "instrumentCellClearanceMm": 7.21731029865019,
+          "maxProjectedSourceRadiusMm": 158.3924217339155,
+          "distalDepthMarginMm": 4.657138918322545
+        },
+        {
+          "id": "parasternal",
+          "legacyDepthMm": 124.27639241380297,
+          "depthMm": 124.27639241380298,
+          "originMm": [
+            13.124304293213028,
+            -14.134735831749424,
+            -55.93639309052382
+          ],
+          "legacyOriginMm": [
+            13.124304293213028,
+            -14.134735831749424,
+            -55.93639309052382
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2011319,
+          "legacyTipInSupport": false,
+          "tipCellClearanceMm": 11.769388020489728,
+          "instrumentCellClearanceMm": 11.622097479137828,
+          "maxProjectedSourceRadiusMm": 106.30791066306365,
+          "distalDepthMarginMm": 17.41804240297739
+        },
+        {
+          "id": "short-axis",
+          "legacyDepthMm": 119.6735630651436,
+          "depthMm": 119.6735630651436,
+          "originMm": [
+            10.759297692860631,
+            -1.9512119951524092,
+            -55.716300503681815
+          ],
+          "legacyOriginMm": [
+            10.759297692860631,
+            -1.9512119951524092,
+            -55.716300503681815
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2011319,
+          "legacyTipInSupport": false,
+          "tipCellClearanceMm": 9.606058226537346,
+          "instrumentCellClearanceMm": 9.458767685185446,
+          "maxProjectedSourceRadiusMm": 107.56456771076395,
+          "distalDepthMarginMm": 11.558556006617707
+        },
+        {
+          "id": "atrial",
+          "legacyDepthMm": 124.27639241380297,
+          "depthMm": 163.7,
+          "originMm": [
+            -54.87568262671445,
+            -64.82124786350269,
+            3.7114272700216646
+          ],
+          "legacyOriginMm": [
+            -37.71068054203046,
+            -44.529121444103836,
+            2.611157258859035
+          ],
+          "movedMm": 26.601095565512612,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2011319,
+          "legacyTipInSupport": true,
+          "tipCellClearanceMm": 7.365446261859313,
+          "instrumentCellClearanceMm": 7.383857579528301,
+          "maxProjectedSourceRadiusMm": 158.4906753035034,
+          "distalDepthMarginMm": 4.658885348734657
+        }
+      ]
+    },
+    {
+      "donor": "s-20-28",
+      "referenceMm": 161.34080000000003,
+      "presets": [
+        {
+          "id": "apical",
+          "legacyDepthMm": 139.24385633270325,
+          "depthMm": 177.7,
+          "originMm": [
+            -9.49797176353502,
+            82.19019825619982,
+            31.494156642052776
+          ],
+          "legacyOriginMm": [
+            -6.4910044168432295,
+            60.54156826975281,
+            24.655405469997383
+          ],
+          "movedMm": 22.90138752362949,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2204619,
+          "legacyTipInSupport": true,
+          "tipCellClearanceMm": 7.683170461265507,
+          "instrumentCellClearanceMm": 7.5295220657812605,
+          "maxProjectedSourceRadiusMm": 172.25275639801137,
+          "distalDepthMarginMm": 4.897144265504742
+        },
+        {
+          "id": "parasternal",
+          "legacyDepthMm": 129.64083175803404,
+          "depthMm": 129.64083175803404,
+          "originMm": [
+            -23.112126409904246,
+            14.03941885806406,
+            -54.605231878806
+          ],
+          "legacyOriginMm": [
+            -23.112126409904246,
+            14.03941885806406,
+            -54.605231878806
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2204619,
+          "legacyTipInSupport": false,
+          "tipCellClearanceMm": 18.496364710226754,
+          "instrumentCellClearanceMm": 18.342716314742507,
+          "maxProjectedSourceRadiusMm": 121.27592881220805,
+          "distalDepthMarginMm": 7.814803609342113
+        },
+        {
+          "id": "short-axis",
+          "legacyDepthMm": 124.83931947069945,
+          "depthMm": 124.83931947069945,
+          "originMm": [
+            -22.6153437057103,
+            20.26210631683366,
+            -50.690180726260415
+          ],
+          "legacyOriginMm": [
+            -22.6153437057103,
+            20.26210631683366,
+            -50.690180726260415
+          ],
+          "movedMm": 0,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2204619,
+          "legacyTipInSupport": false,
+          "tipCellClearanceMm": 16.23965393513587,
+          "instrumentCellClearanceMm": 16.086005539651623,
+          "maxProjectedSourceRadiusMm": 112.33740697689376,
+          "distalDepthMarginMm": 11.951813157321816
+        },
+        {
+          "id": "atrial",
+          "legacyDepthMm": 129.64083175803404,
+          "depthMm": 177.9,
+          "originMm": [
+            14.199434348023523,
+            -88.41902938044535,
+            -22.400896125443936
+          ],
+          "legacyOriginMm": [
+            10.102222253445202,
+            -58.92119372582591,
+            -13.08259938877205
+          ],
+          "movedMm": 31.20480907372399,
+          "preparedPlaneRetained": true,
+          "sourceSupportSamples": 2204619,
+          "legacyTipInSupport": true,
+          "tipCellClearanceMm": 7.682427316893066,
+          "instrumentCellClearanceMm": 7.701633366328597,
+          "maxProjectedSourceRadiusMm": 172.5131635276573,
+          "distalDepthMarginMm": 4.836737135858832
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "CT plane, source orientation and prepared fine images unchanged; original donor and already-safe S entries unchanged.",
+    "Whole retained source support and complete probe mesh clearances checked, including former embedded tips and distal depth coverage.",
+    "Per-donor physical scaling, contact origin and shared reference-torso mapping preserved.",
+    "Custom depth/free bookmarks remain explicit; changing imaging depth cannot push a calibrated contact tip into tissue."
+  ]
+}

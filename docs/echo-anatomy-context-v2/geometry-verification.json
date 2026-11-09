@@ -1,0 +1,3002 @@
+{
+  "revision": "echo-bodyparts3d-context-v2",
+  "scope": "Numerical verification of existing BodyParts3D bytes, one fixed transform and production context meshes. Not clinical registration or browser rendering evidence.",
+  "source": {
+    "manifestSha256": "d8a7563803aac62012c4e78075024cbc35cd5ce53338b3797ca0068484b4408c",
+    "compressedSha256": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+    "decodedSha256": "49fba584164d5664b30b8fc662f3a516bfc09f36b4c99308968efd906cf89b4c",
+    "compressedBytes": 495691,
+    "decodedBytes": 2166912
+  },
+  "bodyCrop": {
+    "min": [
+      -160,
+      -120,
+      -165
+    ],
+    "max": [
+      160,
+      160,
+      115
+    ]
+  },
+  "referenceHeart": {
+    "displayed": false,
+    "referenceCenter": [
+      20,
+      5,
+      8
+    ],
+    "geometricApicalPatch": [
+      59.749518076578774,
+      -31.686811129252117,
+      45.149696350097656
+    ],
+    "patchMethod": "Mean of twelve unique mesh vertices with greatest projection along fixed [0.55,-0.48,0.63]; a geometric support patch, not an annotated anatomical apex.",
+    "bounds": {
+      "min": [
+        -36.32926940917969,
+        -41.45307922363281,
+        -44.702919006347656
+      ],
+      "max": [
+        76.71883392333984,
+        59.87041091918945,
+        58.59945297241211
+      ],
+      "center": [
+        20.194782257080078,
+        9.20866584777832,
+        6.948266983032227
+      ]
+    }
+  },
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "frame": {
+        "kind": "source-anchored-illustrative-frame",
+        "donorId": "ladaf-2021-17",
+        "referenceMm": 168.0104,
+        "scale": 1,
+        "originMm": [
+          8.850718000000002,
+          6.406309599999997,
+          2.9735299999999985
+        ],
+        "left": [
+          -0.0737517260585308,
+          0.4809888820734267,
+          -0.873619126522046
+        ],
+        "superior": [
+          -0.5047294479793477,
+          -0.7735306587487353,
+          -0.3832734067453817
+        ],
+        "anterior": [
+          -0.8601214258730278,
+          0.41267422417386707,
+          0.2998184741750359
+        ],
+        "posterior": [
+          0.8601214258730278,
+          -0.41267422417386707,
+          -0.2998184741750359
+        ],
+        "landmarksMm": {
+          "leftAtrium": [
+            24.137600000000003,
+            -14.1332,
+            -8.2576
+          ],
+          "rightAtrium": [
+            -0.3176,
+            -17.3092,
+            20.644
+          ],
+          "rightAtriumSuperior": [
+            -2.2232,
+            -36.3652,
+            17.468
+          ],
+          "aorticLumen": [
+            0.6352,
+            -12.545200000000001,
+            -5.3992
+          ],
+          "mitralRegion": [
+            16.8328,
+            4.9228,
+            -11.7512
+          ],
+          "tricuspidRegion": [
+            0.8686360000000043,
+            7.8898191999999945,
+            17.698259999999998
+          ],
+          "leftVentricle": [
+            2.8584,
+            30.3308,
+            -13.3392
+          ],
+          "rightVentricle": [
+            -16.1976,
+            27.154799999999998,
+            18.1032
+          ],
+          "apex": [
+            -14.6096,
+            67.80760000000001,
+            -4.4464
+          ]
+        },
+        "patientOrientationValidated": false
+      },
+      "transform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          8.850718000000002,
+          6.406309599999997,
+          2.9735299999999985
+        ],
+        "left": [
+          -0.0737517260585308,
+          0.4809888820734267,
+          -0.873619126522046
+        ],
+        "superior": [
+          -0.5047294479793477,
+          -0.7735306587487353,
+          -0.3832734067453817
+        ],
+        "anterior": [
+          -0.8601214258730278,
+          0.41267422417386707,
+          0.2998184741750359
+        ],
+        "scale": 1,
+        "referenceMm": 168.0104,
+        "donorId": "ladaf-2021-17",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity; no view-dependent transform."
+      },
+      "bodyMeshHashes": {
+        "tte": "a5ac9beee06c884909c872cd632ddda64b7cd86aaa903db5d4d770fbc5ad6ad0",
+        "tee": "a5ac9beee06c884909c872cd632ddda64b7cd86aaa903db5d4d770fbc5ad6ad0"
+      },
+      "sameBodyAcrossModes": true,
+      "teeTractIdentityUnchanged": true,
+      "teeGastricSamplesIdentityUnchanged": true,
+      "focusReferenceBounds": {
+        "min": [
+          -67,
+          -88,
+          -65
+        ],
+        "max": [
+          116,
+          119,
+          111
+        ]
+      },
+      "focusPointsMm": [
+        [
+          124.99582091790253,
+          6.373409758551961,
+          92.73607221996089
+        ],
+        [
+          111.49925504919142,
+          94.39437517798906,
+          -67.13622793357355
+        ],
+        [
+          20.516825186177563,
+          -153.74743660243627,
+          13.398477023666876
+        ],
+        [
+          7.020259317466435,
+          -65.72647118299916,
+          -146.47382312986753
+        ],
+        [
+          -26.38555003575034,
+          79.00407321315257,
+          145.50412367476721
+        ],
+        [
+          -39.88211590446147,
+          167.02503863258966,
+          -14.36817647876723
+        ],
+        [
+          -130.86454576747533,
+          -81.11677314783564,
+          66.1665284784732
+        ],
+        [
+          -144.36111163618645,
+          6.904192271601442,
+          -93.70577167506123
+        ],
+        [
+          24.137600000000003,
+          -14.1332,
+          -8.2576
+        ],
+        [
+          -0.3176,
+          -17.3092,
+          20.644
+        ],
+        [
+          -2.2232,
+          -36.3652,
+          17.468
+        ],
+        [
+          0.6352,
+          -12.545200000000001,
+          -5.3992
+        ],
+        [
+          16.8328,
+          4.9228,
+          -11.7512
+        ],
+        [
+          0.8686360000000043,
+          7.8898191999999945,
+          17.698259999999998
+        ],
+        [
+          2.8584,
+          30.3308,
+          -13.3392
+        ],
+        [
+          -16.1976,
+          27.154799999999998,
+          18.1032
+        ],
+        [
+          -14.6096,
+          67.80760000000001,
+          -4.4464
+        ]
+      ],
+      "windows": {
+        "parasternal-long": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-long",
+          "anchorMm": [
+            -76.74750632770606,
+            29.834907143276272,
+            16.230922587901468
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "parasternal-short": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-short",
+          "anchorMm": [
+            -76.74750632770606,
+            29.834907143276272,
+            16.230922587901468
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "apical": {
+          "anchorXY": [
+            76,
+            -48
+          ],
+          "referenceBounds": {
+            "min": [
+              44,
+              -84,
+              15
+            ],
+            "max": [
+              112,
+              -16,
+              125
+            ]
+          },
+          "label": "Left apical reference window",
+          "patientRegistered": false,
+          "id": "apical",
+          "anchorMm": [
+            -51.45843796446519,
+            114.12733112621392,
+            3.2717355466788565
+          ],
+          "referenceAnchorMm": [
+            76,
+            -48,
+            104.41629373889714
+          ],
+          "anchorTriangleIndex": 2753
+        },
+        "subcostal": {
+          "anchorXY": [
+            0,
+            -72
+          ],
+          "referenceBounds": {
+            "min": [
+              -26,
+              -110,
+              30
+            ],
+            "max": [
+              30,
+              -52,
+              125
+            ]
+          },
+          "label": "Subxiphoid reference window",
+          "patientRegistered": false,
+          "id": "subcostal",
+          "anchorMm": [
+            -29.879951118510284,
+            94.28501040179128,
+            77.51989669286253
+          ],
+          "referenceAnchorMm": [
+            0,
+            -72,
+            99.92873093916285
+          ],
+          "anchorTriangleIndex": 2068
+        },
+        "suprasternal": {
+          "anchorXY": [
+            0,
+            92
+          ],
+          "referenceBounds": {
+            "min": [
+              -18,
+              77,
+              -5
+            ],
+            "max": [
+              18,
+              115,
+              105
+            ]
+          },
+          "label": "Suprasternal notch reference window",
+          "patientRegistered": false,
+          "id": "suprasternal",
+          "anchorMm": [
+            -69.15135861566667,
+            -53.4467345661205,
+            -0.5015095491964363
+          ],
+          "referenceAnchorMm": [
+            0,
+            92,
+            49.34956773868842
+          ],
+          "anchorTriangleIndex": 2006
+        }
+      },
+      "models": {
+        "tte": {
+          "meshCount": 7,
+          "triangles": 37376,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "f09254699129d6ed162c496563ba29509d1e792d4a79412f90f1fa3287722fc7",
+              "maximumNormalLengthError": 4.0220032859750177e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -25.704698056963878,
+                  -5.442390323623645,
+                  -71.62640369319335
+                ],
+                "max": [
+                  120.9134050577446,
+                  128.65184422025803,
+                  131.7687883505847
+                ],
+                "center": [
+                  47.60435350039036,
+                  61.60472694831719,
+                  30.07119232869568
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "8b2e8257c4cb6486706e038adffcdb4d4341b8ccf3dbbe1311dd9e7d96077ab7",
+              "maximumNormalLengthError": 4.195795266781488e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  0.36892046622993213,
+                  13.886654360679614,
+                  -11.021851247874784
+                ],
+                "max": [
+                  47.00245865732993,
+                  71.24491240448673,
+                  49.27116026336169
+                ],
+                "center": [
+                  23.68568956177993,
+                  42.56578338258317,
+                  19.124654507743454
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "5fb2e3b2188f89388e90ac0a65ce048e3a5ea19e0b3d72d7f56722d7a8e9ba79",
+              "maximumNormalLengthError": 3.9323061251650415e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  47.532468197955865,
+                  32.528721506569056,
+                  -8.3817588542191
+                ],
+                "max": [
+                  65.48984010544558,
+                  38.70440835059884,
+                  10.906702152026416
+                ],
+                "center": [
+                  56.51115415170072,
+                  35.61656492858395,
+                  1.2624716489036576
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "b92d3ea9623220cacba2ae15b952b36f6dd914572f5774926ce882f7ee4ee8a6",
+              "maximumNormalLengthError": 4.060640079739386e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -26.072425813723427,
+                  -5.820481654480766,
+                  -71.97778622014489
+                ],
+                "max": [
+                  121.28099803001483,
+                  129.0299829375906,
+                  132.11976962639633
+                ],
+                "center": [
+                  47.6042861081457,
+                  61.604750641554915,
+                  30.07099170312572
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "7c124ebdec207754de424f9af6185c12565ff65950f467987b8c761211645602",
+              "maximumNormalLengthError": 4.2430319702191355e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -83.07313537597656,
+                  -220.12376403808594,
+                  -198.86376953125
+                ],
+                "max": [
+                  198.90980529785156,
+                  178.84609985351562,
+                  204.17697143554688
+                ],
+                "center": [
+                  57.9183349609375,
+                  -20.638832092285156,
+                  2.6566009521484375
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "577c3e67770d018875bc43693d35e0ccd12a9d419de62f4358cc7ea8432f1999",
+              "maximumNormalLengthError": 4.767408756656266e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -70.43233489990234,
+                  -194.12770080566406,
+                  -169.89266967773438
+                ],
+                "max": [
+                  170.9894561767578,
+                  163.35073852539062,
+                  186.12319946289062
+                ],
+                "center": [
+                  50.278560638427734,
+                  -15.388481140136719,
+                  8.115264892578125
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "df62eec0e86e0572bf0fd1f67bda557e1d344904dd4e812693e43a384c6db379",
+              "maximumNormalLengthError": 4.592079883014577e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -27.3591251373291,
+                  -162.329345703125,
+                  -84.87174224853516
+                ],
+                "max": [
+                  170.63206481933594,
+                  87.00743865966797,
+                  72.81285858154297
+                ],
+                "center": [
+                  71.63646984100342,
+                  -37.660953521728516,
+                  -6.029441833496094
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        },
+        "tee": {
+          "meshCount": 13,
+          "triangles": 57600,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "f09254699129d6ed162c496563ba29509d1e792d4a79412f90f1fa3287722fc7",
+              "maximumNormalLengthError": 4.0220032859750177e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -25.704698056963878,
+                  -5.442390323623645,
+                  -71.62640369319335
+                ],
+                "max": [
+                  120.9134050577446,
+                  128.651844220258,
+                  131.76878835058469
+                ],
+                "center": [
+                  47.60435350039036,
+                  61.60472694831718,
+                  30.071192328695666
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "8b2e8257c4cb6486706e038adffcdb4d4341b8ccf3dbbe1311dd9e7d96077ab7",
+              "maximumNormalLengthError": 4.195795266781488e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  0.36892046622993213,
+                  13.886654360679616,
+                  -11.02185124787478
+                ],
+                "max": [
+                  47.00245865732993,
+                  71.24491240448673,
+                  49.27116026336169
+                ],
+                "center": [
+                  23.68568956177993,
+                  42.56578338258317,
+                  19.124654507743458
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "5fb2e3b2188f89388e90ac0a65ce048e3a5ea19e0b3d72d7f56722d7a8e9ba79",
+              "maximumNormalLengthError": 3.9323061251650415e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  47.532468197955865,
+                  32.528721506569056,
+                  -8.3817588542191
+                ],
+                "max": [
+                  65.48984010544558,
+                  38.70440835059884,
+                  10.906702152026412
+                ],
+                "center": [
+                  56.51115415170072,
+                  35.61656492858395,
+                  1.2624716489036558
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "b92d3ea9623220cacba2ae15b952b36f6dd914572f5774926ce882f7ee4ee8a6",
+              "maximumNormalLengthError": 4.060640079739386e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -26.072425813723427,
+                  -5.820481654480766,
+                  -71.97778622014489
+                ],
+                "max": [
+                  121.28099803001484,
+                  129.0299829375906,
+                  132.11976962639633
+                ],
+                "center": [
+                  47.60428610814571,
+                  61.604750641554915,
+                  30.07099170312572
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophagus",
+              "triangles": 8448,
+              "bytes": 608256,
+              "sha256": "53bb603b21d62429444ba4af44ea233aee9bb5cd2e31fb58f48f0381a584a40d",
+              "maximumNormalLengthError": 4.227346739327231e-8,
+              "color": [
+                0.75,
+                0.52,
+                0.49
+              ],
+              "alpha": 0.13,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  -9.460109965368536,
+                  -94.54412741835122,
+                  -76.09495520479669
+                ],
+                "max": [
+                  63.42053775713853,
+                  50.36291456313931,
+                  10.979979203304987
+                ],
+                "center": [
+                  26.980213895884997,
+                  -22.090606427605955,
+                  -32.55748800074585
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "stomach",
+              "triangles": 7680,
+              "bytes": 552960,
+              "sha256": "39462485fca4773fd4e42050f6072de834c646f27e3cb76e55014368ec91f64f",
+              "maximumNormalLengthError": 4.606540138230031e-8,
+              "color": [
+                0.77,
+                0.57,
+                0.5
+              ],
+              "alpha": 0.11,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  33.77457449442951,
+                  46.627549509048805,
+                  -51.24339232383947
+                ],
+                "max": [
+                  90.04566623466741,
+                  142.68533205889528,
+                  77.46693806334669
+                ],
+                "center": [
+                  61.91012036454846,
+                  94.65644078397204,
+                  13.111772869753608
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "greater-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "f72a15a91eb6d92aa36549f1c3c66795a6faee545a17ab465949c57b2c7a8145",
+              "maximumNormalLengthError": 3.5718873303558496e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  45.21260939616701,
+                  50.08030695267588,
+                  -50.788670354249504
+                ],
+                "max": [
+                  72.43360284742421,
+                  141.04729038036714,
+                  77.31734920467844
+                ],
+                "center": [
+                  58.82310612179561,
+                  95.5637986665215,
+                  13.264339425214466
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "lesser-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "f8c63f5693af82d7edaa157288dcc12d203372278db2c430db97f1b28932c3ba",
+              "maximumNormalLengthError": 3.9341295443584556e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  40.660753232650926,
+                  46.52305321167839,
+                  10.598367794192644
+                ],
+                "max": [
+                  77.75608058046795,
+                  96.57891927352064,
+                  68.83665138723948
+                ],
+                "center": [
+                  59.208416906559435,
+                  71.55098624259952,
+                  39.71750959071606
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophageal-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "274c37efa0d218e333e6862cdd8384bfa793d44003a1e9ccde53931b3fcde545",
+              "maximumNormalLengthError": 3.8356364973068935e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -9.877686613602046,
+                  -94.97174076411028,
+                  -76.49754651743052
+                ],
+                "max": [
+                  -1.9720217965218882,
+                  -84.55688141086024,
+                  -64.45528024354472
+                ],
+                "center": [
+                  -5.924854205061967,
+                  -89.76431108748525,
+                  -70.47641338048763
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "pyloric-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "a9a5dc4bb855236ca900d98170470bd6e31c2a6299995ef68333caceba02b095",
+              "maximumNormalLengthError": 3.721283958757482e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  37.431970799579396,
+                  73.1069372870103,
+                  67.71621104659577
+                ],
+                "max": [
+                  51.513745872802986,
+                  83.67376067325806,
+                  77.87140040451233
+                ],
+                "center": [
+                  44.472858336191194,
+                  78.39034898013418,
+                  72.79380572555405
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "7c124ebdec207754de424f9af6185c12565ff65950f467987b8c761211645602",
+              "maximumNormalLengthError": 4.2430319702191355e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -83.07313537597656,
+                  -220.12376403808594,
+                  -198.86376953125
+                ],
+                "max": [
+                  198.90980529785156,
+                  178.84609985351562,
+                  204.17697143554688
+                ],
+                "center": [
+                  57.9183349609375,
+                  -20.638832092285156,
+                  2.6566009521484375
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "577c3e67770d018875bc43693d35e0ccd12a9d419de62f4358cc7ea8432f1999",
+              "maximumNormalLengthError": 4.767408756656266e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -70.43233489990234,
+                  -194.12770080566406,
+                  -169.89266967773438
+                ],
+                "max": [
+                  170.9894561767578,
+                  163.35073852539062,
+                  186.12319946289062
+                ],
+                "center": [
+                  50.278560638427734,
+                  -15.388481140136719,
+                  8.115264892578125
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "df62eec0e86e0572bf0fd1f67bda557e1d344904dd4e812693e43a384c6db379",
+              "maximumNormalLengthError": 4.592079883014577e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -27.3591251373291,
+                  -162.329345703125,
+                  -84.87174224853516
+                ],
+                "max": [
+                  170.63206481933594,
+                  87.00743865966797,
+                  72.81285858154297
+                ],
+                "center": [
+                  71.63646984100342,
+                  -37.660953521728516,
+                  -6.029441833496094
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        }
+      },
+      "placementCheck": {
+        "donorApexLocalMm": [
+          37.74576973919858,
+          -32.81080540866218,
+          43.292819957603406
+        ],
+        "referencePatchLocalMm": [
+          39.749518076578774,
+          -36.68681112925212,
+          37.149696350097656
+        ],
+        "distanceMm": 7.535011307403208,
+        "clinicalRegistration": false
+      },
+      "maximumRoundTripErrorMm": 5.1728291973635394e-14
+    },
+    {
+      "donorId": "s-20-28",
+      "frame": {
+        "kind": "scaled-geometric-context",
+        "donorId": "s-20-28",
+        "referenceMm": 161.34080000000003,
+        "scale": 0.9603024574669189,
+        "originMm": [
+          4.623683508581735,
+          -19.478511288835822,
+          -0.6227490003713525
+        ],
+        "left": [
+          -0.9197853899919017,
+          -0.2285318556212178,
+          0.3190110144239033
+        ],
+        "superior": [
+          0.1313006621799323,
+          -0.9452977451305126,
+          -0.298617328971846
+        ],
+        "anterior": [
+          0.36980396491730094,
+          -0.23277749895015903,
+          0.8994774391356087
+        ],
+        "posterior": [
+          -0.36980396491730094,
+          0.23277749895015903,
+          -0.8994774391356087
+        ],
+        "landmarksMm": {},
+        "patientOrientationValidated": false
+      },
+      "transform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          4.623683508581735,
+          -19.478511288835822,
+          -0.6227490003713525
+        ],
+        "left": [
+          -0.9197853899919017,
+          -0.2285318556212178,
+          0.3190110144239033
+        ],
+        "superior": [
+          0.1313006621799323,
+          -0.9452977451305126,
+          -0.298617328971846
+        ],
+        "anterior": [
+          0.36980396491730094,
+          -0.23277749895015903,
+          0.8994774391356087
+        ],
+        "scale": 0.9603024574669189,
+        "referenceMm": 161.34080000000003,
+        "donorId": "s-20-28",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity; no view-dependent transform."
+      },
+      "bodyMeshHashes": {
+        "tte": "0cfccd4a40d1eddd4c58ab771d86bd7251fe3bc71e56a3e6f3e504749bb779bc",
+        "tee": "0cfccd4a40d1eddd4c58ab771d86bd7251fe3bc71e56a3e6f3e504749bb779bc"
+      },
+      "sameBodyAcrossModes": true,
+      "teeTractIdentityUnchanged": true,
+      "teeGastricSamplesIdentityUnchanged": true,
+      "focusReferenceBounds": {
+        "min": [
+          -67,
+          -88,
+          -65
+        ],
+        "max": [
+          116,
+          119,
+          111
+        ]
+      },
+      "focusPointsMm": [
+        [
+          43.818119003969606,
+          100.3554420817672,
+          -63.661227367928724
+        ],
+        [
+          -117.82068817033506,
+          60.19431651282409,
+          -7.599715184745845
+        ],
+        [
+          69.9184071555631,
+          -87.55330968939387,
+          -123.02115902268005
+        ],
+        [
+          -91.72040001874154,
+          -127.71443525833696,
+          -66.95964683949717
+        ],
+        [
+          106.31988251120221,
+          61.01296452763519,
+          88.36236219395504
+        ],
+        [
+          -55.31892466310244,
+          20.85183895869209,
+          144.42387437713793
+        ],
+        [
+          132.4201706627957,
+          -126.89578724352587,
+          29.00243053920373
+        ],
+        [
+          -29.218636511508933,
+          -167.05691281246897,
+          85.06394272238661
+        ]
+      ],
+      "windows": {
+        "parasternal-long": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-long",
+          "anchorMm": [
+            32.83676868577335,
+            -58.45832687779814,
+            70.85963774493206
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "parasternal-short": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-short",
+          "anchorMm": [
+            32.83676868577335,
+            -58.45832687779814,
+            70.85963774493206
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "apical": {
+          "anchorXY": [
+            76,
+            -48
+          ],
+          "referenceBounds": {
+            "min": [
+              44,
+              -84,
+              15
+            ],
+            "max": [
+              112,
+              -16,
+              125
+            ]
+          },
+          "label": "Left apical reference window",
+          "patientRegistered": false,
+          "id": "apical",
+          "anchorMm": [
+            -17.2825337460993,
+            -5.208942188320389,
+            115.01266317928797
+          ],
+          "referenceAnchorMm": [
+            76,
+            -48,
+            104.41629373889714
+          ],
+          "anchorTriangleIndex": 2753
+        },
+        "subcostal": {
+          "anchorXY": [
+            0,
+            -72
+          ],
+          "referenceBounds": {
+            "min": [
+              -26,
+              -110,
+              30
+            ],
+            "max": [
+              30,
+              -52,
+              125
+            ]
+          },
+          "label": "Subxiphoid reference window",
+          "patientRegistered": false,
+          "id": "subcostal",
+          "anchorMm": [
+            45.22639112592678,
+            34.259652598194506,
+            94.73637355821718
+          ],
+          "referenceAnchorMm": [
+            0,
+            -72,
+            99.92873093916285
+          ],
+          "anchorTriangleIndex": 2068
+        },
+        "suprasternal": {
+          "anchorXY": [
+            0,
+            92
+          ],
+          "referenceBounds": {
+            "min": [
+              -18,
+              77,
+              -5
+            ],
+            "max": [
+              18,
+              115,
+              105
+            ]
+          },
+          "label": "Suprasternal notch reference window",
+          "patientRegistered": false,
+          "id": "suprasternal",
+          "anchorMm": [
+            47.94302292161166,
+            -103.30860951720003,
+            4.018465173702442
+          ],
+          "referenceAnchorMm": [
+            0,
+            92,
+            49.34956773868842
+          ],
+          "anchorTriangleIndex": 2006
+        }
+      },
+      "models": {
+        "tte": {
+          "meshCount": 7,
+          "triangles": 37376,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "f7f49b7b618acdbe248722eb0d42c33799029f3cb8ec1d583937cd589a58ec09",
+              "maximumNormalLengthError": 4.0806949597183007e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -108.62630857661256,
+                  0.15836937911562998,
+                  -61.54206133643883
+                ],
+                "max": [
+                  100.07543936506751,
+                  73.95156732814414,
+                  102.56682329154691
+                ],
+                "center": [
+                  -4.275434605772524,
+                  37.05496835362988,
+                  20.51238097755404
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "fa553bff883a706ed531c596514041887115c59e03c834cdad1f49bfabb8d76b",
+              "maximumNormalLengthError": 3.4160984818676354e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -28.79446557298649,
+                  6.557423436378635,
+                  -8.907768785468434
+                ],
+                "max": [
+                  34.68513908639156,
+                  25.068257458328635,
+                  50.30226437072578
+                ],
+                "center": [
+                  2.9453367567025346,
+                  15.812840447353635,
+                  20.697247792628673
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "005b4b2ce36c00de3e8ed2ace6c024777f4cc8edcef6152762d18d42d92d4401",
+              "maximumNormalLengthError": 4.156404909139155e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  -30.965368188066087,
+                  19.36413106269813,
+                  -15.117017973398301
+                ],
+                "max": [
+                  -13.099382340106942,
+                  33.47361597182362,
+                  -2.0840406953387545
+                ],
+                "center": [
+                  -22.032375264086514,
+                  26.418873517260877,
+                  -8.600529334368527
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "582bcaa18872173b4b866306a7b7f6290c7343502cfad55bb10fcbf468d09f5b",
+              "maximumNormalLengthError": 4.109058604484517e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -108.988057766682,
+                  16.49155951151347,
+                  -61.8896836884883
+                ],
+                "max": [
+                  100.43689914702476,
+                  74.29716675313722,
+                  102.9149425248691
+                ],
+                "center": [
+                  -4.275579309828622,
+                  45.394363132325346,
+                  20.512629418190404
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "61c0b84246c7ddd92b771f6be3173a6f9b4d7bfb62fff9187af1e0865586808f",
+              "maximumNormalLengthError": 4.938339581705975e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -167.01210021972656,
+                  -165.27684020996094,
+                  -204.82676696777344
+                ],
+                "max": [
+                  177.9373779296875,
+                  152.45059204101562,
+                  131.4721221923828
+                ],
+                "center": [
+                  5.462638854980469,
+                  -6.413124084472656,
+                  -36.67732238769531
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "6fc99417e620fb30402b15f1a6599ac72eea57a687932a8f1aa55f72d4af297e",
+              "maximumNormalLengthError": 4.869914538296882e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -121.10736846923828,
+                  -152.51162719726562,
+                  -141.1065216064453
+                ],
+                "max": [
+                  149.01589965820312,
+                  140.39321899414062,
+                  118.72795104980469
+                ],
+                "center": [
+                  13.954265594482422,
+                  -6.0592041015625,
+                  -11.189285278320312
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "ecf653a5a54107e673a63cd5817d78e73262708e0c68b31018f7996716b4479d",
+              "maximumNormalLengthError": 4.558674926435913e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -52.00148010253906,
+                  -146.08447265625,
+                  -135.36514282226562
+                ],
+                "max": [
+                  52.27583694458008,
+                  124.09933471679688,
+                  7.617364883422852
+                ],
+                "center": [
+                  0.1371784210205078,
+                  -10.992568969726562,
+                  -63.87388896942139
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        },
+        "tee": {
+          "meshCount": 13,
+          "triangles": 57600,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "f7f49b7b618acdbe248722eb0d42c33799029f3cb8ec1d583937cd589a58ec09",
+              "maximumNormalLengthError": 4.0806949597183007e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -108.62630857661256,
+                  0.15836937911562288,
+                  -61.54206133643883
+                ],
+                "max": [
+                  100.0754393650675,
+                  73.95156732814414,
+                  102.56682329154691
+                ],
+                "center": [
+                  -4.275434605772531,
+                  37.05496835362988,
+                  20.51238097755404
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "fa553bff883a706ed531c596514041887115c59e03c834cdad1f49bfabb8d76b",
+              "maximumNormalLengthError": 3.4160984818676354e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -28.794465572986482,
+                  6.55742343637862,
+                  -8.907768785468438
+                ],
+                "max": [
+                  34.68513908639156,
+                  25.06825745832862,
+                  50.30226437072578
+                ],
+                "center": [
+                  2.945336756702538,
+                  15.81284044735362,
+                  20.697247792628673
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "005b4b2ce36c00de3e8ed2ace6c024777f4cc8edcef6152762d18d42d92d4401",
+              "maximumNormalLengthError": 4.156404909139155e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  -30.965368188066087,
+                  19.364131062698124,
+                  -15.117017973398308
+                ],
+                "max": [
+                  -13.099382340106942,
+                  33.473615971823605,
+                  -2.0840406953387607
+                ],
+                "center": [
+                  -22.032375264086514,
+                  26.418873517260863,
+                  -8.600529334368535
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "582bcaa18872173b4b866306a7b7f6290c7343502cfad55bb10fcbf468d09f5b",
+              "maximumNormalLengthError": 4.109058604484517e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -108.988057766682,
+                  16.491559511513454,
+                  -61.88968368848831
+                ],
+                "max": [
+                  100.43689914702476,
+                  74.2971667531372,
+                  102.9149425248691
+                ],
+                "center": [
+                  -4.275579309828622,
+                  45.39436313232533,
+                  20.512629418190397
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophagus",
+              "triangles": 8448,
+              "bytes": 608256,
+              "sha256": "8ca2119448aa247e317872e60a692c7a3db0e30509dbe55e0854470ba017cb4c",
+              "maximumNormalLengthError": 4.143385856636428e-8,
+              "color": [
+                0.75,
+                0.52,
+                0.49
+              ],
+              "alpha": 0.13,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  -30.677042061392342,
+                  -112.90861957983721,
+                  -74.01660678295977
+                ],
+                "max": [
+                  7.10388165985643,
+                  39.3303904316587,
+                  2.75710211671229
+                ],
+                "center": [
+                  -11.786580200767956,
+                  -36.789114574089254,
+                  -35.62975233312374
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "stomach",
+              "triangles": 7680,
+              "bytes": 552960,
+              "sha256": "714026890e26c94db102203c35d1a770a4d2fb4ef370b825fdb04deae8aa7ef1",
+              "maximumNormalLengthError": 5.0074503987751484e-8,
+              "color": [
+                0.77,
+                0.57,
+                0.5
+              ],
+              "alpha": 0.11,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  -84.92108811112519,
+                  6.637424156268157,
+                  -13.916605279712009
+                ],
+                "max": [
+                  27.20684187096983,
+                  99.50818647412987,
+                  69.73403894174629
+                ],
+                "center": [
+                  -28.85712312007768,
+                  53.07280531519901,
+                  27.90871683101714
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "greater-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "bc7fce0a4119cdea0817a9d6717130a516d333b348d10c6484edfeefb85297a5",
+              "maximumNormalLengthError": 3.9803014550976457e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  -83.81028137045492,
+                  6.737432544180042,
+                  -0.008565229371312988
+                ],
+                "max": [
+                  25.796413575653347,
+                  99.06613671121211,
+                  58.79686850340424
+                ],
+                "center": [
+                  -29.006933897400785,
+                  52.901784627696074,
+                  29.394151637016463
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "lesser-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "e4b0702884d5cb88b01ce7fb5a1883f955768a992a37fc7d44f201b779c1d820",
+              "maximumNormalLengthError": 3.6393733027217934e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  -29.846178167559785,
+                  38.2602688725343,
+                  -2.305628286798146
+                ],
+                "max": [
+                  23.897581248577694,
+                  80.48936455058387,
+                  39.8195953396273
+                ],
+                "center": [
+                  -2.9742984594910453,
+                  59.374816711559085,
+                  18.756983526414576
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophageal-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "a851bfffa6732eb0232f79896f6f071c4ee3664b2ee923d057df72d00d340f84",
+              "maximumNormalLengthError": 4.1118080496005405e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -22.26757204067383,
+                  -113.30512383862889,
+                  -73.9245536091377
+                ],
+                "max": [
+                  -9.112085049189826,
+                  -111.79454510759355,
+                  -63.4171048705873
+                ],
+                "center": [
+                  -15.689828544931828,
+                  -112.54983447311122,
+                  -68.6708292398625
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "pyloric-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "01737071355f4987f16724f7460a309ed9a4ce7e23a2583746d28da7391d9883",
+              "maximumNormalLengthError": 3.962229866427691e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  21.754557920205496,
+                  66.66982816387724,
+                  30.338657470173462
+                ],
+                "max": [
+                  27.60353880061773,
+                  80.48023065548504,
+                  42.792954451199705
+                ],
+                "center": [
+                  24.679048360411613,
+                  73.57502940968115,
+                  36.56580596068658
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "61c0b84246c7ddd92b771f6be3173a6f9b4d7bfb62fff9187af1e0865586808f",
+              "maximumNormalLengthError": 4.938339581705975e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -167.01210021972656,
+                  -165.27684020996094,
+                  -204.82676696777344
+                ],
+                "max": [
+                  177.9373779296875,
+                  152.45059204101562,
+                  131.4721221923828
+                ],
+                "center": [
+                  5.462638854980469,
+                  -6.413124084472656,
+                  -36.67732238769531
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "6fc99417e620fb30402b15f1a6599ac72eea57a687932a8f1aa55f72d4af297e",
+              "maximumNormalLengthError": 4.869914538296882e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -121.10736846923828,
+                  -152.51162719726562,
+                  -141.1065216064453
+                ],
+                "max": [
+                  149.01589965820312,
+                  140.39321899414062,
+                  118.72795104980469
+                ],
+                "center": [
+                  13.954265594482422,
+                  -6.0592041015625,
+                  -11.189285278320312
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "ecf653a5a54107e673a63cd5817d78e73262708e0c68b31018f7996716b4479d",
+              "maximumNormalLengthError": 4.558674926435913e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -52.00148010253906,
+                  -146.08447265625,
+                  -135.36514282226562
+                ],
+                "max": [
+                  52.27583694458008,
+                  124.09933471679688,
+                  7.617364883422852
+                ],
+                "center": [
+                  0.1371784210205078,
+                  -10.992568969726562,
+                  -63.87388896942139
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        }
+      },
+      "maximumRoundTripErrorMm": 4.263256414560601e-14
+    },
+    {
+      "donorId": "s-20-29",
+      "frame": {
+        "kind": "scaled-geometric-context",
+        "donorId": "s-20-29",
+        "referenceMm": 154.66464000000002,
+        "scale": 0.9205658697318738,
+        "originMm": [
+          -11.900622146783038,
+          -14.016980212513083,
+          0.956742473556676
+        ],
+        "left": [
+          -0.7570736184930693,
+          0.6312787968942494,
+          -0.16830512996804262
+        ],
+        "superior": [
+          -0.6452742535513393,
+          -0.7628304770164012,
+          0.04136183069802175
+        ],
+        "anterior": [
+          -0.10227743585743856,
+          0.1399169179430389,
+          0.9848667839803253
+        ],
+        "posterior": [
+          0.10227743585743856,
+          -0.1399169179430389,
+          -0.9848667839803253
+        ],
+        "landmarksMm": {},
+        "patientOrientationValidated": false
+      },
+      "transform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          -11.900622146783038,
+          -14.016980212513083,
+          0.956742473556676
+        ],
+        "left": [
+          -0.7570736184930693,
+          0.6312787968942494,
+          -0.16830512996804262
+        ],
+        "superior": [
+          -0.6452742535513393,
+          -0.7628304770164012,
+          0.04136183069802175
+        ],
+        "anterior": [
+          -0.10227743585743856,
+          0.1399169179430389,
+          0.9848667839803253
+        ],
+        "scale": 0.9205658697318738,
+        "referenceMm": 154.66464000000002,
+        "donorId": "s-20-29",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity; no view-dependent transform."
+      },
+      "bodyMeshHashes": {
+        "tte": "052881f9b895fae7b416b49870f0f0c5d5f1b7e7463b56c2ae8cd42ebe491d90",
+        "tee": "052881f9b895fae7b416b49870f0f0c5d5f1b7e7463b56c2ae8cd42ebe491d90"
+      },
+      "sameBodyAcrossModes": true,
+      "teeTractIdentityUnchanged": true,
+      "teeGastricSamplesIdentityUnchanged": true,
+      "focusReferenceBounds": {
+        "min": [
+          -67,
+          -88,
+          -65
+        ],
+        "max": [
+          116,
+          119,
+          111
+        ]
+      },
+      "focusPointsMm": [
+        [
+          110.84962229758166,
+          -8.670293115146073,
+          -55.289260659755854
+        ],
+        [
+          -16.68969023523896,
+          97.67717667609688,
+          -83.64254103769005
+        ],
+        [
+          -12.111990770685706,
+          -154.03308333239085,
+          -47.40746870215888
+        ],
+        [
+          -139.65130330350632,
+          -47.685613541147916,
+          -75.76074908009308
+        ],
+        [
+          94.27867375942908,
+          13.99898899398681,
+          104.27845491166333
+        ],
+        [
+          -33.26063877339156,
+          120.34645878522974,
+          75.92517453372913
+        ],
+        [
+          -28.682939308838307,
+          -131.36380122325795,
+          112.16024686926029
+        ],
+        [
+          -156.22225184165893,
+          -25.016331432015036,
+          83.8069664913261
+        ]
+      ],
+      "windows": {
+        "parasternal-long": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-long",
+          "anchorMm": [
+            -36.179147527662195,
+            -13.334527254824149,
+            79.90890470400478
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "parasternal-short": {
+          "anchorXY": [
+            26,
+            25
+          ],
+          "referenceBounds": {
+            "min": [
+              8,
+              -10,
+              35
+            ],
+            "max": [
+              44,
+              60,
+              125
+            ]
+          },
+          "label": "Left parasternal reference window",
+          "patientRegistered": false,
+          "id": "parasternal-short",
+          "anchorMm": [
+            -36.179147527662195,
+            -13.334527254824149,
+            79.90890470400478
+          ],
+          "referenceAnchorMm": [
+            26,
+            25,
+            95.26805629284318
+          ],
+          "anchorTriangleIndex": 2245
+        },
+        "apical": {
+          "anchorXY": [
+            76,
+            -48
+          ],
+          "referenceBounds": {
+            "min": [
+              44,
+              -84,
+              15
+            ],
+            "max": [
+              112,
+              -16,
+              125
+            ]
+          },
+          "label": "Left apical reference window",
+          "patientRegistered": false,
+          "id": "apical",
+          "anchorMm": [
+            -28.52401512458841,
+            68.16368273478679,
+            77.67664758963657
+          ],
+          "referenceAnchorMm": [
+            76,
+            -48,
+            104.41629373889714
+          ],
+          "anchorTriangleIndex": 2753
+        },
+        "subcostal": {
+          "anchorXY": [
+            0,
+            -72
+          ],
+          "referenceBounds": {
+            "min": [
+              -26,
+              -110,
+              30
+            ],
+            "max": [
+              30,
+              -52,
+              125
+            ]
+          },
+          "label": "Subxiphoid reference window",
+          "patientRegistered": false,
+          "id": "subcostal",
+          "anchorMm": [
+            39.12206799432645,
+            40.273166872703065,
+            84.46936910646438
+          ],
+          "referenceAnchorMm": [
+            0,
+            -72,
+            99.92873093916285
+          ],
+          "anchorTriangleIndex": 2068
+        },
+        "suprasternal": {
+          "anchorXY": [
+            0,
+            92
+          ],
+          "referenceBounds": {
+            "min": [
+              -18,
+              77,
+              -5
+            ],
+            "max": [
+              18,
+              115,
+              105
+            ]
+          },
+          "label": "Suprasternal notch reference window",
+          "patientRegistered": false,
+          "id": "suprasternal",
+          "anchorMm": [
+            -53.53460867808812,
+            -81.4082229481601,
+            44.85705374879651
+          ],
+          "referenceAnchorMm": [
+            0,
+            92,
+            49.34956773868842
+          ],
+          "anchorTriangleIndex": 2006
+        }
+      },
+      "models": {
+        "tte": {
+          "meshCount": 7,
+          "triangles": 37376,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "41dfe5670b4122742823415f07121d1ab7f948cb31e95d942790b51f099abe78",
+              "maximumNormalLengthError": 4.4897981554825606e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -46.8884864063071,
+                  -31.048395533600257,
+                  -80.75220899674228
+                ],
+                "max": [
+                  109.23740240030006,
+                  104.87051518732085,
+                  77.2416186725343
+                ],
+                "center": [
+                  31.174457996996477,
+                  36.911059826860296,
+                  -1.755295162103991
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "b84c04470b600bc37bb7c159c9bb8dbc8d12cb122f546bb6f3b49d1fea667d83",
+              "maximumNormalLengthError": 4.316316293273559e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -13.741377820650976,
+                  -11.62442960184756,
+                  -17.0204832915742
+                ],
+                "max": [
+                  25.96663564933462,
+                  41.5429206760438,
+                  37.21609141778071
+                ],
+                "center": [
+                  6.112628914341822,
+                  14.95924553709812,
+                  10.097804063103254
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "5650349ee41a7e41f1cdae85492b5b2e467ab971b019812d90a4af9b139f2b25",
+              "maximumNormalLengthError": 4.102033113184689e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  0.6963876255848174,
+                  17.01096602774786,
+                  -36.63419385716895
+                ],
+                "max": [
+                  18.636368893626994,
+                  25.552377677075846,
+                  -21.310416215445642
+                ],
+                "center": [
+                  9.666378259605906,
+                  21.281671852411854,
+                  -28.972305036307297
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "502267307f0ec228912f6fbfff6be88464c7e7e9104c6c6823d5784271b547f5",
+              "maximumNormalLengthError": 4.092856809023715e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -47.2370720003746,
+                  -31.39700198674803,
+                  -81.10168254760173
+                ],
+                "max": [
+                  109.58569876243081,
+                  105.21897786097534,
+                  77.59106402694813
+                ],
+                "center": [
+                  31.174313381028103,
+                  36.91098793711366,
+                  -1.755309260326797
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "800239e2023abe9666d3ba66db2d367c4f0a2022540c8bc664142c415e1c5f94",
+              "maximumNormalLengthError": 4.222813876353371e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -180.37326049804688,
+                  -221.25588989257812,
+                  -160.99452209472656
+                ],
+                "max": [
+                  195.7838134765625,
+                  150.90866088867188,
+                  106.30217742919922
+                ],
+                "center": [
+                  7.7052764892578125,
+                  -35.173614501953125,
+                  -27.346172332763672
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "133282720bb8d1c1c3ed521bc0ec9ab5623a7703ad0ad1935fb09251921b93eb",
+              "maximumNormalLengthError": 4.741760695203823e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -169.32958984375,
+                  -206.3649444580078,
+                  -117.01701354980469
+                ],
+                "max": [
+                  169.1731719970703,
+                  138.7411346435547,
+                  90.24749755859375
+                ],
+                "center": [
+                  -0.07820892333984375,
+                  -33.81190490722656,
+                  -13.384757995605469
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "e83253e668c61a2de983310502acdfead53dfaea442baf7bdb1fae0a5314d711",
+              "maximumNormalLengthError": 4.2057620386337646e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -103.90125274658203,
+                  -159.71669006347656,
+                  -109.07845306396484
+                ],
+                "max": [
+                  97.02951049804688,
+                  66.90110778808594,
+                  -22.86617088317871
+                ],
+                "center": [
+                  -3.435871124267578,
+                  -46.40779113769531,
+                  -65.97231197357178
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        },
+        "tee": {
+          "meshCount": 13,
+          "triangles": 57600,
+          "meshes": [
+            {
+              "id": "diaphragm",
+              "triangles": 9216,
+              "bytes": 663552,
+              "sha256": "41dfe5670b4122742823415f07121d1ab7f948cb31e95d942790b51f099abe78",
+              "maximumNormalLengthError": 4.4897981554825606e-8,
+              "color": [
+                0.39,
+                0.57,
+                0.58
+              ],
+              "alpha": 0.075,
+              "gloss": 0.04,
+              "bounds": {
+                "min": [
+                  -46.88848640630709,
+                  -31.048395533600257,
+                  -80.75220899674228
+                ],
+                "max": [
+                  109.23740240030003,
+                  104.87051518732085,
+                  77.24161867253429
+                ],
+                "center": [
+                  31.17445799699647,
+                  36.911059826860296,
+                  -1.755295162103998
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "central-tendon",
+              "triangles": 2208,
+              "bytes": 158976,
+              "sha256": "b84c04470b600bc37bb7c159c9bb8dbc8d12cb122f546bb6f3b49d1fea667d83",
+              "maximumNormalLengthError": 4.316316293273559e-8,
+              "color": [
+                0.65,
+                0.77,
+                0.74
+              ],
+              "alpha": 0.075,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -13.741377820650973,
+                  -11.62442960184756,
+                  -17.020483291574205
+                ],
+                "max": [
+                  25.96663564933462,
+                  41.5429206760438,
+                  37.21609141778071
+                ],
+                "center": [
+                  6.1126289143418235,
+                  14.95924553709812,
+                  10.097804063103252
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "esophageal-hiatus",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "5650349ee41a7e41f1cdae85492b5b2e467ab971b019812d90a4af9b139f2b25",
+              "maximumNormalLengthError": 4.102033113184689e-8,
+              "color": [
+                0.66,
+                0.77,
+                0.71
+              ],
+              "alpha": 0.33,
+              "gloss": 0.07,
+              "bounds": {
+                "min": [
+                  0.6963876255848227,
+                  17.01096602774786,
+                  -36.63419385716895
+                ],
+                "max": [
+                  18.636368893626994,
+                  25.552377677075846,
+                  -21.310416215445645
+                ],
+                "center": [
+                  9.666378259605908,
+                  21.281671852411854,
+                  -28.972305036307297
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "diaphragm-rim",
+              "triangles": 2048,
+              "bytes": 147456,
+              "sha256": "502267307f0ec228912f6fbfff6be88464c7e7e9104c6c6823d5784271b547f5",
+              "maximumNormalLengthError": 4.092856809023715e-8,
+              "color": [
+                0.52,
+                0.7,
+                0.68
+              ],
+              "alpha": 0.19,
+              "gloss": 0.05,
+              "bounds": {
+                "min": [
+                  -47.2370720003746,
+                  -31.39700198674803,
+                  -81.10168254760173
+                ],
+                "max": [
+                  109.58569876243081,
+                  105.21897786097534,
+                  77.59106402694815
+                ],
+                "center": [
+                  31.174313381028103,
+                  36.91098793711366,
+                  -1.75530926032679
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophagus",
+              "triangles": 8448,
+              "bytes": 608256,
+              "sha256": "d609353fce1f1c83d35b35739187bd84af22e8197cf66487234ffef6537e935c",
+              "maximumNormalLengthError": 4.1929562932807585e-8,
+              "color": [
+                0.75,
+                0.52,
+                0.49
+              ],
+              "alpha": 0.13,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  -89.70884100510048,
+                  -91.26372778665561,
+                  -56.91402370060842
+                ],
+                "max": [
+                  20.036047820394778,
+                  35.140642834505506,
+                  -21.915279027292687
+                ],
+                "center": [
+                  -34.836396592352855,
+                  -28.06154247607505,
+                  -39.414651363950554
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "stomach",
+              "triangles": 7680,
+              "bytes": 552960,
+              "sha256": "64cbc12ee3a0460c79f5136d04d4f712d2b382a68d95d9c17fa061338cb30ac7",
+              "maximumNormalLengthError": 4.007086862323206e-8,
+              "color": [
+                0.77,
+                0.57,
+                0.5
+              ],
+              "alpha": 0.11,
+              "gloss": 0.1,
+              "bounds": {
+                "min": [
+                  -33.802364309794754,
+                  29.870821398992895,
+                  -54.3867791399753
+                ],
+                "max": [
+                  71.37082093888964,
+                  116.32997837215464,
+                  25.74268535411988
+                ],
+                "center": [
+                  18.78422831454744,
+                  73.10039988557376,
+                  -14.32204689292771
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "greater-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "9da98d2d74eb49f3c687b0cffd3910832534586c894ce7cc2e9246ee8b6883a2",
+              "maximumNormalLengthError": 4.4941732779690824e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  -34.14453572372134,
+                  34.964910631496515,
+                  -34.371951667364364
+                ],
+                "max": [
+                  71.66448683180857,
+                  116.4927210445995,
+                  20.184403752468274
+                ],
+                "center": [
+                  18.759975554043617,
+                  75.728815838048,
+                  -7.093773957448045
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "lesser-curvature",
+              "triangles": 1280,
+              "bytes": 92160,
+              "sha256": "9397356012808365c00e94fc2f7526962974ac434f86d0836a4ec23299660e88",
+              "maximumNormalLengthError": 4.1065644995619266e-8,
+              "color": [
+                0.85,
+                0.68,
+                0.59
+              ],
+              "alpha": 0.28,
+              "gloss": 0.06,
+              "bounds": {
+                "min": [
+                  19.617427223890132,
+                  29.65214532331548,
+                  -28.795806081797238
+                ],
+                "max": [
+                  61.149947574964315,
+                  70.93491612680162,
+                  20.060111117066544
+                ],
+                "center": [
+                  40.383687399427224,
+                  50.29353072505855,
+                  -4.367847482365347
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "esophageal-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "7c60a756f5e423576b0fca92366c3f76f63c0a36abb4f4f141abe4f1b0fa75b1",
+              "maximumNormalLengthError": 3.9664480699919125e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  -90.10321619807233,
+                  -91.65780911898685,
+                  -47.052972446876375
+                ],
+                "max": [
+                  -81.6384357296602,
+                  -81.40759293150114,
+                  -37.39453056159472
+                ],
+                "center": [
+                  -85.87082596386627,
+                  -86.532701025244,
+                  -42.22375150423555
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "pyloric-rim",
+              "triangles": 768,
+              "bytes": 55296,
+              "sha256": "4a3e3d13b6e18865ddc165d7a39e59c0deabf22e2c233817fa05fcada78b077f",
+              "maximumNormalLengthError": 3.851170249369318e-8,
+              "color": [
+                0.82,
+                0.62,
+                0.57
+              ],
+              "alpha": 0.29,
+              "gloss": 0.08,
+              "bounds": {
+                "min": [
+                  60.393955259704754,
+                  38.32650407531703,
+                  13.38525374481054
+                ],
+                "max": [
+                  71.765408725767,
+                  46.1252387258481,
+                  26.132538295572783
+                ],
+                "center": [
+                  66.07968199273589,
+                  42.22587140058256,
+                  19.758896020191663
+                ]
+              },
+              "role": "contour"
+            },
+            {
+              "id": "bodyparts3d-skin",
+              "triangles": 4038,
+              "bytes": 290736,
+              "sha256": "800239e2023abe9666d3ba66db2d367c4f0a2022540c8bc664142c415e1c5f94",
+              "maximumNormalLengthError": 4.222813876353371e-8,
+              "color": [
+                0.52,
+                0.43,
+                0.36
+              ],
+              "alpha": 0.025,
+              "gloss": 0.035,
+              "bounds": {
+                "min": [
+                  -180.37326049804688,
+                  -221.25588989257812,
+                  -160.99452209472656
+                ],
+                "max": [
+                  195.7838134765625,
+                  150.90866088867188,
+                  106.30217742919922
+                ],
+                "center": [
+                  7.7052764892578125,
+                  -35.173614501953125,
+                  -27.346172332763672
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-bones",
+              "triangles": 14349,
+              "bytes": 1033128,
+              "sha256": "133282720bb8d1c1c3ed521bc0ec9ab5623a7703ad0ad1935fb09251921b93eb",
+              "maximumNormalLengthError": 4.741760695203823e-8,
+              "color": [
+                0.74,
+                0.76,
+                0.69
+              ],
+              "alpha": 0.09,
+              "gloss": 0.065,
+              "bounds": {
+                "min": [
+                  -169.32958984375,
+                  -206.3649444580078,
+                  -117.01701354980469
+                ],
+                "max": [
+                  169.1731719970703,
+                  138.7411346435547,
+                  90.24749755859375
+                ],
+                "center": [
+                  -0.07820892333984375,
+                  -33.81190490722656,
+                  -13.384757995605469
+                ]
+              },
+              "role": "surface"
+            },
+            {
+              "id": "bodyparts3d-spine",
+              "triangles": 3469,
+              "bytes": 249768,
+              "sha256": "e83253e668c61a2de983310502acdfead53dfaea442baf7bdb1fae0a5314d711",
+              "maximumNormalLengthError": 4.2057620386337646e-8,
+              "color": [
+                0.61,
+                0.68,
+                0.65
+              ],
+              "alpha": 0.075,
+              "gloss": 0.055,
+              "bounds": {
+                "min": [
+                  -103.90125274658203,
+                  -159.71669006347656,
+                  -109.07845306396484
+                ],
+                "max": [
+                  97.02951049804688,
+                  66.90110778808594,
+                  -22.86617088317871
+                ],
+                "center": [
+                  -3.435871124267578,
+                  -46.40779113769531,
+                  -65.97231197357178
+                ]
+              },
+              "role": "surface"
+            }
+          ]
+        }
+      },
+      "maximumRoundTripErrorMm": 4.5496934130773415e-14
+    }
+  ]
+}

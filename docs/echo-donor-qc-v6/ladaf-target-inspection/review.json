@@ -1,0 +1,5963 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-08T01:59:24.616Z",
+  "donor": "ladaf-2021-17",
+  "sourceManifest": "public/assets/manifest.json",
+  "referenceMm": 168.01040000000003,
+  "sourceHashes": {
+    "public/echo.js": "83851b9c7e8e746aff4b53c416ce074551096cd941ece5ee3af1855f2726dcb2",
+    "public/echo-acquisition-geometry.js": "e54fed64fe33cdcff7c36da76c3d73ea8413dc60f2450d436ed2a80434179130",
+    "public/echo-tte-guidance.js": "786a4abbd751aaca9035afb94c11a4ea046d73a2040a340a9db82767f8acc2ef",
+    "public/echo-donor-planes.js": "b9e01ce29fe52e56f2bbe6a9f0f1d0ca63aee0a3f79fe9acf1c8e497290f4e20",
+    "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a"
+  },
+  "changedFiles": [],
+  "scope": "Runtime source-data target inspection; no clinical verification. Source points are approximate regional annotations. CS tilt has no independently identified coronary-sinus lumen target.",
+  "pointsSourceXYZ": {
+    "tricuspidRegionalCenter": [
+      237.4285714285714,
+      184.07142857142856,
+      292.7857142857143
+    ],
+    "pulmonaryRoot": [
+      190,
+      302,
+      230
+    ],
+    "pulmonaryLumen": [
+      205,
+      317,
+      210
+    ],
+    "rvMidCavity": [
+      195,
+      184,
+      330
+    ],
+    "rvApicalCavity": [
+      190,
+      218,
+      448
+    ]
+  },
+  "pointProvenance": [
+    "docs/anatomy/boundary-landmarks.json: reviewed tricuspid hinges, mean used only as regional annular proxy",
+    "docs/anatomy/cavity-tracks.json: pulmonary root track6 and RV cavity track2"
+  ],
+  "cases": [
+    {
+      "id": "a4c-current",
+      "plane": {
+        "center": [
+          0.05732674890101844,
+          0.11796129754823877,
+          -0.06782797927610655
+        ],
+        "normal": [
+          0.8902432305306236,
+          0.42657038406978265,
+          0.1597019033354236
+        ],
+        "right": [
+          0.09407940417871435,
+          0.17085388876333868,
+          -0.9807945831843804
+        ],
+        "up": [
+          -0.4456636136558293,
+          0.8881703979144353,
+          0.11197003050701337
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "outsideScan": false,
+        "atlasDerived": true,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -41.92139381979691,
+            122.43118763959384,
+            1.8987642207608983
+          ],
+          "targetMm": [
+            16.832800000000002,
+            4.9228000000000005,
+            -11.751200000000003
+          ],
+          "beam": [
+            0.44481916926996545,
+            -0.8896383385399311,
+            -0.1033418272041334
+          ],
+          "right": [
+            -0.09799437302405066,
+            -0.1630378300716406,
+            0.9817411923827757
+          ],
+          "normal": [
+            -0.8902432305306236,
+            -0.42657038406978265,
+            -0.1597019033354236
+          ],
+          "up": [
+            -0.44481916926996545,
+            0.8896383385399311,
+            0.1033418272041334
+          ],
+          "instrument": {
+            "originMm": [
+              -41.92139381979691,
+              122.43118763959384,
+              1.8987642207608983
+            ],
+            "beam": [
+              0.44481916926996545,
+              -0.8896383385399311,
+              -0.1033418272041334
+            ],
+            "right": [
+              -0.09799437302405066,
+              -0.1630378300716406,
+              0.9817411923827757
+            ],
+            "normal": [
+              -0.8902432305306236,
+              -0.42657038406978265,
+              -0.1597019033354236
+            ]
+          },
+          "markerDirection": [
+            0.09799437302405066,
+            0.1630378300716406,
+            -0.9817411923827757
+          ],
+          "markerReference": [
+            0.09799437302405066,
+            0.1630378300716406,
+            -0.9817411923827757
+          ],
+          "sectorDepthMm": 170.0855706740875,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "apical",
+            "levelLabel": "Apical impulse, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -41.92139381979691,
+              122.43118763959384,
+              1.8987642207608983
+            ],
+            "skinReferencePointMm": [
+              80.49014320459133,
+              -58.710691227994545,
+              99.22842310685844
+            ],
+            "skinNormal": [
+              -0.7272495561018941,
+              0.6698370893733704,
+              0.1497543216385072
+            ],
+            "skinTriangleIndex": 2860,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.9348831839095831,
+            "markerAgreementDeg": 0,
+            "distanceMm": 0,
+            "mode": "shared-apical-acquisition",
+            "apicalGuidance": {
+              "revision": "echo-tte-apical-guidance-v2",
+              "source": "ASE TTE Table 2 and acquisition narrative",
+              "contactKind": "actual-skin-apical-axis",
+              "usesSourceAxis": true,
+              "markerRollDeg": 0,
+              "tiltDeg": 0,
+              "tiltDirection": null,
+              "approximateTilt": false,
+              "patientRegistered": false,
+              "namedAnatomyConfirmed": false,
+              "qualification": "Approximate specimen landmarks in a fixed reference body; named clinical CT correspondence is unconfirmed.",
+              "specimenCalibrated": false,
+              "nominalMarkerRollDeg": 0
+            },
+            "anatomicalTargetMm": null,
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 3.552713678800501e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 35.09252101477443,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 35.09252101477443,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 3.552713678800501e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            0.047221172,
+            0.113119093,
+            -0.069640832
+          ],
+          "sourceNormal": [
+            0.6896928823549421,
+            0.2205616831135094,
+            0.6896928823549421
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquired A4C"
+    },
+    {
+      "id": "cs-posterior-0",
+      "plane": {
+        "center": [
+          0.05732674890101851,
+          0.11796129754823881,
+          -0.06782797927610654
+        ],
+        "right": [
+          0.0564118499323719,
+          0.24466239481799973,
+          -0.9679659166257504
+        ],
+        "up": [
+          -0.45197864294854306,
+          0.8707341844653164,
+          0.19374541626039624
+        ],
+        "normal": [
+          0.8902432305306237,
+          0.42657038406978276,
+          0.15970190333542364
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "atlasDerived": true,
+        "note": "Approximate educational TTE target in this donor. The external probe and living-patient acoustic window are not registered to the specimen.",
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Counterfactual: same actual canonical apical contact/marker, explicit posterior tilt, same production ROI projection and minimal basis rotation",
+      "tiltDeg": 0,
+      "contactMm": [
+        -41.92139381979691,
+        122.43118763959384,
+        1.8987642207608983
+      ],
+      "markerDirection": [
+        0.09799437302405066,
+        0.1630378300716406,
+        -0.9817411923827757
+      ],
+      "beam": [
+        0.44481916926996534,
+        -0.8896383385399309,
+        -0.10334182720413337
+      ]
+    },
+    {
+      "id": "cs-posterior-2",
+      "plane": {
+        "center": [
+          0.07812850269739656,
+          0.12928942223611953,
+          -0.06387034999548152
+        ],
+        "right": [
+          0.060454242950655386,
+          0.2309850900413269,
+          -0.9710773258025663
+        ],
+        "up": [
+          -0.4818297820481794,
+          0.8587602273017889,
+          0.17427258285795813
+        ],
+        "normal": [
+          0.874176953277005,
+          0.4573584591796461,
+          0.16321119500865375
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "atlasDerived": true,
+        "note": "Approximate educational TTE target in this donor. The external probe and living-patient acoustic window are not registered to the specimen.",
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Counterfactual: same actual canonical apical contact/marker, explicit posterior tilt, same production ROI projection and minimal basis rotation",
+      "tiltDeg": -2,
+      "contactMm": [
+        -41.92139381979691,
+        122.43118763959384,
+        1.8987642207608983
+      ],
+      "markerDirection": [
+        0.09799437302405066,
+        0.1630378300716406,
+        -0.9817411923827757
+      ],
+      "beam": [
+        0.47561723813898515,
+        -0.874209303189088,
+        -0.0977053581063656
+      ]
+    },
+    {
+      "id": "cs-posterior-4",
+      "plane": {
+        "center": [
+          0.09805879283098966,
+          0.14204156793600436,
+          -0.059763220254180634
+        ],
+        "right": [
+          0.06544003594307936,
+          0.21756417765497038,
+          -0.9738497986327691
+        ],
+        "up": [
+          -0.5110678981730141,
+          0.8455308924002691,
+          0.15455456464893608
+        ],
+        "normal": [
+          0.8570456260624555,
+          0.4875893134576692,
+          0.16652163898152317
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "atlasDerived": true,
+        "note": "Approximate educational TTE target in this donor. The external probe and living-patient acoustic window are not registered to the specimen.",
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Counterfactual: same actual canonical apical contact/marker, explicit posterior tilt, same production ROI projection and minimal basis rotation",
+      "tiltDeg": -4,
+      "contactMm": [
+        -41.92139381979691,
+        122.43118763959384,
+        1.8987642207608983
+      ],
+      "markerDirection": [
+        0.09799437302405066,
+        0.1630378300716406,
+        -0.9817411923827757
+      ],
+      "beam": [
+        0.5058358406665517,
+        -0.8577151784639291,
+        -0.09194985008010188
+      ]
+    },
+    {
+      "id": "cs-posterior-8",
+      "plane": {
+        "center": [
+          0.1349213073661051,
+          0.17156277867386016,
+          -0.05118112834939152
+        ],
+        "right": [
+          0.0781924474280819,
+          0.19167759455972924,
+          -0.9783382037460272
+        ],
+        "up": [
+          -0.5674705282018472,
+          0.8154075516126396,
+          0.11440159262613758
+        ],
+        "normal": [
+          0.8196725814540361,
+          0.5462327567226963,
+          0.17253009794120142
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "atlasDerived": true,
+        "note": "Approximate educational TTE target in this donor. The external probe and living-patient acoustic window are not registered to the specimen.",
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Counterfactual: same actual canonical apical contact/marker, explicit posterior tilt, same production ROI projection and minimal basis rotation",
+      "tiltDeg": -8,
+      "contactMm": [
+        -41.92139381979691,
+        122.43118763959384,
+        1.8987642207608983
+      ],
+      "markerDirection": [
+        0.09799437302405066,
+        0.1630378300716406,
+        -0.9817411923827757
+      ],
+      "beam": [
+        0.5643881306938515,
+        -0.821613316255679,
+        -0.08010990252924673
+      ]
+    },
+    {
+      "id": "rv-reviewed-source",
+      "plane": {
+        "center": [
+          -0.07769376181474479,
+          -0.003780718336483932,
+          -0.0155009451795841
+        ],
+        "right": [
+          0.10077653016451066,
+          0.703506961930016,
+          0.7035069619300158
+        ],
+        "up": [
+          -0.8803761687374815,
+          0.3924388521523529,
+          -0.2663260198336943
+        ],
+        "normal": [
+          -0.46344567371711987,
+          -0.5925113516527282,
+          0.6588993896457502
+        ],
+        "width": 0.6616257088846881,
+        "height": 0.7372400756143668,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Actual refined source target before acquisition",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -127.07794719600135,
+          -21.191460534301818
+        ],
+        "stomachPlaneGapMm": 21.191460534301818,
+        "rvAxisAngleOutOfPlaneDeg": 33.842945719570494,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 0.980339773371457,
+          "pulmonaryRoot": 4.9020089284071,
+          "pulmonaryLumen": 6.485228704569684,
+          "rvMidCavity": 0.2373194591153177,
+          "rvApicalCavity": 28.347217403791525
+        }
+      }
+    },
+    {
+      "id": "rv-tv-pv-mid-source",
+      "plane": {
+        "center": [
+          -0.05581060401476283,
+          0.037357097848591224,
+          0.0257899000810154
+        ],
+        "right": [
+          -0.8113159842924493,
+          0.238121285753239,
+          -0.5339144378107775
+        ],
+        "up": [
+          0.20248078211657167,
+          -0.742300729858654,
+          -0.6387418565623918
+        ],
+        "normal": [
+          -0.5484231090180606,
+          -0.6263288910169591,
+          0.5540254631083578
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Exploratory plane through source tricuspid hinge mean, pulmonary root lumen center, and RV mid cavity center; no clinical validation",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -134.4950821263274,
+          -33.518755587371814
+        ],
+        "stomachPlaneGapMm": 33.518755587371814,
+        "rvAxisAngleOutOfPlaneDeg": 32.87498850926389,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 1.1658063403530152e-15,
+          "pulmonaryRoot": 0,
+          "pulmonaryLumen": 1.2736238818705319,
+          "rvMidCavity": 0,
+          "rvApicalCavity": 28.58449524657299
+        }
+      }
+    },
+    {
+      "id": "rv-tv-pv-mid-acquired-10",
+      "plane": {
+        "center": [
+          -0.05581060401476283,
+          0.037357097848591224,
+          0.0257899000810154
+        ],
+        "right": [
+          -0.9846913527049688,
+          0.04322884104799397,
+          -0.16886150304230552
+        ],
+        "up": [
+          -0.010440100410049986,
+          -0.9816465591097666,
+          -0.19042331078779076
+        ],
+        "normal": [
+          -0.17399409246146075,
+          -0.18574525643903483,
+          0.9670701916091252
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            68.19100093198523,
+            96.0189484845711,
+            35.52573176855943
+          ],
+          "targetMm": [
+            4.627654911454101,
+            -4.249063119178956,
+            4.831006101092463
+          ],
+          "beam": [
+            -0.5183684736581226,
+            -0.8177004419336661,
+            -0.25032002073113485
+          ],
+          "right": [
+            -0.8372694795021858,
+            0.5448529039767381,
+            -0.04599056123004457
+          ],
+          "normal": [
+            0.1739940924614608,
+            0.18574525643903492,
+            -0.9670701916091248
+          ],
+          "up": [
+            0.5183684736581226,
+            0.8177004419336661,
+            0.25032002073113485
+          ],
+          "multiplaneDeg": 10,
+          "shaftPoints": [
+            [
+              -5.924854205061971,
+              -89.76431108748528,
+              -70.47641338048764
+            ],
+            [
+              -4.306036187072033,
+              -88.41681428437981,
+              -69.40828625862865
+            ],
+            [
+              -2.6668784845511784,
+              -87.04638828878485,
+              -68.33755145747271
+            ],
+            [
+              -1.0163839086852402,
+              -85.66318208754004,
+              -67.265363195725
+            ],
+            [
+              0.6364447293399937,
+              -84.27734466748495,
+              -66.19287569209075
+            ],
+            [
+              2.2826046183386994,
+              -82.89902501545919,
+              -65.12124316527519
+            ],
+            [
+              3.9130929471250626,
+              -81.53837211830239,
+              -64.05161983398352
+            ],
+            [
+              5.518906904513264,
+              -80.20553496285412,
+              -62.98515991692096
+            ],
+            [
+              7.091043679317518,
+              -78.910662535954,
+              -61.923017632792764
+            ],
+            [
+              8.620500460351998,
+              -77.66390382444166,
+              -60.86634720030413
+            ],
+            [
+              10.098102145541654,
+              -76.47477272556445,
+              -59.818552233570706
+            ],
+            [
+              11.515283552180064,
+              -75.332951399856,
+              -58.83437397007815
+            ],
+            [
+              12.879467889383065,
+              -74.22939413162167,
+              -57.91468010504496
+            ],
+            [
+              14.20226740243076,
+              -73.16155512613574,
+              -57.02966141097399
+            ],
+            [
+              15.495294336603209,
+              -72.12688858867241,
+              -56.149508660368085
+            ],
+            [
+              16.770160937180485,
+              -71.12284872450601,
+              -55.24441262573007
+            ],
+            [
+              18.038479449442683,
+              -70.14688973891073,
+              -54.284564079562806
+            ],
+            [
+              19.311862118669847,
+              -69.19646583716086,
+              -53.24015379436913
+            ],
+            [
+              20.601921190142114,
+              -68.26903122453061,
+              -52.08137254265188
+            ],
+            [
+              21.920268909139526,
+              -67.36204010629426,
+              -50.778411096913906
+            ],
+            [
+              23.27789635945473,
+              -66.47808798039223,
+              -49.29945466951544
+            ],
+            [
+              24.67396064116631,
+              -65.64954653852638,
+              -47.62351540524481
+            ],
+            [
+              26.09794213958334,
+              -64.87109147088,
+              -45.78308625881264
+            ],
+            [
+              27.539144229180263,
+              -64.12877887545505,
+              -43.817342455620356
+            ],
+            [
+              28.986870284431543,
+              -63.40866485025339,
+              -41.76545922106946
+            ],
+            [
+              30.430423679811657,
+              -62.696805493276926,
+              -39.66661178056137
+            ],
+            [
+              31.859107789795004,
+              -61.97925690252758,
+              -37.55997535949757
+            ],
+            [
+              33.26222598885607,
+              -61.24207517600725,
+              -35.48472518327953
+            ],
+            [
+              34.6290816514693,
+              -60.47131641171782,
+              -33.480036477308694
+            ],
+            [
+              35.948978152109134,
+              -59.6530367076612,
+              -31.585084466986512
+            ],
+            [
+              37.22228289050419,
+              -58.794912960059904,
+              -29.807497984165163
+            ],
+            [
+              38.47729665825531,
+              -57.952293250066006,
+              -28.06663902684576
+            ],
+            [
+              39.71253222645717,
+              -57.11457057977517,
+              -26.35714683150859
+            ],
+            [
+              40.92385793329295,
+              -56.26569372728514,
+              -24.680855735086613
+            ],
+            [
+              42.10714211694585,
+              -55.389611470693744,
+              -23.03960007451283
+            ],
+            [
+              43.25825311559905,
+              -54.47027258809876,
+              -21.435214186720202
+            ],
+            [
+              44.37305926743572,
+              -53.491625857597995,
+              -19.869532408641707
+            ],
+            [
+              45.44742891063905,
+              -52.43762005728923,
+              -18.344389077210348
+            ],
+            [
+              46.477230383392225,
+              -51.29220396527028,
+              -16.861618529359088
+            ],
+            [
+              47.45833202387843,
+              -50.039326359638935,
+              -15.423055102020907
+            ],
+            [
+              48.397863641338404,
+              -48.68502434635181,
+              -14.006664900821143
+            ],
+            [
+              49.30844599155836,
+              -47.25650197959549,
+              -12.58783248715573
+            ],
+            [
+              50.185593482230104,
+              -45.75446203359824,
+              -11.18434061871632
+            ],
+            [
+              51.02464346800146,
+              -44.179295985178946,
+              -9.814378646601256
+            ],
+            [
+              51.82093330352019,
+              -42.531395311156444,
+              -8.496135921908849
+            ],
+            [
+              52.56980034343415,
+              -40.81115148834963,
+              -7.247801795737453
+            ],
+            [
+              53.2665819423911,
+              -39.01895599357739,
+              -6.0875656191854075
+            ],
+            [
+              53.906615455038875,
+              -37.15520030365858,
+              -5.03361674335103
+            ],
+            [
+              54.48523823602528,
+              -35.220275895412094,
+              -4.104144519332688
+            ],
+            [
+              54.99765251292203,
+              -33.214508211679494,
+              -3.317282135856405
+            ],
+            [
+              55.429427019385045,
+              -31.132403590280582,
+              -2.6787808160260456
+            ],
+            [
+              55.781340313936084,
+              -28.97232239516785,
+              -2.173736124443294
+            ],
+            [
+              56.064955859416486,
+              -26.737184065188337,
+              -1.786364175689335
+            ],
+            [
+              56.29183711866757,
+              -24.429908039189023,
+              -1.5008810843453526
+            ],
+            [
+              56.47354755453068,
+              -22.053413756016965,
+              -1.3015029649925198
+            ],
+            [
+              56.62165062984717,
+              -19.61062065451916,
+              -1.172445932212029
+            ],
+            [
+              56.74770980745835,
+              -17.10444817354265,
+              -1.0979261005850534
+            ],
+            [
+              56.86328855020557,
+              -14.537815751934462,
+              -1.062159584692771
+            ],
+            [
+              56.97995032093016,
+              -11.913642828541596,
+              -1.0493624991163646
+            ],
+            [
+              57.107089311064016,
+              -9.224087583026131,
+              -1.0532893332135798
+            ],
+            [
+              57.22464918347393,
+              -6.34861282592597,
+              -1.1756794786884779
+            ],
+            [
+              57.32483109145184,
+              -3.298467150272222,
+              -1.418666314939859
+            ],
+            [
+              57.4076584560146,
+              -0.13205412110990178,
+              -1.7446108235172035
+            ],
+            [
+              57.47315469817906,
+              3.092222696516012,
+              -2.115873985969987
+            ],
+            [
+              57.52134323896202,
+              6.315959737560617,
+              -2.494816783847692
+            ],
+            [
+              57.5522474993803,
+              9.480753436978897,
+              -2.84380019869979
+            ],
+            [
+              57.56589090045078,
+              12.528200229725941,
+              -3.125185212075765
+            ],
+            [
+              57.56229686319024,
+              15.399896550756754,
+              -3.301332805525096
+            ],
+            [
+              57.54148880861554,
+              18.037438835026354,
+              -3.3346039605972546
+            ],
+            [
+              57.49551238711719,
+              20.401853196288588,
+              -3.1939194811993445
+            ],
+            [
+              57.39254064705071,
+              22.562203344555627,
+              -2.9000011514896977
+            ],
+            [
+              57.2437063253643,
+              24.552678800772156,
+              -2.4832209603830693
+            ],
+            [
+              57.0657999352412,
+              26.397762877547194,
+              -1.9719249584362109
+            ],
+            [
+              56.87561198986475,
+              28.12193888748974,
+              -1.3944591962058785
+            ],
+            [
+              56.689933002418215,
+              29.749690143208838,
+              -0.7791697242488089
+            ],
+            [
+              56.52555348608492,
+              31.305499957313558,
+              -0.15440259312175098
+            ],
+            [
+              56.39926395404814,
+              32.81385164241287,
+              0.4514961466185463
+            ],
+            [
+              56.32785491949116,
+              34.299228511115864,
+              1.0101804444153446
+            ],
+            [
+              56.328116895597304,
+              35.786113876031536,
+              1.4933042497118878
+            ],
+            [
+              56.40940266853677,
+              37.259469616497164,
+              1.8977277622074604
+            ],
+            [
+              56.557057765425455,
+              38.65078401282277,
+              2.268986994463975
+            ],
+            [
+              56.759211936405606,
+              39.97174943698653,
+              2.6143283537569486
+            ],
+            [
+              57.004369283036056,
+              41.23720512530387,
+              2.939218891414634
+            ],
+            [
+              57.28103390687562,
+              42.46199031409013,
+              3.249125658765272
+            ],
+            [
+              57.57770990948316,
+              43.66094423966073,
+              3.54951570713711
+            ],
+            [
+              57.882901392417466,
+              44.848906138331024,
+              3.845856087858391
+            ],
+            [
+              58.18511245723741,
+              46.04071524641641,
+              4.143613852257366
+            ],
+            [
+              58.47284720550181,
+              47.251210800232315,
+              4.448256051662285
+            ],
+            [
+              58.73460973876951,
+              48.495232036094066,
+              4.765249737401386
+            ],
+            [
+              58.91539356419955,
+              49.35077519883906,
+              4.9504167308992875
+            ],
+            [
+              59.0987570914933,
+              50.19318379833328,
+              5.300893686720541
+            ],
+            [
+              59.28338613290887,
+              51.02914902717617,
+              5.73246609575703
+            ],
+            [
+              59.46796650070438,
+              51.865362077967205,
+              6.160919448900622
+            ],
+            [
+              59.651184007137914,
+              52.708514143305806,
+              6.502039237043202
+            ],
+            [
+              59.8317244644676,
+              53.565296415791444,
+              6.671610951076635
+            ],
+            [
+              60.00827368495155,
+              54.44240008802356,
+              6.585420081892797
+            ],
+            [
+              60.17951748084785,
+              55.346516352601604,
+              6.159252120383576
+            ],
+            [
+              60.34443027903207,
+              56.28336354737437,
+              5.307489719255472
+            ],
+            [
+              60.52695315882474,
+              57.17356067690647,
+              3.8609196286344405
+            ],
+            [
+              60.732678987494396,
+              57.996539959879414,
+              1.8610887923090287
+            ],
+            [
+              60.94697547226043,
+              58.799304941594265,
+              -0.5279852016134052
+            ],
+            [
+              61.15521032034228,
+              59.62885916735212,
+              -3.1422847650254804
+            ],
+            [
+              61.342751238959295,
+              60.532206182453976,
+              -5.817792309819837
+            ],
+            [
+              61.49496593533088,
+              61.55634953220095,
+              -8.390490247889119
+            ],
+            [
+              61.597222116676434,
+              62.748292761894064,
+              -10.69636099112596
+            ],
+            [
+              61.63488749021538,
+              64.1550394168344,
+              -12.57138695142298
+            ],
+            [
+              61.590488191874314,
+              65.82406749600409,
+              -13.862361928015506
+            ],
+            [
+              61.38935014816805,
+              67.78964819446686,
+              -14.745908183272459
+            ],
+            [
+              61.04484076987352,
+              70.01191984155307,
+              -15.356686560685876
+            ],
+            [
+              60.612179367460584,
+              72.4348169780969,
+              -15.71555847263527
+            ],
+            [
+              60.1465852513991,
+              75.0022741449326,
+              -15.843385331500109
+            ],
+            [
+              59.70327773215895,
+              77.6582258828944,
+              -15.761028549659894
+            ],
+            [
+              59.33747612020997,
+              80.34660673281654,
+              -15.489349539494135
+            ],
+            [
+              59.104399726022024,
+              83.0113512355333,
+              -15.049209713382297
+            ],
+            [
+              59.05926786006496,
+              85.59639393187884,
+              -14.46147048370388
+            ],
+            [
+              59.25733958075378,
+              88.06272977094359,
+              -13.740108731043932
+            ],
+            [
+              59.7202791289577,
+              90.57869183823287,
+              -12.816517955786953
+            ],
+            [
+              60.39699045415527,
+              93.16462267429667,
+              -11.684118322299888
+            ],
+            [
+              61.227700565822886,
+              95.77327649599562,
+              -10.363875872460763
+            ],
+            [
+              62.152636473436885,
+              98.35740752019034,
+              -8.876756648147559
+            ],
+            [
+              63.11202518647369,
+              100.86976996374152,
+              -7.243726691238305
+            ],
+            [
+              64.04609371440962,
+              103.26311804350972,
+              -5.485752043610998
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              65.59917825288447,
+              107.50378797913993,
+              -1.6788328437142228
+            ],
+            [
+              66.12191312594338,
+              109.27646560529777,
+              0.34529867062544195
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.83334566157467,
+              111.64392228370103,
+              3.796667736450261
+            ],
+            [
+              67.06702915101928,
+              112.13927053439858,
+              5.095351540006898
+            ],
+            [
+              67.29462876696793,
+              112.42322399761935,
+              6.4417389349178436
+            ],
+            [
+              67.51562348199465,
+              112.5121113006881,
+              7.830489033548915
+            ],
+            [
+              67.72949226867345,
+              112.42226107092964,
+              9.256260948265925
+            ],
+            [
+              67.93571409957842,
+              112.17000193566882,
+              10.713713791434694
+            ],
+            [
+              68.13376794728362,
+              111.77166252223046,
+              12.197506675421035
+            ],
+            [
+              68.32313278436307,
+              111.2435714579394,
+              13.702298712590764
+            ],
+            [
+              68.50328758339082,
+              110.60205737012042,
+              15.222749015309695
+            ],
+            [
+              68.67371131694092,
+              109.86344888609838,
+              16.753516695943645
+            ],
+            [
+              68.83388295758749,
+              109.04407463319819,
+              18.289260866858434
+            ],
+            [
+              68.98328147790448,
+              108.1602632387445,
+              19.824640640419872
+            ],
+            [
+              69.12138585046601,
+              107.22834333006227,
+              21.354315128993775
+            ],
+            [
+              69.2476750478461,
+              106.2646435344763,
+              22.872943444945967
+            ],
+            [
+              69.36162804261882,
+              105.2854924793114,
+              24.37518470064225
+            ],
+            [
+              69.4627238073582,
+              104.3072187918924,
+              25.855698008448446
+            ],
+            [
+              69.55044131463832,
+              103.34615109954412,
+              27.309142480730376
+            ],
+            [
+              69.6242595370332,
+              102.4186180295914,
+              28.73017722985385
+            ],
+            [
+              69.6836574471169,
+              101.54094820935906,
+              30.113461368184687
+            ],
+            [
+              69.72811401746348,
+              100.72947026617194,
+              31.453654008088705
+            ],
+            [
+              69.757108220647,
+              100.00051282735487,
+              32.74541426193171
+            ],
+            [
+              69.77011902924149,
+              99.37040452023264,
+              33.983401242079516
+            ],
+            [
+              69.76662541582101,
+              98.85547397213011,
+              35.162274060897964
+            ],
+            [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ]
+          ],
+          "instrument": {
+            "originMm": [
+              68.19100093198523,
+              96.0189484845711,
+              35.52573176855943
+            ],
+            "beam": [
+              -0.5183684736581226,
+              -0.8177004419336661,
+              -0.25032002073113485
+            ],
+            "right": [
+              -0.8547632318549924,
+              0.5043210387965926,
+              0.12263811518420314
+            ],
+            "shaft": [
+              -0.025960411902675777,
+              -0.277536082498498,
+              0.9603643995511446
+            ],
+            "normal": [
+              0.025960411902675777,
+              0.277536082498498,
+              -0.9603643995511446
+            ]
+          },
+          "sectorDepthMm": 160.621936422879,
+          "contextFit": {
+            "outsideScan": false,
+            "mode": "lumen-plane-constrained",
+            "level": "deep-tg",
+            "levelLabel": "Deep transgastric",
+            "insertionCm": 55.269929202129774,
+            "headCenterMm": [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ],
+            "tractSampleMm": [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ],
+            "tractArcMm": 301.8726092897784,
+            "tractOffsetMm": 0,
+            "clearanceHintMm": 4.6564015625,
+            "shaftBendDeg": 15.952183625327716,
+            "clinicalDepthMeasured": false,
+            "distanceMm": 0,
+            "headContained": true,
+            "shaftContained": true,
+            "shaftClearanceMm": 3.7099990442727298,
+            "roiTargetMm": [
+              -9.37676190476191,
+              6.276380952380952,
+              4.3329714285714305
+            ],
+            "roiTargetAngleDeg": 8.195041016623227,
+            "rayTurnDeg": 8,
+            "apicalGuide": false,
+            "apexAngleDeg": null,
+            "targetKind": "source regional target inside scan sector",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-gastric-lumen",
+            "planeResidualMm": 1.7763568394002505e-14,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 41.62213746846716,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 41.62213746846716,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 1.7763568394002505e-14,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.05581060401476283,
+            0.037357097848591224,
+            0.0257899000810154
+          ],
+          "sourceNormal": [
+            -0.5484231090180606,
+            -0.6263288910169591,
+            0.5540254631083578
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquisition solver on exploratory target",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -77.44921870218657,
+          47.07986261536563
+        ],
+        "stomachPlaneGapMm": 0,
+        "rvAxisAngleOutOfPlaneDeg": 18.783684309659638,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 9.90824619190945,
+          "pulmonaryRoot": 19.987685192736887,
+          "pulmonaryLumen": 24.243861573148408,
+          "rvMidCavity": 10.079439000827435,
+          "rvApicalCavity": 7.0482069639301645
+        }
+      },
+      "angleDefault": 10,
+      "sourceRotationDeg": 41.62213746846716,
+      "contextFit": {
+        "outsideScan": false,
+        "mode": "lumen-plane-constrained",
+        "level": "deep-tg",
+        "levelLabel": "Deep transgastric",
+        "insertionCm": 55.269929202129774,
+        "headCenterMm": [
+          69.7461063529596,
+          98.4720498103721,
+          36.27669183075284
+        ],
+        "tractSampleMm": [
+          69.7461063529596,
+          98.4720498103721,
+          36.27669183075284
+        ],
+        "tractArcMm": 301.8726092897784,
+        "tractOffsetMm": 0,
+        "clearanceHintMm": 4.6564015625,
+        "shaftBendDeg": 15.952183625327716,
+        "clinicalDepthMeasured": false,
+        "distanceMm": 0,
+        "headContained": true,
+        "shaftContained": true,
+        "shaftClearanceMm": 3.7099990442727298,
+        "roiTargetMm": [
+          -9.37676190476191,
+          6.276380952380952,
+          4.3329714285714305
+        ],
+        "roiTargetAngleDeg": 8.195041016623227,
+        "rayTurnDeg": 8,
+        "apicalGuide": false,
+        "apexAngleDeg": null,
+        "targetKind": "source regional target inside scan sector",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-gastric-lumen",
+        "planeResidualMm": 1.7763568394002505e-14,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": true,
+        "correctionAngleDeg": 41.62213746846716,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      }
+    },
+    {
+      "id": "rv-tv-pv-mid-acquired-100",
+      "plane": {
+        "center": [
+          -0.05581060401476283,
+          0.037357097848591224,
+          0.0257899000810154
+        ],
+        "right": [
+          -0.9696354756611589,
+          0.09073100184411476,
+          -0.22710114408281085
+        ],
+        "up": [
+          -0.06405232500716428,
+          -0.9904343613561124,
+          -0.1222173289934211
+        ],
+        "normal": [
+          -0.2360176773051861,
+          -0.10395990164228125,
+          0.9661718247030352
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            60.69252563812299,
+            108.81004821364826,
+            32.48218853926912
+          ],
+          "targetMm": [
+            -9.37676190476191,
+            6.276380952380952,
+            4.3329714285714305
+          ],
+          "beam": [
+            -0.5502576123025076,
+            -0.805202006560631,
+            -0.221057206925893
+          ],
+          "right": [
+            0.8009445774225632,
+            -0.5838168098652701,
+            0.1328371800970301
+          ],
+          "normal": [
+            -0.23601767730518625,
+            -0.10395990164228149,
+            0.9661718247030349
+          ],
+          "up": [
+            0.5502576123025076,
+            0.805202006560631,
+            0.221057206925893
+          ],
+          "multiplaneDeg": 100,
+          "shaftPoints": [
+            [
+              -5.924854205061971,
+              -89.76431108748528,
+              -70.47641338048764
+            ],
+            [
+              -4.306036187072033,
+              -88.41681428437981,
+              -69.40828625862865
+            ],
+            [
+              -2.6668784845511784,
+              -87.04638828878485,
+              -68.33755145747271
+            ],
+            [
+              -1.0163839086852402,
+              -85.66318208754004,
+              -67.265363195725
+            ],
+            [
+              0.6364447293399937,
+              -84.27734466748495,
+              -66.19287569209075
+            ],
+            [
+              2.2826046183386994,
+              -82.89902501545919,
+              -65.12124316527519
+            ],
+            [
+              3.9130929471250626,
+              -81.53837211830239,
+              -64.05161983398352
+            ],
+            [
+              5.518906904513264,
+              -80.20553496285412,
+              -62.98515991692096
+            ],
+            [
+              7.091043679317518,
+              -78.910662535954,
+              -61.923017632792764
+            ],
+            [
+              8.620500460351998,
+              -77.66390382444166,
+              -60.86634720030413
+            ],
+            [
+              10.098102145541654,
+              -76.47477272556445,
+              -59.818552233570706
+            ],
+            [
+              11.515283552180064,
+              -75.332951399856,
+              -58.83437397007815
+            ],
+            [
+              12.879467889383065,
+              -74.22939413162167,
+              -57.91468010504496
+            ],
+            [
+              14.20226740243076,
+              -73.16155512613574,
+              -57.02966141097399
+            ],
+            [
+              15.495294336603209,
+              -72.12688858867241,
+              -56.149508660368085
+            ],
+            [
+              16.770160937180485,
+              -71.12284872450601,
+              -55.24441262573007
+            ],
+            [
+              18.038479449442683,
+              -70.14688973891073,
+              -54.284564079562806
+            ],
+            [
+              19.311862118669847,
+              -69.19646583716086,
+              -53.24015379436913
+            ],
+            [
+              20.601921190142114,
+              -68.26903122453061,
+              -52.08137254265188
+            ],
+            [
+              21.920268909139526,
+              -67.36204010629426,
+              -50.778411096913906
+            ],
+            [
+              23.27789635945473,
+              -66.47808798039223,
+              -49.29945466951544
+            ],
+            [
+              24.67396064116631,
+              -65.64954653852638,
+              -47.62351540524481
+            ],
+            [
+              26.09794213958334,
+              -64.87109147088,
+              -45.78308625881264
+            ],
+            [
+              27.539144229180263,
+              -64.12877887545505,
+              -43.817342455620356
+            ],
+            [
+              28.986870284431543,
+              -63.40866485025339,
+              -41.76545922106946
+            ],
+            [
+              30.430423679811657,
+              -62.696805493276926,
+              -39.66661178056137
+            ],
+            [
+              31.859107789795004,
+              -61.97925690252758,
+              -37.55997535949757
+            ],
+            [
+              33.26222598885607,
+              -61.24207517600725,
+              -35.48472518327953
+            ],
+            [
+              34.6290816514693,
+              -60.47131641171782,
+              -33.480036477308694
+            ],
+            [
+              35.948978152109134,
+              -59.6530367076612,
+              -31.585084466986512
+            ],
+            [
+              37.22228289050419,
+              -58.794912960059904,
+              -29.807497984165163
+            ],
+            [
+              38.47729665825531,
+              -57.952293250066006,
+              -28.06663902684576
+            ],
+            [
+              39.71253222645717,
+              -57.11457057977517,
+              -26.35714683150859
+            ],
+            [
+              40.92385793329295,
+              -56.26569372728514,
+              -24.680855735086613
+            ],
+            [
+              42.10714211694585,
+              -55.389611470693744,
+              -23.03960007451283
+            ],
+            [
+              43.25825311559905,
+              -54.47027258809876,
+              -21.435214186720202
+            ],
+            [
+              44.37305926743572,
+              -53.491625857597995,
+              -19.869532408641707
+            ],
+            [
+              45.44742891063905,
+              -52.43762005728923,
+              -18.344389077210348
+            ],
+            [
+              46.477230383392225,
+              -51.29220396527028,
+              -16.861618529359088
+            ],
+            [
+              47.45833202387843,
+              -50.039326359638935,
+              -15.423055102020907
+            ],
+            [
+              48.397863641338404,
+              -48.68502434635181,
+              -14.006664900821143
+            ],
+            [
+              49.30844599155836,
+              -47.25650197959549,
+              -12.58783248715573
+            ],
+            [
+              50.185593482230104,
+              -45.75446203359824,
+              -11.18434061871632
+            ],
+            [
+              51.02464346800146,
+              -44.179295985178946,
+              -9.814378646601256
+            ],
+            [
+              51.82093330352019,
+              -42.531395311156444,
+              -8.496135921908849
+            ],
+            [
+              52.56980034343415,
+              -40.81115148834963,
+              -7.247801795737453
+            ],
+            [
+              53.2665819423911,
+              -39.01895599357739,
+              -6.0875656191854075
+            ],
+            [
+              53.906615455038875,
+              -37.15520030365858,
+              -5.03361674335103
+            ],
+            [
+              54.48523823602528,
+              -35.220275895412094,
+              -4.104144519332688
+            ],
+            [
+              54.99765251292203,
+              -33.214508211679494,
+              -3.317282135856405
+            ],
+            [
+              55.429427019385045,
+              -31.132403590280582,
+              -2.6787808160260456
+            ],
+            [
+              55.781340313936084,
+              -28.97232239516785,
+              -2.173736124443294
+            ],
+            [
+              56.064955859416486,
+              -26.737184065188337,
+              -1.786364175689335
+            ],
+            [
+              56.29183711866757,
+              -24.429908039189023,
+              -1.5008810843453526
+            ],
+            [
+              56.47354755453068,
+              -22.053413756016965,
+              -1.3015029649925198
+            ],
+            [
+              56.62165062984717,
+              -19.61062065451916,
+              -1.172445932212029
+            ],
+            [
+              56.74770980745835,
+              -17.10444817354265,
+              -1.0979261005850534
+            ],
+            [
+              56.86328855020557,
+              -14.537815751934462,
+              -1.062159584692771
+            ],
+            [
+              56.97995032093016,
+              -11.913642828541596,
+              -1.0493624991163646
+            ],
+            [
+              57.107089311064016,
+              -9.224087583026131,
+              -1.0532893332135798
+            ],
+            [
+              57.22464918347393,
+              -6.34861282592597,
+              -1.1756794786884779
+            ],
+            [
+              57.32483109145184,
+              -3.298467150272222,
+              -1.418666314939859
+            ],
+            [
+              57.4076584560146,
+              -0.13205412110990178,
+              -1.7446108235172035
+            ],
+            [
+              57.47315469817906,
+              3.092222696516012,
+              -2.115873985969987
+            ],
+            [
+              57.52134323896202,
+              6.315959737560617,
+              -2.494816783847692
+            ],
+            [
+              57.5522474993803,
+              9.480753436978897,
+              -2.84380019869979
+            ],
+            [
+              57.56589090045078,
+              12.528200229725941,
+              -3.125185212075765
+            ],
+            [
+              57.56229686319024,
+              15.399896550756754,
+              -3.301332805525096
+            ],
+            [
+              57.54148880861554,
+              18.037438835026354,
+              -3.3346039605972546
+            ],
+            [
+              57.49551238711719,
+              20.401853196288588,
+              -3.1939194811993445
+            ],
+            [
+              57.39254064705071,
+              22.562203344555627,
+              -2.9000011514896977
+            ],
+            [
+              57.2437063253643,
+              24.552678800772156,
+              -2.4832209603830693
+            ],
+            [
+              57.0657999352412,
+              26.397762877547194,
+              -1.9719249584362109
+            ],
+            [
+              56.87561198986475,
+              28.12193888748974,
+              -1.3944591962058785
+            ],
+            [
+              56.689933002418215,
+              29.749690143208838,
+              -0.7791697242488089
+            ],
+            [
+              56.52555348608492,
+              31.305499957313558,
+              -0.15440259312175098
+            ],
+            [
+              56.39926395404814,
+              32.81385164241287,
+              0.4514961466185463
+            ],
+            [
+              56.32785491949116,
+              34.299228511115864,
+              1.0101804444153446
+            ],
+            [
+              56.328116895597304,
+              35.786113876031536,
+              1.4933042497118878
+            ],
+            [
+              56.40940266853677,
+              37.259469616497164,
+              1.8977277622074604
+            ],
+            [
+              56.557057765425455,
+              38.65078401282277,
+              2.268986994463975
+            ],
+            [
+              56.759211936405606,
+              39.97174943698653,
+              2.6143283537569486
+            ],
+            [
+              57.004369283036056,
+              41.23720512530387,
+              2.939218891414634
+            ],
+            [
+              57.28103390687562,
+              42.46199031409013,
+              3.249125658765272
+            ],
+            [
+              57.57770990948316,
+              43.66094423966073,
+              3.54951570713711
+            ],
+            [
+              57.882901392417466,
+              44.848906138331024,
+              3.845856087858391
+            ],
+            [
+              58.18511245723741,
+              46.04071524641641,
+              4.143613852257366
+            ],
+            [
+              58.47284720550181,
+              47.251210800232315,
+              4.448256051662285
+            ],
+            [
+              58.73460973876951,
+              48.495232036094066,
+              4.765249737401386
+            ],
+            [
+              58.91539356419955,
+              49.35077519883906,
+              4.9504167308992875
+            ],
+            [
+              59.0987570914933,
+              50.19318379833328,
+              5.300893686720541
+            ],
+            [
+              59.28338613290887,
+              51.02914902717617,
+              5.73246609575703
+            ],
+            [
+              59.46796650070438,
+              51.865362077967205,
+              6.160919448900622
+            ],
+            [
+              59.651184007137914,
+              52.708514143305806,
+              6.502039237043202
+            ],
+            [
+              59.8317244644676,
+              53.565296415791444,
+              6.671610951076635
+            ],
+            [
+              60.00827368495155,
+              54.44240008802356,
+              6.585420081892797
+            ],
+            [
+              60.17951748084785,
+              55.346516352601604,
+              6.159252120383576
+            ],
+            [
+              60.34443027903207,
+              56.28336354737437,
+              5.307489719255472
+            ],
+            [
+              60.52695315882474,
+              57.17356067690647,
+              3.8609196286344405
+            ],
+            [
+              60.732678987494396,
+              57.996539959879414,
+              1.8610887923090287
+            ],
+            [
+              60.94697547226043,
+              58.799304941594265,
+              -0.5279852016134052
+            ],
+            [
+              61.15521032034228,
+              59.62885916735212,
+              -3.1422847650254804
+            ],
+            [
+              61.342751238959295,
+              60.532206182453976,
+              -5.817792309819837
+            ],
+            [
+              61.49496593533088,
+              61.55634953220095,
+              -8.390490247889119
+            ],
+            [
+              61.597222116676434,
+              62.748292761894064,
+              -10.69636099112596
+            ],
+            [
+              61.63488749021538,
+              64.1550394168344,
+              -12.57138695142298
+            ],
+            [
+              61.590488191874314,
+              65.82406749600409,
+              -13.862361928015506
+            ],
+            [
+              61.38935014816805,
+              67.78964819446686,
+              -14.745908183272459
+            ],
+            [
+              61.04484076987352,
+              70.01191984155307,
+              -15.356686560685876
+            ],
+            [
+              60.612179367460584,
+              72.4348169780969,
+              -15.71555847263527
+            ],
+            [
+              60.1465852513991,
+              75.0022741449326,
+              -15.843385331500109
+            ],
+            [
+              59.70327773215895,
+              77.6582258828944,
+              -15.761028549659894
+            ],
+            [
+              59.33747612020997,
+              80.34660673281654,
+              -15.489349539494135
+            ],
+            [
+              59.104399726022024,
+              83.0113512355333,
+              -15.049209713382297
+            ],
+            [
+              59.05926786006496,
+              85.59639393187884,
+              -14.46147048370388
+            ],
+            [
+              59.25733958075378,
+              88.06272977094359,
+              -13.740108731043932
+            ],
+            [
+              59.7202791289577,
+              90.57869183823287,
+              -12.816517955786953
+            ],
+            [
+              60.39699045415527,
+              93.16462267429667,
+              -11.684118322299888
+            ],
+            [
+              61.227700565822886,
+              95.77327649599562,
+              -10.363875872460763
+            ],
+            [
+              62.152636473436885,
+              98.35740752019034,
+              -8.876756648147559
+            ],
+            [
+              63.11202518647369,
+              100.86976996374152,
+              -7.243726691238305
+            ],
+            [
+              64.04609371440962,
+              103.26311804350972,
+              -5.485752043610998
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              65.59917825288447,
+              107.50378797913993,
+              -1.6788328437142228
+            ],
+            [
+              66.12191312594338,
+              109.27646560529777,
+              0.34529867062544195
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.83196858432419,
+              111.67101796411941,
+              3.8222930321207276
+            ],
+            [
+              67.05952518640697,
+              112.24679168979854,
+              5.192450699145014
+            ],
+            [
+              67.2732546214668,
+              112.66320807315374,
+              6.648057490005172
+            ],
+            [
+              67.46964237866214,
+              112.93530339209946,
+              8.175669481751394
+            ],
+            [
+              67.6451739471514,
+              113.07811392455012,
+              9.761842751433871
+            ],
+            [
+              67.79633481609307,
+              113.10667594842029,
+              11.393133376102801
+            ],
+            [
+              67.91961047464554,
+              113.0360257416244,
+              13.056097432808375
+            ],
+            [
+              68.01148641196733,
+              112.881199582077,
+              14.737290998600784
+            ],
+            [
+              68.0684481172168,
+              112.65723374769252,
+              16.423270150530225
+            ],
+            [
+              68.08698107955244,
+              112.37916451638543,
+              18.100590965646884
+            ],
+            [
+              68.06357078813275,
+              112.06202816607035,
+              19.75580952100097
+            ],
+            [
+              67.99470273211608,
+              111.72086097466159,
+              21.375481893642654
+            ],
+            [
+              67.87686240066095,
+              111.37069922007375,
+              22.946164160622146
+            ],
+            [
+              67.7065352829258,
+              111.02657918022132,
+              24.454412398989636
+            ],
+            [
+              67.48020686806903,
+              110.70353713301873,
+              25.88678268579531
+            ],
+            [
+              67.19436264524913,
+              110.4166093563805,
+              27.229831098089367
+            ],
+            [
+              66.84548810362455,
+              110.18083212822111,
+              28.470113712922004
+            ],
+            [
+              66.43006873235369,
+              110.01124172645508,
+              29.59418660734341
+            ],
+            [
+              65.94459002059506,
+              109.92287442899685,
+              30.588605858403774
+            ],
+            [
+              65.38553745750706,
+              109.93076651376094,
+              31.4399275431533
+            ],
+            [
+              64.74939653224816,
+              110.04995425866183,
+              32.13470773864216
+            ],
+            [
+              64.0326527339768,
+              110.29547394161399,
+              32.65950252192058
+            ],
+            [
+              63.231791551851444,
+              110.68236184053195,
+              33.000867970038726
+            ],
+            [
+              62.34329847503051,
+              111.22565423333015,
+              33.1453601600468
+            ]
+          ],
+          "instrument": {
+            "originMm": [
+              60.69252563812299,
+              108.81004821364826,
+              32.48218853926912
+            ],
+            "beam": [
+              -0.5502576123025076,
+              -0.805202006560631,
+              -0.221057206925893
+            ],
+            "right": [
+              0.09334947217644322,
+              0.2037592422641303,
+              -0.974560437959764
+            ],
+            "shaft": [
+              -0.8297604691400543,
+              0.5568948732235567,
+              0.03695489182498064
+            ],
+            "normal": [
+              0.8297604691400543,
+              -0.5568948732235567,
+              -0.03695489182498064
+            ]
+          },
+          "sectorDepthMm": 165.33906078951955,
+          "contextFit": {
+            "outsideScan": false,
+            "mode": "lumen-plane-constrained",
+            "level": "deep-tg",
+            "levelLabel": "Deep transgastric",
+            "insertionCm": 55.269929202129774,
+            "headCenterMm": [
+              62.34329847503051,
+              111.22565423333015,
+              33.1453601600468
+            ],
+            "tractSampleMm": [
+              62.34329847503051,
+              111.22565423333015,
+              33.1453601600468
+            ],
+            "tractArcMm": 301.8726092897784,
+            "tractOffsetMm": 0,
+            "clearanceHintMm": 13.969204687500005,
+            "shaftBendDeg": 80.94190315003843,
+            "clinicalDepthMeasured": false,
+            "distanceMm": 0,
+            "headContained": true,
+            "shaftContained": true,
+            "shaftClearanceMm": 4.453660441376034,
+            "roiTargetMm": [
+              -9.37676190476191,
+              6.276380952380952,
+              4.3329714285714305
+            ],
+            "roiTargetAngleDeg": 1.7779841184769035e-15,
+            "rayTurnDeg": 0,
+            "apicalGuide": false,
+            "apexAngleDeg": null,
+            "targetKind": "source regional target inside scan sector",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-gastric-lumen",
+            "planeResidualMm": 3.552713678800501e-14,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 43.12748439104629,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 43.12748439104629,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 3.552713678800501e-14,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.05581060401476283,
+            0.037357097848591224,
+            0.0257899000810154
+          ],
+          "sourceNormal": [
+            -0.5484231090180606,
+            -0.6263288910169591,
+            0.5540254631083578
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquisition solver on exploratory target",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -75.34752479648704,
+          50.06224109331741
+        ],
+        "stomachPlaneGapMm": 0,
+        "rvAxisAngleOutOfPlaneDeg": 13.150544144666789,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 9.528420653049388,
+          "pulmonaryRoot": 21.030443172680307,
+          "pulmonaryLumen": 26.0973206650157,
+          "rvMidCavity": 11.502022519630918,
+          "rvApicalCavity": 2.4523756825491474
+        }
+      },
+      "angleDefault": 100,
+      "sourceRotationDeg": 43.12748439104629,
+      "contextFit": {
+        "outsideScan": false,
+        "mode": "lumen-plane-constrained",
+        "level": "deep-tg",
+        "levelLabel": "Deep transgastric",
+        "insertionCm": 55.269929202129774,
+        "headCenterMm": [
+          62.34329847503051,
+          111.22565423333015,
+          33.1453601600468
+        ],
+        "tractSampleMm": [
+          62.34329847503051,
+          111.22565423333015,
+          33.1453601600468
+        ],
+        "tractArcMm": 301.8726092897784,
+        "tractOffsetMm": 0,
+        "clearanceHintMm": 13.969204687500005,
+        "shaftBendDeg": 80.94190315003843,
+        "clinicalDepthMeasured": false,
+        "distanceMm": 0,
+        "headContained": true,
+        "shaftContained": true,
+        "shaftClearanceMm": 4.453660441376034,
+        "roiTargetMm": [
+          -9.37676190476191,
+          6.276380952380952,
+          4.3329714285714305
+        ],
+        "roiTargetAngleDeg": 1.7779841184769035e-15,
+        "rayTurnDeg": 0,
+        "apicalGuide": false,
+        "apexAngleDeg": null,
+        "targetKind": "source regional target inside scan sector",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-gastric-lumen",
+        "planeResidualMm": 3.552713678800501e-14,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": true,
+        "correctionAngleDeg": 43.12748439104629,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      }
+    },
+    {
+      "id": "rv-tv-pv-apical-source",
+      "plane": {
+        "center": [
+          -0.05896120262849944,
+          0.1117112251327752,
+          0.0043658295076064585
+        ],
+        "right": [
+          -0.4600030317183656,
+          0.060391709630301674,
+          -0.8858611924098729
+        ],
+        "up": [
+          0.12496550979241008,
+          -0.9833505853393724,
+          -0.13192894934409566
+        ],
+        "normal": [
+          -0.8790795368863021,
+          -0.17138981218451468,
+          0.44479736971695477
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false
+      },
+      "outsideScan": false,
+      "construction": "Exploratory plane through source tricuspid hinge mean, pulmonary root lumen center, and RV apical cavity center; no clinical validation",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -107.84109961936205,
+          -20.277736724185154
+        ],
+        "stomachPlaneGapMm": 20.277736724185154,
+        "rvAxisAngleOutOfPlaneDeg": 3.1805546814635168e-15,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 1.1658063403530152e-15,
+          "pulmonaryRoot": 1.1658063403530152e-15,
+          "pulmonaryLumen": 5.218281496061879,
+          "rvMidCavity": 9.830263325852737,
+          "rvApicalCavity": 5.829031701765076e-16
+        }
+      }
+    },
+    {
+      "id": "rv-tv-pv-apical-acquired-10",
+      "plane": {
+        "center": [
+          -0.05896120262849944,
+          0.1117112251327752,
+          0.0043658295076064585
+        ],
+        "right": [
+          -0.6740577298972422,
+          0.07504298238875302,
+          -0.7348569436019352
+        ],
+        "up": [
+          -0.2548967328821113,
+          -0.9573503836366717,
+          0.1360437375138707
+        ],
+        "normal": [
+          -0.6933064490770311,
+          0.27901396693520314,
+          0.6644376373470119
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            57.39975733095107,
+            115.80026318223688,
+            30.217694954007428
+          ],
+          "targetMm": [
+            -9.906095238095244,
+            18.76864761904762,
+            0.7335047619047643
+          ],
+          "beam": [
+            -0.55297932707184,
+            -0.7972037412910251,
+            -0.24223967202497465
+          ],
+          "right": [
+            -0.4621039185068366,
+            0.5353666044185739,
+            -0.7069954507448782
+          ],
+          "normal": [
+            0.6933064490770312,
+            -0.27901396693520325,
+            -0.6644376373470119
+          ],
+          "up": [
+            0.55297932707184,
+            0.7972037412910251,
+            0.24223967202497465
+          ],
+          "multiplaneDeg": 10,
+          "shaftPoints": [
+            [
+              -5.924854205061971,
+              -89.76431108748528,
+              -70.47641338048764
+            ],
+            [
+              -4.306036187072033,
+              -88.41681428437981,
+              -69.40828625862865
+            ],
+            [
+              -2.6668784845511784,
+              -87.04638828878485,
+              -68.33755145747271
+            ],
+            [
+              -1.0163839086852402,
+              -85.66318208754004,
+              -67.265363195725
+            ],
+            [
+              0.6364447293399937,
+              -84.27734466748495,
+              -66.19287569209075
+            ],
+            [
+              2.2826046183386994,
+              -82.89902501545919,
+              -65.12124316527519
+            ],
+            [
+              3.9130929471250626,
+              -81.53837211830239,
+              -64.05161983398352
+            ],
+            [
+              5.518906904513264,
+              -80.20553496285412,
+              -62.98515991692096
+            ],
+            [
+              7.091043679317518,
+              -78.910662535954,
+              -61.923017632792764
+            ],
+            [
+              8.620500460351998,
+              -77.66390382444166,
+              -60.86634720030413
+            ],
+            [
+              10.098102145541654,
+              -76.47477272556445,
+              -59.818552233570706
+            ],
+            [
+              11.515283552180064,
+              -75.332951399856,
+              -58.83437397007815
+            ],
+            [
+              12.879467889383065,
+              -74.22939413162167,
+              -57.91468010504496
+            ],
+            [
+              14.20226740243076,
+              -73.16155512613574,
+              -57.02966141097399
+            ],
+            [
+              15.495294336603209,
+              -72.12688858867241,
+              -56.149508660368085
+            ],
+            [
+              16.770160937180485,
+              -71.12284872450601,
+              -55.24441262573007
+            ],
+            [
+              18.038479449442683,
+              -70.14688973891073,
+              -54.284564079562806
+            ],
+            [
+              19.311862118669847,
+              -69.19646583716086,
+              -53.24015379436913
+            ],
+            [
+              20.601921190142114,
+              -68.26903122453061,
+              -52.08137254265188
+            ],
+            [
+              21.920268909139526,
+              -67.36204010629426,
+              -50.778411096913906
+            ],
+            [
+              23.27789635945473,
+              -66.47808798039223,
+              -49.29945466951544
+            ],
+            [
+              24.67396064116631,
+              -65.64954653852638,
+              -47.62351540524481
+            ],
+            [
+              26.09794213958334,
+              -64.87109147088,
+              -45.78308625881264
+            ],
+            [
+              27.539144229180263,
+              -64.12877887545505,
+              -43.817342455620356
+            ],
+            [
+              28.986870284431543,
+              -63.40866485025339,
+              -41.76545922106946
+            ],
+            [
+              30.430423679811657,
+              -62.696805493276926,
+              -39.66661178056137
+            ],
+            [
+              31.859107789795004,
+              -61.97925690252758,
+              -37.55997535949757
+            ],
+            [
+              33.26222598885607,
+              -61.24207517600725,
+              -35.48472518327953
+            ],
+            [
+              34.6290816514693,
+              -60.47131641171782,
+              -33.480036477308694
+            ],
+            [
+              35.948978152109134,
+              -59.6530367076612,
+              -31.585084466986512
+            ],
+            [
+              37.22228289050419,
+              -58.794912960059904,
+              -29.807497984165163
+            ],
+            [
+              38.47729665825531,
+              -57.952293250066006,
+              -28.06663902684576
+            ],
+            [
+              39.71253222645717,
+              -57.11457057977517,
+              -26.35714683150859
+            ],
+            [
+              40.92385793329295,
+              -56.26569372728514,
+              -24.680855735086613
+            ],
+            [
+              42.10714211694585,
+              -55.389611470693744,
+              -23.03960007451283
+            ],
+            [
+              43.25825311559905,
+              -54.47027258809876,
+              -21.435214186720202
+            ],
+            [
+              44.37305926743572,
+              -53.491625857597995,
+              -19.869532408641707
+            ],
+            [
+              45.44742891063905,
+              -52.43762005728923,
+              -18.344389077210348
+            ],
+            [
+              46.477230383392225,
+              -51.29220396527028,
+              -16.861618529359088
+            ],
+            [
+              47.45833202387843,
+              -50.039326359638935,
+              -15.423055102020907
+            ],
+            [
+              48.397863641338404,
+              -48.68502434635181,
+              -14.006664900821143
+            ],
+            [
+              49.30844599155836,
+              -47.25650197959549,
+              -12.58783248715573
+            ],
+            [
+              50.185593482230104,
+              -45.75446203359824,
+              -11.18434061871632
+            ],
+            [
+              51.02464346800146,
+              -44.179295985178946,
+              -9.814378646601256
+            ],
+            [
+              51.82093330352019,
+              -42.531395311156444,
+              -8.496135921908849
+            ],
+            [
+              52.56980034343415,
+              -40.81115148834963,
+              -7.247801795737453
+            ],
+            [
+              53.2665819423911,
+              -39.01895599357739,
+              -6.0875656191854075
+            ],
+            [
+              53.906615455038875,
+              -37.15520030365858,
+              -5.03361674335103
+            ],
+            [
+              54.48523823602528,
+              -35.220275895412094,
+              -4.104144519332688
+            ],
+            [
+              54.99765251292203,
+              -33.214508211679494,
+              -3.317282135856405
+            ],
+            [
+              55.429427019385045,
+              -31.132403590280582,
+              -2.6787808160260456
+            ],
+            [
+              55.781340313936084,
+              -28.97232239516785,
+              -2.173736124443294
+            ],
+            [
+              56.064955859416486,
+              -26.737184065188337,
+              -1.786364175689335
+            ],
+            [
+              56.29183711866757,
+              -24.429908039189023,
+              -1.5008810843453526
+            ],
+            [
+              56.47354755453068,
+              -22.053413756016965,
+              -1.3015029649925198
+            ],
+            [
+              56.62165062984717,
+              -19.61062065451916,
+              -1.172445932212029
+            ],
+            [
+              56.74770980745835,
+              -17.10444817354265,
+              -1.0979261005850534
+            ],
+            [
+              56.86328855020557,
+              -14.537815751934462,
+              -1.062159584692771
+            ],
+            [
+              56.97995032093016,
+              -11.913642828541596,
+              -1.0493624991163646
+            ],
+            [
+              57.107089311064016,
+              -9.224087583026131,
+              -1.0532893332135798
+            ],
+            [
+              57.22464918347393,
+              -6.34861282592597,
+              -1.1756794786884779
+            ],
+            [
+              57.32483109145184,
+              -3.298467150272222,
+              -1.418666314939859
+            ],
+            [
+              57.4076584560146,
+              -0.13205412110990178,
+              -1.7446108235172035
+            ],
+            [
+              57.47315469817906,
+              3.092222696516012,
+              -2.115873985969987
+            ],
+            [
+              57.52134323896202,
+              6.315959737560617,
+              -2.494816783847692
+            ],
+            [
+              57.5522474993803,
+              9.480753436978897,
+              -2.84380019869979
+            ],
+            [
+              57.56589090045078,
+              12.528200229725941,
+              -3.125185212075765
+            ],
+            [
+              57.56229686319024,
+              15.399896550756754,
+              -3.301332805525096
+            ],
+            [
+              57.54148880861554,
+              18.037438835026354,
+              -3.3346039605972546
+            ],
+            [
+              57.49551238711719,
+              20.401853196288588,
+              -3.1939194811993445
+            ],
+            [
+              57.39254064705071,
+              22.562203344555627,
+              -2.9000011514896977
+            ],
+            [
+              57.2437063253643,
+              24.552678800772156,
+              -2.4832209603830693
+            ],
+            [
+              57.0657999352412,
+              26.397762877547194,
+              -1.9719249584362109
+            ],
+            [
+              56.87561198986475,
+              28.12193888748974,
+              -1.3944591962058785
+            ],
+            [
+              56.689933002418215,
+              29.749690143208838,
+              -0.7791697242488089
+            ],
+            [
+              56.52555348608492,
+              31.305499957313558,
+              -0.15440259312175098
+            ],
+            [
+              56.39926395404814,
+              32.81385164241287,
+              0.4514961466185463
+            ],
+            [
+              56.32785491949116,
+              34.299228511115864,
+              1.0101804444153446
+            ],
+            [
+              56.328116895597304,
+              35.786113876031536,
+              1.4933042497118878
+            ],
+            [
+              56.40940266853677,
+              37.259469616497164,
+              1.8977277622074604
+            ],
+            [
+              56.557057765425455,
+              38.65078401282277,
+              2.268986994463975
+            ],
+            [
+              56.759211936405606,
+              39.97174943698653,
+              2.6143283537569486
+            ],
+            [
+              57.004369283036056,
+              41.23720512530387,
+              2.939218891414634
+            ],
+            [
+              57.28103390687562,
+              42.46199031409013,
+              3.249125658765272
+            ],
+            [
+              57.57770990948316,
+              43.66094423966073,
+              3.54951570713711
+            ],
+            [
+              57.882901392417466,
+              44.848906138331024,
+              3.845856087858391
+            ],
+            [
+              58.18511245723741,
+              46.04071524641641,
+              4.143613852257366
+            ],
+            [
+              58.47284720550181,
+              47.251210800232315,
+              4.448256051662285
+            ],
+            [
+              58.73460973876951,
+              48.495232036094066,
+              4.765249737401386
+            ],
+            [
+              58.91539356419955,
+              49.35077519883906,
+              4.9504167308992875
+            ],
+            [
+              59.0987570914933,
+              50.19318379833328,
+              5.300893686720541
+            ],
+            [
+              59.28338613290887,
+              51.02914902717617,
+              5.73246609575703
+            ],
+            [
+              59.46796650070438,
+              51.865362077967205,
+              6.160919448900622
+            ],
+            [
+              59.651184007137914,
+              52.708514143305806,
+              6.502039237043202
+            ],
+            [
+              59.8317244644676,
+              53.565296415791444,
+              6.671610951076635
+            ],
+            [
+              60.00827368495155,
+              54.44240008802356,
+              6.585420081892797
+            ],
+            [
+              60.17951748084785,
+              55.346516352601604,
+              6.159252120383576
+            ],
+            [
+              60.34443027903207,
+              56.28336354737437,
+              5.307489719255472
+            ],
+            [
+              60.52695315882474,
+              57.17356067690647,
+              3.8609196286344405
+            ],
+            [
+              60.732678987494396,
+              57.996539959879414,
+              1.8610887923090287
+            ],
+            [
+              60.94697547226043,
+              58.799304941594265,
+              -0.5279852016134052
+            ],
+            [
+              61.15521032034228,
+              59.62885916735212,
+              -3.1422847650254804
+            ],
+            [
+              61.342751238959295,
+              60.532206182453976,
+              -5.817792309819837
+            ],
+            [
+              61.49496593533088,
+              61.55634953220095,
+              -8.390490247889119
+            ],
+            [
+              61.597222116676434,
+              62.748292761894064,
+              -10.69636099112596
+            ],
+            [
+              61.63488749021538,
+              64.1550394168344,
+              -12.57138695142298
+            ],
+            [
+              61.590488191874314,
+              65.82406749600409,
+              -13.862361928015506
+            ],
+            [
+              61.38935014816805,
+              67.78964819446686,
+              -14.745908183272459
+            ],
+            [
+              61.04484076987352,
+              70.01191984155307,
+              -15.356686560685876
+            ],
+            [
+              60.612179367460584,
+              72.4348169780969,
+              -15.71555847263527
+            ],
+            [
+              60.1465852513991,
+              75.0022741449326,
+              -15.843385331500109
+            ],
+            [
+              59.70327773215895,
+              77.6582258828944,
+              -15.761028549659894
+            ],
+            [
+              59.33747612020997,
+              80.34660673281654,
+              -15.489349539494135
+            ],
+            [
+              59.104399726022024,
+              83.0113512355333,
+              -15.049209713382297
+            ],
+            [
+              59.05926786006496,
+              85.59639393187884,
+              -14.46147048370388
+            ],
+            [
+              59.25733958075378,
+              88.06272977094359,
+              -13.740108731043932
+            ],
+            [
+              59.7202791289577,
+              90.57869183823287,
+              -12.816517955786953
+            ],
+            [
+              60.39699045415527,
+              93.16462267429667,
+              -11.684118322299888
+            ],
+            [
+              61.227700565822886,
+              95.77327649599562,
+              -10.363875872460763
+            ],
+            [
+              62.152636473436885,
+              98.35740752019034,
+              -8.876756648147559
+            ],
+            [
+              63.11202518647369,
+              100.86976996374152,
+              -7.243726691238305
+            ],
+            [
+              64.04609371440962,
+              103.26311804350972,
+              -5.485752043610998
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              65.59917825288447,
+              107.50378797913993,
+              -1.6788328437142228
+            ],
+            [
+              66.12191312594338,
+              109.27646560529777,
+              0.34529867062544195
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.80512886328388,
+              111.72314204654668,
+              3.777898958160642
+            ],
+            [
+              66.95584235180984,
+              112.44832628904105,
+              5.021930574926365
+            ],
+            [
+              67.04823935514253,
+              113.10099702789958,
+              6.280263596662019
+            ],
+            [
+              67.08431943678654,
+              113.68574794533681,
+              7.550038357850336
+            ],
+            [
+              67.06608216024651,
+              114.20717272356734,
+              8.828395192974046
+            ],
+            [
+              66.99552708902706,
+              114.66986504480582,
+              10.112474436515882
+            ],
+            [
+              66.87465378663282,
+              115.07841859126682,
+              11.399416422958575
+            ],
+            [
+              66.70546181656842,
+              115.437427045165,
+              12.686361486784854
+            ],
+            [
+              66.48995074233844,
+              115.7514840887149,
+              13.970449962477456
+            ],
+            [
+              66.23012012744752,
+              116.02518340413116,
+              15.248822184519106
+            ],
+            [
+              65.92796953540035,
+              116.26311867362848,
+              16.518618487392548
+            ],
+            [
+              65.58549852970145,
+              116.46988357942132,
+              17.776979205580496
+            ],
+            [
+              65.20470667385551,
+              116.65007180372437,
+              19.02104467356569
+            ],
+            [
+              64.78759353136714,
+              116.80827702875226,
+              20.24795522583087
+            ],
+            [
+              64.33615866574095,
+              116.94909293671955,
+              21.454851196858755
+            ],
+            [
+              63.852401640481574,
+              117.07711320984089,
+              22.638872921132076
+            ],
+            [
+              63.33832201909363,
+              117.19693153033084,
+              23.797160733133577
+            ],
+            [
+              62.79591936508175,
+              117.31314158040409,
+              24.926854967345978
+            ],
+            [
+              62.22719324195055,
+              117.43033704227517,
+              26.025095958252017
+            ],
+            [
+              61.63414321320466,
+              117.55311159815875,
+              27.089024040334426
+            ],
+            [
+              61.01876884234869,
+              117.6860589302694,
+              28.115779548075928
+            ],
+            [
+              60.38306969288728,
+              117.83377272082174,
+              29.102502815959262
+            ],
+            [
+              59.729045328325036,
+              118.00084665203039,
+              30.046334178467166
+            ],
+            [
+              59.05869531216659,
+              118.19187440610995,
+              30.94441397008235
+            ]
+          ],
+          "instrument": {
+            "originMm": [
+              57.39975733095107,
+              115.80026318223688,
+              30.217694954007428
+            ],
+            "beam": [
+              -0.55297932707184,
+              -0.7972037412910251,
+              -0.24223967202497465
+            ],
+            "right": [
+              -0.575474923089811,
+              0.5756834496371505,
+              -0.5808762163392872
+            ],
+            "shaft": [
+              -0.6025300629229641,
+              0.18180968259546235,
+              0.7771118082931094
+            ],
+            "normal": [
+              0.6025300629229641,
+              -0.18180968259546235,
+              -0.7771118082931094
+            ]
+          },
+          "sectorDepthMm": 159.71495257417158,
+          "contextFit": {
+            "outsideScan": false,
+            "mode": "lumen-plane-constrained",
+            "level": "deep-tg",
+            "levelLabel": "Deep transgastric",
+            "insertionCm": 55.269929202129774,
+            "headCenterMm": [
+              59.05869531216659,
+              118.19187440610995,
+              30.94441397008235
+            ],
+            "tractSampleMm": [
+              59.05869531216659,
+              118.19187440610995,
+              30.94441397008235
+            ],
+            "tractArcMm": 301.8726092897784,
+            "tractOffsetMm": 0,
+            "clearanceHintMm": 13.969204687500005,
+            "shaftBendDeg": 30.43980249400547,
+            "clinicalDepthMeasured": false,
+            "distanceMm": 0,
+            "headContained": true,
+            "shaftContained": true,
+            "shaftClearanceMm": 4.453660441376034,
+            "roiTargetMm": [
+              -9.906095238095244,
+              18.76864761904762,
+              0.7335047619047643
+            ],
+            "roiTargetAngleDeg": 6.746975349592416e-15,
+            "rayTurnDeg": 0,
+            "apicalGuide": false,
+            "apexAngleDeg": null,
+            "targetKind": "source regional target inside scan sector",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-gastric-lumen",
+            "planeResidualMm": 3.552713678800501e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 30.997310694877818,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 30.997310694877818,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 3.552713678800501e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.05896120262849944,
+            0.1117112251327752,
+            0.0043658295076064585
+          ],
+          "sourceNormal": [
+            -0.8790795368863021,
+            -0.17138981218451468,
+            0.44479736971695477
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquisition solver on exploratory target",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -73.2628634983389,
+          33.02662073275884
+        ],
+        "stomachPlaneGapMm": 0,
+        "rvAxisAngleOutOfPlaneDeg": 18.877416481936137,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 0.9893949262149607,
+          "pulmonaryRoot": 19.01678110815638,
+          "pulmonaryLumen": 27.25737065385293,
+          "rvMidCavity": 13.644728287897848,
+          "rvApicalCavity": 18.027386181941424
+        }
+      },
+      "angleDefault": 10,
+      "sourceRotationDeg": 30.997310694877818,
+      "contextFit": {
+        "outsideScan": false,
+        "mode": "lumen-plane-constrained",
+        "level": "deep-tg",
+        "levelLabel": "Deep transgastric",
+        "insertionCm": 55.269929202129774,
+        "headCenterMm": [
+          59.05869531216659,
+          118.19187440610995,
+          30.94441397008235
+        ],
+        "tractSampleMm": [
+          59.05869531216659,
+          118.19187440610995,
+          30.94441397008235
+        ],
+        "tractArcMm": 301.8726092897784,
+        "tractOffsetMm": 0,
+        "clearanceHintMm": 13.969204687500005,
+        "shaftBendDeg": 30.43980249400547,
+        "clinicalDepthMeasured": false,
+        "distanceMm": 0,
+        "headContained": true,
+        "shaftContained": true,
+        "shaftClearanceMm": 4.453660441376034,
+        "roiTargetMm": [
+          -9.906095238095244,
+          18.76864761904762,
+          0.7335047619047643
+        ],
+        "roiTargetAngleDeg": 6.746975349592416e-15,
+        "rayTurnDeg": 0,
+        "apicalGuide": false,
+        "apexAngleDeg": null,
+        "targetKind": "source regional target inside scan sector",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-gastric-lumen",
+        "planeResidualMm": 3.552713678800501e-15,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": true,
+        "correctionAngleDeg": 30.997310694877818,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      }
+    },
+    {
+      "id": "rv-tv-pv-apical-acquired-100",
+      "plane": {
+        "center": [
+          -0.05896120262849944,
+          0.1117112251327752,
+          0.0043658295076064585
+        ],
+        "right": [
+          -0.6463772460927047,
+          0.0705475844925411,
+          -0.7597496259004533
+        ],
+        "up": [
+          -0.24170262786385216,
+          -0.9633701618966318,
+          0.1161799072601009
+        ],
+        "normal": [
+          -0.7237239082808575,
+          0.2587295296048081,
+          0.6397520887759224
+        ],
+        "width": 0.76,
+        "height": 0.9,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            49.41379266839053,
+            117.25302282832034,
+            28.01032862743468
+          ],
+          "targetMm": [
+            -30.43206545700427,
+            65.87392053023811,
+            -41.53702622150501
+          ],
+          "beam": [
+            -0.678415917873422,
+            -0.43654613606037385,
+            -0.5909139645216721
+          ],
+          "right": [
+            -0.1263944103140777,
+            0.8616765643797168,
+            -0.4914651070423254
+          ],
+          "normal": [
+            0.7237239082808574,
+            -0.2587295296048082,
+            -0.6397520887759225
+          ],
+          "up": [
+            0.678415917873422,
+            0.43654613606037385,
+            0.5909139645216721
+          ],
+          "multiplaneDeg": 100,
+          "shaftPoints": [
+            [
+              -5.924854205061971,
+              -89.76431108748528,
+              -70.47641338048764
+            ],
+            [
+              -4.306036187072033,
+              -88.41681428437981,
+              -69.40828625862865
+            ],
+            [
+              -2.6668784845511784,
+              -87.04638828878485,
+              -68.33755145747271
+            ],
+            [
+              -1.0163839086852402,
+              -85.66318208754004,
+              -67.265363195725
+            ],
+            [
+              0.6364447293399937,
+              -84.27734466748495,
+              -66.19287569209075
+            ],
+            [
+              2.2826046183386994,
+              -82.89902501545919,
+              -65.12124316527519
+            ],
+            [
+              3.9130929471250626,
+              -81.53837211830239,
+              -64.05161983398352
+            ],
+            [
+              5.518906904513264,
+              -80.20553496285412,
+              -62.98515991692096
+            ],
+            [
+              7.091043679317518,
+              -78.910662535954,
+              -61.923017632792764
+            ],
+            [
+              8.620500460351998,
+              -77.66390382444166,
+              -60.86634720030413
+            ],
+            [
+              10.098102145541654,
+              -76.47477272556445,
+              -59.818552233570706
+            ],
+            [
+              11.515283552180064,
+              -75.332951399856,
+              -58.83437397007815
+            ],
+            [
+              12.879467889383065,
+              -74.22939413162167,
+              -57.91468010504496
+            ],
+            [
+              14.20226740243076,
+              -73.16155512613574,
+              -57.02966141097399
+            ],
+            [
+              15.495294336603209,
+              -72.12688858867241,
+              -56.149508660368085
+            ],
+            [
+              16.770160937180485,
+              -71.12284872450601,
+              -55.24441262573007
+            ],
+            [
+              18.038479449442683,
+              -70.14688973891073,
+              -54.284564079562806
+            ],
+            [
+              19.311862118669847,
+              -69.19646583716086,
+              -53.24015379436913
+            ],
+            [
+              20.601921190142114,
+              -68.26903122453061,
+              -52.08137254265188
+            ],
+            [
+              21.920268909139526,
+              -67.36204010629426,
+              -50.778411096913906
+            ],
+            [
+              23.27789635945473,
+              -66.47808798039223,
+              -49.29945466951544
+            ],
+            [
+              24.67396064116631,
+              -65.64954653852638,
+              -47.62351540524481
+            ],
+            [
+              26.09794213958334,
+              -64.87109147088,
+              -45.78308625881264
+            ],
+            [
+              27.539144229180263,
+              -64.12877887545505,
+              -43.817342455620356
+            ],
+            [
+              28.986870284431543,
+              -63.40866485025339,
+              -41.76545922106946
+            ],
+            [
+              30.430423679811657,
+              -62.696805493276926,
+              -39.66661178056137
+            ],
+            [
+              31.859107789795004,
+              -61.97925690252758,
+              -37.55997535949757
+            ],
+            [
+              33.26222598885607,
+              -61.24207517600725,
+              -35.48472518327953
+            ],
+            [
+              34.6290816514693,
+              -60.47131641171782,
+              -33.480036477308694
+            ],
+            [
+              35.948978152109134,
+              -59.6530367076612,
+              -31.585084466986512
+            ],
+            [
+              37.22228289050419,
+              -58.794912960059904,
+              -29.807497984165163
+            ],
+            [
+              38.47729665825531,
+              -57.952293250066006,
+              -28.06663902684576
+            ],
+            [
+              39.71253222645717,
+              -57.11457057977517,
+              -26.35714683150859
+            ],
+            [
+              40.92385793329295,
+              -56.26569372728514,
+              -24.680855735086613
+            ],
+            [
+              42.10714211694585,
+              -55.389611470693744,
+              -23.03960007451283
+            ],
+            [
+              43.25825311559905,
+              -54.47027258809876,
+              -21.435214186720202
+            ],
+            [
+              44.37305926743572,
+              -53.491625857597995,
+              -19.869532408641707
+            ],
+            [
+              45.44742891063905,
+              -52.43762005728923,
+              -18.344389077210348
+            ],
+            [
+              46.477230383392225,
+              -51.29220396527028,
+              -16.861618529359088
+            ],
+            [
+              47.45833202387843,
+              -50.039326359638935,
+              -15.423055102020907
+            ],
+            [
+              48.397863641338404,
+              -48.68502434635181,
+              -14.006664900821143
+            ],
+            [
+              49.30844599155836,
+              -47.25650197959549,
+              -12.58783248715573
+            ],
+            [
+              50.185593482230104,
+              -45.75446203359824,
+              -11.18434061871632
+            ],
+            [
+              51.02464346800146,
+              -44.179295985178946,
+              -9.814378646601256
+            ],
+            [
+              51.82093330352019,
+              -42.531395311156444,
+              -8.496135921908849
+            ],
+            [
+              52.56980034343415,
+              -40.81115148834963,
+              -7.247801795737453
+            ],
+            [
+              53.2665819423911,
+              -39.01895599357739,
+              -6.0875656191854075
+            ],
+            [
+              53.906615455038875,
+              -37.15520030365858,
+              -5.03361674335103
+            ],
+            [
+              54.48523823602528,
+              -35.220275895412094,
+              -4.104144519332688
+            ],
+            [
+              54.99765251292203,
+              -33.214508211679494,
+              -3.317282135856405
+            ],
+            [
+              55.429427019385045,
+              -31.132403590280582,
+              -2.6787808160260456
+            ],
+            [
+              55.781340313936084,
+              -28.97232239516785,
+              -2.173736124443294
+            ],
+            [
+              56.064955859416486,
+              -26.737184065188337,
+              -1.786364175689335
+            ],
+            [
+              56.29183711866757,
+              -24.429908039189023,
+              -1.5008810843453526
+            ],
+            [
+              56.47354755453068,
+              -22.053413756016965,
+              -1.3015029649925198
+            ],
+            [
+              56.62165062984717,
+              -19.61062065451916,
+              -1.172445932212029
+            ],
+            [
+              56.74770980745835,
+              -17.10444817354265,
+              -1.0979261005850534
+            ],
+            [
+              56.86328855020557,
+              -14.537815751934462,
+              -1.062159584692771
+            ],
+            [
+              56.97995032093016,
+              -11.913642828541596,
+              -1.0493624991163646
+            ],
+            [
+              57.107089311064016,
+              -9.224087583026131,
+              -1.0532893332135798
+            ],
+            [
+              57.22464918347393,
+              -6.34861282592597,
+              -1.1756794786884779
+            ],
+            [
+              57.32483109145184,
+              -3.298467150272222,
+              -1.418666314939859
+            ],
+            [
+              57.4076584560146,
+              -0.13205412110990178,
+              -1.7446108235172035
+            ],
+            [
+              57.47315469817906,
+              3.092222696516012,
+              -2.115873985969987
+            ],
+            [
+              57.52134323896202,
+              6.315959737560617,
+              -2.494816783847692
+            ],
+            [
+              57.5522474993803,
+              9.480753436978897,
+              -2.84380019869979
+            ],
+            [
+              57.56589090045078,
+              12.528200229725941,
+              -3.125185212075765
+            ],
+            [
+              57.56229686319024,
+              15.399896550756754,
+              -3.301332805525096
+            ],
+            [
+              57.54148880861554,
+              18.037438835026354,
+              -3.3346039605972546
+            ],
+            [
+              57.49551238711719,
+              20.401853196288588,
+              -3.1939194811993445
+            ],
+            [
+              57.39254064705071,
+              22.562203344555627,
+              -2.9000011514896977
+            ],
+            [
+              57.2437063253643,
+              24.552678800772156,
+              -2.4832209603830693
+            ],
+            [
+              57.0657999352412,
+              26.397762877547194,
+              -1.9719249584362109
+            ],
+            [
+              56.87561198986475,
+              28.12193888748974,
+              -1.3944591962058785
+            ],
+            [
+              56.689933002418215,
+              29.749690143208838,
+              -0.7791697242488089
+            ],
+            [
+              56.52555348608492,
+              31.305499957313558,
+              -0.15440259312175098
+            ],
+            [
+              56.39926395404814,
+              32.81385164241287,
+              0.4514961466185463
+            ],
+            [
+              56.32785491949116,
+              34.299228511115864,
+              1.0101804444153446
+            ],
+            [
+              56.328116895597304,
+              35.786113876031536,
+              1.4933042497118878
+            ],
+            [
+              56.40940266853677,
+              37.259469616497164,
+              1.8977277622074604
+            ],
+            [
+              56.557057765425455,
+              38.65078401282277,
+              2.268986994463975
+            ],
+            [
+              56.759211936405606,
+              39.97174943698653,
+              2.6143283537569486
+            ],
+            [
+              57.004369283036056,
+              41.23720512530387,
+              2.939218891414634
+            ],
+            [
+              57.28103390687562,
+              42.46199031409013,
+              3.249125658765272
+            ],
+            [
+              57.57770990948316,
+              43.66094423966073,
+              3.54951570713711
+            ],
+            [
+              57.882901392417466,
+              44.848906138331024,
+              3.845856087858391
+            ],
+            [
+              58.18511245723741,
+              46.04071524641641,
+              4.143613852257366
+            ],
+            [
+              58.47284720550181,
+              47.251210800232315,
+              4.448256051662285
+            ],
+            [
+              58.73460973876951,
+              48.495232036094066,
+              4.765249737401386
+            ],
+            [
+              58.91539356419955,
+              49.35077519883906,
+              4.9504167308992875
+            ],
+            [
+              59.0987570914933,
+              50.19318379833328,
+              5.300893686720541
+            ],
+            [
+              59.28338613290887,
+              51.02914902717617,
+              5.73246609575703
+            ],
+            [
+              59.46796650070438,
+              51.865362077967205,
+              6.160919448900622
+            ],
+            [
+              59.651184007137914,
+              52.708514143305806,
+              6.502039237043202
+            ],
+            [
+              59.8317244644676,
+              53.565296415791444,
+              6.671610951076635
+            ],
+            [
+              60.00827368495155,
+              54.44240008802356,
+              6.585420081892797
+            ],
+            [
+              60.17951748084785,
+              55.346516352601604,
+              6.159252120383576
+            ],
+            [
+              60.34443027903207,
+              56.28336354737437,
+              5.307489719255472
+            ],
+            [
+              60.52695315882474,
+              57.17356067690647,
+              3.8609196286344405
+            ],
+            [
+              60.732678987494396,
+              57.996539959879414,
+              1.8610887923090287
+            ],
+            [
+              60.94697547226043,
+              58.799304941594265,
+              -0.5279852016134052
+            ],
+            [
+              61.15521032034228,
+              59.62885916735212,
+              -3.1422847650254804
+            ],
+            [
+              61.342751238959295,
+              60.532206182453976,
+              -5.817792309819837
+            ],
+            [
+              61.49496593533088,
+              61.55634953220095,
+              -8.390490247889119
+            ],
+            [
+              61.597222116676434,
+              62.748292761894064,
+              -10.69636099112596
+            ],
+            [
+              61.63488749021538,
+              64.1550394168344,
+              -12.57138695142298
+            ],
+            [
+              61.590488191874314,
+              65.82406749600409,
+              -13.862361928015506
+            ],
+            [
+              61.38935014816805,
+              67.78964819446686,
+              -14.745908183272459
+            ],
+            [
+              61.04484076987352,
+              70.01191984155307,
+              -15.356686560685876
+            ],
+            [
+              60.612179367460584,
+              72.4348169780969,
+              -15.71555847263527
+            ],
+            [
+              60.1465852513991,
+              75.0022741449326,
+              -15.843385331500109
+            ],
+            [
+              59.70327773215895,
+              77.6582258828944,
+              -15.761028549659894
+            ],
+            [
+              59.33747612020997,
+              80.34660673281654,
+              -15.489349539494135
+            ],
+            [
+              59.104399726022024,
+              83.0113512355333,
+              -15.049209713382297
+            ],
+            [
+              59.05926786006496,
+              85.59639393187884,
+              -14.46147048370388
+            ],
+            [
+              59.25733958075378,
+              88.06272977094359,
+              -13.740108731043932
+            ],
+            [
+              59.7202791289577,
+              90.57869183823287,
+              -12.816517955786953
+            ],
+            [
+              60.39699045415527,
+              93.16462267429667,
+              -11.684118322299888
+            ],
+            [
+              61.227700565822886,
+              95.77327649599562,
+              -10.363875872460763
+            ],
+            [
+              62.152636473436885,
+              98.35740752019034,
+              -8.876756648147559
+            ],
+            [
+              63.11202518647369,
+              100.86976996374152,
+              -7.243726691238305
+            ],
+            [
+              64.04609371440962,
+              103.26311804350972,
+              -5.485752043610998
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              65.17797352988603,
+              106.58559490728466,
+              -2.583497463764005
+            ],
+            [
+              65.25034054876473,
+              107.71083324450173,
+              -1.4058561269119125
+            ],
+            [
+              65.13088188168848,
+              108.8553205358243,
+              -0.10543314384593994
+            ],
+            [
+              64.83830928698843,
+              110.0084563290697,
+              1.303213078175332
+            ],
+            [
+              64.39133452299575,
+              111.15964017205525,
+              2.8055241318933253
+            ],
+            [
+              63.80866934804164,
+              112.29827161259837,
+              4.386941610049455
+            ],
+            [
+              63.10902552045726,
+              113.41375019851638,
+              6.032907105385146
+            ],
+            [
+              62.311114798573826,
+              114.49547547762664,
+              7.728862210641811
+            ],
+            [
+              61.43364894072248,
+              115.5328469977465,
+              9.460248518560874
+            ],
+            [
+              60.49533970523444,
+              116.51526430669333,
+              11.212507621883756
+            ],
+            [
+              59.51489885044089,
+              117.43212695228455,
+              12.971081113351875
+            ],
+            [
+              58.51103813467299,
+              118.27283448233739,
+              14.721410585706646
+            ],
+            [
+              57.50246931626194,
+              119.02678644466928,
+              16.44893763168949
+            ],
+            [
+              56.507904153538924,
+              119.6833823870976,
+              18.139103844041834
+            ],
+            [
+              55.54605440483512,
+              120.23202185743966,
+              19.777350815505088
+            ],
+            [
+              54.635631828481706,
+              120.66210440351283,
+              21.349120138820673
+            ],
+            [
+              53.79534818280988,
+              120.96302957313449,
+              22.839853406730015
+            ],
+            [
+              53.04391522615082,
+              121.12419691412197,
+              24.234992211974525
+            ],
+            [
+              52.4000447168357,
+              121.13500597429265,
+              25.519978147295628
+            ],
+            [
+              51.882448413195725,
+              120.98485630146389,
+              26.68025280543475
+            ],
+            [
+              51.50983807356206,
+              120.66314744345301,
+              27.70125777913329
+            ],
+            [
+              51.300925456265894,
+              120.15927894807743,
+              28.568434661132684
+            ],
+            [
+              51.27442231963841,
+              119.46265036315447,
+              29.267225044174346
+            ],
+            [
+              51.449040422010796,
+              118.56266123650146,
+              29.783070520999697
+            ]
+          ],
+          "instrument": {
+            "originMm": [
+              49.41379266839053,
+              117.25302282832034,
+              28.01032862743468
+            ],
+            "beam": [
+              -0.678415917873422,
+              -0.43654613606037385,
+              -0.5909139645216721
+            ],
+            "right": [
+              -0.6907807568969587,
+              0.10517028154517752,
+              0.7153748372570655
+            ],
+            "shaft": [
+              0.2501475330216694,
+              -0.893513672514565,
+              0.37290686337570556
+            ],
+            "normal": [
+              -0.2501475330216694,
+              0.893513672514565,
+              -0.37290686337570556
+            ]
+          },
+          "sectorDepthMm": 155.6945528867917,
+          "contextFit": {
+            "outsideScan": false,
+            "mode": "lumen-plane-constrained",
+            "level": "deep-tg",
+            "levelLabel": "Deep transgastric",
+            "insertionCm": 54.488526118440745,
+            "headCenterMm": [
+              51.449040422010796,
+              118.56266123650146,
+              29.783070520999697
+            ],
+            "tractSampleMm": [
+              51.449040422010796,
+              118.56266123650146,
+              29.783070520999697
+            ],
+            "tractArcMm": 294.0585784528882,
+            "tractOffsetMm": 0,
+            "clearanceHintMm": 4.931353320312501,
+            "shaftBendDeg": 79.5453172960199,
+            "clinicalDepthMeasured": false,
+            "distanceMm": 0,
+            "headContained": true,
+            "shaftContained": true,
+            "shaftClearanceMm": 4.160878189141641,
+            "roiTargetMm": [
+              -9.906095238095244,
+              18.76864761904762,
+              0.7335047619047643
+            ],
+            "roiTargetAngleDeg": 32.77088955232324,
+            "rayTurnDeg": -32,
+            "apicalGuide": false,
+            "apexAngleDeg": null,
+            "targetKind": "source regional target inside scan sector",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-gastric-lumen",
+            "planeResidualMm": 1.0658141036401503e-14,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 28.78564893569516,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 28.78564893569516,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 1.0658141036401503e-14,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.05896120262849944,
+            0.1117112251327752,
+            0.0043658295076064585
+          ],
+          "sourceNormal": [
+            -0.8790795368863021,
+            -0.17138981218451468,
+            0.44479736971695477
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquisition solver on exploratory target",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -75.53465064302455,
+          28.37513598206568
+        ],
+        "stomachPlaneGapMm": 0,
+        "rvAxisAngleOutOfPlaneDeg": 18.560636500059566,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 0.4855618467639748,
+          "pulmonaryRoot": 17.73336433365286,
+          "pulmonaryLumen": 25.8724139556811,
+          "rvMidCavity": 13.310473040883336,
+          "rvApicalCavity": 17.24780248688889
+        }
+      },
+      "angleDefault": 100,
+      "sourceRotationDeg": 28.78564893569516,
+      "contextFit": {
+        "outsideScan": false,
+        "mode": "lumen-plane-constrained",
+        "level": "deep-tg",
+        "levelLabel": "Deep transgastric",
+        "insertionCm": 54.488526118440745,
+        "headCenterMm": [
+          51.449040422010796,
+          118.56266123650146,
+          29.783070520999697
+        ],
+        "tractSampleMm": [
+          51.449040422010796,
+          118.56266123650146,
+          29.783070520999697
+        ],
+        "tractArcMm": 294.0585784528882,
+        "tractOffsetMm": 0,
+        "clearanceHintMm": 4.931353320312501,
+        "shaftBendDeg": 79.5453172960199,
+        "clinicalDepthMeasured": false,
+        "distanceMm": 0,
+        "headContained": true,
+        "shaftContained": true,
+        "shaftClearanceMm": 4.160878189141641,
+        "roiTargetMm": [
+          -9.906095238095244,
+          18.76864761904762,
+          0.7335047619047643
+        ],
+        "roiTargetAngleDeg": 32.77088955232324,
+        "rayTurnDeg": -32,
+        "apicalGuide": false,
+        "apexAngleDeg": null,
+        "targetKind": "source regional target inside scan sector",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-gastric-lumen",
+        "planeResidualMm": 1.0658141036401503e-14,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": true,
+        "correctionAngleDeg": 28.78564893569516,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      }
+    },
+    {
+      "id": "rv-reviewed-acquired-10",
+      "plane": {
+        "center": [
+          -0.07769376181474479,
+          -0.003780718336483932,
+          -0.0155009451795841
+        ],
+        "right": [
+          0.26632194749333465,
+          0.923424519841239,
+          0.2763327277745704
+        ],
+        "up": [
+          -0.9500305409526587,
+          0.2999070280609952,
+          -0.08658952463675988
+        ],
+        "normal": [
+          -0.16283301735384056,
+          -0.239463840016815,
+          0.9571533198938637
+        ],
+        "width": 0.6616257088846881,
+        "height": 0.7372400756143668,
+        "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "atlasDerived": true,
+        "displayMirrorX": false,
+        "displayRotate180": false,
+        "refinement": {
+          "frame": {
+            "center": [
+              -0.07769376181474479,
+              -0.003780718336483932,
+              -0.0155009451795841
+            ],
+            "right": [
+              0.10077653016451063,
+              0.7035069619300159,
+              0.7035069619300157
+            ],
+            "up": [
+              -0.8803761687374815,
+              0.3924388521523529,
+              -0.2663260198336943
+            ],
+            "normal": [
+              -0.46344567371711987,
+              -0.5925113516527282,
+              0.6588993896457502
+            ],
+            "width": 0.6616257088846881,
+            "height": 0.7372400756143668,
+            "displayMirrorX": false,
+            "displayRotate180": false
+          },
+          "status": "refined",
+          "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+          "remainingLimits": [
+            "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+          ],
+          "search": {
+            "candidatesEvaluated": 3438,
+            "broadCandidates": 2188,
+            "fineCandidates": 1250,
+            "adaptiveMeasuredReformats": 0,
+            "measuredReformatsRendered": 19,
+            "selectedCandidateId": 1094,
+            "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+          },
+          "source": {
+            "specimen": "LADAF-2021-17",
+            "coordinates": "Original s4 voxel-center XYZ, 317.6 µm",
+            "centerXYZ": [
+              195.9,
+              245.2,
+              262.5
+            ],
+            "rightXYZ": [
+              0.100776530165,
+              -0.70350696193,
+              0.70350696193
+            ],
+            "upXYZ": [
+              -0.880376168737,
+              0.266326019834,
+              0.392438852152
+            ],
+            "normalXYZ": [
+              -0.463445673717,
+              -0.658899389646,
+              -0.592511351653
+            ],
+            "originalPhysicalPlaneRetained": false,
+            "baselineNormalAngleDegrees": 87.309,
+            "baselineNormalDisplacementMm": 10.398
+          },
+          "presentation": []
+        },
+        "outsideScan": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            68.24474614522467,
+            96.02404486539956,
+            35.40882702790615
+          ],
+          "targetMm": [
+            2.2502996006338805,
+            -11.581532163725782,
+            -2.7394181728950144
+          ],
+          "beam": [
+            -0.5004534025783088,
+            -0.8160016483241803,
+            -0.28928826761556353
+          ],
+          "right": [
+            -0.850312766167389,
+            0.5261163172309161,
+            -0.01303151703145089
+          ],
+          "normal": [
+            0.16283301735384054,
+            0.23946384001681495,
+            -0.9571533198938637
+          ],
+          "up": [
+            0.5004534025783088,
+            0.8160016483241803,
+            0.28928826761556353
+          ],
+          "multiplaneDeg": 10,
+          "shaftPoints": [
+            [
+              -5.924854205061971,
+              -89.76431108748528,
+              -70.47641338048764
+            ],
+            [
+              -4.306036187072033,
+              -88.41681428437981,
+              -69.40828625862865
+            ],
+            [
+              -2.6668784845511784,
+              -87.04638828878485,
+              -68.33755145747271
+            ],
+            [
+              -1.0163839086852402,
+              -85.66318208754004,
+              -67.265363195725
+            ],
+            [
+              0.6364447293399937,
+              -84.27734466748495,
+              -66.19287569209075
+            ],
+            [
+              2.2826046183386994,
+              -82.89902501545919,
+              -65.12124316527519
+            ],
+            [
+              3.9130929471250626,
+              -81.53837211830239,
+              -64.05161983398352
+            ],
+            [
+              5.518906904513264,
+              -80.20553496285412,
+              -62.98515991692096
+            ],
+            [
+              7.091043679317518,
+              -78.910662535954,
+              -61.923017632792764
+            ],
+            [
+              8.620500460351998,
+              -77.66390382444166,
+              -60.86634720030413
+            ],
+            [
+              10.098102145541654,
+              -76.47477272556445,
+              -59.818552233570706
+            ],
+            [
+              11.515283552180064,
+              -75.332951399856,
+              -58.83437397007815
+            ],
+            [
+              12.879467889383065,
+              -74.22939413162167,
+              -57.91468010504496
+            ],
+            [
+              14.20226740243076,
+              -73.16155512613574,
+              -57.02966141097399
+            ],
+            [
+              15.495294336603209,
+              -72.12688858867241,
+              -56.149508660368085
+            ],
+            [
+              16.770160937180485,
+              -71.12284872450601,
+              -55.24441262573007
+            ],
+            [
+              18.038479449442683,
+              -70.14688973891073,
+              -54.284564079562806
+            ],
+            [
+              19.311862118669847,
+              -69.19646583716086,
+              -53.24015379436913
+            ],
+            [
+              20.601921190142114,
+              -68.26903122453061,
+              -52.08137254265188
+            ],
+            [
+              21.920268909139526,
+              -67.36204010629426,
+              -50.778411096913906
+            ],
+            [
+              23.27789635945473,
+              -66.47808798039223,
+              -49.29945466951544
+            ],
+            [
+              24.67396064116631,
+              -65.64954653852638,
+              -47.62351540524481
+            ],
+            [
+              26.09794213958334,
+              -64.87109147088,
+              -45.78308625881264
+            ],
+            [
+              27.539144229180263,
+              -64.12877887545505,
+              -43.817342455620356
+            ],
+            [
+              28.986870284431543,
+              -63.40866485025339,
+              -41.76545922106946
+            ],
+            [
+              30.430423679811657,
+              -62.696805493276926,
+              -39.66661178056137
+            ],
+            [
+              31.859107789795004,
+              -61.97925690252758,
+              -37.55997535949757
+            ],
+            [
+              33.26222598885607,
+              -61.24207517600725,
+              -35.48472518327953
+            ],
+            [
+              34.6290816514693,
+              -60.47131641171782,
+              -33.480036477308694
+            ],
+            [
+              35.948978152109134,
+              -59.6530367076612,
+              -31.585084466986512
+            ],
+            [
+              37.22228289050419,
+              -58.794912960059904,
+              -29.807497984165163
+            ],
+            [
+              38.47729665825531,
+              -57.952293250066006,
+              -28.06663902684576
+            ],
+            [
+              39.71253222645717,
+              -57.11457057977517,
+              -26.35714683150859
+            ],
+            [
+              40.92385793329295,
+              -56.26569372728514,
+              -24.680855735086613
+            ],
+            [
+              42.10714211694585,
+              -55.389611470693744,
+              -23.03960007451283
+            ],
+            [
+              43.25825311559905,
+              -54.47027258809876,
+              -21.435214186720202
+            ],
+            [
+              44.37305926743572,
+              -53.491625857597995,
+              -19.869532408641707
+            ],
+            [
+              45.44742891063905,
+              -52.43762005728923,
+              -18.344389077210348
+            ],
+            [
+              46.477230383392225,
+              -51.29220396527028,
+              -16.861618529359088
+            ],
+            [
+              47.45833202387843,
+              -50.039326359638935,
+              -15.423055102020907
+            ],
+            [
+              48.397863641338404,
+              -48.68502434635181,
+              -14.006664900821143
+            ],
+            [
+              49.30844599155836,
+              -47.25650197959549,
+              -12.58783248715573
+            ],
+            [
+              50.185593482230104,
+              -45.75446203359824,
+              -11.18434061871632
+            ],
+            [
+              51.02464346800146,
+              -44.179295985178946,
+              -9.814378646601256
+            ],
+            [
+              51.82093330352019,
+              -42.531395311156444,
+              -8.496135921908849
+            ],
+            [
+              52.56980034343415,
+              -40.81115148834963,
+              -7.247801795737453
+            ],
+            [
+              53.2665819423911,
+              -39.01895599357739,
+              -6.0875656191854075
+            ],
+            [
+              53.906615455038875,
+              -37.15520030365858,
+              -5.03361674335103
+            ],
+            [
+              54.48523823602528,
+              -35.220275895412094,
+              -4.104144519332688
+            ],
+            [
+              54.99765251292203,
+              -33.214508211679494,
+              -3.317282135856405
+            ],
+            [
+              55.429427019385045,
+              -31.132403590280582,
+              -2.6787808160260456
+            ],
+            [
+              55.781340313936084,
+              -28.97232239516785,
+              -2.173736124443294
+            ],
+            [
+              56.064955859416486,
+              -26.737184065188337,
+              -1.786364175689335
+            ],
+            [
+              56.29183711866757,
+              -24.429908039189023,
+              -1.5008810843453526
+            ],
+            [
+              56.47354755453068,
+              -22.053413756016965,
+              -1.3015029649925198
+            ],
+            [
+              56.62165062984717,
+              -19.61062065451916,
+              -1.172445932212029
+            ],
+            [
+              56.74770980745835,
+              -17.10444817354265,
+              -1.0979261005850534
+            ],
+            [
+              56.86328855020557,
+              -14.537815751934462,
+              -1.062159584692771
+            ],
+            [
+              56.97995032093016,
+              -11.913642828541596,
+              -1.0493624991163646
+            ],
+            [
+              57.107089311064016,
+              -9.224087583026131,
+              -1.0532893332135798
+            ],
+            [
+              57.22464918347393,
+              -6.34861282592597,
+              -1.1756794786884779
+            ],
+            [
+              57.32483109145184,
+              -3.298467150272222,
+              -1.418666314939859
+            ],
+            [
+              57.4076584560146,
+              -0.13205412110990178,
+              -1.7446108235172035
+            ],
+            [
+              57.47315469817906,
+              3.092222696516012,
+              -2.115873985969987
+            ],
+            [
+              57.52134323896202,
+              6.315959737560617,
+              -2.494816783847692
+            ],
+            [
+              57.5522474993803,
+              9.480753436978897,
+              -2.84380019869979
+            ],
+            [
+              57.56589090045078,
+              12.528200229725941,
+              -3.125185212075765
+            ],
+            [
+              57.56229686319024,
+              15.399896550756754,
+              -3.301332805525096
+            ],
+            [
+              57.54148880861554,
+              18.037438835026354,
+              -3.3346039605972546
+            ],
+            [
+              57.49551238711719,
+              20.401853196288588,
+              -3.1939194811993445
+            ],
+            [
+              57.39254064705071,
+              22.562203344555627,
+              -2.9000011514896977
+            ],
+            [
+              57.2437063253643,
+              24.552678800772156,
+              -2.4832209603830693
+            ],
+            [
+              57.0657999352412,
+              26.397762877547194,
+              -1.9719249584362109
+            ],
+            [
+              56.87561198986475,
+              28.12193888748974,
+              -1.3944591962058785
+            ],
+            [
+              56.689933002418215,
+              29.749690143208838,
+              -0.7791697242488089
+            ],
+            [
+              56.52555348608492,
+              31.305499957313558,
+              -0.15440259312175098
+            ],
+            [
+              56.39926395404814,
+              32.81385164241287,
+              0.4514961466185463
+            ],
+            [
+              56.32785491949116,
+              34.299228511115864,
+              1.0101804444153446
+            ],
+            [
+              56.328116895597304,
+              35.786113876031536,
+              1.4933042497118878
+            ],
+            [
+              56.40940266853677,
+              37.259469616497164,
+              1.8977277622074604
+            ],
+            [
+              56.557057765425455,
+              38.65078401282277,
+              2.268986994463975
+            ],
+            [
+              56.759211936405606,
+              39.97174943698653,
+              2.6143283537569486
+            ],
+            [
+              57.004369283036056,
+              41.23720512530387,
+              2.939218891414634
+            ],
+            [
+              57.28103390687562,
+              42.46199031409013,
+              3.249125658765272
+            ],
+            [
+              57.57770990948316,
+              43.66094423966073,
+              3.54951570713711
+            ],
+            [
+              57.882901392417466,
+              44.848906138331024,
+              3.845856087858391
+            ],
+            [
+              58.18511245723741,
+              46.04071524641641,
+              4.143613852257366
+            ],
+            [
+              58.47284720550181,
+              47.251210800232315,
+              4.448256051662285
+            ],
+            [
+              58.73460973876951,
+              48.495232036094066,
+              4.765249737401386
+            ],
+            [
+              58.91539356419955,
+              49.35077519883906,
+              4.9504167308992875
+            ],
+            [
+              59.0987570914933,
+              50.19318379833328,
+              5.300893686720541
+            ],
+            [
+              59.28338613290887,
+              51.02914902717617,
+              5.73246609575703
+            ],
+            [
+              59.46796650070438,
+              51.865362077967205,
+              6.160919448900622
+            ],
+            [
+              59.651184007137914,
+              52.708514143305806,
+              6.502039237043202
+            ],
+            [
+              59.8317244644676,
+              53.565296415791444,
+              6.671610951076635
+            ],
+            [
+              60.00827368495155,
+              54.44240008802356,
+              6.585420081892797
+            ],
+            [
+              60.17951748084785,
+              55.346516352601604,
+              6.159252120383576
+            ],
+            [
+              60.34443027903207,
+              56.28336354737437,
+              5.307489719255472
+            ],
+            [
+              60.52695315882474,
+              57.17356067690647,
+              3.8609196286344405
+            ],
+            [
+              60.732678987494396,
+              57.996539959879414,
+              1.8610887923090287
+            ],
+            [
+              60.94697547226043,
+              58.799304941594265,
+              -0.5279852016134052
+            ],
+            [
+              61.15521032034228,
+              59.62885916735212,
+              -3.1422847650254804
+            ],
+            [
+              61.342751238959295,
+              60.532206182453976,
+              -5.817792309819837
+            ],
+            [
+              61.49496593533088,
+              61.55634953220095,
+              -8.390490247889119
+            ],
+            [
+              61.597222116676434,
+              62.748292761894064,
+              -10.69636099112596
+            ],
+            [
+              61.63488749021538,
+              64.1550394168344,
+              -12.57138695142298
+            ],
+            [
+              61.590488191874314,
+              65.82406749600409,
+              -13.862361928015506
+            ],
+            [
+              61.38935014816805,
+              67.78964819446686,
+              -14.745908183272459
+            ],
+            [
+              61.04484076987352,
+              70.01191984155307,
+              -15.356686560685876
+            ],
+            [
+              60.612179367460584,
+              72.4348169780969,
+              -15.71555847263527
+            ],
+            [
+              60.1465852513991,
+              75.0022741449326,
+              -15.843385331500109
+            ],
+            [
+              59.70327773215895,
+              77.6582258828944,
+              -15.761028549659894
+            ],
+            [
+              59.33747612020997,
+              80.34660673281654,
+              -15.489349539494135
+            ],
+            [
+              59.104399726022024,
+              83.0113512355333,
+              -15.049209713382297
+            ],
+            [
+              59.05926786006496,
+              85.59639393187884,
+              -14.46147048370388
+            ],
+            [
+              59.25733958075378,
+              88.06272977094359,
+              -13.740108731043932
+            ],
+            [
+              59.7202791289577,
+              90.57869183823287,
+              -12.816517955786953
+            ],
+            [
+              60.39699045415527,
+              93.16462267429667,
+              -11.684118322299888
+            ],
+            [
+              61.227700565822886,
+              95.77327649599562,
+              -10.363875872460763
+            ],
+            [
+              62.152636473436885,
+              98.35740752019034,
+              -8.876756648147559
+            ],
+            [
+              63.11202518647369,
+              100.86976996374152,
+              -7.243726691238305
+            ],
+            [
+              64.04609371440962,
+              103.26311804350972,
+              -5.485752043610998
+            ],
+            [
+              64.89506906672109,
+              105.49020597635565,
+              -3.6237987471436357
+            ],
+            [
+              65.59917825288447,
+              107.50378797913993,
+              -1.6788328437142228
+            ],
+            [
+              66.12191312594338,
+              109.27646560529777,
+              0.34529867062544195
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.59409932605998,
+              110.92085061820173,
+              2.5510284118821174
+            ],
+            [
+              66.8327501567037,
+              111.64615260553543,
+              3.797363553388956
+            ],
+            [
+              67.06475069759992,
+              112.14780393967804,
+              5.0980137961201635
+            ],
+            [
+              67.28973527041953,
+              112.44155142486727,
+              6.447456734979289
+            ],
+            [
+              67.50733819683332,
+              112.54314186534069,
+              7.840169964869881
+            ],
+            [
+              67.7171937985121,
+              112.46832206533581,
+              9.270631080695486
+            ],
+            [
+              67.91893639712671,
+              112.23283882909028,
+              10.73331767735965
+            ],
+            [
+              68.112200314348,
+              111.8524389608417,
+              12.222707349765926
+            ],
+            [
+              68.29661987184679,
+              111.34286926482764,
+              13.733277692817856
+            ],
+            [
+              68.47182939129387,
+              110.71987654528567,
+              15.259506301418991
+            ],
+            [
+              68.63746319436008,
+              109.99920760645341,
+              16.795870770472874
+            ],
+            [
+              68.7931556027163,
+              109.1966092525685,
+              18.33684869488306
+            ],
+            [
+              68.93854093803327,
+              108.32782828786841,
+              19.876917669553087
+            ],
+            [
+              69.07325352198187,
+              107.40861151659084,
+              21.410555289386515
+            ],
+            [
+              69.19692767623293,
+              106.45470574297335,
+              22.932239149286886
+            ],
+            [
+              69.30919772245724,
+              105.48185777125347,
+              24.43644684415774
+            ],
+            [
+              69.40969798232565,
+              104.50581440566887,
+              25.91765596890263
+            ],
+            [
+              69.498062777509,
+              103.5423224504571,
+              27.370344118425113
+            ],
+            [
+              69.57392642967808,
+              102.6071287098558,
+              28.78898888762872
+            ],
+            [
+              69.63692326050374,
+              101.7159799881025,
+              30.168067871417016
+            ],
+            [
+              69.68668759165679,
+              100.88462308943483,
+              31.50205866469354
+            ],
+            [
+              69.7228537448081,
+              100.12880481809036,
+              32.78543886236183
+            ],
+            [
+              69.74505604162844,
+              99.46427197830668,
+              34.01268605932544
+            ],
+            [
+              69.75292880378868,
+              98.9067713743214,
+              35.17827785048794
+            ],
+            [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ]
+          ],
+          "instrument": {
+            "originMm": [
+              68.24474614522467,
+              96.02404486539956,
+              35.40882702790615
+            ],
+            "beam": [
+              -0.5004534025783088,
+              -0.8160016483241803,
+              -0.28928826761556353
+            ],
+            "right": [
+              -0.8656702613344038,
+              0.47654096875919133,
+              0.1533743907413384
+            ],
+            "shaft": [
+              -0.0127039556445398,
+              -0.3271849859426197,
+              0.9448749094375983
+            ],
+            "normal": [
+              0.0127039556445398,
+              0.3271849859426197,
+              -0.9448749094375983
+            ]
+          },
+          "sectorDepthMm": 169.86931331586712,
+          "contextFit": {
+            "outsideScan": false,
+            "mode": "lumen-plane-constrained",
+            "level": "deep-tg",
+            "levelLabel": "Deep transgastric",
+            "insertionCm": 55.269929202129774,
+            "headCenterMm": [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ],
+            "tractSampleMm": [
+              69.7461063529596,
+              98.4720498103721,
+              36.27669183075284
+            ],
+            "tractArcMm": 301.8726092897784,
+            "tractOffsetMm": 0,
+            "clearanceHintMm": 4.6564015625,
+            "shaftBendDeg": 18.882981445128337,
+            "clinicalDepthMeasured": false,
+            "distanceMm": 0,
+            "headContained": true,
+            "shaftContained": true,
+            "shaftClearanceMm": 3.7099990442727298,
+            "roiTargetMm": [
+              -13.05336,
+              -0.6352000000000001,
+              -2.604319999999997
+            ],
+            "roiTargetAngleDeg": 8.181366826519964,
+            "rayTurnDeg": 8,
+            "apicalGuide": false,
+            "apexAngleDeg": null,
+            "targetKind": "source regional target inside scan sector",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-gastric-lumen",
+            "planeResidualMm": 7.105427357601002e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": true,
+            "correctionAngleDeg": 32.00335777103846,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": true,
+          "correctionAngleDeg": 32.00335777103846,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 7.105427357601002e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.07769376181474479,
+            -0.003780718336483932,
+            -0.0155009451795841
+          ],
+          "sourceNormal": [
+            -0.46344567371711987,
+            -0.5925113516527282,
+            0.6588993896457502
+          ],
+          "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production acquired original target at 10 degrees",
+      "diagnostics": {
+        "stomachSignedRangeMm": [
+          -76.22660289362561,
+          47.198552341127645
+        ],
+        "stomachPlaneGapMm": 0,
+        "rvAxisAngleOutOfPlaneDeg": 21.928301757355275,
+        "targetResidualMm": {
+          "tricuspidRegionalCenter": 14.1315672344732,
+          "pulmonaryRoot": 14.489870823931053,
+          "pulmonaryLumen": 18.304411422792306,
+          "rvMidCavity": 13.517222324575357,
+          "rvApicalCavity": 5.534261692950816
+        }
+      },
+      "sourceRotationDeg": 32.00335777103846
+    }
+  ]
+}

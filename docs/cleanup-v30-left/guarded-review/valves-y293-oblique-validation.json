@@ -1,0 +1,440 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 0,
+    "decodedBrickReads": 0,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "patches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "surface": {
+        "format": "HFM1-gzip",
+        "file": "lvot-perivalvular-refinement.hfm.gz",
+        "vertices": 477150,
+        "triangles": 963173,
+        "vertexCount": 477150,
+        "indexCount": 2889519,
+        "positionOffset": 32,
+        "normalOffset": 2862932,
+        "indexOffset": 5725832,
+        "compressedBytes": 10313927,
+        "decodedBytes": 17283908,
+        "sha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+        "decodedSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17",
+        "bounds": {
+          "min": [
+            0.033081285655498505,
+            -0.06710775196552277,
+            -0.13752363622188568
+          ],
+          "max": [
+            0.18005670607089996,
+            0.16115312278270721,
+            0.0018903592135757208
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 17283876
+      },
+      "lowBandMask": {
+        "file": "lvot-perivalvular-refinement-low-band.bits.gz",
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          1018,
+          944,
+          916
+        ],
+        "upperFullFineXYZ": [
+          1330,
+          1240,
+          1400
+        ],
+        "dimensionsXYZ": [
+          312,
+          296,
+          484
+        ],
+        "storageDimensionsXYZ": [
+          39,
+          296,
+          484
+        ],
+        "compressedBytes": 876540,
+        "decodedBytes": 5587296,
+        "sha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+        "decodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+        "maskedVoxels": 3563663
+      },
+      "replacementBounds": {
+        "min": [
+          0.033081285444234394,
+          -0.06710775047258977,
+          -0.137523629489603
+        ],
+        "max": [
+          0.18005671077504723,
+          0.16115311909262756,
+          0.0018903591682419656
+        ]
+      }
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 154271,
+        "triangles": 302706,
+        "vertexCount": 154271,
+        "indexCount": 908118,
+        "positionOffset": 32,
+        "normalOffset": 925660,
+        "indexOffset": 1851288,
+        "compressedBytes": 3210789,
+        "decodedBytes": 5483760,
+        "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+        "decodedSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+        "bounds": {
+          "min": [
+            -0.16446125507354736,
+            -0.01795841194689274,
+            -0.043005671352148056
+          ],
+          "max": [
+            -0.03733459487557411,
+            0.13752363622188568,
+            0.13610586524009705
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5483724,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          600,
+          660,
+          1020
+        ],
+        "upperFullFineXYZ": [
+          870,
+          1040,
+          1350
+        ],
+        "dimensionsXYZ": [
+          270,
+          380,
+          330
+        ],
+        "storageDimensionsXYZ": [
+          34,
+          380,
+          330
+        ],
+        "compressedBytes": 342653,
+        "decodedBytes": 4263600,
+        "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+        "decodedSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+        "maskedVoxels": 769532,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface-low-band.bits.gz"
+      },
+      "replacementBounds": {
+        "min": [
+          -0.164461247637051,
+          -0.01795841209829867,
+          -0.04300567107750471
+        ],
+        "max": [
+          -0.03733459357277882,
+          0.137523629489603,
+          0.13610586011342152
+        ]
+      }
+    },
+    {
+      "id": "pulmonary-lumen-v29",
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 233367,
+        "triangles": 514232,
+        "vertexCount": 233367,
+        "indexCount": 1542696,
+        "positionOffset": 32,
+        "normalOffset": 1400236,
+        "indexOffset": 2800440,
+        "compressedBytes": 5109781,
+        "decodedBytes": 8971224,
+        "sha256": "7cb87c4ee1c82bd99cd9956e24bdade329a22412f068c5a77a933c23608985ee",
+        "decodedSha256": "189a31dac09a9cb8a264e8d83f7b7240e6cd1b4147af5361e785d66ebd7f8570",
+        "bounds": {
+          "min": [
+            -0.16257089376449585,
+            -0.24480150640010834,
+            -0.19423440098762512
+          ],
+          "max": [
+            -0.0751417800784111,
+            -0.04111531376838684,
+            -0.06238185241818428
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 8971188,
+        "url": "./assets/cleanup-v29/pulmonary-lumen-v29.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          604,
+          1080,
+          540
+        ],
+        "upperFullFineXYZ": [
+          790,
+          1360,
+          972
+        ],
+        "dimensionsXYZ": [
+          186,
+          280,
+          432
+        ],
+        "storageDimensionsXYZ": [
+          24,
+          280,
+          432
+        ],
+        "compressedBytes": 408027,
+        "decodedBytes": 2903040,
+        "sha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4",
+        "decodedSha256": "36199056983b11ab1902c073d32975bb1bf5194efcd4f31e982ac08dc0198413",
+        "maskedVoxels": 1139693,
+        "url": "./assets/cleanup-v29/pulmonary-lumen-v29-low-band.bits.gz"
+      },
+      "replacementBounds": {
+        "min": [
+          -0.16257088846880904,
+          -0.24480151228733454,
+          -0.19423440453686197
+        ],
+        "max": [
+          -0.07514177693761813,
+          -0.04111531190926275,
+          -0.06238185255198487
+        ]
+      }
+    },
+    {
+      "id": "right-perivascular-v29",
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 316017,
+        "triangles": 682317,
+        "vertexCount": 316017,
+        "indexCount": 2046951,
+        "positionOffset": 32,
+        "normalOffset": 1896136,
+        "indexOffset": 3792240,
+        "compressedBytes": 7002408,
+        "decodedBytes": 11980044,
+        "sha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f",
+        "decodedSha256": "594dba5bdbbc38893d1aa8aae206dac2058b9a907d03f816b0627c774759d156",
+        "bounds": {
+          "min": [
+            -0.19754253327846527,
+            -0.17391304671764374,
+            -0.05245746672153473
+          ],
+          "max": [
+            0.03827977180480957,
+            -0.07986767590045929,
+            0.06285443902015686
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 11980008,
+        "url": "./assets/cleanup-v29/right-perivascular-v29.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          530,
+          815,
+          690
+        ],
+        "upperFullFineXYZ": [
+          1030,
+          1060,
+          890
+        ],
+        "dimensionsXYZ": [
+          500,
+          245,
+          200
+        ],
+        "storageDimensionsXYZ": [
+          63,
+          245,
+          200
+        ],
+        "compressedBytes": 363072,
+        "decodedBytes": 3087000,
+        "sha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399",
+        "decodedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+        "maskedVoxels": 831493,
+        "url": "./assets/cleanup-v29/right-perivascular-v29-low-band.bits.gz"
+      },
+      "replacementBounds": {
+        "min": [
+          -0.19754253308128542,
+          -0.17391304347826084,
+          -0.05245746691871454
+        ],
+        "max": [
+          0.0382797731568998,
+          -0.07986767485822305,
+          0.06285444234404536
+        ]
+      }
+    }
+  ],
+  "sourceTransport": {
+    "source": "Shared read-only HFM mmap",
+    "path": "{source-cache}/heart-v29-compress/original.hfm",
+    "decodedBytes": 437470524,
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "decodedBufferCount": 0,
+    "floatPositionArrayAllocated": false
+  },
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 11082717,
+    "removedOffscreenOrClippedTriangles": 12535968,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "valves-y293-oblique",
+      "axis": 1,
+      "coordinate": 1168,
+      "target": [
+        1150,
+        1168,
+        1105
+      ],
+      "distance": 0.64,
+      "direction": [
+        0.25,
+        0.14,
+        -1.0
+      ]
+    }
+  },
+  "maskManifestSha256": {
+    "before": "c3b0bbd0ced2a7a176346cd25b0f3a34b1267f6a1e3677294308536e8c69149d",
+    "after": "c3b0bbd0ced2a7a176346cd25b0f3a34b1267f6a1e3677294308536e8c69149d"
+  },
+  "currentShading": {
+    "decodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+    "normalSha256": "9cc15f96fd590299653ebe2a0dab85e4b66df1da11083956a179d4bdd1a16ea1",
+    "manifestSha256": "09f0431bb89cbb70c78e74c8959fbea22d2d3462324e1bf3b3ceef27614866dc",
+    "attributePolicy": "Positions, indices and flags retain exact original geometry; normals are copied at the same original vertex IDs from verified current v29 compact shading. No surface vertex moves."
+  },
+  "productionShaders": true,
+  "rendererSha256": "9366d5fad733eb5593ebfbb4d5292bf67e43b57b9d1ee3fca25dee8b025b7be3",
+  "fineSurfaceSha256": "3b0c9a5ca854dec1758551f3f88fda8dec16050136c24ac6515e645d271b1ddd",
+  "checks": [
+    {
+      "case": {
+        "id": "valves-y293-oblique",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1150,
+          1168,
+          1105
+        ],
+        "distance": 0.64,
+        "direction": [
+          0.25,
+          0.14,
+          -1.0
+        ]
+      },
+      "changedPixels": 42217,
+      "totalPixels": 604800,
+      "reversible": null,
+      "originalOffExact": null,
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "imageHashes": {
+        "v27": "a6783dd0fba603a6f2ed2c72505edce2b6c76d1f57d59c3b5f28b18c14eb0901",
+        "v28": "2a1f3d7e37a9a3cd6a60c751b670b3d7ba49bb3a91d17fadfc4e015d82d3b63a"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.10396975425330811
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.24927374431218527,
+          0.10834565976378407,
+          -0.7192121795171722
+        ],
+        "_target": [
+          0.09546313799621925,
+          0.022211720226843094,
+          -0.10396975425330811
+        ],
+        "_whole": false
+      }
+    }
+  ],
+  "scope": "Verified Gentle source geometry with conservative offline camera culling, exact production GLSL and local replacement drawing, same-camera before/after, unchanged measured source caps. Both before and after retain their current local patches. Before is published v29; after has only explicit matching-ID candidate overrides and optional candidate masks. All retained depth behind the section is visible; there is no rear slab. Nearby reproducible views, not exact screenshot registration. No clinical-validation or browser-performance claim.",
+  "reviewStreaming": {
+    "trianglesPerDraw": 100000,
+    "maximumBatchVertices": 71679,
+    "maximumBatchGpuBytes": 2131827,
+    "drawCalls": 222,
+    "triangleOrderPreserved": true,
+    "sourceAttributesUnchanged": true,
+    "framebufferAndDepthPreservedBetweenBatches": true,
+    "productionShadersUnmodified": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "release": "v14",
+  "baselineSourceCommit": "f34a66ee3cf969394f49f3004dc09a40a9366e78",
+  "scope": "Source-data, native rendering and actual-module DOM/worker fixtures. No browser automation or user-device FPS measurement.",
+  "suites": [
+    {"path": "tests/sections-v14.mjs", "passed": 10, "failed": 0, "focus": "Atomic texture/plane transitions, stale requests, failure recovery, local-only decoding and GPU allocation reuse"},
+    {"path": "tests/loading-priority-v8.mjs", "passed": 11, "failed": 0, "focus": "First-view priority, foreground request coalescing, download yielding, persistent cache and fine worker initialization"},
+    {"path": "tests/app-boot-v8.mjs", "passed": 15, "failed": 0, "focus": "Actual app boot, module races, donor windows, cross-module Settings and preserved brightness, CT rail and fullscreen"},
+    {"paths": ["tests/probe-motion-v14.mjs", "tests/fine-volume-v14.mjs"], "passed": 16, "failed": 0, "focus": "Fine lifecycle, native motion caps, local hold, acoustic equality, cancellation, bounded warming and independent interpolation"},
+    {"path": "tests/probe-entry-v14.mjs", "passed": 5, "failed": 0, "focus": "All 12 starting planes, all retained S-donor tissue support, complete compact mesh, physical scaling, prepared planes and custom bookmarks"},
+    {"path": "tests/probe-alignment-v13.mjs", "passed": 9, "failed": 0, "focus": "Unchanged middle probe, reference proportions, shared displayed pose and indicator direction"},
+    {"path": "tests/brightness-v14.mjs", "passed": 3, "failed": 0, "focus": "Shared controls, physical intensity labels, automatic window enabling, donor reset and display-only gains"},
+    {"paths": ["tests/brightness-v12.mjs", "tests/windowing-v10.mjs"], "passed": 13, "failed": 0, "focus": "Display transfer correspondence and unchanged source geometry/ultrasound pixels"},
+    {"path": "scripts/verify-ultra-prefetch-v6.mjs", "passed": 19, "failed": 0, "focus": "Neighbor scheduling, persistence, cancellation and memory bounds"},
+    {"path": "scripts/verify-renderer-motion-v7.mjs", "passed": 7, "failed": 0, "focus": "Stable full-output cap rendering and interaction orchestration"}
+  ],
+  "nativeEvidence": {
+    "brightness": "docs/brightness-v14/validation.json",
+    "shaderComparisons": 27648,
+    "maximumShaderChannelDifference": 0,
+    "sourceTexturesAssessed": 24,
+    "probeEntry": "docs/probe-entry-v14/verification.json",
+    "motion": "docs/probe-motion-v14/benchmark.json",
+    "nativeCapPixelsCompared": 7799085,
+    "nativeCapChangedPixels": 0,
+    "randomizedAndBoundaryPlanesCompared": 192
+  },
+  "sourceAssetAvailability": {
+    "method": "Authenticated same-origin HTTP GET, exact comparison to local source bytes",
+    "donors": ["s-20-29", "s-20-28"],
+    "pathsPerDonor": ["probe-textures/apical.webp", "probe-textures/parasternal.webp", "probe-textures/short-axis.webp", "probe-textures/atrial.webp"],
+    "verifiedFiles": 8,
+    "allStatus200": true,
+    "allBytesMatch": true
+  },
+  "dataAndAccess": {
+    "sourceIntensityBytesChanged": false,
+    "tissueThresholdsChanged": false,
+    "fineBanksRetained": 6,
+    "privateAudiencePreserved": true
+  }
+}

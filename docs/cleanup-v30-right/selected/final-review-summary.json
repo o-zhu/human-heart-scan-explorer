@@ -1,0 +1,237 @@
+{
+  "schema": "heart-cleanup-right-final-review-v30",
+  "assetsFrozen": true,
+  "caseCount": 8,
+  "productionShaders": true,
+  "fullRetainedHalfSpace": true,
+  "artificialDepthSlab": false,
+  "bothSelectedRightPatchesLoaded": true,
+  "otherLocalPatches": "Existing v29 LVOT and exterior patches; root canonical integration additionally substitutes the independent v30 left patch.",
+  "wholeMeshPositionsAndIndicesUnchanged": true,
+  "reviewNormalSourceDecodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+  "criticalRestorationChecksPassed": true,
+  "scientificSourceUnchanged": true,
+  "clinicalValidation": false,
+  "acceptance": "Substantial source-guided display reduction with broad coherent contours retained; not an artifact-free reconstruction.",
+  "remainingLimitations": [
+    "A central branching PA reticular band remains visible across neighboring cuts and orbit.",
+    "Upper-right RV perforated/reticular material and fine lower chordal fringe remain visible.",
+    "Source contrast and spatial coherence alone cannot determine anatomical identity of every retained strand.",
+    "No clinical anatomical ground-truth segmentation is available for this visual review."
+  ],
+  "cases": [
+    {
+      "id": "pulmonary-x188",
+      "camera": {
+        "id": "pulmonary-x188",
+        "axis": 0,
+        "coordinate": 748,
+        "target": [
+          748,
+          1220,
+          920
+        ],
+        "distance": 0.45
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/pulmonary-x188/validation.json",
+      "validationSha256": "bc1ad65b0bf3882b8be361ccdb89d799f1d94433e94d80457146787a250be25d",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/pulmonary-x188/pulmonary-x188-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "f5b9e7e36812597ce2db257d8ac76bbd7f6a3169b18e9da7ea7da16bb26f4a6a",
+        "after": "699535f5f910a89edb9eb69a4274d2f791c4cd09d9cb4451adcfddc744b4d123"
+      },
+      "sourceCapSha256": "2acb95f20e6354e9ece66379c03d8022e4c464a2fcdd0908ca203c823295ab07",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Reduction persists in the neighboring cut. No obvious hard crop-plane seam or broad wall truncation. Central branching material remains."
+    },
+    {
+      "id": "pulmonary-x190",
+      "camera": {
+        "id": "pulmonary-x190",
+        "axis": 0,
+        "coordinate": 756,
+        "target": [
+          756,
+          1220,
+          920
+        ],
+        "distance": 0.45
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/pulmonary-x190/validation.json",
+      "validationSha256": "178ca806c5b42bfdbb86128806f41af8ad1ccaee6b1979a9f5541ee8bc0b03b0",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/pulmonary-x190/pulmonary-x190-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "e01df3fdca3224d7c40dc81638d2b141d81525d69ef22c55e28f04fcb1e6bde3",
+        "after": "b3f1e97b14a107dc34a609cecaa39fc7514239c248a3fd0d0369fbb6936b7c92"
+      },
+      "sourceCapSha256": "0822f3139d7a7ace65c0a9784333c32fe1805a271f06b8adb18345379ac198f5",
+      "restorationChecksRun": true,
+      "previousSetExact": true,
+      "cleanupOffExact": true,
+      "visualReview": "Substantial reduction of irregular detached material; continuous broad contours remain. A central branching reticular band remains conspicuous."
+    },
+    {
+      "id": "pulmonary-x190-close",
+      "camera": {
+        "id": "pulmonary-x190-close",
+        "axis": 0,
+        "coordinate": 756,
+        "target": [
+          700,
+          1210,
+          865
+        ],
+        "distance": 0.27
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/pulmonary-x190-close/validation.json",
+      "validationSha256": "a3c05f0d965b9ef02500916b2bcb6b60a89842034d0fca6a7db0754a7fd39d0f",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/pulmonary-x190-close/pulmonary-x190-close-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "12bb2f9f45a80fca72845438ae9b31a34e080389d4149bdb868a4470ebef2098",
+        "after": "c55dc82d1f12c717236e7a88431558b43a0e1e0a389f9bb612da1faa5ad6fcf3"
+      },
+      "sourceCapSha256": "0822f3139d7a7ace65c0a9784333c32fe1805a271f06b8adb18345379ac198f5",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Closer view confirms retained branching strands; their source coordinates are within the reviewed crop. See retained-pa-visible-source-check.json. Intensity alone does not establish their anatomical identity."
+    },
+    {
+      "id": "pulmonary-x190-oblique",
+      "camera": {
+        "id": "pulmonary-x190-oblique",
+        "axis": 0,
+        "coordinate": 756,
+        "target": [
+          715,
+          1230,
+          900
+        ],
+        "distance": 0.45,
+        "direction": [
+          1,
+          0.05,
+          0.65
+        ]
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/pulmonary-x190-oblique/validation.json",
+      "validationSha256": "139382a85e6fc93d68d249c0dfd2b82ec9dcd397aa9dc1964c3dc56f8f6f4781",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/pulmonary-x190-oblique/pulmonary-x190-oblique-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "ac1f46de5d3fa863468b41c7592db626938b381580bdef940f84a654b493f785",
+        "after": "1b7e254a261d5aa3c0771f7c9bc0ab3c92dce165a1a0da7a29a8591b3e07e972"
+      },
+      "sourceCapSha256": "0822f3139d7a7ace65c0a9784333c32fe1805a271f06b8adb18345379ac198f5",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Reduction persists at the second orbit with the full retained depth visible. Broad contours remain; central reticular material remains."
+    },
+    {
+      "id": "pulmonary-x192",
+      "camera": {
+        "id": "pulmonary-x192",
+        "axis": 0,
+        "coordinate": 764,
+        "target": [
+          764,
+          1220,
+          920
+        ],
+        "distance": 0.45
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/pulmonary-x192/validation.json",
+      "validationSha256": "5fb57dd7e422c25308058329054d019f074ccf2e2dbe04d72b93ef1d374245b2",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/pulmonary-x192/pulmonary-x192-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "99d3005304cf40bff20d9e889c7c216e427a2ceb63e3f0524dea66898fa73f19",
+        "after": "86ca1648015467889fe6edb7f2cc045025ed45a4b2cd03959fbe3d36716bb29d"
+      },
+      "sourceCapSha256": "9fb0c2bf00c4c7a660d75a7bf50f14e038035b49d19193aea1b5470e9dd10f9b",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Reduction persists in the neighboring cut. No obvious hard crop-plane seam or broad wall truncation. Central branching material remains."
+    },
+    {
+      "id": "rv-chains-y285",
+      "camera": {
+        "id": "rv-chains-y285",
+        "axis": 1,
+        "coordinate": 1136,
+        "target": [
+          740,
+          1020,
+          1030
+        ],
+        "distance": 0.4
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/rv-chains-y285/validation.json",
+      "validationSha256": "05dd217799f81d7f54bbfd9742b9038e244f43cfc28cea76e9a85766a7dedfa7",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/rv-chains-y285/rv-chains-y285-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "b16eb4c9950f2d7e9f956af168e47e5a0ce2c24cbb1aff12ecf39f10b596d67e",
+        "after": "9944a100bb1efe990414bef746e8af316d74dcdfee2ec361353a6b5180adab2b"
+      },
+      "sourceCapSha256": "b579e05a7f3d2775dc35f9b2a2bf3e61ad099e72023ce4ee6aeb77e49deae6c7",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Neighboring cut confirms long-chain reduction; upper-right reticular material and fine lower chordal fringe remain. No obvious hard crop-plane seam or broad wall truncation."
+    },
+    {
+      "id": "rv-chains-y293",
+      "camera": {
+        "id": "rv-chains-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          740,
+          1020,
+          1030
+        ],
+        "distance": 0.4
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/rv-chains-y293/validation.json",
+      "validationSha256": "f6e68d33c9b9b36cb1cadbe7fad4823bc8f9ac639476dfa05497493bb759884f",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/rv-chains-y293/rv-chains-y293-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "d4989c084ee982f76f77d45d92c97a059b992f634bf55d0f50763e36ca2b278c",
+        "after": "87f8e99dfba8972677034d714ae78bbd788c6b60258c8389e90946992e9f1b46"
+      },
+      "sourceCapSha256": "5d84881b208aaf84ea7bbddcf757061f6d88c8ce1f0755d314c21e852c028714",
+      "restorationChecksRun": true,
+      "previousSetExact": true,
+      "cleanupOffExact": true,
+      "visualReview": "Much of the previously missed long spiky chain is removed. Continuous major chordal structures remain. Upper-right perforated/reticular material and lower chordal fringe remain conspicuous."
+    },
+    {
+      "id": "rv-chains-y301",
+      "camera": {
+        "id": "rv-chains-y301",
+        "axis": 1,
+        "coordinate": 1200,
+        "target": [
+          740,
+          1020,
+          1030
+        ],
+        "distance": 0.4
+      },
+      "validationPath": "docs/cleanup-v30-right/final-review/rv-chains-y301/validation.json",
+      "validationSha256": "0537e188b9b09f2f625a0ff620da9915ea92825e860f4bd3ec94d6708ea8eabe",
+      "comparisonPath": "docs/cleanup-v30-right/final-review/rv-chains-y301/rv-chains-y301-comparison.jpg",
+      "renderPixelBufferSha256": {
+        "before": "ca9eafd7e0ad25f81a0e4c52235339c427c91b0ad8ec4f4a4ed7dbe08057c0ba",
+        "after": "e1ebc91c54cb25b5c857e778045186bb658b99613bc9d7a56693cd191a699955"
+      },
+      "sourceCapSha256": "053ae96b643f22045349cfcb0e542fe50d58ad70f6086e5bafb0cef46ce0efec",
+      "restorationChecksRun": false,
+      "previousSetExact": null,
+      "cleanupOffExact": null,
+      "visualReview": "Neighboring cut confirms long-chain reduction; upper-right reticular material and fine lower chordal fringe remain. No obvious hard crop-plane seam or broad wall truncation."
+    }
+  ]
+}

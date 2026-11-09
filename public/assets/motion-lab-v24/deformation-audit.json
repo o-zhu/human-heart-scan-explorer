@@ -1,0 +1,50 @@
+{
+  "schema": "heart-motion-audit-v24.1",
+  "sourceSha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+  "sourceDecodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+  "verticesChecked": 699001,
+  "trianglesUnchanged": 2500000,
+  "rig": {
+    "base": -0.07,
+    "low": -0.1,
+    "high": 0.22,
+    "centerX": 0.055,
+    "centerZ": -0.045,
+    "axial": 0.1,
+    "radial": 0.44,
+    "radius": 0.145,
+    "twist": 0.22
+  },
+  "geometryArraysUnmodified": true,
+  "motionIsMeasured": false,
+  "registeredToDynamicCT": false,
+  "referenceIsEndDiastole": false,
+  "fullMyocardialVolumeConservationEstablished": false,
+  "restIdentityMaxErrorMm": 0,
+  "cycleClosureMaxErrorMm": 0,
+  "gridSamples": 18081,
+  "positiveJacobianAtAllGridSamples": true,
+  "minimumAxialDerivative": 0.8362410817558396,
+  "finiteDifferenceJacobianMaxAbsoluteError": 1.1727143700568377e-9,
+  "cavityAware": {
+    "minimumJacobianOnDisplayVertices": 0.5600240220492781,
+    "maximumJacobianOnDisplayVertices": 1,
+    "vertexMeanJacobian": 0.9324970065847622,
+    "minimumJacobianOnAuditGrid": 0.5620877788419056,
+    "displacementMm": {
+      "median": 1.4854399431622838,
+      "p95": 10.3843025685452,
+      "maximum": 14.293850485809976
+    }
+  },
+  "analyticDeterminant": "J=1-B(y)*exp(-r^2/R^2), B=0.44*amplitude*w(y); J>=0.56 for all allowed amplitudes. Axial derivative g'(y)>0 is checked numerically and bounded by the polynomial coefficients.",
+  "limitations": [
+    "The analytic field is an assumed single-cavity model, not a segmented ventricular shell.",
+    "Positive pointwise Jacobians do not validate tissue strains, valvular contact or pre-existing surface intersections.",
+    "The source display mesh is already lossy and not a watertight anatomical segmentation.",
+    "Vertex-mean Jacobian is not a myocardial volume measurement.",
+    "No clinical motion, pressure, force, fiber architecture or hemodynamic inference.",
+    "Source noise and missing structures remain."
+  ],
+  "summary": "Checked 699,001 display vertices: exact rest recovery and cycle closure; no source-array changes. The cavity-aware field has positive sampled Jacobians (0.562–1.000). This does not establish accurate cardiac motion or myocardial volume conservation."
+}

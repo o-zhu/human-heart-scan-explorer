@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "outputDimensions": [
+    640,
+    640
+  ],
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "productionShaderSha256": "5ee144e634f9992ba24c529fc3b33a0d7a5f929b0612cd438238b06a9c89b90c",
+  "clinicalAppSha256": "fecbd5305f9dbc47d925cfb96704c46b49bbbc3122fc52d312c86425494729a6",
+  "checks": [
+    {
+      "series": "slicerheart-overview",
+      "variant": "default",
+      "dimensions": [
+        145,
+        125,
+        109
+      ],
+      "spacingMm": [
+        1.19921875,
+        1.19921875,
+        1.3999999999999997
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": false,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8755700325732897,
+        0.8611111111111112
+      ],
+      "stepSize": 0.0062499999999999995,
+      "secondsOffline": 0.06028764999791747,
+      "foregroundPixels": 175353
+    },
+    {
+      "series": "slicerheart-overview",
+      "variant": "oblique",
+      "dimensions": [
+        145,
+        125,
+        109
+      ],
+      "spacingMm": [
+        1.19921875,
+        1.19921875,
+        1.3999999999999997
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": true,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8755700325732897,
+        0.8611111111111112
+      ],
+      "stepSize": 0.0062499999999999995,
+      "secondsOffline": 0.05491096199693857,
+      "foregroundPixels": 178111
+    },
+    {
+      "series": "slicerheart-overview",
+      "variant": "higher-threshold",
+      "dimensions": [
+        145,
+        125,
+        109
+      ],
+      "spacingMm": [
+        1.19921875,
+        1.19921875,
+        1.3999999999999997
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": true,
+      "threshold": 0.44,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8755700325732897,
+        0.8611111111111112
+      ],
+      "stepSize": 0.0062499999999999995,
+      "secondsOffline": 0.04905936300201574,
+      "foregroundPixels": 166537
+    },
+    {
+      "series": "slicerheart-native-detail",
+      "variant": "default",
+      "dimensions": [
+        160,
+        130,
+        100
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 10,
+      "sourceFrameSha256": "6aff6b839073a366f7258914ae299eccbe47b23a47c9e6f520def991e419174f",
+      "axis": 2,
+      "position": 0.5555555555555556,
+      "oblique": false,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.7268883289287688,
+        0.8113207547169812
+      ],
+      "stepSize": 0.0056603773584905665,
+      "secondsOffline": 0.02762331499980064,
+      "foregroundPixels": 215735
+    },
+    {
+      "series": "slicerheart-native-detail",
+      "variant": "oblique",
+      "dimensions": [
+        160,
+        130,
+        100
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 10,
+      "sourceFrameSha256": "6aff6b839073a366f7258914ae299eccbe47b23a47c9e6f520def991e419174f",
+      "axis": 2,
+      "position": 0.5555555555555556,
+      "oblique": true,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.7268883289287688,
+        0.8113207547169812
+      ],
+      "stepSize": 0.0056603773584905665,
+      "secondsOffline": 0.028606576997844968,
+      "foregroundPixels": 207354
+    },
+    {
+      "series": "slicerheart-native-detail",
+      "variant": "higher-threshold",
+      "dimensions": [
+        160,
+        130,
+        100
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 10,
+      "sourceFrameSha256": "6aff6b839073a366f7258914ae299eccbe47b23a47c9e6f520def991e419174f",
+      "axis": 2,
+      "position": 0.5555555555555556,
+      "oblique": true,
+      "threshold": 0.44,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.7268883289287688,
+        0.8113207547169812
+      ],
+      "stepSize": 0.0056603773584905665,
+      "secondsOffline": 0.03238273899478372,
+      "foregroundPixels": 198331
+    },
+    {
+      "series": "slicerheart-native-reference",
+      "variant": "default",
+      "dimensions": [
+        290,
+        250,
+        218
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "dff67b3a9a3186cf1b906f0ca0c885e503365c7ab7594a5dc7f36a506b6da288",
+      "axis": 2,
+      "position": 0.5023041474654378,
+      "oblique": false,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8765799172706061,
+        0.8615916955017301
+      ],
+      "stepSize": 0.0031141868512110727,
+      "secondsOffline": 0.06989240699476795,
+      "foregroundPixels": 185885
+    },
+    {
+      "series": "slicerheart-native-reference",
+      "variant": "oblique",
+      "dimensions": [
+        290,
+        250,
+        218
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "dff67b3a9a3186cf1b906f0ca0c885e503365c7ab7594a5dc7f36a506b6da288",
+      "axis": 2,
+      "position": 0.5023041474654378,
+      "oblique": true,
+      "threshold": 0.36,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8765799172706061,
+        0.8615916955017301
+      ],
+      "stepSize": 0.0031141868512110727,
+      "secondsOffline": 0.07156497099640546,
+      "foregroundPixels": 188086
+    },
+    {
+      "series": "slicerheart-native-reference",
+      "variant": "higher-threshold",
+      "dimensions": [
+        290,
+        250,
+        218
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "dff67b3a9a3186cf1b906f0ca0c885e503365c7ab7594a5dc7f36a506b6da288",
+      "axis": 2,
+      "position": 0.5023041474654378,
+      "oblique": true,
+      "threshold": 0.44,
+      "distance": 1.65,
+      "normalizedExtent": [
+        1.0,
+        0.8765799172706061,
+        0.8615916955017301
+      ],
+      "stepSize": 0.0031141868512110727,
+      "secondsOffline": 0.07562731700454606,
+      "foregroundPixels": 177113
+    },
+    {
+      "series": "cmac-whole-heart-mri",
+      "variant": "default",
+      "dimensions": [
+        205,
+        245,
+        95
+      ],
+      "spacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "f1f1007e743970ab8e123aa58500dcf8d98a73595cac98c625867c2a85869c1b",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": false,
+      "threshold": 0.12,
+      "distance": 2.0,
+      "normalizedExtent": [
+        0.8360655737704918,
+        0.7704918032786885,
+        1.0
+      ],
+      "stepSize": 0.0036885245901639345,
+      "secondsOffline": 0.013117799004248809,
+      "foregroundPixels": 197964
+    },
+    {
+      "series": "cmac-whole-heart-mri",
+      "variant": "oblique",
+      "dimensions": [
+        205,
+        245,
+        95
+      ],
+      "spacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "f1f1007e743970ab8e123aa58500dcf8d98a73595cac98c625867c2a85869c1b",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": true,
+      "threshold": 0.12,
+      "distance": 2.0,
+      "normalizedExtent": [
+        0.8360655737704918,
+        0.7704918032786885,
+        1.0
+      ],
+      "stepSize": 0.0036885245901639345,
+      "secondsOffline": 0.028300680001848377,
+      "foregroundPixels": 198604
+    },
+    {
+      "series": "cmac-whole-heart-mri",
+      "variant": "higher-threshold",
+      "dimensions": [
+        205,
+        245,
+        95
+      ],
+      "spacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "frameIndex": 0,
+      "sourceFrameSha256": "f1f1007e743970ab8e123aa58500dcf8d98a73595cac98c625867c2a85869c1b",
+      "axis": 2,
+      "position": 0.5,
+      "oblique": true,
+      "threshold": 0.23,
+      "distance": 2.0,
+      "normalizedExtent": [
+        0.8360655737704918,
+        0.7704918032786885,
+        1.0
+      ],
+      "stepSize": 0.0036885245901639345,
+      "secondsOffline": 0.028816542006097734,
+      "foregroundPixels": 180729
+    }
+  ],
+  "limitations": [
+    "Native EGL presentation check, not browser automation or browser/device FPS.",
+    "No acquisition resolution, source intensities, or anatomical segmentation is inferred from thresholded surfaces.",
+    "The measured default phase, section and camera distance come from each series manifest; native planes are snapped to sample centers.",
+    "Anisotropic spacing is preserved using the same physical-extent calculation as VolumeRenderer.load."
+  ],
+  "productionRendererSha256": "710baca457209951358fd625b11b194c6a196cc6f7dfc50894847df576b25399"
+}

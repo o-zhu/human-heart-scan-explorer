@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "date": "2026-11-07",
+  "generator": "ChatGPT Image via image_gen.imagegen",
+  "purpose": "Conceptual navigation artwork. Precise acquisition guidance is supplied independently from ASE Table 2; these images are not diagnostic ultrasound or acquired donor anatomy.",
+  "packaging": "Selected original PNGs retained without edits. WebPs use 640px dimensions, Lanczos resampling and quality 90 encoding; no local artistic alteration.",
+  "assets": [
+    {
+      "id": "plax_deep",
+      "tableRow": "2.1",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas: parasternal long-axis view of the adult heart, full-depth overview. This is conceptual navigation artwork, not a clinical diagnostic image. A realistic sculptural rose and salmon heart cutaway with warm ivory endocardial lining shows an elongated left ventricle, mitral valve, left atrium, left ventricular outflow tract and aortic root, with the right ventricle anteriorly. A very subtle translucent chest and ribs gives anatomical context. A small external ultrasound probe rests on the LEFT parasternal chest, outside the body, and a restrained translucent amber scan plane extends from it into the long axis of the heart. Rich midnight charcoal and deep teal background, soft studio illumination, refined material detail, cinematic but scientifically restrained, beautifully legible silhouette at small size, centered generous margins, no text, no labels, no numbers, no arrows, no watermark, no ECG, no ultrasound screen or fabricated ultrasound frame. Single icon only, no grid, no contact sheet.",
+      "promptSha256": "185e5d2a8fa493e92c2a4e4740f7163b8243be2c32e8eae61660656360d277ff",
+      "master": "docs/tte-atlas-v1/art-masters/plax_deep.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "810cecf0734fa70c3c642af0f3f93b294388ffec63c29c47b905d61112ba8eb4",
+      "asset": "public/assets/tte-atlas/art-v1/plax_deep.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71354,
+      "sha256": "9e6519fe4ca4b21b0fef16e886653575ce651c8932d0d5edd75b3938d2e93584"
+    },
+    {
+      "id": "plax",
+      "tableRow": "2.2",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal long-axis view of the adult heart, optimized chamber overview. Probe resting on the left parasternal anterior chest. Show an elongated left ventricle cutaway with mitral valve, left atrium, left ventricular outflow tract and aortic root, and a small anterior right ventricular crescent. Tight yet graceful heart-centered composition; heart fills most of the icon. Amber plane follows the cardiac long axis.",
+      "promptSha256": "b1d6115c590707af488e5c3fdb2c6944ac001a751d17cd08cc47053f66c86f6f",
+      "master": "docs/tte-atlas-v1/art-masters/plax.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "8f31bd88dccc598409b006721030fa6cddc3e064017efc85977d526677c98ac8",
+      "asset": "public/assets/tte-atlas/art-v1/plax.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 78308,
+      "sha256": "f0cbffea6774869eb1f0eddbff096ed2ec3968b5f5a7c0067341a09b4a9d8212"
+    },
+    {
+      "id": "plax_av",
+      "tableRow": "2.3",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal long-axis AORTIC VALVE focus. Tight magnified sculptural cutaway centered on the aortic root, aortic valve cusps and left ventricular outflow tract, ascending aorta continuing above. Adjacent mitral-aortic continuity is visible as subtle context. Only partial left ventricle and left atrium at the edge. Small external probe at the left parasternal chest in subtle background. Make this distinctly a beautiful close-up of the aortic root and valve, with a thin amber longitudinal imaging plane.",
+      "promptSha256": "e0750f94cb4ea267d3cf31b8cb4effb2ff63399f0b4f41f9435792cc7a4de99a",
+      "master": "docs/tte-atlas-v1/art-masters/plax_av.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "3952f135a0e01a87fa60375979c42faba7e956ebe5afc6d0a9137dc4c25a06f5",
+      "asset": "public/assets/tte-atlas/art-v1/plax_av.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 84248,
+      "sha256": "a7e8ad09ae37fd7769f0b654a0837b1fddf466be6f71dae963d988763d40da1e"
+    },
+    {
+      "id": "plax_mv",
+      "tableRow": "2.4",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal long-axis MITRAL VALVE focus. Magnified sculptural longitudinal cutaway centered on mitral annulus, two gracefully curved mitral leaflets and fine chordae descending into the left ventricle, with left atrium above and a little aortic root for context. Small external probe at left parasternal chest remains subtly visible. This distinct close-up emphasizes ivory mitral leaflets against rose myocardium. Amber plane passes lengthwise through mitral inflow.",
+      "promptSha256": "00113a84a6b653cac300ba05ee6f0c7f8c3d4a2fa08f1ffeefbe2b2278c0198e",
+      "master": "docs/tte-atlas-v1/art-masters/plax_mv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "636b41bdcb76e98385169ad923bf049a37c1efb0cbacb9a674eea9e6b5de0f66",
+      "asset": "public/assets/tte-atlas/art-v1/plax_mv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 83946,
+      "sha256": "96026d7d2e32848baa0ec70479e19dc337df426aca8c132746df32ba2ede04ad"
+    },
+    {
+      "id": "plax_rvot",
+      "tableRow": "2.5",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal long-axis RIGHT VENTRICULAR OUTFLOW focus. Elegant oblique cutaway emphasizing the anterior right ventricular outflow tract rising to pulmonary valve and main pulmonary artery. Pale blue-grey pulmonary artery and ivory pulmonary valve, rose right ventricular myocardium; aortic root and left heart faint behind. Small probe rests externally on left parasternal chest with its amber sector tilted superiorly through the RV outflow. Distinct ascending outflow-focused silhouette.",
+      "promptSha256": "d1c152ccb6e283bc0318895c776c4bdf42e74d45ee6c0c8d96c1fc370daa82ec",
+      "master": "docs/tte-atlas-v1/art-masters/plax_rvot.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "b9705c219b416df1b2442ead1ce68cc46253da5a87a5a06eccec6dac2eb75f66",
+      "asset": "public/assets/tte-atlas/art-v1/plax_rvot.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 61664,
+      "sha256": "b049a0ab70344138a411d2f9fca9092f0a3b77fe19083f0a43de2e7a9f326f48"
+    },
+    {
+      "id": "plax_rvin",
+      "tableRow": "2.6",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal long-axis RIGHT VENTRICULAR INFLOW focus. Elegant oblique cutaway emphasizing right atrium, tricuspid annulus, delicate tricuspid leaflets and right ventricle. The right ventricle has thinner rose myocardium than the faint left ventricle behind it. Probe rests externally on the left parasternal chest with the restrained amber sector angled inferiorly through tricuspid inflow. Distinct right-sided inflow silhouette, close composition but generous margins.",
+      "promptSha256": "3f6a3ec206c8e3e036db97fa09ca61f12da6b8c07ad87f085fa387d37405b518",
+      "master": "docs/tte-atlas-v1/art-masters/plax_rvin.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "8530ce66a3348cca281f4fe6de8b28b1456dcc6255adee78dcefeaabf713c8a9",
+      "asset": "public/assets/tte-atlas/art-v1/plax_rvin.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 65734,
+      "sha256": "28badfd923916a2dabd7e425dbbd1dc800e090f3001bdd4ed05034a797ac7f15"
+    },
+    {
+      "id": "psax_great",
+      "tableRow": "2.7",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal SHORT-AXIS GREAT VESSELS overview with pulmonary outflow emphasis. Show a beautiful transverse sculptural cutaway at the base of the heart: central circular aortic root, right ventricular outflow curving anteriorly, pulmonary valve and main pulmonary artery branching above, atria in subtle context. External probe visible on left parasternal chest. Thin amber transverse scan plane intersects great vessels. Composition must be distinctly basal and transverse.",
+      "promptSha256": "80a799f85cef6de027aa82600fa6e92907ba9dddf48e6c5868e30ce26bbde539",
+      "master": "docs/tte-atlas-v1/art-masters/psax_great.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "7a0582358a55d017b3af64af760d12f439d56d9da8bc1611c90bcea285263610",
+      "asset": "public/assets/tte-atlas/art-v1/psax_great.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 69376,
+      "sha256": "a1b5545d04f8ef761c6d8cba7a706fcd82f7106c4e71b0722d322073cb41dbee"
+    },
+    {
+      "id": "psax_av",
+      "tableRow": "2.8",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal SHORT-AXIS AORTIC VALVE level overview. Show a transverse sculptural slice through the heart base, aortic valve centered in a round aortic root with three ivory cusps, right ventricular outflow wrapping anteriorly, right atrium and tricuspid valve to one side, left atrium posteriorly. The surrounding chambers remain visible as an elegant contextual heart cutaway. External probe on left parasternal chest. Thin amber short-axis imaging plane.",
+      "promptSha256": "2123d2ff0fc3ddb7c40fe24ceca432080eea3309b1bff1b8f75330772dfe3457",
+      "master": "docs/tte-atlas-v1/art-masters/psax_av.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "ffe9ac27d2f770883c44c935cbe994ca1d20a02cb948d91c48651d5989bdf360",
+      "asset": "public/assets/tte-atlas/art-v1/psax_av.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 70662,
+      "sha256": "8a87f9da38c6667134eb1ef0a988d35bc68cc15f4484229e0747253a9c3e5a25"
+    },
+    {
+      "id": "psax_av_zoom",
+      "tableRow": "2.9",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Parasternal SHORT-AXIS AORTIC VALVE magnified focus. Macro sculptural transverse cutaway of aortic root and three delicate ivory aortic cusps forming a central tri-leaflet closure pattern. Warm rose aortic root wall and a little adjacent myocardium; most of the frame is this exquisite round valve detail. Subtle smaller contextual heart and external parasternal probe at the periphery, with thin amber transverse scan plane through valve. Distinct close-up, no surrounding full chamber overview.",
+      "promptSha256": "66b36d069cf3e2ff658990b47e30e0519354e51af805369b5f4c8695b0d5f4ec",
+      "master": "docs/tte-atlas-v1/art-masters/psax_av_zoom.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "9ca16b2662eb8f8e43f5a15d0a77674ac7f7e6fdf231749976851f64683ac6de",
+      "asset": "public/assets/tte-atlas/art-v1/psax_av_zoom.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71342,
+      "sha256": "064297c6de4f58291e4e4b3d63d62cef9c6180c76aa076baff711276416126d5"
+    },
+    {
+      "id": "psax_tv",
+      "tableRow": "2.10a",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: parasternal short-axis at the great-vessel level, focused on the tricuspid valve. Show a transverse cutaway at the heart base, with the right atrium, tricuspid leaflets and crescent right ventricular inlet prominent; the circular aortic root remains small contextual anatomy. External probe contacts the chest immediately to the patient's LEFT of the sternum in the third or fourth intercostal space, not on the far lateral chest. Amber sector passes transversely through the basal right-sided valve. Distinct composition centered on the right-sided inlet.",
+      "promptSha256": "ee7a8a465417d8888d6ee3aa31193ef7f33421b4601474c20d61632c8da2af4c",
+      "master": "docs/tte-atlas-v1/art-masters/psax_tv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "a0324a40618c33c5b98a482fb027543c34c8a342dc6b86128cb9bd7c002c758c",
+      "asset": "public/assets/tte-atlas/art-v1/psax_tv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 79018,
+      "sha256": "0cfb0957b4a509c4fa06fca317fc9a97cac0850ecf7798522a9d13cefc7336f9"
+    },
+    {
+      "id": "psax_pv",
+      "tableRow": "2.10b",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: parasternal short-axis pulmonary-valve and pulmonary-artery focus. Show the heart base cut transversely with curved right ventricular outflow tract sweeping toward pulmonary valve cusps, main pulmonary artery and the beginning of its bifurcation. Small aortic root provides anatomical context. External probe contacts the chest immediately to the patient's LEFT of the sternum in the upper intercostal space, not on the far lateral chest. Amber sector tilts superiorly through the pulmonary valve and main pulmonary artery. Compose an elegant distinct outflow-focused icon.",
+      "promptSha256": "99b6840f5793b0b1bec8462a41e49bd016a71018025a566e88f88c10260a1e6b",
+      "master": "docs/tte-atlas-v1/art-masters/psax_pv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "a1766b671dba96e0967b620e49cf80280ca98321c3e1f5e388ca34ae81587704",
+      "asset": "public/assets/tte-atlas/art-v1/psax_pv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 74476,
+      "sha256": "35fbbbc0c19157d2093a3f6fe115f6b956ca5a23c8195493d70d7d37f4a0ce9e"
+    },
+    {
+      "id": "psax_mitral",
+      "tableRow": "2.11",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: parasternal short-axis at mitral-valve level. Show a transverse cutaway through the left ventricle at the mitral valve, with the two mitral leaflets forming a clear central fish-mouth opening and a crescent right ventricle around the septal side. External probe contacts the chest immediately to the patient's LEFT of the sternum in the third or fourth intercostal space, not on the far lateral chest. Amber plane cuts across the mitral leaflets, perpendicular to the heart long axis. Sculptural, accurate-looking conceptual valve level composition.",
+      "promptSha256": "734a6d8195036ba96a762ac157d662c5aa9877a5d0df694912d64a0a01f6f779",
+      "master": "docs/tte-atlas-v1/art-masters/psax_mitral.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "c2e2f06b6a6014d3e70f335311aaca5530e5f2cbe158a670f557e2b1f53e2c79",
+      "asset": "public/assets/tte-atlas/art-v1/psax_mitral.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71024,
+      "sha256": "0db09a4fea65228e9dd59492f56ff3391e3b2212c6ccac9c5851a6018a5c5f57"
+    },
+    {
+      "id": "psax_papillary",
+      "tableRow": "2.12",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: parasternal short-axis at papillary-muscle level. Show a round transverse left-ventricular midcavity cutaway with thick rose myocardium, warm ivory inner wall and TWO discrete papillary muscle heads in the cavity. Crescent right ventricle hugs one side. External probe contacts the chest immediately to the patient's LEFT of the sternum in the third or fourth intercostal space, not on the far lateral chest. Amber plane crosses the midventricle perpendicular to the long axis. This icon must be visually distinct from a valve-level view.",
+      "promptSha256": "80782e88ea4dd498cb518da0c83f4fa06efdb5419f348cd190856325c27ee045",
+      "master": "docs/tte-atlas-v1/art-masters/psax_papillary.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "de83ec098d97052fc483db974b0e801fa20399d1411bad751ecfaeeab2c8dd76",
+      "asset": "public/assets/tte-atlas/art-v1/psax_papillary.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 63428,
+      "sha256": "8a43e505030bf9a9e6af6a9731398ca41eb2cfe5120e29b66242ab3d4b19e7dd"
+    },
+    {
+      "id": "psax_apical",
+      "tableRow": "2.13",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: parasternal short-axis at left-ventricular apical level. Show a compact rounded transverse slice near the heart's tapering tip with a SMALL central left-ventricular cavity and thick muscular walls; no valve and no papillary muscles in the section. The rest of the heart recedes above as subtle context. External probe contacts the chest immediately to the patient's LEFT of the sternum, not far lateral. A downward-tilted amber plane intersects the apical third. Elegant small-cavity apical cross-section composition.",
+      "promptSha256": "8a2ae6d9ac2930c988798f127f2f92bd85a87de62e3b9c5bbeb0ec1e41b46275",
+      "master": "docs/tte-atlas-v1/art-masters/psax_apical.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "30d05ba75960d387b0e525eec1e6f676d447af76619299a6dfb7ac0dfc9101c1",
+      "asset": "public/assets/tte-atlas/art-v1/psax_apical.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 52800,
+      "sha256": "ca35cb131704d80fc2215842656188397e852d8e6ce9a27a78e6c8d5577454b4"
+    },
+    {
+      "id": "a4c",
+      "tableRow": "2.14",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: apical four-chamber overview. Show a graceful long-axis cutaway with both ventricles and both atria, septum, mitral valve and tricuspid valve visible together. The external transducer contacts the patient's LEFT lower lateral chest at the cardiac apex, approximately fifth intercostal space near the midclavicular line. Its tip is near the heart apex and amber sector opens upward through the four chambers toward the base. Subtle chest and rib context. Clear balanced four-chamber composition; no aortic outflow tract in this plane.",
+      "promptSha256": "62f9e66601a499993bda245c846a9612b537aee71e52e55f20d09b4898fa10f6",
+      "master": "docs/tte-atlas-v1/art-masters/a4c.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "2f759bccd7aee0440a8d3a5d07c9026a08e2b0ed1c39bded595ca681d395f805",
+      "asset": "public/assets/tte-atlas/art-v1/a4c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 72904,
+      "sha256": "62e678cc516808f4927e73ef79d397055818eb9eb2f75e8790e40439ea3844ae"
+    },
+    {
+      "id": "a4c_lv",
+      "tableRow": "2.15",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: apical four-chamber, zoomed left-ventricle focus. Compose a closer sculptural long-axis cutaway of the elongated LEFT ventricle from apex to mitral annulus; show its muscular walls, septum, mitral leaflets and small left atrial context. Right heart appears only as faint peripheral context. External probe contacts the patient's LEFT apical chest at the fifth intercostal space near the midclavicular line, with its tip adjacent to the apex; a narrow amber sector opens upward along the entire left-ventricular long axis. Distinct enlarged left-ventricular composition.",
+      "promptSha256": "4e0f828fe6fd015dc9b05bddb5ce837dfcd57b0c80e590a10d2e8e58c0b33e9e",
+      "master": "docs/tte-atlas-v1/art-masters/a4c_lv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "4f5ad1f6588b71cbed73d6d3aa77cd33b60638bd749a9c10d7c94c3fbb37b8ab",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 62492,
+      "sha256": "0cf9ca105f2e5dca94a690f4adaf74dfff86ec0664d2e3fd3b73b4ce7e7fa023"
+    },
+    {
+      "id": "a4c_rv",
+      "tableRow": "2.16",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. View: apical four-chamber right-ventricle focused view. Compose a close long-axis cutaway emphasizing the broad triangular RIGHT ventricle, its trabeculated free wall, tricuspid valve and right atrium; left ventricle remains slimmer background context beside septum. External transducer is at the patient's LEFT apical chest near the fifth intercostal space, slightly adjusted to center the right ventricle. Amber sector opens from apex toward right atrium and tricuspid valve. Distinct right-heart focus, subtle external rib/chest context.",
+      "promptSha256": "2e0ccbf3cfa975d24f344feeb858fb47705a93ce1a5efdf15a7a62ee7a4a36e5",
+      "master": "docs/tte-atlas-v1/art-masters/a4c_rv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "fff11697122eed7991168bd410de2b6071c407c5d763448aeed4325bfe090564",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_rv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 75566,
+      "sha256": "647d50f38617bc2f853a293c84d9eee74ab343e3c0439d2e7052b3412d953c54"
+    },
+    {
+      "id": "a5c",
+      "tableRow": "2.17",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical FIVE-CHAMBER conceptual view of the adult heart. Place the small external phased-array probe at the left cardiac apex on the inferolateral chest, below and to the viewer right of the heart in a gentle anterior oblique view. Its scan plane travels from the apex upward to the cardiac base, tilted slightly anteriorly. Show a refined elongated left ventricle, right ventricle, both atria and atrioventricular valves, with particular emphasis on the continuous left ventricular outflow tract leading into the aortic valve and root. The fifth chamber means the aortic outflow region, not an extra anatomical chamber. Preserve a single normal heart and distinct warm ivory valves. The heart occupies most of the icon.",
+      "promptSha256": "c75ec1ccd16ef4b67576723713d1e77c298d9a18c79e36e6c5d90251c144b132",
+      "master": "docs/tte-atlas-v1/art-masters/a5c.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "fc1f975584d9904c6d16fae4d2670a142840eb12127be59aa9664616c005adc4",
+      "asset": "public/assets/tte-atlas/art-v1/a5c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71148,
+      "sha256": "76c6414426a6e0ef21ede513b27018d96e343155ed43e119fb0613ed6799316b"
+    },
+    {
+      "id": "a4c_cs",
+      "tableRow": "2.18",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical FOUR-CHAMBER POSTERIOR ANGULATION conceptual view, focused on the coronary sinus. Show the external phased-array probe at the inferolateral left apical chest, aiming upward toward the heart base; angle the translucent amber plane posteriorly. Use a graceful posterior oblique heart cutaway, with a small gently curving dark burgundy coronary sinus tube in the posterior atrioventricular groove between the left atrium and left ventricle, continuing toward the right atrium. The sinus is a small thin venous structure, not an arterial arch or large extra chamber. Keep both ventricles and atrial context subdued, with the posterior venous channel clearly recognizable at thumbnail size. Elegant restrained anatomy context.",
+      "promptSha256": "3e44c391041a5333c3264cc69fbd4a2181cc6b4d5472936c5fa5747e126cd2fa",
+      "master": "docs/tte-atlas-v1/art-masters/a4c_cs.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "8be37db51553b1165d93611f60bec96a85f6ae584a346b72ed141dc64f6befde",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_cs.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 62794,
+      "sha256": "5a06e82be2e3dcc1f0703bbb724c4422a309384162d0be22ae93c13955203cb2"
+    },
+    {
+      "id": "a2c",
+      "tableRow": "2.19",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical TWO-CHAMBER conceptual view. The sculptural longitudinal cutaway isolates the left atrium above and the elongated left ventricle below, linked by an ivory mitral valve with fine chordae. Show a full-length true ventricular apex and a graceful intact outer contour. The right ventricle and aortic outflow are outside this selected cutaway plane, keeping the two left-heart chambers compositionally distinct. Small external phased-array probe rests at the inferolateral left apical chest below the heart, aiming a narrow amber plane upward through apex, mitral inflow and left atrium. Subtle semi-transparent rib cage behind; generous quiet margins.",
+      "promptSha256": "b1c7d42dcbcb51a87ea6384bae773af821f492c7da178e2562f1654be0eb592a",
+      "master": "docs/tte-atlas-v1/art-masters/a2c.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "cf32a4d6a4827dafb5be4e6833251e822b811084db936157b745669da5f5c739",
+      "asset": "public/assets/tte-atlas/art-v1/a2c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 42116,
+      "sha256": "fb82a10d5041296adf3a650b59e3142db2108ff1214a59585674138edb3395e9"
+    },
+    {
+      "id": "a2c_lv",
+      "tableRow": "2.20",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical TWO-CHAMBER LEFT VENTRICLE ZOOM conceptual view. Create a visibly tighter crop than a full two-chamber overview: dominant elongated LV cavity, gently tapered true apex below, clear ivory mitral annulus and leaflets above, fine chordae against detailed rose myocardium. Only a small portion of the left atrium remains as context; avoid showing right-heart chambers or aortic outflow in the chosen cut surface. Include a small external phased-array probe at the left apical chest along the lower edge, with a restrained amber plane from the probe through the LV long axis. The LV fills most of the square without touching the border.",
+      "promptSha256": "22c25f5e59647982b4d0f16c180e1da2225ad4a49dbadee47e75ad4dce99d325",
+      "master": "docs/tte-atlas-v1/art-masters/a2c_lv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "8c9c0027ee38d7e044344e7eef62f439762ee3659ad91adf1499e9d725808a79",
+      "asset": "public/assets/tte-atlas/art-v1/a2c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 58478,
+      "sha256": "64a9da670c2fea014f3c78b15584208128e754252f4b4e974f5054f09c9e6d0f"
+    },
+    {
+      "id": "a3c",
+      "tableRow": "2.21",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical LONG-AXIS THREE-CHAMBER conceptual view. Show a graceful full longitudinal LV cutaway from its tapered apex to the basal outflow. Clearly relate the left atrium, ivory mitral valve, elongated LV cavity, LV outflow tract, ivory aortic valve and short ascending aortic root. It is one ventricle with adjacent inflow and outflow channels, not three ventricular chambers. The small external phased-array probe sits at the inferolateral left apical chest, directing an amber plane from the apex along the left-heart long axis. Subtle translucent chest and rib silhouette stays secondary. Warm sculptural anatomy, balanced full-heart composition.",
+      "promptSha256": "57170aed592c793692607eb80e61eaa06cd1dcaf2493a40afce95adaf1a0ef6f",
+      "master": "docs/tte-atlas-v1/art-masters/a3c.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "012c42815c8c6a9dea1d531aa2d01e3c0929fa537a9d30931ed58ae5834f1fe2",
+      "asset": "public/assets/tte-atlas/art-v1/a3c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 60264,
+      "sha256": "7020ed053f51cbfa3f039106f33c9623ae6ddbe8ac8d40bdc1f870974b5b1f58"
+    },
+    {
+      "id": "a3c_lv",
+      "tableRow": "2.22",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical LONG-AXIS THREE-CHAMBER LEFT VENTRICLE ZOOM conceptual view. A distinctly magnified long-axis LV cutaway dominates, with the true apex below, mitral leaflet apparatus and annulus near the upper left of the cavity, and the continuous LV outflow/aortic valve at the upper right; only small atrial and aortic-root context remains. Fine ivory chordae, softly textured salmon myocardium, clear ventricular wall thickness. Small external phased-array probe at the inferolateral left apical chest directs a translucent amber plane lengthwise through the LV. Closer focused composition than the full three-chamber view, generous edge margins.",
+      "promptSha256": "adc6b28aad0ab934360c589f8a62cf8c999f5b55d12ca989dd23ea79f983249c",
+      "master": "docs/tte-atlas-v1/art-masters/a3c_lv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "680024160546940fc7ea35b4c17e78e3288f49c207193176bc9643ad58db4427",
+      "asset": "public/assets/tte-atlas/art-v1/a3c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 55858,
+      "sha256": "c5c7e21eaaa92b3acb7d6850185be5d698807e9995dea03fa7f4bb4d46f0c784"
+    },
+    {
+      "id": "a4c_la_pv",
+      "tableRow": "2.23",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. Apical FOUR-CHAMBER LEFT ATRIAL AND PULMONARY VEIN FOCUS conceptual view. Compose an elegant atrial-centered heart cutaway: the left atrium occupies the upper center with several short gently curved pulmonary venous entrances entering its posterior aspect, their small rounded openings readable but not enlarged into extra chambers. Ivory mitral valve lies beneath it; small portions of LV and right-heart chambers provide four-chamber context. A tiny external phased-array probe remains at the inferolateral left apical chest, and a slim amber plane rises toward the atrial base. Emphasize the left atrium and pulmonary venous inflow region using illumination and depth, without arrows or labels. Subtle translucent ribs behind.",
+      "promptSha256": "9212a51971b7874e6706bdb3be3b3d1d2ddd0f2ea58c31975a9abf62f9ac1b91",
+      "master": "docs/tte-atlas-v1/art-masters/a4c_la_pv.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "a5e86544793f0114e97e6be2ed15aa5b67f34a560bc097df31b55e4f598b328a",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_la_pv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 55512,
+      "sha256": "99aa07a2383d895ef8100c53482b27aae63ad95e676d11066f9193b65da2397d"
+    },
+    {
+      "id": "subcostal",
+      "tableRow": "2.24",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Edit this single conceptual medical navigation illustration. Preserve the dark teal background, translucent blue-grey thorax and ribs, lower liver dome, external subxiphoid phased-array probe, amber plane from the abdominal probe upward through the heart, lighting, tactile rose myocardium, ivory valves, square composition and absence of text. Change ONLY the heart cutaway to correct its gross anatomical orientation: the two ATRIA must be the smaller superior chambers at the TOP near the great vessels; the two VENTRICLES must be below them, with ivory atrioventricular valves between atria and ventricles and chordae extending DOWNWARD into the lower ventricles. The thick-walled left ventricle forms a tapered inferior apex at the LOWER RIGHT of the heart, just above the diaphragm and liver. The right ventricle is the thinner anterior chamber. Do not put atria at the bottom or point the ventricular apex upward. Show a plausible upright four-chamber adult heart within the body, approached by the existing inferior subcostal scan plane. Keep the probe OUTSIDE the upper abdomen, below the xiphoid. This is conceptual navigation art, not a measured diagnostic diagram; no text, labels, numbers, arrows, ECG, watermark or ultrasound display. One high-quality icon only.",
+      "promptSha256": "23e4f438753711831b910a440e8f9ad0148f2ec4b45c6813e541c21aef72503d",
+      "master": "docs/tte-atlas-v1/art-masters/subcostal.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "b1ddd141db3f3578ca4fa6f74f09d7ffd61e5db80c58123c4cec45fae037a468",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 60132,
+      "sha256": "49bb380cded9eaf6e1517fd50de031e97442fd6b7b39b84ca03ba395ca772df5",
+      "revision": {
+        "reason": "Correct the initial artwork's inverted atrial/ventricular arrangement while preserving subcostal probe and style.",
+        "referenceImage": "docs/tte-atlas-v1/art-revisions/subcostal-initial.webp",
+        "initialMaster": "docs/tte-atlas-v1/art-revisions/subcostal-initial.png",
+        "initialPrompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. SUBCOSTAL FOUR-CHAMBER conceptual view of an adult heart. Show a calm translucent blue-grey lower thorax and a small restrained dark warm-brown upper liver dome below the heart. The external phased-array probe is clearly below the xiphoid, outside the upper abdomen, angled superiorly through the liver window toward the left shoulder and heart. A translucent amber plane connects probe to a balanced four-chamber heart cutaway with two atria, two ventricles, both atrioventricular valves and the atrial and ventricular septa. Compose the view from slightly below the heart so the inferior acoustic approach is unmistakably different from the apical icons. No probe inside the chest or liver.",
+        "initialMasterSha256": "fd8221d7904d35756b7ae576c70afdcd4f0d8245d2f6aa2a17e9b9f2cf5acf27"
+      }
+    },
+    {
+      "id": "subcostal_ivc",
+      "tableRow": "2.25",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. SUBCOSTAL INFERIOR VENA CAVA LONG-AXIS conceptual view. Keep a warm rose right atrium and a modest partial heart above, with a broad smooth dark burgundy inferior vena cava ascending vertically through a subtle translucent brown liver to its right atrial junction. The continuous IVC-to-right-atrium path is the central visual subject; no arterial arch. An external phased-array probe rests below the xiphoid on the upper abdominal surface and sends a restrained amber longitudinal plane superiorly through the liver and IVC. Very subtle ribs and diaphragm contextualize the inferior abdominal window. The liver and venous path should remain clearly distinguished from cardiac muscle. Balanced close composition, no labels.",
+      "promptSha256": "fdf90fe69bc6b3dc393b982539258108141dea3f8bf20c1d4bef876b398ea7fa",
+      "master": "docs/tte-atlas-v1/art-masters/subcostal_ivc.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "9d31d6b6c921b6cf6a54c2663352847ef18e83a1c41311c1c1e68070aa7d716c",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal_ivc.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 56720,
+      "sha256": "a7ad661eb98e23993929b58d32686516659f3d3d4790687ac0c404deb902d2f9"
+    },
+    {
+      "id": "subcostal_hepatic",
+      "tableRow": "2.26",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. SUBCOSTAL HEPATIC VEINS conceptual view. The main subject is a restrained translucent warm-brown liver cutaway containing three smooth dark burgundy hepatic venous branches converging into a larger inferior vena cava, which continues superiorly toward a small rose right atrium and partial heart in the upper background. These are branching venous channels in the liver, not coronary arteries or branching heart chambers. Place a small external phased-array probe below the xiphoid on the upper abdominal surface, directed through the liver toward the venous convergence; a delicate amber longitudinal scan plane crosses that convergence. Subtle lower ribs and diaphragm, beautiful rounded anatomical silhouettes, quiet deep teal background.",
+      "promptSha256": "04217d14d65dbcd0cb9904eafdef2aaef348d59c151d2805338090fcd6dcad63",
+      "master": "docs/tte-atlas-v1/art-masters/subcostal_hepatic.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "ee7dfd7567ca9ef776afd253881adc2e3d79abeec20cbed6f11af41cb40e98d6",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal_hepatic.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 50980,
+      "sha256": "0258267f3fc8223b95eeefe615c6d51bc4d436c160a6f63e96125adccd62874f"
+    },
+    {
+      "id": "ssn_arch",
+      "tableRow": "2.27",
+      "tool": "image_gen.imagegen",
+      "role": "Conceptual decorative TTE navigation illustration; clinical orientation is supplied separately.",
+      "prompt": "Create a single exquisitely polished square medical illustration icon for a transthoracic echocardiography atlas. This is conceptual navigation artwork, not a clinical diagnostic image. Realistic sculptural rose and salmon heart tissue with warm ivory endocardial lining, a very subtle translucent blue-grey chest and ribs for context, rich midnight charcoal and deep teal background, refined studio illumination and tactile material detail, beautifully legible silhouette at small size, generous margins. An external ultrasound probe is clearly outside the body and a restrained translucent amber scan plane extends from its tip through the anatomy. No text, labels, numbers, arrows, watermark, ECG, ultrasound screen or fabricated ultrasound frame. Single icon only, no grid or contact sheet. SUPRASTERNAL NOTCH AORTIC ARCH conceptual view. The sculptural warm red aortic arch is the central subject: continuous ascending aorta, graceful transverse arch and proximal descending aorta, with three short distinct arch branches directed superiorly. A small portion of the heart sits below for orientation. Include a very subtle translucent upper thorax, clavicles and neck silhouette. The external phased-array probe rests at the suprasternal notch directly above the sternum between the clavicles, clearly outside the body, aimed inferiorly and posteriorly toward the arch. A restrained amber plane runs longitudinally along the arch. The probe location at the TOP of the chest is unmistakable, distinct from all apical and abdominal views. No text or labels.",
+      "promptSha256": "7b3f2dc2024b33041ca5ec0e07a0b055624c67ace882d0ede387485558475fb5",
+      "master": "docs/tte-atlas-v1/art-masters/ssn_arch.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSha256": "910abd9fbdfd7bdb0dd66f704ccd2c2380c2555991db3a2bf0424714b18718b3",
+      "asset": "public/assets/tte-atlas/art-v1/ssn_arch.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 65832,
+      "sha256": "690bc8152fe381d1c708c83a72c7eb772e6fdbe239f8237520c3eeaca56d2600"
+    }
+  ]
+}

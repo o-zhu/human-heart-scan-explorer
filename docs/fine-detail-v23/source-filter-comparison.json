@@ -1,0 +1,430 @@
+{
+  "schema": "fine-detail-v23-source-filter-comparison",
+  "radiusFineSamples": 80,
+  "sourceThresholdEncoded": 71.4,
+  "originalThresholdNormalized": 0.28,
+  "sourceDataModified": false,
+  "scope": "Three selected local regions; not anatomy-balanced. Before whole-organ mesh simplification.",
+  "thinSupportDefinition": "Original foreground whose EDT and all foreground within a 5\u00b3 local neighborhood have EDT <= 1.01 fine voxels. This geometric thin-support proxy is not an anatomical annotation.",
+  "regions": [
+    {
+      "id": "lv-inflow",
+      "centerFineXYZ": [
+        1160,
+        1092,
+        1152
+      ],
+      "originFineXYZ": [
+        1080,
+        1012,
+        1072
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "9889f268ff6889cb946fb625d196e9f37ee0c5544aa4c65a243407f870d16e41",
+      "originalForegroundSamples": 2294413,
+      "thinSupportSamples": 27300,
+      "candidates": [
+        {
+          "sigmaVoxels": 0.0,
+          "sigmaMicrometres": 0.0,
+          "triangles": 2598257,
+          "foregroundSamples": 2294413,
+          "removedOriginalForegroundSamples": 0,
+          "addedForegroundSamples": 0,
+          "foregroundComponents26": 5498,
+          "retainedThinSupportSamples": 27300,
+          "thinSupportRetainedFraction": 1.0,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 5.657540375736666e-16,
+            "rmsMm": 1.1153238838436246e-15,
+            "medianMm": 0.0,
+            "p95Mm": 2.5121479338940403e-15,
+            "p99Mm": 3.972054645195637e-15,
+            "maximumSampledMm": 5.329070518200751e-15
+          },
+          "render": {
+            "path": "filter-lv-inflow-sigma-0.png",
+            "sha256": "28e6a7f56d11299e5312629e987d169ea1d49f4b8fd9673b605c756433fe1314",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.35,
+          "sigmaMicrometres": 27.79,
+          "triangles": 2436593,
+          "foregroundSamples": 2307120,
+          "removedOriginalForegroundSamples": 6191,
+          "addedForegroundSamples": 18898,
+          "foregroundComponents26": 4388,
+          "retainedThinSupportSamples": 24485,
+          "thinSupportRetainedFraction": 0.8968864468864469,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.0025080276792115606,
+            "rmsMm": 0.007215178098841128,
+            "medianMm": 0.0011911886912875681,
+            "p95Mm": 0.006835420265807,
+            "p99Mm": 0.034184419246025624,
+            "maximumSampledMm": 0.169908546641592
+          },
+          "render": {
+            "path": "filter-lv-inflow-sigma-0.35.png",
+            "sha256": "416f1cbfc62f4dea3264b19703b3ac58504fa7ed0d28779d68aacf7cc793ea34",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.5,
+          "sigmaMicrometres": 39.7,
+          "triangles": 1771411,
+          "foregroundSamples": 2369049,
+          "removedOriginalForegroundSamples": 36211,
+          "addedForegroundSamples": 110847,
+          "foregroundComponents26": 1126,
+          "retainedThinSupportSamples": 13618,
+          "thinSupportRetainedFraction": 0.4988278388278388,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.027009139987000143,
+            "rmsMm": 0.05696978519432634,
+            "medianMm": 0.010975424615424424,
+            "p95Mm": 0.11243367894278478,
+            "p99Mm": 0.25609578689878615,
+            "maximumSampledMm": 0.7181951879211474
+          },
+          "render": {
+            "path": "filter-lv-inflow-sigma-0.5.png",
+            "sha256": "1e813518f8035c20010ba7d43a3610a12833354fcfea9d752e8f61fc19e50e1d",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.8,
+          "sigmaMicrometres": 63.52000000000001,
+          "triangles": 1191223,
+          "foregroundSamples": 2476799,
+          "removedOriginalForegroundSamples": 65904,
+          "addedForegroundSamples": 248290,
+          "foregroundComponents26": 179,
+          "retainedThinSupportSamples": 5399,
+          "thinSupportRetainedFraction": 0.19776556776556778,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.09705398089527546,
+            "rmsMm": 0.1732816894987107,
+            "medianMm": 0.043781973757062706,
+            "p95Mm": 0.3685805974219533,
+            "p99Mm": 0.7270708587652749,
+            "maximumSampledMm": 1.5883825017287694
+          },
+          "render": {
+            "path": "filter-lv-inflow-sigma-0.8.png",
+            "sha256": "4674360628a006c3d8affcedf2b61e178d868c7548d311331b863ced3497b9a8",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "rv-inflow",
+      "centerFineXYZ": [
+        928,
+        744,
+        1192
+      ],
+      "originFineXYZ": [
+        848,
+        664,
+        1112
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "8a7c865dff36373dd191146faed35f40bb19ab7fce8744a5f34cfc0de2094806",
+      "originalForegroundSamples": 427209,
+      "thinSupportSamples": 8418,
+      "candidates": [
+        {
+          "sigmaVoxels": 0.0,
+          "sigmaMicrometres": 0.0,
+          "triangles": 666430,
+          "foregroundSamples": 427209,
+          "removedOriginalForegroundSamples": 0,
+          "addedForegroundSamples": 0,
+          "foregroundComponents26": 1019,
+          "retainedThinSupportSamples": 8418,
+          "thinSupportRetainedFraction": 1.0,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 4.707162111216762e-16,
+            "rmsMm": 8.981523553414237e-16,
+            "medianMm": 0.0,
+            "p95Mm": 1.9860273225978185e-15,
+            "p99Mm": 3.580361673049448e-15,
+            "maximumSampledMm": 5.329070518200751e-15
+          },
+          "render": {
+            "path": "filter-rv-inflow-sigma-0.png",
+            "sha256": "3b493cd53d5e4d05ca972213bb21bf13f50361f73fb52350a04f46f3ad33d80b",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.35,
+          "sigmaMicrometres": 27.79,
+          "triangles": 630692,
+          "foregroundSamples": 430090,
+          "removedOriginalForegroundSamples": 1292,
+          "addedForegroundSamples": 4173,
+          "foregroundComponents26": 886,
+          "retainedThinSupportSamples": 7746,
+          "thinSupportRetainedFraction": 0.9201710620099787,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.0022294535652865027,
+            "rmsMm": 0.008630860143123382,
+            "medianMm": 0.0009136982944745356,
+            "p95Mm": 0.0061133628274741385,
+            "p99Mm": 0.029679009542401043,
+            "maximumSampledMm": 0.5665294509838802
+          },
+          "render": {
+            "path": "filter-rv-inflow-sigma-0.35.png",
+            "sha256": "1dccbfb447aede395fef227caade67c32a42186de21d80fd8bf08ab5b42507e1",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.5,
+          "sigmaMicrometres": 39.7,
+          "triangles": 476020,
+          "foregroundSamples": 442496,
+          "removedOriginalForegroundSamples": 8538,
+          "addedForegroundSamples": 23825,
+          "foregroundComponents26": 346,
+          "retainedThinSupportSamples": 4366,
+          "thinSupportRetainedFraction": 0.5186505108101687,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.02424375357475421,
+            "rmsMm": 0.05369541542238953,
+            "medianMm": 0.007889112429436653,
+            "p95Mm": 0.11343262042844385,
+            "p99Mm": 0.21680971368651733,
+            "maximumSampledMm": 1.0289215221218329
+          },
+          "render": {
+            "path": "filter-rv-inflow-sigma-0.5.png",
+            "sha256": "18aaceef9521aa87ddfbc90d149bf13176fa0abf6386c71af5019aff0e26a2aa",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.8,
+          "sigmaMicrometres": 63.52000000000001,
+          "triangles": 349908,
+          "foregroundSamples": 461786,
+          "removedOriginalForegroundSamples": 16100,
+          "addedForegroundSamples": 50677,
+          "foregroundComponents26": 104,
+          "retainedThinSupportSamples": 1173,
+          "thinSupportRetainedFraction": 0.13934426229508196,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.08250367758134315,
+            "rmsMm": 0.14357402529060787,
+            "medianMm": 0.02890353214304659,
+            "p95Mm": 0.3095131568286239,
+            "p99Mm": 0.4948827287912735,
+            "maximumSampledMm": 1.7421976556280052
+          },
+          "render": {
+            "path": "filter-rv-inflow-sigma-0.8.png",
+            "sha256": "5835e9c88ba82a49c88af58a4d94603d03bf9295d4973b3bbff3f4575382c957",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "outer-wall",
+      "centerFineXYZ": [
+        1392,
+        1032,
+        1376
+      ],
+      "originFineXYZ": [
+        1312,
+        952,
+        1296
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "dce011d736638ed15ecb91392247dd943b66114d4521b33518840a4cc4d5cadc",
+      "originalForegroundSamples": 3305886,
+      "thinSupportSamples": 7859,
+      "candidates": [
+        {
+          "sigmaVoxels": 0.0,
+          "sigmaMicrometres": 0.0,
+          "triangles": 2177208,
+          "foregroundSamples": 3305886,
+          "removedOriginalForegroundSamples": 0,
+          "addedForegroundSamples": 0,
+          "foregroundComponents26": 1297,
+          "retainedThinSupportSamples": 7859,
+          "thinSupportRetainedFraction": 1.0,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 1.1676876963400071e-15,
+            "rmsMm": 2.1635435882181823e-15,
+            "medianMm": 0.0,
+            "p95Mm": 3.972054645195637e-15,
+            "p99Mm": 7.944109290391274e-15,
+            "maximumSampledMm": 1.020439314654103e-14
+          },
+          "render": {
+            "path": "filter-outer-wall-sigma-0.png",
+            "sha256": "e719642db63fc78144f1b6288d02ff3fedb0955d1142f1f98d7c610fb8a4c2b5",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.35,
+          "sigmaMicrometres": 27.79,
+          "triangles": 1937898,
+          "foregroundSamples": 3335040,
+          "removedOriginalForegroundSamples": 1945,
+          "addedForegroundSamples": 31099,
+          "foregroundComponents26": 1133,
+          "retainedThinSupportSamples": 6669,
+          "thinSupportRetainedFraction": 0.848581244433134,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.004772870852635933,
+            "rmsMm": 0.01188681070980233,
+            "medianMm": 0.0022169722252368025,
+            "p95Mm": 0.01763981300453529,
+            "p99Mm": 0.053757859404490245,
+            "maximumSampledMm": 0.2822900338213287
+          },
+          "render": {
+            "path": "filter-outer-wall-sigma-0.35.png",
+            "sha256": "9b157f1dc76f3dbd5037c2af83092398ef6725d6a8dd39701db6a6d7476dff53",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.5,
+          "sigmaMicrometres": 39.7,
+          "triangles": 850258,
+          "foregroundSamples": 3474402,
+          "removedOriginalForegroundSamples": 9349,
+          "addedForegroundSamples": 177865,
+          "foregroundComponents26": 500,
+          "retainedThinSupportSamples": 2402,
+          "thinSupportRetainedFraction": 0.305636849471943,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.08766378596160007,
+            "rmsMm": 0.14418377749678568,
+            "medianMm": 0.03933548397589452,
+            "p95Mm": 0.33004998726629853,
+            "p99Mm": 0.5327354474538613,
+            "maximumSampledMm": 1.1231995112554656
+          },
+          "render": {
+            "path": "filter-outer-wall-sigma-0.5.png",
+            "sha256": "2e793fb11a745358b4c34b49edbd882341e8d37ec67c6e4d6228afb1e3d6339b",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        },
+        {
+          "sigmaVoxels": 0.8,
+          "sigmaMicrometres": 63.52000000000001,
+          "triangles": 155394,
+          "foregroundSamples": 3575320,
+          "removedOriginalForegroundSamples": 12099,
+          "addedForegroundSamples": 281533,
+          "foregroundComponents26": 53,
+          "retainedThinSupportSamples": 315,
+          "thinSupportRetainedFraction": 0.04008143529711159,
+          "rawSurfaceToFiltered": {
+            "samples": 12000,
+            "meanMm": 0.6657005009954514,
+            "rmsMm": 0.8328462376980772,
+            "medianMm": 0.600554896546239,
+            "p95Mm": 1.5717615689408226,
+            "p99Mm": 2.0704638733303646,
+            "maximumSampledMm": 3.3201946142316046
+          },
+          "render": {
+            "path": "filter-outer-wall-sigma-0.8.png",
+            "sha256": "c3e059210a83f80414dc403b229e2f3a3a51d3b015274c56e8f3aa03b15421db",
+            "camera": "Fixed SurfaceRenderer camera; same center/span and open source-Z cut within row.",
+            "clipZNormalized": 0.15,
+            "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+            "notBrowserScreenshot": true
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 130,
+    "decodedBrickReads": 130,
+    "cacheMaximumBricks": 48,
+    "cacheMaximumBytes": 13182000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "seconds": 28.74363713800267,
+  "peakRssMiB": 1444.25
+}

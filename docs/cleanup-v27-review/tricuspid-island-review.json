@@ -1,0 +1,659 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 60,
+    "decodedBrickReads": 60,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "sourceBoundsXYZ": [
+    [
+      788,
+      807,
+      1053
+    ],
+    [
+      960,
+      978,
+      1299
+    ]
+  ],
+  "sourceRawSha256": "ffbb202faed5f3f9620450b882e29087f08f40de2db1cb2a629bb6e94e8919d9",
+  "sampledForegroundThreshold": 71.4,
+  "denseRule": "raw>=190 OR Gaussian(sigma0.5)>=135 OR Gaussian(sigma0.8)>=135; truncate3",
+  "sourceArrayAxes": "ZYX",
+  "coordinates": "Full original fine-grid XYZ sample indices; 79.4 \u00b5m spacing",
+  "selectionFileSha256": "3ee7198c1a078ce1a24e96dff7384323b0a8daee1978bec90ed685438946cbb1",
+  "locationMapSha256": "da7236db02dc2d2afdee017b3178c9996f752271646bfe943595aeb6331e7179",
+  "reviewedOperationSha256": "cb94ac2a0b86200e11b5cca70bbaa13e5fb3b035a297b2568466eb9aec218621",
+  "fullOperationVsSavedSlabSelectionDifferingSamples": 0,
+  "productionSelectionChanged": false,
+  "sourceValuesChanged": false,
+  "records": [
+    {
+      "id": "island-a",
+      "targetXYZ": [
+        855,
+        839,
+        1157
+      ],
+      "thresholdIslandXYZ": [
+        [
+          858,
+          839,
+          1153
+        ],
+        [
+          858,
+          840,
+          1153
+        ],
+        [
+          857,
+          841,
+          1153
+        ]
+      ],
+      "localStrongComponentId": 954,
+      "strongComponentSamples": 3,
+      "sourceValues": [
+        {
+          "xyz": [
+            858,
+            839,
+            1153
+          ],
+          "raw": 161,
+          "sigma05": 135.48666381835938,
+          "sigma08": 108.51517486572266
+        },
+        {
+          "xyz": [
+            858,
+            840,
+            1153
+          ],
+          "raw": 153,
+          "sigma05": 135.5294952392578,
+          "sigma08": 114.22418212890625
+        },
+        {
+          "xyz": [
+            857,
+            841,
+            1153
+          ],
+          "raw": 182,
+          "sigma05": 145.15025329589844,
+          "sigma08": 108.2768325805664
+        }
+      ],
+      "distanceAtTargetToAnyDenseCore": 4.898979485566356,
+      "distanceAtTargetToOtherDenseCore": 7.54983443527075,
+      "distanceAtTargetToDenseComponentAtLeast128Samples": 9.0,
+      "minimumIslandDistanceToOtherDenseCore": 5.385164807134504,
+      "minimumIslandDistanceToDenseComponentAtLeast128Samples": 10.677078252031311,
+      "foregroundConnectivity": {
+        "lowerXYZ": [
+          834,
+          816,
+          1129
+        ],
+        "upperXYZ": [
+          883,
+          865,
+          1178
+        ],
+        "seedXYZ": [
+          857,
+          841,
+          1153
+        ],
+        "levels": [
+          {
+            "sigma05Threshold": 71.4,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 19742,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 71.4,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 20817,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 80,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 14524,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 80,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 14627,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 90,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 11867,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 90,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 11961,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 100,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 8353,
+            "reachesCropFaces": [
+              "Z+",
+              "Y-",
+              "Y+",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 100,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 9134,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 110,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 97,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 110,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 5071,
+            "reachesCropFaces": [
+              "Z+",
+              "Y-",
+              "Y+",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 120,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 9,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 120,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 19,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 130,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 2,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 130,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 4,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 135,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 1,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 135,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 3,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          }
+        ]
+      },
+      "hypotheticalOmitOnlyThisThresholdIsland": {
+        "additionalSelectedFineSamples": 1095,
+        "boundsXYZ": [
+          [
+            848,
+            829,
+            1143
+          ],
+          [
+            866,
+            842,
+            1161
+          ]
+        ],
+        "additionalV26FirstSurfacePixels": 26,
+        "additionalMainComponent7Pixels": 26,
+        "additionalPixelsWithin15FineSamplesOfTarget": 26,
+        "originalRetainedPixelsWithin15FineSamplesOfTarget": 176
+      },
+      "guardChanged": false,
+      "productionSelectionChanged": false,
+      "classification": "Undetermined; inspect serial source and connectivity evidence before any selection."
+    },
+    {
+      "id": "island-b",
+      "targetXYZ": [
+        873,
+        881,
+        1231
+      ],
+      "thresholdIslandXYZ": [
+        [
+          871,
+          882,
+          1229
+        ],
+        [
+          872,
+          882,
+          1230
+        ],
+        [
+          872,
+          883,
+          1230
+        ],
+        [
+          873,
+          883,
+          1230
+        ],
+        [
+          873,
+          883,
+          1231
+        ],
+        [
+          874,
+          883,
+          1231
+        ]
+      ],
+      "localStrongComponentId": 1324,
+      "strongComponentSamples": 6,
+      "sourceValues": [
+        {
+          "xyz": [
+            871,
+            882,
+            1229
+          ],
+          "raw": 166,
+          "sigma05": 136.10244750976562,
+          "sigma08": 108.9192886352539
+        },
+        {
+          "xyz": [
+            872,
+            882,
+            1230
+          ],
+          "raw": 162,
+          "sigma05": 138.7100067138672,
+          "sigma08": 114.7834701538086
+        },
+        {
+          "xyz": [
+            872,
+            883,
+            1230
+          ],
+          "raw": 159,
+          "sigma05": 140.08082580566406,
+          "sigma08": 115.57217407226562
+        },
+        {
+          "xyz": [
+            873,
+            883,
+            1230
+          ],
+          "raw": 153,
+          "sigma05": 140.11732482910156,
+          "sigma08": 118.87350463867188
+        },
+        {
+          "xyz": [
+            873,
+            883,
+            1231
+          ],
+          "raw": 186,
+          "sigma05": 156.67691040039062,
+          "sigma08": 121.00547790527344
+        },
+        {
+          "xyz": [
+            874,
+            883,
+            1231
+          ],
+          "raw": 184,
+          "sigma05": 146.88470458984375,
+          "sigma08": 109.34428405761719
+        }
+      ],
+      "distanceAtTargetToAnyDenseCore": 1.7320508075688772,
+      "distanceAtTargetToOtherDenseCore": 4.0,
+      "distanceAtTargetToDenseComponentAtLeast128Samples": 6.708203932499369,
+      "minimumIslandDistanceToOtherDenseCore": 2.449489742783178,
+      "minimumIslandDistanceToDenseComponentAtLeast128Samples": 4.123105625617661,
+      "foregroundConnectivity": {
+        "lowerXYZ": [
+          848,
+          859,
+          1206
+        ],
+        "upperXYZ": [
+          897,
+          908,
+          1255
+        ],
+        "seedXYZ": [
+          873,
+          883,
+          1231
+        ],
+        "levels": [
+          {
+            "sigma05Threshold": 71.4,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 23803,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 71.4,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 24871,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "Y+",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 80,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 17531,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 80,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 17833,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 90,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 12537,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 90,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 13001,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-",
+              "X+"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 100,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 11517,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 100,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 11586,
+            "reachesCropFaces": [
+              "Z-",
+              "Z+",
+              "Y-",
+              "X-"
+            ],
+            "intersectsStrongComponentAtLeast128Samples": true
+          },
+          {
+            "sigma05Threshold": 110,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 22,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 110,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 22,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 120,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 8,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 120,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 13,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 130,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 5,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 130,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 6,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 135,
+            "neighbors": 6,
+            "seedAboveThreshold": true,
+            "connectedSamples": 5,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          },
+          {
+            "sigma05Threshold": 135,
+            "neighbors": 26,
+            "seedAboveThreshold": true,
+            "connectedSamples": 6,
+            "reachesCropFaces": [],
+            "intersectsStrongComponentAtLeast128Samples": false
+          }
+        ]
+      },
+      "hypotheticalOmitOnlyThisThresholdIsland": {
+        "additionalSelectedFineSamples": 109,
+        "boundsXYZ": [
+          [
+            871,
+            874,
+            1226
+          ],
+          [
+            883,
+            894,
+            1239
+          ]
+        ],
+        "additionalV26FirstSurfacePixels": 4,
+        "additionalMainComponent7Pixels": 4,
+        "additionalPixelsWithin15FineSamplesOfTarget": 4,
+        "originalRetainedPixelsWithin15FineSamplesOfTarget": 787
+      },
+      "guardChanged": false,
+      "productionSelectionChanged": false,
+      "classification": "Undetermined; inspect serial source and connectivity evidence before any selection."
+    }
+  ],
+  "limitations": [
+    "Display-encoded source, not original quantitative acquisition intensities.",
+    "Local threshold connectivity does not identify chordae, tissue, clot or artifact.",
+    "Counterfactual removal of dense islands is diagnostic only; current guard remains unchanged.",
+    "Pixel counts use the old v26 first visible surface map and exclude newly exposed deeper surfaces."
+  ]
+}

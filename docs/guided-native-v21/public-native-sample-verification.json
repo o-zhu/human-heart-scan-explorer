@@ -1,0 +1,106 @@
+{
+  "schema": "guided-native-public-sample-verification-v21.1",
+  "verifiedAt": "2026-11-06T16:18:36.977597+00:00",
+  "allVerified": true,
+  "selection": "Five distributed source-Z positions plus the previously studied tile at block XYZ [35,30,36]; native nonempty tiles only",
+  "tiles": [
+    {
+      "coordinatesXYZ": [
+        29,
+        27,
+        1
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/29_27_1-2bb2b58b11f7b7e17e2dd8b6e7e0f725239ffa8b5b2d07c72981fd9200df0cc1.nbe.gz",
+      "status": 200,
+      "bytes": 368,
+      "sha256": "2bb2b58b11f7b7e17e2dd8b6e7e0f725239ffa8b5b2d07c72981fd9200df0cc1",
+      "decodedBytes": 268412,
+      "decodedSha256": "b30603643480ac0e6c39b0f6d870a84690fb2e3e79db57d3b70fefa74bc63df9",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/29_27_1.nbe.gz"
+    },
+    {
+      "coordinatesXYZ": [
+        32,
+        31,
+        22
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/32_31_22-9e5c4610f7746dd4793345ed058af997fb9f23e83fc205698de2ac33e07fb0ab.nbe.gz",
+      "status": 200,
+      "bytes": 341946,
+      "sha256": "9e5c4610f7746dd4793345ed058af997fb9f23e83fc205698de2ac33e07fb0ab",
+      "decodedBytes": 495882,
+      "decodedSha256": "f0c8e2a8111bd36947855634be603faba7501339de9378856df5ce80014b742a",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/32_31_22.nbe.gz"
+    },
+    {
+      "coordinatesXYZ": [
+        17,
+        12,
+        33
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/17_12_33-efcda4ec7b753ab3dc0711c11ed14ecc988286fec9bcfc933b38d71cadfc6d76.nbe.gz",
+      "status": 200,
+      "bytes": 1047,
+      "sha256": "efcda4ec7b753ab3dc0711c11ed14ecc988286fec9bcfc933b38d71cadfc6d76",
+      "decodedBytes": 268707,
+      "decodedSha256": "fae1255f99f2b31a1a90c4fca484854a190f0365c8e3cce1dfb35b9c24435a8f",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/17_12_33.nbe.gz"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        13,
+        43
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/16_13_43-9c7eac3a3c7f65937fb3ad8e39e85e341a7a4c95b239ee2c167f4336af453203.nbe.gz",
+      "status": 200,
+      "bytes": 1107,
+      "sha256": "9c7eac3a3c7f65937fb3ad8e39e85e341a7a4c95b239ee2c167f4336af453203",
+      "decodedBytes": 268790,
+      "decodedSha256": "09538437f155340194822301c5a4f0da370a950d6cc7e38dbf743bf10d20763e",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/16_13_43.nbe.gz"
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        32,
+        63
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/24_32_63-1ab5aef5cd22ab9d12e24cbe233ceddac578199b884714ff9b41ede4702e1acd.nbe.gz",
+      "status": 200,
+      "bytes": 3780,
+      "sha256": "1ab5aef5cd22ab9d12e24cbe233ceddac578199b884714ff9b41ede4702e1acd",
+      "decodedBytes": 270254,
+      "decodedSha256": "a4ba7da9dbead6f78260a5d152d7de6cc603b94a5076b26899b99ced211362b6",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/24_32_63.nbe.gz"
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        30,
+        36
+      ],
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/tiles/35_30_36-cf016dd7a3a697cdbc2984d24112df8b10985280718327689915d4c2e77d01a7.nbe.gz",
+      "status": 200,
+      "bytes": 189306,
+      "sha256": "cf016dd7a3a697cdbc2984d24112df8b10985280718327689915d4c2e77d01a7",
+      "decodedBytes": 385726,
+      "decodedSha256": "308790aa659ccf3a91698d5cf110761c65ba07ddfdc8176cd9c5e075d10cf41e",
+      "opaqueGzip": true,
+      "checksumHeaderMatches": true,
+      "localFile": "{source-cache}/guided-native-v21/whole/verification-samples/35_30_36.nbe.gz"
+    }
+  ],
+  "seconds": 3.8503177149978,
+  "scope": "Six fresh complete unauthenticated public GETs; other native objects retain historical full-GET receipts"
+}

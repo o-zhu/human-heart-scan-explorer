@@ -1,0 +1,145 @@
+[
+  {
+    "id": "lvot-y262",
+    "axis": 1,
+    "coordinate": 1044,
+    "target": [
+      1080,
+      1044,
+      1120
+    ],
+    "distance": 0.5
+  },
+  {
+    "id": "la-y316",
+    "axis": 1,
+    "coordinate": 1260,
+    "target": [
+      1270,
+      1260,
+      810
+    ],
+    "distance": 0.5
+  },
+  {
+    "id": "tricuspid-y263",
+    "axis": 1,
+    "coordinate": 1048,
+    "target": [
+      760,
+      1048,
+      1220
+    ],
+    "distance": 0.55
+  },
+  {
+    "id": "pulmonary-x194",
+    "axis": 0,
+    "coordinate": 772,
+    "target": [
+      772,
+      1280,
+      750
+    ],
+    "distance": 0.55
+  },
+  {
+    "id": "pulmonary-x313",
+    "axis": 0,
+    "coordinate": 1248,
+    "target": [
+      1100,
+      1280,
+      710
+    ],
+    "distance": 0.6
+  },
+  {
+    "id": "inlet-x313",
+    "axis": 0,
+    "coordinate": 1248,
+    "target": [
+      1248,
+      850,
+      650
+    ],
+    "distance": 0.55
+  },
+  {
+    "id": "wall-y284",
+    "axis": 1,
+    "coordinate": 1132,
+    "target": [
+      1270,
+      1132,
+      900
+    ],
+    "distance": 0.5
+  },
+  {
+    "id": "wall-y284-oblique",
+    "axis": 1,
+    "coordinate": 1132,
+    "target": [
+      1240,
+      1132,
+      950
+    ],
+    "distance": 0.52,
+    "direction": [
+      -0.3,
+      0.025,
+      -1
+    ]
+  },
+  {
+    "id": "survey-y249",
+    "axis": 1,
+    "coordinate": 992,
+    "target": [
+      948,
+      992,
+      1100
+    ],
+    "distance": 1.08
+  },
+  {
+    "id": "survey-y361",
+    "axis": 1,
+    "coordinate": 1440,
+    "target": [
+      948,
+      1440,
+      1000
+    ],
+    "distance": 1.08
+  },
+  {
+    "id": "survey-apex-y253",
+    "axis": 1,
+    "coordinate": 1008,
+    "target": [
+      880,
+      1008,
+      1640
+    ],
+    "distance": 0.56
+  },
+  {
+    "id": "survey-exterior",
+    "axis": 1,
+    "coordinate": 1132,
+    "target": [
+      948,
+      948,
+      1058
+    ],
+    "distance": 1.25,
+    "whole": true,
+    "direction": [
+      0.55,
+      0.15,
+      -1
+    ]
+  }
+]

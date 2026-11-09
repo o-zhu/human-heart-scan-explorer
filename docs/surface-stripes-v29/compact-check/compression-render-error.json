@@ -1,0 +1,12 @@
+{
+  "case": "lvot-y294",
+  "comparison": "Seam-corrected int16 vs final oct12 transport, actual production GLSL",
+  "maxChannelDifference8bit": 122,
+  "meanAbsoluteChannelDifference8bit": 0.009268628747795415,
+  "p99AbsoluteChannelDifference8bit": 0.0,
+  "fractionPixelsUnchanged": 0.9761044973544973,
+  "fractionPixelsAllChannelsWithinOne": 0.9998859126984126,
+  "geometryUnchanged": true,
+  "measuredCutFaceUnchanged": true,
+  "finalDecodedMeshSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8"
+}

@@ -1,0 +1,547 @@
+{
+  "id": "tricuspid-chordal-fringe",
+  "mask": "rv",
+  "guardMode": "all-dense",
+  "expansion": 6,
+  "guard": 10,
+  "scope": "Bounded low-contrast fringe between bright chordal source cores; retain all dense cores plus ten fine samples in 3D and preserve leaflets/myocardium.",
+  "evidence": "source-refined/tricuspid-chord-matrix.jpg; tricuspid-222 position readback",
+  "polygons": {
+    "820": [
+      [
+        847,
+        1120
+      ],
+      [
+        872,
+        1111
+      ],
+      [
+        898,
+        1110
+      ],
+      [
+        918,
+        1134
+      ],
+      [
+        920,
+        1173
+      ],
+      [
+        915,
+        1211
+      ],
+      [
+        903,
+        1243
+      ],
+      [
+        882,
+        1234
+      ],
+      [
+        861,
+        1198
+      ],
+      [
+        844,
+        1166
+      ]
+    ],
+    "836": [
+      [
+        843,
+        1095
+      ],
+      [
+        869,
+        1086
+      ],
+      [
+        900,
+        1092
+      ],
+      [
+        920,
+        1110
+      ],
+      [
+        926,
+        1140
+      ],
+      [
+        920,
+        1170
+      ],
+      [
+        932,
+        1206
+      ],
+      [
+        918,
+        1238
+      ],
+      [
+        892,
+        1250
+      ],
+      [
+        866,
+        1236
+      ],
+      [
+        839,
+        1207
+      ],
+      [
+        824,
+        1161
+      ]
+    ],
+    "852": [
+      [
+        839,
+        1093
+      ],
+      [
+        865,
+        1086
+      ],
+      [
+        892,
+        1097
+      ],
+      [
+        918,
+        1112
+      ],
+      [
+        928,
+        1140
+      ],
+      [
+        925,
+        1175
+      ],
+      [
+        935,
+        1218
+      ],
+      [
+        920,
+        1254
+      ],
+      [
+        894,
+        1266
+      ],
+      [
+        868,
+        1245
+      ],
+      [
+        837,
+        1222
+      ],
+      [
+        821,
+        1170
+      ]
+    ],
+    "868": [
+      [
+        833,
+        1086
+      ],
+      [
+        854,
+        1077
+      ],
+      [
+        881,
+        1084
+      ],
+      [
+        909,
+        1100
+      ],
+      [
+        928,
+        1127
+      ],
+      [
+        924,
+        1160
+      ],
+      [
+        932,
+        1201
+      ],
+      [
+        933,
+        1238
+      ],
+      [
+        913,
+        1269
+      ],
+      [
+        885,
+        1274
+      ],
+      [
+        862,
+        1250
+      ],
+      [
+        834,
+        1227
+      ],
+      [
+        816,
+        1186
+      ],
+      [
+        819,
+        1140
+      ]
+    ],
+    "884": [
+      [
+        829,
+        1090
+      ],
+      [
+        850,
+        1080
+      ],
+      [
+        876,
+        1084
+      ],
+      [
+        896,
+        1102
+      ],
+      [
+        903,
+        1136
+      ],
+      [
+        915,
+        1173
+      ],
+      [
+        928,
+        1206
+      ],
+      [
+        924,
+        1240
+      ],
+      [
+        905,
+        1269
+      ],
+      [
+        882,
+        1269
+      ],
+      [
+        858,
+        1240
+      ],
+      [
+        833,
+        1218
+      ],
+      [
+        812,
+        1182
+      ],
+      [
+        815,
+        1144
+      ]
+    ],
+    "900": [
+      [
+        832,
+        1094
+      ],
+      [
+        850,
+        1088
+      ],
+      [
+        875,
+        1095
+      ],
+      [
+        893,
+        1120
+      ],
+      [
+        908,
+        1148
+      ],
+      [
+        913,
+        1175
+      ],
+      [
+        908,
+        1205
+      ],
+      [
+        892,
+        1246
+      ],
+      [
+        870,
+        1248
+      ],
+      [
+        848,
+        1220
+      ],
+      [
+        830,
+        1200
+      ],
+      [
+        820,
+        1162
+      ]
+    ],
+    "916": [
+      [
+        828,
+        1094
+      ],
+      [
+        852,
+        1088
+      ],
+      [
+        875,
+        1101
+      ],
+      [
+        891,
+        1128
+      ],
+      [
+        895,
+        1157
+      ],
+      [
+        884,
+        1180
+      ],
+      [
+        862,
+        1180
+      ],
+      [
+        842,
+        1161
+      ],
+      [
+        828,
+        1135
+      ]
+    ],
+    "932": [
+      [
+        827,
+        1093
+      ],
+      [
+        848,
+        1087
+      ],
+      [
+        871,
+        1095
+      ],
+      [
+        885,
+        1118
+      ],
+      [
+        884,
+        1154
+      ],
+      [
+        872,
+        1167
+      ],
+      [
+        853,
+        1160
+      ],
+      [
+        835,
+        1142
+      ]
+    ],
+    "948": [
+      [
+        828,
+        1100
+      ],
+      [
+        846,
+        1092
+      ],
+      [
+        866,
+        1099
+      ],
+      [
+        877,
+        1123
+      ],
+      [
+        874,
+        1148
+      ],
+      [
+        858,
+        1159
+      ],
+      [
+        844,
+        1144
+      ]
+    ],
+    "964": [
+      [
+        842,
+        1113
+      ],
+      [
+        853,
+        1109
+      ],
+      [
+        865,
+        1121
+      ],
+      [
+        861,
+        1136
+      ],
+      [
+        851,
+        1139
+      ]
+    ]
+  },
+  "selectedSamples": 494274,
+  "selectedDenseSourceSamples": 0,
+  "comparableAnchoredGuardRuleOverlapSamples": 0,
+  "protectedSourceSamples": 489423,
+  "protectedOverlapSamples": 0,
+  "lowerFullFineXYZ": [
+    801,
+    820,
+    1066
+  ],
+  "upperFullFineXYZ": [
+    947,
+    965,
+    1286
+  ],
+  "meshSupportMarginFineSamples": 9,
+  "denseGuardFineSamples": 10,
+  "sourcePaddingFineSamples": 13,
+  "serialChecks": [
+    {
+      "y": 820,
+      "selectedSamples": 2755,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 174,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 836,
+      "selectedSamples": 4047,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 339,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 852,
+      "selectedSamples": 4647,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 609,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 868,
+      "selectedSamples": 4887,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 671,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 884,
+      "selectedSamples": 6237,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 801,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 900,
+      "selectedSamples": 5841,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 3024,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 916,
+      "selectedSamples": 1571,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4410,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 932,
+      "selectedSamples": 1623,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 6033,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 948,
+      "selectedSamples": 929,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 7927,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 964,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 13383,
+      "protectedOverlapSamples": 0
+    }
+  ],
+  "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of every raw190/sigma0.5/0.8>=135 dense source core.",
+  "explicitSelectedObjectException": false,
+  "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+  "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue."
+}

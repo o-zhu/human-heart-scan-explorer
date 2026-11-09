@@ -1,0 +1,42 @@
+{
+  "datasetId": "1966162746",
+  "donor": "S-20-28",
+  "atlasDisplayWindowRaw": [
+    14938,
+    22708
+  ],
+  "sourceEncodingWindowRaw": [
+    14938,
+    22708
+  ],
+  "displayWindowRaw": [
+    17100,
+    21500
+  ],
+  "displayGamma": 0.9,
+  "cleanupThresholdRaw": 17500,
+  "windowingAffectsGeometry": false,
+  "quantitativeSourceModified": false,
+  "selection": "Compared three source-specific display transfers on measured central orthogonal slices, balancing myocardium contrast, low-level boundary visibility and dense vessel edges. Source encoding is display-only uint8; original uint16 chunks and provenance remain separate.",
+  "reviewEvidence": "source-high-review.jpg and window-comparison-v11.jpg",
+  "clinicalLabelsAssigned": false,
+  "measuredCoarseTissueSummary": {
+    "definition": "Every second registered voxel on each axis, above the reviewed raw tissue threshold and present in cleaned support. Includes dense fibrous tissue; not an anatomical chamber segmentation.",
+    "samples": 1311386,
+    "sourceBelowEncodingFraction": 0.0,
+    "sourceAboveEncodingFraction": 0.0008418573936278106,
+    "displayNearWhiteFraction": 0.008538294598234235,
+    "displayMedianByte": 105.29678924984596,
+    "displayPercentilesByte": [
+      31.313539730701887,
+      37.27291642970162,
+      69.46864428654432,
+      105.29678924984596,
+      126.12156739704737,
+      156.67237045186567,
+      248.0676262708205
+    ]
+  },
+  "exactQuantization": "uint8-quantization-v11.json",
+  "encodingCorrection": "The exact nearest-even correction in uint8-quantization-v11.json has been applied to all S-20-28 display outputs. Window endpoints and raw source data are unchanged."
+}

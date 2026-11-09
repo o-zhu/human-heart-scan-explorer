@@ -1,0 +1,151 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 64,
+    "decodedBrickReads": 96,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v28",
+  "cases": [
+    {
+      "id": "lvot-upper-core",
+      "title": "Proximal valve envelope and preserved high-contrast cores",
+      "lowerXYZ": [
+        1015,
+        1100,
+        900
+      ],
+      "upperXYZ": [
+        1185,
+        1241,
+        1085
+      ],
+      "ys": [
+        1136,
+        1148,
+        1160,
+        1172,
+        1184,
+        1196,
+        1208,
+        1220
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1136,
+          "sourcePlaneSha256": "7a33f54314a17e2d25d4c482f6389d280956450bf65181155697c953bc875063",
+          "excludedInPlane": 5398
+        },
+        {
+          "fineY": 1148,
+          "sourcePlaneSha256": "bff81d8b1a2d1472970c53f2c6eb5b4304d06bd0c6303a3ea006b995b42ad00e",
+          "excludedInPlane": 3228
+        },
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "dab2724ccaca939b7d3f98384be8103e33470f13e8bf84656ac469f4c5f1136f",
+          "excludedInPlane": 2146
+        },
+        {
+          "fineY": 1172,
+          "sourcePlaneSha256": "4b00b7776a15316a007338a5622403c6416025df9edbd25e6e28f4cd5055f1d5",
+          "excludedInPlane": 1369
+        },
+        {
+          "fineY": 1184,
+          "sourcePlaneSha256": "3ddabd04aee960457c456836e19bb8fb1e026cebcfa3cdb53b132892865d8e65",
+          "excludedInPlane": 857
+        },
+        {
+          "fineY": 1196,
+          "sourcePlaneSha256": "3219b7608be6c53762016fc77dbd9c374bf0e67bb3f03fc789085f0f58e18a0c",
+          "excludedInPlane": 816
+        },
+        {
+          "fineY": 1208,
+          "sourcePlaneSha256": "dff46e012140b5c5df696ebf960e5fc48f19c7b9e60900b8b252c95062bdc0a6",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "c896f292bb80e9d191142878b624e3eedf37c0af6b363b069e22773a7fe40194",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "lvot-fringe-endpoints",
+      "title": "Proximal valve envelope terminal slices and wall attachment",
+      "lowerXYZ": [
+        1015,
+        1080,
+        900
+      ],
+      "upperXYZ": [
+        1185,
+        1261,
+        1085
+      ],
+      "ys": [
+        1108,
+        1120,
+        1128,
+        1132,
+        1228,
+        1236,
+        1244,
+        1252
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1108,
+          "sourcePlaneSha256": "ad2304e88b19549e86b3b6eb68d8d3cee025a4369071446e98204154508de6e7",
+          "excludedInPlane": 11779
+        },
+        {
+          "fineY": 1120,
+          "sourcePlaneSha256": "b252799573e84362fcf8ddf8bf729c1a765ca3ffc30b2a7226ba79b02e28eb7d",
+          "excludedInPlane": 10115
+        },
+        {
+          "fineY": 1128,
+          "sourcePlaneSha256": "4c9effb4675affe040f7dd1d451fce5ccb3491b987b7e97ffe12ada9ab14a772",
+          "excludedInPlane": 8079
+        },
+        {
+          "fineY": 1132,
+          "sourcePlaneSha256": "f2e301612c63372345fe1d170fbb20a5e88137fe9409542a433bedb8ba9df56c",
+          "excludedInPlane": 6830
+        },
+        {
+          "fineY": 1228,
+          "sourcePlaneSha256": "dcae5d335ed88ba1ecdc0e547d738a568cdf3175f7a3e1d15bc622f7539d6588",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1236,
+          "sourcePlaneSha256": "157b75af4f8b20ca4138e6ecdaab4c0a92f9855e13ddc5bde229b0ed7d304df5",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1244,
+          "sourcePlaneSha256": "e671399f10e9851cc51b6f6d181ee9b0fa57ef4f882241a0a7b4bf64f0278c71",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1252,
+          "sourcePlaneSha256": "5b77a9b2016a4dcca6e5862149846f59c268794dee425bc081f58fd8b3b0b9fd",
+          "excludedInPlane": 0
+        }
+      ]
+    }
+  ]
+}

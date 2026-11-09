@@ -1,0 +1,243 @@
+{
+  "schema": "guided-native-overview-pilot-verification-v21.1",
+  "allChecksPassed": true,
+  "buildManifest": {
+    "schema": "guided-native-overview-v21.1",
+    "fingerprint": "aa310891522cb408c338bf6db4bc55257ddd81a9fe2cb449b794ad8d4c554041",
+    "complete": true,
+    "completeInputCorePlan": true,
+    "pilot": true,
+    "donorId": "ladaf-2021-17",
+    "nativeBankModified": false,
+    "displayLodIsLossy": true,
+    "nativeSourceSpacingUm": 19.85,
+    "inputOverviewSampleSpacingUm": 79.4,
+    "inputOverviewTriangles": 167173,
+    "inputOverviewBlocks": 8,
+    "inputManifestCanonicalSha256": "d92d89ad79128bbbf6d194ab07d9fb3ca60edc041f08607f0a4afcf04f08c044",
+    "inputManifestFileSha256": "0b8b82280a69002b6207a0f3fce189bf3e0a110a0d4d582fe302ad5074c7b271",
+    "inputManifest": "input-manifest.json",
+    "rootCheckpoint": "nodes/s064_0_0_0.npz",
+    "hierarchy": {
+      "nodes": 6,
+      "leafGroups": 2,
+      "exactLatticeNativeVoxels": 0.0625,
+      "latticeKeyBitsPerAxis": 18,
+      "frozenGroupBoundariesVerified": true,
+      "checkpoints": "nodes/",
+      "finalIntermediateTriangles": 119999
+    },
+    "coordinateTransform": {
+      "nativeDimensionsXYZ": [
+        7614,
+        7614,
+        8480
+      ],
+      "nativeXYZCenter": [
+        3806.5,
+        3806.5,
+        4239.5
+      ],
+      "scaleNativeVoxels": 8479.0,
+      "worldXYZ": "((nativeX-3806.5),(nativeZ-4239.5),-(nativeY-3806.5))/8479",
+      "handedness": "right-handed rotation",
+      "positionFormat": "float32",
+      "normalFormat": "normalized signed int16 XYZ",
+      "indexFormat": "uint32",
+      "hfmVersion": 1,
+      "hfmPositionFlag": 1
+    },
+    "bounds": {
+      "min": [
+        -0.44893265715296615,
+        -0.5,
+        -0.44893265715296615
+      ],
+      "max": [
+        0.44893265715296615,
+        0.5,
+        0.44893265715296615
+      ]
+    },
+    "lods": [
+      {
+        "schema": "guided-native-overview-v21.1-lod",
+        "fingerprint": "aa310891522cb408c338bf6db4bc55257ddd81a9fe2cb449b794ad8d4c554041",
+        "id": "overview",
+        "targetTriangles": 30000,
+        "vertices": 16195,
+        "triangles": 30000,
+        "removedDegenerateFaces": 0,
+        "repairedCancellingNormals": 1535,
+        "parts": [
+          {
+            "path": "assets/overview.hfm.gz",
+            "format": "HFM1",
+            "positionFormat": "float32",
+            "positionFlag": 1,
+            "vertices": 16195,
+            "triangles": 30000,
+            "compressedBytes": 371738,
+            "decodedBytes": 651544,
+            "sha256": "92d69d8d177b789cac7ba85713123211c8b779a895485e3b11a81d429450d014",
+            "decodedSha256": "6273d6746296fdedbbdd398d93bcb7b99cb8d0fc5c7aa4aaa59732e3df8164c7",
+            "float32PositionMaximumErrorUm": 0.0008984906145683285,
+            "float32PositionRmsErrorUm": 0.0004688751761769685,
+            "collapsedTriangles": 0,
+            "flippedTriangles": 0,
+            "losslessGzipRoundTrip": true
+          }
+        ],
+        "simplification": {
+          "method": "fast_simplification",
+          "version": "0.1.13",
+          "aggressiveness": 7.0,
+          "inputTriangles": 119999,
+          "topologyPreserved": false
+        },
+        "sampledDistances": {
+          "originalOverviewToStoredDisplay": {
+            "samples": 256,
+            "meanUm": 14.600788021562316,
+            "rmsUm": 36.32286419198747,
+            "medianUm": 5.752568103353609,
+            "p95Um": 39.05786470725729,
+            "p99Um": 185.5822226625242,
+            "maximumSampledUm": 270.7926834210678
+          },
+          "storedDisplayToOriginalOverview": {
+            "samples": 512,
+            "meanUm": 7.018566047469701,
+            "rmsUm": 9.442588623222688,
+            "medianUm": 5.353375371497735,
+            "p95Um": 18.953840355413003,
+            "p99Um": 29.033549323070993,
+            "maximumSampledUm": 42.23077645213916,
+            "sourceGroupsVisited": 2,
+            "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning"
+          },
+          "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+          "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+          "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+          "hausdorffBound": false,
+          "anatomicalAccuracyClaim": false
+        },
+        "seconds": 0.7667463660036447
+      },
+      {
+        "schema": "guided-native-overview-v21.1-lod",
+        "fingerprint": "aa310891522cb408c338bf6db4bc55257ddd81a9fe2cb449b794ad8d4c554041",
+        "id": "detail",
+        "targetTriangles": 60000,
+        "vertices": 33645,
+        "triangles": 59999,
+        "removedDegenerateFaces": 0,
+        "repairedCancellingNormals": 2097,
+        "parts": [
+          {
+            "path": "assets/detail.hfm.gz",
+            "format": "HFM1",
+            "positionFormat": "float32",
+            "positionFlag": 1,
+            "vertices": 33645,
+            "triangles": 59999,
+            "compressedBytes": 707037,
+            "decodedBytes": 1325632,
+            "sha256": "f682894cbac139002f4a187bbe68d014ce2a929b4fb922f90f782219279181c9",
+            "decodedSha256": "79f238ddb9f8573504069c2582c751d166ae1ea6ce5e7f9d46bb3173a0d636ab",
+            "float32PositionMaximumErrorUm": 0.0008898080016722214,
+            "float32PositionRmsErrorUm": 0.0004671830988547935,
+            "collapsedTriangles": 0,
+            "flippedTriangles": 0,
+            "losslessGzipRoundTrip": true
+          }
+        ],
+        "simplification": {
+          "method": "fast_simplification",
+          "version": "0.1.13",
+          "aggressiveness": 7.0,
+          "inputTriangles": 119999,
+          "topologyPreserved": false
+        },
+        "sampledDistances": {
+          "originalOverviewToStoredDisplay": {
+            "samples": 256,
+            "meanUm": 4.924683909764059,
+            "rmsUm": 12.066862489389667,
+            "medianUm": 2.6473300638158586,
+            "p95Um": 14.943052735794387,
+            "p99Um": 28.50295039507748,
+            "maximumSampledUm": 148.0444603254048
+          },
+          "storedDisplayToOriginalOverview": {
+            "samples": 512,
+            "meanUm": 4.03127584800567,
+            "rmsUm": 6.3918061444564245,
+            "medianUm": 2.4487302437548086,
+            "p95Um": 13.350238956814746,
+            "p99Um": 24.925074749463263,
+            "maximumSampledUm": 37.80988454544834,
+            "sourceGroupsVisited": 2,
+            "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning"
+          },
+          "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+          "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+          "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+          "hausdorffBound": false,
+          "anatomicalAccuracyClaim": false
+        },
+        "seconds": 0.4817022789939074
+      }
+    ],
+    "peakProcessRssBytes": 153210880,
+    "elapsedSeconds": 3.255015286995331,
+    "limitations": [
+      "The display LOD samples the processed field at 79.4um and is simplified; it is not the native surface archive.",
+      "QEM simplification can remove real thin structures and alter topology.",
+      "Sampled distances are relative to the encoded overview surface, not raw CT anatomy or a Hausdorff bound."
+    ]
+  },
+  "exactBoundaryChecks": {
+    "nodes": 6,
+    "allFrozenBoundaryVerticesAndEdgesExact": true,
+    "weldedDuplicateVertices": 2964
+  },
+  "resume": {
+    "seconds": 0.14524702400376555,
+    "reusedCheckpoints": 8,
+    "checkpointAndAssetHashesUnchanged": true,
+    "nodesOrLodsRecomputed": 0
+  },
+  "browserParser": {
+    "module": "public/native-mesh-format.js",
+    "parsed": [
+      {
+        "name": "overview.hfm.gz",
+        "vertices": 16195,
+        "triangles": 30000,
+        "positionFormat": "float32"
+      },
+      {
+        "name": "detail.hfm.gz",
+        "vertices": 33645,
+        "triangles": 59999,
+        "positionFormat": "float32"
+      }
+    ]
+  },
+  "normalLengthRange": [
+    0.9999766719332417,
+    1.0000258398567972
+  ],
+  "multipart": {
+    "forcedMaximumCompressedBytes": 100000,
+    "parts": 6,
+    "largestCompressedPartBytes": 98740,
+    "triangles": 30000,
+    "orderedTrianglePositionsBitExact": true,
+    "orderedTriangleNormalsBitExact": true
+  },
+  "nativeBankFilesUnchanged": 16,
+  "builderSha256": "a092557ba1d531c6bd528c9ab3abe35194dea466ab14ede9ff752eecc58c89bd",
+  "verificationScope": "Eight-tile pilot only; full whole-organ merges were not run while native acquisition was resident."
+}

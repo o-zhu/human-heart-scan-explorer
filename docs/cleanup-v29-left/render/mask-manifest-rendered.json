@@ -1,0 +1,280 @@
+{
+  "donorId": "ladaf-2021-17",
+  "sampling": "nearest",
+  "sourceManifestUrl": "./assets/ultra-volume-v7.json",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "sourceSpacingUm": 79.4,
+  "longestMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "coordinateConvention": "Main explorer endpoint convention: acquisition XYZ maps to world (x,z,-y).",
+  "worldToFine": "vec3(world.x, -world.z, world.y) * (longestMm / (sourceSpacingUm / 1000)) + (sourceFullDimensionsXYZ - 1) / 2",
+  "version": 3,
+  "id": "ladaf-reviewed-lumen-display-v29-left-candidate",
+  "defaultEnabled": true,
+  "title": "Reviewed lumen cleanup",
+  "format": "gzip-bitset-x-zyx",
+  "description": "Source-traced atrial and pulmonary-vein sheets with protected repaired wall footprints. Local intensity-boundary surfaces are loaded separately and switch with this cleanup.",
+  "fineToMaskUv": "Nearest original fine sample; eight adjacent X samples per byte, least-significant bit first. No mask resampling.",
+  "masks": [
+    {
+      "id": "atrial",
+      "label": "Reviewed atrial material",
+      "url": "./assets/cleanup-v29-left/atrial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        355,
+        607,
+        728
+      ],
+      "storageDimensionsXYZ": [
+        45,
+        607,
+        728
+      ],
+      "lowerFullFineXYZ": [
+        1080,
+        748,
+        432
+      ],
+      "upperFullFineXYZ": [
+        1435,
+        1355,
+        1160
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          1080,
+          748,
+          437
+        ],
+        [
+          1410,
+          1341,
+          1160
+        ]
+      ],
+      "compressedBytes": 659082,
+      "decodedBytes": 19885320,
+      "sha256": "67628257da875503f7c6b5b246e1ac97c70bfb328f7f0da4c7a5c7505eea47b3",
+      "decodedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "logicalMaskSha256": "780601b4eb11ff0e36b83f02d451c7106b4a548f60205d5bc52d27bce4b75df8",
+      "maskedVoxels": 16941205,
+      "maskedVolumeMm3": 8480.19433921172,
+      "policy": {
+        "predecessorMaskSha256": "39e7f72bf8c6a6781e6167574cd81f7c62d1b9f91f24546ba120a42ad8ed6da8",
+        "inheritedV28MaskedSamples": 16924226,
+        "addedDisplayExclusionSamples": 16979,
+        "restoredWallFootprintOverlapSamples": 0,
+        "restoredWallFootprintSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+        "operations": [
+          {
+            "id": "pulmonary-vein-residual-contour-correction",
+            "policy": "docs/cleanup-v29-left/atrial/pulmonary-vein-residual-contour-correction-policy.json",
+            "policySha256": "ef5ab203373ede077392d30e00812da67ff5d66eeda204760baf1a3c9671a49d",
+            "uniqueNewExclusionSamples": 16979,
+            "protectedDenseOutsideObjectOverlapSamples": 0,
+            "restoredWallFootprintOverlapSamples": 0
+          }
+        ],
+        "materialIdentity": "Unverified; reversible user-requested display selection."
+      }
+    },
+    {
+      "id": "arterial",
+      "label": "Arterial lumen fragments",
+      "url": "./assets/cleanup-v28/arterial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        650,
+        445,
+        800
+      ],
+      "storageDimensionsXYZ": [
+        82,
+        445,
+        800
+      ],
+      "lowerFullFineXYZ": [
+        510,
+        900,
+        180
+      ],
+      "upperFullFineXYZ": [
+        1160,
+        1345,
+        980
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          590,
+          920,
+          181
+        ],
+        [
+          1159,
+          1277,
+          950
+        ]
+      ],
+      "compressedBytes": 287953,
+      "decodedBytes": 29192000,
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "decodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "logicalMaskSha256": "d2d9d077c7e1d0a86b8e96a5729dca90aa1031ed83cdabca2110ec494fa02e66",
+      "maskedVoxels": 1169504,
+      "maskedVolumeMm3": 585.4141544527359,
+      "policy": {
+        "predecessorMaskSha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+        "inheritedV27MaskedSamples": 1169504,
+        "addedDisplayExclusionSamples": 0,
+        "operations": [],
+        "restoredWallFootprintSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+        "restoredWallFootprintOverlapSamples": 0,
+        "originalSourceAndGeometryUnchanged": true,
+        "materialIdentity": "Unverified; reversible user-requested display selection."
+      }
+    },
+    {
+      "id": "valve-region",
+      "label": "Reviewed aortic sheet and valve fragments",
+      "url": "./assets/cleanup-v28/valve-region.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        430,
+        305,
+        470
+      ],
+      "storageDimensionsXYZ": [
+        54,
+        305,
+        470
+      ],
+      "lowerFullFineXYZ": [
+        850,
+        900,
+        850
+      ],
+      "upperFullFineXYZ": [
+        1280,
+        1205,
+        1320
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          850,
+          900,
+          850
+        ],
+        [
+          1280,
+          1170,
+          1320
+        ]
+      ],
+      "compressedBytes": 150529,
+      "decodedBytes": 7740900,
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "decodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "logicalMaskSha256": "4f3ec84adb2e777108069887ad3bb754ad5cf86fa72aaaf48ae6958e07a89574",
+      "maskedVoxels": 733345,
+      "maskedVolumeMm3": 367.08770820547994,
+      "policy": {
+        "predecessorMaskSha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+        "inheritedV27MaskedSamples": 733345,
+        "addedDisplayExclusionSamples": 0,
+        "operations": [],
+        "restoredWallFootprintSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+        "restoredWallFootprintOverlapSamples": 0,
+        "originalSourceAndGeometryUnchanged": true,
+        "materialIdentity": "Unverified; reversible user-requested display selection."
+      }
+    },
+    {
+      "id": "rv",
+      "label": "Detached RV and apical fragments",
+      "url": "./assets/cleanup-v28/rv.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        570,
+        440,
+        790
+      ],
+      "storageDimensionsXYZ": [
+        72,
+        440,
+        790
+      ],
+      "lowerFullFineXYZ": [
+        450,
+        760,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        1020,
+        1200,
+        1810
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          450,
+          780,
+          1072
+        ],
+        [
+          1020,
+          1200,
+          1810
+        ]
+      ],
+      "compressedBytes": 381259,
+      "decodedBytes": 25027200,
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "decodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "logicalMaskSha256": "08253160f7b3c99a79130290c40edde0c2c457fe6f811050e67216a5daf389ef",
+      "maskedVoxels": 1181662,
+      "maskedVolumeMm3": 591.5000381178079,
+      "policy": {
+        "predecessorMaskSha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+        "inheritedV27MaskedSamples": 1181662,
+        "addedDisplayExclusionSamples": 0,
+        "operations": [],
+        "restoredWallFootprintSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+        "restoredWallFootprintOverlapSamples": 0,
+        "originalSourceAndGeometryUnchanged": true,
+        "materialIdentity": "Unverified; reversible user-requested display selection."
+      }
+    }
+  ],
+  "limitations": [
+    "Original scalar data, source CT section cards and original mesh payloads remain unchanged.",
+    "Selected material identity and anatomical completeness are not clinically validated.",
+    "Approximate intensity thresholds use windowed HiP-CT display values, not Hounsfield units.",
+    "Connected structures near the source-supported wall can remain."
+  ],
+  "predecessorManifestSha256": "59bbfff2ed2565ee98820f14f777d63041d1615841db6e80efc21a6d9bdabfb2",
+  "originalDebrisManifestUrl": "./assets/cleanup-v26/debris-manifest.json",
+  "buildProvenance": {
+    "completeFourMaskRebuild": true,
+    "inputSha256": {
+      "scripts/cleanup-v28/build_masks.py": "0cceef126a5bc04c52c54d2ff79ef1de991925d551bd47209ff16eddad4a82c4",
+      "scripts/cleanup-v28-left/build.py": "f58d34e30f14125720cb2b231ae5b22cd7ad2a705a141663066e5dd494245178",
+      "scripts/cleanup-v28-left/selections.py": "8b7c3de910550172f241589ae84fa7945fafc01042d07d6920a929955f124c3a",
+      "docs/cleanup-v28-left/candidates/receipt.json": "550133633ebb4c77bc7705130805a9fa00c8cd10ce1851a1ad1ef4a841f40119",
+      "scripts/cleanup-v27-wall/restore_wall.py": "437c774f11f5e9b8827dc4e40a8686a67e6ac01e744aff0f0557b719e35b1653"
+    }
+  },
+  "surfaceRefinementManifestUrl": "./assets/cleanup-v28/surface-manifest.json"
+}

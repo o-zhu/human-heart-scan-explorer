@@ -1,0 +1,1400 @@
+{
+  "id": "atrial-inlet-early-continuation",
+  "mask": "atrial",
+  "guardMode": "reviewed-object",
+  "guard": 4,
+  "expansion": 9,
+  "scope": "Continue the already selected atrial inlet material through its previously uncovered early source planes, before the old mask began at Y820. Include the free top lobe until it ends beneath the roof; preserve the neighboring bright wall with a four-sample collar.",
+  "evidence": "docs/cleanup-v28-left/inlet-detail-source/early-inlet-detail.jpg; docs/cleanup-v28-left/inlet-attachment-source/early-inlet-attachment.jpg; docs/cleanup-v28/locate-inlet/inlet-x313-v27.jpg and Float32 fine-coordinate readback",
+  "polygons": {
+    "748": [
+      [
+        1255,
+        517
+      ],
+      [
+        1271,
+        521
+      ],
+      [
+        1275,
+        537
+      ],
+      [
+        1261,
+        540
+      ],
+      [
+        1255,
+        529
+      ]
+    ],
+    "756": [
+      [
+        1244,
+        500
+      ],
+      [
+        1260,
+        504
+      ],
+      [
+        1282,
+        522
+      ],
+      [
+        1286,
+        540
+      ],
+      [
+        1273,
+        551
+      ],
+      [
+        1273,
+        572
+      ],
+      [
+        1291,
+        588
+      ],
+      [
+        1289,
+        599
+      ],
+      [
+        1272,
+        589
+      ],
+      [
+        1259,
+        574
+      ],
+      [
+        1254,
+        550
+      ],
+      [
+        1245,
+        530
+      ]
+    ],
+    "764": [
+      [
+        1236,
+        491
+      ],
+      [
+        1256,
+        490
+      ],
+      [
+        1272,
+        516
+      ],
+      [
+        1289,
+        531
+      ],
+      [
+        1294,
+        546
+      ],
+      [
+        1279,
+        550
+      ],
+      [
+        1277,
+        568
+      ],
+      [
+        1280,
+        580
+      ],
+      [
+        1290,
+        586
+      ],
+      [
+        1290,
+        596
+      ],
+      [
+        1270,
+        588
+      ],
+      [
+        1258,
+        574
+      ],
+      [
+        1256,
+        548
+      ],
+      [
+        1243,
+        523
+      ],
+      [
+        1236,
+        509
+      ]
+    ],
+    "772": [
+      [
+        1236,
+        496
+      ],
+      [
+        1253,
+        487
+      ],
+      [
+        1268,
+        498
+      ],
+      [
+        1268,
+        521
+      ],
+      [
+        1287,
+        530
+      ],
+      [
+        1291,
+        544
+      ],
+      [
+        1275,
+        560
+      ],
+      [
+        1267,
+        563
+      ],
+      [
+        1268,
+        580
+      ],
+      [
+        1283,
+        598
+      ],
+      [
+        1289,
+        597
+      ],
+      [
+        1285,
+        605
+      ],
+      [
+        1273,
+        601
+      ],
+      [
+        1258,
+        582
+      ],
+      [
+        1248,
+        552
+      ],
+      [
+        1237,
+        533
+      ],
+      [
+        1235,
+        515
+      ]
+    ],
+    "780": [
+      [
+        1231,
+        492
+      ],
+      [
+        1247,
+        505
+      ],
+      [
+        1256,
+        516
+      ],
+      [
+        1279,
+        532
+      ],
+      [
+        1283,
+        548
+      ],
+      [
+        1267,
+        562
+      ],
+      [
+        1260,
+        569
+      ],
+      [
+        1261,
+        588
+      ],
+      [
+        1275,
+        605
+      ],
+      [
+        1287,
+        606
+      ],
+      [
+        1289,
+        615
+      ],
+      [
+        1277,
+        615
+      ],
+      [
+        1264,
+        607
+      ],
+      [
+        1249,
+        583
+      ],
+      [
+        1240,
+        560
+      ],
+      [
+        1232,
+        541
+      ],
+      [
+        1229,
+        518
+      ]
+    ],
+    "788": [
+      [
+        1223,
+        487
+      ],
+      [
+        1243,
+        486
+      ],
+      [
+        1257,
+        485
+      ],
+      [
+        1267,
+        495
+      ],
+      [
+        1265,
+        512
+      ],
+      [
+        1262,
+        523
+      ],
+      [
+        1277,
+        530
+      ],
+      [
+        1277,
+        545
+      ],
+      [
+        1265,
+        556
+      ],
+      [
+        1268,
+        571
+      ],
+      [
+        1264,
+        582
+      ],
+      [
+        1268,
+        598
+      ],
+      [
+        1282,
+        611
+      ],
+      [
+        1294,
+        612
+      ],
+      [
+        1295,
+        620
+      ],
+      [
+        1281,
+        623
+      ],
+      [
+        1262,
+        613
+      ],
+      [
+        1248,
+        592
+      ],
+      [
+        1239,
+        566
+      ],
+      [
+        1228,
+        543
+      ],
+      [
+        1221,
+        522
+      ]
+    ],
+    "796": [
+      [
+        1211,
+        490
+      ],
+      [
+        1238,
+        491
+      ],
+      [
+        1253,
+        482
+      ],
+      [
+        1265,
+        482
+      ],
+      [
+        1274,
+        491
+      ],
+      [
+        1273,
+        510
+      ],
+      [
+        1255,
+        520
+      ],
+      [
+        1262,
+        534
+      ],
+      [
+        1270,
+        537
+      ],
+      [
+        1265,
+        549
+      ],
+      [
+        1264,
+        572
+      ],
+      [
+        1257,
+        581
+      ],
+      [
+        1267,
+        605
+      ],
+      [
+        1282,
+        623
+      ],
+      [
+        1293,
+        627
+      ],
+      [
+        1306,
+        616
+      ],
+      [
+        1310,
+        621
+      ],
+      [
+        1297,
+        637
+      ],
+      [
+        1282,
+        640
+      ],
+      [
+        1264,
+        628
+      ],
+      [
+        1249,
+        608
+      ],
+      [
+        1233,
+        581
+      ],
+      [
+        1221,
+        549
+      ],
+      [
+        1210,
+        522
+      ]
+    ],
+    "804": [
+      [
+        1203,
+        498
+      ],
+      [
+        1227,
+        498
+      ],
+      [
+        1247,
+        480
+      ],
+      [
+        1255,
+        474
+      ],
+      [
+        1268,
+        474
+      ],
+      [
+        1275,
+        483
+      ],
+      [
+        1270,
+        505
+      ],
+      [
+        1255,
+        521
+      ],
+      [
+        1259,
+        532
+      ],
+      [
+        1267,
+        541
+      ],
+      [
+        1260,
+        550
+      ],
+      [
+        1257,
+        575
+      ],
+      [
+        1255,
+        597
+      ],
+      [
+        1263,
+        621
+      ],
+      [
+        1284,
+        639
+      ],
+      [
+        1298,
+        635
+      ],
+      [
+        1308,
+        624
+      ],
+      [
+        1313,
+        629
+      ],
+      [
+        1301,
+        646
+      ],
+      [
+        1284,
+        651
+      ],
+      [
+        1266,
+        642
+      ],
+      [
+        1244,
+        619
+      ],
+      [
+        1231,
+        592
+      ],
+      [
+        1214,
+        558
+      ],
+      [
+        1202,
+        531
+      ]
+    ],
+    "812": [
+      [
+        1197,
+        505
+      ],
+      [
+        1216,
+        505
+      ],
+      [
+        1223,
+        464
+      ],
+      [
+        1234,
+        461
+      ],
+      [
+        1243,
+        478
+      ],
+      [
+        1254,
+        468
+      ],
+      [
+        1267,
+        464
+      ],
+      [
+        1273,
+        472
+      ],
+      [
+        1268,
+        497
+      ],
+      [
+        1256,
+        517
+      ],
+      [
+        1258,
+        537
+      ],
+      [
+        1259,
+        549
+      ],
+      [
+        1248,
+        570
+      ],
+      [
+        1249,
+        598
+      ],
+      [
+        1259,
+        627
+      ],
+      [
+        1276,
+        646
+      ],
+      [
+        1290,
+        648
+      ],
+      [
+        1304,
+        635
+      ],
+      [
+        1310,
+        638
+      ],
+      [
+        1297,
+        655
+      ],
+      [
+        1274,
+        658
+      ],
+      [
+        1253,
+        647
+      ],
+      [
+        1233,
+        624
+      ],
+      [
+        1217,
+        592
+      ],
+      [
+        1204,
+        560
+      ],
+      [
+        1193,
+        528
+      ]
+    ],
+    "820": [
+      [
+        1189,
+        503
+      ],
+      [
+        1183,
+        470
+      ],
+      [
+        1207,
+        456
+      ],
+      [
+        1234,
+        455
+      ],
+      [
+        1244,
+        466
+      ],
+      [
+        1255,
+        456
+      ],
+      [
+        1268,
+        456
+      ],
+      [
+        1271,
+        477
+      ],
+      [
+        1259,
+        505
+      ],
+      [
+        1253,
+        521
+      ],
+      [
+        1261,
+        548
+      ],
+      [
+        1256,
+        566
+      ],
+      [
+        1241,
+        584
+      ],
+      [
+        1244,
+        611
+      ],
+      [
+        1254,
+        642
+      ],
+      [
+        1278,
+        663
+      ],
+      [
+        1294,
+        654
+      ],
+      [
+        1306,
+        639
+      ],
+      [
+        1311,
+        645
+      ],
+      [
+        1297,
+        667
+      ],
+      [
+        1280,
+        676
+      ],
+      [
+        1261,
+        668
+      ],
+      [
+        1243,
+        648
+      ],
+      [
+        1227,
+        621
+      ],
+      [
+        1212,
+        592
+      ],
+      [
+        1201,
+        561
+      ],
+      [
+        1188,
+        530
+      ]
+    ],
+    "828": [
+      [
+        1184,
+        499
+      ],
+      [
+        1177,
+        474
+      ],
+      [
+        1196,
+        457
+      ],
+      [
+        1230,
+        451
+      ],
+      [
+        1248,
+        450
+      ],
+      [
+        1260,
+        448
+      ],
+      [
+        1268,
+        457
+      ],
+      [
+        1260,
+        480
+      ],
+      [
+        1267,
+        496
+      ],
+      [
+        1253,
+        514
+      ],
+      [
+        1252,
+        532
+      ],
+      [
+        1258,
+        548
+      ],
+      [
+        1255,
+        573
+      ],
+      [
+        1240,
+        594
+      ],
+      [
+        1241,
+        623
+      ],
+      [
+        1251,
+        653
+      ],
+      [
+        1269,
+        673
+      ],
+      [
+        1284,
+        677
+      ],
+      [
+        1296,
+        663
+      ],
+      [
+        1304,
+        644
+      ],
+      [
+        1310,
+        651
+      ],
+      [
+        1299,
+        679
+      ],
+      [
+        1282,
+        689
+      ],
+      [
+        1263,
+        682
+      ],
+      [
+        1245,
+        665
+      ],
+      [
+        1225,
+        634
+      ],
+      [
+        1210,
+        601
+      ],
+      [
+        1196,
+        566
+      ],
+      [
+        1183,
+        533
+      ]
+    ],
+    "840": [
+      [
+        1175,
+        497
+      ],
+      [
+        1194,
+        486
+      ],
+      [
+        1216,
+        488
+      ],
+      [
+        1242,
+        479
+      ],
+      [
+        1234,
+        466
+      ],
+      [
+        1235,
+        448
+      ],
+      [
+        1248,
+        443
+      ],
+      [
+        1260,
+        450
+      ],
+      [
+        1261,
+        466
+      ],
+      [
+        1253,
+        478
+      ],
+      [
+        1254,
+        505
+      ],
+      [
+        1252,
+        535
+      ],
+      [
+        1256,
+        554
+      ],
+      [
+        1251,
+        585
+      ],
+      [
+        1236,
+        614
+      ],
+      [
+        1239,
+        647
+      ],
+      [
+        1252,
+        680
+      ],
+      [
+        1264,
+        696
+      ],
+      [
+        1277,
+        696
+      ],
+      [
+        1293,
+        675
+      ],
+      [
+        1299,
+        648
+      ],
+      [
+        1307,
+        650
+      ],
+      [
+        1302,
+        678
+      ],
+      [
+        1287,
+        705
+      ],
+      [
+        1265,
+        713
+      ],
+      [
+        1248,
+        700
+      ],
+      [
+        1232,
+        671
+      ],
+      [
+        1215,
+        636
+      ],
+      [
+        1201,
+        601
+      ],
+      [
+        1187,
+        558
+      ],
+      [
+        1175,
+        526
+      ]
+    ],
+    "848": [
+      [
+        1171,
+        506
+      ],
+      [
+        1193,
+        500
+      ],
+      [
+        1217,
+        504
+      ],
+      [
+        1234,
+        484
+      ],
+      [
+        1234,
+        462
+      ],
+      [
+        1244,
+        450
+      ],
+      [
+        1254,
+        451
+      ],
+      [
+        1256,
+        462
+      ],
+      [
+        1249,
+        471
+      ],
+      [
+        1245,
+        495
+      ],
+      [
+        1246,
+        522
+      ],
+      [
+        1251,
+        544
+      ],
+      [
+        1249,
+        575
+      ],
+      [
+        1235,
+        611
+      ],
+      [
+        1237,
+        649
+      ],
+      [
+        1250,
+        686
+      ],
+      [
+        1266,
+        710
+      ],
+      [
+        1280,
+        704
+      ],
+      [
+        1294,
+        681
+      ],
+      [
+        1300,
+        658
+      ],
+      [
+        1305,
+        661
+      ],
+      [
+        1301,
+        690
+      ],
+      [
+        1283,
+        716
+      ],
+      [
+        1264,
+        727
+      ],
+      [
+        1246,
+        710
+      ],
+      [
+        1229,
+        678
+      ],
+      [
+        1214,
+        643
+      ],
+      [
+        1199,
+        601
+      ],
+      [
+        1182,
+        554
+      ],
+      [
+        1170,
+        529
+      ]
+    ],
+    "856": [
+      [
+        1166,
+        513
+      ],
+      [
+        1186,
+        509
+      ],
+      [
+        1215,
+        516
+      ],
+      [
+        1230,
+        531
+      ],
+      [
+        1237,
+        552
+      ],
+      [
+        1242,
+        585
+      ],
+      [
+        1236,
+        612
+      ],
+      [
+        1237,
+        649
+      ],
+      [
+        1248,
+        686
+      ],
+      [
+        1257,
+        713
+      ],
+      [
+        1271,
+        718
+      ],
+      [
+        1294,
+        692
+      ],
+      [
+        1303,
+        668
+      ],
+      [
+        1307,
+        676
+      ],
+      [
+        1300,
+        704
+      ],
+      [
+        1280,
+        726
+      ],
+      [
+        1258,
+        737
+      ],
+      [
+        1243,
+        716
+      ],
+      [
+        1226,
+        679
+      ],
+      [
+        1211,
+        643
+      ],
+      [
+        1196,
+        603
+      ],
+      [
+        1180,
+        560
+      ],
+      [
+        1167,
+        538
+      ]
+    ]
+  },
+  "selectedSamples": 980225,
+  "selectedSourceForegroundSamples": 398973,
+  "selectedDenseObjectSamples": 13104,
+  "protectedDenseOutsideObjectOverlapSamples": 0,
+  "protectedCollarOverlapSamples": 0,
+  "additionalVersusTenSampleGuardSamples": 302370,
+  "lowerFullFineXYZ": [
+    1155,
+    748,
+    432
+  ],
+  "upperFullFineXYZ": [
+    1325,
+    857,
+    749
+  ],
+  "logicalSelectionSha256": "84f77081f29722b602b0f86e60b5ad2afb8169665bdb87a306bb2662f92fa8dd",
+  "meshSupportMarginFineSamples": 9,
+  "sourcePaddingFineSamples": 13,
+  "restoredWallFootprintOverlapSamples": 0,
+  "serialChecks": [
+    {
+      "y": 748,
+      "selectedSamples": 406,
+      "selectedSourceForegroundSamples": 0,
+      "selectedDenseObjectSamples": 0,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 354
+    },
+    {
+      "y": 756,
+      "selectedSamples": 3986,
+      "selectedSourceForegroundSamples": 23,
+      "selectedDenseObjectSamples": 0,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 1548
+    },
+    {
+      "y": 764,
+      "selectedSamples": 5020,
+      "selectedSourceForegroundSamples": 584,
+      "selectedDenseObjectSamples": 0,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 1653
+    },
+    {
+      "y": 772,
+      "selectedSamples": 5732,
+      "selectedSourceForegroundSamples": 1739,
+      "selectedDenseObjectSamples": 3,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 1480
+    },
+    {
+      "y": 780,
+      "selectedSamples": 5641,
+      "selectedSourceForegroundSamples": 2213,
+      "selectedDenseObjectSamples": 23,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 1493
+    },
+    {
+      "y": 788,
+      "selectedSamples": 7054,
+      "selectedSourceForegroundSamples": 2936,
+      "selectedDenseObjectSamples": 35,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 1542
+    },
+    {
+      "y": 796,
+      "selectedSamples": 8210,
+      "selectedSourceForegroundSamples": 3166,
+      "selectedDenseObjectSamples": 51,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 2536
+    },
+    {
+      "y": 804,
+      "selectedSamples": 8985,
+      "selectedSourceForegroundSamples": 3830,
+      "selectedDenseObjectSamples": 124,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 2701
+    },
+    {
+      "y": 812,
+      "selectedSamples": 11069,
+      "selectedSourceForegroundSamples": 5078,
+      "selectedDenseObjectSamples": 239,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 3254
+    },
+    {
+      "y": 820,
+      "selectedSamples": 14058,
+      "selectedSourceForegroundSamples": 6528,
+      "selectedDenseObjectSamples": 309,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 4326
+    },
+    {
+      "y": 828,
+      "selectedSamples": 15055,
+      "selectedSourceForegroundSamples": 7572,
+      "selectedDenseObjectSamples": 359,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 4595
+    },
+    {
+      "y": 840,
+      "selectedSamples": 14100,
+      "selectedSourceForegroundSamples": 6256,
+      "selectedDenseObjectSamples": 225,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 4603
+    },
+    {
+      "y": 848,
+      "selectedSamples": 12067,
+      "selectedSourceForegroundSamples": 4686,
+      "selectedDenseObjectSamples": 184,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 4204
+    },
+    {
+      "y": 856,
+      "selectedSamples": 8871,
+      "selectedSourceForegroundSamples": 2913,
+      "selectedDenseObjectSamples": 7,
+      "protectedDenseOutsideObjectOverlapSamples": 0,
+      "protectedCollarOverlapSamples": 0,
+      "additionalVersusTenSampleGuardSamples": 4912
+    }
+  ],
+  "explicitSelectedObjectException": true,
+  "method": "Serial source-traced free-sheet polygons with interpolated signed-distance boundaries. Nine-sample source isovalue support allowance. Four-sample 3D guard around raw>=190 or sigma0.5/0.8>=135 source outside the selected object. A connected attachment elsewhere no longer rejects the free sheet on the entire plane.",
+  "intensityUnits": "Windowed display-u8; not calibrated HU.",
+  "sourceIdentity": "Unverified material identity; reversible user-requested visualization selection.",
+  "unchanged": "Original 2D source pixels and original mesh positions, normals and indices."
+}

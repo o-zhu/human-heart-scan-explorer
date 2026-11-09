@@ -1,0 +1,120 @@
+{
+  "version": 2,
+  "donorId": "ladaf-2021-17",
+  "profiles": [
+    {
+      "lodId": "gentle",
+      "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "sourceSha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+      "sourceVertexCount": 12837189,
+      "sourceTriangleCount": 23618685,
+      "vertexFlags": {
+        "url": "./assets/cleanup-v26/debris-gentle-vertices.raw.gz",
+        "compressedBytes": 889493,
+        "decodedBytes": 12837189,
+        "sha256": "76dd93c5cc93b3c5b9ddfd5ccc990f5d816462c5b0d5288d26fbd6513bba0caf",
+        "decodedSha256": "5c22fe73b08e408e7b4815315cdcc158c18d9deb95e3e8f76a6d94aa6f505ebd"
+      },
+      "vertexFlagEncoding": {
+        "0": "retain",
+        "255": "exclude",
+        "indexing": "original HFM vertex order"
+      },
+      "faceKeepMask": {
+        "url": "./assets/cleanup-v26/debris-gentle-faces.keep.gz",
+        "compressedBytes": 1147901,
+        "decodedBytes": 2952336,
+        "sha256": "0306c1348171bed5558a2cee63fac2adcf0a85bdd4575172ce3c0348cfea49f8",
+        "decodedSha256": "c3a76132a635d776d748cf0a37a1e08f1577df8fffe3abcbdcdc9563260a0dab",
+        "bitOrder": "little",
+        "bit1": "retain",
+        "indexing": "original HFM triangle order"
+      },
+      "policy": {
+        "id": "reviewed-local-components-v26",
+        "baselinePolicy": {
+          "id": "compact-detached-components-v25",
+          "maximumBoundingBoxDiagonalMm": 0.85,
+          "maximumTriangles": 1024,
+          "maximumRegularizedPcaSpreadRatioExclusive": 3.0,
+          "pcaRegularizerMm": 0.039700000000000006,
+          "connectivity": "shared vertices in the complete uncut HFM mesh",
+          "protectLargestComponent": true,
+          "protectQuantizedVolumeBoundary": true,
+          "positionsChanged": false,
+          "normalsChanged": false,
+          "indicesChanged": false,
+          "classification": "display cleanup candidates; not anatomically validated material labels"
+        },
+        "baselineManifestSha256": "d78edee7299217c23a8dc94ba805829e3fbd044614fdc53cb9ac8b0319c64d75",
+        "arterial": {
+          "scope": "Complete detached components in source-derived reviewed aortic/pulmonary lumens. Verify every original vertex and every triangle centroid and edge midpoint against the reviewed cavity; bbox corners are not required to represent actual fragment geometry.",
+          "maximumBoundingBoxDiagonalMm": 4.0,
+          "maximumTriangles": 6000,
+          "shapeGuardRelaxedOnlyWithinReviewedArterialLumen": true,
+          "candidateComponentsBeforeGeometryCheck": 3137,
+          "originalVerticesChecked": 29480,
+          "trianglesChecked": 1428,
+          "triangleInteriorAndEdgeSamplesChecked": 5712,
+          "componentsRejectedByVertexCheckCount": 3033,
+          "componentsRejectedByTriangleSamplesCount": 0
+        },
+        "perivalvularAndRV": {
+          "scope": "Complete detached small compact or two-dimensional flake components; retained long and strongly one-dimensional structures.",
+          "maximumCompactDiagonalMm": 1.5,
+          "maximumCompactPcaSpreadExclusive": 4.5,
+          "maximumCompactTriangles": 2048,
+          "maximumFlakeDiagonalMm": 0.65,
+          "maximumFlakePcaSpreadExclusive": 10,
+          "maximumFlakeLargeAxisRatioExclusive": 2.5,
+          "maximumFlakeTriangles": 256,
+          "perivalvularBoundsFullFineXYZ": [
+            [
+              550,
+              850,
+              850
+            ],
+            [
+              1280,
+              1250,
+              1420
+            ]
+          ],
+          "rvBoundsFullFineXYZ": [
+            [
+              450,
+              780,
+              1100
+            ],
+            [
+              1020,
+              1200,
+              1810
+            ]
+          ]
+        },
+        "connectivity": "Shared vertices in the complete uncut original HFM mesh",
+        "protectLargestComponent": true,
+        "protectQuantizedVolumeBoundary": true,
+        "positionsChanged": false,
+        "normalsChanged": false,
+        "indicesChanged": false,
+        "classification": "Reversible display cleanup candidates, not validated biological material labels"
+      },
+      "removedComponents": 1352992,
+      "removedVertices": 5666892,
+      "removedTriangles": 5832864,
+      "removedSurfaceAreaMm2": 16126.380169914248,
+      "removedTriangleFraction": 0.24695972701274435,
+      "retainedTriangles": 17785821,
+      "additionalBeyondV25": {
+        "removedComponents": 10986,
+        "removedVertices": 67199,
+        "removedTriangles": 93761,
+        "removedSurfaceAreaMm2": 1317.510942744013,
+        "removedTriangleFraction": 0.00396978070540337
+      }
+    }
+  ],
+  "sourceSpacingUm": 79.4
+}

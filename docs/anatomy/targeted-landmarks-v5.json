@@ -1,0 +1,56 @@
+{
+  "scope": "Targeted source-morphology checks selected before inspecting any candidate outputs. These are not independent expert ground truth or a global accuracy estimate.",
+  "selectionTiming": "After uncolored source inspection; before candidate maps were viewed.",
+  "points": [
+    {
+      "name": "aortic_root_anterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        218,
+        240
+      ],
+      "sourceIntensity": 19778
+    },
+    {
+      "name": "aortic_root_posterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        290,
+        240
+      ],
+      "sourceIntensity": 20504
+    },
+    {
+      "name": "aortic_sinus_lateral",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        225,
+        225,
+        236
+      ],
+      "sourceIntensity": 19859
+    },
+    {
+      "name": "rvot_free_wall_1",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        150,
+        290,
+        235
+      ],
+      "sourceIntensity": 19233
+    },
+    {
+      "name": "rvot_free_wall_2",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        155,
+        305,
+        240
+      ],
+      "sourceIntensity": 18832
+    }
+  ]
+}

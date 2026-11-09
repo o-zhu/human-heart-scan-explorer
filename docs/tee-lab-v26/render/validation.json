@@ -1,0 +1,61 @@
+{
+  "scope": "Production CT and acoustic frames from hash-verified 317.6 \u00b5m display data; genuine preview, not an Ultra-resolution rendering.",
+  "productionMeshesAndShaders": true,
+  "productionAcoustics": true,
+  "source": [
+    {
+      "url": "assets/volume-v5/heart-high-clean.raw.gz",
+      "sha256": "93e9adc347fa04ed60671ea7762adcf7bf8ce677e6d5a71e9f5b618083adbb30",
+      "decodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "bytes": 119581250
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "checks": [
+    {
+      "id": "me4c",
+      "sourceSpacingUm": 317.6,
+      "capSpacingUm": 317.6,
+      "capSha256": "711290ca533f95a7791070a7a7de7bc4f4a428503450cd2315f7d80dc72a2220",
+      "tissueFraction": 0.4087050309651381,
+      "instrumentPixels": 2238,
+      "glError": 0
+    },
+    {
+      "id": "me2c",
+      "sourceSpacingUm": 317.6,
+      "capSpacingUm": 317.6,
+      "capSha256": "d4906abd56f70a40de5f1f3abf83b37acad0df371bfe4db8e30fbc2698148e77",
+      "tissueFraction": 0.3496277224966947,
+      "instrumentPixels": 3881,
+      "glError": 0
+    },
+    {
+      "id": "melax",
+      "sourceSpacingUm": 317.6,
+      "capSpacingUm": 317.6,
+      "capSha256": "d9a354980ee85d0753a2c7bf3ad0a043b21803894c7430fcfd89bfd0e23566b9",
+      "tissueFraction": 0.35282861317931946,
+      "instrumentPixels": 3594,
+      "glError": 0
+    },
+    {
+      "id": "tg",
+      "sourceSpacingUm": 317.6,
+      "capSpacingUm": 317.6,
+      "capSha256": "199121fc35839680a0ac0125347f24a4ba9aeaabf44307ed07c0ddcae7341390",
+      "tissueFraction": 0.22155150418667224,
+      "instrumentPixels": 8359,
+      "glError": 0
+    },
+    {
+      "id": "steered",
+      "sourceSpacingUm": 317.6,
+      "capSpacingUm": 317.6,
+      "capSha256": "269c36fb70dabfb1506ded10bd3f2cf6343ef798990f7ba847b7e7af2f3d2886",
+      "tissueFraction": 0.16642891935147172,
+      "instrumentPixels": 4011,
+      "glError": 0
+    }
+  ]
+}

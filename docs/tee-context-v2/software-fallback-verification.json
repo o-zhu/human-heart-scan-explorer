@@ -1,0 +1,26 @@
+{
+  "scope": "Production software-context geometry, projection, batched canvas commands and cache behavior. Timings measure JavaScript/recording-context work, not browser raster paint or frame rate.",
+  "checks": [
+    "Actual esophagus, stomach, diaphragm and tendon geometry generates shaded fills in at most 64 batches; all contour paths are retained.",
+    "All 24 retained GE junction vertices appear at exactly identical projected coordinates in esophageal and gastric fill paths.",
+    "Top-down diaphragm rendering contains no triangle over the true hiatus center; its annular topology survives display-grid reduction.",
+    "A fresh projection closure with identical camera reuses one transparent raster; cached calls only project eight bounds anchors and composite once.",
+    "Camera/viewport changes regenerate the software layer; all full-resolution model buffers remain byte-identical.",
+    "The existing paintTeeContextLabels fallback call receives filled organs even without offscreen-canvas or Path2D support."
+  ],
+  "initialFrame": {
+    "geometryBuildMs": 12.032011000000011,
+    "preparedVertices": 4409,
+    "preparedTriangles": 8544,
+    "projectionCount": 4916,
+    "trianglesDrawn": 8541,
+    "fillBatches": 36,
+    "projectAndBatchMs": 26.785021,
+    "rasterBuildMs": 0.30891500000001315,
+    "cacheHit": false,
+    "rasterCached": true
+  },
+  "initialProjectionCalls": 4928,
+  "cachedCallMedianMs": 0.014471000000014556,
+  "cachedCallP95Ms": 0.03670500000001198
+}

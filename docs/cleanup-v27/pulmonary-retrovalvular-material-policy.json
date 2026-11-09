@@ -1,0 +1,485 @@
+{
+  "id": "pulmonary-retrovalvular-material",
+  "mask": "arterial",
+  "guardMode": "all-dense",
+  "expansion": 6,
+  "guard": 10,
+  "scope": "Low contrast irregular material posterior to the pulmonic valve; all dense source cores, vessel wall and valve leaflets protected.",
+  "evidence": "source-refined/pa-posterior-source.jpg; pulmonary-335 position readback",
+  "polygons": {
+    "1080": [
+      [
+        812,
+        845
+      ],
+      [
+        830,
+        847
+      ],
+      [
+        850,
+        868
+      ],
+      [
+        850,
+        880
+      ],
+      [
+        834,
+        872
+      ]
+    ],
+    "1104": [
+      [
+        801,
+        825
+      ],
+      [
+        839,
+        844
+      ],
+      [
+        868,
+        869
+      ],
+      [
+        890,
+        892
+      ],
+      [
+        908,
+        925
+      ],
+      [
+        893,
+        941
+      ],
+      [
+        870,
+        930
+      ],
+      [
+        853,
+        900
+      ],
+      [
+        830,
+        875
+      ],
+      [
+        805,
+        850
+      ]
+    ],
+    "1128": [
+      [
+        786,
+        822
+      ],
+      [
+        818,
+        822
+      ],
+      [
+        848,
+        845
+      ],
+      [
+        866,
+        876
+      ],
+      [
+        895,
+        901
+      ],
+      [
+        916,
+        937
+      ],
+      [
+        898,
+        949
+      ],
+      [
+        871,
+        930
+      ],
+      [
+        850,
+        907
+      ],
+      [
+        830,
+        880
+      ],
+      [
+        807,
+        855
+      ]
+    ],
+    "1152": [
+      [
+        785,
+        810
+      ],
+      [
+        817,
+        816
+      ],
+      [
+        847,
+        844
+      ],
+      [
+        866,
+        865
+      ],
+      [
+        883,
+        892
+      ],
+      [
+        915,
+        929
+      ],
+      [
+        917,
+        948
+      ],
+      [
+        894,
+        952
+      ],
+      [
+        867,
+        932
+      ],
+      [
+        848,
+        900
+      ],
+      [
+        819,
+        872
+      ],
+      [
+        798,
+        847
+      ]
+    ],
+    "1176": [
+      [
+        780,
+        802
+      ],
+      [
+        815,
+        816
+      ],
+      [
+        844,
+        837
+      ],
+      [
+        872,
+        856
+      ],
+      [
+        898,
+        874
+      ],
+      [
+        917,
+        905
+      ],
+      [
+        926,
+        934
+      ],
+      [
+        913,
+        947
+      ],
+      [
+        890,
+        943
+      ],
+      [
+        867,
+        921
+      ],
+      [
+        846,
+        891
+      ],
+      [
+        817,
+        865
+      ],
+      [
+        792,
+        837
+      ]
+    ],
+    "1200": [
+      [
+        788,
+        807
+      ],
+      [
+        817,
+        815
+      ],
+      [
+        845,
+        830
+      ],
+      [
+        874,
+        845
+      ],
+      [
+        900,
+        866
+      ],
+      [
+        924,
+        901
+      ],
+      [
+        925,
+        931
+      ],
+      [
+        911,
+        942
+      ],
+      [
+        888,
+        927
+      ],
+      [
+        861,
+        897
+      ],
+      [
+        831,
+        870
+      ],
+      [
+        809,
+        845
+      ]
+    ],
+    "1224": [
+      [
+        812,
+        805
+      ],
+      [
+        835,
+        805
+      ],
+      [
+        865,
+        822
+      ],
+      [
+        885,
+        849
+      ],
+      [
+        907,
+        882
+      ],
+      [
+        915,
+        909
+      ],
+      [
+        910,
+        930
+      ],
+      [
+        894,
+        927
+      ],
+      [
+        877,
+        906
+      ],
+      [
+        856,
+        875
+      ],
+      [
+        835,
+        849
+      ],
+      [
+        817,
+        829
+      ]
+    ],
+    "1248": [
+      [
+        815,
+        793
+      ],
+      [
+        832,
+        793
+      ],
+      [
+        852,
+        804
+      ],
+      [
+        877,
+        814
+      ],
+      [
+        893,
+        832
+      ],
+      [
+        891,
+        844
+      ],
+      [
+        877,
+        845
+      ],
+      [
+        858,
+        831
+      ],
+      [
+        840,
+        823
+      ],
+      [
+        822,
+        814
+      ]
+    ],
+    "1264": [
+      [
+        824,
+        804
+      ],
+      [
+        837,
+        805
+      ],
+      [
+        845,
+        815
+      ],
+      [
+        839,
+        824
+      ],
+      [
+        829,
+        818
+      ]
+    ]
+  },
+  "selectedSamples": 155942,
+  "selectedDenseSourceSamples": 0,
+  "comparableAnchoredGuardRuleOverlapSamples": 0,
+  "protectedSourceSamples": 1369884,
+  "protectedOverlapSamples": 0,
+  "lowerFullFineXYZ": [
+    769,
+    1080,
+    782
+  ],
+  "upperFullFineXYZ": [
+    938,
+    1265,
+    964
+  ],
+  "meshSupportMarginFineSamples": 9,
+  "denseGuardFineSamples": 10,
+  "sourcePaddingFineSamples": 13,
+  "serialChecks": [
+    {
+      "y": 1080,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 7602,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1104,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 11773,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1128,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 8798,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1152,
+      "selectedSamples": 475,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 7844,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1176,
+      "selectedSamples": 747,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 7982,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1200,
+      "selectedSamples": 1416,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 6367,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1224,
+      "selectedSamples": 2366,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4904,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1248,
+      "selectedSamples": 2066,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 3378,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1264,
+      "selectedSamples": 659,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 1816,
+      "protectedOverlapSamples": 0
+    }
+  ],
+  "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of every raw190/sigma0.5/0.8>=135 dense source core.",
+  "explicitSelectedObjectException": false,
+  "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+  "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue."
+}

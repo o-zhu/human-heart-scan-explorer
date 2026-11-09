@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "datasetId": "2298522198",
+  "displayProfile": {
+    "windowEnabled": true,
+    "windowLow": 0.22983718288527072,
+    "windowHigh": 1,
+    "windowGamma": 1.1,
+    "capContrast": 1
+  },
+  "compiledPrograms": [
+    "volume",
+    "composite",
+    "production-cap-LUT"
+  ],
+  "transferChecks": [
+    {
+      "profile": 0,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    }
+  ],
+  "comparedIntensities": 4608,
+  "productionShaderSha256": "23419c3f1eed32501571c1918793f15363f786ad4786c28d12deb1ab2cb5100f",
+  "volumeRawSha256": "cce6eee9c22596d12d52d0b2f88339a7bd7993b5a4a0098a229aa56ecacda92a",
+  "scope": "Actual production GLSL compiled and rendered in native offscreen EGL, compared with shared JS for all 256 intensities, six palettes and three profiles. Measured donor caps with unchanged threshold, source arrays, mask and coordinates. No browser/device performance or clinical validation claim."
+}

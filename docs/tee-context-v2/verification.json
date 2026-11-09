@@ -1,0 +1,92 @@
+{
+  "scope": "Authored TEE context geometry, topology, frame invariance and camera fit. Not donor segmentation, patient registration, collision validation or browser performance.",
+  "revision": "anatomical-context-v2",
+  "checks": [
+    "Fixed orthonormal source-anchored illustrative frame; source frames unchanged and all dimensions in world millimetres.",
+    "Continuous esophagogastric junction, orientable mesh, no non-manifold edges; open upper esophagus and pyloric outlet only.",
+    "Two-domed diaphragm with open esophageal hiatus, continuous hole rim and distinguished central tendon.",
+    "Finite world-mm coordinates, unit smooth normals and consistent face orientation for all surfaces and contours.",
+    "Posterior-LA esophagus, short abdominal segment, left-superior fundus, dependent body and rightward antrum; continuous distance-based routing with orthonormal shaft frames.",
+    "1551 interior gastric candidates share fixed route indices and retain radial clearance; fundus remains below diaphragm; ME shaft stays within 40° of reviewed 4C normal over 31–35 model cm.",
+    "Static anatomy is byte-identical after 60 steering combinations and after replacing the selected source-plane basis.",
+    "Both comparison donors use their own measured dimensions and geometric frame; no transferred source landmarks or anatomical registration claims.",
+    "Context camera fit contains all organ bounds across five aspect ratios, with the same main-view projection factor."
+  ],
+  "meshes": [
+    {
+      "id": "diaphragm",
+      "triangles": 9216,
+      "alpha": 0.075
+    },
+    {
+      "id": "central-tendon",
+      "triangles": 2208,
+      "alpha": 0.075
+    },
+    {
+      "id": "esophageal-hiatus",
+      "triangles": 2048,
+      "alpha": 0.33
+    },
+    {
+      "id": "diaphragm-rim",
+      "triangles": 2048,
+      "alpha": 0.19
+    },
+    {
+      "id": "esophagus",
+      "triangles": 8448,
+      "alpha": 0.13
+    },
+    {
+      "id": "stomach",
+      "triangles": 7680,
+      "alpha": 0.11
+    },
+    {
+      "id": "greater-curvature",
+      "triangles": 1280,
+      "alpha": 0.28
+    },
+    {
+      "id": "lesser-curvature",
+      "triangles": 1280,
+      "alpha": 0.28
+    },
+    {
+      "id": "esophageal-rim",
+      "triangles": 768,
+      "alpha": 0.29
+    },
+    {
+      "id": "pyloric-rim",
+      "triangles": 768,
+      "alpha": 0.29
+    }
+  ],
+  "topology": {
+    "gastrointestinal": {
+      "vertices": 8112,
+      "triangles": 16128,
+      "edges": 24240,
+      "euler": 0,
+      "boundaries": 96,
+      "boundaryLoops": 2,
+      "nonManifold": 0,
+      "nonOrientable": 0,
+      "minAreaMm2": 0.17575600645221523
+    },
+    "diaphragm": {
+      "vertices": 4736,
+      "triangles": 9216,
+      "edges": 13952,
+      "euler": 0,
+      "boundaries": 256,
+      "boundaryLoops": 2,
+      "nonManifold": 0,
+      "nonOrientable": 0,
+      "minAreaMm2": 0.34916648010069157
+    }
+  },
+  "minimumAuthoredStomachDiaphragmGapMm": 0.8199777262278474
+}

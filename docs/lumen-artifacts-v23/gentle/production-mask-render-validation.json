@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 739,
+    "decodedBrickReads": 765,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "productionShaders": true,
+  "meshManifest": "public/assets/fine-surface-v23/manifest.json",
+  "meshManifestSha256": "435f68fce8cdd195a283893c686b0f5825ec5238c0f4f5dd39c1129c8c6aef01",
+  "transport": {
+    "gentle": {
+      "orderedParts": [
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+          "bytes": 25165824,
+          "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+          "bytes": 25165824,
+          "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+          "bytes": 25165824,
+          "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+          "bytes": 25165824,
+          "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+          "bytes": 25165824,
+          "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+          "bytes": 25165824,
+          "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+          "bytes": 25165824,
+          "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+          "bytes": 25165824,
+          "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+          "bytes": 25165824,
+          "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+        },
+        {
+          "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+          "bytes": 1410044,
+          "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+        }
+      ],
+      "compressedBytes": 227902460,
+      "decodedBytes": 437470524,
+      "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+      "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "oneGzipStream": true,
+      "fullPackedCopyAllocated": false,
+      "floatPositionArrayAllocated": false,
+      "maximumReadChunkBytes": 1048576,
+      "maximumInflateChunkBytes": 8388608,
+      "decodedBufferCount": 1,
+      "maximumNormalLengthError": 2.5987625122070312e-05
+    }
+  },
+  "rendererShaderSha256": "78449537cb471f84e3c9d06c427904b2c9184d9984bc57a5d0aad63ad789f103",
+  "fineSurfaceShaderSha256": "01f4031df1f494d421360e3d2be5c4408046421ac20ad993f1c0130dfc350c75",
+  "exportedGlslSha256": {
+    "volume": "d03ed5650c1076197dfe8a0fed4e45ab9410a90add7f17a5b7bc89e4187f4ab8",
+    "fine": "d8c54a07989826c3a8bf22f6370bd65966e138d527dd3acbd199238e72ac462b"
+  },
+  "renderParameters": {
+    "outputPixels": [
+      720,
+      840
+    ],
+    "fov": 0.32,
+    "palette": 4,
+    "surfaceSmoothing": 1,
+    "threshold": 0.28,
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.344,
+      "windowHigh": 0.787,
+      "windowGamma": 1,
+      "capContrast": 1,
+      "cutFaceExposure": 3
+    }
+  },
+  "maskManifestSha256": "8f46d7ce4dc07c41f1c50717d4fe63a60e667fb89862fae97b213bd1e4aee077",
+  "checks": [
+    {
+      "case": "atrial",
+      "lod": "gentle",
+      "changedPixels": 6404,
+      "unchangedPixels": 598396,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 64113,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            226,
+            -22,
+            433,
+            179
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            438,
+            339,
+            603,
+            503
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "6f4359e7bce0ff885edd2c5136538121cf66a2921edc8862d98bc42811862c5d"
+    },
+    {
+      "case": "outflow",
+      "lod": "gentle",
+      "changedPixels": 4265,
+      "unchangedPixels": 600535,
+      "outsideTargetInfluenceChangedPixels": 0,
+      "permittedInfluencePixels": 75850,
+      "influenceBoxes": [
+        {
+          "id": "outflow",
+          "xyxy": [
+            158,
+            110,
+            385,
+            332
+          ],
+          "worldGuard": 0.025
+        },
+        {
+          "id": "atrial",
+          "xyxy": [
+            335,
+            515,
+            483,
+            687
+          ],
+          "worldGuard": 0.025
+        }
+      ],
+      "offOnOffRestoresExactly": true,
+      "productionShader": true,
+      "sourceCapSha256": "770b1596b742912b3fa550fc8b5b4eb1075d90ff2ad9a2d8375e100371589dce"
+    }
+  ],
+  "scope": "Actual production GLSL and frozen public masks in native EGL; same-camera off/on/off and outside projected mask plus finite AO support invariance. Source cap texture bytes unchanged. Not a browser/device performance or biological accuracy claim."
+}

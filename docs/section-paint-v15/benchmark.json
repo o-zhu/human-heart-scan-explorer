@@ -1,0 +1,311 @@
+{
+  "baselineCommit": "b77382f7c400b29c82651d75b32e85c6e6bfbefe",
+  "scope": "Native Node CPU painting only; same acquired display bytes, masks and window settings. Excludes image decode, Canvas uploads, WebGL, network and browser input latency.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "warmupCallsPerVersion": 5,
+  "measuredCallsPerVersion": 11,
+  "allByteExact": true,
+  "results": [
+    {
+      "donor": "ladaf-2021-17",
+      "source": "data/ultra-sections/y/0331.webp",
+      "axis": "y",
+      "index": 331,
+      "position": 0.6983122362869199,
+      "section": {
+        "crop": [
+          506,
+          258,
+          1053,
+          1545
+        ],
+        "width": 1053,
+        "height": 1545,
+        "fullWidth": 1897,
+        "fullHeight": 2117
+      },
+      "pixels": 1626885,
+      "settings": {
+        "windowEnabled": false,
+        "windowLow": 0,
+        "windowHigh": 1,
+        "windowGamma": 1,
+        "capContrast": 1.8,
+        "cutFaceExposure": 1.35,
+        "palette": 4,
+        "threshold": 0.32,
+        "cleanupEnabled": true,
+        "anatomySelected": 0,
+        "anatomyOpacity": 0.65
+      },
+      "sourceSha256": "126f8b20218c10e19a47b9bbff605b400ab5bdd51bf7e7e013796eee3df28a2a",
+      "pixelSha256": "be55f97cce2cbe1bf1539f47661948ace888732e1a0f339cd806a3e99406812a",
+      "rgbaSha256": "4744c8973851ce2e6cccd761167e2ecaa138b2c94f973d234c90193e68528689",
+      "byteExact": true,
+      "baseline": {
+        "medianMs": 8.879252000000008,
+        "minMs": 8.424747999999965,
+        "maxMs": 19.144215999999915,
+        "samplesMs": [
+          8.83564100000001,
+          8.424747999999965,
+          10.391144999999995,
+          8.701039999999978,
+          10.29756500000002,
+          10.358400999999958,
+          8.582929999999976,
+          8.469150000000013,
+          8.879252000000008,
+          13.009376000000088,
+          19.144215999999915
+        ]
+      },
+      "candidate": {
+        "medianMs": 1.788562000000013,
+        "minMs": 1.4887049999999817,
+        "maxMs": 2.5931260000000407,
+        "samplesMs": [
+          1.613991999999996,
+          1.788562000000013,
+          2.460946999999976,
+          2.4881879999999796,
+          2.2925650000000246,
+          2.033588000000009,
+          1.5116899999999873,
+          2.5931260000000407,
+          1.6799310000000105,
+          1.4887049999999817,
+          1.6460499999999456
+        ]
+      },
+      "medianSpeedup": 4.964464189667422
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "source": "data/ultra-sections/y/0331.webp",
+      "axis": "y",
+      "index": 331,
+      "position": 0.6983122362869199,
+      "section": {
+        "crop": [
+          506,
+          258,
+          1053,
+          1545
+        ],
+        "width": 1053,
+        "height": 1545,
+        "fullWidth": 1897,
+        "fullHeight": 2117
+      },
+      "pixels": 1626885,
+      "settings": {
+        "windowEnabled": false,
+        "windowLow": 0,
+        "windowHigh": 1,
+        "windowGamma": 1,
+        "capContrast": 1.8,
+        "cutFaceExposure": 1.35,
+        "palette": 5,
+        "threshold": 0.32,
+        "cleanupEnabled": true,
+        "anatomySelected": 2,
+        "anatomyOpacity": 0.65
+      },
+      "sourceSha256": "126f8b20218c10e19a47b9bbff605b400ab5bdd51bf7e7e013796eee3df28a2a",
+      "pixelSha256": "be55f97cce2cbe1bf1539f47661948ace888732e1a0f339cd806a3e99406812a",
+      "rgbaSha256": "64378bdcfec532e8438552ab6b382d2238de5b48eecdbe01ba9ba4affb50f853",
+      "byteExact": true,
+      "baseline": {
+        "medianMs": 10.303582000000006,
+        "minMs": 9.761451999999963,
+        "maxMs": 16.18626500000005,
+        "samplesMs": [
+          16.18626500000005,
+          9.989030999999954,
+          10.303582000000006,
+          10.254158000000075,
+          9.946107999999981,
+          10.512883999999985,
+          10.136710999999991,
+          10.449950999999942,
+          9.761451999999963,
+          11.07752800000003,
+          11.519748999999933
+        ]
+      },
+      "candidate": {
+        "medianMs": 2.170605000000023,
+        "minMs": 2.0221420000000307,
+        "maxMs": 4.323613000000023,
+        "samplesMs": [
+          4.323613000000023,
+          4.158356000000026,
+          2.273458000000005,
+          2.024346000000037,
+          2.2609800000000178,
+          2.0766139999999496,
+          2.1357229999999845,
+          2.3410200000000714,
+          2.1625029999999015,
+          2.0221420000000307,
+          2.170605000000023
+        ]
+      },
+      "medianSpeedup": 4.74687103365186
+    },
+    {
+      "donor": "s-20-29",
+      "source": "data/donors/s-20-29/ultra-sections/y/0255.webp",
+      "axis": "y",
+      "index": 255,
+      "position": 0.5345911949685535,
+      "section": {
+        "crop": [
+          194,
+          114,
+          1497,
+          1701
+        ],
+        "width": 1497,
+        "height": 1701,
+        "fullWidth": 1909,
+        "fullHeight": 1945
+      },
+      "pixels": 2546397,
+      "settings": {
+        "windowEnabled": true,
+        "windowLow": 0.13513513513513514,
+        "windowHigh": 0.6216216216216216,
+        "windowGamma": 0.9,
+        "capContrast": 1,
+        "cutFaceExposure": 2.7,
+        "palette": 4,
+        "threshold": 0.16216216216216217,
+        "cleanupEnabled": true,
+        "anatomySelected": 0,
+        "anatomyOpacity": 0.65
+      },
+      "sourceSha256": "c279910c5412035f1fdfc03df88fe7a9ac6e62c6ba431556261fb303ceffb8ae",
+      "pixelSha256": "c2c0bde929ea0800ae41fe8077429484f1b99960663a255db98a1a8b7973b4d8",
+      "rgbaSha256": "8d7b9d27a01017fc5993096a17f604c57ce9a0789f8640e5759d82154953f245",
+      "byteExact": true,
+      "baseline": {
+        "medianMs": 17.08660000000009,
+        "minMs": 14.153565999999955,
+        "maxMs": 30.611116000000038,
+        "samplesMs": [
+          24.38764399999991,
+          30.611116000000038,
+          17.08660000000009,
+          24.353272999999945,
+          15.117197000000033,
+          15.853057000000035,
+          16.88987599999996,
+          14.153565999999955,
+          14.780845,
+          21.520467000000053,
+          21.893256000000065
+        ]
+      },
+      "candidate": {
+        "medianMs": 2.4011400000001686,
+        "minMs": 2.259166999999934,
+        "maxMs": 5.073028000000022,
+        "samplesMs": [
+          2.4011400000001686,
+          2.8210169999999835,
+          5.073028000000022,
+          2.4176339999999072,
+          2.295861000000059,
+          2.4269380000000638,
+          2.3210790000000543,
+          2.259166999999934,
+          2.3003879999998844,
+          2.2610400000000936,
+          2.7586330000001453
+        ]
+      },
+      "medianSpeedup": 7.116036549305284
+    },
+    {
+      "donor": "s-20-28",
+      "source": "data/donors/s-20-28/ultra-sections/y/0282.webp",
+      "axis": "y",
+      "index": 282,
+      "position": 0.592436974789916,
+      "section": {
+        "crop": [
+          514,
+          42,
+          1037,
+          1653
+        ],
+        "width": 1037,
+        "height": 1653,
+        "fullWidth": 1905,
+        "fullHeight": 2033
+      },
+      "pixels": 1714161,
+      "settings": {
+        "windowEnabled": true,
+        "windowLow": 0.2782496782496782,
+        "windowHigh": 0.8445302445302445,
+        "windowGamma": 0.9,
+        "capContrast": 1,
+        "cutFaceExposure": 2.7,
+        "palette": 4,
+        "threshold": 0.32972972972972975,
+        "cleanupEnabled": true,
+        "anatomySelected": 0,
+        "anatomyOpacity": 0.65
+      },
+      "sourceSha256": "ae8e35ba961bc476bf54d267f4c99d54eb6f117237e73eafd16dccfd4274fb4b",
+      "pixelSha256": "2e3e6e5273f2c5f38b9a2f631acb6a596176730f695dc4131a5e0b974470cefe",
+      "rgbaSha256": "0b549efbf73868a5eb49f2f84f6932cc329e4a070e1ab108761d00eaea4c53a4",
+      "byteExact": true,
+      "baseline": {
+        "medianMs": 10.096821999999975,
+        "minMs": 9.491056999999955,
+        "maxMs": 12.888304000000062,
+        "samplesMs": [
+          11.464566999999988,
+          11.283355999999912,
+          10.096821999999975,
+          9.964754999999968,
+          9.491056999999955,
+          9.85301800000002,
+          11.327731999999969,
+          12.680464999999913,
+          12.888304000000062,
+          9.931757000000061,
+          9.809693999999809
+        ]
+      },
+      "candidate": {
+        "medianMs": 1.6490040000001045,
+        "minMs": 1.5377290000001267,
+        "maxMs": 1.787311999999929,
+        "samplesMs": [
+          1.7424849999999878,
+          1.609185000000025,
+          1.7259699999999611,
+          1.5377290000001267,
+          1.787311999999929,
+          1.6490740000001551,
+          1.6713780000000042,
+          1.6052389999999832,
+          1.6091349999999238,
+          1.6068619999998646,
+          1.6490040000001045
+        ]
+      },
+      "medianSpeedup": 6.1229821152643265
+    }
+  ]
+}

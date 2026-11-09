@@ -1,0 +1,37 @@
+{
+  "scope": "Focused whole-heart surface priority follow-up for Probe and TEE",
+  "suites": [
+    {
+      "command": "node --test tests/fine-surface-transport-v23.mjs tests/mesh-debris-cleanup-v25.mjs",
+      "tests": 17,
+      "passed": 17,
+      "failed": 0,
+      "cancelled": 0
+    },
+    {
+      "command": "node tests/fine-surface-controller-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "tests": 32,
+      "passed": 32,
+      "failed": 0,
+      "cancelled": 0
+    }
+  ],
+  "newCases": [
+    "Pause during actual gzip decompression holds geometry until Reconstruction resumes",
+    "Pause during a decoded read stops further chunk consumption and preserves the decoded prefix",
+    "Worker completion immediately before switching workspace starts neither cleanup nor GPU installation",
+    "Completed cleanup flags remain resident while GPU installation waits for Reconstruction",
+    "Leaving during cleanup aborts that stage and resumes it without another geometry download",
+    "Canceling a workspace-paused selection removes waiters and prevents later resurrection",
+    "An aborted cleanup signal prevents initial transport and continuation after metadata",
+    "An aborted pending flag read cancels its reader before validation"
+  ],
+  "preserved": [
+    "Source and manifest hash verification",
+    "Bounded download and decoded lengths",
+    "Original welded geometry and index validation",
+    "Original debris source identity and triangle-uniformity validation",
+    "Stale selection cancellation and fallback to the previous complete view"
+  ],
+  "limits": "Node worker-stream fixtures and a LinkeDOM/mock-GPU lifecycle test establish scheduling and cancellation semantics. They do not measure public-network performance or browser frame rate. Already-running hash operations and bounded stream internals can finish while paused, but cannot advance to GPU installation."
+}

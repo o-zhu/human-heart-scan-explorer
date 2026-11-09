@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-08T18:04:10.634Z",
+  "passed": true,
+  "scope": "All 56 Echo presets on all three supported HiP-CT donors, two accepted camera anchors per preset. Separate clinical-source viewers do not expose this Echo workspace.",
+  "totals": {
+    "donorViews": 168,
+    "acquiredViews": 147,
+    "deliberateOutsideScanViews": 21,
+    "nativeFrames": 336,
+    "fullFaceRasters": 147,
+    "unchangedRoiRasters": 147,
+    "independentSourceComparisons": 94962,
+    "maximumInterpolationError": 0,
+    "priorRoiClippedSupportedTissue": 125,
+    "acceptedPlanesPreserved": true,
+    "ctCropsPreserved": true,
+    "retainedHalvesPreserved": true,
+    "cameraAnchorsPreserved": true,
+    "sourceVoxelsPreserved": true,
+    "sourceIdentities": 3,
+    "maximumFineRasterBytes": 9762600,
+    "maximumFineDimension": 3250,
+    "maximumCombinedRoiAndFaceBytes": 12746800
+  },
+  "checks": [
+    "Independent plane/source-box half-space clipping covers all acquired cuts.",
+    "Original accepted physical planes, CT crops, retained halves and both camera anchors equal the pre-fix snapshot.",
+    "Exact full-face cache descriptors differ from ROI descriptors and remain donor-isolated.",
+    "Native fine grid metadata fits the existing 12 MiB per-raster and 8192 dimension limits.",
+    "Production MPR worker samples hash-verified resident source for both full faces and CT crops; independent weighted-corner checks verify orientation and interpolation.",
+    "Unmodified production GLSL renders every view in both anchors with current heart-priority context depth and zero GL errors.",
+    "All acquired faces contain supported measured tissue; deliberate outside-scan entries receive no fabricated CT cap."
+  ],
+  "limitations": [
+    "Native rendering uses measured resident source spacing 317.6–318.24 µm, not 79.4–79.56 µm fine-brick downloads.",
+    "The fine-bank endpoint was inaccessible to the local executor; exact fine raster bounds are checked from verified source manifests, and production fine lifecycle is covered separately by focused tests.",
+    "These are scientific native EGL renders, not browser screenshots, iPhone/iPad measurements or clinical correspondence validation.",
+    "The full-size native frame set is reproducible with the harness; this repository retains complete contact sheets, receipts and three enlarged affected views per donor."
+  ],
+  "coverageReceipt": "coverage.json",
+  "coverageSha256": "d24729780383337e78cef2171b3b21ada2f853aaa84229f536c0f47c5fcf706b",
+  "donors": [
+    {
+      "donor": "ladaf-2021-17",
+      "views": 56,
+      "tteViews": 28,
+      "teeViews": 28,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "nativeFrames": 112,
+      "sourceSpacingUm": 317.6,
+      "sourceDimensions": [
+        475,
+        475,
+        530
+      ],
+      "sourceManifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+      "nativeDriver": {
+        "vendor": "Mesa",
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+        "shadingLanguageVersion": "OpenGL ES GLSL ES 3.20"
+      },
+      "fullFaceRasters": 49,
+      "unchangedRoiRasters": 49,
+      "independentSourceComparisons": 31654,
+      "maximumInterpolationError": 0,
+      "priorRoiClippedSupportedTissue": 32,
+      "maximumPriorRoiClippedTissueFraction": 0.5959285923852942,
+      "minimumSupportedDisplaySamples": 12447,
+      "deliberateOutsideIds": [
+        "subcostal_ivc",
+        "subcostal_hepatic",
+        "ssn_arch",
+        "daosax",
+        "daolax",
+        "uearchlax",
+        "uearchsax"
+      ],
+      "withheldProbeIds": [
+        "tgrvinout"
+      ],
+      "receipt": "ladaf-2021-17/native-receipt.json",
+      "galleries": [
+        "ladaf-2021-17/tte-probe-gallery.jpg",
+        "ladaf-2021-17/tte-anatomy-gallery.jpg",
+        "ladaf-2021-17/tee-probe-gallery.jpg",
+        "ladaf-2021-17/tee-anatomy-gallery.jpg"
+      ],
+      "exportSha256": "0a0e8b9dc0d4f8dd6cd827cae6a61b51e036f27430fa499364f3847b2c92b805",
+      "shaderSourcesSha256": "287f9b2f353da38d5266680cd751da627fedde6768ba227e3501ffbbf16d6fed"
+    },
+    {
+      "donor": "s-20-29",
+      "views": 56,
+      "tteViews": 28,
+      "teeViews": 28,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "nativeFrames": 112,
+      "sourceSpacingUm": 318.24,
+      "sourceDimensions": [
+        478,
+        478,
+        487
+      ],
+      "sourceManifestSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+      "nativeDriver": {
+        "vendor": "Mesa",
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+        "shadingLanguageVersion": "OpenGL ES GLSL ES 3.20"
+      },
+      "fullFaceRasters": 49,
+      "unchangedRoiRasters": 49,
+      "independentSourceComparisons": 31654,
+      "maximumInterpolationError": 0,
+      "priorRoiClippedSupportedTissue": 44,
+      "maximumPriorRoiClippedTissueFraction": 0.7987330517892866,
+      "minimumSupportedDisplaySamples": 12819,
+      "deliberateOutsideIds": [
+        "subcostal_ivc",
+        "subcostal_hepatic",
+        "ssn_arch",
+        "daosax",
+        "daolax",
+        "uearchlax",
+        "uearchsax"
+      ],
+      "withheldProbeIds": [
+        "tgrvinout"
+      ],
+      "receipt": "s-20-29/native-receipt.json",
+      "galleries": [
+        "s-20-29/tte-probe-gallery.jpg",
+        "s-20-29/tte-anatomy-gallery.jpg",
+        "s-20-29/tee-probe-gallery.jpg",
+        "s-20-29/tee-anatomy-gallery.jpg"
+      ],
+      "exportSha256": "89ed64608f7971638dba76d97cc9bc82d293c3265ee9825a6377d653ea591fed",
+      "shaderSourcesSha256": "287f9b2f353da38d5266680cd751da627fedde6768ba227e3501ffbbf16d6fed"
+    },
+    {
+      "donor": "s-20-28",
+      "views": 56,
+      "tteViews": 28,
+      "teeViews": 28,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "nativeFrames": 112,
+      "sourceSpacingUm": 317.6,
+      "sourceDimensions": [
+        477,
+        477,
+        509
+      ],
+      "sourceManifestSha256": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+      "nativeDriver": {
+        "vendor": "Mesa",
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+        "shadingLanguageVersion": "OpenGL ES GLSL ES 3.20"
+      },
+      "fullFaceRasters": 49,
+      "unchangedRoiRasters": 49,
+      "independentSourceComparisons": 31654,
+      "maximumInterpolationError": 0,
+      "priorRoiClippedSupportedTissue": 49,
+      "maximumPriorRoiClippedTissueFraction": 0.754620401132029,
+      "minimumSupportedDisplaySamples": 10699,
+      "deliberateOutsideIds": [
+        "subcostal_ivc",
+        "subcostal_hepatic",
+        "ssn_arch",
+        "daosax",
+        "daolax",
+        "uearchlax",
+        "uearchsax"
+      ],
+      "withheldProbeIds": [
+        "tgrvinout"
+      ],
+      "receipt": "s-20-28/native-receipt.json",
+      "galleries": [
+        "s-20-28/tte-probe-gallery.jpg",
+        "s-20-28/tte-anatomy-gallery.jpg",
+        "s-20-28/tee-probe-gallery.jpg",
+        "s-20-28/tee-anatomy-gallery.jpg"
+      ],
+      "exportSha256": "95b4013a355c13ad51d2dd59ed2a6852e2df6f7432be5bf579856a069dd918a7",
+      "shaderSourcesSha256": "287f9b2f353da38d5266680cd751da627fedde6768ba227e3501ffbbf16d6fed"
+    }
+  ],
+  "artifacts": {
+    "ladaf-2021-17/tte-probe-gallery.jpg": "91cce99083b0918e8f941d69d80f193622a3eb6cdc5fa9f0182d13bf60e19ea4",
+    "ladaf-2021-17/tte-anatomy-gallery.jpg": "1f1f92cda30811c1e9c4766c78d4e1c6eff59f8fc7f01fab7cbc355171c96d25",
+    "ladaf-2021-17/tee-probe-gallery.jpg": "faddf2abe0d8335cc87d99a3e04541a9e3c35cda085282d20d73052853435c7c",
+    "ladaf-2021-17/tee-anatomy-gallery.jpg": "f89ce6b12f9e36bbe3fcd0cdc2bc9e92ee949d6370c452f163d26d78a9a55621",
+    "ladaf-2021-17/tte-plax_av-pair.jpg": "5f311d029cad9e4dd07580c17760a9bea6d3f8b26dd39293b5a420a4a70bffe0",
+    "ladaf-2021-17/tte-plax_mv-pair.jpg": "48bfc428ee6901385a8cab8eb3ef83e4e99a97b96f914bd293b8dd14e1f23217",
+    "ladaf-2021-17/tte-psax_pv-pair.jpg": "82180ca610ffe022ec8c7e04ffe705a9b1953dc769b134b4540e2d6105141947",
+    "ladaf-2021-17/native-receipt.json": "358b89ca4ee9a7f74efeddc3f2c742e8ced9199340e202cff083ac1aeabc1019",
+    "s-20-29/tte-probe-gallery.jpg": "68e69550474c1a1fa3f2debe5595af2006ef419c3830531672a959bbd41df113",
+    "s-20-29/tte-anatomy-gallery.jpg": "6b6d898f7a31d16c988247c7ba9d3124d191084612cabebcafa74c7f4f00dc69",
+    "s-20-29/tee-probe-gallery.jpg": "2ec1049fb72277ca63425793c837556198d5dd58235b337b4639e569bfabe591",
+    "s-20-29/tee-anatomy-gallery.jpg": "3b324844d6f39cea5adf5d008f5ddabe9fa50cfb4fcaeccbf572ddd05c357c83",
+    "s-20-29/tte-plax_av-pair.jpg": "6dc95851b8276a5df696c1db7df8b128073c3d599c96b7efd50f80a914707d98",
+    "s-20-29/tte-plax_mv-pair.jpg": "a9870ed3235ad1d6cde8873312d02da8148f20369f86179123b85b927a352968",
+    "s-20-29/tte-psax_pv-pair.jpg": "7444c941723ffeab9505af424de5c0ebdbddcdea82e0e091f5083f0e28cbd9ab",
+    "s-20-29/native-receipt.json": "db448576c0673dd657d4e332267ba9b5e8773558e048dc274698c1be70300d57",
+    "s-20-28/tte-probe-gallery.jpg": "4619fff5a76cd5d0ef4cad1c27e9142e8ba946800f30df60a9ac184b04e282d5",
+    "s-20-28/tte-anatomy-gallery.jpg": "1af996613287a2f2b158069fedd933729dda9f56fa76ee24b1467a904b24ca03",
+    "s-20-28/tee-probe-gallery.jpg": "a405207435a40c21a407f2dd5c63a856b4e3513c63bc9198e3bd43b53f65d5cb",
+    "s-20-28/tee-anatomy-gallery.jpg": "6bfbb458b5767a43c2914d895e70cbd6e9b8fc9f310f03e4d8c95203ec485729",
+    "s-20-28/tte-plax_av-pair.jpg": "23a1a2b917cbca7cd5e31dd5ac652de11e7d491082bf127ffc4a987ef959e129",
+    "s-20-28/tte-plax_mv-pair.jpg": "514943d5277efc06874d61c78c32b06d7c533dd76978d053d8cb6db8b6d6f35e",
+    "s-20-28/tte-psax_pv-pair.jpg": "44f0ddea4f2400c7e27f736dec5245195b5fdc4b96c31c3974de042d48498708",
+    "s-20-28/native-receipt.json": "d214c98ad3427dc1449cdf043bcef20a93afcff065d2c4db6e6e05542165e58e"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "heart-explorer-slab-independent-recovery-review-v1",
+  "dateUtc": "2026-11-06",
+  "reviewer": "independent settings/transport reviewer",
+  "slab": {
+    "z0": 1536,
+    "z1": 1600,
+    "configurationFingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e"
+  },
+  "reviewScope": "Read-only review of the unchanged-pipeline replay output, saved input boundary arrays, diagnostic implementation and receipts. No scientific source, running process or geometry was modified by this review.",
+  "evidence": {
+    "diagnostic": {
+      "path": "docs/fine-detail-v23/slab-1536-diagnostic.json",
+      "sha256": "78cf97465ea0bb9191f5fc2117f7540e04d7ac8c579f9f67baebe8393340abca"
+    },
+    "inputBoundaries": {
+      "path": "{local-workspace}/fine-detail-v23-build64/diagnostics/1536-1600/input-boundaries.npz",
+      "sha256": "b8d33779f006d1ca9bbbf4f733ab4e8f0a516baf204d5ee62c22ed78994efada",
+      "matchesDiagnostic": true
+    },
+    "replayedReducerOutput": {
+      "path": "{local-workspace}/fine-detail-v23-build64/diagnostics/1536-1600/reducer-output.npz",
+      "sha256": "501fb44e9e73b649426a7dfc09658ede340801baeb291769c110c62fbc857687",
+      "matchesDiagnostic": true
+    },
+    "originalPrepareSha256": "9f43548dad027f14eb993971bff4e44e8af37f60a60b3a7812de12097ed09fd3",
+    "diagnosisScriptSha256": "c9bbd46e6a13dc50fe9b822fd15b2ed9461250fdfb6e7b5a315023fa8178d499"
+  },
+  "independentlyRecomputedFrozenCoordinateMultisets": [
+    {
+      "plane": "lower",
+      "originalVertices": 45941,
+      "outputPlaneVertices": 45941,
+      "missingOriginalCoordinateMultiplicity": 0,
+      "extraCoordinateMultiplicity": 0
+    },
+    {
+      "plane": "upper",
+      "originalVertices": 39431,
+      "outputPlaneVertices": 39432,
+      "missingOriginalCoordinateMultiplicity": 0,
+      "extraCoordinateMultiplicity": 1
+    }
+  ],
+  "reviewedOpenContourEvidence": {
+    "method": "Diagnostic compares undirected coordinate-edge multisets after documented zero-area face exclusion. The diagnostic implementation and these reported results were reviewed; the independent additional computation focused on frozen-coordinate multisets and the added vertex fan.",
+    "inputZeroAreaFacesExcluded": 0,
+    "outputZeroAreaFacesExcluded": 2,
+    "planes": [
+      {
+        "plane": "lower",
+        "originalOpenEdges": 45940,
+        "outputOpenEdges": 45940,
+        "missingEdges": 0,
+        "addedEdges": 0
+      },
+      {
+        "plane": "upper",
+        "originalOpenEdges": 39426,
+        "outputOpenEdges": 39426,
+        "missingEdges": 0,
+        "addedEdges": 0
+      }
+    ]
+  },
+  "independentlyRecomputedAddedVertexFan": {
+    "vertexIndex": 308037,
+    "xyzMm": [
+      4.288294315338135,
+      -10.720017433166504,
+      47.719398498535156
+    ],
+    "sameCoordinateOutputVertices": 1,
+    "sameCoordinateOriginalFrozenMultiplicity": 0,
+    "incidentTriangles": 6,
+    "nonzeroAreaIncidentTriangles": 6,
+    "incidentEdgeFaceCounts": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "vertexLinkConnected": true,
+    "vertexLinkDegreeRange": [
+      2,
+      2
+    ],
+    "minimumIncidentDoubledAreaMm2": 6.680652404611465e-07,
+    "interpretation": "A locally closed six-triangle interior fan; the added vertex is not an open contour vertex. This does not assert that its entire connected component is globally closed."
+  },
+  "inference": {
+    "supportedConclusion": "The original check classified every vertex lying exactly on a slab plane as a frozen boundary vertex. One added interior-fan vertex increased that count; no original frozen coordinate multiplicity or reported open contour edge was lost.",
+    "roundingMechanism": "Consistent with a strict double-precision interior candidate rounding onto the plane when exported to float32. This mechanism is inferred, because pre-cast double coordinates were not recorded.",
+    "float32StepAtThesePlanesMm": 3.814697265625e-06,
+    "originalAttemptCaveat": "The first failed attempt did not retain a numerical payload hash. This is an unchanged-pipeline replay output, not a demonstrated byte-for-byte recovery of that first attempt."
+  },
+  "recoveryAssessment": {
+    "supported": true,
+    "conditions": [
+      "Preserve the captured replay NPZ bytes and their recorded SHA-256.",
+      "Retain the original failed assertion and add a separately hashed validation-recovery receipt; do not claim the original count assertion passed.",
+      "Weld only genuine open contours; preserve the added closed interior fan instead of snapping it to another component.",
+      "Keep the other 30 accepted slab payloads and receipts unchanged.",
+      "Bind recovery validation and the new seam-only welder to final processing provenance, then require the complete seam and delivered-asset validation gates."
+    ],
+    "notEstablished": "This review does not establish full-organ topology, anatomical accuracy, final encoding quality, browser performance or publication readiness."
+  }
+}

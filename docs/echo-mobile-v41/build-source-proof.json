@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "public/echo-anatomy-context-v2.js",
+      "bytes": 26156,
+      "sha256": "a1998f8207408a64be6fcad39884ec1adad1ca035a1c645c30ba45f868c75868",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/echo-context-cutaway.js",
+      "deleted": true,
+      "buildCopyAbsent": true
+    },
+    {
+      "path": "public/echo-reference-player.js",
+      "bytes": 12289,
+      "sha256": "b8620b708dc9e8cd213ef5981bbeb08fcbb72bf33bc447364936760ae70b3bd2",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/echo-skeleton-fit.js",
+      "bytes": 2384,
+      "sha256": "23506c0127fcccd95d23d15070e02349c18bc40846d1a39fcbef215efc69133e",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/echo.js",
+      "bytes": 96183,
+      "sha256": "685f9e1032e68b357fa2816c349d189e819e59484d72554f6e140f285c72e7ad",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/fine-surface.js",
+      "bytes": 44342,
+      "sha256": "1d5793fd13cca1f7b68f60773c9dd99e778ad74925a4ac694e750fc595e6fd04",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/lumen-cleanup-v23.js",
+      "bytes": 8881,
+      "sha256": "06ff68a6850b2266cbcd4d8434602647a2f3415a62c961b3a11905f7c0cfc611",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/mobile-lumen-atlas.js",
+      "bytes": 8074,
+      "sha256": "e9a21a30b7523d8c7257566f9e6a2879a3c4687c3aba427b8dd6f8dfedf0458e",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/renderer.js",
+      "bytes": 70211,
+      "sha256": "832f9a40eb56575cf7f3e5aab76819e6aa7dc7908c302ea9252e7c65d9d997f7",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/reviewed-mask-atlas.js",
+      "bytes": 21596,
+      "sha256": "c963dd8e81e91f1e8b5daddfeac4e086ef0f157b7d40641cbaf3ab880729ce50",
+      "buildIdentical": true
+    },
+    {
+      "path": "public/volume-picking.js",
+      "bytes": 5351,
+      "sha256": "90a71e216ad3c9fef4c04f04db0b6f6b2eeaeff72ae436bd845f4d4d42262acd",
+      "buildIdentical": true
+    }
+  ],
+  "sourceBinaryAssetsChanged": false,
+  "allRequiredHostingStagesPassed": true,
+  "remainingStaticBytes": 261331918,
+  "staticBudgetBytes": 264503296
+}

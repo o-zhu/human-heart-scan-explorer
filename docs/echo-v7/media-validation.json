@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "currentClips": 12,
+  "revisedClips": 10,
+  "videoBytes": 7530996,
+  "posterBytes": 346428,
+  "previousVideoBytes": 14455544,
+  "maximumClipBytes": 1787519,
+  "checks": [
+    "All active MP4s fully decode with actual H.264 streams, no audio, correct hashes and native dimensions.",
+    "All active MP4s put moov before mdat for fast-start local playback.",
+    "All ten revised movies retain the original decoded frame count and cadence without upscaling.",
+    "Five TTE original recordings are 51 fps rather than the previous 10\u201312 fps GIF cadence.",
+    "Five TEE outputs use the recorded native-pixel crops, remain 25 fps and retain clinical teaching labels.",
+    "Exact source/prepared hashes and poster byte counts match the licensed catalog; every clip fits the unchanged 4 MiB bound."
+  ],
+  "revised": [
+    {
+      "id": "tte-plax",
+      "nativeSourceDimensions": [
+        624,
+        480
+      ],
+      "outputDimensions": [
+        624,
+        480
+      ],
+      "frames": 51,
+      "fps": 51.0,
+      "bytes": 208087
+    },
+    {
+      "id": "tte-psax_papillary",
+      "nativeSourceDimensions": [
+        624,
+        480
+      ],
+      "outputDimensions": [
+        624,
+        480
+      ],
+      "frames": 93,
+      "fps": 51.0,
+      "bytes": 375472
+    },
+    {
+      "id": "tte-a4c",
+      "nativeSourceDimensions": [
+        624,
+        480
+      ],
+      "outputDimensions": [
+        624,
+        480
+      ],
+      "frames": 50,
+      "fps": 51.0,
+      "bytes": 215551
+    },
+    {
+      "id": "tte-a2c",
+      "nativeSourceDimensions": [
+        624,
+        480
+      ],
+      "outputDimensions": [
+        624,
+        480
+      ],
+      "frames": 91,
+      "fps": 51.0,
+      "bytes": 407118
+    },
+    {
+      "id": "tte-subcostal",
+      "nativeSourceDimensions": [
+        624,
+        480
+      ],
+      "outputDimensions": [
+        624,
+        480
+      ],
+      "frames": 44,
+      "fps": 51.0,
+      "bytes": 170931
+    },
+    {
+      "id": "tee-me4c",
+      "nativeSourceDimensions": [
+        1280,
+        720
+      ],
+      "outputDimensions": [
+        792,
+        568
+      ],
+      "frames": 39,
+      "fps": 25.0,
+      "bytes": 549072
+    },
+    {
+      "id": "tee-melax",
+      "nativeSourceDimensions": [
+        1280,
+        720
+      ],
+      "outputDimensions": [
+        870,
+        610
+      ],
+      "frames": 19,
+      "fps": 25.0,
+      "bytes": 243634
+    },
+    {
+      "id": "tee-me2c",
+      "nativeSourceDimensions": [
+        1920,
+        1080
+      ],
+      "outputDimensions": [
+        1074,
+        810
+      ],
+      "frames": 31,
+      "fps": 25.0,
+      "bytes": 1137327
+    },
+    {
+      "id": "tee-bicaval",
+      "nativeSourceDimensions": [
+        1280,
+        720
+      ],
+      "outputDimensions": [
+        804,
+        596
+      ],
+      "frames": 42,
+      "fps": 25.0,
+      "bytes": 625027
+    },
+    {
+      "id": "tee-tgpapillary",
+      "nativeSourceDimensions": [
+        1920,
+        1080
+      ],
+      "outputDimensions": [
+        1224,
+        880
+      ],
+      "frames": 38,
+      "fps": 25.0,
+      "bytes": 1435222
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "date": "2026-11-04",
+  "source": "LADAF-2021-17, windowed s4 display volume",
+  "sourceVoxelsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "sourceSha256": "1b5b47b9a873ac4f423ffbf398ec1d3bcff75adc9ea066802deda03ffe193f29",
+  "cpu": {
+    "macrocellDimensions": [
+      60,
+      60,
+      67
+    ],
+    "macrocellBytes": 241200,
+    "buildMs": 453.4591130000001,
+    "interpolationBoundTests": 100000,
+    "sourceUnchanged": true,
+    "emptySpaceSameGridPixelEquality": true,
+    "motionSameGridPixelEquality": true,
+    "staleRefinementCancelled": true,
+    "sourceHash": "1b5b47b9a873ac4f423ffbf398ec1d3bcff75adc9ea066802deda03ffe193f29"
+  },
+  "gpuWide": {
+    "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "sameGrid": {
+      "acceleration": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0
+      },
+      "motion": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0
+      }
+    },
+    "timings": {
+      "cut-full": {
+        "medianMs": 52.930392001144355,
+        "trialsMs": [
+          52.930392001144355,
+          52.050097001483664,
+          970.5074119992787
+        ],
+        "pixels": 195840
+      },
+      "cut-skip": {
+        "medianMs": 49.36405399712385,
+        "trialsMs": [
+          69.3449589998636,
+          46.11949799800641,
+          49.36405399712385
+        ],
+        "pixels": 195840
+      },
+      "whole-full": {
+        "medianMs": 135.31031800084747,
+        "trialsMs": [
+          135.69415800157003,
+          98.94102399994154,
+          135.31031800084747
+        ],
+        "pixels": 195840
+      },
+      "whole-skip": {
+        "medianMs": 151.6961720008112,
+        "trialsMs": [
+          151.6961720008112,
+          144.78202800091822,
+          188.57406199822435
+        ],
+        "pixels": 195840
+      }
+    },
+    "textureCrop": {
+      "guarded-clean-smoothing-0": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-0": {
+        "identical": false,
+        "max": 2,
+        "mean": 0.00011871936274509804,
+        "changedPixels": 40,
+        "pixelsAbove2": 0
+      },
+      "guarded-clean-smoothing-1": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-1": {
+        "identical": false,
+        "max": 3,
+        "mean": 0.00015318627450980392,
+        "changedPixels": 58,
+        "pixelsAbove2": 1
+      },
+      "guarded-clean-smoothing-2": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-2": {
+        "identical": false,
+        "max": 3,
+        "mean": 0.00012893178104575164,
+        "changedPixels": 68,
+        "pixelsAbove2": 1
+      }
+    }
+  },
+  "gpuCloseup": {
+    "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "sameGrid": {
+      "acceleration": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0
+      },
+      "motion": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0
+      }
+    },
+    "timings": {
+      "cut-full": {
+        "medianMs": 46.49462099769153,
+        "trialsMs": [
+          45.035406001261435,
+          47.80355500042788,
+          46.49462099769153
+        ],
+        "pixels": 195840
+      },
+      "cut-skip": {
+        "medianMs": 53.664756000216585,
+        "trialsMs": [
+          61.67038300191052,
+          53.664756000216585,
+          51.03625999981887
+        ],
+        "pixels": 195840
+      },
+      "whole-full": {
+        "medianMs": 106.33194500042009,
+        "trialsMs": [
+          106.33194500042009,
+          144.54845799991745,
+          97.02424100032658
+        ],
+        "pixels": 195840
+      },
+      "whole-skip": {
+        "medianMs": 156.70178199798102,
+        "trialsMs": [
+          156.70178199798102,
+          169.93979700055206,
+          131.98028699844144
+        ],
+        "pixels": 195840
+      }
+    },
+    "textureCrop": {
+      "guarded-clean-smoothing-0": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-0": {
+        "identical": false,
+        "max": 50,
+        "mean": 0.0006242340686274509,
+        "changedPixels": 103,
+        "pixelsAbove2": 7
+      },
+      "guarded-clean-smoothing-1": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-1": {
+        "identical": false,
+        "max": 3,
+        "mean": 0.00030764910130718953,
+        "changedPixels": 136,
+        "pixelsAbove2": 1
+      },
+      "guarded-clean-smoothing-2": {
+        "identical": true,
+        "max": 0,
+        "mean": 0.0,
+        "changedPixels": 0,
+        "pixelsAbove2": 0
+      },
+      "gpu-crop-smoothing-2": {
+        "identical": false,
+        "max": 8,
+        "mean": 0.00029488357843137253,
+        "changedPixels": 144,
+        "pixelsAbove2": 2
+      }
+    }
+  },
+  "surfaceModes": {
+    "0": "Central finite-difference normals",
+    "1": "Analytic cubic B-spline normals",
+    "2": "Separable Gaussian derivative normals, sigma 1.15 voxels; three-voxel source halo"
+  },
+  "voxelGeometryChangedBySmoothing": false,
+  "cutFaceTextureChangedBySmoothing": false,
+  "originalVsCompactCleanupEnabled": "Exact rendered-pixel equality in both source-section views, all three smoothing modes.",
+  "croppedGpuTexture": {
+    "dimensionsXYZ": [
+      296,
+      322,
+      502
+    ],
+    "offsetXYZ": [
+      107,
+      85,
+      12
+    ],
+    "originalBytes": 119581250,
+    "croppedBytes": 47846624,
+    "note": "GPU arithmetic and hardware filtering produce isolated subpixel/rounding differences; see per-view metrics. Underlying retained voxel bytes and geometry are identical."
+  },
+  "movingIdleStatement": "At a fixed pixel grid, lighting, normals, sampling and resulting pixels are identical. Runtime interaction adapts pixel count only.",
+  "timingLimit": "EGL uses the software llvmpipe driver on a shared execution host. Timings are not browser FPS or a hardware-GPU speedup claim; GPU skipping did not improve all views.",
+  "rejectedApproach": "A broad central-difference normal blend retained or emphasized regular ridges and reached a guard edge at one pixel. The tested final Smooth option uses a Gaussian derivative instead.",
+  "limits": [
+    "Residual acquisition/downsampling ridges remain. No slice registration or new anatomical surface has been invented.",
+    "Browser interaction verification was not part of this shader/worker harness.",
+    "Normal filters change display shading but do not add source resolution or validate anatomy."
+  ],
+  "references": [
+    "https://developer.nvidia.com/gpugems/gpugems2/part-iii-high-quality-rendering/chapter-20-fast-third-order-texture-filtering",
+    "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
+  ],
+  "accelerationDefault": {
+    "cpu": true,
+    "webgl2": false,
+    "reason": "Same-grid CPU renders benefited from conservative skipping. Software-GPU timings varied by view and did not establish a general benefit, so GPU skipping remains explicitly opt-in."
+  }
+}

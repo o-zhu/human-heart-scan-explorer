@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "id": "slicerheart-native-ct-motion-v24",
+  "phaseCount": 4,
+  "originalPhaseIndices": [
+    0,
+    5,
+    10,
+    15
+  ],
+  "acquiredUniquePhaseCount": 20,
+  "omittedDuplicatePhase": 20,
+  "knownPhysicalTimestamps": false,
+  "description": "Four acquired CT phases: native sampling versus 2\u00d72\u00d72 voxel means, at matched stored-intensity threshold 232. Both surfaces retain every extracted triangle without decimation. Threshold surfaces are not anatomical segmentations. No geometry smoothing or temporal interpolation.",
+  "worldMm": 173.88671875,
+  "bounds": {
+    "min": [
+      -0.5,
+      -0.4387914186229358,
+      -0.43103448275862066
+    ],
+    "max": [
+      0.5,
+      0.43879141862293713,
+      0.43103448275862066
+    ]
+  },
+  "coordinateMapping": "(RAS x, RAS z, -RAS y), centered on the fixed physical crop center, divided by worldMm",
+  "fixedCropCenterRasMm": [
+    -22.579879760742188,
+    152.54808521270752,
+    979.0499755859373
+  ],
+  "cropOriginRasMm": [
+    -109.22343444824219,
+    77.89671802520752,
+    903.0999755859374
+  ],
+  "nativeSpacingXyzMm": [
+    0.599609375,
+    0.599609375,
+    0.7
+  ],
+  "overviewSpacingXyzMm": [
+    1.19921875,
+    1.19921875,
+    1.4
+  ],
+  "nativeDimensionsXyz": [
+    290,
+    250,
+    218
+  ],
+  "overviewDimensionsXyz": [
+    145,
+    125,
+    109
+  ],
+  "thresholdStoredIntensity": 232.0,
+  "displayWindow": [
+    -200,
+    1000
+  ],
+  "normalizedDisplayThreshold": 0.36,
+  "overviewMethod": "2\u00d72\u00d72 arithmetic mean in float32; physical sample location is block center. This paired comparison precedes the uint8 display quantization of the existing overview volume.",
+  "simplification": {
+    "applied": false,
+    "method": "none",
+    "preservesConnectivity": true,
+    "geometrySmoothing": false,
+    "normalsOnly": "point normals computed for display; no vertex-position smoothing"
+  },
+  "source": {
+    "url": "https://github.com/SlicerHeart/SlicerHeart/releases/download/TestingData/TruncalValve_4DCT.seq.nrrd",
+    "file": "TruncalValve_4DCT.seq.nrrd",
+    "sha256": "7573f1bc7ca92d7d1012eecf98211cfd9939c1d22d87aee1db91c8ab72031cfb",
+    "bytes": 1267650314,
+    "headerSha256": "0b1e96b65605537934205ab2a33a5d767816eab25a6a7292b28d8652e71333b7",
+    "header": "NRRD0005\n# Complete NRRD file format specification at:\n# http://teem.sourceforge.net/nrrd/format.html\ntype: short\ndimension: 4\nspace: right-anterior-superior\nsizes: 21 512 391 218\nspace directions: none (0.599609375,0,0) (0,0.599609375,0) (0,0,0.69999999999999984)\nkinds: list domain domain domain\nlabels: \"frame\" \"\" \"\" \"\"\nendian: little\nencoding: gzip\nspace origin: (-145.19999694824219,8.9416399002075195,903.09997558593739)\nmeasurement frame: (1,0,0) (0,1,0) (0,0,1)\nDataNodeClassName:=vtkMRMLScalarVolumeNode\naxis 0 index type:=numeric\naxis 0 index values:=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20\n\n",
+    "rawBytes": 1832957952,
+    "rawShapeZyxt": [
+      218,
+      391,
+      512,
+      21
+    ],
+    "rawDtype": "little-endian int16",
+    "cropXyzHalfOpen": [
+      [
+        60,
+        350
+      ],
+      [
+        115,
+        365
+      ],
+      [
+        0,
+        218
+      ]
+    ],
+    "clinicalContext": "Adolescent with repaired truncus arteriosus, as described in the SlicerHeart sample registry; not a healthy reference subject.",
+    "rawSha256": "25cd532d9692c9e5852ce421f3d3e98a40d190086e3e91f8fa8347ebf803ca68",
+    "checksumsVerifiedAgainstOriginalFiles": true
+  },
+  "frames": [
+    {
+      "phase": 0,
+      "index": 0,
+      "native": {
+        "url": "/assets/motion-lab-v24/native-ct/native-phase-00.hfm.gz",
+        "sha256": "43429b0dd10af6b6a89718f8f06509fd19c29b00a48d9cf5b4f76cc8dde13247",
+        "decodedSha256": "cc5c3923d58c1117b6f3ab519a4eed3ebd3b4d9242746da07810c5c16dad2156",
+        "compressedBytes": 30840492,
+        "decodedBytes": 65546504,
+        "bounds": {
+          "min": [
+            -0.49827587604522705,
+            -0.43677860498428345,
+            -0.42931032180786133
+          ],
+          "max": [
+            0.49827587604522705,
+            0.4367787539958954,
+            0.42931032180786133
+          ]
+        },
+        "triangles": 3087748,
+        "vertices": 1582972,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.395343662723839e-06,
+        "sourceTriangles": 3087748,
+        "sourceVertices": 1582972,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.6994931659272067e-14,
+          "rmsMm": 4.46774390607236e-14,
+          "p50Mm": 1.432144669219779e-14,
+          "p95Mm": 1.191086668529821e-13,
+          "p99Mm": 1.3598150833520123e-13,
+          "sampleMaxMm": 2.4981034504244176e-13
+        }
+      },
+      "overview": {
+        "url": "/assets/motion-lab-v24/native-ct/overview-phase-00.hfm.gz",
+        "sha256": "f8f78a73a4fa767f3a6f5af632d77ff82edd8203dc5cfc485f4dd0140db73859",
+        "decodedSha256": "0453e575e9729dd2cf562a512470dfa446e887edb686c398e52136af4a497f3d",
+        "compressedBytes": 4880553,
+        "decodedBytes": 10292912,
+        "bounds": {
+          "min": [
+            -0.4965517222881317,
+            -0.43476593494415283,
+            -0.3441559970378876
+          ],
+          "max": [
+            0.4965517222881317,
+            0.43476608395576477,
+            0.4275861978530884
+          ]
+        },
+        "triangles": 483076,
+        "vertices": 249776,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.417969769521432e-06,
+        "sourceTriangles": 483076,
+        "sourceVertices": 249776,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.4351389911345588e-14,
+          "rmsMm": 4.0386006627682585e-14,
+          "p50Mm": 1.4210854715202004e-14,
+          "p95Mm": 1.1463089999421787e-13,
+          "p99Mm": 1.3406493525361332e-13,
+          "sampleMaxMm": 2.639549112047733e-13
+        }
+      }
+    },
+    {
+      "phase": 5,
+      "index": 1,
+      "native": {
+        "url": "/assets/motion-lab-v24/native-ct/native-phase-05.hfm.gz",
+        "sha256": "8d59278564497c2b5bc2f43b6c824d68d3971f39d271f1428f5107c26fa146a8",
+        "decodedSha256": "eec57a3c58b21110b34fe18a1c3ae1d3549304d51677191df29089b781e2547d",
+        "compressedBytes": 23994024,
+        "decodedBytes": 51201656,
+        "bounds": {
+          "min": [
+            -0.49827587604522705,
+            -0.43677860498428345,
+            -0.34338492155075073
+          ],
+          "max": [
+            0.49827587604522705,
+            0.4367787539958954,
+            0.42931032180786133
+          ]
+        },
+        "triangles": 2424532,
+        "vertices": 1228180,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.406648191821901e-06,
+        "sourceTriangles": 2424532,
+        "sourceVertices": 1228180,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.653014634022913e-14,
+          "rmsMm": 4.4401230241179465e-14,
+          "p50Mm": 1.430185182120232e-14,
+          "p95Mm": 1.180442248897588e-13,
+          "p99Mm": 1.3880180481237495e-13,
+          "sampleMaxMm": 2.5460839292419616e-13
+        }
+      },
+      "overview": {
+        "url": "/assets/motion-lab-v24/native-ct/overview-phase-05.hfm.gz",
+        "sha256": "8c253b5f7fe56e33bd67ca5c99d2efe001e374bdba30c557e376d1d5734f5f3b",
+        "decodedSha256": "9389a1f717cef89c1a8e2984b85c7ab9f51a074910e958567318c570f62b72fe",
+        "compressedBytes": 4461248,
+        "decodedBytes": 9435452,
+        "bounds": {
+          "min": [
+            -0.4965517222881317,
+            -0.43476593494415283,
+            -0.31911107897758484
+          ],
+          "max": [
+            0.4965517222881317,
+            0.43476608395576477,
+            0.4275861978530884
+          ]
+        },
+        "triangles": 445044,
+        "vertices": 227494,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.312558361754003e-06,
+        "sourceTriangles": 445044,
+        "sourceVertices": 227494,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.4274173971413593e-14,
+          "rmsMm": 4.062745319832261e-14,
+          "p50Mm": 1.4210854715202004e-14,
+          "p95Mm": 1.14571745667769e-13,
+          "p99Mm": 1.3408409609882225e-13,
+          "sampleMaxMm": 2.5981002663090496e-13
+        }
+      }
+    },
+    {
+      "phase": 10,
+      "index": 2,
+      "native": {
+        "url": "/assets/motion-lab-v24/native-ct/native-phase-10.hfm.gz",
+        "sha256": "2595bbf32aa8d8a24d2db31473d5f887ddb9c15938cfa037aac199c9ae3c57bd",
+        "decodedSha256": "00b03a19675e131cec50c41bef9b0f4519786bd2e33abe3341a291ef1f7f9ae5",
+        "compressedBytes": 23696841,
+        "decodedBytes": 50527756,
+        "bounds": {
+          "min": [
+            -0.49827587604522705,
+            -0.43677860498428345,
+            -0.3848111927509308
+          ],
+          "max": [
+            0.49827587604522705,
+            0.4367787539958954,
+            0.42931032180786133
+          ]
+        },
+        "triangles": 2392558,
+        "vertices": 1212057,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.41644972095526e-06,
+        "sourceTriangles": 2392558,
+        "sourceVertices": 1212057,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.659692503546015e-14,
+          "rmsMm": 4.4217354199238216e-14,
+          "p50Mm": 1.432144669219779e-14,
+          "p95Mm": 1.180442248897588e-13,
+          "p99Mm": 1.3406493525361332e-13,
+          "sampleMaxMm": 2.639549112047733e-13
+        }
+      },
+      "overview": {
+        "url": "/assets/motion-lab-v24/native-ct/overview-phase-10.hfm.gz",
+        "sha256": "d8dda2a5c9cf41e16b3dcd3f09622cd46b68964a1005edb174e91263663df715",
+        "decodedSha256": "d8a5e549b9e65e6e4aed8dedf3cca18675be4f265e9d353454ed2cb9fb87d082",
+        "compressedBytes": 4361551,
+        "decodedBytes": 9216892,
+        "bounds": {
+          "min": [
+            -0.4965517222881317,
+            -0.43476593494415283,
+            -0.3333479166030884
+          ],
+          "max": [
+            0.4965517222881317,
+            0.43476608395576477,
+            0.4275861978530884
+          ]
+        },
+        "triangles": 434728,
+        "vertices": 222229,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.396884042849786e-06,
+        "sourceTriangles": 434728,
+        "sourceVertices": 222229,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.4683705486140402e-14,
+          "rmsMm": 4.099463381485813e-14,
+          "p50Mm": 1.4210854715202004e-14,
+          "p95Mm": 1.1506624801925828e-13,
+          "p99Mm": 1.3406493525361332e-13,
+          "sampleMaxMm": 2.6963201038669064e-13
+        }
+      }
+    },
+    {
+      "phase": 15,
+      "index": 3,
+      "native": {
+        "url": "/assets/motion-lab-v24/native-ct/native-phase-15.hfm.gz",
+        "sha256": "159ecfa7a2788c408efd801ba84354001c810c6d81ae119d117bf7c3b99c62f0",
+        "decodedSha256": "0622c1a68755ae1515dbebe5fa8caf0acf9b2a5dc12ede0e777942f3b5d32a0f",
+        "compressedBytes": 31263963,
+        "decodedBytes": 66461468,
+        "bounds": {
+          "min": [
+            -0.49827587604522705,
+            -0.43677860498428345,
+            -0.4264706075191498
+          ],
+          "max": [
+            0.49827587604522705,
+            0.4367787539958954,
+            0.42931032180786133
+          ]
+        },
+        "triangles": 3131784,
+        "vertices": 1604446,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.4201214515657725e-06,
+        "sourceTriangles": 3131784,
+        "sourceVertices": 1604446,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.731389996213405e-14,
+          "rmsMm": 4.546030360910976e-14,
+          "p50Mm": 1.464821375527116e-14,
+          "p95Mm": 1.186607698327035e-13,
+          "p99Mm": 1.3923737144427707e-13,
+          "sampleMaxMm": 2.595563718477734e-13
+        }
+      },
+      "overview": {
+        "url": "/assets/motion-lab-v24/native-ct/overview-phase-15.hfm.gz",
+        "sha256": "9f1186fc6d0b1563e32520346874f41878156087bee77f216ba86840e7207959",
+        "decodedSha256": "c6a349b8792face057d240b7d504e8a60e6f0f7ae5b5dc20be73751e92b5c690",
+        "compressedBytes": 4904230,
+        "decodedBytes": 10340248,
+        "bounds": {
+          "min": [
+            -0.4965517222881317,
+            -0.43476593494415283,
+            -0.34105250239372253
+          ],
+          "max": [
+            0.4965517222881317,
+            0.43476608395576477,
+            0.4275861978530884
+          ]
+        },
+        "triangles": 485348,
+        "vertices": 250891,
+        "positionFormat": "float32",
+        "normalFormat": "snorm16",
+        "format": "HFM1",
+        "compression": "gzip",
+        "positionEncodingMaxErrorMm": 4.415320905979698e-06,
+        "sourceTriangles": 485348,
+        "sourceVertices": 250891,
+        "simplificationErrorMm": {
+          "samples": 12000,
+          "meanMm": 2.3909036597617466e-14,
+          "rmsMm": 3.9662783831939705e-14,
+          "p50Mm": 1.4210854715202004e-14,
+          "p95Mm": 1.137192723007405e-13,
+          "p99Mm": 1.3406493525361332e-13,
+          "sampleMaxMm": 2.5579538487363607e-13
+        }
+      }
+    }
+  ],
+  "complete": true,
+  "compressedMeshBytes": 128402902
+}

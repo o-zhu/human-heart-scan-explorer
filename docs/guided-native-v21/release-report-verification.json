@@ -1,0 +1,215 @@
+{
+  "schema": "guided-native-release-report-verification-v21.1",
+  "allChecksPassed": true,
+  "scope": "Pilot report with explicit local fixtures; whole-scope refusal gates; direct metadata joins of the completed whole native bank, without claiming a completed display overview",
+  "wholeReadmeWritten": false,
+  "wholeReadmeUnchanged": true,
+  "wholeCompletionNotAsserted": true,
+  "networkRequests": 0,
+  "uploads": 0,
+  "generatorSha256": "88233d1a3041e4f43491cb1b015d245a2c5672989570e838810e2fa4eacd2e2a",
+  "pilotMarkdownSha256": "29f6a435bbb4e838f3bbb2ad9613bb060eb607d6579d46d706f542f3cb62992d",
+  "pilotMarkdownWordCount": 1639,
+  "checks": [
+    {
+      "check": "Incomplete run cannot write a report",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: Run is unfinished or failed; no release report was written"
+    },
+    {
+      "check": "Completed alternate small plan cannot be labeled whole-plan",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: Run is not the independently pinned whole-plan processing run; an alternate plan requires --allow-pilot"
+    },
+    {
+      "check": "Explicit pilot cannot target production README",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: --allow-pilot requires a separate, explicitly named output under /tmp, not README.md"
+    },
+    {
+      "check": "Completed eight-tile pilot with clearly marked receipt fixtures",
+      "passed": true,
+      "exitCode": 0,
+      "result": {
+        "completeScope": "pilot-only",
+        "completedBlocks": 8,
+        "fixtureOnly": true,
+        "publishable": false,
+        "reportSha256": "29f6a435bbb4e838f3bbb2ad9613bb060eb607d6579d46d706f542f3cb62992d",
+        "wordCount": 1639
+      }
+    },
+    {
+      "check": "Identical pilot inputs produce identical report bytes",
+      "passed": true,
+      "exitCode": 0,
+      "result": {
+        "completeScope": "pilot-only",
+        "completedBlocks": 8,
+        "fixtureOnly": true,
+        "publishable": false,
+        "reportSha256": "29f6a435bbb4e838f3bbb2ad9613bb060eb607d6579d46d706f542f3cb62992d",
+        "wordCount": 1639
+      }
+    },
+    {
+      "check": "Pilot report contains computed display omissions, generation availability and crossing-count scope",
+      "passed": true,
+      "overviewSampling": {
+        "inputOverviewBlocks": 8,
+        "inputOverviewEmptyBlocks": 0,
+        "inputOverviewNonemptyBlocks": 8,
+        "meshSampleSpacingUm": 79.4,
+        "nativeIndexEntriesRetained": 8,
+        "nativeIndexIncludesEveryNonemptyRecord": true,
+        "nativeTrianglesInThoseBlocks": 0,
+        "nonemptyNativeBlocksWithoutOverviewCrossings": 0,
+        "samplingStepNative": 4,
+        "scope": "Display omission at step-4 sampling before simplification; all nonempty native artifacts remain in the complete native index."
+      },
+      "sourceGenerationMetadata": {
+        "allObjectsRetainExactSha256AndBytes": true,
+        "deduplicatedObjectsCanonicalSha256": "35a5cf3526c162385ad631c6bbd08d46d11dd1ccc8af7e11cfde964c43eec68a",
+        "generationRecordedObjects": 0,
+        "generationUnavailableEncodedBytes": 218700298,
+        "generationUnavailableObjects": 64,
+        "generationUnavailableObjectsObservedOnlyFromCache": 64,
+        "logSha256": "0c1a141ca7ff6fbdaabc925aca1f5cd27bd8309bcb0232b7eb2b101c30cc0677",
+        "multipleGenerationsWithIdenticalBytesObjects": 0,
+        "observations": 64,
+        "scope": "Missing GCS generation metadata does not remove the recorded original-object SHA-256, byte count or source coordinate.",
+        "uniqueObjects": 64
+      }
+    },
+    {
+      "check": "Changed overview manifest rejected",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: Overview manifest has changed since finalization"
+    },
+    {
+      "check": "Inconsistent completed progress rejected",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: Run/progress completion counts disagree"
+    },
+    {
+      "check": "Corrupt content-addressed gzip rejected",
+      "passed": true,
+      "exitCode": 1,
+      "result": "Release report stopped: Compressed checksum/size mismatch: manifest.json.gz"
+    },
+    {
+      "check": "A zero-display tile remains in the complete native index",
+      "passed": true,
+      "result": {
+        "samplingStepNative": 4,
+        "meshSampleSpacingUm": 79.4,
+        "inputOverviewBlocks": 3,
+        "inputOverviewNonemptyBlocks": 1,
+        "inputOverviewEmptyBlocks": 2,
+        "nonemptyNativeBlocksWithoutOverviewCrossings": 1,
+        "nativeTrianglesInThoseBlocks": 7,
+        "nativeIndexEntriesRetained": 2,
+        "nativeIndexIncludesEveryNonemptyRecord": true,
+        "scope": "Display omission at step-4 sampling before simplification; all nonempty native artifacts remain in the complete native index."
+      }
+    },
+    {
+      "check": "Missing nonempty native index entry rejected",
+      "passed": true,
+      "result": "Native index omits or adds a nonempty completed record; display sampling cannot filter the native index"
+    },
+    {
+      "check": "Duplicate overview coordinate rejected",
+      "passed": true,
+      "result": "Duplicate overview input coordinate in sampling join"
+    },
+    {
+      "check": "Nonempty display attributed to an empty native field rejected",
+      "passed": true,
+      "result": "Empty native field has a nonempty overview input"
+    },
+    {
+      "check": "Actual whole-bank display omission join matches the independent completed-bank audit",
+      "passed": true,
+      "result": {
+        "samplingStepNative": 4,
+        "meshSampleSpacingUm": 79.4,
+        "inputOverviewBlocks": 37612,
+        "inputOverviewNonemptyBlocks": 32298,
+        "inputOverviewEmptyBlocks": 5314,
+        "nonemptyNativeBlocksWithoutOverviewCrossings": 748,
+        "nativeTrianglesInThoseBlocks": 78946,
+        "nativeIndexEntriesRetained": 33046,
+        "nativeIndexIncludesEveryNonemptyRecord": true,
+        "scope": "Display omission at step-4 sampling before simplification; all nonempty native artifacts remain in the complete native index."
+      }
+    },
+    {
+      "check": "Actual whole source-generation metadata reproduces the finalized canonical identity hash",
+      "passed": true,
+      "result": {
+        "uniqueObjects": 37612,
+        "observations": 47805,
+        "generationRecordedObjects": 37399,
+        "generationUnavailableObjects": 213,
+        "generationUnavailableEncodedBytes": 721775569,
+        "generationUnavailableObjectsObservedOnlyFromCache": 213,
+        "multipleGenerationsWithIdenticalBytesObjects": 0,
+        "allObjectsRetainExactSha256AndBytes": true,
+        "logSha256": "2418296a32e8d6229e7a46cca9a52d860aec901d74b032f5a8f0a5a90643679d",
+        "deduplicatedObjectsCanonicalSha256": "1ade726b163e1c1180e99a137741989a4ecdc81cf1bdf177d3049320d9b129f6",
+        "scope": "Missing GCS generation metadata does not remove the recorded original-object SHA-256, byte count or source coordinate."
+      }
+    },
+    {
+      "check": "Actual whole-detail figure matches the completed manifest, source identity, LOD parts and PNG hashes",
+      "passed": true,
+      "result": {
+        "renderRecord": "docs/guided-native-v21/whole-detail-render/render-record.json",
+        "renderRecordSha256": "42264238185ac390ff87a735068e76b3ef6ed63e711e8911094d1c05825b7071",
+        "figure": "docs/guided-native-v21/whole-detail-render/whole-overview.png",
+        "figureSha256": "0c31eab0388c7250d8615459a5da63c55b404f6d935c65b614551ee4a134eb77",
+        "figureBytes": 1103233,
+        "lod": "detail",
+        "triangles": 2500000,
+        "inputOverviewSamplingUm": 79.4,
+        "displayLodNotNativeGrid": true,
+        "notBrowserScreenshot": true,
+        "overviewManifestSha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+        "overviewFingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+        "parts": [
+          {
+            "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+            "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+            "compressedBytes": 19744361,
+            "decodedBytes": 42582052
+          }
+        ]
+      }
+    },
+    {
+      "check": "Foreign whole-render manifest rejected",
+      "passed": true,
+      "result": "Whole-detail figure belongs to a different overview manifest or scope"
+    },
+    {
+      "check": "Wrong whole-render LOD rejected",
+      "passed": true,
+      "result": "Whole-detail figure belongs to a different overview manifest or scope"
+    },
+    {
+      "check": "Different rendered HFM part rejected",
+      "passed": true,
+      "result": "Whole-detail render artifact differs from the completed detail LOD"
+    },
+    {
+      "check": "Both independent whole-scope pins match the actual selected plan and run",
+      "passed": true
+    }
+  ]
+}

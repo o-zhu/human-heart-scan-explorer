@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "b77382f7c400b29c82651d75b32e85c6e6bfbefe",
+  "kind": "deterministic scheduler fixture",
+  "description": "Fully downloaded images; native decode requests use a fixed 30 ms asynchronous completion. 200 ms initial warmup followed by 64 forward scroll selections. No browser, GPU, network, WebP codec, or human perception is measured.",
+  "results": [
+    {
+      "stepMs": 16,
+      "decodeMs": 30,
+      "before": {
+        "steps": 64,
+        "immediatelyDecoded": 4,
+        "waitingForDecode": 60,
+        "immediatePercent": 6.3,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1163264,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      },
+      "after": {
+        "steps": 64,
+        "immediatelyDecoded": 64,
+        "waitingForDecode": 0,
+        "immediatePercent": 100,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1327104,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      }
+    },
+    {
+      "stepMs": 20,
+      "decodeMs": 30,
+      "before": {
+        "steps": 64,
+        "immediatelyDecoded": 5,
+        "waitingForDecode": 59,
+        "immediatePercent": 7.8,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1163264,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      },
+      "after": {
+        "steps": 64,
+        "immediatelyDecoded": 64,
+        "waitingForDecode": 0,
+        "immediatePercent": 100,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1327104,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      }
+    },
+    {
+      "stepMs": 24,
+      "decodeMs": 30,
+      "before": {
+        "steps": 64,
+        "immediatelyDecoded": 7,
+        "waitingForDecode": 57,
+        "immediatePercent": 10.9,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1163264,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      },
+      "after": {
+        "steps": 64,
+        "immediatelyDecoded": 64,
+        "waitingForDecode": 0,
+        "immediatePercent": 100,
+        "maxConcurrentTasks": 2,
+        "networkPermittedJobsDuringInput": 0,
+        "decodedCacheBytes": 1327104,
+        "decodedLimit": 100663296,
+        "finalExactIndex": 96,
+        "finalExactSample": 96
+      }
+    }
+  ]
+}

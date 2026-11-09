@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "datasetId": "2298522198",
+  "volumeDimensionsXYZ": [
+    289,
+    293,
+    457
+  ],
+  "volumeRawSha256": "cce6eee9c22596d12d52d0b2f88339a7bd7993b5a4a0098a229aa56ecacda92a",
+  "shaderSha256": "0af461e8cf9aa9a103290f4e18ff10cea020e7d5a13db122d89cca7bf9e24ad6",
+  "checks": [
+    {
+      "frame": "a4c",
+      "cutaway": false,
+      "capPixels": [
+        1526,
+        1909
+      ],
+      "tissuePixels": 160583,
+      "glError": 0
+    },
+    {
+      "frame": "a4c",
+      "cutaway": true,
+      "capPixels": [
+        1526,
+        1909
+      ],
+      "tissuePixels": 141534,
+      "glError": 0
+    },
+    {
+      "frame": "plax",
+      "cutaway": true,
+      "capPixels": [
+        1833,
+        1177
+      ],
+      "tissuePixels": 121880,
+      "glError": 0
+    }
+  ],
+  "scope": "Production GLSL and actual encoded source assets in native EGL. No browser/device speed or clinical frame validation claim."
+}

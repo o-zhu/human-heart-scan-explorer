@@ -1,0 +1,1049 @@
+{
+  "datasetId": "1966162746",
+  "specimen": "S-20-28",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": false,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Measured geometric comparison; anatomical identity unreviewed",
+  "sourceDoi": "10.15151/ESRF-DC-1966163810",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "schemaVersion": 2,
+  "dimensionsXYZ": [
+    477,
+    477,
+    509
+  ],
+  "voxelSpacingMm": [
+    0.31760000000000005,
+    0.31760000000000005,
+    0.31760000000000005
+  ],
+  "referenceMm": 161.34080000000003,
+  "worldExtentXYZ": [
+    0.9370078740157479,
+    1.0,
+    0.9370078740157479
+  ],
+  "worldMapping": "Physical-centered source XYZ mapped to [X,Z,-Y], divided by longest voxel-center extent.",
+  "validation": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+  "limitations": [
+    "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+  ],
+  "landmarks": {},
+  "framingRegion": null,
+  "geometricBasis": {
+    "method": "Intensity-weighted principal axes of this donor's sampled cleaned tissue; geometric axes only.",
+    "sampleStride": 3,
+    "thresholdByte": 75.0,
+    "sampledVoxelCount": 455862,
+    "centerSourceHighXYZ": [
+      239.905219813957,
+      214.701195785582,
+      270.174243911056
+    ],
+    "majorPhysicalXYZ": [
+      -0.13130066218,
+      -0.298617328972,
+      0.945297745131
+    ],
+    "rightPhysicalXYZ": [
+      0.919785389992,
+      0.319011014424,
+      0.228531855621
+    ],
+    "acrossPhysicalXYZ": [
+      -0.369803964917,
+      0.899477439136,
+      0.23277749895
+    ],
+    "eigenvaluesUmSquared": [
+      1194885722.532309,
+      590238569.1261662,
+      400189289.93145585
+    ],
+    "offsetUm": 20897.420774517497,
+    "framingBoundsSourceHighXYZ": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        476.0,
+        476.0,
+        508.0
+      ]
+    ],
+    "anatomicalAxisClaim": false
+  },
+  "presetOverrides": {
+    "a4c": {
+      "code": "L1",
+      "name": "Long section A",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "a2c": {
+      "code": "L2",
+      "name": "Long section B",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "a3c": {
+      "code": "O1",
+      "name": "Oblique long section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "plax": {
+      "code": "L3",
+      "name": "Crossed long section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "psax_papillary": {
+      "code": "C1",
+      "name": "Central cross section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "psax_mitral": {
+      "code": "C2",
+      "name": "Offset cross section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "subcostal": {
+      "code": "L4",
+      "name": "Rotated long section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "me4c": {
+      "code": "R1",
+      "name": "Long section A \u00b7 reverse",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "me2c": {
+      "code": "R2",
+      "name": "Long section B \u00b7 reverse",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "melax": {
+      "code": "R3",
+      "name": "Oblique section \u00b7 reverse",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "meavsax": {
+      "code": "C3",
+      "name": "Offset cross section A",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "bicaval": {
+      "code": "O2",
+      "name": "Offset long section",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    },
+    "tgpapillary": {
+      "code": "C4",
+      "name": "Offset cross section B",
+      "position": "Measured comparison plane",
+      "description": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+    }
+  },
+  "frames": {
+    "a4c": {
+      "world": {
+        "center": [
+          0.01302780535,
+          -0.008200506847,
+          0.031687645634
+        ],
+        "right": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "up": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "normal": [
+          0.369803964917,
+          -0.23277749895,
+          0.899477439136
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ],
+        "probeEntry": {
+          "key": "s-20-28:support-entry-v14:apical",
+          "referenceMm": 161.34080000000003,
+          "tipOffsetMm": 88.346,
+          "depthMm": 177.7,
+          "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+          "clearanceMm": 7.682419659735351,
+          "cellGuardMm": 0.5500993364838755,
+          "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+        }
+      },
+      "source": {
+        "center": [
+          244.618125118052,
+          221.90267601808,
+          249.834142521796
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          0.369803964917,
+          -0.899477439136,
+          -0.23277749895
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Long section A",
+      "displayCode": "L1",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "a2c": {
+      "world": {
+        "center": [
+          -0.003591964452,
+          -0.000892467211,
+          0.001245808246
+        ],
+        "right": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "up": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "normal": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "width": 1.4260411767631997,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ]
+      },
+      "source": {
+        "center": [
+          236.175282058498,
+          237.367129410959,
+          253.546626656942
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "upPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Long section B",
+      "displayCode": "L2",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "a3c": {
+      "world": {
+        "center": [
+          0.022278463091,
+          -0.002493709765,
+          0.017689781074
+        ],
+        "right": [
+          0.611655531304,
+          0.314303142017,
+          -0.726010362146
+        ],
+        "up": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "normal": [
+          0.780152323034,
+          -0.08732529971,
+          0.619464805211
+        ],
+        "width": 1.5716436248559906,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ]
+      },
+      "source": {
+        "center": [
+          249.317459250314,
+          229.013591214201,
+          252.73319543914
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.611655531304,
+          0.726010362146,
+          0.314303142017
+        ],
+        "upPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          0.780152323034,
+          -0.619464805211,
+          -0.08732529971
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Oblique long section",
+      "displayCode": "O1",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "plax": {
+      "world": {
+        "center": [
+          -0.003591964452,
+          -0.000892467211,
+          0.001245808246
+        ],
+        "right": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "up": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "normal": [
+          -0.919785389992,
+          -0.228531855621,
+          0.319011014424
+        ],
+        "width": 1.3520712958945962,
+        "height": 1.4260411767631997,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ],
+        "probeEntry": {
+          "key": "s-20-28:support-entry-v14:parasternal",
+          "referenceMm": 161.34080000000003,
+          "tipOffsetMm": 60.931190926275995,
+          "depthMm": 129.64083175803404,
+          "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+          "clearanceMm": 7.682419659735351,
+          "cellGuardMm": 0.5500993364838755,
+          "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+        }
+      },
+      "source": {
+        "center": [
+          236.175282058498,
+          237.367129410959,
+          253.546626656942
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ],
+        "upPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "normalPhysicalXYZ": [
+          -0.919785389992,
+          -0.319011014424,
+          -0.228531855621
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Crossed long section",
+      "displayCode": "L3",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "psax_papillary": {
+      "world": {
+        "center": [
+          -0.005685408194,
+          0.040932036875,
+          0.012930333944
+        ],
+        "right": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "up": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "normal": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.4260411767631997,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ],
+        "probeEntry": {
+          "key": "s-20-28:support-entry-v14:short-axis",
+          "referenceMm": 161.34080000000003,
+          "tipOffsetMm": 58.674480151228735,
+          "depthMm": 124.83931947069945,
+          "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+          "clearanceMm": 7.682419659735351,
+          "cellGuardMm": 0.5500993364838755,
+          "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+        }
+      },
+      "source": {
+        "center": [
+          235.111812637407,
+          231.431390356543,
+          274.793474732318
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "normalPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Central cross section",
+      "displayCode": "C1",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "psax_mitral": {
+      "world": {
+        "center": [
+          0.011321109596,
+          -0.081506210222,
+          -0.025747619643
+        ],
+        "right": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "up": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "normal": [
+          -0.13130066218,
+          0.945297745131,
+          0.298617328972
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.4260411767631997,
+        "target": [
+          0.020756950495,
+          -0.09059918428,
+          0.007185834237
+        ]
+      },
+      "source": {
+        "center": [
+          243.75112367502,
+          251.079790778715,
+          212.59484520714
+        ],
+        "target": [
+          248.54453085157,
+          234.349596207755,
+          207.975614385878
+        ],
+        "rightPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "normalPhysicalXYZ": [
+          -0.13130066218,
+          -0.298617328972,
+          0.945297745131
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Offset cross section",
+      "displayCode": "C2",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "subcostal": {
+      "world": {
+        "center": [
+          0.01302780535,
+          -0.008200506847,
+          0.031687645634
+        ],
+        "right": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "up": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "normal": [
+          0.369803964917,
+          -0.23277749895,
+          0.899477439136
+        ],
+        "width": 1.3520712958945962,
+        "height": 1.3932308487348666,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ]
+      },
+      "source": {
+        "center": [
+          244.618125118052,
+          221.90267601808,
+          249.834142521796
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ],
+        "upPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "normalPhysicalXYZ": [
+          0.369803964917,
+          -0.899477439136,
+          -0.23277749895
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Rotated long section",
+      "displayCode": "L4",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "me4c": {
+      "world": {
+        "center": [
+          0.01302780535,
+          -0.008200506847,
+          0.031687645634
+        ],
+        "right": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "up": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "normal": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ],
+        "probeEntry": {
+          "key": "s-20-28:support-entry-v14:atrial",
+          "referenceMm": 161.34080000000003,
+          "tipOffsetMm": 92.136,
+          "depthMm": 177.9,
+          "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+          "clearanceMm": 7.682419659735351,
+          "cellGuardMm": 0.5500993364838755,
+          "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+        }
+      },
+      "source": {
+        "center": [
+          244.618125118052,
+          221.90267601808,
+          249.834142521796
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Long section A \u00b7 reverse",
+      "displayCode": "R1",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "me2c": {
+      "world": {
+        "center": [
+          -0.003591964452,
+          -0.000892467211,
+          0.001245808246
+        ],
+        "right": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "up": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "normal": [
+          -0.919785389992,
+          -0.228531855621,
+          0.319011014424
+        ],
+        "width": 1.4260411767631997,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ]
+      },
+      "source": {
+        "center": [
+          236.175282058498,
+          237.367129410959,
+          253.546626656942
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "upPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          -0.919785389992,
+          -0.319011014424,
+          -0.228531855621
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Long section B \u00b7 reverse",
+      "displayCode": "R2",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "melax": {
+      "world": {
+        "center": [
+          0.022278463091,
+          -0.002493709765,
+          0.017689781074
+        ],
+        "right": [
+          0.611655531304,
+          0.314303142017,
+          -0.726010362146
+        ],
+        "up": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "normal": [
+          -0.780152323034,
+          0.08732529971,
+          -0.619464805211
+        ],
+        "width": 1.5716436248559906,
+        "height": 1.3520712958945962,
+        "target": [
+          0.003750432705,
+          0.031839062817,
+          0.045863787824
+        ]
+      },
+      "source": {
+        "center": [
+          249.317459250314,
+          229.013591214201,
+          252.73319543914
+        ],
+        "target": [
+          239.905219813957,
+          214.701195785582,
+          270.174243911056
+        ],
+        "rightPhysicalXYZ": [
+          0.611655531304,
+          0.726010362146,
+          0.314303142017
+        ],
+        "upPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          -0.780152323034,
+          0.619464805211,
+          0.08732529971
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Oblique section \u00b7 reverse",
+      "displayCode": "R3",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "meavsax": {
+      "world": {
+        "center": [
+          0.011321109596,
+          -0.081506210222,
+          -0.025747619643
+        ],
+        "right": [
+          0.919785389992,
+          0.228531855621,
+          -0.319011014424
+        ],
+        "up": [
+          0.369803964917,
+          -0.23277749895,
+          0.899477439136
+        ],
+        "normal": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.4260411767631997,
+        "target": [
+          0.020756950495,
+          -0.09059918428,
+          0.007185834237
+        ]
+      },
+      "source": {
+        "center": [
+          243.75112367502,
+          251.079790778715,
+          212.59484520714
+        ],
+        "target": [
+          248.54453085157,
+          234.349596207755,
+          207.975614385878
+        ],
+        "rightPhysicalXYZ": [
+          0.919785389992,
+          0.319011014424,
+          0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          0.369803964917,
+          -0.899477439136,
+          -0.23277749895
+        ],
+        "normalPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Offset cross section A",
+      "displayCode": "C3",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "bicaval": {
+      "world": {
+        "center": [
+          0.073845004412,
+          0.01834768857,
+          -0.025611811216
+        ],
+        "right": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "up": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "normal": [
+          -0.919785389992,
+          -0.228531855621,
+          0.319011014424
+        ],
+        "width": 1.4260411767631997,
+        "height": 1.3520712958945962,
+        "target": [
+          0.081187401568,
+          0.051079218597,
+          0.019006168362
+        ]
+      },
+      "source": {
+        "center": [
+          275.513262241108,
+          251.010800097593,
+          263.320625793405
+        ],
+        "target": [
+          279.243199996566,
+          228.344866472215,
+          279.948243047519
+        ],
+        "rightPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "upPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ],
+        "normalPhysicalXYZ": [
+          -0.919785389992,
+          -0.319011014424,
+          -0.228531855621
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Offset long section",
+      "displayCode": "O2",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    },
+    "tgpapillary": {
+      "world": {
+        "center": [
+          -0.022691925985,
+          0.163370283971,
+          0.051608287531
+        ],
+        "right": [
+          -0.919785389992,
+          -0.228531855621,
+          0.319011014424
+        ],
+        "up": [
+          -0.369803964917,
+          0.23277749895,
+          -0.899477439136
+        ],
+        "normal": [
+          0.13130066218,
+          -0.945297745131,
+          -0.298617328972
+        ],
+        "width": 1.3932308487348666,
+        "height": 1.4260411767631997,
+        "target": [
+          -0.013256085086,
+          0.154277309914,
+          0.084541741411
+        ]
+      },
+      "source": {
+        "center": [
+          226.472501599793,
+          211.78298993437,
+          336.992104257496
+        ],
+        "target": [
+          231.265908776343,
+          195.052795363409,
+          332.372873436235
+        ],
+        "rightPhysicalXYZ": [
+          -0.919785389992,
+          -0.319011014424,
+          -0.228531855621
+        ],
+        "upPhysicalXYZ": [
+          -0.369803964917,
+          0.899477439136,
+          0.23277749895
+        ],
+        "normalPhysicalXYZ": [
+          0.13130066218,
+          0.298617328972,
+          -0.945297745131
+        ]
+      },
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "confidence": "Geometric only; anatomy unassigned",
+      "displayName": "Offset cross section B",
+      "displayCode": "C4",
+      "displayPosition": "Measured comparison plane",
+      "displayDescription": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true
+    }
+  }
+}

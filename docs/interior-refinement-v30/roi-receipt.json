@@ -1,0 +1,32 @@
+{
+  "roiXYXY": [
+    340,
+    375,
+    430,
+    485
+  ],
+  "pixelScale": 4,
+  "scaling": "nearest-neighbor integer replication; no resampling of saved source crops",
+  "sourceFrameSize": [
+    720,
+    840
+  ],
+  "outputs": {
+    "aortic-y293-cap-on-roi.png": {
+      "size": [
+        90,
+        110
+      ],
+      "decodedSha256": "c1b72573dd1111037031d89e8c2133226e88ccc096be763595ca03f5272836cd",
+      "exactSourceCrop": true
+    },
+    "aortic-y293-cap-off-roi.png": {
+      "size": [
+        90,
+        110
+      ],
+      "decodedSha256": "d9515d78346fc6568498415fc49b5bdae10d0b99377f375d05df7a16f17d4cbc",
+      "exactSourceCrop": true
+    }
+  }
+}

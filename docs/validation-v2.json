@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-04",
+  "javascriptSyntax": "pass",
+  "geometryChecks": "pass: source-world transforms, all13framebases, physical offsets, orthogonal camera alignment, 90degree roll orbit, MPRpixelorientation",
+  "assetChecks": {
+    "orthogonal": 1480,
+    "echo": 13,
+    "manifestBytesMatch": true
+  },
+  "browser": "Cloud Chrome software fallback: detailedvolume, X/Y/Zactivate+scroll+slider+keys, echoTTEandTEEpresets, PSAXbothlevels, adjustedMPR, share-viewreload, restorationofreconstructionstate",
+  "shader": "EGL OpenGLES3 compile/link and actual s3cap render, GL_NO_ERROR",
+  "limitations": [
+    "CloudQA browser doesnotexposeWebGL2; hardwarebrowserperformance unmeasured.",
+    "Clinical correspondence isapproximate; valvar/aorticroot/caval anatomy unvalidated.",
+    "Adjustedoblique sections sample loadedvolume; staticpreset/orthocapsuse158.8um."
+  ]
+}

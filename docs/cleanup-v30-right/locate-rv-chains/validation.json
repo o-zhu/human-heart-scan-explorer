@@ -1,0 +1,97 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 377,
+    "decodedBrickReads": 377,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "capSources": [
+    {
+      "kind": "Verified original ultra-volume bricks",
+      "axis": 1,
+      "coordinate": 1168
+    }
+  ],
+  "checks": [
+    {
+      "case": {
+        "id": "rv-chains-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          740,
+          1020,
+          1030
+        ],
+        "distance": 0.4
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.10396975425330811
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.066410487986787,
+          -0.023197573165754763,
+          -0.4326288245507955
+        ],
+        "_target": [
+          -0.09829867674858221,
+          -0.013232514177693758,
+          -0.03402646502835538
+        ],
+        "_whole": false
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 293550,
+      "fineXYZArray": "{source-cache}/cleanup-v30-right/locate-rv-chains/rv-chains-y293-fine-xyz.npy"
+    }
+  ],
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 5301080,
+    "removedOffscreenOrClippedTriangles": 18317605,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "rv-chains-y293",
+      "axis": 1,
+      "coordinate": 1168,
+      "target": [
+        740,
+        1020,
+        1030
+      ],
+      "distance": 0.4
+    }
+  },
+  "scope": "Current v28 source geometry, local surfaces and masks. Actual production color GLSL; diagnostic Float32 coordinates exclude visible cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

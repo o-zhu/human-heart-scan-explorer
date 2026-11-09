@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    "Probe basis remains orthonormal through pan, tilt and roll",
+    "WASD/RF translation uses physical local axes with bounded diagonal speed",
+    "Scan source-axis mapping preserves first/last physical voxel centers",
+    "Sector pixels and fan geometry occupy exactly the cutaway plane",
+    "3D overlay projection agrees with the renderer camera-ray convention",
+    "Measured CT sector and full cap resample the same physical phantom",
+    "Identical anatomy and pose yield byte-identical ultrasound; speckle is tissue-fixed",
+    "An empty volume produces no invented ultrasound structures",
+    "Gain is monotonic while measured CT stays unchanged",
+    "Cleanup exclusion removes unsupported anatomy from both derived images",
+    "Settled sampling yields and honors cancellation",
+    "Actual worker coalesces live poses and cancels superseded refinement",
+    "All four starting probes intersect the measured high-resolution heart volume"
+  ],
+  "sourceFrames": [
+    {
+      "preset": "apical",
+      "elapsedMs": 213.3432230000003,
+      "sourceSpacingUm": 317.6,
+      "beams": 192,
+      "radialSamples": 512,
+      "sectorPixels": 156790,
+      "tissuePixels": 60960,
+      "tissueFraction": 0.38880030614197336,
+      "width": 600,
+      "height": 487,
+      "capWidth": 850,
+      "capHeight": 764,
+      "originMm": [
+        -20.41010763933189,
+        80.3647429111675,
+        -2.979228476219511
+      ],
+      "liveCpuMs": 89.56150500000012,
+      "livePixels": 117420
+    },
+    {
+      "preset": "parasternal",
+      "elapsedMs": 152.1562140000001,
+      "sourceSpacingUm": 317.6,
+      "beams": 192,
+      "radialSamples": 512,
+      "sectorPixels": 151574,
+      "tissuePixels": 49102,
+      "tissueFraction": 0.3239473788380593,
+      "width": 600,
+      "height": 467,
+      "capWidth": 845,
+      "capHeight": 850,
+      "originMm": [
+        -48.76939531689898,
+        -5.014734610818216,
+        -26.987989672603188
+      ],
+      "liveCpuMs": 45.025346000000354,
+      "livePixels": 112480
+    },
+    {
+      "preset": "short-axis",
+      "elapsedMs": 98.18682099999978,
+      "sourceSpacingUm": 317.6,
+      "beams": 192,
+      "radialSamples": 512,
+      "sectorPixels": 146658,
+      "tissuePixels": 33875,
+      "tissueFraction": 0.2309795578829658,
+      "width": 600,
+      "height": 448,
+      "capWidth": 850,
+      "capHeight": 802,
+      "originMm": [
+        -40.85395504995496,
+        19.91932123894138,
+        -51.79527515984456
+      ],
+      "liveCpuMs": 28.986411999999746,
+      "livePixels": 107920
+    },
+    {
+      "preset": "atrial",
+      "elapsedMs": 236.18478400000004,
+      "sourceSpacingUm": 317.6,
+      "beams": 192,
+      "radialSamples": 512,
+      "sectorPixels": 151574,
+      "tissuePixels": 61974,
+      "tissueFraction": 0.4088695950492829,
+      "width": 600,
+      "height": 467,
+      "capWidth": 850,
+      "capHeight": 764,
+      "originMm": [
+        34.322661863742546,
+        -38.12268107233651,
+        -19.820080600642413
+      ],
+      "liveCpuMs": 61.28351900000007,
+      "livePixels": 112480
+    }
+  ],
+  "limits": [
+    "Node CPU sampling timings are not browser FPS.",
+    "Proxy acoustics are not validated clinical ultrasound."
+  ],
+  "workerReturnedIds": [
+    1,
+    3,
+    11
+  ]
+}

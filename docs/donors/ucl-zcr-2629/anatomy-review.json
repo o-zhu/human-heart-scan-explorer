@@ -1,0 +1,85 @@
+{
+  "datasetId": "2298522198",
+  "dimensionsXYZ": [
+    193,
+    195,
+    305
+  ],
+  "tissueVoxels": 4267984,
+  "assignedTissueVoxels": 3053326,
+  "unknownTissueVoxels": 1214658,
+  "methodComparison": {
+    "priorAssigned": 3088302,
+    "watershedAssigned": 3272723,
+    "disagreementsRetainedAsUnknown": 34898,
+    "seedCounts": {
+      "1": 1330879,
+      "2": 786132,
+      "3": 232634,
+      "4": 153558,
+      "5": 47755,
+      "6": 68795
+    }
+  },
+  "labelCounts": {
+    "1": 1457489,
+    "2": 927292,
+    "3": 312292,
+    "4": 189495,
+    "5": 66396,
+    "6": 100362
+  },
+  "calibrationLandmarksSourceHighXYZ": {
+    "lv_mid_cavity_candidate": [
+      98,
+      109,
+      275
+    ],
+    "rv_mid_cavity_candidate": [
+      165,
+      190,
+      277
+    ],
+    "lv_apical_region": [
+      109,
+      111,
+      412
+    ],
+    "rv_apical_region": [
+      168,
+      180,
+      390
+    ],
+    "lv_inlet_candidate": [
+      99,
+      139,
+      205
+    ],
+    "rv_inlet_candidate": [
+      178,
+      190,
+      204
+    ],
+    "left_atrial_candidate": [
+      68,
+      145,
+      129
+    ],
+    "right_atrial_candidate": [
+      225,
+      177,
+      145
+    ],
+    "lower_x_arterial_hinge_candidate": [
+      92,
+      111,
+      183
+    ],
+    "higher_x_arterial_hinge_candidate": [
+      214,
+      104,
+      183
+    ]
+  },
+  "quantitativeAccuracy": "Not measured; no expert ground truth."
+}

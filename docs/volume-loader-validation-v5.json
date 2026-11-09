@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "execution": "Actual browser worker module in Node worker threads with bounded local Fetch responses; not a browser interaction test",
+  "cases": [
+    {
+      "key": "low",
+      "shortFirstChunk": true,
+      "receivedBytes": 1931449,
+      "decodedBytes": 15010660,
+      "gpuTextureBytes": 6395400,
+      "decodeMilliseconds": 330.045857,
+      "accelerationMilliseconds": 93.21951999999999,
+      "decodedSHA256Verified": true,
+      "gpuCropVerified": true,
+      "gpuCropDimensions": [
+        152,
+        165,
+        255
+      ]
+    },
+    {
+      "key": "high",
+      "receivedBytes": 13152058,
+      "decodedBytes": 119581250,
+      "gpuTextureBytes": 47846624,
+      "decodeMilliseconds": 1783.026954,
+      "accelerationMilliseconds": 438.1002800000001,
+      "decodedSHA256Verified": true,
+      "gpuCropVerified": true,
+      "gpuCropDimensions": [
+        296,
+        322,
+        502
+      ]
+    },
+    {
+      "key": "high",
+      "acceleration": false,
+      "receivedBytes": 13152058,
+      "decodedBytes": 119581250,
+      "gpuTextureBytes": 47846624,
+      "decodeMilliseconds": 1282.5490929999996,
+      "accelerationMilliseconds": 186.15031700000054,
+      "decodedSHA256Verified": true,
+      "gpuCropVerified": true,
+      "gpuCropDimensions": [
+        296,
+        322,
+        502
+      ]
+    },
+    {
+      "key": "low",
+      "decodedHTTP": true,
+      "receivedBytes": 15010660,
+      "decodedBytes": 15010660,
+      "gpuTextureBytes": 6395400,
+      "decodeMilliseconds": 120.98075699999936,
+      "accelerationMilliseconds": 51.01985100000002,
+      "decodedSHA256Verified": true,
+      "gpuCropVerified": true,
+      "gpuCropDimensions": [
+        152,
+        165,
+        255
+      ]
+    },
+    {
+      "key": "low",
+      "original": true,
+      "receivedBytes": 5849116,
+      "decodedBytes": 15010660,
+      "gpuTextureBytes": 15010660,
+      "decodeMilliseconds": 296.27053800000067,
+      "accelerationMilliseconds": 58.409262999999555,
+      "decodedSHA256Verified": true,
+      "gpuCropVerified": false,
+      "gpuCropDimensions": null
+    }
+  ]
+}

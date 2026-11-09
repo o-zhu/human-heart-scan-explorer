@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "figure": "docs/lumen-artifacts-v23/gentle/polished-vs-gentle-matched-camera.jpg",
+  "sha256": "984fd014ddfc9c9e618c87d109837fe53dd5e56452173d35663c5088b3a53e88",
+  "checks": [
+    {
+      "case": "atrial",
+      "oldImageSha256": "b63cc728c9f2bb525cdf4d1c70836de7894afbbefe8932cfe08951279fee54d5",
+      "gentleImageSha256": "20b16efe608348ad046ea8f1bbdee4fe09d99c74426816fd62029e4a53c43af0",
+      "cameraExactlyMatched": true,
+      "sourceCapExactlyMatched": true,
+      "settingsAndGlslMatched": true,
+      "cleanupOffBoth": true
+    },
+    {
+      "case": "outflow",
+      "oldImageSha256": "8554aec020476ffb0edf52cb4a810e2d8d830d63226c05976fceacdc22157bf2",
+      "gentleImageSha256": "d62d3846ac2009560f0d31abaf74164cae424ad252bd701f1341529cab5e191c",
+      "cameraExactlyMatched": true,
+      "sourceCapExactlyMatched": true,
+      "settingsAndGlslMatched": true,
+      "cleanupOffBoth": true
+    }
+  ],
+  "extraRenderPerformed": false,
+  "caption": "Nearby reproducible screenshot-plane camera; no anatomical ground-truth claim. Both original views have candidate exclusion OFF.",
+  "note": "Existing originals were pasted without resizing, recoloring, or retouching; comparison presents reconstructed surfaces, not validated anatomical truth."
+}

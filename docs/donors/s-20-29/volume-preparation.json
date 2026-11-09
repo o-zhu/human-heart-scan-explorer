@@ -1,0 +1,584 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "specimen": "S-20-29",
+    "organ": "heart",
+    "datasetId": "1773963465",
+    "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+    "doi": "10.15151/ESRF-DC-1773964017",
+    "doiUrl": "https://doi.org/10.15151/ESRF-DC-1773964017",
+    "title": "Complete scan at 19.89 um of the heart of the body donor S-20-29",
+    "attribution": "Human Organ Atlas Collaboration / ESRF",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "donorAge": "80",
+    "donorSex": "male",
+    "donorMedicalInfo": "died from Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease | Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
+    "nativeDimensions": [
+      7639,
+      7639,
+      7771
+    ],
+    "nativeSpacingUm": 19.89,
+    "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/",
+    "sourceFormat": "N5",
+    "sourceScale": "s4",
+    "sourceScaleDimensions": [
+      477,
+      477,
+      486
+    ],
+    "sourceScaleSpacingUm": 318.24,
+    "sourceWindow": [
+      19300.0,
+      23000.0
+    ],
+    "sourceDtype": "uint16",
+    "sourcePhysicalOriginUm": [
+      39.78,
+      39.78,
+      39.78
+    ],
+    "sourceAxes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "sourceScaleCenterExtentUm": [
+      151800.48,
+      151800.48,
+      154664.64
+    ],
+    "levels": {
+      "low": {
+        "label": "Fast \u00b7 636.480 \u00b5m",
+        "dimensions": [
+          240,
+          240,
+          244
+        ],
+        "spacingUm": [
+          635.1484518828453,
+          635.1484518828453,
+          636.48
+        ],
+        "parts": [
+          {
+            "url": "assets/donors/s-20-29/volume/low-clean.raw.gz",
+            "bytes": 1875460,
+            "uncompressedBytes": 14054400,
+            "sha256": "d46c698c9137bc21d98433555c5f9b7f96ba7ace7451a36aa920d806daaf5af9",
+            "rawSha256": "07a77bc0cbb3ff2d859304ffaa9cd84fadf736b607aad58023b351492e9f2cf8",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              244
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/s-20-29/volume/low-original.raw.gz",
+            "bytes": 4331258,
+            "uncompressedBytes": 14054400,
+            "sha256": "d8622bad10004adc65f567b726655767def0adc9717431242217e834bcc99591",
+            "rawSha256": "78eded082b0ad852bef218fe6d9eb6cfc2e4c1c51c8bf77a10ec186b58a2827a",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              244
+            ]
+          }
+        ],
+        "originalCompressedBytes": 4331258,
+        "compressedBytes": 1875460,
+        "uncompressedBytes": 14054400,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          151800.48,
+          151800.48,
+          154664.64
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      },
+      "high": {
+        "label": "Detailed \u00b7 318.240 \u00b5m",
+        "dimensions": [
+          478,
+          478,
+          487
+        ],
+        "spacingUm": 318.24,
+        "parts": [
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-00.raw.gz",
+            "bytes": 413466,
+            "uncompressedBytes": 14622976,
+            "sha256": "8033ce9db160ebfd631bedea6d98ecb99685e1c1da8323a57d1efb497d12e80d",
+            "rawSha256": "e1c5018317e5986648e363d7d7e1d381a02be4e17d1aca9ee9a2f7c70d0b05b0",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-01.raw.gz",
+            "bytes": 1825592,
+            "uncompressedBytes": 14622976,
+            "sha256": "db71dae62fb8d7e33f076c65da27394de859caeec4f0bc9d5d539c5ae4e25c32",
+            "rawSha256": "156f760571b21fe29fb6542467f19cfaf7d4a528e15817f54a01de8dbf47aaf2",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-02.raw.gz",
+            "bytes": 2288179,
+            "uncompressedBytes": 14622976,
+            "sha256": "39eaa08417c3c48070035448b0b2211c1f2e8b85dfd4b5f16654306b383446fa",
+            "rawSha256": "686e2f62ed3416ce2ea88b0dded172524cd658c5377a83fbb277bcc809ed3c5e",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-03.raw.gz",
+            "bytes": 2333567,
+            "uncompressedBytes": 14622976,
+            "sha256": "683d769dc866770273ae4d1a41dd8d48aaf8331f275cce9818844ffb98199884",
+            "rawSha256": "d75719d3caf7c9504242078237dc238e6e4738378881fc70dc68cf0d3e181082",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-04.raw.gz",
+            "bytes": 2053347,
+            "uncompressedBytes": 14622976,
+            "sha256": "0ee0d0012808bdcaf06306c63cf8de2b95360d7baff6ee37f8a033496d43c7ad",
+            "rawSha256": "9e9178c6e448fe3d3c6a97ff1d9f9f30d66a5030e36f7398ad608781d7cea933",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-05.raw.gz",
+            "bytes": 1657862,
+            "uncompressedBytes": 14622976,
+            "sha256": "3fac97c9578416808ce05b818aaa8c65b70f5e1d47352f60d80e1280fce85c71",
+            "rawSha256": "5f10313abbd2f7b0918d482f24aa296fd8ad500526530d889d5f6f7063a29963",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-06.raw.gz",
+            "bytes": 932934,
+            "uncompressedBytes": 14622976,
+            "sha256": "0e65fd1b88dba286b54bc7499fb51cc98399ecb9eacf521df767db96065b51c0",
+            "rawSha256": "cdbd108b2a92e3a5706f4ff547cc663be95d886469719400619511fd07934a99",
+            "predictor": "delta-x",
+            "cleaned": true,
+            "zRange": [
+              384,
+              448
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-clean-07.raw.gz",
+            "bytes": 42627,
+            "uncompressedBytes": 8910876,
+            "sha256": "078901182e90f12981ef3cbf1dddc74d4b763bdbfdfe80e46201b496af1acaa3",
+            "rawSha256": "d55485a0b50a4ec1b8a4b39780b0f8a55446dcbac7ec14315857142ba1730079",
+            "predictor": "delta-x",
+            "cleaned": true,
+            "zRange": [
+              448,
+              487
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-00.raw.gz",
+            "bytes": 3932216,
+            "uncompressedBytes": 14622976,
+            "sha256": "8ca57cccc0b6d694bb3bad212f1559061753192965f7e2f2594fc703476c096a",
+            "rawSha256": "bf943667e1133ee1c0481bb0074fb25c7a2e850bfb1e6fa92002478f7e0b4318",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-01.raw.gz",
+            "bytes": 3911844,
+            "uncompressedBytes": 14622976,
+            "sha256": "e8eb32eb9cb2cb94395ab1bfad02061a778647450d1706aa8cd53403fbfe19d0",
+            "rawSha256": "dcfaa91b58c195899d4a9af045078c06921eac9edc56aa8d9e632ca953ff121c",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-02.raw.gz",
+            "bytes": 4023739,
+            "uncompressedBytes": 14622976,
+            "sha256": "e6b8db801c8abb27c1aefc71f23c32e4c0cdb1ac87956f03431daf19257ae708",
+            "rawSha256": "ed4d4181ff7b262d61dedda2e6009a21c73719e965c5b7b620268e7d4c0e6767",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-03.raw.gz",
+            "bytes": 4020604,
+            "uncompressedBytes": 14622976,
+            "sha256": "773fb834d7f040a05acbd12c3473330a2451be8188c2bb70790606f5d0c1a248",
+            "rawSha256": "fe6540c72ba0a82c1e6eba513d670e90bbe8f025b1cd991e79497c24b994ceac",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-04.raw.gz",
+            "bytes": 3744147,
+            "uncompressedBytes": 14622976,
+            "sha256": "3fd9bfc91067424a99ed6e8f3cf3070870508988b458274e235a5b320718d095",
+            "rawSha256": "427533224645c06e1dc0cfa18828f65a938c5cbffa1915fd103d8d966e336bfb",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-05.raw.gz",
+            "bytes": 3562021,
+            "uncompressedBytes": 14622976,
+            "sha256": "ea0b996d47ba2e448e0bff0c212eda558040a5303a47a651dbc3a6ff14eb6202",
+            "rawSha256": "4a03c8823b349107da4b593fa651a3ddd14e489017d91501ed265161de256667",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-06.raw.gz",
+            "bytes": 3153298,
+            "uncompressedBytes": 14622976,
+            "sha256": "2077a0a24e569517458f617804e6e1d382c9a70a7d1587bb7ca49b9e5649875b",
+            "rawSha256": "44b6d06855c3ff979231ffc2cb3a0f437d096afc3ccb96dca3fdfc2bbf73a453",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              384,
+              448
+            ]
+          },
+          {
+            "url": "assets/donors/s-20-29/volume/high-original-07.raw.gz",
+            "bytes": 1784130,
+            "uncompressedBytes": 8910876,
+            "sha256": "a03e189b599acd61d3d8d1f1600331a069280febaaf94857ecdde921eee0af8f",
+            "rawSha256": "9dd19a20fae4f1e2d3ebb6b2266fd9523679757bf53b179d50889750fdb2749f",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              448,
+              487
+            ]
+          }
+        ],
+        "originalCompressedBytes": 28131999,
+        "compressedBytes": 11547574,
+        "uncompressedBytes": 111271708,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          151800.48,
+          151800.48,
+          154664.64
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      }
+    },
+    "previewLevel": "low",
+    "defaultLevel": "high",
+    "defaultThreshold": 0.16216216216216217,
+    "registration": "Fine source first sample center anchors every level. High centers use exact integer fine-index stride; preview shares endpoints. All acquired fine voxels retained; added terminal columns are zero.",
+    "registrationPadding": {
+      "sourceFineDimensionsXYZ": [
+        1909,
+        1909,
+        1943
+      ],
+      "displayFineDimensionsXYZ": [
+        1909,
+        1909,
+        1945
+      ],
+      "zeroPaddedFineColumnsXYZ": [
+        0,
+        0,
+        2
+      ],
+      "sourceVoxelsOmitted": 0
+    },
+    "processingSummary": "Authentic S-20-29 whole-heart voxels. Donor metadata are recorded independently for this source. Source-specific display encoding and reversible exterior cleanup. Clinical orientation and anatomical labels require donor-specific review.",
+    "retrievedDate": "2026-11-05",
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.13513513513513514,
+      "windowHigh": 0.6216216216216216,
+      "windowGamma": 0.9,
+      "capContrast": 1
+    }
+  },
+  "compression": {
+    "low": {
+      "chosenPredictors": [
+        "delta-z"
+      ],
+      "compressedBytes": 1875460,
+      "alternatives": [
+        {
+          "none": 2108550,
+          "delta-x": 1925943,
+          "delta-z": 1875460
+        }
+      ],
+      "originalCompressedBytes": 4331258,
+      "partCount": 1,
+      "roundTripExact": true
+    },
+    "high": {
+      "chosenPredictors": [
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-x",
+        "delta-x"
+      ],
+      "compressedBytes": 11547574,
+      "alternatives": [
+        {
+          "none": 468005,
+          "delta-x": 422772,
+          "delta-z": 413466
+        },
+        {
+          "none": 2163709,
+          "delta-x": 1922820,
+          "delta-z": 1825592
+        },
+        {
+          "none": 2723108,
+          "delta-x": 2405171,
+          "delta-z": 2288179
+        },
+        {
+          "none": 2841411,
+          "delta-x": 2454462,
+          "delta-z": 2333567
+        },
+        {
+          "none": 2574981,
+          "delta-x": 2243153,
+          "delta-z": 2053347
+        },
+        {
+          "none": 2024502,
+          "delta-x": 1758608,
+          "delta-z": 1657862
+        },
+        {
+          "none": 1046334,
+          "delta-x": 932934,
+          "delta-z": 936776
+        },
+        {
+          "none": 42673,
+          "delta-x": 42627,
+          "delta-z": 46584
+        }
+      ],
+      "originalCompressedBytes": 28131999,
+      "partCount": 8,
+      "roundTripExact": true
+    }
+  },
+  "cleanup": {
+    "schemaVersion": 1,
+    "specimen": "S-20-29",
+    "datasetId": "1773963465",
+    "dimensions": [
+      240,
+      240,
+      244
+    ],
+    "volumeUrl": "assets/donors/s-20-29/cleanup/heart-support.raw.gz",
+    "dtype": "uint8",
+    "arrayOrder": "ZYX, X fastest",
+    "values": {
+      "0": "excluded",
+      "255": "retained"
+    },
+    "physicalCenterExtentUm": [
+      151800.48,
+      151800.48,
+      154664.64
+    ],
+    "sourceThresholdRaw": 19900.0,
+    "sourceThresholdDisplay": 0.16216216216216217,
+    "sourceDimensions": [
+      478,
+      478,
+      487
+    ],
+    "sourceSpacingUm": 318.24,
+    "method": "Reviewed largest 18-connected source-threshold support, 3-voxel Manhattan margin and conservative sampling guard; endpoint-registered support.",
+    "componentPolicy": "largest",
+    "retainedComponentIds": [
+      594
+    ],
+    "reviewedSupportSeeds": [],
+    "reviewedHeartRoi": null,
+    "coreConnectivity": 18,
+    "marginVoxels": 3,
+    "coreComponentVoxels": 10034493,
+    "sourceForegroundVoxels": 12493600,
+    "sourceComponents": 2957,
+    "coreVoxelsRetained": 10034493,
+    "topComponentSizes": [
+      10034493,
+      2339623,
+      61446,
+      20214,
+      8166,
+      3643,
+      1382,
+      750,
+      640,
+      534,
+      381,
+      347
+    ],
+    "rawBytes": 14054400,
+    "compressedBytes": 150076,
+    "sha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+    "intensitiesModified": false,
+    "limitations": "Exterior display support is not anatomical segmentation. Original windowed volume is available by disabling cleanup."
+  },
+  "registration": {
+    "highDimensionsXYZ": [
+      478,
+      478,
+      487
+    ],
+    "lowDimensionsXYZ": [
+      240,
+      240,
+      244
+    ],
+    "fullFineDimensionsXYZ": [
+      1909,
+      1909,
+      1945
+    ],
+    "sourceFineDimensionsXYZ": [
+      1909,
+      1909,
+      1943
+    ],
+    "highSpacingUm": 318.24,
+    "lowSpacingUmXYZ": [
+      635.1484518828453,
+      635.1484518828453,
+      636.48
+    ],
+    "fineSpacingUm": 79.56,
+    "longestMm": 154.66464000000002,
+    "extent": [
+      0.9814814814814815,
+      1.0,
+      0.9814814814814815
+    ],
+    "fineSourcePhysicalOriginUm": [
+      39.78,
+      39.78,
+      39.78
+    ],
+    "highOriginalSourceIndexShift": [
+      -0.375,
+      -0.375,
+      -0.375
+    ],
+    "paddingFineColumnsXYZ": [
+      0,
+      0,
+      2
+    ],
+    "worldMapping": "Centered physical source coordinates [X,Z,-Y], normalized by longest physical center extent.",
+    "sourceCenterConvention": "Neuroglancer N5 zero-offset cell grid: sample center=(index+0.5)*resolution*downsamplingFactor."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "datasetId": "1966162746",
+  "specimen": "S-20-28",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": false,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Measured geometric comparison; anatomical identity unreviewed",
+  "sourceDoi": "10.15151/ESRF-DC-1966163810",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "sourceSpacingUm": 79.4,
+  "fineSource": true,
+  "echoPlaneCount": 13,
+  "flowPlaneCount": 8,
+  "probePlaneCount": 4,
+  "textureBytes": 20941152,
+  "sourceVolume": "{source-cache}/heart-donor-1966162746/s2-clean-display-u8.npy",
+  "sourceVolumeSha256": "6177e47c7b2688042ecee11ed969ab41857e30615e4019859cf2020714611530",
+  "geometricBasisVolumeSha256": "e3799ac7e066ecedf8ee3aff68b9f15cdc3afec05d64b3fdff130e71ad72bf85",
+  "sourceUnchangedThroughoutPreparation": true,
+  "anatomicalLabelsAssigned": 0,
+  "limitations": [
+    "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition."
+  ]
+}

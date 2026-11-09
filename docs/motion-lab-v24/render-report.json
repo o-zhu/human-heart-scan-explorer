@@ -1,0 +1,231 @@
+{
+  "schema": "heart-motion-egl-audit-v24.1",
+  "verificationPassed": true,
+  "scientificRendering": true,
+  "browserScreenshot": false,
+  "clinicalValidation": false,
+  "source": {
+    "path": "{source-cache}/guided-native-v21/whole/overview/assets/detail.hfm.gz",
+    "compressedSha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+    "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+    "vertices": 699001,
+    "triangles": 2500000,
+    "displaySamplingUm": 79.4,
+    "nativeSpecimenSamplingUm": 19.85,
+    "additionalSimplification": false,
+    "sourceGeometryModified": false
+  },
+  "shader": {
+    "fieldFileSha256": "001dc03c3de98e9c038ff833c1c4a8e4a5446528a2ab1d417d1d0d0b91bdddbf",
+    "labFileSha256": "488e0dd621f3ba1d80e27d980f4c7742b8a637d6befaeae286282233a7dec5d9",
+    "exactVertexShaderSha256": "05a84dce0c3fa17c1fa75945d144b25a599eeb83983d34ba27a2b0aec1dd0738",
+    "exactFragmentShaderSha256": "1e19d9aa9eb6cb9d30a9d867a14dd40172d88a32f267ad2182dffe9968478e62",
+    "compileAndLinkPassed": true,
+    "transformFeedbackFromUnmodifiedVertexShader": true,
+    "linkLog": ""
+  },
+  "renderer": {
+    "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "api": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+    "width": 550,
+    "height": 600,
+    "antialiasing": false,
+    "timingIsBrowserBenchmark": false
+  },
+  "view": {
+    "yaw": 0.48,
+    "pitch": 0.2,
+    "flip": true,
+    "span": 1.12,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "cutAxis": [
+      0,
+      0,
+      1
+    ],
+    "cutValue": -0.025,
+    "cutPlaneInWorldSpace": true,
+    "capsAdded": false
+  },
+  "cpuGpuComparisons": [
+    {
+      "mode": 2,
+      "amount": 0,
+      "twist": true,
+      "points": 2264,
+      "positionMaximumErrorMm": 0.0,
+      "positionP95ErrorMm": 0.0,
+      "normalMaximumAngularErrorDeg": 0.0,
+      "normalP95AngularErrorDeg": 0.0,
+      "worstNormalPoint": [
+        -0.014078901149332523,
+        -0.45393767952919006,
+        0.028622183948755264
+      ]
+    },
+    {
+      "mode": 0,
+      "amount": 1,
+      "twist": true,
+      "points": 2264,
+      "positionMaximumErrorMm": 0.0,
+      "positionP95ErrorMm": 0.0,
+      "normalMaximumAngularErrorDeg": 0.0,
+      "normalP95AngularErrorDeg": 0.0,
+      "worstNormalPoint": [
+        -0.014078901149332523,
+        -0.45393767952919006,
+        0.028622183948755264
+      ]
+    },
+    {
+      "mode": 1,
+      "amount": 1,
+      "twist": true,
+      "points": 2264,
+      "positionMaximumErrorMm": 1.3929432115297664e-05,
+      "positionP95ErrorMm": 3.9145738932207154e-06,
+      "normalMaximumAngularErrorDeg": 1.068173521720163e-05,
+      "normalP95AngularErrorDeg": 4.133323714108098e-06,
+      "worstNormalPoint": [
+        -0.06869913637638092,
+        0.1670597940683365,
+        0.12752830982208252
+      ]
+    },
+    {
+      "mode": 2,
+      "amount": 1,
+      "twist": true,
+      "points": 2264,
+      "positionMaximumErrorMm": 2.0613230011002694e-05,
+      "positionP95ErrorMm": 4.645209875759099e-06,
+      "normalMaximumAngularErrorDeg": 0.002065228396029174,
+      "normalP95AngularErrorDeg": 9.869065156532523e-06,
+      "worstNormalPoint": [
+        0.05938269570469856,
+        0.2199999988079071,
+        -0.04364427179098129
+      ]
+    },
+    {
+      "mode": 2,
+      "amount": 1,
+      "twist": false,
+      "points": 2264,
+      "positionMaximumErrorMm": 2.0031897074625143e-05,
+      "positionP95ErrorMm": 4.031857752142126e-06,
+      "normalMaximumAngularErrorDeg": 0.0020627454712262394,
+      "normalP95AngularErrorDeg": 9.281714712818172e-06,
+      "worstNormalPoint": [
+        0.05938269570469856,
+        0.2199999988079071,
+        -0.04364427179098129
+      ]
+    },
+    {
+      "mode": 2,
+      "amount": 0.43,
+      "twist": true,
+      "points": 2264,
+      "positionMaximumErrorMm": 1.0023551890012234e-05,
+      "positionP95ErrorMm": 4.2888436268104055e-06,
+      "normalMaximumAngularErrorDeg": 0.0006106363924707779,
+      "normalP95AngularErrorDeg": 5.398218690993923e-06,
+      "worstNormalPoint": [
+        0.05938269570469856,
+        0.2199999988079071,
+        -0.04364427179098129
+      ]
+    }
+  ],
+  "acceptanceTolerances": {
+    "maximumPositionErrorMm": 0.005,
+    "maximumNormalAngularErrorDeg": 0.25,
+    "purpose": "Implementation agreement, not anatomical accuracy"
+  },
+  "normalReference": "Cofactor of central finite-difference Jacobian of the actual JS deformPoint(); step 1e-5 world units. Compared with GLSL transform-feedback vNormal.",
+  "analyticalChecks": {
+    "minimumAxialDerivativeAcrossAllowedAmplitude": 0.8357615185456881,
+    "minimumCavityAwareJacobianAcrossAllowedAmplitude": 0.56,
+    "positiveJacobianMeansNoLocalFolding": true,
+    "myocardialVolumeConservationEstablished": false
+  },
+  "renders": [
+    {
+      "mode": "rest",
+      "amount": 0,
+      "cutaway": false,
+      "file": "render-rest-exterior.png",
+      "drawSeconds": 0.28177034700638615,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "6cfcaf5c505c575eea663ed23ec46598e9cab9fb47b72c047ef8143275a791df"
+    },
+    {
+      "mode": "cavity-aware",
+      "amount": 1,
+      "cutaway": false,
+      "file": "render-cavity-aware-exterior.png",
+      "drawSeconds": 0.27566314800060354,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "0adecacb18a2da304497de9e4144775295609a5d97b0cd540b1b84e64fef0423"
+    },
+    {
+      "mode": "simple-squeeze",
+      "amount": 1,
+      "cutaway": false,
+      "file": "render-simple-squeeze-exterior.png",
+      "drawSeconds": 0.2528911249974044,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "c2cc2df3b952e0e7263b605b4b3093f37f7901815b211ccff7d4865c7f5d5be0"
+    },
+    {
+      "mode": "rest",
+      "amount": 0,
+      "cutaway": true,
+      "file": "render-rest-cutaway.png",
+      "drawSeconds": 0.2706738060078351,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "bb772d3e5afd9aa7e365a2a681f9befa21349457f34b44c562d28b29e4f8f980"
+    },
+    {
+      "mode": "cavity-aware",
+      "amount": 1,
+      "cutaway": true,
+      "file": "render-cavity-aware-cutaway.png",
+      "drawSeconds": 0.24214406199462246,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "14ba6577d69495115d0b96273089a009d382b4a146af03c2078fa334e7d03351"
+    },
+    {
+      "mode": "simple-squeeze",
+      "amount": 1,
+      "cutaway": true,
+      "file": "render-simple-squeeze-cutaway.png",
+      "drawSeconds": 0.2860400710051181,
+      "width": 550,
+      "height": 600,
+      "imageSha256": "3d8e1593d2297dc78963136a2968c2e4d55444b843aba27be0c86207fc4b0fd8"
+    }
+  ],
+  "comparisonFile": "render-comparison.png",
+  "caveats": [
+    "Source is the existing simplified whole-heart display mesh, not the full native surface bank.",
+    "Motion is a synthetic single-axis field, not a segmentation-based cardiac mechanics model.",
+    "Neither measured subject motion nor myocardial volume conservation is validated.",
+    "Normals are validated against the deformation differential, not against anatomical tissue normals.",
+    "Cavity-aware is the field name; no chamber segmentation or pressure boundary condition is present.",
+    "World-plane cutaways intersect different material points during motion."
+  ],
+  "comparisonSha256": "d2f5d6fa21c3b3054b75c7a933b81514d0e61c372a90d73c5a53d55ece2ba6dd",
+  "pngChecksumsAndPixelReadbackPassed": true
+}

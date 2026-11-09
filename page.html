@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1013">
+  <meta name="description" content="Explore preserved Human Organ Atlas hearts and acquired cardiac MRI, CT and ultrasound. Rotate 3D cutaways, browse measured sections and compare cardiac phases.">
+  <title>Heart Explorer · Human Cardiac Imaging</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./echo.css">
+  <link rel="stylesheet" href="./probe-lab.css">
+  <link rel="stylesheet" href="./tee-lab.css">
+  <link rel="stylesheet" href="./refinement.css">
+  <link rel="stylesheet" href="./workbench.css">
+  <link rel="stylesheet" href="./explorer-ui.css">
+  <link rel="stylesheet" href="./tte-atlas.css">
+  <link rel="stylesheet" href="./explorer-layout-v33.css">
+  <link rel="stylesheet" href="./workspace-compact-v35.css">
+  <link rel="stylesheet" href="./coronary-controls.css">
+  <link rel="stylesheet" href="./viewport-controls.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Heart Explorer">
+        <svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 3v30M3 18h30" stroke="currentColor" stroke-width="1.1"/><path d="M8 8h8v8H8zM20 8h8v8h-8zM8 20h8v8H8zM20 20h8v8h-8z" stroke="currentColor" stroke-width="1.1"/><circle cx="18" cy="18" r="4.3" fill="#0b1013" stroke="currentColor" stroke-width="1.1"/></svg>
+        <span class="brand-copy"><strong>HEART EXPLORER</strong></span>
+      </a>
+      <div class="topbar-context"><span class="live-dot"></span> HiP-CT <span class="context-divider">/</span> VIRTUAL ANATOMY</div>
+      <div class="topbar-actions">
+        <button id="aboutButton" class="quiet-button" type="button"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.25"/><path d="M10 9v5M10 5.5v1" stroke="currentColor" stroke-width="1.5"/></svg><span>About the Scan</span></button>
+        <button id="shareView" class="outlined-button" type="button"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 13V3m0 0L6.5 6.5M10 3l3.5 3.5M4 11v5h12v-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Share View</span></button>
+      </div>
+    </header>
+
+    <section class="donor-bar dataset-browser" aria-labelledby="exploreHeartsTitle">
+      <div class="dataset-intro"><h2 id="exploreHeartsTitle">Explore Hearts</h2></div>
+      <nav class="dataset-shortcuts" aria-label="Explore another heart">
+        <a data-source-link="ladaf-2021-17" href="?donor=ladaf-2021-17"><strong>LADAF</strong><span>63 years</span></a>
+        <a data-source-link="s-20-29" href="?donor=s-20-29"><strong>S-20-29</strong><span>80 years</span></a>
+        <a data-source-link="s-20-28" href="?donor=s-20-28"><strong>S-20-28</strong><span>84 years</span></a>
+        <a class="dataset-featured" data-source-link="slicerheart-4d" href="?donor=slicerheart-4d"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="m10 8 6 4-6 4V8Z" fill="currentColor"/></svg><strong>SlicerHeart</strong><span>4D CT · motion</span></a>
+        <a data-source-link="cmac-case-1" href="?donor=cmac-case-1"><strong>cMAC</strong><span>MRI + 4D echo</span></a>
+      </nav>
+    </section>
+    <nav class="workspace-tabs" role="tablist" aria-label="Explorer mode">
+      <button id="reconstructionTab" class="active" type="button" role="tab" aria-selected="true" aria-controls="reconstructionPanel">3D Reconstruction</button>
+      <button id="echoTab" type="button" role="tab" aria-selected="false" aria-controls="echoPanel">Echo Windows</button>
+      <button id="probeTab" type="button" role="tab" aria-selected="false" aria-controls="probePanel">TTE Lab</button>
+      <button id="teeTab" type="button" role="tab" aria-selected="false" aria-controls="teePanel">TEE Lab</button>
+    </nav>
+    <main class="workstation" id="reconstructionPanel">
+      <section class="viewer-column" id="reconstructionWorkspace" aria-label="Interactive heart reconstruction with linked CT Sections">
+        <div class="viewport" id="viewport">
+          <canvas tabindex="0" id="volumeCanvas" aria-label="Interactive three-dimensional heart scan. Drag to rotate and scroll to zoom."></canvas>
+          <div class="viewport-heading">
+            <div class="eyebrow"><span class="tiny-square"></span> VOLUME RECONSTRUCTION</div>
+            <h1>The Human Heart</h1>
+            <div class="source-tag"><span class="source-dot"></span><span id="specimenLabel">LADAF-2021-17</span><span class="source-divider">/</span><span id="resolutionLabel">Loading scan</span></div>
+            <p>A 3D view reconstructed from scan data</p>
+            <div id="quickViews" class="quick-views" aria-label="Instructive starting views"></div>
+            <span id="displayModeBadge" class="display-mode-badge" hidden>Approximate anatomy</span>
+          </div>
+          <div class="viewer-controls">
+          <div class="preset-switch" role="group" aria-label="Reconstruction presets">
+            <button id="presetWhole" class="active" type="button" aria-pressed="true">Whole Organ</button>
+            <button id="presetCutaway" type="button" aria-pressed="false">Cutaway</button>
+            <button id="presetGlass" type="button" aria-pressed="false">Translucent</button>
+          </div>
+            <div class="viewer-toolbar" aria-label="View, color and reconstruction detail controls">
+              <details id="viewMenu" class="viewer-menu">
+                <summary><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m10 2 7 4v8l-7 4-7-4V6l7-4Zm0 8 7-4M10 10 3 6m7 4v8" stroke="currentColor" stroke-width="1.2"/></svg>View<span class="menu-chevron" aria-hidden="true"></span></summary>
+                <div class="viewer-menu-content"><span class="menu-caption">Camera angle</span>
+          <div class="orientation-grid" role="group" aria-label="Camera orientation">
+            <button type="button" data-view="front" class="active" aria-pressed="true">Front</button><button type="button" data-view="back" aria-pressed="false">Back</button><button type="button" data-view="left" aria-pressed="false">Left</button><button type="button" data-view="right" aria-pressed="false">Right</button><button type="button" data-view="top" aria-pressed="false">Top</button>
+          </div>
+                  <p class="menu-note">Directions follow the scan, not verified anatomical orientation.</p>
+                </div>
+              </details>
+              <details id="colorMenu" class="viewer-menu">
+                <summary><span class="color-swatch" aria-hidden="true"></span>Color<span class="menu-chevron" aria-hidden="true"></span></summary>
+                <div class="viewer-menu-content"><span class="menu-caption">Color Style</span>
+          <div class="material-presets" role="group" aria-label="Visual style">
+            <button type="button" data-material="porcelain" aria-pressed="false"><i class="material-orb porcelain" aria-hidden="true"></i><span>Porcelain</span></button>
+            <button type="button" data-material="contrast" aria-pressed="true"><i class="material-orb contrast" aria-hidden="true"></i><span>Tissue / Space</span></button>
+            <button type="button" data-material="atlas" aria-pressed="false" title="Soft rose and warm ivory with neutral, soft shading. Illustrative intensity color; tissue types are not classified."><i class="material-orb atlas" aria-hidden="true"></i><span>Atlas Cinematic</span></button>
+            <button type="button" data-material="anatomy" aria-pressed="false"><i class="material-orb anatomy" aria-hidden="true"></i><span>Anatomy</span></button>
+          </div>
+          <div class="control-row"><label for="palette">Color Style</label><div class="select-wrap"><select id="palette"><option value="contrast">Tissue / Space</option><option value="atlas">Atlas Cinematic</option><option value="porcelain">Porcelain</option><option value="anatomy">Anatomy Colors</option><option value="grayscale">Grayscale</option><option value="ivory">Classic Ivory</option><option value="copper">Classic Copper</option></select></div></div>
+          <p id="materialDescription" class="control-note">Bright tissue against deep, dark spaces.</p>
+                </div>
+              </details>
+              <button id="openReconstructionDetail" class="reconstruction-detail-shortcut" type="button" aria-controls="viewerSettings" aria-expanded="false" title="Choose reconstruction detail" hidden><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m10 2 7 4-7 4-7-4 7-4Zm-7 8 7 4 7-4M3 14l7 4 7-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Detail</button>
+              <div class="coronary-control" data-coronary-controls hidden><button class="coronary-toggle" data-coronary-toggle type="button" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2v6m0 0L5 5M10 8l5-3M10 8v5m0 0-5 5m5-5 5 5M5 5 3 7m12-2 2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-coronary-label>Reveal Coronaries</span></button><span class="coronary-status" data-coronary-status role="status" aria-live="polite" hidden></span></div>
+            </div>
+          </div>
+          <div class="loading-overlay" id="loading" role="status" aria-live="polite">
+            <div class="loader-graphic" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h2 id="loadTitle">Reconstructing the heart</h2>
+            <p id="loadDetail">Preparing the open scan data for your browser.</p>
+            <div class="load-track"><div id="loadProgress"></div></div>
+            <span class="loader-caption">HUMAN ORGAN ATLAS</span>
+          </div>
+          <div class="viewport-bottom">
+            <div class="interaction-hint"><svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><rect x="3" y="1" width="10" height="17" rx="5" stroke="currentColor"/><path d="M8 4v4" stroke="currentColor" stroke-linecap="round"/></svg><span>Drag to orbit <span class="hint-separator">·</span> Two fingers to pan <span class="hint-separator">·</span> Pinch or scroll to zoom</span></div>
+            <div class="viewport-tools">
+              <button id="autoRotate" class="icon-button" type="button" aria-label="Toggle automatic rotation" aria-pressed="false" title="Auto rotate"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M15.5 6.5A6.4 6.4 0 1 0 16 12M15.5 6.5V2.8m0 3.7h-3.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="m8.5 7 4 3-4 3V7Z" fill="currentColor"/></svg></button>
+              <button id="resetView" class="icon-button" type="button" aria-label="Reset view" title="Reset view"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 6.5a6.4 6.4 0 1 1-.5 5.5M4.5 6.5V2.8m0 3.7h3.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <span class="tool-divider"></span>
+              <button id="snapshot" class="icon-button" type="button" aria-label="Save a snapshot" title="Save snapshot"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h4l1-2h4l1 2h4v10H3V6Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="10" cy="10.5" r="3" stroke="currentColor" stroke-width="1.3"/></svg></button>
+              <button id="fullscreen" class="fullscreen-button" type="button" aria-label="Open fullscreen workspace" aria-pressed="false" title="Fullscreen · heart and CT Sections"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="fullscreenLabel">Fullscreen</span></button>
+            </div>
+          </div>
+          <div class="viewport-corner top-left"></div><div class="viewport-corner top-right"></div><div class="viewport-corner bottom-left"></div><div class="viewport-corner bottom-right"></div>
+        </div>
+
+        <section class="sections-panel" aria-labelledby="sectionsTitle">
+          <h2 id="sectionsTitle" class="screen-reader-only">CT Sections</h2>
+          <p id="sectionHelp" class="screen-reader-only">Scroll over a section, swipe up or down, or use the slider and arrow keys to move the linked 3D cutaway.</p>
+          <p id="sectionOrientationNote" class="screen-reader-only">Approximate anatomical planes for this specimen; no patient-position registration.</p>
+          <span id="sectionSyncStatus" class="screen-reader-only" role="status" aria-live="polite">Choose a section to begin</span>
+          <div class="slice-grid">
+            <article class="slice-card axis-x" data-axis="x" data-section-slot="first">
+              <div class="slice-label"><button type="button" class="slice-activate" aria-pressed="false" title="Link the 3D cutaway to the Coronal section"><i class="axis-dot x"></i><span data-section-name>Coronal</span><span class="link-indicator">Active Cutaway</span></button><button class="slice-expand" type="button" data-section-expand="X" aria-expanded="false" aria-controls="sliceImageX" aria-label="Enlarge Coronal section"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4" stroke="currentColor" stroke-width="1.3"/></svg><span>Enlarge</span></button></div>
+              <div class="slice-image" id="sliceImageX"><canvas tabindex="0" id="sliceX" aria-label="Coronal Plane CT section. Scroll to move the 3D cutaway, or use arrow keys. Enter faces this section." aria-describedby="sectionHelp sectionOrientationNote"></canvas><span class="slice-scroll-cue" aria-hidden="true"><svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><rect x="3" y="1" width="10" height="17" rx="5" stroke="currentColor"/><path d="M8 4v4" stroke="currentColor" stroke-linecap="round"/></svg><span class="mouse-cue">Scroll Here</span><span class="touch-cue">Swipe Here</span></span><span class="slice-axis-marker x">Coronal</span></div>
+              <div class="slice-meta"><output id="sliceIndexX" for="sliceRangeX">Loading sections</output><output id="sliceReadoutX" for="sliceRangeX">—</output></div>
+              <div class="slice-navigation"><button type="button" data-section-step="-1" data-section-axis="X" aria-label="Previous Coronal section" title="Previous section">−</button><input id="sliceRangeX" class="slice-range range-x" aria-label="Coronal section position" type="range" min="0" max="1" step="0.001" value="0.5"><button type="button" data-section-step="1" data-section-axis="X" aria-label="Next Coronal section" title="Next section">+</button></div>
+              <div class="slice-footer"><span id="sliceDetailX">Preparing scan detail</span><span class="slice-key-hint">↑ ↓ to step</span></div>
+            </article>
+            <article class="slice-card axis-y" data-axis="y" data-section-slot="second">
+              <div class="slice-label"><button type="button" class="slice-activate" aria-pressed="false" title="Link the 3D cutaway to the Sagittal section"><i class="axis-dot y"></i><span data-section-name>Sagittal</span><span class="link-indicator">Active Cutaway</span></button><button class="slice-expand" type="button" data-section-expand="Y" aria-expanded="false" aria-controls="sliceImageY" aria-label="Enlarge Sagittal section"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4" stroke="currentColor" stroke-width="1.3"/></svg><span>Enlarge</span></button></div>
+              <div class="slice-image" id="sliceImageY"><canvas tabindex="0" id="sliceY" aria-label="Sagittal Plane CT section. Scroll to move the 3D cutaway, or use arrow keys. Enter faces this section." aria-describedby="sectionHelp sectionOrientationNote"></canvas><span class="slice-scroll-cue" aria-hidden="true"><svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><rect x="3" y="1" width="10" height="17" rx="5" stroke="currentColor"/><path d="M8 4v4" stroke="currentColor" stroke-linecap="round"/></svg><span class="mouse-cue">Scroll Here</span><span class="touch-cue">Swipe Here</span></span><span class="slice-axis-marker y">Sagittal</span></div>
+              <div class="slice-meta"><output id="sliceIndexY" for="sliceRangeY">Loading sections</output><output id="sliceReadoutY" for="sliceRangeY">—</output></div>
+              <div class="slice-navigation"><button type="button" data-section-step="-1" data-section-axis="Y" aria-label="Previous Sagittal section" title="Previous section">−</button><input id="sliceRangeY" class="slice-range range-y" aria-label="Sagittal section position" type="range" min="0" max="1" step="0.001" value="0.5"><button type="button" data-section-step="1" data-section-axis="Y" aria-label="Next Sagittal section" title="Next section">+</button></div>
+              <div class="slice-footer"><span id="sliceDetailY">Preparing scan detail</span><span class="slice-key-hint">↑ ↓ to step</span></div>
+            </article>
+            <article class="slice-card axis-z" data-axis="z" data-section-slot="wide">
+              <div class="slice-label"><button type="button" class="slice-activate" aria-pressed="false" title="Link the 3D cutaway to the Axial section"><i class="axis-dot z"></i><span data-section-name>Axial</span><span class="link-indicator">Active Cutaway</span></button><button class="slice-expand" type="button" data-section-expand="Z" aria-expanded="false" aria-controls="sliceImageZ" aria-label="Enlarge Axial section"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4" stroke="currentColor" stroke-width="1.3"/></svg><span>Enlarge</span></button></div>
+              <div class="slice-image" id="sliceImageZ"><canvas tabindex="0" id="sliceZ" aria-label="Axial Plane CT section. Scroll to move the 3D cutaway, or use arrow keys. Enter faces this section." aria-describedby="sectionHelp sectionOrientationNote"></canvas><span class="slice-scroll-cue" aria-hidden="true"><svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><rect x="3" y="1" width="10" height="17" rx="5" stroke="currentColor"/><path d="M8 4v4" stroke="currentColor" stroke-linecap="round"/></svg><span class="mouse-cue">Scroll Here</span><span class="touch-cue">Swipe Here</span></span><span class="slice-axis-marker z">Axial</span></div>
+              <div class="slice-meta"><output id="sliceIndexZ" for="sliceRangeZ">Loading sections</output><output id="sliceReadoutZ" for="sliceRangeZ">—</output></div>
+              <div class="slice-navigation"><button type="button" data-section-step="-1" data-section-axis="Z" aria-label="Previous Axial section" title="Previous section">−</button><input id="sliceRangeZ" class="slice-range range-z" aria-label="Axial section position" type="range" min="0" max="1" step="0.001" value="0.5"><button type="button" data-section-step="1" data-section-axis="Z" aria-label="Next Axial section" title="Next section">+</button></div>
+              <div class="slice-footer"><span id="sliceDetailZ">Preparing scan detail</span><span class="slice-key-hint">↑ ↓ to step</span></div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <section id="echoPanel" class="echo-panel" hidden aria-label="Echocardiography reference cutaway planes"></section>
+    <section id="probePanel" hidden aria-label="Interactive ultrasound probe and CT-derived simulation"></section>
+    <section id="teePanel" hidden aria-label="Controllable transesophageal probe and CT-derived simulation"></section>
+
+      <details id="viewerSettings" class="viewer-settings">
+        <summary><span class="settings-title"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor"/><circle cx="7" cy="5" r="2" fill="#10191c" stroke="currentColor"/><circle cx="13" cy="10" r="2" fill="#10191c" stroke="currentColor"/><circle cx="8" cy="15" r="2" fill="#10191c" stroke="currentColor"/></svg><span class="settings-full-title">Settings</span><span class="settings-ct-title">CT Display</span></span><span class="settings-description"><span data-reconstruction-settings>Reconstruction Detail · </span>Slice Brightness &amp; Windowing</span><span class="settings-chevron" aria-hidden="true"></span></summary>
+        <aside class="inspector settings-grid" aria-label="Visualization settings">
+
+        <section id="fineSurfaceControls" class="control-section reconstruction-detail-controls" data-reconstruction-settings data-gentle-ready="true" data-gentle-download-mb="131.645142" hidden aria-labelledby="reconstructionDetailHeading"></section>
+
+        <section id="windowControls" class="control-section window-controls" aria-labelledby="windowHeading">
+          <div class="control-section-heading"><div><h3 id="windowHeading">Slice Brightness &amp; Windowing</h3><p id="windowDonor" class="control-note">LADAF-2021-17 · CT display</p></div><button id="resetWindow" class="outlined-button" type="button">Reset Donor Window</button></div>
+          <div class="window-preset-row"><div id="windowPresets" class="window-presets" role="group" aria-label="Slice display presets"></div><span id="windowPresetStatus" class="window-preset-status" role="status" aria-live="polite">Current settings</span></div>
+          <p id="windowPresetDescription" class="control-note window-preset-description">Choose a starting point, then adjust the controls to suit the tissue you are viewing.</p>
+          <div class="window-slider-grid">
+            <div class="slider-control"><div class="slider-label"><label for="cutFaceExposure">Slice Brightness</label><output id="cutFaceExposureValue" for="cutFaceExposure">1.35×</output></div><input id="cutFaceExposure" type="range" min="0.5" max="3" step="0.05" value="1.35" aria-describedby="windowDescription"><div class="range-labels"><span>Darker</span><span>Brighter</span></div></div>
+            <div class="slider-control"><div class="slider-label"><label for="capContrast">Slice Contrast</label><output id="capContrastValue" for="capContrast">1.80×</output></div><input id="capContrast" type="range" min="0.5" max="3" step="0.05" value="1.8" aria-describedby="windowDescription"><div class="range-labels"><span>Gentler</span><span>Stronger</span></div></div>
+            <div class="slider-control"><div class="slider-label"><label for="windowLow">Black Point</label><output id="windowLowValue" for="windowLow">14,640</output></div><input id="windowLow" type="range" min="0" max="0.995" step="0.001" value="0" aria-describedby="windowDescription windowStatus"><div class="range-labels"><span>Reveal darker tissue</span><span>Deepen shadows</span></div></div>
+            <div class="slider-control"><div class="slider-label"><label for="windowHigh">White Point</label><output id="windowHighValue" for="windowHigh">23,545</output></div><input id="windowHigh" type="range" min="0.005" max="1" step="0.001" value="1" aria-describedby="windowDescription windowStatus"><div class="range-labels"><span>Brighten tissue</span><span>Retain highlights</span></div></div>
+            <div class="slider-control"><div class="slider-label"><label for="windowGamma">Midtone Gamma</label><output id="windowGammaValue" for="windowGamma">1.00</output></div><input id="windowGamma" type="range" min="0.5" max="2.5" step="0.05" value="1" aria-describedby="windowDescription windowStatus"><div class="range-labels"><span>Lighter midtones</span><span>Darker midtones</span></div></div>
+          </div>
+          <div class="window-options"><label class="toggle-label" for="windowEnabled"><input id="windowEnabled" type="checkbox"><span class="toggle-track" aria-hidden="true"></span><span>Custom Intensity Window</span></label><span id="windowStatus" class="control-note">Window off · move a window slider to enable</span></div>
+          <p class="control-note" id="windowDescription">Applies to CT sections and cut faces in every module. Black and white points use recorded scan intensities. Ultrasound gain is adjusted separately.</p>
+        </section>
+
+        <section class="control-section" data-reconstruction-settings>
+          <div class="control-section-heading"><h3>Rendering &amp; Cleanup</h3></div>
+          <div class="control-row"><label for="renderMode">Rendering</label><div class="select-wrap"><select id="renderMode"><option value="surface">Surface</option><option value="volume">Volume</option><option value="mip">Maximum Intensity</option></select></div></div>
+          <div class="cleanup-control"><label class="toggle-label" for="cleanupEnabled"><input id="cleanupEnabled" type="checkbox" checked disabled><span class="toggle-track" aria-hidden="true"></span><span>Clean Scan</span></label><span class="subtle-badge">Reversible</span></div>
+          <p id="cleanupStatus" class="control-note">Preparing the tissue support mask…</p>
+        </section>
+
+        <section class="control-section anatomy-section" data-reconstruction-settings>
+          <div class="control-section-heading"><h3>Anatomical Regions</h3><button id="anatomyToggle" class="small-toggle" type="button" aria-pressed="false">Show Colors</button></div>
+          <div id="anatomyControls" hidden>
+            <p id="anatomyLoadStatus" class="control-note">Loading anatomical regions…</p>
+            <div id="anatomyLegend" class="anatomy-legend" role="group" aria-label="Highlight an anatomical region"></div>
+            <button id="anatomyAll" class="anatomy-all" type="button" aria-pressed="true">Show All Regions</button>
+            <div class="slider-control"><div class="slider-label"><label for="anatomyOpacity">Color Strength</label><output id="anatomyOpacityValue" for="anatomyOpacity">65%</output></div><input id="anatomyOpacity" type="range" min="0.15" max="1" step="0.05" value="0.65"></div>
+            <div class="anatomy-selection" aria-live="polite"><strong id="anatomySelectionName">Reading the Colors</strong><p id="anatomySelectionDetail">Select a region to see its interpretation.</p><span id="anatomySelectionConfidence">Manually seeded, scan-constrained regions</span></div>
+            <details class="method-disclosure"><summary>How to Interpret These Regions</summary><p>This is a best-effort segmentation of this preserved donor heart. Chamber-associated tissue and proximal vessel boundaries are estimated from scan morphology and manually placed landmarks. Small branches, valves, and boundaries between adjoining structures can remain unclassified. Colors are anatomical annotations, not measured tissue color or a clinically validated segmentation.</p><a href="https://pubmed.ncbi.nlm.nih.gov/39012246/" target="_blank" rel="noopener">Study and anatomical reference ↗</a></details>
+          </div>
+        </section>
+
+        <section class="control-section" data-reconstruction-settings>
+          <div class="control-section-heading"><h3>Tissue &amp; Opacity</h3></div>
+          <div class="slider-control"><div class="slider-label"><label for="threshold">Tissue Threshold</label><output id="thresholdValue" for="threshold">0.30</output></div><input id="threshold" type="range" min="0" max="1" step="0.005" value="0.3"><div class="range-labels"><span>More tissue</span><span>Less tissue</span></div></div>
+          <div class="slider-control"><div class="slider-label"><label for="opacity">Opacity</label><output id="opacityValue" for="opacity">0.80</output></div><input id="opacity" type="range" min="0" max="2" step="0.01" value="0.8"><div class="range-labels"><span>Transparent</span><span>Solid</span></div></div>
+        </section>
+
+        <section class="control-section" data-reconstruction-settings>
+          <div class="control-section-heading"><h3>Cutaway &amp; Texture</h3></div>
+          <div class="control-row"><label for="clipAxis">Clipping Plane</label><div class="select-wrap"><select id="clipAxis"><option value="none">Off</option><option value="preset" disabled>Starting-View Plane</option><option value="x">Coronal Plane</option><option value="y">Sagittal Plane</option><option value="z">Axial Plane</option></select></div></div>
+          <div class="slider-control clip-control"><div class="slider-label"><label for="clipPosition">Position</label><output id="clipValue" for="clipPosition">50%</output></div><input id="clipPosition" type="range" min="0" max="1" step="0.001" value="0.5"></div>
+          <div class="clip-actions"><label class="toggle-label" for="showPlanes"><input id="showPlanes" type="checkbox"><span class="toggle-track" aria-hidden="true"></span><span>Show Planes</span></label><button id="clipFlip" class="text-button" type="button"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 5h11m0 0-3-3m3 3-3 3M14 11H3m0 0 3-3m-3 3 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>Flip</button></div>
+          <div class="control-row"><label for="cutFaceQuality">Cut-Face Detail</label><div class="select-wrap"><select id="cutFaceQuality"><option value="ultra">Ultra · 79.4 µm</option><option value="detail">Detailed · 158.8 µm</option></select></div></div>
+          <div id="ultraControls" class="ultra-controls" hidden>
+            <span class="ultra-hosted-label">High-fidelity scan textures</span>
+            <p class="control-note">Ultra images prepare quietly after the heart opens. Downloads yield while you interact; the viewed slice and nearby sections take priority.</p>
+            <p id="ultraEstimate" class="control-note">Select a section first.</p>
+            <p id="ultraCacheStatus" class="control-note">Preparing the selected and nearby scan sections…</p>
+            <button id="loadUltra" class="outlined-button ultra-retry" type="button" hidden>Retry This Slice</button>
+            <progress id="ultraProgress" max="1" value="0" hidden aria-label="Ultra detail loading progress"></progress>
+          </div>
+          <p id="capDetailStatus" class="detail-status">Scan textures load automatically as you explore</p>
+        </section>
+
+        <section class="control-section quality-section" data-reconstruction-settings>
+          <div class="control-section-heading"><h3>Performance &amp; Surface</h3></div>
+          <div class="control-row"><label for="surfaceSmoothing">Volume Shading</label><div class="select-wrap"><select id="surfaceSmoothing"><option value="0">Source Normals</option><option value="1" selected>Soft Normals</option><option value="2">Smooth</option></select></div></div>
+          <p class="control-note">Softens shading on the interactive volume. Fine surfaces use their own reconstruction smoothing. CT textures retain their measured detail.</p>
+          <div class="control-row"><label for="dataQuality">Base Volume Detail</label><div class="select-wrap"><select id="dataQuality"><option value="low">Fast · ~635 µm</option><option value="high">Detailed · 317.6 µm</option></select></div></div>
+          <div class="control-row"><label for="quality">Render Quality</label><div class="select-wrap"><select id="quality"><option value="auto">Adaptive</option><option value="high">High</option><option value="low">Fast</option></select></div></div>
+          <p id="volumeLoadStatus" class="control-note" role="status">Loading the lossless scan…</p>
+        </section>
+        <div class="source-note" data-reconstruction-settings><span class="source-note-mark">HiP-CT</span><p>Real scan data.<br>A new perspective on the human heart.</p><a id="sourceDataset" href="https://human-organ-atlas.esrf.fr/datasets/1659197537" target="_blank" rel="noopener">Explore the source dataset <span aria-hidden="true">↗</span></a></div>
+        </aside>
+      </details>
+    <section id="scanDownloadBar" class="scan-download-bar" aria-label="Background Ultra scan download">
+      <div class="scan-download-copy"><strong id="ultraCollectionLabel">Opening the Heart…</strong><details class="scan-download-details"><summary>Storage Details</summary><span id="ultraCollectionDetail">CT slices download during quiet periods. Your current view takes priority.</span></details></div>
+      <progress id="ultraCollectionProgress" max="1" value="0" aria-label="Complete Ultra image collection downloaded"></progress>
+      <button id="pauseUltraCollection" type="button" data-action="pause">Pause Download</button>
+    </section>
+    <footer class="statusbar"><div class="status-message"><span class="live-dot"></span><span id="status" role="status" aria-live="polite">Preparing scan</span></div><div class="statusbar-right"><span>OPEN SCIENCE</span><span class="status-divider">/</span><span>ESRF · HUMAN ORGAN ATLAS</span></div></footer>
+    <footer id="datasetCitations" class="dataset-citations" aria-labelledby="datasetCitationsTitle"></footer>
+  </div>
+
+  <dialog id="aboutDialog" class="about-dialog" aria-labelledby="aboutTitle">
+    <div class="dialog-heading"><span class="eyebrow">INSIDE THE EXPLORER</span><button id="aboutClose" class="icon-button" type="button" aria-label="Close information dialog"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button></div>
+    <h2 id="aboutTitle">A heart, in another dimension.</h2>
+    <p id="aboutScanIntro" class="dialog-intro">This independent explorer reconstructs donor hearts from the open Human Organ Atlas. The image comes from a static scan of a preserved donor heart. The full-resolution source is 19.85 µm; the local whole-organ views are reduced for interactive use. Ultra cutaways use compact 79.4 µm display textures; their compression changes each grayscale value by at most one level out of 255. The selected section has first priority while the complete compressed section collection prepares in the background. The global download bar shows progress and lets you pause or resume. Clean Scan reversibly hides detached fragments; anatomy colors show approximate chamber and vessel regions. Surface finish softens shading ridges while retaining the measured cut-face pixels.</p>
+    <p class="dialog-intro">Echo Windows refine each in-scan view from measured source data. Completed standard-view sections can be saved on this device for faster repeat visits; adjusted planes continue to sample the finer volume. An initial volume preview remains labeled at its actual resolution until fine data is ready. Real ultrasound movies are independent reference studies matched by named view; they are not registered to this donor. TTE Lab is an interactive, CT-derived ultrasound simulation. The isolated heart contains no measured cardiac motion or complete chest anatomy, and its acoustic properties and clinical probe positions have not been validated.</p>
+    <h3>Navigate the Volume</h3>
+    <div class="help-grid"><div><strong>Rotate & zoom</strong><p>Drag the heart with one finger to orbit it. Drag with two fingers to pan, and pinch to zoom. With a mouse, drag to orbit, scroll to zoom, and Shift-drag or right-drag to pan. Arrow keys rotate the focused view; + and − zoom. Double-click to reset. Use the view buttons for a fixed perspective, or reset to return to the starting view.</p></div><div><strong>Look inside</strong><p>Choose a clipping plane and move its position to reveal the interior. Flip changes which side is retained. Slice Brightness and cut-face contrast adjust the measured scan texture independently of surface lighting. Detailed cut-face images load on demand and retain the documented scan intensities.</p></div><div><strong>Adjust the image</strong><p>Threshold controls which intensities are visible. In Volume mode, opacity changes how much of the tissue you can see through. The colors are illustrative, not measured tissue colors. Surface, volume and maximum intensity offer different ways to inspect the scan.</p></div><div><strong>Browse sections</strong><p>Scroll over any section image, swipe on a touch screen, or use its slider and step buttons. Enlarge gives one section the whole section panel. Fullscreen keeps the heart and CT Sections together. Coronal and sagittal sit above the full-width axial section. Click a section or its title to align the 3D cutaway to that plane. Scrolling or moving its slider moves the section and 3D cut together. Click within the image to position linked crosshairs; Shift-scroll magnifies that section. Alt-scroll advances five sections. Section names follow each source’s orientation. For LADAF, coronal, sagittal and axial are approximate specimen planes; other donors retain neutral plane names until reviewed. Camera presets are not verified anatomical directions.</p></div></div>
+    <h3>Ultrasound Exploration</h3>
+    <div class="help-grid"><div><strong>Compare Echo Windows</strong><p>Select TTE or TEE, then browse the grouped views or search by name. Reference movies use the local cine controls or the source website’s embedded player, with links to the original study and source information. Choose 3D or CT slice for the left comparison pane. The ultrasound occupies an equally sized right pane. Use 3D alignment to compare the ultrasound orientation or an upright anatomy view. Standard views reuse their exact saved sections when available; adjusted planes refine from the finer volume. Surrounding reference anatomy stays clear of the heart; the intact skeleton has a fixed illustrative fit. Model details and view guidance are available below the comparison. Views beyond the isolated scan retain their reference media and illustrative probe context.</p></div><div><strong>Move a probe</strong><p>Open TTE Lab and drag the heart to orbit it. Chest Orientation shows the selected whole heart inside fixed reference chest anatomy. Orbit that view independently, or choose Place Probe to click, tap or drag to any visible skin surface. Starting views sit above it, with keyboard controls below. The keyboard works immediately: W/S and A/D slide along the chest skin, Q/E rotate, I/K tilt, and J/L fan; Shift gives fine control. In free-position mode, R/F move out of plane. For optional mouse steering, choose Control the Probe; Escape releases that captured cursor. Sliders and draggable controls remain available in Probe Settings.</p></div><div><strong>Steer a TEE probe</strong><p>TEE Lab has independent insertion, shaft rotation, tip flexion, side flexion and multiplane controls. Hold W/S to advance or withdraw, A/D to turn, Q/E to change the electronic angle, I/K to flex the tip, and J/L to flex sideways. Keyboard controls work immediately throughout the active lab; Shift gives fine control. The electronic angle rotates the scan plane within the tip. Use the four starting views, switch between simulated ultrasound and measured CT, and lock the probe to hold a pose. The tract and insertion scale are illustrative and are not registered to a measured esophagus. The instrument and both images follow the same accepted pose.</p></div></div>
+    <h3>Scan & source</h3>
+    <div id="datasetDetails" class="dataset-details">Loading source metadata.</div>
+    <p id="sourceCitation" class="source-citation">Source: Human Organ Atlas, European Synchrotron Radiation Facility (ESRF).</p>
+    <div class="dialog-links"><a id="aboutDatasetLink" href="https://human-organ-atlas.esrf.fr/datasets/1659197537" target="_blank" rel="noopener">Dataset record <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+  <script type="module" src="./explorer-layout.js"></script>
+  <script type="module" src="./workspace-layout-v35.js"></script>
+  <script type="module" src="./viewport-controls.js"></script>
+  <script type="module" src="./dataset-browser.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

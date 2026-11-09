@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "format": "HFM1",
+  "donorId": "ladaf-2021-17",
+  "sourceSpacingUm": 79.4,
+  "threshold": 0.28,
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "referenceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "bounds": {
+    "min": [
+      -0.44801512287334594,
+      -0.5,
+      -0.44801512287334594
+    ],
+    "max": [
+      0.44801512287334594,
+      0.5,
+      0.44801512287334594
+    ]
+  },
+  "lods": [
+    {
+      "id": "gentle",
+      "label": "Gentle detailed surface",
+      "vertices": 12837189,
+      "triangles": 23618685,
+      "compressedBytes": 131645142,
+      "decodedBytes": 437470524,
+      "decodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+      "trianglesBeforeEncoding": 23966575,
+      "verticesBeforeEncoding": 12987556,
+      "removedZeroAreaTriangles": 0,
+      "quantizationCollapsedTriangles": 347890,
+      "totalZeroAreaTrianglesRemoved": 347890,
+      "normalFallbackVertices": 21,
+      "quantizationMaximumMm": 0.00206329634765319,
+      "quantizationRmsMm": 0.0011949581540504947,
+      "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "compactTransport": {
+        "schema": "heart-compact-surface-v29",
+        "codec": "hfc1-meshopt-oct12-gzip",
+        "version": 1,
+        "assetBaseUrl": "/api/display-compact-v29/mesh/",
+        "header": [
+          827147848,
+          1,
+          12837189,
+          70856055,
+          32,
+          77023168,
+          154046304,
+          0
+        ],
+        "vertexCount": 12837189,
+        "indexCount": 70856055,
+        "triangleCount": 23618685,
+        "decodedBytes": 437470524,
+        "decodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+        "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+        "sourceCompressedBytes": 227902460,
+        "positionSha256": "9d43742c2a518e7efe05ece46e6740800472ef3d0161d52d80f95b1db448bd5e",
+        "indexSha256": "871fa8ec2f06c6db6ab1e9064f51f5f0fefb89e969082725e9a19f56307a21e4",
+        "sourceNormalSha256": "78b721a43572a2ff38f163c844d0b7371af1da78d18cc984db3b7a77932c496f",
+        "shadingInputSha256": "9debb6b9aa328596fd2756f88483611d815e2f26496e1565d0b2a54b2a37e81a",
+        "decodedNormalSha256": "9cc15f96fd590299653ebe2a0dab85e4b66df1da11083956a179d4bdd1a16ea1",
+        "shadingCorrection": "Seam-local area-weighted bilateral adjacency normal correction; raised-cosine half-width 0.6352 mm; no vertex motion",
+        "normalQuantization": {
+          "method": "octahedral",
+          "bitsPerCoordinate": 12,
+          "maxAngularErrorDegrees": 0.060037131236361146,
+          "rmsAngularErrorDegrees": 0.02303508985923464,
+          "zeroVectorsPreserved": true,
+          "comparedAgainst": "supplied corrected int16 shading normals"
+        },
+        "positionBytesExact": true,
+        "indexBytesExact": true,
+        "triangleCornerOrderExact": true,
+        "spatialResampling": false,
+        "compressedBytes": 131645142,
+        "largestPartBytes": 4665178,
+        "parts": [
+          {
+            "path": "positions-00000000.hfc.gz",
+            "kind": 1,
+            "start": 0,
+            "count": 1310720,
+            "compressedBytes": 4440450,
+            "payloadBytes": 7864344,
+            "sha256": "c2e9e5d62b22e9c21b841f2719a9c639a09dadf698eb698f395658ed29674d8b",
+            "payloadSha256": "e992bb3319b8e404b8576721ef08d1d068857458255699fe6311417c25ceb9b9"
+          },
+          {
+            "path": "positions-01310720.hfc.gz",
+            "kind": 1,
+            "start": 1310720,
+            "count": 1310720,
+            "compressedBytes": 4445199,
+            "payloadBytes": 7864344,
+            "sha256": "7fcde1df63990c3807fb46de9a28e276f7f92c07dbe4cb88582d0f70b4c62d35",
+            "payloadSha256": "89206265690628da65e279da9c0b406ff174b824f8bcaa224d68c96e2d500b56"
+          },
+          {
+            "path": "positions-02621440.hfc.gz",
+            "kind": 1,
+            "start": 2621440,
+            "count": 1310720,
+            "compressedBytes": 4416685,
+            "payloadBytes": 7864344,
+            "sha256": "2fba17647906bd68df9422daf025bce24e60309e947f8b94efb6a129f80cbc54",
+            "payloadSha256": "7c21166cd5d94cb6254cdede31b3dbb5b03ebdf209dbb8d8ca13e8983fc4be17"
+          },
+          {
+            "path": "positions-03932160.hfc.gz",
+            "kind": 1,
+            "start": 3932160,
+            "count": 1310720,
+            "compressedBytes": 4423641,
+            "payloadBytes": 7864344,
+            "sha256": "878bf28a3d175a12867b1522c3a6067021f48a67dbeab5a310e73c9c43c6972c",
+            "payloadSha256": "e25ff77311917342ef02e982d43c003b60794ce4f947de353291268c3af300e1"
+          },
+          {
+            "path": "positions-05242880.hfc.gz",
+            "kind": 1,
+            "start": 5242880,
+            "count": 1310720,
+            "compressedBytes": 4399926,
+            "payloadBytes": 7864344,
+            "sha256": "1ab79fa9f102fd2ce84dbdc064aced06f2a1e3b83d1f37bd3fd8f9926f1fba8c",
+            "payloadSha256": "daf0780387829211b1be5e33e9df41507f3e92a1a7f887aa925ecb1c2c680b0c"
+          },
+          {
+            "path": "positions-06553600.hfc.gz",
+            "kind": 1,
+            "start": 6553600,
+            "count": 1310720,
+            "compressedBytes": 4451052,
+            "payloadBytes": 7864344,
+            "sha256": "aa13bd3b0c7a47afa24c6f0bab3e41ea040c5753a2e6b918099b27ec1bb9d48d",
+            "payloadSha256": "2eaaef82c105268f43343546f80da222a3da119d6a2271bf28deca1f6b4525e0"
+          },
+          {
+            "path": "positions-07864320.hfc.gz",
+            "kind": 1,
+            "start": 7864320,
+            "count": 1310720,
+            "compressedBytes": 4435880,
+            "payloadBytes": 7864344,
+            "sha256": "03b0b9e3cab9f2f98b2f3fa84bde7135faed25e742fdf031f3810043ad12ff3e",
+            "payloadSha256": "74abd4882f11082f60e488248c5c7bfc5b2cea45e8d09dbcf8cd9245b6c4d13a"
+          },
+          {
+            "path": "positions-09175040.hfc.gz",
+            "kind": 1,
+            "start": 9175040,
+            "count": 1310720,
+            "compressedBytes": 4439053,
+            "payloadBytes": 7864344,
+            "sha256": "2570d08a54c7d89a5fc5e357e72dcea06e74de5eea9a177e78f01c742d063e80",
+            "payloadSha256": "39cb39e917f0c235234c96373e5990e85bc46c4a3a2010c592023e555b3a55ef"
+          },
+          {
+            "path": "positions-10485760.hfc.gz",
+            "kind": 1,
+            "start": 10485760,
+            "count": 1310720,
+            "compressedBytes": 4425248,
+            "payloadBytes": 7864344,
+            "sha256": "215673b18e1c554e45bc69d877a10fb99077d1c0d5ab22f0ff632a8038e3480d",
+            "payloadSha256": "a37f4e0487184a8846f7f48fac0e20fc8d10f0d831034d2bf9416b6ab259b278"
+          },
+          {
+            "path": "positions-11796480.hfc.gz",
+            "kind": 1,
+            "start": 11796480,
+            "count": 1040709,
+            "compressedBytes": 3518256,
+            "payloadBytes": 6244278,
+            "sha256": "156568021b7258469f9c9be29e2da07e0c49174992699a34685adb549d18085a",
+            "payloadSha256": "da70cfd1c12753dbb540505d7115f89d33fb558a1a6bcabe962c257ec651ef76"
+          },
+          {
+            "path": "normals-00000000.hfc.gz",
+            "kind": 2,
+            "start": 0,
+            "count": 1310720,
+            "compressedBytes": 3922218,
+            "payloadBytes": 3932184,
+            "sha256": "969201594851f27857316d7aba8eacb2e953fc07505d24ab2cbd6f6467dd285f",
+            "payloadSha256": "43b889c235c1f4b57603a838ce4b6be98fbcfe74a847279c679e18f8cbc44c85"
+          },
+          {
+            "path": "normals-01310720.hfc.gz",
+            "kind": 2,
+            "start": 1310720,
+            "count": 1310720,
+            "compressedBytes": 3926375,
+            "payloadBytes": 3932184,
+            "sha256": "6a598ae9a9e3d9e06435239548be1905f13b538e536ebc40f14bf5e786fa0527",
+            "payloadSha256": "ba7b77aab8278af7bba6602f19f5ef9944a27fa9533ba43dcc7798016ad2d9f4"
+          },
+          {
+            "path": "normals-02621440.hfc.gz",
+            "kind": 2,
+            "start": 2621440,
+            "count": 1310720,
+            "compressedBytes": 3925708,
+            "payloadBytes": 3932184,
+            "sha256": "7c5c01b269de17db4966cdb811beff87fc7e636c236cad805db3be28ce06a751",
+            "payloadSha256": "d139d17b742e2f380ac99b52d4c46c4aa150772f9f17963b947f9210ac5f3085"
+          },
+          {
+            "path": "normals-03932160.hfc.gz",
+            "kind": 2,
+            "start": 3932160,
+            "count": 1310720,
+            "compressedBytes": 3925604,
+            "payloadBytes": 3932184,
+            "sha256": "827a89ecf6ea36b81e601a2890c5cfad73a30d412141bd47d340d5f7dca7a45f",
+            "payloadSha256": "8c6b380471e80bf70c152a8f7e25303b700f940cd33ac1eda47016a828807b17"
+          },
+          {
+            "path": "normals-05242880.hfc.gz",
+            "kind": 2,
+            "start": 5242880,
+            "count": 1310720,
+            "compressedBytes": 3926776,
+            "payloadBytes": 3932184,
+            "sha256": "708608f8db289c3ab5541e307eefabf021f87894282a9034a692a68f1b978431",
+            "payloadSha256": "c792df0e52fc80d1f6cf67f2ccfc9a1b546ac29e341575c6fbc4bce485afc93a"
+          },
+          {
+            "path": "normals-06553600.hfc.gz",
+            "kind": 2,
+            "start": 6553600,
+            "count": 1310720,
+            "compressedBytes": 3927377,
+            "payloadBytes": 3932184,
+            "sha256": "19f28903ea2bbef9bbf4f8ec517588daa5c213bffac31f10deb62c5b80ca7088",
+            "payloadSha256": "6a2d8c68d3f169c410524b9b92dce9d6cf05d4ca3e23508309f891609f1bb6c1"
+          },
+          {
+            "path": "normals-07864320.hfc.gz",
+            "kind": 2,
+            "start": 7864320,
+            "count": 1310720,
+            "compressedBytes": 3924177,
+            "payloadBytes": 3932184,
+            "sha256": "dc688954b11b1bf5dda6166f2d58896a42ec59120eac62b7daf7fd72b8dc2f77",
+            "payloadSha256": "5c5a68bc4f225f12cce8b62e285b485d91d63b334aa3dd22c11d2556023ee417"
+          },
+          {
+            "path": "normals-09175040.hfc.gz",
+            "kind": 2,
+            "start": 9175040,
+            "count": 1310720,
+            "compressedBytes": 3927408,
+            "payloadBytes": 3932184,
+            "sha256": "04d6222cc8489efa8b5bde968923a39ea9de0bb86adb3f110daad730dd61adc0",
+            "payloadSha256": "b82d3d01f77699840db02ff1fe17dd560324b614148a162546d06e3891942c6e"
+          },
+          {
+            "path": "normals-10485760.hfc.gz",
+            "kind": 2,
+            "start": 10485760,
+            "count": 1310720,
+            "compressedBytes": 3928956,
+            "payloadBytes": 3932184,
+            "sha256": "0e00bd955c40bba822530eb9f88dbbde0edc630b5c8fb575e4ab2e55d73aeff0",
+            "payloadSha256": "9c0dcaafaa91a712b5ce2f44c194458529f3f5a3792d0c2b0e6519fe177f3195"
+          },
+          {
+            "path": "normals-11796480.hfc.gz",
+            "kind": 2,
+            "start": 11796480,
+            "count": 1040709,
+            "compressedBytes": 3117629,
+            "payloadBytes": 3122151,
+            "sha256": "0d55c536ec7e1d6cba7cb0f57c00b70d5616781b23ebef3d928ddf93bdb1a2d0",
+            "payloadSha256": "a61cc1b241d73d9d406d5e7c2e57f2150e4b9eede01a7a987ed14173aaaecdb9"
+          },
+          {
+            "path": "indices-00000000.hfc.gz",
+            "kind": 3,
+            "start": 0,
+            "count": 2097152,
+            "compressedBytes": 3927869,
+            "payloadBytes": 4996477,
+            "sha256": "30903dde82d04a0232aac27123a1506e88906495fd3b6a9925089a271acf9026",
+            "payloadSha256": "da0d912bf51484424e0b1cc5fcb79a52145e612e4c42279b86e62de3e10cddcf"
+          },
+          {
+            "path": "indices-02097152.hfc.gz",
+            "kind": 3,
+            "start": 2097152,
+            "count": 2097152,
+            "compressedBytes": 4588323,
+            "payloadBytes": 6309180,
+            "sha256": "92ad99f12b35a1d6c62f4ba241ffa44d85ceca2f8c014bb333e883c4a7b3d31e",
+            "payloadSha256": "9137c0a59e4f27c54ee876043aefc5896c7775c95a267983caf6533fb934d216"
+          },
+          {
+            "path": "indices-04194304.hfc.gz",
+            "kind": 3,
+            "start": 4194304,
+            "count": 2097152,
+            "compressedBytes": 4548332,
+            "payloadBytes": 6300861,
+            "sha256": "2ac033aaa841cb1be4893816ea34078bdbcc0d224844d5b7f80413c2c0d4b742",
+            "payloadSha256": "5cce06c6710cbb72af4d883ec481d2e09743404aff9e539d0d8c0951ebd3b1e3"
+          },
+          {
+            "path": "indices-06291456.hfc.gz",
+            "kind": 3,
+            "start": 6291456,
+            "count": 2097152,
+            "compressedBytes": 4256470,
+            "payloadBytes": 6070788,
+            "sha256": "c68f345ffa657e37210eb070081c63800bfde0ffae0bb3c8bf3e024604ebc839",
+            "payloadSha256": "b6cee735c422608acf9db6fbde07f43472cfdb39b4d05e9755e4fe1ae01fd108"
+          },
+          {
+            "path": "indices-08388608.hfc.gz",
+            "kind": 3,
+            "start": 8388608,
+            "count": 2097152,
+            "compressedBytes": 4204479,
+            "payloadBytes": 6009800,
+            "sha256": "393f9e2f07d833d2109c7795d8a8b94b1d8c55371f7dcb9d92d8782be0557225",
+            "payloadSha256": "ebb0c8ace4ead30ce4ea4e8efb27be39d760b72512bfc834e5e52a976cb9fb4b"
+          },
+          {
+            "path": "indices-10485760.hfc.gz",
+            "kind": 3,
+            "start": 10485760,
+            "count": 2097152,
+            "compressedBytes": 4205088,
+            "payloadBytes": 6045538,
+            "sha256": "2fc32b33209aee25eeb25e87843a398d00558d67598a2e4d970547b9d86af353",
+            "payloadSha256": "ecea6d1016e050cd61a38a9bebd97eca62f8e51b21d477c943ae694e8f58f215"
+          },
+          {
+            "path": "indices-12582912.hfc.gz",
+            "kind": 3,
+            "start": 12582912,
+            "count": 2097152,
+            "compressedBytes": 4665178,
+            "payloadBytes": 6371544,
+            "sha256": "981f29bbb0a1e4b0f92dafd7bd74f39fbe03621bdc81c7da3bfbf329ff4ae102",
+            "payloadSha256": "c73444ffdad861aa4a7dfd25687b1ee6c97857dc444b826f61222fc697dbf085"
+          },
+          {
+            "path": "indices-14680064.hfc.gz",
+            "kind": 3,
+            "start": 14680064,
+            "count": 2097152,
+            "compressedBytes": 4522666,
+            "payloadBytes": 6241543,
+            "sha256": "0f3470346da9b05ef7555754a2e935fbfaeeb4ee73a420d9dcda18b3b7639b4e",
+            "payloadSha256": "4363089392b7d290d492b066a2d20571b5ea92673b95fc80a03fc3cc2f3bd014"
+          },
+          {
+            "path": "indices-16777216.hfc.gz",
+            "kind": 3,
+            "start": 16777216,
+            "count": 2097152,
+            "compressedBytes": 4378584,
+            "payloadBytes": 6206157,
+            "sha256": "ac766f985929f7df728958913cacd6b3453051a7c79ab868da43486bffd2921e",
+            "payloadSha256": "25fb00b1953fa1f5afe6efa8b66a9d9cb4fbab60d5ea98fa36b3b60fd33a3cd2"
+          },
+          {
+            "path": "indices-18874368.hfc.gz",
+            "kind": 3,
+            "start": 18874368,
+            "count": 2097152,
+            "compressedBytes": 4650607,
+            "payloadBytes": 6370325,
+            "sha256": "55d24db7ac470b8c0fd37dda0eb4cf81d5b6fe691d82fb66d009f5a3df054a75",
+            "payloadSha256": "166db5aa1d6b8c510139e1d5205206b7ff99fc7c7f4561ad770469711a2abe61"
+          },
+          {
+            "path": "indices-20971520.hfc.gz",
+            "kind": 3,
+            "start": 20971520,
+            "count": 2097152,
+            "compressedBytes": 4633034,
+            "payloadBytes": 6393111,
+            "sha256": "065de76bd3aaac24ceb7fdbc2dbfaf86ad5bb95a0ee57637e48362fb5fab17e5",
+            "payloadSha256": "d825008b05cc7bdaf52fb442605bc9733059e7a826f0c94a5d19f203ce1c5062"
+          },
+          {
+            "path": "indices-23068672.hfc.gz",
+            "kind": 3,
+            "start": 23068672,
+            "count": 550013,
+            "compressedBytes": 1216894,
+            "payloadBytes": 1685237,
+            "sha256": "91c207587a069c87c66348f223de9298a94d340a7c63ae9f5b4ca2ff5497634b",
+            "payloadSha256": "2a43f9c1fdbca4b428bd37d9c195448d26e855d629264373fd119c262b9a12a7"
+          }
+        ],
+        "buildSeconds": 21.445315607999873,
+        "reductionPercent": 42.236190868672495
+      }
+    }
+  ],
+  "processing": {
+    "experimental": true,
+    "source": "Existing verified cleaned/windowed 79.4 \u00b5m display bank. Not a native 19.85 \u00b5m extraction or quantitative-HU reconstruction.",
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedSourceBricks": 5127,
+    "coordinateConvention": "Unchanged main-view endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "densityGaussianSigmaVoxels": 0.5,
+    "densityGaussianSigmaMm": 0.0397,
+    "originalPolishedGaussianSigmaVoxels": 0.8,
+    "thresholdNormalized": 0.28,
+    "meshVertexSmoothingIterations": 0,
+    "finalWholeObjectSimplification": false,
+    "referenceTriangles": 291169848,
+    "weldedTriangles": 23966575,
+    "frozenSlabBoundaries": true,
+    "slabCells": 64,
+    "reduction": "Constrained local quadric edge collapse; open boundaries and slab-plane coordinates frozen. Interior edge-link and tetrahedron constraints retain local components/handles. No triangle budget overrides constraints.",
+    "conservativeOriginalVertexRadiusLimitMm": 0.6352,
+    "displacementCaveat": "The conservative radius bounds accumulated mesh-vertex movement during reduction. It excludes scalar filtering, quantization and anatomical uncertainty; it is not a clinical accuracy claim.",
+    "weldToleranceMm": 0.0001,
+    "maximumWeldDisplacementMm": 0.0,
+    "zeroNormalPolicy": "Average incident unit face normals; cancelling normals use the largest incident nondegenerate face. Shading only.",
+    "degenerateFacePolicy": "Zero-area MC faces removed before constrained reduction. Encoded zero-area faces and unused vertices removed after welding.",
+    "multipartTransport": "Ordered byte ranges of one gzip HFM1 object; every part, joined gzip and decoded payload have SHA256 checksums.",
+    "sourceDataChanged": false,
+    "expertValidated": false,
+    "processingFingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e",
+    "encoderScriptSha256": "2c2912d73de1ae100dc3d9a8f23a68bfc303d0514a9cbe48398a17f41ad3fa8d",
+    "fullProcessingFingerprint": "950fbc2caf1b1f24086decf15edf53d1b54bea52f96b4f6ac18ba7b5b2fe2fb1"
+  },
+  "displayTransportVersion": "v29",
+  "sourceManifest": "./assets/fine-surface-v23/manifest.json",
+  "displayProcessing": {
+    "geometry": "Exact original quantized positions, vertex order and triangle corner order",
+    "shading": "Seam-local area-weighted bilateral adjacency normal correction; raised-cosine half-width 0.6352 mm; no vertex motion",
+    "normalQuantization": {
+      "method": "octahedral",
+      "bitsPerCoordinate": 12,
+      "maxAngularErrorDegrees": 0.060037131236361146,
+      "rmsAngularErrorDegrees": 0.02303508985923464,
+      "zeroVectorsPreserved": true,
+      "comparedAgainst": "supplied corrected int16 shading normals"
+    }
+  }
+}

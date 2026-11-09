@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-11-07T00:27:45.451664+00:00",
+  "lumenManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+  "debrisManifestSha256": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de",
+  "actualMaskLoaderTests": {
+    "passed": 6,
+    "command": "node tests/lumen-cleanup-v23.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+    "checks": [
+      "all final compressed and decoded hashes",
+      "exact popcounts and storage dimensions",
+      "source coordinate convention",
+      "zero documented new guard overlap",
+      "default loading and reversible reuse",
+      "stale cancellation and GPU failure preservation",
+      "matching CPU anatomy picking"
+    ]
+  },
+  "appTransitionTests": {
+    "passed": 4,
+    "command": "node tests/tee-app-v26.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js"
+  },
+  "nativeMainRegression": "Passed source registration, transformed normals, bounds, atomic replacement, budget, failure preservation, visibility, camera and shader-state checks.",
+  "maskDecodedBytes": 57748620,
+  "maskCompressedBytes": 1237051,
+  "additionalDetachedComponents": 10986,
+  "additionalDetachedTriangles": 93761,
+  "sourceDataModified": false,
+  "browserLimit": "Cloud preview has no WebGL2 and its HTTP origin cannot run verified fine-source crypto. Actual production shaders/geometry are reviewed in native EGL; secure live-site source checks are separate."
+}

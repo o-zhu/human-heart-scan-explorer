@@ -1,0 +1,368 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        1453,
+        2113
+      ],
+      "capacityPixels": [
+        1792,
+        2560
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 14,
+      "meanChannelDifference": 7.60982359045313e-05,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        1453,
+        2113
+      ],
+      "capacityPixels": [
+        1792,
+        2560
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 14,
+      "meanChannelDifference": 7.60982359045313e-05
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        1002,
+        1550
+      ],
+      "capacityPixels": [
+        1280,
+        2048
+      ],
+      "maxChannelDifference": 2,
+      "changedPixels": 11,
+      "meanChannelDifference": 6.572120373573158e-05,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        1002,
+        1550
+      ],
+      "capacityPixels": [
+        1280,
+        2048
+      ],
+      "maxChannelDifference": 2,
+      "changedPixels": 11,
+      "meanChannelDifference": 6.572120373573158e-05
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": false,
+      "rasterPixels": [
+        1002,
+        1550
+      ],
+      "capacityPixels": [
+        1280,
+        2048
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 0
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": true,
+      "rasterPixels": [
+        1002,
+        1550
+      ],
+      "capacityPixels": [
+        1280,
+        2048
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        3002,
+        2803
+      ],
+      "capacityPixels": [
+        3328,
+        3072
+      ],
+      "maxChannelDifference": 63,
+      "changedPixels": 12,
+      "meanChannelDifference": 0.00026864983281448175,
+      "changedOpaquePixels": 1,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        3002,
+        2803
+      ],
+      "capacityPixels": [
+        3328,
+        3072
+      ],
+      "maxChannelDifference": 93,
+      "changedPixels": 12,
+      "meanChannelDifference": 0.00036896114377954573
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        2069,
+        2056
+      ],
+      "capacityPixels": [
+        2560,
+        2560
+      ],
+      "maxChannelDifference": 4,
+      "changedPixels": 9,
+      "meanChannelDifference": 5.4191167992620774e-05,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        2069,
+        2056
+      ],
+      "capacityPixels": [
+        2560,
+        2560
+      ],
+      "maxChannelDifference": 4,
+      "changedPixels": 9,
+      "meanChannelDifference": 5.4191167992620774e-05
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": false,
+      "rasterPixels": [
+        2069,
+        2056
+      ],
+      "capacityPixels": [
+        2560,
+        2560
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 0
+    },
+    {
+      "donor": "s-20-29",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": true,
+      "rasterPixels": [
+        2069,
+        2056
+      ],
+      "capacityPixels": [
+        2560,
+        2560
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        2833,
+        2749
+      ],
+      "capacityPixels": [
+        3328,
+        3072
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 10,
+      "meanChannelDifference": 6.226219301279834e-05,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": false,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        2833,
+        2749
+      ],
+      "capacityPixels": [
+        3328,
+        3072
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 10,
+      "meanChannelDifference": 6.226219301279834e-05
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": false,
+      "rasterPixels": [
+        1953,
+        2017
+      ],
+      "capacityPixels": [
+        2304,
+        2304
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 9,
+      "meanChannelDifference": 5.188516084399862e-05,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 1
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": true,
+      "retainedSide": false,
+      "twoPass": true,
+      "rasterPixels": [
+        1953,
+        2017
+      ],
+      "capacityPixels": [
+        2304,
+        2304
+      ],
+      "maxChannelDifference": 3,
+      "changedPixels": 9,
+      "meanChannelDifference": 5.188516084399862e-05
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": false,
+      "rasterPixels": [
+        1953,
+        2017
+      ],
+      "capacityPixels": [
+        2304,
+        2304
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0,
+      "changedOpaquePixels": 0,
+      "maxDensityByteDifference": 0
+    },
+    {
+      "donor": "s-20-28",
+      "cropped": true,
+      "retainedSide": true,
+      "twoPass": true,
+      "rasterPixels": [
+        1953,
+        2017
+      ],
+      "capacityPixels": [
+        2304,
+        2304
+      ],
+      "maxChannelDifference": 0,
+      "changedPixels": 0,
+      "meanChannelDifference": 0.0
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "donor": "ladaf-2021-17",
+      "volumeManifest": "./assets/manifest.json",
+      "capUrl": "./assets/flow-textures/lv-inflow.webp",
+      "capSha256": "8d4d40103a7ea60c6f11112c0b4a0c2fefe958ec2d2e9770e3ec230c3fe24298",
+      "capPixels": [
+        1453,
+        2113
+      ],
+      "sourcePixelsModified": false
+    },
+    {
+      "donor": "s-20-29",
+      "volumeManifest": "./assets/donors/s-20-29/manifest.json",
+      "capUrl": "./assets/donors/s-20-29/flow-textures/rv-inflow.webp",
+      "capSha256": "82bf66d823725886a8269b2d0d8be9f74717d4e1bacdff23626b04885d4f63ce",
+      "capPixels": [
+        3002,
+        2803
+      ],
+      "sourcePixelsModified": false
+    },
+    {
+      "donor": "s-20-28",
+      "volumeManifest": "./assets/donors/s-20-28/manifest.json",
+      "capUrl": "./assets/donors/s-20-28/flow-textures/rv-inflow.webp",
+      "capSha256": "d38bf52a2e7482a069272d434d7bf90729051ba8cc09510fdc9a9805190a4199",
+      "capPixels": [
+        2833,
+        2749
+      ],
+      "sourcePixelsModified": false
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "shaderSha256": "54eaad35eed6b818dfd34d756d266a2fd642e9d0388320bb15122f4020e61064",
+  "tolerances": "No crop/frame/source changes. NPOT texture-storage remapping can change hardware bilinear rounding by one display byte. At most two isolated threshold-edge pixels and fewer than 0.1% changed color pixels are permitted per 289,100-pixel comparison; actual counts are recorded without hiding threshold-induced color differences.",
+  "scope": "Complete native EGL images at 490 \u00d7 590, with 180 \u00d7 217 moving volume. Three source-verified donor volumes/caps, fine holes and nonzero cropped edges, bright stale padding, single-pass and full-resolution cap composite, retained-side occlusion. Not browser FPS or clinical validation."
+}

@@ -1,0 +1,179 @@
+{
+  "checks": [
+    {
+      "view": "me5c",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "me4c",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "mecommissural",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "me2c",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "melax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "meavlax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "meaaolax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "meaaosax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "merpv",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "meavsax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "mervinout",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "memodbicaval",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "bicaval",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "mepv",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "melaa",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgbasalsax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgpapillary",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgapicalsax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgrvbasal",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgrvinout",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "deeptg5c",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tg2c",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tgrvin",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    },
+    {
+      "view": "tglax",
+      "presentationPreservesPhysicalPlane": true,
+      "frameOrthonormal": true,
+      "normalCrossProduct": true,
+      "sourceToWorldRoundTripMaxError": 0.0
+    }
+  ],
+  "sourcePreserved": true,
+  "sourceDecodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+  "totalCandidatesEvaluated": 72384,
+  "totalCandidateReformats": 539,
+  "baselineSections": 24,
+  "finalComparisonSections": 48,
+  "validatedClinicalRegistration": false
+}

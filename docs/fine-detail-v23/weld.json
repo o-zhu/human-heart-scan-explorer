@@ -1,0 +1,700 @@
+{
+  "schema": "fine-detail-v23-weld",
+  "fingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e",
+  "vertices": 12987556,
+  "triangles": 23966575,
+  "boundaryPolicy": "Match only vertices incident to genuine open plane edges; retain closed components that merely touch a plane.",
+  "seams": [
+    {
+      "z": 0,
+      "exactMatches": 0,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 0,
+        "openPlaneVertices": 0,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 0,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 2962,
+        "openPlaneVertices": 2962,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 2962,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 64,
+      "exactMatches": 2962,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 2963,
+        "openPlaneVertices": 2962,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 2962,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 6212,
+        "openPlaneVertices": 6212,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 6212,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 128,
+      "exactMatches": 6212,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 6212,
+        "openPlaneVertices": 6212,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 6212,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 16634,
+        "openPlaneVertices": 16633,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 16632,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 192,
+      "exactMatches": 16632,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 16636,
+        "openPlaneVertices": 16632,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 16632,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 30576,
+        "openPlaneVertices": 30572,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 30571,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 256,
+      "exactMatches": 30572,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 30574,
+        "openPlaneVertices": 30572,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 30571,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 46132,
+        "openPlaneVertices": 46127,
+        "closedTangentPlaneVertices": 5,
+        "openPlaneEdges": 46126,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 320,
+      "exactMatches": 46127,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 46129,
+        "openPlaneVertices": 46127,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 46126,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 55698,
+        "openPlaneVertices": 55693,
+        "closedTangentPlaneVertices": 5,
+        "openPlaneEdges": 55692,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 384,
+      "exactMatches": 55692,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 55692,
+        "openPlaneVertices": 55692,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 55692,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 59425,
+        "openPlaneVertices": 59420,
+        "closedTangentPlaneVertices": 5,
+        "openPlaneEdges": 59418,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 448,
+      "exactMatches": 59421,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 59423,
+        "openPlaneVertices": 59421,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 59418,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 50758,
+        "openPlaneVertices": 50751,
+        "closedTangentPlaneVertices": 7,
+        "openPlaneEdges": 50747,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 512,
+      "exactMatches": 50751,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 4,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 50751,
+        "openPlaneVertices": 50751,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 50747,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 55894,
+        "openPlaneVertices": 55888,
+        "closedTangentPlaneVertices": 6,
+        "openPlaneEdges": 55888,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 576,
+      "exactMatches": 55888,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 55888,
+        "openPlaneVertices": 55888,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 55888,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 53463,
+        "openPlaneVertices": 53460,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 53457,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 640,
+      "exactMatches": 53460,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 3,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 53463,
+        "openPlaneVertices": 53460,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 53457,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 62088,
+        "openPlaneVertices": 62088,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 62088,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 704,
+      "exactMatches": 62089,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 62092,
+        "openPlaneVertices": 62089,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 62088,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 69881,
+        "openPlaneVertices": 69878,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 69876,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 768,
+      "exactMatches": 69876,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 69877,
+        "openPlaneVertices": 69876,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 69876,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 87775,
+        "openPlaneVertices": 87772,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 87771,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 832,
+      "exactMatches": 87772,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 87775,
+        "openPlaneVertices": 87772,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 87771,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 103297,
+        "openPlaneVertices": 103290,
+        "closedTangentPlaneVertices": 7,
+        "openPlaneEdges": 103289,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 896,
+      "exactMatches": 103292,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 103297,
+        "openPlaneVertices": 103292,
+        "closedTangentPlaneVertices": 5,
+        "openPlaneEdges": 103289,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 87822,
+        "openPlaneVertices": 87820,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 87818,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 960,
+      "exactMatches": 87819,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 87822,
+        "openPlaneVertices": 87819,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 87818,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 74360,
+        "openPlaneVertices": 74358,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 74358,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1024,
+      "exactMatches": 74360,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 74364,
+        "openPlaneVertices": 74360,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 74358,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 77313,
+        "openPlaneVertices": 77310,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 77309,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1088,
+      "exactMatches": 77310,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 77313,
+        "openPlaneVertices": 77310,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 77309,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 89141,
+        "openPlaneVertices": 89138,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 89136,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1152,
+      "exactMatches": 89138,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 89142,
+        "openPlaneVertices": 89138,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 89136,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 85274,
+        "openPlaneVertices": 85267,
+        "closedTangentPlaneVertices": 7,
+        "openPlaneEdges": 85265,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1216,
+      "exactMatches": 85269,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 4,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 85277,
+        "openPlaneVertices": 85269,
+        "closedTangentPlaneVertices": 8,
+        "openPlaneEdges": 85265,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 75587,
+        "openPlaneVertices": 75580,
+        "closedTangentPlaneVertices": 7,
+        "openPlaneEdges": 75579,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1280,
+      "exactMatches": 75580,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 75588,
+        "openPlaneVertices": 75580,
+        "closedTangentPlaneVertices": 8,
+        "openPlaneEdges": 75579,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 61808,
+        "openPlaneVertices": 61804,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 61804,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1344,
+      "exactMatches": 61804,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 61807,
+        "openPlaneVertices": 61804,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 61804,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 52923,
+        "openPlaneVertices": 52922,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 52917,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1408,
+      "exactMatches": 52921,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 6,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 52927,
+        "openPlaneVertices": 52921,
+        "closedTangentPlaneVertices": 6,
+        "openPlaneEdges": 52917,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 49300,
+        "openPlaneVertices": 49298,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 49296,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1472,
+      "exactMatches": 49298,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 49301,
+        "openPlaneVertices": 49298,
+        "closedTangentPlaneVertices": 3,
+        "openPlaneEdges": 49296,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 45941,
+        "openPlaneVertices": 45940,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 45940,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1536,
+      "exactMatches": 45940,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 45941,
+        "openPlaneVertices": 45940,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 45940,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 39432,
+        "openPlaneVertices": 39427,
+        "closedTangentPlaneVertices": 5,
+        "openPlaneEdges": 39426,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1600,
+      "exactMatches": 39427,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 1,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 39428,
+        "openPlaneVertices": 39427,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 39426,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 31914,
+        "openPlaneVertices": 31912,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 31909,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1664,
+      "exactMatches": 31911,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 3,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 31913,
+        "openPlaneVertices": 31911,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 31909,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 29148,
+        "openPlaneVertices": 29144,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 29144,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1728,
+      "exactMatches": 29144,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 29148,
+        "openPlaneVertices": 29144,
+        "closedTangentPlaneVertices": 4,
+        "openPlaneEdges": 29144,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 21396,
+        "openPlaneVertices": 21396,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 21396,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1792,
+      "exactMatches": 21396,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 21397,
+        "openPlaneVertices": 21396,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 21396,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 22115,
+        "openPlaneVertices": 22114,
+        "closedTangentPlaneVertices": 1,
+        "openPlaneEdges": 22114,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1856,
+      "exactMatches": 22114,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 0,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 22114,
+        "openPlaneVertices": 22114,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 22114,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 20463,
+        "openPlaneVertices": 20461,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 20459,
+        "overIncidentPlaneEdges": 0
+      }
+    },
+    {
+      "z": 1920,
+      "exactMatches": 20460,
+      "numericalMatches": 0,
+      "aliasedPreviousVertices": 2,
+      "maximumWeldDisplacementMm": 0.0,
+      "unmatched": 0,
+      "bottom": {
+        "allPlaneVertices": 20462,
+        "openPlaneVertices": 20460,
+        "closedTangentPlaneVertices": 2,
+        "openPlaneEdges": 20459,
+        "overIncidentPlaneEdges": 0
+      },
+      "top": {
+        "allPlaneVertices": 0,
+        "openPlaneVertices": 0,
+        "closedTangentPlaneVertices": 0,
+        "openPlaneEdges": 0,
+        "overIncidentPlaneEdges": 0
+      }
+    }
+  ],
+  "weldToleranceMm": 0.0001,
+  "maximumWeldDisplacementMm": 0.0,
+  "degenerateTrianglesRemoved": 0,
+  "numericalBoundaryAliases": 41,
+  "extractionSha256": "700c9179379b917dba8b83624bb79d3ab85b544485a4b9d55814a1b35b424bf6",
+  "preWeldZeroAreaTrianglesRemoved": 170,
+  "algorithmScriptSha256": "9b427c7da63214caa3cc9a66899e385b72a8d23cbd13017a4cea9967c6829485",
+  "sha256": "ce8629ecf558f226f8b53f1b3feee60c33473deccdb13076d533a140afbbe5ac",
+  "seconds": 16.26332498100237
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "baseIndices": 70856055,
+  "baseTriangles": 23618685,
+  "baseDrawCalls": 24,
+  "maximumIndicesPerDraw": 3000000,
+  "patchIndices": [
+    2889519,
+    2540271,
+    2144370,
+    2046951
+  ],
+  "exactPixelsAgainstSmallerBatches": true,
+  "missingBaseChangedPixels": 170365,
+  "decodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+  "sourceGeometrySha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "shaderSha256": "f30841cc1f81a5429cb665b421532cec717904813b4530c42c4e836c4921954e",
+  "elapsedSeconds": 14.175075733000995,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "scope": "Native EGL with actual source geometry, flags, four patches, reviewed atlas and production shaders. Exact production JavaScript draw ranges; omitted base draw models the documented Firefox rejection. Not a Firefox screenshot, browser latency test or clinical validation."
+}

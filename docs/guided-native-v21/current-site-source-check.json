@@ -1,0 +1,27 @@
+{
+  "site": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "checks": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 59547,
+      "sha256": "75649bf2e5038d2eb0236bf906f644f1a0c5081e8a9df2cf206a15b00858b05d",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/clinical-v19/cmac/manifest.json",
+      "status": 200,
+      "bytes": 64065,
+      "sha256": "2a3593e7f6aee2841789924c13deced8bfbede737b499194691e0bcf3c12e359",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/clinical-v19/slicerheart/manifest.json",
+      "status": 200,
+      "bytes": 31085,
+      "sha256": "2df1077d9567dfc99437da8f293c041fc000896bb671b5f4b226716798b95b10",
+      "matchesLocal": true
+    }
+  ],
+  "note": "HTTP body comparison; interactive behavior separately covered by the actual-DOM source-selector regression"
+}

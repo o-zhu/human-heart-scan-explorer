@@ -1,0 +1,35 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 165,
+    "decodedBrickReads": 337,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "manifestSha256": "4b8add26fdb04d8abf9e442f5b560ce12a6e1a7b0b2adefbe2803b5441f4e2e2",
+  "uniqueNewExclusionSamples": 16979,
+  "unchangedOtherMaskSha256": {
+    "arterial": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+    "valve-region": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+    "rv": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3"
+  },
+  "restoredWallSamples": 109928,
+  "restoredWallFootprintSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "restoredWallOverlapSamples": 0,
+  "boundLowerXYZ": [
+    1203,
+    1204,
+    671
+  ],
+  "boundUpperXYZ": [
+    1410,
+    1264,
+    838
+  ],
+  "selectionLogicalSha256": "83b9d17cb328b8293053398a8327b526f68b9a52d44421b990390b09f97bf909"
+}

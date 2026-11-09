@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "sourceManifestSha256": "435f68fce8cdd195a283893c686b0f5825ec5238c0f4f5dd39c1129c8c6aef01",
+  "physicalMetadataSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceSpacingUm": 79.4,
+  "worldUnitMm": 168.01040000000003,
+  "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "componentCount": 1406359,
+  "unreferencedVertices": 0,
+  "profile": {
+    "lodId": "gentle",
+    "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "sourceSha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "sourceVertexCount": 12837189,
+    "sourceTriangleCount": 23618685,
+    "vertexFlags": {
+      "url": "./assets/cleanup-v25/debris-gentle-vertices.raw.gz",
+      "compressedBytes": 893225,
+      "decodedBytes": 12837189,
+      "sha256": "a99de5d5fc7813914c5a23f060b33dadd057e1633baa9442e8feab2817fd718f",
+      "decodedSha256": "ae7184326419217c92061ab4228ce01a793aab279e4cf186746734b2a7bad881"
+    },
+    "vertexFlagEncoding": {
+      "0": "retain",
+      "255": "exclude",
+      "indexing": "original HFM vertex order"
+    },
+    "faceKeepMask": {
+      "url": "./assets/cleanup-v25/debris-gentle-faces.keep.gz",
+      "compressedBytes": 1151815,
+      "decodedBytes": 2952336,
+      "sha256": "6c5f4d53fcc82e20eafafea056b93843f0771f2074acfa0f07f18a39b7e4b8d6",
+      "decodedSha256": "b0c56514a3f3899ca134fd2bcb2264fd33f11daaf8ff86745bc52ca47739403d",
+      "bitOrder": "little",
+      "bit1": "retain",
+      "indexing": "original HFM triangle order"
+    },
+    "policy": {
+      "id": "compact-detached-components-v25",
+      "maximumBoundingBoxDiagonalMm": 0.85,
+      "maximumTriangles": 1024,
+      "maximumRegularizedPcaSpreadRatioExclusive": 3.0,
+      "pcaRegularizerMm": 0.039700000000000006,
+      "connectivity": "shared vertices in the complete uncut HFM mesh",
+      "protectLargestComponent": true,
+      "protectQuantizedVolumeBoundary": true,
+      "positionsChanged": false,
+      "normalsChanged": false,
+      "indicesChanged": false,
+      "classification": "display cleanup candidates; not anatomically validated material labels"
+    },
+    "removedComponents": 1342006,
+    "removedVertices": 5599693,
+    "removedTriangles": 5739103,
+    "removedSurfaceAreaMm2": 14808.869227170235,
+    "removedTriangleFraction": 0.242989946307341,
+    "retainedTriangles": 17879582
+  },
+  "thresholdComparisons": [
+    {
+      "maximumBoundingBoxDiagonalMm": 0.35,
+      "removedComponents": 1314303,
+      "removedVertices": 5407738,
+      "removedTriangles": 5459231,
+      "removedSurfaceAreaMm2": 11653.049096300507,
+      "removedTriangleFraction": 0.2311403450276762
+    },
+    {
+      "maximumBoundingBoxDiagonalMm": 0.6,
+      "removedComponents": 1339864,
+      "removedVertices": 5569516,
+      "removedTriangles": 5682751,
+      "removedSurfaceAreaMm2": 14117.526207630915,
+      "removedTriangleFraction": 0.240604038709183
+    },
+    {
+      "maximumBoundingBoxDiagonalMm": 0.85,
+      "removedComponents": 1342006,
+      "removedVertices": 5599693,
+      "removedTriangles": 5739103,
+      "removedSurfaceAreaMm2": 14808.869227170235,
+      "removedTriangleFraction": 0.242989946307341
+    },
+    {
+      "maximumBoundingBoxDiagonalMm": 1.0,
+      "removedComponents": 1342472,
+      "removedVertices": 5608393,
+      "removedTriangles": 5756563,
+      "removedSurfaceAreaMm2": 15079.258131983746,
+      "removedTriangleFraction": 0.24372919152780945
+    },
+    {
+      "maximumBoundingBoxDiagonalMm": 1.2,
+      "removedComponents": 1342846,
+      "removedVertices": 5616998,
+      "removedTriangles": 5774300,
+      "removedSurfaceAreaMm2": 15383.887359713897,
+      "removedTriangleFraction": 0.2444801647509165
+    }
+  ],
+  "largestComponent": {
+    "id": 7,
+    "vertices": 6202459,
+    "triangles": 15863437,
+    "bboxDiagonalMm": 203.91427837114003,
+    "pcaSpreadRatio": 1.9097771827789634,
+    "surfaceAreaMm2": 479552.1221751719,
+    "excluded": false
+  },
+  "largestRetainedComponents": [
+    {
+      "id": 7,
+      "vertices": 6202459,
+      "triangles": 15863437,
+      "bboxDiagonalMm": 203.91427837114003,
+      "pcaSpreadRatio": 1.9097771827789634,
+      "surfaceAreaMm2": 479552.1221751719,
+      "excluded": false
+    },
+    {
+      "id": 687852,
+      "vertices": 6233,
+      "triangles": 15164,
+      "bboxDiagonalMm": 15.383384299864762,
+      "pcaSpreadRatio": 1.6608298732809934,
+      "surfaceAreaMm2": 310.58812023014525,
+      "excluded": false
+    },
+    {
+      "id": 482354,
+      "vertices": 5953,
+      "triangles": 13586,
+      "bboxDiagonalMm": 22.777286171236092,
+      "pcaSpreadRatio": 2.2010030081156473,
+      "surfaceAreaMm2": 374.6770720075795,
+      "excluded": false
+    },
+    {
+      "id": 498615,
+      "vertices": 4986,
+      "triangles": 11417,
+      "bboxDiagonalMm": 24.33486452194193,
+      "pcaSpreadRatio": 3.8086410400331956,
+      "surfaceAreaMm2": 312.02249435133473,
+      "excluded": false
+    },
+    {
+      "id": 479974,
+      "vertices": 4867,
+      "triangles": 11374,
+      "bboxDiagonalMm": 28.708463731567928,
+      "pcaSpreadRatio": 3.302785095815591,
+      "surfaceAreaMm2": 315.70369883640615,
+      "excluded": false
+    },
+    {
+      "id": 457927,
+      "vertices": 4460,
+      "triangles": 9512,
+      "bboxDiagonalMm": 59.87483892611194,
+      "pcaSpreadRatio": 5.826024218700804,
+      "surfaceAreaMm2": 430.4158422826812,
+      "excluded": false
+    },
+    {
+      "id": 960550,
+      "vertices": 3261,
+      "triangles": 9161,
+      "bboxDiagonalMm": 14.86370488684488,
+      "pcaSpreadRatio": 4.486317953366109,
+      "surfaceAreaMm2": 200.92307763073813,
+      "excluded": false
+    },
+    {
+      "id": 254370,
+      "vertices": 3694,
+      "triangles": 8540,
+      "bboxDiagonalMm": 23.88026781898915,
+      "pcaSpreadRatio": 10.425860568192574,
+      "surfaceAreaMm2": 217.8388778364513,
+      "excluded": false
+    },
+    {
+      "id": 571524,
+      "vertices": 3211,
+      "triangles": 7722,
+      "bboxDiagonalMm": 24.047483132373905,
+      "pcaSpreadRatio": 3.7977800297776856,
+      "surfaceAreaMm2": 233.1210517019709,
+      "excluded": false
+    },
+    {
+      "id": 401839,
+      "vertices": 2790,
+      "triangles": 6236,
+      "bboxDiagonalMm": 19.491800023569407,
+      "pcaSpreadRatio": 6.0559802890211145,
+      "surfaceAreaMm2": 192.8186260970892,
+      "excluded": false
+    },
+    {
+      "id": 81906,
+      "vertices": 2478,
+      "triangles": 6154,
+      "bboxDiagonalMm": 19.17330741308419,
+      "pcaSpreadRatio": 6.961505921045389,
+      "surfaceAreaMm2": 181.40903629261516,
+      "excluded": false
+    },
+    {
+      "id": 598252,
+      "vertices": 2490,
+      "triangles": 5974,
+      "bboxDiagonalMm": 18.970225406949137,
+      "pcaSpreadRatio": 3.914419485004396,
+      "surfaceAreaMm2": 160.5149938052866,
+      "excluded": false
+    },
+    {
+      "id": 658108,
+      "vertices": 2581,
+      "triangles": 5909,
+      "bboxDiagonalMm": 20.20803561588595,
+      "pcaSpreadRatio": 8.249904729014464,
+      "surfaceAreaMm2": 151.08897194426558,
+      "excluded": false
+    },
+    {
+      "id": 614109,
+      "vertices": 2569,
+      "triangles": 5847,
+      "bboxDiagonalMm": 19.322305527492595,
+      "pcaSpreadRatio": 2.2939006300088836,
+      "surfaceAreaMm2": 146.68124253260476,
+      "excluded": false
+    },
+    {
+      "id": 729839,
+      "vertices": 2053,
+      "triangles": 5720,
+      "bboxDiagonalMm": 9.250250084681397,
+      "pcaSpreadRatio": 4.585400211358772,
+      "surfaceAreaMm2": 114.27786252365915,
+      "excluded": false
+    },
+    {
+      "id": 570796,
+      "vertices": 2231,
+      "triangles": 5686,
+      "bboxDiagonalMm": 10.892472647345446,
+      "pcaSpreadRatio": 3.6788891631032046,
+      "surfaceAreaMm2": 140.13678667605285,
+      "excluded": false
+    },
+    {
+      "id": 143634,
+      "vertices": 1970,
+      "triangles": 5484,
+      "bboxDiagonalMm": 10.591790510383595,
+      "pcaSpreadRatio": 2.899571800094467,
+      "surfaceAreaMm2": 118.26818618748709,
+      "excluded": false
+    },
+    {
+      "id": 611963,
+      "vertices": 2287,
+      "triangles": 5244,
+      "bboxDiagonalMm": 18.426348105047673,
+      "pcaSpreadRatio": 1.6380681346905397,
+      "surfaceAreaMm2": 130.8035501459629,
+      "excluded": false
+    },
+    {
+      "id": 184338,
+      "vertices": 2505,
+      "triangles": 5131,
+      "bboxDiagonalMm": 76.90608347119279,
+      "pcaSpreadRatio": 11.610030708093532,
+      "surfaceAreaMm2": 268.9005745427848,
+      "excluded": false
+    },
+    {
+      "id": 925806,
+      "vertices": 2170,
+      "triangles": 5122,
+      "bboxDiagonalMm": 22.166761740121025,
+      "pcaSpreadRatio": 6.462488730880627,
+      "surfaceAreaMm2": 153.77902108330048,
+      "excluded": false
+    }
+  ],
+  "largestRemovedComponents": [
+    {
+      "id": 904632,
+      "vertices": 50,
+      "triangles": 102,
+      "bboxDiagonalMm": 0.7920368237224268,
+      "pcaSpreadRatio": 1.4840552641160192,
+      "surfaceAreaMm2": 0.45799182033410235,
+      "excluded": true
+    },
+    {
+      "id": 824378,
+      "vertices": 53,
+      "triangles": 100,
+      "bboxDiagonalMm": 0.8284121523243716,
+      "pcaSpreadRatio": 1.7164735534372537,
+      "surfaceAreaMm2": 0.3068342957477114,
+      "excluded": true
+    },
+    {
+      "id": 703360,
+      "vertices": 47,
+      "triangles": 98,
+      "bboxDiagonalMm": 0.8381092571361746,
+      "pcaSpreadRatio": 1.6546353724239349,
+      "surfaceAreaMm2": 0.47455194696841174,
+      "excluded": true
+    },
+    {
+      "id": 461831,
+      "vertices": 48,
+      "triangles": 96,
+      "bboxDiagonalMm": 0.7683980660176978,
+      "pcaSpreadRatio": 2.3532092800629067,
+      "surfaceAreaMm2": 0.3393459708277391,
+      "excluded": true
+    },
+    {
+      "id": 267901,
+      "vertices": 48,
+      "triangles": 92,
+      "bboxDiagonalMm": 0.834573063304745,
+      "pcaSpreadRatio": 2.688861396165433,
+      "surfaceAreaMm2": 0.4098659413860828,
+      "excluded": true
+    },
+    {
+      "id": 1329639,
+      "vertices": 45,
+      "triangles": 90,
+      "bboxDiagonalMm": 0.8246412820360026,
+      "pcaSpreadRatio": 2.8626474876979886,
+      "surfaceAreaMm2": 0.48984603831176615,
+      "excluded": true
+    },
+    {
+      "id": 824501,
+      "vertices": 45,
+      "triangles": 88,
+      "bboxDiagonalMm": 0.7152499936834643,
+      "pcaSpreadRatio": 2.1709997088287896,
+      "surfaceAreaMm2": 0.4818709144582155,
+      "excluded": true
+    },
+    {
+      "id": 710540,
+      "vertices": 42,
+      "triangles": 88,
+      "bboxDiagonalMm": 0.8423463368566492,
+      "pcaSpreadRatio": 2.163707308863939,
+      "surfaceAreaMm2": 0.5757802346023483,
+      "excluded": true
+    },
+    {
+      "id": 1314592,
+      "vertices": 46,
+      "triangles": 88,
+      "bboxDiagonalMm": 0.8151382239624533,
+      "pcaSpreadRatio": 1.6545609670651396,
+      "surfaceAreaMm2": 0.4965974288593345,
+      "excluded": true
+    },
+    {
+      "id": 739914,
+      "vertices": 43,
+      "triangles": 86,
+      "bboxDiagonalMm": 0.7979729061425284,
+      "pcaSpreadRatio": 2.217583331298266,
+      "surfaceAreaMm2": 0.3059276976055611,
+      "excluded": true
+    },
+    {
+      "id": 1392614,
+      "vertices": 45,
+      "triangles": 86,
+      "bboxDiagonalMm": 0.7819451333507688,
+      "pcaSpreadRatio": 2.152789939955987,
+      "surfaceAreaMm2": 0.5627406747560058,
+      "excluded": true
+    },
+    {
+      "id": 717416,
+      "vertices": 44,
+      "triangles": 84,
+      "bboxDiagonalMm": 0.7611768457030128,
+      "pcaSpreadRatio": 2.7331903468906074,
+      "surfaceAreaMm2": 0.31920492973234055,
+      "excluded": true
+    },
+    {
+      "id": 621557,
+      "vertices": 46,
+      "triangles": 84,
+      "bboxDiagonalMm": 0.7185841534912293,
+      "pcaSpreadRatio": 1.673329958942918,
+      "surfaceAreaMm2": 0.42538864887283345,
+      "excluded": true
+    },
+    {
+      "id": 1390348,
+      "vertices": 40,
+      "triangles": 84,
+      "bboxDiagonalMm": 0.8390324213396657,
+      "pcaSpreadRatio": 2.2628182567428383,
+      "surfaceAreaMm2": 0.44836727181183483,
+      "excluded": true
+    },
+    {
+      "id": 574803,
+      "vertices": 41,
+      "triangles": 82,
+      "bboxDiagonalMm": 0.836416499303305,
+      "pcaSpreadRatio": 2.1258909471914342,
+      "surfaceAreaMm2": 0.6038495285938297,
+      "excluded": true
+    },
+    {
+      "id": 23518,
+      "vertices": 39,
+      "triangles": 82,
+      "bboxDiagonalMm": 0.7525882044970051,
+      "pcaSpreadRatio": 1.9415963892927206,
+      "surfaceAreaMm2": 0.5651918409269413,
+      "excluded": true
+    },
+    {
+      "id": 1148364,
+      "vertices": 43,
+      "triangles": 82,
+      "bboxDiagonalMm": 0.6655129890858229,
+      "pcaSpreadRatio": 2.254275043895976,
+      "surfaceAreaMm2": 0.4460369727147651,
+      "excluded": true
+    },
+    {
+      "id": 34709,
+      "vertices": 41,
+      "triangles": 80,
+      "bboxDiagonalMm": 0.6522072218321645,
+      "pcaSpreadRatio": 2.467682173383257,
+      "surfaceAreaMm2": 0.2882773597055945,
+      "excluded": true
+    },
+    {
+      "id": 836159,
+      "vertices": 42,
+      "triangles": 80,
+      "bboxDiagonalMm": 0.8483030339012999,
+      "pcaSpreadRatio": 2.6019726769213722,
+      "surfaceAreaMm2": 0.5901127507566228,
+      "excluded": true
+    },
+    {
+      "id": 74895,
+      "vertices": 40,
+      "triangles": 80,
+      "bboxDiagonalMm": 0.8237495276756063,
+      "pcaSpreadRatio": 2.306431224890118,
+      "surfaceAreaMm2": 0.47903602292317615,
+      "excluded": true
+    }
+  ],
+  "protectedByShapeWithinSelectedSize": {
+    "removedComponents": 48463,
+    "removedVertices": 250487,
+    "removedTriangles": 309818,
+    "removedSurfaceAreaMm2": 4427.762929683904,
+    "removedTriangleFraction": 0.01311749574542359
+  },
+  "arraySha256": {
+    "positions": "9d43742c2a518e7efe05ece46e6740800472ef3d0161d52d80f95b1db448bd5e",
+    "normals": "78b721a43572a2ff38f163c844d0b7371af1da78d18cc984db3b7a77932c496f",
+    "indices": "871fa8ec2f06c6db6ab1e9064f51f5f0fefb89e969082725e9a19f56307a21e4"
+  },
+  "validation": {
+    "everyTriangleHasUniformFlag": true,
+    "mainComponentRetained": true,
+    "sourceArraysByteIdentical": true,
+    "allTransportChecksumsVerified": true,
+    "faceAndVertexMaskCountsMatch": true,
+    "fullDecodedMeshWrittenToDisk": false
+  },
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "elapsedSeconds": 55.32344474398997,
+  "peakRssMiB": 888.01953125,
+  "componentLedger": {
+    "path": "{source-cache}/cleanup-v25/debris-components.csv.gz",
+    "bytes": 53227359,
+    "sha256": "c1bfbcfd77dca6d951cc141be0572e01a7107156fcc3fefd0d8a6bc23e33089d",
+    "componentRows": 1406359,
+    "optionalSupplement": true
+  }
+}

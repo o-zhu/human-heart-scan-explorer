@@ -1,0 +1,5308 @@
+{
+  "schemaVersion": 1,
+  "baselineInput": "{local-workspace}/heart-tte/.sites-checkout/docs/echo-alignment-v5/baseline.json",
+  "baselineInputSha256": "285ed58fde5506ec0be5ecbb8ff09ed2e32a8569f78a486f8926749172ead70b",
+  "anatomySourceSha256": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+  "patientRegistered": false,
+  "rows": [
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax_deep",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 25.60290716057655,
+        "normal": [
+          -0.2649146782691094,
+          0.29570514341656123,
+          -0.9178118986996003
+        ],
+        "originDistanceMm": 89.82393160851099
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9892074478815938,
+        "incidenceAngleDeg": 8.425410666190407,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 25.602907150214513,
+        "normal": [
+          -0.2649146783586363,
+          0.29570514299782563,
+          -0.9178118988086699
+        ],
+        "originDistanceMm": 89.82393160851099
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9892074478815938,
+        "incidenceAngleDeg": 8.425410666190407,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax_av",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 24.226342776492743,
+        "normal": [
+          -0.22028588903300778,
+          0.3622583876819235,
+          -0.905672671359267
+        ],
+        "originDistanceMm": 94.59357655677253
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9428670553146039,
+        "incidenceAngleDeg": 19.461246352766494,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax_mv",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 22.51736753889063,
+        "normal": [
+          -0.2013863792830323,
+          0.33288038774724316,
+          -0.9212134246158791
+        ],
+        "originDistanceMm": 101.35627750283541
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9584619417632809,
+        "incidenceAngleDeg": 16.572026503857906,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax_rvot",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 20.952285409314868,
+        "normal": [
+          -0.335711882926938,
+          0.12316005107185285,
+          -0.9338785432172794
+        ],
+        "originDistanceMm": 94.23890079759217
+      },
+      "segmentCount": 2,
+      "nearestIntersection": {
+        "pointMm": [
+          -80.08738748961507,
+          5.5384093405090695,
+          -17.467999999948233
+        ],
+        "bodyPointMm": [
+          44,
+          58.3957231897227,
+          78.01066170754007
+        ],
+        "distanceFromAnchorMm": 41.678435614085046,
+        "triangleIndex": 2561
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          44,
+          58.3957231897227,
+          78.01066170754007
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.967356549336893e-7,
+        "frontSurfaceDistanceMm": 4.967356549336893e-7,
+        "triangleIndex": 2561,
+        "nearestFrontPointMm": [
+          -80.0873879859015,
+          5.538409324947079,
+          -17.467999985668445
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8373046837779604,
+        "incidenceAngleDeg": 33.143414160194894,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9228329062281998,
+        "incidenceAngleDeg": 22.656188269827748,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "plax_rvin",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.8118012473103255,
+        "normal": [
+          -0.023337080562916043,
+          -0.11342790241230433,
+          -0.9932721135847642
+        ],
+        "originDistanceMm": 86.64727163051408
+      },
+      "segmentCount": 17,
+      "nearestIntersection": {
+        "pointMm": [
+          -75.74211585242018,
+          29.378209361316443,
+          12.02637447204941
+        ],
+        "bodyPointMm": [
+          29.37935781388518,
+          26.457311036721215,
+          92.95422980013866
+        ],
+        "distanceFromAnchorMm": 4.347137878001764,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          29.37935781388518,
+          26.457311036721215,
+          92.95422980013866
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000023090985945575817,
+        "frontSurfaceDistanceMm": 0.0000023090985945575817,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          -75.74211361289682,
+          29.37820951154206,
+          12.026373929920583
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.920809495288955,
+        "incidenceAngleDeg": 22.955287020115854,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.93501238529121,
+          28.210901240584587,
+          76.8757066739849
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 10.674808649838305,
+        "frontSurfaceDistanceMm": 10.674808649838305,
+        "triangleIndex": 2198,
+        "nearestFrontPointMm": [
+          -71.93741719813545,
+          16.678053634346693,
+          18.180091918094696
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8370558554760763,
+        "incidenceAngleDeg": 33.16948127929838,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_great",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.967525592080318,
+        "normal": [
+          -0.4778731947311336,
+          -0.8615157290656903,
+          0.1715454992993758
+        ],
+        "originDistanceMm": 88.80280957553074
+      },
+      "segmentCount": 14,
+      "nearestIntersection": {
+        "pointMm": [
+          -75.21572208414332,
+          34.24107152292384,
+          15.548412219973116
+        ],
+        "bodyPointMm": [
+          28.602598458758234,
+          21.08014822303405,
+          95.56421709497283
+        ],
+        "distanceFromAnchorMm": 4.714495509768972,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          28.602598458758234,
+          21.08014822303405,
+          95.56421709497283
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000002566794466040011,
+        "frontSurfaceDistanceMm": 0.000002566794466040011,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          -75.2157195946887,
+          34.24107168991466,
+          15.548411617342598
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8150338772920664,
+        "incidenceAngleDeg": 35.40928826385079,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          16.18353627430069,
+          16.3077292595196,
+          79.73539091742474
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 11.644309990554873,
+        "frontSurfaceDistanceMm": 11.644309990554873,
+        "triangleIndex": 2143,
+        "nearestFrontPointMm": [
+          -68.58344563587637,
+          23.14171779388566,
+          28.393513464234847
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.7603216371634554,
+        "incidenceAngleDeg": 40.5074390804783,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_av",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 15.68474974347559,
+        "normal": [
+          -0.2839655142985593,
+          -0.9519965492586485,
+          0.11430729149437659
+        ],
+        "originDistanceMm": 92.11369821352596
+      },
+      "segmentCount": 11,
+      "nearestIntersection": {
+        "pointMm": [
+          -74.47135999091891,
+          57.459346286407275,
+          12.548627968208137
+        ],
+        "bodyPointMm": [
+          42.33610138951346,
+          3.894136911492773,
+          103.60616809744053
+        ],
+        "distanceFromAnchorMm": 27.961576739970162,
+        "triangleIndex": 2461
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          42.33610138951346,
+          3.894136911492773,
+          103.60616809744053
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000020706218141253573,
+        "frontSurfaceDistanceMm": 0.0000020706218141253573,
+        "triangleIndex": 2461,
+        "nearestFrontPointMm": [
+          -74.47135797320315,
+          57.45934591504162,
+          12.548627688234273
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9651418333830077,
+        "incidenceAngleDeg": 15.172585749344337,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9382435752914298,
+        "incidenceAngleDeg": 20.2413505913015,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_av_zoom",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 15.68474974347559,
+        "normal": [
+          -0.2839655142985593,
+          -0.9519965492586485,
+          0.11430729149437659
+        ],
+        "originDistanceMm": 92.11369821352596
+      },
+      "segmentCount": 11,
+      "nearestIntersection": {
+        "pointMm": [
+          -74.47135999091891,
+          57.459346286407275,
+          12.548627968208137
+        ],
+        "bodyPointMm": [
+          42.33610138951346,
+          3.894136911492773,
+          103.60616809744053
+        ],
+        "distanceFromAnchorMm": 27.961576739970162,
+        "triangleIndex": 2461
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          42.33610138951346,
+          3.894136911492773,
+          103.60616809744053
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000020706218141253573,
+        "frontSurfaceDistanceMm": 0.0000020706218141253573,
+        "triangleIndex": 2461,
+        "nearestFrontPointMm": [
+          -74.47135797320315,
+          57.45934591504162,
+          12.548627688234273
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9651418333830077,
+        "incidenceAngleDeg": 15.172585749344337,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9382435752914298,
+        "incidenceAngleDeg": 20.2413505913015,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_tv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 14.264791888795909,
+        "normal": [
+          -0.41908304801862994,
+          -0.9039158910765374,
+          0.08547198794180398
+        ],
+        "originDistanceMm": 81.93019016171165
+      },
+      "segmentCount": 14,
+      "nearestIntersection": {
+        "pointMm": [
+          -74.35553114788675,
+          54.099574114682575,
+          16.321964326191022
+        ],
+        "bodyPointMm": [
+          37.415086938378316,
+          4.988341984008626,
+          103.25136580284668
+        ],
+        "distanceFromAnchorMm": 24.382450596530248,
+        "triangleIndex": 2347
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          37.415086938378316,
+          4.988341984008626,
+          103.25136580284668
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000001886919840422686,
+        "frontSurfaceDistanceMm": 0.000001886919840422686,
+        "triangleIndex": 2347,
+        "nearestFrontPointMm": [
+          -74.35552930840888,
+          54.09957401876028,
+          16.321963916817666
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9696250589059697,
+        "incidenceAngleDeg": 14.157964913512538,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8736901614017266,
+        "incidenceAngleDeg": 29.109666318784633,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_pv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 13.09471422313129,
+        "normal": [
+          -0.17176683806837958,
+          -0.9672475817613566,
+          0.1868910616289571
+        ],
+        "originDistanceMm": 101.00986593144003
+      },
+      "segmentCount": 11,
+      "nearestIntersection": {
+        "pointMm": [
+          -75.44457454179988,
+          53.42855234557093,
+          10.881431384119788
+        ],
+        "bodyPointMm": [
+          41.92560539452679,
+          8.142281761357745,
+          102.2799896862941
+        ],
+        "distanceFromAnchorMm": 24.227562430212082,
+        "triangleIndex": 2461
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          41.92560539452679,
+          8.142281761357745,
+          102.2799896862941
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000002275172220185789,
+        "frontSurfaceDistanceMm": 0.000002275172220185789,
+        "triangleIndex": 2461,
+        "nearestFrontPointMm": [
+          -75.44457232476014,
+          53.42855193751919,
+          10.881431076488159
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9449250211505651,
+        "incidenceAngleDeg": 19.10418286894934,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9596993201111985,
+        "incidenceAngleDeg": 16.321619328750693,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_mitral",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 38.61190884326139,
+        "normal": [
+          -0.20753008073524354,
+          -0.9750056877070252,
+          0.07934213589874062
+        ],
+        "originDistanceMm": 96.72048283791884
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9655256763266011,
+        "incidenceAngleDeg": 15.088328693471109,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_papillary",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 23.308153490910872,
+        "normal": [
+          0.04431919829437487,
+          -0.999010128676996,
+          -0.003817258612598551
+        ],
+        "originDistanceMm": 82.29236719717886
+      },
+      "segmentCount": 10,
+      "nearestIntersection": {
+        "pointMm": [
+          -70.32109502253289,
+          -3.5485427408236716,
+          17.549705571646523
+        ],
+        "bodyPointMm": [
+          8.316858796042435,
+          47.0740685026671,
+          76.35946845857741
+        ],
+        "distanceFromAnchorMm": 34.02194405065187,
+        "triangleIndex": 2080
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          8.316858796042435,
+          47.0740685026671,
+          76.35946845857741
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000013362168198909219,
+        "frontSurfaceDistanceMm": 0.0000013362168198909219,
+        "triangleIndex": 2080,
+        "nearestFrontPointMm": [
+          -70.32109612888597,
+          -3.5485427597720243,
+          17.54970632071208
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9775592641125234,
+        "incidenceAngleDeg": 12.16106744040595,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999996,
+          22.999999999999993,
+          81.00000000000001
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.966029633826635,
+        "frontSurfaceDistanceMm": 5.966029633826635,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -67.62023627909791,
+          17.346424906778932,
+          27.536897348511232
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9947295949409323,
+        "incidenceAngleDeg": 5.885055383886002,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "psax_apical",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -76.74750632770606,
+        29.834907143276272,
+        16.230922587901468
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.029157213744662,
+        "normal": [
+          0.3702280129440024,
+          -0.922090753331515,
+          -0.11260488911257031
+        ],
+        "originDistanceMm": 75.68223933711003
+      },
+      "segmentCount": 11,
+      "nearestIntersection": {
+        "pointMm": [
+          -74.67371032853426,
+          26.43702736043913,
+          15.624923301368774
+        ],
+        "bodyPointMm": [
+          24.74212413477475,
+          26.813921687917905,
+          91.90043273640796
+        ],
+        "distanceFromAnchorMm": 4.026593100882247,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          24.74212413477475,
+          26.813921687917905,
+          91.90043273640796
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000017926481336335557,
+        "frontSurfaceDistanceMm": 0.0000017926481336335557,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          -74.67370858990023,
+          26.437027477065453,
+          15.624922880491885
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9020315096237704,
+        "incidenceAngleDeg": 25.573601574547475,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          15.804291909119431,
+          17.21058969045645,
+          89.29790876895467
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.383658178318515,
+        "frontSurfaceDistanceMm": 3.383658178318515,
+        "triangleIndex": 2143,
+        "nearestFrontPointMm": [
+          -69.92405683674089,
+          27.82840821302211,
+          27.761012818077738
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9436086725837416,
+        "incidenceAngleDeg": 19.333304571467938,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a4c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 4.895976855766502,
+        "normal": [
+          0.6472507027120395,
+          0.29338979282861327,
+          0.7035545162265354
+        ],
+        "originDistanceMm": 113.13623248850521
+      },
+      "segmentCount": 28,
+      "nearestIntersection": {
+        "pointMm": [
+          -44.83916550183785,
+          116.31154521713916,
+          9.954151535436107
+        ],
+        "bodyPointMm": [
+          70.72451350527763,
+          -55.59169064198928,
+          101.62779629105434
+        ],
+        "distanceFromAnchorMm": 9.656098724448272,
+        "triangleIndex": 2699
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          70.72451350527763,
+          -55.59169064198928,
+          101.62779629105434
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000011242574213891915,
+        "frontSurfaceDistanceMm": 0.0000011242574213891915,
+        "triangleIndex": 2699,
+        "nearestFrontPointMm": [
+          -44.83916612447587,
+          116.31154607713005,
+          9.954151905155344
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.88922927322259,
+        "incidenceAngleDeg": 27.22344307058718,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9502120051873479,
+        "incidenceAngleDeg": 18.155930531662296,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a4c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.551417547702538,
+        "normal": [
+          0.6405523146842073,
+          0.3024437113662146,
+          0.7058473869100417
+        ],
+        "originDistanceMm": 99.81325995036426
+      },
+      "segmentCount": 28,
+      "nearestIntersection": {
+        "pointMm": [
+          -44.83916553232305,
+          116.31154520873497,
+          9.95415150364516
+        ],
+        "bodyPointMm": [
+          70.72451353125683,
+          -55.59169060791698,
+          101.62779630427559
+        ],
+        "distanceFromAnchorMm": 9.656098679648945,
+        "triangleIndex": 2699
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          70.72451353125683,
+          -55.59169060791698,
+          101.62779630427559
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000011242574283245217,
+        "frontSurfaceDistanceMm": 0.0000011242574283245217,
+        "triangleIndex": 2699,
+        "nearestFrontPointMm": [
+          -44.83916615496106,
+          116.31154606872587,
+          9.954151873364397
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.874815658366331,
+        "incidenceAngleDeg": 28.97683363872878,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9399661629265043,
+        "incidenceAngleDeg": 19.954125306000215,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a4c_rv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.4175480624626955,
+        "normal": [
+          0.5373356754778545,
+          0.23797708527340639,
+          0.8090965818389865
+        ],
+        "originDistanceMm": 112.86952595451075
+      },
+      "segmentCount": 29,
+      "nearestIntersection": {
+        "pointMm": [
+          -45.051192691979416,
+          115.40653795619615,
+          11.702185783810576
+        ],
+        "bodyPointMm": [
+          68.77773629261706,
+          -55.454598454104975,
+          101.96078521203472
+        ],
+        "distanceFromAnchorMm": 10.665910804822003,
+        "triangleIndex": 2699
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          68.77773629261706,
+          -55.454598454104975,
+          101.96078521203472
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000010604981115866759,
+        "frontSurfaceDistanceMm": 0.0000010604981115866759,
+        "triangleIndex": 2699,
+        "nearestFrontPointMm": [
+          -45.05119327930615,
+          115.40653876741492,
+          11.702186132562156
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.7697179209976304,
+        "incidenceAngleDeg": 39.67143484031073,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8694354211922669,
+        "incidenceAngleDeg": 29.606902054569296,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a5c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 4.324685446974464,
+        "normal": [
+          0.7316187815454385,
+          0.366311955271162,
+          0.5749343527007114
+        ],
+        "originDistanceMm": 113.13623248850521
+      },
+      "segmentCount": 22,
+      "nearestIntersection": {
+        "pointMm": [
+          -57.88420610216525,
+          111.03472671655229,
+          -1.481162433525376
+        ],
+        "bodyPointMm": [
+          79.13862573562321,
+          -40.54284186797445,
+          107.24198984605698
+        ],
+        "distanceFromAnchorMm": 8.569990513668575,
+        "triangleIndex": 2755
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          79.13862573562321,
+          -40.54284186797445,
+          107.24198984605698
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000002219893260611169,
+        "frontSurfaceDistanceMm": 0.000002219893260611169,
+        "triangleIndex": 2755,
+        "nearestFrontPointMm": [
+          -57.88420462474401,
+          111.03472517524634,
+          -1.4811630414139607
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8763578216808146,
+        "incidenceAngleDeg": 28.79391705121905,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9502120051873479,
+        "incidenceAngleDeg": 18.155930531662296,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a4c_cs",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 15.85553986315626,
+        "normal": [
+          0.5267792779067889,
+          0.19883134080030684,
+          0.8264198026932523
+        ],
+        "originDistanceMm": 113.13623248850521
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          -37.60902713272065,
+          116.5363125321116,
+          32.26209844884776
+        ],
+        "bodyPointMm": [
+          50.810739803473595,
+          -67.96486161006234,
+          102.19008965063264
+        ],
+        "distanceFromAnchorMm": 32.21879130259009,
+        "triangleIndex": 2554
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          50.810739803473595,
+          -67.96486161006234,
+          102.19008965063264
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000001185454888002021,
+        "frontSurfaceDistanceMm": 0.000001185454888002021,
+        "triangleIndex": 2554,
+        "nearestFrontPointMm": [
+          -37.60902604361553,
+          116.53631210156576,
+          32.26209826504457
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.7476080645525702,
+        "incidenceAngleDeg": 41.61639629564942,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9502120051873479,
+        "incidenceAngleDeg": 18.155930531662296,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a2c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.1697663632169855,
+        "normal": [
+          0.547672065047893,
+          0.452706356902231,
+          -0.7036421417073355
+        ],
+        "originDistanceMm": 113.13623248850521
+      },
+      "segmentCount": 30,
+      "nearestIntersection": {
+        "pointMm": [
+          -45.71071403479168,
+          118.60976508741626,
+          -3.8925891366739607
+        ],
+        "bodyPointMm": [
+          83.99098741123635,
+          -51.6224504925497,
+          99.17434129927425
+        ],
+        "distanceFromAnchorMm": 10.220376351034247,
+        "triangleIndex": 2899
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83.99098741123635,
+          -51.6224504925497,
+          99.17434129927425
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.7431551830356615e-7,
+        "frontSurfaceDistanceMm": 4.7431551830356615e-7,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -45.71071381894764,
+          118.60976467592438,
+          -3.892589231863205
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9669246818520374,
+        "incidenceAngleDeg": 14.777263128265522,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          74.38786893236727,
+          -28.414097551954328,
+          73.45021807697546
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 32.48306576745594,
+        "frontSurfaceDistanceMm": 32.48306576745594,
+        "triangleIndex": 2854,
+        "nearestFrontPointMm": [
+          -65.14469824630747,
+          96.40938272732708,
+          -11.169574137444593
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8092434946422049,
+        "incidenceAngleDeg": 35.97791548360511,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a2c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.76566051294309,
+        "normal": [
+          0.5415318069765371,
+          0.46112390496058997,
+          -0.7029281942749368
+        ],
+        "originDistanceMm": 101.47693159392531
+      },
+      "segmentCount": 30,
+      "nearestIntersection": {
+        "pointMm": [
+          -45.71071405096261,
+          118.60976507401163,
+          -3.8925891153953156
+        ],
+        "bodyPointMm": [
+          83.99098738739208,
+          -51.62245048217441,
+          99.1743413140312
+        ],
+        "distanceFromAnchorMm": 10.220376321145082,
+        "triangleIndex": 2899
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83.99098738739208,
+          -51.62245048217441,
+          99.1743413140312
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.743155212696227e-7,
+        "frontSurfaceDistanceMm": 4.743155212696227e-7,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -45.71071383511856,
+          118.60976466251975,
+          -3.8925892105845588
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9660678646853524,
+        "incidenceAngleDeg": 14.9685241393499,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          74.38786891659514,
+          -28.414097543471428,
+          73.45021808615087
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 32.48306576021921,
+        "frontSurfaceDistanceMm": 32.48306576021921,
+        "triangleIndex": 2854,
+        "nearestFrontPointMm": [
+          -65.1446982505108,
+          96.40938271451788,
+          -11.169574124375774
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8207501952670735,
+        "incidenceAngleDeg": 34.84003816692449,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a3c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.0264885847643677,
+        "normal": [
+          0.1500178035276894,
+          0.2444535931493247,
+          -0.9579859599290127
+        ],
+        "originDistanceMm": 113.13623248850521
+      },
+      "segmentCount": 27,
+      "nearestIntersection": {
+        "pointMm": [
+          -51.24104339404061,
+          115.73990876052274,
+          -0.4889518643626356
+        ],
+        "bodyPointMm": [
+          80.04500713993477,
+          -47.915732205540166,
+          103.76725367373732
+        ],
+        "distanceFromAnchorMm": 4.09761355297069,
+        "triangleIndex": 2754
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          80.04500713993477,
+          -47.915732205540166,
+          103.76725367373732
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.0662220378101813e-7,
+        "frontSurfaceDistanceMm": 4.0662220378101813e-7,
+        "triangleIndex": 2754,
+        "nearestFrontPointMm": [
+          -51.24104361363231,
+          115.73990907829673,
+          -0.4889517373162242
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9142461976123702,
+        "incidenceAngleDeg": 23.901097071753643,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9502120051873479,
+        "incidenceAngleDeg": 18.155930531662296,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a3c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.2594386896149805,
+        "normal": [
+          0.14742812059168842,
+          0.24760381093348233,
+          -0.9575788751168328
+        ],
+        "originDistanceMm": 101.47693159392531
+      },
+      "segmentCount": 27,
+      "nearestIntersection": {
+        "pointMm": [
+          -51.24104339354243,
+          115.7399087536992,
+          -0.48895184643423373
+        ],
+        "bodyPointMm": [
+          80.04500712095339,
+          -47.91573220738486,
+          103.76725367586818
+        ],
+        "distanceFromAnchorMm": 4.0976135338575395,
+        "triangleIndex": 2754
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          80.04500712095339,
+          -47.91573220738486,
+          103.76725367586818
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.0662220845073973e-7,
+        "frontSurfaceDistanceMm": 4.0662220845073973e-7,
+        "triangleIndex": 2754,
+        "nearestFrontPointMm": [
+          -51.24104361313413,
+          115.73990907147319,
+          -0.48895171938781967
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8995866397100496,
+        "incidenceAngleDeg": 25.89621404487756,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9415922671222692,
+        "incidenceAngleDeg": 19.67930052449441,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "a4c_la_pv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -51.45843796446519,
+        114.12733112621392,
+        3.2717355466788565
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.6528699962848474,
+        "normal": [
+          0.6593087817685572,
+          0.275735577725766,
+          0.6994868272234288
+        ],
+        "originDistanceMm": 151.55575921485448
+      },
+      "segmentCount": 28,
+      "nearestIntersection": {
+        "pointMm": [
+          -44.83916553232305,
+          116.31154520873497,
+          9.95415150364516
+        ],
+        "bodyPointMm": [
+          70.72451353125683,
+          -55.59169060791698,
+          101.62779630427559
+        ],
+        "distanceFromAnchorMm": 9.656098679648945,
+        "triangleIndex": 2699
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          70.72451353125683,
+          -55.59169060791698,
+          101.62779630427559
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000011242574283245217,
+        "frontSurfaceDistanceMm": 0.0000011242574283245217,
+        "triangleIndex": 2699,
+        "nearestFrontPointMm": [
+          -44.83916615496106,
+          116.31154606872587,
+          9.954151873364397
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9084256216482843,
+        "incidenceAngleDeg": 24.71131720658244,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32.00000000000003,
+          67
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 36.49173726454858,
+        "frontSurfaceDistanceMm": 36.49173726454858,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -44.47390112651882,
+          121.33538721453985,
+          -12.870629684143214
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9623170341685909,
+        "incidenceAngleDeg": 15.779145521112763,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "subcostal",
+      "window": "subcostal",
+      "outsideScan": false,
+      "anchorMm": [
+        -29.879951118510284,
+        94.28501040179128,
+        77.51989669286253
+      ],
+      "anchorCorrection": {
+        "angleDeg": 25.103162425187985,
+        "normal": [
+          0.9060060116862458,
+          -0.0438527692369185,
+          0.4209869848565816
+        ],
+        "originDistanceMm": 122.70769750035323
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000007,
+          -67.00000000000003,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.68241558577124,
+        "frontSurfaceDistanceMm": 35.68241558577124,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          -32.24530792236328,
+          85.07886505126953,
+          66.41776275634766
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.5480629882317989,
+        "incidenceAngleDeg": 56.76577290713012,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "subcostal_ivc",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        -29.879951118510284,
+        94.28501040179128,
+        77.51989669286253
+      ],
+      "anchorCorrection": {
+        "angleDeg": 19.589895033763586,
+        "normal": [
+          -0.8801580058307221,
+          0.027438383000200003,
+          -0.47388713836779817
+        ],
+        "originDistanceMm": 128.69468466590533
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000007,
+          -67.00000000000003,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.68241558577124,
+        "frontSurfaceDistanceMm": 35.68241558577124,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          -32.24530792236328,
+          85.07886505126953,
+          66.41776275634766
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.5447038733849435,
+        "incidenceAngleDeg": 56.99557030095679,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "subcostal_hepatic",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        -29.879951118510284,
+        94.28501040179128,
+        77.51989669286253
+      ],
+      "anchorCorrection": {
+        "angleDeg": 19.589895033763586,
+        "normal": [
+          -0.8801580058307221,
+          0.027438383000200003,
+          -0.47388713836779817
+        ],
+        "originDistanceMm": 128.69468466590533
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000007,
+          -67.00000000000003,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.68241558577124,
+        "frontSurfaceDistanceMm": 35.68241558577124,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          -32.24530792236328,
+          85.07886505126953,
+          66.41776275634766
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8887102274072507,
+        "incidenceAngleDeg": 27.288380553790777,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "ssn_arch",
+      "window": "suprasternal",
+      "outsideScan": true,
+      "anchorMm": [
+        -69.15135861566667,
+        -53.4467345661205,
+        -0.5015095491964363
+      ],
+      "anchorCorrection": {
+        "angleDeg": 21.684974883930053,
+        "normal": [
+          -0.10682037231804624,
+          -0.03991026526761831,
+          -0.9934770147235931
+        ],
+        "originDistanceMm": 106.38041900276185
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          -2.9999999999999964,
+          96.00000000000001,
+          68
+        ],
+        "windowId": "suprasternal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 16.659141803416027,
+        "frontSurfaceDistanceMm": 16.659141803416027,
+        "triangleIndex": 1877,
+        "nearestFrontPointMm": [
+          -70.57147970092798,
+          -49.75899734694128,
+          8.94540306403023
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8955091983797434,
+        "incidenceAngleDeg": 26.42609019680407,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax_deep",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.016485821274891,
+        "normal": [
+          -0.9391188304125444,
+          -0.19733747687943673,
+          0.28127165264816967
+        ],
+        "originDistanceMm": 97.51847979527464
+      },
+      "segmentCount": 21,
+      "nearestIntersection": {
+        "pointMm": [
+          37.026955156488285,
+          -56.39657358187719,
+          68.33152818371182
+        ],
+        "bodyPointMm": [
+          20.656117601852838,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "distanceFromAnchorMm": 5.310350955081645,
+        "triangleIndex": 2197
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.656117601852838,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.787817582430097e-7,
+        "frontSurfaceDistanceMm": 4.787817582430097e-7,
+        "triangleIndex": 2197,
+        "nearestFrontPointMm": [
+          37.026955467432806,
+          -56.396573845484795,
+          68.33152843482237
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9792798172060428,
+        "incidenceAngleDeg": 11.683882340271577,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9672386433132172,
+        "incidenceAngleDeg": 14.706571163226323,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.0164858212885197,
+        "normal": [
+          -0.9391188304125349,
+          -0.19733747687914766,
+          0.2812716526484037
+        ],
+        "originDistanceMm": 97.51847979527464
+      },
+      "segmentCount": 21,
+      "nearestIntersection": {
+        "pointMm": [
+          37.02695515650636,
+          -56.39657358186877,
+          68.33152818369825
+        ],
+        "bodyPointMm": [
+          20.65611760182901,
+          24.32952461605967,
+          94.01391004997252
+        ],
+        "distanceFromAnchorMm": 5.310350955105639,
+        "triangleIndex": 2197
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.65611760182901,
+          24.32952461605967,
+          94.01391004997252
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.787817713843461e-7,
+        "frontSurfaceDistanceMm": 4.787817713843461e-7,
+        "triangleIndex": 2197,
+        "nearestFrontPointMm": [
+          37.0269554674509,
+          -56.39657384547638,
+          68.3315284348088
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9792798172059655,
+        "incidenceAngleDeg": 11.68388234029347,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9672386433132172,
+        "incidenceAngleDeg": 14.706571163226323,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax_av",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.7356014535984117,
+        "normal": [
+          -0.9369083195177115,
+          -0.19406766595147049,
+          0.2907585628156914
+        ],
+        "originDistanceMm": 107.5225994098628
+      },
+      "segmentCount": 21,
+      "nearestIntersection": {
+        "pointMm": [
+          37.02695515648828,
+          -56.39657358187719,
+          68.33152818371182
+        ],
+        "bodyPointMm": [
+          20.656117601852852,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "distanceFromAnchorMm": 5.31035095508164,
+        "triangleIndex": 2197
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.656117601852852,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.787817628576251e-7,
+        "frontSurfaceDistanceMm": 4.787817628576251e-7,
+        "triangleIndex": 2197,
+        "nearestFrontPointMm": [
+          37.026955467432806,
+          -56.396573845484795,
+          68.33152843482237
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9532622085469095,
+        "incidenceAngleDeg": 17.58643875200505,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.946062554436081,
+        "incidenceAngleDeg": 18.904033315298594,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax_mv",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.869922675093624,
+        "normal": [
+          -0.9380102106836269,
+          -0.1950745306920109,
+          0.28650091121766014
+        ],
+        "originDistanceMm": 102.49412909340647
+      },
+      "segmentCount": 21,
+      "nearestIntersection": {
+        "pointMm": [
+          37.026955156488285,
+          -56.39657358187719,
+          68.33152818371182
+        ],
+        "bodyPointMm": [
+          20.656117601852838,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "distanceFromAnchorMm": 5.310350955081645,
+        "triangleIndex": 2197
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.656117601852838,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.787817582430097e-7,
+        "frontSurfaceDistanceMm": 4.787817582430097e-7,
+        "triangleIndex": 2197,
+        "nearestFrontPointMm": [
+          37.026955467432806,
+          -56.396573845484795,
+          68.33152843482237
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9692136053059299,
+        "incidenceAngleDeg": 14.254027295103272,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9598795815132157,
+        "incidenceAngleDeg": 16.284827537204507,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax_rvot",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.0164858212748893,
+        "normal": [
+          0.9391188304125443,
+          0.1973374768794367,
+          -0.2812716526481695
+        ],
+        "originDistanceMm": 97.51847979527464
+      },
+      "segmentCount": 21,
+      "nearestIntersection": {
+        "pointMm": [
+          37.02695515648828,
+          -56.3965735818772,
+          68.33152818371182
+        ],
+        "bodyPointMm": [
+          20.656117601852852,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "distanceFromAnchorMm": 5.310350955081637,
+        "triangleIndex": 2197
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          20.656117601852852,
+          24.329524616061267,
+          94.01391004998032
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 4.787817582430097e-7,
+        "frontSurfaceDistanceMm": 4.787817582430097e-7,
+        "triangleIndex": 2197,
+        "nearestFrontPointMm": [
+          37.0269554674328,
+          -56.3965738454848,
+          68.33152843482237
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9792798172060428,
+        "incidenceAngleDeg": 11.683882340271577,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9672386433132172,
+        "incidenceAngleDeg": 14.706571163226323,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "plax_rvin",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 65.13295121999846,
+        "normal": [
+          0.16148986451263475,
+          0.781037864733451,
+          0.6032419726049423
+        ],
+        "originDistanceMm": 92.36748770617565
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9664367985344361,
+        "incidenceAngleDeg": 14.886464193249386,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_great",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.410758459087565,
+        "normal": [
+          0.14404922101028247,
+          -0.9548887869313597,
+          -0.2596867854148281
+        ],
+        "originDistanceMm": 84.07597986530405
+      },
+      "segmentCount": 15,
+      "nearestIntersection": {
+        "pointMm": [
+          32.29849848601689,
+          -61.52336355604679,
+          68.48264014483371
+        ],
+        "bodyPointMm": [
+          26.45533900922646,
+          28.682704000022518,
+          93.57729877841977
+        ],
+        "distanceFromAnchorMm": 3.9159037574777886,
+        "triangleIndex": 2245
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          26.45533900922646,
+          28.682704000022518,
+          93.57729877841977
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000015712563585451603,
+        "frontSurfaceDistanceMm": 0.0000015712563585451603,
+        "triangleIndex": 2245,
+        "nearestFrontPointMm": [
+          32.2984994207229,
+          -61.52336442845828,
+          68.48264105810772
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8751638040761487,
+        "incidenceAngleDeg": 28.93563228458851,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8426444831433594,
+        "incidenceAngleDeg": 32.57956683078717,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_av",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.276165244596651,
+        "normal": [
+          0.10262010725327157,
+          -0.9184961429150538,
+          -0.38188211405811645
+        ],
+        "originDistanceMm": 84.3589942510024
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          32.79379363690513,
+          -51.46668777246444,
+          74.68568149524897
+        ],
+        "bodyPointMm": [
+          25.648304202652323,
+          16.921976000016468,
+          97.14043661698926
+        ],
+        "distanceFromAnchorMm": 7.97016154249058,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          25.648304202652323,
+          16.921976000016468,
+          97.14043661698926
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 6.002331029908289e-7,
+        "frontSurfaceDistanceMm": 6.002331029908289e-7,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          32.793793958214486,
+          -51.46668812773928,
+          74.68568185693925
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9505016435243866,
+        "incidenceAngleDeg": 18.10259798556699,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9074816875058709,
+        "incidenceAngleDeg": 24.84037330348016,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_av_zoom",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.276165244596651,
+        "normal": [
+          0.10262010725327157,
+          -0.9184961429150538,
+          -0.38188211405811645
+        ],
+        "originDistanceMm": 84.3589942510024
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          32.79379363690513,
+          -51.46668777246444,
+          74.68568149524897
+        ],
+        "bodyPointMm": [
+          25.648304202652323,
+          16.921976000016468,
+          97.14043661698926
+        ],
+        "distanceFromAnchorMm": 7.97016154249058,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          25.648304202652323,
+          16.921976000016468,
+          97.14043661698926
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 6.002331029908289e-7,
+        "frontSurfaceDistanceMm": 6.002331029908289e-7,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          32.793793958214486,
+          -51.46668812773928,
+          74.68568185693925
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9505016435243866,
+        "incidenceAngleDeg": 18.10259798556699,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9074816875058709,
+        "incidenceAngleDeg": 24.84037330348016,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_tv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.684345283839672,
+        "normal": [
+          0.10237615785328309,
+          -0.9179868791628826,
+          -0.38316995183337466
+        ],
+        "originDistanceMm": 85.0111625921427
+      },
+      "segmentCount": 15,
+      "nearestIntersection": {
+        "pointMm": [
+          32.38847840680158,
+          -61.68226188776202,
+          68.2387597582784
+        ],
+        "bodyPointMm": [
+          26.325953299052145,
+          28.927259833086374,
+          93.42203309448689
+        ],
+        "distanceFromAnchorMm": 4.178961897842221,
+        "triangleIndex": 2245
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          26.325953299052145,
+          28.927259833086374,
+          93.42203309448689
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000016439070016248119,
+        "frontSurfaceDistanceMm": 0.0000016439070016248119,
+        "triangleIndex": 2245,
+        "nearestFrontPointMm": [
+          32.38847938472587,
+          -61.68226280051146,
+          68.23876071377973
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9380937063598733,
+        "incidenceAngleDeg": 20.266155300723945,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9410126175667692,
+        "incidenceAngleDeg": 19.77768641517624,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_pv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 14.917208464214427,
+        "normal": [
+          0.1544185123555105,
+          -0.9091077260394952,
+          -0.38688249572345507
+        ],
+        "originDistanceMm": 86.20774850943984
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          35.067933476230905,
+          -36.7445059270563,
+          81.96825912671339
+        ],
+        "bodyPointMm": [
+          22.38580535893969,
+          0.47616458652802507,
+          101.26883127819733
+        ],
+        "distanceFromAnchorMm": 24.492235210507477,
+        "triangleIndex": 2242
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          22.38580535893969,
+          0.47616458652802507,
+          101.26883127819733
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.000001240744869638773,
+        "frontSurfaceDistanceMm": 0.000001240744869638773,
+        "triangleIndex": 2242,
+        "nearestFrontPointMm": [
+          35.06793266198247,
+          -36.74450549103055,
+          81.96825829826372
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9197174330152853,
+        "incidenceAngleDeg": 23.11519252869503,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8467369889300909,
+        "incidenceAngleDeg": 32.141479763587164,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_mitral",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 15.281639149908466,
+        "normal": [
+          -0.044969066642958244,
+          0.8467786867516276,
+          0.5300411669940837
+        ],
+        "originDistanceMm": 92.95977457820224
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          33.98041098352923,
+          -36.30134785269522,
+          83.27038048340614
+        ],
+        "bodyPointMm": [
+          23.754543518140103,
+          -0.5136743397383299,
+          101.96226012476212
+        ],
+        "distanceFromAnchorMm": 25.421765724368054,
+        "triangleIndex": 2242
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          23.754543518140103,
+          -0.5136743397383299,
+          101.96226012476212
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 0.0000013884857170120699,
+        "frontSurfaceDistanceMm": 0.0000013884857170120699,
+        "triangleIndex": 2242,
+        "nearestFrontPointMm": [
+          33.980410072324716,
+          -36.30134736475001,
+          83.2703795563094
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9790741036326132,
+        "incidenceAngleDeg": 11.741941737209503,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9547133941314903,
+        "incidenceAngleDeg": 17.30913134641657,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_papillary",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 26.8515055926346,
+        "normal": [
+          0.022849862249814838,
+          0.7318197898795853,
+          0.6811150262149297
+        ],
+        "originDistanceMm": 100.50985416590585
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9621524867325695,
+        "incidenceAngleDeg": 15.813778703660725,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "psax_apical",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        32.83676868577335,
+        -58.45832687779814,
+        70.85963774493206
+      ],
+      "anchorCorrection": {
+        "angleDeg": 39.081145434366086,
+        "normal": [
+          0.09346996746286783,
+          0.578089519082106,
+          0.8106021669782962
+        ],
+        "originDistanceMm": 115.52005829445449
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          12.000000000000004,
+          22.999999999999996,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.729191015843469,
+        "frontSurfaceDistanceMm": 5.729191015843469,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          44.13764960468918,
+          -53.329244035873785,
+          57.276195023641435
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9185704115676414,
+        "incidenceAngleDeg": 23.282027358603575,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a4c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 56.013730172159896,
+        "normal": [
+          0.9190519522009127,
+          -0.36480287013950446,
+          0.14920581454377344
+        ],
+        "originDistanceMm": 111.66423112974954
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.882170410169208,
+        "incidenceAngleDeg": 28.094702655645833,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a4c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 58.39924116511142,
+        "normal": [
+          0.9702374540506856,
+          -0.20369647254232698,
+          0.1309466678883303
+        ],
+        "originDistanceMm": 108.70803131981957
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8476285921232928,
+        "incidenceAngleDeg": 32.04532880509475,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a4c_rv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 68.7439188747081,
+        "normal": [
+          0.6754091272109204,
+          -0.7369151205803658,
+          0.02790369044064998
+        ],
+        "originDistanceMm": 104.85192522730227
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9430033919054556,
+        "incidenceAngleDeg": 19.437786681738213,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a5c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 51.40808711023296,
+        "normal": [
+          0.9847970675259803,
+          0.00022002684187797267,
+          0.1737086278237738
+        ],
+        "originDistanceMm": 111.66423112974954
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.882170410169208,
+        "incidenceAngleDeg": 28.094702655645833,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a4c_cs",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 55.237880872004226,
+        "normal": [
+          0.6487729009488654,
+          -0.7559111360442395,
+          0.08770448904532166
+        ],
+        "originDistanceMm": 111.66423112974954
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.882170410169208,
+        "incidenceAngleDeg": 28.094702655645833,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a2c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 27.235351778499023,
+        "normal": [
+          0.960442704624167,
+          0.2345787341579929,
+          0.15007540976138992
+        ],
+        "originDistanceMm": 116.1307974570976
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9028418267083178,
+        "incidenceAngleDeg": 25.465835982556978,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a2c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 27.902369596336857,
+        "normal": [
+          0.9698153118370507,
+          0.18520109837304208,
+          0.15861530218684022
+        ],
+        "originDistanceMm": 113.56984254227781
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8747236365004559,
+        "incidenceAngleDeg": 28.987715042253733,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a3c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 28.00206268890522,
+        "normal": [
+          0.9808162906843816,
+          -0.07651996170394174,
+          0.1792877558255396
+        ],
+        "originDistanceMm": 114.18624204523708
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8794300838604379,
+        "incidenceAngleDeg": 28.426308974237223,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a3c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 28.715904335269272,
+        "normal": [
+          0.984778396863944,
+          -0.023553672889320122,
+          0.17221130498170986
+        ],
+        "originDistanceMm": 111.58066539267467
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8508185432906146,
+        "incidenceAngleDeg": 31.699189425239272,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "a4c_la_pv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -17.2825337460993,
+        -5.208942188320389,
+        115.01266317928797
+      ],
+      "anchorCorrection": {
+        "angleDeg": 46.676748516867924,
+        "normal": [
+          0.7410705491600795,
+          -0.5991397637115118,
+          0.30306102472487606
+        ],
+        "originDistanceMm": 127.2708161828498
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          82.99999999999997,
+          -31.999999999999986,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 35.043104612858585,
+        "frontSurfaceDistanceMm": 35.043104612858585,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -35.50920873864032,
+          -4.5465249848458456,
+          114.27253354997927
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.878379365714541,
+        "incidenceAngleDeg": 28.5525190038317,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "subcostal",
+      "window": "subcostal",
+      "outsideScan": false,
+      "anchorMm": [
+        45.22639112592678,
+        34.259652598194506,
+        94.73637355821718
+      ],
+      "anchorCorrection": {
+        "angleDeg": 56.69082988270818,
+        "normal": [
+          0.05212064526238459,
+          -0.936512764103778,
+          0.34673805820551923
+        ],
+        "originDistanceMm": 105.63279703124063
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.0000000000000036,
+          -66.99999999999999,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 34.265916459902414,
+        "frontSurfaceDistanceMm": 34.265916459902414,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          40.192813873291016,
+          22.792213439941406,
+          88.40047454833984
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.675627931353467,
+        "incidenceAngleDeg": 47.49706831943919,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "subcostal_ivc",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        45.22639112592678,
+        34.259652598194506,
+        94.73637355821718
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.290892488861548,
+        "normal": [
+          -0.9037193560574927,
+          -0.21238655298505568,
+          0.3717301139242783
+        ],
+        "originDistanceMm": 108.92362402930803
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.0000000000000036,
+          -66.99999999999999,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 34.265916459902414,
+        "frontSurfaceDistanceMm": 34.265916459902414,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          40.192813873291016,
+          22.792213439941406,
+          88.40047454833984
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.5447038847440938,
+        "incidenceAngleDeg": 56.9955695248904,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "subcostal_hepatic",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        45.22639112592678,
+        34.259652598194506,
+        94.73637355821718
+      ],
+      "anchorCorrection": {
+        "angleDeg": 3.290892488861548,
+        "normal": [
+          -0.9037193560574927,
+          -0.21238655298505568,
+          0.3717301139242783
+        ],
+        "originDistanceMm": 108.92362402930803
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.0000000000000036,
+          -66.99999999999999,
+          60.00000000000002
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 34.265916459902414,
+        "frontSurfaceDistanceMm": 34.265916459902414,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          40.192813873291016,
+          22.792213439941406,
+          88.40047454833984
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8887102290894109,
+        "incidenceAngleDeg": 27.288380343568036,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-28",
+      "id": "ssn_arch",
+      "window": "suprasternal",
+      "outsideScan": true,
+      "anchorMm": [
+        47.94302292161166,
+        -103.30860951720003,
+        4.018465173702442
+      ],
+      "anchorCorrection": {
+        "angleDeg": 10.014324377077692,
+        "normal": [
+          -0.858900932110363,
+          -0.3917704785599467,
+          0.3298561519039171
+        ],
+        "originDistanceMm": 114.06993320741799
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          -2.9999999999999964,
+          95.99999999999999,
+          68.00000000000001
+        ],
+        "windowId": "suprasternal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 15.997816951900514,
+        "frontSurfaceDistanceMm": 15.997816951900514,
+        "triangleIndex": 1877,
+        "nearestFrontPointMm": [
+          54.82767186469942,
+          -97.93039605015332,
+          8.532510804839589
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.895509192942052,
+        "incidenceAngleDeg": 26.426090896863972,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax_deep",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 9.593953552321269,
+        "normal": [
+          -0.6862628045205994,
+          0.6541086864281301,
+          -0.3180961953101415
+        ],
+        "originDistanceMm": 89.80928469418939
+      },
+      "segmentCount": 19,
+      "nearestIntersection": {
+        "pointMm": [
+          -22.78308977357229,
+          -21.568329021799975,
+          77.70107235983149
+        ],
+        "bodyPointMm": [
+          9.740395583556538,
+          22.333752742120957,
+          90.16621241760015
+        ],
+        "distanceFromAnchorMm": 15.87842493916649,
+        "triangleIndex": 2196
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          9.740395583556538,
+          22.333752742120957,
+          90.16621241760015
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.148035287849111e-7,
+        "frontSurfaceDistanceMm": 3.148035287849111e-7,
+        "triangleIndex": 2196,
+        "nearestFrontPointMm": [
+          -22.783089790688233,
+          -21.56832916741756,
+          77.70107263840612
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9407838688148685,
+        "incidenceAngleDeg": 19.816383654749576,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9273463301125259,
+        "incidenceAngleDeg": 21.975136141282817,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 9.593953552309044,
+        "normal": [
+          -0.6862628045207425,
+          0.6541086864279324,
+          -0.3180961953102392
+        ],
+        "originDistanceMm": 89.80928469418939
+      },
+      "segmentCount": 19,
+      "nearestIntersection": {
+        "pointMm": [
+          -22.783089773586372,
+          -21.568329021787047,
+          77.70107235983737
+        ],
+        "bodyPointMm": [
+          9.74039558357591,
+          22.333752742120378,
+          90.16621241760997
+        ],
+        "distanceFromAnchorMm": 15.878424939147083,
+        "triangleIndex": 2196
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          9.74039558357591,
+          22.333752742120378,
+          90.16621241760997
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.148035430036882e-7,
+        "frontSurfaceDistanceMm": 3.148035430036882e-7,
+        "triangleIndex": 2196,
+        "nearestFrontPointMm": [
+          -22.783089790702316,
+          -21.568329167404634,
+          77.70107263841201
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9407838688148329,
+        "incidenceAngleDeg": 19.816383654755594,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9273463301125259,
+        "incidenceAngleDeg": 21.975136141282817,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax_av",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 8.629857522110031,
+        "normal": [
+          -0.6800804676113664,
+          0.6730598859068171,
+          -0.29065606402861704
+        ],
+        "originDistanceMm": 99.75327839645774
+      },
+      "segmentCount": 19,
+      "nearestIntersection": {
+        "pointMm": [
+          -22.78308977357229,
+          -21.568329021799983,
+          77.70107235983147
+        ],
+        "bodyPointMm": [
+          9.740395583556534,
+          22.33375274212096,
+          90.16621241760014
+        ],
+        "distanceFromAnchorMm": 15.878424939166495,
+        "triangleIndex": 2196
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          9.740395583556534,
+          22.33375274212096,
+          90.16621241760014
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.148035446470547e-7,
+        "frontSurfaceDistanceMm": 3.148035446470547e-7,
+        "triangleIndex": 2196,
+        "nearestFrontPointMm": [
+          -22.783089790688233,
+          -21.568329167417573,
+          77.70107263840612
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9114205456050961,
+        "incidenceAngleDeg": 24.2975955029488,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9033772104857807,
+        "incidenceAngleDeg": 25.394400202110123,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax_mv",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 9.087951259556869,
+        "normal": [
+          -0.6817672194720199,
+          0.6656887169142952,
+          -0.30340070966691823
+        ],
+        "originDistanceMm": 94.76414719724721
+      },
+      "segmentCount": 19,
+      "nearestIntersection": {
+        "pointMm": [
+          -22.783089773572293,
+          -21.568329021799983,
+          77.70107235983147
+        ],
+        "bodyPointMm": [
+          9.740395583556538,
+          22.333752742120964,
+          90.16621241760014
+        ],
+        "distanceFromAnchorMm": 15.878424939166491,
+        "triangleIndex": 2196
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          9.740395583556538,
+          22.333752742120964,
+          90.16621241760014
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.148035446470547e-7,
+        "frontSurfaceDistanceMm": 3.148035446470547e-7,
+        "triangleIndex": 2196,
+        "nearestFrontPointMm": [
+          -22.783089790688237,
+          -21.568329167417573,
+          77.70107263840612
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9288240040776434,
+        "incidenceAngleDeg": 21.747765437998623,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9184185228495378,
+        "incidenceAngleDeg": 23.304035044258555,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax_rvot",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 9.593953552321269,
+        "normal": [
+          0.6862628045205994,
+          -0.6541086864281301,
+          0.3180961953101415
+        ],
+        "originDistanceMm": 89.80928469418939
+      },
+      "segmentCount": 19,
+      "nearestIntersection": {
+        "pointMm": [
+          -22.78308977357229,
+          -21.568329021799975,
+          77.70107235983149
+        ],
+        "bodyPointMm": [
+          9.740395583556538,
+          22.333752742120957,
+          90.16621241760015
+        ],
+        "distanceFromAnchorMm": 15.87842493916649,
+        "triangleIndex": 2196
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          9.740395583556538,
+          22.333752742120957,
+          90.16621241760015
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 3.148035287849111e-7,
+        "frontSurfaceDistanceMm": 3.148035287849111e-7,
+        "triangleIndex": 2196,
+        "nearestFrontPointMm": [
+          -22.783089790688233,
+          -21.56832916741756,
+          77.70107263840612
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9407838688148685,
+        "incidenceAngleDeg": 19.816383654749576,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9273463301125259,
+        "incidenceAngleDeg": 21.975136141282817,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "plax_rvin",
+      "window": "parasternal-long",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 65.1329512199984,
+        "normal": [
+          0.6378544340814127,
+          0.6583231858205285,
+          0.399690259993649
+        ],
+        "originDistanceMm": 88.54539108384293
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-long",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.966436816184807,
+        "incidenceAngleDeg": 14.88646025679848,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_great",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.410758459057828,
+        "normal": [
+          -0.6511794463968591,
+          -0.7544624721745808,
+          0.08216876943522926
+        ],
+        "originDistanceMm": 80.59697955206754
+      },
+      "segmentCount": 15,
+      "nearestIntersection": {
+        "pointMm": [
+          -38.524890102387886,
+          -15.873814831179168,
+          78.44568051017268
+        ],
+        "bodyPointMm": [
+          26.455339009220822,
+          28.682703999977033,
+          93.57729877844065
+        ],
+        "distanceFromAnchorMm": 3.7538666283882907,
+        "triangleIndex": 2245
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          26.455339009220822,
+          28.682703999977033,
+          93.57729877844065
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 1.0129843756793602e-7,
+        "frontSurfaceDistanceMm": 1.0129843756793602e-7,
+        "triangleIndex": 2245,
+        "nearestFrontPointMm": [
+          -38.5248901214798,
+          -15.873814867018694,
+          78.4456806029757
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8751638104333876,
+        "incidenceAngleDeg": 28.93563153175091,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8426445090474859,
+        "incidenceAngleDeg": 32.579564074465885,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_av",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.2761652446182525,
+        "normal": [
+          -0.6283821380314516,
+          -0.7764160997400695,
+          -0.04810331243729051
+        ],
+        "originDistanceMm": 80.8682830170286
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          -31.31184120808467,
+          -7.625064974654412,
+          81.35337891033119
+        ],
+        "bodyPointMm": [
+          25.648304202649136,
+          16.921975999983218,
+          97.14043661700573
+        ],
+        "distanceFromAnchorMm": 7.640362299657172,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          25.648304202649136,
+          16.921975999983218,
+          97.14043661700573
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 2.927459943441272e-7,
+        "frontSurfaceDistanceMm": 2.927459943441272e-7,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          -31.311841133364638,
+          -7.625064879677292,
+          81.35337864369195
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9505016509849749,
+        "incidenceAngleDeg": 18.102596609856114,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9074817117599299,
+        "incidenceAngleDeg": 24.840369995498833,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_av_zoom",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 5.2761652446182525,
+        "normal": [
+          -0.6283821380314516,
+          -0.7764160997400695,
+          -0.04810331243729051
+        ],
+        "originDistanceMm": 80.8682830170286
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          -31.31184120808467,
+          -7.625064974654412,
+          81.35337891033119
+        ],
+        "bodyPointMm": [
+          25.648304202649136,
+          16.921975999983218,
+          97.14043661700573
+        ],
+        "distanceFromAnchorMm": 7.640362299657172,
+        "triangleIndex": 2350
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          25.648304202649136,
+          16.921975999983218,
+          97.14043661700573
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 2.927459943441272e-7,
+        "frontSurfaceDistanceMm": 2.927459943441272e-7,
+        "triangleIndex": 2350,
+        "nearestFrontPointMm": [
+          -31.311841133364638,
+          -7.625064879677292,
+          81.35337864369195
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9505016509849749,
+        "incidenceAngleDeg": 18.102596609856114,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9074817117599299,
+        "incidenceAngleDeg": 24.840369995498833,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_tv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 2.6843452838229758,
+        "normal": [
+          -0.6279298872404216,
+          -0.7767002570077359,
+          -0.049404124062151535
+        ],
+        "originDistanceMm": 81.4934651265858
+      },
+      "segmentCount": 15,
+      "nearestIntersection": {
+        "pointMm": [
+          -38.56536821111686,
+          -16.140739711975204,
+          78.33426952374435
+        ],
+        "bodyPointMm": [
+          26.325953299050113,
+          28.92725983306204,
+          93.42203309449832
+        ],
+        "distanceFromAnchorMm": 4.006039622336556,
+        "triangleIndex": 2245
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          26.325953299050113,
+          28.92725983306204,
+          93.42203309449832
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 2.021027456536478e-7,
+        "frontSurfaceDistanceMm": 2.021027456536478e-7,
+        "triangleIndex": 2245,
+        "nearestFrontPointMm": [
+          -38.56536824920755,
+          -16.140739783479432,
+          78.33426970889771
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.938093711117253,
+        "incidenceAngleDeg": 20.266154513794728,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9410126245360442,
+        "incidenceAngleDeg": 19.777685235082515,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_pv",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 14.917208464239062,
+        "normal": [
+          -0.5903816016213707,
+          -0.806665950897912,
+          -0.027195737330559414
+        ],
+        "originDistanceMm": 82.64053722569518
+      },
+      "segmentCount": 12,
+      "nearestIntersection": {
+        "pointMm": [
+          -19.65769006888869,
+          2.5595714093952844,
+          84.9756078678872
+        ],
+        "bodyPointMm": [
+          22.385805358934494,
+          0.47616458648811566,
+          101.26883127820504
+        ],
+        "distanceFromAnchorMm": 23.478765083813517,
+        "triangleIndex": 2242
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          22.385805358934494,
+          0.47616458648811566,
+          101.26883127820504
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 9.206876293836419e-7,
+        "frontSurfaceDistanceMm": 9.206876293836419e-7,
+        "triangleIndex": 2242,
+        "nearestFrontPointMm": [
+          -19.65769006980428,
+          2.5595711944186315,
+          84.97560876312455
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.919717416751771,
+        "incidenceAngleDeg": 23.115194902296093,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8467370255820289,
+        "incidenceAngleDeg": 32.141475816302936,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_mitral",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 18.324840151553794,
+        "normal": [
+          0.5641841489674657,
+          0.7816146328483484,
+          0.26603535812218243
+        ],
+        "originDistanceMm": 85.03561690562078
+      },
+      "segmentCount": 14,
+      "nearestIntersection": {
+        "pointMm": [
+          -17.88789670597849,
+          6.56782782624838,
+          85.93993645425205
+        ],
+        "bodyPointMm": [
+          23.502685757151585,
+          -4.042508098117471,
+          102.7131039742547
+        ],
+        "distanceFromAnchorMm": 27.695612258394448,
+        "triangleIndex": 2242
+      },
+      "candidateContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          23.502685757151585,
+          -4.042508098117471,
+          102.7131039742547
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 1.7431685042484936e-7,
+        "frontSurfaceDistanceMm": 1.7431685042484936e-7,
+        "triangleIndex": 2242,
+        "nearestFrontPointMm": [
+          -17.88789670580514,
+          6.5678278669506245,
+          85.93993628475378
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9659219308272322,
+        "incidenceAngleDeg": 15.000862329332291,
+        "contact": true,
+        "patientRegistered": false
+      },
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9637730583909703,
+        "incidenceAngleDeg": 15.469396043611518,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_papillary",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 28.910719605370144,
+        "normal": [
+          0.4904832347326745,
+          0.7561279934675094,
+          0.43323971879430695
+        ],
+        "originDistanceMm": 92.2158862342022
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9594786503431757,
+        "incidenceAngleDeg": 16.366549026519777,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "psax_apical",
+      "window": "parasternal-short",
+      "outsideScan": false,
+      "anchorMm": [
+        -36.179147527662195,
+        -13.334527254824149,
+        79.90890470400478
+      ],
+      "anchorCorrection": {
+        "angleDeg": 41.282837007944956,
+        "normal": [
+          0.3833992348162866,
+          0.693834206032743,
+          0.6095893054189835
+        ],
+        "originDistanceMm": 107.42182421928943
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          11.999999999999995,
+          23,
+          81.00000000000003
+        ],
+        "windowId": "parasternal-short",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 5.492125759906621,
+        "frontSurfaceDistanceMm": 5.492125759906621,
+        "triangleIndex": 2078,
+        "nearestFrontPointMm": [
+          -24.162455996540636,
+          -24.700495658389343,
+          73.78477937645819
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9057541287436908,
+        "incidenceAngleDeg": 25.074956193483455,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a4c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 56.01373017212581,
+        "normal": [
+          0.2120157816561385,
+          -0.6938737656253343,
+          0.6881776701591351
+        ],
+        "originDistanceMm": 107.04364989239862
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8821704028266386,
+        "incidenceAngleDeg": 28.09470354898019,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a4c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 58.399241165109395,
+        "normal": [
+          0.3739377574746484,
+          -0.648522292497497,
+          0.6630153766456867
+        ],
+        "originDistanceMm": 104.20977538966571
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8476285852748769,
+        "incidenceAngleDeg": 32.04532954462113,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a4c_rv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 68.74391887470422,
+        "normal": [
+          -0.2109240516660073,
+          -0.8104621740640912,
+          0.5464998708509472
+        ],
+        "originDistanceMm": 100.51323204414619
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.9430033868924557,
+        "incidenceAngleDeg": 19.437787544834077,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a5c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 51.40808711023677,
+        "normal": [
+          0.5407900031883772,
+          -0.5229622878125935,
+          0.6588297336773238
+        ],
+        "originDistanceMm": 107.04364989239862
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8821704028266386,
+        "incidenceAngleDeg": 28.09470354898019,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a4c_cs",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 55.237880872001504,
+        "normal": [
+          -0.24995504349167202,
+          -0.7708539547940216,
+          0.5859237634807901
+        ],
+        "originDistanceMm": 107.04364989239862
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8821704028266386,
+        "incidenceAngleDeg": 28.09470354898019,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a2c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 32.97943534307288,
+        "normal": [
+          0.6959125817053438,
+          -0.3232877458602643,
+          0.6412415395159552
+        ],
+        "originDistanceMm": 112.0559876738558
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8455948763495961,
+        "incidenceAngleDeg": 32.26427192153303,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a2c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 33.8104859928265,
+        "normal": [
+          0.6505345529883689,
+          -0.3573543200449992,
+          0.6701512406266209
+        ],
+        "originDistanceMm": 109.61736670973059
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.817287147115559,
+        "incidenceAngleDeg": 35.185858390144865,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a3c",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 26.217904499256868,
+        "normal": [
+          0.463705773801515,
+          -0.5410554313984397,
+          0.7015953074938476
+        ],
+        "originDistanceMm": 104.95602947965313
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8555074626986384,
+        "incidenceAngleDeg": 31.184157631857463,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a3c_lv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 26.939031600616893,
+        "normal": [
+          0.5086184486846739,
+          -0.5203067115383301,
+          0.6859943145433238
+        ],
+        "originDistanceMm": 102.34837973775845
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8258423585675632,
+        "incidenceAngleDeg": 34.32601329739278,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "a4c_la_pv",
+      "window": "apical",
+      "outsideScan": false,
+      "anchorMm": [
+        -28.52401512458841,
+        68.16368273478679,
+        77.67664758963657
+      ],
+      "anchorCorrection": {
+        "angleDeg": 46.67674851687787,
+        "normal": [
+          -0.1008385016084993,
+          -0.6240598246847168,
+          0.774842520650379
+        ],
+        "originDistanceMm": 122.00444628651529
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          83,
+          -32,
+          67.00000000000001
+        ],
+        "windowId": "apical",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 33.59305019780096,
+        "frontSurfaceDistanceMm": 33.59305019780096,
+        "triangleIndex": 2899,
+        "nearestFrontPointMm": [
+          -37.937438675945955,
+          79.10671750881617,
+          67.78568617248513
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8783793579039187,
+        "incidenceAngleDeg": 28.552519940127283,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "subcostal",
+      "window": "subcostal",
+      "outsideScan": false,
+      "anchorMm": [
+        39.12206799432645,
+        40.273166872703065,
+        84.46936910646438
+      ],
+      "anchorCorrection": {
+        "angleDeg": 56.690829882718674,
+        "normal": [
+          -0.7744994347863521,
+          -0.35004768599850256,
+          0.5268939580624499
+        ],
+        "originDistanceMm": 101.2617919647721
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000009,
+          -67,
+          60.00000000000001
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 32.84801679852319,
+        "frontSurfaceDistanceMm": 32.84801679852319,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          28.33954620361328,
+          33.95438766479492,
+          79.486572265625
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.6756279269672435,
+        "incidenceAngleDeg": 47.497068660320245,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "subcostal_ivc",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        39.12206799432645,
+        40.273166872703065,
+        84.46936910646438
+      ],
+      "anchorCorrection": {
+        "angleDeg": 1.5122238180160092,
+        "normal": [
+          -0.7634730422953342,
+          0.6173281468040014,
+          -0.18977584896884042
+        ],
+        "originDistanceMm": 99.77722849183732
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000009,
+          -67,
+          60.00000000000001
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 32.84801679852319,
+        "frontSurfaceDistanceMm": 32.84801679852319,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          28.33954620361328,
+          33.95438766479492,
+          79.486572265625
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.5447038772954867,
+        "incidenceAngleDeg": 56.9955700337853,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "subcostal_hepatic",
+      "window": "subcostal",
+      "outsideScan": true,
+      "anchorMm": [
+        39.12206799432645,
+        40.273166872703065,
+        84.46936910646438
+      ],
+      "anchorCorrection": {
+        "angleDeg": 1.5122238180160092,
+        "normal": [
+          -0.7634730422953342,
+          0.6173281468040014,
+          -0.18977584896884042
+        ],
+        "originDistanceMm": 99.77722849183732
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          7.000000000000009,
+          -67,
+          60.00000000000001
+        ],
+        "windowId": "subcostal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 32.84801679852319,
+        "frontSurfaceDistanceMm": 32.84801679852319,
+        "triangleIndex": 1973,
+        "nearestFrontPointMm": [
+          28.33954620361328,
+          33.95438766479492,
+          79.486572265625
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8887102256049358,
+        "incidenceAngleDeg": 27.28838077902947,
+        "contact": false,
+        "patientRegistered": false
+      }
+    },
+    {
+      "donor": "s-20-29",
+      "id": "ssn_arch",
+      "window": "suprasternal",
+      "outsideScan": true,
+      "anchorMm": [
+        -53.53460867808812,
+        -81.4082229481601,
+        44.85705374879651
+      ],
+      "anchorCorrection": {
+        "angleDeg": 4.850179163557454,
+        "normal": [
+          -0.8083499437008155,
+          0.5731809809157604,
+          -0.1342904748496153
+        ],
+        "originDistanceMm": 106.05108687044641
+      },
+      "segmentCount": 0,
+      "nearestIntersection": null,
+      "candidateContact": null,
+      "oldOriginContact": {
+        "applicable": true,
+        "bodyOriginMm": [
+          -2.999999999999993,
+          96,
+          68
+        ],
+        "windowId": "suprasternal",
+        "withinFixedWindow": true,
+        "surfaceDistanceMm": 15.33583766544561,
+        "frontSurfaceDistanceMm": 15.33583766544561,
+        "triangleIndex": 1877,
+        "nearestFrontPointMm": [
+          -46.197458808348145,
+          -80.352049928229,
+          50.68060085426399
+        ],
+        "inwardBeam": true,
+        "beamOutwardNormalDot": -0.8955091891831729,
+        "incidenceAngleDeg": 26.426091380790023,
+        "contact": false,
+        "patientRegistered": false
+      }
+    }
+  ]
+}

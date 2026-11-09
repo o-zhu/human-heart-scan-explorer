@@ -1,0 +1,180 @@
+{
+  "verifiedAt": "2026-11-07T00:35:37.803052+00:00",
+  "baseUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "checks": [
+    {
+      "path": "tee-lab.js",
+      "status": 200,
+      "bytes": 23888,
+      "sha256": "784eabcf757a750e2e99b4b1863368051433ed3bb0da02c774811bce3d131ea8",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "tee-lab.css",
+      "status": 200,
+      "bytes": 7486,
+      "sha256": "7cbb7409923bd63f8fbbaea3e2f28b6a3a807937e6fed5b4cead97576b12a5ea",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "tee-geometry.js",
+      "status": 200,
+      "bytes": 9219,
+      "sha256": "b0cb64eb53e8676baa4981f2b1e20fe4059f45a316fc7885a578d1dfebc1fbb4",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "tee-scene.js",
+      "status": 200,
+      "bytes": 3497,
+      "sha256": "4cbae640787b5a07f1b1166786f0e47f7ed4c59d303c53e795e0c02a0bf50ff1",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "probe-lab.js",
+      "status": 200,
+      "bytes": 62157,
+      "sha256": "f2b9805489fcb8614fbfb4eaa53027b240af85426eca801e5da21c331fd48ded",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "probe-acoustics.js",
+      "status": 200,
+      "bytes": 16070,
+      "sha256": "7be7d1302ea68bb7119fb7d3f83486d0f30932c263025be2737071f009b86e2c",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "ultra-volume-core.js",
+      "status": 200,
+      "bytes": 8581,
+      "sha256": "95dbbe48d5c503e62ba88cc36b8cdefa7c170d8b2d50e732baacbdd9843681ab",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "ultra-volume-backend.js",
+      "status": 200,
+      "bytes": 16165,
+      "sha256": "6992ccba515f3f7b3c28bf28c5c9ebcc1b80c78d8ba0109748b1c92bed4c27a2",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "ultra-volume-worker.js",
+      "status": 200,
+      "bytes": 1503,
+      "sha256": "12280a0c7d9875e2259186f85c3f6ffa6df6f6bfaff776ea5efd19e07c00456f",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "ultra-volume.js",
+      "status": 200,
+      "bytes": 8011,
+      "sha256": "363286655dfdcf5589e5b6fda3281cd9df7f079550a54769c2183b296f4aa77f",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "fine-surface-worker.js",
+      "status": 200,
+      "bytes": 7333,
+      "sha256": "f66ab01a64a4932ac7b4fa87431af52c009a945bcd283468e5825e2b4eab1c4b",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 61190,
+      "sha256": "475ef9a1090d9e1ee079125dc93c878db6ad7542282ca930d8fb27b6347bb315",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "renderer.js",
+      "status": 200,
+      "bytes": 56330,
+      "sha256": "3398f946d2da51aea352c9ce2eab5b77a1506c2a0e5545f0432cb9f0a12ca20b",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "fine-surface.js",
+      "status": 200,
+      "bytes": 29770,
+      "sha256": "7292342f7437c1c73487c575cf09ae60bdc2de3711a48611ad16155216531581",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "native-main-detail.js",
+      "status": 200,
+      "bytes": 18122,
+      "sha256": "906b1ca3cc65b23f8dbbba33ffc6e265a7b2e6697a01ead833669af1e7c2a4d8",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "mesh-debris-cleanup-v25.js",
+      "status": 200,
+      "bytes": 3700,
+      "sha256": "6ed55279451cc429c4766b093204ba5a66b0162a978d8354bf64adfcfc01f32a",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "lumen-cleanup-v23.js",
+      "status": 200,
+      "bytes": 6635,
+      "sha256": "3bf05344a3f1010d55d5a7eeba781fa1be1f3f40763a705c9516d149209d3dbf",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/lumen-manifest.json",
+      "status": 200,
+      "bytes": 11540,
+      "sha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/debris-manifest.json",
+      "status": 200,
+      "bytes": 4779,
+      "sha256": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/atrial.bits.gz",
+      "status": 200,
+      "bytes": 559724,
+      "sha256": "01d8c784bc2a2a6e8fc70eab9e984b2db3bd7d9b4d38b594aa639aa02f1a426a",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/arterial.bits.gz",
+      "status": 200,
+      "bytes": 222719,
+      "sha256": "ba7e69ed85f0d51585bf7ca433be85a0e0cf27f1a9d6a809bdadc5e4afbfab29",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/valve-region.bits.gz",
+      "status": 200,
+      "bytes": 138250,
+      "sha256": "6c817082012e9f39f4c96956fb335f80b04d66af88f1746618085698af08812a",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/rv.bits.gz",
+      "status": 200,
+      "bytes": 316358,
+      "sha256": "57b61c42d2815b656d9baac562fc923ab786b11839e458d9253359d380b65fe7",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v26/debris-gentle-vertices.raw.gz",
+      "status": 200,
+      "bytes": 889493,
+      "sha256": "76dd93c5cc93b3c5b9ddfd5ccc990f5d816462c5b0d5288d26fbd6513bba0caf",
+      "matchesTestedSource": true
+    }
+  ],
+  "allMatch": true,
+  "fineBankComplete": true,
+  "fineUploadsEnabled": false,
+  "emptyPutStatus": 405,
+  "siteServiceAuthorizationUsed": true,
+  "credentialsRecorded": false
+}

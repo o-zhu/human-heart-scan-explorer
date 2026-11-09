@@ -1,0 +1,259 @@
+{
+  "schema": "fine-detail-v23-hosted-comparison",
+  "sourceSpacingUm": 79.4,
+  "seed": 23005000,
+  "methodology": "Uniform-area samples of unsmoothed measured local source isosurfaces, plus geometrically thin original foreground voxel centers. Exact nearest point-to-triangle distance to decoded delivered assets. Identical source queries for all meshes.",
+  "limitations": "Three targeted ROIs, not anatomically balanced or expert-annotated. Thin-support proxy contains anatomy and noise. Finite sampling is not a Hausdorff/clinical error bound. No claim of native19.85\u00b5m feature recovery.",
+  "thinSupportDefinition": "Original foreground whose local5\u00b3 maximum EDT is\u22641.01 fine voxels; five-sample collar excluded.",
+  "regions": [
+    {
+      "id": "lv-inflow",
+      "centerFineXYZ": [
+        1160,
+        1092,
+        1152
+      ],
+      "originFineXYZ": [
+        1080,
+        1012,
+        1072
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "9889f268ff6889cb946fb625d196e9f37ee0c5544aa4c65a243407f870d16e41"
+    },
+    {
+      "id": "rv-inflow",
+      "centerFineXYZ": [
+        928,
+        744,
+        1192
+      ],
+      "originFineXYZ": [
+        848,
+        664,
+        1112
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "8a7c865dff36373dd191146faed35f40bb19ab7fce8744a5f34cfc0de2094806"
+    },
+    {
+      "id": "outer-wall",
+      "centerFineXYZ": [
+        1392,
+        1032,
+        1376
+      ],
+      "originFineXYZ": [
+        1312,
+        952,
+        1296
+      ],
+      "shapeXYZ": [
+        161,
+        161,
+        161
+      ],
+      "rawUint8Sha256": "dce011d736638ed15ecb91392247dd943b66114d4521b33518840a4cc4d5cadc"
+    }
+  ],
+  "assets": [
+    {
+      "id": "balanced",
+      "vertices": 215860,
+      "triangles": 497714,
+      "compressedBytes": 4406836,
+      "decodedBytes": 8562920,
+      "sha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "decodedSha256": "e00753c085938f64718ca488535390cd1235b20df68c83d9d9698ec44d0d4de2",
+      "zeroAreaTriangles": 0,
+      "normalLengthMaximumError": 2.5272369384765625e-05,
+      "regions": [
+        {
+          "id": "lv-inflow",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 0.23167125248184323,
+            "rmsMm": 0.3675507719665146,
+            "medianMm": 0.1190344818713076,
+            "p95Mm": 0.8482010878596186,
+            "p99Mm": 1.3222738790172117,
+            "maximumSampledMm": 2.233241956020685
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 12000,
+            "meanMm": 0.2886891309738473,
+            "rmsMm": 0.367488462728111,
+            "medianMm": 0.23427200833537976,
+            "p95Mm": 0.7545006655266691,
+            "p99Mm": 1.0434203871770193,
+            "maximumSampledMm": 1.4032707008715561
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.15258333333333332,
+          "thinSupportWithinTwoFineSamplesFraction": 0.32458333333333333,
+          "localCandidateTriangles": 23630,
+          "nearestQueryPaddingMm": 8.0
+        },
+        {
+          "id": "rv-inflow",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 0.17021128015423362,
+            "rmsMm": 0.25247145243855784,
+            "medianMm": 0.09635073192619932,
+            "p95Mm": 0.5454398192376684,
+            "p99Mm": 0.810994624014102,
+            "maximumSampledMm": 1.615045208694954
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 8418,
+            "meanMm": 0.4494409417388685,
+            "rmsMm": 0.5316808069575426,
+            "medianMm": 0.4100645013522599,
+            "p95Mm": 0.9841503049111933,
+            "p99Mm": 1.3215448444117472,
+            "maximumSampledMm": 1.920591245694867
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.07341411261582323,
+          "thinSupportWithinTwoFineSamplesFraction": 0.1424328819196959,
+          "localCandidateTriangles": 16797,
+          "nearestQueryPaddingMm": 8.0
+        },
+        {
+          "id": "outer-wall",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 3.917870697326353,
+            "rmsMm": 4.359454243659613,
+            "medianMm": 4.160441735983898,
+            "p95Mm": 6.592162357925137,
+            "p99Mm": 7.095471765759406,
+            "maximumSampledMm": 7.493296008008453
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 7859,
+            "meanMm": 0.5501884876275324,
+            "rmsMm": 0.737758665766771,
+            "medianMm": 0.5006263286147233,
+            "p95Mm": 0.981299702673877,
+            "p99Mm": 1.2192248981621348,
+            "maximumSampledMm": 6.894751843917216
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.008779742969843492,
+          "thinSupportWithinTwoFineSamplesFraction": 0.04211731772490139,
+          "localCandidateTriangles": 6179,
+          "nearestQueryPaddingMm": 8.0
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "vertices": 903615,
+      "triangles": 1986313,
+      "compressedBytes": 17722926,
+      "decodedBytes": 34679172,
+      "sha256": "e68bca40df669ef4661a922a2e835c078d24cef7bb6afa35760cd39d71ccc12c",
+      "decodedSha256": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+      "zeroAreaTriangles": 0,
+      "normalLengthMaximumError": 2.5510787963867188e-05,
+      "regions": [
+        {
+          "id": "lv-inflow",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 0.15995278531267532,
+            "rmsMm": 0.27124663663979903,
+            "medianMm": 0.08096246926306828,
+            "p95Mm": 0.5840477502527106,
+            "p99Mm": 1.061715206787513,
+            "maximumSampledMm": 2.1880703972223006
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 12000,
+            "meanMm": 0.24913821895503782,
+            "rmsMm": 0.3268456382378583,
+            "medianMm": 0.19617249283664273,
+            "p95Mm": 0.6864193698081203,
+            "p99Mm": 0.9830576531774486,
+            "maximumSampledMm": 1.406172422202666
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.1955,
+          "thinSupportWithinTwoFineSamplesFraction": 0.40258333333333335,
+          "localCandidateTriangles": 79194,
+          "nearestQueryPaddingMm": 8.0
+        },
+        {
+          "id": "rv-inflow",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 0.1323553579320193,
+            "rmsMm": 0.20898725583952701,
+            "medianMm": 0.06524188439201674,
+            "p95Mm": 0.45737494529499456,
+            "p99Mm": 0.7090898217497359,
+            "maximumSampledMm": 1.5280648721983325
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 8418,
+            "meanMm": 0.3794297035406641,
+            "rmsMm": 0.4644253621856635,
+            "medianMm": 0.33036546014147905,
+            "p95Mm": 0.8813524407674768,
+            "p99Mm": 1.2234425028734792,
+            "maximumSampledMm": 1.880237224145852
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.09847944880019006,
+          "thinSupportWithinTwoFineSamplesFraction": 0.21002613447374674,
+          "localCandidateTriangles": 53638,
+          "nearestQueryPaddingMm": 8.0
+        },
+        {
+          "id": "outer-wall",
+          "rawSourceSurfaceToMesh": {
+            "samples": 12000,
+            "meanMm": 1.3428923403111621,
+            "rmsMm": 1.5796946799973879,
+            "medianMm": 1.298824917941848,
+            "p95Mm": 2.7669793252116803,
+            "p99Mm": 3.4372178580221373,
+            "maximumSampledMm": 4.293200870697727
+          },
+          "thinSupportCenterToMesh": {
+            "samples": 7859,
+            "meanMm": 0.5019675925934294,
+            "rmsMm": 0.5599749027582721,
+            "medianMm": 0.4787947508576222,
+            "p95Mm": 0.9520280889558935,
+            "p99Mm": 1.1175389487119198,
+            "maximumSampledMm": 1.395826693350758
+          },
+          "thinSupportWithinOneFineSampleFraction": 0.009924926835475252,
+          "thinSupportWithinTwoFineSamplesFraction": 0.04937014887390253,
+          "localCandidateTriangles": 25617,
+          "nearestQueryPaddingMm": 8.0
+        }
+      ]
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 118,
+    "decodedBrickReads": 118,
+    "cacheMaximumBricks": 48,
+    "cacheMaximumBytes": 13182000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "seconds": 7.858273970996379,
+  "peakRssMiB": 622.453125
+}

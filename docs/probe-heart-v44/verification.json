@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "manifestSha256": "2d57f5eccea0914b0c011a9aaabadba09e507a8111590757b7ad0301f7dff487",
+  "generatorSha256": "839160a072e2ac4bc275c9e41a5a9dd1de46e281b39457192368605c4585cc2a",
+  "hfmPipelineSha256": "4351c41a8c253f543c3523dd5c9a1de7213149eb9418061f5cf7b8277cff709a",
+  "tests": [
+    "All compressed and decoded HFM identities and bounded layouts verified.",
+    "All retained source-part checksums verified before and after processing.",
+    "Dimensions, extent, center and reference millimetres agree with runtime volumeGeometry mapping.",
+    "Triangle indices stay in vertex bounds; all source-coordinate intervals retained."
+  ],
+  "notTested": [
+    "Physical-device/browser performance",
+    "Expert anatomical or clinical validity",
+    "Full native-acquisition processing rerun"
+  ]
+}

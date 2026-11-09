@@ -1,0 +1,134 @@
+{
+  "sourceRoiSha256": "03ec7d8461f6690d9142f64e582d0e882bef57c9e3b4e582ba789c79b200460e",
+  "sourcePaddedRoiSha256": "ee64248b5443888b716a286bfe04c70fca6cf4852e9ffa5d70eb10aa8d644510",
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 275,
+    "decodedBrickReads": 338,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "policySha256": "9e08528156e2d22c2e931f1754b3703cfa0ec7af02d1da166d33ae78d92231d7",
+  "markerSupport": {
+    "total": 7196535,
+    "retained": 7195416,
+    "excludedByPrior": 1119,
+    "newlyExcluded": 0
+  },
+  "namedReviewWindows": [
+    {
+      "name": "Aortic root and LVOT rim",
+      "lowerFullFineXYZ": [
+        1035,
+        968,
+        930
+      ],
+      "upperFullFineXYZ": [
+        1195,
+        1208,
+        1090
+      ],
+      "originalForegroundSamples": 3181358,
+      "removedForegroundSamples": 811934,
+      "newlyRemovedForegroundSamples": 762930,
+      "sourceCoherentMarkers": 825295,
+      "retainedCoherentMarkers": 825273,
+      "priorExcludedCoherentMarkers": 22,
+      "newlyExcludedCoherentMarkers": 0
+    },
+    {
+      "name": "Mitral leaflet window",
+      "lowerFullFineXYZ": [
+        1140,
+        1080,
+        1060
+      ],
+      "upperFullFineXYZ": [
+        1300,
+        1220,
+        1200
+      ],
+      "originalForegroundSamples": 1922670,
+      "removedForegroundSamples": 814377,
+      "newlyRemovedForegroundSamples": 801340,
+      "sourceCoherentMarkers": 413813,
+      "retainedCoherentMarkers": 413813,
+      "priorExcludedCoherentMarkers": 0,
+      "newlyExcludedCoherentMarkers": 0
+    },
+    {
+      "name": "Mitral chordal window",
+      "lowerFullFineXYZ": [
+        1070,
+        1040,
+        1170
+      ],
+      "upperFullFineXYZ": [
+        1260,
+        1220,
+        1380
+      ],
+      "originalForegroundSamples": 3964424,
+      "removedForegroundSamples": 930122,
+      "newlyRemovedForegroundSamples": 643644,
+      "sourceCoherentMarkers": 1558655,
+      "retainedCoherentMarkers": 1557914,
+      "priorExcludedCoherentMarkers": 741,
+      "newlyExcludedCoherentMarkers": 0
+    }
+  ],
+  "allSixBoxFaces": {
+    "xLower": {
+      "samples": 143264,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "xUpper": {
+      "samples": 143264,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "yLower": {
+      "samples": 151008,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "yUpper": {
+      "samples": 151008,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "zLower": {
+      "samples": 92352,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    },
+    "zUpper": {
+      "samples": 92352,
+      "nonBaselineSamples": 0,
+      "maximumAbsoluteDifference": 0.0
+    }
+  },
+  "newlyRemovedForegroundSamples": 2932485,
+  "allRemovedForegroundSamples": 3563663,
+  "priorRemovedForegroundSamples": 631178,
+  "priorExcludedSamplesReintroduced": 0,
+  "restoredWall": {
+    "samples": 109928,
+    "maskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+    "lowBandOverlap": 0
+  },
+  "deliveredMesh": {
+    "vertices": 477150,
+    "triangles": 963173,
+    "indexBoundsVerified": true,
+    "sha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+    "decodedSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17"
+  },
+  "interpretation": "New support-guarded refinement removes zero coherent marker samples. Previously excluded marker samples are counted separately and retained as previous exclusions. Markers and named spatial review windows are technical evidence, not tissue classification or clinical validation."
+}

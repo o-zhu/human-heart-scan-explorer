@@ -1,0 +1,29 @@
+{
+  "schema": "overview-filter-browser-decoder-check-v22",
+  "passed": true,
+  "records": [
+    {
+      "id": "overview",
+      "sourceSha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+      "originalTriangles": 1499999,
+      "retainedTriangles": 991385,
+      "removedTriangles": 508614,
+      "exactRetainedTriangleIds": true,
+      "allPositionsAndNormalsExact": true,
+      "sourceUnchanged": true,
+      "corruptMaskRejected": true
+    },
+    {
+      "id": "detail",
+      "sourceSha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+      "originalTriangles": 2500000,
+      "retainedTriangles": 2057134,
+      "removedTriangles": 442866,
+      "exactRetainedTriangleIds": true,
+      "allPositionsAndNormalsExact": true,
+      "sourceUnchanged": true,
+      "corruptMaskRejected": true
+    }
+  ],
+  "scope": "Actual browser filter and archived HFM files, independent of offline mask generator; not anatomical or closed-solid validation."
+}

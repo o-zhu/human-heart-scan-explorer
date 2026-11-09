@@ -1,0 +1,2594 @@
+[
+  {
+    "donorId": "s-20-29",
+    "biasMm": 1.5,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 122.06061991966952,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.6978729221348,
+      "shaftRotationDeg": -20.337503840801226,
+      "anteflexDeg": -21.950889944826624,
+      "lateralFlexDeg": -5.311559635102815,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 52,
+      "clearanceMm": 0.011685508395441597,
+      "penetrationMm": 2.2057317175038675,
+      "firstOutsideMm": [
+        19.28230514208556,
+        -62.285903559649604,
+        49.419272487333735
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.0000059846501336835445,
+      "normalAngleDeg": 0.00023865073389693297,
+      "centerAimAngleDeg": 0.006777047730625255,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11238,
+      "originMm": [
+        20.87833311298462,
+        -62.86256735361409,
+        41.63811381912094
+      ],
+      "beam": [
+        -0.1641026670804942,
+        0.8760168511284684,
+        -0.45350280175102686
+      ],
+      "right": [
+        0.9757562765668735,
+        0.21164282473516788,
+        0.05574050123985273
+      ],
+      "normal": [
+        0.14481023236435847,
+        -0.43336104033136363,
+        -0.8895100928744423
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.0000059846501336835445,
+        "normalAngleDeg": 0.00023865073389693297,
+        "aimAngleDeg": 0.006777047730625255
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 1.5,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 128.34294941822947,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.598218271180784,
+      "shaftRotationDeg": -39.185342454734936,
+      "anteflexDeg": -11.468621238324367,
+      "lateralFlexDeg": 36.427143220278914,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 279,
+      "clearanceMm": 0.0886081800717896,
+      "penetrationMm": 5.874619650281045,
+      "firstOutsideMm": [
+        13.578554242901431,
+        -74.02351651031204,
+        30.374981723042033
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.000025346763894873447,
+      "normalAngleDeg": 0.00031152678309216437,
+      "centerAimAngleDeg": 0.008845767593561442,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11263,
+      "originMm": [
+        19.312889073542344,
+        -72.98703548446792,
+        24.946410293261593
+      ],
+      "beam": [
+        0.07951472364209876,
+        0.9675075917290958,
+        -0.24001347601892212
+      ],
+      "right": [
+        0.641787921591318,
+        -0.23392242734817983,
+        -0.7303345546275569
+      ],
+      "normal": [
+        -0.7627487610108697,
+        -0.09596539965060621,
+        -0.6395349635839174
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.000025346763894873447,
+        "normalAngleDeg": 0.00031152678309216437,
+        "aimAngleDeg": 0.008845767593561442
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 1.5,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 100.22451948426286,
+      "angleDeg": 101.38835580452778,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.84518138565836,
+      "shaftRotationDeg": -8.635059947386996,
+      "anteflexDeg": -12.19194329757665,
+      "lateralFlexDeg": -31.797849484155773,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 110,
+      "clearanceMm": 0.03182777342731502,
+      "penetrationMm": 3.762089995426111,
+      "firstOutsideMm": [
+        26.037775840285658,
+        -51.083478267327465,
+        52.81673071367908
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.000021924631244729653,
+      "normalAngleDeg": 0.0003980618338887993,
+      "centerAimAngleDeg": 0.004229345260782868,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11604,
+      "originMm": [
+        23.022529446549584,
+        -53.812688999277654,
+        45.969397320252526
+      ],
+      "beam": [
+        -0.19439984193376914,
+        0.7597089587464697,
+        -0.6205247774718434
+      ],
+      "right": [
+        0.8270691538160025,
+        0.46707220749422407,
+        0.31273018369283456
+      ],
+      "normal": [
+        0.5274137998405115,
+        -0.45242220434769503,
+        -0.7191306089654127
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.000021924631244729653,
+        "normalAngleDeg": 0.0003980618338887993,
+        "aimAngleDeg": 0.004229345260782868
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 1.5,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 120.26935078688582,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.14842835691293,
+      "shaftRotationDeg": -2.3921133377596773,
+      "anteflexDeg": 28.478787573573026,
+      "lateralFlexDeg": 3.3477175139381083,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 9.637205921738145,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.00016981344109012753,
+      "normalAngleDeg": 0.0003403666914893587,
+      "centerAimAngleDeg": 0.0007857751568107537,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 10927,
+      "originMm": [
+        17.841808692867136,
+        39.58572476499107,
+        76.97741779105652
+      ],
+      "beam": [
+        0.07422994618622718,
+        -0.4220644626672772,
+        -0.9035217232820538
+      ],
+      "right": [
+        0.9723406424671938,
+        -0.17056858804474012,
+        0.15956199979603108
+      ],
+      "normal": [
+        -0.22145787431399844,
+        -0.8903751715573647,
+        0.3977291336808495
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00016981344109012753,
+        "normalAngleDeg": 0.0003403666914893587,
+        "aimAngleDeg": 0.0007857751568107537
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 121.6284586368543,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.71865226887752,
+      "shaftRotationDeg": -20.556529380494894,
+      "anteflexDeg": -21.96051949683761,
+      "lateralFlexDeg": -5.118005214448608,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 36,
+      "clearanceMm": 0.02428542624699936,
+      "penetrationMm": 1.7555189144551595,
+      "firstOutsideMm": [
+        19.52901704019057,
+        -63.69932270519622,
+        49.223454689233925
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.0000942521138824759,
+      "normalAngleDeg": 0.00043350772002973676,
+      "centerAimAngleDeg": 0.0008351158891591628,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 10953,
+      "originMm": [
+        20.602218897246708,
+        -62.49880877407104,
+        41.41604017275099
+      ],
+      "beam": [
+        -0.1612612361066751,
+        0.8766311710935989,
+        -0.453334979453839
+      ],
+      "right": [
+        0.9762293616394079,
+        0.20909292942129382,
+        0.057064703093384246
+      ],
+      "normal": [
+        0.1448138363640072,
+        -0.4333565930421358,
+        -0.8895116728095541
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.0000942521138824759,
+        "normalAngleDeg": 0.00043350772002973676,
+        "aimAngleDeg": 0.0008351158891591628
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 127.98409936917851,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.635679559245986,
+      "shaftRotationDeg": -39.452905575163044,
+      "anteflexDeg": -11.804465662169253,
+      "lateralFlexDeg": 35.87735507265683,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 285,
+      "clearanceMm": 0.03130173424685872,
+      "penetrationMm": 6.0129434647203315,
+      "firstOutsideMm": [
+        13.412498053347097,
+        -73.55041288152282,
+        30.50202041148767
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00004343726009103932,
+      "normalAngleDeg": 0.00005927427685044289,
+      "centerAimAngleDeg": 0.005894970518555967,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11331,
+      "originMm": [
+        19.15144901744856,
+        -72.54465499313588,
+        25.072548104103536
+      ],
+      "beam": [
+        0.08204221912060443,
+        0.9665805309448419,
+        -0.24288094095699259
+      ],
+      "right": [
+        0.6414684127970836,
+        -0.23772623066715834,
+        -0.72938639597704
+      ],
+      "normal": [
+        -0.7627498604820306,
+        -0.09595997317200797,
+        -0.6395344665328605
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.00004343726009103932,
+        "normalAngleDeg": 0.00005927427685044289,
+        "aimAngleDeg": 0.005894970518555967
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 99.82929394949956,
+      "angleDeg": 102.70435787700256,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.84934898634334,
+      "shaftRotationDeg": -8.692619800043321,
+      "anteflexDeg": -12.282181047432706,
+      "lateralFlexDeg": -31.78583384436598,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 113,
+      "clearanceMm": 0.009703861243695594,
+      "penetrationMm": 3.602968005253685,
+      "firstOutsideMm": [
+        25.86483051302661,
+        -50.82037768464145,
+        52.5245016305495
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.00003086919297601298,
+      "normalAngleDeg": 0.0001655792682099911,
+      "centerAimAngleDeg": 0.0008023437492447031,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11465,
+      "originMm": [
+        22.852025199280607,
+        -53.537484972161565,
+        45.67128276897549
+      ],
+      "beam": [
+        -0.19266831971473614,
+        0.7606857083210028,
+        -0.6198678663509464
+      ],
+      "right": [
+        0.8274701693234208,
+        0.46548415035595553,
+        0.3140344322638261
+      ],
+      "normal": [
+        0.5274201716451218,
+        -0.4524176819307226,
+        -0.71912878096921
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.00003086919297601298,
+        "normalAngleDeg": 0.0001655792682099911,
+        "aimAngleDeg": 0.0008023437492447031
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 119.78412816575192,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.12360823629675,
+      "shaftRotationDeg": -2.446542581568284,
+      "anteflexDeg": 28.294792010714296,
+      "lateralFlexDeg": 3.76076814406571,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 9.253324006048981,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.000046864157898340864,
+      "normalAngleDeg": 0.00022566450423104005,
+      "centerAimAngleDeg": 0.002156380748123961,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 11045,
+      "originMm": [
+        17.796882289720696,
+        39.394518605224796,
+        76.52381610536952
+      ],
+      "beam": [
+        0.07527484840969882,
+        -0.4222468615398113,
+        -0.903350034658037
+      ],
+      "right": [
+        0.972259689433578,
+        -0.17011751548944498,
+        0.16053388186367692
+      ],
+      "normal": [
+        -0.2214605913010696,
+        -0.8903749877683436,
+        0.3977280322746973
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.000046864157898340864,
+        "normalAngleDeg": 0.00022566450423104005,
+        "aimAngleDeg": 0.002156380748123961
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2.5,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 121.19759297590909,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.739252553216744,
+      "shaftRotationDeg": -20.776321853477164,
+      "anteflexDeg": -21.96984224778737,
+      "lateralFlexDeg": -4.92763079934314,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 34,
+      "clearanceMm": 0.1260337971631824,
+      "penetrationMm": 1.311719888146061,
+      "firstOutsideMm": [
+        19.23897978473609,
+        -63.33674220204967,
+        48.99944235354937
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00009437013106250447,
+      "normalAngleDeg": 0.0003303486235878105,
+      "centerAimAngleDeg": 0.004219319732502458,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11228,
+      "originMm": [
+        20.32528373427767,
+        -62.13582969277222,
+        41.19390135812348
+      ],
+      "beam": [
+        -0.15838884551479962,
+        0.8772364123033558,
+        -0.4531768424639826
+      ],
+      "right": [
+        0.9766993069614516,
+        0.20651468736569203,
+        0.058396469784315785
+      ],
+      "normal": [
+        0.14481518358759535,
+        -0.4333681585342732,
+        -0.8895058188517397
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00009437013106250447,
+        "normalAngleDeg": 0.0003303486235878105,
+        "aimAngleDeg": 0.004219319732502458
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2.5,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 127.6292333853416,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.67391600493807,
+      "shaftRotationDeg": -39.71858036507934,
+      "anteflexDeg": -12.150545780498943,
+      "lateralFlexDeg": 35.313986101245284,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 294,
+      "clearanceMm": 0.0228480654582014,
+      "penetrationMm": 6.134995268424393,
+      "firstOutsideMm": [
+        13.248696548209226,
+        -73.08206207765645,
+        30.627181527920392
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.000009142360882563594,
+      "normalAngleDeg": 0.00012819689205461105,
+      "centerAimAngleDeg": 0.001522212090377034,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11313,
+      "originMm": [
+        18.992093679062723,
+        -72.1063699157241,
+        25.19692455080481
+      ],
+      "beam": [
+        0.08451099446880593,
+        0.9656587702705655,
+        -0.2456848208852811
+      ],
+      "right": [
+        0.6411480206091281,
+        -0.24144375091908257,
+        -0.7284463815622402
+      ],
+      "normal": [
+        -0.7627497017258613,
+        -0.09595860848127799,
+        -0.6395348606412683
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.000009142360882563594,
+        "normalAngleDeg": 0.00012819689205461105,
+        "aimAngleDeg": 0.001522212090377034
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2.5,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 99.43428956329879,
+      "angleDeg": 104.05330137937563,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.853601482422505,
+      "shaftRotationDeg": -8.749556881896979,
+      "anteflexDeg": -12.372648591241905,
+      "lateralFlexDeg": -31.774164014832674,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 120,
+      "clearanceMm": 0.039830007007298655,
+      "penetrationMm": 3.485041654737426,
+      "firstOutsideMm": [
+        25.6922313963369,
+        -50.5568968781222,
+        52.23234420152026
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.00018182442123304554,
+      "normalAngleDeg": 0.00029776755885318644,
+      "centerAimAngleDeg": 0.0010171063892519413,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11425,
+      "originMm": [
+        22.681813512183922,
+        -53.261945943883944,
+        45.373308529528295
+      ],
+      "beam": [
+        -0.19093524422900793,
+        0.7616541740150079,
+        -0.6192145441740893
+      ],
+      "right": [
+        0.8278737186552304,
+        0.4638909783210021,
+        0.31532565102183513
+      ],
+      "normal": [
+        0.527417138962292,
+        -0.45242466714128154,
+        -0.7191266106124364
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.00018182442123304554,
+        "normalAngleDeg": 0.00029776755885318644,
+        "aimAngleDeg": 0.0010171063892519413
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 2.5,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 119.2985153644526,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.09897658484128,
+      "shaftRotationDeg": -2.504727265549571,
+      "anteflexDeg": 28.1102402305915,
+      "lateralFlexDeg": 4.171800292535403,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 8.865366081751336,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.00005507890800870996,
+      "normalAngleDeg": 0.0002741849900440383,
+      "centerAimAngleDeg": 0.00022474364867339374,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 10953,
+      "originMm": [
+        17.75397672285959,
+        39.20259119550546,
+        76.07024917298753
+      ],
+      "beam": [
+        0.07636658861531974,
+        -0.42243740271401264,
+        -0.9031693002596455
+      ],
+      "right": [
+        0.9721747604722342,
+        -0.16964243454185796,
+        0.16154776229792067
+      ],
+      "normal": [
+        -0.22145965601890688,
+        -0.890375249650927,
+        0.3977279667876486
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00005507890800870996,
+        "normalAngleDeg": 0.0002741849900440383,
+        "aimAngleDeg": 0.00022474364867339374
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 120.76828476888763,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.759711466505166,
+      "shaftRotationDeg": -20.986134204713725,
+      "anteflexDeg": -21.98166797536151,
+      "lateralFlexDeg": -4.735847540303064,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 28,
+      "clearanceMm": 0.1088879836443805,
+      "penetrationMm": 0.8684885974937062,
+      "firstOutsideMm": [
+        18.94828537537557,
+        -62.97506594019627,
+        48.77588602044053
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00011056636376238771,
+      "normalAngleDeg": 0.00035857070158313995,
+      "centerAimAngleDeg": 0.003607439372788743,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11150,
+      "originMm": [
+        20.046903551979238,
+        -61.77370553387632,
+        40.97213764974291
+      ],
+      "beam": [
+        -0.15567640302286428,
+        0.8778075669029087,
+        -0.4530107427311833
+      ],
+      "right": [
+        0.9771363069958533,
+        0.20407509605446764,
+        0.059648912151570185
+      ],
+      "normal": [
+        0.1448084772807471,
+        -0.4333673160938136,
+        -0.8895073210768285
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00011056636376238771,
+        "normalAngleDeg": 0.00035857070158313995,
+        "aimAngleDeg": 0.003607439372788743
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 127.27564442812,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.71292974826728,
+      "shaftRotationDeg": -39.98772249904259,
+      "anteflexDeg": -12.492237280262003,
+      "lateralFlexDeg": 34.7363867714523,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 308,
+      "clearanceMm": 0.016815168043010836,
+      "penetrationMm": 6.264268561102335,
+      "firstOutsideMm": [
+        13.087778346056844,
+        -72.6139919775261,
+        30.748958089742224
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00010227501680049045,
+      "normalAngleDeg": 0.0003849884914605169,
+      "centerAimAngleDeg": 0.00420082272506516,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11129,
+      "originMm": [
+        18.83580039704246,
+        -71.66997444085813,
+        25.317995925731935
+      ],
+      "beam": [
+        0.08711035041337759,
+        0.9646726487230468,
+        -0.2486331990232196
+      ],
+      "right": [
+        0.6408034235962288,
+        -0.24535460920396218,
+        -0.7274421544354736
+      ],
+      "normal": [
+        -0.7627468512935408,
+        -0.09595726417542517,
+        -0.6395384619346649
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.00010227501680049045,
+        "normalAngleDeg": 0.0003849894381492609,
+        "aimAngleDeg": 0.00420082272506516
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 99.03854360885236,
+      "angleDeg": 105.4189906939997,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.857859834929265,
+      "shaftRotationDeg": -8.798921857969692,
+      "anteflexDeg": -12.458942039320593,
+      "lateralFlexDeg": -31.760566724517155,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 131,
+      "clearanceMm": 0.04600123126960406,
+      "penetrationMm": 3.405398566147907,
+      "firstOutsideMm": [
+        25.519333714143766,
+        -50.291912958307535,
+        51.93848332263449
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.00008723043163527677,
+      "normalAngleDeg": 0.00006291912096805428,
+      "centerAimAngleDeg": 0.009280784548687,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11498,
+      "originMm": [
+        22.51117803173679,
+        -52.98582830258878,
+        45.0740753989084
+      ],
+      "beam": [
+        -0.18934503592216823,
+        0.7625463519735178,
+        -0.61860449276053
+      ],
+      "right": [
+        0.8282366861869619,
+        0.46242791229334707,
+        0.31651922151120043
+      ],
+      "normal": [
+        0.5274205618154006,
+        -0.45241959177725294,
+        -0.7191272932871002
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.00008723043163527677,
+        "normalAngleDeg": 0.00006291912096805428,
+        "aimAngleDeg": 0.009280784548687
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 118.8126006285488,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.07457505974713,
+      "shaftRotationDeg": -2.5565888296678314,
+      "anteflexDeg": 27.92663211654301,
+      "lateralFlexDeg": 4.574761412974451,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 8.476325914751552,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.00020136973939344216,
+      "normalAngleDeg": 0.00023266545910486197,
+      "centerAimAngleDeg": 0.004681190841745274,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 10997,
+      "originMm": [
+        17.712815415089405,
+        39.01034735308825,
+        75.61659793788294
+      ],
+      "beam": [
+        0.07733064432069696,
+        -0.42261200826410594,
+        -0.9030055713670462
+      ],
+      "right": [
+        0.9720978346378973,
+        -0.16922512023116146,
+        0.16244586352092813
+      ],
+      "normal": [
+        -0.2214627990007733,
+        -0.890371803885168,
+        0.39773393054278733
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00020136973939344216,
+        "normalAngleDeg": 0.00023266545910486197,
+        "aimAngleDeg": 0.004681190841745274
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3.5,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 120.34032424434321,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.78001843220185,
+      "shaftRotationDeg": -21.205712051256455,
+      "anteflexDeg": -21.993465220626014,
+      "lateralFlexDeg": -4.549566322817155,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 13,
+      "clearanceMm": 0.09549273549728486,
+      "penetrationMm": 0.45186681349294533,
+      "firstOutsideMm": [
+        19.812004806015352,
+        -63.87038169118092,
+        48.164884537173045
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00010334099391684504,
+      "normalAngleDeg": 0.00020499636847949056,
+      "centerAimAngleDeg": 0.003764614862829146,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11166,
+      "originMm": [
+        19.767945134716363,
+        -61.4122257490295,
+        40.75062007017936
+      ],
+      "beam": [
+        -0.1527866685285349,
+        0.8784085647176942,
+        -0.4528295787054463
+      ],
+      "right": [
+        0.977592128729837,
+        0.20147919905366105,
+        0.060989853206588715
+      ],
+      "normal": [
+        0.14480975024292256,
+        -0.43336419531301346,
+        -0.8895086342780979
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00010334099391684504,
+        "normalAngleDeg": 0.00020499636847949056,
+        "aimAngleDeg": 0.003764614862829146
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3.5,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 126.92989873426842,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.75311980770504,
+      "shaftRotationDeg": -40.3011725784573,
+      "anteflexDeg": -12.98464188244455,
+      "lateralFlexDeg": 33.9826694745547,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 321,
+      "clearanceMm": 0.0026282942771360535,
+      "penetrationMm": 6.390467636529224,
+      "firstOutsideMm": [
+        12.936397485191101,
+        -72.1593528320325,
+        30.86132367703732
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00005932593112412121,
+      "normalAngleDeg": 0.0002105413428440357,
+      "centerAimAngleDeg": 0.007245285196977564,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11405,
+      "originMm": [
+        18.688652681798345,
+        -71.2453377480116,
+        25.429711281592294
+      ],
+      "beam": [
+        0.08956583466471212,
+        0.9637241887772152,
+        -0.25142324718790815
+      ],
+      "right": [
+        0.6404584683607469,
+        -0.24905385420104356,
+        -0.7264882160177214
+      ],
+      "normal": [
+        -0.762752195385775,
+        -0.09595762436254822,
+        -0.6395320341944386
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.00005932593112412121,
+        "normalAngleDeg": 0.00021054307392077474,
+        "aimAngleDeg": 0.007245285196977564
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3.5,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 98.64407217822497,
+      "angleDeg": 106.83373450661982,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.86221720495351,
+      "shaftRotationDeg": -8.853534531656841,
+      "anteflexDeg": -12.54977372552915,
+      "lateralFlexDeg": -31.747713993105634,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 145,
+      "clearanceMm": 0.02334820230130196,
+      "penetrationMm": 3.456394016534871,
+      "firstOutsideMm": [
+        25.34700625856235,
+        -50.027951698893204,
+        51.64615548547782
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.000016162092318694476,
+      "normalAngleDeg": 0.0002428186886036792,
+      "centerAimAngleDeg": 0.012719054344390872,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11496,
+      "originMm": [
+        22.341290864614123,
+        -52.70994957565405,
+        44.77601436649796
+      ],
+      "beam": [
+        -0.18763810183383903,
+        0.7634976273009133,
+        -0.6179509008376554
+      ],
+      "right": [
+        0.8286234174960656,
+        0.46085711462030143,
+        0.3177954560420767
+      ],
+      "normal": [
+        0.5274231457921951,
+        -0.4524180511537157,
+        -0.7191263673881934
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.000016162092318694476,
+        "normalAngleDeg": 0.0002428186886036792,
+        "aimAngleDeg": 0.012719054344390872
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 3.5,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 118.32644937582835,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.05035607742539,
+      "shaftRotationDeg": -2.61929571531694,
+      "anteflexDeg": 27.740852772067047,
+      "lateralFlexDeg": 4.979423797812759,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 8.070767779702503,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.00008734203601434842,
+      "normalAngleDeg": 0.0005350218723774882,
+      "centerAimAngleDeg": 0.0016026395679498361,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 10960,
+      "originMm": [
+        17.67382379051337,
+        38.817375912254086,
+        75.16318050389349
+      ],
+      "beam": [
+        0.07846815258651099,
+        -0.4227992668395967,
+        -0.9028197655066927
+      ],
+      "right": [
+        0.9720079463536736,
+        -0.1687272481618154,
+        0.16349822003023615
+      ],
+      "normal": [
+        -0.22145722217840258,
+        -0.8903773894746209,
+        0.39772453162633165
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00008734203601434842,
+        "normalAngleDeg": 0.0005350218723774882,
+        "aimAngleDeg": 0.0016026395679498361
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 4,
+    "key": "me4c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 119.91152423724269,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.80020692396886,
+      "shaftRotationDeg": -21.43725611992355,
+      "anteflexDeg": -21.994324059452815,
+      "lateralFlexDeg": -4.363562742048762,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 12,
+      "clearanceMm": 0.014911660379494516,
+      "penetrationMm": 0.37554370898302925,
+      "firstOutsideMm": [
+        21.300048791257925,
+        -63.977710076249025,
+        34.8529200735348
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.0001381020890001139,
+      "normalAngleDeg": 0.00015115169667472415,
+      "centerAimAngleDeg": 0.008991519829854133,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11163,
+      "originMm": [
+        19.48953015738709,
+        -61.04922880412881,
+        40.528715123133644
+      ],
+      "beam": [
+        -0.14964798615022626,
+        0.8790499732922941,
+        -0.4526329911705499
+      ],
+      "right": [
+        0.9780772391106112,
+        0.19865954672260328,
+        0.06244436587663024
+      ],
+      "normal": [
+        0.14481158301374356,
+        -0.43336535273460336,
+        -0.8895077720145377
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.0001381020890001139,
+        "normalAngleDeg": 0.00015115169667472415,
+        "aimAngleDeg": 0.008991519829854133
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 4,
+    "key": "me2c",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 126.58963310128293,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me2c",
+      "insertionCm": 32.79425843907978,
+      "shaftRotationDeg": -40.620350481085694,
+      "anteflexDeg": -13.511227322179645,
+      "lateralFlexDeg": 33.18075127657893,
+      "multiplaneDeg": 90,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 332,
+      "clearanceMm": 0.037530751812293275,
+      "penetrationMm": 6.525129596839124,
+      "firstOutsideMm": [
+        12.789966310269905,
+        -71.71247154933546,
+        30.968957755636097
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00008232489426518441,
+      "normalAngleDeg": 0.00026522282844008684,
+      "centerAimAngleDeg": 0.010268988975229291,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11165,
+      "originMm": [
+        18.54634075555222,
+        -70.82787457568351,
+        25.536838641057386
+      ],
+      "beam": [
+        0.09196908350841794,
+        0.9627800217591704,
+        -0.2541580559022925
+      ],
+      "right": [
+        0.6401184087908905,
+        -0.2526766216244435,
+        -0.7255363172243522
+      ],
+      "normal": [
+        -0.7627516702083581,
+        -0.09596434017836528,
+        -0.6395316528589426
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.00008232489426518441,
+        "normalAngleDeg": 0.0002652200800597151,
+        "aimAngleDeg": 0.010268988975229291
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 4,
+    "key": "melax",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 98.25229502561221,
+      "angleDeg": 108.3147581792021,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "melax",
+      "insertionCm": 35.866608090321805,
+      "shaftRotationDeg": -8.9213350170871,
+      "anteflexDeg": -12.650070270632575,
+      "lateralFlexDeg": -31.738136255693227,
+      "multiplaneDeg": 120,
+      "teeMirrorX": true,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": false,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 166,
+      "clearanceMm": 0.0022098599482882494,
+      "penetrationMm": 3.5122242381103654,
+      "firstOutsideMm": [
+        25.176011189592643,
+        -49.767311914519496,
+        51.35653174204337
+      ],
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.00013008586762097707,
+      "normalAngleDeg": 0.00029699912516219576,
+      "centerAimAngleDeg": 0.001444533035342558,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.36506500119577,
+        43.4601621552477
+      ],
+      "evaluations": 11508,
+      "originMm": [
+        22.17304983902195,
+        -52.43554005994145,
+        44.47982771133058
+      ],
+      "beam": [
+        -0.1856676796685596,
+        0.7645919587604622,
+        -0.6171925544960283
+      ],
+      "right": [
+        0.8290721331222575,
+        0.45903600870590283,
+        0.3192574835324366
+      ],
+      "normal": [
+        0.5274153115018589,
+        -0.4524213515189064,
+        -0.7191300368384033
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.00013008586762097707,
+        "normalAngleDeg": 0.00029699912516219576,
+        "aimAngleDeg": 0.001444533035342558
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  },
+  {
+    "donorId": "s-20-29",
+    "biasMm": 4,
+    "key": "tg",
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 117.83990592017629,
+      "angleDeg": 75,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "tg",
+      "insertionCm": 50.026373247709046,
+      "shaftRotationDeg": -2.6683197849437374,
+      "anteflexDeg": 27.557737657749122,
+      "lateralFlexDeg": 5.371685619611258,
+      "multiplaneDeg": 0,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 7.662596371535179,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "review": {
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.00012602371209879948,
+      "normalAngleDeg": 0.0003040045670495557,
+      "centerAimAngleDeg": 0.006947129670225266,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        45.974375102602835,
+        56.674053105086685
+      ],
+      "evaluations": 11266,
+      "originMm": [
+        17.636242858372526,
+        38.624122528724996,
+        74.70953344975666
+      ],
+      "beam": [
+        0.07934721679498678,
+        -0.4229611118198583,
+        -0.9026671131015013
+      ],
+      "right": [
+        0.9719341218771314,
+        -0.16835296722812193,
+        0.16432084820988674
+      ],
+      "normal": [
+        -0.22146801556391627,
+        -0.8903713698865187,
+        0.3977319974160799
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00012602371209879948,
+        "normalAngleDeg": 0.0003040045670495557,
+        "aimAngleDeg": 0.006947129670225266
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ]
+    }
+  }
+]

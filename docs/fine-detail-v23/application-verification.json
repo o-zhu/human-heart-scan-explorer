@@ -1,0 +1,43 @@
+{
+  "project": "Heart Explorer",
+  "release": "v23 gentle detail",
+  "checkedAt": "2026-11-06T20:17:11.824992+00:00",
+  "checks": [
+    {
+      "command": "node tests/fine-surface-controller-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "command": "node --test tests/fine-surface-transport-v23.mjs",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "command": "node tests/lumen-cleanup-v23.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "command": "node --test tests/fine-detail-store-v23.mjs",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "python3 tests/fine-detail-staging-v23.py",
+      "passed": true
+    }
+  ],
+  "coverage": [
+    "No eager mesh or exclusion-mask download",
+    "Volume fallback and cancellation of superseded requests",
+    "Source metadata and multipart byte limits/checksums",
+    "Optional exclusion reversibility and original source preservation",
+    "CPU anatomy picking consistent with visible masks",
+    "Immutable scoped upload gates and staging preservation of legacy assets"
+  ],
+  "limits": [
+    "These application checks do not establish anatomical truth or browser GPU performance.",
+    "Final delivered-geometry scientific checks and production hosting readback are recorded separately."
+  ]
+}

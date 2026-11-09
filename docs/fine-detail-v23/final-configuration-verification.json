@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-11-06 21:13:30 UTC",
+  "phase": "Final release configuration; deployment receipt recorded separately",
+  "configuration": {
+    "gentleReady": true,
+    "downloadMB": 227.90246,
+    "fineDetailUploadsEnabled": false,
+    "fineDetailPublicServingEnabled": true,
+    "motionCTUploadsEnabled": false,
+    "environmentRevision": 10,
+    "remainingEnvironmentKeys": []
+  },
+  "checks": [
+    {
+      "command": "node --test tests/fine-detail-store-v23.mjs",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "node tests/fine-surface-controller-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 19,
+      "failed": 0,
+      "verifiedBy": "settings_upgrade agent; exact final source fixture"
+    },
+    {
+      "command": "python3 tests/fine-detail-staging-v23.py",
+      "passed": true
+    }
+  ],
+  "fixtureCorrection": "The final download-size label exposed an incomplete test-only active mesh stub without LOD metadata. It was replaced with a real FineSurfacePass constructed from the existing GPU/decoded/manifest fixtures; production code was unchanged.",
+  "priorEvidence": "application-verification.json",
+  "limits": [
+    "Focused source/DOM tests do not establish browser GPU performance or anatomical accuracy.",
+    "Final public object hashes and closed upload response must be verified after the final deployment."
+  ]
+}

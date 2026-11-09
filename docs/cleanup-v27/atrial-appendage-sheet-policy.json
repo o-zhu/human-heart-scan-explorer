@@ -1,0 +1,441 @@
+{
+  "id": "atrial-appendage-sheet",
+  "mask": "atrial",
+  "guardMode": "reviewed-object",
+  "expansion": 9,
+  "guard": 10,
+  "scope": "Source-traced free portion of the thin residual lower atrial sheet. Preserve the left and right source-supported wall collars.",
+  "evidence": "source-sheet-boundaries/laa-1236.jpg; source-sheet-boundaries/laa-1248.jpg; source-sheet-boundaries/laa-1260.jpg; source-sheet-boundaries/laa-1276.jpg; source-sheet-boundaries/laa-1292.jpg; source-sheet-boundaries/laa-1304.jpg",
+  "polygons": {
+    "1232": [
+      [
+        1182,
+        819
+      ],
+      [
+        1204,
+        836
+      ],
+      [
+        1232,
+        850
+      ],
+      [
+        1262,
+        871
+      ],
+      [
+        1291,
+        897
+      ],
+      [
+        1325,
+        924
+      ],
+      [
+        1341,
+        943
+      ],
+      [
+        1338,
+        960
+      ],
+      [
+        1305,
+        957
+      ],
+      [
+        1268,
+        925
+      ],
+      [
+        1240,
+        889
+      ],
+      [
+        1209,
+        864
+      ],
+      [
+        1180,
+        845
+      ]
+    ],
+    "1236": [
+      [
+        1180,
+        822
+      ],
+      [
+        1200,
+        838
+      ],
+      [
+        1228,
+        851
+      ],
+      [
+        1258,
+        871
+      ],
+      [
+        1287,
+        901
+      ],
+      [
+        1325,
+        929
+      ],
+      [
+        1340,
+        942
+      ],
+      [
+        1337,
+        961
+      ],
+      [
+        1308,
+        954
+      ],
+      [
+        1270,
+        924
+      ],
+      [
+        1241,
+        888
+      ],
+      [
+        1210,
+        867
+      ],
+      [
+        1180,
+        847
+      ]
+    ],
+    "1248": [
+      [
+        1183,
+        825
+      ],
+      [
+        1206,
+        839
+      ],
+      [
+        1236,
+        855
+      ],
+      [
+        1261,
+        875
+      ],
+      [
+        1295,
+        908
+      ],
+      [
+        1331,
+        930
+      ],
+      [
+        1342,
+        940
+      ],
+      [
+        1334,
+        954
+      ],
+      [
+        1303,
+        938
+      ],
+      [
+        1276,
+        921
+      ],
+      [
+        1244,
+        886
+      ],
+      [
+        1212,
+        865
+      ],
+      [
+        1184,
+        847
+      ]
+    ],
+    "1260": [
+      [
+        1192,
+        838
+      ],
+      [
+        1216,
+        850
+      ],
+      [
+        1243,
+        860
+      ],
+      [
+        1266,
+        881
+      ],
+      [
+        1292,
+        908
+      ],
+      [
+        1329,
+        925
+      ],
+      [
+        1335,
+        937
+      ],
+      [
+        1323,
+        946
+      ],
+      [
+        1297,
+        932
+      ],
+      [
+        1270,
+        913
+      ],
+      [
+        1242,
+        887
+      ],
+      [
+        1210,
+        871
+      ],
+      [
+        1191,
+        855
+      ]
+    ],
+    "1276": [
+      [
+        1192,
+        843
+      ],
+      [
+        1216,
+        851
+      ],
+      [
+        1240,
+        864
+      ],
+      [
+        1261,
+        878
+      ],
+      [
+        1294,
+        907
+      ],
+      [
+        1320,
+        927
+      ],
+      [
+        1317,
+        944
+      ],
+      [
+        1299,
+        937
+      ],
+      [
+        1268,
+        913
+      ],
+      [
+        1241,
+        887
+      ],
+      [
+        1215,
+        873
+      ],
+      [
+        1191,
+        860
+      ]
+    ],
+    "1292": [
+      [
+        1190,
+        839
+      ],
+      [
+        1218,
+        846
+      ],
+      [
+        1246,
+        858
+      ],
+      [
+        1274,
+        878
+      ],
+      [
+        1292,
+        895
+      ],
+      [
+        1289,
+        910
+      ],
+      [
+        1273,
+        905
+      ],
+      [
+        1248,
+        883
+      ],
+      [
+        1223,
+        871
+      ],
+      [
+        1194,
+        860
+      ]
+    ],
+    "1304": [
+      [
+        1200,
+        847
+      ],
+      [
+        1220,
+        847
+      ],
+      [
+        1240,
+        856
+      ],
+      [
+        1267,
+        878
+      ],
+      [
+        1277,
+        888
+      ],
+      [
+        1273,
+        899
+      ],
+      [
+        1258,
+        893
+      ],
+      [
+        1241,
+        881
+      ],
+      [
+        1220,
+        871
+      ],
+      [
+        1200,
+        864
+      ]
+    ]
+  },
+  "selectedSamples": 176397,
+  "selectedDenseSourceSamples": 8959,
+  "comparableAnchoredGuardRuleOverlapSamples": 95752,
+  "protectedSourceSamples": 820970,
+  "protectedOverlapSamples": 0,
+  "lowerFullFineXYZ": [
+    1169,
+    1232,
+    808
+  ],
+  "upperFullFineXYZ": [
+    1354,
+    1305,
+    973
+  ],
+  "meshSupportMarginFineSamples": 9,
+  "denseGuardFineSamples": 10,
+  "sourcePaddingFineSamples": 13,
+  "serialChecks": [
+    {
+      "y": 1232,
+      "selectedSamples": 1276,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 1,
+      "protectedSourceSamples": 3671,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1236,
+      "selectedSamples": 1355,
+      "selectedDenseSourceSamples": 5,
+      "comparableAnchoredGuardRuleOverlapSamples": 43,
+      "protectedSourceSamples": 4442,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1248,
+      "selectedSamples": 3930,
+      "selectedDenseSourceSamples": 266,
+      "comparableAnchoredGuardRuleOverlapSamples": 2231,
+      "protectedSourceSamples": 10846,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1260,
+      "selectedSamples": 3527,
+      "selectedDenseSourceSamples": 207,
+      "comparableAnchoredGuardRuleOverlapSamples": 2653,
+      "protectedSourceSamples": 11792,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1276,
+      "selectedSamples": 2282,
+      "selectedDenseSourceSamples": 120,
+      "comparableAnchoredGuardRuleOverlapSamples": 1500,
+      "protectedSourceSamples": 13435,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1292,
+      "selectedSamples": 1515,
+      "selectedDenseSourceSamples": 68,
+      "comparableAnchoredGuardRuleOverlapSamples": 118,
+      "protectedSourceSamples": 13477,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1304,
+      "selectedSamples": 470,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 10928,
+      "protectedOverlapSamples": 0
+    }
+  ],
+  "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of dense source outside the explicitly selected object core; the object may contain bright material. The source-defined attachment collar is retained.",
+  "explicitSelectedObjectException": true,
+  "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+  "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue."
+}

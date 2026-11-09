@@ -1,0 +1,73 @@
+/* Shared screen-space typography and input targets. Scientific canvas/SVG
+   coordinates remain under their own renderers' control. */
+:root {
+  --ui-copy: 16px;
+  --ui-control: 15px;
+  --ui-secondary: 14px;
+  --ui-muted: #afbfbc;
+  --ui-quiet: #a5b8b4;
+  --ui-focus: #f1b49a;
+  --ui-gutter: clamp(16px, 1.5vw, 36px);
+}
+
+body { font-size: var(--ui-copy); }
+body :where(button, select, input:not([type="range"]):not([type="checkbox"]):not([type="radio"]), summary) {
+  font-size: var(--ui-control) !important;
+  line-height: 1.4;
+  min-height: 44px !important;
+}
+body button { min-width: 44px; }
+body :is(button, select, input, summary, a, [tabindex]):focus-visible {
+  outline: 3px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+body canvas:focus-visible { outline-offset: -4px; }
+body :is(.icon-button, .dialog-close) {
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+body :is(.icon-button, .fullscreen-button, .quiet-button, .outlined-button) svg {
+  width: 20px;
+  height: 20px;
+}
+body input[type="checkbox"], body input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+body input[type="range"] { min-height: 32px; }
+body input[type="range"]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  margin-top: -7px;
+}
+body input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; }
+body :is(.control-note, .menu-note, .settings-description, .source-note p,
+  .detail-status, .method-disclosure, .method-notes p, .method-notes dt,
+  .method-notes small, .resolution-card small, .lab-footer, .intro-copy,
+  .probe-heading p, .probe-preset-note, .probe-body-context > p,
+  .probe-scene-caption, .probe-image-meta, .probe-fine-status,
+  .probe-contact-note, .probe-lock-state, .probe-detail-controls > p,
+  .probe-method p, .probe-method a, .probe-key-guide,
+  .tee-orbit-hint, .tee-keyboard > p, .tee-multiplane > p,
+  .echo-heading p, .echo-library-caption, .echo-source > span,
+  .echo-source a, .echo-preset-meta, .echo-section-hint, .echo-detail-status,
+  .echo-context-caption, .echo-resolution-detail, .echo-cine-description,
+  .echo-cine-credit, .echo-cine-quality, .echo-cine-separation,
+  .echo-tissue-caption, .echo-fit-qualification, .echo-fit-review summary > span,
+  .clinical-series-note, .clinical-speed, .clinical-echo > p,
+  .selection-feedback > p, .region-progress span, .coverage-banner span:not(.coverage-dot),
+  .evidence-strip small, .denoising-evidence figcaption) {
+  color: var(--ui-muted);
+}
+body :is(.control-note, .menu-note, .source-note p, .method-disclosure,
+  .settings-description, .probe-scene-caption, .probe-body-context > p,
+  .echo-detail-status, .echo-section-hint, .echo-notice p,
+  .clinical-series-note) { line-height: 1.6; }
+body :is(.text-button, .small-toggle, .native-study-link, .back-link) {
+  min-height: 44px;
+  align-content: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  body :is(button, a, .slice-card, .slice-scroll-cue) { transition: none; }
+}

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "donor": "ladaf-2021-17",
+      "cap": "resident-original",
+      "unchangedCutFacePixels": 45514,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "preparedFieldSha256": "40dc075fb4dba7b9c60c1c96ee4635635a1f2011d7fc971fbbdaabdb8378ddf8"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "cap": "prepared-fine",
+      "unchangedCutFacePixels": 42423,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "preparedFieldSha256": "40dc075fb4dba7b9c60c1c96ee4635635a1f2011d7fc971fbbdaabdb8378ddf8"
+    },
+    {
+      "donor": "s-20-29",
+      "cap": "resident-original",
+      "unchangedCutFacePixels": 28210,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "preparedFieldSha256": "1c82fb60b2a5d7fc5ed53da4e244a44aa6d5a3b901745ec7af6b276c2711838b"
+    },
+    {
+      "donor": "s-20-29",
+      "cap": "prepared-fine",
+      "unchangedCutFacePixels": 26664,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "preparedFieldSha256": "1c82fb60b2a5d7fc5ed53da4e244a44aa6d5a3b901745ec7af6b276c2711838b"
+    },
+    {
+      "donor": "s-20-28",
+      "cap": "resident-original",
+      "unchangedCutFacePixels": 27757,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "preparedFieldSha256": "03577687bfd9fd404a294d9ff3851a9a45c82b3304ee0b2e4e410ef6908afc8e"
+    },
+    {
+      "donor": "s-20-28",
+      "cap": "prepared-fine",
+      "unchangedCutFacePixels": 26232,
+      "maximumCutFaceChannelDifference": 0,
+      "restorationPixelExact": true,
+      "directEqualsComposite": true,
+      "originalSourceUnchanged": true,
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "preparedFieldSha256": "03577687bfd9fd404a294d9ff3851a9a45c82b3304ee0b2e4e410ef6908afc8e"
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "scope": "Current production volume/composite GLSL with all three real donor volumes, independently prepared fields on texture8, existing reviewed masks, original source CT caps and separate surface thresholds. No browser/FPS claim."
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pulmonary-x191",
+    "axis": 0,
+    "coordinate": 760,
+    "target": [
+      760,
+      1250,
+      845
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "pulmonary-x191-close",
+    "axis": 0,
+    "coordinate": 760,
+    "target": [
+      760,
+      1290,
+      785
+    ],
+    "distance": 0.3
+  },
+  {
+    "id": "exterior-z210",
+    "axis": 2,
+    "coordinate": 836,
+    "target": [
+      940,
+      950,
+      836
+    ],
+    "distance": 0.72
+  },
+  {
+    "id": "exterior-z210-oblique",
+    "axis": 2,
+    "coordinate": 836,
+    "target": [
+      950,
+      950,
+      836
+    ],
+    "distance": 0.72,
+    "direction": [
+      0.1,
+      1.0,
+      -0.2
+    ]
+  },
+  {
+    "id": "exterior-whole",
+    "axis": 2,
+    "coordinate": 836,
+    "target": [
+      940,
+      950,
+      850
+    ],
+    "distance": 0.9,
+    "direction": [
+      -0.3,
+      0.4,
+      -1.0
+    ],
+    "whole": true
+  },
+  {
+    "id": "exterior-z210-close",
+    "axis": 2,
+    "coordinate": 836,
+    "target": [
+      690,
+      915,
+      836
+    ],
+    "distance": 0.43,
+    "direction": [
+      0.15,
+      1,
+      -0.35
+    ]
+  },
+  {
+    "id": "pulmonary-x191-oblique",
+    "axis": 0,
+    "coordinate": 760,
+    "target": [
+      730,
+      1270,
+      850
+    ],
+    "distance": 0.45,
+    "direction": [
+      1,
+      0.05,
+      0.65
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "ucl-zcr-2337",
+  "specimen": "UCL-ZCR-2337",
+  "datasetId": "2298521860",
+  "doi": "10.15151/ESRF-DC-2299323283",
+  "donorAge": "<18",
+  "donorSex": null,
+  "donorMedicalInfo": "Disease free",
+  "metadataDirectory": "{local-workspace}/young-heart-sources/ucl-zcr-2337",
+  "source": {
+    "format": "n5",
+    "baseUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2337/heart/10.62um_complete-organ_bm18/",
+    "nativeSpacingUm": 10.62,
+    "fineLevel": "2",
+    "highLevel": "4",
+    "window": [
+      20264,
+      29567
+    ],
+    "levels": {
+      "0": {
+        "dimensionsXYZ": [
+          7040,
+          7664,
+          6761
+        ],
+        "voxelMicrons": 10.62,
+        "rawBytes": 729573560320
+      },
+      "2": {
+        "dimensionsXYZ": [
+          1760,
+          1916,
+          1691
+        ],
+        "voxelMicrons": 42.48,
+        "rawBytes": 11404645120
+      },
+      "4": {
+        "dimensionsXYZ": [
+          440,
+          479,
+          423
+        ],
+        "voxelMicrons": 169.92,
+        "rawBytes": 178302960
+      }
+    }
+  },
+  "cleanup": {
+    "thresholdRaw": 24100,
+    "connectivity": 18,
+    "marginHighVoxels": 3,
+    "samplingGuardVoxels": 1,
+    "componentPolicy": "largest",
+    "reviewedHeartRoiHighSourceXYZ": [
+      [
+        280,
+        404
+      ],
+      [
+        134,
+        310
+      ],
+      [
+        180,
+        300
+      ]
+    ],
+    "preserveAllForegroundInReviewedRoi": true
+  },
+  "viewsConfig": null,
+  "anatomyConfig": null,
+  "defaultThreshold": 0.4123401053423627,
+  "displayWindow": {
+    "windowEnabled": true,
+    "windowLow": 0.3693432226163603,
+    "windowHigh": 0.7993120498763839,
+    "windowGamma": 0.9,
+    "capContrast": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "methods": [
+    {
+      "iterations": 12,
+      "triangles": 199293,
+      "components26": 98,
+      "tissueFraction": 0.5774081694863588,
+      "seconds": 0.6243987709895009
+    },
+    {
+      "iterations": 16,
+      "triangles": 191251,
+      "components26": 74,
+      "tissueFraction": 0.5776606081390032,
+      "seconds": 0.41774843700113706
+    },
+    {
+      "iterations": 24,
+      "triangles": 185469,
+      "components26": 46,
+      "tissueFraction": 0.5779749657064472,
+      "seconds": 0.7733138180046808
+    }
+  ],
+  "fixedTV16Halo16": {
+    "sharedPlaneExact": true,
+    "leftReferenceExact": true,
+    "rightReferenceExact": true,
+    "maximumSharedPlaneErrorRaw": 0.0
+  }
+}

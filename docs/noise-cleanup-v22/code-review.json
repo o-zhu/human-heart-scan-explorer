@@ -1,0 +1,128 @@
+{
+  "schema": "native-noise-filter-v22-code-review",
+  "startedAt": "2026-11-06T18:49:42.588Z",
+  "completedAt": "2026-11-06T18:49:42.892Z",
+  "passed": true,
+  "completedChecks": 7,
+  "expectedChecks": 7,
+  "nodeVersion": "v24.22.1",
+  "sourceStableDuringRun": true,
+  "sourceHashes": {
+    "public/native-noise-filter.js": "cac4fa625a0d66180148a29fb22a8edd314b6799a089318c7c215698efc6d89b",
+    "public/native-edge-format.js": "b9833d04db3de8912ea8d79b713ec96000dfd6984386d0bb73e9f76caf53c55f",
+    "public/native-edge-worker.js": "14dd28693e5f8d870bacc1ebcff23847f149778bdf861515841b1433766beba5",
+    "public/native-edge-table.js": "56b30e41f4c963cc6617dd1e9905b02f34b954f3047bd5aec7689b30b0f01d78",
+    "scripts/guided-native-v21/edge_codec.py": "a487ab160022000028b31e111c043f72d8ebdd4604368c23d1ac1ef32bb314f6",
+    "tests/native-noise-filter-v22.mjs": "e64431bf49a2a12f5d5ea164cc19491b00c3779d13d320d005b785ed71e2da00"
+  },
+  "sourceBankModified": false,
+  "sourceAcquisitionPerformed": false,
+  "profile": {
+    "id": "compact-tissue-islands-v22",
+    "connectivity": 26,
+    "maximumSamples": 512,
+    "maximumSupportDiagonalMm": 0.4,
+    "protectedAnisotropy": 3,
+    "protectSheets": true,
+    "sourceSpacingUm": 19.85
+  },
+  "scope": "Synthetic mathematical and implementation invariants. No anatomical validation, browser performance measurement, or full-volume reprocessing.",
+  "reviewedSemantics": {
+    "sign": "NBE1 bit 1 is field >= threshold, confirmed against edge_codec.py; filtering labels foreground tissue, not background cavities.",
+    "cellSuppression": "Any two foreground corners of one cube are 26-adjacent, so a cell cannot contain both a retained and rejected foreground component under this classifier.",
+    "border": "Whole-tile components touching any outer sample face are retained; internal rendering-piece boundaries do not affect classification.",
+    "shape": "Square-root ratio of regularized covariance eigenvalues, with 1/12 sample-support variance. This is a principal-axis spread ratio, not a raw eigenvalue ratio.",
+    "geometry": "Positions are unchanged for every allocated vertex. Normals are unchanged for vertices referenced by each selected face subset; unused normals may differ."
+  },
+  "checks": [
+    {
+      "name": "Jacobi analytic-reference comparison",
+      "passed": true,
+      "fixedMatrices": 4,
+      "rotatedCovariances": 4000,
+      "maxAbsoluteError": 7.105427357601002e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "Foreground sign and negative-cavity distinction",
+      "passed": true,
+      "cavityTrianglesPreserved": 104,
+      "compactIslandSamplesRemoved": 27,
+      "sourceBytesUnchanged": true
+    },
+    {
+      "name": "Six-face censoring and 26-connected diagonal continuation",
+      "passed": true,
+      "boundaryComponentsRetained": 7,
+      "diagonalStrandSamples": 5,
+      "interiorSingletonRemoved": true
+    },
+    {
+      "name": "PCA threshold and sample-coordinate translation",
+      "passed": true,
+      "criterion": "sqrt((lambda_max + 1/12) / (lambda_min + 1/12)) >= 3, with conservative 1e-10 guard",
+      "cases": [
+        {
+          "sampleOffset": 4,
+          "protectedRodSamples": 3,
+          "protectedSheetSamples": 9,
+          "belowThresholdCompactSheetSamplesRemoved": 4
+        },
+        {
+          "sampleOffset": 120,
+          "protectedRodSamples": 3,
+          "protectedSheetSamples": 9,
+          "belowThresholdCompactSheetSamplesRemoved": 4
+        }
+      ]
+    },
+    {
+      "name": "Inclusive count and support-diagonal limits",
+      "passed": true,
+      "includedSampleCount": 512,
+      "excludedSampleCount": 513,
+      "supportDiagonalsMm": [
+        0.39799126246690397,
+        0.4177941688200064
+      ],
+      "shapeVetoDisabledOnlyForGeometryGate": true
+    },
+    {
+      "name": "Eight-piece exact subset and geometry retention",
+      "passed": true,
+      "syntheticSampleShapeXYZ": [
+        33,
+        33,
+        33
+      ],
+      "pieces": 8,
+      "sourceTriangles": 1762,
+      "removedTriangles": 148,
+      "sourceBytesUnchanged": true,
+      "allPositionBytesUnchanged": true,
+      "facePartitionExact": true,
+      "exactReferencedNormalComparisons": 916,
+      "sharedReferencedVertices": 18,
+      "unusedNormalMismatches": 96,
+      "unusedNormalScope": "Unreferenced vertex normals need not match; no retained or rejected rendered vertex normal differed."
+    },
+    {
+      "name": "Native geometry and mask validation",
+      "passed": true,
+      "rejectedCases": [
+        "step-4 overview",
+        "truncated sign mask",
+        "foreign physical spacing"
+      ]
+    }
+  ],
+  "limitations": [
+    "Small compact real tissue can meet the rejection rule; connectivity and shape do not establish anatomical truth.",
+    "Attached clutter survives this component-only filter.",
+    "PCA protects globally anisotropic rods and flat sheets, not every curved strand or sheet.",
+    "The 0.4 mm gate describes inclusive sample support, not a strict decoded-surface diameter.",
+    "removedVolumeMm3 is sample count times voxel volume, not an independently measured anatomical tissue volume.",
+    "The synthetic partition fixture is 33 cubed; separate cached-data verification covers production 129-cubed tiles.",
+    "No claim is made that all unused packed-normal bytes or all output buffer bytes remain identical."
+  ]
+}

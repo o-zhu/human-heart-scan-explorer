@@ -1,0 +1,466 @@
+{
+  "schema": "native-source-integrity-audit-v20.1",
+  "auditTimeSeconds": 2.0748903499988955,
+  "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+  "reconstructScriptSha256AtSourceAudit": "eae5e3d186bdaa29d13e17fe8290e06938c92815963acef8b140a50dc53947da",
+  "source": {
+    "originalN5Sha256": "17c3bc878e3ecc20da169b728bdef9cf75d556c9d4ce7c07cb332af35db1cc40",
+    "rawLittleEndianSha256": "1fd1bbd809ff989c16e147f1baa798c3616231d2213628d1a2a681fb14491949",
+    "sourceShapeZYX": [
+      128,
+      128,
+      128
+    ],
+    "exactOriginalUint16": true,
+    "losslessSlicesIndependentlyVerified": 128,
+    "sourceSpacingUm": 19.85,
+    "nativeNoUpsampling": true,
+    "thresholdRaw": 17133.4,
+    "integerSamplesNeverEqualThreshold": true
+  },
+  "extraction": {
+    "blocksIndependentlyChecked": 8,
+    "everySourceCellOwnedExactlyOnce": true,
+    "sourceCells": 2048383,
+    "activeCellIdsMatchUnmodifiedSource": true,
+    "activeCells": 639524,
+    "allEightRawCornerValuesVerified": true,
+    "blockMeshFacesExactlyMatchWeldedOrder": true,
+    "vertices": 665302,
+    "triangles": 1288570,
+    "everyMeshVertexIsExactSourceGridEdgeInterpolationFloat32": true,
+    "maximumEdgeInterpolationFloat32ErrorUm": 7.571510127704074e-05,
+    "weldKeyUniqueAndNoToleranceMerge": true,
+    "boundaryEdges": 22388,
+    "allBoundaryEdgesOnActualCrop": true,
+    "unexpectedInteriorBoundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "zeroAreaTriangles": 0,
+    "trianglesWhollyOnCropPlanes": 0,
+    "syntheticCropCapsDetected": false
+  },
+  "normals": {
+    "geometryNormalsIndependentlyMatchTriangleWinding": true,
+    "minimumDotWithIndependentAreaWeightedNormal": 0.9999999513460647,
+    "smoothNormalsAllAlignedWithNativeGeometryNormals": true,
+    "smoothNormalsMinimumDot": 1.4901161193847656e-07,
+    "smoothLightingPointsAndFacesUnchangedByConstruction": true,
+    "acquisitionXYZToWorld": "(x,z,-y), ROI-centered, divided by longest sample-center extent",
+    "worldTransformDeterminant": 1.0,
+    "positiveGradientXYZRampWindingTests": {
+      "passed": true,
+      "expectedOutwardNormals": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "trianglesPerRamp": 18
+    }
+  },
+  "surfaceBand": {
+    "format": "NSB1-zstd",
+    "blocksIndependentlyDecoded": 8,
+    "compressedBytes": 2417135,
+    "decodedBytes": 2881321,
+    "activeCells": 639524,
+    "uniqueSampleInstancesIncludingSharedBlockBoundaries": 1178340,
+    "globallyUniqueSourceSamples": 1161381,
+    "originalUint16ValuesExact": true,
+    "allSourceCrossingCellsExactlyRetained": true,
+    "allEightCellCornersRecoverExactly": true,
+    "blocks": [
+      {
+        "startXYZ": [
+          0,
+          0,
+          0
+        ],
+        "activeCells": 114558,
+        "uniqueSampleInstances": 199283,
+        "encodedBytes": 388129,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          64,
+          0,
+          0
+        ],
+        "activeCells": 63376,
+        "uniqueSampleInstances": 120218,
+        "encodedBytes": 253798,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          0,
+          64,
+          0
+        ],
+        "activeCells": 81030,
+        "uniqueSampleInstances": 144406,
+        "encodedBytes": 295041,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          64,
+          64,
+          0
+        ],
+        "activeCells": 88921,
+        "uniqueSampleInstances": 157245,
+        "encodedBytes": 326963,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          0,
+          0,
+          64
+        ],
+        "activeCells": 46743,
+        "uniqueSampleInstances": 94308,
+        "encodedBytes": 202342,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          64,
+          0,
+          64
+        ],
+        "activeCells": 78608,
+        "uniqueSampleInstances": 148238,
+        "encodedBytes": 307438,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          0,
+          64,
+          64
+        ],
+        "activeCells": 74340,
+        "uniqueSampleInstances": 148597,
+        "encodedBytes": 306533,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      },
+      {
+        "startXYZ": [
+          64,
+          64,
+          64
+        ],
+        "activeCells": 91948,
+        "uniqueSampleInstances": 166045,
+        "encodedBytes": 336891,
+        "allSourceValuesExact": true,
+        "activeCellMaskComplete": true,
+        "occupancyMaskExact": true,
+        "allEightCornersRecoverExactly": true
+      }
+    ]
+  },
+  "encodedAssets": {
+    "manifestSha256": "b1e1c531f031ee4a47a61765ca9b4719c4cd3371ec16ef3960da5c049ecb378e",
+    "candidatesChecked": 6,
+    "sameNativeAndSmoothLightingPositionsAndIndices": true,
+    "methods": [
+      {
+        "id": "overview",
+        "compressedBytes": 6914,
+        "sha256": "61b28367bc1f265524060999fb96c8b132f420720e6b675f45c6c4616900933c",
+        "positionFormat": "uint16",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 0.03242943891891249,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 395,
+        "triangles": 639
+      },
+      {
+        "id": "native",
+        "compressedBytes": 12867151,
+        "sha256": "dca04459db93216028ea7b06994fe467b80418cf191e9ad64a66364cb4f8384d",
+        "positionFormat": "float32",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 6.455231122581064e-05,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 665302,
+        "triangles": 1288570
+      },
+      {
+        "id": "normals",
+        "compressedBytes": 13037466,
+        "sha256": "01b6e11bad7a2907e2974f9307d1c0dc25b8ad68f0a92445cb751c3ce3d8445b",
+        "positionFormat": "float32",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 6.455231122581064e-05,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 665302,
+        "triangles": 1288570
+      },
+      {
+        "id": "gentle",
+        "compressedBytes": 16180481,
+        "sha256": "fd9f57e90e35f98e5ecf7b4867de97b4c104563a151c7a013882b97d53452708",
+        "positionFormat": "float32",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 6.387652338009714e-05,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 665302,
+        "triangles": 1288570
+      },
+      {
+        "id": "moderate",
+        "compressedBytes": 16146765,
+        "sha256": "c255ef2293922ff69c4f0214f7bbbcc63e2dc22239a1232dde9a03fb68541ca5",
+        "positionFormat": "float32",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 6.455231122581064e-05,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 665302,
+        "triangles": 1288570
+      },
+      {
+        "id": "bilateral",
+        "compressedBytes": 10286290,
+        "sha256": "56ed97a4803a56c7a45c68dd8a6a48b9bd27f59d08b9119862e11f86e6a33cb7",
+        "positionFormat": "float32",
+        "allIndicesExactlyMatchPreEncodingMesh": true,
+        "allPositionsMatchDeclaredWorldTransformAndEncoding": true,
+        "normalsMatchRotatedSigned16Encoding": true,
+        "allVerticesInsideDeclaredBounds": true,
+        "quantizationMaximumUm": 6.455231122581064e-05,
+        "quantizationCollapsedTriangles": 0,
+        "quantizationFlippedOrOver90DegreeTriangles": 0,
+        "vertices": 533438,
+        "triangles": 1026542
+      }
+    ]
+  },
+  "geometrySmoothing": {
+    "gentle": {
+      "indicesBitIdenticalToReference": true,
+      "pinnedVertexCount": 22388,
+      "allPinnedCoordinatesUnchanged": true,
+      "allVerticesWithinMeasuredROI": true,
+      "maximumVertexDisplacementUm": 4.962018738750257,
+      "allowedDisplacementUm": 4.9625,
+      "zeroAreaTriangles": 0,
+      "flippedOrOver90DegreeTriangles": 0
+    },
+    "moderate": {
+      "indicesBitIdenticalToReference": true,
+      "pinnedVertexCount": 22388,
+      "allPinnedCoordinatesUnchanged": true,
+      "allVerticesWithinMeasuredROI": true,
+      "maximumVertexDisplacementUm": 9.924515308249108,
+      "allowedDisplacementUm": 9.925,
+      "zeroAreaTriangles": 0,
+      "flippedOrOver90DegreeTriangles": 0
+    }
+  },
+  "bilateral": {
+    "originalRawSourceUnchanged": true,
+    "derivedScalarSamplesChanged": 1906592,
+    "derivedThresholdAboveToBelow": 27170,
+    "derivedThresholdBelowToAbove": 11157,
+    "topologyAndConnectivityDifferFromRawReference": true,
+    "twoSampleCropBoundaryBandExactlyOriginal": true,
+    "noAnatomicalNoLossGuarantee": true
+  },
+  "memoryEvidence": {
+    "largestRecordedPreparationProcessPeakMiB": 400.76171875,
+    "allRecordedPreparationPeaksBelow1GiB": true,
+    "scope": "Individual native reconstruction/preparation subprocess RSS, including source reads and EGL scientific render where recorded. Not browser, GPU allocation, aggregate simultaneous process usage or source acquisition RSS.",
+    "records": [
+      {
+        "report": "geometry-surface-band.json",
+        "peakRssMiB": 151.48046875
+      },
+      {
+        "report": "geometry-gentle.json",
+        "peakRssMiB": 245.953125
+      },
+      {
+        "report": "geometry-render.json",
+        "peakRssMiB": 389.58984375
+      },
+      {
+        "report": "geometry-overview.json",
+        "peakRssMiB": 134.1171875
+      },
+      {
+        "report": "geometry-extraction.json",
+        "peakRssMiB": 134.8671875
+      },
+      {
+        "report": "geometry-bilateral.json",
+        "peakRssMiB": 400.76171875
+      },
+      {
+        "report": "geometry-normals.json",
+        "peakRssMiB": 358.91015625
+      },
+      {
+        "report": "geometry-weld.json",
+        "peakRssMiB": 239.359375
+      },
+      {
+        "report": "geometry-moderate.json",
+        "peakRssMiB": 245.921875
+      },
+      {
+        "report": "geometry-validation.json",
+        "peakRssMiB": 361.1796875
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extract-block",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:extraction-complete",
+        "peakRssMiB": 226.828125
+      },
+      {
+        "report": "pipeline.log:weld-complete",
+        "peakRssMiB": 242.75390625
+      },
+      {
+        "report": "pipeline.log:normals-complete",
+        "peakRssMiB": 359.12109375
+      },
+      {
+        "report": "pipeline.log:extraction-complete",
+        "peakRssMiB": 134.8671875
+      },
+      {
+        "report": "pipeline.log:weld-complete",
+        "peakRssMiB": 239.359375
+      },
+      {
+        "report": "pipeline.log:normals-complete",
+        "peakRssMiB": 358.91015625
+      },
+      {
+        "report": "pipeline.log:smooth-complete",
+        "peakRssMiB": 245.9140625
+      },
+      {
+        "report": "pipeline.log:smooth-complete",
+        "peakRssMiB": 245.68359375
+      },
+      {
+        "report": "pipeline.log:bilateral-complete",
+        "peakRssMiB": 400.76171875
+      },
+      {
+        "report": "pipeline.log:baseline-complete",
+        "peakRssMiB": 134.1171875
+      },
+      {
+        "report": "pipeline.log:package-complete",
+        "peakRssMiB": 353.58984375
+      },
+      {
+        "report": "pipeline.log:render-complete",
+        "peakRssMiB": 395.73828125
+      }
+    ]
+  },
+  "reconstructScriptSha256Final": "11cbb68703e6bf1a7a749a3a91cf8d8ee097786a240f204a7e95e9e62e401c48",
+  "finalAuditSeconds": 2.9138322709986824,
+  "independentAuditPeakRssMiB": 327.69921875,
+  "passed": true,
+  "limitations": [
+    "This audit verifies original sample identity and the chosen standard marching-cubes intensity surface. It does not establish anatomical segmentation accuracy.",
+    "Standard marching-cubes ambiguity is not resolved by validating edge identities.",
+    "Connectivity preservation alone does not certify absence of geometric self-intersections or preservation of all biological details.",
+    "Local position encoding is not mathematically lossless. Float32 was used where uint16 quantization collapsed native triangles; measured coordinate errors are recorded per asset.",
+    "Smoothing displacement bounds describe this chosen intensity isosurface and corresponding mesh triangles, not error against biological ground truth.",
+    "No exhaustive geometric self-intersection test or expert anatomical validation was performed.",
+    "Overview uses measured s4 samples and factor16 index mapping; subvoxel scale-center translation remains unverified."
+  ]
+}

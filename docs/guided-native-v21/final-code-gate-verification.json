@@ -1,0 +1,18 @@
+{
+  "schema": "guided-native-final-code-gate-verification-v21.1",
+  "recordedAt": "2026-11-06T16:31:26.404956+00:00",
+  "scope": "Local Node test of the release module; production closure is verified separately after final deployment",
+  "command": "node --test tests/guided-native-store-v21.mjs",
+  "tests": 10,
+  "passed": 10,
+  "failed": 0,
+  "durationMs": 209.434252,
+  "releaseCodeGate": false,
+  "actualReleaseModuleRejectsRetainedTokenAndCallerEnable": true,
+  "actualReleaseModulePublicGetAndHeadPass": true,
+  "uploadValidationUsesIsolatedEnabledFixture": true,
+  "files": {
+    "server/guided-native-store-v21.mjs": "61fe97fabc6e4fa0412b28b037324fcdab379ee28d38d185d36b49ed3e3d0542",
+    "tests/guided-native-store-v21.mjs": "fe388ba6e1ef77cbabc1f02c0f88248ed740911c3217b19ef745474fdeae932c"
+  }
+}

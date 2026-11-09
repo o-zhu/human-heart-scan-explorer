@@ -1,0 +1,57 @@
+{
+  "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "vertices": 12837189,
+  "triangles": 23618685,
+  "positionsUnchanged": true,
+  "indicesUnchanged": true,
+  "sourceScalarsUnchanged": true,
+  "slabSeamsFineZ": "59 + 64*k, original 64-cell slab construction",
+  "candidates": {
+    "area": {
+      "path": "{source-cache}/heart-v29-stripes/area-normals.npy",
+      "sha256": "585fd589bd1a815bc3be762082523b88ab19103cb80cc44d98360272482c3ab1",
+      "fallbackVertices": 71427,
+      "angularDifferenceDegreesPercentiles": [
+        15.483086585998535,
+        60.647456932067854,
+        82.76685325622563,
+        89.99667358398438
+      ],
+      "seamBand2SamplesVertices": 2413524,
+      "seamAngularDifferencePercentiles": [
+        8.611111640930176,
+        44.40433940887447,
+        71.88496139526362
+      ],
+      "awayFromSeamAngularDifferencePercentiles": [
+        17.363017082214355,
+        63.697425842285156,
+        83.89858261108404
+      ]
+    },
+    "angle": {
+      "path": "{source-cache}/heart-v29-stripes/angle-normals.npy",
+      "sha256": "ee6cc14928005920e42ee5be2b645eefe1a5aa37f735c24474c3cee2e53954f3",
+      "fallbackVertices": 104196,
+      "angularDifferenceDegreesPercentiles": [
+        15.829792499542236,
+        69.86180038452149,
+        84.73357574462891,
+        89.99124908447266
+      ],
+      "seamBand2SamplesVertices": 2413524,
+      "seamAngularDifferencePercentiles": [
+        5.028021335601807,
+        41.99260768890373,
+        71.57474456787098
+      ],
+      "awayFromSeamAngularDifferencePercentiles": [
+        19.0250301361084,
+        72.24897117614742,
+        85.44235939025882
+      ]
+    }
+  },
+  "seconds": 16.06192517100044,
+  "method": "Compare incident area-weighted and corner-angle-weighted normals over original quantized positions and identical indexed topology. Shading candidate only; no surface point moves."
+}

@@ -1,0 +1,272 @@
+{
+  "baselineCommit": "f34a66ee3cf969394f49f3004dc09a40a9366e78",
+  "scope": "Native Node CPU measurements using real prepared donor pixels and local immutable fine bricks. Local-file access stands in for already downloaded CacheStorage; these are not browser input latency, GPU timings, network speed or user-device FPS.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "nativeCap": [
+    {
+      "version": "v13",
+      "decodedLimit": 100663296,
+      "decodedBytes": 100512750,
+      "diskReads": 3467,
+      "diskBytes": 547696110,
+      "networkRequests": 0,
+      "samples": [
+        {
+          "label": "first-local-plane",
+          "elapsedMs": 1464.228615,
+          "diskReads": 866,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 866
+        },
+        {
+          "label": "nearby-local-plane",
+          "elapsedMs": 1132.9219090000001,
+          "diskReads": 867,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        },
+        {
+          "label": "next-local-plane",
+          "elapsedMs": 1108.4164020000003,
+          "diskReads": 867,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        },
+        {
+          "label": "same-local-plane",
+          "elapsedMs": 1167.4726750000004,
+          "diskReads": 867,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        }
+      ]
+    },
+    {
+      "version": "v14",
+      "decodedLimit": 402653184,
+      "decodedBytes": 242768500,
+      "diskReads": 884,
+      "diskBytes": 140006061,
+      "networkRequests": 0,
+      "samples": [
+        {
+          "label": "first-local-plane",
+          "elapsedMs": 1300.0495310000006,
+          "diskReads": 866,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 866
+        },
+        {
+          "label": "nearby-local-plane",
+          "elapsedMs": 126.66957100000036,
+          "diskReads": 9,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        },
+        {
+          "label": "next-local-plane",
+          "elapsedMs": 138.7779270000001,
+          "diskReads": 9,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        },
+        {
+          "label": "same-local-plane",
+          "elapsedMs": 104.09180600000036,
+          "diskReads": 0,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "width": 2835,
+          "height": 2751,
+          "bricks": 867
+        }
+      ]
+    }
+  ],
+  "acoustics": [
+    {
+      "donor": "ladaf-2021-17",
+      "sourceSpacingUm": 79.4,
+      "sourceHash": "10d7838bfc98926fe1bc360174faf3af647d1cb5fc5968f3d99e0a8acd9b17ef",
+      "cap": [
+        3281,
+        2948
+      ],
+      "before": {
+        "width": 1100,
+        "height": 893,
+        "beams": 320,
+        "radialSamples": 1450,
+        "medianMs": 197.62099500000022,
+        "samplesMs": [
+          197.62099500000022,
+          201.97988299999997,
+          172.68303399999968
+        ]
+      },
+      "after": {
+        "width": 800,
+        "height": 650,
+        "beams": 242,
+        "radialSamples": 806,
+        "medianMs": 88.35229600000002,
+        "samplesMs": [
+          88.35229600000002,
+          93.15579900000012,
+          60.199892999999975
+        ]
+      },
+      "matchedGridDifferences": {
+        "ct": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        },
+        "ultrasound": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        }
+      },
+      "motionAndRestIdentical": true,
+      "capBytesUnchanged": true
+    },
+    {
+      "donor": "s-20-29",
+      "sourceSpacingUm": 79.56,
+      "sourceHash": "f70c340967c23dd81a6f5c00b76ba86e3c4c27ce79038b6af56c9c309d92fdc9",
+      "cap": [
+        3004,
+        2804
+      ],
+      "before": {
+        "width": 1100,
+        "height": 893,
+        "beams": 320,
+        "radialSamples": 1636,
+        "medianMs": 194.51185299999997,
+        "samplesMs": [
+          215.4885919999997,
+          177.1849689999999,
+          194.51185299999997
+        ]
+      },
+      "after": {
+        "width": 800,
+        "height": 650,
+        "beams": 242,
+        "radialSamples": 909,
+        "medianMs": 66.86830000000009,
+        "samplesMs": [
+          61.39965800000027,
+          98.00347500000134,
+          66.86830000000009
+        ]
+      },
+      "matchedGridDifferences": {
+        "ct": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        },
+        "ultrasound": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        }
+      },
+      "motionAndRestIdentical": true,
+      "capBytesUnchanged": true
+    },
+    {
+      "donor": "s-20-28",
+      "sourceSpacingUm": 79.4,
+      "sourceHash": "70057bb46756079074765eb5b4876def0c7a94c1160d054f339d0a9b30a5191a",
+      "cap": [
+        2835,
+        2751
+      ],
+      "before": {
+        "width": 1100,
+        "height": 893,
+        "beams": 320,
+        "radialSamples": 1777,
+        "medianMs": 203.53299499999957,
+        "samplesMs": [
+          203.53299499999957,
+          205.4701270000005,
+          193.86475299999984
+        ]
+      },
+      "after": {
+        "width": 800,
+        "height": 650,
+        "beams": 242,
+        "radialSamples": 988,
+        "medianMs": 66.71453900000051,
+        "samplesMs": [
+          66.39289300000019,
+          66.71453900000051,
+          69.44386699999995
+        ]
+      },
+      "matchedGridDifferences": {
+        "ct": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        },
+        "ultrasound": {
+          "maxByteDifference": 0,
+          "changedPixels": 0,
+          "meanAbsoluteDifference": 0
+        }
+      },
+      "motionAndRestIdentical": true,
+      "capBytesUnchanged": true
+    }
+  ],
+  "assertions": [
+    "Native source cap sampling retained during movement and rest",
+    "Final real-source cap matches the baseline within at most one quantization level",
+    "New bounded cache retains the active oblique plane",
+    "No benchmark network requests",
+    "Real prepared images pass their manifest pixel hashes",
+    "Matching acoustic grids preserve CT and ultrasound bytes within one quantization level",
+    "Movement and rest produce identical CT/ultrasound pixels for identical input",
+    "Prepared cap bytes remain unchanged"
+  ],
+  "nativePixels": {
+    "count": 7799085,
+    "maximumByteDifference": 0,
+    "changedPixels": 0,
+    "sha256": "8dbc10f530b239518e498e44964d25de1c0726b4bfde5b1c213750023f276fff"
+  },
+  "passed": true
+}

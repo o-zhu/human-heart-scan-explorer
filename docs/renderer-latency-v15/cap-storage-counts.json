@@ -1,0 +1,279 @@
+{
+  "scope": "Actual VolumeRenderer upload allocation commands for complete forward/reverse nonempty orthogonal manifest sequences. Fresh renderer per axis/direction; no network, browser, GPU timing, or FPS claim.",
+  "sourceSlices": 6758,
+  "exactSizeAllocations": 2998,
+  "reusableAllocations": 183,
+  "reductionPercent": 93.9,
+  "results": [
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "x",
+      "direction": "forward",
+      "nonemptySlices": 288,
+      "exactSizeAllocations": 140,
+      "reusableAllocations": 9,
+      "reductionPercent": 93.57,
+      "retainedCapacity": [
+        1280,
+        2048
+      ],
+      "retainedBytes": 2621440,
+      "largestRasterBytes": 2240357
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "x",
+      "direction": "reverse",
+      "nonemptySlices": 288,
+      "exactSizeAllocations": 140,
+      "reusableAllocations": 11,
+      "reductionPercent": 92.14,
+      "retainedCapacity": [
+        1280,
+        2048
+      ],
+      "retainedBytes": 2621440,
+      "largestRasterBytes": 2240357
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "y",
+      "direction": "forward",
+      "nonemptySlices": 314,
+      "exactSizeAllocations": 147,
+      "reusableAllocations": 11,
+      "reductionPercent": 92.52,
+      "retainedCapacity": [
+        1280,
+        2048
+      ],
+      "retainedBytes": 2621440,
+      "largestRasterBytes": 2167869
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "y",
+      "direction": "reverse",
+      "nonemptySlices": 314,
+      "exactSizeAllocations": 147,
+      "reusableAllocations": 11,
+      "reductionPercent": 92.52,
+      "retainedCapacity": [
+        1280,
+        2048
+      ],
+      "retainedBytes": 2621440,
+      "largestRasterBytes": 2167869
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "z",
+      "direction": "forward",
+      "nonemptySlices": 494,
+      "exactSizeAllocations": 211,
+      "reusableAllocations": 9,
+      "reductionPercent": 95.73,
+      "retainedCapacity": [
+        1280,
+        1280
+      ],
+      "retainedBytes": 1638400,
+      "largestRasterBytes": 1269729
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "axis": "z",
+      "direction": "reverse",
+      "nonemptySlices": 494,
+      "exactSizeAllocations": 211,
+      "reusableAllocations": 9,
+      "reductionPercent": 95.73,
+      "retainedCapacity": [
+        1280,
+        1280
+      ],
+      "retainedBytes": 1638400,
+      "largestRasterBytes": 1269729
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "x",
+      "direction": "forward",
+      "nonemptySlices": 384,
+      "exactSizeAllocations": 162,
+      "reusableAllocations": 11,
+      "reductionPercent": 93.21,
+      "retainedCapacity": [
+        1280,
+        1792
+      ],
+      "retainedBytes": 2293760,
+      "largestRasterBytes": 1842179
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "x",
+      "direction": "reverse",
+      "nonemptySlices": 384,
+      "exactSizeAllocations": 162,
+      "reusableAllocations": 9,
+      "reductionPercent": 94.44,
+      "retainedCapacity": [
+        1280,
+        1792
+      ],
+      "retainedBytes": 2293760,
+      "largestRasterBytes": 1842179
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "y",
+      "direction": "forward",
+      "nonemptySlices": 284,
+      "exactSizeAllocations": 137,
+      "reusableAllocations": 9,
+      "reductionPercent": 93.43,
+      "retainedCapacity": [
+        1536,
+        1792
+      ],
+      "retainedBytes": 2752512,
+      "largestRasterBytes": 2641275
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "y",
+      "direction": "reverse",
+      "nonemptySlices": 284,
+      "exactSizeAllocations": 137,
+      "reusableAllocations": 8,
+      "reductionPercent": 94.16,
+      "retainedCapacity": [
+        1536,
+        1792
+      ],
+      "retainedBytes": 2752512,
+      "largestRasterBytes": 2641275
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "z",
+      "direction": "forward",
+      "nonemptySlices": 440,
+      "exactSizeAllocations": 179,
+      "reusableAllocations": 10,
+      "reductionPercent": 94.41,
+      "retainedCapacity": [
+        1536,
+        1280
+      ],
+      "retainedBytes": 1966080,
+      "largestRasterBytes": 1525563
+    },
+    {
+      "donor": "s-20-29",
+      "axis": "z",
+      "direction": "reverse",
+      "nonemptySlices": 440,
+      "exactSizeAllocations": 179,
+      "reusableAllocations": 10,
+      "reductionPercent": 94.41,
+      "retainedCapacity": [
+        1536,
+        1280
+      ],
+      "retainedBytes": 1966080,
+      "largestRasterBytes": 1525563
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "x",
+      "direction": "forward",
+      "nonemptySlices": 358,
+      "exactSizeAllocations": 166,
+      "reusableAllocations": 11,
+      "reductionPercent": 93.37,
+      "retainedCapacity": [
+        1536,
+        2048
+      ],
+      "retainedBytes": 3145728,
+      "largestRasterBytes": 2470995
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "x",
+      "direction": "reverse",
+      "nonemptySlices": 358,
+      "exactSizeAllocations": 166,
+      "reusableAllocations": 13,
+      "reductionPercent": 92.17,
+      "retainedCapacity": [
+        1536,
+        2048
+      ],
+      "retainedBytes": 3145728,
+      "largestRasterBytes": 2470995
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "y",
+      "direction": "forward",
+      "nonemptySlices": 328,
+      "exactSizeAllocations": 160,
+      "reusableAllocations": 10,
+      "reductionPercent": 93.75,
+      "retainedCapacity": [
+        1536,
+        2048
+      ],
+      "retainedBytes": 3145728,
+      "largestRasterBytes": 2445047
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "y",
+      "direction": "reverse",
+      "nonemptySlices": 328,
+      "exactSizeAllocations": 160,
+      "reusableAllocations": 12,
+      "reductionPercent": 92.5,
+      "retainedCapacity": [
+        1536,
+        2048
+      ],
+      "retainedBytes": 3145728,
+      "largestRasterBytes": 2445047
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "z",
+      "direction": "forward",
+      "nonemptySlices": 489,
+      "exactSizeAllocations": 197,
+      "reusableAllocations": 10,
+      "reductionPercent": 94.92,
+      "retainedCapacity": [
+        1536,
+        1280
+      ],
+      "retainedBytes": 1966080,
+      "largestRasterBytes": 1715719
+    },
+    {
+      "donor": "s-20-28",
+      "axis": "z",
+      "direction": "reverse",
+      "nonemptySlices": 489,
+      "exactSizeAllocations": 197,
+      "reusableAllocations": 10,
+      "reductionPercent": 94.92,
+      "retainedCapacity": [
+        1536,
+        1280
+      ],
+      "retainedBytes": 1966080,
+      "largestRasterBytes": 1715719
+    }
+  ]
+}

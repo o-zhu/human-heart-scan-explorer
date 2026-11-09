@@ -1,0 +1,219 @@
+{
+  "case": {
+    "id": "aortic-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1080,
+      1168,
+      990
+    ],
+    "distance": 0.3
+  },
+  "roiXYXY": [
+    340,
+    375,
+    430,
+    485
+  ],
+  "visibleDarkCapOnlyPixels": 284,
+  "insideSelectedPatch": 284,
+  "rawPreparedNearestMismatch": 0,
+  "gaussianBelowExtraction": 246,
+  "gaussianBelowExtractionAndInsidePatch": 246,
+  "localExcluded": 0,
+  "hardExcluded": 0,
+  "capBilinearRange": [
+    71.2456283569336,
+    88.32426452636719
+  ],
+  "gaussianRange": [
+    52.70903015136719,
+    134.4249267578125
+  ],
+  "examples": [
+    {
+      "screenXY": [
+        373,
+        375
+      ],
+      "sourceFineXYZ": [
+        1087,
+        1168,
+        968
+      ],
+      "raw": 72,
+      "capNearest": 72,
+      "capBilinear": 73.52474975585938,
+      "gaussianSigma05": 68.9444351196289,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        378,
+        375
+      ],
+      "sourceFineXYZ": [
+        1089,
+        1168,
+        968
+      ],
+      "raw": 79,
+      "capNearest": 79,
+      "capBilinear": 72.61400604248047,
+      "gaussianSigma05": 70.82269287109375,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        379,
+        375
+      ],
+      "sourceFineXYZ": [
+        1089,
+        1168,
+        968
+      ],
+      "raw": 79,
+      "capNearest": 79,
+      "capBilinear": 78.34654235839844,
+      "gaussianSigma05": 70.82269287109375,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        380,
+        375
+      ],
+      "sourceFineXYZ": [
+        1090,
+        1168,
+        968
+      ],
+      "raw": 73,
+      "capNearest": 73,
+      "capBilinear": 83.59954833984375,
+      "gaussianSigma05": 67.86725616455078,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        381,
+        375
+      ],
+      "sourceFineXYZ": [
+        1090,
+        1168,
+        968
+      ],
+      "raw": 73,
+      "capNearest": 73,
+      "capBilinear": 77.65581512451172,
+      "gaussianSigma05": 67.86725616455078,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        371,
+        378
+      ],
+      "sourceFineXYZ": [
+        1086,
+        1168,
+        970
+      ],
+      "raw": 65,
+      "capNearest": 65,
+      "capBilinear": 74.5109634399414,
+      "gaussianSigma05": 68.95399475097656,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        371,
+        379
+      ],
+      "sourceFineXYZ": [
+        1086,
+        1168,
+        970
+      ],
+      "raw": 65,
+      "capNearest": 65,
+      "capBilinear": 72.55168914794922,
+      "gaussianSigma05": 68.95399475097656,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        369,
+        380
+      ],
+      "sourceFineXYZ": [
+        1085,
+        1168,
+        971
+      ],
+      "raw": 62,
+      "capNearest": 62,
+      "capBilinear": 72.44647216796875,
+      "gaussianSigma05": 69.17408752441406,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        382,
+        380
+      ],
+      "sourceFineXYZ": [
+        1091,
+        1168,
+        971
+      ],
+      "raw": 71,
+      "capNearest": 71,
+      "capBilinear": 71.9186782836914,
+      "gaussianSigma05": 70.53192138671875,
+      "localExcluded": false,
+      "hardExcluded": false
+    },
+    {
+      "screenXY": [
+        382,
+        381
+      ],
+      "sourceFineXYZ": [
+        1091,
+        1168,
+        971
+      ],
+      "raw": 71,
+      "capNearest": 71,
+      "capBilinear": 72.08058166503906,
+      "gaussianSigma05": 70.53192138671875,
+      "localExcluded": false,
+      "hardExcluded": false
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 4,
+    "decodedBrickReads": 4,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "scope": "Diagnostic image contribution and verified intensity comparison only. No source, masks, or runtime assets changed. Fixed display-intensity values are not calibrated Hounsfield units."
+}

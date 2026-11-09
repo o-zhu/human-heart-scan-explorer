@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "shaderSha256": "0af461e8cf9aa9a103290f4e18ff10cea020e7d5a13db122d89cca7bf9e24ad6",
+  "checks": [
+    {
+      "preset": "apical",
+      "contactKind": "skin",
+      "nonBackgroundPixels": 61716,
+      "glError": 0,
+      "sourceSpacingUm": 79.4,
+      "capSize": [
+        3281,
+        2948
+      ],
+      "panelSize": [
+        680,
+        650
+      ]
+    },
+    {
+      "preset": "atrial",
+      "contactKind": "esophageal",
+      "nonBackgroundPixels": 81858,
+      "glError": 0,
+      "sourceSpacingUm": 79.4,
+      "capSize": [
+        3281,
+        2948
+      ],
+      "panelSize": [
+        680,
+        650
+      ]
+    }
+  ],
+  "scope": "Actual production GLSL, actual camera basis, recorded production Canvas guide paths, and fine-derived simulated sectors. Offscreen EGL and native SVG rendering; not a browser layout, cursor-permission or frame-rate test."
+}

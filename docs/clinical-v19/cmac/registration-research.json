@@ -1,0 +1,47 @@
+{
+  "mrDicomToUsVtk": [
+    [
+      0.1328406724719445,
+      -0.11900597111386646,
+      -0.8830218085018249,
+      44.03620223913816
+    ],
+    [
+      -0.8292737070951834,
+      -0.34303648021761735,
+      -0.07852531844129457,
+      28.126697845719743
+    ],
+    [
+      -0.32587554615381986,
+      0.8244392249260188,
+      -0.16013595476194986,
+      17.138683957870107
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fitRMSEmm": 0.00024020176683475243,
+  "fitMaxMm": 0.0008380839189503393,
+  "source": "Corresponding vertices in distributed 3DTAG DICOM and 3DUS VTK LV reference meshes",
+  "meaning": "Reproduces the organizer-provided LV mesh mapping; the fit residual is not an independent anatomical registration accuracy measurement.",
+  "notAppliedToViewer": true,
+  "wholeHeartMriDifferentFrameOfReference": true,
+  "groundTruthArchiveSha256": "a97279bbf0025994a906c0f7fcd5f97d166484f2132539cbe008c0ec179e3dd1",
+  "referenceFiles": [
+    {
+      "path": "cMAC/GT/3DTAG/v1/MESH/DICOM_COORDINATES/v1.vtk",
+      "sha256": "37d30d4bc8077543faf23cf3c59c6dd1c29d22fc46b06c230f259ed4793a8a5b",
+      "bytes": 178631
+    },
+    {
+      "path": "cMAC/GT/3DUS/v1/MESH/VTK_COORDINATES/v1.vtk",
+      "sha256": "6ba0de048ddbe687ef247a17e15e69d56fe0fadd653e8e3578f0c4662e120b6b",
+      "bytes": 172755
+    }
+  ]
+}

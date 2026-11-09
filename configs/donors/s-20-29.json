@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "s-20-29",
+  "specimen": "S-20-29",
+  "datasetId": "1773963465",
+  "doi": "10.15151/ESRF-DC-1773964017",
+  "donorAge": "80",
+  "donorSex": "male",
+  "donorMedicalInfo": "died from Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease | Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
+  "metadataDirectory": "docs/donors/s-20-29",
+  "source": {
+    "format": "n5",
+    "baseUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/",
+    "nativeSpacingUm": 19.89,
+    "fineLevel": "2",
+    "highLevel": "4",
+    "window": [
+      19300,
+      23000
+    ],
+    "levels": {
+      "0": {
+        "dimensionsXYZ": [
+          7639,
+          7639,
+          7771
+        ],
+        "voxelMicrons": 19.89,
+        "rawBytes": 906942856982
+      },
+      "2": {
+        "dimensionsXYZ": [
+          1909,
+          1909,
+          1943
+        ],
+        "voxelMicrons": 79.56,
+        "rawBytes": 14161675966
+      },
+      "4": {
+        "dimensionsXYZ": [
+          477,
+          477,
+          486
+        ],
+        "voxelMicrons": 318.24,
+        "rawBytes": 221158188
+      }
+    }
+  },
+  "cleanup": {
+    "thresholdRaw": 19900,
+    "connectivity": 18,
+    "marginHighVoxels": 3,
+    "samplingGuardVoxels": 1,
+    "componentPolicy": "largest"
+  },
+  "viewsConfig": null,
+  "anatomyConfig": null,
+  "defaultThreshold": 0.16216216216216217,
+  "displayWindow": {
+    "windowEnabled": true,
+    "windowLow": 0.13513513513513514,
+    "windowHigh": 0.6216216216216216,
+    "windowGamma": 0.9,
+    "capContrast": 1
+  }
+}

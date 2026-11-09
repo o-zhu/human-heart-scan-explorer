@@ -1,0 +1,952 @@
+{
+  "revision": "specimen-context-clearance-v6",
+  "method": "Reproduce S-20 support hulls and fixed-organ clearance from immutable source masks.\n\nChecks the complete surfaces, including triangle interiors sampled at <=0.8 mm\nedge spacing. The conservative lower bound subtracts both half a source support\ncell diagonal and the sampling radius from the nearest boundary-cell distance.\nThe support already includes the documented conservative source margin. This\nestablishes exterior-envelope separation, not patient-anatomical registration.\n",
+  "donors": {
+    "s-20-29": {
+      "sourceMaskSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+      "boundaryCells": 211065,
+      "hullVertices": 973,
+      "cellDiagonalMm": 1.1008786955238756,
+      "triangleSampleMaximumEdgeMm": 0.8,
+      "calibration": {
+        "revision": "source-specimen-calibration-v1",
+        "donorId": "s-20-29",
+        "datasetId": "1773963465",
+        "referenceMm": 154.66464,
+        "sourceReferenceMm": 154.66464,
+        "landmarksMm": {
+          "apex": [
+            31.78422,
+            40.53582,
+            -6.961500000000001
+          ],
+          "epicardialApex": [
+            8.23446,
+            65.67678000000001,
+            4.49514
+          ],
+          "leftVentricle": [
+            24.14646,
+            21.44142,
+            -0.9149400000000001
+          ],
+          "rightVentricle": [
+            -12.132900000000001,
+            11.89422,
+            -2.5061400000000003
+          ],
+          "leftAtrium": [
+            17.781660000000002,
+            -40.61538,
+            19.770660000000003
+          ],
+          "rightAtrium": [
+            -42.365700000000004,
+            -45.388980000000004,
+            4.81338
+          ],
+          "rightAtriumSuperior": [
+            -25.18074,
+            -62.89218,
+            6.40458
+          ],
+          "mitralRegion": [
+            16.19046,
+            -22.15746,
+            21.04362
+          ],
+          "tricuspidRegion": [
+            -36.63738,
+            -9.109620000000001,
+            6.086340000000001
+          ],
+          "aorticRoot": [
+            -1.31274,
+            -19.293300000000002,
+            6.40458
+          ],
+          "aorticLumen": [
+            -16.588260000000002,
+            -32.659380000000006,
+            2.2674600000000003
+          ],
+          "aorticSuperior": [
+            -21.998340000000002,
+            -48.571380000000005,
+            -12.689820000000001
+          ],
+          "pulmonaryRoot": [
+            -1.63098,
+            -16.74738,
+            -13.96278
+          ],
+          "pulmonarySuperior": [
+            2.1879,
+            -40.61538,
+            -21.282300000000003
+          ]
+        },
+        "anatomicalFrame": {
+          "kind": "specimen-source-anchored-illustrative-frame",
+          "originMm": [
+            -10.22346,
+            -15.63354,
+            13.56498
+          ],
+          "left": [
+            0.9724325182334559,
+            0.2283898846429329,
+            0.047043151201078076
+          ],
+          "superior": [
+            0.19951293589402191,
+            -0.7104782734280493,
+            -0.6748445831431458
+          ],
+          "anterior": [
+            -0.12070453965401451,
+            0.6656265346119294,
+            -0.7364589129934042
+          ],
+          "posterior": [
+            0.12070453965401451,
+            -0.6656265346119294,
+            0.7364589129934042
+          ],
+          "landmarksMm": {
+            "apex": [
+              31.78422,
+              40.53582,
+              -6.961500000000001
+            ],
+            "epicardialApex": [
+              8.23446,
+              65.67678000000001,
+              4.49514
+            ],
+            "leftVentricle": [
+              24.14646,
+              21.44142,
+              -0.9149400000000001
+            ],
+            "rightVentricle": [
+              -12.132900000000001,
+              11.89422,
+              -2.5061400000000003
+            ],
+            "leftAtrium": [
+              17.781660000000002,
+              -40.61538,
+              19.770660000000003
+            ],
+            "rightAtrium": [
+              -42.365700000000004,
+              -45.388980000000004,
+              4.81338
+            ],
+            "rightAtriumSuperior": [
+              -25.18074,
+              -62.89218,
+              6.40458
+            ],
+            "mitralRegion": [
+              16.19046,
+              -22.15746,
+              21.04362
+            ],
+            "tricuspidRegion": [
+              -36.63738,
+              -9.109620000000001,
+              6.086340000000001
+            ],
+            "aorticRoot": [
+              -1.31274,
+              -19.293300000000002,
+              6.40458
+            ],
+            "aorticLumen": [
+              -16.588260000000002,
+              -32.659380000000006,
+              2.2674600000000003
+            ],
+            "aorticSuperior": [
+              -21.998340000000002,
+              -48.571380000000005,
+              -12.689820000000001
+            ],
+            "pulmonaryRoot": [
+              -1.63098,
+              -16.74738,
+              -13.96278
+            ],
+            "pulmonarySuperior": [
+              2.1879,
+              -40.61538,
+              -21.282300000000003
+            ]
+          },
+          "contextProfile": {
+            "revision": "source-clearance-fit-v3",
+            "bodyReferenceScale": 1.35,
+            "diaphragmOffsetMm": -17,
+            "hiatusXZ": [
+              12,
+              -29
+            ],
+            "esophagusControls": [
+              [
+                15,
+                110,
+                -44
+              ],
+              [
+                18,
+                85,
+                -46
+              ],
+              [
+                21,
+                60,
+                -51
+              ],
+              [
+                24,
+                40,
+                -60
+              ],
+              [
+                22,
+                20,
+                -61
+              ],
+              [
+                24,
+                0,
+                -59
+              ],
+              [
+                30,
+                -25,
+                -48
+              ],
+              [
+                22,
+                -45,
+                -36
+              ]
+            ]
+          },
+          "patientOrientationValidated": false
+        },
+        "contextProfile": {
+          "revision": "source-clearance-fit-v3",
+          "bodyReferenceScale": 1.35,
+          "diaphragmOffsetMm": -17,
+          "hiatusXZ": [
+            12,
+            -29
+          ],
+          "esophagusControls": [
+            [
+              15,
+              110,
+              -44
+            ],
+            [
+              18,
+              85,
+              -46
+            ],
+            [
+              21,
+              60,
+              -51
+            ],
+            [
+              24,
+              40,
+              -60
+            ],
+            [
+              22,
+              20,
+              -61
+            ],
+            [
+              24,
+              0,
+              -59
+            ],
+            [
+              30,
+              -25,
+              -48
+            ],
+            [
+              22,
+              -45,
+              -36
+            ]
+          ]
+        },
+        "boundsMm": {
+          "min": [
+            -61.29182560669457,
+            -69.05808000000002,
+            -42.23737205020922
+          ],
+          "max": [
+            60.02152870292888,
+            70.33104,
+            47.31855966527198
+          ],
+          "kind": "retained-source-support-bounds"
+        },
+        "sourceSupport": {
+          "sourceSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+          "dimensions": [
+            240,
+            240,
+            244
+          ],
+          "voxelDiagonalMm": 1.1008786955238756
+        },
+        "sourcePoints": {
+          "apex": [
+            338,
+            260,
+            370
+          ],
+          "epicardialApex": [
+            264,
+            224,
+            449
+          ],
+          "leftVentricle": [
+            314,
+            241,
+            310
+          ],
+          "rightVentricle": [
+            200,
+            246,
+            280
+          ],
+          "leftAtrium": [
+            294,
+            176,
+            115
+          ],
+          "rightAtrium": [
+            105,
+            223,
+            100
+          ],
+          "rightAtriumSuperior": [
+            159,
+            218,
+            45
+          ],
+          "mitralRegion": [
+            289,
+            172,
+            173
+          ],
+          "tricuspidRegion": [
+            123,
+            219,
+            214
+          ],
+          "aorticRoot": [
+            234,
+            218,
+            182
+          ],
+          "aorticLumen": [
+            186,
+            231,
+            140
+          ],
+          "aorticSuperior": [
+            169,
+            278,
+            90
+          ],
+          "pulmonaryRoot": [
+            233,
+            282,
+            190
+          ],
+          "pulmonarySuperior": [
+            245,
+            305,
+            115
+          ]
+        },
+        "provenance": "docs/anatomy-donors-v17/source-guides.json; original source XYZ + 0.375 voxel fine-centre registration",
+        "apexMethod": "Endocardial distal LV cavity; outer compact-wall tip retained separately for the physical envelope.",
+        "patientOrientationValidated": false,
+        "limitations": "Assistant-reviewed source regions; body and gastrointestinal organs are illustrative, not acquired patient anatomy."
+      },
+      "meshes": {
+        "diaphragm": {
+          "triangles": 9216,
+          "samples": 206146,
+          "minimumBoundaryCellDistanceMm": 6.420747468869707,
+          "conservativeSurfaceClearanceMm": 5.070308121107769,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 5.723066951177721
+        },
+        "central-tendon": {
+          "triangles": 2208,
+          "samples": 33038,
+          "minimumBoundaryCellDistanceMm": 7.223103168134364,
+          "conservativeSurfaceClearanceMm": 5.872663820372426,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 5.993644361668345
+        },
+        "esophageal-hiatus": {
+          "triangles": 2048,
+          "samples": 6144,
+          "minimumBoundaryCellDistanceMm": 26.90030482594055,
+          "conservativeSurfaceClearanceMm": 25.549865478178614,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 26.294613107416247
+        },
+        "diaphragm-rim": {
+          "triangles": 2048,
+          "samples": 63702,
+          "minimumBoundaryCellDistanceMm": 33.60999326380681,
+          "conservativeSurfaceClearanceMm": 32.25955391604487,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 31.41494007257164
+        },
+        "esophagus": {
+          "triangles": 8448,
+          "samples": 99272,
+          "minimumBoundaryCellDistanceMm": 9.518948608014266,
+          "conservativeSurfaceClearanceMm": 8.168509260252328,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 6.812097732092553
+        },
+        "stomach": {
+          "triangles": 7680,
+          "samples": 157669,
+          "minimumBoundaryCellDistanceMm": 33.91427624368142,
+          "conservativeSurfaceClearanceMm": 32.563836895919486,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 32.242541928618266
+        },
+        "greater-curvature": {
+          "triangles": 1280,
+          "samples": 23561,
+          "minimumBoundaryCellDistanceMm": 35.92674402087054,
+          "conservativeSurfaceClearanceMm": 34.5763046731086,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 34.935129817585846
+        },
+        "lesser-curvature": {
+          "triangles": 1280,
+          "samples": 9194,
+          "minimumBoundaryCellDistanceMm": 42.20887872391253,
+          "conservativeSurfaceClearanceMm": 40.85843937615059,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 41.55985494946146
+        },
+        "esophageal-rim": {
+          "triangles": 768,
+          "samples": 3132,
+          "minimumBoundaryCellDistanceMm": 53.8379515909791,
+          "conservativeSurfaceClearanceMm": 52.48751224321717,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 52.15045405397723
+        },
+        "pyloric-rim": {
+          "triangles": 768,
+          "samples": 4578,
+          "minimumBoundaryCellDistanceMm": 57.0803508762567,
+          "conservativeSurfaceClearanceMm": 55.72991152849477,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 56.28011744500655
+        }
+      }
+    },
+    "s-20-28": {
+      "sourceMaskSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+      "boundaryCells": 265071,
+      "hullVertices": 1303,
+      "cellDiagonalMm": 1.100198672967751,
+      "triangleSampleMaximumEdgeMm": 0.8,
+      "calibration": {
+        "revision": "source-specimen-calibration-v1",
+        "donorId": "s-20-28",
+        "datasetId": "1966162746",
+        "referenceMm": 161.3408,
+        "sourceReferenceMm": 161.3408,
+        "landmarksMm": {
+          "apex": [
+            -14.1729,
+            70.3087,
+            12.5849
+          ],
+          "epicardialApex": [
+            -14.1729,
+            70.3087,
+            12.5849
+          ],
+          "leftVentricle": [
+            6.7886999999999995,
+            27.4327,
+            9.7265
+          ],
+          "rightVentricle": [
+            -23.7009,
+            -1.1513,
+            5.9153
+          ],
+          "leftAtrium": [
+            22.6687,
+            -32.9113,
+            10.361699999999999
+          ],
+          "rightAtrium": [
+            -13.8553,
+            -47.2033,
+            12.9025
+          ],
+          "rightAtriumSuperior": [
+            -11.9497,
+            -71.6585,
+            4.6449
+          ],
+          "mitralRegion": [
+            20.4455,
+            -7.8209,
+            8.7737
+          ],
+          "tricuspidRegion": [
+            -16.7137,
+            -30.6881,
+            18.3017
+          ],
+          "aorticRoot": [
+            5.5183,
+            -15.7609,
+            -4.2479
+          ],
+          "aorticLumen": [
+            2.0247,
+            -32.9113,
+            -9.0119
+          ],
+          "aorticSuperior": [
+            2.9775,
+            -51.9673,
+            -26.1623
+          ],
+          "pulmonaryRoot": [
+            0.7543,
+            -5.9153,
+            -32.5143
+          ],
+          "pulmonarySuperior": [
+            16.6343,
+            -32.9113,
+            -39.8191
+          ]
+        },
+        "anatomicalFrame": {
+          "kind": "specimen-source-anchored-illustrative-frame",
+          "originMm": [
+            1.8659,
+            -19.2545,
+            13.537700000000001
+          ],
+          "left": [
+            0.7115787206081885,
+            0.6751364907556991,
+            -0.19454162338094572
+          ],
+          "superior": [
+            0.14911545203161283,
+            -0.4156932455806125,
+            -0.8971976970233841
+          ],
+          "anterior": [
+            -0.686600543506209,
+            0.6094176272710993,
+            -0.3964717508577908
+          ],
+          "posterior": [
+            0.686600543506209,
+            -0.6094176272710993,
+            0.3964717508577908
+          ],
+          "landmarksMm": {
+            "apex": [
+              -14.1729,
+              70.3087,
+              12.5849
+            ],
+            "epicardialApex": [
+              -14.1729,
+              70.3087,
+              12.5849
+            ],
+            "leftVentricle": [
+              6.7886999999999995,
+              27.4327,
+              9.7265
+            ],
+            "rightVentricle": [
+              -23.7009,
+              -1.1513,
+              5.9153
+            ],
+            "leftAtrium": [
+              22.6687,
+              -32.9113,
+              10.361699999999999
+            ],
+            "rightAtrium": [
+              -13.8553,
+              -47.2033,
+              12.9025
+            ],
+            "rightAtriumSuperior": [
+              -11.9497,
+              -71.6585,
+              4.6449
+            ],
+            "mitralRegion": [
+              20.4455,
+              -7.8209,
+              8.7737
+            ],
+            "tricuspidRegion": [
+              -16.7137,
+              -30.6881,
+              18.3017
+            ],
+            "aorticRoot": [
+              5.5183,
+              -15.7609,
+              -4.2479
+            ],
+            "aorticLumen": [
+              2.0247,
+              -32.9113,
+              -9.0119
+            ],
+            "aorticSuperior": [
+              2.9775,
+              -51.9673,
+              -26.1623
+            ],
+            "pulmonaryRoot": [
+              0.7543,
+              -5.9153,
+              -32.5143
+            ],
+            "pulmonarySuperior": [
+              16.6343,
+              -32.9113,
+              -39.8191
+            ]
+          },
+          "contextProfile": {
+            "revision": "source-clearance-fit-v3",
+            "bodyReferenceScale": 1.22,
+            "diaphragmOffsetMm": -21,
+            "hiatusXZ": [
+              12,
+              -29
+            ],
+            "esophagusControls": [
+              [
+                0,
+                110,
+                -43
+              ],
+              [
+                3,
+                85,
+                -47
+              ],
+              [
+                5,
+                60,
+                -52
+              ],
+              [
+                5,
+                40,
+                -59
+              ],
+              [
+                4,
+                20,
+                -67
+              ],
+              [
+                5,
+                0,
+                -67
+              ],
+              [
+                12,
+                -25,
+                -53
+              ],
+              [
+                18,
+                -48,
+                -38
+              ]
+            ]
+          },
+          "patientOrientationValidated": false
+        },
+        "contextProfile": {
+          "revision": "source-clearance-fit-v3",
+          "bodyReferenceScale": 1.22,
+          "diaphragmOffsetMm": -21,
+          "hiatusXZ": [
+            12,
+            -29
+          ],
+          "esophagusControls": [
+            [
+              0,
+              110,
+              -43
+            ],
+            [
+              3,
+              85,
+              -47
+            ],
+            [
+              5,
+              60,
+              -52
+            ],
+            [
+              5,
+              40,
+              -59
+            ],
+            [
+              4,
+              20,
+              -67
+            ],
+            [
+              5,
+              0,
+              -67
+            ],
+            [
+              12,
+              -25,
+              -53
+            ],
+            [
+              18,
+              -48,
+              -38
+            ]
+          ]
+        },
+        "boundsMm": {
+          "min": [
+            -61.6144,
+            -80.67040000000001,
+            -56.5328
+          ],
+          "max": [
+            51.45120000000001,
+            74.31840000000001,
+            47.0048
+          ],
+          "kind": "retained-source-support-bounds"
+        },
+        "sourceSupport": {
+          "sourceSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+          "dimensions": [
+            239,
+            239,
+            255
+          ],
+          "voxelDiagonalMm": 1.100198672967751
+        },
+        "sourcePoints": {
+          "apex": [
+            193,
+            198,
+            475
+          ],
+          "epicardialApex": [
+            193,
+            198,
+            475
+          ],
+          "leftVentricle": [
+            259,
+            207,
+            340
+          ],
+          "rightVentricle": [
+            163,
+            219,
+            250
+          ],
+          "leftAtrium": [
+            309,
+            205,
+            150
+          ],
+          "rightAtrium": [
+            194,
+            197,
+            105
+          ],
+          "rightAtriumSuperior": [
+            200,
+            223,
+            28
+          ],
+          "mitralRegion": [
+            302,
+            210,
+            229
+          ],
+          "tricuspidRegion": [
+            185,
+            180,
+            157
+          ],
+          "aorticRoot": [
+            255,
+            251,
+            204
+          ],
+          "aorticLumen": [
+            244,
+            266,
+            150
+          ],
+          "aorticSuperior": [
+            247,
+            320,
+            90
+          ],
+          "pulmonaryRoot": [
+            240,
+            340,
+            235
+          ],
+          "pulmonarySuperior": [
+            290,
+            363,
+            150
+          ]
+        },
+        "provenance": "docs/anatomy-donors-v17/source-guides.json; original source XYZ + 0.375 voxel fine-centre registration",
+        "apexMethod": "Distal LV envelope apex verified against the source long-axis cavity.",
+        "patientOrientationValidated": false,
+        "limitations": "Assistant-reviewed source regions; body and gastrointestinal organs are illustrative, not acquired patient anatomy."
+      },
+      "meshes": {
+        "diaphragm": {
+          "triangles": 9216,
+          "samples": 219215,
+          "minimumBoundaryCellDistanceMm": 7.244914077312411,
+          "conservativeSurfaceClearanceMm": 5.894814740828536,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 6.657295161519982
+        },
+        "central-tendon": {
+          "triangles": 2208,
+          "samples": 34582,
+          "minimumBoundaryCellDistanceMm": 9.384214701547373,
+          "conservativeSurfaceClearanceMm": 8.034115365063498,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 8.747536355395702
+        },
+        "esophageal-hiatus": {
+          "triangles": 2048,
+          "samples": 6144,
+          "minimumBoundaryCellDistanceMm": 25.929674120484833,
+          "conservativeSurfaceClearanceMm": 24.579574784000958,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 25.364114640566903
+        },
+        "diaphragm-rim": {
+          "triangles": 2048,
+          "samples": 65396,
+          "minimumBoundaryCellDistanceMm": 35.742587906652695,
+          "conservativeSurfaceClearanceMm": 34.39248857016882,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 35.05222065906113
+        },
+        "esophagus": {
+          "triangles": 8448,
+          "samples": 103924,
+          "minimumBoundaryCellDistanceMm": 10.771338699570695,
+          "conservativeSurfaceClearanceMm": 9.42123936308682,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 9.911376277763189
+        },
+        "stomach": {
+          "triangles": 7680,
+          "samples": 166736,
+          "minimumBoundaryCellDistanceMm": 22.199534414507955,
+          "conservativeSurfaceClearanceMm": 20.84943507802408,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 21.632891617416163
+        },
+        "greater-curvature": {
+          "triangles": 1280,
+          "samples": 24660,
+          "minimumBoundaryCellDistanceMm": 27.463058939095557,
+          "conservativeSurfaceClearanceMm": 26.11295960261168,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 26.90161353698057
+        },
+        "lesser-curvature": {
+          "triangles": 1280,
+          "samples": 9658,
+          "minimumBoundaryCellDistanceMm": 43.90414171867405,
+          "conservativeSurfaceClearanceMm": 42.554042382190175,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 43.29577425830696
+        },
+        "esophageal-rim": {
+          "triangles": 768,
+          "samples": 3402,
+          "minimumBoundaryCellDistanceMm": 40.8802993290478,
+          "conservativeSurfaceClearanceMm": 39.53019999256393,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 40.30572252370259
+        },
+        "pyloric-rim": {
+          "triangles": 768,
+          "samples": 4608,
+          "minimumBoundaryCellDistanceMm": 67.15101182949553,
+          "conservativeSurfaceClearanceMm": 65.80091249301165,
+          "samplesInsideSupport": 0,
+          "continuousConvexEnvelopeSeparationMm": 65.50446835379209
+        }
+      }
+    }
+  },
+  "sourceHashes": {
+    "public/echo-donor-calibration.js": "e11d13f8f537a0b18046bbe91ca1a4cd9f84198f329e1a007c535c24237b5e9f",
+    "public/echo-donor-support.js": "1a8a49c56245a792a8392cf49038709c0d8be4a6f2416d50f17a8622e599548a",
+    "public/tee-context-geometry.js": "bd78662cb61b68c9a324b4563c41ed1ae51bc73417d1b4ba8201b80aaedc4cf1",
+    "public/echo-anatomy-context-v2.js": "703ba732d8cf597d126ea269c38dc8caeb0fd4b127ec9bf41d665f063c7ab6c7",
+    "scripts/echo-donor-context-v6.py": "b0b94758502467e471c8b1203d8c638cc8b07a53f1d20df6f257478176a5b09e",
+    "docs/anatomy-donors-v17/source-guides.json": "3afd33fd140a48113f4e84414e690dc803cd38f020cf949099207a79d0de561e"
+  }
+}

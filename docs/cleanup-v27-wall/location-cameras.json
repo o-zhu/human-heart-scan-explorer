@@ -1,0 +1,354 @@
+{
+  "componentCount": 1406359,
+  "cameras": [
+    {
+      "case": {
+        "id": "overview-284",
+        "coordinate": 1132,
+        "target": [
+          1000,
+          1132,
+          1000
+        ],
+        "distance": 1.15
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.11625321187730678,
+          -0.05605975253018388,
+          -1.2329383053661456
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.0274102079395085,
+          -0.08695652173913042
+        ]
+      },
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "changedPixels": 22709
+    },
+    {
+      "case": {
+        "id": "wall-284",
+        "coordinate": 1132,
+        "target": [
+          1270,
+          1132,
+          900
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.08712551088063389,
+          -0.5852094711421805
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.07466918714555763,
+          -0.08695652173913042
+        ]
+      },
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "changedPixels": 98466
+    },
+    {
+      "case": {
+        "id": "nodule-284",
+        "coordinate": 1132,
+        "target": [
+          1080,
+          1132,
+          1030
+        ],
+        "distance": 0.43
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.09666165547091472,
+          -0.023944952589859334,
+          -0.5154540582257535
+        ],
+        "_target": [
+          0.06238185255198487,
+          -0.013232514177693758,
+          -0.08695652173913042
+        ]
+      },
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "changedPixels": 96064
+    },
+    {
+      "case": {
+        "id": "appendage-313",
+        "coordinate": 1248,
+        "target": [
+          1270,
+          1248,
+          810
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.14177693761814741
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6400298870211976
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.14177693761814741
+        ]
+      },
+      "sourceCapSha256": "8b4c01e8fe34fb86e431fb754084b7a13e3ec53ca95c5c30ec6d557f9bb65c96",
+      "changedPixels": 39226
+    },
+    {
+      "case": {
+        "id": "vein-320",
+        "coordinate": 1276,
+        "target": [
+          1270,
+          1276,
+          810
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.15500945179584116
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6532624011988912
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.15500945179584116
+        ]
+      },
+      "sourceCapSha256": "2b37f431f5bfbc01d10611727694fd3926ae621fae476ff8b0570959ad3d41d5",
+      "changedPixels": 17231
+    },
+    {
+      "case": {
+        "id": "pulmonary-335",
+        "coordinate": 1336,
+        "target": [
+          1000,
+          1336,
+          570
+        ],
+        "distance": 0.48
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.18336483931947065
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.0628404957012998,
+          -0.242581889311193,
+          -0.6616876707463987
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.2306238185255198,
+          -0.18336483931947065
+        ]
+      },
+      "sourceCapSha256": "897dd58ffe29a5454f0157062e5ba4a8c42378db3f29aafde15f5ee6a446bf29",
+      "changedPixels": 20758
+    },
+    {
+      "case": {
+        "id": "tricuspid-222",
+        "coordinate": 884,
+        "target": [
+          760,
+          884,
+          1220
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          0.03024574669187145
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.04898664495512836,
+          0.06410322257872335,
+          -0.4680072027111786
+        ],
+        "_target": [
+          -0.08884688090737237,
+          0.0765595463137996,
+          0.03024574669187145
+        ]
+      },
+      "sourceCapSha256": "3e616a0896e52f90512c6721d0fe3064623a8a6a62d27cb84bc00470da5f8db8",
+      "changedPixels": 12694
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 1749,
+    "decodedBrickReads": 2503,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "scope": "Nearby reproducible production cameras; not exact screenshot registration. Source geometry and acquired cap pixels unchanged."
+}

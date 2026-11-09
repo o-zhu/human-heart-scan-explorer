@@ -1,0 +1,2192 @@
+{
+  "schemaVersion": 2,
+  "donor": "s-20-29",
+  "passed": true,
+  "views": 1,
+  "renders": 2,
+  "unavailablePoses": [],
+  "intentionalWithheld": [],
+  "unexpectedUnavailable": [],
+  "dimensions": [
+    640,
+    560
+  ],
+  "scope": "Native scientific review of all Echo atlas acquisition planes and anchors.\n\nUnmodified production volume and shared-geometry GLSL, actual measured resident\nsource, exact production-MPR caps, and captured production draw/guide commands.\nNo browser, headless-browser substitute, build, publication, or image synthesis.\nThis resident-source review establishes geometry/composition, not Ultra surface detail.\n",
+  "sourceSpacingUm": 318.24,
+  "sourceDimensions": [
+    478,
+    478,
+    487
+  ],
+  "sourceManifestSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+  "sourceParts": [
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-00.raw.gz",
+      "sha256": "8033ce9db160ebfd631bedea6d98ecb99685e1c1da8323a57d1efb497d12e80d",
+      "rawSha256": "e1c5018317e5986648e363d7d7e1d381a02be4e17d1aca9ee9a2f7c70d0b05b0"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-01.raw.gz",
+      "sha256": "db71dae62fb8d7e33f076c65da27394de859caeec4f0bc9d5d539c5ae4e25c32",
+      "rawSha256": "156f760571b21fe29fb6542467f19cfaf7d4a528e15817f54a01de8dbf47aaf2"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-02.raw.gz",
+      "sha256": "39eaa08417c3c48070035448b0b2211c1f2e8b85dfd4b5f16654306b383446fa",
+      "rawSha256": "686e2f62ed3416ce2ea88b0dded172524cd658c5377a83fbb277bcc809ed3c5e"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-03.raw.gz",
+      "sha256": "683d769dc866770273ae4d1a41dd8d48aaf8331f275cce9818844ffb98199884",
+      "rawSha256": "d75719d3caf7c9504242078237dc238e6e4738378881fc70dc68cf0d3e181082"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-04.raw.gz",
+      "sha256": "0ee0d0012808bdcaf06306c63cf8de2b95360d7baff6ee37f8a033496d43c7ad",
+      "rawSha256": "9e9178c6e448fe3d3c6a97ff1d9f9f30d66a5030e36f7398ad608781d7cea933"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-05.raw.gz",
+      "sha256": "3fac97c9578416808ce05b818aaa8c65b70f5e1d47352f60d80e1280fce85c71",
+      "rawSha256": "5f10313abbd2f7b0918d482f24aa296fd8ad500526530d889d5f6f7063a29963"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-06.raw.gz",
+      "sha256": "0e65fd1b88dba286b54bc7499fb51cc98399ecb9eacf521df767db96065b51c0",
+      "rawSha256": "cdbd108b2a92e3a5706f4ff547cc663be95d886469719400619511fd07934a99"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-07.raw.gz",
+      "sha256": "078901182e90f12981ef3cbf1dddc74d4b763bdbfdfe80e46201b496af1acaa3",
+      "rawSha256": "d55485a0b50a4ec1b8a4b39780b0f8a55446dcbac7ec14315857142ba1730079"
+    }
+  ],
+  "mprWorkerSha256": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54",
+  "shaderSourcesSha256": "d12b2791eb315c6d8b8c4e5a295be8594dc85d06c4d269ff39005748d4e6e9b9",
+  "sourceAttribution": {
+    "attribution": "Human Organ Atlas Collaboration / ESRF",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+    "doiUrl": "https://doi.org/10.15151/ESRF-DC-1773964017"
+  },
+  "anatomy": {
+    "tte": {
+      "revision": "echo-bodyparts3d-context-v2",
+      "frame": {
+        "kind": "specimen-source-anchored-illustrative-frame",
+        "donorId": "1773963465",
+        "referenceMm": 154.66464000000002,
+        "scale": 0.9205658697318738,
+        "originMm": [
+          -10.223460000000001,
+          -15.633540000000004,
+          13.564980000000004
+        ],
+        "left": [
+          0.9724325182334559,
+          0.2283898846429329,
+          0.047043151201078076
+        ],
+        "superior": [
+          0.199512935894022,
+          -0.7104782734280491,
+          -0.6748445831431458
+        ],
+        "anterior": [
+          -0.12070453965401458,
+          0.6656265346119294,
+          -0.7364589129934042
+        ],
+        "posterior": [
+          0.12070453965401458,
+          -0.6656265346119294,
+          0.7364589129934042
+        ],
+        "landmarksMm": {
+          "apex": [
+            31.78422000000001,
+            40.53582000000001,
+            -6.961500000000003
+          ],
+          "epicardialApex": [
+            8.234460000000002,
+            65.67678000000002,
+            4.495140000000001
+          ],
+          "leftVentricle": [
+            24.14646000000001,
+            21.441420000000004,
+            -0.9149400000000003
+          ],
+          "rightVentricle": [
+            -12.132900000000005,
+            11.894220000000002,
+            -2.5061400000000007
+          ],
+          "leftAtrium": [
+            17.781660000000006,
+            -40.61538000000001,
+            19.770660000000007
+          ],
+          "rightAtrium": [
+            -42.36570000000001,
+            -45.38898000000001,
+            4.813380000000001
+          ],
+          "rightAtriumSuperior": [
+            -25.180740000000007,
+            -62.89218000000002,
+            6.404580000000002
+          ],
+          "mitralRegion": [
+            16.190460000000005,
+            -22.157460000000004,
+            21.043620000000004
+          ],
+          "tricuspidRegion": [
+            -36.63738000000001,
+            -9.109620000000003,
+            6.0863400000000025
+          ],
+          "aorticRoot": [
+            -1.3127400000000002,
+            -19.293300000000006,
+            6.404580000000002
+          ],
+          "aorticLumen": [
+            -16.588260000000005,
+            -32.65938000000001,
+            2.2674600000000007
+          ],
+          "aorticSuperior": [
+            -21.998340000000006,
+            -48.57138000000002,
+            -12.689820000000005
+          ],
+          "pulmonaryRoot": [
+            -1.6309800000000005,
+            -16.747380000000003,
+            -13.962780000000004
+          ],
+          "pulmonarySuperior": [
+            2.1879000000000004,
+            -40.61538000000001,
+            -21.282300000000006
+          ]
+        },
+        "contextProfile": {
+          "revision": "source-clearance-fit-v3",
+          "bodyReferenceScale": 1.35,
+          "diaphragmOffsetMm": -17,
+          "hiatusXZ": [
+            12,
+            -29
+          ],
+          "esophagusControls": [
+            [
+              15,
+              110,
+              -44
+            ],
+            [
+              18,
+              85,
+              -46
+            ],
+            [
+              21,
+              60,
+              -51
+            ],
+            [
+              24,
+              40,
+              -60
+            ],
+            [
+              22,
+              20,
+              -61
+            ],
+            [
+              24,
+              0,
+              -59
+            ],
+            [
+              30,
+              -25,
+              -48
+            ],
+            [
+              22,
+              -45,
+              -36
+            ]
+          ]
+        },
+        "patientOrientationValidated": false
+      },
+      "bodyTransform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          -10.223460000000001,
+          -15.633540000000004,
+          13.564980000000004
+        ],
+        "left": [
+          0.9724325182334559,
+          0.2283898846429329,
+          0.047043151201078076
+        ],
+        "superior": [
+          0.199512935894022,
+          -0.7104782734280491,
+          -0.6748445831431458
+        ],
+        "anterior": [
+          -0.12070453965401458,
+          0.6656265346119294,
+          -0.7364589129934042
+        ],
+        "scale": 1.2427639241380297,
+        "bodyReferenceScale": 1.35,
+        "referenceMm": 154.66464000000002,
+        "donorId": "1773963465",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform."
+      },
+      "focusPointsMm": [
+        [
+          -127.4718990532693,
+          -18.598995390389504,
+          153.28804901664614
+        ],
+        [
+          93.68434252115085,
+          33.342756406438326,
+          163.98687522450223
+        ],
+        [
+          -76.14677087378284,
+          -201.3710461801422,
+          -20.317158965719457
+        ],
+        [
+          145.00947070063734,
+          -149.42929438331436,
+          -9.618332757863362
+        ],
+        [
+          -153.87317458892807,
+          126.99113398260113,
+          -7.794995070701345
+        ],
+        [
+          67.28306698549208,
+          178.93288577942897,
+          2.903831137154743
+        ],
+        [
+          -102.54804640944161,
+          -55.78091680715154,
+          -181.40020305306697
+        ],
+        [
+          118.60819516497854,
+          -3.839165010323711,
+          -170.7013768452109
+        ],
+        [
+          31.78422000000001,
+          40.53582000000001,
+          -6.961500000000003
+        ],
+        [
+          8.234460000000002,
+          65.67678000000002,
+          4.495140000000001
+        ],
+        [
+          24.14646000000001,
+          21.441420000000004,
+          -0.9149400000000003
+        ],
+        [
+          -12.132900000000005,
+          11.894220000000002,
+          -2.5061400000000007
+        ],
+        [
+          17.781660000000006,
+          -40.61538000000001,
+          19.770660000000007
+        ],
+        [
+          -42.36570000000001,
+          -45.38898000000001,
+          4.813380000000001
+        ],
+        [
+          -25.180740000000007,
+          -62.89218000000002,
+          6.404580000000002
+        ],
+        [
+          16.190460000000005,
+          -22.157460000000004,
+          21.043620000000004
+        ],
+        [
+          -36.63738000000001,
+          -9.109620000000003,
+          6.0863400000000025
+        ],
+        [
+          -1.3127400000000002,
+          -19.293300000000006,
+          6.404580000000002
+        ],
+        [
+          -16.588260000000005,
+          -32.65938000000001,
+          2.2674600000000007
+        ],
+        [
+          -21.998340000000006,
+          -48.57138000000002,
+          -12.689820000000005
+        ],
+        [
+          -1.6309800000000005,
+          -16.747380000000003,
+          -13.962780000000004
+        ],
+        [
+          2.1879000000000004,
+          -40.61538000000001,
+          -21.282300000000006
+        ]
+      ],
+      "bounds": {
+        "min": [
+          -251.50808715820312,
+          -274.7085266113281,
+          -122.40242004394531
+        ],
+        "max": [
+          205.57916259765625,
+          186.39447021484375,
+          249.50704956054688
+        ],
+        "center": [
+          -22.964462280273438,
+          -44.15702819824219,
+          63.55231475830078
+        ]
+      },
+      "provenance": {
+        "kind": "BodyParts3D thorax with illustrative surrounding organs",
+        "segmentedFromDonor": false,
+        "patientRegistered": false,
+        "orientation": "specimen-source-anchored-illustrative-frame",
+        "source": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "attribution": "BodyParts3D, \u00a9 The Database Center for Life Science, CC BY 4.0",
+        "sourceHash": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+        "decodedHash": "49fba584164d5664b30b8fc662f3a516bfc09f36b4c99308968efd906cf89b4c",
+        "transform": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform.",
+        "referenceHeartDisplayed": false,
+        "presentation": "Real reference skin and thoracic bones, cropped for context. Existing accepted heart depth occludes anatomy behind the measured heart and cut face.",
+        "limitations": "The fixed specimen has no acquired body. Reference anatomy, body axes and probe contact windows are illustrative; no clinical registration is claimed."
+      },
+      "meshes": [
+        {
+          "id": "diaphragm",
+          "sha256": "d4deee4a747daed32148716a59039bd13b9b9e205659a8a174603916b1cb0c4f",
+          "color": [
+            0.39,
+            0.57,
+            0.58
+          ],
+          "alpha": 0.075,
+          "gloss": 0.04,
+          "role": "surface"
+        },
+        {
+          "id": "central-tendon",
+          "sha256": "cae54eafafc31655a23b99ecf06997ed9748ac769b88580b6119f0d7dfe21c7c",
+          "color": [
+            0.65,
+            0.77,
+            0.74
+          ],
+          "alpha": 0.075,
+          "gloss": 0.08,
+          "role": "surface"
+        },
+        {
+          "id": "esophageal-hiatus",
+          "sha256": "cad4a5a6f6b435897aa1241de2634708ee1a5f7f638ffe958304c4f6460a63ae",
+          "color": [
+            0.66,
+            0.77,
+            0.71
+          ],
+          "alpha": 0.33,
+          "gloss": 0.07,
+          "role": "contour"
+        },
+        {
+          "id": "diaphragm-rim",
+          "sha256": "1ccf718fd4eeb84124a59eca9a51a10062ea1715e98e27d29467e81efc5cb8f3",
+          "color": [
+            0.52,
+            0.7,
+            0.68
+          ],
+          "alpha": 0.19,
+          "gloss": 0.05,
+          "role": "contour"
+        },
+        {
+          "id": "bodyparts3d-skin",
+          "sha256": "5667e72f531ccb20d23a5b5241d476393564208f10d489073874f6d37527da4a",
+          "color": [
+            0.52,
+            0.43,
+            0.36
+          ],
+          "alpha": 0.025,
+          "gloss": 0.035,
+          "role": "surface"
+        },
+        {
+          "id": "bodyparts3d-bones",
+          "sha256": "29344dae61e1f52d6cfaec19fe5c42025999481a8881e69558ce723128210b4d",
+          "color": [
+            0.74,
+            0.76,
+            0.69
+          ],
+          "alpha": 0.09,
+          "gloss": 0.065,
+          "role": "surface"
+        },
+        {
+          "id": "bodyparts3d-spine",
+          "sha256": "b3e9ce2824534877fed9f9eca02cfc793684b56d85f7fa7012c67be3cc749024",
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055,
+          "role": "surface"
+        }
+      ]
+    },
+    "tee": {
+      "revision": "echo-bodyparts3d-context-v2",
+      "frame": {
+        "kind": "specimen-source-anchored-illustrative-frame",
+        "donorId": "1773963465",
+        "referenceMm": 154.66464000000002,
+        "scale": 0.9205658697318738,
+        "originMm": [
+          -10.223460000000001,
+          -15.633540000000004,
+          13.564980000000004
+        ],
+        "left": [
+          0.9724325182334559,
+          0.2283898846429329,
+          0.047043151201078076
+        ],
+        "superior": [
+          0.199512935894022,
+          -0.7104782734280491,
+          -0.6748445831431458
+        ],
+        "anterior": [
+          -0.12070453965401458,
+          0.6656265346119294,
+          -0.7364589129934042
+        ],
+        "posterior": [
+          0.12070453965401458,
+          -0.6656265346119294,
+          0.7364589129934042
+        ],
+        "landmarksMm": {
+          "apex": [
+            31.78422000000001,
+            40.53582000000001,
+            -6.961500000000003
+          ],
+          "epicardialApex": [
+            8.234460000000002,
+            65.67678000000002,
+            4.495140000000001
+          ],
+          "leftVentricle": [
+            24.14646000000001,
+            21.441420000000004,
+            -0.9149400000000003
+          ],
+          "rightVentricle": [
+            -12.132900000000005,
+            11.894220000000002,
+            -2.5061400000000007
+          ],
+          "leftAtrium": [
+            17.781660000000006,
+            -40.61538000000001,
+            19.770660000000007
+          ],
+          "rightAtrium": [
+            -42.36570000000001,
+            -45.38898000000001,
+            4.813380000000001
+          ],
+          "rightAtriumSuperior": [
+            -25.180740000000007,
+            -62.89218000000002,
+            6.404580000000002
+          ],
+          "mitralRegion": [
+            16.190460000000005,
+            -22.157460000000004,
+            21.043620000000004
+          ],
+          "tricuspidRegion": [
+            -36.63738000000001,
+            -9.109620000000003,
+            6.0863400000000025
+          ],
+          "aorticRoot": [
+            -1.3127400000000002,
+            -19.293300000000006,
+            6.404580000000002
+          ],
+          "aorticLumen": [
+            -16.588260000000005,
+            -32.65938000000001,
+            2.2674600000000007
+          ],
+          "aorticSuperior": [
+            -21.998340000000006,
+            -48.57138000000002,
+            -12.689820000000005
+          ],
+          "pulmonaryRoot": [
+            -1.6309800000000005,
+            -16.747380000000003,
+            -13.962780000000004
+          ],
+          "pulmonarySuperior": [
+            2.1879000000000004,
+            -40.61538000000001,
+            -21.282300000000006
+          ]
+        },
+        "contextProfile": {
+          "revision": "source-clearance-fit-v3",
+          "bodyReferenceScale": 1.35,
+          "diaphragmOffsetMm": -17,
+          "hiatusXZ": [
+            12,
+            -29
+          ],
+          "esophagusControls": [
+            [
+              15,
+              110,
+              -44
+            ],
+            [
+              18,
+              85,
+              -46
+            ],
+            [
+              21,
+              60,
+              -51
+            ],
+            [
+              24,
+              40,
+              -60
+            ],
+            [
+              22,
+              20,
+              -61
+            ],
+            [
+              24,
+              0,
+              -59
+            ],
+            [
+              30,
+              -25,
+              -48
+            ],
+            [
+              22,
+              -45,
+              -36
+            ]
+          ]
+        },
+        "patientOrientationValidated": false
+      },
+      "bodyTransform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          -10.223460000000001,
+          -15.633540000000004,
+          13.564980000000004
+        ],
+        "left": [
+          0.9724325182334559,
+          0.2283898846429329,
+          0.047043151201078076
+        ],
+        "superior": [
+          0.199512935894022,
+          -0.7104782734280491,
+          -0.6748445831431458
+        ],
+        "anterior": [
+          -0.12070453965401458,
+          0.6656265346119294,
+          -0.7364589129934042
+        ],
+        "scale": 1.2427639241380297,
+        "bodyReferenceScale": 1.35,
+        "referenceMm": 154.66464000000002,
+        "donorId": "1773963465",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform."
+      },
+      "focusPointsMm": [
+        [
+          -127.4718990532693,
+          -18.598995390389504,
+          153.28804901664614
+        ],
+        [
+          93.68434252115085,
+          33.342756406438326,
+          163.98687522450223
+        ],
+        [
+          -76.14677087378284,
+          -201.3710461801422,
+          -20.317158965719457
+        ],
+        [
+          145.00947070063734,
+          -149.42929438331436,
+          -9.618332757863362
+        ],
+        [
+          -153.87317458892807,
+          126.99113398260113,
+          -7.794995070701345
+        ],
+        [
+          67.28306698549208,
+          178.93288577942897,
+          2.903831137154743
+        ],
+        [
+          -102.54804640944161,
+          -55.78091680715154,
+          -181.40020305306697
+        ],
+        [
+          118.60819516497854,
+          -3.839165010323711,
+          -170.7013768452109
+        ],
+        [
+          31.78422000000001,
+          40.53582000000001,
+          -6.961500000000003
+        ],
+        [
+          8.234460000000002,
+          65.67678000000002,
+          4.495140000000001
+        ],
+        [
+          24.14646000000001,
+          21.441420000000004,
+          -0.9149400000000003
+        ],
+        [
+          -12.132900000000005,
+          11.894220000000002,
+          -2.5061400000000007
+        ],
+        [
+          17.781660000000006,
+          -40.61538000000001,
+          19.770660000000007
+        ],
+        [
+          -42.36570000000001,
+          -45.38898000000001,
+          4.813380000000001
+        ],
+        [
+          -25.180740000000007,
+          -62.89218000000002,
+          6.404580000000002
+        ],
+        [
+          16.190460000000005,
+          -22.157460000000004,
+          21.043620000000004
+        ],
+        [
+          -36.63738000000001,
+          -9.109620000000003,
+          6.0863400000000025
+        ],
+        [
+          -1.3127400000000002,
+          -19.293300000000006,
+          6.404580000000002
+        ],
+        [
+          -16.588260000000005,
+          -32.65938000000001,
+          2.2674600000000007
+        ],
+        [
+          -21.998340000000006,
+          -48.57138000000002,
+          -12.689820000000005
+        ],
+        [
+          -1.6309800000000005,
+          -16.747380000000003,
+          -13.962780000000004
+        ],
+        [
+          2.1879000000000004,
+          -40.61538000000001,
+          -21.282300000000006
+        ]
+      ],
+      "bounds": {
+        "min": [
+          -251.50808715820312,
+          -274.7085266113281,
+          -122.40242004394531
+        ],
+        "max": [
+          205.57916259765625,
+          186.39447021484375,
+          249.50704956054688
+        ],
+        "center": [
+          -22.964462280273438,
+          -44.15702819824219,
+          63.55231475830078
+        ]
+      },
+      "provenance": {
+        "kind": "BodyParts3D thorax with illustrative surrounding organs",
+        "segmentedFromDonor": false,
+        "patientRegistered": false,
+        "orientation": "specimen-source-anchored-illustrative-frame",
+        "insertionScale": "Model distance; the 35 cm ME marker is illustrative, not measured from incisors.",
+        "presentation": "Real reference skin and thoracic bones, cropped for context. Existing accepted heart depth occludes anatomy behind the measured heart and cut face.",
+        "source": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "attribution": "BodyParts3D, \u00a9 The Database Center for Life Science, CC BY 4.0",
+        "sourceHash": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+        "decodedHash": "49fba584164d5664b30b8fc662f3a516bfc09f36b4c99308968efd906cf89b4c",
+        "transform": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform.",
+        "referenceHeartDisplayed": false,
+        "limitations": "The fixed specimen has no acquired body. Reference anatomy, body axes and probe contact windows are illustrative; no clinical registration is claimed."
+      },
+      "meshes": [
+        {
+          "id": "diaphragm",
+          "sha256": "d4deee4a747daed32148716a59039bd13b9b9e205659a8a174603916b1cb0c4f",
+          "color": [
+            0.39,
+            0.57,
+            0.58
+          ],
+          "alpha": 0.075,
+          "gloss": 0.04,
+          "role": "surface"
+        },
+        {
+          "id": "central-tendon",
+          "sha256": "cae54eafafc31655a23b99ecf06997ed9748ac769b88580b6119f0d7dfe21c7c",
+          "color": [
+            0.65,
+            0.77,
+            0.74
+          ],
+          "alpha": 0.075,
+          "gloss": 0.08,
+          "role": "surface"
+        },
+        {
+          "id": "esophageal-hiatus",
+          "sha256": "cad4a5a6f6b435897aa1241de2634708ee1a5f7f638ffe958304c4f6460a63ae",
+          "color": [
+            0.66,
+            0.77,
+            0.71
+          ],
+          "alpha": 0.33,
+          "gloss": 0.07,
+          "role": "contour"
+        },
+        {
+          "id": "diaphragm-rim",
+          "sha256": "1ccf718fd4eeb84124a59eca9a51a10062ea1715e98e27d29467e81efc5cb8f3",
+          "color": [
+            0.52,
+            0.7,
+            0.68
+          ],
+          "alpha": 0.19,
+          "gloss": 0.05,
+          "role": "contour"
+        },
+        {
+          "id": "esophagus",
+          "sha256": "667f58a2c39450de05e714b78fb2f9dc9c0995ccfae5a932c251fee098b80117",
+          "color": [
+            0.75,
+            0.52,
+            0.49
+          ],
+          "alpha": 0.13,
+          "gloss": 0.1,
+          "role": "surface"
+        },
+        {
+          "id": "stomach",
+          "sha256": "5e714236bb7cd0d7c68bf9c98652a094655733e0102145db272f893e62975fd6",
+          "color": [
+            0.77,
+            0.57,
+            0.5
+          ],
+          "alpha": 0.11,
+          "gloss": 0.1,
+          "role": "surface"
+        },
+        {
+          "id": "greater-curvature",
+          "sha256": "67b6510101480f3a34a6c7e8a6253e48665468dac2a8dd4c0d67f4a336f17a87",
+          "color": [
+            0.85,
+            0.68,
+            0.59
+          ],
+          "alpha": 0.28,
+          "gloss": 0.06,
+          "role": "contour"
+        },
+        {
+          "id": "lesser-curvature",
+          "sha256": "c05a0f962b0f9900a71b91e50b5f6be3a414251a3f6d553202c4a6819a255305",
+          "color": [
+            0.85,
+            0.68,
+            0.59
+          ],
+          "alpha": 0.28,
+          "gloss": 0.06,
+          "role": "contour"
+        },
+        {
+          "id": "esophageal-rim",
+          "sha256": "9ebb0153699992f20cd4da6f7f9e32f488d2949e42828dd41db4bd90e4de054a",
+          "color": [
+            0.82,
+            0.62,
+            0.57
+          ],
+          "alpha": 0.29,
+          "gloss": 0.08,
+          "role": "contour"
+        },
+        {
+          "id": "pyloric-rim",
+          "sha256": "fdbd4060f1078ffce9ae662da923932f5f09fd2bffec1adfd9540c7cf799c678",
+          "color": [
+            0.82,
+            0.62,
+            0.57
+          ],
+          "alpha": 0.29,
+          "gloss": 0.08,
+          "role": "contour"
+        },
+        {
+          "id": "bodyparts3d-skin",
+          "sha256": "5667e72f531ccb20d23a5b5241d476393564208f10d489073874f6d37527da4a",
+          "color": [
+            0.52,
+            0.43,
+            0.36
+          ],
+          "alpha": 0.025,
+          "gloss": 0.035,
+          "role": "surface"
+        },
+        {
+          "id": "bodyparts3d-bones",
+          "sha256": "29344dae61e1f52d6cfaec19fe5c42025999481a8881e69558ce723128210b4d",
+          "color": [
+            0.74,
+            0.76,
+            0.69
+          ],
+          "alpha": 0.09,
+          "gloss": 0.065,
+          "role": "surface"
+        },
+        {
+          "id": "bodyparts3d-spine",
+          "sha256": "b3e9ce2824534877fed9f9eca02cfc793684b56d85f7fa7012c67be3cc749024",
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055,
+          "role": "surface"
+        }
+      ]
+    }
+  },
+  "exportSha256": "d38981b121152b4f2e2aa6dea4dfcbf8c98c84be70e72170f673fad0b653eeaf",
+  "sourceHashes": {
+    "public/echo.js": "c586a27b23415e014ce921fae79558520bff7f0d849127145fc54542a6abcc7c",
+    "public/donors.js": "0b4bbad612e227290b86a5cf1b7c99d36f918ee558f064d760b0ca3702e3baeb",
+    "public/window-presets.js": "30e0fe8969b9e594c91d63a1c372776cc0d3bc6fef803314d79ee0eb79fd2669",
+    "public/echo-donor-planes.js": "7c5dadcd4269cec31228d808dd9a96a86068131c41087052b8ca6b6403b9c4e1",
+    "public/echo-donor-calibration.js": "e11d13f8f537a0b18046bbe91ca1a4cd9f84198f329e1a007c535c24237b5e9f",
+    "public/echo-donor-support.js": "1a8a49c56245a792a8392cf49038709c0d8be4a6f2416d50f17a8622e599548a",
+    "public/renderer.js": "7f2c0a4a46448392a8bb0989f2fcdf40898fbd988bd60f89c9ecdcc349307d0c",
+    "public/probe-scene.js": "35b892dcf809258f376ee8c135e9a84659844de7ff58bb91a6adbd7e977bdcdc",
+    "public/probe-geometry.js": "bb2ea89f8fbbc098e209a17a04938328c6e100dd55bd47f8acdbb93eceda477f",
+    "public/planes.js": "1fac0deffb76ccd9d4d75a89a2ea4e5337abd5d506e1a2642bcbb5026e3f9dca",
+    "public/echo-correspondence.js": "145bb7fc81069b4c21511d686318069ed730bc3a4e660e50493fcb01b705abfd",
+    "public/render-depth.js": "545f4cca3d360a974245d80da477425e755d68fc976dfba9276f966bb483a1eb",
+    "public/render-styles.js": "142509c48d5f0b32a044feb7389725a11addd8436c6045488d3850c1ea06fe2d",
+    "public/mpr-worker.js": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54",
+    "public/tte-atlas-data.js": "cdc025389b9020f94ba59164937b7449faa91ead4563b589c64035086401f6a2",
+    "public/tee-atlas-data.js": "127ca7bd6f39223501e622a593c78086b39f55abc5a1187195dc87c43f1dec49",
+    "public/tte-atlas-geometry.js": "b5895280d1101c406fc53f2171a8b750efc3879d7f5865a9620cbdfebb4583f8",
+    "public/tee-atlas-geometry.js": "0956a6af0eaf2e79162db9d46b654570ed662d941a405f7add6a4ecb3b653349",
+    "public/tee-scene.js": "620a9fea981237ff6f9df7f0f6bd3327cb10de6f144fc245e5e7e9c59ba77cb3",
+    "public/echo-acquisition-geometry.js": "a1cbcd8f41de91546c3921222787641a5cd3be13d013c9d6c6d595b455686f9b",
+    "public/echo-tte-guidance.js": "3d94240ab155f59febb39142739dafe188a763014dcb256eb9477ccd56f25d3e",
+    "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+    "public/echo-anatomy-context-v2.js": "703ba732d8cf597d126ea269c38dc8caeb0fd4b127ec9bf41d665f063c7ab6c7",
+    "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a",
+    "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+    "public/assets/echo-planes.json": "b9495519020501010f5ff5b94c118ff61a61851f72777b8b39395508470be00e",
+    "public/assets/flow-views-v5.json": "de04f898e6b81cdd02d1ff2e8cc3eaa2890e779d649b2bc25f4fa4282ed19332",
+    "public/assets/tee-atlas/plane-fit-v2.json": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64",
+    "public/assets/probe-context-v11/manifest.json": "d8a7563803aac62012c4e78075024cbc35cd5ce53338b3797ca0068484b4408c",
+    "public/assets/probe-context-v11/torso.bin.gz": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+    "scripts/echo-donor-qc-v6/audit.mjs": "895c113bef32d48b0c734d99e2458df99b89ed6aff3671a30cf1a21c1b839fa8",
+    "scripts/echo-donor-qc-v6/export-review.mjs": "d01f2a2613fd09f0522eabe2896876de395c95fcb52df30bbc1196a16de360a0",
+    "scripts/echo-donor-qc-v6/sample-caps.mjs": "427cd608d0c19ee3f36c9d6d69a9e3b73f18a36af84744bd40c9d941b51408d8",
+    "scripts/echo-donor-qc-v6/render_gallery.py": "e1f2777fa32fe317db5e2d43a0a10963c2e163d205acc434bc17ff6651faff47",
+    "public/assets/donors/s-20-29/echo-planes.json": "b600c5dbdcebe4b19ecb4fb7ae6a2f4501fe254809cc2c80deb7a31bd7374ffc",
+    "public/assets/donors/s-20-29/flow-views.json": "d8d3f3484d24883b3430ed5a9e9e1335698d97d39c9685fb4cba5334ecc2f509",
+    "public/assets/donors/s-20-29/manifest.json": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+    "scripts/echo-donor-qc-v6/deep-tg-root-comparison.mjs": "ebca2e64c847070796fa90dd608a137cfa858374cb32db21aff4668eb0c80d26"
+  },
+  "staleSourceFiles": [],
+  "driver": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+    "shadingLanguageVersion": "OpenGL ES GLSL ES 3.20"
+  },
+  "depth": {
+    "shared": true,
+    "near": 0.01,
+    "far": 10,
+    "attachment": "DEPTH_COMPONENT24",
+    "heartDepthFunction": "ALWAYS; production shader gl_FragDepth",
+    "geometryDepthFunction": "LEQUAL; production shared geometry shader",
+    "translucentContextWritesDepth": false
+  },
+  "display": {
+    "palette": 4,
+    "threshold": 0.16216216216216217,
+    "windowEnabled": true,
+    "windowLow": 0.162,
+    "windowHigh": 0.568,
+    "windowGamma": 0.85,
+    "capContrast": 1,
+    "cutFaceExposure": 3,
+    "reviewedLumenCleanup": false,
+    "localReplacementMeshes": false,
+    "localExclusionFields": false,
+    "fineOrUltraSource": false
+  },
+  "cap": {
+    "actualProductionWorker": true,
+    "rasterCount": 1,
+    "outsideScanCount": 0,
+    "metadata": [
+      {
+        "id": "deeptg5c",
+        "available": true,
+        "file": "caps/deeptg5c.raw",
+        "width": 340,
+        "height": 398,
+        "sha256": "b9714f051f11b8dddabc4bbdadbfb3eb044ad99c3efac96183f68c856213c2e4",
+        "bytes": 135320,
+        "sourceSpacingUm": 318.24,
+        "pixelSpacingUm": [
+          317.7174240667529,
+          317.67638325759873
+        ],
+        "planeSha256": "a78adb29a1bea51390a16326913f22b6f7ae0174b1caa6bd6269e8150a6cf792",
+        "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+        "cleaned": false
+      }
+    ]
+  },
+  "acceptedViews": [
+    {
+      "id": "deeptg5c",
+      "mode": "tee",
+      "outsideScan": false,
+      "clipFlip": 0,
+      "plane": {
+        "center": [
+          0.09850823045267491,
+          0.06867283950617284,
+          -0.001800411522633747
+        ],
+        "right": [
+          0.19594900200146584,
+          0.46182190426094677,
+          0.8650575225725874
+        ],
+        "up": [
+          0.43506307450971493,
+          0.7496424980876601,
+          -0.4987546954756885
+        ],
+        "normal": [
+          -0.8788197254345079,
+          0.47408507022019314,
+          -0.05402995818553589
+        ],
+        "width": 0.6963854618523615,
+        "height": 0.815425711741654
+      },
+      "acquisition": {
+        "revision": "echo-acquisition-v6",
+        "adjusted": true,
+        "correctionAngleDeg": 50.27242106258902,
+        "contactKind": "reference-gastric-lumen",
+        "planeResidualMm": 1.7763568394002505e-15,
+        "patientRegistered": false,
+        "sourceCenter": [
+          0.0985082304526749,
+          0.06867283950617284,
+          -0.0018004115226337388
+        ],
+        "sourceNormal": [
+          -0.5274197024608472,
+          0.4524202381205865,
+          0.7191275169224323
+        ],
+        "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide."
+      },
+      "poseAvailable": true,
+      "intentionalWithheld": false,
+      "sourceTargetBudget": null,
+      "sourceTargetRevision": null,
+      "donorCalibration": {
+        "revision": "specimen-echo-targets-v6",
+        "calibrationRevision": "source-specimen-calibration-v1",
+        "donorId": "s-20-29",
+        "viewId": "deeptg5c",
+        "status": "partial",
+        "landmarkKeys": [
+          "apex",
+          "leftVentricle",
+          "mitralRegion",
+          "aorticRoot"
+        ],
+        "summary": "Apex-to-aortic-outflow target from the gastric model. Complete five-chamber correspondence and a Doppler flow axis are not established.",
+        "clinicalValidated": false,
+        "patientRegistered": false,
+        "namedSmallStructuresConfirmed": false
+      },
+      "anatomyTargetsMm": [
+        {
+          "key": "apex",
+          "pointMm": [
+            31.78422000000001,
+            40.53582000000001,
+            -6.961500000000003
+          ],
+          "weight": 2,
+          "toleranceMm": 6.443961088123117
+        },
+        {
+          "key": "leftVentricle",
+          "pointMm": [
+            24.14646000000001,
+            21.441420000000004,
+            -0.9149400000000003
+          ],
+          "weight": 1,
+          "toleranceMm": 9.205658697318738
+        },
+        {
+          "key": "mitralRegion",
+          "pointMm": [
+            16.190460000000005,
+            -22.157460000000004,
+            21.043620000000004
+          ],
+          "weight": 2,
+          "toleranceMm": 9.205658697318738
+        },
+        {
+          "key": "aorticRoot",
+          "pointMm": [
+            -1.3127400000000002,
+            -19.293300000000006,
+            6.404580000000002
+          ],
+          "weight": 1,
+          "toleranceMm": 9.205658697318738
+        }
+      ],
+      "pose": {
+        "referenceMm": 154.66464000000002,
+        "originMm": [
+          37.674057919941724,
+          61.42286474470897,
+          80.51090400596759
+        ],
+        "targetMm": [
+          -1.3127400000000002,
+          -19.293300000000006,
+          6.404580000000002
+        ],
+        "beam": [
+          -0.33521215725358405,
+          -0.6940051800322365,
+          -0.6371731473609206
+        ],
+        "right": [
+          0.33957134716671056,
+          0.541848831578271,
+          -0.7688245208762842
+        ],
+        "normal": [
+          0.878819725434508,
+          -0.4740850702201933,
+          0.05402995818553592
+        ],
+        "up": [
+          0.33521215725358405,
+          0.6940051800322365,
+          0.6371731473609206
+        ],
+        "multiplaneDeg": 10,
+        "shaftPoints": [
+          [
+            28.296615831687518,
+            -111.38558154458622,
+            -24.291509827137503
+          ],
+          [
+            28.12284164582843,
+            -109.76551230972794,
+            -22.56070336940141
+          ],
+          [
+            27.946650516094863,
+            -108.13211481082809,
+            -20.84464349753253
+          ],
+          [
+            27.769112237316506,
+            -106.49128844344611,
+            -19.136803034179763
+          ],
+          [
+            27.591296604323027,
+            -104.84893260314124,
+            -17.430654801992098
+          ],
+          [
+            27.41427341194415,
+            -103.210946685473,
+            -15.719671623618483
+          ],
+          [
+            27.239112455009533,
+            -101.58323008600073,
+            -13.99732632170784
+          ],
+          [
+            27.066883528348882,
+            -99.97168220028377,
+            -12.257091718909118
+          ],
+          [
+            26.898656426791888,
+            -98.38220242388152,
+            -10.492440637871303
+          ],
+          [
+            26.735500945168233,
+            -96.82069015235334,
+            -8.696845901243288
+          ],
+          [
+            26.578139003910906,
+            -95.29157919448707,
+            -6.863704673861546
+          ],
+          [
+            26.41871700123373,
+            -93.76246543651698,
+            -4.987993356090287
+          ],
+          [
+            26.256051956254453,
+            -92.22719516743663,
+            -3.075134124421373
+          ],
+          [
+            26.09344757964888,
+            -90.69822970741333,
+            -1.1329197437337548
+          ],
+          [
+            25.934207582092824,
+            -89.18803037661442,
+            0.8308570210935393
+          ],
+          [
+            25.781635674262077,
+            -87.70905849520719,
+            2.8084034051815134
+          ],
+          [
+            25.63903556683246,
+            -86.27377538335892,
+            4.7919266436512
+          ],
+          [
+            25.50971097047976,
+            -84.894642361237,
+            6.773633971623602
+          ],
+          [
+            25.396965595879806,
+            -83.58412074900866,
+            8.745732624219713
+          ],
+          [
+            25.30410315370839,
+            -82.35467186684127,
+            10.700429836560547
+          ],
+          [
+            25.239949696181654,
+            -81.2240023391627,
+            12.637728305339648
+          ],
+          [
+            25.240914973728437,
+            -80.22922580148003,
+            14.605644086349457
+          ],
+          [
+            25.295317604112086,
+            -79.35004047170088,
+            16.599987611618996
+          ],
+          [
+            25.381566974228285,
+            -78.55572758187733,
+            18.603923762832526
+          ],
+          [
+            25.478072470972705,
+            -77.81556836406155,
+            20.60061742167431
+          ],
+          [
+            25.56324348124101,
+            -77.09884405030567,
+            22.573233469828573
+          ],
+          [
+            25.615489391928868,
+            -76.3748358726618,
+            24.504936788979585
+          ],
+          [
+            25.61321958993196,
+            -75.61282506318207,
+            26.378892260811572
+          ],
+          [
+            25.534843462145943,
+            -74.78209285391866,
+            28.178264767008812
+          ],
+          [
+            25.358770395466507,
+            -73.85192047692365,
+            29.88621918925554
+          ],
+          [
+            25.06146029943781,
+            -72.81281769959882,
+            31.490758980208987
+          ],
+          [
+            24.637778140573616,
+            -71.71902075739789,
+            33.004183898728385
+          ],
+          [
+            24.113963664173852,
+            -70.57895801486305,
+            34.43929665484846
+          ],
+          [
+            23.517655640116722,
+            -69.39638919323968,
+            35.80822669672124
+          ],
+          [
+            22.87649283828044,
+            -68.17507401377321,
+            37.123103472498755
+          ],
+          [
+            22.218114028543205,
+            -66.91877219770902,
+            38.39605643033299
+          ],
+          [
+            21.57015798078323,
+            -65.63124346629252,
+            39.63921501837599
+          ],
+          [
+            20.96026346487875,
+            -64.3162475407691,
+            40.86470868477974
+          ],
+          [
+            20.416069250707956,
+            -62.97754414238414,
+            42.08466687769628
+          ],
+          [
+            19.965214108149056,
+            -61.61889299238307,
+            43.311219045277596
+          ],
+          [
+            19.60246787987598,
+            -60.26486856754358,
+            44.54306900568852
+          ],
+          [
+            19.28619215935204,
+            -58.93528531271221,
+            45.76295019810629
+          ],
+          [
+            19.01085400389306,
+            -57.60822842009629,
+            46.96759829024966
+          ],
+          [
+            18.77136671144043,
+            -56.26140424359623,
+            48.15392741807919
+          ],
+          [
+            18.562643579935525,
+            -54.872519137112384,
+            49.3188517175555
+          ],
+          [
+            18.379597907319713,
+            -53.419279454545155,
+            50.459285324639126
+          ],
+          [
+            18.217142991534395,
+            -51.87939154979495,
+            51.57214237529065
+          ],
+          [
+            18.07019213052093,
+            -50.23056177676214,
+            52.654337005470644
+          ],
+          [
+            17.93365862222071,
+            -48.45049648934714,
+            53.70278335113969
+          ],
+          [
+            17.803413842303385,
+            -46.51638369137049,
+            54.714558441874274
+          ],
+          [
+            17.759510833307168,
+            -44.370291813337865,
+            55.70197648748919
+          ],
+          [
+            17.825290052690768,
+            -42.01854218898634,
+            56.67068625428932
+          ],
+          [
+            17.95778695447438,
+            -39.51000145914312,
+            57.6156549287516
+          ],
+          [
+            18.1140369926782,
+            -36.89353626463534,
+            58.53184969735299
+          ],
+          [
+            18.251075621322435,
+            -34.2180132462902,
+            59.41423774657038
+          ],
+          [
+            18.325938294427274,
+            -31.532299044934852,
+            60.25778626288071
+          ],
+          [
+            18.29566046601291,
+            -28.885260301396492,
+            61.05746243276091
+          ],
+          [
+            18.117277590099548,
+            -26.325763656502325,
+            61.80823344268789
+          ],
+          [
+            17.747825120707375,
+            -23.90267575107947,
+            62.5050664791386
+          ],
+          [
+            17.14633237041827,
+            -21.656321937738685,
+            63.14010312588085
+          ],
+          [
+            16.318736200153914,
+            -19.50902200082009,
+            63.67945230705941
+          ],
+          [
+            15.301863890680922,
+            -17.427008335557577,
+            64.13138683858365
+          ],
+          [
+            14.130312599919238,
+            -15.406800962632772,
+            64.51745059042089
+          ],
+          [
+            12.838679485788811,
+            -13.44491990272726,
+            64.85918743253839
+          ],
+          [
+            11.461561706209567,
+            -11.537885176522625,
+            65.1781412349034
+          ],
+          [
+            10.033556419101453,
+            -9.682216804700504,
+            65.49585586748329
+          ],
+          [
+            8.58926078238441,
+            -7.874434807942455,
+            65.83387520024527
+          ],
+          [
+            7.163271953978365,
+            -6.11105920693009,
+            66.21374310315666
+          ],
+          [
+            5.7901870918032845,
+            -4.3886100223450395,
+            66.65700344618469
+          ],
+          [
+            4.4647542364079875,
+            -2.707301479693278,
+            67.17940459308272
+          ],
+          [
+            3.0329907861310783,
+            -1.0813690188943959,
+            67.76094328952898
+          ],
+          [
+            1.514277633124692,
+            0.49069758957202936,
+            68.38708932804286
+          ],
+          [
+            -0.04615069383172532,
+            2.012786297506821,
+            69.0459198394706
+          ],
+          [
+            -1.6030596659587228,
+            3.488785056710782,
+            69.72551195465849
+          ],
+          [
+            -3.1112147544768645,
+            4.922581818984767,
+            70.41394280445274
+          ],
+          [
+            -4.525381430606738,
+            6.318064536129654,
+            71.09928951969965
+          ],
+          [
+            -5.800325165568893,
+            7.679121159946234,
+            71.76962923124546
+          ],
+          [
+            -6.890811430583905,
+            9.009639642235388,
+            72.41303906993643
+          ],
+          [
+            -7.751605696872337,
+            10.313507934797947,
+            73.01759616661883
+          ],
+          [
+            -8.347319478827153,
+            11.580851635193408,
+            73.58001134100853
+          ],
+          [
+            -8.700677824985624,
+            12.788483589535797,
+            74.1162016424228
+          ],
+          [
+            -8.853966951871424,
+            13.9458317743609,
+            74.63120588426662
+          ],
+          [
+            -8.849388960424895,
+            15.0635029223013,
+            75.1294930009807
+          ],
+          [
+            -8.729145951586354,
+            16.15210376598949,
+            75.61553192700559
+          ],
+          [
+            -8.53544002629613,
+            17.22224103805808,
+            76.093791596782
+          ],
+          [
+            -8.310473285494556,
+            18.284521471139577,
+            76.56874094475053
+          ],
+          [
+            -8.096447830121955,
+            19.349551797866553,
+            77.04484890535181
+          ],
+          [
+            -7.935565761118651,
+            20.42793875087157,
+            77.52658441302648
+          ],
+          [
+            -7.870029179424986,
+            21.530289062787155,
+            78.01841640221518
+          ],
+          [
+            -7.8378616056809705,
+            22.27400375382271,
+            78.36897999045799
+          ],
+          [
+            -7.955469347525591,
+            23.047321496146246,
+            78.718443030763
+          ],
+          [
+            -8.146551772489165,
+            23.835161490044996,
+            79.06736617962682
+          ],
+          [
+            -8.334808248102005,
+            24.622442935806234,
+            79.41631009354607
+          ],
+          [
+            -8.443938141894437,
+            25.394085033717232,
+            79.76583542901736
+          ],
+          [
+            -8.397640821396784,
+            26.13500698406525,
+            80.11650284253732
+          ],
+          [
+            -8.119615654139357,
+            26.830127987137566,
+            80.46887299060258
+          ],
+          [
+            -7.533562007652488,
+            27.46436724322143,
+            80.82350652970973
+          ],
+          [
+            -6.562190957767925,
+            28.021394355235564,
+            81.18101060462006
+          ],
+          [
+            -5.076393495067082,
+            28.385438146631557,
+            81.54569197697965
+          ],
+          [
+            -3.118314291538038,
+            28.548040382697785,
+            81.91786560970013
+          ],
+          [
+            -0.820904475276528,
+            28.59385022377193,
+            82.2943827325812
+          ],
+          [
+            1.6828848256216986,
+            28.60751683019172,
+            82.67209457542258
+          ],
+          [
+            4.260102483060896,
+            28.673689362294823,
+            83.04785236802401
+          ],
+          [
+            6.777797368945338,
+            28.87701698041898,
+            83.41850734018514
+          ],
+          [
+            9.103018355179268,
+            29.30214884490183,
+            83.78091072170571
+          ],
+          [
+            11.102814313666935,
+            30.033734116081106,
+            84.13191374238544
+          ],
+          [
+            12.654105002613596,
+            31.154723013680936,
+            84.46596621790187
+          ],
+          [
+            13.926367245228116,
+            32.666167337943236,
+            84.72447081100374
+          ],
+          [
+            15.028361931151275,
+            34.497188220076616,
+            84.91094089889933
+          ],
+          [
+            15.961475962097579,
+            36.582613357686995,
+            85.06235270593494
+          ],
+          [
+            15.961475962097579,
+            36.582613357686995,
+            85.06235270593494
+          ],
+          [
+            16.57375029176232,
+            37.88184391999781,
+            85.12731122400476
+          ],
+          [
+            17.39383712904186,
+            39.207801057294475,
+            85.14552711168537
+          ],
+          [
+            18.397323183697804,
+            40.55465414489416,
+            85.1212247723422
+          ],
+          [
+            19.559795165491735,
+            41.91657255811403,
+            85.05862860934063
+          ],
+          [
+            20.856839784185254,
+            43.28772567227123,
+            84.96196302604592
+          ],
+          [
+            22.26404374953995,
+            44.66228286268292,
+            84.83545242582349
+          ],
+          [
+            23.756993771317422,
+            46.03441350466627,
+            84.68332121203865
+          ],
+          [
+            25.311276559279257,
+            47.39828697353844,
+            84.50979378805681
+          ],
+          [
+            26.90247882318705,
+            48.74807264461657,
+            84.31909455724328
+          ],
+          [
+            28.506187272802386,
+            50.077939893217824,
+            84.11544792296338
+          ],
+          [
+            30.097988617886884,
+            51.3820580946594,
+            83.90307828858258
+          ],
+          [
+            31.653469568202105,
+            52.65459662425839,
+            83.68621005746607
+          ],
+          [
+            33.14821683350965,
+            53.889724857332,
+            83.46906763297933
+          ],
+          [
+            34.55781712357114,
+            55.081612169197385,
+            83.25587541848768
+          ],
+          [
+            35.857857148148135,
+            56.22442793517169,
+            83.05085781735643
+          ],
+          [
+            37.02392361700224,
+            57.31234153057208,
+            82.85823923295096
+          ],
+          [
+            38.03160323989505,
+            58.339522330715724,
+            82.68224406863666
+          ],
+          [
+            38.85648272658816,
+            59.30013971091976,
+            82.52709672777884
+          ],
+          [
+            39.47414878684316,
+            60.18836304650135,
+            82.39702161374285
+          ],
+          [
+            39.86018813042164,
+            60.998361712777694,
+            82.29624312989407
+          ],
+          [
+            39.9901874670852,
+            61.72430508506589,
+            82.22898567959781
+          ],
+          [
+            39.83973350659542,
+            62.360362538683134,
+            82.19947366621948
+          ],
+          [
+            39.38441295871391,
+            62.90070344894658,
+            82.21193149312438
+          ],
+          [
+            38.599812533202254,
+            63.33949719117337,
+            82.27058356367789
+          ]
+        ],
+        "instrument": {
+          "originMm": [
+            37.674057919941724,
+            61.42286474470897,
+            80.51090400596759
+          ],
+          "beam": [
+            -0.33521215725358405,
+            -0.6940051800322365,
+            -0.6371731473609206
+          ],
+          "right": [
+            0.1818070515711223,
+            0.6159409388017227,
+            -0.7665265526431996
+          ],
+          "shaft": [
+            -0.9244344247313672,
+            0.37279159056566114,
+            0.08029585527977642
+          ],
+          "normal": [
+            0.9244344247313672,
+            -0.37279159056566114,
+            -0.08029585527977642
+          ]
+        },
+        "sectorDepthMm": 151.28634783635835,
+        "contextFit": {
+          "outsideScan": false,
+          "mode": "lumen-plane-constrained",
+          "level": "deep-tg",
+          "levelLabel": "Deep transgastric",
+          "insertionCm": 52.10337007146141,
+          "headCenterMm": [
+            38.599812533202254,
+            63.33949719117337,
+            82.27058356367789
+          ],
+          "tractSampleMm": [
+            38.599812533202254,
+            63.33949719117337,
+            82.27058356367789
+          ],
+          "tractArcMm": 243.19872961571488,
+          "tractOffsetMm": 0,
+          "clearanceHintMm": 4.754399080726549,
+          "shaftBendDeg": 55.12006330223409,
+          "clinicalDepthMeasured": false,
+          "distanceMm": 0,
+          "headContained": true,
+          "shaftContained": true,
+          "shaftClearanceMm": 4.102150198408192,
+          "roiTargetMm": [
+            -1.3127400000000002,
+            -19.293300000000006,
+            6.404580000000002
+          ],
+          "roiTargetAngleDeg": 2.248991783197473e-15,
+          "rayTurnDeg": 0,
+          "sourceNormalOffsetMm": 0,
+          "sourceNormalOffsetLimitMm": 0,
+          "apicalGuide": true,
+          "apexAngleDeg": 36.757722657687374,
+          "apexPlaneResidualMm": 6.106226635438361e-16,
+          "lvotProxyAngleDeg": 48.58918273574227,
+          "targetKind": "approximate apex and aortic-region guide",
+          "resolved": true,
+          "estimated": false,
+          "registered": false,
+          "contactKind": "reference-gastric-lumen",
+          "planeResidualMm": 1.7763568394002505e-15,
+          "normalAngleDeg": 0,
+          "acquisitionAdjusted": true,
+          "correctionAngleDeg": 50.27242106258902,
+          "contactAdjusted": false,
+          "clinicalPositionMeasured": false,
+          "specimenTargetFit": {
+            "revision": "specimen-echo-targets-v6",
+            "targets": [
+              {
+                "key": "apex",
+                "pointMm": [
+                  31.78422000000001,
+                  40.53582000000001,
+                  -6.961500000000003
+                ],
+                "weight": 2,
+                "toleranceMm": 6.443961088123117,
+                "residualMm": 6.106226635438361e-16,
+                "startingResidualMm": 8.881784197001252e-16,
+                "addedMissMm": 0,
+                "sourceWitnessMm": [
+                  31.78422000000001,
+                  40.53582000000001,
+                  -6.961500000000002
+                ],
+                "sourceWitnessResidualMm": 6.106226635438361e-16
+              },
+              {
+                "key": "leftVentricle",
+                "pointMm": [
+                  24.14646000000001,
+                  21.441420000000004,
+                  -0.9149400000000003
+                ],
+                "weight": 1,
+                "toleranceMm": 9.205658697318738,
+                "residualMm": 2.6668512026441245,
+                "startingResidualMm": 0.262140209379868,
+                "addedMissMm": 1.0238621886664456,
+                "sourceWitnessMm": [
+                  24.008202088765856,
+                  21.560017535948624,
+                  -0.7264277621431293
+                ],
+                "sourceWitnessResidualMm": 2.4993074102249038
+              },
+              {
+                "key": "mitralRegion",
+                "pointMm": [
+                  16.190460000000005,
+                  -22.157460000000004,
+                  21.043620000000004
+                ],
+                "weight": 2,
+                "toleranceMm": 9.205658697318738,
+                "residualMm": 17.530959632023535,
+                "startingResidualMm": 0,
+                "addedMissMm": 16.150110827425724,
+                "sourceWitnessMm": [
+                  16.190460000000005,
+                  -22.157460000000004,
+                  21.043620000000004
+                ],
+                "sourceWitnessResidualMm": 17.530959632023535
+              },
+              {
+                "key": "aorticRoot",
+                "pointMm": [
+                  -1.3127400000000002,
+                  -19.293300000000006,
+                  6.404580000000002
+                ],
+                "weight": 1,
+                "toleranceMm": 9.205658697318738,
+                "residualMm": 6.106226635438361e-16,
+                "startingResidualMm": 2.6645352591003757e-15,
+                "addedMissMm": 0,
+                "sourceWitnessMm": [
+                  -1.3127400000000016,
+                  -19.293300000000006,
+                  6.404580000000004
+                ],
+                "sourceWitnessResidualMm": 5.551115123125783e-16
+              }
+            ],
+            "maxLandmarkResidualMm": 17.530959632023535,
+            "clinicalValidated": false
+          }
+        }
+      },
+      "cameras": {
+        "probe": {
+          "basis": {
+            "eye": [
+              -1.6926499037797922,
+              1.1162700178906724,
+              -0.00923456073723318
+            ],
+            "forward": [
+              0.8788197254345078,
+              -0.4740850702201932,
+              0.05402995818553602
+            ],
+            "right": [
+              -0.3395713471667107,
+              -0.541848831578271,
+              0.7688245208762841
+            ],
+            "up": [
+              0.335212157253584,
+              0.6940051800322365,
+              0.6371731473609207
+            ]
+          },
+          "state": {
+            "yaw": -1.6321991791823514,
+            "pitch": 0.4939246134028185,
+            "roll": -0.662896264189249,
+            "distance": 2.0711569483840635,
+            "pan": [
+              0.12752367693086375,
+              0.13436543057897263,
+              0.10266996257964016
+            ]
+          }
+        },
+        "anatomy": {
+          "basis": {
+            "eye": [
+              0.8177762581650976,
+              2.2145427212026565,
+              -2.868958882398236
+            ],
+            "forward": [
+              -0.22831778335107086,
+              -0.5817328596895703,
+              0.7806778271239988
+            ],
+            "right": [
+              0.9594518553869286,
+              0.0016979278766771685,
+              0.28186744089288773
+            ],
+            "up": [
+              0.16529708708937815,
+              -0.8133781389970599,
+              -0.5577570044396092
+            ]
+          },
+          "state": {
+            "yaw": 2.8570666840696406,
+            "pitch": 0.6208575148523277,
+            "roll": 3.1395051553783886,
+            "distance": 3.833055136288797,
+            "pan": [
+              -0.057378394014797364,
+              -0.015271404578421247,
+              0.12342227264618547
+            ]
+          }
+        }
+      },
+      "sourceRaster": "tee-deeptg5c-ct-source.png"
+    }
+  ],
+  "guide": "Actual production projected Canvas2D vector commands, antialiased by Pillow; sector guides intentionally unoccluded, as in production. Font callouts are omitted; projected paths/colors are preserved, not Canvas2D pixel equivalence.",
+  "limitations": [
+    "Not a browser screenshot or browser performance measurement.",
+    "Resident source spacing 318.24 \u00b5m; this is not a fine/Ultra/native-resolution surface.",
+    "Local fine replacement meshes/exclusions are omitted together; baseline donor source-support cleanup is applied. Reviewed lumen masks apply only to LADAF.",
+    "Illustrative body/instruments are fixed references, not clinically registered patient anatomy.",
+    "No clinical correspondence validation is inferred from geometric coplanarity."
+  ],
+  "galleries": [
+    "tee-probe-gallery.jpg",
+    "tee-anatomy-gallery.jpg"
+  ],
+  "elapsedSeconds": 0.33,
+  "checks": [
+    {
+      "id": "deeptg5c",
+      "mode": "tee",
+      "camera": "probe",
+      "image": "tee-deeptg5c-probe.jpg",
+      "capSha256": "b9714f051f11b8dddabc4bbdadbfb3eb044ad99c3efac96183f68c856213c2e4",
+      "outsideScan": false,
+      "poseAvailable": true,
+      "intentionalWithheld": false,
+      "draws": 24,
+      "guideCommands": 4,
+      "glError": 0,
+      "elapsedSeconds": 0.16
+    },
+    {
+      "id": "deeptg5c",
+      "mode": "tee",
+      "camera": "anatomy",
+      "image": "tee-deeptg5c-anatomy.jpg",
+      "capSha256": "b9714f051f11b8dddabc4bbdadbfb3eb044ad99c3efac96183f68c856213c2e4",
+      "outsideScan": false,
+      "poseAvailable": true,
+      "intentionalWithheld": false,
+      "draws": 24,
+      "guideCommands": 4,
+      "glError": 0,
+      "elapsedSeconds": 0.124
+    }
+  ],
+  "controllerAuditSha256": "f6aab7f430e3d0eec909b31a9d4d0e2d1762d5de63f2c51b059d29bd2b9b2d36"
+}

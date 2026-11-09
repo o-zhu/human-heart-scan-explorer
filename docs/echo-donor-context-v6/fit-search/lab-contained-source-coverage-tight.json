@@ -1,0 +1,73 @@
+[
+  {
+    "donorId": "s-20-29",
+    "key": "me4c",
+    "evaluations": 5300,
+    "guardMm": 0.13808488045978104,
+    "cost": 89.53441096501543,
+    "state": {
+      "preset": "atrial",
+      "originMm": null,
+      "contactLocked": false,
+      "contactPositionMm": null,
+      "showSurface": true,
+      "imageMode": "ultrasound",
+      "interactionMode": "orbit",
+      "sweepDeg": 0,
+      "tiltDeg": 0,
+      "rollDeg": 0,
+      "depthMm": 124.27639241380295,
+      "angleDeg": 80,
+      "gainDb": 0,
+      "frequencyMHz": 5,
+      "dynamicRangeDb": 52,
+      "shadow": 0.55,
+      "speedMm": 20.252449134101223,
+      "cutaway": true,
+      "flip": false,
+      "showGuide": true,
+      "teeVersion": 1,
+      "teePreset": "me4c",
+      "insertionCm": 34.548173816355835,
+      "shaftRotationDeg": -52.681527434254896,
+      "anteflexDeg": -8.711047316645745,
+      "lateralFlexDeg": 6.414475298281648,
+      "multiplaneDeg": 23.846187771974655,
+      "teeMirrorX": false,
+      "probeLocked": false,
+      "teeEntryInitialized": false,
+      "referenceMm": 154.66464
+    },
+    "offsetMm": 2.041052257284207,
+    "angleDeg": 6.101569842440264,
+    "aimDeg": 32.394714029830766,
+    "targetAnglesDeg": [
+      32.394714029830766,
+      10.413821169021293,
+      50.44175048104,
+      54.511688672720595,
+      24.777445672740473
+    ],
+    "head": {
+      "inside": true,
+      "testedVertices": 390,
+      "totalVertices": 390,
+      "complete": true,
+      "outsideVertices": 0,
+      "clearanceMm": 0.1379852129311993,
+      "penetrationMm": 0,
+      "firstOutsideMm": null,
+      "renderScale": 0.5523395218391242,
+      "patientRegistered": false,
+      "method": "Rendered head vertices inside the fixed GI mesh"
+    },
+    "shaft": {
+      "inside": true,
+      "testedPoints": 73,
+      "failedPoints": 0,
+      "clearanceMm": 3.735759108168971,
+      "penetrationMm": 0,
+      "radiusMm": 1.6570185655173728
+    }
+  }
+]

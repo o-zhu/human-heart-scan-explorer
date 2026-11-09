@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "ladaf-candidate-lumen-display-v23",
+  "donorId": "ladaf-2021-17",
+  "defaultEnabled": false,
+  "title": "Candidate lumen material",
+  "description": "Optional 3D display exclusion of the two screenshot-reviewed intraluminal candidates. Measured material identity is uncertain; these are not proven acquisition artifacts. Original CT sections and source data remain unchanged.",
+  "valueMeaning": {
+    "0": "show original",
+    "255": "hide candidate in optional 3D display"
+  },
+  "sampling": "nearest",
+  "sourceManifestUrl": "./assets/ultra-volume-v7.json",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "sourceSpacingUm": 79.4,
+  "longestMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "coordinateConvention": "Main explorer endpoint convention: acquisition XYZ maps to world (x,z,-y).",
+  "worldToFine": "vec3(world.x, -world.z, world.y) * (longestMm / (sourceSpacingUm / 1000)) + (sourceFullDimensionsXYZ - 1) / 2",
+  "fineToMaskUv": "(fineXYZ - lowerFullFineXYZ + 0.5) / dimensionsXYZ; outside [lower-0.5, upper-0.5) returns zero; nearest R8 normalized sample > 0.5 means hide.",
+  "policy": {
+    "fieldGaussianSigmaFineVoxels": 0.8,
+    "fieldThreshold": 71.4,
+    "strongFilteredValue": 135,
+    "strongRawValue": 190,
+    "strongProtection": "Every strong-signal connected component extending outside the reviewed object envelope, plus guard, using the union from sigma0.8 and sigma0.5 fields. Bright isolated specks wholly within candidate material may be included.",
+    "compatibilityProtectionSigmas": [
+      0.8,
+      0.5
+    ],
+    "strongProtectionRadiusFineVoxels": 4,
+    "maskBoundaryRadiusFineVoxels": 2,
+    "connectivity": 26,
+    "selection": "Connected source foreground touching reviewed seeds within local ellipsoidal envelopes; anchored strong structures and neighborhoods excluded. Atrial long sheet and all attachments outside compact round-nodule envelope preserved. No global component or chamber deletion."
+  },
+  "masks": [
+    {
+      "id": "outflow",
+      "label": "Upper outflow candidate",
+      "url": "./assets/lumen-cleanup-v23/outflow-candidate.raw.gz",
+      "format": "gzip-u8-zyx",
+      "dimensionsXYZ": [
+        230,
+        210,
+        190
+      ],
+      "lowerFullFineXYZ": [
+        900,
+        940,
+        230
+      ],
+      "upperFullFineXYZ": [
+        1130,
+        1150,
+        420
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          931,
+          984,
+          255
+        ],
+        [
+          1078,
+          1092,
+          359
+        ]
+      ],
+      "compressedBytes": 24922,
+      "decodedBytes": 9177000,
+      "sha256": "81475e7fc91a8338c33d7bf46a3428c8aab4e213e0003447f56f9c9b23af080d",
+      "decodedSha256": "d0aad9a9fe2fb6c86fe1d076aaf1719072f9783ce186242ededd12c3fce27e60",
+      "maskedVoxels": 120599,
+      "maskedVolumeMm3": 60.36778122421603,
+      "protectedStrongOverlapVoxels": 0,
+      "protectionGuardOverlapVoxels": 0
+    },
+    {
+      "id": "atrial",
+      "label": "Upper atrial candidate",
+      "url": "./assets/lumen-cleanup-v23/atrial-candidate.raw.gz",
+      "format": "gzip-u8-zyx",
+      "dimensionsXYZ": [
+        180,
+        150,
+        160
+      ],
+      "lowerFullFineXYZ": [
+        1140,
+        1100,
+        690
+      ],
+      "upperFullFineXYZ": [
+        1320,
+        1250,
+        850
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          1207,
+          1142,
+          719
+        ],
+        [
+          1287,
+          1213,
+          800
+        ]
+      ],
+      "compressedBytes": 14189,
+      "decodedBytes": 4320000,
+      "sha256": "0d8da32de585baee4b23c47ab7336b17c83a9533f655ebd691e3a0263879565c",
+      "decodedSha256": "efc6edd5c08600780d7dc3bcee67b0c77dd8d4b726b0ee3e7df2622fdaaf1252",
+      "maskedVoxels": 121374,
+      "maskedVolumeMm3": 60.755720016816035,
+      "protectedStrongOverlapVoxels": 0,
+      "protectionGuardOverlapVoxels": 0
+    }
+  ],
+  "limitations": [
+    "Material classification is unverified. Original display is the default.",
+    "The large attached atrial sheet, bright internal structure, and thin attachment on Y=1224 were deliberately retained.",
+    "Some protected or source-supported tiny fragments remain. No mask expansion was used to chase them.",
+    "Mask applies to optional 3D display and relevant density/shadow/cut-face paths only, never to 2D measured CT sections or raw data."
+  ]
+}

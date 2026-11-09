@@ -1,0 +1,70 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 294,
+    "decodedBrickReads": 294,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "checks": [
+    {
+      "case": {
+        "id": "inlet-x313",
+        "axis": 0,
+        "coordinate": 1248,
+        "target": [
+          1248,
+          850,
+          650
+        ],
+        "distance": 0.55
+      },
+      "world": {
+        "center": [
+          0.14177693761814741,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.6898551819615026,
+          -0.2065185912692644,
+          0.002467540074459741
+        ],
+        "_target": [
+          0.14177693761814741,
+          -0.1928166351606805,
+          0.04631379962192816
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 411718,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/inlet-x313-fine-xyz.npy"
+    }
+  ],
+  "scope": "Unchanged v27 source geometry and cleanup. Actual production color render; diagnostic Float32 world-position attachment excludes visible measured cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

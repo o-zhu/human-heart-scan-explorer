@@ -1,0 +1,19 @@
+{
+  "atrialAdditionalSamples": 16979,
+  "originalAtrialMaskSubsetExact": true,
+  "deliveredSelectionMatchesExactDifference": true,
+  "otherThreeMasksIdentical": true,
+  "preservedWallSamples": 109928,
+  "preservedWallSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "restoredWallOverlapSamples": 0,
+  "previousLvotLowBandExactlyPreserved": true,
+  "deliveredMeshValid": true,
+  "meshVertices": 333560,
+  "meshTriangles": 700968,
+  "meshEncodedSha256": "f2f993e2b4a60075528708dd28bf1ed208405073e8ea44874c94529e2227f560",
+  "meshDecodedSha256": "8599a5266e2e9f706466742b5db06cca543b8898776e0ffb7287b558c1ba1f0d",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceUnchanged": true,
+  "sourceDenseCorePreservation": "Recorded during extraction: sigma0.5>=135 and raw>=190 losses both zero.",
+  "limitation": "Source values are windowed uint8 display intensities, not calibrated HU; preservation does not establish clinical anatomy labels."
+}

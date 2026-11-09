@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "sourceCommitBaseline": "310ac98b",
+  "donorId": "ladaf-2021-17",
+  "residentSourceHash": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+  "capSourceHash": "525d65aacecf3a097648a982f6dc1b50951f0649d081df9e4536614e75ea467a",
+  "fineMeshHash": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+  "fineMeshTriangles": 1986313,
+  "fineSourceSpacingUm": 79.4,
+  "compiledProductionPrograms": [
+    "volume",
+    "cap-composite",
+    "fine-surface",
+    "fine-background"
+  ],
+  "shaderSha256": {
+    "volume": "eb57440548e683d35a69130ca117da9c212228194c43170e5331a888c2db55fc",
+    "fine": "c8dcdc34513bb8294cfad0e7900f239e61c0e07177cbf90dbea5348642705c0c"
+  },
+  "transferChecks": [
+    {
+      "profile": 0,
+      "palette": 0,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 1,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 2,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 3,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 4,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 0,
+      "palette": 6,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": false
+    },
+    {
+      "profile": 1,
+      "palette": 0,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 1,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 2,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 3,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 4,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 1,
+      "palette": 6,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": false
+    },
+    {
+      "profile": 2,
+      "palette": 0,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 1,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 2,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 3,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 4,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": true
+    },
+    {
+      "profile": 2,
+      "palette": 6,
+      "maxJsGpuChannelDifference": 0,
+      "priorTransferExact": false
+    }
+  ],
+  "renderChecks": [
+    {
+      "view": "cutaway",
+      "kind": "fine-mesh",
+      "priorDefaultByteExact": true,
+      "paletteRestorationByteExact": true,
+      "changedPixels": 604800
+    },
+    {
+      "view": "valve-closeup",
+      "kind": "fine-mesh",
+      "priorDefaultByteExact": true,
+      "paletteRestorationByteExact": true,
+      "changedPixels": 604800
+    },
+    {
+      "view": "whole-heart",
+      "kind": "fine-mesh",
+      "priorDefaultByteExact": true,
+      "paletteRestorationByteExact": true,
+      "changedPixels": 604800
+    },
+    {
+      "kind": "scalar-volume",
+      "mode": 0,
+      "priorPalettesByteExact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "atlasRendered": true
+    },
+    {
+      "kind": "scalar-volume",
+      "mode": 1,
+      "priorPalettesByteExact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "atlasRendered": true
+    },
+    {
+      "kind": "scalar-volume",
+      "mode": 2,
+      "priorPalettesByteExact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "atlasRendered": true
+    }
+  ],
+  "scope": "Exact production GLSL in native offscreen EGL with verified measured source arrays and a v19 detailed surface; same shader also serves Ultra-high Fidelity and native replacement. Palette6 uses two resident intensity reads along the existing normal. Same geometry/threshold/source bytes. No anatomical classification, authored figure preset, path tracing or browser performance claim."
+}

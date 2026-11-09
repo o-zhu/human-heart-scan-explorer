@@ -1,0 +1,155 @@
+{
+  "slices": [
+    {
+      "axis": 1,
+      "coordinate": 760,
+      "lower": [
+        550,
+        760,
+        850
+      ],
+      "upper": [
+        900,
+        761,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        42.0,
+        67.0,
+        142.0
+      ]
+    },
+    {
+      "axis": 1,
+      "coordinate": 820,
+      "lower": [
+        550,
+        820,
+        850
+      ],
+      "upper": [
+        900,
+        821,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        43.0,
+        80.0,
+        144.0
+      ]
+    },
+    {
+      "axis": 1,
+      "coordinate": 880,
+      "lower": [
+        550,
+        880,
+        850
+      ],
+      "upper": [
+        900,
+        881,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        51.0,
+        104.0,
+        152.0
+      ]
+    },
+    {
+      "axis": 1,
+      "coordinate": 940,
+      "lower": [
+        550,
+        940,
+        850
+      ],
+      "upper": [
+        900,
+        941,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        58.0,
+        122.0,
+        162.0
+      ]
+    },
+    {
+      "axis": 1,
+      "coordinate": 1000,
+      "lower": [
+        550,
+        1000,
+        850
+      ],
+      "upper": [
+        900,
+        1001,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        68.0,
+        137.0,
+        171.0
+      ]
+    },
+    {
+      "axis": 1,
+      "coordinate": 1060,
+      "lower": [
+        550,
+        1060,
+        850
+      ],
+      "upper": [
+        900,
+        1061,
+        1380
+      ],
+      "min": 0,
+      "max": 255,
+      "percentiles": [
+        0.0,
+        0.0,
+        104.0,
+        145.0,
+        175.0
+      ]
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 370,
+    "decodedBrickReads": 370,
+    "cacheMaximumBricks": 12,
+    "cacheMaximumBytes": 3295500,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "sourceUnchanged": true
+}

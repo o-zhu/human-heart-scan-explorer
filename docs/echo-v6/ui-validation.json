@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Actual Echo template/state with controlled fetch streams, Blob URLs and native media APIs mocked. Browser playback and seeking are not claimed.",
+  "checks": [
+    "Inactive module makes no movie request; first entry fetches only the selected movie and remains muted/paused.",
+    "Partial download progress is visible; the native source becomes a complete video/mp4 Blob URL.",
+    "Native controls and playsinline remain present; initial autoplay is absent.",
+    "Rapid selection aborts obsolete transfers and ignores their late completion.",
+    "User-started playback survives rapid replacements; deliberately paused playback stays paused.",
+    "CT plane adjustments neither reload the independent movie nor reset playback.",
+    "Leave aborts transfers and detaches the movie; late work cannot restore it.",
+    "Reentry retries an aborted selection, reuses a complete cached movie, and remains paused.",
+    "Color Doppler is identified; unavailable exact ME AV SAX is not silently substituted.",
+    "Manual different-view selection is explicit; speed, loop and enlarge controls persist.",
+    "Transfer and native playback errors expose a retry; unrelated CT changes do not trigger retry loops.",
+    "LRU evictions never revoke an attached source and stay inside the byte budget.",
+    "Destroy releases every URL exactly once and blocks late recreation."
+  ]
+}

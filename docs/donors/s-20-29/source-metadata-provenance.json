@@ -1,0 +1,22 @@
+{
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+  "officialPublicCatalogBundle": "https://human-organ-atlas.esrf.fr/assets/index-DR901JiP.js",
+  "catalogBundleSha256": "3ef7086b0e0e7201cae7b282d40e4da83c74f29bcc9263ab2d436835b81ad0a2",
+  "retrievedDate": "2026-11-05",
+  "catalogMetadataSource": "Exact dataset object in official Human Organ Atlas public application catalog.",
+  "neuroglancerResourceId": "6a3b80751d53ba001267faa1",
+  "neuroglancerMetadataSource": "Official public Atlas reader resource endpoint; ephemeral public reader session omitted.",
+  "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/",
+  "nativeSourceShapeAuthority": "N5 s0/attributes.json",
+  "catalogDimensionsXYZ": [
+    7639,
+    7639,
+    7771
+  ],
+  "sourceDimensionsXYZ": [
+    7639,
+    7639,
+    7771
+  ],
+  "sourceSamplingAuthority": "Public N5 root resolution and downsamplingFactors; actual per-scale dimensions verified."
+}

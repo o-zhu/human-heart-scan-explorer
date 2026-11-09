@@ -1,0 +1,131 @@
+{
+  "donor": "s-20-28",
+  "sourceWindow": [
+    14938.0,
+    22708.0
+  ],
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.12,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sourceHash": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+  "sourceCalibration": "Windowed uint8 HiP-CT display intensities; not calibrated HU.",
+  "checks": [
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.32973,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 10430651,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.660328355996171,
+      "file": "s-20-28-raw-0.330.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.36,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 9488351,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.7774110539976391,
+      "file": "s-20-28-raw-0.360.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.4,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 8301082,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.7931406880015857,
+      "file": "s-20-28-raw-0.400.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.44,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7052017,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.5686252480008989,
+      "file": "s-20-28-raw-0.440.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.48,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 5728146,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.5423773719958263,
+      "file": "s-20-28-raw-0.480.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.52,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 3679394,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.0039955163374543e-06,
+      "nativeRenderSeconds": 0.5868268740014173,
+      "file": "s-20-28-raw-0.520.png"
+    }
+  ],
+  "scope": "Native EGL production GLSL. Image comparison is not anatomical segmentation accuracy or clinical validation. Original sources remain immutable."
+}

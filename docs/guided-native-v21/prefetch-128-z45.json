@@ -1,0 +1,2861 @@
+{
+  "schema": "guided-native-prefetch-probe-v21.1",
+  "startedAt": "2026-11-06T14:19:56.307147+00:00",
+  "finishedAt": "2026-11-06T14:20:30.146949+00:00",
+  "sourceConcurrentRequests": 128,
+  "concurrentMainSourcePool": 64,
+  "isolatedBenchmark": false,
+  "selection": "128 evenly spaced uncached planned source objects in native block Z45; no additional source queries",
+  "requestedObjects": 128,
+  "completedObjects": 66,
+  "elapsedSeconds": 33.839319306003745,
+  "downloadedBytes": 220681405,
+  "newCacheBytes": 220681405,
+  "decimalMBps": 6.521449294071553,
+  "requests": 66,
+  "retries": 62,
+  "maximumNewCacheBytes": 450000000,
+  "diskFreeAtStart": 3335192576,
+  "diskFreeAfter": 2483564544,
+  "peakRssBytes": 580407296,
+  "monitoredPeakRssBytes": 580468736,
+  "memoryLimitBytes": 600000000,
+  "mainProgressBefore": {
+    "readAt": "2026-11-06T14:19:56.231212+00:00",
+    "fileMtimeNs": 1793974786575760044,
+    "values": {
+      "schema": "guided-native-progress-v21.1",
+      "phase": "reconstructing",
+      "zLayer": 19,
+      "complete": false,
+      "plannedInputBlocks": 37612,
+      "plannedCoreBlocks": 37612,
+      "completedCoreBlocks": 6713,
+      "plannedTileCompletionFraction": 0.1784802722535361,
+      "nonemptyTiles": 5485,
+      "outputBytes": 972174636,
+      "verifiedHostedNativeObjects": 5485,
+      "networkBytesThisRun": 22940437684,
+      "requestsThisRun": 6948,
+      "retriesThisRun": 0,
+      "elapsedSeconds": 1088.9797044030129,
+      "surfaceContribution": {
+        "nativeOnlyEdgeVertices": 997036033,
+        "blendedEdgeVertices": 4626040,
+        "priorOnlyEdgeVertices": 0
+      },
+      "diskFreeBytes": 3527614464,
+      "error": null,
+      "decodedSourceCacheBlocks": 32,
+      "residentSourceArrayBytes": 678330368
+    }
+  },
+  "mainProgressAfter": {
+    "readAt": "2026-11-06T14:20:30.146521+00:00",
+    "fileMtimeNs": 1793974816712781750,
+    "values": {
+      "schema": "guided-native-progress-v21.1",
+      "phase": "reconstructing",
+      "zLayer": 19,
+      "complete": false,
+      "plannedInputBlocks": 37612,
+      "plannedCoreBlocks": 37612,
+      "completedCoreBlocks": 6872,
+      "plannedTileCompletionFraction": 0.1827076464957992,
+      "nonemptyTiles": 5606,
+      "outputBytes": 996545317,
+      "verifiedHostedNativeObjects": 5606,
+      "networkBytesThisRun": 24132739340,
+      "requestsThisRun": 7308,
+      "retriesThisRun": 0,
+      "elapsedSeconds": 1119.2743703170127,
+      "surfaceContribution": {
+        "nativeOnlyEdgeVertices": 1021628521,
+        "blendedEdgeVertices": 4701545,
+        "priorOnlyEdgeVertices": 0
+      },
+      "diskFreeBytes": 2732863488,
+      "error": null,
+      "decodedSourceCacheBlocks": 32,
+      "residentSourceArrayBytes": 948240384
+    }
+  },
+  "mainProgressDelta": {
+    "completedCoreBlocks": 159,
+    "networkBytesThisRun": 1192301656,
+    "requestsThisRun": 360,
+    "elapsedSeconds": 30.29466591399978
+  },
+  "sourceAndRunnerUnchanged": true,
+  "codeSha256": {
+    "source.py": "bbc3b4ecbc5d7e731f4c4723408b1cdff65c4e013f72434776a049e317a7bed6",
+    "runner.py": "0a6c16636c7b8ba56c03f1be37f2c3686d554c0194bb869107845733f551a3fb"
+  },
+  "mainMadeProgress": true,
+  "mainObservedNetworkMBps": 39.35681810734256,
+  "networkCaveat": "Probe overlaps the running 64-request native job. Main snapshots have their own reporting times; neither throughput is an isolated bandwidth measurement.",
+  "originalCompressedBytesRetained": true,
+  "decompressionPerformed": false,
+  "r2Requests": 0,
+  "objects": [
+    {
+      "coordinatesXYZ": [
+        14,
+        21,
+        45
+      ],
+      "bytes": 3095376,
+      "sha256": "7486d1818c91f2efa14d67585185c46e6a7105510738fb74a8ab3d59d1614fd1",
+      "generation": "1684444459050553",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "193672faa06fc4764be1c47b96439b26cd621c7cfc77c177f503688186740ac5",
+      "declaredBloscBytes": 3095360,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        776260,
+        1550075,
+        2321797
+      ],
+      "streamEnds": [
+        776260,
+        1550075,
+        2321797,
+        3095360
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.54110694900737
+    },
+    {
+      "coordinatesXYZ": [
+        14,
+        24,
+        45
+      ],
+      "bytes": 3089529,
+      "sha256": "f4d56b79f96418ad97f1a9e8b52ef527f53c9b205d0348d0a41115cbdedf42ba",
+      "generation": "1684444466177323",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "70b1f9ae23429cc0486f34b2438ea3324bcd9d569d2127a6d315622d90e38774",
+      "declaredBloscBytes": 3089513,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        776903,
+        1548460,
+        2318555
+      ],
+      "streamEnds": [
+        776903,
+        1548460,
+        2318555,
+        3089513
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.858408005995443
+    },
+    {
+      "coordinatesXYZ": [
+        15,
+        25,
+        45
+      ],
+      "bytes": 3283149,
+      "sha256": "6ec0eda72d6efa35d906e6fb2c3af5f1ba31e13819cf882ff7107df058d25e25",
+      "generation": "1684444606757281",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "5ea8abbd9cf1d7ab80ca8915c409cdf5f6c77c7c13d742521c9d63411a36b025",
+      "declaredBloscBytes": 3283133,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        841789,
+        1659998,
+        2472804
+      ],
+      "streamEnds": [
+        841789,
+        1659998,
+        2472804,
+        3283133
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 18.81682573299622
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        13,
+        45
+      ],
+      "bytes": 3107356,
+      "sha256": "7bf9d68eb5d5ec365eaf5ab8d443eb21e4b72fd16bbf6547c04e231e553688a7",
+      "generation": "1684444715899611",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "e2222a832adcb70809c64af17159e9a605181e50e3300a972fb85b47f690000b",
+      "declaredBloscBytes": 3107340,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        775204,
+        1551335,
+        2328825
+      ],
+      "streamEnds": [
+        775204,
+        1551335,
+        2328825,
+        3107340
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 24.959852661006153
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        22,
+        45
+      ],
+      "bytes": 3394649,
+      "sha256": "38cda00a90cdb1461309f74bd8af61d7a6477b3ec91398ffad6c27432655adcc",
+      "generation": "1684444740944857",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "33d14ad82354bac9ed58fb5e608fc9f4f6da4242aac1b8de92f2953882fc2ac6",
+      "declaredBloscBytes": 3394633,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        851870,
+        1698685,
+        2546014
+      ],
+      "streamEnds": [
+        851870,
+        1698685,
+        2546014,
+        3394633
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.168831408998813
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        31,
+        45
+      ],
+      "bytes": 3203322,
+      "sha256": "450b76c33fb3dc61262f692e187760c512016e21d973eb50af48bb8cd3bedc6b",
+      "generation": "1684444766741499",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "74702c5cb509f9903fefd14092bec921a756a510ab9a738555b69484fb8b3520",
+      "declaredBloscBytes": 3203306,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        803086,
+        1602577,
+        2401509
+      ],
+      "streamEnds": [
+        803086,
+        1602577,
+        2401509,
+        3203306
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 24.814126539000426
+    },
+    {
+      "coordinatesXYZ": [
+        17,
+        20,
+        45
+      ],
+      "bytes": 3392132,
+      "sha256": "12dc86cfd2ab56b8a9998292fc07c776a38365b29ab4f99166905edb8ebc7ec5",
+      "generation": "1684444879207974",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "0127f29a5cbc51a401f99ac509f867ba9422d3e336cd9e228feadcef2a0adb71",
+      "declaredBloscBytes": 3392116,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        855110,
+        1703296,
+        2549660
+      ],
+      "streamEnds": [
+        855110,
+        1703296,
+        2549660,
+        3392116
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.931876873000874
+    },
+    {
+      "coordinatesXYZ": [
+        17,
+        34,
+        45
+      ],
+      "bytes": 3488872,
+      "sha256": "671678e8e8fa844ae673fc77ce870c889d5bd8ab7b14acaa39b7c1fed85a06be",
+      "generation": "1684444918093770",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "a880edc9a8dd619744a103944808c02c32c1284749075935833f62ec1c0856a8",
+      "declaredBloscBytes": 3488856,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        872856,
+        1748246,
+        2619694
+      ],
+      "streamEnds": [
+        872856,
+        1748246,
+        2619694,
+        3488856
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.11712670099223
+    },
+    {
+      "coordinatesXYZ": [
+        18,
+        15,
+        45
+      ],
+      "bytes": 3235798,
+      "sha256": "fcbb98c6d36082694541b5bd01af0cb0652f1fc139247bef4890b4d6d91cdbd9",
+      "generation": "1684445007919957",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "f979b355ef5458e5c040c414b70a50443f4edf79629dd3aae987e42faf90abe8",
+      "declaredBloscBytes": 3235782,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        796723,
+        1603191,
+        2421531
+      ],
+      "streamEnds": [
+        796723,
+        1603191,
+        2421531,
+        3235782
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.410662160007632
+    },
+    {
+      "coordinatesXYZ": [
+        18,
+        16,
+        45
+      ],
+      "bytes": 3405851,
+      "sha256": "ff06ac2fbc16473a46e4a192d92636b44960124810b82853a074b12cddadb759",
+      "generation": "1684445010690395",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "8c50abbbc4bc4f4a48e2b4bb445ff67b9dbd7c6db4b68ed134aeb2c76b02f0a0",
+      "declaredBloscBytes": 3405835,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        854395,
+        1707693,
+        2558454
+      ],
+      "streamEnds": [
+        854395,
+        1707693,
+        2558454,
+        3405835
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.3451012870064
+    },
+    {
+      "coordinatesXYZ": [
+        18,
+        35,
+        45
+      ],
+      "bytes": 3446925,
+      "sha256": "7e16c6a14da86b972b3b643abd4067c916dcad010f63d171de727e7636b11160",
+      "generation": "1684445064527287",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "1cbe8e52b8965963bf6f45b97445fb033545d2a9f5dd3cc61734c9a294b2851f",
+      "declaredBloscBytes": 3446909,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        864194,
+        1732833,
+        2593387
+      ],
+      "streamEnds": [
+        864194,
+        1732833,
+        2593387,
+        3446909
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.460829878997174
+    },
+    {
+      "coordinatesXYZ": [
+        19,
+        18,
+        45
+      ],
+      "bytes": 3387574,
+      "sha256": "34525482dd259c192aaf8dd54d8b7a17964edcab424e5e4e37bd4c58ff279595",
+      "generation": "1684445162164446",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "195e4a22ce4cdff43ad1f6a3a39e0dda3f9be0f0bb9c5e55bbf78706dd76b42f",
+      "declaredBloscBytes": 3387558,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        850740,
+        1696287,
+        2541525
+      ],
+      "streamEnds": [
+        850740,
+        1696287,
+        2541525,
+        3387558
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.375384127008147
+    },
+    {
+      "coordinatesXYZ": [
+        19,
+        26,
+        45
+      ],
+      "bytes": 3418841,
+      "sha256": "97388e2892cd9c42425eeebafd5ac56781b767c3d8abf9e25c6c9f418e795043",
+      "generation": "1684445184461561",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "32986ca7b2d3734763e21b1acd447c0eeb8728c041ba9f5ee336e488548a8e02",
+      "declaredBloscBytes": 3418825,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        855816,
+        1711481,
+        2561060
+      ],
+      "streamEnds": [
+        855816,
+        1711481,
+        2561060,
+        3418825
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.200697991997004
+    },
+    {
+      "coordinatesXYZ": [
+        19,
+        36,
+        45
+      ],
+      "bytes": 3377184,
+      "sha256": "88fd81026fbc31925090ae6b1e9fee2a394d18dc4b4dc1e7d4d9e955914d2e8d",
+      "generation": "1684445214128689",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "a280cf944d57cda338a472af2f433d92d2826d5cdf23dc3b2385b0f02970b1d6",
+      "declaredBloscBytes": 3377168,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        864857,
+        1705150,
+        2544293
+      ],
+      "streamEnds": [
+        864857,
+        1705150,
+        2544293,
+        3377168
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.273047338007018
+    },
+    {
+      "coordinatesXYZ": [
+        20,
+        29,
+        45
+      ],
+      "bytes": 3365007,
+      "sha256": "7069ea78adcecef7dd209d8f40b408789a1d4936d17aadf13e679edcea6eacec",
+      "generation": "1684445425137410",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "d68e3223d0e7cb795a50e8704063cf78dd74034005625c277d337262b7583b3d",
+      "declaredBloscBytes": 3364991,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        841995,
+        1685505,
+        2524090
+      ],
+      "streamEnds": [
+        841995,
+        1685505,
+        2524090,
+        3364991
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.058223220999935
+    },
+    {
+      "coordinatesXYZ": [
+        20,
+        39,
+        45
+      ],
+      "bytes": 3460719,
+      "sha256": "7d99db449949a5ac77ce0c4c3865cf0ba472768a69185795c129a39bddb101b1",
+      "generation": "1684445453097479",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "c34f60fb256d937e9c36f4de689a050f30009213b942c678b84abc7a44b41b41",
+      "declaredBloscBytes": 3460703,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        852049,
+        1721715,
+        2593411
+      ],
+      "streamEnds": [
+        852049,
+        1721715,
+        2593411,
+        3460703
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.15112372499425
+    },
+    {
+      "coordinatesXYZ": [
+        21,
+        25,
+        45
+      ],
+      "bytes": 3286622,
+      "sha256": "782b396ac945c081f0a8b9a69d3d7647d83ab55f231f78146f4978d670528be1",
+      "generation": "1684445562082227",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "f5a3777c3e2f8930bc24df148401115bd6e22f589b079e05aa474d6088ecd0d6",
+      "declaredBloscBytes": 3286606,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        818724,
+        1639508,
+        2463042
+      ],
+      "streamEnds": [
+        818724,
+        1639508,
+        2463042,
+        3286606
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.631195108988322
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        14,
+        45
+      ],
+      "bytes": 3144402,
+      "sha256": "1bd9e72c8a5bac104aa0e800edd2602dc1890c774a9603058088cdf53dec43dd",
+      "generation": "1684445681653833",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "d8f446fb08a4f3c8bb6fee3cc31d482e1b334dd93d108476040106ee9751b4ee",
+      "declaredBloscBytes": 3144386,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        790981,
+        1577583,
+        2359924
+      ],
+      "streamEnds": [
+        790981,
+        1577583,
+        2359924,
+        3144386
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.921199511998566
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        23,
+        45
+      ],
+      "bytes": 3297659,
+      "sha256": "efbf4be915f6e34a246b09d5c0e2ead84457adb82db10c3b062b80da790a7637",
+      "generation": "1684445708674677",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "f9d6caf455bd9dea1fe910d290303520f3cf6e4b14e872ab079e3d7dbe0c1cbf",
+      "declaredBloscBytes": 3297643,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        821733,
+        1644246,
+        2468146
+      ],
+      "streamEnds": [
+        821733,
+        1644246,
+        2468146,
+        3297643
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.585259286002838
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        27,
+        45
+      ],
+      "bytes": 3290682,
+      "sha256": "58b5feb31ce6a82ed5f75492d0a573623a0bfce201976cb9c0887b0bc91e26b5",
+      "generation": "1684445719383773",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "9329bada7c84bfd12f8849761471abee4643afcc78a2dcf9343e53fcc6847bf8",
+      "declaredBloscBytes": 3290666,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        827677,
+        1650695,
+        2469483
+      ],
+      "streamEnds": [
+        827677,
+        1650695,
+        2469483,
+        3290666
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.31146733299829
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        30,
+        45
+      ],
+      "bytes": 3372451,
+      "sha256": "ae2bea8ca4032d1cbf993465e3e36caaffaa119ce47a6a9457226ec76c816129",
+      "generation": "1684445729914971",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "75c084c00fb07a4adecfcd1c158bcfefdc17e11ab0ad0a47f375232aadd3c598",
+      "declaredBloscBytes": 3372435,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        842625,
+        1681898,
+        2527503
+      ],
+      "streamEnds": [
+        842625,
+        1681898,
+        2527503,
+        3372435
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.05029216899129
+    },
+    {
+      "coordinatesXYZ": [
+        23,
+        17,
+        45
+      ],
+      "bytes": 3417664,
+      "sha256": "995b6f46aaf4fe5a681f46bd4808d3377cdf730203ef4e86e04326514aa7aee0",
+      "generation": "1684445841863085",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "0b5984ec8bc7bfa6c0c72d7371c0adf5b1c869f1d2d698432610ff11f770b685",
+      "declaredBloscBytes": 3417648,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        855192,
+        1708557,
+        2558929
+      ],
+      "streamEnds": [
+        855192,
+        1708557,
+        2558929,
+        3417648
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.83930731000146
+    },
+    {
+      "coordinatesXYZ": [
+        23,
+        20,
+        45
+      ],
+      "bytes": 3303919,
+      "sha256": "6144bb7f7816d05a11af31f4ea0cf9d57e88a8c0202b64d114aa306ba024b46e",
+      "generation": "1684445852303644",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "05855d6b45757c03187291d9275b9e3cab73a78bae97b663cba388d5cb479353",
+      "declaredBloscBytes": 3303903,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        830020,
+        1654531,
+        2480158
+      ],
+      "streamEnds": [
+        830020,
+        1654531,
+        2480158,
+        3303903
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.82879718199547
+    },
+    {
+      "coordinatesXYZ": [
+        23,
+        38,
+        45
+      ],
+      "bytes": 3496983,
+      "sha256": "0b7536d8614f4948c838e747c45f2f08d7b0717e662ee423f058e23776093136",
+      "generation": "1684445901281577",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "0c7ee82eaa8940c3328a67f03c42b51ff7c9a6b1756fc5bc84e34f97292945ac",
+      "declaredBloscBytes": 3496967,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        872370,
+        1742878,
+        2618735
+      ],
+      "streamEnds": [
+        872370,
+        1742878,
+        2618735,
+        3496967
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.792384102009237
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        15,
+        45
+      ],
+      "bytes": 3182277,
+      "sha256": "5f53250e8e4e154319af33e34b7ad4a139bab46488ee2d9d45668c96295ee7a5",
+      "generation": "1684445987589711",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "ad240b0509022db51191ace5cdfab4d6cac08dfee8a1aa627a2ba49f9f9bb45c",
+      "declaredBloscBytes": 3182261,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        799735,
+        1593830,
+        2386986
+      ],
+      "streamEnds": [
+        799735,
+        1593830,
+        2386986,
+        3182261
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 19.691314474999672
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        16,
+        45
+      ],
+      "bytes": 3371899,
+      "sha256": "c2539b614af6b4b9486720e386c94ea86242a39755fe9ccafe39ba0e3e69b8ce",
+      "generation": "1684445990098364",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "1669008b0b7a72d93eee0fef1b36e846c7030e36a38acadf174b4b634a934a04",
+      "declaredBloscBytes": 3371883,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        854846,
+        1703294,
+        2541525
+      ],
+      "streamEnds": [
+        854846,
+        1703294,
+        2541525,
+        3371883
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.11007919900294
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        19,
+        45
+      ],
+      "bytes": 3267868,
+      "sha256": "e15392137d51a73d34d7dcda7c348f9964bf1cc665a070fed2e3dfbf68c7ba7e",
+      "generation": "1684445998249255",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "2b4c404afbdef995900f74c214922131b394d551a4f91ff6b94b1922c881cc30",
+      "declaredBloscBytes": 3267852,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        817820,
+        1634719,
+        2450589
+      ],
+      "streamEnds": [
+        817820,
+        1634719,
+        2450589,
+        3267852
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.19207276700763
+    },
+    {
+      "coordinatesXYZ": [
+        25,
+        26,
+        45
+      ],
+      "bytes": 3315276,
+      "sha256": "b7f05296c04a0af1c711b06cd414c1eeea6ebac488abd6f9073d02aefe3ecdaa",
+      "generation": "1684446172373892",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "5cfdf4b6ddf65f9a2f3138ca7be6cd64228d68ca5e125caa9467e1faede5abcc",
+      "declaredBloscBytes": 3315260,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        830256,
+        1656529,
+        2484299
+      ],
+      "streamEnds": [
+        830256,
+        1656529,
+        2484299,
+        3315260
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.534695649999776
+    },
+    {
+      "coordinatesXYZ": [
+        26,
+        39,
+        45
+      ],
+      "bytes": 3482425,
+      "sha256": "2fd8a4c2224ff7e114a478cc8a99ca479b3248807a77874f2cf1b74ab5b762a4",
+      "generation": "1684446362536371",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "687f7eed2a2718b0a149d7d2cd4240007ae63cfe07bd9db5cc75e9ef6144f1d4",
+      "declaredBloscBytes": 3482409,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        864594,
+        1741380,
+        2614717
+      ],
+      "streamEnds": [
+        864594,
+        1741380,
+        2614717,
+        3482409
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.803607359004673
+    },
+    {
+      "coordinatesXYZ": [
+        27,
+        37,
+        45
+      ],
+      "bytes": 3396951,
+      "sha256": "4dcc97588612cc5df4bb3e06a5a3dcad921905fcd0fc6c851389c3c2fa2301f9",
+      "generation": "1684446507535762",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "257916f4461eb4df5af98c3c0a093ca0948ea41547faa297fc49748433e3ee94",
+      "declaredBloscBytes": 3396935,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        870351,
+        1723768,
+        2561821
+      ],
+      "streamEnds": [
+        870351,
+        1723768,
+        2561821,
+        3396935
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.326425396997365
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        22,
+        45
+      ],
+      "bytes": 3244271,
+      "sha256": "34e3bd0a173bd2ab9c68aa0566b4094762e9a2b3320d9e2f812e611c6a36b153",
+      "generation": "1684446619284244",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "380ca6d1632ed5932c9bf8c93f51912b52b721e8d378a9fc8f9557abfc1de42e",
+      "declaredBloscBytes": 3244255,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        812618,
+        1621226,
+        2430685
+      ],
+      "streamEnds": [
+        812618,
+        1621226,
+        2430685,
+        3244255
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.47082168199995
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        27,
+        45
+      ],
+      "bytes": 3372973,
+      "sha256": "4084185fdebf0a26f0c7a42ab12a588ed5090bbec63eace1a7cab931e9bcf8d3",
+      "generation": "1684446632152692",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "7b1db1f109318ccbf652ab7ce938642727e7474c4bb6ec0e77378785bc05579c",
+      "declaredBloscBytes": 3372957,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        851265,
+        1695693,
+        2535859
+      ],
+      "streamEnds": [
+        851265,
+        1695693,
+        2535859,
+        3372957
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.26943220400426
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        32,
+        45
+      ],
+      "bytes": 3428829,
+      "sha256": "b1118efda98694b9f82be2126771bd10766ca3a7e41cf8be756cca844ae6bae6",
+      "generation": "1684446648345641",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "b3b8c744668e1b9212508b61de6e75d5b205ca4b5e4bee66246fd652ad303da1",
+      "declaredBloscBytes": 3428813,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        861058,
+        1723488,
+        2580175
+      ],
+      "streamEnds": [
+        861058,
+        1723488,
+        2580175,
+        3428813
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.923471354995854
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        45,
+        45
+      ],
+      "bytes": 3126337,
+      "sha256": "82ce0f9bdb4f43dc521ba4de79d658c7023863fb8c5460061edbedec33c93362",
+      "generation": "1684446683637010",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "4d0c43c025fd86ca5d63f604886f19ea9fea19deb35b17847a9efb7165a4d62e",
+      "declaredBloscBytes": 3126321,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        778694,
+        1559119,
+        2343192
+      ],
+      "streamEnds": [
+        778694,
+        1559119,
+        2343192,
+        3126321
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.019873500001268
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        17,
+        45
+      ],
+      "bytes": 3192241,
+      "sha256": "e8e9200cb319fdcc389505cb116138754af4549fd2c62a2ed4cee56fb2e661fd",
+      "generation": "1684446756336005",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "8669de90e4fcddc325edf12d8da72590644ac60763a0c3ecd8a44ed2daa15dd3",
+      "declaredBloscBytes": 3192225,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        799328,
+        1596169,
+        2394097
+      ],
+      "streamEnds": [
+        799328,
+        1596169,
+        2394097,
+        3192225
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 19.88412844800041
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        20,
+        45
+      ],
+      "bytes": 3468288,
+      "sha256": "776789c666a4cf0d1b15fc4f949af0d27a4e0f491654e90afcdf9e46122db018",
+      "generation": "1684446767261401",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "adf37b817ad9a0d7b1d011d4df9419309217786ba3e6150083b9162ac1a4d841",
+      "declaredBloscBytes": 3468272,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        878420,
+        1749478,
+        2607818
+      ],
+      "streamEnds": [
+        878420,
+        1749478,
+        2607818,
+        3468272
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.912902329000644
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        31,
+        45
+      ],
+      "bytes": 3473975,
+      "sha256": "688e5af620fdb7977c8dcc054e690bdf2d4f97b8607d6cd29b9859a0b0d79cd2",
+      "generation": "1684446798980005",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "04f4de0cafee9ed2b3b3b769dad7988f702e690c8da3791c798952e63ed67687",
+      "declaredBloscBytes": 3473959,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        869003,
+        1734638,
+        2602177
+      ],
+      "streamEnds": [
+        869003,
+        1734638,
+        2602177,
+        3473959
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 24.69748100799916
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        33,
+        45
+      ],
+      "bytes": 3371249,
+      "sha256": "c74de8e240710b75cf85aa46ae5e3a64964b20f9ff5e0408f7ad1392e6d6c1b9",
+      "generation": "1684446804096106",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "3c090833f62c1247d6b22606413c1f38b649eac60a0f056416fc0990b0a900e4",
+      "declaredBloscBytes": 3371233,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        839602,
+        1682387,
+        2526597
+      ],
+      "streamEnds": [
+        839602,
+        1682387,
+        2526597,
+        3371233
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.59871533700789
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        28,
+        45
+      ],
+      "bytes": 3537773,
+      "sha256": "99ce0353d144e3c70a76c0f9a2bafb8985064f61e442396d2cfdfecc8a115f27",
+      "generation": "1684447190540737",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "36114b98300040c4824e48ec4452bb425859abfca3caaabbc54aabf77239bd7a",
+      "declaredBloscBytes": 3537757,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        881405,
+        1765800,
+        2654501
+      ],
+      "streamEnds": [
+        881405,
+        1765800,
+        2654501,
+        3537757
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.07519648000016
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        42,
+        45
+      ],
+      "bytes": 3410009,
+      "sha256": "0541014aeedf4784dd994f2098aea68d77230bb712f510685baa1104ef8c0f20",
+      "generation": "1684447231777067",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "aba22636261372dd48fe289c2a76ec2d4dc983647c6169ce8af966ad0df6f1ab",
+      "declaredBloscBytes": 3409993,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        844432,
+        1692436,
+        2547038
+      ],
+      "streamEnds": [
+        844432,
+        1692436,
+        2547038,
+        3409993
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.476710287010064
+    },
+    {
+      "coordinatesXYZ": [
+        32,
+        29,
+        45
+      ],
+      "bytes": 3504066,
+      "sha256": "2cfa509a91742f93c855b492c6386175a0e7e0d253dd9607c4bd1c90e6650f86",
+      "generation": "1684447343020340",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "94d9cedafc875f16da4370481e6b8d9a94b485a50673bbb2cdf71895990730f7",
+      "declaredBloscBytes": 3504050,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        874294,
+        1748859,
+        2624649
+      ],
+      "streamEnds": [
+        874294,
+        1748859,
+        2624649,
+        3504050
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.181959886002005
+    },
+    {
+      "coordinatesXYZ": [
+        33,
+        21,
+        45
+      ],
+      "bytes": 3377320,
+      "sha256": "c005322ee3eb10606d158e944ec5ade0a0cd93e7e10f35467e1395c5f6f0158c",
+      "generation": "1684447474154591",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "ea9a1aa084b853fbc3ae4cd61e95faa624c1be66101de93a1ddfc340c52bd111",
+      "declaredBloscBytes": 3377304,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        853479,
+        1702723,
+        2545151
+      ],
+      "streamEnds": [
+        853479,
+        1702723,
+        2545151,
+        3377304
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.48188582000148
+    },
+    {
+      "coordinatesXYZ": [
+        33,
+        37,
+        45
+      ],
+      "bytes": 3407808,
+      "sha256": "45e0741e31a1cb911cafb76277771821fc02feff804578130e1216b609fefead",
+      "generation": "1684447518468766",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "7cbbdbc84e0a56fddca0f4f238a0540a28ce5c601124bc29f5b41213d2ca5f5d",
+      "declaredBloscBytes": 3407792,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        861913,
+        1716929,
+        2566910
+      ],
+      "streamEnds": [
+        861913,
+        1716929,
+        2566910,
+        3407792
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.800509092994616
+    },
+    {
+      "coordinatesXYZ": [
+        33,
+        44,
+        45
+      ],
+      "bytes": 3404854,
+      "sha256": "e1d2ca99f789bf808def67aa655c714db06af67c8de144e3d3cafa1d81d527fd",
+      "generation": "1684447539084420",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "7a241ef5ff44378f046886c9e9fea0e99fc5014944e429aeeecf20a8bfa6baed",
+      "declaredBloscBytes": 3404838,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        851408,
+        1697111,
+        2549311
+      ],
+      "streamEnds": [
+        851408,
+        1697111,
+        2549311,
+        3404838
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.560916535003344
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        43,
+        45
+      ],
+      "bytes": 3425242,
+      "sha256": "d0b4817a0f51a44efeb75f248d190e5b5e44598b4e7cb8754a7e69ad900d7844",
+      "generation": "1684447688613082",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "9b7a80d286840395168b773a55ef26be6f6023a0559d81fdbbff07fc7e79a729",
+      "declaredBloscBytes": 3425226,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        850700,
+        1710191,
+        2573477
+      ],
+      "streamEnds": [
+        850700,
+        1710191,
+        2573477,
+        3425226
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.694261216005543
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        24,
+        45
+      ],
+      "bytes": 3443047,
+      "sha256": "39fbc1741f6568e8603ca0adf3612e116ea45eaab83896c2f8240caeff615dc3",
+      "generation": "1684447785975580",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "9865b1429363a77d9f400ce57ef172b587d58e4bcf0eb3433e0dce9a56c7beef",
+      "declaredBloscBytes": 3443031,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        863241,
+        1725350,
+        2583401
+      ],
+      "streamEnds": [
+        863241,
+        1725350,
+        2583401,
+        3443031
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 19.966688807995524
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        25,
+        45
+      ],
+      "bytes": 3424573,
+      "sha256": "fb4dba7d67c69a9843c19c77ad94e16f339386ce62c4e09efd0564970351f616",
+      "generation": "1684447788223332",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "403ce50ab9ed8625215a08a1473af13844d98f31ff9a517f4e45420c37ae332c",
+      "declaredBloscBytes": 3424557,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        844003,
+        1694395,
+        2559996
+      ],
+      "streamEnds": [
+        844003,
+        1694395,
+        2559996,
+        3424557
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.805644599007792
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        33,
+        45
+      ],
+      "bytes": 3504135,
+      "sha256": "b0a3a9ff8e0ec46b8a4ce1704f301671707d7e2a49f9043cb6daa434966d85d1",
+      "generation": "1684447811103156",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "54a682c0d18032fb4dfd93b5115a6cfc22c01065e0763b4bcfac87aa9d3a4f91",
+      "declaredBloscBytes": 3504119,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        873172,
+        1746868,
+        2624927
+      ],
+      "streamEnds": [
+        873172,
+        1746868,
+        2624927,
+        3504119
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 19.712436982998042
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        46,
+        45
+      ],
+      "bytes": 3138281,
+      "sha256": "d9c0425a35c14e714701a902b14b48ceebed1969f72ab10c1f3aa125e3cc8838",
+      "generation": "1684447998850333",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "c8455b8e6104fdb1238b3f828ef7c699911bb4669013f43cc49537ad993bca5e",
+      "declaredBloscBytes": 3138265,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        786617,
+        1570676,
+        2352926
+      ],
+      "streamEnds": [
+        786617,
+        1570676,
+        2352926,
+        3138265
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.36526677600341
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        26,
+        45
+      ],
+      "bytes": 3482262,
+      "sha256": "5537867e6f1a405171efcd7a86c103041ee071b326cbdd8ba1ec3cb5a6e875aa",
+      "generation": "1684448093670870",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "5314e9997e513fe0c24cca7095da0905989b748da8cb1776dd53c08d7c50e7bc",
+      "declaredBloscBytes": 3482246,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        874981,
+        1750133,
+        2626224
+      ],
+      "streamEnds": [
+        874981,
+        1750133,
+        2626224,
+        3482246
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.603163899999345
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        36,
+        45
+      ],
+      "bytes": 3494937,
+      "sha256": "b955e22dabccf9e139256bb39bed8fd09bf0cd721a5d58278b2d7a724d8680d7",
+      "generation": "1684448121685385",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "33d0f61f4f8f137c983af18e05c26a23b409c274307982388e3568575c163067",
+      "declaredBloscBytes": 3494921,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        867570,
+        1738198,
+        2616732
+      ],
+      "streamEnds": [
+        867570,
+        1738198,
+        2616732,
+        3494921
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.860546097988845
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        42,
+        45
+      ],
+      "bytes": 3435773,
+      "sha256": "b32c98082cb05f1317d22b685f5e2d91d4b64e0f88158cb894645183ef0632fa",
+      "generation": "1684448139879662",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "21daa3d45f5fd164afb4f94298b6c4342877ecc9e3877582764c463edd23c5da",
+      "declaredBloscBytes": 3435757,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        855438,
+        1713059,
+        2577511
+      ],
+      "streamEnds": [
+        855438,
+        1713059,
+        2577511,
+        3435757
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 23.336089608012117
+    },
+    {
+      "coordinatesXYZ": [
+        38,
+        29,
+        45
+      ],
+      "bytes": 3371871,
+      "sha256": "38d4b6d33edbfb5586708dea5fcc6a8b4b3df8a8999b925966b491d16a7ffae3",
+      "generation": "1684448249449159",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "9ca3b25a87acb87149fc2a4b6dd4f22f9f927546e7b0dd5d46cab7caeb1eb0b2",
+      "declaredBloscBytes": 3371855,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        842333,
+        1683172,
+        2523900
+      ],
+      "streamEnds": [
+        842333,
+        1683172,
+        2523900,
+        3371855
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.674383172008675
+    },
+    {
+      "coordinatesXYZ": [
+        39,
+        37,
+        45
+      ],
+      "bytes": 3481088,
+      "sha256": "5e9dce159748b30d0a9764eeeb9d5f4834fe42984de73e80d3d24c8948781000",
+      "generation": "1684448421659405",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "d068c76a4347dccea4ccacb30eef7e8919f347b2db21dc8cdc7a4fe3e8326ed3",
+      "declaredBloscBytes": 3481072,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        884481,
+        1752850,
+        2616556
+      ],
+      "streamEnds": [
+        884481,
+        1752850,
+        2616556,
+        3481072
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.086479043995496
+    },
+    {
+      "coordinatesXYZ": [
+        39,
+        44,
+        45
+      ],
+      "bytes": 3275197,
+      "sha256": "4cdb4d9e76c2b9e7d0fbce3ea5c5e8c468c4ffd9330bcd84dff325b2162baa1f",
+      "generation": "1684448441745834",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "1c711bdaefc3ec8e001e27a3e319f4bcd093617ce281f9d2d3ca77b773fdc5b6",
+      "declaredBloscBytes": 3275181,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        837426,
+        1667296,
+        2475656
+      ],
+      "streamEnds": [
+        837426,
+        1667296,
+        2475656,
+        3275181
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.699354131997097
+    },
+    {
+      "coordinatesXYZ": [
+        40,
+        27,
+        45
+      ],
+      "bytes": 3367979,
+      "sha256": "edd98407b3904a7b9fd49e289cc71c59a5cb0e0738c3ab9a24a62ae773d08ab2",
+      "generation": "1684448636861274",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "84192137453222dc48ff5e6a5219e278a47746c1bb373a00a0c817c1190ed4c6",
+      "declaredBloscBytes": 3367963,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        878215,
+        1732297,
+        2560244
+      ],
+      "streamEnds": [
+        878215,
+        1732297,
+        2560244,
+        3367963
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.865788598996005
+    },
+    {
+      "coordinatesXYZ": [
+        40,
+        30,
+        45
+      ],
+      "bytes": 3402595,
+      "sha256": "3b0d4a2874b9f53fd562f159b42e9441e5b586a0684c671276bcee769a9f87a7",
+      "generation": "1684448648752103",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "4169e6f1dd1eaf498c21845c0bc5a623f77bce8f15020b0c96a25deddaa9e82e",
+      "declaredBloscBytes": 3402579,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        844121,
+        1698546,
+        2551044
+      ],
+      "streamEnds": [
+        844121,
+        1698546,
+        2551044,
+        3402579
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.36910699500004
+    },
+    {
+      "coordinatesXYZ": [
+        41,
+        25,
+        45
+      ],
+      "bytes": 3187470,
+      "sha256": "64fb74a1a2572de3be2b9004c61fc3041e458b11bd9d75214b3aceb424f62cd9",
+      "generation": "1684448778865197",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "c0648f7fd990dae7ba5d2edbb65f5086877d3be50864ac80e07f3bb829f0b2fe",
+      "declaredBloscBytes": 3187454,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        798862,
+        1594694,
+        2390371
+      ],
+      "streamEnds": [
+        798862,
+        1594694,
+        2390371,
+        3187454
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 24.593566684998223
+    },
+    {
+      "coordinatesXYZ": [
+        41,
+        31,
+        45
+      ],
+      "bytes": 3366598,
+      "sha256": "e4eabf9dc75325cf462e72da99d6dd2a144e24d5af67add1e98958b0d72ca876",
+      "generation": "1684448796848685",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "ec8ad3a3d8abc5e996ccbcb9e5f998d083361e7ddf1d16c9a1f6239f5b954d29",
+      "declaredBloscBytes": 3366582,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        849802,
+        1692976,
+        2526424
+      ],
+      "streamEnds": [
+        849802,
+        1692976,
+        2526424,
+        3366582
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.4921093719895
+    },
+    {
+      "coordinatesXYZ": [
+        42,
+        38,
+        45
+      ],
+      "bytes": 3446956,
+      "sha256": "81342445b26581e71de739d09b1abf27a37f05ecee25286fb01b766342484b44",
+      "generation": "1684448958012473",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "71f87ca47c2d4422bb865488b953608e30ec3a5904e2b39cc216fb634788d2f9",
+      "declaredBloscBytes": 3446940,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        862604,
+        1721123,
+        2587140
+      ],
+      "streamEnds": [
+        862604,
+        1721123,
+        2587140,
+        3446940
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.690111261006678
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        28,
+        45
+      ],
+      "bytes": 3176092,
+      "sha256": "2166cf832d0b8af4b5c703d19ea2afccc8831d61e8a96bd69863bfc66b61b34e",
+      "generation": "1684449071313002",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "c89c4ced59e82ea838936950e97cd903094622221cc2d9d028ab5ad8e49cdf3e",
+      "declaredBloscBytes": 3176076,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        796439,
+        1589174,
+        2381624
+      ],
+      "streamEnds": [
+        796439,
+        1589174,
+        2381624,
+        3176076
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 25.34115663600096
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        36,
+        45
+      ],
+      "bytes": 3430737,
+      "sha256": "09d658203e6b57faf0d3b6ddcc1e3847bff48c5996c0477d35d01117be4bdbb6",
+      "generation": "1684449094727388",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "6061d9c45245ab4a07f437c6325c79610a715b6ad85ae609a3fcbfa184326d38",
+      "declaredBloscBytes": 3430721,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        868422,
+        1726776,
+        2576168
+      ],
+      "streamEnds": [
+        868422,
+        1726776,
+        2576168,
+        3430721
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 22.76850799699605
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        40,
+        45
+      ],
+      "bytes": 3325380,
+      "sha256": "3017b4cb3eff7ccfdde04e04e6c4969270329170668ff4f43e557497c115b7ca",
+      "generation": "1684449107310155",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "5c4a9d40086f464ad5d83837a3245081048daa34a0e6858b5df53bd8412c3849",
+      "declaredBloscBytes": 3325364,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        849646,
+        1691466,
+        2517586
+      ],
+      "streamEnds": [
+        849646,
+        1691466,
+        2517586,
+        3325364
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 20.3610143459955
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        41,
+        45
+      ],
+      "bytes": 3184583,
+      "sha256": "67281fe5c9cd9426f87af612524d9a158a8789f9b33f1e0e704601ced96d7dec",
+      "generation": "1684449110190815",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "3830f9a5395f3c9205af21dd0c6a3f421fa362e888aa42dff17066118247572a",
+      "declaredBloscBytes": 3184567,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        819325,
+        1625980,
+        2409490
+      ],
+      "streamEnds": [
+        819325,
+        1625980,
+        2409490,
+        3184567
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.75297224399401
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        42,
+        45
+      ],
+      "bytes": 3119259,
+      "sha256": "696e63e92431a93bd319efb5cfef5c191348638f8d1fd8c0e09200b686be8428",
+      "generation": "1684449112936697",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "df5d8a3f499db0fcb628cc28b6fdcae1e1cf608cbcebb8f3b3773e44f342fc50",
+      "declaredBloscBytes": 3119243,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        791569,
+        1569642,
+        2341710
+      ],
+      "streamEnds": [
+        791569,
+        1569642,
+        2341710,
+        3119243
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 21.549298765006824
+    },
+    {
+      "coordinatesXYZ": [
+        44,
+        39,
+        45
+      ],
+      "bytes": 3097995,
+      "sha256": "17c7c36e54d998f7b8fc6e0120635f0e4af06f2a26bdba152ac097fe1fabc7db",
+      "generation": "1684449240202113",
+      "nativeShapeXYZ": [
+        128,
+        128,
+        128
+      ],
+      "headerSha256": "9d7f949bd3c7f6d9e520995316928b84c5b36aea414bd4b56c4f9771cfa3b200",
+      "declaredBloscBytes": 3097979,
+      "declaredRawBytes": 4194304,
+      "streamStarts": [
+        32,
+        774582,
+        1547748,
+        2322432
+      ],
+      "streamEnds": [
+        774582,
+        1547748,
+        2322432,
+        3097979
+      ],
+      "persistedShaVerified": true,
+      "newCacheObject": true,
+      "seconds": 24.040703217004193
+    }
+  ],
+  "errors": [
+    {
+      "kind": "memory-guard",
+      "rssBytes": 580468736
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        23,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        22,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        17,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        18,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        26,
+        21,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        34,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        18,
+        19,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        27,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        40,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        32,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        28,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        35,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        41,
+        33,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        31,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        25,
+        36,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        38,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        43,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        38,
+        39,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        25,
+        18,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        35,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        27,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        41,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        41,
+        32,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        20,
+        21,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        40,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        28,
+        30,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        42,
+        34,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        30,
+        34,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        30,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        30,
+        41,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        41,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        25,
+        40,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        38,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        21,
+        37,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        23,
+        33,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        32,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        26,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        27,
+        44,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        25,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        31,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        45,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        26,
+        29,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        33,
+        23,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        37,
+        28,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        32,
+        39,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        30,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        41,
+        43,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        30,
+        35,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        24,
+        34,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        18,
+        28,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        34,
+        22,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        22,
+        32,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        19,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        17,
+        33,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        40,
+        45,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        20,
+        24,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        45,
+        37,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        29,
+        24,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        31,
+        36,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        25,
+        42,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        16,
+        14,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    },
+    {
+      "coordinatesXYZ": [
+        43,
+        35,
+        45
+      ],
+      "error": "Cannot send a request, as the client has been closed.",
+      "type": "RuntimeError"
+    }
+  ],
+  "complete": false,
+  "outcome": "Stopped by the probe memory guard; not a completed 128-object bandwidth benchmark.",
+  "recommendation": "Keep the main source pool at 64. This 128-request buffered probe reached its memory guard before completing and does not establish a throughput advantage or an isolated bandwidth plateau. Do not repeat this optional probe.",
+  "counterInterpretation": {
+    "requests": "NativeSource counter: fully successful response bodies only; 128 initial object requests were scheduled.",
+    "downloadedBytes": "Bytes of fully completed successful response bodies; excludes bytes received from subsequently cancelled partial responses.",
+    "decimalMBps": "Successful completed-object bytes divided by total probe wall time, including guard shutdown; not total link bandwidth.",
+    "retries": "NativeSource recorded 62 retry increments. All 62 unfinished jobs ultimately failed because the memory guard closed the HTTP client. The counter was not sampled immediately before closure, so earlier connection failures cannot be separated from shutdown-related retries."
+  },
+  "peakObservedRssBytes": 580468736,
+  "initialObjectRequestsScheduled": 128,
+  "guardCancelledObjects": 62,
+  "memoryBudgetRespected": true,
+  "repeatProbePerformed": false,
+  "retainedFilesPresentAndByteCountsVerified": true,
+  "partialCacheFilesRemaining": 0,
+  "retryCauseFullyDetermined": false
+}

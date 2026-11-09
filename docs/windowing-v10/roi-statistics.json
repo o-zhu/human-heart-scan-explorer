@@ -1,0 +1,112 @@
+{
+  "upper cavity interior": {
+    "centerFineXYZ": [
+      414,
+      444,
+      1100
+    ],
+    "radiusFinePixels": 12,
+    "n": 441,
+    "percentile1_5_25_50_75_95_99": [
+      36173.0,
+      36229.0,
+      36301.0,
+      36354.0,
+      36401.0,
+      36484.0,
+      36539.8
+    ],
+    "below_raw_geometry_threshold_percent": 100.0,
+    "old_cap_flat_white_percent": 0.0,
+    "old_section_flat_white_percent": 0.0,
+    "new_cap_upper_clipped_percent": 0.0
+  },
+  "lower cavity interior": {
+    "centerFineXYZ": [
+      585,
+      755,
+      1100
+    ],
+    "radiusFinePixels": 18,
+    "n": 1009,
+    "percentile1_5_25_50_75_95_99": [
+      35984.08,
+      36039.8,
+      36110.0,
+      36165.0,
+      36216.0,
+      36320.0,
+      36692.52
+    ],
+    "below_raw_geometry_threshold_percent": 99.00891972249752,
+    "old_cap_flat_white_percent": 0.0,
+    "old_section_flat_white_percent": 0.0,
+    "new_cap_upper_clipped_percent": 0.0
+  },
+  "upper muscular wall": {
+    "centerFineXYZ": [
+      250,
+      300,
+      1100
+    ],
+    "radiusFinePixels": 35,
+    "n": 3853,
+    "percentile1_5_25_50_75_95_99": [
+      37386.24,
+      37692.6,
+      37890.0,
+      37977.0,
+      38062.0,
+      38194.0,
+      38291.0
+    ],
+    "below_raw_geometry_threshold_percent": 0.0,
+    "old_cap_flat_white_percent": 95.45808460939527,
+    "old_section_flat_white_percent": 97.84583441474176,
+    "new_cap_upper_clipped_percent": 0.07786140669608098
+  },
+  "lower muscular wall": {
+    "centerFineXYZ": [
+      975,
+      830,
+      1100
+    ],
+    "radiusFinePixels": 25,
+    "n": 1961,
+    "percentile1_5_25_50_75_95_99": [
+      37337.2,
+      37448.0,
+      37596.0,
+      37677.0,
+      37758.0,
+      37862.0,
+      37937.6
+    ],
+    "below_raw_geometry_threshold_percent": 0.0,
+    "old_cap_flat_white_percent": 49.209586945436,
+    "old_section_flat_white_percent": 82.50892401835797,
+    "new_cap_upper_clipped_percent": 0.0
+  },
+  "outside organ sample": {
+    "centerFineXYZ": [
+      100,
+      100,
+      1100
+    ],
+    "radiusFinePixels": 20,
+    "n": 1257,
+    "percentile1_5_25_50_75_95_99": [
+      36301.56,
+      36367.8,
+      36459.0,
+      36516.0,
+      36568.0,
+      36636.2,
+      36687.32
+    ],
+    "below_raw_geometry_threshold_percent": 99.76133651551312,
+    "old_cap_flat_white_percent": 0.0,
+    "old_section_flat_white_percent": 0.0,
+    "new_cap_upper_clipped_percent": 0.0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "datasetId": "1966161627",
+  "donor": "LADAF-2020-31",
+  "atlasDisplayWindowRaw": [
+    10005,
+    20009
+  ],
+  "sourceEncodingWindowRaw": [
+    10005,
+    22000
+  ],
+  "displayWindowRaw": [
+    12500,
+    20500
+  ],
+  "displayGamma": 0.9,
+  "cleanupThresholdRaw": 13200,
+  "windowingAffectsGeometry": false,
+  "quantitativeSourceModified": false,
+  "selection": "Compared three source-specific display transfers on measured central orthogonal slices, balancing myocardium contrast, low-level boundary visibility and dense vessel edges. Source encoding is display-only uint8; original uint16 chunks and provenance remain separate.",
+  "reviewEvidence": "source-high-review.jpg and window-comparison-v11.jpg",
+  "clinicalLabelsAssigned": false,
+  "measuredCoarseTissueSummary": {
+    "definition": "Every second registered voxel on each axis, above the reviewed raw tissue threshold and present in cleaned support. Includes dense fibrous tissue; not an anatomical chamber segmentation.",
+    "samples": 1051761,
+    "sourceBelowEncodingFraction": 0.0,
+    "sourceAboveEncodingFraction": 0.0024302099051020146,
+    "displayNearWhiteFraction": 0.004857567451160482,
+    "displayMedianByte": 133.6445088898027,
+    "displayPercentilesByte": [
+      30.316707187995803,
+      40.40426615880505,
+      98.28095024503664,
+      133.6445088898027,
+      149.49216333381437,
+      187.64980150586484,
+      231.78811910050555
+    ]
+  },
+  "exactQuantization": "uint8-quantization-v11.json"
+}

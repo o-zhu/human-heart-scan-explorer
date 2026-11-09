@@ -1,0 +1,80 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 297,
+    "decodedBrickReads": 661,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "wallRestorationSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "operations": [
+    {
+      "operation": "pulmonary-vein-complete-sheet",
+      "maskId": "atrial",
+      "file": "docs/cleanup-v28-left/candidates/pulmonary-vein-complete-sheet-selection.npz",
+      "sha256": "f3fa7005b5c46dbe1c44317d9b99512ea71f2e02e5b5d51255f26f7c746fa709",
+      "logicalSelectionSha256": "49074778b07a4fc186a6fe48b6004d2c39eb2d1d7206bd2a64058a55846221e3",
+      "lowerFullFineXYZ": [
+        1203,
+        1180,
+        671
+      ],
+      "upperFullFineXYZ": [
+        1410,
+        1341,
+        838
+      ],
+      "selectedSamples": 622615,
+      "selectedSourceForegroundSamples": 184721,
+      "additionalVersusTenSampleGuardSamples": 284704,
+      "restoredWallFootprintOverlapSamples": 0
+    },
+    {
+      "operation": "appendage-complete-free-sheet",
+      "maskId": "atrial",
+      "file": "docs/cleanup-v28-left/candidates/appendage-complete-free-sheet-selection.npz",
+      "sha256": "b4eb7112f0420744d6c07c0b842d4cd478e0ffbf5e75e7bf6c101ae16c4e0376",
+      "logicalSelectionSha256": "3a875e883e81e0176a0f8c0cda1642b9df34a73e6163fb2645df783f324bb5ab",
+      "lowerFullFineXYZ": [
+        1134,
+        1216,
+        781
+      ],
+      "upperFullFineXYZ": [
+        1355,
+        1317,
+        994
+      ],
+      "selectedSamples": 515659,
+      "selectedSourceForegroundSamples": 163535,
+      "additionalVersusTenSampleGuardSamples": 221182,
+      "restoredWallFootprintOverlapSamples": 0
+    },
+    {
+      "operation": "atrial-inlet-early-continuation",
+      "maskId": "atrial",
+      "file": "docs/cleanup-v28-left/candidates/atrial-inlet-early-continuation-selection.npz",
+      "sha256": "e4f7ca5d646f5007d04d3c4921029589e1fec4200fb34cc0976c3cbfefabc34d",
+      "logicalSelectionSha256": "84f77081f29722b602b0f86e60b5ad2afb8169665bdb87a306bb2662f92fa8dd",
+      "lowerFullFineXYZ": [
+        1155,
+        748,
+        432
+      ],
+      "upperFullFineXYZ": [
+        1325,
+        857,
+        749
+      ],
+      "selectedSamples": 980225,
+      "selectedSourceForegroundSamples": 398973,
+      "additionalVersusTenSampleGuardSamples": 302370,
+      "restoredWallFootprintOverlapSamples": 0
+    }
+  ]
+}

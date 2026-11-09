@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 1,
+  "format": "HFM1",
+  "id": "native-surface-v20.1",
+  "donorId": "ladaf-2021-17",
+  "sourceSpacingUm": 19.85,
+  "threshold": 0.28,
+  "rawThreshold": 17133.4,
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "roi": {
+    "originXYZ": [
+      4480,
+      3968,
+      4608
+    ],
+    "shapeXYZ": [
+      128,
+      128,
+      128
+    ],
+    "sourceShapeZYX": [
+      128,
+      128,
+      128
+    ],
+    "physicalSizeMm": [
+      2.5209500000000005,
+      2.5209500000000005,
+      2.5209500000000005
+    ],
+    "description": "Morphology-selected folded tissue/cavity interface; no expert-validated valve, chordal or chamber label.",
+    "boundsAreSampleCenters": true,
+    "outerBoundaryOpen": true
+  },
+  "extent": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": {
+    "min": [
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "max": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "cameraTarget": [
+    0,
+    0,
+    0
+  ],
+  "coordinateConvention": "ROI-centered acquisition XYZ maps to renderer (x,z,-y), normalized by longest ROI sample-center extent.",
+  "lods": [
+    {
+      "id": "overview",
+      "label": "317.6 \u00b5m overview",
+      "url": "./assets/native-surface-v20/overview.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "uint16",
+      "positionFlag": 0,
+      "vertices": 395,
+      "triangles": 639,
+      "compressedBytes": 6914,
+      "decodedBytes": 12444,
+      "sha256": "61b28367bc1f265524060999fb96c8b132f420720e6b675f45c6c4616900933c",
+      "decodedSha256": "d78c34a082152a6a03412936bf123c218b85b6ba4988e1a72c44d7d33c1d855c",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 317.6,
+      "quantizationMaximumUm": 0.03242943891891249,
+      "quantizationRmsUm": 0.01859266541393571,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.03242943891891249,
+        "collapsedTriangles": 0,
+        "flippedOrOver90DegreeTriangles": 0
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": 0,
+      "shadingOnly": false,
+      "decimated": false,
+      "scalarSmoothing": false,
+      "sameTopologyAsNative": false
+    },
+    {
+      "id": "native",
+      "label": "Native reference",
+      "url": "./assets/native-surface-v20/native.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 12867151,
+      "decodedBytes": 27438308,
+      "sha256": "dca04459db93216028ea7b06994fe467b80418cf191e9ad64a66364cb4f8384d",
+      "decodedSha256": "1c4f6de9ee83654e35712465b24ea83405fb330c7efda3c1e1b0a8403ccfad68",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 19.85,
+      "quantizationMaximumUm": 6.455231122581064e-05,
+      "quantizationRmsUm": 2.8912186607632098e-05,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.03312706190350713,
+        "collapsedTriangles": 826,
+        "flippedOrOver90DegreeTriangles": 826
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": 0,
+      "shadingOnly": false,
+      "decimated": false,
+      "scalarSmoothing": false,
+      "sameTopologyAsNative": true
+    },
+    {
+      "id": "normals",
+      "label": "Native \u00b7 smooth lighting",
+      "url": "./assets/native-surface-v20/normals.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 13037466,
+      "decodedBytes": 27438308,
+      "sha256": "01b6e11bad7a2907e2974f9307d1c0dc25b8ad68f0a92445cb751c3ce3d8445b",
+      "decodedSha256": "20ab229b83e1677002ec7da921f8a9981d3b1d21940674e6a1b485241a0cc444",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 19.85,
+      "quantizationMaximumUm": 6.455231122581064e-05,
+      "quantizationRmsUm": 2.8912186607632098e-05,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.03312706190350713,
+        "collapsedTriangles": 826,
+        "flippedOrOver90DegreeTriangles": 826
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": 0,
+      "shadingOnly": true,
+      "decimated": false,
+      "scalarSmoothing": false,
+      "sameTopologyAsNative": true
+    },
+    {
+      "id": "gentle",
+      "label": "Native \u00b7 gentle geometry",
+      "url": "./assets/native-surface-v20/gentle.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 16180481,
+      "decodedBytes": 27438308,
+      "sha256": "fd9f57e90e35f98e5ecf7b4867de97b4c104563a151c7a013882b97d53452708",
+      "decodedSha256": "7cca67259ea223c2ade41224a596c0328da0a3271e474faef2930c012c378c4e",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 19.85,
+      "quantizationMaximumUm": 6.387652338009714e-05,
+      "quantizationRmsUm": 2.87295217325769e-05,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.03302752313670865,
+        "collapsedTriangles": 160,
+        "flippedOrOver90DegreeTriangles": 160
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": 4.962018738750257,
+      "shadingOnly": false,
+      "decimated": false,
+      "scalarSmoothing": false,
+      "sameTopologyAsNative": true
+    },
+    {
+      "id": "moderate",
+      "label": "Native \u00b7 moderate geometry",
+      "url": "./assets/native-surface-v20/moderate.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 16146765,
+      "decodedBytes": 27438308,
+      "sha256": "c255ef2293922ff69c4f0214f7bbbcc63e2dc22239a1232dde9a03fb68541ca5",
+      "decodedSha256": "685c8c652cb067b66436927f15a5ffd4ecf1bc20534e0a0dfd259a17e2f98c79",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 19.85,
+      "quantizationMaximumUm": 6.455231122581064e-05,
+      "quantizationRmsUm": 2.8740521272725345e-05,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.03314917064191905,
+        "collapsedTriangles": 2324,
+        "flippedOrOver90DegreeTriangles": 2329
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": 9.924515308249108,
+      "shadingOnly": false,
+      "decimated": false,
+      "scalarSmoothing": false,
+      "sameTopologyAsNative": true
+    },
+    {
+      "id": "bilateral",
+      "label": "Native \u00b7 noise-reduction experiment",
+      "url": "./assets/native-surface-v20/bilateral.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 533438,
+      "triangles": 1026542,
+      "compressedBytes": 10286290,
+      "decodedBytes": 21920420,
+      "sha256": "56ed97a4803a56c7a45c68dd8a6a48b9bd27f59d08b9119862e11f86e6a33cb7",
+      "decodedSha256": "a82520b12d1f8e552b755da55a1581bed8dd2e85afc2e8b30f76eccb426b1996",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "sourceSpacingUm": 19.85,
+      "quantizationMaximumUm": 6.455231122581064e-05,
+      "quantizationRmsUm": 2.8867005993083654e-05,
+      "quantizationCollapsedTriangles": 0,
+      "quantizationFlippedOrOver90DegreeTriangles": 0,
+      "uint16EncodingAudit": {
+        "maximumErrorUm": 0.033096239944298056,
+        "collapsedTriangles": 805,
+        "flippedOrOver90DegreeTriangles": 805
+      },
+      "removedTriangles": 0,
+      "losslessCompressionRoundTrip": true,
+      "maximumGeometryDisplacementUm": null,
+      "shadingOnly": false,
+      "decimated": false,
+      "scalarSmoothing": true,
+      "sameTopologyAsNative": false,
+      "surfaceDistances": {
+        "method": "20,000 deterministic area-weighted barycentric samples per direction, closest triangle via vtkStaticCellLocator; sampled, not a Hausdorff guarantee.",
+        "rawToFiltered": {
+          "samples": 20000,
+          "medianUm": 0.9188871142773969,
+          "p95Um": 12.015822809404286,
+          "p99Um": 37.49592763693456,
+          "maximumSampledUm": 116.11948882772356,
+          "rmsUm": 7.343324259338346
+        },
+        "filteredToRaw": {
+          "samples": 20000,
+          "medianUm": 0.567456044833524,
+          "p95Um": 3.9357565268470753,
+          "p99Um": 6.2978758502097945,
+          "maximumSampledUm": 11.316092877262053,
+          "rmsUm": 1.7661343135349186
+        }
+      }
+    }
+  ],
+  "defaultMethod": "normals",
+  "totalCompressedBytes": 68525067,
+  "processing": {
+    "experimental": true,
+    "source": "Original native uint16 19.85 \u00b5m acquisition samples within a targeted ROI.",
+    "contour": "Blockwise marching cubes, exact global grid-edge identity weld, unchanged source threshold.",
+    "referenceScalarSmoothing": false,
+    "scalarSmoothingOnly": [
+      "bilateral"
+    ],
+    "sourceQuantization": false,
+    "decimation": false,
+    "componentRemoval": false,
+    "holeFilling": false,
+    "surfaceBandLossless": true,
+    "rawSlicesLossless": true,
+    "fullOrganReconstruction": false,
+    "gradientNormalsSigmaVoxels": 0.5,
+    "geometryDisplacementLimitsUm": {
+      "gentle": 4.9625,
+      "moderate": 9.925
+    },
+    "smoothingTopology": "All four native candidates retain identical indices and vertex count. Geometric self-intersections are not exhaustively certified.",
+    "quantization": "ROI-local uint16 positions where they preserve every face, otherwise float32 positions; signed 16-bit normals. Measured errors are recorded per candidate. Gzip is lossless after mesh encoding.",
+    "expertValidated": false
+  },
+  "validation": {
+    "weld": {
+      "schema": "native-surface-v20.1",
+      "verticesBeforeWeld": 674360,
+      "vertices": 665302,
+      "triangles": 1288570,
+      "exactIntegerEdgeWeld": true,
+      "sharedEdgeAliases": 9058,
+      "maximumWeldMovementUm": 0.0,
+      "sharedVertexCoordinatesBitIdentical": true,
+      "spatialWeldTolerance": null,
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "pointsSha256": "fbdeb99c371f8b8ba15f947f9f89446dabdcf728eb7c730dd093da8ef540a983",
+      "peakRssMiB": 239.359375,
+      "seconds": 0.3369588009954896
+    },
+    "normals": {
+      "schema": "native-surface-v20.1",
+      "topology": {
+        "vertices": 665302,
+        "triangles": 1288570,
+        "edges": 1944049,
+        "components": 8658,
+        "eulerCharacteristic": 9823,
+        "boundaryEdges": 22388,
+        "nonmanifoldEdges": 0,
+        "unexpectedInteriorBoundaryEdges": 0,
+        "roiBoundaryVertices": 22388,
+        "pinnedVertices": 22388,
+        "zeroAreaTriangles": 0,
+        "areaMm2": 154.93793621157016,
+        "boundaryPolicy": "Every topological boundary and nonmanifold edge endpoint is pinned; the ROI is deliberately open."
+      },
+      "geometryNormalFallbackVertices": 0,
+      "gradientNormalSigmaVoxels": 0.5,
+      "gradientNormalSigmaUm": 9.925,
+      "gradientHaloVoxels": 3,
+      "gradientNormalWeakFallbackVertices": 0,
+      "gradientOrientationAlignedVertices": 23569,
+      "normalOnlyGeometryIdentical": true,
+      "normalOnlyMaximumDisplacementUm": 0.0,
+      "pointsSha256": "fbdeb99c371f8b8ba15f947f9f89446dabdcf728eb7c730dd093da8ef540a983",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "scalarContourBlurred": false,
+      "peakRssMiB": 358.91015625,
+      "seconds": 2.0964684409991605
+    },
+    "gentle": {
+      "maximumVertexDisplacementUm": 4.962018738750257,
+      "p95VertexDisplacementUm": 4.96193604818318,
+      "medianVertexDisplacementUm": 4.384174933379009,
+      "rmsVertexDisplacementUm": 4.074679136270859,
+      "zeroAreaTriangles": 0,
+      "flippedOrOver90DegreeTriangles": 0,
+      "maximumFaceNormalRotationDeg": 89.99931226681325,
+      "boundaryCoordinatesUnchanged": true,
+      "indicesUnchanged": true,
+      "verticesUnchanged": true,
+      "topologyUnchanged": true,
+      "boundScope": "Exact all-vertex displacement bounds corresponding barycentric triangle points because connectivity is unchanged. It does not certify absence of self-intersection.",
+      "schema": "native-surface-v20.1",
+      "id": "gentle",
+      "method": "vtkWindowedSincPolyDataFilter",
+      "iterations": 10,
+      "passBand": 0.3,
+      "maximumAllowedDisplacementUm": 4.9625,
+      "float32RoundingMarginUm": 0.0006010413053445518,
+      "roiOvershootRestoredVertices": 459,
+      "allVerticesWithinMeasuredRoi": true,
+      "clampRelativeTo": "Unsmoothed native reference, after all filter iterations",
+      "triangleRestorationRounds": 3,
+      "triangleSafetyRestoredVertices": 920,
+      "normalFallbackVertices": 0,
+      "pointsSha256": "dc58a37cd132094792c7d866d1363122bc88e0a683c22077bb0a4d107426ffaf",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "peakRssMiB": 245.953125,
+      "seconds": 2.2295850410009734
+    },
+    "moderate": {
+      "maximumVertexDisplacementUm": 9.924515308249108,
+      "p95VertexDisplacementUm": 9.9244032547527,
+      "medianVertexDisplacementUm": 6.36203022647385,
+      "rmsVertexDisplacementUm": 6.711519922785068,
+      "zeroAreaTriangles": 0,
+      "flippedOrOver90DegreeTriangles": 0,
+      "maximumFaceNormalRotationDeg": 89.96933295158865,
+      "boundaryCoordinatesUnchanged": true,
+      "indicesUnchanged": true,
+      "verticesUnchanged": true,
+      "topologyUnchanged": true,
+      "boundScope": "Exact all-vertex displacement bounds corresponding barycentric triangle points because connectivity is unchanged. It does not certify absence of self-intersection.",
+      "schema": "native-surface-v20.1",
+      "id": "moderate",
+      "method": "vtkWindowedSincPolyDataFilter",
+      "iterations": 20,
+      "passBand": 0.2,
+      "maximumAllowedDisplacementUm": 9.925,
+      "float32RoundingMarginUm": 0.0006010413053445518,
+      "roiOvershootRestoredVertices": 584,
+      "allVerticesWithinMeasuredRoi": true,
+      "clampRelativeTo": "Unsmoothed native reference, after all filter iterations",
+      "triangleRestorationRounds": 5,
+      "triangleSafetyRestoredVertices": 22343,
+      "normalFallbackVertices": 0,
+      "pointsSha256": "7275a382556fb61e5eb32c808ebf3e54cc392e7e04a51657739544ae58545677",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "peakRssMiB": 245.921875,
+      "seconds": 3.1368213329988066
+    },
+    "bilateral": {
+      "schema": "native-surface-v20.1",
+      "id": "bilateral",
+      "label": "Native \u00b7 noise-reduction experiment",
+      "scalarSmoothing": true,
+      "method": "3D intensity bilateral filter followed by the same raw-value isosurface threshold",
+      "sourceSpacingUm": 19.85,
+      "resampled": false,
+      "rawThreshold": 17133.4,
+      "sigmaSpatialVoxels": 0.65,
+      "sigmaSpatialUm": 12.902500000000002,
+      "sigmaRangeRawIntensity": 600.0,
+      "radiusVoxels": 2,
+      "rawBoundaryBandVoxels": 2,
+      "boundaryBandCaveat": "The two-voxel raw boundary band preserves measured crop edges but its transition can show a local filtering artifact.",
+      "originalRawSamplesChanged": false,
+      "maximumDerivedScalarValueChange": 428.3994140625,
+      "thresholdedSamples": {
+        "rawAbove": 1259841,
+        "filteredAbove": 1243828,
+        "aboveToBelow": 27170,
+        "belowToAbove": 11157,
+        "rawAboveRetainedFraction": 0.978433786485755
+      },
+      "topology": {
+        "vertices": 533438,
+        "triangles": 1026542,
+        "edges": 1551007,
+        "components": 6701,
+        "eulerCharacteristic": 8973,
+        "boundaryEdges": 22388,
+        "nonmanifoldEdges": 0,
+        "roiBoundaryVertices": 22388,
+        "pinnedVertices": 22388,
+        "zeroAreaTriangles": 0,
+        "areaMm2": 125.52705703219713,
+        "boundaryPolicy": "Every topological boundary and nonmanifold edge endpoint is pinned; the ROI is deliberately open."
+      },
+      "topologyPreserved": false,
+      "componentRemoval": false,
+      "decimation": false,
+      "surfaceDistances": {
+        "method": "20,000 deterministic area-weighted barycentric samples per direction, closest triangle via vtkStaticCellLocator; sampled, not a Hausdorff guarantee.",
+        "rawToFiltered": {
+          "samples": 20000,
+          "medianUm": 0.9188871142773969,
+          "p95Um": 12.015822809404286,
+          "p99Um": 37.49592763693456,
+          "maximumSampledUm": 116.11948882772356,
+          "rmsUm": 7.343324259338346
+        },
+        "filteredToRaw": {
+          "samples": 20000,
+          "medianUm": 0.567456044833524,
+          "p95Um": 3.9357565268470753,
+          "p99Um": 6.2978758502097945,
+          "maximumSampledUm": 11.316092877262053,
+          "rmsUm": 1.7661343135349186
+        }
+      },
+      "conclusion": "The filter can remove noise-scale components and can also remove real weak thin structures. Compare with native reference and the untouched source slice; no anatomical no-loss guarantee.",
+      "peakRssMiB": 400.76171875,
+      "seconds": 3.417275805004465
+    },
+    "encodedAssets": {
+      "passed": true,
+      "checks": [
+        {
+          "id": "overview",
+          "fileSha256": "61b28367bc1f265524060999fb96c8b132f420720e6b675f45c6c4616900933c",
+          "positionFormat": "uint16",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.2481889172865088e-05,
+          "positionBytesSha256": "119844a5beab50140a2def674883a0685f6c5517a62b7a9c1e73fe194dabe1ba",
+          "indexBytesSha256": "ef0ca49d9bf24ef57c533686992952d75b0ad3f0463cd22e4f2846ddc5872376"
+        },
+        {
+          "id": "native",
+          "fileSha256": "dca04459db93216028ea7b06994fe467b80418cf191e9ad64a66364cb4f8384d",
+          "positionFormat": "float32",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.5735544991967174e-05,
+          "positionBytesSha256": "7ccffe785c93a9117ca6d02d3b81d62c3935ca45f233b99f7cf337d5cccb2963",
+          "indexBytesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d"
+        },
+        {
+          "id": "normals",
+          "fileSha256": "01b6e11bad7a2907e2974f9307d1c0dc25b8ad68f0a92445cb751c3ce3d8445b",
+          "positionFormat": "float32",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.5584665397371253e-05,
+          "positionBytesSha256": "7ccffe785c93a9117ca6d02d3b81d62c3935ca45f233b99f7cf337d5cccb2963",
+          "indexBytesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+          "exactSameIndicesAsNative": true,
+          "cropBoundaryCoordinatesBitIdentical": true,
+          "maximumDecodedVertexMovementUm": 0.0,
+          "maximumAllowedMovementUm": 0,
+          "positionBytesIdenticalToNative": true
+        },
+        {
+          "id": "gentle",
+          "fileSha256": "fd9f57e90e35f98e5ecf7b4867de97b4c104563a151c7a013882b97d53452708",
+          "positionFormat": "float32",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.603031894898855e-05,
+          "positionBytesSha256": "35d0d2e66d065836df78bc5191273b851e7103cb815d5d8ccb37cff7deccb9a6",
+          "indexBytesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+          "exactSameIndicesAsNative": true,
+          "cropBoundaryCoordinatesBitIdentical": true,
+          "maximumDecodedVertexMovementUm": 4.96207153619191,
+          "maximumAllowedMovementUm": 4.9625
+        },
+        {
+          "id": "moderate",
+          "fileSha256": "c255ef2293922ff69c4f0214f7bbbcc63e2dc22239a1232dde9a03fb68541ca5",
+          "positionFormat": "float32",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.5159203092650628e-05,
+          "positionBytesSha256": "63120324d7c64e606de7438c07f8398b38e3f5d54dc50e4c4f53883f0cce485a",
+          "indexBytesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+          "exactSameIndicesAsNative": true,
+          "cropBoundaryCoordinatesBitIdentical": true,
+          "maximumDecodedVertexMovementUm": 9.924548772469858,
+          "maximumAllowedMovementUm": 9.925
+        },
+        {
+          "id": "bilateral",
+          "fileSha256": "56ed97a4803a56c7a45c68dd8a6a48b9bd27f59d08b9119862e11f86e6a33cb7",
+          "positionFormat": "float32",
+          "decodedHashVerified": true,
+          "finite": true,
+          "indicesValid": true,
+          "allVerticesWithinRoi": true,
+          "zeroAreaTriangles": 0,
+          "flippedOrOver90DegreeTriangles": 0,
+          "maximumQuantizedNormalLengthError": 2.540025697284065e-05,
+          "positionBytesSha256": "de668552dd08fcf065ee14c3ee1703b682ea7c34a3d2892dd1e251dd05827ccc",
+          "indexBytesSha256": "f5d7d505594062660611b1710166f0a2e11554290bfb4afae8ae0f5010cb23dd"
+        }
+      ],
+      "topology": {
+        "vertices": 665302,
+        "triangles": 1288570,
+        "edges": 1944049,
+        "components": 8658,
+        "eulerCharacteristic": 9823,
+        "boundaryEdges": 22388,
+        "nonmanifoldEdges": 0,
+        "unexpectedInteriorBoundaryEdges": 0,
+        "roiBoundaryVertices": 22388,
+        "pinnedVertices": 22388,
+        "zeroAreaTriangles": 0,
+        "areaMm2": 154.93793621157016,
+        "boundaryPolicy": "Every topological boundary and nonmanifold edge endpoint is pinned; the ROI is deliberately open."
+      },
+      "rawSourceThreshold": 17133.4,
+      "rawSourceResampled": false,
+      "blockSeamCheck": "Every boundary edge lies on an outer ROI face; zero unexpected interior boundary edges.",
+      "sharedBoundaryAliases": 9058,
+      "sourceBand": {
+        "format": "NSB1-zstd",
+        "compressedBytes": 2417135,
+        "decodedBytes": 2881321,
+        "activeCells": 639524,
+        "allEightActiveCellValuesReconstructedExactly": true
+      },
+      "scientificScope": "Exact encoded-asset integrity, all-vertex displacement, fixed connectivity, crop pinning, face orientation and seam checks. Does not establish anatomical segmentation correctness or absence of every geometric self-intersection.",
+      "peakRssMiB": 361.1796875
+    }
+  },
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "sourceStorage": {
+    "rawBytes": 4194304,
+    "losslessSliceBytes": 3788654,
+    "losslessSliceCount": 128,
+    "rawValuesUnchanged": true,
+    "surfaceBandCompressedBytes": 2417135,
+    "surfaceBandDecodedBytes": 2881321,
+    "surfaceBandUniqueSampleInstances": 1178340,
+    "surfaceBandRoundTripExact": true,
+    "surfaceBandFormat": "NSB1-zstd",
+    "surfaceBandActiveCells": 639524,
+    "scope": "Exact threshold17133.4 crossing cells and their raw corners only. Full immutable compressed slices remain the source for gradient halos, different thresholds and independently rerunning the extraction."
+  },
+  "overviewComparison": {
+    "actualSourceSamples": true,
+    "sourceSpacingUm": 317.6,
+    "nativeIndexFactor": 16,
+    "assumedCenterTranslationNativeXYZ": [
+      0,
+      0,
+      0
+    ],
+    "registrationValidated": false,
+    "caveat": "N5 metadata specifies factor16. A scale-center translation was not independently established; zero-origin index scaling is used for the overview, so exact voxelwise registration is not claimed."
+  },
+  "figures": {
+    "comparison.webp": {
+      "url": "./assets/native-surface-v20/comparison.webp",
+      "bytes": 291638,
+      "sha256": "499c1e9d85fe8bf59f6fa40595a008abb4f74414e9b1f0e1be41a01eae41ff24"
+    },
+    "quickcontext.webp": {
+      "url": "./assets/native-surface-v20/quickcontext.webp",
+      "bytes": 62804,
+      "sha256": "e54d28bd789c388f8cceee68d540bfde397a4adaaa7d6e0d692488da0108f51d"
+    },
+    "native-source-slice.png": {
+      "url": "./assets/native-surface-v20/native-source-slice.png",
+      "bytes": 12661,
+      "sha256": "bf38601c22bf86bce9c15b2402f683f70493ddb4e484c3e8f57dfd7e77174326"
+    }
+  },
+  "workingMemory": {
+    "maximumRecordedFinalPipelineStageRssMiB": 400.76171875,
+    "note": "Peak resident set measured per separate preparation process; browser memory and whole-machine cache are different measurements."
+  }
+}

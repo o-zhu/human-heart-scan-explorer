@@ -1,0 +1,176 @@
+{
+  "verified": true,
+  "allStagesComplete": true,
+  "staticBytes": 264227699,
+  "staticBudgetBytes": 264503296,
+  "distBytesBeforeTarPadding": 267388922,
+  "distFileCount": 496,
+  "sourceCopiesUnchanged": true,
+  "newStorageBindings": false,
+  "uploadGatesChanged": false,
+  "stages": {
+    "cleanup-static-alias-staging-v28": {
+      "verified": true,
+      "mode": "stage",
+      "indexSha256": "6e65869a4a197d8c0ab256a6b29632b53160fbc51af0d8f191648c38115e8bef",
+      "aliases": [
+        {
+          "url": "/assets/cleanup-v27/arterial.bits.gz",
+          "target": "/assets/cleanup-v28/arterial.bits.gz",
+          "bytes": 287953,
+          "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+          "presentInBuild": true
+        },
+        {
+          "url": "/assets/cleanup-v27/rv.bits.gz",
+          "target": "/assets/cleanup-v28/rv.bits.gz",
+          "bytes": 381259,
+          "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+          "presentInBuild": true
+        },
+        {
+          "url": "/assets/cleanup-v27/valve-region.bits.gz",
+          "target": "/assets/cleanup-v28/valve-region.bits.gz",
+          "bytes": 150529,
+          "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+          "presentInBuild": true
+        }
+      ],
+      "bytesSavedByDeduplication": 819741,
+      "removedBuildCopies": 3,
+      "beforeStaticBytes": 412312120,
+      "projectedStaticBytes": 411492379,
+      "remainingStaticBytes": 411492379,
+      "staticBudgetBytes": 264503296,
+      "projectedStaticHeadroomBytes": -146989083,
+      "beforeDistBytes": 415473343,
+      "projectedDistBytes": 414653602,
+      "remainingDistBytes": 414653602,
+      "sourceFilesUnchanged": true,
+      "sourceManifestsUnchanged": true,
+      "activeV26DebrisFilesRetained": true,
+      "historicalUrlsPreserved": "Exact same-origin 308 redirects; normal GET/HEAD fetch reaches byte-identical static v28 masks.",
+      "permissionsAndStorageUnchanged": true,
+      "referenceAudit": [
+        {
+          "file": "public/assets/cleanup-v27/lumen-manifest.json",
+          "paths": [
+            "assets/cleanup-v27/arterial.bits.gz",
+            "assets/cleanup-v27/rv.bits.gz",
+            "assets/cleanup-v27/valve-region.bits.gz"
+          ]
+        }
+      ],
+      "localTestsAndExports": "All frozen public source files remain present; no local fixture or export is removed.",
+      "limitations": "Final archive size and live redirected response bytes must still be checked after publication."
+    },
+    "native-staging-v20": {
+      "verified": true,
+      "objects": 6,
+      "removedBuildCopies": 6,
+      "streamedBytes": 68525067,
+      "sourceFilesUnchanged": true
+    },
+    "fine-detail-staging-v23": {
+      "verified": true,
+      "seed": false,
+      "publicServingEnabled": true,
+      "objects": 12,
+      "removedBuildCopies": 12,
+      "indexedBytes": 250032222,
+      "sourceFilesUnchanged": true,
+      "publicUrlsUnchanged": true
+    },
+    "comparison-display-staging-v10": {
+      "verified": true,
+      "indexedObjects": 106,
+      "removedBuildCopies": 106,
+      "streamedBytes": 147264680,
+      "remainingStaticBytes": 264227699,
+      "staticBudgetBytes": 264503296,
+      "sourceFilesUnchanged": true,
+      "publicUrlsUnchanged": true
+    },
+    "motion-ct-staging-v24": {
+      "verified": true,
+      "objects": 8,
+      "acquiredFrames": 4,
+      "removedBuildCopies": 8,
+      "streamedBytes": 128402902,
+      "sourceFilesUnchanged": true,
+      "manifestRemainsStatic": true,
+      "publicRoute": "/assets/motion-lab-v24/native-ct/",
+      "apiRoute": "/api/motion-ct-v24/",
+      "prefix": "hoa-heart/motion-ct-v24/",
+      "sectionManifestCompaction": {
+        "path": "assets/ultra-sections/manifest.json",
+        "originalBytes": 543910,
+        "compactedBytes": 355663,
+        "savedBytes": 188247,
+        "whitespaceOnly": true,
+        "objectValuesUnchanged": true,
+        "keyOrderAndLiteralsUnchanged": true,
+        "sourceUnchanged": true,
+        "sourceSha256": "02a97a7032b7157d424f9fafcd280b9ad06026f26c2810591d2740adf1ed8c89",
+        "compactedSha256": "fd8225f9fe08f11a5a2a1101c0ea088effb0b9eb7e33992a5d7711223b5a9ff7"
+      }
+    }
+  },
+  "archiveSizeVerified": false,
+  "finalAliasCheck": {
+    "verified": true,
+    "mode": "check",
+    "indexSha256": "6e65869a4a197d8c0ab256a6b29632b53160fbc51af0d8f191648c38115e8bef",
+    "aliases": [
+      {
+        "url": "/assets/cleanup-v27/arterial.bits.gz",
+        "target": "/assets/cleanup-v28/arterial.bits.gz",
+        "bytes": 287953,
+        "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+        "presentInBuild": false
+      },
+      {
+        "url": "/assets/cleanup-v27/rv.bits.gz",
+        "target": "/assets/cleanup-v28/rv.bits.gz",
+        "bytes": 381259,
+        "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+        "presentInBuild": false
+      },
+      {
+        "url": "/assets/cleanup-v27/valve-region.bits.gz",
+        "target": "/assets/cleanup-v28/valve-region.bits.gz",
+        "bytes": 150529,
+        "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+        "presentInBuild": false
+      }
+    ],
+    "indexedDuplicateBytes": 819741,
+    "bytesSavedByDeduplication": 0,
+    "removedBuildCopies": 0,
+    "beforeStaticBytes": 264227699,
+    "projectedStaticBytes": 264227699,
+    "remainingStaticBytes": 264227699,
+    "staticBudgetBytes": 264503296,
+    "projectedStaticHeadroomBytes": 275597,
+    "beforeDistBytes": 267388922,
+    "projectedDistBytes": 267388922,
+    "remainingDistBytes": 267388922,
+    "sourceFilesUnchanged": true,
+    "sourceManifestsUnchanged": true,
+    "activeV26DebrisFilesRetained": true,
+    "historicalUrlsPreserved": "Exact same-origin 308 redirects; normal GET/HEAD fetch reaches byte-identical static v28 masks.",
+    "permissionsAndStorageUnchanged": true,
+    "referenceAudit": [
+      {
+        "file": "public/assets/cleanup-v27/lumen-manifest.json",
+        "paths": [
+          "assets/cleanup-v27/arterial.bits.gz",
+          "assets/cleanup-v27/rv.bits.gz",
+          "assets/cleanup-v27/valve-region.bits.gz"
+        ]
+      }
+    ],
+    "localTestsAndExports": "All frozen public source files remain present; no local fixture or export is removed.",
+    "limitations": "Final archive size and live redirected response bytes must still be checked after publication."
+  }
+}

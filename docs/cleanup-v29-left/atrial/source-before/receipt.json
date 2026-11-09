@@ -1,0 +1,74 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 12,
+    "decodedBrickReads": 12,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v28",
+  "cases": [
+    {
+      "id": "pv-contour-correction",
+      "title": "Corrected serial contour anchors within the selected free PV sheet",
+      "lowerXYZ": [
+        1275,
+        1200,
+        725
+      ],
+      "upperXYZ": [
+        1395,
+        1264,
+        825
+      ],
+      "ys": [
+        1212,
+        1220,
+        1256,
+        1260
+      ],
+      "overlay": true,
+      "points": [
+        [
+          1304,
+          759
+        ],
+        [
+          1307,
+          767
+        ],
+        [
+          1364,
+          745
+        ]
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1212,
+          "sourcePlaneSha256": "0269aea7f7184ac2519b3e64a2f9bd16db49122868b415a33f63c3a6dae5cb3c",
+          "excludedInPlane": 6229
+        },
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "a2fbc562bde7fc7df0988363d51d177f520f1928644024c190890c18e22b887d",
+          "excludedInPlane": 4768
+        },
+        {
+          "fineY": 1256,
+          "sourcePlaneSha256": "8b59c05f95f6faf8f6a4776c71f51f329c71589d5678ab318b9f48acbe71f9c7",
+          "excludedInPlane": 3291
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "7e1038527f1c9219368145fbd539df0d098c83c067afcf11d826021d248f6cd0",
+          "excludedInPlane": 3228
+        }
+      ]
+    }
+  ]
+}

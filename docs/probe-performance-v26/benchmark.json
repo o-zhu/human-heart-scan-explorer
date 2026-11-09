@@ -1,0 +1,357 @@
+{
+  "baselineCommit": "c6511a375acf30d74a664725e5857cc6b8019898",
+  "scope": "Real immutable source bytes and native-grid sampling in Node. Request-latency fixtures add a fixed 25 ms delay to local file responses without bandwidth throttling. Times exclude browser rendering/GPU/upload/paint and are not browser FPS or user-network measurements.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "inPlaneReuse": [
+    {
+      "donor": "ladaf-2021-17",
+      "degrees": 12,
+      "preparedPixelSha256": "10d7838bfc98926fe1bc360174faf3af647d1cb5fc5968f3d99e0a8acd9b17ef",
+      "before": {
+        "elapsedMs": 1241.798237,
+        "requests": 739,
+        "bytes": 128512403,
+        "peakConcurrentRequests": 4,
+        "capWidth": 3391,
+        "capHeight": 3234,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.39334538777932,
+        "decodedBytes": 202947875,
+        "decodedLimit": 402653184
+      },
+      "after": {
+        "elapsedMs": 0.5150410000001102,
+        "requests": 0,
+        "bytes": 0,
+        "peakConcurrentRequests": 0,
+        "capWidth": 3281,
+        "capHeight": 2948,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.39797392777331,
+        "decodedBytes": 0,
+        "decodedLimit": 402653184
+      },
+      "originalNativePixelsUnchanged": true,
+      "originalImageCoordinatesPreserved": true
+    },
+    {
+      "donor": "s-20-29",
+      "degrees": 12,
+      "preparedPixelSha256": "f70c340967c23dd81a6f5c00b76ba86e3c4c27ce79038b6af56c9c309d92fdc9",
+      "before": {
+        "elapsedMs": 1084.0435859999998,
+        "requests": 658,
+        "bytes": 101320212,
+        "peakConcurrentRequests": 4,
+        "capWidth": 2870,
+        "capHeight": 2765,
+        "sourceSpacingUm": 79.56,
+        "capSpacingUm": 79.54326216226194,
+        "decodedBytes": 180703250,
+        "decodedLimit": 402653184
+      },
+      "after": {
+        "elapsedMs": 0.48536699999931443,
+        "requests": 0,
+        "bytes": 0,
+        "peakConcurrentRequests": 0,
+        "capWidth": 3004,
+        "capHeight": 2804,
+        "sourceSpacingUm": 79.56,
+        "capSpacingUm": 79.55330413240935,
+        "decodedBytes": 0,
+        "decodedLimit": 402653184
+      },
+      "originalNativePixelsUnchanged": true,
+      "originalImageCoordinatesPreserved": true
+    },
+    {
+      "donor": "s-20-28",
+      "degrees": 12,
+      "preparedPixelSha256": "70057bb46756079074765eb5b4876def0c7a94c1160d054f339d0a9b30a5191a",
+      "before": {
+        "elapsedMs": 1897.2735599999996,
+        "requests": 866,
+        "bytes": 137159925,
+        "peakConcurrentRequests": 4,
+        "capWidth": 3002,
+        "capHeight": 3085,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.39184877748392,
+        "decodedBytes": 237825250,
+        "decodedLimit": 402653184
+      },
+      "after": {
+        "elapsedMs": 0.4943109999985609,
+        "requests": 0,
+        "bytes": 0,
+        "peakConcurrentRequests": 0,
+        "capWidth": 2835,
+        "capHeight": 2751,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.38755219516366,
+        "decodedBytes": 0,
+        "decodedLimit": 402653184
+      },
+      "originalNativePixelsUnchanged": true,
+      "originalImageCoordinatesPreserved": true
+    }
+  ],
+  "outOfPlane": [
+    {
+      "donor": "ladaf-2021-17",
+      "offsetsMm": [
+        0.1,
+        0.2
+      ],
+      "before": {
+        "cold": {
+          "elapsedMs": 959.6341600000003,
+          "requests": 741,
+          "bytes": 128434621,
+          "peakConcurrentRequests": 4,
+          "capWidth": 3281,
+          "capHeight": 2948,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.39797392777331,
+          "decodedBytes": 203497125,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 113.27075600000035,
+          "requests": 15,
+          "bytes": 2951472,
+          "peakConcurrentRequests": 4,
+          "capWidth": 3281,
+          "capHeight": 2948,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.39797392777331,
+          "decodedBytes": 207616500,
+          "decodedLimit": 402653184
+        }
+      },
+      "after": {
+        "cold": {
+          "elapsedMs": 725.0661169999998,
+          "requests": 741,
+          "bytes": 128434621,
+          "peakConcurrentRequests": 12,
+          "capWidth": 3281,
+          "capHeight": 2948,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.39797392777331,
+          "decodedBytes": 203497125,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 121.49805900000001,
+          "requests": 15,
+          "bytes": 2951472,
+          "peakConcurrentRequests": 12,
+          "capWidth": 3281,
+          "capHeight": 2948,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.39797392777331,
+          "decodedBytes": 207616500,
+          "decodedLimit": 402653184
+        }
+      },
+      "byteIdentical": true,
+      "firstCapSha256": "196f15e24afb22dc2fc197befbe41077bcddf76f8a38d4b0904ac70f6056010e",
+      "nearbyCapSha256": "0f4ac8677bbf9b6b7ff83f6d3b2f30bd6f530bf17881bdbcf881ebe804814f81"
+    },
+    {
+      "donor": "s-20-29",
+      "offsetsMm": [
+        0.1,
+        0.2
+      ],
+      "before": {
+        "cold": {
+          "elapsedMs": 1374.4153430000006,
+          "requests": 660,
+          "bytes": 101456378,
+          "peakConcurrentRequests": 4,
+          "capWidth": 3004,
+          "capHeight": 2804,
+          "sourceSpacingUm": 79.56,
+          "capSpacingUm": 79.55330413240935,
+          "decodedBytes": 181252500,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 103.30562199999986,
+          "requests": 11,
+          "bytes": 2183763,
+          "peakConcurrentRequests": 4,
+          "capWidth": 3004,
+          "capHeight": 2804,
+          "sourceSpacingUm": 79.56,
+          "capSpacingUm": 79.55330413240935,
+          "decodedBytes": 184273375,
+          "decodedLimit": 402653184
+        }
+      },
+      "after": {
+        "cold": {
+          "elapsedMs": 1076.843358,
+          "requests": 660,
+          "bytes": 101456378,
+          "peakConcurrentRequests": 12,
+          "capWidth": 3004,
+          "capHeight": 2804,
+          "sourceSpacingUm": 79.56,
+          "capSpacingUm": 79.55330413240935,
+          "decodedBytes": 181252500,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 105.5082450000009,
+          "requests": 11,
+          "bytes": 2183763,
+          "peakConcurrentRequests": 12,
+          "capWidth": 3004,
+          "capHeight": 2804,
+          "sourceSpacingUm": 79.56,
+          "capSpacingUm": 79.55330413240935,
+          "decodedBytes": 184273375,
+          "decodedLimit": 402653184
+        }
+      },
+      "byteIdentical": true,
+      "firstCapSha256": "c0745af65d8e540bb6101e9d309bd50ab50cfe36c27ba0959c7a0d40bd3b54a9",
+      "nearbyCapSha256": "ea635b8fe4d7f22dd5ba2cfa67aee9ebf135108b01b20612c61a4226a2237795"
+    },
+    {
+      "donor": "s-20-28",
+      "offsetsMm": [
+        0.1,
+        0.2
+      ],
+      "before": {
+        "cold": {
+          "elapsedMs": 1334.0970159999997,
+          "requests": 866,
+          "bytes": 136956348,
+          "peakConcurrentRequests": 4,
+          "capWidth": 2835,
+          "capHeight": 2751,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "decodedBytes": 237825250,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 125.22953699999925,
+          "requests": 11,
+          "bytes": 1917665,
+          "peakConcurrentRequests": 4,
+          "capWidth": 2835,
+          "capHeight": 2751,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "decodedBytes": 240846125,
+          "decodedLimit": 402653184
+        }
+      },
+      "after": {
+        "cold": {
+          "elapsedMs": 1208.5367559999977,
+          "requests": 866,
+          "bytes": 136956348,
+          "peakConcurrentRequests": 12,
+          "capWidth": 2835,
+          "capHeight": 2751,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "decodedBytes": 237825250,
+          "decodedLimit": 402653184
+        },
+        "nearby": {
+          "elapsedMs": 114.96000399999684,
+          "requests": 11,
+          "bytes": 1917665,
+          "peakConcurrentRequests": 12,
+          "capWidth": 2835,
+          "capHeight": 2751,
+          "sourceSpacingUm": 79.4,
+          "capSpacingUm": 79.38755219516366,
+          "decodedBytes": 240846125,
+          "decodedLimit": 402653184
+        }
+      },
+      "byteIdentical": true,
+      "firstCapSha256": "447075f04923c1a4dd200b7de0ee35d7a76d0c6bb9078e5b80638ecb3fd5428c",
+      "nearbyCapSha256": "57603fd2be536929b866a40dff56446bb13050d37bfde28da68dff4b01f35dea"
+    }
+  ],
+  "transportLatency": [
+    {
+      "donor": "ladaf-2021-17",
+      "version": "before",
+      "injectedPerRequestMs": 25,
+      "elapsedMs": 5771.082526,
+      "requests": 741,
+      "bytes": 128434621,
+      "peakConcurrentRequests": 4,
+      "capWidth": 3281,
+      "capHeight": 2948,
+      "sourceSpacingUm": 79.4,
+      "capSpacingUm": 79.39797392777331,
+      "decodedBytes": 203497125,
+      "decodedLimit": 402653184,
+      "capSha256": "196f15e24afb22dc2fc197befbe41077bcddf76f8a38d4b0904ac70f6056010e"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "version": "after",
+      "injectedPerRequestMs": 25,
+      "elapsedMs": 2497.5782740000013,
+      "requests": 741,
+      "bytes": 128434621,
+      "peakConcurrentRequests": 12,
+      "capWidth": 3281,
+      "capHeight": 2948,
+      "sourceSpacingUm": 79.4,
+      "capSpacingUm": 79.39797392777331,
+      "decodedBytes": 203497125,
+      "decodedLimit": 402653184,
+      "capSha256": "196f15e24afb22dc2fc197befbe41077bcddf76f8a38d4b0904ac70f6056010e"
+    }
+  ],
+  "planFootprints": [
+    {
+      "donor": "ladaf-2021-17",
+      "bricks": 741,
+      "compressedBytes": 128434621,
+      "decodedBytes": 203497125
+    },
+    {
+      "donor": "s-20-29",
+      "bricks": 660,
+      "compressedBytes": 101456378,
+      "decodedBytes": 181252500
+    },
+    {
+      "donor": "s-20-28",
+      "bricks": 866,
+      "compressedBytes": 136956348,
+      "decodedBytes": 237825250
+    }
+  ],
+  "assertions": [
+    "Copied original prepared-image hashes match manifest pixels",
+    "Coplanar reuse retains native pixel bytes and their original plane axes",
+    "Physical offsets still fetch and sample the requested section",
+    "Every newly sampled source pixel is byte-identical to the v38 baseline",
+    "All decoded caches remain bounded",
+    "Transport concurrency never exceeds the explicit device policy",
+    "Local latency fixture results are not browser/GPU or real-network measurements"
+  ],
+  "passed": true
+}

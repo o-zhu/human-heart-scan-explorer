@@ -1,0 +1,240 @@
+/* Compact controls and a two-row section workspace. Source rasters keep their
+   physical aspect ratio; only the available screen space changes. */
+.screen-reader-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0 !important;
+}
+.topbar { min-height: 64px; padding-block: 10px; }
+.brand-mark { width: 34px; height: 34px; }
+.dataset-browser { padding-block: 12px; gap: 12px 20px; position: relative; z-index: 8; }
+.dataset-shortcuts a { min-height: 64px; padding: 8px 13px; gap: 3px; position: relative; }
+.workspace-tabs { min-height: 68px; padding-block: 9px; gap: 10px; }
+.workspace-tabs button { min-height: 50px !important; padding: 10px 14px; }
+
+body #reconstructionWorkspace {
+  --reconstruction-height: max(480px, calc(100dvh - 244px));
+  grid-template-columns: minmax(0, 1fr) clamp(400px, 35vw, 660px);
+  grid-template-rows: auto;
+  align-items: stretch;
+  height: auto;
+  gap: 16px;
+  padding-top: 14px;
+}
+body #reconstructionWorkspace > .viewport,
+body #reconstructionWorkspace > .sections-panel {
+  position: relative;
+  top: auto;
+  align-self: stretch;
+  height: var(--reconstruction-height);
+  min-height: 0;
+  max-height: none;
+}
+body #reconstructionWorkspace > .sections-panel { padding: 0; overflow: visible; }
+body #reconstructionWorkspace .slice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1.05fr) minmax(0, 1fr);
+  grid-template-areas: "first second" "wide wide";
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+body #reconstructionWorkspace .slice-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+  padding: 0 10px 5px;
+  height: auto;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+body #reconstructionWorkspace [data-section-slot="first"] { grid-area: first; }
+body #reconstructionWorkspace [data-section-slot="second"] { grid-area: second; }
+body #reconstructionWorkspace [data-section-slot="wide"] { grid-area: wide; }
+body #reconstructionWorkspace .slice-label { min-height: 44px; height: auto; padding: 0; gap: 4px; flex-wrap: nowrap; }
+body #reconstructionWorkspace .slice-activate { flex-wrap: nowrap; padding: 6px 0; gap: 6px; line-height: 1.2; }
+body #reconstructionWorkspace .link-indicator { display: none; }
+body #reconstructionWorkspace .slice-expand { padding: 6px 0; justify-content: center; }
+body #reconstructionWorkspace .slice-card:not([data-section-slot="wide"]) .slice-expand span { display: none; }
+body #reconstructionWorkspace .slice-image {
+  height: auto;
+  min-height: 0;
+  min-width: 0;
+  margin: 0 -10px 5px;
+}
+body #reconstructionWorkspace .slice-meta { font-size: 14px; line-height: 1.3; gap: 3px 8px; flex-wrap: nowrap; }
+body #reconstructionWorkspace .slice-meta output { white-space: nowrap; }
+body #reconstructionWorkspace .slice-meta output:last-child { font-size: 14px; }
+body #reconstructionWorkspace .slice-navigation { margin: 1px 0; gap: 7px; }
+body #reconstructionWorkspace .slice-navigation button { width: 44px; height: 44px; }
+body #reconstructionWorkspace .slice-navigation input.slice-range { height: 38px; min-height: 38px; }
+body #reconstructionWorkspace .slice-footer { min-height: 18px; font-size: 14px; line-height: 1.25; flex-wrap: nowrap; }
+body #reconstructionWorkspace .slice-key-hint { display: none; }
+body #reconstructionWorkspace .slice-axis-marker { display: none; }
+body #reconstructionWorkspace .slice-scroll-cue {
+  top: 7px;
+  gap: 6px;
+  padding: 5px 10px;
+  max-width: calc(100% - 12px);
+  border: 1px solid #dfc3a7;
+  background: #c9dac0;
+  color: #16362b;
+  box-shadow: 0 2px 8px #0006;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+body #reconstructionWorkspace .slice-scroll-cue svg { width: 12px; height: 16px; }
+body #reconstructionWorkspace .slice-card.browsed .slice-scroll-cue { opacity: .85; }
+body #reconstructionWorkspace .slice-card:hover .slice-scroll-cue,
+body #reconstructionWorkspace .slice-card:focus-within .slice-scroll-cue { opacity: 1; }
+body #reconstructionWorkspace .slice-grid.has-expanded { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); grid-template-areas: "enlarged"; }
+body #reconstructionWorkspace .slice-grid.has-expanded .slice-card:not(.expanded) { display: none; }
+body #reconstructionWorkspace .slice-grid.has-expanded .slice-card.expanded { grid-area: enlarged; }
+body #reconstructionWorkspace .slice-card.expanded .slice-image { min-height: 0; height: auto; }
+body #reconstructionWorkspace .slice-card.expanded .slice-expand span { display: inline; }
+
+/* Four paired rows keep each chamber's inflow and outflow together. */
+body #reconstructionWorkspace .viewport-heading { top: 18px; left: 20px; }
+body #reconstructionWorkspace .viewport-heading h1 { font-size: clamp(28px, 2vw, 36px); margin: 7px 0 4px; }
+body #reconstructionWorkspace .quick-views { margin-top: 10px; width: 100%; max-width: 320px; }
+.quick-view-primary, .quick-view-secondary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.quick-view-secondary { margin-top: 6px; }
+body #reconstructionWorkspace .quick-view-row > button { min-width: 0; padding: 8px 9px; line-height: 1.2; white-space: normal; }
+.quick-view-selection { margin-top: 8px; }
+.quick-view-status { margin-bottom: 5px; }
+body #reconstructionWorkspace .quick-view-actions { gap: 6px; flex-wrap: wrap; }
+body #reconstructionWorkspace .quick-view-actions button { padding: 8px 10px; }
+body #reconstructionWorkspace .source-tag { max-width: 100%; margin: 4px 0 8px; padding: 6px 9px; }
+body #reconstructionWorkspace .viewer-controls { top: 18px; right: 18px; }
+body #reconstructionWorkspace .viewport-bottom { bottom: 14px; left: 18px; right: 18px; }
+
+/* Dataset facts/citations never contribute to document or workspace height. */
+.dataset-choice { position: relative; display: block; min-width: 0; }
+.dataset-shortcuts .dataset-choice > a { height: 100%; box-sizing: border-box; padding-right: 38px; }
+.dataset-info-button {
+  position: absolute; right: 3px; top: 50%; transform: translateY(-50%);
+  display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 44px; min-width: 0 !important; min-height: 44px !important;
+  padding: 0; border: 0; border-radius: 5px; background: transparent;
+  color: #b8cdbd; font: 600 15px Georgia, serif; cursor: pointer;
+}
+.dataset-info-button:hover, .dataset-info-button[aria-expanded="true"] { color: #f0ebd6; background: #ffffff12; }
+.dataset-info-button:focus-visible { outline: 2px solid #e2b49c; outline-offset: -2px; }
+.dataset-shortcuts .dataset-citation-tooltip {
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  width: min(390px, calc(100vw - 32px));
+  z-index: 20;
+  padding: 13px 15px;
+  border: 1px solid #6f8e7f;
+  border-radius: 7px;
+  background: #13231e;
+  color: #e2ece1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-shadow: 0 10px 25px #0006;
+}
+.dataset-shortcuts .dataset-citation-tooltip[hidden] { display: none; }
+.dataset-shortcuts .dataset-detail-title { display: block; font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+.dataset-shortcuts .dataset-detail-facts { display: grid; gap: 7px; }
+.dataset-shortcuts .dataset-detail-row { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 7px; }
+.dataset-shortcuts .dataset-detail-row b { font-weight: 500; color: #dce6d5; }
+.dataset-shortcuts .dataset-detail-note { display: block; margin-top: 10px; color: #bdcdbd; }
+.dataset-shortcuts .dataset-detail-citation { display: block; margin-top: 12px; padding-top: 10px; border-top: 1px solid #42594b; color: #a9bdae; font-size: 12px; line-height: 1.45; }
+.dataset-citations { padding: 22px var(--ui-gutter) 26px; border-top: 1px solid #30463c; background: #101c19; }
+.dataset-citations h2 { margin: 0 0 14px; font-size: 20px; font-weight: 500; color: #dce7d6; }
+.dataset-citations > ul, .dataset-citations > ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 28px; list-style: none; margin: 0; padding: 0; }
+.dataset-citations li { min-width: 0; color: #aec4b9; font-size: 14px; line-height: 1.55; }
+.dataset-citations li strong { display: block; color: #e0e9d9; font-size: 15px; margin-bottom: 4px; font-weight: 500; }
+.dataset-citations h3 { margin: 0 0 4px; color: #e0e9d9; font-size: 15px; font-weight: 500; line-height: 1.4; }
+.dataset-citations p { margin: 0 0 5px; }
+.dataset-citation-links { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; }
+.dataset-citations a { color: #c7dcb9; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) {
+  grid-template-columns: minmax(0, 1fr) clamp(400px, 35vw, 660px);
+  grid-template-rows: minmax(0, 1fr);
+  height: 100dvh;
+  gap: 16px;
+  padding: 14px;
+  overflow: auto;
+}
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) > .viewport,
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) > .sections-panel { height: calc(100dvh - 28px); min-height: 0; position: relative; top: auto; }
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1.05fr) minmax(0, 1fr); }
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-grid.has-expanded { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-card { min-height: 0; padding: 0 10px 5px; }
+body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-image { height: auto; min-height: 0; margin: 0 -10px 5px; }
+
+/* cMAC's acquired echo pair keeps its existing paired presentation. */
+body #reconstructionWorkspace.clinical-paired,
+body #reconstructionWorkspace.clinical-paired:is(:fullscreen, :-webkit-full-screen) { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(580px, 70dvh) 680px; height: auto; }
+body #reconstructionWorkspace.clinical-paired > .viewport { height: 100%; }
+body #reconstructionWorkspace.clinical-paired > .viewport { grid-area: 1 / 1; }
+body #reconstructionWorkspace.clinical-paired > .clinical-echo { grid-area: 1 / 2; }
+body #reconstructionWorkspace.clinical-paired > .sections-panel { grid-area: 2 / 1 / 3 / 3; }
+body #reconstructionWorkspace.clinical-paired > .sections-panel { height: 680px; }
+body #reconstructionWorkspace.clinical-paired .slice-grid,
+body #reconstructionWorkspace.clinical-paired:is(:fullscreen, :-webkit-full-screen) .slice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1.05fr) minmax(0, 1fr); }
+body #reconstructionWorkspace.clinical-paired .slice-grid.has-expanded,
+body #reconstructionWorkspace.clinical-paired:is(:fullscreen, :-webkit-full-screen) .slice-grid.has-expanded { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+
+@media (max-width: 1350px) {
+  body #reconstructionWorkspace .viewport-heading { max-width: calc(100% - 40px); }
+  body #reconstructionWorkspace .viewer-controls { top: auto; bottom: 78px; left: 18px; right: 18px; }
+  .dataset-browser { gap: 9px 18px; padding-block: 10px; }
+}
+@media (max-width: 1000px) {
+  body #reconstructionWorkspace,
+  body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; }
+  body #reconstructionWorkspace > .viewport,
+  body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) > .viewport { height: max(620px, 74dvh); min-height: 0; }
+  body #reconstructionWorkspace > .sections-panel,
+  body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) > .sections-panel { height: max(640px, calc(100dvh - 40px)); }
+  body #reconstructionWorkspace.clinical-paired,
+  body #reconstructionWorkspace.clinical-paired:is(:fullscreen, :-webkit-full-screen) { grid-template-columns: minmax(0, 1fr); grid-template-rows: 740px 600px 680px; }
+  body #reconstructionWorkspace.clinical-paired > .viewport { height: 100%; }
+  body #reconstructionWorkspace.clinical-paired > .viewport { grid-area: 1 / 1; }
+  body #reconstructionWorkspace.clinical-paired > .clinical-echo { grid-area: 2 / 1; }
+  body #reconstructionWorkspace.clinical-paired > .sections-panel { grid-area: 3 / 1; }
+  body #reconstructionWorkspace.clinical-paired > .sections-panel { height: 680px; }
+  .dataset-citations > ul, .dataset-citations > ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 580px) {
+  .topbar { padding-block: 9px; gap: 8px; }
+  .dataset-shortcuts a { padding: 8px 10px; }
+  .workspace-tabs { gap: 8px; }
+  .workspace-tabs button { min-height: 48px !important; padding: 9px 8px; }
+  body #reconstructionWorkspace .viewport-heading { top: 16px; left: 14px; max-width: calc(100% - 28px); }
+  body #reconstructionWorkspace .viewport-heading h1 { font-size: 28px; }
+  body #reconstructionWorkspace .quick-view-row { gap: 4px; }
+  body #reconstructionWorkspace .quick-view-row > button { padding: 7px 4px; font-size: 14px !important; }
+  body #reconstructionWorkspace .slice-card,
+  body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-card { padding-inline: 7px; }
+  body #reconstructionWorkspace .slice-image,
+  body #reconstructionWorkspace:is(:fullscreen, :-webkit-full-screen) .slice-image { margin-inline: -7px; }
+  body #reconstructionWorkspace .slice-meta { flex-wrap: wrap; }
+  body #reconstructionWorkspace .slice-meta output:last-child { display: none; }
+  body #reconstructionWorkspace .slice-card[data-section-slot="wide"] .slice-meta output:last-child { display: inline; }
+  body #reconstructionWorkspace .slice-footer { font-size: 14px; }
+  body #reconstructionWorkspace .slice-activate { gap: 4px; font-size: 14px !important; }
+  .dataset-citations > ul, .dataset-citations > ol { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+}

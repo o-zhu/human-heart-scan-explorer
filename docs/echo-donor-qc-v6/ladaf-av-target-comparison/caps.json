@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "exportSha256": "c6b9da222bdf4d6dae4441b717ee84c6207ea61e208a9116fe94b539f97bef4b",
+  "donor": "ladaf-2021-17",
+  "source": "Measured ladaf-2021-17 resident display volume",
+  "sourceSpacingUm": 317.6,
+  "sourceDimensions": [
+    475,
+    475,
+    530
+  ],
+  "referenceMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1,
+    0.8960302457466919
+  ],
+  "manifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+  "sourceParts": [
+    {
+      "url": "assets/volume-v5/heart-high-clean.raw.gz",
+      "sha256": "93e9adc347fa04ed60671ea7762adcf7bf8ce677e6d5a71e9f5b618083adbb30",
+      "rawSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f"
+    }
+  ],
+  "worker": "public/mpr-worker.js",
+  "workerSha256": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54",
+  "intensity": "Windowed uint8 display contrast; not Hounsfield units.",
+  "sampling": "Actual production MPR worker, trilinear interpolation, zero outside source, source-oriented complete plane raster; no source edit.",
+  "caps": [
+    {
+      "id": "current-psax_av",
+      "available": true,
+      "file": "caps/current-psax_av.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "5c60856c8474ad42fd4ec48875b9efb2d46ba0e2ff5da47f7bedd673eabcddab",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "314ab6ad92d8367d4ce102af007b883aaa9cad38bf45ecd622da7cd32c055378",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "current-psax_av_zoom",
+      "available": true,
+      "file": "caps/current-psax_av_zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "07c1f814b643857484dd0f4b5361c8894b679aad1543b64a662cf9ac827d37d2",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "6d88e880a5df1903273ebcdaf214a03b45abb3a2e0efcbb365008672bfba46ea",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "current-psax_great",
+      "available": true,
+      "file": "caps/current-psax_great.raw",
+      "width": 404,
+      "height": 404,
+      "sha256": "0d533e8ba01f9571b0fc01ce70f2481f986eb757f7d9072354a7c6cff2f8273a",
+      "bytes": 163216,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        316.84343424317626
+      ],
+      "planeSha256": "cd8f0c55d2e3f6e54c8a5f93de8ad6cf1cbbe19e6a60e9e1541a4a10c066b15b",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "current-meavsax",
+      "available": true,
+      "file": "caps/current-meavsax.raw",
+      "width": 301,
+      "height": 292,
+      "sha256": "a7f1381969362852574e8777de74820176625c26258947440234639212409143",
+      "bytes": 87892,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.6,
+        316.5085910652922
+      ],
+      "planeSha256": "dc1dc4dd5e24e5c52434e4c8a5b4f90c6437c665ab10e49150cc5c1bf6372da8",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-minus3-source",
+      "available": true,
+      "file": "caps/reviewed-root-offset-minus3-source.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "b853a82ed8f1bbb3f049d32a14611dd51bbf868091d87090f53de25476176748",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "553e91e67d906298896d31be64f1c4dcb050d73b3c7f25d13b10e765e3c4bd5b",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-minus3-acquired",
+      "available": true,
+      "file": "caps/reviewed-root-offset-minus3-acquired.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "b853a82ed8f1bbb3f049d32a14611dd51bbf868091d87090f53de25476176748",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "553e91e67d906298896d31be64f1c4dcb050d73b3c7f25d13b10e765e3c4bd5b",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-minus3-zoom",
+      "available": true,
+      "file": "caps/reviewed-root-offset-minus3-zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "8dcd85d4c93e95e3bfe61457f8833cb0dd50bc8298475afe475d5de1cd2bb7bf",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "e78877f4f355dc5fe8e3a2f52ea45aa6ae5d8e6344d431c1a0ab517eee545cd5",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-0-source",
+      "available": true,
+      "file": "caps/reviewed-root-offset-0-source.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "2d80deec8942d0567aee2f3f3e0ded730ee53ae4f1f408e5f4714528fc1f0c83",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "61b82ada0fbdfce0e0c348e906aac637328bf239bae8aee75b95a6dde4877e2d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-0-acquired",
+      "available": true,
+      "file": "caps/reviewed-root-offset-0-acquired.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "2d80deec8942d0567aee2f3f3e0ded730ee53ae4f1f408e5f4714528fc1f0c83",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "61b82ada0fbdfce0e0c348e906aac637328bf239bae8aee75b95a6dde4877e2d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-0-zoom",
+      "available": true,
+      "file": "caps/reviewed-root-offset-0-zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "f0aa6de94c942525e6e853e349767b39d013ff8cadfc1a0f7c58ab57d9be10b3",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "7bb575bbe9a316dd8fac043f3521b2c3a7b1726447d5a327ec91933e0d477e1d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-3-source",
+      "available": true,
+      "file": "caps/reviewed-root-offset-3-source.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "43b744d93f4cdff37650b0d14e2314be35911f05d0d2fc35a81ea2df9dd05465",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "062e27d4835420751216d381f30519d587e621357329d1de491e3d93373f6d2d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-3-acquired",
+      "available": true,
+      "file": "caps/reviewed-root-offset-3-acquired.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "43b744d93f4cdff37650b0d14e2314be35911f05d0d2fc35a81ea2df9dd05465",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "062e27d4835420751216d381f30519d587e621357329d1de491e3d93373f6d2d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-3-zoom",
+      "available": true,
+      "file": "caps/reviewed-root-offset-3-zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "9cdb8e7fe96b31396bfaab315334155016375a12d4047df550957ac6b3bdc279",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "8f2162de80080e3ba40d3987a75c367c75d0eeef4d5e2f9bac751aa4ed0d5e14",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-6-source",
+      "available": true,
+      "file": "caps/reviewed-root-offset-6-source.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "615e3fafea6e257cb3cb7641df0f2420545b26631dd144315b20111eec4dc719",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "43e270e4ff0ff761420f4e288fa56334328b5ee15e96dfd045805605be831b6e",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-6-acquired",
+      "available": true,
+      "file": "caps/reviewed-root-offset-6-acquired.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "615e3fafea6e257cb3cb7641df0f2420545b26631dd144315b20111eec4dc719",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "43e270e4ff0ff761420f4e288fa56334328b5ee15e96dfd045805605be831b6e",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "reviewed-root-offset-6-zoom",
+      "available": true,
+      "file": "caps/reviewed-root-offset-6-zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "6c72fdd4ad258aac364c76cc98d16a9df8d5ec8d4f2075ef92d88c4cab9f183b",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "423a13ae5226be1845df5d9e803197b02068f52a290dda607a50dfa3c38213a6",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "great-accepted-root-projection-source",
+      "available": true,
+      "file": "caps/great-accepted-root-projection-source.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "9805e117b9201f6f5a32bb5ed89b7bad02c11dbaffba78403f3addb8563df465",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "a3b57763cfddefc637619cb9cfac7d8ec76c4f0e30e8428083952d47ac659e82",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "great-accepted-root-projection-acquired",
+      "available": true,
+      "file": "caps/great-accepted-root-projection-acquired.raw",
+      "width": 372,
+      "height": 372,
+      "sha256": "9805e117b9201f6f5a32bb5ed89b7bad02c11dbaffba78403f3addb8563df465",
+      "bytes": 138384,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.0007547169812,
+        317.0007547169812
+      ],
+      "planeSha256": "a3b57763cfddefc637619cb9cfac7d8ec76c4f0e30e8428083952d47ac659e82",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "great-accepted-root-projection-zoom",
+      "available": true,
+      "file": "caps/great-accepted-root-projection-zoom.raw",
+      "width": 197,
+      "height": 197,
+      "sha256": "fc8ec53fb842eaf421563a195b56d0701c519acd7d1427410f81e5b6b1cd96a5",
+      "bytes": 38809,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.1624897959184,
+        317.1624897959184
+      ],
+      "planeSha256": "9390ca968f7b7cbbc8e8cab2748d1938aa9e30d74d984653ede0e64e8ece22eb",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    }
+  ]
+}

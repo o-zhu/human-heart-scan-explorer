@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 2,
+  "version": "echo-ultra-v6",
+  "dataset": "LADAF-2021-17, complete heart",
+  "sourceUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "sourceSpacingUm": 79.4,
+  "source": "s2-clean-display-u8.npy",
+  "sourceOriginXYZ": [
+    444,
+    356,
+    60
+  ],
+  "sourceShapeXYZ": [
+    1153,
+    1257,
+    1981
+  ],
+  "quantitativeIntensityData": false,
+  "interpolation": "trilinear",
+  "compression": "lossless after 8-bit display windowing and oblique reformat",
+  "coverage": "Exact existing preset plane extent; only unmodified planes.",
+  "adjustedPlanes": "Sampled from currently loaded volume with its actual resolution.",
+  "totalUniqueEncodedBytes": 8527994,
+  "totalDecodedBytes": 36162325,
+  "textures": {
+    "a4c": {
+      "url": "./assets/echo-ultra-v6/a4c.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        0.592746856,
+        0.375104995,
+        -0.712704291
+      ],
+      "up": [
+        -0.415902504,
+        0.900360365,
+        0.127970001
+      ],
+      "normal": [
+        0.689692882,
+        0.220561683,
+        0.689692882
+      ],
+      "bytes": 933928,
+      "decodedBytes": 3066775,
+      "sha256": "aeff13c6a83fa12ca774ca97c0ce9cfd5f8d117c46145cf9747f7b779bc0aa05",
+      "pixelSha256": "ce24da49e884b3913fa5edf9ecdcc0bd6b04928149d8310a8545e3031aee3933",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "LV apex/base axis and interventricular direction were checked in the raw volume. Both ventricular cavities are visible; exact valve/atrial boundaries are unvalidated; the later anatomy overlay provides approximate tissue territories only. Educational four-chamber-like starting plane."
+    },
+    "a2c": {
+      "url": "./assets/echo-ultra-v6/a2c.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        -0.689692882,
+        -0.220561683,
+        -0.689692882
+      ],
+      "up": [
+        -0.415902504,
+        0.900360365,
+        0.127970001
+      ],
+      "normal": [
+        0.592746856,
+        0.375104995,
+        -0.712704291
+      ],
+      "bytes": 691454,
+      "decodedBytes": 3066775,
+      "sha256": "c01631177e2fa74c8c8552e07227bb59098237cd42a4dc8ca0711c0e619ec263",
+      "pixelSha256": "1f36bcf3fe343747532dc325a977dce3032d58d8cc48eb039b5902686a806940",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "90-degree rotation about the estimated LV long axis. Visually gives an LV/atrial long section with most of the RV excluded; exact mitral/atrial landmarks are not segmented."
+    },
+    "a3c": {
+      "url": "./assets/echo-ultra-v6/a3c.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        -0.893664985,
+        -0.378564518,
+        -0.240939411
+      ],
+      "up": [
+        -0.415902504,
+        0.900360365,
+        0.127970001
+      ],
+      "normal": [
+        0.168487394,
+        0.214569613,
+        -0.962066463
+      ],
+      "bytes": 770696,
+      "decodedBytes": 3066775,
+      "sha256": "1317a528b3ac27460ffef59d923da6e8224b7452d6e5a6b656dbd06f87752d35",
+      "pixelSha256": "23d4b36d1f6e4250b31e796cb9db0a5d114c455ef414d9bebbf982d329654459",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; adjust to anatomy",
+      "note": "120-degree rotation about the estimated LV axis. Useful LV long-axis starting plane; LV outflow/aortic-valve inclusion is not verified. An approximate aortic-root region is now identified in the separate anatomy overlay; this does not validate the inclusion or alignment of the valve/outflow in this preset."
+    },
+    "plax": {
+      "url": "./assets/echo-ultra-v6/plax.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 2011,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.40790049751244,
+        79.37499212598426
+      ],
+      "widthWorld": 0.95,
+      "heightWorld": 0.72,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "up": [
+        -0.893664985,
+        -0.378564518,
+        -0.240939411
+      ],
+      "normal": [
+        0.168487394,
+        0.214569613,
+        -0.962066463
+      ],
+      "bytes": 771904,
+      "decodedBytes": 3066775,
+      "sha256": "7c3b28beb0457b39ed18baf8541a79b73a50d564a31a7d00fa3df08749baff2a",
+      "pixelSha256": "c846bf2a6d559ae8ccdd0bddc1a39b8ec76889cba23238e92197d6499bea304a",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; adjust to anatomy",
+      "note": "Same geometric plane as the provisional three-chamber section, rolled for a horizontal long-axis presentation. Parasternal probe position cannot be registered from an isolated organ."
+    },
+    "psax_papillary": {
+      "url": "./assets/echo-ultra-v6/psax_papillary.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.37499212598426
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.72,
+      "center": [
+        0.007655955,
+        0.198771267,
+        -0.057466919
+      ],
+      "right": [
+        -0.592746856,
+        -0.375104995,
+        0.712704291
+      ],
+      "up": [
+        -0.689692882,
+        -0.220561683,
+        -0.689692882
+      ],
+      "normal": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "bytes": 425704,
+      "decodedBytes": 2325625,
+      "sha256": "fd50089f70583d87f1055225bd18d9ae48e7e50dc969ff08458a085ce77f6576",
+      "pixelSha256": "89f28b439111920f3a05e4ff2bed1ce944a7b3c971b669d8076f6df95c6a94e3",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "Ventricular short-axis section with LV thick wall, internal papillary-like structures and adjacent RV crescent. Level is approximately mid-ventricular; no validated structure-boundary segmentation."
+    },
+    "psax_mitral": {
+      "url": "./assets/echo-ultra-v6/psax_mitral.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.37499212598426
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.72,
+      "center": [
+        0.076465028,
+        0.049810964,
+        -0.078638941
+      ],
+      "right": [
+        -0.592746856,
+        -0.375104995,
+        0.712704291
+      ],
+      "up": [
+        -0.689692882,
+        -0.220561683,
+        -0.689692882
+      ],
+      "normal": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "bytes": 513498,
+      "decodedBytes": 2325625,
+      "sha256": "f130c4f622542dec65133048e496e90de2dac8ed42e1acfa32afb9ba7e140b22",
+      "pixelSha256": "89baeaf1551393389475cfb46fb405b3aa088b3524d65ae08b3bf876a8219664",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; adjust to anatomy",
+      "note": "Basal ventricular short-axis starting plane. Exact mitral leaflet/annulus level is unverified."
+    },
+    "meavsax": {
+      "url": "./assets/echo-ultra-v6/meavsax.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.37499212598426
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.72,
+      "center": [
+        0.114310019,
+        -0.032117202,
+        -0.090283554
+      ],
+      "right": [
+        -0.592746856,
+        -0.375104995,
+        0.712704291
+      ],
+      "up": [
+        -0.689692882,
+        -0.220561683,
+        -0.689692882
+      ],
+      "normal": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "bytes": 451808,
+      "decodedBytes": 2325625,
+      "sha256": "14c9b714b466c0ade1c7f087c77c8e426849898bee58e4fc96e1a95c36ab2a97",
+      "pixelSha256": "effb30eb944fb9b70b63ab02de91a99342e8fe0cbde612e30ca62371e429180d",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; manual placement needed",
+      "note": "Basal/outflow short-axis starting plane only. An approximate aortic-root region is identified in the separate anatomy overlay, but the valve plane and this preset geometry remain unvalidated."
+    },
+    "subcostal": {
+      "url": "./assets/echo-ultra-v6/subcostal.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 2011,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.40790049751244,
+        79.37499212598426
+      ],
+      "widthWorld": 0.95,
+      "heightWorld": 0.72,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "up": [
+        0.592746856,
+        0.375104995,
+        -0.712704291
+      ],
+      "normal": [
+        0.689692882,
+        0.220561683,
+        0.689692882
+      ],
+      "bytes": 927864,
+      "decodedBytes": 3066775,
+      "sha256": "5a8cb2fb5e74e006ad98d6e8c757dc9f4b580bdd6dbdc153c93a682f89437a56",
+      "pixelSha256": "b09dd8a14bbae8e90e41562162f22877fb9ffea9afa062945e17cb8d39691a5e",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate presentation only",
+      "note": "The four-chamber-like anatomy plane rolled horizontally. Actual subcostal acoustic entry is not inferable from this isolated fixed organ."
+    },
+    "me4c": {
+      "url": "./assets/echo-ultra-v6/me4c.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        -0.592746856,
+        -0.375104995,
+        0.712704291
+      ],
+      "up": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "normal": [
+        0.689692882,
+        0.220561684,
+        0.689692882
+      ],
+      "bytes": 932702,
+      "decodedBytes": 3066775,
+      "sha256": "a4f7a085d8fd7834c66e645e1088be65eaef73bb220ef1801483979be27d1e7c",
+      "pixelSha256": "fcccbc4f0cc79977208990418eb06f2f8b0e10c5e9c2c340d2092c0d8b417325",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "Shares the a4c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. LV apex/base axis and interventricular direction were checked in the raw volume. Both ventricular cavities are visible; exact valve/atrial boundaries are unvalidated; the later anatomy overlay provides approximate tissue territories only. Educational four-chamber-like starting plane."
+    },
+    "me2c": {
+      "url": "./assets/echo-ultra-v6/me2c.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        0.689692882,
+        0.220561683,
+        0.689692882
+      ],
+      "up": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "normal": [
+        0.592746856,
+        0.375104995,
+        -0.712704291
+      ],
+      "bytes": 691636,
+      "decodedBytes": 3066775,
+      "sha256": "6397de781366d0cbb416dcb636830533c5800d9f2b6648110ff49aa465798f8c",
+      "pixelSha256": "cbda86fdfbaf2d463d47893fdc2469507dc4ce5f77bf789ba344c4e0da7b0ddc",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "Shares the a2c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. 90-degree rotation about the estimated LV long axis. Visually gives an LV/atrial long section with most of the RV excluded; exact mitral/atrial landmarks are not segmented."
+    },
+    "melax": {
+      "url": "./assets/echo-ultra-v6/melax.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 2011,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.40790049751244
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.95,
+      "center": [
+        0.047221172,
+        0.113119093,
+        -0.069640832
+      ],
+      "right": [
+        0.893664985,
+        0.378564518,
+        0.240939411
+      ],
+      "up": [
+        0.415902503,
+        -0.900360365,
+        -0.127970001
+      ],
+      "normal": [
+        0.168487394,
+        0.214569613,
+        -0.962066463
+      ],
+      "bytes": 771162,
+      "decodedBytes": 3066775,
+      "sha256": "5a0d8df52fd81367ef4a9c62297b86b969ce976a892bad1e8ce5dbd07a905e24",
+      "pixelSha256": "c77aa36312ae140629d5f6e9597b05026c7a6edfbdb70abb6a86a46c91a3df7b",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; adjust to anatomy",
+      "note": "Shares the a3c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. 120-degree rotation about the estimated LV axis. Useful LV long-axis starting plane; LV outflow/aortic-valve inclusion is not verified. An approximate aortic-root region is now identified in the separate anatomy overlay; this does not validate the inclusion or alignment of the valve/outflow in this preset."
+    },
+    "tgpapillary": {
+      "url": "./assets/echo-ultra-v6/psax_papillary.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.37499212598426
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.72,
+      "center": [
+        0.007655955,
+        0.198771267,
+        -0.057466919
+      ],
+      "right": [
+        -0.592746856,
+        -0.375104995,
+        0.712704291
+      ],
+      "up": [
+        -0.689692882,
+        -0.220561683,
+        -0.689692882
+      ],
+      "normal": [
+        0.415902503,
+        -0.900360365,
+        -0.127970001
+      ],
+      "bytes": 425704,
+      "decodedBytes": 2325625,
+      "sha256": "fd50089f70583d87f1055225bd18d9ae48e7e50dc969ff08458a085ce77f6576",
+      "pixelSha256": "89f28b439111920f3a05e4ff2bed1ce944a7b3c971b669d8076f6df95c6a94e3",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "approximate, visually checked",
+      "note": "Shares the psax_papillary anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. Ventricular short-axis section with LV thick wall, internal papillary-like structures and adjacent RV crescent. Level is approximately mid-ventricular; no validated structure-boundary segmentation."
+    },
+    "bicaval": {
+      "url": "./assets/echo-ultra-v6/bicaval.webp",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "width": 1525,
+      "height": 1525,
+      "actualSpacingUmXY": [
+        79.37499212598426,
+        79.37499212598426
+      ],
+      "widthWorld": 0.72,
+      "heightWorld": 0.72,
+      "center": [
+        -0.013232514,
+        -0.103024575,
+        0.117202268
+      ],
+      "right": [
+        0.503723092,
+        0.345235861,
+        -0.791880829
+      ],
+      "up": [
+        0.415902504,
+        -0.900360365,
+        -0.127970001
+      ],
+      "normal": [
+        -0.757157945,
+        -0.264883775,
+        -0.597116766
+      ],
+      "bytes": 645638,
+      "decodedBytes": 2325625,
+      "sha256": "b02dc70fa5bd3a014dc0272517bb2711e5f45b1c91c77361ed18670f6ed2e287",
+      "pixelSha256": "fd4d5f9a6ef949e1a582f45a4e9592848b633804eb77fd4d7e92e330d3950644",
+      "maxDecodedPixelError": 0,
+      "encoding": "lossless WebP, grayscale display pixels",
+      "cleaned": true,
+      "confidence": "provisional; manual placement needed",
+      "note": "Long section through a visually estimated right-atrial region toward the interatrial direction. SVC/IVC endpoints and atrial septum are not segmented or confirmed. Adjust plane before interpreting as a bicaval target."
+    }
+  }
+}

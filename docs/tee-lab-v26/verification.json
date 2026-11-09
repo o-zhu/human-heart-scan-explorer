@@ -1,0 +1,43 @@
+{
+  "scope": "Production TEE pose geometry, actual DOM events and shared worker contracts; not clinical registration, browser performance or contact-force validation.",
+  "checks": [
+    "ME 0°, 90°, 120° and distal short-axis references match the existing source sections to submicrometre numerical tolerance; named anatomy remains approximate.",
+    "Multiplane controls leave tip, shaft and central beam fixed; 180° mirrors the in-plane side without changing the physical section.",
+    "Insertion translates along the reference tract; shaft turn changes mechanical facing; independent flexions bend and displace the tip. Every basis remains orthonormal.",
+    "All three donor paths remain finite and continuous and comparison-donor imaging depths retain their calibrated entries.",
+    "Actual TEE controls, lock, presets and IDs remain independent when Probe Lab is also mounted. Locking stops manual steering but allows imaging changes; starting views and Reset explicitly establish an unlocked reference pose. The authored tract remains labeled illustrative and unregistered.",
+    "Focused keyboard motion is TEE-only and clears on blur, lock, Escape and exit; exit aborts pending fine source work.",
+    "Production CT/acoustic computation retains all TEE fields and identical accepted cap/image/pose; requested motion cannot move an old image, and cancelled frames are rejected.",
+    "Production overlay reuses the same mechanical shaft geometry and head matrix during electronic multiplane rotation."
+  ],
+  "sourcePlanes": [
+    {
+      "id": "me4c",
+      "normalAgreement": 0.9999999997059237,
+      "planeOffsetMm": 3.1452862833103444e-8,
+      "insertionCm": 35,
+      "multiplaneDeg": 0
+    },
+    {
+      "id": "me2c",
+      "normalAgreement": 0.9999999994908237,
+      "planeOffsetMm": 1.7066687851868823e-8,
+      "insertionCm": 35,
+      "multiplaneDeg": 90
+    },
+    {
+      "id": "melax",
+      "normalAgreement": 0.9999999999946058,
+      "planeOffsetMm": 1.3363983158143355e-8,
+      "insertionCm": 35,
+      "multiplaneDeg": 120
+    },
+    {
+      "id": "tg",
+      "normalAgreement": 1.0000000000102691,
+      "planeOffsetMm": 1.8086011791362823e-8,
+      "insertionCm": 46.34009680652056,
+      "multiplaneDeg": 0
+    }
+  ]
+}

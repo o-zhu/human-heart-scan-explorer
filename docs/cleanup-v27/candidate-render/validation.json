@@ -1,0 +1,398 @@
+{
+  "productionShaders": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 1749,
+    "decodedBrickReads": 1749,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "maskManifestSha256": {
+    "v26": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+    "v27": "88437ea5ca53238f561d7d7fa27f7da91fcaf7b40e05498ca3939596cd6ba0a5"
+  },
+  "debrisManifestSha256": {
+    "v26": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de",
+    "v27": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de"
+  },
+  "rendererShaderSha256": "23e38f0d181b98e474570bd2c3e8023a5e6164d2c9df45c828cb526380ab4c50",
+  "fineSurfaceShaderSha256": "0229799df79b9cceedf46bd0a4273111bb101435bcb131d80bf4dddc927351fc",
+  "checks": [
+    {
+      "case": {
+        "id": "nodule-284",
+        "coordinate": 1132,
+        "target": [
+          1080,
+          1132,
+          1030
+        ],
+        "distance": 0.43
+      },
+      "changedPixels": 3397,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "24d21e4fa18dc714cc0b15cced71a957c4ae1ff21c3ee6cb7637caac41411a6b",
+        "v27": "1a60b8adec5a0d7d7c403bb331d3da471c95e2513684b6862017adb1914e5588",
+        "originalOff": "0d71920bd0a779097974fbb03d2ecccc9a7bfb8ddef0e5e785a0a127841c4950"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.09666165547091472,
+          -0.023944952589859334,
+          -0.5154540582257535
+        ],
+        "_target": [
+          0.06238185255198487,
+          -0.013232514177693758,
+          -0.08695652173913042
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "appendage-313",
+        "coordinate": 1248,
+        "target": [
+          1270,
+          1248,
+          810
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 4992,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "8b4c01e8fe34fb86e431fb754084b7a13e3ec53ca95c5c30ec6d557f9bb65c96",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "37e8727b28ee871a4d6ca8efa67d3e5a6a6afd061ec74a6034556cd03f3b87c8",
+        "v27": "b200573853f5c991008aafa7121d99b7fce65566863b4fe72e536bc39df1e9e8",
+        "originalOff": "6d31c0018ecef4c7344a04ff2eb9f0934197b76a89f03e0c43d9b6eabd78d4c3"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.14177693761814741
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6400298870211976
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.14177693761814741
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "vein-320",
+        "coordinate": 1276,
+        "target": [
+          1270,
+          1276,
+          810
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 4524,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "2b37f431f5bfbc01d10611727694fd3926ae621fae476ff8b0570959ad3d41d5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "bd064e27f5b04be8e937dc14df65f215b2302185c945a1b6c78d260da272514a",
+        "v27": "8564c332975e2b9676a75486b9c7d88e040b61a4b3ea2b68dd046d0976ec6bac",
+        "originalOff": "015bcdc13b5db703903c845c9c7d7bd4c9867dea5279c4760b95d4a82b66cae3"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.15500945179584116
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6532624011988912
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.15500945179584116
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "pulmonary-335",
+        "coordinate": 1336,
+        "target": [
+          1000,
+          1336,
+          570
+        ],
+        "distance": 0.48
+      },
+      "changedPixels": 3115,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "897dd58ffe29a5454f0157062e5ba4a8c42378db3f29aafde15f5ee6a446bf29",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "0a9872863986d9ad17f008b17c17c366e4dacbb3b22a1a7823f62bbd3e52f7d3",
+        "v27": "bf35a84d7dd9a4a8601e17b2d40f5bf184612ab6df988ea1c93e93f22c00b1c2",
+        "originalOff": "51408178a3087c0b7667cab6900a7fe7d0f0a738fd9a5229b367188ebbd4ca18"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.18336483931947065
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.0628404957012998,
+          -0.242581889311193,
+          -0.6616876707463987
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.2306238185255198,
+          -0.18336483931947065
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "tricuspid-222",
+        "coordinate": 884,
+        "target": [
+          760,
+          884,
+          1220
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 3080,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "3e616a0896e52f90512c6721d0fe3064623a8a6a62d27cb84bc00470da5f8db8",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "57d0f540ebfbd53700e673647927f1f1e20e4628f73df5be4f9a4bcd3c84e0ca",
+        "v27": "2632a77ed38e2dc9687ccd9449c047c12801d1681fe0b91043d4edb2f65d59ea",
+        "originalOff": "5ddd2963e6d89d4222e1cf326cea732fc3652d3ad844c65a7ca3a8521185fc7c"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          0.03024574669187145
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.04898664495512836,
+          0.06410322257872335,
+          -0.4680072027111786
+        ],
+        "_target": [
+          -0.08884688090737237,
+          0.0765595463137996,
+          0.03024574669187145
+        ]
+      }
+    }
+  ],
+  "scope": "Exact verified source assets, actual production GLSL, same-camera v26-to-v27 comparison, unchanged source pixels and reversible display. Nearby reproducible cameras, not exact screenshot registration. No anatomical-identity or browser-performance claim."
+}

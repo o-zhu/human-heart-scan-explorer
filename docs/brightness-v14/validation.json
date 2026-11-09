@@ -1,0 +1,1018 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "compiledPrograms": [
+    "volume",
+    "composite",
+    "ramp"
+  ],
+  "comparedIntensities": 27648,
+  "transferChecks": [
+    {
+      "profile": 0,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 4,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 0,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 1,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 2,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 3,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 4,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 1,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 1,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 2,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 2,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 3,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 3,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 4,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 4,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 5,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 5,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 6,
+      "selected": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    },
+    {
+      "profile": 5,
+      "palette": 5,
+      "label": 6,
+      "selected": 2,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0.0
+    }
+  ],
+  "donorMeasurements": [
+    {
+      "donor": "ladaf-2021-17",
+      "transfer": "Tissue & space",
+      "sourceEvidence": [
+        {
+          "url": "./assets/flow-textures/rv-inflow.webp",
+          "sha256": "f88f602feeef9e88607ad4a0fb940ca28c8b4607220cb976f3dd0a5038e70358",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/rv-outflow.webp",
+          "sha256": "2b93b1651a8e71aac6dd4b8f8dc9358bf3ac42a1647c5eaec0aa64d2873bfff7",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/ra-inflow.webp",
+          "sha256": "fb06455f2a3b5f846daba0a29a9bff70e8992444f96b8514beb4aadbfc46d07e",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/ra-outflow.webp",
+          "sha256": "d283f54ac5e231963600246f78c51ebdbc88e581fc63b20d2831351c80fb3c2d",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/lv-inflow.webp",
+          "sha256": "8d4d40103a7ea60c6f11112c0b4a0c2fefe958ec2d2e9770e3ec230c3fe24298",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/lv-outflow.webp",
+          "sha256": "c1ff3c639e70d54057b4967bf32c4ceeb698d93218dcd2962330059aa26168c6",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/la-inflow.webp",
+          "sha256": "c169cfee252a38608286014d223ea3a9592c94ba5657ffdca55797169158cb1c",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/flow-textures/la-outflow.webp",
+          "sha256": "39581ce63e26c4ef96b802c740e4c9912a203e48bb5d7fdba7f5c069034d088d",
+          "sourceSpacingUm": 79.4
+        }
+      ],
+      "measurements": [
+        {
+          "exposure": 1.15,
+          "tissuePixels": 4651169,
+          "meanLuminance255": 169.85792677797772,
+          "p10MedianP90Luminance255": [
+            85.07339999999999,
+            179.5588,
+            241.7634
+          ],
+          "whitePixels": 0
+        },
+        {
+          "exposure": 1.35,
+          "tissuePixels": 4651169,
+          "meanLuminance255": 175.7933969293741,
+          "p10MedianP90Luminance255": [
+            93.21379999999999,
+            186.69920000000002,
+            242.5508
+          ],
+          "whitePixels": 0
+        }
+      ]
+    },
+    {
+      "donor": "s-20-29",
+      "transfer": "Tissue & space",
+      "sourceEvidence": [
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/rv-inflow.webp",
+          "sha256": "82bf66d823725886a8269b2d0d8be9f74717d4e1bacdff23626b04885d4f63ce",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/rv-outflow.webp",
+          "sha256": "70f5b16cd22f18e2db8458f4bb397f8cf1e15e4181388443f984a09d1d5bf10d",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/ra-inflow.webp",
+          "sha256": "680ce9901b3dab2333f57b9213120178cac97e3cfec1a3f91edd93aea0b48f99",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/ra-outflow.webp",
+          "sha256": "cce841ae71801696f348a42ef29e41e82fae1961406ceccd30d4ea1e5be6e99b",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/lv-inflow.webp",
+          "sha256": "9e6ec5e7a764631273091b129666825b61ee83872cbf5c6cedc4d8209a624fdb",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/lv-outflow.webp",
+          "sha256": "8851d882188edf475d7d5d5abd66dbcf5bd0efba1832ad2645a89733350f840f",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/la-inflow.webp",
+          "sha256": "d0d1a579e366201dff083d415d351c705c64dfa9e8a42fb8900400be678f5329",
+          "sourceSpacingUm": 79.56
+        },
+        {
+          "url": "./assets/donors/s-20-29/flow-textures/la-outflow.webp",
+          "sha256": "7554626994be73846be249331400df7a2f08c83742a2eb57912b73e3ff3b67e0",
+          "sourceSpacingUm": 79.56
+        }
+      ],
+      "measurements": [
+        {
+          "exposure": 1.8,
+          "tissuePixels": 5349537,
+          "meanLuminance255": 149.1067769749793,
+          "p10MedianP90Luminance255": [
+            97.21379999999999,
+            153.4906,
+            189.41439999999997
+          ],
+          "whitePixels": 0
+        },
+        {
+          "exposure": 2.7,
+          "tissuePixels": 5349537,
+          "meanLuminance255": 168.4482315371966,
+          "p10MedianP90Luminance255": [
+            119.28200000000001,
+            174.5588,
+            204.55479999999997
+          ],
+          "whitePixels": 0
+        }
+      ]
+    },
+    {
+      "donor": "s-20-28",
+      "transfer": "Tissue & space",
+      "sourceEvidence": [
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/rv-inflow.webp",
+          "sha256": "d38bf52a2e7482a069272d434d7bf90729051ba8cc09510fdc9a9805190a4199",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/rv-outflow.webp",
+          "sha256": "283136b73f2e4266f65036176bf98178885fb4703c319ab5beea4be735bdaa49",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/ra-inflow.webp",
+          "sha256": "71e45e8b2f394abdda20925102159bc4cf2d74b566bf0c8230f513e21ac80887",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/ra-outflow.webp",
+          "sha256": "848af887e0f6d197dff61e0390681a6a1654ca2c1d4215412ce151a618f06aaa",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/lv-inflow.webp",
+          "sha256": "e64cad696cd07ad37d5fa8184b6436291b5815bb5f6f128a04519361fd0ec738",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/lv-outflow.webp",
+          "sha256": "b06ec9c4e3ee83d04d5433e38d2e3b3fcbf53024bfc36ba9e465a4ea6956381d",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/la-inflow.webp",
+          "sha256": "67f40c0108f75efff7c95b2f6688f079a07be8b10128ae17c44928a8f62b427d",
+          "sourceSpacingUm": 79.4
+        },
+        {
+          "url": "./assets/donors/s-20-28/flow-textures/la-outflow.webp",
+          "sha256": "c5f729fd2e9ed746d631a96dba154e2e40cd89b3b50c1374977de41c96cd4943",
+          "sourceSpacingUm": 79.4
+        }
+      ],
+      "measurements": [
+        {
+          "exposure": 1.8,
+          "tissuePixels": 5062711,
+          "meanLuminance255": 150.8011608204379,
+          "p10MedianP90Luminance255": [
+            94.21379999999999,
+            157.41840000000002,
+            191.4144
+          ],
+          "whitePixels": 0
+        },
+        {
+          "exposure": 2.7,
+          "tissuePixels": 5062711,
+          "meanLuminance255": 170.0482806617245,
+          "p10MedianP90Luminance255": [
+            116.282,
+            177.5588,
+            206.5548
+          ],
+          "whitePixels": 0
+        }
+      ]
+    }
+  ],
+  "productionShaderSha256": "c667ebfbdd0b99bd92b4320126bee5da1176512681d51a0c2e143724da7e08ef",
+  "scope": "Native production GLSL, 3 donor profiles, 6 palettes, 2 exposure settings; all six anatomy colors, global and selected-label modes. Source-verified measured CT and high-detail volumes. No browser QA, clinical validation or device-speed claim."
+}

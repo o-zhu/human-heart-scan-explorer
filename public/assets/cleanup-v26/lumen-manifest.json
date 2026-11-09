@@ -1,0 +1,326 @@
+{
+  "donorId": "ladaf-2021-17",
+  "sampling": "nearest",
+  "sourceManifestUrl": "./assets/ultra-volume-v7.json",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "sourceSpacingUm": 79.4,
+  "longestMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "coordinateConvention": "Main explorer endpoint convention: acquisition XYZ maps to world (x,z,-y).",
+  "worldToFine": "vec3(world.x, -world.z, world.y) * (longestMm / (sourceSpacingUm / 1000)) + (sourceFullDimensionsXYZ - 1) / 2",
+  "version": 3,
+  "id": "ladaf-reviewed-lumen-display-v26",
+  "defaultEnabled": true,
+  "title": "Reviewed lumen cleanup",
+  "format": "gzip-bitset-x-zyx",
+  "description": "Reviewed atrial material, arterial lumen particles, a proximal aortic sheet and small detached perivalvular/RV fragments. Reversible 3D display selections, not anatomical classification.",
+  "fineToMaskUv": "Nearest original fine sample; eight adjacent X samples per byte, least-significant bit first. No mask resampling.",
+  "masks": [
+    {
+      "id": "atrial",
+      "label": "Reviewed atrial material",
+      "url": "./assets/cleanup-v26/atrial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        310,
+        437,
+        700
+      ],
+      "storageDimensionsXYZ": [
+        39,
+        437,
+        700
+      ],
+      "lowerFullFineXYZ": [
+        1080,
+        820,
+        460
+      ],
+      "upperFullFineXYZ": [
+        1390,
+        1257,
+        1160
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          1080,
+          820,
+          460
+        ],
+        [
+          1390,
+          1257,
+          1160
+        ]
+      ],
+      "compressedBytes": 559724,
+      "decodedBytes": 11930100,
+      "sha256": "01d8c784bc2a2a6e8fc70eab9e984b2db3bd7d9b4d38b594aa639aa02f1a426a",
+      "decodedSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+      "logicalMaskSha256": "c57ebfe3555495ccb52d2e8ddd650871ac683cb7cdbf049d55d2f9db6800f9b8",
+      "maskedVoxels": 15567968,
+      "maskedVolumeMm3": 7792.798334394111,
+      "policy": {
+        "inheritedV25MaskedSamples": 8052055,
+        "addedObjectMaskSamples": 7515913,
+        "envelopeExpansionFineSamples": 42.5,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "additionalObjectEnvelopeExpansionFineSamples": 9,
+        "additionalObjectPurpose": "Separately seed the porous and bright core of the same user-selected intraluminal LA object. It was disconnected from the previous exclusion by the wall-protection geodesic rule. Source serial planes and production position readback define these seeds.",
+        "newSelectionDenseGuardOverlap": 0,
+        "sourcePaddingFineSamples": 13,
+        "distanceMetrics": "3D Euclidean for source support and dense-tissue guard; serial 2D signed-distance envelope interpolation",
+        "method": "Serial reviewed object envelopes with source-foreground support; source sigma0.5 and sigma0.8 plus raw190 anchored dense tissue protection. Expansion is geodesically connected to the reviewed object and cannot enter isolated wall pockets. Existing v25 atrial exclusions are retained exactly.",
+        "fullPolicySha256": "bededa0484d5fa26ada054a2ef08301c078a8e868fee79bae910177f6e769e4b",
+        "reviewedYKeyframes": [
+          820,
+          840,
+          880,
+          920,
+          944,
+          960,
+          1000,
+          1040,
+          1080,
+          1120,
+          1152,
+          1184,
+          1200,
+          1216,
+          1236,
+          1244,
+          1252,
+          1256
+        ],
+        "additionalReviewedObjectYKeyframes": [
+          1168,
+          1184,
+          1196,
+          1208,
+          1216,
+          1228,
+          1240,
+          1252,
+          1256
+        ]
+      }
+    },
+    {
+      "id": "arterial",
+      "label": "Arterial lumen fragments",
+      "url": "./assets/cleanup-v26/arterial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        650,
+        381,
+        560
+      ],
+      "storageDimensionsXYZ": [
+        82,
+        381,
+        560
+      ],
+      "lowerFullFineXYZ": [
+        510,
+        900,
+        180
+      ],
+      "upperFullFineXYZ": [
+        1160,
+        1281,
+        740
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          590,
+          920,
+          181
+        ],
+        [
+          1159,
+          1277,
+          739
+        ]
+      ],
+      "compressedBytes": 222719,
+      "decodedBytes": 17495520,
+      "sha256": "ba7e69ed85f0d51585bf7ca433be85a0e0cf27f1a9d6a809bdadc5e4afbfab29",
+      "decodedSha256": "8ec1d5c2e550804f931665b940c5a0a94411f9c235a0f0c90c7433456a554fcd",
+      "logicalMaskSha256": "aac80a2cdf515a4175bc828f2911ef11fef48c7e60918cb8cbd2f7570e799961",
+      "maskedVoxels": 1013562,
+      "maskedVolumeMm3": 507.3548625874079,
+      "policy": {
+        "method": "Source-derived aortic and pulmonary lumen flood regions selected by reviewed serial seeds, above the valve apparatus; suppress supported interior fragments outside a ten-sample in-plane dense-wall guard. Reject leaky or absent lumen regions.",
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "addedSamples": 833842,
+        "inheritedV25MaskedSamples": 179720,
+        "distanceMetrics": "2D in-plane Euclidean margins around the 3D-filtered arterial source",
+        "newSelectionDenseGuardOverlap": 0,
+        "fullPolicySha256": "e8bcb8920264dc8f256b526b4f068ad453b6c2de08ffc57eb1d2dc073e1c5a93",
+        "rejectedPlaneSeedCount": 227
+      }
+    },
+    {
+      "id": "valve-region",
+      "label": "Reviewed aortic sheet and valve fragments",
+      "url": "./assets/cleanup-v26/valve-region.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        430,
+        270,
+        470
+      ],
+      "storageDimensionsXYZ": [
+        54,
+        270,
+        470
+      ],
+      "lowerFullFineXYZ": [
+        850,
+        900,
+        850
+      ],
+      "upperFullFineXYZ": [
+        1280,
+        1170,
+        1320
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          850,
+          900,
+          850
+        ],
+        [
+          1280,
+          1170,
+          1320
+        ]
+      ],
+      "compressedBytes": 138250,
+      "decodedBytes": 6852600,
+      "sha256": "6c817082012e9f39f4c96956fb335f80b04d66af88f1746618085698af08812a",
+      "decodedSha256": "2f3ec60d09b187f828fa2ab8eb707391b4bdb18b51824823a565f239fd2f1b44",
+      "logicalMaskSha256": "5b111065d2310c980f7549369513c3b2f87140b0f7756f540cd52bebabcc097d",
+      "maskedVoxels": 533645,
+      "maskedVolumeMm3": 267.12464126068,
+      "policy": {
+        "newParticleSeedMaskSamples": 280590,
+        "addedObjectMaskSamples": 253055,
+        "envelopeExpansionFineSamples": 3.5,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "newSelectionDenseGuardOverlap": 0,
+        "sourcePaddingFineSamples": 13,
+        "distanceMetrics": "3D Euclidean for source support and dense-tissue guard; serial 2D signed-distance envelope interpolation",
+        "method": "Serial reviewed object envelopes with source-foreground support; source sigma0.5 and sigma0.8 plus raw190 anchored dense tissue protection. Expansion is geodesically connected to the reviewed object and cannot enter isolated wall pockets. The initial particle mask is newly computed v26 source-component cleanup, not an inherited v25 valve exclusion.",
+        "scope": "Reviewed sheet proximal to the aortic valve plus small fully detached particles near valve structures. Dense anchored leaflets are protected; source intensity is not whitened.",
+        "fullPolicySha256": "f0abb0f22aa282fe637e20dd0d51768240198fefd46e8f2564b138208917237e",
+        "reviewedYKeyframes": [
+          "1016",
+          "1028",
+          "1040",
+          "1056",
+          "1080",
+          "1100",
+          "1120",
+          "1136",
+          "1140"
+        ],
+        "detachedPerivalvularParticles": {
+          "method": "Bounded overlapping source slabs. Each 96-sample accepted core has 40 real fine samples of halo, greater than the allowed fragment extent plus retained-tissue guard. Components touching any processing boundary are retained. Only core pixels are committed, avoiding overlap double counts.",
+          "sourceTileCoreDepth": 96,
+          "sourceTileHalo": 40,
+          "maximumVoxels": 1200,
+          "maximumBoundingBoxDiagonalMm": 1.8,
+          "maximumPcaSpreadExclusive": 5.0,
+          "meshSupportMarginFineSamples": 9,
+          "denseGuardFineSamples": 10,
+          "protectedSupportOverlap": 0,
+          "componentCountCaveat": "Per-tile candidate counts can repeat a component across overlapping samples; final mask voxel counts are unique.",
+          "reviewedSourceTiles": 5
+        }
+      }
+    },
+    {
+      "id": "rv",
+      "label": "Detached RV and apical fragments",
+      "url": "./assets/cleanup-v26/rv.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        570,
+        420,
+        710
+      ],
+      "storageDimensionsXYZ": [
+        72,
+        420,
+        710
+      ],
+      "lowerFullFineXYZ": [
+        450,
+        780,
+        1100
+      ],
+      "upperFullFineXYZ": [
+        1020,
+        1200,
+        1810
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          450,
+          780,
+          1100
+        ],
+        [
+          1020,
+          1200,
+          1810
+        ]
+      ],
+      "compressedBytes": 316358,
+      "decodedBytes": 21470400,
+      "sha256": "57b61c42d2815b656d9baac562fc923ab786b11839e458d9253359d380b65fe7",
+      "decodedSha256": "d9cd6dd84142a834d2971004321ab1abdb1051c77a249287c473353cb7ea3c83",
+      "logicalMaskSha256": "9ab5909c6b1ac8849f9566bf2e3c271fcf15a4d6849f6e1c2b677e45f31401f5",
+      "maskedVoxels": 703123,
+      "maskedVolumeMm3": 351.959596992632,
+      "policy": {
+        "method": "Bounded overlapping source slabs. Each 96-sample accepted core has 40 real fine samples of halo, greater than the allowed fragment extent plus retained-tissue guard. Components touching any processing boundary are retained. Only core pixels are committed, avoiding overlap double counts.",
+        "sourceTileCoreDepth": 96,
+        "sourceTileHalo": 40,
+        "maximumVoxels": 1600,
+        "maximumBoundingBoxDiagonalMm": 2.2,
+        "maximumPcaSpreadExclusive": 5.0,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "protectedSupportOverlap": 0,
+        "componentCountCaveat": "Per-tile candidate counts can repeat a component across overlapping samples; final mask voxel counts are unique.",
+        "scope": "Small detached RV/apical and chordal-region fragments only; connected trabeculae, papillary muscles and long chord-like components retained.",
+        "fullPolicySha256": "e4f9bc0e7b0bbe366d3120974bb2c449db33bc154c200568fb0866b0f77d9376",
+        "reviewedSourceTiles": 8
+      }
+    }
+  ],
+  "limitations": [
+    "Material identity and anatomical completeness are not validated.",
+    "Dense anchored walls and retained source structures are protected; connected ambiguous anatomy remains.",
+    "Original CT cards, voxel arrays and mesh payloads are unchanged."
+  ]
+}

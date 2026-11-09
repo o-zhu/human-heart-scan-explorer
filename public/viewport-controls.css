@@ -1,0 +1,222 @@
+/* The breakpoint follows the measured 3D pane, including split workspaces. */
+body #viewport .viewport-menu-toggle {
+  position: absolute;
+  z-index: 24;
+  right: 10px;
+  bottom: 10px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid #6d8a7c;
+  border-radius: 8px;
+  background: #162621f2;
+  color: #e2ece2;
+  box-shadow: 0 2px 12px #0005;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+body #viewport .viewport-menu-toggle svg { width: 22px; height: 22px; }
+body #viewport .viewport-menu-toggle:hover,
+body #viewport .viewport-menu-toggle[aria-expanded="true"] { background: #30493d; }
+body #viewport .viewport-control-menu {
+  position: absolute;
+  z-index: 25;
+  right: 10px;
+  bottom: 62px;
+  width: min(360px, calc(100% - 20px));
+  max-height: calc(100% - 74px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #526d60;
+  border-radius: 9px;
+  background: #101d19fa;
+  color: #dce6dd;
+  box-shadow: 0 6px 28px #0009;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  pointer-events: auto;
+}
+body #viewport .viewport-menu-toggle[hidden],
+body #viewport .viewport-control-menu[hidden] { display: none !important; }
+body #viewport .viewport-control-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 4px 4px 14px;
+  border-bottom: 1px solid #354c41;
+}
+body #viewport .viewport-control-menu-header strong { font-size: 14px; font-weight: 500; }
+body #viewport .viewport-menu-close {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #dce6dd;
+  font-size: 26px;
+  cursor: pointer;
+}
+body #viewport .viewport-menu-close:hover { background: #ffffff0c; }
+body #viewport .viewport-control-menu-body { display: grid; gap: 14px; padding: 12px; }
+body #viewport .viewport-menu-toggle:focus-visible,
+body #viewport .viewport-control-menu :is(button, summary, select):focus-visible {
+  outline: 2px solid #e5b098;
+  outline-offset: 2px;
+}
+body #viewport.viewport-controls-compact .viewport-control-menu :is(.viewport-heading, .viewer-controls, .viewport-bottom) {
+  position: static;
+  inset: auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  transform: none;
+  pointer-events: auto;
+}
+body #viewport.viewport-controls-compact .viewport-heading > :is(.eyebrow, h1, p),
+body #viewport.viewport-controls-compact .interaction-hint { display: none; }
+body #viewport.viewport-controls-compact .quick-views {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 0 0 10px;
+}
+body #viewport.viewport-controls-compact .quick-view-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin: 0;
+}
+body #viewport.viewport-controls-compact .quick-views button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 7px;
+  font-size: 13px;
+  white-space: normal;
+}
+body #viewport.viewport-controls-compact .source-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 0 10px;
+  padding: 7px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: normal;
+}
+body #viewport.viewport-controls-compact .viewer-controls {
+  align-items: stretch;
+  gap: 10px;
+}
+body #viewport.viewport-controls-compact .preset-switch {
+  position: static;
+  inset: auto;
+  display: flex;
+  width: 100%;
+}
+body #viewport.viewport-controls-compact .preset-switch button {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 5px;
+  font-size: 13px;
+  white-space: normal;
+}
+body #viewport.viewport-controls-compact .viewer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 7px;
+}
+body #viewport.viewport-controls-compact .viewer-menu { flex: 1 1 calc(50% - 7px); min-width: 0; }
+body #viewport.viewport-controls-compact .viewer-menu > summary {
+  min-height: 44px;
+  min-width: 0;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+body #viewport.viewport-controls-compact .viewer-menu[open] { flex-basis: 100%; }
+body #viewport.viewport-controls-compact .viewer-menu-content {
+  position: static;
+  inset: auto;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  box-shadow: none;
+}
+body #viewport.viewport-controls-compact .viewer-menu-content :is(button, select) { min-height: 44px; }
+body #viewport.viewport-controls-compact .reconstruction-detail-shortcut {
+  min-height: 44px;
+  min-width: 90px;
+  padding: 8px 10px;
+}
+body #viewport.viewport-controls-compact .coronary-control { width: 100%; }
+body #viewport.viewport-controls-compact .coronary-toggle { min-height: 44px; width: 100%; }
+body #viewport.viewport-controls-compact .viewport-bottom { justify-content: stretch; }
+body #viewport.viewport-controls-compact .viewport-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3px;
+  width: 100%;
+  padding: 4px;
+}
+body #viewport.viewport-controls-compact .viewport-tools .icon-button { width: 44px; height: 44px; }
+body #viewport.viewport-controls-compact .fullscreen-button { flex: 1; min-height: 44px; padding: 8px; font-size: 14px; }
+body #viewport.viewport-controls-compact .viewport-control-menu .workspace-starting-views {
+  position: static;
+  inset: auto;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  box-shadow: none;
+}
+body #viewport.viewport-controls-compact .workspace-starting-views .probe-preset-grid { grid-template-columns: 1fr; }
+/* These controls belong only to reconstruction. Keep the original workspace
+   visibility rules when their existing nodes move inside the compact menu. */
+body :is(.echo-viewport-mount, .probe-viewport-mount) #viewport.viewport-controls-compact :is(.viewport-heading, .viewer-controls, .preset-switch) { display: none; }
+
+/* Small progress toasts leave the already usable heart visible while finer
+   data arrives. The cancel/fallback action and live status stay accessible. */
+body #viewport .fine-load-panel {
+  width: min(300px, calc(100% - 24px));
+  left: 12px;
+  bottom: 68px;
+  padding: 9px 11px;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+body #viewport .fine-load-title { font-size: 13px; }
+body #viewport .fine-load-source { display: none; }
+body #viewport .fine-load-panel progress { height: 3px; margin: 2px 0; }
+body #viewport .fine-load-panel button { font-size: 12px; padding: 4px 0; }
+body #viewport.viewport-controls-compact .fine-load-panel { top: 10px; left: 10px; bottom: auto; }
+body #viewport.viewport-controls-compact #loading {
+  inset: 10px auto auto 10px;
+  width: min(300px, calc(100% - 20px));
+  max-height: calc(100% - 78px);
+  padding: 10px 12px;
+  overflow: auto;
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+  border: 1px solid #496154;
+  border-radius: 6px;
+  background: #101c1df5;
+  text-align: left;
+  pointer-events: none;
+}
+body #viewport.viewport-controls-compact #loading[hidden] { display: none; }
+body #viewport.viewport-controls-compact #loading :is(.loader-graphic, .loader-caption) { display: none; }
+body #viewport.viewport-controls-compact #loading h2 { margin: 0; font-size: 14px; }
+body #viewport.viewport-controls-compact #loading p { max-width: none; margin: 0; font-size: 12px; line-height: 1.45; }
+body #viewport.viewport-controls-compact #loading .load-track { width: 100%; height: 3px; margin: 3px 0 0; }
+body #viewport.viewport-controls-compact #loading :is(button, a) { pointer-events: auto; }

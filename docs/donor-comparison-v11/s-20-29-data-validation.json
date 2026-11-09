@@ -1,0 +1,644 @@
+{
+  "passed": true,
+  "validatedAt": "2026-11-05T16:23:11.239866+00:00",
+  "requireFine": true,
+  "donor": "s-20-29",
+  "sourceDecode": {
+    "asymmetricXYZ": [
+      7,
+      5,
+      3
+    ],
+    "verifiedFormats": [
+      "N5 big-endian X-fast",
+      "Zarr little-endian Z-fast"
+    ],
+    "edgeN5Verified": true,
+    "malformedLayoutsRejected": 5
+  },
+  "syntheticRegistration": [
+    {
+      "format": "n5",
+      "sourceFineXYZ": [
+        10,
+        22,
+        14
+      ],
+      "paddedFineXYZ": [
+        13,
+        25,
+        17
+      ],
+      "highXYZ": [
+        4,
+        7,
+        5
+      ],
+      "lowXYZ": [
+        3,
+        4,
+        3
+      ],
+      "sourceVoxelsOmitted": 0,
+      "longestSourceAxis": "Y",
+      "lowEndpointResidualUm": 0
+    },
+    {
+      "format": "zarr",
+      "sourceFineXYZ": [
+        10,
+        22,
+        14
+      ],
+      "paddedFineXYZ": [
+        13,
+        25,
+        17
+      ],
+      "highXYZ": [
+        4,
+        7,
+        5
+      ],
+      "lowXYZ": [
+        3,
+        4,
+        3
+      ],
+      "sourceVoxelsOmitted": 0,
+      "longestSourceAxis": "Y",
+      "lowEndpointResidualUm": 0
+    }
+  ],
+  "data": {
+    "coarse": {
+      "datasetId": "1773963465",
+      "parts": [
+        {
+          "level": "low",
+          "cleaned": true,
+          "parts": 1,
+          "decodedBytes": 14054400,
+          "compressedBytes": 1875460,
+          "sha256": "07a77bc0cbb3ff2d859304ffaa9cd84fadf736b607aad58023b351492e9f2cf8",
+          "maximumByteError": 0
+        },
+        {
+          "level": "low",
+          "cleaned": false,
+          "parts": 1,
+          "decodedBytes": 14054400,
+          "compressedBytes": 4331258,
+          "sha256": "78eded082b0ad852bef218fe6d9eb6cfc2e4c1c51c8bf77a10ec186b58a2827a",
+          "maximumByteError": 0
+        },
+        {
+          "level": "high",
+          "cleaned": true,
+          "parts": 8,
+          "decodedBytes": 111271708,
+          "compressedBytes": 11547574,
+          "sha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+          "maximumByteError": 0
+        },
+        {
+          "level": "high",
+          "cleaned": false,
+          "parts": 8,
+          "decodedBytes": 111271708,
+          "compressedBytes": 28131999,
+          "sha256": "e888063ddfab5dedc77208579c41a7a78b7f47ec6151912471c42cafff8f0070",
+          "maximumByteError": 0
+        }
+      ],
+      "independentlyDecodedSourceChunks": 5,
+      "registeredHighVoxelsChecked": 4098,
+      "maximumSourceRegistrationByteError": 0,
+      "paddingFineColumnsXYZ": [
+        0,
+        0,
+        2
+      ],
+      "physicalExtentMm": [
+        151.80048000000002,
+        151.80048000000002,
+        154.66464000000002
+      ],
+      "sourceFineExtentPreserved": true,
+      "cardiacRoiPreserved": null
+    },
+    "measuredViews": {
+      "fineSource": true,
+      "sourceSpacingUm": 79.56,
+      "measuredImageCount": 25,
+      "anatomyLabelsAssigned": 0,
+      "independentPixelChecks": [
+        {
+          "id": "echo:a4c",
+          "dimensions": [
+            3002,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:a2c",
+          "dimensions": [
+            2356,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:a3c",
+          "dimensions": [
+            3218,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:plax",
+          "dimensions": [
+            2803,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:psax_papillary",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:psax_mitral",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:subcostal",
+          "dimensions": [
+            2803,
+            3002
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:me4c",
+          "dimensions": [
+            3002,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:me2c",
+          "dimensions": [
+            2356,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:melax",
+          "dimensions": [
+            3218,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:meavsax",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:bicaval",
+          "dimensions": [
+            2356,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "echo:tgpapillary",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:rv-inflow",
+          "dimensions": [
+            3002,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:rv-outflow",
+          "dimensions": [
+            2356,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:ra-inflow",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:ra-outflow",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:lv-inflow",
+          "dimensions": [
+            3218,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:lv-outflow",
+          "dimensions": [
+            3218,
+            3177
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:la-inflow",
+          "dimensions": [
+            2356,
+            2803
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "comparison:la-outflow",
+          "dimensions": [
+            3002,
+            2356
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "probe:apical",
+          "dimensions": [
+            3004,
+            2804
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "probe:parasternal",
+          "dimensions": [
+            2804,
+            2357
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "probe:short-axis",
+          "dimensions": [
+            3004,
+            2357
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        },
+        {
+          "id": "probe:atrial",
+          "dimensions": [
+            3004,
+            2804
+          ],
+          "sourceSpacingUm": 79.56,
+          "sampledPixels": 1024,
+          "maxIndependentTrilinearByteError": 0
+        }
+      ]
+    },
+    "fineBanks": {
+      "pending": false,
+      "orthogonalSamples": [
+        {
+          "axis": "x",
+          "index": 45,
+          "imagePixels": 1073,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            976,
+            890,
+            29,
+            37
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "x",
+          "index": 119,
+          "imagePixels": 1119497,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            664,
+            114,
+            701,
+            1597
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "x",
+          "index": 238,
+          "imagePixels": 1699047,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            362,
+            170,
+            1043,
+            1629
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "x",
+          "index": 357,
+          "imagePixels": 1406295,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            410,
+            282,
+            947,
+            1485
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "x",
+          "index": 428,
+          "imagePixels": 441,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            856,
+            954,
+            21,
+            21
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "y",
+          "index": 89,
+          "imagePixels": 4697,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            1264,
+            602,
+            77,
+            61
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "y",
+          "index": 119,
+          "imagePixels": 704871,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            656,
+            298,
+            867,
+            813
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "y",
+          "index": 238,
+          "imagePixels": 2597821,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            186,
+            130,
+            1513,
+            1717
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "y",
+          "index": 357,
+          "imagePixels": 37929,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            536,
+            314,
+            269,
+            141
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "y",
+          "index": 372,
+          "imagePixels": 3105,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            680,
+            402,
+            69,
+            45
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "z",
+          "index": 25,
+          "imagePixels": 777,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            576,
+            1224,
+            37,
+            21
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "z",
+          "index": 121,
+          "imagePixels": 1324587,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            226,
+            394,
+            1353,
+            979
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "z",
+          "index": 243,
+          "imagePixels": 1489059,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            186,
+            434,
+            1521,
+            979
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "z",
+          "index": 364,
+          "imagePixels": 898485,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            258,
+            680,
+            1393,
+            645
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        },
+        {
+          "axis": "z",
+          "index": 464,
+          "imagePixels": 2553,
+          "sourcePixelsChecked": 2048,
+          "crop": [
+            800,
+            864,
+            69,
+            37
+          ],
+          "maximumByteError": 0,
+          "fullDecodedImageHashVerified": true
+        }
+      ],
+      "sparseBricksChecked": [
+        "126",
+        "1351",
+        "1971",
+        "2660",
+        "3238",
+        "3779",
+        "4413",
+        "4947",
+        "5462",
+        "6011",
+        "6626",
+        "7158",
+        "7722",
+        "8441",
+        "9245",
+        "10132",
+        "11891"
+      ],
+      "independentlyVerifiedFineSourceVoxels": 1792,
+      "positiveHaloByteExact": true,
+      "sourceSpacingUm": 79.56,
+      "orthogonalInPlaneSpacingUm": 79.56,
+      "orthogonalStepUm": 318.24
+    }
+  },
+  "sourceWindowQuantization": {
+    "datasetId": "1773963465",
+    "sourceWindow": [
+      19300,
+      23000
+    ],
+    "rawUint16ValuesChecked": 65536,
+    "reference": "45-digit Decimal linear ratio, round-half-even",
+    "maximumCorrectedByteError": 0,
+    "previousMaximumByteError": 0,
+    "previousDifferingValues": [],
+    "sourceWindowChanged": false,
+    "sourceRawDataChanged": false,
+    "correction": "Exact integer nearest-even uint16 lookup table removes reciprocal half-step error."
+  },
+  "sourceEncodingCompatibility": "Exhaustive full uint16-domain comparison proves new exact encoder is byte-identical for this donor; acquired-source/image checks above remain applicable without rewriting outputs."
+}

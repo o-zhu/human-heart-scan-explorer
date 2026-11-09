@@ -1,0 +1,627 @@
+{
+  "id": "lvot-perivalvular-refinement",
+  "surface": {
+    "format": "HFM1-gzip",
+    "file": "lvot-perivalvular-refinement.hfm.gz",
+    "vertices": 293941,
+    "triangles": 590420,
+    "vertexCount": 293941,
+    "indexCount": 1771260,
+    "positionOffset": 32,
+    "normalOffset": 1763680,
+    "indexOffset": 3527328,
+    "compressedBytes": 6220516,
+    "decodedBytes": 10612368,
+    "sha256": "788a342eb8e942b68cff78fb4d489d2a99c861324a6e8423a457e8c91241326b",
+    "decodedSha256": "7f0baa880d09051419ce9db9ab9e3b3401f1a0372f0ae0e41db36391e9ccf23d",
+    "bounds": {
+      "min": [
+        0.04725898057222366,
+        0.010396975092589855,
+        -0.08081285655498505
+      ],
+      "max": [
+        0.12429111450910568,
+        0.1479206085205078,
+        0.0018903592135757208
+      ]
+    },
+    "positionEncoding": "uint16 normalized in local world bounds",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal",
+    "gpuBytes": 10612332
+  },
+  "lowerFullFineXYZ": [
+    1048,
+    944,
+    1080
+  ],
+  "upperFullFineXYZ": [
+    1212,
+    1120,
+    1372
+  ],
+  "dimensionsXYZ": [
+    164,
+    176,
+    292
+  ],
+  "sourceSigmaFineSamples": 0.5,
+  "sourceSigmaTruncate": 3,
+  "sourceSpacingUm": 79.4,
+  "sourcePaddedRoiSha256": "174de493055f69b658197f720625a16b350a912d1cd0b32040967646b87b1ee4",
+  "sourceRoiSha256": "e3a50af57cf31316286a95acb132b636b19835d9c571bb1e4c42bcfe694fcfb1",
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 72,
+    "decodedBrickReads": 72,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "baselineThreshold": 71.4,
+  "config": {
+    "id": "lvot-perivalvular-refinement",
+    "lowerXYZ": [
+      1048,
+      944,
+      1080
+    ],
+    "upperXYZ": [
+      1212,
+      1120,
+      1372
+    ],
+    "interiorThreshold": 110,
+    "polygonCollarSamples": 12,
+    "boxCollarSamples": 8,
+    "endCollarSamples": 12,
+    "scope": "Production-localized dim jagged envelope surrounding the bright perivalvular cores visible in the LVOT Y262 camera. Adapt the local source isosurface instead of perforating the old low-threshold surface. Myocardial and valve dense cores remain foreground.",
+    "evidence": [
+      "docs/cleanup-v28/locate/lvot-y262-v27.jpg",
+      "docs/cleanup-v28-left/depth-source/lvot-front-depth.jpg"
+    ],
+    "polygons": {
+      "956": [
+        [
+          1143,
+          1114
+        ],
+        [
+          1172,
+          1116
+        ],
+        [
+          1203,
+          1137
+        ],
+        [
+          1203,
+          1178
+        ],
+        [
+          1170,
+          1184
+        ],
+        [
+          1145,
+          1154
+        ]
+      ],
+      "976": [
+        [
+          1131,
+          1118
+        ],
+        [
+          1166,
+          1118
+        ],
+        [
+          1204,
+          1138
+        ],
+        [
+          1204,
+          1232
+        ],
+        [
+          1176,
+          1244
+        ],
+        [
+          1144,
+          1214
+        ],
+        [
+          1119,
+          1170
+        ]
+      ],
+      "996": [
+        [
+          1114,
+          1114
+        ],
+        [
+          1146,
+          1111
+        ],
+        [
+          1182,
+          1128
+        ],
+        [
+          1203,
+          1152
+        ],
+        [
+          1202,
+          1276
+        ],
+        [
+          1162,
+          1291
+        ],
+        [
+          1125,
+          1266
+        ],
+        [
+          1090,
+          1224
+        ],
+        [
+          1092,
+          1179
+        ]
+      ],
+      "1016": [
+        [
+          1095,
+          1096
+        ],
+        [
+          1131,
+          1094
+        ],
+        [
+          1161,
+          1128
+        ],
+        [
+          1174,
+          1170
+        ],
+        [
+          1190,
+          1224
+        ],
+        [
+          1182,
+          1306
+        ],
+        [
+          1150,
+          1330
+        ],
+        [
+          1105,
+          1314
+        ],
+        [
+          1074,
+          1254
+        ],
+        [
+          1074,
+          1194
+        ],
+        [
+          1084,
+          1142
+        ]
+      ],
+      "1036": [
+        [
+          1085,
+          1096
+        ],
+        [
+          1125,
+          1090
+        ],
+        [
+          1153,
+          1122
+        ],
+        [
+          1176,
+          1174
+        ],
+        [
+          1187,
+          1232
+        ],
+        [
+          1180,
+          1315
+        ],
+        [
+          1153,
+          1345
+        ],
+        [
+          1101,
+          1344
+        ],
+        [
+          1070,
+          1295
+        ],
+        [
+          1066,
+          1238
+        ],
+        [
+          1076,
+          1178
+        ]
+      ],
+      "1056": [
+        [
+          1085,
+          1089
+        ],
+        [
+          1122,
+          1089
+        ],
+        [
+          1150,
+          1116
+        ],
+        [
+          1176,
+          1180
+        ],
+        [
+          1185,
+          1255
+        ],
+        [
+          1172,
+          1332
+        ],
+        [
+          1128,
+          1351
+        ],
+        [
+          1080,
+          1347
+        ],
+        [
+          1065,
+          1300
+        ],
+        [
+          1063,
+          1243
+        ],
+        [
+          1071,
+          1182
+        ]
+      ],
+      "1076": [
+        [
+          1082,
+          1094
+        ],
+        [
+          1124,
+          1091
+        ],
+        [
+          1158,
+          1117
+        ],
+        [
+          1180,
+          1179
+        ],
+        [
+          1190,
+          1255
+        ],
+        [
+          1179,
+          1327
+        ],
+        [
+          1143,
+          1351
+        ],
+        [
+          1085,
+          1350
+        ],
+        [
+          1065,
+          1304
+        ],
+        [
+          1064,
+          1242
+        ],
+        [
+          1070,
+          1176
+        ]
+      ],
+      "1096": [
+        [
+          1094,
+          1115
+        ],
+        [
+          1126,
+          1115
+        ],
+        [
+          1159,
+          1137
+        ],
+        [
+          1186,
+          1198
+        ],
+        [
+          1182,
+          1282
+        ],
+        [
+          1155,
+          1326
+        ],
+        [
+          1112,
+          1327
+        ],
+        [
+          1082,
+          1283
+        ],
+        [
+          1083,
+          1227
+        ],
+        [
+          1089,
+          1168
+        ]
+      ],
+      "1108": [
+        [
+          1104,
+          1147
+        ],
+        [
+          1132,
+          1143
+        ],
+        [
+          1159,
+          1174
+        ],
+        [
+          1170,
+          1223
+        ],
+        [
+          1162,
+          1273
+        ],
+        [
+          1139,
+          1303
+        ],
+        [
+          1110,
+          1299
+        ],
+        [
+          1094,
+          1259
+        ],
+        [
+          1093,
+          1206
+        ]
+      ]
+    }
+  },
+  "counts": {
+    "originalForeground": 4886593,
+    "refinedForeground": 4425700,
+    "removedForeground": 460893,
+    "protected135Samples": 2311604,
+    "lostProtected135Samples": 0,
+    "raw190Samples": 344798,
+    "lostRaw190Samples": 0,
+    "maximumLocalThreshold": 110.0,
+    "boxBoundaryNonBaselineSamples": 0
+  },
+  "serial": [
+    {
+      "fineY": 956,
+      "removedForeground": 0,
+      "maximumThreshold": 71.4000015258789
+    },
+    {
+      "fineY": 976,
+      "removedForeground": 996,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 996,
+      "removedForeground": 2532,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1016,
+      "removedForeground": 3382,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1036,
+      "removedForeground": 4265,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1056,
+      "removedForeground": 4391,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1076,
+      "removedForeground": 5401,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1096,
+      "removedForeground": 3327,
+      "maximumThreshold": 110.0
+    },
+    {
+      "fineY": 1108,
+      "removedForeground": 0,
+      "maximumThreshold": 71.4000015258789
+    }
+  ],
+  "lowBandMask": {
+    "file": "lvot-perivalvular-refinement-low-band.bits.gz",
+    "format": "gzip-bitset-x-zyx",
+    "lowerFullFineXYZ": [
+      1048,
+      944,
+      1080
+    ],
+    "upperFullFineXYZ": [
+      1212,
+      1120,
+      1372
+    ],
+    "dimensionsXYZ": [
+      164,
+      176,
+      292
+    ],
+    "storageDimensionsXYZ": [
+      21,
+      176,
+      292
+    ],
+    "compressedBytes": 201716,
+    "decodedBytes": 1079232,
+    "sha256": "44ce552c70de9b99b196d9fc75eb68ef0c99aeb1a7587e8a111ddbe7a04655be",
+    "decodedSha256": "04391a827a9b6362e83110cb92404a56e6c509bd9031dcb8fc5c9afd723e35e5",
+    "maskedVoxels": 460893
+  },
+  "unchangedBoxCollar": true,
+  "originalSourceModified": false,
+  "sourceCalibratedHU": false,
+  "limitations": [
+    "Local display refinement, not a clinical tissue label.",
+    "Original mesh remains available; replacement is reversible.",
+    "Boundary matches original source isovalue but is not welded to the decimated original mesh.",
+    "Fine-grid resampling cannot recover native19.85\u00b5m structure."
+  ],
+  "method": "Raise the source sigma0.5 isovalue only inside serially reviewed polygons, with cubic smoothstep collars on polygon distance, box faces and Y endpoints. Extract the complete local0 isosurface so preserved cores receive a closed local surface instead of holes in the old low-threshold surface.",
+  "surfaceReference": {
+    "format": "SFR1-gzip",
+    "file": "lvot-perivalvular-refinement.sfr.gz",
+    "vertices": 1564663,
+    "triangles": 3081861,
+    "vertexCount": 1564663,
+    "indexCount": 9245583,
+    "positionOffset": 32,
+    "normalOffset": 18775988,
+    "indexOffset": 28163968,
+    "compressedBytes": 30543452,
+    "decodedBytes": 65146300,
+    "sha256": "77297aced8861e0947937efe77718977cb2b9ba5272b8b17dd1cf901bcc8cdc1",
+    "decodedSha256": "e69c6c0b66e64f7863e72a82df790b0d090165749adf2a41af37450644d57dc3",
+    "bounds": {
+      "min": [
+        0.04725898057222366,
+        0.010396975092589855,
+        -0.08081285655498505
+      ],
+      "max": [
+        0.12429111450910568,
+        0.1479206085205078,
+        0.0018903592135757208
+      ]
+    },
+    "positionEncoding": "float32 world XYZ",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal"
+  },
+  "meshReduction": {
+    "inputVertices": 1422444,
+    "inputTriangles": 2847479,
+    "vertices": 293954,
+    "triangles": 590499,
+    "conservativeRadiusLimitMm": 0.1588,
+    "maximumConservativeRadiusMm": 0.1588,
+    "radiusRejections": 1917661,
+    "linkRejections": 129993,
+    "frozenBoundaryVertices": true,
+    "interiorEdgeLinkConstraint": true,
+    "seconds": 7.76947,
+    "peakRssMiB": 772.75,
+    "deliveredSourceToSurface": {
+      "samples": 12000,
+      "meanMm": 0.006289697127805437,
+      "rmsMm": 0.009498739550923837,
+      "medianMm": 0.003919757827228125,
+      "p95Mm": 0.020110694732469767,
+      "p99Mm": 0.034862007234478735,
+      "maximumSampledMm": 0.06567542893903557
+    },
+    "deliveredSurfaceToSource": {
+      "samples": 12000,
+      "meanMm": 0.005760545168283393,
+      "rmsMm": 0.008419185242539479,
+      "medianMm": 0.0037135094988746133,
+      "p95Mm": 0.018385358558810277,
+      "p99Mm": 0.028483232474348197,
+      "maximumSampledMm": 0.0578395066580519
+    },
+    "quantizationMaximumErrorMm": 0.00022666556264222228,
+    "quantizationZeroAreaFacesRemoved": 79,
+    "orphanVerticesCompacted": 13,
+    "cancellingNormalFallbacks": 1,
+    "finiteSampleSeed": 2800714,
+    "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+  },
+  "inheritedDetachedDisplayCleanup": {
+    "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+    "inputComponents": 13630,
+    "removedCompleteComponents": 12578,
+    "removedTriangles": 234382,
+    "removedVertices": 142219,
+    "retainedCropBoundaryComponents": 931,
+    "largestProtected": true,
+    "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+    "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+  }
+}

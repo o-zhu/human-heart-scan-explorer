@@ -1,0 +1,1125 @@
+{
+  "scope": "Authored TEE context versus final reviewed source planes. Geometric distances only; not patient-registered probe placement or contact validation.",
+  "revision": "anatomical-context-v2",
+  "geometrySha256": "7fc4600c344d2109f4ba46fb5781213fef1a6ac19e5365d818870f105e7fc3d4",
+  "planeCatalogSha256": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64",
+  "bodySuperiorToMe4cNormalDegrees": 29.35815623599603,
+  "localShaftToMe4cPlaneNormalDegrees": {
+    "31": 22.35960976002224,
+    "32": 19.908712517058245,
+    "33": 20.191554429607724,
+    "34": 26.35975534689503,
+    "35": 33.98145553708232,
+    "38": 66.00794280590199,
+    "36.6": 56.08171103421122
+  },
+  "rows": [
+    {
+      "id": "me5c",
+      "name": "Midesophageal five-chamber",
+      "aseNumber": 1,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.7046748519246915,
+        "sourceXYZ": [
+          346.03363240387057,
+          342.41573198145056,
+          74.09912968602706
+        ],
+        "insertionCm": 31.43014173913316,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.704674851924695,
+        "insertionCm": 31.43014173913316,
+        "level": "me",
+        "shaftBendDeg": 22.5159929540206,
+        "clearanceHintMm": 5.0434883125511725,
+        "projectionLimitMm": 1.7434883125511726,
+        "presentationReflected": false,
+        "approachAngleDeg": 0.7328748022477375,
+        "nearFieldMm": 78.57030106976808,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          34.29418280046466,
+          -57.72180904973645,
+          -32.12925201154772
+        ],
+        "sourceXYZ": [
+          344.97916498886855,
+          338.1626322781729,
+          82.75626873508673
+        ],
+        "planeResidualMm": 0,
+        "localShaftToInstrumentAngleDeg": 24.357504228554827
+      }
+    },
+    {
+      "id": "me4c",
+      "name": "Midesophageal four-chamber",
+      "aseNumber": 2,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.38162127998777073,
+        "sourceXYZ": [
+          386.4279975562922,
+          285.56125661845374,
+          106.94544597091019
+        ],
+        "insertionCm": 33.88765916805259,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.3816212799877734,
+        "insertionCm": 33.88765916805259,
+        "level": "me",
+        "shaftBendDeg": 22.352837388951954,
+        "clearanceHintMm": 5.076345576997308,
+        "projectionLimitMm": 1.7763455769973078,
+        "presentationReflected": false,
+        "approachAngleDeg": 1.0894508264177913,
+        "nearFieldMm": 76.34603919127119,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          46.35957221708662,
+          -47.25563257819847,
+          -14.98784179858434
+        ],
+        "sourceXYZ": [
+          382.96842637621734,
+          284.1909376529734,
+          115.71022487972772
+        ],
+        "planeResidualMm": 7.549516567451064e-15,
+        "localShaftToInstrumentAngleDeg": 24.69353656788576
+      }
+    },
+    {
+      "id": "mecommissural",
+      "name": "Midesophageal mitral commissural",
+      "aseNumber": 3,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 0.12537224011257742,
+        "sourceXYZ": [
+          373.20356774432946,
+          304.4912285476077,
+          92.99410394175456
+        ],
+        "insertionCm": 33.02938706487857,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.3446437982293631,
+        "insertionCm": 38.01826239403961,
+        "level": "le",
+        "shaftBendDeg": 32.47333385022848,
+        "clearanceHintMm": 5.055671755181138,
+        "projectionLimitMm": 1.7556717551811385,
+        "presentationReflected": true,
+        "approachAngleDeg": 35.028758697520615,
+        "nearFieldMm": 46.73278183632103,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          54.30159729443197,
+          -12.95782405219655,
+          -1.307401274685457
+        ],
+        "sourceXYZ": [
+          407.97480256433244,
+          241.11650275404742,
+          223.70080588099324
+        ],
+        "planeResidualMm": 0,
+        "localShaftToInstrumentAngleDeg": 32.39345114263521
+      }
+    },
+    {
+      "id": "me2c",
+      "name": "Midesophageal two-chamber",
+      "aseNumber": 4,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.06471260613355101,
+        "sourceXYZ": [
+          404.7159381057654,
+          256.1673980452941,
+          141.6443451083835
+        ],
+        "insertionCm": 35.44993257655915,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.06471260613355101,
+        "insertionCm": 35.44993257655915,
+        "level": "me",
+        "shaftBendDeg": 29.795247144679152,
+        "clearanceHintMm": 5.079413986360358,
+        "projectionLimitMm": 1.7794139863603577,
+        "presentationReflected": true,
+        "approachAngleDeg": 17.291493094219295,
+        "nearFieldMm": 67.61297416491422,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          51.429033074999,
+          -36.657974856637146,
+          -6.318584995755839
+        ],
+        "sourceXYZ": [
+          398.93020489609256,
+          256.8947890294579,
+          149.078164809077
+        ],
+        "planeResidualMm": 1.3322676295501878e-15,
+        "localShaftToInstrumentAngleDeg": 33.58047251905128
+      }
+    },
+    {
+      "id": "melax",
+      "name": "Midesophageal long-axis",
+      "aseNumber": 5,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.6328580197322315,
+        "sourceXYZ": [
+          386.4279975562922,
+          285.56125661845374,
+          106.94544597091019
+        ],
+        "insertionCm": 33.88765916805259,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.6328580197322315,
+        "insertionCm": 33.88765916805259,
+        "level": "me",
+        "shaftBendDeg": 21.468125908911173,
+        "clearanceHintMm": 5.076345576997308,
+        "projectionLimitMm": 1.7763455769973078,
+        "presentationReflected": false,
+        "approachAngleDeg": 9.5355095535723,
+        "nearFieldMm": 71.68501629397092,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          45.63495803771746,
+          -47.59252831808969,
+          -15.721376947687315
+        ],
+        "sourceXYZ": [
+          380.68689558475273,
+          286.5005571400734,
+          114.64947003120375
+        ],
+        "planeResidualMm": 8.881784197001252e-16,
+        "localShaftToInstrumentAngleDeg": 21.468125908911173
+      }
+    },
+    {
+      "id": "meavlax",
+      "name": "Midesophageal aortic valve long-axis",
+      "aseNumber": 6,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.4230050339703497,
+        "sourceXYZ": [
+          400.16414768110883,
+          263.7510576886299,
+          130.58502735781977
+        ],
+        "insertionCm": 35,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.42300503397034994,
+        "insertionCm": 35,
+        "level": "me",
+        "shaftBendDeg": 12.969605257456283,
+        "clearanceHintMm": 5.080000000000001,
+        "projectionLimitMm": 1.7800000000000011,
+        "presentationReflected": false,
+        "approachAngleDeg": 9.333672503705909,
+        "nearFieldMm": 53.31910497452749,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          49.41293804473688,
+          -40.72084519403902,
+          -8.816136493545187
+        ],
+        "sourceXYZ": [
+          392.5822986295242,
+          264.75861616355536,
+          136.2857519079376
+        ],
+        "planeResidualMm": 1.5543122344752192e-15,
+        "localShaftToInstrumentAngleDeg": 12.969605257456283
+      }
+    },
+    {
+      "id": "meaaolax",
+      "name": "Midesophageal ascending aorta long-axis",
+      "aseNumber": 7,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.19502534003750682,
+        "sourceXYZ": [
+          386.4279975562922,
+          285.56125661845374,
+          106.94544597091019
+        ],
+        "insertionCm": 33.88765916805259,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.1950253400375077,
+        "insertionCm": 33.88765916805259,
+        "level": "me",
+        "shaftBendDeg": 29.354644505824634,
+        "clearanceHintMm": 5.076345576997308,
+        "projectionLimitMm": 1.7763455769973078,
+        "presentationReflected": true,
+        "approachAngleDeg": 12.66339878943614,
+        "nearFieldMm": 55.86509166164922,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          44.58300364094151,
+          -49.319634552414406,
+          -14.920496372967108
+        ],
+        "sourceXYZ": [
+          377.3746966024607,
+          283.9788928619871,
+          109.21147810952644
+        ],
+        "planeResidualMm": 1.7763568394002505e-15,
+        "localShaftToInstrumentAngleDeg": 29.354644505824634
+      }
+    },
+    {
+      "id": "meaaosax",
+      "name": "Midesophageal ascending aorta short-axis",
+      "aseNumber": 8,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.46805032848129824,
+        "sourceXYZ": [
+          380.0964386355133,
+          294.75941145217365,
+          99.39414339644452
+        ],
+        "insertionCm": 33.45934200870602,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.46805032848129824,
+        "insertionCm": 33.45934200870602,
+        "level": "me",
+        "shaftBendDeg": 28.10136373821733,
+        "clearanceHintMm": 5.0728555794097465,
+        "projectionLimitMm": 1.7728555794097467,
+        "presentationReflected": false,
+        "approachAngleDeg": 2.4540589579197656,
+        "nearFieldMm": 57.05693160516489,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          42.520140489288636,
+          -51.806631290886834,
+          -17.842485914345893
+        ],
+        "sourceXYZ": [
+          370.8795355456191,
+          293.17911182098834,
+          101.38088384481475
+        ],
+        "planeResidualMm": 1.9984014443252818e-15,
+        "localShaftToInstrumentAngleDeg": 28.10136373821733
+      }
+    },
+    {
+      "id": "merpv",
+      "name": "Midesophageal right pulmonary vein",
+      "aseNumber": 9,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 14.394874970420627,
+        "sourceXYZ": [
+          341.7299306953906,
+          348.7277241287139,
+          71.67230738032987
+        ],
+        "insertionCm": 31.175560901617963,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 14.394874970420627,
+        "insertionCm": 31.175560901617963,
+        "level": "me",
+        "shaftBendDeg": 59.758777758461726,
+        "clearanceHintMm": 5.038926778277713,
+        "projectionLimitMm": 1.7389267782777136,
+        "presentationReflected": false,
+        "approachAngleDeg": 28.633121996804658,
+        "nearFieldMm": 43.164311668096595,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          19.221443460053045,
+          -57.118707205714884,
+          -34.047127195499336
+        ],
+        "sourceXYZ": [
+          297.5209176953811,
+          344.20128210169815,
+          84.65520401223273
+        ],
+        "planeResidualMm": 8.881784197001252e-16,
+        "localShaftToInstrumentAngleDeg": 59.758777758461726
+      }
+    },
+    {
+      "id": "meavsax",
+      "name": "Midesophageal aortic valve short-axis",
+      "aseNumber": 10,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 0.05096080205145723,
+        "sourceXYZ": [
+          404.7159381057654,
+          256.1673980452941,
+          141.6443451083835
+        ],
+        "insertionCm": 35.44993257655915,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.0509608020514537,
+        "insertionCm": 35.44993257655915,
+        "level": "me",
+        "shaftBendDeg": 14.851590203209769,
+        "clearanceHintMm": 5.079413986360358,
+        "projectionLimitMm": 1.7794139863603577,
+        "presentationReflected": false,
+        "approachAngleDeg": 9.84925217493023,
+        "nearFieldMm": 55.62497839542022,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          50.69111948689532,
+          -37.48130902650357,
+          -6.015233411102887
+        ],
+        "sourceXYZ": [
+          396.6067993919878,
+          255.9396517981829,
+          146.48580281327594
+        ],
+        "planeResidualMm": 2.7755575615628914e-16,
+        "localShaftToInstrumentAngleDeg": 14.851590203209769
+      }
+    },
+    {
+      "id": "mervinout",
+      "name": "Midesophageal RV inflow-outflow",
+      "aseNumber": 11,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 6.58607928504866,
+        "sourceXYZ": [
+          369.5791628367312,
+          309.54282139330235,
+          90.09946010486857
+        ],
+        "insertionCm": 32.81157304812989,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 6.586079285048658,
+        "insertionCm": 32.81157304812989,
+        "level": "me",
+        "shaftBendDeg": 30.425075689218307,
+        "clearanceHintMm": 5.065498436749945,
+        "projectionLimitMm": 1.7654984367499456,
+        "presentationReflected": false,
+        "approachAngleDeg": 8.978960538107733,
+        "nearFieldMm": 76.14866387694309,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          37.103072619079484,
+          -57.094875268409794,
+          -18.09715086489321
+        ],
+        "sourceXYZ": [
+          353.82327650843666,
+          293.9809536048275,
+          84.73024159820594
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 30.425075689218307
+      }
+    },
+    {
+      "id": "memodbicaval",
+      "name": "Midesophageal modified bicaval tricuspid valve",
+      "aseNumber": 12,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 11.021393400376848,
+        "sourceXYZ": [
+          416.6782113830012,
+          243.20883173311148,
+          347.6163818562569
+        ],
+        "insertionCm": 42.139383067239,
+        "level": "le"
+      },
+      "productionPlacement": {
+        "distanceMm": 11.021393400376848,
+        "insertionCm": 42.139383067239,
+        "level": "le",
+        "shaftBendDeg": 54.81676087837125,
+        "clearanceHintMm": 4.745584745991742,
+        "projectionLimitMm": 1.4455847459917424,
+        "presentationReflected": true,
+        "approachAngleDeg": 102.90371420457785,
+        "nearFieldMm": -14.151070187349918,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          55.36552808658243,
+          26.546246597660573,
+          9.322239052741876
+        ],
+        "sourceXYZ": [
+          411.3247106000706,
+          207.64786192461625,
+          348.0838998666895
+        ],
+        "planeResidualMm": 1.7763568394002505e-15,
+        "localShaftToInstrumentAngleDeg": 54.81676087837125
+      }
+    },
+    {
+      "id": "bicaval",
+      "name": "Midesophageal bicaval",
+      "aseNumber": 13,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 0.07811979426888271,
+        "sourceXYZ": [
+          341.7299306953906,
+          348.7277241287139,
+          71.67230738032987
+        ],
+        "insertionCm": 31.175560901617963,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 0.07811979426888271,
+        "insertionCm": 31.175560901617963,
+        "level": "me",
+        "shaftBendDeg": 72.2474239087192,
+        "clearanceHintMm": 5.038926778277713,
+        "projectionLimitMm": 1.7389267782777136,
+        "presentationReflected": true,
+        "approachAngleDeg": 24.915076477300882,
+        "nearFieldMm": 53.5747900194627,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          32.243932328997865,
+          -59.302259624186824,
+          -33.43379945340413
+        ],
+        "sourceXYZ": [
+          338.52371640112676,
+          342.2701494124815,
+          77.78003896666615
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 70.95724279109717
+      }
+    },
+    {
+      "id": "mepv",
+      "name": "Midesophageal right and left pulmonary veins",
+      "aseNumber": 14,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 14.68802237610253,
+        "sourceXYZ": [
+          341.7299306953906,
+          348.7277241287139,
+          71.67230738032987
+        ],
+        "insertionCm": 31.175560901617963,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 14.68802237610253,
+        "insertionCm": 31.175560901617963,
+        "level": "me",
+        "shaftBendDeg": 63.65058836150398,
+        "clearanceHintMm": 5.038926778277713,
+        "projectionLimitMm": 1.7389267782777136,
+        "presentationReflected": false,
+        "approachAngleDeg": 20.36513629351643,
+        "nearFieldMm": 46.01799221855635,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          18.948650531668523,
+          -57.099702445450134,
+          -33.84146406178226
+        ],
+        "sourceXYZ": [
+          296.66199789568174,
+          343.5537281542263,
+          84.71504267805372
+        ],
+        "planeResidualMm": 8.881784197001252e-16,
+        "localShaftToInstrumentAngleDeg": 63.65058836150398
+      }
+    },
+    {
+      "id": "melaa",
+      "name": "Midesophageal left atrial appendage",
+      "aseNumber": 15,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 2.211647195434476,
+        "sourceXYZ": [
+          341.7299306953906,
+          348.7277241287139,
+          71.67230738032987
+        ],
+        "insertionCm": 31.175560901617963,
+        "level": "me"
+      },
+      "productionPlacement": {
+        "distanceMm": 2.2116471954344763,
+        "insertionCm": 31.175560901617963,
+        "level": "me",
+        "shaftBendDeg": 70.82098029372408,
+        "clearanceHintMm": 5.038926778277713,
+        "projectionLimitMm": 1.7389267782777136,
+        "presentationReflected": false,
+        "approachAngleDeg": 23.006101433250464,
+        "nearFieldMm": 34.81948545829769,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          30.822476761222738,
+          -58.48068545829769,
+          -34.924605686864844
+        ],
+        "sourceXYZ": [
+          334.04810063357286,
+          346.96412369919665,
+          80.36685938823143
+        ],
+        "planeResidualMm": 2.6645352591003757e-15,
+        "localShaftToInstrumentAngleDeg": 70.82098029372408
+      }
+    },
+    {
+      "id": "tgbasalsax",
+      "name": "Transgastric basal short-axis",
+      "aseNumber": 16,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 14.459244581684077,
+        "sourceXYZ": [
+          416.0793828396245,
+          241.39061459762556,
+          353.04514763063514
+        ],
+        "insertionCm": 42.32220596171276,
+        "level": "junction"
+      },
+      "gastricInterior": {
+        "residualMm": 31.267509922408877,
+        "sourceXYZ": [
+          422.32972313539085,
+          221.13223807392757,
+          416.8940596168381
+        ],
+        "insertionCm": 44.48086866721718,
+        "pathIndex": 88,
+        "radialClearanceHintMm": 4.5
+      },
+      "productionPlacement": {
+        "distanceMm": 48.962425225959564,
+        "insertionCm": 47.09207012112631,
+        "level": "tg",
+        "shaftBendDeg": 51.83774807455697,
+        "clearanceHintMm": 22.640044275960925,
+        "projectionLimitMm": 19.340044275960924,
+        "presentationReflected": false,
+        "approachAngleDeg": 25.934382869071396,
+        "nearFieldMm": 42.79240846157484,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          67.19229813234126,
+          15.923831960612965,
+          2.812305821550389
+        ],
+        "sourceXYZ": [
+          448.56265155019287,
+          228.14513280368266,
+          314.63800995155214
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 33.167496833933704
+      }
+    },
+    {
+      "id": "tgpapillary",
+      "name": "Transgastric midpapillary short-axis",
+      "aseNumber": 17,
+      "status": "retained",
+      "centerline": {
+        "residualMm": 0.0538955517946445,
+        "sourceXYZ": [
+          430.1446827423151,
+          255.3179858621531,
+          455.09258873568626
+        ],
+        "insertionCm": 46.55497350296872,
+        "level": "tg"
+      },
+      "gastricInterior": {
+        "residualMm": 0.018263953305802993,
+        "sourceXYZ": [
+          415.78672303042754,
+          254.95141054675747,
+          448.66047578897735
+        ],
+        "insertionCm": 45.99689689453061,
+        "pathIndex": 100,
+        "radialClearanceHintMm": 9.443645471635367
+      },
+      "productionPlacement": {
+        "distanceMm": 0.2959097587114381,
+        "insertionCm": 47.75399780484583,
+        "level": "tg",
+        "shaftBendDeg": 39.09695247729453,
+        "clearanceHintMm": 15.481194140624998,
+        "projectionLimitMm": 12.181194140625,
+        "presentationReflected": false,
+        "approachAngleDeg": 60.317747793687026,
+        "nearFieldMm": 31.924009173932184,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          56.503231032358585,
+          61.446128176667486,
+          -27.555169312027857
+        ],
+        "sourceXYZ": [
+          414.9068987164943,
+          323.7606086650751,
+          457.97017687867594
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 50.81740150257312
+      }
+    },
+    {
+      "id": "tgapicalsax",
+      "name": "Transgastric apical short-axis",
+      "aseNumber": 18,
+      "status": "retained",
+      "centerline": {
+        "residualMm": 1.0655497982778468,
+        "sourceXYZ": [
+          423.5785251283179,
+          280.2623070876698,
+          541.7755975155653
+        ],
+        "insertionCm": 49.83302239268718,
+        "level": "deep-tg"
+      },
+      "gastricInterior": {
+        "residualMm": 0.05335863778356387,
+        "sourceXYZ": [
+          391.89195654108215,
+          234.18092161762422,
+          517.049322469371
+        ],
+        "insertionCm": 47.987026305495256,
+        "pathIndex": 108,
+        "radialClearanceHintMm": 5.215624999999998
+      },
+      "productionPlacement": {
+        "distanceMm": 0.0753616409162916,
+        "insertionCm": 48.23575136399553,
+        "level": "tg",
+        "shaftBendDeg": 25.42192000215817,
+        "clearanceHintMm": 5.2189613281249985,
+        "projectionLimitMm": 1.9189613281249986,
+        "presentationReflected": false,
+        "approachAngleDeg": 58.64277261637492,
+        "nearFieldMm": 27.28711246872814,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          36.865749963522966,
+          77.38859522135944,
+          -19.739173289799197
+        ],
+        "sourceXYZ": [
+          353.076038927969,
+          299.151049401131,
+          508.16686152820984
+        ],
+        "planeResidualMm": 2.886579864025407e-15,
+        "localShaftToInstrumentAngleDeg": 25.42192000215817
+      }
+    },
+    {
+      "id": "tgrvbasal",
+      "name": "Transgastric RV basal",
+      "aseNumber": 19,
+      "status": "limited",
+      "centerline": {
+        "residualMm": 0.3581263386286322,
+        "sourceXYZ": [
+          414.6114693593727,
+          231.0247866429236,
+          381.8157103793991
+        ],
+        "insertionCm": 43.29690934475191,
+        "level": "junction"
+      },
+      "gastricInterior": {
+        "residualMm": 4.940480295171257,
+        "sourceXYZ": [
+          431.7091736736545,
+          207.30990191188857,
+          433.47670282273464
+        ],
+        "insertionCm": 45.126796343728216,
+        "pathIndex": 95,
+        "radialClearanceHintMm": 4.5
+      },
+      "productionPlacement": {
+        "distanceMm": 18.426700473999773,
+        "insertionCm": 46.55497350296872,
+        "level": "tg",
+        "shaftBendDeg": 51.65070452427398,
+        "clearanceHintMm": 18.727197648464916,
+        "projectionLimitMm": 15.427197648464915,
+        "presentationReflected": false,
+        "approachAngleDeg": 43.32137249242428,
+        "nearFieldMm": 56.55499205693676,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          67.22671658396264,
+          46.43585784511704,
+          4.916042313918403
+        ],
+        "sourceXYZ": [
+          448.67102198980683,
+          221.5212773491234,
+          410.70862041913426
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 64.85783942722772
+      }
+    },
+    {
+      "id": "tgrvinout",
+      "name": "Transgastric RV inflow-outflow",
+      "aseNumber": 20,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 48.65003422290397,
+        "sourceXYZ": [
+          416.0793828396245,
+          241.39061459762556,
+          353.04514763063514
+        ],
+        "insertionCm": 42.32220596171276,
+        "level": "junction"
+      },
+      "gastricInterior": {
+        "residualMm": 57.25871064514869,
+        "sourceXYZ": [
+          421.7635504046913,
+          221.03741846359915,
+          416.9794670151106
+        ],
+        "insertionCm": 44.48086866721718,
+        "pathIndex": 88,
+        "radialClearanceHintMm": 4.5
+      },
+      "productionPlacement": {
+        "distanceMm": 57.25871064514869,
+        "insertionCm": 44.48086866721718,
+        "level": "tg",
+        "shaftBendDeg": 51.69762708850216,
+        "clearanceHintMm": 4.5,
+        "projectionLimitMm": 1.2000000000000002,
+        "presentationReflected": false,
+        "approachAngleDeg": 134.26082940185208,
+        "nearFieldMm": -43.8490527730811,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          30.084770664628845,
+          13.811230494372953,
+          40.72832613114115
+        ],
+        "sourceXYZ": [
+          331.7253484402671,
+          108.76219732008454,
+          307.98624211074605
+        ],
+        "planeResidualMm": 1.0658141036401503e-14,
+        "localShaftToInstrumentAngleDeg": 51.69762708850216
+      }
+    },
+    {
+      "id": "deeptg5c",
+      "name": "Deep transgastric five-chamber",
+      "aseNumber": 21,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 24.342240558138176,
+        "sourceXYZ": [
+          423.83084420721013,
+          285.76999225281526,
+          517.4804997884651
+        ],
+        "insertionCm": 49.03906499307201,
+        "level": "deep-tg"
+      },
+      "gastricInterior": {
+        "residualMm": 0.19265232935647703,
+        "sourceXYZ": [
+          362.59161520569194,
+          334.2608847523928,
+          524.3236238726348
+        ],
+        "insertionCm": 48.766392810807346,
+        "pathIndex": 111,
+        "radialClearanceHintMm": 5.131471484374998
+      },
+      "productionPlacement": {
+        "distanceMm": 11.660125132139747,
+        "insertionCm": 50.395302190484735,
+        "level": "deep-tg",
+        "shaftBendDeg": 68.46614251715135,
+        "clearanceHintMm": 5.101854101562498,
+        "projectionLimitMm": 1.8018541015624985,
+        "presentationReflected": true,
+        "approachAngleDeg": 50.57706353353529,
+        "nearFieldMm": 48.39101208234626,
+        "approachResolved": false,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          32.94256704929122,
+          100.79054409460326,
+          -23.69604785792641
+        ],
+        "sourceXYZ": [
+          340.7234478881966,
+          311.60972247457937,
+          581.8505796429574
+        ],
+        "planeResidualMm": 1.7763568394002505e-15,
+        "localShaftToInstrumentAngleDeg": 78.64314649524091
+      }
+    },
+    {
+      "id": "tg2c",
+      "name": "Transgastric two-chamber",
+      "aseNumber": 22,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 30.525410964839857,
+        "sourceXYZ": [
+          416.0793828396245,
+          241.39061459762556,
+          353.04514763063514
+        ],
+        "insertionCm": 42.32220596171276,
+        "level": "junction"
+      },
+      "gastricInterior": {
+        "residualMm": 36.798458653668625,
+        "sourceXYZ": [
+          421.49681637201553,
+          221.21103271646342,
+          417.07574323412086
+        ],
+        "insertionCm": 44.48086866721718,
+        "pathIndex": 88,
+        "radialClearanceHintMm": 4.5
+      },
+      "productionPlacement": {
+        "distanceMm": 52.14293161530293,
+        "insertionCm": 46.83229666455405,
+        "level": "tg",
+        "shaftBendDeg": 85.39328107146368,
+        "clearanceHintMm": 20.79572032756508,
+        "projectionLimitMm": 17.495720327565078,
+        "presentationReflected": false,
+        "approachAngleDeg": 7.338029535769408,
+        "nearFieldMm": 37.33006943830059,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": false,
+        "pointMm": [
+          23.416205814525348,
+          38.70555276173359,
+          19.100134191273966
+        ],
+        "sourceXYZ": [
+          310.7286077283544,
+          176.86103844057317,
+          386.36886889714606
+        ],
+        "planeResidualMm": 1.0658141036401503e-14,
+        "localShaftToInstrumentAngleDeg": 44.28660016688743
+      }
+    },
+    {
+      "id": "tgrvin",
+      "name": "Transgastric RV inflow",
+      "aseNumber": 23,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 3.057563236859572,
+        "sourceXYZ": [
+          429.20667748700725,
+          285.3522876595903,
+          484.9405536572829
+        ],
+        "insertionCm": 47.987026305495256,
+        "level": "tg"
+      },
+      "gastricInterior": {
+        "residualMm": 0.055889022789237686,
+        "sourceXYZ": [
+          485.4991242727174,
+          299.67061599474835,
+          445.57058073587586
+        ],
+        "insertionCm": 47.537558021534764,
+        "pathIndex": 106,
+        "radialClearanceHintMm": 5.037903124999999
+      },
+      "productionPlacement": {
+        "distanceMm": 0.644947361437719,
+        "insertionCm": 47.537558021534764,
+        "level": "tg",
+        "shaftBendDeg": 49.44803344056633,
+        "clearanceHintMm": 15.113709375,
+        "projectionLimitMm": 11.813709374999998,
+        "presentationReflected": false,
+        "approachAngleDeg": 38.364589255239125,
+        "nearFieldMm": 60.69790288101889,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          49.205302386447165,
+          66.65007395406772,
+          -14.345601818575341
+        ],
+        "sourceXYZ": [
+          391.9285339623651,
+          282.1687714690659,
+          474.3553965808178
+        ],
+        "planeResidualMm": 3.552713678800501e-15,
+        "localShaftToInstrumentAngleDeg": 62.286881267166834
+      }
+    },
+    {
+      "id": "tglax",
+      "name": "Transgastric long-axis",
+      "aseNumber": 24,
+      "status": "refined",
+      "centerline": {
+        "residualMm": 3.795141332608323,
+        "sourceXYZ": [
+          426.37841703841025,
+          286.88471451983656,
+          500.6532561238431
+        ],
+        "insertionCm": 48.49699749105379,
+        "level": "tg"
+      },
+      "gastricInterior": {
+        "residualMm": 0.013140732825242196,
+        "sourceXYZ": [
+          395.6651839998202,
+          292.74265513877924,
+          493.930448945708
+        ],
+        "insertionCm": 47.987026305495256,
+        "pathIndex": 108,
+        "radialClearanceHintMm": 15.646875
+      },
+      "productionPlacement": {
+        "distanceMm": 0.04613977965670912,
+        "insertionCm": 46.27196205358724,
+        "level": "tg",
+        "shaftBendDeg": 57.55381366874362,
+        "clearanceHintMm": 4.499999999999999,
+        "projectionLimitMm": 1.1999999999999993,
+        "presentationReflected": true,
+        "approachAngleDeg": 25.524279846883466,
+        "nearFieldMm": 57.90476842973088,
+        "approachResolved": true,
+        "registered": false,
+        "resolved": true,
+        "pointMm": [
+          51.85494569225099,
+          54.01925439568158,
+          -17.906251553331785
+        ],
+        "sourceXYZ": [
+          400.27123958517313,
+          293.379885243488,
+          434.5858135884181
+        ],
+        "planeResidualMm": 1.7763568394002505e-15,
+        "localShaftToInstrumentAngleDeg": 57.55381366874362
+      }
+    }
+  ]
+}

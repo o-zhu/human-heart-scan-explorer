@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-05T23:45:31.348Z",
+  "passed": 7,
+  "failed": 0,
+  "scope": "Actual VolumeRenderer render path with a recording WebGL interface. Pixel correctness is checked separately by native EGL.",
+  "tests": [
+    {
+      "name": "Orbit, pan and zoom retain the idle drawing-buffer size and the full scene ray grid",
+      "passed": true
+    },
+    {
+      "name": "Fine cap cleanup provenance is independent of ordinary volume cleanup in both passes",
+      "passed": true
+    },
+    {
+      "name": "Motion changes neither threshold, cap contrast, lighting palette nor physical volume sample step",
+      "passed": true
+    },
+    {
+      "name": "Motion target failure falls back to a full-resolution single pass",
+      "passed": true
+    },
+    {
+      "name": "Snapshot forces the full-resolution single-pass render even during interaction",
+      "passed": true
+    },
+    {
+      "name": "Whole-organ and translucent views retain cheap background rendering without inventing a cap",
+      "passed": true
+    },
+    {
+      "name": "Motion color target is reused rather than accumulating textures on every frame",
+      "passed": true
+    }
+  ]
+}

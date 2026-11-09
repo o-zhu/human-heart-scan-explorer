@@ -1,0 +1,1256 @@
+{
+  "schemaVersion": 1,
+  "dataset": "LADAF-2021-17, complete heart, s4",
+  "voxelSpacingMm": 0.3176,
+  "dimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "worldExtentXYZ": [
+    0.896030246,
+    1.0,
+    0.896030246
+  ],
+  "worldMapping": "[(x-237)/529, (z-264.5)/529, (237-y)/529] for source voxel XYZ",
+  "normalConvention": "normal = cross(right, up); camera may approach center along +normal. Flip the retained clipping half explicitly if needed.",
+  "displayOrientation": "Apical TTE: apex at top. Midesophageal TEE: atrial side at top. ME4C horizontal presentation and short-axis/subcostal display rotations are recorded explicitly per frame. Raw calibrated plane bases and prepared textures remain unchanged; the viewer applies matching basis and scalar-index permutations. These presentations are not patient/probe registration.",
+  "validation": "Manually inspected grayscale source-volume multiplanar reconstructions; no verified patient orientation, exact chamber/valve-boundary segmentation, acoustic model or clinical validation. The later regional anatomy overlay does not validate these preset planes.",
+  "limitations": [
+    "Fixed-specimen LV lumen is slit-like/collapsed.",
+    "Landmarks are approximate regions, not clinically measured coordinates.",
+    "Named windows are adjustable educational starting planes.",
+    "Probe angle labels do not constitute scanner-to-patient or scanner-to-probe registration.",
+    "Aortic-root identity is approximately supported by the source study and regional anatomy overlay; existing AV/outflow and bicaval preset planes still require manual refinement."
+  ],
+  "landmarks": {
+    "lvApicalMyocardium": {
+      "voxelXYZ": [
+        191.0,
+        252.0,
+        478.0
+      ],
+      "confidence": "approximate regional landmark",
+      "note": "Apical myocardial region chosen visually; not a segmented epicardial/endocardial apex.",
+      "sourceNormalized": [
+        0.402953586,
+        0.53164557,
+        0.903591682
+      ]
+    },
+    "lvBasalValveRegion": {
+      "voxelXYZ": [
+        282.0,
+        280.0,
+        281.0
+      ],
+      "confidence": "approximate regional landmark",
+      "note": "Basal LV/chordal region; annulus is not segmented.",
+      "sourceNormalized": [
+        0.594936709,
+        0.5907173,
+        0.531190926
+      ]
+    },
+    "rvMidCavity": {
+      "voxelXYZ": [
+        180.0,
+        190.0,
+        350.0
+      ],
+      "confidence": "approximate regional landmark",
+      "note": "Thin-wall crescent adjacent to the LV.",
+      "sourceNormalized": [
+        0.379746835,
+        0.400843882,
+        0.661625709
+      ]
+    },
+    "lvMidAxisAtSourceZ350": {
+      "voxelXYZ": [
+        250.126903553,
+        270.192893401,
+        350.0
+      ],
+      "confidence": "derived axis point",
+      "sourceNormalized": [
+        0.527693889,
+        0.570027201,
+        0.661625709
+      ]
+    },
+    "rightAtrialRegion": {
+      "voxelXYZ": [
+        230.0,
+        175.0,
+        210.0
+      ],
+      "confidence": "low; provisional",
+      "sourceNormalized": [
+        0.485232068,
+        0.369198312,
+        0.396975425
+      ]
+    },
+    "leftAtrialRegion": {
+      "voxelXYZ": [
+        315.0,
+        285.0,
+        215.0
+      ],
+      "confidence": "low; provisional",
+      "sourceNormalized": [
+        0.664556962,
+        0.601265823,
+        0.406427221
+      ]
+    },
+    "aorticRoot": {
+      "voxelXYZ": null,
+      "confidence": "approximate identity; preset geometry unvalidated",
+      "note": "An approximate aortic-root region is now identified by matching the source study and source-volume continuity, with its reference point recorded separately in assets/anatomy/manifest.json. This original echo-calibration coordinate remains unset; preset geometry and valve-plane alignment have not been validated."
+    }
+  },
+  "lvAxisVoxelXYZ": [
+    0.415902504,
+    0.127970001,
+    -0.900360365
+  ],
+  "interventricularDirectionVoxelXYZ": [
+    -0.592746856,
+    -0.712704291,
+    -0.375104995
+  ],
+  "frames": {
+    "a4c": {
+      "id": "a4c",
+      "confidence": "approximate, visually checked",
+      "family": "ventricular long axis",
+      "note": "LV apex/base axis and interventricular direction were checked in the raw volume. Both ventricular cavities are visible; exact valve/atrial boundaries are unvalidated; the later anatomy overlay provides approximate tissue territories only. Educational four-chamber-like starting plane.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.689692882,
+          -0.689692882,
+          0.220561683
+        ],
+        "right": [
+          0.592746856,
+          0.712704291,
+          0.375104995
+        ],
+        "up": [
+          -0.415902504,
+          -0.127970001,
+          0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.685610409,
+          -0.685610409,
+          0.244697232
+        ],
+        "rightPerWorldUnit": [
+          0.6615255,
+          0.795402047,
+          0.375104995
+        ],
+        "upPerWorldUnit": [
+          -0.464161233,
+          -0.142818841,
+          0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.689692882,
+          0.220561683,
+          0.689692882
+        ],
+        "right": [
+          0.592746856,
+          0.375104995,
+          -0.712704291
+        ],
+        "up": [
+          -0.415902504,
+          0.900360365,
+          0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    },
+    "a2c": {
+      "id": "a2c",
+      "confidence": "approximate, visually checked",
+      "family": "ventricular long axis",
+      "note": "90-degree rotation about the estimated LV long axis. Visually gives an LV/atrial long section with most of the RV excluded; exact mitral/atrial landmarks are not segmented.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.592746856,
+          0.712704291,
+          0.375104995
+        ],
+        "right": [
+          -0.689692882,
+          0.689692882,
+          -0.220561683
+        ],
+        "up": [
+          -0.415902504,
+          -0.127970001,
+          0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.582765869,
+          0.700703396,
+          0.411580724
+        ],
+        "rightPerWorldUnit": [
+          -0.769720537,
+          0.769720537,
+          -0.220561683
+        ],
+        "upPerWorldUnit": [
+          -0.464161233,
+          -0.142818841,
+          0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.592746856,
+          0.375104995,
+          -0.712704291
+        ],
+        "right": [
+          -0.689692882,
+          -0.220561683,
+          -0.689692882
+        ],
+        "up": [
+          -0.415902504,
+          0.900360365,
+          0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    },
+    "a3c": {
+      "id": "a3c",
+      "confidence": "provisional; adjust to anatomy",
+      "family": "ventricular long axis",
+      "note": "120-degree rotation about the estimated LV axis. Useful LV long-axis starting plane; LV outflow/aortic-valve inclusion is not verified. An approximate aortic-root region is now identified in the separate anatomy overlay; this does not validate the inclusion or alignment of the valve/outflow in this preset.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.168487394,
+          0.962066463,
+          0.214569613
+        ],
+        "right": [
+          -0.893664985,
+          0.240939411,
+          -0.378564518
+        ],
+        "up": [
+          -0.415902504,
+          -0.127970001,
+          0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.167543078,
+          0.956674395,
+          0.238124798
+        ],
+        "rightPerWorldUnit": [
+          -0.997360289,
+          0.268896516,
+          -0.378564518
+        ],
+        "upPerWorldUnit": [
+          -0.464161233,
+          -0.142818841,
+          0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.168487394,
+          0.214569613,
+          -0.962066463
+        ],
+        "right": [
+          -0.893664985,
+          -0.378564518,
+          -0.240939411
+        ],
+        "up": [
+          -0.415902504,
+          0.900360365,
+          0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    },
+    "plax": {
+      "id": "plax",
+      "confidence": "provisional; adjust to anatomy",
+      "family": "ventricular long axis",
+      "note": "Same geometric plane as the provisional three-chamber section, rolled for a horizontal long-axis presentation. Parasternal probe position cannot be registered from an isolated organ.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.168487394,
+          0.962066463,
+          0.214569613
+        ],
+        "right": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "up": [
+          -0.893664985,
+          0.240939411,
+          -0.378564518
+        ],
+        "width": 502.54999999999995,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.167543078,
+          0.956674395,
+          0.238124798
+        ],
+        "rightPerWorldUnit": [
+          0.464161233,
+          0.142818841,
+          -0.900360365
+        ],
+        "upPerWorldUnit": [
+          -0.997360289,
+          0.268896516,
+          -0.378564518
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.168487394,
+          0.214569613,
+          -0.962066463
+        ],
+        "right": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "up": [
+          -0.893664985,
+          -0.378564518,
+          -0.240939411
+        ],
+        "width": 0.95,
+        "height": 0.72,
+        "widthWorld": 0.95,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "a3c"
+    },
+    "psax_papillary": {
+      "id": "psax_papillary",
+      "confidence": "approximate, visually checked",
+      "family": "short axis",
+      "note": "Ventricular short-axis section with LV thick wall, internal papillary-like structures and adjacent RV crescent. Level is approximately mid-ventricular; no validated structure-boundary segmentation.",
+      "voxelXYZ": {
+        "center": [
+          241.05,
+          267.4,
+          369.65
+        ],
+        "normal": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "right": [
+          -0.592746856,
+          -0.712704291,
+          -0.375104995
+        ],
+        "up": [
+          -0.689692882,
+          0.689692882,
+          -0.220561683
+        ],
+        "width": 380.88,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.508544304,
+          0.564135021,
+          0.698771267
+        ],
+        "normal": [
+          0.379817312,
+          0.116866865,
+          -0.917649686
+        ],
+        "rightPerWorldUnit": [
+          -0.6615255,
+          -0.795402047,
+          -0.375104995
+        ],
+        "upPerWorldUnit": [
+          -0.769720537,
+          0.769720537,
+          -0.220561683
+        ]
+      },
+      "world": {
+        "center": [
+          0.007655955,
+          0.198771267,
+          -0.057466919
+        ],
+        "normal": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "right": [
+          -0.592746856,
+          -0.375104995,
+          0.712704291
+        ],
+        "up": [
+          -0.689692882,
+          -0.220561683,
+          -0.689692882
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "widthWorld": 0.72,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "displayRotate180": true
+    },
+    "psax_mitral": {
+      "id": "psax_mitral",
+      "confidence": "provisional; adjust to anatomy",
+      "family": "short axis",
+      "note": "Basal ventricular short-axis starting plane. Exact mitral leaflet/annulus level is unverified.",
+      "voxelXYZ": {
+        "center": [
+          277.45,
+          278.6,
+          290.85
+        ],
+        "normal": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "right": [
+          -0.592746856,
+          -0.712704291,
+          -0.375104995
+        ],
+        "up": [
+          -0.689692882,
+          0.689692882,
+          -0.220561683
+        ],
+        "width": 380.88,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.585337553,
+          0.587763713,
+          0.549810964
+        ],
+        "normal": [
+          0.379817312,
+          0.116866865,
+          -0.917649686
+        ],
+        "rightPerWorldUnit": [
+          -0.6615255,
+          -0.795402047,
+          -0.375104995
+        ],
+        "upPerWorldUnit": [
+          -0.769720537,
+          0.769720537,
+          -0.220561683
+        ]
+      },
+      "world": {
+        "center": [
+          0.076465028,
+          0.049810964,
+          -0.078638941
+        ],
+        "normal": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "right": [
+          -0.592746856,
+          -0.375104995,
+          0.712704291
+        ],
+        "up": [
+          -0.689692882,
+          -0.220561683,
+          -0.689692882
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "widthWorld": 0.72,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    },
+    "meavsax": {
+      "id": "meavsax",
+      "confidence": "provisional; manual placement needed",
+      "family": "short axis",
+      "note": "Basal/outflow short-axis starting plane only. An approximate aortic-root region is identified in the separate anatomy overlay, but the valve plane and this preset geometry remain unvalidated.",
+      "voxelXYZ": {
+        "center": [
+          297.47,
+          284.76,
+          247.51
+        ],
+        "normal": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "right": [
+          -0.592746856,
+          -0.712704291,
+          -0.375104995
+        ],
+        "up": [
+          -0.689692882,
+          0.689692882,
+          -0.220561683
+        ],
+        "width": 380.88,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.62757384,
+          0.600759494,
+          0.467882798
+        ],
+        "normal": [
+          0.379817312,
+          0.116866865,
+          -0.917649686
+        ],
+        "rightPerWorldUnit": [
+          -0.6615255,
+          -0.795402047,
+          -0.375104995
+        ],
+        "upPerWorldUnit": [
+          -0.769720537,
+          0.769720537,
+          -0.220561683
+        ]
+      },
+      "world": {
+        "center": [
+          0.114310019,
+          -0.032117202,
+          -0.090283554
+        ],
+        "normal": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "right": [
+          -0.592746856,
+          -0.375104995,
+          0.712704291
+        ],
+        "up": [
+          -0.689692882,
+          -0.220561683,
+          -0.689692882
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "widthWorld": 0.72,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    },
+    "subcostal": {
+      "id": "subcostal",
+      "confidence": "approximate presentation only",
+      "family": "ventricular long axis",
+      "note": "The four-chamber-like anatomy plane rolled horizontally. Actual subcostal acoustic entry is not inferable from this isolated fixed organ.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.689692882,
+          -0.689692882,
+          0.220561683
+        ],
+        "right": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "up": [
+          0.592746856,
+          0.712704291,
+          0.375104995
+        ],
+        "width": 502.54999999999995,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.685610409,
+          -0.685610409,
+          0.244697232
+        ],
+        "rightPerWorldUnit": [
+          0.464161233,
+          0.142818841,
+          -0.900360365
+        ],
+        "upPerWorldUnit": [
+          0.6615255,
+          0.795402047,
+          0.375104995
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.689692882,
+          0.220561683,
+          0.689692882
+        ],
+        "right": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "up": [
+          0.592746856,
+          0.375104995,
+          -0.712704291
+        ],
+        "width": 0.95,
+        "height": 0.72,
+        "widthWorld": 0.95,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "a4c",
+      "displayRotate180": true
+    },
+    "me4c": {
+      "id": "me4c",
+      "confidence": "approximate, visually checked",
+      "family": "ventricular long axis",
+      "note": "Shares the a4c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. LV apex/base axis and interventricular direction were checked in the raw volume. Both ventricular cavities are visible; exact valve/atrial boundaries are unvalidated; the later anatomy overlay provides approximate tissue territories only. Educational four-chamber-like starting plane.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.689692882,
+          -0.689692882,
+          0.220561684
+        ],
+        "right": [
+          -0.592746856,
+          -0.712704291,
+          -0.375104995
+        ],
+        "up": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.685610409,
+          -0.685610409,
+          0.244697232
+        ],
+        "rightPerWorldUnit": [
+          -0.6615255,
+          -0.795402047,
+          -0.375104995
+        ],
+        "upPerWorldUnit": [
+          0.464161233,
+          0.142818841,
+          -0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.689692882,
+          0.220561684,
+          0.689692882
+        ],
+        "right": [
+          -0.592746856,
+          -0.375104995,
+          0.712704291
+        ],
+        "up": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "a4c",
+      "displayMirrorX": true
+    },
+    "me2c": {
+      "id": "me2c",
+      "confidence": "approximate, visually checked",
+      "family": "ventricular long axis",
+      "note": "Shares the a2c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. 90-degree rotation about the estimated LV long axis. Visually gives an LV/atrial long section with most of the RV excluded; exact mitral/atrial landmarks are not segmented.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.592746856,
+          0.712704291,
+          0.375104995
+        ],
+        "right": [
+          0.689692882,
+          -0.689692882,
+          0.220561683
+        ],
+        "up": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.582765869,
+          0.700703396,
+          0.411580724
+        ],
+        "rightPerWorldUnit": [
+          0.769720537,
+          -0.769720537,
+          0.220561683
+        ],
+        "upPerWorldUnit": [
+          0.464161233,
+          0.142818841,
+          -0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.592746856,
+          0.375104995,
+          -0.712704291
+        ],
+        "right": [
+          0.689692882,
+          0.220561683,
+          0.689692882
+        ],
+        "up": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "a2c"
+    },
+    "melax": {
+      "id": "melax",
+      "confidence": "provisional; adjust to anatomy",
+      "family": "ventricular long axis",
+      "note": "Shares the a3c anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. 120-degree rotation about the estimated LV axis. Useful LV long-axis starting plane; LV outflow/aortic-valve inclusion is not verified. An approximate aortic-root region is now identified in the separate anatomy overlay; this does not validate the inclusion or alignment of the valve/outflow in this preset.",
+      "voxelXYZ": {
+        "center": [
+          261.98,
+          273.84,
+          324.34
+        ],
+        "normal": [
+          0.168487394,
+          0.962066463,
+          0.214569613
+        ],
+        "right": [
+          0.893664985,
+          -0.240939411,
+          0.378564518
+        ],
+        "up": [
+          0.415902503,
+          0.127970001,
+          -0.900360365
+        ],
+        "width": 380.88,
+        "height": 502.54999999999995
+      },
+      "sourceNormalized": {
+        "center": [
+          0.552700422,
+          0.577721519,
+          0.613119093
+        ],
+        "normal": [
+          0.167543078,
+          0.956674395,
+          0.238124797
+        ],
+        "rightPerWorldUnit": [
+          0.997360289,
+          -0.268896516,
+          0.378564518
+        ],
+        "upPerWorldUnit": [
+          0.464161232,
+          0.142818841,
+          -0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          0.047221172,
+          0.113119093,
+          -0.069640832
+        ],
+        "normal": [
+          0.168487394,
+          0.214569613,
+          -0.962066463
+        ],
+        "right": [
+          0.893664985,
+          0.378564518,
+          0.240939411
+        ],
+        "up": [
+          0.415902503,
+          -0.900360365,
+          -0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "widthWorld": 0.72,
+        "heightWorld": 0.95
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "a3c"
+    },
+    "tgpapillary": {
+      "id": "tgpapillary",
+      "confidence": "approximate, visually checked",
+      "family": "short axis",
+      "note": "Shares the psax_papillary anatomic plane. TEE window label describes the educational target, not a registered esophageal probe location or simulated ultrasound acquisition. Ventricular short-axis section with LV thick wall, internal papillary-like structures and adjacent RV crescent. Level is approximately mid-ventricular; no validated structure-boundary segmentation.",
+      "voxelXYZ": {
+        "center": [
+          241.05,
+          267.4,
+          369.65
+        ],
+        "normal": [
+          0.415902503,
+          0.127970001,
+          -0.900360365
+        ],
+        "right": [
+          -0.592746856,
+          -0.712704291,
+          -0.375104995
+        ],
+        "up": [
+          -0.689692882,
+          0.689692882,
+          -0.220561683
+        ],
+        "width": 380.88,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.508544304,
+          0.564135021,
+          0.698771267
+        ],
+        "normal": [
+          0.379817312,
+          0.116866865,
+          -0.917649686
+        ],
+        "rightPerWorldUnit": [
+          -0.6615255,
+          -0.795402047,
+          -0.375104995
+        ],
+        "upPerWorldUnit": [
+          -0.769720538,
+          0.769720537,
+          -0.220561683
+        ]
+      },
+      "world": {
+        "center": [
+          0.007655955,
+          0.198771267,
+          -0.057466919
+        ],
+        "normal": [
+          0.415902503,
+          -0.900360365,
+          -0.127970001
+        ],
+        "right": [
+          -0.592746856,
+          -0.375104995,
+          0.712704291
+        ],
+        "up": [
+          -0.689692882,
+          -0.220561683,
+          -0.689692882
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "widthWorld": 0.72,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0",
+      "sameAnatomicPlaneAs": "psax_papillary",
+      "displayRotate180": true
+    },
+    "bicaval": {
+      "id": "bicaval",
+      "confidence": "provisional; manual placement needed",
+      "family": "atrial long axis",
+      "note": "Long section through a visually estimated right-atrial region toward the interatrial direction. SVC/IVC endpoints and atrial septum are not segmented or confirmed. Adjust plane before interpreting as a bicaval target.",
+      "voxelXYZ": {
+        "center": [
+          230.0,
+          175.0,
+          210.0
+        ],
+        "normal": [
+          -0.757157945,
+          0.597116766,
+          -0.264883775
+        ],
+        "right": [
+          0.503723092,
+          0.791880829,
+          0.345235861
+        ],
+        "up": [
+          0.415902504,
+          0.127970001,
+          -0.900360365
+        ],
+        "width": 380.88,
+        "height": 380.88
+      },
+      "sourceNormalized": {
+        "center": [
+          0.485232068,
+          0.369198312,
+          0.396975425
+        ],
+        "normal": [
+          -0.75071912,
+          0.592038921,
+          -0.293105305
+        ],
+        "rightPerWorldUnit": [
+          0.562171974,
+          0.883765735,
+          0.345235861
+        ],
+        "upPerWorldUnit": [
+          0.464161233,
+          0.142818841,
+          -0.900360365
+        ]
+      },
+      "world": {
+        "center": [
+          -0.013232514,
+          -0.103024575,
+          0.117202268
+        ],
+        "normal": [
+          -0.757157945,
+          -0.264883775,
+          -0.597116766
+        ],
+        "right": [
+          0.503723092,
+          0.345235861,
+          -0.791880829
+        ],
+        "up": [
+          0.415902504,
+          -0.900360365,
+          -0.127970001
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "widthWorld": 0.72,
+        "heightWorld": 0.72
+      },
+      "sourcePlaneEquation": "dot(sourceNormalized.normal, sourceTextureXYZ - sourceNormalized.center) = 0"
+    }
+  },
+  "datasetId": "1659197537",
+  "correspondence": {
+    "schemaVersion": 1,
+    "revision": "echo-correspondence-v11",
+    "reviewedDate": "2026-11-05",
+    "method": "Source-publisher labels and ASE clinical definitions checked against all 13 prepared CT sections and native reference images; no expert anatomical ground truth or patient registration. Display orientation corrections are exact in-plane byte permutations.",
+    "clinicallyValidated": false,
+    "views": {
+      "a4c": {
+        "status": "partial",
+        "summary": "Both ventricular regions are visible. The two atria, AV valve junctions and exclusion of LV outflow have not all been confirmed in this cut.",
+        "clinicallyValidated": false
+      },
+      "a2c": {
+        "status": "partial",
+        "summary": "The LV long axis is visible with most RV tissue excluded. The exact mitral annulus and atrial extent remain uncertain.",
+        "clinicallyValidated": false
+      },
+      "a3c": {
+        "status": "unverified",
+        "summary": "This is an LV long-axis candidate. Continuous LV outflow through the aortic valve has not been confirmed.",
+        "clinicallyValidated": false
+      },
+      "plax": {
+        "status": "unverified",
+        "summary": "This reuses the long-axis candidate in a horizontal presentation. Mitral-to-aortic continuity and a parasternal acquisition path remain unverified.",
+        "clinicallyValidated": false
+      },
+      "psax_papillary": {
+        "status": "partial",
+        "summary": "The ventricular wall and internal muscular structures are visible. This is an approximate midventricular level; the collapsed LV differs from the open clinical lumen.",
+        "clinicallyValidated": false,
+        "orientationNote": "An exact 180\u00b0 in-plane presentation rotation corrects the previous near-field display orientation. This changes neither the physical section nor source intensity."
+      },
+      "psax_mitral": {
+        "status": "unverified",
+        "summary": "This is a basal short-axis section. The mitral leaflet opening has not been established in the CT plane; the movie also sweeps between levels.",
+        "clinicallyValidated": false
+      },
+      "meavsax": {
+        "status": "unverified",
+        "summary": "Aortic cusp identity and valve-level alignment have not been established. There is no matching aortic-valve short-axis movie in the reference library.",
+        "clinicallyValidated": false
+      },
+      "subcostal": {
+        "status": "unverified",
+        "summary": "This is a rotated four-chamber candidate. The isolated heart does not include the liver or the subcostal acoustic entry path.",
+        "clinicallyValidated": false,
+        "orientationNote": "An exact 180\u00b0 in-plane presentation rotation corrects the previous near-field display orientation. This changes neither the physical section nor source intensity."
+      },
+      "me4c": {
+        "status": "partial",
+        "summary": "Ventricular presentation now agrees with the reference. Both atrial / AV valve junctions and exclusion of the aortic outflow still require confirmation.",
+        "clinicallyValidated": false,
+        "orientationNote": "The CT horizontal presentation was reversed to place LV on the right and RV on the left, as in the paired publisher-annotated ME4C reference. The sampled physical plane and signed offsets are unchanged."
+      },
+      "me2c": {
+        "status": "partial",
+        "summary": "This shares the left-heart long-axis candidate. The exact mitral section and an esophageal acquisition path remain unverified.",
+        "clinicallyValidated": false
+      },
+      "melax": {
+        "status": "unverified",
+        "summary": "This shares the LV long-axis candidate. The LVOT and aortic valve are not yet confirmed in this CT plane.",
+        "clinicallyValidated": false
+      },
+      "tgpapillary": {
+        "status": "partial",
+        "summary": "This shares the midventricular CT section. The recording is labeled transgastric short-axis; its exact papillary level and the gastric entry path are not registered.",
+        "clinicallyValidated": false,
+        "orientationNote": "An exact 180\u00b0 in-plane presentation rotation corrects the previous near-field display orientation. This changes neither the physical section nor source intensity."
+      },
+      "bicaval": {
+        "status": "unverified",
+        "summary": "The atrial candidate does not yet have confirmed SVC and IVC junctions or a traced interatrial septum. It cannot establish a bicaval view.",
+        "clinicallyValidated": false
+      }
+    },
+    "sources": [
+      {
+        "title": "ASE comprehensive adult TTE, 2019",
+        "url": "https://www.asecho.org/wp-content/uploads/2025/04/2019_Comprehensive-TTE.pdf"
+      },
+      {
+        "title": "ASE/SCA comprehensive TEE, 2013",
+        "url": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf"
+      },
+      {
+        "title": "Nazerian et al., 2020; Figure 1 and supplements 1\u20135",
+        "url": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+      }
+    ]
+  }
+}

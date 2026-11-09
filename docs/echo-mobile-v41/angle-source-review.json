@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-08",
+  "purpose": "Verify a supplemental reference-dial rectangle does not obscure acquired ultrasound or scanner UI. Values are display references, not measured acquisition angles.",
+  "sourceFilesHostedOrChanged": false,
+  "rectangleConvention": "Encoded raster pixels, left/top inclusive and right/bottom exclusive. Entire 128\u00d7104 SVG bounding box fits this rectangle at every tested pane size.",
+  "clips": [
+    {
+      "supplementalVideo": 1,
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc1.mp4",
+      "sha256": "f3b18fd1dfb9aae7b74a28813c43a8e3c2ab91a2e044e84186cf7aba067a1ef8",
+      "bytes": 570822,
+      "width": 1280,
+      "height": 720,
+      "sample_aspect_ratio": "40:33",
+      "display_aspect_ratio": "640:297",
+      "browserDisplayDimensions": [
+        1552,
+        720
+      ],
+      "decodedFrames": 56,
+      "reviewedEncodedRectLTRB": [
+        365,
+        86,
+        507,
+        226
+      ],
+      "maxRGBInReviewedRectAllFrames": 1,
+      "pixelsAbove30InReviewedRectAllFrames": 0
+    },
+    {
+      "supplementalVideo": 12,
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc12.mp4",
+      "sha256": "d748da7482e73c306110a0c38558f664383f2cdc1e3d44eb4a7ee0a1c4f279f8",
+      "bytes": 304133,
+      "width": 1280,
+      "height": 720,
+      "sample_aspect_ratio": "512:351",
+      "display_aspect_ratio": "8192:3159",
+      "browserDisplayDimensions": [
+        1867,
+        720
+      ],
+      "decodedFrames": 28,
+      "reviewedEncodedRectLTRB": [
+        411,
+        86,
+        530,
+        226
+      ],
+      "maxRGBInReviewedRectAllFrames": 2,
+      "pixelsAbove30InReviewedRectAllFrames": 0
+    }
+  ]
+}

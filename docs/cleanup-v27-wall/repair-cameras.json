@@ -1,0 +1,114 @@
+{
+  "componentCount": 1406359,
+  "cameras": [
+    {
+      "case": {
+        "id": "overview-284",
+        "coordinate": 1132,
+        "target": [
+          1000,
+          1132,
+          1000
+        ],
+        "distance": 1.15
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.11625321187730678,
+          -0.05605975253018388,
+          -1.2329383053661456
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.0274102079395085,
+          -0.08695652173913042
+        ]
+      },
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "changedPixels": 701
+    },
+    {
+      "case": {
+        "id": "wall-284",
+        "coordinate": 1132,
+        "target": [
+          1270,
+          1132,
+          900
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.08712551088063389,
+          -0.5852094711421805
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.07466918714555763,
+          -0.08695652173913042
+        ]
+      },
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "changedPixels": 2885
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 395,
+    "decodedBrickReads": 772,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "scope": "Nearby reproducible production cameras; not exact screenshot registration. Source geometry and acquired cap pixels unchanged."
+}

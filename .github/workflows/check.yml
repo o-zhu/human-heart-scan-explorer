@@ -1,0 +1,26 @@
+name: Source checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Core regression tests
+        run: node --test tests/device-resources.mjs tests/mesh-draw-batching-v37.mjs tests/echo-angle-placement-v41.mjs tests/volume-picking-cap.mjs
+      - name: Asset downloader integrity fixtures
+        run: python tests/test_fetch_assets.py
+      - name: Check Python syntax
+        run: python -m compileall -q scripts tests

@@ -1,0 +1,114 @@
+{
+  "productionMeshGenerator": true,
+  "productionGeometryShader": true,
+  "productionOverlayCommands": true,
+  "browserScreenshot": false,
+  "sourceHeart": "Coarse 635 \u00b5m thresholded source silhouette",
+  "sourceHashes": {
+    "geometry": "7fc4600c344d2109f4ba46fb5781213fef1a6ac19e5365d818870f105e7fc3d4",
+    "atlasPose": "850ec59472e3dcc9c91754f67271df8f0c8a3c8e5a5390a0f0c6d3b36770a709",
+    "overlay": "2d68d817b5097a1466e88a202ea6d3bd3af23cbd9c5bc4c93e7fe5bb630e7dc6",
+    "planes": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64"
+  },
+  "renders": [
+    {
+      "view": "anterior",
+      "mode": "surface",
+      "file": "anterior-surface.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "anterior",
+      "mode": "transparent",
+      "file": "anterior-transparent.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "oblique",
+      "mode": "surface",
+      "file": "oblique-surface.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "oblique",
+      "mode": "transparent",
+      "file": "oblique-transparent.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "left",
+      "mode": "surface",
+      "file": "left-surface.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "left",
+      "mode": "transparent",
+      "file": "left-transparent.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "posterior",
+      "mode": "surface",
+      "file": "posterior-surface.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "posterior",
+      "mode": "transparent",
+      "file": "posterior-transparent.png",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "me4c",
+      "mode": "actual-production-overlay",
+      "file": "production-me4c.png",
+      "contextFit": {
+        "distanceMm": 0.3816212799877734,
+        "insertionCm": 33.88765916805259,
+        "level": "me",
+        "shaftBendDeg": 22.352837388951954,
+        "clearanceHintMm": 5.076345576997308,
+        "projectionLimitMm": 1.7763455769973078,
+        "presentationReflected": false,
+        "registered": false,
+        "resolved": true
+      },
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "me2c",
+      "mode": "actual-production-overlay",
+      "file": "production-me2c.png",
+      "contextFit": {
+        "distanceMm": 0.06471260613355101,
+        "insertionCm": 35.44993257655915,
+        "level": "me",
+        "shaftBendDeg": 29.795247144679152,
+        "clearanceHintMm": 5.079413986360358,
+        "projectionLimitMm": 1.7794139863603577,
+        "presentationReflected": true,
+        "registered": false,
+        "resolved": true
+      },
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "view": "tgpapillary",
+      "mode": "actual-production-overlay",
+      "file": "production-tgpapillary.png",
+      "contextFit": {
+        "distanceMm": 0.2959097587114381,
+        "insertionCm": 47.75399780484583,
+        "level": "tg",
+        "shaftBendDeg": 39.09695247729453,
+        "clearanceHintMm": 15.481194140624998,
+        "projectionLimitMm": 12.181194140625,
+        "presentationReflected": false,
+        "registered": false,
+        "resolved": true
+      },
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    }
+  ]
+}

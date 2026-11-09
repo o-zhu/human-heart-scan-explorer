@@ -1,0 +1,1346 @@
+{
+  "donorId": "ladaf-2021-17",
+  "sampling": "nearest",
+  "sourceManifestUrl": "./assets/ultra-volume-v7.json",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "sourceSpacingUm": 79.4,
+  "longestMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "coordinateConvention": "Main explorer endpoint convention: acquisition XYZ maps to world (x,z,-y).",
+  "worldToFine": "vec3(world.x, -world.z, world.y) * (longestMm / (sourceSpacingUm / 1000)) + (sourceFullDimensionsXYZ - 1) / 2",
+  "fineToMaskUv": "(fineXYZ - lowerFullFineXYZ + 0.5) / dimensionsXYZ; outside [lower-0.5, upper-0.5) returns zero; nearest R8 normalized sample > 0.5 means hide.",
+  "version": 2,
+  "id": "ladaf-reviewed-lumen-display-v25",
+  "defaultEnabled": true,
+  "title": "Reviewed lumen cleanup",
+  "description": "User-requested display exclusion of extended atrial material, including its bright core through section310, and reviewed upper outflow material. Identity remains unverified. Original CT cards and source data are unchanged.",
+  "masks": [
+    {
+      "id": "atrial",
+      "label": "Extended atrial material",
+      "url": "./assets/cleanup-v25/atrial-reviewed.raw.gz",
+      "format": "gzip-u8-zyx",
+      "dimensionsXYZ": [
+        290,
+        437,
+        700
+      ],
+      "lowerFullFineXYZ": [
+        1080,
+        820,
+        460
+      ],
+      "upperFullFineXYZ": [
+        1370,
+        1257,
+        1160
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          1102,
+          820,
+          474
+        ],
+        [
+          1357,
+          1257,
+          1153
+        ]
+      ],
+      "compressedBytes": 567757,
+      "decodedBytes": 88711000,
+      "sha256": "392fd09683b270b33b303627f01790c2049bdbc2782316f83bbd93ac130a4459",
+      "decodedSha256": "0c7595bab6b38e171d8c76bba81123dcc9f5ce19c419734e7f67342ec4546fa9",
+      "maskedVoxels": 8052055,
+      "maskedVolumeMm3": 4030.5864447081194,
+      "policy": {
+        "method": "Reviewed serial XZ object envelopes with signed-distance interpolation, restricted to sigma0.5 source foreground plus two fine samples. Per-plane strong source anchored outside the envelope and a three-sample guard are retained.",
+        "reviewedYKeyframes": {
+          "820": [
+            [
+              1202,
+              474
+            ],
+            [
+              1227,
+              486
+            ],
+            [
+              1260,
+              550
+            ],
+            [
+              1279,
+              624
+            ],
+            [
+              1272,
+              667
+            ],
+            [
+              1248,
+              651
+            ],
+            [
+              1231,
+              592
+            ],
+            [
+              1214,
+              546
+            ]
+          ],
+          "840": [
+            [
+              1175,
+              476
+            ],
+            [
+              1210,
+              487
+            ],
+            [
+              1230,
+              555
+            ],
+            [
+              1267,
+              645
+            ],
+            [
+              1274,
+              711
+            ],
+            [
+              1247,
+              706
+            ],
+            [
+              1224,
+              645
+            ],
+            [
+              1204,
+              581
+            ],
+            [
+              1180,
+              540
+            ]
+          ],
+          "880": [
+            [
+              1154,
+              496
+            ],
+            [
+              1194,
+              506
+            ],
+            [
+              1230,
+              559
+            ],
+            [
+              1250,
+              661
+            ],
+            [
+              1270,
+              751
+            ],
+            [
+              1250,
+              766
+            ],
+            [
+              1221,
+              739
+            ],
+            [
+              1200,
+              674
+            ],
+            [
+              1181,
+              609
+            ],
+            [
+              1162,
+              544
+            ]
+          ],
+          "920": [
+            [
+              1139,
+              533
+            ],
+            [
+              1171,
+              548
+            ],
+            [
+              1200,
+              586
+            ],
+            [
+              1228,
+              647
+            ],
+            [
+              1247,
+              745
+            ],
+            [
+              1284,
+              812
+            ],
+            [
+              1272,
+              833
+            ],
+            [
+              1244,
+              818
+            ],
+            [
+              1206,
+              762
+            ],
+            [
+              1188,
+              693
+            ],
+            [
+              1167,
+              617
+            ],
+            [
+              1144,
+              566
+            ]
+          ],
+          "944": [
+            [
+              1126,
+              550
+            ],
+            [
+              1172,
+              580
+            ],
+            [
+              1219,
+              649
+            ],
+            [
+              1241,
+              740
+            ],
+            [
+              1259,
+              823
+            ],
+            [
+              1297,
+              895
+            ],
+            [
+              1301,
+              1007
+            ],
+            [
+              1288,
+              1064
+            ],
+            [
+              1306,
+              1120
+            ],
+            [
+              1192,
+              1140
+            ],
+            [
+              1159,
+              1102
+            ],
+            [
+              1223,
+              1041
+            ],
+            [
+              1238,
+              965
+            ],
+            [
+              1219,
+              876
+            ],
+            [
+              1198,
+              775
+            ],
+            [
+              1178,
+              694
+            ],
+            [
+              1138,
+              619
+            ]
+          ],
+          "960": [
+            [
+              1126,
+              555
+            ],
+            [
+              1172,
+              576
+            ],
+            [
+              1220,
+              636
+            ],
+            [
+              1240,
+              724
+            ],
+            [
+              1256,
+              817
+            ],
+            [
+              1308,
+              920
+            ],
+            [
+              1306,
+              1037
+            ],
+            [
+              1305,
+              1125
+            ],
+            [
+              1200,
+              1144
+            ],
+            [
+              1152,
+              1115
+            ],
+            [
+              1174,
+              1060
+            ],
+            [
+              1235,
+              1013
+            ],
+            [
+              1241,
+              947
+            ],
+            [
+              1214,
+              867
+            ],
+            [
+              1203,
+              768
+            ],
+            [
+              1182,
+              694
+            ],
+            [
+              1135,
+              620
+            ]
+          ],
+          "1000": [
+            [
+              1137,
+              608
+            ],
+            [
+              1174,
+              626
+            ],
+            [
+              1208,
+              657
+            ],
+            [
+              1212,
+              718
+            ],
+            [
+              1268,
+              754
+            ],
+            [
+              1287,
+              808
+            ],
+            [
+              1271,
+              863
+            ],
+            [
+              1244,
+              897
+            ],
+            [
+              1248,
+              1002
+            ],
+            [
+              1262,
+              1088
+            ],
+            [
+              1262,
+              1142
+            ],
+            [
+              1200,
+              1150
+            ],
+            [
+              1144,
+              1108
+            ],
+            [
+              1159,
+              1026
+            ],
+            [
+              1199,
+              958
+            ],
+            [
+              1203,
+              884
+            ],
+            [
+              1180,
+              796
+            ],
+            [
+              1136,
+              741
+            ]
+          ],
+          "1040": [
+            [
+              1139,
+              618
+            ],
+            [
+              1154,
+              656
+            ],
+            [
+              1191,
+              708
+            ],
+            [
+              1203,
+              772
+            ],
+            [
+              1242,
+              811
+            ],
+            [
+              1270,
+              833
+            ],
+            [
+              1269,
+              872
+            ],
+            [
+              1258,
+              918
+            ],
+            [
+              1247,
+              986
+            ],
+            [
+              1254,
+              1041
+            ],
+            [
+              1264,
+              1122
+            ],
+            [
+              1211,
+              1144
+            ],
+            [
+              1163,
+              1128
+            ],
+            [
+              1140,
+              1090
+            ],
+            [
+              1155,
+              1017
+            ],
+            [
+              1156,
+              963
+            ],
+            [
+              1126,
+              887
+            ],
+            [
+              1110,
+              817
+            ],
+            [
+              1104,
+              755
+            ],
+            [
+              1110,
+              697
+            ]
+          ],
+          "1080": [
+            [
+              1111,
+              660
+            ],
+            [
+              1147,
+              688
+            ],
+            [
+              1174,
+              728
+            ],
+            [
+              1208,
+              759
+            ],
+            [
+              1230,
+              793
+            ],
+            [
+              1228,
+              852
+            ],
+            [
+              1212,
+              901
+            ],
+            [
+              1207,
+              947
+            ],
+            [
+              1234,
+              998
+            ],
+            [
+              1258,
+              1043
+            ],
+            [
+              1304,
+              1076
+            ],
+            [
+              1302,
+              1111
+            ],
+            [
+              1259,
+              1133
+            ],
+            [
+              1211,
+              1130
+            ],
+            [
+              1183,
+              1100
+            ],
+            [
+              1184,
+              1059
+            ],
+            [
+              1127,
+              1021
+            ],
+            [
+              1117,
+              971
+            ],
+            [
+              1126,
+              919
+            ],
+            [
+              1133,
+              860
+            ],
+            [
+              1131,
+              808
+            ],
+            [
+              1111,
+              748
+            ]
+          ],
+          "1120": [
+            [
+              1127,
+              705
+            ],
+            [
+              1163,
+              720
+            ],
+            [
+              1189,
+              752
+            ],
+            [
+              1199,
+              803
+            ],
+            [
+              1224,
+              842
+            ],
+            [
+              1230,
+              897
+            ],
+            [
+              1212,
+              940
+            ],
+            [
+              1233,
+              981
+            ],
+            [
+              1253,
+              1012
+            ],
+            [
+              1269,
+              1041
+            ],
+            [
+              1327,
+              1070
+            ],
+            [
+              1363,
+              1071
+            ],
+            [
+              1352,
+              1094
+            ],
+            [
+              1290,
+              1108
+            ],
+            [
+              1240,
+              1106
+            ],
+            [
+              1200,
+              1084
+            ],
+            [
+              1193,
+              1036
+            ],
+            [
+              1152,
+              1008
+            ],
+            [
+              1148,
+              954
+            ],
+            [
+              1155,
+              901
+            ],
+            [
+              1161,
+              843
+            ],
+            [
+              1148,
+              795
+            ]
+          ],
+          "1152": [
+            [
+              1151,
+              698
+            ],
+            [
+              1212,
+              683
+            ],
+            [
+              1225,
+              709
+            ],
+            [
+              1200,
+              728
+            ],
+            [
+              1230,
+              751
+            ],
+            [
+              1252,
+              795
+            ],
+            [
+              1273,
+              837
+            ],
+            [
+              1264,
+              893
+            ],
+            [
+              1245,
+              938
+            ],
+            [
+              1245,
+              987
+            ],
+            [
+              1271,
+              1025
+            ],
+            [
+              1339,
+              1037
+            ],
+            [
+              1320,
+              1064
+            ],
+            [
+              1262,
+              1083
+            ],
+            [
+              1205,
+              1067
+            ],
+            [
+              1179,
+              1033
+            ],
+            [
+              1175,
+              980
+            ],
+            [
+              1178,
+              923
+            ],
+            [
+              1171,
+              869
+            ],
+            [
+              1156,
+              821
+            ],
+            [
+              1137,
+              770
+            ]
+          ],
+          "1184": [
+            [
+              1167,
+              739
+            ],
+            [
+              1202,
+              752
+            ],
+            [
+              1219,
+              767
+            ],
+            [
+              1220,
+              730
+            ],
+            [
+              1274,
+              735
+            ],
+            [
+              1291,
+              771
+            ],
+            [
+              1274,
+              796
+            ],
+            [
+              1292,
+              797
+            ],
+            [
+              1333,
+              807
+            ],
+            [
+              1338,
+              828
+            ],
+            [
+              1303,
+              824
+            ],
+            [
+              1271,
+              825
+            ],
+            [
+              1265,
+              850
+            ],
+            [
+              1252,
+              914
+            ],
+            [
+              1249,
+              967
+            ],
+            [
+              1260,
+              1007
+            ],
+            [
+              1294,
+              1023
+            ],
+            [
+              1341,
+              1016
+            ],
+            [
+              1345,
+              1038
+            ],
+            [
+              1289,
+              1054
+            ],
+            [
+              1233,
+              1044
+            ],
+            [
+              1200,
+              1015
+            ],
+            [
+              1192,
+              964
+            ],
+            [
+              1198,
+              917
+            ],
+            [
+              1204,
+              861
+            ],
+            [
+              1185,
+              820
+            ]
+          ],
+          "1200": [
+            [
+              1194,
+              774
+            ],
+            [
+              1228,
+              789
+            ],
+            [
+              1245,
+              802
+            ],
+            [
+              1299,
+              783
+            ],
+            [
+              1324,
+              808
+            ],
+            [
+              1293,
+              824
+            ],
+            [
+              1269,
+              832
+            ],
+            [
+              1261,
+              858
+            ],
+            [
+              1259,
+              884
+            ],
+            [
+              1297,
+              887
+            ],
+            [
+              1321,
+              928
+            ],
+            [
+              1298,
+              979
+            ],
+            [
+              1261,
+              1018
+            ],
+            [
+              1235,
+              1025
+            ],
+            [
+              1213,
+              989
+            ],
+            [
+              1214,
+              945
+            ],
+            [
+              1223,
+              903
+            ],
+            [
+              1220,
+              852
+            ]
+          ],
+          "1216": [
+            [
+              1194,
+              777
+            ],
+            [
+              1220,
+              796
+            ],
+            [
+              1245,
+              817
+            ],
+            [
+              1275,
+              836
+            ],
+            [
+              1315,
+              838
+            ],
+            [
+              1345,
+              863
+            ],
+            [
+              1356,
+              914
+            ],
+            [
+              1343,
+              964
+            ],
+            [
+              1317,
+              1006
+            ],
+            [
+              1284,
+              1023
+            ],
+            [
+              1253,
+              1008
+            ],
+            [
+              1258,
+              975
+            ],
+            [
+              1254,
+              942
+            ],
+            [
+              1235,
+              901
+            ],
+            [
+              1218,
+              858
+            ]
+          ],
+          "1236": [
+            [
+              1208,
+              790
+            ],
+            [
+              1234,
+              816
+            ],
+            [
+              1266,
+              843
+            ],
+            [
+              1304,
+              849
+            ],
+            [
+              1331,
+              871
+            ],
+            [
+              1345,
+              913
+            ],
+            [
+              1330,
+              947
+            ],
+            [
+              1302,
+              957
+            ],
+            [
+              1277,
+              933
+            ],
+            [
+              1256,
+              907
+            ],
+            [
+              1240,
+              865
+            ]
+          ],
+          "1244": [
+            [
+              1228,
+              815
+            ],
+            [
+              1250,
+              833
+            ],
+            [
+              1280,
+              855
+            ],
+            [
+              1312,
+              868
+            ],
+            [
+              1337,
+              900
+            ],
+            [
+              1345,
+              931
+            ],
+            [
+              1318,
+              952
+            ],
+            [
+              1288,
+              936
+            ],
+            [
+              1270,
+              908
+            ],
+            [
+              1250,
+              873
+            ]
+          ],
+          "1252": [
+            [
+              1275,
+              868
+            ],
+            [
+              1295,
+              878
+            ],
+            [
+              1318,
+              904
+            ],
+            [
+              1322,
+              922
+            ],
+            [
+              1304,
+              924
+            ],
+            [
+              1285,
+              905
+            ]
+          ],
+          "1256": [
+            [
+              1297,
+              901
+            ],
+            [
+              1299,
+              900
+            ],
+            [
+              1300,
+              902
+            ],
+            [
+              1298,
+              903
+            ]
+          ]
+        },
+        "serialMetrics": [
+          {
+            "y": 820,
+            "maskedVoxels": 3748,
+            "strongSourceSamples": 15,
+            "sourceMean": 89.37113127001068
+          },
+          {
+            "y": 840,
+            "maskedVoxels": 5495,
+            "strongSourceSamples": 7,
+            "sourceMean": 89.96505914467699
+          },
+          {
+            "y": 880,
+            "maskedVoxels": 6162,
+            "strongSourceSamples": 5,
+            "sourceMean": 97.10467380720546
+          },
+          {
+            "y": 920,
+            "maskedVoxels": 7662,
+            "strongSourceSamples": 7,
+            "sourceMean": 97.53850169668493
+          },
+          {
+            "y": 944,
+            "maskedVoxels": 15849,
+            "strongSourceSamples": 16,
+            "sourceMean": 86.94561171051801
+          },
+          {
+            "y": 960,
+            "maskedVoxels": 15221,
+            "strongSourceSamples": 9,
+            "sourceMean": 85.72938703107549
+          },
+          {
+            "y": 1000,
+            "maskedVoxels": 31731,
+            "strongSourceSamples": 269,
+            "sourceMean": 93.99691153761306
+          },
+          {
+            "y": 1040,
+            "maskedVoxels": 35832,
+            "strongSourceSamples": 7,
+            "sourceMean": 87.68173699486492
+          },
+          {
+            "y": 1080,
+            "maskedVoxels": 30934,
+            "strongSourceSamples": 9,
+            "sourceMean": 84.36050947177863
+          },
+          {
+            "y": 1120,
+            "maskedVoxels": 24005,
+            "strongSourceSamples": 5,
+            "sourceMean": 84.68973130597792
+          },
+          {
+            "y": 1152,
+            "maskedVoxels": 24543,
+            "strongSourceSamples": 3,
+            "sourceMean": 80.81721875891293
+          },
+          {
+            "y": 1184,
+            "maskedVoxels": 21363,
+            "strongSourceSamples": 3,
+            "sourceMean": 81.96578195946262
+          },
+          {
+            "y": 1200,
+            "maskedVoxels": 12458,
+            "strongSourceSamples": 5,
+            "sourceMean": 81.4177235511318
+          },
+          {
+            "y": 1216,
+            "maskedVoxels": 15588,
+            "strongSourceSamples": 1647,
+            "sourceMean": 106.86553759302028
+          },
+          {
+            "y": 1236,
+            "maskedVoxels": 5909,
+            "strongSourceSamples": 1021,
+            "sourceMean": 119.48773058047047
+          },
+          {
+            "y": 1244,
+            "maskedVoxels": 3744,
+            "strongSourceSamples": 507,
+            "sourceMean": 110.3167735042735
+          },
+          {
+            "y": 1252,
+            "maskedVoxels": 901,
+            "strongSourceSamples": 0,
+            "sourceMean": 86.75915649278579
+          },
+          {
+            "y": 1256,
+            "maskedVoxels": 41,
+            "strongSourceSamples": 0,
+            "sourceMean": 76.85365853658537
+          }
+        ],
+        "wallGuardSamplesRetained": 253499,
+        "includesBrightCore": true,
+        "materialIdentity": "unverified; user-requested reversible exclusion"
+      }
+    },
+    {
+      "id": "outflow",
+      "label": "Upper outflow material",
+      "url": "./assets/cleanup-v25/outflow-reviewed.raw.gz",
+      "format": "gzip-u8-zyx",
+      "dimensionsXYZ": [
+        260,
+        240,
+        230
+      ],
+      "lowerFullFineXYZ": [
+        890,
+        920,
+        210
+      ],
+      "upperFullFineXYZ": [
+        1150,
+        1160,
+        440
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          907,
+          957,
+          227
+        ],
+        [
+          1101,
+          1106,
+          368
+        ]
+      ],
+      "compressedBytes": 48040,
+      "decodedBytes": 14352000,
+      "sha256": "d44550c30be4eb09667290ebdf9a3144deeb5b8005da35b7c916708c0a0ad1dc",
+      "decodedSha256": "294cfe67cc3e2e2a55e68346786b0be724815d1c9c7b4ae0794318043be34993",
+      "maskedVoxels": 179720,
+      "maskedVolumeMm3": 89.96175458847999,
+      "policy": {
+        "method": "All measured foreground in the reviewed upper outflow envelope, with sigma0.5/sigma0.8 anchored strong wall protection and 0.3176-mm guard.",
+        "protectedSupportOverlap": 0,
+        "protectedGuardOverlap": 0,
+        "reviewEnvelope": {
+          "center": [
+            1010,
+            1045,
+            307
+          ],
+          "radius": [
+            105,
+            95,
+            82
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Display exclusions are not biological classification or validated anatomical segmentation.",
+    "Serial reviewed envelopes specifically target the unwanted object. Original geometry and source pixels remain recoverable.",
+    "Disconnected whole-heart debris is handled by an independent source-pinned topology mask."
+  ]
+}

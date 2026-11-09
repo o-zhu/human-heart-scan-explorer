@@ -1,0 +1,111 @@
+{
+  "roiLowerFullFineXYZ": [
+    528,
+    812,
+    688
+  ],
+  "roiUpperFullFineXYZExclusive": [
+    1033,
+    1125,
+    893
+  ],
+  "camera": {
+    "yaw": -2.8501358591119264,
+    "pitch": 0.36587966945081696,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "fineSource": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 265,
+    "decodedBrickReads": 265,
+    "cacheMaximumBricks": 64,
+    "cacheMaximumBytes": 17576000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "originalFullCoarseSourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+  "originalFullCoarseSourceUnchanged": true,
+  "physicalBoundsMatchExactly": true,
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "checks": [
+    {
+      "label": "317.6 \u00b5m Original",
+      "threshold": 0.32,
+      "grid": [
+        127,
+        79,
+        52
+      ],
+      "spacingUm": 317.6,
+      "sha256": "cdf69835ed38026d667da7f260fffa28c184582e22dee5dad870779767c4b6e7"
+    },
+    {
+      "label": "317.6 \u00b5m Original",
+      "threshold": 0.42,
+      "grid": [
+        127,
+        79,
+        52
+      ],
+      "spacingUm": 317.6,
+      "sha256": "cdf69835ed38026d667da7f260fffa28c184582e22dee5dad870779767c4b6e7"
+    },
+    {
+      "label": "79.4 \u00b5m Original",
+      "threshold": 0.32,
+      "grid": [
+        505,
+        313,
+        205
+      ],
+      "spacingUm": 79.4,
+      "sha256": "0ca141f2cec3403ed3564dc792a3abdc1440b7470564fe830b628eceb38c6501"
+    },
+    {
+      "label": "79.4 \u00b5m Original",
+      "threshold": 0.42,
+      "grid": [
+        505,
+        313,
+        205
+      ],
+      "spacingUm": 79.4,
+      "sha256": "0ca141f2cec3403ed3564dc792a3abdc1440b7470564fe830b628eceb38c6501"
+    },
+    {
+      "label": "79.4 \u00b5m Guided \u00b16",
+      "threshold": 0.32,
+      "grid": [
+        505,
+        313,
+        205
+      ],
+      "spacingUm": 79.4,
+      "sha256": "e260a3c245be26a2f09d9ce235ec0befa5d9d55af50620e5aa075a1b733b6f05"
+    },
+    {
+      "label": "79.4 \u00b5m Guided \u00b16",
+      "threshold": 0.42,
+      "grid": [
+        505,
+        313,
+        205
+      ],
+      "spacingUm": 79.4,
+      "sha256": "e260a3c245be26a2f09d9ce235ec0befa5d9d55af50620e5aa075a1b733b6f05"
+    }
+  ],
+  "scope": "Bounded source ROI coincident with previously reviewed right-perivascular region. Cropped-box edges are displayed; these are not invented organ closure surfaces. Demonstrates source sampling difference, not an installed full fine coronary model."
+}

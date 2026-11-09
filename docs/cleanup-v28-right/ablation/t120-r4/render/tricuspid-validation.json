@@ -1,0 +1,20 @@
+{
+  "case": {
+    "id": "tricuspid-y263",
+    "axis": 1,
+    "coordinate": 1048,
+    "target": [
+      730,
+      1048,
+      1155
+    ],
+    "distance": 0.37
+  },
+  "originalRoiTriangles": 943310,
+  "refinedTriangles": 302706,
+  "changedPixels": 72410,
+  "offOnOffExact": true,
+  "sourceCapSha256": "b3a8e7103b4f6fb1ee7c172dffa574719c2e9b4f58cfc91564ec74f659d2c8e7",
+  "shaderSha256": "2d6f7c8c3c88f275f6d313ddf0d2a6cd9c8c60ea25e5bdf62a04feeea13fe603",
+  "scope": "Actual production GLSL, bounded originalGentleROI and source-refined local patch. The before/after sourcecap is heldfixed here; integrated density/cap low-band exclusion is tested by root. No fullGentleGLupload or browserperformance claim."
+}

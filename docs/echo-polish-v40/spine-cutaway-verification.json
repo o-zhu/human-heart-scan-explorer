@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "scope": "Check the fixed reference-spine cutaway against the unmodified v71 geometry.\n\nContinuous triangle bounds prove the esophageal clearance; segment/triangle\nintersections independently reproduce the old defect and its removal. Retained\nfragments must lie on original reference-spine faces. This is display geometry\nverification, not patient registration or an acquired anatomical reconstruction.\n",
+  "baselineCommit": "bd2b8b4261c288c7b9fef0d1970848b90c58e128",
+  "checks": [
+    {
+      "donorId": "ladaf-2021-17",
+      "referenceMm": 168.0104,
+      "frameScale": 1,
+      "bodyScale": 1,
+      "sourceHash": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+      "nonSpineMeshesByteIdentical": true,
+      "skinByteIdentical": true,
+      "tractAndTopologyIdentityPreserved": true,
+      "transformUnchanged": true,
+      "files": {
+        "before": {
+          "file": "ladaf-2021-17-before.f32",
+          "worldFile": "ladaf-2021-17-before-world.f32",
+          "sha256": "7ed01138a1ab7ef46c3397106a77912c99df723d12423291088d85beec6a2455",
+          "worldSha256": "df62eec0e86e0572bf0fd1f67bda557e1d344904dd4e812693e43a384c6db379",
+          "triangles": 3469,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "after": {
+          "file": "ladaf-2021-17-after.f32",
+          "worldFile": "ladaf-2021-17-after-world.f32",
+          "sha256": "7045002123e15873d9bb42f477c7b4203e918dbb2232174b8fbe97395ef08550",
+          "worldSha256": "06e811f201a75cc62e6587638f11947148135d68d6167c862108a0bab3362783",
+          "triangles": 3741,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "esophagus": {
+          "file": "ladaf-2021-17-esophagus.f32",
+          "worldFile": "ladaf-2021-17-esophagus-world.f32",
+          "sha256": "cfd59251c030e9f200d5ca0aff2f90a248730fa0767853544239b9d5f27f9154",
+          "worldSha256": "53bb603b21d62429444ba4af44ea233aee9bb5cd2e31fb58f48f0381a584a40d",
+          "triangles": 8448,
+          "color": [
+            0.75,
+            0.52,
+            0.49
+          ],
+          "alpha": 0.13,
+          "gloss": 0.1
+        }
+      },
+      "cutaway": {
+        "method": "Fixed esophageal clearance window in reference vertebrae; open cut, no added caps.",
+        "clearanceMm": 2.5,
+        "changedSourceTriangles": 168,
+        "sourceTriangles": 3469,
+        "sourcePosePreserved": true,
+        "patientRegistered": false
+      },
+      "originalIntersectionPairs": 551,
+      "originalIntersectingSpineFaces": 59,
+      "originalIntersectingEsophagealFaces": 344,
+      "remainingIntersectionPairs": 0,
+      "continuousTriangleAabbClearanceMm": 2.5,
+      "byteIdenticalOriginalTriangles": 3301,
+      "changedOriginalTriangles": 168,
+      "newFragmentsOnOriginalFaces": 440
+    },
+    {
+      "donorId": "s-20-29",
+      "referenceMm": 154.66464000000002,
+      "frameScale": 0.9205658697318738,
+      "bodyScale": 1.35,
+      "sourceHash": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+      "nonSpineMeshesByteIdentical": true,
+      "skinByteIdentical": true,
+      "tractAndTopologyIdentityPreserved": true,
+      "transformUnchanged": true,
+      "files": {
+        "before": {
+          "file": "s-20-29-before.f32",
+          "worldFile": "s-20-29-before-world.f32",
+          "sha256": "9163ab359a13cb2e5afac43a9f20ab4cd237deef047554e8d5a90c29ebe40750",
+          "worldSha256": "b3e9ce2824534877fed9f9eca02cfc793684b56d85f7fa7012c67be3cc749024",
+          "triangles": 3469,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "after": {
+          "file": "s-20-29-after.f32",
+          "worldFile": "s-20-29-after-world.f32",
+          "sha256": "9163ab359a13cb2e5afac43a9f20ab4cd237deef047554e8d5a90c29ebe40750",
+          "worldSha256": "b3e9ce2824534877fed9f9eca02cfc793684b56d85f7fa7012c67be3cc749024",
+          "triangles": 3469,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "esophagus": {
+          "file": "s-20-29-esophagus.f32",
+          "worldFile": "s-20-29-esophagus-world.f32",
+          "sha256": "8c574c0e6b0a3913267f1475a2e64d1cda1a2ac2c922c145bcbe47d8faf26dc8",
+          "worldSha256": "667f58a2c39450de05e714b78fb2f9dc9c0995ccfae5a932c251fee098b80117",
+          "triangles": 8448,
+          "color": [
+            0.75,
+            0.52,
+            0.49
+          ],
+          "alpha": 0.13,
+          "gloss": 0.1
+        }
+      },
+      "cutaway": null,
+      "originalIntersectionPairs": 0,
+      "originalIntersectingSpineFaces": 0,
+      "originalIntersectingEsophagealFaces": 0,
+      "remainingIntersectionPairs": 0,
+      "continuousTriangleAabbClearanceMm": 25.96970116292914,
+      "byteIdenticalOriginalTriangles": 3469,
+      "changedOriginalTriangles": 0,
+      "newFragmentsOnOriginalFaces": 0
+    },
+    {
+      "donorId": "s-20-28",
+      "referenceMm": 161.34080000000003,
+      "frameScale": 0.9603024574669189,
+      "bodyScale": 1.22,
+      "sourceHash": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+      "nonSpineMeshesByteIdentical": true,
+      "skinByteIdentical": true,
+      "tractAndTopologyIdentityPreserved": true,
+      "transformUnchanged": true,
+      "files": {
+        "before": {
+          "file": "s-20-28-before.f32",
+          "worldFile": "s-20-28-before-world.f32",
+          "sha256": "f714f2ab11d27b6a5fca49ebd9e35151563e210621e3cfc1109d43ecf3282a57",
+          "worldSha256": "c7137e902565735db0e291c6e37a60a11075a6ae12992e944390a87e01810d1c",
+          "triangles": 3469,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "after": {
+          "file": "s-20-28-after.f32",
+          "worldFile": "s-20-28-after-world.f32",
+          "sha256": "f714f2ab11d27b6a5fca49ebd9e35151563e210621e3cfc1109d43ecf3282a57",
+          "worldSha256": "c7137e902565735db0e291c6e37a60a11075a6ae12992e944390a87e01810d1c",
+          "triangles": 3469,
+          "color": [
+            0.61,
+            0.68,
+            0.65
+          ],
+          "alpha": 0.075,
+          "gloss": 0.055
+        },
+        "esophagus": {
+          "file": "s-20-28-esophagus.f32",
+          "worldFile": "s-20-28-esophagus-world.f32",
+          "sha256": "c1f5b84f15463c75f5d676a57d114a14ce8d3a6d0c7a88245907d3dfad21e072",
+          "worldSha256": "23e8c34c3078f048a661660a6ae39b4fc0a980a623f7a1f874580d07d125425a",
+          "triangles": 8448,
+          "color": [
+            0.75,
+            0.52,
+            0.49
+          ],
+          "alpha": 0.13,
+          "gloss": 0.1
+        }
+      },
+      "cutaway": null,
+      "originalIntersectionPairs": 0,
+      "originalIntersectingSpineFaces": 0,
+      "originalIntersectingEsophagealFaces": 0,
+      "remainingIntersectionPairs": 0,
+      "continuousTriangleAabbClearanceMm": 4.141164155480472,
+      "byteIdenticalOriginalTriangles": 3469,
+      "changedOriginalTriangles": 0,
+      "newFragmentsOnOriginalFaces": 0
+    }
+  ],
+  "sourceHashes": {
+    "public/echo-context-cutaway.js": "e315c9339f67ce38aed6e513f0f691478491dd678508b344fa36337542fbcd01",
+    "public/echo-anatomy-context-v2.js": "524e78008689d70ebad74605a7b536922a91618b69f40c83f50c03e56a55a28b",
+    "public/tee-context-geometry.js": "bd78662cb61b68c9a324b4563c41ed1ae51bc73417d1b4ba8201b80aaedc4cf1"
+  }
+}

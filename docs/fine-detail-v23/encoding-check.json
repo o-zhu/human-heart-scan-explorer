@@ -1,0 +1,16 @@
+{
+  "schema": "fine-detail-v23-encoding-check",
+  "passed": true,
+  "input": "Measured initial64-cell slab; isolated fixture, not release.",
+  "inputSha256": "93c3e12c24ddf69b83a095df23665f7109ab6e61537e1b8e6f9baa538b1b5406",
+  "triangles": 18026,
+  "vertices": 10511,
+  "multipartPieces": 11,
+  "fixturePartLimitBytes": 16384,
+  "compressedBytes": 179746,
+  "decodedBytes": 342480,
+  "orientedQuantizedTriangleMultisetPreserved": true,
+  "normalLengthsVerified": true,
+  "allHashesVerified": true,
+  "collinearFloatTriangleThatQuantizesNoncollinearlyRejected": true
+}

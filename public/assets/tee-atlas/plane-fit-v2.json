@@ -1,0 +1,1727 @@
+{
+  "schemaVersion": 1,
+  "id": "tee-plane-fit-v2",
+  "datasetId": "1659197537",
+  "specimen": "LADAF-2021-17",
+  "reviewedDate": "2026-11-07",
+  "sourceCommit": "5761089d06cae66da76445565999307a0612d184",
+  "description": "Separate, donor-specific, source-reviewed approximate TEE frames. Original frames, prepared textures and source voxels remain immutable.",
+  "clinicalRegistrationValidated": false,
+  "source": {
+    "url": "assets/volume-v5/heart-high-clean.raw.gz",
+    "decodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+    "dimensionsXYZ": [
+      475,
+      475,
+      530
+    ],
+    "spacingMm": 0.3176,
+    "displayValues": "uint8 windowed source; no HU calibration"
+  },
+  "method": "Broad-to-fine landmark/axis inclusion and defining-exclusion exploration, followed by measured-source visual adjudication. Wrong-family regional tissue excludes misleading left-only views. Actual papillary/mitral profiles override geometric ranking.",
+  "outsideScanViews": [
+    "daosax",
+    "daolax",
+    "uearchlax",
+    "uearchsax"
+  ],
+  "views": {
+    "me5c": {
+      "frame": {
+        "center": [
+          0.07292256945101443,
+          0.08481121712275941,
+          -0.05700135375257876
+        ],
+        "right": [
+          0.6394134980700095,
+          0.3895768638011535,
+          -0.6628576360552328
+        ],
+        "up": [
+          0.27236484464202776,
+          -0.9209907591167185,
+          -0.2785559423611977
+        ],
+        "normal": [
+          -0.7190047078350728,
+          -0.0024266875506039343,
+          -0.695000964962304
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "Both ventricular/AV-junction regions are retained with a stronger LV outflow and aortic-root section; some apical foreshortening is accepted.",
+      "remainingLimits": [
+        "Some apical foreshortening is accepted for the five-chamber target."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 2366,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          275.57603924,
+          267.153716135,
+          309.365133858
+        ],
+        "rightXYZ": [
+          0.63941349807,
+          0.662857636055,
+          0.389576863801
+        ],
+        "upXYZ": [
+          0.272364844642,
+          0.278555942361,
+          -0.920990759117
+        ],
+        "normalXYZ": [
+          -0.719004707835,
+          0.695000964962,
+          -0.002426687551
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 14.39,
+        "baselineNormalDisplacementMm": 3.473
+      },
+      "presentation": []
+    },
+    "me4c": {
+      "frame": {
+        "center": [
+          0.0642813249144285,
+          0.11925523662219198,
+          -0.052441171632722536
+        ],
+        "right": [
+          0.40598719978293374,
+          0.31487006191983014,
+          -0.8579226292149045
+        ],
+        "up": [
+          0.4734898740486887,
+          -0.8754168124023165,
+          -0.09722522171085247
+        ],
+        "normal": [
+          -0.7816532049353916,
+          -0.3667454821398211,
+          -0.5044958062702415
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The plane now follows both AV-junction regions and the LV apex while removing the previously dominant aortic-outflow profile.",
+      "remainingLimits": [
+        "AV-junction and septal identities are approximate source landmarks, not an expert reference registration."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 1933,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          271.00482088,
+          264.741379794,
+          327.586020173
+        ],
+        "rightXYZ": [
+          0.405987199783,
+          0.857922629215,
+          0.31487006192
+        ],
+        "upXYZ": [
+          0.473489874049,
+          0.097225221711,
+          -0.875416812402
+        ],
+        "normalXYZ": [
+          -0.781653204935,
+          0.50449580627,
+          -0.36674548214
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 14.548,
+        "baselineNormalDisplacementMm": 4.197
+      },
+      "presentation": []
+    },
+    "mecommissural": {
+      "frame": {
+        "center": [
+          0.04908226111226277,
+          0.11389434756604487,
+          -0.06904676200460148
+        ],
+        "right": [
+          0.8126044990995,
+          0.3047561704062766,
+          0.4967872830926243
+        ],
+        "up": [
+          0.4159025038227542,
+          -0.900360364616292,
+          -0.12797000094546282
+        ],
+        "normal": [
+          0.4082879319269854,
+          0.3106040734235762,
+          -0.8583857374254695
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "A broader mitral-region and long-LV section replaces the outflow-containing starting plane; scallop correspondence remains unresolved.",
+      "remainingLimits": [
+        "Individual P3/A2/P1 scallops and paired papillary identities are not independently annotated."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 2249,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          262.964516128,
+          273.5257371,
+          324.750109862
+        ],
+        "rightXYZ": [
+          0.8126044991,
+          -0.496787283093,
+          0.304756170406
+        ],
+        "upXYZ": [
+          0.415902503823,
+          0.127970000945,
+          -0.900360364616
+        ],
+        "normalXYZ": [
+          0.408287931927,
+          0.858385737425,
+          0.310604073424
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 16.0,
+        "baselineNormalDisplacementMm": 0.015
+      },
+      "presentation": []
+    },
+    "me2c": {
+      "frame": {
+        "center": [
+          0.05401513794706884,
+          0.11745480339712823,
+          -0.07556513898849956
+        ],
+        "right": [
+          0.6004864204013922,
+          0.16621066693399258,
+          0.7821701049713419
+        ],
+        "up": [
+          0.4394842813814722,
+          -0.885777030535766,
+          -0.14917311619005477
+        ],
+        "normal": [
+          0.6680341498247926,
+          0.4333278970624878,
+          -0.6049440538556178
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "Long LA\u2013mitral-region\u2013LV continuity is retained with little right-heart tissue; visually cleaner than lower-cost candidates that resembled four-chamber sections.",
+      "remainingLimits": [
+        "Anterior/inferior wall identity is not independently registered to a living-patient TEE acquisition."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 18,
+        "selectedCandidateId": 1777,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          265.574007974,
+          276.973958525,
+          326.633590997
+        ],
+        "rightXYZ": [
+          0.600486420401,
+          -0.782170104971,
+          0.166210666934
+        ],
+        "upXYZ": [
+          0.439484281381,
+          0.14917311619,
+          -0.885777030536
+        ],
+        "normalXYZ": [
+          0.668034149825,
+          0.604944053856,
+          0.433327897062
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 8.245,
+        "baselineNormalDisplacementMm": 1.659
+      },
+      "presentation": []
+    },
+    "melax": {
+      "frame": {
+        "center": [
+          0.02696313213870294,
+          0.07053037438538574,
+          -0.04718732394124453
+        ],
+        "right": [
+          -0.8826294575539033,
+          -0.43204977162319763,
+          0.185197828006824
+        ],
+        "up": [
+          0.42514561857210237,
+          -0.9017916611298952,
+          -0.07760800812756964
+        ],
+        "normal": [
+          0.20054037914357017,
+          0.010236931030695298,
+          0.9796319521003927
+        ],
+        "width": 0.6805293005671077,
+        "height": 0.9073724007561437,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "A continuous source section connects the LV/mitral region with the LV outflow and elongated aortic root; display orientation places outflow to the right.",
+      "remainingLimits": [
+        "The collapsed LV and adjoining fibrous/valvar tissue do not reproduce a normal clinical echo cavity."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 2225,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          251.263496901,
+          261.962094365,
+          301.81056805
+        ],
+        "rightXYZ": [
+          -0.882629457554,
+          -0.185197828007,
+          -0.432049771623
+        ],
+        "upXYZ": [
+          0.425145618572,
+          0.077608008128,
+          -0.90179166113
+        ],
+        "normalXYZ": [
+          0.200540379144,
+          -0.9796319521,
+          0.010236931031
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 24.976,
+        "baselineNormalDisplacementMm": 5.738
+      },
+      "presentation": [
+        "Horizontal display reflection; physical plane unchanged."
+      ]
+    },
+    "meavlax": {
+      "frame": {
+        "center": [
+          0.036282224490946216,
+          -0.0504297301271205,
+          -0.04148373936430832
+        ],
+        "right": [
+          -0.4598115265583203,
+          -0.8871606131703357,
+          -0.03897956494551067
+        ],
+        "up": [
+          0.8879877709623889,
+          -0.459000181291259,
+          -0.028223256294045457
+        ],
+        "normal": [
+          0.007146933982845102,
+          -0.047590755550059455,
+          0.998841349424832
+        ],
+        "width": 0.6332703213610587,
+        "height": 0.5198487712665406,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "Root/cusp and proximal ascending-aortic continuity were selected together with the LA near-field region; the root axis is displayed horizontally.",
+      "remainingLimits": [
+        "Valve annulus, sinotubular junction and cusp identities are not separate measured segmentations."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 2264,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          256.193296756,
+          258.944898124,
+          237.822672763
+        ],
+        "rightXYZ": [
+          -0.459811526558,
+          0.038979564946,
+          -0.88716061317
+        ],
+        "upXYZ": [
+          0.887987770962,
+          0.028223256294,
+          -0.459000181291
+        ],
+        "normalXYZ": [
+          0.007146933983,
+          -0.998841349425,
+          -0.04759075555
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 30.49,
+        "baselineNormalDisplacementMm": 0.215
+      },
+      "presentation": [
+        "In-plane roll: aortic axis horizontal/rightward, LA side near field; physical plane unchanged."
+      ]
+    },
+    "meaaolax": {
+      "frame": {
+        "center": [
+          -0.06273751455929823,
+          -0.20837558101603312,
+          -0.053557195628539375
+        ],
+        "right": [
+          0.46701547005215854,
+          0.8778480610401624,
+          0.10620420170590625
+        ],
+        "up": [
+          0.8817933199277692,
+          -0.45340185591279825,
+          -0.12987416211700128
+        ],
+        "normal": [
+          -0.06585659923443024,
+          0.15430339848123112,
+          -0.9858262369983963
+        ],
+        "width": 0.6049149338374291,
+        "height": 0.4914933837429111,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "A long section follows the retained ascending-aortic lumen and walls; the LA region constrains the plane azimuth.",
+      "remainingLimits": [
+        "The ascending vessel ends are specimen-truncated; no aortic arch is present."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 2644,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          203.811854798,
+          265.331756487,
+          154.269317643
+        ],
+        "rightXYZ": [
+          0.467015470052,
+          -0.106204201706,
+          0.87784806104
+        ],
+        "upXYZ": [
+          0.881793319928,
+          0.129874162117,
+          -0.453401855913
+        ],
+        "normalXYZ": [
+          -0.065856599234,
+          0.985826236998,
+          0.154303398481
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 16.0,
+        "baselineNormalDisplacementMm": 6.877
+      },
+      "presentation": [
+        "In-plane roll to horizontal retained aorta, with LA-side near field; physical plane unchanged."
+      ]
+    },
+    "meaaosax": {
+      "frame": {
+        "center": [
+          -0.05860113421550094,
+          -0.1880907372400756,
+          -0.043478260869565216
+        ],
+        "right": [
+          -0.09125831113915307,
+          0.15545023681544373,
+          -0.9836194104032576
+        ],
+        "up": [
+          0.9216916363106858,
+          -0.3607897752556061,
+          -0.14253163026479257
+        ],
+        "normal": [
+          -0.3770364016947964,
+          -0.9196009797434057,
+          -0.11035211756920875
+        ],
+        "width": 0.5671077504725898,
+        "height": 0.5482041587901701,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The selected section is perpendicular to the retained ascending-aortic segment, separate from the valve-level short-axis target.",
+      "remainingLimits": [
+        "SVC and right pulmonary-artery identities are not independently established.",
+        "The nearby SVC and right pulmonary artery have not been individually verified."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          206.0,
+          260.0,
+          165.0
+        ],
+        "rightXYZ": [
+          -0.091258311139,
+          0.983619410403,
+          0.155450236815
+        ],
+        "upXYZ": [
+          0.921691636311,
+          0.142531630265,
+          -0.360789775256
+        ],
+        "normalXYZ": [
+          -0.377036401695,
+          0.110352117569,
+          -0.919600979743
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 19.463,
+        "baselineNormalDisplacementMm": 3.583
+      },
+      "presentation": []
+    },
+    "merpv": {
+      "frame": {
+        "center": [
+          0.1412611518496785,
+          -0.08446414122752273,
+          -0.062381852551984876
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          -0.10452846326765344,
+          -0.9945218953682733,
+          -0.0
+        ],
+        "normal": [
+          -0.9945218953682734,
+          0.10452846326765346,
+          -0.0
+        ],
+        "width": 0.5671077504725898,
+        "height": 0.5954631379962193,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "The closest available LA/venous-entry region was reviewed in multiple planes; the two right pulmonary-vein ostia are not individually confirmed.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 1516,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          311.727149328,
+          270.0,
+          219.818469291
+        ],
+        "rightXYZ": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "upXYZ": [
+          -0.104528463268,
+          0.0,
+          -0.994521895368
+        ],
+        "normalXYZ": [
+          -0.994521895368,
+          0.0,
+          0.104528463268
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 30.539,
+        "baselineNormalDisplacementMm": 9.101
+      },
+      "presentation": []
+    },
+    "meavsax": {
+      "frame": {
+        "center": [
+          0.010396975425330813,
+          -0.055765595463137994,
+          -0.02835538752362949
+        ],
+        "right": [
+          -0.11081089916277209,
+          0.19398747532445773,
+          -0.9747255018947545
+        ],
+        "up": [
+          0.860659743339184,
+          -0.4717072159308103,
+          -0.19172143498871969
+        ],
+        "normal": [
+          -0.49697660993458015,
+          -0.8601518248867736,
+          -0.1146869099849031
+        ],
+        "width": 0.5671077504725898,
+        "height": 0.5482041587901701,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The plane is moved from ventricular/outflow tissue to the source-observed three-sinus/cusp region of the aortic root.",
+      "remainingLimits": [
+        "The root/cusp level is source-reviewed; individual cusp labels and exact annular dimensions are unvalidated."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          242.5,
+          252.0,
+          235.0
+        ],
+        "rightXYZ": [
+          -0.110810899163,
+          0.974725501895,
+          0.193987475324
+        ],
+        "upXYZ": [
+          0.860659743339,
+          0.191721434989,
+          -0.471707215931
+        ],
+        "normalXYZ": [
+          -0.496976609935,
+          0.114686909985,
+          -0.860151824887
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 17.283,
+        "baselineNormalDisplacementMm": 12.921
+      },
+      "presentation": []
+    },
+    "mervinout": {
+      "frame": {
+        "center": [
+          -0.07769376181474479,
+          -0.003780718336483932,
+          -0.0155009451795841
+        ],
+        "right": [
+          -0.6957868021903584,
+          -0.21712890400027274,
+          -0.6846428009884831
+        ],
+        "up": [
+          0.5487247337332262,
+          -0.7757482434464789,
+          -0.31163412743007235
+        ],
+        "normal": [
+          -0.46344567371712003,
+          -0.5925113516527282,
+          0.6588993896457501
+        ],
+        "width": 0.6616257088846881,
+        "height": 0.7372400756143668,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "An anatomy-fitted section connects the tricuspid-side RV with the muscular outflow/pulmonary-valve region; inflow is displayed to the left.",
+      "remainingLimits": [
+        "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          195.9,
+          245.2,
+          262.5
+        ],
+        "rightXYZ": [
+          -0.69578680219,
+          0.684642800988,
+          -0.217128904
+        ],
+        "upXYZ": [
+          0.548724733733,
+          0.31163412743,
+          -0.775748243446
+        ],
+        "normalXYZ": [
+          -0.463445673717,
+          -0.658899389646,
+          -0.592511351653
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 40.091,
+        "baselineNormalDisplacementMm": 10.515
+      },
+      "presentation": [
+        "Horizontal display reflection; physical plane unchanged."
+      ]
+    },
+    "memodbicaval": {
+      "frame": {
+        "center": [
+          -0.015332913253518174,
+          0.013757613946649852,
+          0.10565007351396764
+        ],
+        "right": [
+          0.9791848899194179,
+          0.16812405973187608,
+          -0.11371566247782243
+        ],
+        "up": [
+          0.17956827972049091,
+          -0.978729326725525,
+          0.09921762910705037
+        ],
+        "normal": [
+          -0.09461598317261732,
+          -0.11757212912367129,
+          -0.9885467162363173
+        ],
+        "width": 0.6238185255198487,
+        "height": 0.7372400756143668,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "The section is centered on RA\u2013tricuspid-region\u2013RV continuity, while individual caval and leaflet identities remain uncertain.",
+      "remainingLimits": [
+        "Caval ostia and leaflet identities remain unresolved."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 2270,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          228.888888889,
+          181.111111111,
+          271.777777778
+        ],
+        "rightXYZ": [
+          0.979184889919,
+          0.113715662478,
+          0.168124059732
+        ],
+        "upXYZ": [
+          0.17956827972,
+          -0.099217629107,
+          -0.978729326726
+        ],
+        "normalXYZ": [
+          -0.094615983173,
+          0.988546716236,
+          -0.117572129124
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 8.641,
+        "baselineNormalDisplacementMm": 1.559
+      },
+      "presentation": []
+    },
+    "bicaval": {
+      "frame": {
+        "center": [
+          0.06555818501925206,
+          -0.12376721516997105,
+          0.0357852750798448
+        ],
+        "right": [
+          0.634676671171235,
+          0.38815157803144124,
+          -0.6682244200436722
+        ],
+        "up": [
+          0.10144856140468651,
+          -0.8990705198695323,
+          -0.4258877665423701
+        ],
+        "normal": [
+          -0.7660898853658882,
+          0.20251062385275204,
+          -0.6099965038972351
+        ],
+        "width": 0.6332703213610587,
+        "height": 0.6238185255198487,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "Atrial and septal-side continuity is favored over ventricular/outflow tissue; the preserved specimen does not establish both caval ostia.",
+      "remainingLimits": [
+        "Both caval ostia and continuous IAS cannot be confidently identified in the truncated specimen."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          271.680279875,
+          218.069589483,
+          199.027143175
+        ],
+        "rightXYZ": [
+          0.634676671171,
+          0.668224420044,
+          0.388151578031
+        ],
+        "upXYZ": [
+          0.101448561405,
+          0.425887766542,
+          -0.89907051987
+        ],
+        "normalXYZ": [
+          -0.766089885366,
+          0.609996503897,
+          0.202510623853
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 27.045,
+        "baselineNormalDisplacementMm": 0.932
+      },
+      "presentation": []
+    },
+    "mepv": {
+      "frame": {
+        "center": [
+          0.1414129157536501,
+          -0.08447651903184562,
+          -0.062432385593878766
+        ],
+        "right": [
+          -1.2686915604467536e-18,
+          0.14071773173339186,
+          -0.9900497563131911
+        ],
+        "up": [
+          -0.10452846326765344,
+          -0.9846261601574919,
+          -0.1399468652754171
+        ],
+        "normal": [
+          -0.9945218953682733,
+          0.10348837958593264,
+          0.014709008252601364
+        ],
+        "width": 0.5671077504725898,
+        "height": 0.5954631379962193,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "A source-reviewed LA/venous-entry plane is shown; right and left pulmonary-vein acquisitions are distinct clinical maneuvers, and all four ostia are not established here.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 20,
+        "selectedCandidateId": 1516,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          311.807432434,
+          270.026731979,
+          219.811921432
+        ],
+        "rightXYZ": [
+          -0.0,
+          0.990049756313,
+          0.140717731733
+        ],
+        "upXYZ": [
+          -0.104528463268,
+          0.139946865275,
+          -0.984626160157
+        ],
+        "normalXYZ": [
+          -0.994521895368,
+          -0.014709008253,
+          0.103488379586
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 59.304,
+        "baselineNormalDisplacementMm": 10.691
+      },
+      "presentation": []
+    },
+    "melaa": {
+      "frame": {
+        "center": [
+          0.16068052930056712,
+          -0.14083175803402648,
+          -0.12287334593572778
+        ],
+        "right": [
+          0.2588190451025208,
+          0.0,
+          -0.9659258262890685
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "normal": [
+          -0.9659258262890683,
+          0.0,
+          -0.25881904510252074
+        ],
+        "width": 0.64,
+        "height": 0.64,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "Multiple lateral-LA sections were examined. The original lateral atrial region is retained because no candidate established a more defensible LAA ostial/lobe section.",
+      "remainingLimits": [
+        "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 18,
+        "selectedCandidateId": 0,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          322.0,
+          302.0,
+          190.0
+        ],
+        "rightXYZ": [
+          0.258819045103,
+          0.965925826289,
+          0.0
+        ],
+        "upXYZ": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "normalXYZ": [
+          -0.965925826289,
+          0.258819045103,
+          0.0
+        ],
+        "originalPhysicalPlaneRetained": true,
+        "baselineNormalAngleDegrees": 0.0,
+        "baselineNormalDisplacementMm": 0.0
+      },
+      "presentation": []
+    },
+    "tgbasalsax": {
+      "frame": {
+        "center": [
+          0.14555765595463138,
+          0.017958412098298678,
+          -0.08128544423440454
+        ],
+        "right": [
+          0.7577469700500704,
+          -0.06864932959910727,
+          -0.6489274219244636
+        ],
+        "up": [
+          0.6302032157962298,
+          0.3349955664811421,
+          0.7004440571794934
+        ],
+        "normal": [
+          0.1693027943656818,
+          -0.9397155101324932,
+          0.297104903756905
+        ],
+        "width": 0.6427221172022685,
+        "height": 0.6238185255198487,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "An independently oriented basal LA\u2013LV interface section shows a broader mitral-region opening and removes the dominant arterial-root star of the earlier plane.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed.",
+        "This is a mitral-region correspondence; exact leaflet/annular boundaries and the clinical fishmouth appearance remain unvalidated."
+      ],
+      "search": {
+        "candidatesEvaluated": 2745,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 36,
+        "measuredReformatsRendered": 55,
+        "selectedCandidateId": 11201,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          314.0,
+          280.0,
+          274.0
+        ],
+        "rightXYZ": [
+          0.75774697005,
+          0.648927421924,
+          -0.068649329599
+        ],
+        "upXYZ": [
+          0.630203215796,
+          -0.700444057179,
+          0.334995566481
+        ],
+        "normalXYZ": [
+          0.169302794366,
+          -0.297104903757,
+          -0.939715510132
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 28.541,
+        "baselineNormalDisplacementMm": 5.365
+      },
+      "presentation": []
+    },
+    "tgpapillary": {
+      "frame": {
+        "center": [
+          0.007655954999999991,
+          0.19877126700000003,
+          -0.05746691899999995
+        ],
+        "right": [
+          0.592746856,
+          0.375104995,
+          -0.712704291
+        ],
+        "up": [
+          0.689692882,
+          0.220561683,
+          0.689692882
+        ],
+        "normal": [
+          0.41590250338423423,
+          -0.9003603648064373,
+          -0.12797000103284445
+        ],
+        "width": 0.72,
+        "height": 0.72,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "retained",
+      "summary": "The original plane is retained after broad exploration and 21 close neighbors: its two principal muscular profiles are clearer than the newly proposed level.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+      ],
+      "search": {
+        "candidatesEvaluated": 2730,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 21,
+        "measuredReformatsRendered": 40,
+        "selectedCandidateId": 0,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          241.050000195,
+          267.400000151,
+          369.650000243
+        ],
+        "rightXYZ": [
+          0.592746856,
+          0.712704291,
+          0.375104995
+        ],
+        "upXYZ": [
+          0.689692882,
+          -0.689692882,
+          0.220561683
+        ],
+        "normalXYZ": [
+          0.415902503384,
+          0.127970001033,
+          -0.900360364806
+        ],
+        "originalPhysicalPlaneRetained": true,
+        "baselineNormalAngleDegrees": 0.0,
+        "baselineNormalDisplacementMm": 0.0
+      },
+      "presentation": []
+    },
+    "tgapicalsax": {
+      "frame": {
+        "center": [
+          -0.05057039553518559,
+          0.3248217180462809,
+          -0.039551118867635154
+        ],
+        "right": [
+          0.592746856345657,
+          0.3751049952050159,
+          -0.7127042913190476
+        ],
+        "up": [
+          0.6896928823549421,
+          0.2205616831135094,
+          0.6896928823549421
+        ],
+        "normal": [
+          0.41590250338423423,
+          -0.9003603648064372,
+          -0.12797000103284448
+        ],
+        "width": 0.62,
+        "height": 0.62,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "retained",
+      "summary": "The original distal ventricular plane is retained after broad exploration and 21 close neighbors; it avoids the dominant papillary profile seen in more proximal candidates.",
+      "remainingLimits": [
+        "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+      ],
+      "search": {
+        "candidatesEvaluated": 2730,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 21,
+        "measuredReformatsRendered": 40,
+        "selectedCandidateId": 0,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          210.248260762,
+          257.922541881,
+          436.330688846
+        ],
+        "rightXYZ": [
+          0.592746856346,
+          0.712704291319,
+          0.375104995205
+        ],
+        "upXYZ": [
+          0.689692882355,
+          -0.689692882355,
+          0.220561683114
+        ],
+        "normalXYZ": [
+          0.415902503384,
+          0.127970001033,
+          -0.900360364806
+        ],
+        "originalPhysicalPlaneRetained": true,
+        "baselineNormalAngleDegrees": 0.0,
+        "baselineNormalDisplacementMm": 0.0
+      },
+      "presentation": []
+    },
+    "tgrvbasal": {
+      "frame": {
+        "center": [
+          -0.003308131718402905,
+          0.059619080289249914,
+          0.09506001256304085
+        ],
+        "right": [
+          0.7176290444819696,
+          -0.08113058626173815,
+          -0.6916837301026548
+        ],
+        "up": [
+          0.5217590465349555,
+          0.7204721631201365,
+          0.4568231162363892
+        ],
+        "normal": [
+          0.46127654598389184,
+          -0.6887217799240983,
+          0.5593623673285076
+        ],
+        "width": 0.6616257088846881,
+        "height": 0.6427221172022685,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "limited",
+      "summary": "A plane based on the reviewed tricuspid hinge neighborhood replaces the duplicated LV/root-level cut; exact en-face tricuspid correspondence remains partial.",
+      "remainingLimits": [
+        "The curved tricuspid hinge departs from a flat plane; this is not an annular measurement.",
+        "A flat cut cannot reproduce the curved TV hinge perfectly; a complete en-face three-leaflet view is not established."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          235.249998321,
+          186.713253354,
+          296.038493473
+        ],
+        "rightXYZ": [
+          0.717629044482,
+          0.691683730103,
+          -0.081130586262
+        ],
+        "upXYZ": [
+          0.521759046535,
+          -0.456823116236,
+          0.72047216312
+        ],
+        "normalXYZ": [
+          0.461276545984,
+          -0.559362367329,
+          -0.688721779924
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 42.238,
+        "baselineNormalDisplacementMm": 25.861
+      },
+      "presentation": []
+    },
+    "tgrvinout": {
+      "frame": {
+        "center": [
+          -0.07769376181474479,
+          -0.003780718336483932,
+          -0.0155009451795841
+        ],
+        "right": [
+          0.10077653016451063,
+          0.7035069619300159,
+          0.7035069619300157
+        ],
+        "up": [
+          -0.8803761687374815,
+          0.3924388521523529,
+          -0.2663260198336943
+        ],
+        "normal": [
+          -0.46344567371711987,
+          -0.5925113516527282,
+          0.6588993896457502
+        ],
+        "width": 0.6616257088846881,
+        "height": 0.7372400756143668,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+      "remainingLimits": [
+        "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          195.9,
+          245.2,
+          262.5
+        ],
+        "rightXYZ": [
+          0.100776530165,
+          -0.70350696193,
+          0.70350696193
+        ],
+        "upXYZ": [
+          -0.880376168737,
+          0.266326019834,
+          0.392438852152
+        ],
+        "normalXYZ": [
+          -0.463445673717,
+          -0.658899389646,
+          -0.592511351653
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 87.309,
+        "baselineNormalDisplacementMm": 10.398
+      },
+      "presentation": []
+    },
+    "deeptg5c": {
+      "frame": {
+        "center": [
+          0.04349468030391127,
+          0.1919695267557563,
+          -0.014482318581972941
+        ],
+        "right": [
+          0.6770888704524247,
+          0.4176303238503335,
+          -0.605917134689328
+        ],
+        "up": [
+          -0.29388172413508706,
+          0.9083138070462323,
+          0.29765678246693555
+        ],
+        "normal": [
+          0.6746733978221228,
+          -0.023472122397549006,
+          0.7377430892535058
+        ],
+        "width": 0.72,
+        "height": 0.95,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The section brings both ventricular regions and LV outflow into one measured plane with a gastric-side presentation.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1565,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          260.008685881,
+          244.66114653,
+          366.051879654
+        ],
+        "rightXYZ": [
+          0.677088870452,
+          0.605917134689,
+          0.41763032385
+        ],
+        "upXYZ": [
+          -0.293881724135,
+          -0.297656782467,
+          0.908313807046
+        ],
+        "normalXYZ": [
+          0.674673397822,
+          -0.737743089254,
+          -0.023472122398
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 22.338,
+        "baselineNormalDisplacementMm": 8.955
+      },
+      "presentation": []
+    },
+    "tg2c": {
+      "frame": {
+        "center": [
+          0.01018858971754159,
+          0.19925809587622717,
+          -0.0666753988812407
+        ],
+        "right": [
+          0.4962138022101328,
+          -0.8669161310925629,
+          -0.0472047047196098
+        ],
+        "up": [
+          0.5175178928891205,
+          0.2516906001371148,
+          0.8178184837372068
+        ],
+        "normal": [
+          -0.6970990553972715,
+          -0.4302420986539106,
+          0.5735369591491997
+        ],
+        "width": 0.95,
+        "height": 0.72,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The new measured plane excludes the long aortic pathway seen previously and isolates the LA\u2013mitral-region\u2013LV sequence; the apex is displayed to the left.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 18,
+        "selectedCandidateId": 2804,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          242.389763961,
+          272.271286008,
+          369.907532719
+        ],
+        "rightXYZ": [
+          0.49621380221,
+          0.04720470472,
+          -0.866916131093
+        ],
+        "upXYZ": [
+          0.517517892889,
+          -0.817818483737,
+          0.251690600137
+        ],
+        "normalXYZ": [
+          -0.697099055397,
+          -0.573536959149,
+          -0.430242098654
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 28.23,
+        "baselineNormalDisplacementMm": 1.729
+      },
+      "presentation": [
+        "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+      ]
+    },
+    "tgrvin": {
+      "frame": {
+        "center": [
+          -0.034236504935937835,
+          0.1221382062591892,
+          0.08758664146187778
+        ],
+        "right": [
+          0.07274906640483189,
+          -0.9616544997839815,
+          0.26443940020814927
+        ],
+        "up": [
+          0.9630119066469464,
+          -0.0012442699401868586,
+          -0.26945596940600397
+        ],
+        "normal": [
+          0.2594525794696186,
+          0.27426096119852045,
+          0.9259942138960832
+        ],
+        "width": 0.8128544423440454,
+        "height": 0.6238185255198487,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "An independent TV\u2013RV-body\u2013apical-RV plane replaces the generic tilted starting frame, with RV/apical tissue to the left and the tricuspid/atrial side to the right.",
+      "remainingLimits": [
+        "Tricuspid leaflet and subvalvular identities are not individually segmented."
+      ],
+      "search": {
+        "candidatesEvaluated": 3438,
+        "broadCandidates": 2188,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1094,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          218.888888889,
+          190.666666667,
+          329.111111111
+        ],
+        "rightXYZ": [
+          0.072749066405,
+          -0.264439400208,
+          -0.961654499784
+        ],
+        "upXYZ": [
+          0.963011906647,
+          0.269455969406,
+          -0.00124426994
+        ],
+        "normalXYZ": [
+          0.25945257947,
+          -0.925994213896,
+          0.274260961199
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 25.687,
+        "baselineNormalDisplacementMm": 8.402
+      },
+      "presentation": [
+        "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+      ]
+    },
+    "tglax": {
+      "frame": {
+        "center": [
+          0.026972063219600405,
+          0.07053569897330995,
+          -0.04712942687268167
+        ],
+        "right": [
+          0.26356726138623304,
+          -0.9633390628713079,
+          -0.050101383928903793
+        ],
+        "up": [
+          0.9431141196424437,
+          0.26824885417993455,
+          -0.19641361857623518
+        ],
+        "normal": [
+          0.20265255008615035,
+          0.0045168769501222755,
+          0.9792402880632506
+        ],
+        "width": 0.8979206049149339,
+        "height": 0.6805293005671077,
+        "displayMirrorX": false,
+        "displayRotate180": false
+      },
+      "status": "refined",
+      "summary": "The section follows the long LV into its outflow/root, with the ventricular/apical side to the left and basal outflow to the right.",
+      "remainingLimits": [
+        "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+      ],
+      "search": {
+        "candidatesEvaluated": 2709,
+        "broadCandidates": 1459,
+        "fineCandidates": 1250,
+        "adaptiveMeasuredReformats": 0,
+        "measuredReformatsRendered": 19,
+        "selectedCandidateId": 1546,
+        "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+      },
+      "source": {
+        "specimen": "LADAF-2021-17",
+        "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+        "centerXYZ": [
+          251.268221443,
+          261.931466816,
+          301.813384757
+        ],
+        "rightXYZ": [
+          0.263567261386,
+          0.050101383929,
+          -0.963339062871
+        ],
+        "upXYZ": [
+          0.943114119642,
+          0.196413618576,
+          0.26824885418
+        ],
+        "normalXYZ": [
+          0.202652550086,
+          -0.979240288063,
+          0.00451687695
+        ],
+        "originalPhysicalPlaneRetained": false,
+        "baselineNormalAngleDegrees": 32.748,
+        "baselineNormalDisplacementMm": 1.682
+      },
+      "presentation": [
+        "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+      ]
+    }
+  }
+}

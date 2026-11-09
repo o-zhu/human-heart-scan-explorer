@@ -1,0 +1,148 @@
+{
+  "schema": "heart-noise-cleanup-v22-ui-worker-verification",
+  "startedAt": "2026-11-06T18:50:08.168000+00:00",
+  "completedAt": "2026-11-06T18:50:11.789478+00:00",
+  "passed": true,
+  "nodeVersion": "v24.22.1",
+  "linkedomEntry": "{source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+  "linkedomVersion": "0.18.15",
+  "sourceStableDuringRun": true,
+  "sourceHashes": {
+    "public/whole-native.html": "0a53e59e44b99199945cc7a2245024eb05c2a35bb0657f86b3e51117d55beb2d",
+    "public/whole-native.js": "fa2bdedb06f35615e2b2964fe192ea2f87453c6af4354bca319ce12abfcf5bd5",
+    "public/native-edge-loader.js": "b1bf25281a726728b311c12fd458ce4b83dc50f623bf155f79a1fcb8c5ad6e3f",
+    "public/native-edge-worker.js": "14dd28693e5f8d870bacc1ebcff23847f149778bdf861515841b1433766beba5",
+    "public/native-edge-format.js": "b9833d04db3de8912ea8d79b713ec96000dfd6984386d0bb73e9f76caf53c55f",
+    "public/native-edge-table.js": "56b30e41f4c963cc6617dd1e9905b02f34b954f3047bd5aec7689b30b0f01d78",
+    "public/native-noise-filter.js": "cac4fa625a0d66180148a29fb22a8edd314b6799a089318c7c215698efc6d89b",
+    "public/native-mesh-format.js": "266e65ab021a73e7df305d57c5afb34ab880bbaec108c2ba15d6537623d77a1b",
+    "public/overview-face-filter.js": "8a026e15b14d742c6fae7b93cc99211a7573bad9f232a74c8fed0eb09c01d70a",
+    "public/overview-noise-filters.js": "c3bb83f50b2075cce4888338af831ef246ce5a10d37edb858a1385ee6fcc9c94",
+    "tests/whole-native-ui-v21.mjs": "e3edf37daee98f3ea26932cc876127b89aadb2846714132d1fddd8284e65f293",
+    "tests/native-edge-viewer-v21.mjs": "8152bd49b799528a3ac3f08c4389090249fdd246ae47a1fb655b11bcd11f98b0"
+  },
+  "verifiedTests": 20,
+  "sourceBankModified": false,
+  "sourceDownloadsPerformed": false,
+  "overviewRepairFixtureState": "Explicitly false on boot; tests exercise true and false independently of the product default.",
+  "scope": {
+    "ui": "Actual HTML, WholeNativeViewer, SurfacePane and NativeEdgeLoader with LinkeDOM, fixture worker messages and a mock WebGL API. No browser pixels or device performance were measured.",
+    "worker": "Actual worker module with in-memory HTTP Response fixtures and structuredClone transfer lists, including real gzip decoding, SHA-256 validation, NBE1 meshing, cleanup and HFM face filtering.",
+    "data": "Synthetic 129-cubed native plane plus a detached 27-sample island, and a three-face synthetic HFM overview. No claim of anatomical validation."
+  },
+  "nativeFixtureAssertions": {
+    "originalTriangles": 32872,
+    "cleanedTriangles": 32768,
+    "removedTriangles": 104,
+    "removedComponents": 1,
+    "removedSamples": 27,
+    "piecesPerMode": 8,
+    "verifiedNativeDownloadsAcrossNineJobs": 1,
+    "sourceCountRejectedWhenReplacedByFilteredCount": true,
+    "cachedDecodedChecksumStillValidated": true,
+    "positionsAndReferencedNormalsRetained": true
+  },
+  "uiAssertions": [
+    "Native default and initial worker request are cleaned.",
+    "Original and Removed requests preserve the previous geometry and descriptive mode labels until all eight pieces and their done result commit.",
+    "Same-block mode changes preserve yaw, pitch, center, pan and span; overview camera and requests remain independent.",
+    "Rapid mode changes coalesce; stale pieces, stale success results and superseded pending requests cannot commit.",
+    "A failed switch restores the displayed Original selector, geometry and labels, and releases the staged meshes.",
+    "Both cleanup controls remain disabled when WebGL creation fails; no geometry worker job starts.",
+    "Overview repair is explicit and independent; its failed replacement restores the displayed checkbox state and retains its previous meshes and labels."
+  ],
+  "overviewFixtureAssertions": {
+    "originalTriangles": 3,
+    "retainedTriangles": 2,
+    "removedTriangles": 1,
+    "retainedIndices": [
+      0,
+      1,
+      2,
+      0,
+      2,
+      3
+    ],
+    "positionAndNormalBytesUnchanged": true,
+    "originalViewDoesNotFetchMask": true,
+    "failureCasesBeforePieceEmission": [
+      "Foreign compressed-source hash",
+      "Foreign decoded-source hash",
+      "Corrupt mask checksum",
+      "Validly hashed mask with wrong popcount",
+      "Validly hashed mask with nonzero padding",
+      "Foreign mask face count",
+      "Missing requested repair",
+      "Wrong source-part triangle count"
+    ],
+    "aggregateSourceCountValidation": "An aggregate source-count mismatch is rejected in the final result even when a filtered piece has already been staged. The UI tests separately verify that staged pieces do not commit before a successful complete result."
+  },
+  "whitespaceCheck": {
+    "passed": true,
+    "output": ""
+  },
+  "runs": [
+    {
+      "command": [
+        "node",
+        "--test-reporter=tap",
+        "tests/whole-native-ui-v21.mjs",
+        "{source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js"
+      ],
+      "exitCode": 0,
+      "counts": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "durationMs": 109.312199,
+      "passedTests": [
+        "Failed WebGL creation preserves the graphics error when real overview assets exist",
+        "The inspector displays native geometry before the overview and commits only complete current regions",
+        "Returning to displayed geometry clears pending state; nearest selection and camera independence remain explicit",
+        "Context loss retains the other pane and restores the selected native region without stale uploads",
+        "Multipart overviews commit as a complete set and pilot completion never claims whole-heart coverage",
+        "Quality selection defaults to overview and commits labels only with complete current geometry",
+        "Overview sections span source axes, render and pick the same cut, and leave native controls independent",
+        "Native cleanup starts cleaned and Original/Removed changes retain the same-block camera and old labels until all pieces commit",
+        "Rapid native cleanup changes coalesce to the latest mode and ignore stale pieces and results",
+        "A failed cleanup change restores the selector to the displayed mode and keeps its geometry, camera and labels",
+        "Overview overlap repair is an independent explicit transaction and failure restores its displayed checkbox state"
+      ],
+      "tap": "TAP version 13\n# Subtest: Failed WebGL creation preserves the graphics error when real overview assets exist\nok 1 - Failed WebGL creation preserves the graphics error when real overview assets exist\n  ---\n  duration_ms: 22.798654\n  type: 'test'\n  ...\n# Subtest: The inspector displays native geometry before the overview and commits only complete current regions\nok 2 - The inspector displays native geometry before the overview and commits only complete current regions\n  ---\n  duration_ms: 17.817533\n  type: 'test'\n  ...\n# Subtest: Returning to displayed geometry clears pending state; nearest selection and camera independence remain explicit\nok 3 - Returning to displayed geometry clears pending state; nearest selection and camera independence remain explicit\n  ---\n  duration_ms: 7.302219\n  type: 'test'\n  ...\n# Subtest: Context loss retains the other pane and restores the selected native region without stale uploads\nok 4 - Context loss retains the other pane and restores the selected native region without stale uploads\n  ---\n  duration_ms: 5.711056\n  type: 'test'\n  ...\n# Subtest: Multipart overviews commit as a complete set and pilot completion never claims whole-heart coverage\nok 5 - Multipart overviews commit as a complete set and pilot completion never claims whole-heart coverage\n  ---\n  duration_ms: 5.172068\n  type: 'test'\n  ...\n# Subtest: Quality selection defaults to overview and commits labels only with complete current geometry\nok 6 - Quality selection defaults to overview and commits labels only with complete current geometry\n  ---\n  duration_ms: 6.778234\n  type: 'test'\n  ...\n# Subtest: Overview sections span source axes, render and pick the same cut, and leave native controls independent\nok 7 - Overview sections span source axes, render and pick the same cut, and leave native controls independent\n  ---\n  duration_ms: 6.713007\n  type: 'test'\n  ...\n# Subtest: Native cleanup starts cleaned and Original/Removed changes retain the same-block camera and old labels until all pieces commit\nok 8 - Native cleanup starts cleaned and Original/Removed changes retain the same-block camera and old labels until all pieces commit\n  ---\n  duration_ms: 10.489825\n  type: 'test'\n  ...\n# Subtest: Rapid native cleanup changes coalesce to the latest mode and ignore stale pieces and results\nok 9 - Rapid native cleanup changes coalesce to the latest mode and ignore stale pieces and results\n  ---\n  duration_ms: 6.673017\n  type: 'test'\n  ...\n# Subtest: A failed cleanup change restores the selector to the displayed mode and keeps its geometry, camera and labels\nok 10 - A failed cleanup change restores the selector to the displayed mode and keeps its geometry, camera and labels\n  ---\n  duration_ms: 9.223486\n  type: 'test'\n  ...\n# Subtest: Overview overlap repair is an independent explicit transaction and failure restores its displayed checkbox state\nok 11 - Overview overlap repair is an independent explicit transaction and failure restores its displayed checkbox state\n  ---\n  duration_ms: 4.816095\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 109.312199\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "tests/native-edge-viewer-v21.mjs"
+      ],
+      "exitCode": 0,
+      "counts": {
+        "tests": 9,
+        "pass": 9,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "durationMs": 3248.562263,
+      "passedTests": [
+        "Native selection identifies exact and nearest blocks explicitly in acquisition coordinates",
+        "Manifest validation rejects inconsistent coverage, duplicate blocks, and unbounded or misregistered payloads",
+        "One persistent worker coalesces queued and active region changes without stale commits",
+        "The next mesh is acknowledged only after the current upload finishes",
+        "Worker failure frees the queue and a late old worker error cannot stop its replacement",
+        "Streaming reads stop at their declared bound",
+        "The real worker verifies gzip hashes, emits eight acknowledged meshes, reuses encoded cache, and rejects corrupt metadata",
+        "Actual worker cleanup modes share verified native cache, partition a real decoded island, and validate original triangle counts",
+        "Actual worker overview repair pins source hashes, preserves retained arrays, and rejects mismatched counts, popcount or padding"
+      ],
+      "tap": "TAP version 13\n# Subtest: Native selection identifies exact and nearest blocks explicitly in acquisition coordinates\nok 1 - Native selection identifies exact and nearest blocks explicitly in acquisition coordinates\n  ---\n  duration_ms: 2.415549\n  type: 'test'\n  ...\n# Subtest: Manifest validation rejects inconsistent coverage, duplicate blocks, and unbounded or misregistered payloads\nok 2 - Manifest validation rejects inconsistent coverage, duplicate blocks, and unbounded or misregistered payloads\n  ---\n  duration_ms: 0.654231\n  type: 'test'\n  ...\n# Subtest: One persistent worker coalesces queued and active region changes without stale commits\nok 3 - One persistent worker coalesces queued and active region changes without stale commits\n  ---\n  duration_ms: 3.496048\n  type: 'test'\n  ...\n# Subtest: The next mesh is acknowledged only after the current upload finishes\nok 4 - The next mesh is acknowledged only after the current upload finishes\n  ---\n  duration_ms: 0.608472\n  type: 'test'\n  ...\n# Subtest: Worker failure frees the queue and a late old worker error cannot stop its replacement\nok 5 - Worker failure frees the queue and a late old worker error cannot stop its replacement\n  ---\n  duration_ms: 0.403063\n  type: 'test'\n  ...\n# Subtest: Streaming reads stop at their declared bound\nok 6 - Streaming reads stop at their declared bound\n  ---\n  duration_ms: 3.059043\n  type: 'test'\n  ...\n# Subtest: The real worker verifies gzip hashes, emits eight acknowledged meshes, reuses encoded cache, and rejects corrupt metadata\nok 7 - The real worker verifies gzip hashes, emits eight acknowledged meshes, reuses encoded cache, and rejects corrupt metadata\n  ---\n  duration_ms: 704.029622\n  type: 'test'\n  ...\n# Subtest: Actual worker cleanup modes share verified native cache, partition a real decoded island, and validate original triangle counts\nok 8 - Actual worker cleanup modes share verified native cache, partition a real decoded island, and validate original triangle counts\n  ---\n  duration_ms: 2407.242006\n  type: 'test'\n  ...\n# Subtest: Actual worker overview repair pins source hashes, preserves retained arrays, and rejects mismatched counts, popcount or padding\nok 9 - Actual worker overview repair pins source hashes, preserves retained arrays, and rejects mismatched counts, popcount or padding\n  ---\n  duration_ms: 22.239437\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3248.562263\n",
+      "stderr": ""
+    }
+  ]
+}

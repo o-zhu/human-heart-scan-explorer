@@ -1,0 +1,241 @@
+{
+  "schema": "guided-native-architecture-review-v21.1",
+  "pilotRun": "{source-cache}/guided-native-v21/pilot/run",
+  "pilotFingerprint": "823633a3946754bad34fa6fed008c709c9ae44ff8666c890ebde41e5132d960f",
+  "pilotTiles": 8,
+  "wholeOrganCompletionChecked": false,
+  "runtimeVersions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "skimage": "0.26.0"
+  },
+  "reviewedFiles": {
+    "runner.py": "53ab65f4d640926b2461a79ad3fd8418b5f3bfc0d027a5556fc913acca7808fc",
+    "roi_plan.py": "17a826bed59ab02771ae2fc2add7a356c3ea30194bc219922ecc072b94c77c50",
+    "prior.py": "540d6f663addc0cee3e70c565321446f56a2a0dde479e750637809937ef355de",
+    "edge_codec.py": "a487ab160022000028b31e111c043f72d8ebdd4604368c23d1ac1ef32bb314f6",
+    "refine.py": "36320b737eac24f98561049adbe74498de8db4d3e7dbc5321da00839af508f01",
+    "source.py": "bbc3b4ecbc5d7e731f4c4723408b1cdff65c4e013f72434776a049e317a7bed6"
+  },
+  "classicFaceCheck": {
+    "passed": true,
+    "cubeCases": 256,
+    "orientedFaces": 6,
+    "orientedCubeFaceConfigurations": 1536,
+    "oppositeFaceSignPatterns": 48,
+    "compatibleNeighborCasePairs": 12288,
+    "maximumContourVariantsForSharedSigns": 1,
+    "lookupTableSha256": "19bf7699e214903d72c94c296546f2e31337d637a1e4b118c3108a0f428e809b",
+    "conclusion": "Shared-face contour connectivity agrees for every compatible pair of classic cases.",
+    "limitation": "This does not establish equivalence to the trilinear isosurface or anatomical topology."
+  },
+  "encodedSharedFaces": {
+    "native": {
+      "passed": true,
+      "adjacentTilePairs": 12,
+      "axisPairsXYZ": [
+        4,
+        4,
+        4
+      ],
+      "identicalSharedCrossings": 15056,
+      "matchingCornerMasks": true,
+      "matchingQuantizedEdgePositions": true
+    },
+    "overview": {
+      "passed": true,
+      "adjacentTilePairs": 12,
+      "axisPairsXYZ": [
+        4,
+        4,
+        4
+      ],
+      "identicalSharedCrossings": 2978,
+      "matchingCornerMasks": true,
+      "matchingQuantizedEdgePositions": true
+    }
+  },
+  "guidance": {
+    "sharedPlanes": [
+      {
+        "axisXYZ": 0,
+        "priorBitIdentical": true,
+        "weightBitIdentical": true
+      },
+      {
+        "axisXYZ": 1,
+        "priorBitIdentical": true,
+        "weightBitIdentical": true
+      },
+      {
+        "axisXYZ": 2,
+        "priorBitIdentical": true,
+        "weightBitIdentical": true
+      }
+    ],
+    "perTile": [
+      {
+        "coordinatesXYZ": [
+          35,
+          30,
+          36
+        ],
+        "fullNativeCrossings": 186982,
+        "blendedCrossings": 737,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          35,
+          30,
+          37
+        ],
+        "fullNativeCrossings": 203805,
+        "blendedCrossings": 4796,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          35,
+          31,
+          36
+        ],
+        "fullNativeCrossings": 176273,
+        "blendedCrossings": 46,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          35,
+          31,
+          37
+        ],
+        "fullNativeCrossings": 213482,
+        "blendedCrossings": 771,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          36,
+          30,
+          36
+        ],
+        "fullNativeCrossings": 224208,
+        "blendedCrossings": 767,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          36,
+          30,
+          37
+        ],
+        "fullNativeCrossings": 245735,
+        "blendedCrossings": 1071,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          36,
+          31,
+          36
+        ],
+        "fullNativeCrossings": 198091,
+        "blendedCrossings": 255,
+        "priorOnlyCrossings": 0
+      },
+      {
+        "coordinatesXYZ": [
+          36,
+          31,
+          37
+        ],
+        "fullNativeCrossings": 338065,
+        "blendedCrossings": 37,
+        "priorOnlyCrossings": 0
+      }
+    ],
+    "fullNativeCrossings": 1786641,
+    "blendedCrossings": 8480,
+    "priorOnlyCrossings": 0,
+    "blendedFraction": 0.004723915546640031,
+    "limitation": "Crossings on tile boundaries are counted in each owning checkpoint. Counts are not surface areas."
+  },
+  "missingContext": {
+    "passed": true,
+    "cases": [
+      {
+        "case": "zero native weight",
+        "requestedSourceBlocks": 0,
+        "passed": true
+      },
+      {
+        "case": "interior dependency",
+        "requestedSourceBlocks": 1,
+        "passed": true
+      },
+      {
+        "case": "lower corner dependency",
+        "requestedSourceBlocks": 8,
+        "passed": true
+      },
+      {
+        "case": "upper corner dependency",
+        "requestedSourceBlocks": 8,
+        "passed": true
+      }
+    ],
+    "conclusion": "Nonzero native weight requests all source blocks in the finite dependency cube; zero native weight does not claim native support."
+  },
+  "pilotMeasurements": {
+    "totalOutputBytes": 1827859,
+    "totalNativeTriangles": 3519377,
+    "totalKernelSeconds": 11.593507067009341,
+    "maximumWorkerPeakRssMiB": 397.80859375,
+    "limitation": "These adjacent pilot tiles are dense and are not a stratified estimate of whole-organ output size or run time."
+  },
+  "finiteTVSupport": {
+    "iterations": 16,
+    "stoppingEpsilon": 0,
+    "conservativeHalo": 16,
+    "reasoning": "The installed Chambolle update uses local forward gradients and backward divergence. Each iteration expands coordinate reach by at most one voxel. With fixed 16 iterations, the returned field has reach at most 15 voxels; halo16 is conservative. A positive stopping epsilon would introduce a tile-wide stopping decision.",
+    "empiricalEvidence": "{source-cache}/guided-native-v21/alignment/tv-finite-halo.json"
+  },
+  "reviewedRisks": [
+    {
+      "topic": "Worker memory",
+      "status": "fixed",
+      "detail": "Runner now uses spawn so workers do not inherit and retain the resident native layer."
+    },
+    {
+      "topic": "Following strips",
+      "status": "fixed",
+      "detail": "Runner now copies halo+1 planes instead of keeping a view backed by all 32 decoded planes."
+    },
+    {
+      "topic": "Resume identity",
+      "status": "fixed",
+      "detail": "Fingerprint includes processing modules and the prior manifest, in addition to plans and configuration."
+    },
+    {
+      "topic": "Disk reserve",
+      "status": "capacity planning required",
+      "detail": "The eager next-layer compressed cache can approach 3.1 GiB at 971 blocks, in addition to growing output and reserve."
+    },
+    {
+      "topic": "Coverage accounting",
+      "status": "separate metrics required",
+      "detail": "Completed planned tiles are distinct from full native, blended, and prior-only surface crossings; a coarse guide cannot certify structures it never represented."
+    },
+    {
+      "topic": "Mixed display LOD",
+      "status": "renderer responsibility",
+      "detail": "The same-step face checks do not prove watertight joins between native-step and overview-step neighbors; such joins need an explicit transition or coordinated refinement."
+    },
+    {
+      "topic": "Scientific interpretation",
+      "status": "documented limitation",
+      "detail": "The 0.31015625 micrometre native edge-encoding bound is relative to the processed surface. It is not a denoising, registration, segmentation, or anatomical-accuracy bound."
+    }
+  ]
+}

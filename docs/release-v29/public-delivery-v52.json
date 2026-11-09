@@ -1,0 +1,106 @@
+{
+  "version": 52,
+  "versionId": "{hosting-project}~appgver_97672112e26081918eae730f9d89f616",
+  "commitSha": "dbf5eb23c879466be71397163f207ed9786cd379",
+  "deploymentId": "appgdep_6aef3e9849608191a1dc6a0951007cfe",
+  "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "status": "succeeded",
+  "environmentRevision": 12,
+  "archiveBytes": 268216320,
+  "verified": true,
+  "objectsInCompleteInventory": 1139,
+  "publicObjectsChecked": 16,
+  "publicChecks": [
+    {
+      "path": "/assets/cleanup-v29/atrial.bits.gz",
+      "bytes": 659082,
+      "sha256": "67628257da875503f7c6b5b246e1ac97c70bfb328f7f0da4c7a5c7505eea47b3"
+    },
+    {
+      "path": "/assets/cleanup-v29/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 244591,
+      "sha256": "1df1b6a1807d7f84d0723e4c62dc66b3e41b6138057fffd72aea1765d0798108"
+    },
+    {
+      "path": "/assets/cleanup-v29/lvot-perivalvular-refinement.hfm.gz",
+      "bytes": 7278090,
+      "sha256": "f2f993e2b4a60075528708dd28bf1ed208405073e8ea44874c94529e2227f560"
+    },
+    {
+      "path": "/assets/cleanup-v29/pulmonary-lumen-v29-low-band.bits.gz",
+      "bytes": 408027,
+      "sha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4"
+    },
+    {
+      "path": "/assets/cleanup-v29/pulmonary-lumen-v29.hfm.gz",
+      "bytes": 5109781,
+      "sha256": "7cb87c4ee1c82bd99cd9956e24bdade329a22412f068c5a77a933c23608985ee"
+    },
+    {
+      "path": "/assets/cleanup-v29/right-perivascular-v29-low-band.bits.gz",
+      "bytes": 363072,
+      "sha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399"
+    },
+    {
+      "path": "/assets/cleanup-v29/right-perivascular-v29.hfm.gz",
+      "bytes": 7002408,
+      "sha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f"
+    },
+    {
+      "path": "/assets/display-compact-v29/mesh-manifest.json",
+      "bytes": 13226,
+      "sha256": "09f0431bb89cbb70c78e74c8959fbea22d2d3462324e1bf3b3ceef27614866dc"
+    },
+    {
+      "path": "/assets/display-compact-v29/sections-manifest.json",
+      "bytes": 640073,
+      "sha256": "84f2b2f0b2eb466fa020040144f9835484a3c79be3f2d915a1c0f7d794604629"
+    },
+    {
+      "path": "/assets/display-compact-v29/surface-manifest.json",
+      "bytes": 19842,
+      "sha256": "3323cbb6c623699219ae20eff988046baba049d968163b60248cca45f06c3b63"
+    },
+    {
+      "path": "/assets/display-compact-v29/mesh/positions-00000000.hfc.gz",
+      "bytes": 4440450,
+      "sha256": "c2e9e5d62b22e9c21b841f2719a9c639a09dadf698eb698f395658ed29674d8b"
+    },
+    {
+      "path": "/assets/display-compact-v29/mesh/normals-00000000.hfc.gz",
+      "bytes": 3922218,
+      "sha256": "969201594851f27857316d7aba8eacb2e953fc07505d24ab2cbd6f6467dd285f"
+    },
+    {
+      "path": "/assets/display-compact-v29/mesh/indices-00000000.hfc.gz",
+      "bytes": 3927869,
+      "sha256": "30903dde82d04a0232aac27123a1506e88906495fd3b6a9925089a271acf9026"
+    },
+    {
+      "path": "/assets/display-compact-v29/sections/x/0111.webp",
+      "bytes": 21054,
+      "sha256": "9d098538603f6e6c39b29c1004a584513ba88b10f805f3be987be83cc64612d9"
+    },
+    {
+      "path": "/assets/display-compact-v29/sections/y/0089.webp",
+      "bytes": 1372,
+      "sha256": "195638f327dcb9ddf8378b2bb9bbd74214f36b09ef894bdc94ce6c512096d02e"
+    },
+    {
+      "path": "/assets/display-compact-v29/sections/z/0016.webp",
+      "bytes": 338,
+      "sha256": "c3a85a49eba7a9ff81e02919f31a6e0d10458af9d7915774e257d10cfad14ee3"
+    }
+  ],
+  "activeStaticFilesChecked": [
+    "fine-surface.js",
+    "donors.js",
+    "local-surface-refinement.js",
+    "lumen-cleanup-v23.js",
+    "assets/cleanup-v29/surface-manifest.json",
+    "assets/cleanup-v29/lumen-manifest.json"
+  ],
+  "uploadsEnabled": false,
+  "retainedTokenWriteStatus": 405,
+  "scope": "All seed objects previously verified; this check validates final public routes and activation."
+}

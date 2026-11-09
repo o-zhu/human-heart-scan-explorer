@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "requireFine": true,
+  "scope": "Actual browser-module geometry and DOM fixtures; no browser, device performance or human anatomical validation.",
+  "donors": [
+    {
+      "id": "ucl-zcr-2627",
+      "physicalReferenceMm": 61.544064,
+      "preparedSourceSpacingUm": 28.128,
+      "preparedProbePlanes": 4,
+      "neutralEchoPlanes": 13,
+      "neutralComparisonPlanes": 8,
+      "unassignedAnatomy": true,
+      "networkSilentConstruction": true
+    },
+    {
+      "id": "ucl-zcr-2628",
+      "physicalReferenceMm": 73.920384,
+      "preparedSourceSpacingUm": 28.128,
+      "preparedProbePlanes": 4,
+      "neutralEchoPlanes": 13,
+      "neutralComparisonPlanes": 8,
+      "unassignedAnatomy": true,
+      "networkSilentConstruction": true
+    },
+    {
+      "id": "ucl-zcr-2337",
+      "physicalReferenceMm": 81.39168,
+      "preparedSourceSpacingUm": 42.48,
+      "preparedProbePlanes": 4,
+      "neutralEchoPlanes": 13,
+      "neutralComparisonPlanes": 8,
+      "unassignedAnatomy": true,
+      "networkSilentConstruction": true
+    }
+  ]
+}

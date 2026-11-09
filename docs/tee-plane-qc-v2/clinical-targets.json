@@ -1,0 +1,1784 @@
+{
+  "schema": "heart-explorer-tee-clinical-qc-targets/2",
+  "createdDate": "2026-11-07",
+  "purpose": "Independent anatomical gates and review criteria for derived educational TEE CT planes; not a clinical diagnostic protocol or a validated registration.",
+  "sources": [
+    {
+      "id": "ASE2013",
+      "title": "Guidelines for Performing a Comprehensive Transesophageal Echocardiographic Examination",
+      "authors": "Hahn et al.",
+      "journal": "J Am Soc Echocardiogr",
+      "year": 2013,
+      "doi": "10.1016/j.echo.2013.07.009",
+      "url": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+      "localPdfSha256": "bfa36d7fb9990ef0db218e69e5b7253cb35806fabe648f9896ec64a59f8ab385",
+      "reviewedSections": "Instrument manipulation and display conventions; Table 10; numbered acquisition sections 1–28.",
+      "pdfPagesReviewed": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "ESOPHAGUS_LA2005",
+      "title": "Anatomic relations between the esophagus and left atrium and relevance for ablation of atrial fibrillation",
+      "authors": "Sánchez-Quintana et al.",
+      "year": 2005,
+      "doi": "10.1161/CIRCULATIONAHA.105.551291",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16129790/",
+      "type": "Primary cadaver/histology study"
+    },
+    {
+      "id": "HIATUS2019",
+      "title": "Surgical Anatomy of Paraesophageal Hernias",
+      "year": 2019,
+      "doi": "10.1016/j.thorsurg.2019.07.008",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7263794/",
+      "type": "Surgical anatomical review; normal relationships used, hernia geometry not copied"
+    },
+    {
+      "id": "HIPCT2023",
+      "title": "Multidimensional Analysis of the Adult Human Heart in Health and Disease using Hierarchical Phase-Contrast Tomography (HiP-CT)",
+      "authors": "Brunet et al.",
+      "year": 2023,
+      "doi": "10.1101/2023.10.09.561474",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592740/",
+      "type": "Primary donor imaging study; Figure 4 explicitly identifies collapsed LA in both hearts"
+    }
+  ],
+  "globalInterpretation": [
+    "The exact CT pixel samples are measured source data, but named-view correspondence and probe anatomy are authored educational interpretations.",
+    "The LV lumen is collapsed in the measured sections; the donor imaging publication also identifies collapsed LA. Healthy clinical echo cavity shape or brightness is not a valid direct similarity objective.",
+    "Six regional labels indicate approximate tissue ownership. They do not validate individual valve leaflets, pulmonary veins, caval veins, atrial appendages or blood pools.",
+    "A numeric plane-fit score is a search heuristic over available landmarks, not a percentage of clinical correctness.",
+    "ASE electronic multiplane angle is relative to a probe at an acquisition site; it is not the angle between a CT plane and the scanner axes.",
+    "Source imaging planes and prepared pixels remain immutable. Improved active planes are new derived frames with exact newly sampled corresponding CT.",
+    "The original baseline remains separately reviewable; source cleanup and measured-density arrays are outside this QC scope.",
+    "The user-requested organs are illustrative reference anatomy. They are not donor segmentations or clinical probe-registration measurements."
+  ],
+  "candidateSelectionOrder": [
+    {
+      "priority": 1,
+      "gate": "Verify source identity, finite orthonormal frame and in-bounds resampling; reject mismatched prepared texture or donor."
+    },
+    {
+      "priority": 2,
+      "gate": "Assess required anatomical connection topology; classify retained, uncertain, truncated or absent targets separately."
+    },
+    {
+      "priority": 3,
+      "gate": "Reject wrong defining level/family, such as aortic outflow in ME4C/TG2C or valve-free ascending aorta for AV SAX."
+    },
+    {
+      "priority": 4,
+      "gate": "Within plausible family, reduce target-to-plane distances and improve continuous retained target extent; discourage foreshortening and unnecessary tissue loss."
+    },
+    {
+      "priority": 5,
+      "gate": "Inspect actual grayscale samples over neighboring offsets and rotations; regional tint supports context but does not prove target identity."
+    },
+    {
+      "priority": 6,
+      "gate": "Set field of view and display handedness only after physical-plane review; near/far orientation must agree with clinical approach."
+    }
+  ],
+  "metricGuidance": {
+    "distance": "For candidate normal n and origin c in world millimetres, target point distance is abs(dot(n,p-c)); use verified point/curve targets with explicit uncertainty.",
+    "coverage": "Report how many known landmark groups are included and which are not identified. Do not count coarse label voxel fractions as named-structure proof.",
+    "continuity": "Use connected source paths across neighboring sections, not only endpoint proximity in one plane.",
+    "shortAxis": "Estimate the local target-axis tangent; quantify obliquity separately from longitudinal level. Cardiac long axis is not a patient-body vertical.",
+    "limits": "No globally optimal clinical plane, validated annulus, or patient probe trajectory can be inferred from this dataset."
+  },
+  "anatomicalContextChecks": [
+    {
+      "structure": "Esophagus",
+      "sourceIds": [
+        "ASE2013",
+        "ESOPHAGUS_LA2005"
+      ],
+      "relationship": "Posterior to LA/pericardium, with variable lateral relation; remain outside cardiac lumina. Use a softly curved, slightly flattened muscular tube.",
+      "registration": "World-fixed authored reference; do not rotate the tract with the chosen CT plane."
+    },
+    {
+      "structure": "Diaphragm",
+      "sourceIds": [
+        "HIATUS2019"
+      ],
+      "relationship": "Thoracoabdominal partition with distinct domes and central cardiac support; posterior esophageal hiatus leading to short abdominal esophagus.",
+      "registration": "Illustrative shape and position; source heart alone does not provide a measured hiatus or patient body axes."
+    },
+    {
+      "structure": "Stomach",
+      "sourceIds": [
+        "HIATUS2019"
+      ],
+      "relationship": "Cardia below hiatus; fundus extends leftward under left dome; body descends then curves toward antral/pyloric end.",
+      "registration": "Authored outline supporting gastric/deep-gastric spatial understanding, not a donor-segmented organ."
+    },
+    {
+      "structure": "Probe",
+      "sourceIds": [
+        "ASE2013"
+      ],
+      "relationship": "ME originates behind atrial side; TG from gastric wall toward inferior heart; deep TG turns toward apical-to-outflow direction.",
+      "registration": "Clinical insertion centimetres are reference values only; no incisors/esophagus/stomach were captured in the source heart scan."
+    }
+  ],
+  "views": [
+    {
+      "id": "me5c",
+      "aseNumber": 1,
+      "name": "Midesophageal five-chamber",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          12,
+          13
+        ],
+        "acquisitionJournalPages": [
+          932,
+          933
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        10
+      ],
+      "angleEvidence": "Table 10 lists 0–10°; the acquisition text starts near 10°. The simulated preset uses 10°.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LA–MV–LV and RA–TV–RV connections",
+        "LVOT continuing through AV into proximal aorta"
+      ],
+      "exclusionsAndFailureModes": [
+        "Five disconnected cavities",
+        "A four-chamber plane with no outflow"
+      ],
+      "specimenOptimizationChecks": [
+        "Prefer simultaneous AV junction and outflow inclusion; complete apical length is secondary here",
+        "Trace the outflow to the LV in adjacent source sections"
+      ],
+      "referenceDisplayOrientation": "Near-field atria at the top; ventricular bodies and LV apex toward the bottom. RV is screen left, LV screen right in this near-transverse reference.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Four-chamber and root territories are present; AV-junction continuity remains uncertain.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2366,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "Improved both ventricular/AV-junction regions while retaining aortic-root and outflow territory. Some LV apical foreshortening is acceptable for the five-chamber target.",
+        "remainingUncertainty": [
+          "Both AV-junction identities remain approximate; the source is a fixed, collapsed specimen."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "me4c",
+      "aseNumber": 2,
+      "name": "Midesophageal four-chamber",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          12,
+          13
+        ],
+        "acquisitionJournalPages": [
+          932,
+          933
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        10,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LA–MV–LV and RA–TV–RV connections",
+        "Interatrial and interventricular septa",
+        "Maximal defensible LV long axis to true apical region"
+      ],
+      "exclusionsAndFailureModes": [
+        "AV or a dominant LVOT{local-home} section",
+        "A ventricular-only section with unresolved atrial junctions"
+      ],
+      "specimenOptimizationChecks": [
+        "Exclude aortic root before maximizing ventricular length",
+        "Avoid sacrificing an AV junction to obtain a longer LV",
+        "Check that left/right mirroring is a display operation only"
+      ],
+      "referenceDisplayOrientation": "Sector vertex/near field is at top. Atria above AV valves; ventricles below. RV screen left; LV screen right; LV apex bottom.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current plane contains an identifiable aortic-root profile and is not an acceptable defining four-chamber section.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1933,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The dominant aortic-root/outflow section in the baseline is removed while both ventricular and atrial regions are retained. Candidate 1933 is a clear improvement over the baseline.",
+        "remainingUncertainty": [
+          "Exact AV-hinge and septal identity remains unvalidated; a small fibrous/root-adjacent rim must not be mistaken for complete outflow inclusion."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "mecommissural",
+      "aseNumber": 3,
+      "name": "Midesophageal mitral commissural",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          13,
+          15
+        ],
+        "acquisitionJournalPages": [
+          933,
+          935
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        50,
+        70
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LA and long-axis LV joined through broad commissural MV section",
+        "Both mitral commissural ends and bilateral subvalvular apparatus where retained"
+      ],
+      "exclusionsAndFailureModes": [
+        "Dominant aortic outflow replacing the mitral commissural section",
+        "Three separate valves inferred from three leaflet regions"
+      ],
+      "specimenOptimizationChecks": [
+        "Use broad MV width and both subvalvular systems as positive evidence",
+        "Nominal 60-degree rotation alone does not establish the view"
+      ],
+      "referenceDisplayOrientation": "LA near-field/top and LV extending inferiorly. In the standard single-plane reference, P3 is screen left, A2 central, P1 screen right.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current cut resembles the long-axis/aortic-root family and does not establish the commissural target.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2249,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "The replacement removes the long arterial outflow and favors the mitral/left-heart family. It is a better regional correspondence, not a proven commissural scallop section.",
+        "remainingUncertainty": [
+          "P3/A2/P1 scallops and the two papillary systems are not independently identified."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "me2c",
+      "aseNumber": 4,
+      "name": "Midesophageal two-chamber",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          17
+        ],
+        "acquisitionJournalPages": [
+          937
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        80,
+        100
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LA–MV–LV continuity",
+        "LV anterior/inferior wall long-axis section including apical region"
+      ],
+      "exclusionsAndFailureModes": [
+        "Full RV chamber",
+        "Defining LVOT/AV channel"
+      ],
+      "specimenOptimizationChecks": [
+        "Prioritize atrial-to-mitral junction, then unforeshortened LV length",
+        "Do not mistake a nearby vessel ring for the LA"
+      ],
+      "referenceDisplayOrientation": "Midesophageal entry: near-field LA at the top, elongated LV extending downward to its apex. Follow the ASE reference for the oblique contour.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "LV long axis is present and most RV is excluded; mitral-to-LA continuity still needs confirmation.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1777,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "Candidate 1777 retains long LA–mitral-region–LV continuity with little right-heart tissue and less unrelated vessel profile than the lower-cost finalists. The early four-chamber-like numeric winners were rejected.",
+        "remainingUncertainty": [
+          "Anterior/inferior wall labels and exact mitral plane are not independently registered."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "melax",
+      "aseNumber": 5,
+      "name": "Midesophageal long-axis",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          17,
+          18
+        ],
+        "acquisitionJournalPages": [
+          937,
+          938
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        120,
+        140
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Long-axis LV plus MV and LA",
+        "Continuous LV cavity–LVOT–AV–proximal-aorta path",
+        "Anteroseptal/inferolateral wall family"
+      ],
+      "exclusionsAndFailureModes": [
+        "A ventricular-only plane",
+        "Aortic cross-section disconnected from ventricular continuation"
+      ],
+      "specimenOptimizationChecks": [
+        "Inspect adjacent source sections to confirm one connected outflow path",
+        "Improve aortic-root length without losing the MV/LV junction"
+      ],
+      "referenceDisplayOrientation": "LA is near-field; LV extends toward the lower-left in the reference and the aortic outflow branches toward the right. Preserve reference obliquity.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Root/cusp territory is present but continuous LVOT and elongated root are poorly displayed.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2225,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "Continuous LV–outflow/root–proximal-aorta territory is more convincingly sampled than the baseline. Horizontal display reflection restores the source reference outflow-right presentation.",
+        "remainingUncertainty": [
+          "Collapsed ventricular and valvar tissues prevent normal living-heart cavity resemblance; individual mitral and aortic landmarks remain approximate."
+        ],
+        "presentationCorrection": [
+          "Horizontal display reflection; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "meavlax",
+      "aseNumber": 6,
+      "name": "Midesophageal aortic valve long-axis",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          17,
+          18
+        ],
+        "acquisitionJournalPages": [
+          937,
+          938
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        120,
+        140
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Longitudinal LVOT–AV–aortic-root continuation",
+        "Annulus, sinus and sinotubular region within retained source extent"
+      ],
+      "exclusionsAndFailureModes": [
+        "Aorta sampled only in cross-section",
+        "Long LV prioritized at expense of valve{local-home} detail"
+      ],
+      "specimenOptimizationChecks": [
+        "Center and tighten the field on the root and LVOT",
+        "Require two opposing root walls over a meaningful length"
+      ],
+      "referenceDisplayOrientation": "Anterior right-coronary cusp is far-field; posterior near-field cusp can be noncoronary or left coronary. Do not assign the posterior cusp universally.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Elongated root region is recognizable; exact leaflet and annular boundaries remain unsegmented.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2264,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The refined candidate includes root/valve-level and retained ascending-aortic continuity, with LA-side tissue constraining the otherwise unstable plane azimuth. Landscape presentation places outflow rightward.",
+        "remainingUncertainty": [
+          "Annulus, sinus, sinotubular junction and individual cusps are not separately measured segmentations."
+        ],
+        "presentationCorrection": [
+          "In-plane roll: aortic axis horizontal/rightward, LA side near field; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-1.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "meaaolax",
+      "aseNumber": 7,
+      "name": "Midesophageal ascending aorta long-axis",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          18
+        ],
+        "acquisitionJournalPages": [
+          938
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Retained ascending-aortic segment in long axis",
+        "Near-field right-PA context when retained"
+      ],
+      "exclusionsAndFailureModes": [
+        "Aortic valve as sole vessel target",
+        "A broad oblique ellipse mistaken for true vessel long axis"
+      ],
+      "specimenOptimizationChecks": [
+        "Follow the retained aortic centerline and both vessel walls",
+        "Respect cut vessel ends; do not imply full thoracic coverage"
+      ],
+      "referenceDisplayOrientation": "In the ASE schematic the aortic tube spans the sector roughly left-to-right; the round RPA is above/closer to the probe.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Long aortic segment is identifiable; pulmonary-artery branch identity remains partial.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2644,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The selected section follows a longer retained aortic pathway with clearer paired walls and a consistent LA-side near-field orientation.",
+        "remainingUncertainty": [
+          "The excised vascular segment is incomplete; this does not establish aortic arch anatomy or a clinical aortic measurement."
+        ],
+        "presentationCorrection": [
+          "In-plane roll to horizontal retained aorta, with LA-side near field; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "meaaosax",
+      "aseNumber": 8,
+      "name": "Midesophageal ascending aorta short-axis",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 14,
+        "table10JournalPage": 934,
+        "acquisitionPdfPages": [
+          18
+        ],
+        "acquisitionJournalPages": [
+          938
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        30
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Ascending-aortic lumen/wall in short axis above AV",
+        "SVC and PA context when available"
+      ],
+      "exclusionsAndFailureModes": [
+        "Valve cusp-level section mislabeled as tubular ascending aorta",
+        "Long oblique aortic section"
+      ],
+      "specimenOptimizationChecks": [
+        "Use local aortic tangent for plane normal rather than LV axis",
+        "Check level above root/leaflets and below specimen truncation"
+      ],
+      "referenceDisplayOrientation": "Use the reference arrangement: central aortic cross section, smaller SVC near the upper-left and pulmonary-artery contours alongside it. Left pulmonary artery need not be fully visible.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Tubular aortic cross-section is plausible; SVC and branch-PA identities are unverified.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "A tubular ascending-aortic cross-section is retained above the valve-level target and is distinct from AV short axis.",
+        "remainingUncertainty": [
+          "Adjacent SVC and individual pulmonary-artery branch identities are unresolved."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "merpv",
+      "aseNumber": 9,
+      "name": "Midesophageal right pulmonary vein",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        0
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Right pulmonary venous ostia continuous with LA",
+        "Superior/inferior venous relationship appropriate to transverse acquisition"
+      ],
+      "exclusionsAndFailureModes": [
+        "Generic LA/RA slice substituted for named venous ostia",
+        "Four pulmonary veins forced into a single section"
+      ],
+      "specimenOptimizationChecks": [
+        "Require traceable ostial continuity before asserting named-vein correspondence",
+        "Favor preserved LA inflow region if cut veins prevent definitive identification"
+      ],
+      "referenceDisplayOrientation": "This is the near-transverse right-PV acquisition, unlike the roughly 100° bilateral-vein reference. Use the extracted schematic for exact channel positions.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Individual right pulmonary veins are not segmented; baseline does not establish both named venous ostia.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1516,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "The selected atrial/venous-entry region is a more focused regional correspondence than the baseline. Multiple finalist planes were inspected.",
+        "remainingUncertainty": [
+          "Neither the right superior nor right inferior pulmonary-vein ostium is independently established."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "meavsax",
+      "aseNumber": 10,
+      "name": "Midesophageal aortic valve short-axis",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        25,
+        45
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "One aortic root in cross-section at valve/cusp level",
+        "Actual retained leaflet/sinus structure",
+        "LA/IAS and RVOT context sufficient to assess orientation"
+      ],
+      "exclusionsAndFailureModes": [
+        "Tubular ascending-aorta section without valve tissue",
+        "Predominantly LV muscle with only cropped aortic boundary"
+      ],
+      "specimenOptimizationChecks": [
+        "Search offset along local root axis and small tilts around the source-identified valve region",
+        "Judge valve level by actual grayscale cusp{local-home} topology, not purple tint alone"
+      ],
+      "referenceDisplayOrientation": "Near-field is top. LCC upper/right, NCC toward the atrial-septal side, RCC lower/far-field. Use the reference, not a mirrored emblem.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current cut lies too far toward LV muscle and does not display a complete aortic-valve cross-section.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The new section crosses the source-observed root/cusp region rather than the baseline ventricular-muscle/outflow edge. This is one of the clearest level corrections.",
+        "remainingUncertainty": [
+          "Individual cusp identities and exact annular dimensions remain unvalidated."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "mervinout",
+      "aseNumber": 11,
+      "name": "Midesophageal RV inflow-outflow",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        50,
+        70
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "RA–TV–RV inflow connected to RVOT–PV–proximal-PA outflow",
+        "Continuous curved RV lumen through inflow and outflow"
+      ],
+      "exclusionsAndFailureModes": [
+        "RV inflow alone",
+        "Two unrelated cavities presented as a connected RV path"
+      ],
+      "specimenOptimizationChecks": [
+        "Use reviewed TV hinges and pulmonary-outflow continuity together",
+        "A central aortic-root profile may orient the view but is not its target"
+      ],
+      "referenceDisplayOrientation": "Standard ME acquisition: inflow/RV screen left; RVOT/PV screen right; atrial structures closer to the top.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current view is dominated by RA/RV inflow; full RVOT/PV continuity is not convincingly shown.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The selected plane shows a connected right-ventricular inflow/outflow pathway around the root. Horizontal display reflection places inflow left and outflow right, matching the standard ASE reference.",
+        "remainingUncertainty": [
+          "Regional continuity is reviewed; individual tricuspid/pulmonary leaflets or cusps are not verified."
+        ],
+        "presentationCorrection": [
+          "Horizontal display reflection; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "memodbicaval",
+      "aseNumber": 12,
+      "name": "Midesophageal modified bicaval tricuspid valve",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        50,
+        70
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Centered TV with RA and RV inflow",
+        "LA/IAS and inferior-caval-side context"
+      ],
+      "exclusionsAndFailureModes": [
+        "Standard two-caval section with no TV target",
+        "RV or atrium alone"
+      ],
+      "specimenOptimizationChecks": [
+        "Prioritize reviewed tricuspid hinge plane and septal-side relationship",
+        "Do not require SVC when absent from this modified view"
+      ],
+      "referenceDisplayOrientation": "Near-field LA/IAS above RA/TV context; preserve the reference orientation rather than using a generic two-caval icon.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "RA/RV inflow family is recognizable; IVC and IAS continuity remain unverified.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2270,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "The section favors the reviewed tricuspid-side RA/RV region and improves its longitudinal presentation.",
+        "remainingUncertainty": [
+          "IVC, IAS and full modified-bicaval topology are not independently proven."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-2.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "bicaval",
+      "aseNumber": 13,
+      "name": "Midesophageal bicaval",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "SVC and IVC entering the same RA",
+        "Continuous IAS with LA on the opposite side"
+      ],
+      "exclusionsAndFailureModes": [
+        "Dominant ventricular/AV-valve slice",
+        "One venous opening counted as both cavae"
+      ],
+      "specimenOptimizationChecks": [
+        "Center on RA/IAS rather than ventricular axis",
+        "Follow both preserved caval-side entries if present; label truncation honestly"
+      ],
+      "referenceDisplayOrientation": "At the standard approximately 100° view, IVC is toward screen left/inferior and SVC toward screen right/superior. LA/IAS are nearer the top; RA is deeper.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Baseline includes substantial ventricle and root. It does not establish both caval junctions or continuous IAS.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "The selected section favors atrial/septal-side territory and reduces the dominant ventricular{local-home} contribution of the baseline.",
+        "remainingUncertainty": [
+          "Both caval ostia into the same RA and complete IAS continuity remain unresolved; this must remain an atrial-region approximation."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "mepv",
+      "aseNumber": 14,
+      "name": "Midesophageal right and left pulmonary veins",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "One side-specific pair of pulmonary venous ostia continuous with LA"
+      ],
+      "exclusionsAndFailureModes": [
+        "All four pulmonary veins claimed in one plane",
+        "Large atrial section without identified ostia"
+      ],
+      "specimenOptimizationChecks": [
+        "Evaluate right and left pulmonary-vein acquisitions separately",
+        "Track superior vein to the appropriate display side; avoid asserting branch labels from regional tint"
+      ],
+      "referenceDisplayOrientation": "Use the single representative sector in the supplied Table10 reference. In the standard approximately100° clinical acquisition, the superior vein is toward screen right. The UI describes separate right and left acquisitions.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Atrial region is present, but named-vein continuity is unverified. One preset cannot represent both separate acquisitions.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1516,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "The selected LA/venous-entry region is more focused than the broad baseline and similar neighboring planes were inspected.",
+        "remainingUncertainty": [
+          "Right and left pulmonary-vein acquisitions are separate clinical maneuvers; this section does not establish all four ostia."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "melaa",
+      "aseNumber": 15,
+      "name": "Midesophageal left atrial appendage",
+      "group": "me",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 15,
+        "table10JournalPage": 935,
+        "acquisitionPdfPages": [
+          19
+        ],
+        "acquisitionJournalPages": [
+          939
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LAA cavity connected through its ostium to LA",
+        "Left-superior-PV relationship if preserved"
+      ],
+      "exclusionsAndFailureModes": [
+        "Any LA recess called an appendage without continuity",
+        "Single cut presented as a complete appendage examination"
+      ],
+      "specimenOptimizationChecks": [
+        "Inspect a sweep of planes through suspected ostium and appendage body",
+        "Keep source identity provisional until source continuity is demonstrable"
+      ],
+      "referenceDisplayOrientation": "Preserve the reference pouch/vein arrangement at the approximately 100° plane; avoid claiming a universal number or direction of appendage lobes.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Baseline shows collapsed LA territory; LAA ostium/body identity is not established.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 0,
+        "decision": "retained-after-exploration",
+        "searchStatus": "limited",
+        "reviewConclusion": "The original lateral-LA section is retained after comparing the finalist family. No alternative established a more defensible appendage ostium/body section.",
+        "remainingUncertainty": [
+          "Appendage ostium and lobes are not separately annotated or verified."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "tgbasalsax",
+      "aseNumber": 16,
+      "name": "Transgastric basal short-axis",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          19,
+          20
+        ],
+        "acquisitionJournalPages": [
+          939,
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LV basal short axis at MV level",
+        "Opposing mitral leaflet/orifice region inside ventricular base"
+      ],
+      "exclusionsAndFailureModes": [
+        "Aortic-root star as central target",
+        "Midpapillary or apical section substituted for valve level"
+      ],
+      "specimenOptimizationChecks": [
+        "Search basal offsets from a valid LV short-axis family",
+        "Confirm central structure is MV rather than adjacent AV"
+      ],
+      "referenceDisplayOrientation": "Sector vertex at top; mitral medial commissure toward top, lateral commissure toward bottom. Preserve anterior-left/posterior-right leaflet orientation.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current plane is aortic/root-level and fails the defining mitral basal target.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 11201,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "Candidate 11201 from the independently oriented LA–LV-interface sweep shows a broader mitral-region opening and avoids the dominant arterial-root star. It is more appropriate than candidate 11204, which lies 3 mm further ventricular and favors chordal/subvalvar tissue.",
+        "remainingUncertainty": [
+          "Exact leaflet/annular boundaries and clinical fishmouth appearance remain unvalidated."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false,
+        "targetedNeighborReview": {
+          "sections": 36,
+          "orientationFamilies": [
+            "LV axis",
+            "source-local axial",
+            "LA–LV interface estimate"
+          ],
+          "images": [
+            "adaptive/tgbasalsax-0.jpg",
+            "adaptive/tgbasalsax-1.jpg",
+            "adaptive/tgbasalsax-2.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tgpapillary",
+      "aseNumber": 17,
+      "name": "Transgastric midpapillary short-axis",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Transverse LV myocardium at papillary-body level",
+        "Recognizable papillary muscle profiles where specimen preservation allows",
+        "Adjacent RV crescent"
+      ],
+      "exclusionsAndFailureModes": [
+        "MV leaflet-level basal section",
+        "Apical-only section",
+        "Atrial or aortic-root-dominated slice"
+      ],
+      "specimenOptimizationChecks": [
+        "Compare nearby base/apex offsets and small normal tilts",
+        "Keep complete myocardial envelope; avoid oblique elongation",
+        "Do not require a circular open lumen or fabricate two separate papillary profiles in a collapsed specimen"
+      ],
+      "referenceDisplayOrientation": "Use the ASE transgastric short-axis presentation: RV crescent screen left and dominant LV ring centrally/right. Preserve the reference papillary-profile placement rather than imposing clock-face precision.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Original-centered comparison confirms two principal internal LV muscular profiles and a complete myocardial envelope; the retained plane is more defensible than the proposed replacement.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 0,
+        "decision": "retained-after-exploration",
+        "searchStatus": "retained",
+        "reviewConclusion": "The original physical plane is retained after broad search and 21 original-centered neighbors. Its two principal internal muscular profiles and complete myocardial envelope are more recognizable than the proposed more proximal replacement.",
+        "remainingUncertainty": [
+          "Individual papillary-muscle identity is not separately annotated, and the LV lumen is collapsed."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false,
+        "targetedNeighborReview": {
+          "sections": 21,
+          "offsetRangeMm": [
+            -4,
+            4
+          ],
+          "tiltRangeDegrees": [
+            -4,
+            4
+          ],
+          "image": "adaptive/tgpapillary.jpg",
+          "decision": "original physical plane retained"
+        }
+      }
+    },
+    {
+      "id": "tgapicalsax",
+      "aseNumber": 18,
+      "name": "Transgastric apical short-axis",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Smaller apical LV short-axis myocardial envelope",
+        "Apical ventricular tissue beyond dominant papillary bodies"
+      ],
+      "exclusionsAndFailureModes": [
+        "Basal valve tissue",
+        "Midpapillary level mislabeled as apical"
+      ],
+      "specimenOptimizationChecks": [
+        "Advance along the LV apical direction while keeping the local section transverse",
+        "Do not move so far that only an epicardial cap remains"
+      ],
+      "referenceDisplayOrientation": "Keep the same short-axis orientation family as TG basal and midpapillary; RV contribution remains on the left in the reference.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Baseline is plausible apical family; exact apical level is a choice within a continuous region.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 0,
+        "decision": "retained-after-exploration",
+        "searchStatus": "retained",
+        "reviewConclusion": "The original distal ventricular plane is retained after broad search and 21 original-centered neighbors. It avoids the dominant papillary profile that persists in the proposed more proximal replacement.",
+        "remainingUncertainty": [
+          "Anatomic apical level is assessed from source morphology, not a living-heart registration."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-3.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false,
+        "targetedNeighborReview": {
+          "sections": 21,
+          "offsetRangeMm": [
+            -4,
+            4
+          ],
+          "tiltRangeDegrees": [
+            -4,
+            4
+          ],
+          "image": "adaptive/tgapicalsax.jpg",
+          "decision": "original physical plane retained"
+        }
+      }
+    },
+    {
+      "id": "tgrvbasal",
+      "aseNumber": 19,
+      "name": "Transgastric RV basal",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "TV in short axis",
+        "RVOT in long axis joined through basal RV"
+      ],
+      "exclusionsAndFailureModes": [
+        "Aortic-root-centered cut",
+        "Generic circular LV short axis"
+      ],
+      "specimenOptimizationChecks": [
+        "Use source-observed TV hinge geometry for basal level",
+        "Optimize joint TV and RVOT inclusion rather than cloning TG LV basal"
+      ],
+      "referenceDisplayOrientation": "Follow the supplied mixed-axis reference: tricuspid orifice toward the upper-right portion and longitudinal RVOT extending distally. This is not a generic ventricular ring.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Baseline duplicates TG basal aortic-root section and does not establish the TV/RVOT mixed-axis view.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "limited",
+        "reviewConclusion": "A plane based on the reviewed tricuspid-hinge neighborhood replaces the duplicated root-level LV-basal section.",
+        "remainingUncertainty": [
+          "A complete en-face tricuspid valve with longitudinal RVOT is not established; the curved hinge cannot be represented perfectly by one flat plane."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "tgrvinout",
+      "aseNumber": 20,
+      "name": "Transgastric RV inflow-outflow",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "Standard right-flexed acquisition: 0–20°. A different neutral-tip, right-turned acquisition uses 90–120° and produces a mirrored image.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "TV inflow linked through RV to RVOT and PV",
+        "Both valve regions in longitudinal RV path"
+      ],
+      "exclusionsAndFailureModes": [
+        "Root-level transverse slice",
+        "A mirrored alternative acquisition silently labeled as the standard one"
+      ],
+      "specimenOptimizationChecks": [
+        "Review standard right-flexed and alternative rotated acquisition separately",
+        "Use connected RV path plus both valve regions as principal objective"
+      ],
+      "referenceDisplayOrientation": "Follow the supplied standard TG reference exactly for left/right handedness; the alternative acquisition reverses the image.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current plane is primarily a root-level cross-section, not the defining RV inflow/outflow path.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The new measured section follows the curved right-ventricular inflow/outflow regions around the aortic root instead of a nonspecific transverse root/LV section.",
+        "remainingUncertainty": [
+          "Regional continuity is reviewed; individual valve leaflets/cusps are not verified. Standard and alternative TG acquisitions may differ in handedness."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "deeptg5c",
+      "aseNumber": 21,
+      "name": "Deep transgastric five-chamber",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        20
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LV with MV inflow and continuous LVOT–AV–proximal-aorta path",
+        "Apical/gastric approach toward base"
+      ],
+      "exclusionsAndFailureModes": [
+        "ME near-field arrangement merely relabeled TG",
+        "Outflow oblique to the intended central beam without noting limitation"
+      ],
+      "specimenOptimizationChecks": [
+        "Optimize longitudinal outflow alignment and target coverage from apical side",
+        "Check near field on apical/gastric side rather than atrial side"
+      ],
+      "referenceDisplayOrientation": "Apical-side myocardium is nearer the top/sector vertex; basal valves and aortic outflow lie deeper. Do not reuse the atria-top ME five-chamber arrangement.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Outflow territory is included; deep-gastric probe direction and beam alignment are illustrative.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1565,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The selected source section retains both ventricular regions and outflow. Its apex-side near/top and basal-outflow deeper presentation is consistent with the deep-gastric reference.",
+        "remainingUncertainty": [
+          "The gastric probe approach and Doppler alignment are illustrative; no stomach or probe was scanned with the heart."
+        ],
+        "presentationCorrection": [],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "tg2c",
+      "aseNumber": 22,
+      "name": "Transgastric two-chamber",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LV anterior/inferior long-axis walls",
+        "MV, chordal/papillary apparatus and farther LA"
+      ],
+      "exclusionsAndFailureModes": [
+        "Defining aortic-outflow branch",
+        "Large full RV chamber"
+      ],
+      "specimenOptimizationChecks": [
+        "Use LV–MV continuity and absent AV/LVOT as a family gate",
+        "Apply gastric presentation separately from physical slice selection"
+      ],
+      "referenceDisplayOrientation": "Use the oblique/transverse-running TG long-axis reference, with the LV toward screen left and basal MV/LA toward screen right; the gastric-facing LV wall is near-field.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current plane contains a prominent aortic pathway and is closer to a TG long-axis family than two-chamber.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 2804,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The new plane removes the long aortic pathway and isolates the LA–mitral-region–LV sequence. A quarter-turn display roll places LV/apex left and MV/LA right.",
+        "remainingUncertainty": [
+          "Anterior/inferior wall identity and the true gastric acoustic approach are not independently registered."
+        ],
+        "presentationCorrection": [
+          "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "tgrvin",
+      "aseNumber": 23,
+      "name": "Transgastric RV inflow",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        110
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Anterior/inferior RV walls in long axis",
+        "RV–TV–RA connection with subvalvular apparatus"
+      ],
+      "exclusionsAndFailureModes": [
+        "LV substituted for RV",
+        "Transverse RA/RV stack with no longitudinal inflow"
+      ],
+      "specimenOptimizationChecks": [
+        "Optimize reviewed tricuspid junction plus extended RV cavity",
+        "Allow limited proximal RVOT context without making it the main target"
+      ],
+      "referenceDisplayOrientation": "Follow the gastric right-heart long-axis reference, with RV screen left and RA/TV toward the right rather than a vertical ME chamber stack.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Current right-heart section shows inflow region but substantial transverse LV tissue; long-axis RV coverage requires optimization.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1094,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "The independently selected plane improves longitudinal RA–TV-region–RV continuity. Quarter-turn presentation places ventricular/apical side left and atrial base right.",
+        "remainingUncertainty": [
+          "Individual tricuspid leaflets and subvalvular structures are not separately identified."
+        ],
+        "presentationCorrection": [
+          "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "tglax",
+      "aseNumber": 24,
+      "name": "Transgastric long-axis",
+      "group": "tg",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 16,
+        "table10JournalPage": 936,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        120,
+        140
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "LV plus LVOT–AV–proximal-aortic-root continuity",
+        "Inferolateral/anteroseptal wall family",
+        "MV context when in the section"
+      ],
+      "exclusionsAndFailureModes": [
+        "TG two-chamber section without outflow",
+        "Aortic vessel disconnected from LV"
+      ],
+      "specimenOptimizationChecks": [
+        "Favor a long continuous outflow path from gastric side",
+        "Keep the established TG near-field convention independent of plane roll"
+      ],
+      "referenceDisplayOrientation": "Transgastric long axis lies obliquely across the sector: LV/apical side toward screen left and basal/outflow anatomy toward screen right in the reference.",
+      "specimenCoverage": "partial-unvalidated",
+      "baselineVisualReview": "Long aortic region is present; LVOT continuity, MV inclusion and gastric display need explicit review.",
+      "reviewedImage": "baseline-source-sections.jpg",
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": 1546,
+        "decision": "replaced",
+        "searchStatus": "refined",
+        "reviewConclusion": "A continuous long LV–outflow{local-home} section improves the oblique baseline. Quarter-turn presentation places the LV/apical side left and aortic outflow lower-right.",
+        "remainingUncertainty": [
+          "The gastric approach is illustrative and the source LV cavity is collapsed."
+        ],
+        "presentationCorrection": [
+          "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+        ],
+        "finalComparisonImage": "final-before-after-4.jpg",
+        "selectionTraceability": "selection-decisions.json",
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "daosax",
+      "aseNumber": 25,
+      "name": "Descending aorta short-axis",
+      "group": "aortic",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 17,
+        "table10JournalPage": 937,
+        "acquisitionPdfPages": [
+          20
+        ],
+        "acquisitionJournalPages": [
+          940
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        10
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Descending thoracic aorta in local short axis"
+      ],
+      "exclusionsAndFailureModes": [
+        "Ascending aorta substituted for missing descending segment",
+        "AV cusps or myocardial ring assigned to descending aorta"
+      ],
+      "specimenOptimizationChecks": [
+        "No CT-plane optimization can supply a thoracic segment absent from the scan"
+      ],
+      "referenceDisplayOrientation": "Near-field vessel cross section centered within the sector; no full-heart orientation is implied.",
+      "specimenCoverage": "outside-scan",
+      "baselineVisualReview": "Descending thoracic aorta is outside this excised-heart acquisition.",
+      "reviewedImage": null,
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": null,
+        "decision": "outside-specimen",
+        "reviewConclusion": "No measured candidate can represent the required thoracic descending-aortic or arch segment because that anatomy is outside this excised-heart scan.",
+        "remainingUncertainty": [
+          "Illustrative organ/probe context and clinical reference media do not supply missing donor anatomy."
+        ],
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "daolax",
+      "aseNumber": 26,
+      "name": "Descending aorta long-axis",
+      "group": "aortic",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 17,
+        "table10JournalPage": 937,
+        "acquisitionPdfPages": [
+          20,
+          21
+        ],
+        "acquisitionJournalPages": [
+          940,
+          941
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        90,
+        100
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Descending thoracic aorta as one continuous longitudinal lumen"
+      ],
+      "exclusionsAndFailureModes": [
+        "Ascending aorta or arch substituted for descending segment",
+        "AV inserted into a descending segment"
+      ],
+      "specimenOptimizationChecks": [
+        "Keep real reference cine and anatomical context; disable unavailable donor slice"
+      ],
+      "referenceDisplayOrientation": "The reference vessel spans left-to-right across the sector; preserve a long-axis tube rather than a round cross section.",
+      "specimenCoverage": "outside-scan",
+      "baselineVisualReview": "Descending thoracic aorta is outside this excised-heart acquisition.",
+      "reviewedImage": null,
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": null,
+        "decision": "outside-specimen",
+        "reviewConclusion": "No measured candidate can represent the required thoracic descending-aortic or arch segment because that anatomy is outside this excised-heart scan.",
+        "remainingUncertainty": [
+          "Illustrative organ/probe context and clinical reference media do not supply missing donor anatomy."
+        ],
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "uearchlax",
+      "aseNumber": 27,
+      "name": "Upper esophageal aortic arch long-axis",
+      "group": "aortic",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 17,
+        "table10JournalPage": 937,
+        "acquisitionPdfPages": [
+          21
+        ],
+        "acquisitionJournalPages": [
+          941
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        0,
+        10
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Aortic arch segment in long axis"
+      ],
+      "exclusionsAndFailureModes": [
+        "Complete external arch silhouette treated as a tomographic slice",
+        "Retained aortic root mislabeled arch"
+      ],
+      "specimenOptimizationChecks": [
+        "Do not optimize a missing arch from proximal aortic stump"
+      ],
+      "referenceDisplayOrientation": "Follow the reference elongated oblique arch segment, extending from lower-left toward upper-right within the sector.",
+      "specimenCoverage": "outside-scan",
+      "baselineVisualReview": "Aortic arch is outside this excised-heart acquisition.",
+      "reviewedImage": null,
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": null,
+        "decision": "outside-specimen",
+        "reviewConclusion": "No measured candidate can represent the required thoracic descending-aortic or arch segment because that anatomy is outside this excised-heart scan.",
+        "remainingUncertainty": [
+          "Illustrative organ/probe context and clinical reference media do not supply missing donor anatomy."
+        ],
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    },
+    {
+      "id": "uearchsax",
+      "aseNumber": 28,
+      "name": "Upper esophageal aortic arch short-axis",
+      "group": "aortic",
+      "source": {
+        "id": "ASE2013",
+        "table10PdfPage": 17,
+        "table10JournalPage": 937,
+        "acquisitionPdfPages": [
+          21,
+          22
+        ],
+        "acquisitionJournalPages": [
+          941,
+          942
+        ]
+      },
+      "clinicalElectronicAngleReferenceDegrees": [
+        70,
+        90
+      ],
+      "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
+      "measuredProbeInsertionDepthAvailable": false,
+      "requiredClinicalStructuresAndConnections": [
+        "Aortic arch in short axis",
+        "Separate far-field PA/PV longitudinal context where present"
+      ],
+      "exclusionsAndFailureModes": [
+        "Aortic-valve cusps placed inside arch",
+        "Descending-aorta circle substituted for arch"
+      ],
+      "specimenOptimizationChecks": [
+        "Retain clinical reference and authored context only when donor arch is absent"
+      ],
+      "referenceDisplayOrientation": "Near-field arch cross section is toward the upper sector; the longitudinal PA/PV pathway lies deeper, following the supplied reference.",
+      "specimenCoverage": "outside-scan",
+      "baselineVisualReview": "Aortic arch is outside this excised-heart acquisition.",
+      "reviewedImage": null,
+      "expertValidated": false,
+      "clinicalRegistrationVerified": false,
+      "candidateReview": {
+        "selectedCandidate": null,
+        "decision": "outside-specimen",
+        "reviewConclusion": "No measured candidate can represent the required thoracic descending-aortic or arch segment because that anatomy is outside this excised-heart scan.",
+        "remainingUncertainty": [
+          "Illustrative organ/probe context and clinical reference media do not supply missing donor anatomy."
+        ],
+        "expertValidated": false,
+        "globalOptimumEstablished": false
+      }
+    }
+  ],
+  "finalReview": {
+    "date": "2026-11-07",
+    "type": "Source-grounded visual anatomical correspondence review, not expert clinical validation",
+    "allBaselineAndSelectedSectionsReviewed": true,
+    "baselineSections": 24,
+    "selectedSections": 24,
+    "outsideSpecimenViews": 4,
+    "targetedAdaptiveSectionsReviewed": 78,
+    "importantRejectedAlternatives": [
+      {
+        "views": [
+          "me2c",
+          "tg2c"
+        ],
+        "reason": "Initial landmark-only winners included substantial RV/RA and resembled four-chamber sections; whole-region exclusion checks and visual adjudication changed the selected family."
+      },
+      {
+        "views": [
+          "tgpapillary",
+          "tgapicalsax"
+        ],
+        "reason": "Idealized axis/level winners displaced recognizable papillary/apical morphology. Original-centered sweeps supported retaining both originals."
+      },
+      {
+        "views": [
+          "tgbasalsax"
+        ],
+        "reason": "The initial low-cost root-level family was anatomically incorrect for basal mitral short axis; independent interface-level sampling produced candidate 11201."
+      },
+      {
+        "views": [
+          "melaa"
+        ],
+        "reason": "Small metric improvements did not establish appendage-specific anatomy; the original region was retained with limited status."
+      }
+    ],
+    "comparisonSheets": [
+      "final-before-after-1.jpg",
+      "final-before-after-2.jpg",
+      "final-before-after-3.jpg",
+      "final-before-after-4.jpg"
+    ],
+    "reviewedSpatialContextImages": [
+      "../tee-context-v2/oblique-transparent.png",
+      "../tee-context-v2/anterior-surface.png",
+      "../tee-context-v2/left-surface.png",
+      "../tee-context-v2/posterior-surface.png"
+    ],
+    "spatialContextFinding": "Gross posterior esophagus, supradiaphragmatic heart, continuous hiatus/cardia and left-sided gastric relationships are coherent. Shapes and alignment remain authored reference anatomy.",
+    "expertValidated": false,
+    "clinicalRegistrationVerified": false,
+    "globalOptimumEstablished": false
+  }
+}

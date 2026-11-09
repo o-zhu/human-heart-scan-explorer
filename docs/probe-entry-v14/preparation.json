@@ -1,0 +1,224 @@
+{
+  "method": "Conservative source-support entry placement without plane or voxel changes.",
+  "limitations": "The synthetic contact surface is not donor-registered anatomy. This verifies starting placement, not collision avoidance during arbitrary later motion.",
+  "sources": [
+    {
+      "donor": "s-20-29",
+      "datasetId": "1773963465",
+      "supportSamples": 2011319,
+      "supportSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+      "referenceMm": 154.66464000000002,
+      "presets": [
+        {
+          "preset": "apical",
+          "frameId": "a4c",
+          "legacyOffsetMm": 62.7365640222272,
+          "legacyDepthMm": 133.4820511111217,
+          "supportRangeAlongUpMm": [
+            -77.09511439037875,
+            73.33395981223597
+          ],
+          "tipOutsideWholeSupportByMm": 7.364600840002083,
+          "tipMovedMm": 18.512435977772796,
+          "maximumProjectedRadiusMm": 158.39242173391523,
+          "inPlaneFanSupportSamples": 54934,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-29:support-entry-v14:apical",
+            "referenceMm": 154.66464000000002,
+            "tipOffsetMm": 81.249,
+            "depthMm": 163.6,
+            "sourceSupportSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+            "clearanceMm": 7.364526957854991,
+            "cellGuardMm": 0.5504393477619378,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "parasternal",
+          "frameId": "plax",
+          "legacyOffsetMm": 58.40990443448739,
+          "legacyDepthMm": 124.27639241380297,
+          "supportRangeAlongUpMm": [
+            -42.8815442375136,
+            46.090077066235736
+          ],
+          "tipOutsideWholeSupportByMm": 11.769388020489714,
+          "tipMovedMm": 0.0,
+          "maximumProjectedRadiusMm": 106.30791066305923,
+          "inPlaneFanSupportSamples": 29882,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-29:support-entry-v14:parasternal",
+            "referenceMm": 154.66464000000002,
+            "tipOffsetMm": 58.40990443448739,
+            "depthMm": 124.27639241380297,
+            "sourceSupportSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+            "clearanceMm": 7.364526957854991,
+            "cellGuardMm": 0.5504393477619378,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "short-axis",
+          "frameId": "psax_papillary",
+          "legacyOffsetMm": 56.24657464061749,
+          "legacyDepthMm": 119.6735630651436,
+          "supportRangeAlongUpMm": [
+            -42.88154423743112,
+            46.09007706631821
+          ],
+          "tipOutsideWholeSupportByMm": 9.606058226537343,
+          "tipMovedMm": 0.0,
+          "maximumProjectedRadiusMm": 107.56456771076938,
+          "inPlaneFanSupportSamples": 33504,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-29:support-entry-v14:short-axis",
+            "referenceMm": 154.66464000000002,
+            "tipOffsetMm": 56.24657464061749,
+            "depthMm": 119.6735630651436,
+            "sourceSupportSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+            "clearanceMm": 7.364526957854991,
+            "cellGuardMm": 0.5504393477619378,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "atrial",
+          "frameId": "me4c",
+          "legacyOffsetMm": 58.40990443448739,
+          "legacyDepthMm": 124.27639241380297,
+          "supportRangeAlongUpMm": [
+            -73.33395981223597,
+            77.09511439037875
+          ],
+          "tipOutsideWholeSupportByMm": 7.365446261859304,
+          "tipMovedMm": 26.60109556551261,
+          "maximumProjectedRadiusMm": 158.49067530350294,
+          "inPlaneFanSupportSamples": 58401,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-29:support-entry-v14:atrial",
+            "referenceMm": 154.66464000000002,
+            "tipOffsetMm": 85.011,
+            "depthMm": 163.7,
+            "sourceSupportSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+            "clearanceMm": 7.364526957854991,
+            "cellGuardMm": 0.5504393477619378,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        }
+      ]
+    },
+    {
+      "donor": "s-20-28",
+      "datasetId": "1966162746",
+      "supportSamples": 2204619,
+      "supportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+      "referenceMm": 161.34080000000003,
+      "presets": [
+        {
+          "preset": "apical",
+          "frameId": "a4c",
+          "legacyOffsetMm": 65.44461247637052,
+          "legacyDepthMm": 139.24385633270325,
+          "supportRangeAlongUpMm": [
+            -83.90347334662304,
+            80.11273020225062
+          ],
+          "tipOutsideWholeSupportByMm": 7.683170461265511,
+          "tipMovedMm": 22.90138752362948,
+          "maximumProjectedRadiusMm": 172.2527563980113,
+          "inPlaneFanSupportSamples": 55751,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-28:support-entry-v14:apical",
+            "referenceMm": 161.34080000000003,
+            "tipOffsetMm": 88.346,
+            "depthMm": 177.7,
+            "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+            "clearanceMm": 7.682419659735351,
+            "cellGuardMm": 0.5500993364838755,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "parasternal",
+          "frameId": "plax",
+          "legacyOffsetMm": 60.931190926275995,
+          "legacyDepthMm": 129.64083175803404,
+          "supportRangeAlongUpMm": [
+            -53.0371958192764,
+            41.88472687956537
+          ],
+          "tipOutsideWholeSupportByMm": 18.49636471022675,
+          "tipMovedMm": 0.0,
+          "maximumProjectedRadiusMm": 121.2759288122018,
+          "inPlaneFanSupportSamples": 38363,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-28:support-entry-v14:parasternal",
+            "referenceMm": 161.34080000000003,
+            "tipOffsetMm": 60.931190926275995,
+            "depthMm": 129.64083175803404,
+            "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+            "clearanceMm": 7.682419659735351,
+            "cellGuardMm": 0.5500993364838755,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "short-axis",
+          "frameId": "psax_papillary",
+          "legacyOffsetMm": 58.674480151228735,
+          "legacyDepthMm": 124.83931947069945,
+          "supportRangeAlongUpMm": [
+            -53.03719581923277,
+            41.88472687960899
+          ],
+          "tipOutsideWholeSupportByMm": 16.23965393513587,
+          "tipMovedMm": 0.0,
+          "maximumProjectedRadiusMm": 112.33740697689171,
+          "inPlaneFanSupportSamples": 33704,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-28:support-entry-v14:short-axis",
+            "referenceMm": 161.34080000000003,
+            "tipOffsetMm": 58.674480151228735,
+            "depthMm": 124.83931947069945,
+            "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+            "clearanceMm": 7.682419659735351,
+            "cellGuardMm": 0.5500993364838755,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        },
+        {
+          "preset": "atrial",
+          "frameId": "me4c",
+          "legacyOffsetMm": 60.931190926275995,
+          "legacyDepthMm": 129.64083175803404,
+          "supportRangeAlongUpMm": [
+            -80.11273020225062,
+            83.90347334662304
+          ],
+          "tipOutsideWholeSupportByMm": 7.682427316893075,
+          "tipMovedMm": 31.204809073724,
+          "maximumProjectedRadiusMm": 172.5131635276585,
+          "inPlaneFanSupportSamples": 60657,
+          "inPlaneFanDepthCoverage": 1.0,
+          "entry": {
+            "key": "s-20-28:support-entry-v14:atrial",
+            "referenceMm": 161.34080000000003,
+            "tipOffsetMm": 92.136,
+            "depthMm": 177.9,
+            "sourceSupportSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+            "clearanceMm": 7.682419659735351,
+            "cellGuardMm": 0.5500993364838755,
+            "method": "Entry along the unchanged beam beyond this donor's retained source support plus a half-cell guard and 8 scaled mm clearance; synthetic positioning aid, not registered skin."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "source": "Actual2.1MP X237 texture; test orientations exercise all coordinate-index mappings against previous renderer",
+  "cases": [
+    {
+      "axis": 0,
+      "palette": 3,
+      "pixels": 2100581,
+      "oldMilliseconds": 199.80840699999987,
+      "newMilliseconds": 26.65748899999994,
+      "speedup": 7.495394896346025,
+      "identical": true
+    },
+    {
+      "axis": 0,
+      "palette": 4,
+      "pixels": 2100581,
+      "oldMilliseconds": 237.81747399999995,
+      "newMilliseconds": 18.887725000000046,
+      "speedup": 12.591112693561525,
+      "identical": true
+    },
+    {
+      "axis": 0,
+      "palette": 5,
+      "pixels": 2100581,
+      "oldMilliseconds": 321.2017050000002,
+      "newMilliseconds": 29.22252000000003,
+      "speedup": 10.991581321528733,
+      "identical": true
+    },
+    {
+      "axis": 1,
+      "palette": 3,
+      "pixels": 2100581,
+      "oldMilliseconds": 251.0198539999999,
+      "newMilliseconds": 90.32611300000008,
+      "speedup": 2.7790397002913174,
+      "identical": true
+    },
+    {
+      "axis": 1,
+      "palette": 4,
+      "pixels": 2100581,
+      "oldMilliseconds": 327.70422599999984,
+      "newMilliseconds": 13.52070300000014,
+      "speedup": 24.23721799080983,
+      "identical": true
+    },
+    {
+      "axis": 1,
+      "palette": 5,
+      "pixels": 2100581,
+      "oldMilliseconds": 389.6692359999997,
+      "newMilliseconds": 20.949763000000075,
+      "speedup": 18.600173949461784,
+      "identical": true
+    },
+    {
+      "axis": 2,
+      "palette": 3,
+      "pixels": 2100581,
+      "oldMilliseconds": 111.97004100000004,
+      "newMilliseconds": 14.53756199999998,
+      "speedup": 7.70211958511339,
+      "identical": true
+    },
+    {
+      "axis": 2,
+      "palette": 4,
+      "pixels": 2100581,
+      "oldMilliseconds": 184.21667800000023,
+      "newMilliseconds": 11.760745999999926,
+      "speedup": 15.663689871373924,
+      "identical": true
+    },
+    {
+      "axis": 2,
+      "palette": 5,
+      "pixels": 2100581,
+      "oldMilliseconds": 258.55732400000034,
+      "newMilliseconds": 103.29509599999983,
+      "speedup": 2.503093893247369,
+      "identical": true
+    }
+  ],
+  "allIdentical": true
+}

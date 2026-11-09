@@ -1,0 +1,155 @@
+{
+  "schema": "heart-selected-section-codec-v29",
+  "encoder": {
+    "method": 4,
+    "quality": 100,
+    "lossless": true
+  },
+  "maxAbsoluteError": 1,
+  "minimumSSIM": 0.9995554685592651,
+  "sourceBytes": 4956612,
+  "bytes": 4241742,
+  "cases": [
+    {
+      "axis": "x",
+      "index": 190,
+      "sourceBytes": 763116,
+      "bytes": 651054,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.24330393970012665,
+        "rms": 0.49325849176686926,
+        "psnrDb": 54.26931219564825,
+        "tissueRms": 0.7045789361000061,
+        "edgeRms": 0.681168794631958,
+        "structuralSimilarity": 0.9996784329414368,
+        "tissueStructuralSimilarity": 0.9996561408042908,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "x",
+      "index": 237,
+      "sourceBytes": 842946,
+      "bytes": 720056,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.25697651505470276,
+        "rms": 0.5069285107928955,
+        "psnrDb": 54.03186925661885,
+        "tissueRms": 0.7053216695785522,
+        "edgeRms": 0.6883448362350464,
+        "structuralSimilarity": 0.9996426105499268,
+        "tissueStructuralSimilarity": 0.9996321201324463,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "x",
+      "index": 312,
+      "sourceBytes": 624368,
+      "bytes": 535628,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.28537294268608093,
+        "rms": 0.5342030912359839,
+        "psnrDb": 53.57667567279135,
+        "tissueRms": 0.7051610946655273,
+        "edgeRms": 0.6868043541908264,
+        "structuralSimilarity": 0.99962317943573,
+        "tissueStructuralSimilarity": 0.9997169971466064,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "y",
+      "index": 293,
+      "sourceBytes": 899076,
+      "bytes": 771358,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.302362859249115,
+        "rms": 0.5498753124564831,
+        "psnrDb": 53.325519173383064,
+        "tissueRms": 0.7037661075592041,
+        "edgeRms": 0.6892818212509155,
+        "structuralSimilarity": 0.9996196627616882,
+        "tissueStructuralSimilarity": 0.9996552467346191,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "y",
+      "index": 315,
+      "sourceBytes": 826796,
+      "bytes": 707534,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.28518712520599365,
+        "rms": 0.5340291426560855,
+        "psnrDb": 53.579504455022615,
+        "tissueRms": 0.7057933807373047,
+        "edgeRms": 0.6929840445518494,
+        "structuralSimilarity": 0.9996983408927917,
+        "tissueStructuralSimilarity": 0.9996848106384277,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "z",
+      "index": 209,
+      "sourceBytes": 452844,
+      "bytes": 384952,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.25065356492996216,
+        "rms": 0.5006531383402706,
+        "psnrDb": 54.14006475104949,
+        "tissueRms": 0.7027024626731873,
+        "edgeRms": 0.6744129657745361,
+        "structuralSimilarity": 0.9995554685592651,
+        "tissueStructuralSimilarity": 0.999664843082428,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    },
+    {
+      "axis": "z",
+      "index": 265,
+      "sourceBytes": 547466,
+      "bytes": 471160,
+      "metrics": {
+        "maxAbsoluteError": 1,
+        "meanError": -0.2792317271232605,
+        "rms": 0.5284238139252058,
+        "psnrDb": 53.67115598307443,
+        "tissueRms": 0.7041015028953552,
+        "edgeRms": 0.6845035552978516,
+        "structuralSimilarity": 0.9996486306190491,
+        "tissueStructuralSimilarity": 0.9996457099914551,
+        "sourceThreshold72ClassificationChanges": 0,
+        "zeroBackgroundChanged": 0,
+        "clippedWhiteChanged": 0,
+        "zeroSupportClassificationChanges": 0
+      }
+    }
+  ],
+  "reductionPercent": 14.422553147190055
+}

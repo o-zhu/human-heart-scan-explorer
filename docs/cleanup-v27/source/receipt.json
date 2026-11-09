@@ -1,0 +1,281 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 901,
+    "decodedBrickReads": 2184,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v26",
+  "cases": [
+    {
+      "id": "aortic-nodule-serial",
+      "title": "User selected nodule proximal to aortic valve",
+      "lowerXYZ": [
+        950,
+        1000,
+        930
+      ],
+      "upperXYZ": [
+        1130,
+        1220,
+        1130
+      ],
+      "ys": [
+        1056,
+        1080,
+        1104,
+        1120,
+        1132,
+        1144,
+        1160,
+        1180
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1056,
+          "sourcePlaneSha256": "ae7201529a34a61bc7447ad4fedf55ab52989965e9c27ca332de27816eaf4700",
+          "excludedInPlane": 8253
+        },
+        {
+          "fineY": 1080,
+          "sourcePlaneSha256": "d24d3941f407a4f3dae102eb690310f907902ba67aee83e20f163b52574f4115",
+          "excludedInPlane": 3975
+        },
+        {
+          "fineY": 1104,
+          "sourcePlaneSha256": "01227611be9eb1de0efc23273bfd3e38c485043c44f9f6772a40123f1d34e026",
+          "excludedInPlane": 1761
+        },
+        {
+          "fineY": 1120,
+          "sourcePlaneSha256": "f867995e1f2dec9e939dbc9a52bda34778a081a41d633ed84acfd060356ad391",
+          "excludedInPlane": 1075
+        },
+        {
+          "fineY": 1132,
+          "sourcePlaneSha256": "6ff32cfaff7d6ad38ad358b7b0e05306fc3b5d175d401914c0fc211d120bb812",
+          "excludedInPlane": 375
+        },
+        {
+          "fineY": 1144,
+          "sourcePlaneSha256": "a017c7b8f035f8e43dc0d47f2cc472041e151593ad5f69c49c373793b1be6f15",
+          "excludedInPlane": 27
+        },
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "40b0c379b38ba2e86a57c55ad1dd4f737274cc5bceaaffd78f74209e6f9ff5cd",
+          "excludedInPlane": 104
+        },
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "7a85882adaad146e5fafb68607ee212050bc92785f0815a7ba6acde1fcefed58",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "atrial-sheets-overview",
+      "title": "Left atrial and appendage / pulmonary vein sheets",
+      "lowerXYZ": [
+        1050,
+        1100,
+        450
+      ],
+      "upperXYZ": [
+        1570,
+        1430,
+        1180
+      ],
+      "ys": [
+        1200,
+        1224,
+        1248,
+        1276,
+        1300,
+        1336,
+        1368,
+        1400
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "756a586d393376808c9c6b58678908b4975df79f926ce259d607378c1546ac6a",
+          "excludedInPlane": 43022
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "9140a58b12a51bcc7ec7286f90e819198bef7ac1c9d671e74523e4490ea079dd",
+          "excludedInPlane": 25522
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "3a13bb7e5329ce366827588b9b1e59cbd5b8268fac743c4ea3b6fd6dcd4fca68",
+          "excludedInPlane": 4040
+        },
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "4e596ed83b6e16a19561056c4dcfc434a8df4429ce64f84bda92a3061777e2a7",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1300,
+          "sourcePlaneSha256": "5f8caf18141df7eb7af683d186f4911b141e95e40acfcf7a72125478b2ee2ea2",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1336,
+          "sourcePlaneSha256": "58053e030abba69c2d96b2ee4c5cad7d0799337c74158b222b2811ecadc34f73",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1368,
+          "sourcePlaneSha256": "5c79a2fac5eb6cc133c1f6cb7bd1dad6ffa750ef5b8ff6f53544fcddcecc14da",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1400,
+          "sourcePlaneSha256": "b37453c29a2a1360a0db572fa3ec26db76705487078a0cbd80dd7e849aa48e3c",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pulmonary-valve-serial",
+      "title": "Pulmonary valve and arterial posterior lumen",
+      "lowerXYZ": [
+        850,
+        1240,
+        450
+      ],
+      "upperXYZ": [
+        1270,
+        1440,
+        980
+      ],
+      "ys": [
+        1248,
+        1276,
+        1300,
+        1320,
+        1336,
+        1352,
+        1376,
+        1400
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "baed7d8a05064d5f6b35005afe78b31d1754292944c9e1d648e39ee18cd0aeaf",
+          "excludedInPlane": 5029
+        },
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "8cc597dcad59d99efb2652de705930d0d710cfc8bf192d48055e5556c3d38192",
+          "excludedInPlane": 765
+        },
+        {
+          "fineY": 1300,
+          "sourcePlaneSha256": "8f65d0e7a6af7638b5a05feb8a5d4cde6a2166591914f2f8a4cde123f6bc802a",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "9486ea495b52e93ff2c0d1040c46057738d260826ddeec1d325a52e6116da505",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1336,
+          "sourcePlaneSha256": "9ec1dd149d8e605c58ee35543dcf6bc698e800d2c0bf4a4f144a53aa7a62cffa",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1352,
+          "sourcePlaneSha256": "141dc69b78352e6a1b23e14859e35f1b7af6c4c2d13c1a0ba11d4386838bce49",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1376,
+          "sourcePlaneSha256": "5301fdc54644621019ef65f4ee3abdc036ef1899fdf2c4430a166e1349e7c17c",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1400,
+          "sourcePlaneSha256": "6dedf1d25962834c8e5e8e2c5a928abba0a04b3d8d6e5bbde90efc4ee7662f50",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "tricuspid-region-serial",
+      "title": "Tricuspid chordal region",
+      "lowerXYZ": [
+        500,
+        820,
+        1000
+      ],
+      "upperXYZ": [
+        1050,
+        1000,
+        1610
+      ],
+      "ys": [
+        836,
+        860,
+        884,
+        908,
+        932,
+        956,
+        980,
+        1004
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 836,
+          "sourcePlaneSha256": "116c798c30d124c1391484effe202d603c0cbacc3f40fe08bb92699c257443e6",
+          "excludedInPlane": 3316
+        },
+        {
+          "fineY": 860,
+          "sourcePlaneSha256": "d7a955beb2b0b2ba0838f0e0390dc47624ba43706408ef430e8b22bcfc0e344f",
+          "excludedInPlane": 2140
+        },
+        {
+          "fineY": 884,
+          "sourcePlaneSha256": "9640d015752b93755336ea792aacb59e674e99a7fd5a16628db7dd477b7818e0",
+          "excludedInPlane": 2121
+        },
+        {
+          "fineY": 908,
+          "sourcePlaneSha256": "8cea6a0f393c397d91dcea4671ebbd71c7f1cc40094d3882f6c67b6703b5a381",
+          "excludedInPlane": 1847
+        },
+        {
+          "fineY": 932,
+          "sourcePlaneSha256": "156241021d0cab9bd9984702f046a8c04562cba984d9124d9c0fbab6b9ba20ce",
+          "excludedInPlane": 2615
+        },
+        {
+          "fineY": 956,
+          "sourcePlaneSha256": "32517a68394b82c08e0c25fe24c67843312ec722455b3b6270068530f84eb82a",
+          "excludedInPlane": 1413
+        },
+        {
+          "fineY": 980,
+          "sourcePlaneSha256": "f443a5b72059e05cfd271c2f4f8bf6937e338f9efc0133cc67b8b35d460f8d0d",
+          "excludedInPlane": 1356
+        },
+        {
+          "fineY": 1004,
+          "sourcePlaneSha256": "54c21292cf579da2557ed3fd7b0a6a93a9ffb5f2bd18875056eb03479f16a7bf",
+          "excludedInPlane": 741
+        }
+      ]
+    }
+  ]
+}

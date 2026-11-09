@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "lod": "balanced",
+      "view": "la-inflow",
+      "changedPixels": 51305,
+      "unchangedPixels": 553495,
+      "offOnOffRestoresExactly": true,
+      "originalGeometryArraysUnchanged": true,
+      "measuredCapBytesUnchanged": true,
+      "sourceCapSha256": "d6ea66084c7d5e513e8e9f9d075df96f877443b928e33776565bd9dbdc624355",
+      "glErrors": 0
+    },
+    {
+      "lod": "balanced",
+      "view": "la-outflow",
+      "changedPixels": 37728,
+      "unchangedPixels": 567072,
+      "offOnOffRestoresExactly": true,
+      "originalGeometryArraysUnchanged": true,
+      "measuredCapBytesUnchanged": true,
+      "sourceCapSha256": "e73f6cc0dee9321c1c450dc91fc547501068d21e0e9d8499564a3f3bb9648555",
+      "glErrors": 0
+    },
+    {
+      "lod": "detail",
+      "view": "la-inflow",
+      "changedPixels": 52020,
+      "unchangedPixels": 552780,
+      "offOnOffRestoresExactly": true,
+      "originalGeometryArraysUnchanged": true,
+      "measuredCapBytesUnchanged": true,
+      "sourceCapSha256": "d6ea66084c7d5e513e8e9f9d075df96f877443b928e33776565bd9dbdc624355",
+      "glErrors": 0
+    },
+    {
+      "lod": "detail",
+      "view": "la-outflow",
+      "changedPixels": 37073,
+      "unchangedPixels": 567727,
+      "offOnOffRestoresExactly": true,
+      "originalGeometryArraysUnchanged": true,
+      "measuredCapBytesUnchanged": true,
+      "sourceCapSha256": "e73f6cc0dee9321c1c450dc91fc547501068d21e0e9d8499564a3f3bb9648555",
+      "glErrors": 0
+    }
+  ],
+  "outputPixels": [
+    720,
+    840
+  ],
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "atlasManifestSha256": "3231b81053b42f8ade5a905b5600f2662f89f9bbea5ed7b8a60d7059514f2ad7",
+  "atlasIndexSha256": "4c9142e6cc54ffabab17b47ca1baedc523787cf29451b672c64d58ab275499ad",
+  "atlasPayloadSha256": "4e4354def962c1a985e26abf28406ae071632525d2812f8c499dafc6604f424a",
+  "runtimeHashes": {
+    "fine-surface.js": "1d5793fd13cca1f7b68f60773c9dd99e778ad74925a4ac694e750fc595e6fd04",
+    "renderer.js": "832f9a40eb56575cf7f3e5aab76819e6aa7dc7908c302ea9252e7c65d9d997f7",
+    "reviewed-mask-atlas.js": "c963dd8e81e91f1e8b5daddfeac4e086ef0f157b7d40641cbaf3ab880729ce50"
+  },
+  "surfaceManifestSha256": "759393730dc713e22b81c1a2d448893dda725b285e3804b034cfb11576ca7c2b",
+  "scope": "Actual smaller HFM meshes and verified measured LA caps, production shaders and production-loader atlas in native EGL. Same-camera off/on/off display check; no geometry or source-pixel edits. Not physical iOS testing or a memory/FPS measurement."
+}

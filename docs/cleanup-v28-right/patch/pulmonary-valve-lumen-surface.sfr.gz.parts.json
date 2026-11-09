@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "format": "concatenated-encoded-parts",
+  "file": "pulmonary-valve-lumen-surface.sfr.gz",
+  "compressedBytes": 53213655,
+  "sha256": "25d82122c638b0640987ad548a0de9a61c53c005b5e92dab03db9882a4261e29",
+  "decodedBytes": 114841852,
+  "decodedSha256": "85c2b15827eefee39ecc73dadc7976def9f10fff2460241dc57662faf4d3cdcf",
+  "parts": [
+    {
+      "file": "pulmonary-valve-lumen-surface.sfr.gz.part-001",
+      "bytes": 25165824,
+      "sha256": "d22155ad2895c53c8b57832b99ee47315075608a3027919d823e27b37fbbfd76"
+    },
+    {
+      "file": "pulmonary-valve-lumen-surface.sfr.gz.part-002",
+      "bytes": 25165824,
+      "sha256": "68caecc717732a9baa168ea1d7ac076c05e6949917413d6fdf657bf16c6fa510"
+    },
+    {
+      "file": "pulmonary-valve-lumen-surface.sfr.gz.part-003",
+      "bytes": 2882007,
+      "sha256": "335680125aefa241764142774b0a1590c8f3cb2f044fef7707120c9008224ac2"
+    }
+  ]
+}

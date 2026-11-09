@@ -1,0 +1,209 @@
+{
+  "verifiedAt": "2026-11-07T04:47:34.165261+00:00",
+  "baseUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "checks": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 61577,
+      "sha256": "0b92f36077bcc1693225536a1b988fbdab39653cc2ec876e8a52af068d2ce956",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "appearance.js",
+      "status": 200,
+      "bytes": 14960,
+      "sha256": "9a489e184313ec04854ee222d8e497042bd79dbeb51a0e0196a093f21158601c",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "render-styles.js",
+      "status": 200,
+      "bytes": 5366,
+      "sha256": "142509c48d5f0b32a044feb7389725a11addd8436c6045488d3850c1ea06fe2d",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "renderer.js",
+      "status": 200,
+      "bytes": 58427,
+      "sha256": "781bb1e723c2af81fbf8e54bda72769a7bee7a6fc1f4dea8076035ebeed5b574",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "fine-surface.js",
+      "status": 200,
+      "bytes": 31389,
+      "sha256": "2d6f7c8c3c88f275f6d313ddf0d2a6cd9c8c60ea25e5bdf62a04feeea13fe603",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "local-surface-refinement.js",
+      "status": 200,
+      "bytes": 17029,
+      "sha256": "3d6c463144542e565c426553646a0b6ed0baedd36ea720425b1645b358be5c8c",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "section-names.js",
+      "status": 200,
+      "bytes": 5396,
+      "sha256": "f3e0475f10da3f98926acf0d2fd4f14112475ec4f4098e0e46bc9bb9e578a7f9",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "cpu-worker.js",
+      "status": 200,
+      "bytes": 12876,
+      "sha256": "95d4faeda6f13b16ba0133d207c89b8d9d1836f0e65f27650388153f58bbeaf6",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "clinical-app.js",
+      "status": 200,
+      "bytes": 34496,
+      "sha256": "5769b663a6f764f100199720bf67ba0ef28cd055d2f85cdae5a3aa78a3249faf",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "refinement.css",
+      "status": 200,
+      "bytes": 7218,
+      "sha256": "1cce52347d5110076af162934acfe8cac679c7ca35fe463ccb506f2d7e6e218b",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "lumen-cleanup-v23.js",
+      "status": 200,
+      "bytes": 6635,
+      "sha256": "9c8d045df9dea1f363426bc65ebe538c93770fa2eea97003eb55590b6a5d31ea",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "volume-picking.js",
+      "status": 200,
+      "bytes": 4510,
+      "sha256": "ca64a11260fce41a41e8dfaf831491d662ab4c18df2a6d27fabeac4378f22a02",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/arterial.bits.gz",
+      "status": 200,
+      "bytes": 287953,
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/atrial.bits.gz",
+      "status": 200,
+      "bytes": 659838,
+      "sha256": "39e7f72bf8c6a6781e6167574cd81f7c62d1b9f91f24546ba120a42ad8ed6da8",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/lumen-manifest.json",
+      "status": 200,
+      "bytes": 10718,
+      "sha256": "59bbfff2ed2565ee98820f14f777d63041d1615841db6e80efc21a6d9bdabfb2",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/lvot-perivalvular-refinement-low-band.bits.gz",
+      "status": 200,
+      "bytes": 213638,
+      "sha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/lvot-perivalvular-refinement.hfm.gz",
+      "status": 200,
+      "bytes": 2998934,
+      "sha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/pulmonary-valve-lumen-surface-low-band.bits.gz",
+      "status": 200,
+      "bytes": 407714,
+      "sha256": "4ed772ebefff497501ed9500bbdcd80c91619909894171640e34af8e0426e18b",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/pulmonary-valve-lumen-surface.hfm.gz",
+      "status": 200,
+      "bytes": 5324033,
+      "sha256": "01887f732cb6f8fbc2d2d2e0e53b926c022c0a696bd66c1b091dbb17b430ca3e",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/rv.bits.gz",
+      "status": 200,
+      "bytes": 381259,
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/surface-manifest.json",
+      "status": 200,
+      "bytes": 8812,
+      "sha256": "b3e9a7654ace71bdad6fe94e8f5fa10811340d36c4224ec83d33f331367af7fc",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/tricuspid-core-surface-low-band.bits.gz",
+      "status": 200,
+      "bytes": 342653,
+      "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/tricuspid-core-surface.hfm.gz",
+      "status": 200,
+      "bytes": 3210789,
+      "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v28/valve-region.bits.gz",
+      "status": 200,
+      "bytes": 150529,
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "matchesTestedSource": true
+    }
+  ],
+  "aliases": [
+    {
+      "path": "/assets/cleanup-v27/arterial.bits.gz",
+      "target": "/assets/cleanup-v28/arterial.bits.gz",
+      "getStatus": 308,
+      "headStatus": 308,
+      "bytes": 287953,
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "identicalPayload": true
+    },
+    {
+      "path": "/assets/cleanup-v27/rv.bits.gz",
+      "target": "/assets/cleanup-v28/rv.bits.gz",
+      "getStatus": 308,
+      "headStatus": 308,
+      "bytes": 381259,
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "identicalPayload": true
+    },
+    {
+      "path": "/assets/cleanup-v27/valve-region.bits.gz",
+      "target": "/assets/cleanup-v28/valve-region.bits.gz",
+      "getStatus": 308,
+      "headStatus": 308,
+      "bytes": 150529,
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "identicalPayload": true
+    }
+  ],
+  "allMatch": true,
+  "fineBankComplete": true,
+  "fineUploadsEnabled": false,
+  "siteServiceAuthorizationUsed": true,
+  "credentialsRecorded": false,
+  "readOnly": true
+}

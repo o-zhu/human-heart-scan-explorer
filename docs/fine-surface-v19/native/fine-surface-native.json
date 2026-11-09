@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "outputPixels": [
+    720,
+    840
+  ],
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "fineSurfaceShaderSha256": "4f4de0b123ff5f63a1ae413d626e675f3fda99d83acbbd4773ac6fd7c0950e34",
+  "fineManifestSha256": "799a0ba1c53a6557ff3f7224aeafbd9608b4cca1b58e3e3a68d4d0c66c367768",
+  "measuredCapSha256": "525d65aacecf3a097648a982f6dc1b50951f0649d081df9e4536614e75ea467a",
+  "extentChecks": [
+    {
+      "level": "low",
+      "dimensions": [
+        238,
+        238,
+        265
+      ],
+      "normalizedExtent": [
+        0.8960302457466919,
+        1.0,
+        0.8960302457466919
+      ],
+      "maximumExtentError": 0.0
+    },
+    {
+      "level": "high",
+      "dimensions": [
+        475,
+        475,
+        530
+      ],
+      "normalizedExtent": [
+        0.8960302457466919,
+        1.0,
+        0.8960302457466919
+      ],
+      "maximumExtentError": 0.0
+    }
+  ],
+  "meshChecks": [
+    {
+      "lod": "balanced",
+      "vertices": 215860,
+      "triangles": 497714,
+      "compressedBytes": 4406836,
+      "sourceExtentMatches": true,
+      "sourceBoundsLocalMin": [
+        1.9151293202104966,
+        18.686747539482553,
+        19.33183794918739
+      ],
+      "sourceBoundsLocalMax": [
+        1136.8823987182423,
+        1240.0133669031816,
+        1970.5657129777983
+      ],
+      "maximumNormalLengthError": 2.5279180716486493e-05,
+      "measuredCapPixels": 135405,
+      "maximumCapChannelError": 0,
+      "closeupCapPixels": 277476,
+      "closeupMaximumCapChannelError": 0,
+      "measuredSourceCapUnchanged": true,
+      "retainedSideCapOcclusion": true,
+      "glErrors": 0
+    },
+    {
+      "lod": "detail",
+      "vertices": 903615,
+      "triangles": 1986313,
+      "compressedBytes": 17722926,
+      "sourceExtentMatches": true,
+      "sourceBoundsLocalMin": [
+        1.2786449988555546,
+        19.06285191119241,
+        19.622430762187946
+      ],
+      "sourceBoundsLocalMax": [
+        1136.8823987182423,
+        1240.1869535362785,
+        1973.084184023804
+      ],
+      "maximumNormalLengthError": 2.546796318647626e-05,
+      "measuredCapPixels": 135405,
+      "maximumCapChannelError": 0,
+      "closeupCapPixels": 277476,
+      "closeupMaximumCapChannelError": 0,
+      "measuredSourceCapUnchanged": true,
+      "retainedSideCapOcclusion": true,
+      "glErrors": 0
+    }
+  ],
+  "projectionChecks": [
+    {
+      "marker": 0,
+      "expectedPixel": [
+        359.49596339209234,
+        419.50330328443385
+      ],
+      "observedPixel": [
+        359.0,
+        420.0
+      ],
+      "maximumPixelError": 0.49669671556614503
+    },
+    {
+      "marker": 1,
+      "expectedPixel": [
+        518.951844198186,
+        421.6872769738969
+      ],
+      "observedPixel": [
+        519.0,
+        422.0
+      ],
+      "maximumPixelError": 0.3127230261030718
+    },
+    {
+      "marker": 2,
+      "expectedPixel": [
+        207.42516002890508,
+        417.4201459507344
+      ],
+      "observedPixel": [
+        207.0,
+        417.0
+      ],
+      "maximumPixelError": 0.42516002890508275
+    },
+    {
+      "marker": 3,
+      "expectedPixel": [
+        359.50056918292614,
+        223.94138370674327
+      ],
+      "observedPixel": [
+        359.0,
+        224.0
+      ],
+      "maximumPixelError": 0.5005691829261423
+    },
+    {
+      "marker": 4,
+      "expectedPixel": [
+        359.50364277960404,
+        611.1471903395549
+      ],
+      "observedPixel": [
+        360.0,
+        611.0
+      ],
+      "maximumPixelError": 0.4963572203959643
+    }
+  ],
+  "scope": "Production mesh shaders, actual HFM1 assets, measured Ultra cap, same-camera full-volume comparison, source-coordinate bounds, marker projection and retained-side cap occlusion in native EGL. No browser/device FPS or clinical validation.",
+  "fineSurfaceModuleSha256": "ec4bb4e64c3404bdb1504ff566c7cd56ad3aeff8d9e22b4b4fb4c8f1b1280b66",
+  "productionRendererSha256": "710baca457209951358fd625b11b194c6a196cc6f7dfc50894847df576b25399",
+  "finalManifestSha256": "759393730dc713e22b81c1a2d448893dda725b285e3804b034cfb11576ca7c2b",
+  "finalManifestReview": {
+    "metadataOnlyUpdate": true,
+    "addedFields": [
+      "datasetUrl",
+      "doiUrl",
+      "attribution",
+      "license",
+      "licenseUrl",
+      "validationSummary"
+    ],
+    "testedManifestReconstructedSha256": "799a0ba1c53a6557ff3f7224aeafbd9608b4cca1b58e3e3a68d4d0c66c367768",
+    "renderingFieldsUnchanged": true,
+    "binaryHashesReverified": true,
+    "note": "Source attribution/license and validationSummary were added after native rendering. Removing only these six added metadata fields reconstructs the exact tested manifest SHA-256, proving bounds, extent and all LOD entries are unchanged. Both compressed and decoded asset hashes were reverified. The original fineManifestSha256 remains the rendering-time record; no rerender was required."
+  }
+}

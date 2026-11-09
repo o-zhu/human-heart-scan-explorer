@@ -1,0 +1,57 @@
+{
+  "dimensions": {
+    "x": [
+      1.989e-05,
+      "m"
+    ],
+    "y": [
+      1.989e-05,
+      "m"
+    ],
+    "z": [
+      1.989e-05,
+      "m"
+    ]
+  },
+  "layout": "4panel",
+  "projectionOrientation": [
+    0.30000001192092896,
+    0.20000000298023224,
+    0.0,
+    -0.8999999761581421
+  ],
+  "projectionScale": 4096.0,
+  "selectedLayer": {
+    "layer": "S-20-29_heart_complete-organ_19.89um_bm18",
+    "visible": true
+  },
+  "position": [
+    3819.5,
+    3819.5,
+    3885.5
+  ],
+  "crossSectionScale": 10.0,
+  "showSlices": false,
+  "layers": [
+    {
+      "type": "image",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            18936,
+            24935
+          ]
+        }
+      },
+      "source": [
+        {
+          "url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/"
+        }
+      ],
+      "opacity": 1.0,
+      "volumeRendering": "max",
+      "volumeRenderingDepthSamples": 256.0,
+      "name": "S-20-29_heart_complete-organ_19.89um_bm18"
+    }
+  ]
+}

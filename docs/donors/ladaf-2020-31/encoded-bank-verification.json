@@ -1,0 +1,26 @@
+{
+  "datasetId": "1966161627",
+  "collections": {
+    "ultra-sections": {
+      "files": 1025,
+      "bytes": 486261744,
+      "sha256AllVerified": true
+    },
+    "ultra-volume": {
+      "files": 4242,
+      "bytes": 739802124,
+      "sha256AllVerified": true
+    }
+  },
+  "verifiedDate": "2026-11-05",
+  "fineSourceSamples": 20000,
+  "maximumDisplayByteError": 0,
+  "physicalRegistrationPoints": 4096,
+  "maximumPhysicalRegistrationErrorUm": 2.9103830456733704e-11,
+  "sectionSourceHashChecks": 9,
+  "brickSourceAndPositiveHaloChecks": 32,
+  "decodedDisplaySha256": "12f1fdf1735a94cbda878336369262aab2cacb863ef3d07d8ca49112e304b56a",
+  "decodedDisplayBytes": 2150212125,
+  "sourceVoxelsOmittedByRegistration": 0,
+  "previewEndpointsVerified": true
+}

@@ -1,0 +1,64 @@
+{
+  "method": "gaussian",
+  "nativeTile": null,
+  "input": {
+    "sourceRecord": "{source-cache}/guided-native-v21/denoise/surface-render/source-record.json",
+    "sourceOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "fieldHash": "b41111f77a651a69bd9e092602187cf40189b22f5107e5b98242c34c77657e90",
+    "threshold": 17133.400390625,
+    "encodedMesh": {
+      "format": "NBE1",
+      "bytes": 83822,
+      "decodedBytes": 208627,
+      "sha256": "4bc5489ebb8d0f9f4ccb60c708c36dccb093dfa721490ae16efe59791e020055",
+      "decodedSha256": "436a0b8054e8bb5b9eb3282954789ab1a0692755979ebd4ae533338e7169a1a0",
+      "sampleShapeZYX": [
+        108,
+        108,
+        108
+      ],
+      "originXYZ": [
+        0,
+        0,
+        0
+      ],
+      "vertices": 81755,
+      "triangles": 160239,
+      "activeCells": 80393,
+      "edgeCountsXYZ": [
+        28372,
+        21002,
+        32381
+      ],
+      "crossingBits": 5,
+      "sourceSpacingUm": 19.85,
+      "samplingStepNative": 1,
+      "meshSampleSpacingUm": 19.85,
+      "maximumEncodingMovementUm": 0.3101546259964918,
+      "rmsEncodingMovementUm": 0.1791766608922474,
+      "encodingMovementBoundUm": 0.31015625,
+      "connectivity": "Standard marching-cubes cases; original native integer grid edges"
+    }
+  },
+  "unfilteredTriangles": 160239,
+  "renderedTriangles": 160239,
+  "originalVertexBufferSha256": "2d43322099da56081556eecb216bd03130ce570c59171d54f5d7eb621a3afa19",
+  "retainedFaceMaskSha256": "a64e7b2b7734e60eba6be14f0d894380d3fdb3a1b6069b202fde66ad00bd8e6a",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": null,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": -0.004672897196261682,
+  "cropSpanMm": 2.12395,
+  "geometryModification": "input scalar geometry",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/scalar-gaussian.png",
+    "sha256": "7f8f8663e870626ce1d4460f6eccbee9de6f9b2fafb34ec734d5f6cabff917fc"
+  },
+  "seconds": 0.4692778510070639,
+  "peakRssMiB": 217.05078125
+}

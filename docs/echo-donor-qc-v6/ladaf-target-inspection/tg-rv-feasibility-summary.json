@@ -1,0 +1,742 @@
+[
+  {
+    "donorId": "ladaf-2021-17",
+    "sourceHashes": {
+      "public/echo.js": "ec5f9babaad32b4c03672c7ef8b9ad4ab0827ccb8704254c539f4e8bae1d6247",
+      "public/echo-acquisition-geometry.js": "006898b7c00ff5400dcadace23d8466e6d962dec70efd79c43c619e37c057d7b",
+      "public/echo-donor-planes.js": "fe4833e5f51dc2662fec40010eb620f5cc2812c38dacc4c46d81a159b8607745",
+      "public/echo-donor-calibration.js": "68d4befc784451b000a2d11c44bdea791f3e8f1d3952b69f8f9f38dd8ef1ba3e",
+      "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a",
+      "public/echo-anatomy-context-v2.js": "b619f22ab57d0e526fcba918421d941bd2a93c562d367db4400cb621adbc1627",
+      "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+      "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+      "public/tee-atlas-geometry.js": "0956a6af0eaf2e79162db9d46b654570ed662d941a405f7add6a4ecb3b653349"
+    },
+    "contextHash": "ee8ff5755271519b46abd5f3e5a86b554f5b6165c86de9cc352926a6d5592f0c",
+    "sourcePlane": {
+      "center": [
+        -0.07769376181474479,
+        -0.003780718336483932,
+        -0.0155009451795841
+      ],
+      "right": [
+        0.10077653016451064,
+        0.703506961930016,
+        0.7035069619300158
+      ],
+      "up": [
+        -0.8803761687374815,
+        0.3924388521523529,
+        -0.2663260198336943
+      ],
+      "normal": [
+        -0.46344567371711987,
+        -0.5925113516527282,
+        0.6588993896457502
+      ],
+      "width": 0.6616257088846881,
+      "height": 0.7372400756143668,
+      "note": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+      "atlasDerived": true,
+      "displayMirrorX": false,
+      "displayRotate180": false,
+      "refinement": {
+        "frame": {
+          "center": [
+            -0.07769376181474479,
+            -0.003780718336483932,
+            -0.0155009451795841
+          ],
+          "right": [
+            0.10077653016451063,
+            0.7035069619300159,
+            0.7035069619300157
+          ],
+          "up": [
+            -0.8803761687374815,
+            0.3924388521523529,
+            -0.2663260198336943
+          ],
+          "normal": [
+            -0.46344567371711987,
+            -0.5925113516527282,
+            0.6588993896457502
+          ],
+          "width": 0.6616257088846881,
+          "height": 0.7372400756143668,
+          "displayMirrorX": false,
+          "displayRotate180": false
+        },
+        "status": "refined",
+        "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+        "remainingLimits": [
+          "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+        ],
+        "search": {
+          "candidatesEvaluated": 3438,
+          "broadCandidates": 2188,
+          "fineCandidates": 1250,
+          "adaptiveMeasuredReformats": 0,
+          "measuredReformatsRendered": 19,
+          "selectedCandidateId": 1094,
+          "selection": "Visual source-anatomy adjudication after geometric inclusion/exclusion search; geometric rank is not clinical accuracy."
+        },
+        "source": {
+          "specimen": "LADAF-2021-17",
+          "coordinates": "Original s4 voxel-center XYZ, 317.6 \u00b5m",
+          "centerXYZ": [
+            195.9,
+            245.2,
+            262.5
+          ],
+          "rightXYZ": [
+            0.100776530165,
+            -0.70350696193,
+            0.70350696193
+          ],
+          "upXYZ": [
+            -0.880376168737,
+            0.266326019834,
+            0.392438852152
+          ],
+          "normalXYZ": [
+            -0.463445673717,
+            -0.658899389646,
+            -0.592511351653
+          ],
+          "originalPhysicalPlaneRetained": false,
+          "baselineNormalAngleDegrees": 87.309,
+          "baselineNormalDisplacementMm": 10.398
+        },
+        "presentation": []
+      },
+      "outsideScan": false
+    },
+    "bestAngle": 10,
+    "bestRotationDeg": 32.00335777103846,
+    "angles": [
+      {
+        "angle": 0,
+        "correctionAngleDeg": 32.00335777103846,
+        "headClearanceMm": 0.04192639509175554,
+        "shaftClearanceMm": 3.7099990442727298,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 10,
+        "correctionAngleDeg": 32.00335777103846,
+        "headClearanceMm": 0.06302773728619168,
+        "shaftClearanceMm": 3.7099990442727298,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 20,
+        "correctionAngleDeg": 32.378918901317775,
+        "headClearanceMm": 0.0682501458713584,
+        "shaftClearanceMm": 3.4538873413411024,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 90,
+        "correctionAngleDeg": 33.81576554271498,
+        "headClearanceMm": 4.859076602511423,
+        "shaftClearanceMm": 4.453660441376034,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 100,
+        "correctionAngleDeg": 33.81576554271498,
+        "headClearanceMm": 4.6854234079858355,
+        "shaftClearanceMm": 4.453660441376034,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 110,
+        "correctionAngleDeg": 33.81576554271498,
+        "headClearanceMm": 4.627489714232519,
+        "shaftClearanceMm": 4.453660441376034,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 120,
+        "correctionAngleDeg": 33.55564904165081,
+        "headClearanceMm": 0.07354661729896866,
+        "shaftClearanceMm": 4.151145899009127,
+        "roiInsideSector": true,
+        "eligible": true
+      }
+    ],
+    "fullMesh": {
+      "entireGI": {
+        "firstRing": 0,
+        "lastRing": 168,
+        "vertices": 8112,
+        "totalTriangles": 16128,
+        "signedDistanceRangeMm": [
+          -127.07794719600135,
+          10.845081247310425
+        ],
+        "crossingTriangles": 137,
+        "disjoint": false,
+        "separatingPlaneGapMm": 0,
+        "closestVertexMm": [
+          12.297283172607422,
+          -81.36986541748047,
+          -57.379146575927734
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      },
+      "entireStomach": {
+        "firstRing": 88,
+        "lastRing": 168,
+        "vertices": 3888,
+        "totalTriangles": 7680,
+        "signedDistanceRangeMm": [
+          -127.07794719600135,
+          -21.191460534301818
+        ],
+        "crossingTriangles": 0,
+        "disjoint": true,
+        "separatingPlaneGapMm": 21.191460534301818,
+        "closestVertexMm": [
+          37.84248352050781,
+          78.71611022949219,
+          72.38823699951172
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      }
+    },
+    "ringIntersections": [
+      {
+        "ring": 0,
+        "level": "ue",
+        "insertionCm": 25.08266827315194
+      },
+      {
+        "ring": 1,
+        "level": "ue",
+        "insertionCm": 25.318829551904386
+      },
+      {
+        "ring": 2,
+        "level": "ue",
+        "insertionCm": 25.557814455141855
+      },
+      {
+        "ring": 3,
+        "level": "ue",
+        "insertionCm": 25.79837586951986
+      },
+      {
+        "ring": 4,
+        "level": "ue",
+        "insertionCm": 26.039262093844805
+      },
+      {
+        "ring": 5,
+        "level": "ue",
+        "insertionCm": 26.279220500987332
+      },
+      {
+        "ring": 6,
+        "level": "ue",
+        "insertionCm": 26.51700112609571
+      },
+      {
+        "ring": 7,
+        "level": "ue",
+        "insertionCm": 26.751360467778248
+      },
+      {
+        "ring": 8,
+        "level": "ue",
+        "insertionCm": 26.98106581974836
+      },
+      {
+        "ring": 9,
+        "level": "ue",
+        "insertionCm": 27.204900529583092
+      },
+      {
+        "ring": 10,
+        "level": "ue",
+        "insertionCm": 27.421584949943767
+      },
+      {
+        "ring": 11,
+        "level": "ue",
+        "insertionCm": 27.628485069167887
+      },
+      {
+        "ring": 12,
+        "level": "ue",
+        "insertionCm": 27.826592978033798
+      },
+      {
+        "ring": 13,
+        "level": "ue",
+        "insertionCm": 28.018252488160783
+      },
+      {
+        "ring": 14,
+        "level": "ue",
+        "insertionCm": 28.20579241352711
+      },
+      {
+        "ring": 31,
+        "level": "me",
+        "insertionCm": 32.14059337440595
+      },
+      {
+        "ring": 32,
+        "level": "me",
+        "insertionCm": 32.36752838155974
+      },
+      {
+        "ring": 33,
+        "level": "me",
+        "insertionCm": 32.59108718184901
+      },
+      {
+        "ring": 34,
+        "level": "me",
+        "insertionCm": 32.81157304812989
+      },
+      {
+        "ring": 35,
+        "level": "me",
+        "insertionCm": 33.02938706487857
+      },
+      {
+        "ring": 36,
+        "level": "me",
+        "insertionCm": 33.24506973941456
+      }
+    ]
+  },
+  {
+    "donorId": "s-20-29",
+    "sourceHashes": {
+      "public/echo.js": "ec5f9babaad32b4c03672c7ef8b9ad4ab0827ccb8704254c539f4e8bae1d6247",
+      "public/echo-acquisition-geometry.js": "006898b7c00ff5400dcadace23d8466e6d962dec70efd79c43c619e37c057d7b",
+      "public/echo-donor-planes.js": "fe4833e5f51dc2662fec40010eb620f5cc2812c38dacc4c46d81a159b8607745",
+      "public/echo-donor-calibration.js": "68d4befc784451b000a2d11c44bdea791f3e8f1d3952b69f8f9f38dd8ef1ba3e",
+      "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a",
+      "public/echo-anatomy-context-v2.js": "b619f22ab57d0e526fcba918421d941bd2a93c562d367db4400cb621adbc1627",
+      "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+      "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+      "public/tee-atlas-geometry.js": "0956a6af0eaf2e79162db9d46b654570ed662d941a405f7add6a4ecb3b653349"
+    },
+    "contextHash": "a82fcd65b89f34626aabebabd8d55e93d43e8709c01137f32c8a34233583945b",
+    "sourcePlane": {
+      "referenceMm": 154.66464000000002,
+      "center": [
+        -0.10862482853223594,
+        -0.030092592592592594,
+        -0.022376543209876552
+      ],
+      "right": [
+        0.881792199555384,
+        -0.026981233924572953,
+        -0.47086572376759955
+      ],
+      "up": [
+        -0.1080797957747285,
+        -0.9833549749690128,
+        -0.14605393164507768
+      ],
+      "normal": [
+        -0.45908743671393465,
+        0.17968028890114665,
+        -0.8700308725739733
+      ],
+      "width": 0.6963854618523615,
+      "height": 0.7082894868412908,
+      "atlasDerived": true,
+      "displayMirrorX": false,
+      "displayRotate180": false,
+      "outsideScan": false,
+      "donorCalibration": {
+        "revision": "specimen-echo-targets-v6",
+        "calibrationRevision": "source-specimen-calibration-v1",
+        "donorId": "s-20-29",
+        "viewId": "tgrvinout",
+        "status": "regional",
+        "landmarkKeys": [
+          "rightVentricle",
+          "tricuspidRegion",
+          "pulmonaryRoot"
+        ],
+        "summary": "Estimated from this specimen\u2019s ventricular, atrial and outflow landmarks; the displayed CT is sampled from its own scan.",
+        "clinicalValidated": false,
+        "patientRegistered": false,
+        "namedSmallStructuresConfirmed": false
+      },
+      "anatomyTargetsMm": [
+        {
+          "key": "rightVentricle",
+          "pointMm": [
+            -12.132900000000005,
+            11.894220000000002,
+            -2.5061400000000007
+          ],
+          "weight": 1,
+          "toleranceMm": 9.205658697318738
+        },
+        {
+          "key": "tricuspidRegion",
+          "pointMm": [
+            -36.63738000000001,
+            -9.109620000000003,
+            6.0863400000000025
+          ],
+          "weight": 2,
+          "toleranceMm": 9.205658697318738
+        },
+        {
+          "key": "pulmonaryRoot",
+          "pointMm": [
+            -1.6309800000000005,
+            -16.747380000000003,
+            -13.962780000000004
+          ],
+          "weight": 1,
+          "toleranceMm": 9.205658697318738
+        }
+      ],
+      "note": "Estimated from this specimen\u2019s ventricular, atrial and outflow landmarks; the displayed CT is sampled from its own scan."
+    },
+    "bestAngle": 90,
+    "bestRotationDeg": 29.160468085528862,
+    "angles": [
+      {
+        "angle": 0,
+        "correctionAngleDeg": 30.97133658492255,
+        "headClearanceMm": 4.368730370125661,
+        "shaftClearanceMm": 4.102150198408192,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 10,
+        "correctionAngleDeg": 30.97133658492255,
+        "headClearanceMm": 4.689599448385855,
+        "shaftClearanceMm": 4.102150198408192,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 20,
+        "correctionAngleDeg": 30.97133658492255,
+        "headClearanceMm": 5.120610947449407,
+        "shaftClearanceMm": 4.102150198408192,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 90,
+        "correctionAngleDeg": 29.160468085528862,
+        "headClearanceMm": 0.1417878784534813,
+        "shaftClearanceMm": 3.8303607836018747,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 100,
+        "correctionAngleDeg": 29.76691022986931,
+        "headClearanceMm": 0.12629206885801975,
+        "shaftClearanceMm": 3.9505611231489044,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 110,
+        "correctionAngleDeg": 30.97133658492255,
+        "headClearanceMm": 4.724402665062354,
+        "shaftClearanceMm": 4.102150198408192,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 120,
+        "correctionAngleDeg": 30.97133658492255,
+        "headClearanceMm": 4.356236800630824,
+        "shaftClearanceMm": 4.102150198408192,
+        "roiInsideSector": true,
+        "eligible": true
+      }
+    ],
+    "fullMesh": {
+      "entireGI": {
+        "firstRing": 0,
+        "lastRing": 168,
+        "vertices": 8112,
+        "totalTriangles": 16128,
+        "signedDistanceRangeMm": [
+          -111.10364924680644,
+          -17.531654673425127
+        ],
+        "crossingTriangles": 0,
+        "disjoint": true,
+        "separatingPlaneGapMm": 17.531654673425127,
+        "closestVertexMm": [
+          24.159748077392578,
+          -109.38584899902344,
+          -26.552967071533203
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      },
+      "entireStomach": {
+        "firstRing": 88,
+        "lastRing": 168,
+        "vertices": 3888,
+        "totalTriangles": 7680,
+        "signedDistanceRangeMm": [
+          -111.10364924680644,
+          -27.492367413667992
+        ],
+        "crossingTriangles": 0,
+        "disjoint": true,
+        "separatingPlaneGapMm": 27.492367413667992,
+        "closestVertexMm": [
+          -59.908485412597656,
+          70.23792266845703,
+          66.35205078125
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      }
+    },
+    "ringIntersections": []
+  },
+  {
+    "donorId": "s-20-28",
+    "sourceHashes": {
+      "public/echo.js": "ec5f9babaad32b4c03672c7ef8b9ad4ab0827ccb8704254c539f4e8bae1d6247",
+      "public/echo-acquisition-geometry.js": "006898b7c00ff5400dcadace23d8466e6d962dec70efd79c43c619e37c057d7b",
+      "public/echo-donor-planes.js": "fe4833e5f51dc2662fec40010eb620f5cc2812c38dacc4c46d81a159b8607745",
+      "public/echo-donor-calibration.js": "68d4befc784451b000a2d11c44bdea791f3e8f1d3952b69f8f9f38dd8ef1ba3e",
+      "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a",
+      "public/echo-anatomy-context-v2.js": "b619f22ab57d0e526fcba918421d941bd2a93c562d367db4400cb621adbc1627",
+      "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+      "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+      "public/tee-atlas-geometry.js": "0956a6af0eaf2e79162db9d46b654570ed662d941a405f7add6a4ecb3b653349"
+    },
+    "contextHash": "fec898776c75e57103e12aef500eae872011ddec39dbe84ac36682f935d8a491",
+    "sourcePlane": {
+      "referenceMm": 161.34080000000003,
+      "center": [
+        -0.08193897637795275,
+        -0.078001968503937,
+        -0.017142388451443568
+      ],
+      "right": [
+        0.4287941159464078,
+        0.17311735819192273,
+        -0.8866600173811765
+      ],
+      "up": [
+        0.4194308500619177,
+        -0.9074243374047154,
+        0.02566775997141432
+      ],
+      "normal": [
+        -0.800133343978412,
+        -0.3828987492513688,
+        -0.4617089772526214
+      ],
+      "width": 0.6963854618523616,
+      "height": 0.7082894868412908,
+      "atlasDerived": true,
+      "displayMirrorX": false,
+      "displayRotate180": false,
+      "outsideScan": false,
+      "donorCalibration": {
+        "revision": "specimen-echo-targets-v6",
+        "calibrationRevision": "source-specimen-calibration-v1",
+        "donorId": "s-20-28",
+        "viewId": "tgrvinout",
+        "status": "regional",
+        "landmarkKeys": [
+          "rightVentricle",
+          "tricuspidRegion",
+          "pulmonaryRoot"
+        ],
+        "summary": "Estimated from this specimen\u2019s ventricular, atrial and outflow landmarks; the displayed CT is sampled from its own scan.",
+        "clinicalValidated": false,
+        "patientRegistered": false,
+        "namedSmallStructuresConfirmed": false
+      },
+      "anatomyTargetsMm": [
+        {
+          "key": "rightVentricle",
+          "pointMm": [
+            -23.700900000000004,
+            -1.1513000000000002,
+            5.915300000000001
+          ],
+          "weight": 1,
+          "toleranceMm": 9.603024574669188
+        },
+        {
+          "key": "tricuspidRegion",
+          "pointMm": [
+            -16.713700000000003,
+            -30.688100000000006,
+            18.301700000000004
+          ],
+          "weight": 2,
+          "toleranceMm": 9.603024574669188
+        },
+        {
+          "key": "pulmonaryRoot",
+          "pointMm": [
+            0.7543000000000002,
+            -5.915300000000001,
+            -32.514300000000006
+          ],
+          "weight": 1,
+          "toleranceMm": 9.603024574669188
+        }
+      ],
+      "note": "Estimated from this specimen\u2019s ventricular, atrial and outflow landmarks; the displayed CT is sampled from its own scan."
+    },
+    "bestAngle": 20,
+    "bestRotationDeg": 36.667749284180886,
+    "angles": [
+      {
+        "angle": 0,
+        "correctionAngleDeg": 37.90593949827606,
+        "headClearanceMm": 5.680895819882472,
+        "shaftClearanceMm": 4.2793123848287555,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 10,
+        "correctionAngleDeg": 36.691275260252795,
+        "headClearanceMm": 0.038521697329193284,
+        "shaftClearanceMm": 4.034322612283473,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 20,
+        "correctionAngleDeg": 36.667749284180886,
+        "headClearanceMm": 0.052727838484115656,
+        "shaftClearanceMm": 3.60681320805177,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 90,
+        "correctionAngleDeg": 41.43655007604957,
+        "headClearanceMm": 0.049460826240909354,
+        "shaftClearanceMm": 3.995700685030436,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 100,
+        "correctionAngleDeg": 43.803362566892986,
+        "headClearanceMm": 5.53143947688435,
+        "shaftClearanceMm": 4.2793123848287555,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 110,
+        "correctionAngleDeg": 37.90593949827606,
+        "headClearanceMm": 4.204021101873762,
+        "shaftClearanceMm": 4.2793123848287555,
+        "roiInsideSector": true,
+        "eligible": true
+      },
+      {
+        "angle": 120,
+        "correctionAngleDeg": 37.90593949827606,
+        "headClearanceMm": 4.1978204915494235,
+        "shaftClearanceMm": 4.2793123848287555,
+        "roiInsideSector": true,
+        "eligible": true
+      }
+    ],
+    "fullMesh": {
+      "entireGI": {
+        "firstRing": 0,
+        "lastRing": 168,
+        "vertices": 8112,
+        "totalTriangles": 16128,
+        "signedDistanceRangeMm": [
+          -135.82618435855562,
+          14.993809767747468
+        ],
+        "crossingTriangles": 108,
+        "disjoint": false,
+        "separatingPlaneGapMm": 0,
+        "closestVertexMm": [
+          51.79790496826172,
+          -84.37310028076172,
+          -55.943180084228516
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      },
+      "entireStomach": {
+        "firstRing": 88,
+        "lastRing": 168,
+        "vertices": 3888,
+        "totalTriangles": 7680,
+        "signedDistanceRangeMm": [
+          -135.82618435855562,
+          -36.389603226203704
+        ],
+        "crossingTriangles": 0,
+        "disjoint": true,
+        "separatingPlaneGapMm": 36.389603226203704,
+        "closestVertexMm": [
+          -51.6658935546875,
+          25.190467834472656,
+          111.34772491455078
+        ],
+        "proof": "A linear signed-distance function attains its extrema at mesh vertices. If every vertex is strictly on one side, every wall triangle and any ring-closing planar disk remain on that side; this proves disjointness from the complete represented regional solid, not just sampled centers."
+      }
+    },
+    "ringIntersections": [
+      {
+        "ring": 4,
+        "level": "ue",
+        "insertionCm": 26.676755153703247
+      },
+      {
+        "ring": 5,
+        "level": "ue",
+        "insertionCm": 26.93745181937757
+      },
+      {
+        "ring": 6,
+        "level": "ue",
+        "insertionCm": 27.198165408192587
+      },
+      {
+        "ring": 7,
+        "level": "ue",
+        "insertionCm": 27.458910491259612
+      },
+      {
+        "ring": 8,
+        "level": "ue",
+        "insertionCm": 27.71970812856362
+      },
+      {
+        "ring": 9,
+        "level": "ue",
+        "insertionCm": 27.980588228240798
+      }
+    ]
+  }
+]

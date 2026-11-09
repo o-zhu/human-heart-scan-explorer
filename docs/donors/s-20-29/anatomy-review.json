@@ -1,0 +1,20 @@
+{
+  "datasetId": "1773963465",
+  "specimen": "S-20-29",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": true,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Approximate donor-specific source review; clinical presets remain geometric",
+  "sourceDoi": "10.15151/ESRF-DC-1773964017",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "segmentationAvailable": true,
+  "revision": "s-20-29-source-regions-v17",
+  "supportsQuantification": false,
+  "assignedVoxelCount": 4231051,
+  "explanation": "Independent source-guided approximate chamber and great-vessel regional colors are available. Geometric comparison presets remain unvalidated as clinical windows.",
+  "evidenceDirectory": "docs/anatomy-donors-v17/s-20-29",
+  "previousReview": "The v10 all-neutral comparison state is superseded for regional color display only. Clinical correspondence remains unreviewed."
+}

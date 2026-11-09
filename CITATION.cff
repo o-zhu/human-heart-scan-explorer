@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If you use Heart Explorer, cite this software and separately cite the
+  datasets, reference anatomy, publications, and media used in your work.
+title: Heart Explorer
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Oliver
+abstract: >-
+  An educational browser application for measured heart reconstruction,
+  linked CT sections, echocardiography reference views, and illustrative
+  TTE and TEE probe interaction. Scientific data and third-party media
+  retain their own licenses and validation limits.
+url: https://human-heart-scan-explorer.zhuou557737.chatgpt.site
+repository-code: https://github.com/o-zhu/human-heart-scan-explorer
+license: MIT
+keywords:
+  - cardiac anatomy
+  - scientific visualization
+  - echocardiography
+  - HiP-CT
+  - WebGL

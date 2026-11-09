@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 2,
+  "revision": "la-exterior-v17",
+  "title": "Source-guided regional anatomy",
+  "specimen": "LADAF-2021-17",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "sourceDoi": "10.15151/ESRF-DC-1634390196",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "dimensions": [
+    317,
+    317,
+    354
+  ],
+  "volumeUrl": "./assets/anatomy/labels-v17-la-e29a218fdf42.raw.gz",
+  "arrayOrder": "ZYX in NumPy; X-fastest bytes",
+  "dtype": "uint8",
+  "registration": "Endpoints match original s4 voxel centers [0,0,0] and [474,474,529]. Sample nearest at round(sourceNormalizedXYZ*(dimensions-1)).",
+  "sourceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "sourceSpacingUm": 317.6,
+  "labelGridSpacingUmXYZ": [
+    476.4,
+    476.4,
+    475.950142
+  ],
+  "rendering": "Labels tint independently measured tissue density; labels must never be rendered as filled chamber contents.",
+  "compressedBytes": 330535,
+  "decodedBytes": 35573106,
+  "sha256": "e29a218fdf42947a550b2c73711f66cbc4aaa0daca852f55529859e4fdb6ac54",
+  "compressedSha256": "c7731a510a8e76c7b44114240451f52334eb39792c6d8ee91a3745ebdc550e59",
+  "method": "Retains the source-guided ventricular envelope, tricuspid junction, arterial cores and pulmonary hinge of v5. Recovers unclassified low-intensity outer tissue by a bounded, intensity-weighted geodesic on independently measured organ support. A local surface-ownership layer follows the measured RV cavity while preserving compact septal core and existing atrial/arterial labels. Unrestricted nearest-cavity and exterior-only alternatives were compared. Source values, reconstruction geometry and registration are unchanged. v17 adds only source-connected, previously neutral LA exterior cells containing measured original source tissue within 2.4 mm of existing LA and at least 0.95 mm farther from every competing region. All previous nonzero identities, including ventricular surface corrections, are bit-identical.",
+  "methodParameters": {
+    "baselineRevision": "surface-ownership-v12",
+    "baselineSha256": "da41d280d86b5b458494e45f76435f457c771cfe4d7380d412f4109cf4940e44",
+    "sourceTissueThresholdRaw": 17100,
+    "maximumDistanceFromExistingLAMm": 2.4,
+    "otherRegionProtectionMarginMm": 0.95,
+    "sourceOccupancyRule": "Maximum original uint16 intensity among source voxel centers assigned to each endpoint-registered annotation cell; no source smoothing or intensity change.",
+    "geodesicConnectivity": 6,
+    "edgeDifferenceScale": 1200,
+    "lowDensityGapPenalty": 3,
+    "maximumGeodesicCost": 14,
+    "existingNonzeroIdentitiesFrozen": true
+  },
+  "septalDisplayConvention": "The compact interventricular septum remains a shared structure. Its compact core is displayed with the LV myocardial body; the thin tissue surface facing the source-extracted RV cavity is displayed as RV, along with adjacent RV trabecular protrusions. This is regional surface ownership, not a measured histological layer or a claim that the whole septum belongs to one ventricle.",
+  "validation": "All 43 pre-existing source-review controls are retained and every nonzero v12 label is unchanged. Six original uint16 sections and four fixed native s4 surface projections compare before/after. Three completion methods were compared. These establish preservation and constrained coverage, not expert ground truth or a clinical accuracy score.",
+  "limitations": [
+    "Approximate source-supported regional annotations; no expert reference segmentation or trained segmentation model.",
+    "LA completion is restricted to short source-connected extensions of existing approximate LA territory. Pulmonary-vein ostia, atrioventricular transition and arterial boundaries are not independently relabeled; uncertain neutral boundaries remain.",
+    "The RV-facing septal surface and compact septal core use the explicit shared-septum display convention. The layer thickness is an annotation parameter, not a measured anatomical boundary.",
+    "Outer color denotes regional association; it does not distinguish epicardial fat, myocardium or coronary vessels.",
+    "Pulmonary hinge, tricuspid and LV/atrial/root transitions are visually estimated. Shared fibrous tissue, valve attachment zones and small vessels remain uncertain.",
+    "Valves, coronary vessels, individual pulmonary veins, caval veins and appendages are not separately segmented.",
+    "No fiber tractography, deformation, slice realignment or synthetic anatomical reconstruction is performed.",
+    "These labels are not for quantitative chamber volume, wall thickness, procedural or diagnostic measurements."
+  ],
+  "sourceReferences": [
+    {
+      "title": "Original LADAF-2021-17 complete-heart dataset",
+      "url": "https://human-organ-atlas.esrf.fr/datasets/1659197537"
+    },
+    {
+      "title": "Brunet et al., 2023 preprint, Figures 3 and 5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592740/"
+    },
+    {
+      "title": "Brunet et al., Radiology 2024;312(1):e232731",
+      "url": "https://doi.org/10.1148/radiol.232731"
+    }
+  ],
+  "labels": [
+    {
+      "id": 0,
+      "key": "unclassified",
+      "name": "Unclassified tissue",
+      "color": "#9ba9b0",
+      "confidence": "Unclassified",
+      "description": "Tissue outside the six regional annotations remains neutral. Coronary, cardiac venous, individual pulmonary-vein and caval identities are not separately inferred.",
+      "method": "No anatomical identity is asserted."
+    },
+    {
+      "id": 1,
+      "key": "lv",
+      "name": "Left ventricle",
+      "color": "#e36d73",
+      "confidence": "Approximate",
+      "description": "LV myocardial body and source-supported exterior territory, with compact septal core retained under the stated shared-septum convention. The RV-facing endocardial surface is assigned to RV surface ownership.",
+      "method": "Source-guided v5 regions with bounded measured-tissue exterior propagation and explicit RV-facing surface ownership.",
+      "voxelCount": 1480281,
+      "boundsNormalizedXYZ": [
+        [
+          0.27848101265822783,
+          0.3575949367088608,
+          0.42209631728045327
+        ],
+        [
+          0.8354430379746836,
+          0.7784810126582279,
+          0.9518413597733711
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        237.0,
+        235.5,
+        340.1785
+      ]
+    },
+    {
+      "id": 2,
+      "key": "rv",
+      "name": "Right ventricle",
+      "color": "#54a6e6",
+      "confidence": "Approximate",
+      "description": "RV free wall, muscular outflow, measured-cavity-facing septal surface and connected nearby trabecular protrusions. The compact central septum remains shared anatomy and is displayed with LV.",
+      "method": "Source-guided v5 regions with bounded measured-tissue exterior propagation and explicit RV-facing surface ownership.",
+      "voxelCount": 649649,
+      "boundsNormalizedXYZ": [
+        [
+          0.2310126582278481,
+          0.1962025316455696,
+          0.3626062322946176
+        ],
+        [
+          0.7943037974683544,
+          0.7246835443037974,
+          0.9348441926345609
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        153.0,
+        184.5,
+        347.6714
+      ]
+    },
+    {
+      "id": 3,
+      "key": "la",
+      "name": "Left atrium",
+      "color": "#f2b36b",
+      "confidence": "Provisional",
+      "description": "Collapsed LA territory with conservative source-connected completion of thin exterior covering. Neighboring nonzero regions are protected; ostial and basal transition boundaries remain provisional.",
+      "method": "v12 source-guided LA plus v17 original-source occupancy, bounded geodesic continuity and competing-region protection.",
+      "voxelCount": 464399,
+      "boundsNormalizedXYZ": [
+        [
+          0.4778481012658228,
+          0.2721518987341772,
+          0.0906515580736544
+        ],
+        [
+          0.8322784810126582,
+          0.7974683544303798,
+          0.546742209631728
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        322.5,
+        267.0,
+        221.7904
+      ]
+    },
+    {
+      "id": 4,
+      "key": "ra",
+      "name": "Right atrium",
+      "color": "#63c7ba",
+      "confidence": "Approximate",
+      "description": "RA wall, pectinate territory and immediate source-supported exterior, ending at the previously reviewed curved tricuspid junction.",
+      "method": "Source-guided v5 regions with bounded measured-tissue exterior propagation and explicit RV-facing surface ownership.",
+      "voxelCount": 620680,
+      "boundsNormalizedXYZ": [
+        [
+          0.2468354430379747,
+          0.1930379746835443,
+          0.1558073654390935
+        ],
+        [
+          0.8322784810126582,
+          0.5917721518987342,
+          0.6373937677053825
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        231.0,
+        157.5,
+        280.2351
+      ]
+    },
+    {
+      "id": 5,
+      "key": "aorta",
+      "name": "Aortic outflow",
+      "color": "#c499e8",
+      "confidence": "Approximate",
+      "description": "Connected aortic arterial wall and proximal root. Existing source-reviewed arterial identities are retained; immediate source-supported exterior coverage is completed.",
+      "method": "Source-guided v5 regions with bounded measured-tissue exterior propagation and explicit RV-facing surface ownership.",
+      "voxelCount": 199706,
+      "boundsNormalizedXYZ": [
+        [
+          0.26582278481012656,
+          0.4462025316455696,
+          0.0906515580736544
+        ],
+        [
+          0.6107594936708861,
+          0.7468354430379747,
+          0.5042492917847026
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        193.5,
+        241.5,
+        163.3456
+      ]
+    },
+    {
+      "id": 6,
+      "key": "pulmonary",
+      "name": "Pulmonary outflow",
+      "color": "#61cce0",
+      "confidence": "Approximate",
+      "description": "Pulmonary arterial wall and root beyond the previously reviewed pulmonary hinge, with immediate source-supported exterior coverage. The muscular ventricular outflow remains RV.",
+      "method": "Source-guided v5 regions with bounded measured-tissue exterior propagation and explicit RV-facing surface ownership.",
+      "voxelCount": 393994,
+      "boundsNormalizedXYZ": [
+        [
+          0.3037974683544304,
+          0.3829113924050633,
+          0.0339943342776204
+        ],
+        [
+          0.6518987341772152,
+          0.8481012658227848,
+          0.4985835694050991
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        204.0,
+        364.5,
+        160.3484
+      ]
+    }
+  ],
+  "generatedDate": "2026-11-05",
+  "generator": "scripts/anatomy-v17-la-refine.py",
+  "supportsQuantification": false,
+  "epicardialDisplayConvention": "Colors on the outer heart indicate the associated regional territory, including its immediate source-supported covering. Fat, coronary vessels and myocardium are not separately classified by these colors. Uncertain distant or disconnected structures remain neutral.",
+  "previousMethodParameters": {
+    "baselineRevision": "continuity-gated-v5",
+    "baselineSha256": "e15ebb51b895aa325fe1f71993f1acfe2af24cc1f1e67b1bd4e26b65cffde055",
+    "gridDimensionsXYZ": [
+      317,
+      317,
+      354
+    ],
+    "workingGaussianSigma": 0.35,
+    "sourceTissueThreshold": 17100,
+    "sourceCoreThreshold": 17500,
+    "coreConnectivity": 18,
+    "independentSupportDilationWorkingVoxels": 4,
+    "sourceSupportGuardWorkingVoxels": 1,
+    "maximumExteriorDistanceMm": 3.5,
+    "geodesicConnectivity": 6,
+    "edgeDifferenceScale": 950,
+    "lowDensityGapPenalty": 3,
+    "maximumGeodesicCost": 15,
+    "rvSurfaceOwnershipThicknessMm": 1.9,
+    "rvSurfaceLVProtectionMarginMm": 1.0,
+    "rvTrabecularMaximumCavityDistanceMm": 2.9,
+    "rvTrabecularLVProtectionMarginMm": 2.6,
+    "rvTrabecularConnectivityDilationWorkingVoxels": 2,
+    "rvSurfaceBasalTaperSourceZ": [
+      238,
+      266
+    ],
+    "rvSurfaceApicalTaperSourceZ": [
+      460,
+      485
+    ]
+  }
+}

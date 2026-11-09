@@ -1,0 +1,86 @@
+body[data-clinical] [hidden]{display:none!important}
+.clinical-series-bar{padding:18px 28px 0;max-width:none;margin:0 auto;width:100%;box-sizing:border-box}
+.clinical-series-heading{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.clinical-series-heading label{color:#a7bbb5;font-size:14px;letter-spacing:.06em;text-transform:uppercase}.clinical-series-heading select{padding:10px 32px 10px 12px;min-width:230px;background:#152327;border:1px solid #354a4d;border-radius:5px;color:#dce4de;font:inherit;font-size:14px}.clinical-series-heading>span{font:14px ui-monospace,monospace;color:#99abae}
+.clinical-series-note{color:#92a4a8;font-size:14px;line-height:1.6;max-width:1100px;margin:9px 0 12px}.clinical-cine-controls{display:flex;align-items:center;gap:14px;padding:10px 0}.clinical-cine-controls input{flex:1;min-width:80px;accent-color:#acbfa8}.clinical-cine-controls output{font-size:14px;min-width:125px;color:#ced8d1}.clinical-cine-controls button{min-width:112px;font-size:14px;padding:9px 13px}.clinical-cine-controls button:disabled{opacity:.5;cursor:default}.clinical-speed{display:flex;gap:8px;align-items:center;font-size:14px;color:#8ca1a4}.clinical-speed select,.clinical-echo-plane-controls select{background:#152327;border:1px solid #354a4d;color:#d3dfda;border-radius:4px;padding:6px;font:inherit}
+body[data-clinical] #reconstructionWorkspace{padding-top:12px}.clinical-echo{border:1px solid #344348;border-radius:8px;background:#0d171b;display:flex;flex-direction:column;min-width:0;min-height:0;padding:17px;box-sizing:border-box}.clinical-echo-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.clinical-echo-heading h2{font-size:16px;font-weight:500;margin:0}.clinical-echo-heading span{font-size:14px;color:#b2c6b3}.clinical-echo>p{font-size:14px;color:#99adaf;line-height:1.5;margin:9px 0 12px}.clinical-echo-image{position:relative;flex:1;min-height:200px;background:#030607;border-radius:4px;overflow:hidden}.clinical-echo-image canvas{width:100%;height:100%;display:block}.clinical-echo-tag{position:absolute;top:12px;left:13px;font:14px ui-monospace,monospace;letter-spacing:.1em;color:#bacdbb;pointer-events:none}.clinical-echo-plane-controls{display:flex;align-items:center;gap:12px;padding-top:8px}.clinical-echo-plane-controls label{display:flex;align-items:center;gap:8px;color:#99adaf;font-size:14px}.clinical-echo-plane-controls input{flex:1;min-width:50px;accent-color:#a9bda7}.clinical-echo-plane-controls span{font:14px ui-monospace,monospace;color:#7f999c}
+#reconstructionWorkspace.clinical-paired{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(520px,70vh) 340px;height:auto}.clinical-paired>.viewport{grid-area:1/1}.clinical-paired>.clinical-echo{grid-area:1/2}.clinical-paired>.sections-panel{grid-area:2/1/3/3}#reconstructionWorkspace.clinical-paired .slice-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr)}#reconstructionWorkspace.clinical-paired .viewport-heading{max-width:calc(100% - 40px)}#reconstructionWorkspace.clinical-paired .viewer-controls{top:auto;bottom:70px;right:16px}#reconstructionWorkspace.clinical-paired .viewport-heading h1{font-size:28px}.clinical-paired .clinical-cine-controls{gap:8px}.clinical-paired .clinical-cine-controls output{min-width:75px}.clinical-paired .clinical-speed{display:none}
+#reconstructionWorkspace.clinical-paired:fullscreen{height:100dvh;grid-template-rows:minmax(0,1fr) 220px;grid-template-columns:1fr 1fr}#reconstructionWorkspace.clinical-paired:fullscreen .clinical-echo-image{min-height:50px}
+@media(max-width:850px){.clinical-series-bar{padding:14px 18px 0}.clinical-cine-controls{flex-wrap:wrap;gap:10px}.clinical-speed{display:none}.clinical-cine-controls output{min-width:80px}#reconstructionWorkspace.clinical-paired{display:grid;grid-template-columns:1fr;grid-template-rows:650px 580px auto}.clinical-paired>.viewport{grid-area:1/1}.clinical-paired>.clinical-echo{grid-area:2/1}.clinical-paired>.sections-panel{grid-area:3/1}#reconstructionWorkspace.clinical-paired .slice-grid{grid-template-columns:1fr;grid-template-rows:repeat(3,300px)}.clinical-echo-plane-controls span{display:none}#reconstructionWorkspace.clinical-paired:fullscreen{overflow:auto;height:100dvh;grid-template-columns:1fr;grid-template-rows:70vh 70vh auto}}
+
+/* SlicerHeart: one compact source bar, then the measured volume and all planes.
+   The shared two-row section layout and other sources keep their own styles. */
+body[data-donor="slicerheart-4d"] .topbar { min-height: 56px; padding-block: 6px; }
+body[data-donor="slicerheart-4d"] .brand-mark { width: 28px; height: 28px; }
+body[data-donor="slicerheart-4d"] .topbar-actions button { padding-block: 8px; }
+body[data-donor="slicerheart-4d"] .dataset-browser { padding-block: 8px; gap: 8px 16px; }
+body[data-donor="slicerheart-4d"] .dataset-intro h2 { font-size: 18px; }
+body[data-donor="slicerheart-4d"] .dataset-shortcuts a { min-height: 50px; padding: 6px 12px; }
+body[data-donor="slicerheart-4d"] .dataset-actions { display: none; }
+body[data-donor="slicerheart-4d"] .dataset-browser { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "title choices"; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace > .sections-panel { display: flex; flex-direction: column; gap: 10px; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-grid { flex: 1 1 0; height: auto; min-height: 0; }
+
+body[data-donor="slicerheart-4d"] .clinical-series-bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  flex: none;
+  padding: 9px;
+  margin: 0;
+  border: 1px solid #344b43;
+  border-radius: 7px;
+  background: #14211e;
+  z-index: 5;
+}
+body[data-donor="slicerheart-4d"] .clinical-series-heading { min-width: 0; grid-column: 1; grid-row: 1; }
+body[data-donor="slicerheart-4d"] .clinical-series-heading select { width: 100%; min-width: 0; min-height: 36px; padding: 7px 26px 7px 9px; font-size: 14px; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details { grid-column: 2; grid-row: 1; min-width: 0; margin: 0; color: #b8cbc1; font-size: 14px; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details > summary { display: flex; align-items: center; justify-content: flex-end; min-height: 36px; width: 100%; padding: 6px; cursor: pointer; list-style: none; white-space: nowrap; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details > summary::after { content: "+"; margin-left: 7px; color: #d6e2cc; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details[open] > summary::after { content: "−"; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details > summary::-webkit-details-marker { display: none; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details > summary:focus-visible { outline: 2px solid #e3b7a0; outline-offset: 2px; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details[open] { grid-area: auto; position: absolute; top: 9px; right: 9px; width: min(430px, calc(100% - 18px)); max-height: min(380px, calc(100dvh - 180px)); padding: 0 12px 12px; overflow: auto; background: #172922; border: 1px solid #7e9d8a; border-radius: 6px; box-shadow: 0 8px 24px #0008; }
+body[data-donor="slicerheart-4d"] .clinical-scan-details p { margin: 8px 0 0; color: #bdd0c5; font-size: 14px; line-height: 1.5; }
+body[data-donor="slicerheart-4d"] .clinical-cine-controls { display: grid; grid-column: 1 / -1; grid-template-columns: 100px minmax(40px, 1fr) minmax(80px, 100px) 66px; align-items: center; min-width: 0; gap: 7px; padding: 0; }
+body[data-donor="slicerheart-4d"] .clinical-cine-controls > * { order: 0; }
+body[data-donor="slicerheart-4d"] .clinical-cine-controls button { min-width: 0; min-height: 36px; padding: 6px 9px; font-size: 14px; }
+body[data-donor="slicerheart-4d"] .clinical-cine-controls input { min-width: 0; width: 100%; margin: 0; height: 32px; }
+body[data-donor="slicerheart-4d"] .clinical-cine-controls output { min-width: 0; margin: 0; font-size: 14px; line-height: 1.2; text-align: center; }
+body[data-donor="slicerheart-4d"] .clinical-speed { display: flex; min-width: 0; gap: 0; }
+body[data-donor="slicerheart-4d"] .clinical-speed select { min-width: 0; width: 100%; min-height: 36px; padding: 6px 3px; font-size: 14px; }
+
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-label { min-height: 34px; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-navigation button { width: 34px; height: 32px; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-navigation input.slice-range { height: 32px; min-height: 32px; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-footer { white-space: nowrap; overflow: hidden; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-footer > span:first-child { overflow: hidden; text-overflow: ellipsis; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-card:not([data-section-slot="wide"]) .slice-meta output:last-child { display: none; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .viewport-heading .eyebrow,
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .viewport-heading > p { display: none; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .viewport-heading h1 { font-size: 24px; margin: 0 0 8px; }
+body[data-donor="slicerheart-4d"] #reconstructionWorkspace .source-tag { margin-top: 0; }
+
+@media (max-width: 1000px) {
+  body[data-donor="slicerheart-4d"] .dataset-browser { grid-template-columns: minmax(0, 1fr); grid-template-areas: "choices"; }
+  body[data-donor="slicerheart-4d"] .dataset-intro { display: none; }
+  body[data-donor="slicerheart-4d"] #reconstructionWorkspace > .viewport,
+  body[data-donor="slicerheart-4d"] #reconstructionWorkspace > .sections-panel { height: max(600px, 74dvh); }
+}
+@media (max-width: 580px) {
+  body[data-donor="slicerheart-4d"] .clinical-cine-controls { grid-template-columns: 94px minmax(30px, 1fr) 80px 62px; gap: 5px; }
+  body[data-donor="slicerheart-4d"] .clinical-series-heading select { padding-left: 6px; }
+}
+@media (max-width: 400px) {
+  body[data-donor="slicerheart-4d"] .clinical-cine-controls { grid-template-columns: 86px minmax(18px, 1fr) 72px 58px; gap: 4px; }
+  body[data-donor="slicerheart-4d"] .clinical-cine-controls button { padding-inline: 4px; }
+}
+@media (pointer: coarse) {
+  body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-navigation button,
+  body[data-donor="slicerheart-4d"] #reconstructionWorkspace .slice-expand,
+  body[data-donor="slicerheart-4d"] .clinical-cine-controls button,
+  body[data-donor="slicerheart-4d"] .clinical-speed select,
+  body[data-donor="slicerheart-4d"] .clinical-series-heading select,
+  body[data-donor="slicerheart-4d"] .clinical-scan-details > summary { min-height: 44px; }
+}

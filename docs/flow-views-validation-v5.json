@@ -1,0 +1,127 @@
+{
+  "allLosslessRoundTrips": true,
+  "allFramesOrthonormal": true,
+  "allPixelStepsUm": 79.4,
+  "sourceArray": "s2-clean-display-u8.npy",
+  "coordinateOriginXYZ": [
+    444,
+    356,
+    60
+  ],
+  "textures": [
+    {
+      "id": "rv-inflow",
+      "bytes": 546334,
+      "dimensionsXY": [
+        1545,
+        2353
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "8460a15ac87557f81907ca5e17827299b3cb1d6d922368a7f612b315c1b9a6ee"
+    },
+    {
+      "id": "rv-outflow",
+      "bytes": 882398,
+      "dimensionsXY": [
+        1205,
+        2025
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "6dd996ed9f478d897ed08fd3dd1c10aa5833c07d63d3b69caf69d02a6423a869"
+    },
+    {
+      "id": "ra-inflow",
+      "bytes": 471220,
+      "dimensionsXY": [
+        1205,
+        2285
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "d403dc0dc6ab329ca096a1a0082d125225ffcb4c26a1e800a66b5ab0e15de9e6"
+    },
+    {
+      "id": "ra-outflow",
+      "bytes": 659224,
+      "dimensionsXY": [
+        2157,
+        2277
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "785e5ce02b9f4a1d3cc48db1dc8cbffe3f76a149a736f32f9efadfbd1c2a8717"
+    },
+    {
+      "id": "lv-inflow",
+      "bytes": 817174,
+      "dimensionsXY": [
+        1453,
+        2113
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "525d65aacecf3a097648a982f6dc1b50951f0649d081df9e4536614e75ea467a"
+    },
+    {
+      "id": "lv-outflow",
+      "bytes": 967742,
+      "dimensionsXY": [
+        1685,
+        2161
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "4151441aa04fcf5aab114f83f9f97aea293ea1b94129353d344eea1d443d434c"
+    },
+    {
+      "id": "la-inflow",
+      "bytes": 642038,
+      "dimensionsXY": [
+        1301,
+        2025
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "d6ea66084c7d5e513e8e9f9d075df96f877443b928e33776565bd9dbdc624355"
+    },
+    {
+      "id": "la-outflow",
+      "bytes": 496912,
+      "dimensionsXY": [
+        1301,
+        1841
+      ],
+      "maximumRoundTripError": 0,
+      "planePixelStepUm": [
+        79.4,
+        79.4
+      ],
+      "decodedSha256": "e73f6cc0dee9321c1c450dc91fc547501068d21e0e9d8499564a3f3bb9648555"
+    }
+  ],
+  "totalTextureBytes": 5483042,
+  "defaultViewOnlyDownloadsOneTexture": true
+}

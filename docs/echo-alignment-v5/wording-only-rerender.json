@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "views": 56,
+  "renders": 112,
+  "nativeGlErrors": [
+    0
+  ],
+  "byteIdenticalImages": 221,
+  "changedImages": [],
+  "unchangedPlanePoseCameraRecords": 56,
+  "changedViewRecords": [],
+  "sourceMismatches": [],
+  "runtimeHashes": {
+    "public/echo.js": "8e140d450d088fed56329c7e6095332bbe1f8d6274e69f0e8a7870d08b5a1db5",
+    "public/echo-acquisition-geometry.js": "20bd90ab7d8542b4220481d954f89652b7e6123cc22c69c347db481d59e96930",
+    "public/echo-tte-guidance.js": "1a946129c3a67beec0a405803df242735b96ae269c2139be64e9b6ccc60fac1e"
+  },
+  "nativeReceiptSha256": "5239db00c57563e17178032b93e1fe18533b5c06a09aff6ed204b04424b3ee2a",
+  "scope": "Complete native regeneration after the wording-only acquisition-method/fit-summary correction; comparison with the immediately preceding reviewed gallery."
+}

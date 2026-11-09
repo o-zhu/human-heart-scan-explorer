@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "scope": "Production GLSL/EGL proof of the heart-priority contextual cutaway.\n\nUses synthetic source/fine-mesh/cap fixtures to check compositing, not clinical\nanatomy, browser performance or device compatibility. No new GPU mask is used.\n",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "checks": [
+    {
+      "case": "Resident surface",
+      "heartPixels": 24240,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": true
+    },
+    {
+      "case": "Resident cap",
+      "heartPixels": 22338,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": true
+    },
+    {
+      "case": "Exact fine cap",
+      "heartPixels": 23711,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": false
+    },
+    {
+      "case": "Moving volume + exact cap",
+      "heartPixels": 23544,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": false
+    },
+    {
+      "case": "Prepared fine mesh",
+      "heartPixels": 22236,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": true
+    },
+    {
+      "case": "Fine mesh + exact cap",
+      "heartPixels": 18820,
+      "foregroundAndRearContextExactRGBA": true,
+      "contourExactRGBA": true,
+      "instrumentPerspectivePreserved": true,
+      "openCavity": false
+    }
+  ],
+  "glError": 0,
+  "additionalMaskAllocations": 0,
+  "sourceHashes": {
+    "public/echo-context-presentation.js": "a94648a5d388ff24197e4616feffc21ce96eaf9015aaecd476c8bb426afb126c",
+    "public/tee-scene.js": "9fc9d5e494a60e6504870b7501f6174ebc88f8c1b40112c073763f21b4c695d0",
+    "public/tte-atlas-geometry.js": "0e371491072940caa77fee10ba8d1c9a309e002a5ac9e8429087aa4864cc6f59",
+    "public/renderer.js": "1e533e0e44205c86722217e2768e22d8662bd4866be26403789da5fb364cc6e0",
+    "public/fine-surface.js": "fab5405c1cb4d1c748d7b97644af06ca706ba8893ba3aa0542efc6d431162e35"
+  }
+}

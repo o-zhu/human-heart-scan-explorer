@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "scope": "Transport only; no scientific or runtime asset changes.",
+  "malformedFixtureRejections": 7,
+  "streams": [
+    {
+      "file": "pulmonary-valve-lumen-surface.sfr.gz",
+      "compressedBytes": 53213655,
+      "sha256": "25d82122c638b0640987ad548a0de9a61c53c005b5e92dab03db9882a4261e29",
+      "decodedBytes": 114841852,
+      "decodedSha256": "85c2b15827eefee39ecc73dadc7976def9f10fff2460241dc57662faf4d3cdcf",
+      "parts": [
+        {
+          "file": "pulmonary-valve-lumen-surface.sfr.gz.part-001",
+          "bytes": 25165824,
+          "sha256": "d22155ad2895c53c8b57832b99ee47315075608a3027919d823e27b37fbbfd76"
+        },
+        {
+          "file": "pulmonary-valve-lumen-surface.sfr.gz.part-002",
+          "bytes": 25165824,
+          "sha256": "68caecc717732a9baa168ea1d7ac076c05e6949917413d6fdf657bf16c6fa510"
+        },
+        {
+          "file": "pulmonary-valve-lumen-surface.sfr.gz.part-003",
+          "bytes": 2882007,
+          "sha256": "335680125aefa241764142774b0a1590c8f3cb2f044fef7707120c9008224ac2"
+        }
+      ],
+      "policySha256": "ee2c10ca7d0b912c2cb71760364b6f5fc7efaac971513d3a563f69fa2c7cfd35",
+      "exactArchiveComparison": true,
+      "freshCheckoutRoundtrip": true
+    },
+    {
+      "file": "tricuspid-core-surface.sfr.gz",
+      "compressedBytes": 35220533,
+      "sha256": "04a069d9b34bf381352daf5635aa3f0ef98ad069b0a7808fa21fc1cd7fecb847",
+      "decodedBytes": 74838448,
+      "decodedSha256": "63f04e9b50649b77841275875966f5eb674256182dda00cea106dcbe84496deb",
+      "parts": [
+        {
+          "file": "tricuspid-core-surface.sfr.gz.part-001",
+          "bytes": 25165824,
+          "sha256": "0bc20cbd8c125f80549bcb6b6599f70fc9351bdbe9297deb5b7b31dd27fca827"
+        },
+        {
+          "file": "tricuspid-core-surface.sfr.gz.part-002",
+          "bytes": 10054709,
+          "sha256": "2fd1079de708e489f13194e33aaf827046e6b48fc6f72834a0a3675d84c2f45a"
+        }
+      ],
+      "policySha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551",
+      "exactArchiveComparison": true,
+      "freshCheckoutRoundtrip": true
+    }
+  ]
+}

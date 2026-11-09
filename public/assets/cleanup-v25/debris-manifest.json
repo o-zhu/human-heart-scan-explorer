@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "donorId": "ladaf-2021-17",
+  "profiles": [
+    {
+      "lodId": "gentle",
+      "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "sourceSha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+      "sourceVertexCount": 12837189,
+      "sourceTriangleCount": 23618685,
+      "vertexFlags": {
+        "url": "./assets/cleanup-v25/debris-gentle-vertices.raw.gz",
+        "compressedBytes": 893225,
+        "decodedBytes": 12837189,
+        "sha256": "a99de5d5fc7813914c5a23f060b33dadd057e1633baa9442e8feab2817fd718f",
+        "decodedSha256": "ae7184326419217c92061ab4228ce01a793aab279e4cf186746734b2a7bad881"
+      },
+      "vertexFlagEncoding": {
+        "0": "retain",
+        "255": "exclude",
+        "indexing": "original HFM vertex order"
+      },
+      "faceKeepMask": {
+        "url": "./assets/cleanup-v25/debris-gentle-faces.keep.gz",
+        "compressedBytes": 1151815,
+        "decodedBytes": 2952336,
+        "sha256": "6c5f4d53fcc82e20eafafea056b93843f0771f2074acfa0f07f18a39b7e4b8d6",
+        "decodedSha256": "b0c56514a3f3899ca134fd2bcb2264fd33f11daaf8ff86745bc52ca47739403d",
+        "bitOrder": "little",
+        "bit1": "retain",
+        "indexing": "original HFM triangle order"
+      },
+      "policy": {
+        "id": "compact-detached-components-v25",
+        "maximumBoundingBoxDiagonalMm": 0.85,
+        "maximumTriangles": 1024,
+        "maximumRegularizedPcaSpreadRatioExclusive": 3.0,
+        "pcaRegularizerMm": 0.039700000000000006,
+        "connectivity": "shared vertices in the complete uncut HFM mesh",
+        "protectLargestComponent": true,
+        "protectQuantizedVolumeBoundary": true,
+        "positionsChanged": false,
+        "normalsChanged": false,
+        "indicesChanged": false,
+        "classification": "display cleanup candidates; not anatomically validated material labels"
+      },
+      "removedComponents": 1342006,
+      "removedVertices": 5599693,
+      "removedTriangles": 5739103,
+      "removedSurfaceAreaMm2": 14808.869227170235,
+      "removedTriangleFraction": 0.242989946307341,
+      "retainedTriangles": 17879582
+    }
+  ],
+  "sourceSpacingUm": 79.4
+}

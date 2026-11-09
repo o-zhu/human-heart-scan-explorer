@@ -1,0 +1,274 @@
+{
+  "elapsedMs": 501.45345,
+  "presets": [
+    {
+      "id": "me4c",
+      "frame": "me4c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00013980402630409117,
+      "normalAngleDeg": 0.00032240554896975,
+      "centerAimAngleDeg": 0.0033763609869238496,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.175560901617963,
+        42.139383067239
+      ],
+      "evaluations": 11244,
+      "originMm": [
+        50.49785712554473,
+        -52.60910917015758,
+        -17.507586240389507
+      ],
+      "beam": [
+        -0.4768883168103625,
+        0.8727383931689459,
+        0.10442811105572117
+      ],
+      "right": [
+        0.401992123889493,
+        0.32221369251994325,
+        -0.8570768160926291
+      ],
+      "normal": [
+        -0.7816520105651836,
+        -0.36675064204654123,
+        -0.5044939057489752
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.00013980402630409117,
+        "normalAngleDeg": 0.00032240554896975,
+        "aimAngleDeg": 0.0033763609869238496
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ],
+      "state": {
+        "insertionCm": 33.79684643632606,
+        "shaftRotationDeg": -8.97116758266107,
+        "anteflexDeg": -21.502913989944204,
+        "lateralFlexDeg": -11.985780740274084,
+        "multiplaneDeg": 0,
+        "depthMm": 147.91006676185924,
+        "angleDeg": 75,
+        "teeMirrorX": false
+      }
+    },
+    {
+      "id": "me2c",
+      "frame": "me2c",
+      "status": "fitted",
+      "planeOffsetMm": 0.00010279297969972845,
+      "normalAngleDeg": 0.00015755304858005982,
+      "centerAimAngleDeg": 0.0033659036060262825,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.175560901617963,
+        42.139383067239
+      ],
+      "evaluations": 11795,
+      "originMm": [
+        57.93650611318089,
+        -32.301765448312985,
+        3.9877870529078496
+      ],
+      "beam": [
+        -0.6665764527631547,
+        0.7098277567443998,
+        -0.2276409198208951
+      ],
+      "right": [
+        0.33076197244432115,
+        0.5553127554770144,
+        0.7630362122398042
+      ],
+      "normal": [
+        0.6680361892939872,
+        0.4333270120356434,
+        -0.6049424356365067
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        80,
+        100
+      ],
+      "nominalMultiplaneDeg": 90,
+      "nominalFit": {
+        "planeOffsetMm": 0.00010279297969972845,
+        "normalAngleDeg": 0.00015754842194700845,
+        "aimAngleDeg": 0.0033659036060262825
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": true,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ],
+      "state": {
+        "insertionCm": 36.57152018301703,
+        "shaftRotationDeg": -27.52680552347028,
+        "anteflexDeg": -34.752420664201125,
+        "lateralFlexDeg": 24.915191597969294,
+        "multiplaneDeg": 90,
+        "depthMm": 134.48705548455058,
+        "angleDeg": 92.80762584308917,
+        "teeMirrorX": true
+      }
+    },
+    {
+      "id": "melax",
+      "frame": "melax",
+      "status": "fitted",
+      "planeOffsetMm": 0.000015212105447304225,
+      "normalAngleDeg": 0.00010025207781088529,
+      "centerAimAngleDeg": 0.007682363252897466,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        31.175560901617963,
+        42.139383067239
+      ],
+      "evaluations": 11712,
+      "originMm": [
+        51.926760529360095,
+        -49.53178669650953,
+        -16.989090999001938
+      ],
+      "beam": [
+        -0.6071414214252069,
+        0.7860698421639544,
+        0.1160753963168557
+      ],
+      "right": [
+        -0.7688708391309302,
+        -0.6180529378682669,
+        0.16385419959983763
+      ],
+      "normal": [
+        0.20054158452520157,
+        0.01023568428293885,
+        0.9796317183734824
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        120,
+        140
+      ],
+      "nominalMultiplaneDeg": 120,
+      "nominalFit": {
+        "planeOffsetMm": 0.000015212105447304225,
+        "normalAngleDeg": 0.00010025207781088529,
+        "aimAngleDeg": 0.007682363252897466
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ],
+      "state": {
+        "insertionCm": 34.08024115784909,
+        "shaftRotationDeg": -1.5313342403219496,
+        "anteflexDeg": -18.653441777300493,
+        "lateralFlexDeg": -19.281139103833723,
+        "multiplaneDeg": 120,
+        "depthMm": 139.65094766702708,
+        "angleDeg": 75,
+        "teeMirrorX": false
+      }
+    },
+    {
+      "id": "tg",
+      "frame": "tgpapillary",
+      "status": "fitted",
+      "planeOffsetMm": 0.000008648985327930347,
+      "normalAngleDeg": 0.0005404245557716049,
+      "centerAimAngleDeg": 0.004638783848617548,
+      "targetCenterInFan": true,
+      "geometricCoverageFraction": 1,
+      "insertionRangeCm": [
+        44.57025119964594,
+        55.269929202129774
+      ],
+      "evaluations": 11645,
+      "originMm": [
+        53.88335231413425,
+        54.83572001530233,
+        10.439100422957763
+      ],
+      "beam": [
+        -0.8729751148120356,
+        -0.35584820258747385,
+        -0.33359632137386885
+      ],
+      "right": [
+        0.2548193169312916,
+        0.25045750875853895,
+        -0.933990445360731
+      ],
+      "normal": [
+        0.41591052479780244,
+        -0.9003572030154092,
+        -0.127966176549454
+      ],
+      "boundsRespected": true,
+      "patientRegistered": false,
+      "clinicalMultiplaneRange": [
+        0,
+        20
+      ],
+      "nominalMultiplaneDeg": 0,
+      "nominalFit": {
+        "planeOffsetMm": 0.000008648985327930347,
+        "normalAngleDeg": 0.0005404245557716049,
+        "aimAngleDeg": 0.004638783848617548
+      },
+      "usedNominalAngle": true,
+      "presentationMirrorNeeded": false,
+      "presentationMatchesTargetHandedness": true,
+      "limitations": [
+        "Control values are solved on an illustrative tract, not measured from a patient.",
+        "Nominal clinical multiplane angles are attempted first; only the stated view-family interval is permitted as a fallback.",
+        "Coverage uses a central geometric target cross; actual chamber/valve coverage requires source-pixel inspection."
+      ],
+      "state": {
+        "insertionCm": 45.12442585159115,
+        "shaftRotationDeg": 6.566821505960352,
+        "anteflexDeg": 25.78346411167544,
+        "lateralFlexDeg": 33.31840180992923,
+        "multiplaneDeg": 0,
+        "depthMm": 109.9983231706846,
+        "angleDeg": 77.24462811660811,
+        "teeMirrorX": false
+      }
+    }
+  ],
+  "checks": [
+    "runtime pose residuals",
+    "bounds",
+    "fan center coverage",
+    "independent presets",
+    "immutable targets/tract",
+    "cache reuse",
+    "legacy reference preserved"
+  ]
+}

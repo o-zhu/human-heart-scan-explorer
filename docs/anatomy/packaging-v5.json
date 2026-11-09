@@ -1,0 +1,27 @@
+{
+  "revision": "continuity-gated-v5",
+  "dimensions": [
+    317,
+    317,
+    354
+  ],
+  "compressedBytes": 316865,
+  "decodedBytes": 35573106,
+  "sha256": "e15ebb51b895aa325fe1f71993f1acfe2af24cc1f1e67b1bd4e26b65cffde055",
+  "sourceScanSha256": "504efccec523e3e80b253b08380f2fb483fd5c827fbf419b4f6d8ed9daed67d8",
+  "baselineSha256": "da36ab4d08bf0c114d4e5b44dfaaa4e4abad7a48680b863bd455b45a5b57d64d",
+  "validation": {
+    "independentFlowReview": {
+      "matched": 12,
+      "total": 12
+    },
+    "targetedErrorReview": {
+      "matched": 5,
+      "total": 5
+    },
+    "existingV4BoundaryRegression": {
+      "matched": 20,
+      "total": 20
+    }
+  }
+}

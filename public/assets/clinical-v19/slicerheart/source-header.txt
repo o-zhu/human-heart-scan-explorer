@@ -1,0 +1,18 @@
+NRRD0005
+# Complete NRRD file format specification at:
+# http://teem.sourceforge.net/nrrd/format.html
+type: short
+dimension: 4
+space: right-anterior-superior
+sizes: 21 512 391 218
+space directions: none (0.599609375,0,0) (0,0.599609375,0) (0,0,0.69999999999999984)
+kinds: list domain domain domain
+labels: "frame" "" "" ""
+endian: little
+encoding: gzip
+space origin: (-145.19999694824219,8.9416399002075195,903.09997558593739)
+measurement frame: (1,0,0) (0,1,0) (0,0,1)
+DataNodeClassName:=vtkMRMLScalarVolumeNode
+axis 0 index type:=numeric
+axis 0 index values:=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "format": "HFM1",
+  "donorId": "ladaf-2021-17",
+  "sourceSpacingUm": 79.4,
+  "threshold": 0.28,
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "referenceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "bounds": {
+    "min": [
+      -0.44801512287334594,
+      -0.5,
+      -0.44801512287334594
+    ],
+    "max": [
+      0.44801512287334594,
+      0.5,
+      0.44801512287334594
+    ]
+  },
+  "lods": [
+    {
+      "id": "gentle",
+      "label": "Gentle detailed surface",
+      "parts": [
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-001.gz",
+          "compressedBytes": 25165824,
+          "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-002.gz",
+          "compressedBytes": 25165824,
+          "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-003.gz",
+          "compressedBytes": 25165824,
+          "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-004.gz",
+          "compressedBytes": 25165824,
+          "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-005.gz",
+          "compressedBytes": 25165824,
+          "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-006.gz",
+          "compressedBytes": 25165824,
+          "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-007.gz",
+          "compressedBytes": 25165824,
+          "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-008.gz",
+          "compressedBytes": 25165824,
+          "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-009.gz",
+          "compressedBytes": 25165824,
+          "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+        },
+        {
+          "url": "./assets/fine-surface-v23/gentle.part-010.gz",
+          "compressedBytes": 1410044,
+          "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+        }
+      ],
+      "vertices": 12837189,
+      "triangles": 23618685,
+      "compressedBytes": 227902460,
+      "decodedBytes": 437470524,
+      "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+      "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "trianglesBeforeEncoding": 23966575,
+      "verticesBeforeEncoding": 12987556,
+      "removedZeroAreaTriangles": 0,
+      "quantizationCollapsedTriangles": 347890,
+      "totalZeroAreaTrianglesRemoved": 347890,
+      "normalFallbackVertices": 21,
+      "quantizationMaximumMm": 0.00206329634765319,
+      "quantizationRmsMm": 0.0011949581540504947
+    }
+  ],
+  "processing": {
+    "experimental": true,
+    "source": "Existing verified cleaned/windowed 79.4 \u00b5m display bank. Not a native 19.85 \u00b5m extraction or quantitative-HU reconstruction.",
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedSourceBricks": 5127,
+    "coordinateConvention": "Unchanged main-view endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "densityGaussianSigmaVoxels": 0.5,
+    "densityGaussianSigmaMm": 0.0397,
+    "originalPolishedGaussianSigmaVoxels": 0.8,
+    "thresholdNormalized": 0.28,
+    "meshVertexSmoothingIterations": 0,
+    "finalWholeObjectSimplification": false,
+    "referenceTriangles": 291169848,
+    "weldedTriangles": 23966575,
+    "frozenSlabBoundaries": true,
+    "slabCells": 64,
+    "reduction": "Constrained local quadric edge collapse; open boundaries and slab-plane coordinates frozen. Interior edge-link and tetrahedron constraints retain local components/handles. No triangle budget overrides constraints.",
+    "conservativeOriginalVertexRadiusLimitMm": 0.6352,
+    "displacementCaveat": "The conservative radius bounds accumulated mesh-vertex movement during reduction. It excludes scalar filtering, quantization and anatomical uncertainty; it is not a clinical accuracy claim.",
+    "weldToleranceMm": 0.0001,
+    "maximumWeldDisplacementMm": 0.0,
+    "zeroNormalPolicy": "Average incident unit face normals; cancelling normals use the largest incident nondegenerate face. Shading only.",
+    "degenerateFacePolicy": "Zero-area MC faces removed before constrained reduction. Encoded zero-area faces and unused vertices removed after welding.",
+    "multipartTransport": "Ordered byte ranges of one gzip HFM1 object; every part, joined gzip and decoded payload have SHA256 checksums.",
+    "sourceDataChanged": false,
+    "expertValidated": false,
+    "processingFingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e",
+    "encoderScriptSha256": "2c2912d73de1ae100dc3d9a8f23a68bfc303d0514a9cbe48398a17f41ad3fa8d",
+    "fullProcessingFingerprint": "950fbc2caf1b1f24086decf15edf53d1b54bea52f96b4f6ac18ba7b5b2fe2fb1"
+  }
+}

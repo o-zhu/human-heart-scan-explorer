@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    "Fresh sessions lock contact; legacy free-pose bookmarks preserve their position",
+    "All four locked defaults match the exact prepared 79.4 µm planes",
+    "TTE skin and TEE esophageal wall are distinct synthetic contact surfaces",
+    "Repeated WASD travel remains on each bounded surface with an inward beam",
+    "Steering and depth changes preserve contact; off-surface motion requires unlocking",
+    "Incomplete, coarse and nonmatching planes cannot receive a fine label",
+    "Fine cap, CT fan and ultrasound derive from fine input even when coarse volume is empty",
+    "Cleaned fine planes bypass coarse support without disabling original-volume cleanup",
+    "Fine simulation is deterministic and cooperatively cancellable",
+    "Increasing radial resolution does not accumulate extra artificial acoustic shadow",
+    "Real worker transfers only its fine-plane clone and preserves source-cache ownership",
+    "All four exact fine source textures pass their pixel hashes and produce coherent measured/simulated views",
+    "Actual module starts on contact with two visual siblings and an optional CT image",
+    "Clicking the visual captures immediately; Escape unlocks; explicit orbit mode does not capture",
+    "Contact movement and image toggling preserve a serializable physical state",
+    "Fine-source completion posts a cloned plane without labeling the coarse preview Ultra",
+    "Fine source sampled to a coarser plane is labeled Fine with actual output spacing",
+    "Motion aborts fine downloads and rejects a stale fine result without erasing the current image",
+    "Fine sampling requires Clean scan and module exit aborts work and releases control"
+  ],
+  "sourceFrames": [
+    {
+      "preset": "apical",
+      "elapsedMs": 339.63618699999995,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.38638449844562,
+        79.39797392777331
+      ],
+      "beams": 320,
+      "radialSamples": 1450,
+      "sectorPixels": 528008,
+      "tissuePixels": 192241,
+      "tissueFraction": 0.3640872865562643,
+      "capWidth": 3281,
+      "capHeight": 2948,
+      "imageWidth": 1100,
+      "imageHeight": 893,
+      "encodedBytes": 973320
+    },
+    {
+      "preset": "parasternal",
+      "elapsedMs": 193.63938099999996,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.39797391919372,
+        79.39551028711325
+      ],
+      "beams": 320,
+      "radialSamples": 1350,
+      "sectorPixels": 510262,
+      "tissuePixels": 153479,
+      "tissueFraction": 0.3007846949214325,
+      "capWidth": 2948,
+      "capHeight": 2964,
+      "imageWidth": 1100,
+      "imageHeight": 856,
+      "encodedBytes": 783588
+    },
+    {
+      "preset": "short-axis",
+      "elapsedMs": 244.3074200000001,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.38638449347314,
+        79.38983257349992
+      ],
+      "beams": 320,
+      "radialSamples": 1300,
+      "sectorPixels": 494212,
+      "tissuePixels": 109051,
+      "tissueFraction": 0.2206563175317475,
+      "capWidth": 3281,
+      "capHeight": 3094,
+      "imageWidth": 1100,
+      "imageHeight": 822,
+      "encodedBytes": 439220
+    },
+    {
+      "preset": "atrial",
+      "elapsedMs": 168.32916399999976,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.38638449844562,
+        79.3979739277733
+      ],
+      "beams": 320,
+      "radialSamples": 1350,
+      "sectorPixels": 510262,
+      "tissuePixels": 194750,
+      "tissueFraction": 0.3816666731992584,
+      "capWidth": 3281,
+      "capHeight": 2948,
+      "imageWidth": 1100,
+      "imageHeight": 856,
+      "encodedBytes": 973392
+    }
+  ],
+  "limits": [
+    "DOM cursor capture is mocked; real browser permission and visual layout are not verified.",
+    "CPU sampling timings are not browser frame rates.",
+    "The contact surfaces and acoustic properties are educational proxies."
+  ],
+  "acousticResolution": {
+    "coarseSamples": 400,
+    "fineSamples": 1400,
+    "coarseDeepMean": 163.181640625,
+    "fineDeepMean": 164.16015625
+  }
+}

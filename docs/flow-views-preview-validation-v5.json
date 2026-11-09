@@ -1,0 +1,369 @@
+{
+  "passed": true,
+  "comparisons": 44,
+  "dimensions": [
+    600,
+    600
+  ],
+  "allPixelsIdentical": true,
+  "presets": 8,
+  "anatomyRevision": "continuity-gated-v5",
+  "timingContext": "Node CPU microbenchmark on this machine; not browser end-to-end performance",
+  "medianDirectMs": 127.06163000000015,
+  "medianCachedRecolorMs": 2.7519280000005892,
+  "medianSourceSamplingMs": 18.375688000000082,
+  "cases": [
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 0,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 1,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 2,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 3,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 0,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 1,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 2,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 3,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-inflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": false,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-outflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-outflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "rv-outflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "rv-outflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "ra-inflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "ra-inflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "ra-inflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "ra-inflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "ra-outflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "ra-outflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "ra-outflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "ra-outflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "lv-inflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "lv-inflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "lv-inflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "lv-inflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "lv-outflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "lv-outflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "lv-outflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "lv-outflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "la-inflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "la-inflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "la-inflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "la-inflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "la-outflow",
+      "flip": false,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "la-outflow",
+      "flip": false,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    },
+    {
+      "preset": "la-outflow",
+      "flip": true,
+      "palette": 4,
+      "cleanup": true,
+      "selected": 0,
+      "identical": true
+    },
+    {
+      "preset": "la-outflow",
+      "flip": true,
+      "palette": 5,
+      "cleanup": true,
+      "selected": 2,
+      "identical": true
+    }
+  ]
+}

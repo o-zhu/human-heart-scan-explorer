@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "specimen": "LADAF-2021-17",
+  "levels": {
+    "low": {
+      "dimensions": [
+        238,
+        238,
+        265
+      ],
+      "originalCompressedBytes": 5849116,
+      "compactBytes": 1931449,
+      "ratio": 3.028356430845443,
+      "retainedVoxels": 2425013,
+      "totalVoxels": 15010660,
+      "excludedFraction": 0.8384472768019527,
+      "guardVoxels": 3,
+      "boundsXYZ": [
+        [
+          53,
+          202
+        ],
+        [
+          42,
+          204
+        ],
+        [
+          5,
+          257
+        ]
+      ],
+      "variants": {
+        "none": {
+          "bytes": 2102934,
+          "encodeAndVerifySeconds": 0.308,
+          "exactRoundTrip": true
+        },
+        "delta-x": {
+          "bytes": 1997708,
+          "encodeAndVerifySeconds": 0.296,
+          "exactRoundTrip": true
+        },
+        "delta-z": {
+          "bytes": 1931449,
+          "encodeAndVerifySeconds": 0.238,
+          "exactRoundTrip": true
+        }
+      },
+      "chosenPredictor": "delta-z",
+      "maximumRetainedByteError": 0,
+      "elapsedSeconds": 1.62
+    },
+    "high": {
+      "dimensions": [
+        475,
+        475,
+        530
+      ],
+      "originalCompressedBytes": 41426965,
+      "compactBytes": 13152058,
+      "ratio": 3.1498465867471084,
+      "retainedVoxels": 16758424,
+      "totalVoxels": 119581250,
+      "excludedFraction": 0.859857427481315,
+      "guardVoxels": 3,
+      "boundsXYZ": [
+        [
+          108,
+          401
+        ],
+        [
+          86,
+          405
+        ],
+        [
+          13,
+          512
+        ]
+      ],
+      "variants": {
+        "none": {
+          "bytes": 14477901,
+          "encodeAndVerifySeconds": 1.98,
+          "exactRoundTrip": true
+        },
+        "delta-x": {
+          "bytes": 13358764,
+          "encodeAndVerifySeconds": 2.741,
+          "exactRoundTrip": true
+        },
+        "delta-z": {
+          "bytes": 13152058,
+          "encodeAndVerifySeconds": 2.776,
+          "exactRoundTrip": true
+        }
+      },
+      "chosenPredictor": "delta-z",
+      "maximumRetainedByteError": 0,
+      "elapsedSeconds": 14.59
+    }
+  },
+  "losslessClaim": "The encoded cleaned display derivative round-trips exactly; original bytes are preserved throughout the existing support plus interpolation halo. Values outside that support are omitted. Original uncleaned parts remain separately available.",
+  "sourceVoxelSamplingUnchanged": true,
+  "originalDisplayWindowUnchanged": true,
+  "additionalTissueQuantization": false
+}

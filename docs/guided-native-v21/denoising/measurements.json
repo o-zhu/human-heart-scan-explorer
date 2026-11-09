@@ -1,0 +1,2789 @@
+{
+  "schema": "native-denoising-comparison-v21.1",
+  "thresholdRaw": 17133.400390625,
+  "thresholdRequested": 17133.4,
+  "nativeSpacingUm": 19.85,
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "skimage": "0.26.0"
+  },
+  "methodDefinitions": {
+    "raw": "Original uint16 intensities cast to float32 without rescaling",
+    "gaussian_1p5": "3D separable Gaussian sigma 1.5, finite radius 6, nearest boundary",
+    "tv800_16": "Chambolle TV weight 800 original intensity units; exactly 16 iterations; eps=0",
+    "tv800_40": "Chambolle TV weight 800 original intensity units; exactly 40 iterations; eps=0"
+  },
+  "metricNotes": {
+    "triangles": "skimage marching_cubes, Lewiner, allow_degenerate=False; counts may differ from NBE1 classic cases",
+    "components": "26-connected above-threshold voxel components inside the measured crop; includes crop-cut components",
+    "area": "Extracted triangle area in native-voxel squared; an outcome measure, not an accuracy measure",
+    "sampling": "32 pre-existing stratified source blocks; not a random sample or organ-wide accuracy validation",
+    "timing": "Single serial comparison during other work; filter times are descriptive, not controlled throughput benchmarks"
+  },
+  "selectedRegion": {
+    "coreOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "coreShapeZYX": [
+      108,
+      108,
+      108
+    ],
+    "realSourceHalo": 40,
+    "methods": {
+      "raw": {
+        "triangles": 723491,
+        "areaVoxelSquared": 216024.0625,
+        "tissueFraction": 0.5922059962912157,
+        "components26": 2100,
+        "componentsBelow27Voxels": 2027,
+        "voxelsInComponentsBelow27": 7040,
+        "largestComponentVoxels": 733495,
+        "classificationDisagreementWithRaw": 0.0,
+        "filterSeconds": 2.072993083857e-06
+      },
+      "gaussian_1p5": {
+        "triangles": 160231,
+        "areaVoxelSquared": 53059.28125,
+        "tissueFraction": 0.5966832101305696,
+        "components26": 68,
+        "componentsBelow27Voxels": 51,
+        "voxelsInComponentsBelow27": 435,
+        "largestComponentVoxels": 749051,
+        "classificationDisagreementWithRaw": 0.09313716150993243,
+        "filterSeconds": 0.08962119898933452
+      },
+      "tv800_16": {
+        "triangles": 191251,
+        "areaVoxelSquared": 63328.8671875,
+        "tissueFraction": 0.5776606081390032,
+        "components26": 74,
+        "componentsBelow27Voxels": 56,
+        "voxelsInComponentsBelow27": 427,
+        "largestComponentVoxels": 725597,
+        "classificationDisagreementWithRaw": 0.07345409109383733,
+        "filterSeconds": 2.2799881879909663
+      },
+      "tv800_40": {
+        "triangles": 181763,
+        "areaVoxelSquared": 60315.8046875,
+        "tissueFraction": 0.5784131611034903,
+        "components26": 39,
+        "componentsBelow27Voxels": 28,
+        "voxelsInComponentsBelow27": 311,
+        "largestComponentVoxels": 727041,
+        "classificationDisagreementWithRaw": 0.07512431412894376,
+        "filterSeconds": 4.251231681992067
+      }
+    },
+    "tv16Versus40": {
+      "classificationDisagreement": 0.0023878473809886705,
+      "intensityRmsDifference": 63.96733474731445,
+      "intensityMaxDifference": 298.791015625
+    }
+  },
+  "regional": [
+    {
+      "blockXYZ": [
+        30,
+        26,
+        2
+      ],
+      "coreOriginXYZ": [
+        3880,
+        3368,
+        296
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 33637,
+          "areaVoxelSquared": 6470.3173828125,
+          "tissueFraction": 0.04067201967592592,
+          "components26": 1314,
+          "componentsBelow27Voxels": 1301,
+          "voxelsInComponentsBelow27": 3555,
+          "largestComponentVoxels": 312,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.120992237702012e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04067201967592592,
+          "filterSeconds": 0.0446273889974691
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04067201967592592,
+          "filterSeconds": 0.2975833079981385
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04067201967592592,
+          "filterSeconds": 0.847912258002907
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 38.55265426635742,
+        "intensityMaxDifference": 217.380859375
+      }
+    },
+    {
+      "blockXYZ": [
+        27,
+        41,
+        9
+      ],
+      "coreOriginXYZ": [
+        3496,
+        5288,
+        1192
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 176364,
+          "areaVoxelSquared": 58845.6015625,
+          "tissueFraction": 0.4220648871527778,
+          "components26": 22,
+          "componentsBelow27Voxels": 21,
+          "voxelsInComponentsBelow27": 60,
+          "largestComponentVoxels": 46617,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.3820099411532283e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 58337,
+          "areaVoxelSquared": 19248.953125,
+          "tissueFraction": 0.2693956163194444,
+          "components26": 23,
+          "componentsBelow27Voxels": 11,
+          "voxelsInComponentsBelow27": 61,
+          "largestComponentVoxels": 27997,
+          "classificationDisagreementWithRaw": 0.3024269386574074,
+          "filterSeconds": 0.04696843700367026
+        },
+        "tv800_16": {
+          "triangles": 66433,
+          "areaVoxelSquared": 22160.291015625,
+          "tissueFraction": 0.2629123263888889,
+          "components26": 44,
+          "componentsBelow27Voxels": 29,
+          "voxelsInComponentsBelow27": 191,
+          "largestComponentVoxels": 27140,
+          "classificationDisagreementWithRaw": 0.2457591869212963,
+          "filterSeconds": 0.31529573000443634
+        },
+        "tv800_40": {
+          "triangles": 49127,
+          "areaVoxelSquared": 16344.94921875,
+          "tissueFraction": 0.2043999565972222,
+          "components26": 50,
+          "componentsBelow27Voxels": 36,
+          "voxelsInComponentsBelow27": 271,
+          "largestComponentVoxels": 18416,
+          "classificationDisagreementWithRaw": 0.28369140625,
+          "filterSeconds": 0.8039091899991035
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.06507703993055555,
+        "intensityRmsDifference": 69.32084655761719,
+        "intensityMaxDifference": 262.5498046875
+      }
+    },
+    {
+      "blockXYZ": [
+        30,
+        32,
+        12
+      ],
+      "coreOriginXYZ": [
+        3880,
+        4136,
+        1576
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 91269,
+          "areaVoxelSquared": 23964.935546875,
+          "tissueFraction": 0.12348090277777778,
+          "components26": 797,
+          "componentsBelow27Voxels": 764,
+          "voxelsInComponentsBelow27": 2485,
+          "largestComponentVoxels": 4102,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 9.609939297661185e-07
+        },
+        "gaussian_1p5": {
+          "triangles": 531,
+          "areaVoxelSquared": 171.93246459960938,
+          "tissueFraction": 0.0014738859953703704,
+          "components26": 7,
+          "componentsBelow27Voxels": 6,
+          "voxelsInComponentsBelow27": 34,
+          "largestComponentVoxels": 129,
+          "classificationDisagreementWithRaw": 0.12245912905092593,
+          "filterSeconds": 0.07988345599733293
+        },
+        "tv800_16": {
+          "triangles": 264,
+          "areaVoxelSquared": 82.39612579345703,
+          "tissueFraction": 0.0006058304398148148,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 65,
+          "classificationDisagreementWithRaw": 0.12291124131944445,
+          "filterSeconds": 0.4951382129947888
+        },
+        "tv800_40": {
+          "triangles": 4,
+          "areaVoxelSquared": 1.5271434783935547,
+          "tissueFraction": 1.808449074074074e-05,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 2,
+          "classificationDisagreementWithRaw": 0.12346281828703703,
+          "filterSeconds": 0.8115860529942438
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0005877459490740741,
+        "intensityRmsDifference": 46.588768005371094,
+        "intensityMaxDifference": 227.68359375
+      }
+    },
+    {
+      "blockXYZ": [
+        38,
+        36,
+        14
+      ],
+      "coreOriginXYZ": [
+        4904,
+        4648,
+        1832
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 51106,
+          "areaVoxelSquared": 12085.724609375,
+          "tissueFraction": 0.06621636284722222,
+          "components26": 1126,
+          "componentsBelow27Voxels": 1075,
+          "voxelsInComponentsBelow27": 3619,
+          "largestComponentVoxels": 253,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.1520023690536618e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.06621636284722222,
+          "filterSeconds": 0.04909172700718045
+        },
+        "tv800_16": {
+          "triangles": 20,
+          "areaVoxelSquared": 4.15404748916626,
+          "tissueFraction": 3.616898148148148e-05,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 4,
+          "largestComponentVoxels": 4,
+          "classificationDisagreementWithRaw": 0.06618019386574074,
+          "filterSeconds": 0.31332759899669327
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.06621636284722222,
+          "filterSeconds": 0.7642922359955264
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 3.616898148148148e-05,
+        "intensityRmsDifference": 52.59656524658203,
+        "intensityMaxDifference": 237.62109375
+      }
+    },
+    {
+      "blockXYZ": [
+        34,
+        35,
+        16
+      ],
+      "coreOriginXYZ": [
+        4392,
+        4520,
+        2088
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 96703,
+          "areaVoxelSquared": 31334.873046875,
+          "tissueFraction": 0.7213089554398148,
+          "components26": 12,
+          "componentsBelow27Voxels": 11,
+          "voxelsInComponentsBelow27": 17,
+          "largestComponentVoxels": 79754,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 9.619980119168758e-07
+        },
+        "gaussian_1p5": {
+          "triangles": 34450,
+          "areaVoxelSquared": 11341.673828125,
+          "tissueFraction": 0.8343370225694444,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 92271,
+          "classificationDisagreementWithRaw": 0.18254484953703703,
+          "filterSeconds": 0.047078980001970194
+        },
+        "tv800_16": {
+          "triangles": 55028,
+          "areaVoxelSquared": 18202.44921875,
+          "tissueFraction": 0.7595757378472222,
+          "components26": 3,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 1,
+          "largestComponentVoxels": 83902,
+          "classificationDisagreementWithRaw": 0.09161603009259259,
+          "filterSeconds": 0.3202299049880821
+        },
+        "tv800_40": {
+          "triangles": 51858,
+          "areaVoxelSquared": 17147.9453125,
+          "tissueFraction": 0.7668999565972222,
+          "components26": 4,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 8,
+          "largestComponentVoxels": 84729,
+          "classificationDisagreementWithRaw": 0.09796368634259259,
+          "filterSeconds": 0.8434949329966912
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.01416015625,
+        "intensityRmsDifference": 54.4048957824707,
+        "intensityMaxDifference": 270.30859375
+      }
+    },
+    {
+      "blockXYZ": [
+        35,
+        29,
+        18
+      ],
+      "coreOriginXYZ": [
+        4520,
+        3752,
+        2344
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 55953,
+          "areaVoxelSquared": 14987.876953125,
+          "tissueFraction": 0.47139937789351855,
+          "components26": 536,
+          "componentsBelow27Voxels": 511,
+          "voxelsInComponentsBelow27": 1549,
+          "largestComponentVoxels": 49499,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.000997144728899e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 9388,
+          "areaVoxelSquared": 3008.726806640625,
+          "tissueFraction": 0.49857132523148145,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 55138,
+          "classificationDisagreementWithRaw": 0.07491500289351852,
+          "filterSeconds": 0.05047509499127045
+        },
+        "tv800_16": {
+          "triangles": 9842,
+          "areaVoxelSquared": 3147.537353515625,
+          "tissueFraction": 0.48854347511574076,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 54029,
+          "classificationDisagreementWithRaw": 0.0658275462962963,
+          "filterSeconds": 0.38751818699529395
+        },
+        "tv800_40": {
+          "triangles": 9674,
+          "areaVoxelSquared": 3097.748291015625,
+          "tissueFraction": 0.48869719328703703,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 54046,
+          "classificationDisagreementWithRaw": 0.06614402488425926,
+          "filterSeconds": 0.8388088779902318
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0003888165509259259,
+        "intensityRmsDifference": 68.08984375,
+        "intensityMaxDifference": 280.71875
+      }
+    },
+    {
+      "blockXYZ": [
+        29,
+        20,
+        20
+      ],
+      "coreOriginXYZ": [
+        3752,
+        2600,
+        2600
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 57433,
+          "areaVoxelSquared": 14208.05078125,
+          "tissueFraction": 0.0753490306712963,
+          "components26": 923,
+          "componentsBelow27Voxels": 872,
+          "voxelsInComponentsBelow27": 3327,
+          "largestComponentVoxels": 865,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2419914128258824e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 93,
+          "areaVoxelSquared": 28.968666076660156,
+          "tissueFraction": 0.00047923900462962964,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 53,
+          "classificationDisagreementWithRaw": 0.07537615740740741,
+          "filterSeconds": 0.046858496993081644
+        },
+        "tv800_16": {
+          "triangles": 49,
+          "areaVoxelSquared": 17.350379943847656,
+          "tissueFraction": 0.00022605613425925926,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 25,
+          "largestComponentVoxels": 25,
+          "classificationDisagreementWithRaw": 0.07512297453703703,
+          "filterSeconds": 0.322004100002232
+        },
+        "tv800_40": {
+          "triangles": 49,
+          "areaVoxelSquared": 17.358909606933594,
+          "tissueFraction": 0.00022605613425925926,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 25,
+          "largestComponentVoxels": 25,
+          "classificationDisagreementWithRaw": 0.07512297453703703,
+          "filterSeconds": 0.8372482349950587
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 54.903778076171875,
+        "intensityMaxDifference": 240.521484375
+      }
+    },
+    {
+      "blockXYZ": [
+        37,
+        36,
+        21
+      ],
+      "coreOriginXYZ": [
+        4776,
+        4648,
+        2728
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 40602,
+          "areaVoxelSquared": 8957.021484375,
+          "tissueFraction": 0.05098922164351852,
+          "components26": 1140,
+          "componentsBelow27Voxels": 1107,
+          "voxelsInComponentsBelow27": 3812,
+          "largestComponentVoxels": 189,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.291991793550551e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05098922164351852,
+          "filterSeconds": 0.04796757298754528
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05098922164351852,
+          "filterSeconds": 0.36181805199885275
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05098922164351852,
+          "filterSeconds": 0.8643773789954139
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 50.74870300292969,
+        "intensityMaxDifference": 206.34375
+      }
+    },
+    {
+      "blockXYZ": [
+        21,
+        19,
+        23
+      ],
+      "coreOriginXYZ": [
+        2728,
+        2472,
+        2984
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 8548,
+          "areaVoxelSquared": 1072.9637451171875,
+          "tissueFraction": 0.010344328703703705,
+          "components26": 632,
+          "componentsBelow27Voxels": 632,
+          "voxelsInComponentsBelow27": 1144,
+          "largestComponentVoxels": 12,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.4120014384388924e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.010344328703703705,
+          "filterSeconds": 0.05001818800519686
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.010344328703703705,
+          "filterSeconds": 0.39790905799600296
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.010344328703703705,
+          "filterSeconds": 0.8893591109954286
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 40.25375747680664,
+        "intensityMaxDifference": 173.4951171875
+      }
+    },
+    {
+      "blockXYZ": [
+        33,
+        30,
+        24
+      ],
+      "coreOriginXYZ": [
+        4264,
+        3880,
+        3112
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 152460,
+          "areaVoxelSquared": 48609.828125,
+          "tissueFraction": 0.4349681712962963,
+          "components26": 146,
+          "componentsBelow27Voxels": 139,
+          "voxelsInComponentsBelow27": 406,
+          "largestComponentVoxels": 47414,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.1920055840164423e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 42423,
+          "areaVoxelSquared": 13699.2490234375,
+          "tissueFraction": 0.4702419704861111,
+          "components26": 13,
+          "componentsBelow27Voxels": 7,
+          "voxelsInComponentsBelow27": 53,
+          "largestComponentVoxels": 51569,
+          "classificationDisagreementWithRaw": 0.23718713831018517,
+          "filterSeconds": 0.04616694399737753
+        },
+        "tv800_16": {
+          "triangles": 46687,
+          "areaVoxelSquared": 15266.1162109375,
+          "tissueFraction": 0.4554126880787037,
+          "components26": 16,
+          "componentsBelow27Voxels": 10,
+          "voxelsInComponentsBelow27": 91,
+          "largestComponentVoxels": 49932,
+          "classificationDisagreementWithRaw": 0.20300745081018517,
+          "filterSeconds": 0.35161407900159247
+        },
+        "tv800_40": {
+          "triangles": 39467,
+          "areaVoxelSquared": 12892.931640625,
+          "tissueFraction": 0.46718569155092593,
+          "components26": 11,
+          "componentsBelow27Voxels": 7,
+          "voxelsInComponentsBelow27": 52,
+          "largestComponentVoxels": 51454,
+          "classificationDisagreementWithRaw": 0.21816225405092593,
+          "filterSeconds": 0.8864753209927585
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.029947916666666668,
+        "intensityRmsDifference": 69.23359680175781,
+        "intensityMaxDifference": 284.54296875
+      }
+    },
+    {
+      "blockXYZ": [
+        27,
+        38,
+        25
+      ],
+      "coreOriginXYZ": [
+        3496,
+        4904,
+        3240
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 22008,
+          "areaVoxelSquared": 5837.197265625,
+          "tissueFraction": 0.7280092592592593,
+          "components26": 271,
+          "componentsBelow27Voxels": 254,
+          "voxelsInComponentsBelow27": 833,
+          "largestComponentVoxels": 78600,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2419914128258824e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 8460,
+          "areaVoxelSquared": 2543.5,
+          "tissueFraction": 0.7192925347222222,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 79548,
+          "classificationDisagreementWithRaw": 0.02605975115740741,
+          "filterSeconds": 0.0486297099996591
+        },
+        "tv800_16": {
+          "triangles": 8596,
+          "areaVoxelSquared": 2631.63037109375,
+          "tissueFraction": 0.7118145978009259,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 78721,
+          "classificationDisagreementWithRaw": 0.01903392650462963,
+          "filterSeconds": 0.3752078399993479
+        },
+        "tv800_40": {
+          "triangles": 8596,
+          "areaVoxelSquared": 2634.12255859375,
+          "tissueFraction": 0.7117603443287037,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 78715,
+          "classificationDisagreementWithRaw": 0.01897967303240741,
+          "filterSeconds": 0.8451638069964247
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 7.233796296296296e-05,
+        "intensityRmsDifference": 73.13482666015625,
+        "intensityMaxDifference": 290.478515625
+      }
+    },
+    {
+      "blockXYZ": [
+        24,
+        13,
+        27
+      ],
+      "coreOriginXYZ": [
+        3112,
+        1704,
+        3496
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 118178,
+          "areaVoxelSquared": 37203.78125,
+          "tissueFraction": 0.3997847945601852,
+          "components26": 258,
+          "componentsBelow27Voxels": 249,
+          "voxelsInComponentsBelow27": 809,
+          "largestComponentVoxels": 43067,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2920063454657793e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 33305,
+          "areaVoxelSquared": 11140.5234375,
+          "tissueFraction": 0.3200412326388889,
+          "components26": 17,
+          "componentsBelow27Voxels": 13,
+          "voxelsInComponentsBelow27": 133,
+          "largestComponentVoxels": 24590,
+          "classificationDisagreementWithRaw": 0.1777976707175926,
+          "filterSeconds": 0.0467137730011018
+        },
+        "tv800_16": {
+          "triangles": 31583,
+          "areaVoxelSquared": 10557.1123046875,
+          "tissueFraction": 0.2913501880787037,
+          "components26": 21,
+          "componentsBelow27Voxels": 10,
+          "voxelsInComponentsBelow27": 97,
+          "largestComponentVoxels": 23105,
+          "classificationDisagreementWithRaw": 0.1625072337962963,
+          "filterSeconds": 0.33696840298944153
+        },
+        "tv800_40": {
+          "triangles": 20637,
+          "areaVoxelSquared": 6946.56103515625,
+          "tissueFraction": 0.24973777488425927,
+          "components26": 37,
+          "componentsBelow27Voxels": 25,
+          "voxelsInComponentsBelow27": 204,
+          "largestComponentVoxels": 23119,
+          "classificationDisagreementWithRaw": 0.18688512731481483,
+          "filterSeconds": 0.8278248159913346
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.042534722222222224,
+        "intensityRmsDifference": 63.05012512207031,
+        "intensityMaxDifference": 280.826171875
+      }
+    },
+    {
+      "blockXYZ": [
+        41,
+        24,
+        28
+      ],
+      "coreOriginXYZ": [
+        5288,
+        3112,
+        3624
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 89109,
+          "areaVoxelSquared": 29159.33984375,
+          "tissueFraction": 0.7492223668981481,
+          "components26": 6,
+          "componentsBelow27Voxels": 5,
+          "voxelsInComponentsBelow27": 9,
+          "largestComponentVoxels": 82849,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.4230026863515377e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 24926,
+          "areaVoxelSquared": 8291.310546875,
+          "tissueFraction": 0.8974790219907407,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 99254,
+          "classificationDisagreementWithRaw": 0.18702980324074073,
+          "filterSeconds": 0.0456773530022474
+        },
+        "tv800_16": {
+          "triangles": 51122,
+          "areaVoxelSquared": 17017.359375,
+          "tissueFraction": 0.7890353732638888,
+          "components26": 4,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 7,
+          "largestComponentVoxels": 87106,
+          "classificationDisagreementWithRaw": 0.08440936053240741,
+          "filterSeconds": 0.3241717540076934
+        },
+        "tv800_40": {
+          "triangles": 48878,
+          "areaVoxelSquared": 16311.9609375,
+          "tissueFraction": 0.7841616030092593,
+          "components26": 4,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 86645,
+          "classificationDisagreementWithRaw": 0.08807146990740741,
+          "filterSeconds": 0.8143663369992282
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.010027850115740741,
+        "intensityRmsDifference": 49.69198226928711,
+        "intensityMaxDifference": 242.0732421875
+      }
+    },
+    {
+      "blockXYZ": [
+        29,
+        31,
+        29
+      ],
+      "coreOriginXYZ": [
+        3752,
+        4008,
+        3752
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 17420,
+          "areaVoxelSquared": 3074.53173828125,
+          "tissueFraction": 0.02131257233796296,
+          "components26": 794,
+          "componentsBelow27Voxels": 792,
+          "voxelsInComponentsBelow27": 2291,
+          "largestComponentVoxels": 38,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 9.820068953558803e-07
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.02131257233796296,
+          "filterSeconds": 0.04661826099618338
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.02131257233796296,
+          "filterSeconds": 0.31518720999883953
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.02131257233796296,
+          "filterSeconds": 0.7801611419999972
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 51.93490219116211,
+        "intensityMaxDifference": 242.857421875
+      }
+    },
+    {
+      "blockXYZ": [
+        26,
+        37,
+        30
+      ],
+      "coreOriginXYZ": [
+        3368,
+        4776,
+        3880
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 71423,
+          "areaVoxelSquared": 19355.23828125,
+          "tissueFraction": 0.09975405092592593,
+          "components26": 731,
+          "componentsBelow27Voxels": 681,
+          "voxelsInComponentsBelow27": 2540,
+          "largestComponentVoxels": 4732,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.091990270651877e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 166,
+          "areaVoxelSquared": 45.400779724121094,
+          "tissueFraction": 0.0002712673611111111,
+          "components26": 5,
+          "componentsBelow27Voxels": 5,
+          "voxelsInComponentsBelow27": 30,
+          "largestComponentVoxels": 10,
+          "classificationDisagreementWithRaw": 0.0995189525462963,
+          "filterSeconds": 0.04645071498816833
+        },
+        "tv800_16": {
+          "triangles": 320,
+          "areaVoxelSquared": 101.40060424804688,
+          "tissueFraction": 0.0006781684027777778,
+          "components26": 7,
+          "componentsBelow27Voxels": 7,
+          "voxelsInComponentsBelow27": 75,
+          "largestComponentVoxels": 25,
+          "classificationDisagreementWithRaw": 0.09907588252314815,
+          "filterSeconds": 0.3187135009939084
+        },
+        "tv800_40": {
+          "triangles": 176,
+          "areaVoxelSquared": 58.813568115234375,
+          "tissueFraction": 0.00035264756944444444,
+          "components26": 6,
+          "componentsBelow27Voxels": 6,
+          "voxelsInComponentsBelow27": 39,
+          "largestComponentVoxels": 18,
+          "classificationDisagreementWithRaw": 0.09940140335648148,
+          "filterSeconds": 0.8274559569981648
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0003255208333333333,
+        "intensityRmsDifference": 72.6646499633789,
+        "intensityMaxDifference": 275.65625
+      }
+    },
+    {
+      "blockXYZ": [
+        37,
+        42,
+        31
+      ],
+      "coreOriginXYZ": [
+        4776,
+        5416,
+        4008
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 180666,
+          "areaVoxelSquared": 59709.9765625,
+          "tissueFraction": 0.6006492332175926,
+          "components26": 6,
+          "componentsBelow27Voxels": 5,
+          "voxelsInComponentsBelow27": 8,
+          "largestComponentVoxels": 66419,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2220116332173347e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 48593,
+          "areaVoxelSquared": 15891.6357421875,
+          "tissueFraction": 0.8292462384259259,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 91708,
+          "classificationDisagreementWithRaw": 0.3060709635416667,
+          "filterSeconds": 0.04552402600529604
+        },
+        "tv800_16": {
+          "triangles": 44234,
+          "areaVoxelSquared": 14530.1826171875,
+          "tissueFraction": 0.8390570746527778,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 92793,
+          "classificationDisagreementWithRaw": 0.29338469328703703,
+          "filterSeconds": 0.3333013840019703
+        },
+        "tv800_40": {
+          "triangles": 21620,
+          "areaVoxelSquared": 7095.70849609375,
+          "tissueFraction": 0.9195692274305556,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 101697,
+          "classificationDisagreementWithRaw": 0.34375,
+          "filterSeconds": 0.7983817740023369
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.08201316550925926,
+        "intensityRmsDifference": 72.09774017333984,
+        "intensityMaxDifference": 282.166015625
+      }
+    },
+    {
+      "blockXYZ": [
+        27,
+        19,
+        33
+      ],
+      "coreOriginXYZ": [
+        3496,
+        2472,
+        4264
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 35860,
+          "areaVoxelSquared": 7757.7822265625,
+          "tissueFraction": 0.04455114293981482,
+          "components26": 1059,
+          "componentsBelow27Voxels": 1034,
+          "voxelsInComponentsBelow27": 3581,
+          "largestComponentVoxels": 145,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.4219986042007804e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04455114293981482,
+          "filterSeconds": 0.04754377299104817
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04455114293981482,
+          "filterSeconds": 0.3447439640003722
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.04455114293981482,
+          "filterSeconds": 0.8210357950010803
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 56.26506423950195,
+        "intensityMaxDifference": 231.3828125
+      }
+    },
+    {
+      "blockXYZ": [
+        23,
+        28,
+        34
+      ],
+      "coreOriginXYZ": [
+        2984,
+        3624,
+        4392
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 142547,
+          "areaVoxelSquared": 45883.75,
+          "tissueFraction": 0.45382125289351855,
+          "components26": 87,
+          "componentsBelow27Voxels": 85,
+          "voxelsInComponentsBelow27": 239,
+          "largestComponentVoxels": 49909,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.1220108717679977e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 50333,
+          "areaVoxelSquared": 16669.44921875,
+          "tissueFraction": 0.4518500434027778,
+          "components26": 13,
+          "componentsBelow27Voxels": 8,
+          "voxelsInComponentsBelow27": 52,
+          "largestComponentVoxels": 49675,
+          "classificationDisagreementWithRaw": 0.21961805555555555,
+          "filterSeconds": 0.05416490099742077
+        },
+        "tv800_16": {
+          "triangles": 52691,
+          "areaVoxelSquared": 17615.62109375,
+          "tissueFraction": 0.4281593605324074,
+          "components26": 24,
+          "componentsBelow27Voxels": 17,
+          "voxelsInComponentsBelow27": 129,
+          "largestComponentVoxels": 46345,
+          "classificationDisagreementWithRaw": 0.1906105324074074,
+          "filterSeconds": 0.39038152899593115
+        },
+        "tv800_40": {
+          "triangles": 43902,
+          "areaVoxelSquared": 14784.953125,
+          "tissueFraction": 0.4163230613425926,
+          "components26": 18,
+          "componentsBelow27Voxels": 14,
+          "voxelsInComponentsBelow27": 101,
+          "largestComponentVoxels": 45749,
+          "classificationDisagreementWithRaw": 0.21199544270833334,
+          "filterSeconds": 0.8720205860008718
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.03861942997685185,
+        "intensityRmsDifference": 73.03263092041016,
+        "intensityMaxDifference": 281.52734375
+      }
+    },
+    {
+      "blockXYZ": [
+        34,
+        35,
+        35
+      ],
+      "coreOriginXYZ": [
+        4392,
+        4520,
+        4520
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 80999,
+          "areaVoxelSquared": 25461.19921875,
+          "tissueFraction": 0.5070619936342593,
+          "components26": 142,
+          "componentsBelow27Voxels": 135,
+          "voxelsInComponentsBelow27": 376,
+          "largestComponentVoxels": 55236,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.6029953258112073e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 15991,
+          "areaVoxelSquared": 5725.12841796875,
+          "tissueFraction": 0.4342176649305556,
+          "components26": 25,
+          "componentsBelow27Voxels": 17,
+          "voxelsInComponentsBelow27": 166,
+          "largestComponentVoxels": 46740,
+          "classificationDisagreementWithRaw": 0.1351996527777778,
+          "filterSeconds": 0.048456289994646795
+        },
+        "tv800_16": {
+          "triangles": 16183,
+          "areaVoxelSquared": 5819.22412109375,
+          "tissueFraction": 0.40401656539351855,
+          "components26": 24,
+          "componentsBelow27Voxels": 17,
+          "voxelsInComponentsBelow27": 140,
+          "largestComponentVoxels": 43889,
+          "classificationDisagreementWithRaw": 0.10857928240740741,
+          "filterSeconds": 0.3416409869969357
+        },
+        "tv800_40": {
+          "triangles": 14173,
+          "areaVoxelSquared": 5193.24951171875,
+          "tissueFraction": 0.3993236400462963,
+          "components26": 8,
+          "componentsBelow27Voxels": 5,
+          "voxelsInComponentsBelow27": 48,
+          "largestComponentVoxels": 43860,
+          "classificationDisagreementWithRaw": 0.11256691261574074,
+          "filterSeconds": 0.8557210980070522
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.004801432291666667,
+        "intensityRmsDifference": 62.90966033935547,
+        "intensityMaxDifference": 287.22265625
+      }
+    },
+    {
+      "blockXYZ": [
+        21,
+        11,
+        37
+      ],
+      "coreOriginXYZ": [
+        2728,
+        1448,
+        4776
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 44581,
+          "areaVoxelSquared": 10800.8173828125,
+          "tissueFraction": 0.05983253761574074,
+          "components26": 942,
+          "componentsBelow27Voxels": 929,
+          "voxelsInComponentsBelow27": 3218,
+          "largestComponentVoxels": 2703,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.0020012268796563e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05983253761574074,
+          "filterSeconds": 0.047869465008261614
+        },
+        "tv800_16": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05983253761574074,
+          "filterSeconds": 0.34927195199998096
+        },
+        "tv800_40": {
+          "triangles": 0,
+          "areaVoxelSquared": 0.0,
+          "tissueFraction": 0.0,
+          "components26": 0,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 0,
+          "classificationDisagreementWithRaw": 0.05983253761574074,
+          "filterSeconds": 0.8287670429999707
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0,
+        "intensityRmsDifference": 47.21921920776367,
+        "intensityMaxDifference": 215.43359375
+      }
+    },
+    {
+      "blockXYZ": [
+        22,
+        23,
+        38
+      ],
+      "coreOriginXYZ": [
+        2856,
+        2984,
+        4904
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 65018,
+          "areaVoxelSquared": 18678.50390625,
+          "tissueFraction": 0.4048936631944444,
+          "components26": 528,
+          "componentsBelow27Voxels": 501,
+          "voxelsInComponentsBelow27": 1852,
+          "largestComponentVoxels": 41446,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2320087989792228e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 12750,
+          "areaVoxelSquared": 4353.23681640625,
+          "tissueFraction": 0.4263328269675926,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 3,
+          "largestComponentVoxels": 47146,
+          "classificationDisagreementWithRaw": 0.09446433738425926,
+          "filterSeconds": 0.047269718008465134
+        },
+        "tv800_16": {
+          "triangles": 17266,
+          "areaVoxelSquared": 5834.1767578125,
+          "tissueFraction": 0.4121907552083333,
+          "components26": 3,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 5,
+          "largestComponentVoxels": 45580,
+          "classificationDisagreementWithRaw": 0.0773021556712963,
+          "filterSeconds": 0.33038460099487565
+        },
+        "tv800_40": {
+          "triangles": 16190,
+          "areaVoxelSquared": 5503.9150390625,
+          "tissueFraction": 0.4141529224537037,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 3,
+          "largestComponentVoxels": 45799,
+          "classificationDisagreementWithRaw": 0.07951750578703703,
+          "filterSeconds": 0.8138685760059161
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0032823350694444445,
+        "intensityRmsDifference": 64.02350616455078,
+        "intensityMaxDifference": 270.8798828125
+      }
+    },
+    {
+      "blockXYZ": [
+        34,
+        30,
+        39
+      ],
+      "coreOriginXYZ": [
+        4392,
+        3880,
+        5032
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 56544,
+          "areaVoxelSquared": 18446.65234375,
+          "tissueFraction": 0.8510199652777778,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 94114,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2319942470639944e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 9702,
+          "areaVoxelSquared": 3386.76123046875,
+          "tissueFraction": 0.9700249565972222,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 107277,
+          "classificationDisagreementWithRaw": 0.12117513020833333,
+          "filterSeconds": 0.04664127800788265
+        },
+        "tv800_16": {
+          "triangles": 29700,
+          "areaVoxelSquared": 10151.984375,
+          "tissueFraction": 0.9012134693287037,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 99665,
+          "classificationDisagreementWithRaw": 0.05456995081018518,
+          "filterSeconds": 0.3304697510029655
+        },
+        "tv800_40": {
+          "triangles": 29172,
+          "areaVoxelSquared": 10005.60546875,
+          "tissueFraction": 0.9013038917824074,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 99675,
+          "classificationDisagreementWithRaw": 0.055329499421296294,
+          "filterSeconds": 0.8169056110054953
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0019350405092592592,
+        "intensityRmsDifference": 48.89885330200195,
+        "intensityMaxDifference": 248.173828125
+      }
+    },
+    {
+      "blockXYZ": [
+        34,
+        37,
+        40
+      ],
+      "coreOriginXYZ": [
+        4392,
+        4776,
+        5160
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 76935,
+          "areaVoxelSquared": 23851.060546875,
+          "tissueFraction": 0.5681604456018519,
+          "components26": 93,
+          "componentsBelow27Voxels": 91,
+          "voxelsInComponentsBelow27": 266,
+          "largestComponentVoxels": 61801,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2310047168284655e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 16081,
+          "areaVoxelSquared": 5119.46044921875,
+          "tissueFraction": 0.4901529947916667,
+          "components26": 35,
+          "componentsBelow27Voxels": 16,
+          "voxelsInComponentsBelow27": 142,
+          "largestComponentVoxels": 50821,
+          "classificationDisagreementWithRaw": 0.12712492766203703,
+          "filterSeconds": 0.04431526199914515
+        },
+        "tv800_16": {
+          "triangles": 14061,
+          "areaVoxelSquared": 4562.3173828125,
+          "tissueFraction": 0.46452727141203703,
+          "components26": 34,
+          "componentsBelow27Voxels": 14,
+          "voxelsInComponentsBelow27": 136,
+          "largestComponentVoxels": 48988,
+          "classificationDisagreementWithRaw": 0.109619140625,
+          "filterSeconds": 0.32094989500183146
+        },
+        "tv800_40": {
+          "triangles": 10621,
+          "areaVoxelSquared": 3451.611328125,
+          "tissueFraction": 0.45582863136574076,
+          "components26": 18,
+          "componentsBelow27Voxels": 12,
+          "voxelsInComponentsBelow27": 84,
+          "largestComponentVoxels": 48980,
+          "classificationDisagreementWithRaw": 0.11730504918981481,
+          "filterSeconds": 0.8134715760097606
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.008734809027777778,
+        "intensityRmsDifference": 69.02729797363281,
+        "intensityMaxDifference": 282.677734375
+      }
+    },
+    {
+      "blockXYZ": [
+        25,
+        17,
+        42
+      ],
+      "coreOriginXYZ": [
+        3240,
+        2216,
+        5416
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 57621,
+          "areaVoxelSquared": 17349.59765625,
+          "tissueFraction": 0.6201895254629629,
+          "components26": 158,
+          "componentsBelow27Voxels": 152,
+          "voxelsInComponentsBelow27": 544,
+          "largestComponentVoxels": 67757,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.0020012268796563e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 19966,
+          "areaVoxelSquared": 6550.59521484375,
+          "tissueFraction": 0.6490433304398148,
+          "components26": 4,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 11,
+          "largestComponentVoxels": 71739,
+          "classificationDisagreementWithRaw": 0.08504231770833333,
+          "filterSeconds": 0.04578666599991266
+        },
+        "tv800_16": {
+          "triangles": 24420,
+          "areaVoxelSquared": 7973.9033203125,
+          "tissueFraction": 0.6219527633101852,
+          "components26": 6,
+          "componentsBelow27Voxels": 5,
+          "voxelsInComponentsBelow27": 29,
+          "largestComponentVoxels": 68754,
+          "classificationDisagreementWithRaw": 0.057427300347222224,
+          "filterSeconds": 0.34576011401077267
+        },
+        "tv800_40": {
+          "triangles": 23846,
+          "areaVoxelSquared": 7823.34765625,
+          "tissueFraction": 0.6218352141203703,
+          "components26": 3,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 15,
+          "largestComponentVoxels": 68755,
+          "classificationDisagreementWithRaw": 0.058195891203703706,
+          "filterSeconds": 0.7902836370049044
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0017270688657407408,
+        "intensityRmsDifference": 62.83086013793945,
+        "intensityMaxDifference": 269.736328125
+      }
+    },
+    {
+      "blockXYZ": [
+        16,
+        30,
+        43
+      ],
+      "coreOriginXYZ": [
+        2088,
+        3880,
+        5544
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 54143,
+          "areaVoxelSquared": 16166.6005859375,
+          "tissueFraction": 0.39574291087962965,
+          "components26": 365,
+          "componentsBelow27Voxels": 355,
+          "voxelsInComponentsBelow27": 1143,
+          "largestComponentVoxels": 42181,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.301988959312439e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 17327,
+          "areaVoxelSquared": 5818.849609375,
+          "tissueFraction": 0.4314507378472222,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 47715,
+          "classificationDisagreementWithRaw": 0.08437319155092593,
+          "filterSeconds": 0.04543288498825859
+        },
+        "tv800_16": {
+          "triangles": 23276,
+          "areaVoxelSquared": 7710.7939453125,
+          "tissueFraction": 0.40876374421296297,
+          "components26": 3,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 4,
+          "largestComponentVoxels": 45202,
+          "classificationDisagreementWithRaw": 0.05738208912037037,
+          "filterSeconds": 0.32454191500437446
+        },
+        "tv800_40": {
+          "triangles": 22560,
+          "areaVoxelSquared": 7477.60595703125,
+          "tissueFraction": 0.4098036024305556,
+          "components26": 2,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 2,
+          "largestComponentVoxels": 45319,
+          "classificationDisagreementWithRaw": 0.058928313078703706,
+          "filterSeconds": 0.7945436669979244
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0034993489583333335,
+        "intensityRmsDifference": 59.18745422363281,
+        "intensityMaxDifference": 252.130859375
+      }
+    },
+    {
+      "blockXYZ": [
+        30,
+        45,
+        44
+      ],
+      "coreOriginXYZ": [
+        3880,
+        5800,
+        5672
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 160101,
+          "areaVoxelSquared": 51101.10546875,
+          "tissueFraction": 0.31142397280092593,
+          "components26": 139,
+          "componentsBelow27Voxels": 137,
+          "voxelsInComponentsBelow27": 303,
+          "largestComponentVoxels": 34088,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2419914128258824e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 32826,
+          "areaVoxelSquared": 10800.6015625,
+          "tissueFraction": 0.11237702546296297,
+          "components26": 29,
+          "componentsBelow27Voxels": 17,
+          "voxelsInComponentsBelow27": 132,
+          "largestComponentVoxels": 9765,
+          "classificationDisagreementWithRaw": 0.24718786168981483,
+          "filterSeconds": 0.0463754710071953
+        },
+        "tv800_16": {
+          "triangles": 23450,
+          "areaVoxelSquared": 7624.66162109375,
+          "tissueFraction": 0.08006004050925926,
+          "components26": 38,
+          "componentsBelow27Voxels": 22,
+          "voxelsInComponentsBelow27": 191,
+          "largestComponentVoxels": 4716,
+          "classificationDisagreementWithRaw": 0.2602810329861111,
+          "filterSeconds": 0.3603954729915131
+        },
+        "tv800_40": {
+          "triangles": 5438,
+          "areaVoxelSquared": 1746.6107177734375,
+          "tissueFraction": 0.01764142071759259,
+          "components26": 22,
+          "componentsBelow27Voxels": 13,
+          "voxelsInComponentsBelow27": 113,
+          "largestComponentVoxels": 740,
+          "classificationDisagreementWithRaw": 0.29976851851851855,
+          "filterSeconds": 0.8667607259994838
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.06276222511574074,
+        "intensityRmsDifference": 66.73146057128906,
+        "intensityMaxDifference": 284.076171875
+      }
+    },
+    {
+      "blockXYZ": [
+        42,
+        33,
+        46
+      ],
+      "coreOriginXYZ": [
+        5416,
+        4264,
+        5928
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 56157,
+          "areaVoxelSquared": 16902.51171875,
+          "tissueFraction": 0.818115234375,
+          "components26": 34,
+          "componentsBelow27Voxels": 32,
+          "voxelsInComponentsBelow27": 130,
+          "largestComponentVoxels": 90180,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 9.920040611177683e-07
+        },
+        "gaussian_1p5": {
+          "triangles": 7932,
+          "areaVoxelSquared": 2504.04248046875,
+          "tissueFraction": 0.88525390625,
+          "components26": 4,
+          "componentsBelow27Voxels": 3,
+          "voxelsInComponentsBelow27": 16,
+          "largestComponentVoxels": 97886,
+          "classificationDisagreementWithRaw": 0.09831633391203703,
+          "filterSeconds": 0.04715518000011798
+        },
+        "tv800_16": {
+          "triangles": 18738,
+          "areaVoxelSquared": 6029.4609375,
+          "tissueFraction": 0.8513545283564815,
+          "components26": 3,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 7,
+          "largestComponentVoxels": 94146,
+          "classificationDisagreementWithRaw": 0.0651584201388889,
+          "filterSeconds": 0.3271200009912718
+        },
+        "tv800_40": {
+          "triangles": 18230,
+          "areaVoxelSquared": 5868.365234375,
+          "tissueFraction": 0.8521864149305556,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 94245,
+          "classificationDisagreementWithRaw": 0.06626157407407407,
+          "filterSeconds": 0.8329715330037288
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.001808449074074074,
+        "intensityRmsDifference": 64.00118255615234,
+        "intensityMaxDifference": 267.2734375
+      }
+    },
+    {
+      "blockXYZ": [
+        16,
+        29,
+        48
+      ],
+      "coreOriginXYZ": [
+        2088,
+        3752,
+        6184
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 48030,
+          "areaVoxelSquared": 12197.1640625,
+          "tissueFraction": 0.0642994068287037,
+          "components26": 787,
+          "componentsBelow27Voxels": 739,
+          "voxelsInComponentsBelow27": 2601,
+          "largestComponentVoxels": 706,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.4120014384388924e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 144,
+          "areaVoxelSquared": 39.836402893066406,
+          "tissueFraction": 0.00018988715277777778,
+          "components26": 3,
+          "componentsBelow27Voxels": 3,
+          "voxelsInComponentsBelow27": 21,
+          "largestComponentVoxels": 7,
+          "classificationDisagreementWithRaw": 0.06410951967592593,
+          "filterSeconds": 0.04663857500418089
+        },
+        "tv800_16": {
+          "triangles": 96,
+          "areaVoxelSquared": 38.155696868896484,
+          "tissueFraction": 0.0001537181712962963,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 17,
+          "largestComponentVoxels": 17,
+          "classificationDisagreementWithRaw": 0.06414568865740741,
+          "filterSeconds": 0.32071384800656233
+        },
+        "tv800_40": {
+          "triangles": 92,
+          "areaVoxelSquared": 34.97017288208008,
+          "tissueFraction": 0.00014467592592592592,
+          "components26": 1,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 16,
+          "largestComponentVoxels": 16,
+          "classificationDisagreementWithRaw": 0.06415473090277778,
+          "filterSeconds": 0.8303181509982096
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 9.04224537037037e-06,
+        "intensityRmsDifference": 59.34001541137695,
+        "intensityMaxDifference": 254.474609375
+      }
+    },
+    {
+      "blockXYZ": [
+        19,
+        31,
+        50
+      ],
+      "coreOriginXYZ": [
+        2472,
+        4008,
+        6440
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 43309,
+          "areaVoxelSquared": 12986.1484375,
+          "tissueFraction": 0.8731282552083334,
+          "components26": 12,
+          "componentsBelow27Voxels": 11,
+          "voxelsInComponentsBelow27": 61,
+          "largestComponentVoxels": 96500,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.3520038919523358e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 11223,
+          "areaVoxelSquared": 3590.188232421875,
+          "tissueFraction": 0.9393717447916666,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 103887,
+          "classificationDisagreementWithRaw": 0.07682291666666667,
+          "filterSeconds": 0.046011683996766806
+        },
+        "tv800_16": {
+          "triangles": 19471,
+          "areaVoxelSquared": 6265.7216796875,
+          "tissueFraction": 0.9037000868055556,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 99942,
+          "classificationDisagreementWithRaw": 0.04198314525462963,
+          "filterSeconds": 0.33312975900480524
+        },
+        "tv800_40": {
+          "triangles": 19189,
+          "areaVoxelSquared": 6194.0478515625,
+          "tissueFraction": 0.9034921151620371,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 99919,
+          "classificationDisagreementWithRaw": 0.042426215277777776,
+          "filterSeconds": 0.8920812610012945
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0011664496527777778,
+        "intensityRmsDifference": 60.832218170166016,
+        "intensityMaxDifference": 275.28515625
+      }
+    },
+    {
+      "blockXYZ": [
+        29,
+        42,
+        52
+      ],
+      "coreOriginXYZ": [
+        3752,
+        5416,
+        6696
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 18052,
+          "areaVoxelSquared": 5291.8271484375,
+          "tissueFraction": 0.9648347077546297,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 106703,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.1820084182545543e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 864,
+          "areaVoxelSquared": 279.78997802734375,
+          "tissueFraction": 0.9979383680555556,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 110364,
+          "classificationDisagreementWithRaw": 0.03310366030092592,
+          "filterSeconds": 0.04733107400534209
+        },
+        "tv800_16": {
+          "triangles": 4790,
+          "areaVoxelSquared": 1482.2457275390625,
+          "tissueFraction": 0.987548828125,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 109215,
+          "classificationDisagreementWithRaw": 0.022822627314814815,
+          "filterSeconds": 0.33916522600338794
+        },
+        "tv800_40": {
+          "triangles": 4596,
+          "areaVoxelSquared": 1434.1776123046875,
+          "tissueFraction": 0.9878653067129629,
+          "components26": 1,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 109250,
+          "classificationDisagreementWithRaw": 0.023139105902777776,
+          "filterSeconds": 0.9403604279941646
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.00035264756944444444,
+        "intensityRmsDifference": 72.97521209716797,
+        "intensityMaxDifference": 281.38671875
+      }
+    },
+    {
+      "blockXYZ": [
+        24,
+        27,
+        56
+      ],
+      "coreOriginXYZ": [
+        3112,
+        3496,
+        7208
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 24061,
+          "areaVoxelSquared": 7384.10107421875,
+          "tissueFraction": 0.8722149884259259,
+          "components26": 36,
+          "componentsBelow27Voxels": 31,
+          "voxelsInComponentsBelow27": 160,
+          "largestComponentVoxels": 92975,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.5130062820389867e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 10650,
+          "areaVoxelSquared": 3538.704833984375,
+          "tissueFraction": 0.8910409432870371,
+          "components26": 3,
+          "componentsBelow27Voxels": 0,
+          "voxelsInComponentsBelow27": 0,
+          "largestComponentVoxels": 95248,
+          "classificationDisagreementWithRaw": 0.03452329282407408,
+          "filterSeconds": 0.05097879801178351
+        },
+        "tv800_16": {
+          "triangles": 11919,
+          "areaVoxelSquared": 3926.283935546875,
+          "tissueFraction": 0.8795572916666666,
+          "components26": 5,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 15,
+          "largestComponentVoxels": 94198,
+          "classificationDisagreementWithRaw": 0.02190031828703704,
+          "filterSeconds": 0.35600546801288147
+        },
+        "tv800_40": {
+          "triangles": 11777,
+          "areaVoxelSquared": 3887.84716796875,
+          "tissueFraction": 0.8793312355324074,
+          "components26": 4,
+          "componentsBelow27Voxels": 1,
+          "voxelsInComponentsBelow27": 13,
+          "largestComponentVoxels": 94183,
+          "classificationDisagreementWithRaw": 0.02203595196759259,
+          "filterSeconds": 0.8923914440092631
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.0007143373842592593,
+        "intensityRmsDifference": 70.32028198242188,
+        "intensityMaxDifference": 283.46875
+      }
+    },
+    {
+      "blockXYZ": [
+        23,
+        32,
+        63
+      ],
+      "coreOriginXYZ": [
+        2984,
+        4136,
+        8104
+      ],
+      "coreShapeZYX": [
+        48,
+        48,
+        48
+      ],
+      "realSourceHalo": 40,
+      "methods": {
+        "raw": {
+          "triangles": 74739,
+          "areaVoxelSquared": 19145.6875,
+          "tissueFraction": 0.09853334780092593,
+          "components26": 977,
+          "componentsBelow27Voxels": 939,
+          "voxelsInComponentsBelow27": 3129,
+          "largestComponentVoxels": 5586,
+          "classificationDisagreementWithRaw": 0.0,
+          "filterSeconds": 1.2419914128258824e-06
+        },
+        "gaussian_1p5": {
+          "triangles": 250,
+          "areaVoxelSquared": 73.78942108154297,
+          "tissueFraction": 0.0005154079861111111,
+          "components26": 3,
+          "componentsBelow27Voxels": 2,
+          "voxelsInComponentsBelow27": 27,
+          "largestComponentVoxels": 30,
+          "classificationDisagreementWithRaw": 0.09807219328703703,
+          "filterSeconds": 0.04823052999563515
+        },
+        "tv800_16": {
+          "triangles": 336,
+          "areaVoxelSquared": 120.31938934326172,
+          "tissueFraction": 0.000732421875,
+          "components26": 4,
+          "componentsBelow27Voxels": 3,
+          "voxelsInComponentsBelow27": 34,
+          "largestComponentVoxels": 47,
+          "classificationDisagreementWithRaw": 0.09780092592592593,
+          "filterSeconds": 0.3347749929962447
+        },
+        "tv800_40": {
+          "triangles": 292,
+          "areaVoxelSquared": 94.28157806396484,
+          "tissueFraction": 0.0005967881944444445,
+          "components26": 4,
+          "componentsBelow27Voxels": 3,
+          "voxelsInComponentsBelow27": 21,
+          "largestComponentVoxels": 45,
+          "classificationDisagreementWithRaw": 0.09793655960648148,
+          "filterSeconds": 0.7943280329927802
+        }
+      },
+      "tv16Versus40": {
+        "classificationDisagreement": 0.00013563368055555556,
+        "intensityRmsDifference": 42.722164154052734,
+        "intensityMaxDifference": 234.1044921875
+      }
+    }
+  ],
+  "boundaryProfile": {
+    "blockXYZ": [
+      27,
+      38,
+      25
+    ],
+    "nativeOriginXYZ": [
+      3496,
+      4904,
+      3240
+    ],
+    "profileLocalZY": [
+      24,
+      24
+    ],
+    "spacingUm": 19.85,
+    "intensity": {
+      "raw": [
+        16222.0,
+        16357.0,
+        15532.0,
+        15491.0,
+        16218.0,
+        17001.0,
+        16504.0,
+        14987.0,
+        14239.0,
+        15440.0,
+        16450.0,
+        18527.0,
+        20221.0,
+        20922.0,
+        20728.0,
+        19985.0,
+        19435.0,
+        19090.0,
+        19130.0,
+        19221.0,
+        20209.0,
+        20324.0,
+        20056.0,
+        20160.0,
+        20264.0,
+        20024.0,
+        19592.0,
+        19540.0,
+        20768.0,
+        21664.0,
+        20768.0,
+        20196.0,
+        20777.0,
+        20489.0,
+        19625.0,
+        18213.0,
+        18593.0,
+        18975.0,
+        20125.0,
+        19599.0,
+        19842.0,
+        20444.0,
+        20855.0,
+        21197.0,
+        20772.0,
+        19448.0,
+        19405.0,
+        20482.0
+      ],
+      "gaussian_1p5": [
+        16265.9970703125,
+        16188.896484375,
+        16103.74609375,
+        16054.12890625,
+        16043.6376953125,
+        16022.693359375,
+        15966.0556640625,
+        15951.6162109375,
+        16121.8369140625,
+        16560.912109375,
+        17230.466796875,
+        18006.5859375,
+        18737.21875,
+        19287.48046875,
+        19596.33203125,
+        19708.123046875,
+        19730.10546875,
+        19757.90234375,
+        19846.1953125,
+        20012.294921875,
+        20216.212890625,
+        20362.091796875,
+        20382.595703125,
+        20315.931640625,
+        20254.388671875,
+        20239.91015625,
+        20266.37109375,
+        20342.19140625,
+        20466.23046875,
+        20577.20703125,
+        20600.71484375,
+        20513.701171875,
+        20334.51171875,
+        20104.46484375,
+        19902.576171875,
+        19819.732421875,
+        19877.57421875,
+        20005.759765625,
+        20117.576171875,
+        20178.837890625,
+        20201.396484375,
+        20205.267578125,
+        20201.884765625,
+        20191.943359375,
+        20176.380859375,
+        20178.005859375,
+        20222.4140625,
+        20294.83984375
+      ],
+      "tv800_16": [
+        16242.208984375,
+        16183.6201171875,
+        16093.3388671875,
+        16046.482421875,
+        16047.5927734375,
+        16046.125,
+        15940.2021484375,
+        15742.9912109375,
+        15647.0986328125,
+        15933.6474609375,
+        16696.46484375,
+        18269.859375,
+        19560.513671875,
+        19972.265625,
+        19920.244140625,
+        19812.537109375,
+        19739.552734375,
+        19744.490234375,
+        19802.337890625,
+        19924.400390625,
+        20188.5078125,
+        20334.46875,
+        20352.115234375,
+        20324.611328125,
+        20308.64453125,
+        20302.208984375,
+        20296.125,
+        20322.486328125,
+        20512.794921875,
+        20617.7265625,
+        20603.9296875,
+        20539.943359375,
+        20462.064453125,
+        20233.1015625,
+        19866.458984375,
+        19658.146484375,
+        19843.080078125,
+        20005.896484375,
+        20126.458984375,
+        20150.37109375,
+        20184.369140625,
+        20219.5625,
+        20246.931640625,
+        20273.51953125,
+        20255.43359375,
+        20169.76171875,
+        20226.703125,
+        20315.267578125
+      ],
+      "tv800_40": [
+        16245.931640625,
+        16200.009765625,
+        16124.3359375,
+        16083.6923828125,
+        16082.1142578125,
+        16078.8486328125,
+        15996.84765625,
+        15842.044921875,
+        15760.4365234375,
+        15966.615234375,
+        16674.48828125,
+        18277.525390625,
+        19575.50390625,
+        19917.119140625,
+        19848.962890625,
+        19794.96484375,
+        19754.830078125,
+        19763.447265625,
+        19809.4140625,
+        19911.73828125,
+        20163.7109375,
+        20305.259765625,
+        20330.84765625,
+        20338.6328125,
+        20357.45703125,
+        20376.654296875,
+        20389.03125,
+        20412.876953125,
+        20526.126953125,
+        20573.189453125,
+        20570.373046875,
+        20534.052734375,
+        20473.12890625,
+        20292.837890625,
+        20001.779296875,
+        19845.994140625,
+        20008.75,
+        20109.50390625,
+        20186.080078125,
+        20203.92578125,
+        20234.26171875,
+        20261.765625,
+        20279.908203125,
+        20296.6640625,
+        20283.658203125,
+        20228.333984375,
+        20261.28125,
+        20284.908203125
+      ]
+    }
+  },
+  "regionalAggregate": {
+    "raw": {
+      "triangles": 2301576,
+      "components26": 14076,
+      "meanTissueFraction": 0.4038546526873553,
+      "meanRawDisagreement": 0.0,
+      "totalFilterSeconds": 3.905300400219858e-05,
+      "emptyCores": 0
+    },
+    "gaussian_1p5": {
+      "triangles": 466711,
+      "components26": 196,
+      "meanTissueFraction": 0.3912684122721354,
+      "meanRawDisagreement": 0.11263868543836807,
+      "totalFilterSeconds": 1.548951673990814,
+      "emptyCores": 7
+    },
+    "tv800_16": {
+      "triangles": 570575,
+      "components26": 251,
+      "meanTissueFraction": 0.37322432906539355,
+      "meanRawDisagreement": 0.09331625479239006,
+      "totalFilterSeconds": 11.01543779898202,
+      "emptyCores": 6
+    },
+    "tv800_40": {
+      "triangles": 470164,
+      "components26": 204,
+      "meanTissueFraction": 0.37040117051866317,
+      "meanRawDisagreement": 0.10015982168692131,
+      "totalFilterSeconds": 26.73664659197675,
+      "emptyCores": 7
+    }
+  },
+  "sourceBlocks": {
+    "34_30_35.n5": {
+      "bytes": 3396922,
+      "sha256": "1124a9af76b53dac54729a9bf43e3bfd336863b9eb908cf3e4676e6278014225"
+    },
+    "35_30_35.n5": {
+      "bytes": 3405456,
+      "sha256": "e31109c7faed464b97805ed860f17e0be4a6db253122140a7bfcd77e28d0238a"
+    },
+    "36_30_35.n5": {
+      "bytes": 3404794,
+      "sha256": "71720e252b4fe319d283a7a811b0aeadbd1aefc68de438590f0c96ab06fdb004"
+    },
+    "34_31_35.n5": {
+      "bytes": 3350084,
+      "sha256": "986a1767d950410aa892e1735d7fb27efa8c9f2bab6865d8d1754fd2c2f2ab90"
+    },
+    "35_31_35.n5": {
+      "bytes": 3459975,
+      "sha256": "7b7f1433e7e544dc9c0ef48cddefb39b7570f90ebbd3c8ee6afc4b3ea3849e06"
+    },
+    "36_31_35.n5": {
+      "bytes": 3315267,
+      "sha256": "d37915ff3720849aa941c4e76b6df6ca9d415ade88bc216481a9e572dde95c81"
+    },
+    "34_32_35.n5": {
+      "bytes": 3349898,
+      "sha256": "05711716f7f23a19be6674501b71280b2f752fab5e35b546dea600e2525749e5"
+    },
+    "35_32_35.n5": {
+      "bytes": 3397186,
+      "sha256": "71ac923b4771bda53b9c689541d94272a3250905624e37e089c78e2dadcc1653"
+    },
+    "36_32_35.n5": {
+      "bytes": 3343631,
+      "sha256": "39691fc1eda15ee18b6919f386cceb2cc65004b73b1de1328c35f412f10eb8b7"
+    },
+    "34_30_36.n5": {
+      "bytes": 3438364,
+      "sha256": "9913f26c42500c985e4fb336cb451ddc738b340cda3d8c377c8109550c6bf34b"
+    },
+    "35_30_36.n5": {
+      "bytes": 3450631,
+      "sha256": "99303c22495f73ab313ded866eefb881751d2af4998b23e6466ddf3fa4b98fac"
+    },
+    "36_30_36.n5": {
+      "bytes": 3436941,
+      "sha256": "cfdc3b2b5ded377a7cffea663c94130d1ce50a2c7e85a746d628014abe9b9bd3"
+    },
+    "34_31_36.n5": {
+      "bytes": 3375549,
+      "sha256": "694264dbd5d3c99df6997daf149fd8e1af895acc58cd4baa46542ef60d7b5906"
+    },
+    "35_31_36.n5": {
+      "bytes": 3429508,
+      "sha256": "17c3bc878e3ecc20da169b728bdef9cf75d556c9d4ce7c07cb332af35db1cc40"
+    },
+    "36_31_36.n5": {
+      "bytes": 3366278,
+      "sha256": "d751a490961807b490670e81b104f98b0345075a9804ed5b4dd8d795392fdb24"
+    },
+    "34_32_36.n5": {
+      "bytes": 3384357,
+      "sha256": "4ce0459c506bd40709e5ac5553ed5244d1c17856d71f7bf5fd0b5b65b7a97a80"
+    },
+    "35_32_36.n5": {
+      "bytes": 3362200,
+      "sha256": "3e67ac9ef8520f72254cbc978a94e5c89e7237e732b8266bd07d1920db524667"
+    },
+    "36_32_36.n5": {
+      "bytes": 3342679,
+      "sha256": "5a098977bfa1134abc37ca2f4b260a5e35a8103b310f27fe995c388a90d8d4d0"
+    },
+    "34_30_37.n5": {
+      "bytes": 3477710,
+      "sha256": "4449b8f5aa2854e25249b7076c2c866d91d0e58fa11c7df97c2ccd59f4171e8e"
+    },
+    "35_30_37.n5": {
+      "bytes": 3446451,
+      "sha256": "96732616723146300ff7f345b268696e704abe8ab2f678f76347d5c4ea242abe"
+    },
+    "36_30_37.n5": {
+      "bytes": 3445758,
+      "sha256": "df261e383b153b6f65620009f4404bb7d7fc7aa0ff8fd9f1d108c655090c68cd"
+    },
+    "34_31_37.n5": {
+      "bytes": 3438869,
+      "sha256": "d9204a364d7dd78a22f3ee66cec1c0555bc2a6f3a97c639747f6fb39a465ddea"
+    },
+    "35_31_37.n5": {
+      "bytes": 3374155,
+      "sha256": "366490d70f5abba6400d0aee0f14a8c69c895e228bad9a22b3c717db2db2d757"
+    },
+    "36_31_37.n5": {
+      "bytes": 3461318,
+      "sha256": "71e6bfda20ea110aca998251345ce0c8b9e093e0c1a5b04be1782ac731f630a3"
+    },
+    "34_32_37.n5": {
+      "bytes": 3368512,
+      "sha256": "1e9cdd38062323298fb5d595994b9929afcbdb46009e3b1f9d15b12f20038734"
+    },
+    "35_32_37.n5": {
+      "bytes": 3350644,
+      "sha256": "60f6d3410111e7d201748241d752e0c846245d3a7774f851703bf8405d894781"
+    },
+    "36_32_37.n5": {
+      "bytes": 3325137,
+      "sha256": "6b38c0b2fc97232b5a2ead79ca5e3b0a8ee064fbb40d4bb44684e87393f1b316"
+    },
+    "30_26_2.n5": {
+      "bytes": 3170816,
+      "sha256": "c9ecd66a3dc4ff5abb6cd90f50d47f71a86cfca4ba76470915eacea37f4d7b82"
+    },
+    "27_41_9.n5": {
+      "bytes": 3406866,
+      "sha256": "40f1dae99e81a3a524d127e4f267244ea0700558c5c231c7d8a398f6d4174b61"
+    },
+    "30_32_12.n5": {
+      "bytes": 3252539,
+      "sha256": "a2d347f78b0c9ecdd093504d27370eb37efa3e83272a8dfa7c948cd0e547427c"
+    },
+    "38_36_14.n5": {
+      "bytes": 3235119,
+      "sha256": "e8c471ffb73b2a2d71e6ba40bef06f05d08eaa3c9940dec844bffdb0261297c7"
+    },
+    "34_35_16.n5": {
+      "bytes": 3488516,
+      "sha256": "9539f261f660f0a7eee5916ce008a43c5798250422fcb29473dce6f49ed5593e"
+    },
+    "35_29_18.n5": {
+      "bytes": 3338841,
+      "sha256": "f11a432583bb1f7dbb47b533a23f7c068746c08aa7fc076c934c8eb3b45c1f20"
+    },
+    "29_20_20.n5": {
+      "bytes": 3259068,
+      "sha256": "046ee59e74f9a4be54ac42be61b1160da100d8c30e6842f03ecf967678ade485"
+    },
+    "37_36_21.n5": {
+      "bytes": 3212355,
+      "sha256": "cc57ab670ddec57abde926ba43573a4305897acc82bc91af03110b25441767c0"
+    },
+    "21_19_23.n5": {
+      "bytes": 3152790,
+      "sha256": "be655c8747c0ff4da848f761c9b908097a47b9a8edb5a106146011674a0927f3"
+    },
+    "33_30_24.n5": {
+      "bytes": 3457322,
+      "sha256": "7e3e72ff8b8a13e0a91e06fea6cb9d8719c63eb08c721377d82140ec86d1be5b"
+    },
+    "27_38_25.n5": {
+      "bytes": 3342080,
+      "sha256": "a22f0b7b3eb2dffeedf88df993093bbf6a2d8595c7aff06851fda28cced2fde0"
+    },
+    "24_13_27.n5": {
+      "bytes": 3394967,
+      "sha256": "015e3f22a532da61f98bded37555b9c659f09c2312e883ffd9673fe78f98e52f"
+    },
+    "41_24_28.n5": {
+      "bytes": 3569336,
+      "sha256": "18350d58d2928ea509f1dcd2b62f4b9daec3d6079d63e2b5e370a93bf275c9a1"
+    },
+    "29_31_29.n5": {
+      "bytes": 3211757,
+      "sha256": "810bc958b13363c11173ca47d7c765a9aea329148daac7b677b0efabe9fe0425"
+    },
+    "26_37_30.n5": {
+      "bytes": 3333595,
+      "sha256": "df76d4c172e5cc94ee6a9ac6be7f0498472641ebfc365c829e029d9e04a49894"
+    },
+    "37_42_31.n5": {
+      "bytes": 3333834,
+      "sha256": "824d6d803c0249be557efba8ce5a844438a91a96ad98490a381580994dd11c85"
+    },
+    "27_19_33.n5": {
+      "bytes": 3220609,
+      "sha256": "7a0538b5a11fbc7ac84716ce34529a7e8f2b20c378e7ddc3dab4d8f7dbd6787e"
+    },
+    "23_28_34.n5": {
+      "bytes": 3344754,
+      "sha256": "45a568b498d0a7b9396c60d566af56332054120b4db6092ba744a76852b577d8"
+    },
+    "34_35_35.n5": {
+      "bytes": 3466119,
+      "sha256": "c5bc33b9036d4b206e116eda3b82dcd02811532d790633fd74ca17c93ca59518"
+    },
+    "21_11_37.n5": {
+      "bytes": 3209594,
+      "sha256": "da1578f4289463cf56babc8ebfed5ebbac1f9a60e42ac3e45a4207438d552c5b"
+    },
+    "22_23_38.n5": {
+      "bytes": 3369018,
+      "sha256": "ca04118bf39c4aa9a61d6e1a1b3d950bc721e072686503fc72225a91640038f0"
+    },
+    "34_30_39.n5": {
+      "bytes": 3490642,
+      "sha256": "4c22dcccff8da64cc375fc1cea06668700b6616c134d540d57dc467be92b431f"
+    },
+    "34_37_40.n5": {
+      "bytes": 3438182,
+      "sha256": "2062f76de64d9a0b35e9be55ffa573fa10a24ce816e38309aa341a4fc7ede8c6"
+    },
+    "25_17_42.n5": {
+      "bytes": 3420873,
+      "sha256": "9d600b0c835898e9defa225eec70c0ef688f6c4a43a864710f340122e9e6b0e5"
+    },
+    "16_30_43.n5": {
+      "bytes": 3355677,
+      "sha256": "6c0fd83cebfc6728b4f1840534ac8d063b0697eef2ceacd69b7853e9b1988024"
+    },
+    "30_45_44.n5": {
+      "bytes": 3279394,
+      "sha256": "a7b17f6d174969b7ae3952f5d4b01548a18ed95794dd84028d48f890b6ae8247"
+    },
+    "42_33_46.n5": {
+      "bytes": 3402354,
+      "sha256": "be1c903a5c14c32b1b28e088e130990c7e10e1b9ec66e11e36db163db5d46b1e"
+    },
+    "16_29_48.n5": {
+      "bytes": 3255069,
+      "sha256": "5a2371c926070aecff54cee508fd8d5dd6d4ccf1c3bd9b7b8aed2023310623df"
+    },
+    "19_31_50.n5": {
+      "bytes": 3475066,
+      "sha256": "d97db8e3beda4db5dc28f9dcd66000b5fb12a71e32dd77c58f52bb6374ea365d"
+    },
+    "29_42_52.n5": {
+      "bytes": 3382202,
+      "sha256": "491dfd60abc27b742b62e908dab9c0b9aad8d01216955c8aa64d5f4bbed54dcb"
+    },
+    "24_27_56.n5": {
+      "bytes": 3398051,
+      "sha256": "717d1ec12ad855e4bb69beec108c834b1ac937513123fada2c20f254f6b95fc3"
+    },
+    "23_32_63.n5": {
+      "bytes": 3106007,
+      "sha256": "11c50407d6af1abb418f924f49a37c87bc79b2def37f5cc928eb302a01083a17"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema": "guided-native-whole-scientific-render-v21.1",
+  "scope": "whole-plan",
+  "notBrowserScreenshot": true,
+  "displayLodNotNativeGrid": true,
+  "source": "LADAF-2021-17",
+  "nativeSourceSpacingUm": 19.85,
+  "inputOverviewSamplingUm": 79.4,
+  "displayLodIsLossy": true,
+  "manifestSha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+  "overviewFingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+  "sourceIdentity": {
+    "runFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a",
+    "runManifestSha256": "85e63be2416dfb098463db520404ba6c7d74aace2bf50949714cc4742dd29da7",
+    "corePlanSha256": "3be68c22b4f7a000b6e17b4c159f4d9a630b52884ea434624fc70c25999c6e94",
+    "sourceObjectLedgerSha256": "2418296a32e8d6229e7a46cca9a52d860aec901d74b032f5a8f0a5a90643679d",
+    "plannedCoreBlocks": 37612,
+    "completedOverviewBlocks": 37612,
+    "sourceConfiguration": {
+      "schema": "guided-native-processing-v21.1",
+      "halo": 16,
+      "thresholdRaw": 17133.4,
+      "tvWeightRaw": 800,
+      "tvIterations": 16,
+      "tvStoppingEpsilon": 0,
+      "priorGaussianSigmaVoxels": 0.8,
+      "thinGuard": true,
+      "nativeBandInnerVoxels": 8,
+      "nativeBandOuterVoxels": 12,
+      "nativeSourceSpacingUm": 19.85,
+      "edgeCrossingBits": 5,
+      "overviewSamplingStepNative": 4
+    }
+  },
+  "lod": "overview",
+  "lodTriangles": 1499999,
+  "lodVertices": 369031,
+  "coverageCompleteForRecordedPlan": true,
+  "wholeAnatomicalCoverageEstablished": false,
+  "parts": [
+    {
+      "path": "assets/overview.hfm.gz",
+      "format": "HFM1",
+      "positionFormat": "float32",
+      "positionFlag": 1,
+      "vertices": 369031,
+      "triangles": 1499999,
+      "compressedBytes": 11012293,
+      "decodedBytes": 24642580,
+      "sha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+      "decodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+      "float32PositionMaximumErrorUm": 0.002969187464417982,
+      "float32PositionRmsErrorUm": 0.0010902130512375865,
+      "collapsedTriangles": 0,
+      "flippedTriangles": 0,
+      "losslessGzipRoundTrip": true,
+      "header": [
+        827147848,
+        1,
+        369031,
+        4499997,
+        32,
+        4428404,
+        6642592,
+        1
+      ]
+    }
+  ],
+  "coordinateTransform": {
+    "nativeDimensionsXYZ": [
+      7614,
+      7614,
+      8480
+    ],
+    "nativeXYZCenter": [
+      3806.5,
+      3806.5,
+      4239.5
+    ],
+    "scaleNativeVoxels": 8479.0,
+    "worldXYZ": "((nativeX-3806.5),(nativeZ-4239.5),-(nativeY-3806.5))/8479",
+    "handedness": "right-handed rotation",
+    "positionFormat": "float32",
+    "normalFormat": "normalized signed int16 XYZ",
+    "indexFormat": "uint32",
+    "hfmVersion": 1,
+    "hfmPositionFlag": 1
+  },
+  "worldMillimetersPerUnit": 168.30814999999998,
+  "geometryWorldBounds": {
+    "min": [
+      -0.23772703111171722,
+      -0.46136274933815,
+      -0.3035145699977875
+    ],
+    "max": [
+      0.3011779189109802,
+      0.4595598578453064,
+      0.2720426321029663
+    ]
+  },
+  "projectedWorldBounds": {
+    "min": [
+      -0.2879548469626765,
+      -0.4530694613378934,
+      -0.3367522086020821
+    ],
+    "max": [
+      0.3342136001073154,
+      0.4579195263108744,
+      0.21557048865142506
+    ]
+  },
+  "camera": {
+    "right": [
+      0.8869949227792842,
+      0,
+      -0.4617791755414829
+    ],
+    "up": [
+      -0.12761528355016824,
+      0.9610554383107709,
+      -0.24512605715774508
+    ],
+    "view": [
+      0.44379538795280626,
+      0.27635564856411376,
+      0.8524512942910734
+    ],
+    "center": [
+      -0.0066837758308294646,
+      -0.014414035746317323,
+      -0.06292586010442502
+    ],
+    "pan": [
+      0,
+      0
+    ],
+    "span": 1.0567472256725705,
+    "yawRadians": 0.48,
+    "pitchRadians": 0.28
+  },
+  "orthographicSpanMm": 177.85917057058282,
+  "frameSizePixels": [
+    960,
+    960
+  ],
+  "cutaway": {
+    "normalWorld": [
+      0.44379538795280626,
+      0.27635564856411376,
+      0.8524512942910734
+    ],
+    "offsetWorld": -0.06059085997532854,
+    "normalNativeXYZ": [
+      0.44379538795280626,
+      -0.8524512942910734,
+      0.27635564856411376
+    ],
+    "offsetNativeVoxels": -897.6888371198642,
+    "retainedInequality": "dot(world, normalWorld) <= offsetWorld",
+    "retainedDepthFraction": 0.5,
+    "planePolicy": "Oblique plane normal to the viewing direction; no anatomical orientation or chamber assignment is inferred.",
+    "caps": false
+  },
+  "normalPolicy": "Stored HFM signed-int16 normals, normalized by GLES; identical normal data for both views. No recomputation or geometry modification.",
+  "zeroStoredNormals": 0,
+  "geometryModification": false,
+  "extraSmoothing": false,
+  "extraSimplification": false,
+  "networkRequests": 0,
+  "sourceIntensityBytesRead": 0,
+  "nativeGridPayloadBytesRead": 0,
+  "renderer": {
+    "driver": {
+      "vendor": "Mesa",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+      "shadingLanguage": "OpenGL ES GLSL ES 3.20"
+    },
+    "shaderSource": "public/whole-native.js",
+    "shaderSourceSha256": "b738c0245b3d6652011f794b7b9d1a1eedf8e13a9c1a499af22e569149027402",
+    "shaderSha256": {
+      "vertex": "772df3df50e93487a892f68c4b160b23e861bd8ec49d6689eb40d992b9254198",
+      "fragment": "cdc979a7666200a4ba23251670f4f1b1b35ac7ebc832404db867eb7f15b82e48",
+      "pickFragment": "5562458d3607a2b753ab34bf28167a075a9db47a00a7fc4800f95ab251ee5866"
+    },
+    "helperSource": "docs/guided-native-v21/whole-viewer-gl-check.py",
+    "helperSha256": "be71104f18fbbc8f0e5dc8f57d4aaf16ef92a9259b19f6a4edbefe2f58958da6",
+    "baseRendererSha256": "cc82af61b7dcdaec4ce409cd96a8d2565afd984fad49ac3296ce7e099969b78c",
+    "scriptSha256": "fe74dd9651b7c207dab7281b2358bc1c2199b92d101444422e0603334172a2f4",
+    "backend": "Surfaceless Mesa EGL/GLES3",
+    "triangleBatchSize": 30000,
+    "meshMemoryPolicy": "Verified gzip to temporary mmap; expanded small triangle batches; fixed reusable GL buffers; mapped pages released between batches."
+  },
+  "outputs": {
+    "exterior": {
+      "path": "exterior.png",
+      "sha256": "abe08f5d6a100c949633e51523714f51d65ed5b63d98c67d7f68ac5548b1b910",
+      "bytes": 457298,
+      "rgbaPixelSha256": "6f168995d1605b2ea6664e2b9ddf9dd307650598afa388f9ba243446faa2a3f9",
+      "submittedTriangles": 1499999,
+      "batches": 50,
+      "foregroundPixels": 300443,
+      "foregroundPixelBounds": [
+        198,
+        66,
+        762,
+        892
+      ]
+    },
+    "cutaway": {
+      "path": "cutaway.png",
+      "sha256": "19b67b800c46a60fb0166fc948ae80fcaab2ce513875b018753e6480cc4c9ba9",
+      "bytes": 494132,
+      "rgbaPixelSha256": "03df3c11eb9c9b4d52edf1acd60969ff6c744ab3a0edaa4adff4d04a2f26f885",
+      "submittedTriangles": 1499999,
+      "batches": 50,
+      "foregroundPixels": 251392,
+      "foregroundPixelBounds": [
+        257,
+        115,
+        760,
+        892
+      ]
+    }
+  },
+  "peakRssMiB": 118.15234375,
+  "seconds": 1.9879247740027495,
+  "limitations": [
+    "This simplified 79.4 micrometre display LOD is not the native-grid surface archive.",
+    "The source uses lossy denoising and coarse-prior guidance; weak structures and structures outside the guide can be absent.",
+    "Display simplification can change topology. The figure does not validate anatomy, volume coverage, mobile interaction or FPS."
+  ],
+  "figure": {
+    "path": "whole-overview.png",
+    "sha256": "e86b705d9153c12b567da4a0ab173619287ead280a53af4ff2faed8560e16631",
+    "bytes": 998315,
+    "width": 2004,
+    "height": 1250
+  },
+  "scaleBar": {
+    "lengthMm": 20,
+    "lengthPixels": 107.95057650614953,
+    "physicalProjection": "Orthographic, identical in both panels"
+  },
+  "annotationPolicy": "Only source, display sampling, acquisition axes, physical scale and viewing-plane labels; no inferred chamber labels.",
+  "compositionPeakRssMiB": 35.140625,
+  "watchdog": {
+    "childLimitMiB": 225,
+    "actualChildPeaksMiB": {
+      "raster": 118.15234375,
+      "compose": 35.140625
+    },
+    "method": "Each child polls its own RUSAGE_SELF peak RSS every 50 ms; external launcher PIDs are not used.",
+    "parentPeakRssMiB": 13.375,
+    "stagesSequential": true
+  }
+}

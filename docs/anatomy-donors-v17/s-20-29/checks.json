@@ -1,0 +1,228 @@
+{
+  "asset": "labels-v17-228d1bbd4896.raw.gz",
+  "compressedBytes": 328222,
+  "decodedBytes": 32457947,
+  "gzipHashAndRoundTrip": true,
+  "allSixRegionIdsPresent": true,
+  "originalSourceUnchanged": true,
+  "originalNeutralAssetUnchanged": true,
+  "physicalRegistrationVerified": true,
+  "outsideAnnotationSupportVoxels": 0,
+  "expertValidated": false,
+  "notAnAccuracyEstimate": true,
+  "pointChecks": {
+    "matched": 13,
+    "total": 13,
+    "records": [
+      {
+        "name": "LV lateral compact wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          378,
+          225,
+          280
+        ],
+        "actualRegion": 1,
+        "matched": true,
+        "sourceIntensity": 20688,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "LV basal lateral wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          365,
+          221,
+          210
+        ],
+        "actualRegion": 1,
+        "matched": true,
+        "sourceIntensity": 20607,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "LV compact septum",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          263,
+          222,
+          310
+        ],
+        "actualRegion": 1,
+        "matched": true,
+        "sourceIntensity": 20364,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "RV free wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          120,
+          240,
+          280
+        ],
+        "actualRegion": 2,
+        "matched": true,
+        "sourceIntensity": 20534,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "RV apical free wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          161,
+          242,
+          389
+        ],
+        "actualRegion": 2,
+        "matched": true,
+        "sourceIntensity": 20047,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "LA superior wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          293,
+          138,
+          110
+        ],
+        "actualRegion": 3,
+        "matched": true,
+        "sourceIntensity": 20202,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "LA lateral wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          355,
+          170,
+          140
+        ],
+        "actualRegion": 3,
+        "matched": true,
+        "sourceIntensity": 20437,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "RA outer wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          57,
+          237,
+          160
+        ],
+        "actualRegion": 4,
+        "matched": true,
+        "sourceIntensity": 20236,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "RA superior wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          111,
+          211,
+          98
+        ],
+        "actualRegion": 4,
+        "matched": true,
+        "sourceIntensity": 19926,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "Aortic lateral wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          123,
+          270,
+          100
+        ],
+        "actualRegion": 5,
+        "matched": true,
+        "sourceIntensity": 21434,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "Aortic basal wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          237,
+          220,
+          160
+        ],
+        "actualRegion": 5,
+        "matched": true,
+        "sourceIntensity": 20336,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "Pulmonary lateral wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          279,
+          301,
+          131
+        ],
+        "actualRegion": 6,
+        "matched": true,
+        "sourceIntensity": 20897,
+        "role": "Withheld source-review identity point"
+      },
+      {
+        "name": "Pulmonary basal wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          278,
+          309,
+          173
+        ],
+        "actualRegion": 6,
+        "matched": true,
+        "sourceIntensity": 20842,
+        "role": "Withheld source-review identity point"
+      }
+    ]
+  },
+  "connectivity": {
+    "1": {
+      "components": 1,
+      "largestComponentVoxels": 2050548,
+      "totalVoxels": 2050548,
+      "largestComponentFraction": 1.0
+    },
+    "2": {
+      "components": 1,
+      "largestComponentVoxels": 1055851,
+      "totalVoxels": 1055851,
+      "largestComponentFraction": 1.0
+    },
+    "3": {
+      "components": 3,
+      "largestComponentVoxels": 374597,
+      "totalVoxels": 374646,
+      "largestComponentFraction": 0.9998692098674482
+    },
+    "4": {
+      "components": 1,
+      "largestComponentVoxels": 366025,
+      "totalVoxels": 366025,
+      "largestComponentFraction": 1.0
+    },
+    "5": {
+      "components": 1,
+      "largestComponentVoxels": 218388,
+      "totalVoxels": 218388,
+      "largestComponentFraction": 1.0
+    },
+    "6": {
+      "components": 1,
+      "largestComponentVoxels": 165593,
+      "totalVoxels": 165593,
+      "largestComponentFraction": 1.0
+    }
+  },
+  "sourceSha256": "ef0027bad1851c72f6288743cd06ac42d49e8ab2bad62bdd83b74801af4f11e9",
+  "rawSha256": "228d1bbd48966c1752b67e28b98bca08e654466ba86c5739631cde68674cbf05"
+}

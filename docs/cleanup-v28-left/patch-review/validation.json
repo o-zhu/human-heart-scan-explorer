@@ -1,0 +1,77 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 54,
+    "decodedBrickReads": 126,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "serial": [
+    {
+      "y": 980,
+      "sourcePlaneSha256": "3a3b72681a7cdfaf7ab5f96ec42ab2edf21d45df3a3a78a5e6844d12179e3733",
+      "originalForeground": 37046,
+      "refinedForeground": 35400,
+      "removedForeground": 1646,
+      "protected135Samples": 17864,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    },
+    {
+      "y": 1000,
+      "sourcePlaneSha256": "54cc56ed8ca78a8078a545131c399e29dc9007aa9f617389dfafcefabc5530c9",
+      "originalForeground": 29775,
+      "refinedForeground": 26594,
+      "removedForeground": 3181,
+      "protected135Samples": 13017,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    },
+    {
+      "y": 1020,
+      "sourcePlaneSha256": "1dd59db37d131290736f90d08b358708bd6dcfec0ba84ba47f2d41c8da195a56",
+      "originalForeground": 23556,
+      "refinedForeground": 18897,
+      "removedForeground": 4659,
+      "protected135Samples": 9279,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    },
+    {
+      "y": 1044,
+      "sourcePlaneSha256": "70b6dfa16f5e05a9641f4adc5e058ac2c03c4e66bc1f3ba2113546ca9b060f61",
+      "originalForeground": 18100,
+      "refinedForeground": 13459,
+      "removedForeground": 4641,
+      "protected135Samples": 7331,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    },
+    {
+      "y": 1060,
+      "sourcePlaneSha256": "4abbb6a30158bda96e3c36368167a989b9e78cd9a9781e7d3616910b740a44c4",
+      "originalForeground": 19750,
+      "refinedForeground": 14258,
+      "removedForeground": 5492,
+      "protected135Samples": 8419,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    },
+    {
+      "y": 1080,
+      "sourcePlaneSha256": "dc0f3d40a9279520c4d136f93bce999a142744ff56f4c4e10bb7e7cc4a31fd74",
+      "originalForeground": 24599,
+      "refinedForeground": 17737,
+      "removedForeground": 6862,
+      "protected135Samples": 9126,
+      "lostProtected135Samples": 0,
+      "maximumThreshold": 120.0
+    }
+  ],
+  "scope": "Serial display-isovalue review, not tissue classification or clinical validation."
+}

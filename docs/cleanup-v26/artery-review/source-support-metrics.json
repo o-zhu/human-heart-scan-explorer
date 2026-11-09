@@ -1,0 +1,312 @@
+{
+  "metrics": [
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        245,
+        465
+      ],
+      "sourceXYZ": [
+        918.63818359375,
+        1142.6256103515625,
+        482.9704895019531
+      ],
+      "component": 7,
+      "reviewCavity": true,
+      "spatialMask": false,
+      "raw": 65,
+      "sigma05": 69.20872497558594,
+      "sigma08": 70.78728485107422,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 7.615773105863909,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        325,
+        450
+      ],
+      "sourceXYZ": [
+        966.7486572265625,
+        1098.005126953125,
+        473.70623779296875
+      ],
+      "component": 7,
+      "reviewCavity": true,
+      "spatialMask": true,
+      "raw": 76,
+      "sigma05": 73.30101776123047,
+      "sigma08": 69.06312561035156,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 14.142135623730951,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        285,
+        550
+      ],
+      "sourceXYZ": [
+        946.1182861328125,
+        1150.3824462890625,
+        538.0404052734375
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 133,
+      "sigma05": 118.33068084716797,
+      "sigma08": 107.63262939453125,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.0,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        320,
+        575
+      ],
+      "sourceXYZ": [
+        969.3780517578125,
+        1153.728271484375,
+        553.7763061523438
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 44,
+      "sigma05": 64.23680877685547,
+      "sigma08": 80.96189880371094,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.4142135623730951,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        335,
+        605
+      ],
+      "sourceXYZ": [
+        980.7881469726562,
+        1170.5963134765625,
+        570.88720703125
+      ],
+      "component": 287135,
+      "reviewCavity": true,
+      "spatialMask": true,
+      "raw": 61,
+      "sigma05": 66.67682647705078,
+      "sigma08": 68.67850494384766,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 11.0,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        300,
+        635
+      ],
+      "sourceXYZ": [
+        959.1774291992188,
+        1176.5411376953125,
+        589.3154907226562
+      ],
+      "component": 7,
+      "reviewCavity": true,
+      "spatialMask": false,
+      "raw": 85,
+      "sigma05": 71.73719787597656,
+      "sigma08": 69.0750503540039,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 3.1622776601683795,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        280,
+        680
+      ],
+      "sourceXYZ": [
+        948.4380493164062,
+        1190.861328125,
+        615.2794189453125
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 28,
+      "sigma05": 46.735233306884766,
+      "sigma08": 67.90847778320312,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 2.23606797749979,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        390,
+        400
+      ],
+      "sourceXYZ": [
+        1007.6849975585938,
+        1030.5474853515625,
+        437.8380432128906
+      ],
+      "component": 7,
+      "reviewCavity": true,
+      "spatialMask": true,
+      "raw": 76,
+      "sigma05": 72.01242065429688,
+      "sigma08": 67.65582275390625,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 13.0,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        365,
+        460
+      ],
+      "sourceXYZ": [
+        992.1417236328125,
+        1068.892578125,
+        481.1886901855469
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 19,
+      "sigma05": 45.74794006347656,
+      "sigma08": 71.09709167480469,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.4142135623730951,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        260,
+        710
+      ],
+      "sourceXYZ": [
+        937.4881591796875,
+        1201.2203369140625,
+        631.9913330078125
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 76,
+      "sigma05": 80.48249816894531,
+      "sigma08": 87.25878143310547,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.4142135623730951,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        360,
+        420
+      ],
+      "sourceXYZ": [
+        683.090087890625,
+        999.3455810546875,
+        458.7751770019531
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 88,
+      "sigma05": 93.556396484375,
+      "sigma08": 100.55519104003906,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.0,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        250,
+        540
+      ],
+      "sourceXYZ": [
+        614.8306274414062,
+        1154.192626953125,
+        547.5908813476562
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 48,
+      "sigma05": 61.10582733154297,
+      "sigma08": 76.20649719238281,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.4142135623730951,
+      "foregroundDistanceFineSamples": 1.0
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        420,
+        560
+      ],
+      "sourceXYZ": [
+        732.9488525390625,
+        976.3530883789062,
+        578.7830810546875
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 79,
+      "sigma05": 90.80470275878906,
+      "sigma08": 101.78008270263672,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 1.0,
+      "foregroundDistanceFineSamples": 0.0
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        400,
+        650
+      ],
+      "sourceXYZ": [
+        727.3909301757812,
+        1212.94140625,
+        616.9158935546875
+      ],
+      "component": 7,
+      "reviewCavity": false,
+      "spatialMask": false,
+      "raw": 65,
+      "sigma05": 73.55641174316406,
+      "sigma08": 85.26687622070312,
+      "strongComponentSamples": 0,
+      "wallDistanceFineSamples": 2.23606797749979,
+      "foregroundDistanceFineSamples": 0.0
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 454,
+    "decodedBrickReads": 1440,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "reviewStage": "First v26 candidate, before actual-geometry membership refinement",
+  "isFinalReleaseAcceptance": false
+}

@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-11-04",
+  "specimen": "LADAF-2021-17",
+  "datasetDoi": "10.15151/ESRF-DC-1634390196",
+  "reviewType": "Independent visual regression review with manually selected landmarks, followed by separate contour-refinement checks",
+  "candidateSha256": "da36ab4d08bf0c114d4e5b44dfaaa4e4abad7a48680b863bd455b45a5b57d64d",
+  "candidateDimensionsXYZ": [
+    317,
+    317,
+    354
+  ],
+  "previousSha256": "b30acbf76f76387761c69e1ac4f90e2650305b0aa4e0117503d338394adb7efe",
+  "coordinateConvention": "Source-s4 XYZ voxel centers, source dimensions 475x475x530, spacing 317.6 um; endpoint-aligned nearest label sampling.",
+  "sourceEvidence": "Unmodified source-s3 (158.8um) orthogonal images were reviewed for anatomy; source-s4 intensities were read at the exact landmark coordinates. Review display window 16000-23500 does not alter the scan data.",
+  "independentLandmarks": {
+    "selectionTiming": "All 20 center coordinates and expected regional identities were selected before the first revised candidate map was available. The six contour-refinement points below were selected later and are explicitly excluded from this set.",
+    "selectionMethod": "Visual identification of dense compact/septal LV myocardium, RA free-wall continuation below the old flat cutoff, and RV/LV free-wall controls in orthogonal source sections. Points with source intensity <= 17500 were excluded before candidate review.",
+    "scope": "Targeted regression landmarks, not a random sample, expert ground-truth label set, clinical validation or segmentation-accuracy estimate.",
+    "previousMatches": 5,
+    "revisedMatches": 20,
+    "count": 20,
+    "neighborhoodCheck": "Each 5x5x5 source-s4 neighborhood was filtered to measured tissue above 17500; all retained voxels in each revised neighborhood receive that landmark expected regional identity. The small neighborhoods verify local continuity, not anatomic accuracy.",
+    "points": [
+      {
+        "name": "lv_septal_compact_225",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          225,
+          235,
+          320
+        ],
+        "sourceIntensity": 19495,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "lv_septal_compact_250",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          250,
+          230,
+          300
+        ],
+        "sourceIntensity": 20131,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 123
+        },
+        "oldPatchLabels": {
+          "2": 123
+        }
+      },
+      {
+        "name": "lv_septal_compact_200",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          200,
+          230,
+          400
+        ],
+        "sourceIntensity": 19896,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "1": 38,
+          "2": 87
+        }
+      },
+      {
+        "name": "lv_septal_compact_237",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          237,
+          226,
+          350
+        ],
+        "sourceIntensity": 19527,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "lv_basal_compact_237",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          237,
+          320,
+          275
+        ],
+        "sourceIntensity": 19832,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "ra_free_wall_237_lower",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          237,
+          150,
+          295
+        ],
+        "sourceIntensity": 18679,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 81
+        },
+        "oldPatchLabels": {
+          "2": 81
+        }
+      },
+      {
+        "name": "ra_free_wall_237_fold",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          237,
+          165,
+          278
+        ],
+        "sourceIntensity": 18667,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 110
+        },
+        "oldPatchLabels": {
+          "2": 110
+        }
+      },
+      {
+        "name": "ra_free_wall_250",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          250,
+          172,
+          278
+        ],
+        "sourceIntensity": 18940,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "ra_free_wall_225",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          225,
+          155,
+          280
+        ],
+        "sourceIntensity": 19086,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 120
+        },
+        "oldPatchLabels": {
+          "2": 120
+        }
+      },
+      {
+        "name": "ra_free_wall_200",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          200,
+          139,
+          293
+        ],
+        "sourceIntensity": 17971,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 110
+        },
+        "oldPatchLabels": {
+          "2": 110
+        }
+      },
+      {
+        "name": "rv_free_wall_237",
+        "expectedReviewedRegion": 2,
+        "sourceXYZ": [
+          237,
+          152,
+          350
+        ],
+        "sourceIntensity": 19127,
+        "oldLabel": 2,
+        "newLabel": 2,
+        "newPatchLabels": {
+          "2": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "rv_free_wall_200",
+        "expectedReviewedRegion": 2,
+        "sourceXYZ": [
+          200,
+          140,
+          350
+        ],
+        "sourceIntensity": 18624,
+        "oldLabel": 2,
+        "newLabel": 2,
+        "newPatchLabels": {
+          "2": 121
+        },
+        "oldPatchLabels": {
+          "2": 121
+        }
+      },
+      {
+        "name": "lv_free_wall_237",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          237,
+          334,
+          400
+        ],
+        "sourceIntensity": 19618,
+        "oldLabel": 1,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "1": 125
+        }
+      },
+      {
+        "name": "lv_free_wall_225",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          225,
+          325,
+          400
+        ],
+        "sourceIntensity": 19629,
+        "oldLabel": 1,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "1": 125
+        }
+      },
+      {
+        "name": "rv_heldout_180",
+        "expectedReviewedRegion": 2,
+        "sourceXYZ": [
+          180,
+          130,
+          330
+        ],
+        "sourceIntensity": 20019,
+        "oldLabel": 2,
+        "newLabel": 2,
+        "newPatchLabels": {
+          "2": 99
+        },
+        "oldPatchLabels": {
+          "2": 99
+        }
+      },
+      {
+        "name": "ra_heldout_190",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          190,
+          130,
+          290
+        ],
+        "sourceIntensity": 18264,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 120
+        },
+        "oldPatchLabels": {
+          "2": 120
+        }
+      },
+      {
+        "name": "ra_heldout_210",
+        "expectedReviewedRegion": 4,
+        "sourceXYZ": [
+          210,
+          140,
+          300
+        ],
+        "sourceIntensity": 19640,
+        "oldLabel": 2,
+        "newLabel": 4,
+        "newPatchLabels": {
+          "4": 114
+        },
+        "oldPatchLabels": {
+          "2": 114
+        }
+      },
+      {
+        "name": "lv_heldout_190",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          190,
+          250,
+          360
+        ],
+        "sourceIntensity": 19999,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "lv_heldout_280",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          280,
+          220,
+          310
+        ],
+        "sourceIntensity": 19694,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      },
+      {
+        "name": "lv_heldout_y250",
+        "expectedReviewedRegion": 1,
+        "sourceXYZ": [
+          230,
+          250,
+          310
+        ],
+        "sourceIntensity": 19510,
+        "oldLabel": 2,
+        "newLabel": 1,
+        "newPatchLabels": {
+          "1": 125
+        },
+        "oldPatchLabels": {
+          "2": 125
+        }
+      }
+    ]
+  },
+  "refinementLandmarks": {
+    "selectionTiming": "Selected after viewing candidate 1 to refine the visible LV free-wall contour undershoot. These are implementation/refinement checks, not independent validation.",
+    "revisedMatches": 6,
+    "count": 6,
+    "points": [
+      {
+        "sourceXYZ": [
+          275,
+          225,
+          395
+        ],
+        "sourceIntensity": 19782,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      },
+      {
+        "sourceXYZ": [
+          280,
+          230,
+          400
+        ],
+        "sourceIntensity": 19671,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      },
+      {
+        "sourceXYZ": [
+          280,
+          245,
+          410
+        ],
+        "sourceIntensity": 19424,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      },
+      {
+        "sourceXYZ": [
+          350,
+          235,
+          340
+        ],
+        "sourceIntensity": 19017,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      },
+      {
+        "sourceXYZ": [
+          360,
+          255,
+          340
+        ],
+        "sourceIntensity": 20015,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      },
+      {
+        "sourceXYZ": [
+          365,
+          275,
+          340
+        ],
+        "sourceIntensity": 19688,
+        "expectedReviewedRegion": 1,
+        "candidateLabel": 1,
+        "role": "Contour-refinement check chosen after reviewing candidate 1, not held-out validation"
+      }
+    ]
+  },
+  "qualitativeMultiplanarChecks": [
+    {
+      "planes": [
+        "X190",
+        "X225",
+        "X237",
+        "X260"
+      ],
+      "finding": "The major compact LV/ septal body remains continuous in LV color; RA wall follows the oblique annular transition instead of ending in a flat source-Z band."
+    },
+    {
+      "planes": [
+        "X275",
+        "X280",
+        "Z340"
+      ],
+      "finding": "The refined free-wall contour covers the previously missed continuous LV myocardium; the long diagonal RV/neutral stripe through the LV exterior is removed. Nearby fibroadipose and vascular areas can remain neutral."
+    },
+    {
+      "planes": [
+        "Y160",
+        "Y210"
+      ],
+      "finding": "RV free-wall tissue is retained while the continuous LV compact body receives LV color across the orthogonal direction."
+    },
+    {
+      "planes": [
+        "Z260",
+        "Z340",
+        "Z420"
+      ],
+      "finding": "Basal atrial/ventricular regions and the distal RV crescent remain distinct; the interventricular border follows the reviewed compact myocardial envelope."
+    }
+  ],
+  "evidenceFiles": [
+    "anatomy-boundary-before-after.jpg",
+    "anatomy-independent-multiplanar-review.jpg",
+    "anatomy-outer-wall-review.jpg"
+  ],
+  "recommendation": "The candidate materially repairs the specific nearest-cavity septal split and flat atrial cutoff and is suitable for the approximate regional educational overlay.",
+  "remainingLimits": [
+    "No expert reference segmentation or Dice/accuracy estimate is available.",
+    "The shared septum, annular and valvar tissue, atrial appendages, and great-vessel transitions remain approximate regional assignments.",
+    "The review does not claim computed fiber tractography or direct identification of every cardiomyocyte orientation.",
+    "Coronary, caval, pulmonary venous and valve-specific structures are not individually segmented by these six regional labels.",
+    "Do not use the custom color layer for chamber-volume, wall-thickness, procedural or diagnostic measurements."
+  ]
+}

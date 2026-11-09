@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "id": "ladaf-reviewed-source-surfaces-v28",
+  "donorId": "ladaf-2021-17",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceMeshDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "sourceSpacingUm": 79.4,
+  "threshold": 0.28,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "patches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "lowerFullFineXYZ": [
+        1048,
+        944,
+        1080
+      ],
+      "upperFullFineXYZ": [
+        1212,
+        1120,
+        1372
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-policy.json",
+        "sha256": "7d3bcb3d380775d77692e3a764dcf562d0ab12ac1036b0fd761605a73a9b710e"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 140253,
+        "triangles": 282600,
+        "vertexCount": 140253,
+        "indexCount": 847800,
+        "positionOffset": 32,
+        "normalOffset": 841552,
+        "indexOffset": 1683072,
+        "compressedBytes": 2998934,
+        "decodedBytes": 5074272,
+        "sha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+        "decodedSha256": "92cec7c8107f4327e566b93a1cf6497e9e48bf36fc4da21ce9d8bfed1c2622bc",
+        "bounds": {
+          "min": [
+            0.04725898057222366,
+            0.010396975092589855,
+            -0.08081285655498505
+          ],
+          "max": [
+            0.12429111450910568,
+            0.1479206085205078,
+            0.0018903592135757208
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5074236,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          1048,
+          944,
+          1080
+        ],
+        "upperFullFineXYZ": [
+          1212,
+          1120,
+          1372
+        ],
+        "dimensionsXYZ": [
+          164,
+          176,
+          292
+        ],
+        "storageDimensionsXYZ": [
+          21,
+          176,
+          292
+        ],
+        "compressedBytes": 213638,
+        "decodedBytes": 1079232,
+        "sha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+        "decodedSha256": "ae767162fde094550f552da414ad5de04a3845282fbaa1c3025340c0ca0295cc",
+        "maskedVoxels": 581627,
+        "url": "./assets/cleanup-v28/lvot-perivalvular-refinement-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "lowerFullFineXYZ": [
+        600,
+        660,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        870,
+        1040,
+        1350
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-right/patch/tricuspid-core-surface-policy.json",
+        "sha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 154271,
+        "triangles": 302706,
+        "vertexCount": 154271,
+        "indexCount": 908118,
+        "positionOffset": 32,
+        "normalOffset": 925660,
+        "indexOffset": 1851288,
+        "compressedBytes": 3210789,
+        "decodedBytes": 5483760,
+        "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+        "decodedSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+        "bounds": {
+          "min": [
+            -0.16446125507354736,
+            -0.01795841194689274,
+            -0.043005671352148056
+          ],
+          "max": [
+            -0.03733459487557411,
+            0.13752363622188568,
+            0.13610586524009705
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 5483724,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          600,
+          660,
+          1020
+        ],
+        "upperFullFineXYZ": [
+          870,
+          1040,
+          1350
+        ],
+        "dimensionsXYZ": [
+          270,
+          380,
+          330
+        ],
+        "storageDimensionsXYZ": [
+          34,
+          380,
+          330
+        ],
+        "compressedBytes": 342653,
+        "decodedBytes": 4263600,
+        "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+        "decodedSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+        "maskedVoxels": 769532,
+        "url": "./assets/cleanup-v28/tricuspid-core-surface-low-band.bits.gz"
+      }
+    },
+    {
+      "id": "pulmonary-valve-lumen-surface",
+      "lowerFullFineXYZ": [
+        604,
+        1080,
+        540
+      ],
+      "upperFullFineXYZ": [
+        790,
+        1360,
+        972
+      ],
+      "reviewPolicy": {
+        "path": "docs/cleanup-v28-right/patch/pulmonary-valve-lumen-surface-policy.json",
+        "sha256": "ee2c10ca7d0b912c2cb71760364b6f5fc7efaac971513d3a563f69fa2c7cfd35"
+      },
+      "sourceSigmaFineSamples": 0.5,
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 120.0,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 242338,
+        "triangles": 535534,
+        "vertexCount": 242338,
+        "indexCount": 1606602,
+        "positionOffset": 32,
+        "normalOffset": 1454060,
+        "indexOffset": 2908088,
+        "compressedBytes": 5324033,
+        "decodedBytes": 9334496,
+        "sha256": "01887f732cb6f8fbc2d2d2e0e53b926c022c0a696bd66c1b091dbb17b430ca3e",
+        "decodedSha256": "90f1c07ba2f9126dfc163803417cdaf31212bdc6f8df35ed336892904e991802",
+        "bounds": {
+          "min": [
+            -0.16257089376449585,
+            -0.24480150640010834,
+            -0.19423440098762512
+          ],
+          "max": [
+            -0.0751417800784111,
+            -0.04111531376838684,
+            -0.06238185241818428
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 9334464,
+        "url": "./assets/cleanup-v28/pulmonary-valve-lumen-surface.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          604,
+          1080,
+          540
+        ],
+        "upperFullFineXYZ": [
+          790,
+          1360,
+          972
+        ],
+        "dimensionsXYZ": [
+          186,
+          280,
+          432
+        ],
+        "storageDimensionsXYZ": [
+          24,
+          280,
+          432
+        ],
+        "compressedBytes": 407714,
+        "decodedBytes": 2903040,
+        "sha256": "4ed772ebefff497501ed9500bbdcd80c91619909894171640e34af8e0426e18b",
+        "decodedSha256": "6334a47920260536ab51b007708c71ddc3550f4b304bcf073fe6d28a9d34ce5a",
+        "maskedVoxels": 970563,
+        "url": "./assets/cleanup-v28/pulmonary-valve-lumen-surface-low-band.bits.gz"
+      }
+    }
+  ],
+  "activation": "Atomic replacement only on the matching Ultra-high Fidelity surface with tissue, detached-debris and reviewed-lumen cleanup enabled. Original geometry remains available.",
+  "processing": "Local source-gradient isosurfaces with serially reviewed intensity envelopes and smooth collars; compact detached fragments use the established display-cleanup rules.",
+  "limitations": [
+    "Windowed HiP-CT values are not calibrated Hounsfield units.",
+    "Original source arrays, CT cards and source mesh payloads remain unchanged.",
+    "Patch borders retain the original extraction isovalue but are not welded to the decimated original surface.",
+    "Preserved high-intensity cores and measured mesh-distance checks do not establish clinical anatomical validity.",
+    "These 79.4 \u00b5m patches do not add native 19.85 \u00b5m sampling."
+  ]
+}

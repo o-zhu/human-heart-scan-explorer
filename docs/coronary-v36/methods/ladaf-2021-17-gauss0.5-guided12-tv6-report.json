@@ -1,0 +1,185 @@
+{
+  "donor": "ladaf-2021-17",
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.12,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sourceHash": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+  "sourceCalibration": "Windowed uint8 HiP-CT display intensities; not calibrated HU.",
+  "checks": [
+    {
+      "donor": "ladaf-2021-17",
+      "method": "gauss0.5",
+      "threshold": 0.36,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7676625,
+      "fieldSha256": "44fc9ccfe8cf8b6ad38bf375edf41037067524b78c83bc7a18ed35b10017f464",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.2446776180004235,
+      "nativeRenderSeconds": 0.5494317379998392,
+      "file": "ladaf-2021-17-gauss0.5-0.360.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "gauss0.5",
+      "threshold": 0.38,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7372034,
+      "fieldSha256": "44fc9ccfe8cf8b6ad38bf375edf41037067524b78c83bc7a18ed35b10017f464",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.2446776180004235,
+      "nativeRenderSeconds": 0.5348300870027742,
+      "file": "ladaf-2021-17-gauss0.5-0.380.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "gauss0.5",
+      "threshold": 0.4,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7083625,
+      "fieldSha256": "44fc9ccfe8cf8b6ad38bf375edf41037067524b78c83bc7a18ed35b10017f464",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.2446776180004235,
+      "nativeRenderSeconds": 0.527252995998424,
+      "file": "ladaf-2021-17-gauss0.5-0.400.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "guided12",
+      "threshold": 0.36,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7583320,
+      "fieldSha256": "d9861403b0dd0bc7e1028e700f3e49ccd8d575a62996318621b0d140a6d17ce5",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 5.094273037997482,
+      "nativeRenderSeconds": 0.514508885993564,
+      "file": "ladaf-2021-17-guided12-0.360.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "guided12",
+      "threshold": 0.38,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7312116,
+      "fieldSha256": "d9861403b0dd0bc7e1028e700f3e49ccd8d575a62996318621b0d140a6d17ce5",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 5.094273037997482,
+      "nativeRenderSeconds": 0.445172009000089,
+      "file": "ladaf-2021-17-guided12-0.380.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "guided12",
+      "threshold": 0.4,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7056922,
+      "fieldSha256": "d9861403b0dd0bc7e1028e700f3e49ccd8d575a62996318621b0d140a6d17ce5",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 5.094273037997482,
+      "nativeRenderSeconds": 0.5037962319984217,
+      "file": "ladaf-2021-17-guided12-0.400.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "tv6",
+      "threshold": 0.36,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7611281,
+      "fieldSha256": "d4a89c6532a7cac13ff2489288b262cb3ad7853087cd35e45ef270e36dd1f4fb",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.4823524669991457,
+      "nativeRenderSeconds": 0.74529017599707,
+      "file": "ladaf-2021-17-tv6-0.360.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "tv6",
+      "threshold": 0.38,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7329952,
+      "fieldSha256": "d4a89c6532a7cac13ff2489288b262cb3ad7853087cd35e45ef270e36dd1f4fb",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.4823524669991457,
+      "nativeRenderSeconds": 0.9298767840009532,
+      "file": "ladaf-2021-17-tv6-0.380.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "tv6",
+      "threshold": 0.4,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7069024,
+      "fieldSha256": "d4a89c6532a7cac13ff2489288b262cb3ad7853087cd35e45ef270e36dd1f4fb",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.4823524669991457,
+      "nativeRenderSeconds": 0.91889242400066,
+      "file": "ladaf-2021-17-tv6-0.400.png"
+    }
+  ],
+  "scope": "Native EGL production GLSL. Image comparison is not anatomical segmentation accuracy or clinical validation. Original sources remain immutable."
+}

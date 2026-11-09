@@ -1,0 +1,37 @@
+{
+  "datasetId": "2298521860",
+  "reviewedHeartRoiSourceHighXYZ": [
+    [
+      280,
+      404
+    ],
+    [
+      134,
+      310
+    ],
+    [
+      180,
+      300
+    ]
+  ],
+  "registeredRoiInclusiveXYZ": [
+    [
+      280,
+      405
+    ],
+    [
+      134,
+      311
+    ],
+    [
+      180,
+      301
+    ]
+  ],
+  "thresholdRaw": 24100,
+  "thresholdTissueVoxels": 1249350,
+  "retainedByConservativeSupport": 1249350,
+  "omittedThresholdVoxels": 0,
+  "retainedFraction": 1.0,
+  "interpretation": "All source-threshold tissue in the independently inspected cardiac ROI is protected before dilation. Adjacent acquired lungs remain present."
+}

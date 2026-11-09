@@ -1,0 +1,69 @@
+{
+  "selected": "120/radius0.3176mm",
+  "records": [
+    {
+      "originalPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-low-band.bits.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r2/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 201716,
+      "sha256": "44ce552c70de9b99b196d9fc75eb68ef0c99aeb1a7587e8a111ddbe7a04655be",
+      "reason": "Original110/radius2 candidate preserved after selecting120/radius4."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement.hfm.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r2/lvot-perivalvular-refinement.hfm.gz",
+      "bytes": 6220516,
+      "sha256": "788a342eb8e942b68cff78fb4d489d2a99c861324a6e8423a457e8c91241326b",
+      "reason": "Original110/radius2 candidate preserved after selecting120/radius4."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement.sfr.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r2/lvot-perivalvular-refinement.sfr.gz",
+      "bytes": 30543452,
+      "sha256": "77297aced8861e0947937efe77718977cb2b9ba5272b8b17dd1cf901bcc8cdc1",
+      "reason": "Original110/radius2 candidate preserved after selecting120/radius4."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t120-r4/lvot-perivalvular-refinement-low-band.bits.gz",
+      "promotedPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 213638,
+      "sha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+      "reason": "Promoted selected120/radius4 candidate to canonical patch."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t120-r4/lvot-perivalvular-refinement.hfm.gz",
+      "promotedPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement.hfm.gz",
+      "bytes": 2998934,
+      "sha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+      "reason": "Promoted selected120/radius4 candidate to canonical patch."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t120-r4/lvot-perivalvular-refinement.sfr.gz",
+      "promotedPath": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement.sfr.gz",
+      "bytes": 30115825,
+      "sha256": "ca135104b4fe756b0ca1e0c90977745c1d06ba5b873f5bed6993b6a360ad9d62",
+      "reason": "Promoted selected120/radius4 candidate to canonical patch."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t110-r4/lvot-perivalvular-refinement-low-band.bits.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r4/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 201716,
+      "sha256": "44ce552c70de9b99b196d9fc75eb68ef0c99aeb1a7587e8a111ddbe7a04655be",
+      "reason": "Unused tessellation ablation; config, policy and rendered evidence retained in repository."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t110-r4/lvot-perivalvular-refinement.hfm.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r4/lvot-perivalvular-refinement.hfm.gz",
+      "bytes": 3034877,
+      "sha256": "b11112781dda7dd373e5ac5610e6021adb715dd6c8b930e21d5da7ba972e1a04",
+      "reason": "Unused tessellation ablation; config, policy and rendered evidence retained in repository."
+    },
+    {
+      "originalPath": "docs/cleanup-v28-left/ablation/t110-r4/lvot-perivalvular-refinement.sfr.gz",
+      "archivePath": "{source-cache}/cleanup-v28-left-ablation-cache/t110-r4/lvot-perivalvular-refinement.sfr.gz",
+      "bytes": 30543452,
+      "sha256": "77297aced8861e0947937efe77718977cb2b9ba5272b8b17dd1cf901bcc8cdc1",
+      "reason": "Unused tessellation ablation; config, policy and rendered evidence retained in repository."
+    }
+  ],
+  "scope": "Intermediate binaries outsideGit; final matchingSFR/HFM/lowband/policy retained canonically. All alternatives reproducible from checked-in source configurations."
+}

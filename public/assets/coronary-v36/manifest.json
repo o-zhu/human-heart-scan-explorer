@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "kind": "coronary-reveal",
+  "title": "Coronary Exposure Display Fields",
+  "donors": {
+    "ladaf-2021-17": {
+      "donorId": "ladaf-2021-17",
+      "dimensions": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "sourceSpacingUm": 317.6,
+      "extent": [
+        0.8960302457466919,
+        1.0,
+        0.8960302457466919
+      ],
+      "threshold": 0.5,
+      "sourceWindow": [
+        14640,
+        23545
+      ],
+      "sourceManifestUrl": "./assets/manifest.json",
+      "sourceManifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+      "sourceRawSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "processing": {
+        "method": "3-D guided scalar regularization with bounded source changes and soft regional threshold protection.",
+        "scalarFilter": {
+          "type": "Self-guided local linear",
+          "boxRadiusSamples": 1,
+          "epsilonDisplayLevelsSquared": 144.0,
+          "border": "Nearest",
+          "maximumAbsoluteChangeDisplayLevels": 6.0,
+          "passes": "Local statistics followed by local coefficient averaging."
+        },
+        "sourceThresholdBaseline": 0.32,
+        "sourceThresholdReveal": 0.42,
+        "atrialProtection": {
+          "manifestUrl": "./assets/anatomy/manifest.json?v=la-exterior-v17",
+          "manifestSha256": "9e1a5ca04cc09f4518f4819daa092e576fef1792654e21f8d04898341bbd71eb",
+          "labelsSha256": "e29a218fdf42947a550b2c73711f66cbc4aaa0daca852f55529859e4fdb6ac54",
+          "labelIds": [
+            3,
+            4
+          ],
+          "labelIdentity": "Approximate source-guided LA/RA territories, not expert ground truth.",
+          "fullProtectionDistanceMm": 0.5,
+          "zeroProtectionDistanceMm": 3.0,
+          "distance": "Euclidean physical distance from existing atrial label cells.",
+          "interpolation": "Trilinear endpoint-registered label-to-scalar grid, without moving the source."
+        },
+        "protectedAtrialSamples": "Regularization blends to exact original intensity where the atrial protection weight equals1; source foreground at the original baseline threshold is retained exactly.",
+        "scalarEncoding": "round(clamp(guidedSource - 255*(revealThreshold-(revealThreshold-baselineThreshold)*atrialWeight) + 127.5,0,255))",
+        "threshold": 0.5,
+        "originalScalarSourcesChanged": false,
+        "ctSectionsChanged": false,
+        "strongSourceGuarantee": "No sample >=6 display levels above its local threshold is removed.",
+        "weakSourceGuarantee": "No displayed foreground sample is more than6 display levels below its local source threshold.",
+        "materialIdentity": "Intensity exposure only. Fat and coronary arteries are not separately segmented; values are not calibrated HU.",
+        "limitations": [
+          "Regional annotations are approximate and preserve measured low-intensity atrial covering as well as wall.",
+          "Conservative regularization reduces display roughness but cannot guarantee every branch or eliminate acquisition artifacts.",
+          "These fields retain the resident source sampling grid; they do not add acquired spatial resolution.",
+          "No free-space gap bridging, convex filling, synthetic artery generation, or topology completion."
+        ]
+      },
+      "parts": [
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-000.gz",
+          "zRange": [
+            0,
+            64
+          ],
+          "compressedBytes": 223850,
+          "uncompressedBytes": 14440000,
+          "sha256": "b8d923eb121618e4c5ff7b38b596fe549dba0f1ab6b13621d5f5069a5e8ae6a5",
+          "rawSha256": "39416f1b6802b88bb43f3b7301058ce2cd7250106fa803a3a1c68577aaa6066e",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-001.gz",
+          "zRange": [
+            64,
+            128
+          ],
+          "compressedBytes": 1290449,
+          "uncompressedBytes": 14440000,
+          "sha256": "432b9c8597d93a461d4df2dc87fc9b8613dfdf207d644c9f733fe09e24139c90",
+          "rawSha256": "f79b6b0e6359c814788f8d7f2555adb02d14c95ddefed175ab73803413c370ba",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-002.gz",
+          "zRange": [
+            128,
+            192
+          ],
+          "compressedBytes": 2021745,
+          "uncompressedBytes": 14440000,
+          "sha256": "c365b6dc955902733d10e54a69a70fb7981462149c536f094fec09125abe920e",
+          "rawSha256": "0d771e1958a7f1f78c325b307763928d71a5510cae852cffb0a27370f4d56d51",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-003.gz",
+          "zRange": [
+            192,
+            256
+          ],
+          "compressedBytes": 2495874,
+          "uncompressedBytes": 14440000,
+          "sha256": "803ab47cd9b8d0ec3d57922120219ecc23146118541470ffee527a58edc92b11",
+          "rawSha256": "36d123d75ff1b728c68fcf570531f87b1c1ce4237da1f1d34356f9c5862b7cba",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-004.gz",
+          "zRange": [
+            256,
+            320
+          ],
+          "compressedBytes": 2591288,
+          "uncompressedBytes": 14440000,
+          "sha256": "e4712a00cd1866da33d3b2584e2c5576038769c544e0afdc62a5a6cf995759db",
+          "rawSha256": "99bbd64a9583e03224cf6c5eca55306dcbcc1b759f2e2c189df59dead6f23552",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-005.gz",
+          "zRange": [
+            320,
+            384
+          ],
+          "compressedBytes": 2271575,
+          "uncompressedBytes": 14440000,
+          "sha256": "0f469346068886fb02140191d21d4c379f05c38e5bc289e1ce7a17bdf772ff29",
+          "rawSha256": "674db7398a6a999b657ff4f78fcf4361e972388cd268bdac76985f1af1a064c0",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-006.gz",
+          "zRange": [
+            384,
+            448
+          ],
+          "compressedBytes": 1390185,
+          "uncompressedBytes": 14440000,
+          "sha256": "559f8c19e8fb08ec94ff0494e3d528216b6d2e4bcf10feccb926d1a12f5ee4c8",
+          "rawSha256": "9e912c6f30f8b6354e4aab15365a5a034830e4238729a96ade31ca2e3be7a783",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-007.gz",
+          "zRange": [
+            448,
+            512
+          ],
+          "compressedBytes": 475282,
+          "uncompressedBytes": 14440000,
+          "sha256": "082b29a840217376bf61674707e3a59b64a3eaf40b305bbc7b098cf4cb161a99",
+          "rawSha256": "e6f6aaa8f04454bf8b1fe451ac1755d53bf9b8d63febdde797737e735d93a595",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/ladaf-2021-17-derived.raw.part-008.gz",
+          "zRange": [
+            512,
+            530
+          ],
+          "compressedBytes": 5090,
+          "uncompressedBytes": 4061250,
+          "sha256": "17ab1c5df69d89c4218ddabde7254cfc32b63c4708025a4c09bd6de64d2dab5f",
+          "rawSha256": "d1c079eadf8b2fd06c660293f315aef61c0cc8c618b186fe36667b42f95abb85",
+          "predictor": "delta-z"
+        }
+      ],
+      "compressedBytes": 12765338,
+      "uncompressedBytes": 119581250,
+      "rawSha256": "40dc075fb4dba7b9c60c1c96ee4635635a1f2011d7fc971fbbdaabdb8378ddf8"
+    },
+    "s-20-29": {
+      "donorId": "s-20-29",
+      "dimensions": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "sourceSpacingUm": 318.24,
+      "extent": [
+        0.9814814814814815,
+        1.0,
+        0.9814814814814815
+      ],
+      "threshold": 0.5,
+      "sourceWindow": [
+        19300.0,
+        23000.0
+      ],
+      "sourceManifestUrl": "./assets/donors/s-20-29/manifest.json",
+      "sourceManifestSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+      "sourceRawSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "processing": {
+        "method": "3-D guided scalar regularization with bounded source changes and soft regional threshold protection.",
+        "scalarFilter": {
+          "type": "Self-guided local linear",
+          "boxRadiusSamples": 1,
+          "epsilonDisplayLevelsSquared": 144.0,
+          "border": "Nearest",
+          "maximumAbsoluteChangeDisplayLevels": 6.0,
+          "passes": "Local statistics followed by local coefficient averaging."
+        },
+        "sourceThresholdBaseline": 0.16216216216216217,
+        "sourceThresholdReveal": 0.22,
+        "atrialProtection": {
+          "manifestUrl": "./assets/donors/s-20-29/anatomy/manifest.json?v=donor-regions-v17",
+          "manifestSha256": "febbfe5ebb7b48ce1cbb386dda9c4b566a43288111bcaa67a8565a9bd63b9fb3",
+          "labelsSha256": "228d1bbd48966c1752b67e28b98bca08e654466ba86c5739631cde68674cbf05",
+          "labelIds": [
+            3,
+            4
+          ],
+          "labelIdentity": "Approximate source-guided LA/RA territories, not expert ground truth.",
+          "fullProtectionDistanceMm": 0.5,
+          "zeroProtectionDistanceMm": 3.0,
+          "distance": "Euclidean physical distance from existing atrial label cells.",
+          "interpolation": "Trilinear endpoint-registered label-to-scalar grid, without moving the source."
+        },
+        "protectedAtrialSamples": "Regularization blends to exact original intensity where the atrial protection weight equals1; source foreground at the original baseline threshold is retained exactly.",
+        "scalarEncoding": "round(clamp(guidedSource - 255*(revealThreshold-(revealThreshold-baselineThreshold)*atrialWeight) + 127.5,0,255))",
+        "threshold": 0.5,
+        "originalScalarSourcesChanged": false,
+        "ctSectionsChanged": false,
+        "strongSourceGuarantee": "No sample >=6 display levels above its local threshold is removed.",
+        "weakSourceGuarantee": "No displayed foreground sample is more than6 display levels below its local source threshold.",
+        "materialIdentity": "Intensity exposure only. Fat and coronary arteries are not separately segmented; values are not calibrated HU.",
+        "limitations": [
+          "Regional annotations are approximate and preserve measured low-intensity atrial covering as well as wall.",
+          "Conservative regularization reduces display roughness but cannot guarantee every branch or eliminate acquisition artifacts.",
+          "These fields retain the resident source sampling grid; they do not add acquired spatial resolution.",
+          "No free-space gap bridging, convex filling, synthetic artery generation, or topology completion."
+        ]
+      },
+      "parts": [
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-000.gz",
+          "zRange": [
+            0,
+            64
+          ],
+          "compressedBytes": 471267,
+          "uncompressedBytes": 14622976,
+          "sha256": "9f30a72ad12a07b913b1110bb72d138a7363607a4ff4f28ed7fee785e81b2cea",
+          "rawSha256": "65065fefba27931bb72e779f1286b245d2d003a0c12fdf123ec23cdc5c040417",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-001.gz",
+          "zRange": [
+            64,
+            128
+          ],
+          "compressedBytes": 1897596,
+          "uncompressedBytes": 14622976,
+          "sha256": "343a0b9b02f4135ae4baa555c0093ce851f80466f0cd6c8b07d50eab51f802bb",
+          "rawSha256": "0ac56aa2451258a9788e18ecd4023c895f46358506956f759fc102a1c51b6af2",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-002.gz",
+          "zRange": [
+            128,
+            192
+          ],
+          "compressedBytes": 2153627,
+          "uncompressedBytes": 14622976,
+          "sha256": "a427ceff34ce38e4b90757bbc5d2c7b92d7014b9453c0ef33d3d35347f988fcb",
+          "rawSha256": "6777ff83ba8578da9169abd8ddd3bd113b0b252b7512b2b1def15636a510caf1",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-003.gz",
+          "zRange": [
+            192,
+            256
+          ],
+          "compressedBytes": 1941472,
+          "uncompressedBytes": 14622976,
+          "sha256": "a28122b623efd24d1129485ccdb801250de41b9f08f76ef46d876ca2ca26de7b",
+          "rawSha256": "764802749b5be8a544d87227d9970103f60b2546b9d4aabe6dc244e9ece568f9",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-004.gz",
+          "zRange": [
+            256,
+            320
+          ],
+          "compressedBytes": 1646176,
+          "uncompressedBytes": 14622976,
+          "sha256": "d282b9d9728aeab3cd8e7ebcfcfeea667a019e3fe98ae8202b73cd71015fd706",
+          "rawSha256": "40f6ca72478b2e59e97978a862097efc9d1ee9dc3b9f46598947a2159cd0ed4b",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-005.gz",
+          "zRange": [
+            320,
+            384
+          ],
+          "compressedBytes": 1371837,
+          "uncompressedBytes": 14622976,
+          "sha256": "122898b03587f4ff25bc7a18d0c87e5178415fac2aa9e3213cf9b234c4bf412d",
+          "rawSha256": "68b267216a6fc71883c00a418c016330e3c8b618ef9d41ff1c504c633bc72767",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-006.gz",
+          "zRange": [
+            384,
+            448
+          ],
+          "compressedBytes": 832138,
+          "uncompressedBytes": 14622976,
+          "sha256": "1420c2f4a605520690ab12da12e0f7f574e59b1a826536edcf9a368208a52e51",
+          "rawSha256": "3ec44be259bb36b1e0949e8977e2910ec2a4fa26708e7d1bc8c3d2c15b16adfd",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-29-derived.raw.part-007.gz",
+          "zRange": [
+            448,
+            487
+          ],
+          "compressedBytes": 49588,
+          "uncompressedBytes": 8910876,
+          "sha256": "bc2975428ab58da6b56c587f472d2abd8223f80e193c7f1825cb12c54cea4708",
+          "rawSha256": "553cc8639f3313d1a59628fd65127e9c7c70118603d3f999f1f8316988c27687",
+          "predictor": "delta-z"
+        }
+      ],
+      "compressedBytes": 10363701,
+      "uncompressedBytes": 111271708,
+      "rawSha256": "1c82fb60b2a5d7fc5ed53da4e244a44aa6d5a3b901745ec7af6b276c2711838b"
+    },
+    "s-20-28": {
+      "donorId": "s-20-28",
+      "dimensions": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "sourceSpacingUm": 317.6,
+      "extent": [
+        0.9370078740157479,
+        1.0,
+        0.9370078740157479
+      ],
+      "threshold": 0.5,
+      "sourceWindow": [
+        14938.0,
+        22708.0
+      ],
+      "sourceManifestUrl": "./assets/donors/s-20-28/manifest.json",
+      "sourceManifestSha256": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+      "sourceRawSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "processing": {
+        "method": "3-D guided scalar regularization with bounded source changes and soft regional threshold protection.",
+        "scalarFilter": {
+          "type": "Self-guided local linear",
+          "boxRadiusSamples": 1,
+          "epsilonDisplayLevelsSquared": 144.0,
+          "border": "Nearest",
+          "maximumAbsoluteChangeDisplayLevels": 6.0,
+          "passes": "Local statistics followed by local coefficient averaging."
+        },
+        "sourceThresholdBaseline": 0.32972972972972975,
+        "sourceThresholdReveal": 0.42,
+        "atrialProtection": {
+          "manifestUrl": "./assets/donors/s-20-28/anatomy/manifest.json?v=donor-regions-v17",
+          "manifestSha256": "bf090df7236c537572b60d374172e546cefe1e7eb42ec67a547bec3885096301",
+          "labelsSha256": "649ed1bb1aa7b2dedb19e514e4bd4541471f25ddab1a83728c04ec1e7496a6e0",
+          "labelIds": [
+            3,
+            4
+          ],
+          "labelIdentity": "Approximate source-guided LA/RA territories, not expert ground truth.",
+          "fullProtectionDistanceMm": 0.5,
+          "zeroProtectionDistanceMm": 3.0,
+          "distance": "Euclidean physical distance from existing atrial label cells.",
+          "interpolation": "Trilinear endpoint-registered label-to-scalar grid, without moving the source."
+        },
+        "protectedAtrialSamples": "Regularization blends to exact original intensity where the atrial protection weight equals1; source foreground at the original baseline threshold is retained exactly.",
+        "scalarEncoding": "round(clamp(guidedSource - 255*(revealThreshold-(revealThreshold-baselineThreshold)*atrialWeight) + 127.5,0,255))",
+        "threshold": 0.5,
+        "originalScalarSourcesChanged": false,
+        "ctSectionsChanged": false,
+        "strongSourceGuarantee": "No sample >=6 display levels above its local threshold is removed.",
+        "weakSourceGuarantee": "No displayed foreground sample is more than6 display levels below its local source threshold.",
+        "materialIdentity": "Intensity exposure only. Fat and coronary arteries are not separately segmented; values are not calibrated HU.",
+        "limitations": [
+          "Regional annotations are approximate and preserve measured low-intensity atrial covering as well as wall.",
+          "Conservative regularization reduces display roughness but cannot guarantee every branch or eliminate acquisition artifacts.",
+          "These fields retain the resident source sampling grid; they do not add acquired spatial resolution.",
+          "No free-space gap bridging, convex filling, synthetic artery generation, or topology completion."
+        ]
+      },
+      "parts": [
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-000.gz",
+          "zRange": [
+            0,
+            64
+          ],
+          "compressedBytes": 815548,
+          "uncompressedBytes": 14561856,
+          "sha256": "808ba5ef02f4fb4b87f1e7549105fe80e9bd1e943af7ae32ae5d58f0ce0a2b69",
+          "rawSha256": "16623d16ba16da6bd9203b3bbd11fe25300f4771cea41cbbb328345249f02e82",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-001.gz",
+          "zRange": [
+            64,
+            128
+          ],
+          "compressedBytes": 1753621,
+          "uncompressedBytes": 14561856,
+          "sha256": "27620c0aa3c2992d75fc0e567c061a2ec418a06b46a875e24dbd6f2aba41ab15",
+          "rawSha256": "83184efc5baefe5a0d567edd93668ffd5d06808771291604fffa6c566071197e",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-002.gz",
+          "zRange": [
+            128,
+            192
+          ],
+          "compressedBytes": 2291286,
+          "uncompressedBytes": 14561856,
+          "sha256": "c89729fe571d8424c6e4e2496192a024149c9850a1ef31cc516bd444a3a5c531",
+          "rawSha256": "873b166bf19dc15b1eaeb15ad39cd5f4932e74bd07b481a448b2285c586dc028",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-003.gz",
+          "zRange": [
+            192,
+            256
+          ],
+          "compressedBytes": 2295384,
+          "uncompressedBytes": 14561856,
+          "sha256": "d8f2e0a3e27ee3779148184993dd9d53cd7e44d01fda56cb440ffb4b2e23c79c",
+          "rawSha256": "992da7bff000716a2a3808f56952f00db10add9178fb02e958e37aaa8b869cab",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-004.gz",
+          "zRange": [
+            256,
+            320
+          ],
+          "compressedBytes": 2207757,
+          "uncompressedBytes": 14561856,
+          "sha256": "dbef59a42b5c9118a89eddd1b6be1279d7d21fb96c1137e14cd70c25a5cdb606",
+          "rawSha256": "b504325510170fea708fa5fe1d728133909a441fa97c68124b9f555ac50eac16",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-005.gz",
+          "zRange": [
+            320,
+            384
+          ],
+          "compressedBytes": 1958046,
+          "uncompressedBytes": 14561856,
+          "sha256": "aed6f0af96e7a1ef407654d85e2c484d4e6ba41bc046467cd1530c6e526321e3",
+          "rawSha256": "3b13cc78c9030fc2f3f5ccf09ebf3d50359d3cd60261ac98c9b560a51b585263",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-006.gz",
+          "zRange": [
+            384,
+            448
+          ],
+          "compressedBytes": 1419447,
+          "uncompressedBytes": 14561856,
+          "sha256": "5d020d0ea758a06da7b8126b8bd2e3202fc63a2b7bffaee1555a66e1306b97c0",
+          "rawSha256": "e11f2b2079359aff4965a8bd5b03b1afe3b312128939521cc355dc4c88f19912",
+          "predictor": "delta-z"
+        },
+        {
+          "url": "./assets/coronary-v36/s-20-28-derived.raw.part-007.gz",
+          "zRange": [
+            448,
+            509
+          ],
+          "compressedBytes": 335830,
+          "uncompressedBytes": 13879269,
+          "sha256": "17463c94d993cdac19bd13851c120a287516aa591fcaa490a56d4835ffffe6fb",
+          "rawSha256": "159e66243fd7d2a22bdc596ad919083f388856c868caa4a53927b429953b0db9",
+          "predictor": "delta-z"
+        }
+      ],
+      "compressedBytes": 13076919,
+      "uncompressedBytes": 115812261,
+      "rawSha256": "03577687bfd9fd404a294d9ff3851a9a45c82b3304ee0b2e4e410ef6908afc8e"
+    }
+  }
+}

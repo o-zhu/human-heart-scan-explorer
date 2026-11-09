@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "sourceManifestSha256": "23466336a7becdaef676bca4a7347ebce5b5899bc3269edad5fe5080e09ef2b2",
+  "originalFullAtlasSha256": "96cf62fdf734050d125bb851e63027ca11aec9c217f7cecdfb69de3202d380ca",
+  "originalReferenceProgramSha256": "3a520b5bb6d0d66972b1139f915676cfbae1defb1758d5ab4bf1c4a72cca5537",
+  "fields": [
+    {
+      "id": "lumen:atrial",
+      "sourceDecodedBytes": 19885320,
+      "sourceDecodedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "sourceBytesCompared": 19885320,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1"
+    },
+    {
+      "id": "lumen:arterial",
+      "sourceDecodedBytes": 29192000,
+      "sourceDecodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "sourceBytesCompared": 29192000,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38"
+    },
+    {
+      "id": "lumen:valve-region",
+      "sourceDecodedBytes": 7740900,
+      "sourceDecodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "sourceBytesCompared": 7740900,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d"
+    },
+    {
+      "id": "lumen:rv",
+      "sourceDecodedBytes": 25027200,
+      "sourceDecodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "sourceBytesCompared": 25027200,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342"
+    }
+  ],
+  "sourceBytesCompared": 81845420,
+  "mismatchedBytes": 0,
+  "retainedDenseSourceBytes": 0,
+  "indexTexture": {
+    "format": "R32UI",
+    "width": 1024,
+    "height": 165,
+    "entryCount": 168208,
+    "byteLength": 675840,
+    "logicalBytes": 672832,
+    "sha256": "4c9142e6cc54ffabab17b47ca1baedc523787cf29451b672c64d58ab275499ad"
+  },
+  "payloadTexture": {
+    "format": "RGBA8",
+    "width": 2048,
+    "height": 1254,
+    "brickCount": 20054,
+    "byteLength": 10272768,
+    "logicalBytes": 10267648,
+    "sha256": "4e4354def962c1a985e26abf28406ae071632525d2812f8c499dafc6604f424a"
+  },
+  "cpuAtlasBytes": 10948608,
+  "gpuAtlasBytes": 10948608,
+  "largestTemporaryDecodedSourceBytes": 29192000,
+  "referenceProgramDecodedBytes": 1136096,
+  "binaryAssetsChanged": false,
+  "runtime": {
+    "passed": true,
+    "manifestSha256": "3231b81053b42f8ade5a905b5600f2662f89f9bbea5ed7b8a60d7059514f2ad7",
+    "indexBytesEqual": true,
+    "payloadBytesEqual": true,
+    "sourceMetadataEqual": true
+  },
+  "scope": "Exact storage/lookup representation of the four immutable reviewed lumen masks. Declared buffer sizes exclude browser overhead and are not a whole-tab peak-memory measurement."
+}

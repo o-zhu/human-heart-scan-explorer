@@ -1,0 +1,175 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 73,
+    "decodedBrickReads": 73,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v28",
+  "cases": [
+    {
+      "id": "pv-residual-depth",
+      "title": "Production-located residual LA/PV free fragments before sagittal316 cut",
+      "lowerXYZ": [
+        1200,
+        1100,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1250,
+        850
+      ],
+      "ys": [
+        1120,
+        1132,
+        1148,
+        1160,
+        1172,
+        1184,
+        1196,
+        1208
+      ],
+      "overlay": true,
+      "points": [
+        [
+          1320,
+          726
+        ],
+        [
+          1318,
+          747
+        ],
+        [
+          1293,
+          769
+        ]
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1120,
+          "sourcePlaneSha256": "4c972a263f4239d054d143f27c2b920b97f5e51d9261bb9800099de14fa94f26",
+          "excludedInPlane": 1058
+        },
+        {
+          "fineY": 1132,
+          "sourcePlaneSha256": "66e956ef3e38917819dab541994ccdaf3bafe5d1dfc1971cadf2ecca2974b450",
+          "excludedInPlane": 2910
+        },
+        {
+          "fineY": 1148,
+          "sourcePlaneSha256": "d46216b6a9396058806662456e402b3618c5c79ab37888484f1268e284c4408f",
+          "excludedInPlane": 5382
+        },
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "0ea855098ed475643b7f9265a46f43d84deee64a53e513346ff5881677c7135d",
+          "excludedInPlane": 7549
+        },
+        {
+          "fineY": 1172,
+          "sourcePlaneSha256": "845d9d5deaba1157438b19216b284585a76328a15cadb506960faf7bf413834e",
+          "excludedInPlane": 11388
+        },
+        {
+          "fineY": 1184,
+          "sourcePlaneSha256": "4d2ac3922eb9931f5a55cd2156555898793a604db9271d0253f7ad2682eda62b",
+          "excludedInPlane": 13025
+        },
+        {
+          "fineY": 1196,
+          "sourcePlaneSha256": "b5488c2e0f86056b9306b7b36d3b5d5f59fe958467b9188d5ca9458506545178",
+          "excludedInPlane": 13362
+        },
+        {
+          "fineY": 1208,
+          "sourcePlaneSha256": "2103fd3d12c45ff6572333499a6666fcc2238245d359ffee70a45c08bf0a9e7f",
+          "excludedInPlane": 12305
+        }
+      ]
+    },
+    {
+      "id": "pv-residual-late",
+      "title": "Residual LA/PV attachment follow-through",
+      "lowerXYZ": [
+        1200,
+        1100,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1285,
+        850
+      ],
+      "ys": [
+        1216,
+        1224,
+        1232,
+        1240,
+        1248,
+        1256,
+        1264,
+        1272
+      ],
+      "overlay": true,
+      "points": [
+        [
+          1364,
+          745
+        ],
+        [
+          1381,
+          816
+        ]
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1216,
+          "sourcePlaneSha256": "e5d223a177d34ccfa74cbf8d016e34f0de41c5fe6bd2d34a5eb2ceda127af49a",
+          "excludedInPlane": 10946
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "4d2e8d280751189929bca9374eedc131329e72740c662996e8a697241d6b078d",
+          "excludedInPlane": 9516
+        },
+        {
+          "fineY": 1232,
+          "sourcePlaneSha256": "8524a0af8b8d80511ba157d521f7c07ed339e609f45ee6e241739333613c7a7d",
+          "excludedInPlane": 8507
+        },
+        {
+          "fineY": 1240,
+          "sourcePlaneSha256": "247a3650fd2c34cc0197ce56ee50e64fb0cfef6229e8539b67ee1c97e985463c",
+          "excludedInPlane": 6037
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "8ac0b37df74a6b3c010b56265ab82bb50d1e9bc6e8b964581103eacfe063f293",
+          "excludedInPlane": 5509
+        },
+        {
+          "fineY": 1256,
+          "sourcePlaneSha256": "d9302a58a0805ab55b77aaf18c7f0aa038ca0a090e564ee8a4a1d37594c285c5",
+          "excludedInPlane": 5426
+        },
+        {
+          "fineY": 1264,
+          "sourcePlaneSha256": "38a11575134dbd2b875a659f6608c53731458102e93c02d7ca07c8bc7b237f41",
+          "excludedInPlane": 5460
+        },
+        {
+          "fineY": 1272,
+          "sourcePlaneSha256": "b6e10451ddad52de56a5587c35c8f89a847a5667a8699a3e59799404a985bc92",
+          "excludedInPlane": 5908
+        }
+      ]
+    }
+  ]
+}

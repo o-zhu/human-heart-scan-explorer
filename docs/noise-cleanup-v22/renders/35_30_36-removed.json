@@ -1,0 +1,30 @@
+{
+  "method": "removed",
+  "nativeTile": "35_30_36",
+  "input": {
+    "nativeArtifact": "{source-cache}/guided-native-v21/whole/verification-samples/35_30_36.nbe.gz",
+    "sha256": "cf016dd7a3a697cdbc2984d24112df8b10985280718327689915d4c2e77d01a7",
+    "sourceOriginXYZ": [
+      4480,
+      3840,
+      4608
+    ]
+  },
+  "unfilteredTriangles": 367839,
+  "renderedTriangles": 10196,
+  "originalVertexBufferSha256": "acfde623f076c2899e9ee162b415cb7106acdcf01f99989eea7123ed83cd0d31",
+  "retainedFaceMaskSha256": "915924f122c17838f6a3de7f4d6bfbb459bafef251791662112e13eb3a1b4531",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": 0,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": 0.0,
+  "cropSpanMm": 2.5408,
+  "geometryModification": "triangle subset only",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/35_30_36-removed.png",
+    "sha256": "e21d49136d4d9c398b36489e335fb0170aab760ed494bdf39b07af867c09d3db"
+  },
+  "seconds": 0.41337364799983334,
+  "peakRssMiB": 175.625
+}

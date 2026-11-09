@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "checks": [
+    {
+      "preset": "a4c",
+      "nonBackgroundPixels": 107459,
+      "glError": 0,
+      "textureWidth": 1525,
+      "textureHeight": 2011
+    },
+    {
+      "preset": "me4c",
+      "nonBackgroundPixels": 122305,
+      "glError": 0,
+      "textureWidth": 1525,
+      "textureHeight": 2011
+    }
+  ],
+  "scope": "Actual production GLSL and new measured Echo textures, offscreen EGL. Not browser interaction or timing."
+}

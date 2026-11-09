@@ -1,0 +1,45 @@
+{
+  "productionShaders": true,
+  "positionsUnchanged": true,
+  "trianglesUnchanged": true,
+  "exactOriginalRestoration": true,
+  "checks": [
+    {
+      "case": {
+        "id": "lvot-y294",
+        "axis": 1,
+        "coordinate": 1172,
+        "target": [
+          1080,
+          1172,
+          1030
+        ],
+        "distance": 0.48
+      },
+      "normalCandidate": "seam2",
+      "changedPixels": 62966,
+      "measuredCapIdentical": true,
+      "originalGeometryUnchanged": true,
+      "sourceNormals": "{source-cache}/heart-v29-stripes/seam2-normals.npy"
+    },
+    {
+      "case": {
+        "id": "lvot-y294",
+        "axis": 1,
+        "coordinate": 1172,
+        "target": [
+          1080,
+          1172,
+          1030
+        ],
+        "distance": 0.48
+      },
+      "normalCandidate": "seam6",
+      "changedPixels": 66680,
+      "measuredCapIdentical": true,
+      "originalGeometryUnchanged": true,
+      "sourceNormals": "{source-cache}/heart-v29-stripes/seam6-normals.npy"
+    }
+  ],
+  "scope": "Shading-only native EGL comparison; no claim of browser performance or anatomical validation."
+}

@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "nativeSource": {
+    "tile": "35_30_36",
+    "path": "{source-cache}/guided-native-v21/whole/verification-samples/35_30_36.nbe.gz",
+    "sha256": "cf016dd7a3a697cdbc2984d24112df8b10985280718327689915d4c2e77d01a7",
+    "encodedBytes": 189306,
+    "decodedSha256": "308790aa659ccf3a91698d5cf110761c65ba07ddfdc8176cd9c5e075d10cf41e"
+  },
+  "nativeTriangles": 357643,
+  "nativeSourceTriangles": 367839,
+  "gentleROITriangles": 149808,
+  "bounds": {
+    "min": [
+      0.08096917403668405,
+      0.044246219281663515,
+      -0.02049357019677716
+    ],
+    "max": [
+      0.09608807499666074,
+      0.05936909262759924,
+      -0.005374669236800425
+    ]
+  },
+  "eye": [
+    0.10867568532068524,
+    0.060873833316437156,
+    0.037433532293243296
+  ],
+  "forward": [
+    -0.366310196436597,
+    -0.16483958839646864,
+    -0.9157754910914925
+  ],
+  "right": [
+    0.9284766908852593,
+    0.0,
+    -0.3713906763541037
+  ],
+  "up": [
+    -0.06121988622449656,
+    0.9863203891724447,
+    -0.15304971556124142
+  ],
+  "productionShaders": true,
+  "sameFramebuffer": true,
+  "sameDepthBuffer": true,
+  "productionLumenMasks": true,
+  "checks": [
+    {
+      "clipped": false,
+      "changedPixels": 91239,
+      "offOnOffRestoresExactly": true,
+      "glError": 0
+    },
+    {
+      "clipped": true,
+      "changedPixels": 8327,
+      "offOnOffRestoresExactly": true,
+      "glError": 0
+    }
+  ],
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "scope": "One actual production tile with browser-native decoding/cleanup/registration and the actual Gentle ROI. Offscreen EGL; not browser performance or anatomical accuracy. Region transitions are not welded."
+}

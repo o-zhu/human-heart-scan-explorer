@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "integration": "v63 orthogonal-section render scheduling merged without Echo geometry or shader changes",
+  "mergedSourceCommit": "f367c4997ffd74ebac1d4887255b6cf3ffa89e14",
+  "integratedRemoteCommit": "73e0af8b72d27a335e2bec00689916968845a5ac",
+  "views": 56,
+  "renders": 112,
+  "nativeGlErrors": [
+    0
+  ],
+  "byteIdenticalImages": 221,
+  "changedImages": [],
+  "unchangedPlanePoseCameraRecords": 56,
+  "changedViewRecords": [],
+  "finalNumericalAuditPrimaryViews": 56,
+  "changedComparedWithFinalNumericalAudit": [],
+  "productionShaderSourcesUnchanged": true,
+  "productionShaderSourcesSha256": "1196c95929f8f1e08070b748a9a360682a15b4f7e56419c00d27ded2ae972b55",
+  "sourceMismatches": [],
+  "changedProductionSourceFiles": [
+    "public/renderer.js"
+  ],
+  "rendererSha256": "b92330eec7a974a770793cfcf743008d7e92f168a92382c94dce435503a49f52",
+  "previousNativeReceiptSha256": "5239db00c57563e17178032b93e1fe18533b5c06a09aff6ed204b04424b3ee2a",
+  "scope": "Complete current-source export, actual production-worker cap sampling and native production-GLSL regeneration after the v63 merge. This compares geometry and rendered pixels; it does not benchmark browser scheduling or orthogonal-section interaction.",
+  "nativeReceiptSha256": "58e887465673e9b0308ca2822cdf762cb1e8463477deff57e460d219d01975f2"
+}

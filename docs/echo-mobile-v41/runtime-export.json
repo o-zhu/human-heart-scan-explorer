@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "output": "/dev/shm/mobile-lumen-v41-runtime",
+  "requests": [
+    "./assets/reviewed-mask-v32/manifest.json",
+    "./assets/reviewed-mask-v32/atlas.refs.gz",
+    "./assets/cleanup-v29/atrial.bits.gz",
+    "./assets/cleanup-v28/arterial.bits.gz",
+    "./assets/cleanup-v28/valve-region.bits.gz",
+    "./assets/cleanup-v28/rv.bits.gz"
+  ],
+  "indexBytes": 675840,
+  "payloadBytes": 10272768,
+  "indexSha256": "4c9142e6cc54ffabab17b47ca1baedc523787cf29451b672c64d58ab275499ad",
+  "payloadSha256": "4e4354def962c1a985e26abf28406ae071632525d2812f8c499dafc6604f424a",
+  "retainedDenseMasks": 0,
+  "fields": [
+    "lumen:atrial",
+    "lumen:arterial",
+    "lumen:valve-region",
+    "lumen:rv"
+  ],
+  "runtimeHashes": {
+    "mobile-lumen-atlas.js": "e9a21a30b7523d8c7257566f9e6a2879a3c4687c3aba427b8dd6f8dfedf0458e",
+    "reviewed-mask-atlas.js": "c963dd8e81e91f1e8b5daddfeac4e086ef0f157b7d40641cbaf3ab880729ce50",
+    "lumen-cleanup-v23.js": "06ff68a6850b2266cbcd4d8434602647a2f3415a62c961b3a11905f7c0cfc611",
+    "volume-picking.js": "90a71e216ad3c9fef4c04f04db0b6f6b2eeaeff72ae436bd845f4d4d42262acd"
+  },
+  "elapsedMs": 943.16426,
+  "scope": "Production loader with hash-verified local source transport. This elapsed time is not network or iPhone performance."
+}

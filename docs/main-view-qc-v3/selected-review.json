@@ -1,0 +1,762 @@
+{
+  "source": {
+    "url": "assets/volume-v5/heart-high-clean.raw.gz",
+    "decodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+    "dimensionsXYZ": [
+      475,
+      475,
+      530
+    ],
+    "spacingMm": 0.3176,
+    "displayValues": "uint8 windowed source; no HU calibration",
+    "labels": {
+      "revision": "la-exterior-v17",
+      "sha256": "e29a218fdf42947a550b2c73711f66cbc4aaa0daca852f55529859e4fdb6ac54",
+      "dimensions": [
+        317,
+        317,
+        354
+      ],
+      "registration": "Endpoints match original s4 voxel centers [0,0,0] and [474,474,529]. Sample nearest at round(sourceNormalizedXYZ*(dimensions-1)).",
+      "septalDisplayConvention": "The compact interventricular septum remains a shared structure. Its compact core is displayed with the LV myocardial body; the thin tissue surface facing the source-extracted RV cavity is displayed as RV, along with adjacent RV trabecular protrusions. This is regional surface ownership, not a measured histological layer or a claim that the whole septum belongs to one ventricle.",
+      "limitations": [
+        "Approximate source-supported regional annotations; no expert reference segmentation or trained segmentation model.",
+        "LA completion is restricted to short source-connected extensions of existing approximate LA territory. Pulmonary-vein ostia, atrioventricular transition and arterial boundaries are not independently relabeled; uncertain neutral boundaries remain.",
+        "The RV-facing septal surface and compact septal core use the explicit shared-septum display convention. The layer thickness is an annotation parameter, not a measured anatomical boundary.",
+        "Outer color denotes regional association; it does not distinguish epicardial fat, myocardium or coronary vessels.",
+        "Pulmonary hinge, tricuspid and LV/atrial{local-home} transitions are visually estimated. Shared fibrous tissue, valve attachment zones and small vessels remain uncertain.",
+        "Valves, coronary vessels, individual pulmonary veins, caval veins and appendages are not separately segmented.",
+        "No fiber tractography, deformation, slice realignment or synthetic anatomical reconstruction is performed.",
+        "These labels are not for quantitative chamber volume, wall thickness, procedural or diagnostic measurements."
+      ]
+    }
+  },
+  "rvSearchConfigurations": 4917,
+  "nonRvNeighborhoodSections": 91,
+  "sourceBounds": [
+    [
+      109.0,
+      88.0,
+      14.0
+    ],
+    [
+      402.0,
+      405.0,
+      512.0
+    ]
+  ],
+  "views": {
+    "rv-inflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          253.999941149748,
+          182.071447261757,
+          271.740352957755
+        ],
+        "right": [
+          0.984183323974,
+          0.0,
+          0.177152998315
+        ],
+        "up": [
+          0.175627488081,
+          -0.130951757946,
+          -0.975708267117
+        ],
+        "normal": [
+          0.023198496555,
+          0.99138874166,
+          -0.128880536416
+        ],
+        "width": 386.0,
+        "height": 588.0,
+        "target": [
+          232.000000000111,
+          186.00000000018,
+          297.999999999944
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          109.0,
+          94.0,
+          78.0
+        ],
+        "sourceMax": [
+          359.0,
+          214.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 1346439
+      },
+      "review": "The section follows the right atrial outlet into the RV, with the tricuspid region between them.",
+      "remainingLimits": [
+        "Individual tricuspid leaflets and chordae are not separately segmented."
+      ],
+      "focusMetrics": {
+        "pixelCount": 46933,
+        "regionPixels": {
+          "neutral": 345,
+          "LV": 6480,
+          "RV": 22051,
+          "LA": 0,
+          "RA": 18057,
+          "aorta": 0,
+          "pulmonary": 0
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.007351,
+          "LV": 0.138069,
+          "RV": 0.46984,
+          "LA": 0.0,
+          "RA": 0.38474,
+          "aorta": 0.0,
+          "pulmonary": 0.0
+        },
+        "sampledAreaMm2": {
+          "neutral": 15.844,
+          "LV": 297.586,
+          "RV": 1012.667,
+          "LA": 0.0,
+          "RA": 829.247,
+          "aorta": 0.0,
+          "pulmonary": 0.0
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          341,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "rv-outflow": {
+      "status": "refined",
+      "sourceFrame": {
+        "center": [
+          255.44909633344128,
+          245.7400805556756,
+          261.95796420176083
+        ],
+        "right": [
+          -0.9211173062681126,
+          0.3435385490348685,
+          -0.18309607702076355
+        ],
+        "up": [
+          0.3704865159623155,
+          0.6292255877243204,
+          -0.6832385390499345
+        ],
+        "normal": [
+          -0.11951003967651043,
+          -0.6971774702900267,
+          -0.7068669785302734
+        ],
+        "width": 479.0,
+        "height": 657.0,
+        "target": [
+          174.3465920974147,
+          294.0218903980968,
+          228.04999102456293
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          116.0,
+          128.0,
+          133.0
+        ],
+        "sourceMax": [
+          395.0,
+          398.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 5706287
+      },
+      "review": "An oblique section follows the RV body through the muscular outlet into the proximal pulmonary artery.",
+      "remainingLimits": [
+        "The nearby aortic root and shared septum remain visible as anatomical context.",
+        "Pulmonary leaflet identity and a continuous valve annulus have not been validated."
+      ],
+      "focusMetrics": {
+        "pixelCount": 28863,
+        "regionPixels": {
+          "neutral": 410,
+          "LV": 2889,
+          "RV": 11507,
+          "LA": 106,
+          "RA": 0,
+          "aorta": 3941,
+          "pulmonary": 10010
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.014205,
+          "LV": 0.100094,
+          "RV": 0.398677,
+          "LA": 0.003673,
+          "RA": 0.0,
+          "aorta": 0.136542,
+          "pulmonary": 0.346811
+        },
+        "sampledAreaMm2": {
+          "neutral": 12.521,
+          "LV": 88.226,
+          "RV": 351.407,
+          "LA": 3.237,
+          "RA": 0.0,
+          "aorta": 120.352,
+          "pulmonary": 305.691
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          327,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "lv-inflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          251.782569126791,
+          262.892435897523,
+          262.047830044747
+        ],
+        "right": [
+          0.976187060184,
+          0.216930457819,
+          0.0
+        ],
+        "up": [
+          0.013152230927,
+          -0.059185039173,
+          -0.998160382884
+        ],
+        "normal": [
+          -0.216531388836,
+          0.97439124976,
+          -0.060628788874
+        ],
+        "width": 363.0,
+        "height": 528.0,
+        "target": [
+          290.000000000093,
+          273.000000000153,
+          288.000000000166
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          109.0,
+          94.0,
+          20.0
+        ],
+        "sourceMax": [
+          395.0,
+          294.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 4895701
+      },
+      "review": "The section preserves the LA\u2013mitral-region\u2013LV relationship and subvalvular tissue.",
+      "remainingLimits": [
+        "The fixed specimen is partly collapsed; individual mitral leaflets are not labeled."
+      ],
+      "focusMetrics": {
+        "pixelCount": 75074,
+        "regionPixels": {
+          "neutral": 11,
+          "LV": 55919,
+          "RV": 2073,
+          "LA": 12800,
+          "RA": 0,
+          "aorta": 4095,
+          "pulmonary": 176
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.000147,
+          "LV": 0.744852,
+          "RV": 0.027613,
+          "LA": 0.170498,
+          "RA": 0.0,
+          "aorta": 0.054546,
+          "pulmonary": 0.002344
+        },
+        "sampledAreaMm2": {
+          "neutral": 0.399,
+          "LV": 2030.593,
+          "RV": 75.277,
+          "LA": 464.808,
+          "RA": 0.0,
+          "aorta": 148.702,
+          "pulmonary": 6.391
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          325,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "lv-outflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          248.63825040215,
+          257.679127566723,
+          262.027204198794
+        ],
+        "right": [
+          0.866025403784,
+          0.5,
+          0.0
+        ],
+        "up": [
+          0.041199169128,
+          -0.07135905416,
+          -0.996599475142
+        ],
+        "normal": [
+          -0.498299737571,
+          0.863080462871,
+          -0.082398338257
+        ],
+        "width": 421.0,
+        "height": 540.0,
+        "target": [
+          260.00000000023,
+          265.000000000119,
+          269.999999999825
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          109.0,
+          94.0,
+          20.0
+        ],
+        "sourceMax": [
+          395.0,
+          331.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 4597688
+      },
+      "review": "The section follows the LV outlet toward the aortic root, with mitral-side context.",
+      "remainingLimits": [
+        "Aortic leaflet identity and annular measurements are not validated."
+      ],
+      "focusMetrics": {
+        "pixelCount": 81043,
+        "regionPixels": {
+          "neutral": 169,
+          "LV": 48161,
+          "RV": 7048,
+          "LA": 14248,
+          "RA": 3226,
+          "aorta": 7620,
+          "pulmonary": 571
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.002085,
+          "LV": 0.594265,
+          "RV": 0.086966,
+          "LA": 0.175808,
+          "RA": 0.039806,
+          "aorta": 0.094024,
+          "pulmonary": 0.007046
+        },
+        "sampledAreaMm2": {
+          "neutral": 6.137,
+          "LV": 1748.876,
+          "RV": 255.935,
+          "LA": 517.389,
+          "RA": 117.146,
+          "aorta": 276.706,
+          "pulmonary": 20.735
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          325,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "ra-inflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          255.499999999748,
+          169.259813450642,
+          243.231486728318
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.251633851765,
+          -0.967822506788
+        ],
+        "normal": [
+          -0.0,
+          0.967822506788,
+          0.251633851765
+        ],
+        "width": 301.0,
+        "height": 571.0,
+        "target": [
+          245.000000000034,
+          187.000000000052,
+          174.999999999818
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          116.0,
+          94.0,
+          20.0
+        ],
+        "sourceMax": [
+          359.0,
+          227.0,
+          398.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 1020309
+      },
+      "review": "The section shows the right atrial cavity and its preserved venous-entry side.",
+      "remainingLimits": [
+        "The preserved vessel ends are truncated; this is not a complete bicaval view."
+      ],
+      "focusMetrics": {
+        "pixelCount": 37070,
+        "regionPixels": {
+          "neutral": 134,
+          "LV": 0,
+          "RV": 4169,
+          "LA": 6326,
+          "RA": 22693,
+          "aorta": 0,
+          "pulmonary": 3748
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.003615,
+          "LV": 0.0,
+          "RV": 0.112463,
+          "LA": 0.17065,
+          "RA": 0.612166,
+          "aorta": 0.0,
+          "pulmonary": 0.101106
+        },
+        "sampledAreaMm2": {
+          "neutral": 5.703,
+          "LV": 0.0,
+          "RV": 177.446,
+          "LA": 269.254,
+          "RA": 965.885,
+          "aorta": 0.0,
+          "pulmonary": 159.527
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          362,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "ra-outflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          260.585479939489,
+          240.504628027996,
+          255.20178703852
+        ],
+        "right": [
+          0.887256416221,
+          0.290807410392,
+          0.358060193174
+        ],
+        "up": [
+          -0.0,
+          0.776237587391,
+          -0.630440487217
+        ],
+        "normal": [
+          -0.461276545984,
+          0.559362367329,
+          0.688721779924
+        ],
+        "width": 539.0,
+        "height": 569.0,
+        "target": [
+          239.734954158372,
+          181.274616734889,
+          289.342105386075
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          109.0,
+          94.0,
+          94.0
+        ],
+        "sourceMax": [
+          386.0,
+          398.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 6214386
+      },
+      "review": "The atrial-side cut uses the reviewed tricuspid hinge region, with the RV beyond it.",
+      "remainingLimits": [
+        "This is a regional anatomical cut, not a segmented or measured tricuspid annulus."
+      ],
+      "focusMetrics": {
+        "pixelCount": 66930,
+        "regionPixels": {
+          "neutral": 8,
+          "LV": 14500,
+          "RV": 12207,
+          "LA": 6242,
+          "RA": 27994,
+          "aorta": 5978,
+          "pulmonary": 1
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.00012,
+          "LV": 0.216644,
+          "RV": 0.182385,
+          "LA": 0.093262,
+          "RA": 0.418258,
+          "aorta": 0.089317,
+          "pulmonary": 1.5e-05
+        },
+        "sampledAreaMm2": {
+          "neutral": 0.173,
+          "LV": 313.014,
+          "RV": 263.515,
+          "LA": 134.747,
+          "RA": 604.311,
+          "aorta": 129.048,
+          "pulmonary": 0.022
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          400,
+          389
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "la-inflow": {
+      "status": "retained",
+      "sourceFrame": {
+        "center": [
+          310.00000000017803,
+          246.499999999842,
+          263.000000000192
+        ],
+        "right": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "width": 325.0,
+        "height": 506.0,
+        "target": [
+          310.00000000017803,
+          302.000000000144,
+          190.00000000001398
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          311.0,
+          128.0,
+          77.0
+        ],
+        "sourceMax": [
+          395.0,
+          373.0,
+          412.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 1512288
+      },
+      "review": "The section shows the preserved pulmonary-venous-entry side and the left atrial cavity.",
+      "remainingLimits": [
+        "Named pulmonary veins and all four vein ostia are not individually verified."
+      ],
+      "focusMetrics": {
+        "pixelCount": 40842,
+        "regionPixels": {
+          "neutral": 24,
+          "LV": 12840,
+          "RV": 421,
+          "LA": 26167,
+          "RA": 1390,
+          "aorta": 0,
+          "pulmonary": 0
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.000588,
+          "LV": 0.314382,
+          "RV": 0.010308,
+          "LA": 0.640689,
+          "RA": 0.034034,
+          "aorta": 0.0,
+          "pulmonary": 0.0
+        },
+        "sampledAreaMm2": {
+          "neutral": 0.835,
+          "LV": 446.921,
+          "RV": 14.654,
+          "LA": 910.792,
+          "RA": 48.382,
+          "aorta": 0.0,
+          "pulmonary": 0.0
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          332,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    },
+    "la-outflow": {
+      "status": "refined",
+      "sourceFrame": {
+        "center": [
+          265.42050320447566,
+          246.999999999752,
+          236.47494553479407
+        ],
+        "right": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "up": [
+          0.934783580588163,
+          0.0,
+          0.3552177606240619
+        ],
+        "normal": [
+          0.3552177606240619,
+          0.0,
+          -0.934783580588163
+        ],
+        "width": 326.0,
+        "height": 460.0,
+        "target": [
+          309.3553314921193,
+          271.999999999752,
+          253.170180284125
+        ]
+      },
+      "bounds": {
+        "sourceMin": [
+          109.0,
+          94.0,
+          184.0
+        ],
+        "sourceMax": [
+          393.0,
+          371.0,
+          508.0
+        ],
+        "threshold": 72,
+        "paddingVoxels": 2,
+        "retainedThresholdedVoxels": 6487028
+      },
+      "review": "The cut sits slightly toward the atrial side of the LA\u2013LV junction to show the mitral region with less ventricular wall.",
+      "remainingLimits": [
+        "Leaflets and the mitral annulus are not separately segmented; no valve-area measurement is implied."
+      ],
+      "focusMetrics": {
+        "pixelCount": 79777,
+        "regionPixels": {
+          "neutral": 99,
+          "LV": 18898,
+          "RV": 0,
+          "LA": 28997,
+          "RA": 15412,
+          "aorta": 10938,
+          "pulmonary": 5433
+        },
+        "regionFractionOfThresholdedSection": {
+          "neutral": 0.001241,
+          "LV": 0.236885,
+          "RV": 0.0,
+          "LA": 0.363476,
+          "RA": 0.193189,
+          "aorta": 0.137107,
+          "pulmonary": 0.068102
+        },
+        "sampledAreaMm2": {
+          "neutral": 2.138,
+          "LV": 408.164,
+          "RV": 0.0,
+          "LA": 626.285,
+          "RA": 332.873,
+          "aorta": 236.242,
+          "pulmonary": 117.343
+        },
+        "pixelThreshold": 72,
+        "raster": [
+          378,
+          400
+        ],
+        "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+      }
+    }
+  },
+  "wholeHeartBounds": {
+    "sourceMin": [
+      109.0,
+      94.0,
+      20.0
+    ],
+    "sourceMax": [
+      395.0,
+      398.0,
+      508.0
+    ],
+    "threshold": 72,
+    "paddingVoxels": 2,
+    "retainedThresholdedVoxels": 9181773
+  }
+}

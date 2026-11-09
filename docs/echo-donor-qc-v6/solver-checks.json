@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-08T02:06:35.074Z",
+  "scope": "Six targeted final solver regression cases. Instrument vertices and shaft route checked against fixed GI; source planes independently compared. Thresholds are fixture regression bounds, not clinical tolerances.",
+  "results": [
+    {
+      "donor": "s-20-28",
+      "id": "mecommissural",
+      "fullHeadInside": true,
+      "headVertices": 390,
+      "shaftInside": true,
+      "shaftClearanceMm": 4.212829175841866,
+      "correctionAngleDeg": 0.707567090259496,
+      "sourceNormalOffsetMm": 0,
+      "maxSourceWitnessResidualMm": 0.6687540276038976,
+      "coplanar": true,
+      "ms": 55.00213200000002
+    },
+    {
+      "donor": "s-20-28",
+      "id": "tgbasalsax",
+      "fullHeadInside": true,
+      "headVertices": 390,
+      "shaftInside": true,
+      "shaftClearanceMm": 2.974886553541637,
+      "correctionAngleDeg": 5.073677079336276,
+      "sourceNormalOffsetMm": 1.9206049149338373,
+      "maxSourceWitnessResidualMm": 1.913079601248143,
+      "coplanar": true,
+      "ms": 1273.9452609999998
+    },
+    {
+      "donor": "s-20-28",
+      "id": "tgrvinout",
+      "sourcePlaneRetained": true,
+      "withheld": true,
+      "targetBudget": {
+        "maxAddedMissMm": 4.801512287334593,
+        "maxSourceWitnessResidualMm": 7.682419659735349,
+        "maxCorrectionAngleDeg": 20
+      },
+      "ms": 597.7789119999998
+    },
+    {
+      "donor": "s-20-29",
+      "id": "mecommissural",
+      "fullHeadInside": true,
+      "headVertices": 390,
+      "shaftInside": true,
+      "shaftClearanceMm": 3.59000334649291,
+      "correctionAngleDeg": 0,
+      "sourceNormalOffsetMm": 0,
+      "maxSourceWitnessResidualMm": 1.7763568394002505e-15,
+      "coplanar": true,
+      "ms": 36.65841399999999
+    },
+    {
+      "donor": "s-20-29",
+      "id": "tgbasalsax",
+      "fullHeadInside": true,
+      "headVertices": 390,
+      "shaftInside": true,
+      "shaftClearanceMm": 3.043605258887723,
+      "correctionAngleDeg": 2.5693121229780864,
+      "sourceNormalOffsetMm": 0,
+      "maxSourceWitnessResidualMm": 0.15943960754943642,
+      "coplanar": true,
+      "ms": 1252.6585639999998
+    },
+    {
+      "donor": "s-20-29",
+      "id": "tgrvinout",
+      "sourcePlaneRetained": true,
+      "withheld": true,
+      "targetBudget": {
+        "maxAddedMissMm": 4.602829348659369,
+        "maxSourceWitnessResidualMm": 7.36452695785499,
+        "maxCorrectionAngleDeg": 20
+      },
+      "ms": 597.1088370000002
+    }
+  ]
+}

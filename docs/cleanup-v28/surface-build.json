@@ -1,0 +1,220 @@
+{
+  "manifestSha256": "b3e9a7654ace71bdad6fe94e8f5fa10811340d36c4224ec83d33f331367af7fc",
+  "patches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "policy": {
+        "path": "docs/cleanup-v28-left/patch/lvot-perivalvular-refinement-policy.json",
+        "sha256": "7d3bcb3d380775d77692e3a764dcf562d0ab12ac1036b0fd761605a73a9b710e"
+      },
+      "counts": {
+        "originalForeground": 4886593,
+        "refinedForeground": 4304966,
+        "removedForeground": 581627,
+        "protected135Samples": 2311604,
+        "lostProtected135Samples": 0,
+        "raw190Samples": 344798,
+        "lostRaw190Samples": 0,
+        "maximumLocalThreshold": 120.0,
+        "boxBoundaryNonBaselineSamples": 0
+      },
+      "inheritedDetachedDisplayCleanup": {
+        "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+        "inputComponents": 13541,
+        "removedCompleteComponents": 12492,
+        "removedTriangles": 229012,
+        "removedVertices": 139386,
+        "retainedCropBoundaryComponents": 931,
+        "largestProtected": true,
+        "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+        "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+      },
+      "meshReduction": {
+        "inputVertices": 1403457,
+        "inputTriangles": 2809081,
+        "vertices": 140268,
+        "triangles": 282703,
+        "conservativeRadiusLimitMm": 0.3176,
+        "maximumConservativeRadiusMm": 0.317599,
+        "radiusRejections": 743561,
+        "linkRejections": 279654,
+        "frozenBoundaryVertices": true,
+        "interiorEdgeLinkConstraint": true,
+        "seconds": 8.82666,
+        "peakRssMiB": 762.375,
+        "deliveredSourceToSurface": {
+          "samples": 12000,
+          "meanMm": 0.012003114279583343,
+          "rmsMm": 0.018108529323085737,
+          "medianMm": 0.007673936821936069,
+          "p95Mm": 0.0376526131796655,
+          "p99Mm": 0.06717686446107002,
+          "maximumSampledMm": 0.15564632914776952
+        },
+        "deliveredSurfaceToSource": {
+          "samples": 12000,
+          "meanMm": 0.010721921187900942,
+          "rmsMm": 0.015038028873365581,
+          "medianMm": 0.0075338610435675725,
+          "p95Mm": 0.03221596616195634,
+          "p99Mm": 0.04879708715940981,
+          "maximumSampledMm": 0.09093300463869078
+        },
+        "quantizationMaximumErrorMm": 0.00022651088617175325,
+        "quantizationZeroAreaFacesRemoved": 103,
+        "orphanVerticesCompacted": 15,
+        "cancellingNormalFallbacks": 1,
+        "finiteSampleSeed": 2800714,
+        "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+      },
+      "sourceRoiSha256": "e3a50af57cf31316286a95acb132b636b19835d9c571bb1e4c42bcfe694fcfb1",
+      "sourcePaddedRoiSha256": "174de493055f69b658197f720625a16b350a912d1cd0b32040967646b87b1ee4"
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "policy": {
+        "path": "docs/cleanup-v28-right/patch/tricuspid-core-surface-policy.json",
+        "sha256": "0add60bf33fd4bfbcab0aae70a9d49c2aaf6acf1ecfea9b6399256ea85df2551"
+      },
+      "counts": {
+        "originalForeground": 5553483,
+        "refinedForeground": 4783951,
+        "removedForeground": 769532,
+        "protected135Samples": 2416416,
+        "lostProtected135Samples": 0,
+        "raw190Samples": 166706,
+        "lostRaw190Samples": 0,
+        "maximumLocalThreshold": 120.0,
+        "boxBoundaryNonBaselineSamples": 0
+      },
+      "inheritedDetachedDisplayCleanup": {
+        "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+        "inputComponents": 24428,
+        "removedCompleteComponents": 23081,
+        "removedTriangles": 445524,
+        "removedVertices": 268724,
+        "retainedCropBoundaryComponents": 997,
+        "largestProtected": true,
+        "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+        "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+      },
+      "meshReduction": {
+        "inputVertices": 1541043,
+        "inputTriangles": 3076360,
+        "vertices": 154284,
+        "triangles": 302842,
+        "conservativeRadiusLimitMm": 0.3176,
+        "maximumConservativeRadiusMm": 0.3176,
+        "radiusRejections": 793352,
+        "linkRejections": 290714,
+        "frozenBoundaryVertices": true,
+        "interiorEdgeLinkConstraint": true,
+        "seconds": 8.35809,
+        "peakRssMiB": 835.25,
+        "deliveredSourceToSurface": {
+          "samples": 12000,
+          "meanMm": 0.012286835143060618,
+          "rmsMm": 0.018939445340467292,
+          "medianMm": 0.0075484798416872115,
+          "p95Mm": 0.041335316645076,
+          "p99Mm": 0.06927033017315827,
+          "maximumSampledMm": 0.17139318431583395
+        },
+        "deliveredSurfaceToSource": {
+          "samples": 12000,
+          "meanMm": 0.010297388364136007,
+          "rmsMm": 0.01460085705187008,
+          "medianMm": 0.0069100284775633425,
+          "p95Mm": 0.03166076177343849,
+          "p99Mm": 0.046979198062762025,
+          "maximumSampledMm": 0.08370817814463
+        },
+        "quantizationMaximumErrorMm": 0.00034002955813221465,
+        "quantizationZeroAreaFacesRemoved": 136,
+        "orphanVerticesCompacted": 13,
+        "cancellingNormalFallbacks": 3,
+        "finiteSampleSeed": 2800714,
+        "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+      },
+      "sourceRoiSha256": "25ddf564a5354b6b6983554b7fc33d8c5d1390a4eca3e79b29a9dbebb25cfa79",
+      "sourcePaddedRoiSha256": "f2fec4acd59cc4c4d9523ef40fd8f1c63a449cd6271125324a643ec756b8fe32"
+    },
+    {
+      "id": "pulmonary-valve-lumen-surface",
+      "policy": {
+        "path": "docs/cleanup-v28-right/patch/pulmonary-valve-lumen-surface-policy.json",
+        "sha256": "ee2c10ca7d0b912c2cb71760364b6f5fc7efaac971513d3a563f69fa2c7cfd35"
+      },
+      "counts": {
+        "originalForeground": 7927474,
+        "refinedForeground": 6956911,
+        "removedForeground": 970563,
+        "protected135Samples": 4336605,
+        "lostProtected135Samples": 0,
+        "raw190Samples": 1183484,
+        "lostRaw190Samples": 0,
+        "maximumLocalThreshold": 120.0,
+        "boxBoundaryNonBaselineSamples": 0
+      },
+      "inheritedDetachedDisplayCleanup": {
+        "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+        "inputComponents": 29063,
+        "removedCompleteComponents": 27542,
+        "removedTriangles": 448762,
+        "removedVertices": 279325,
+        "retainedCropBoundaryComponents": 1094,
+        "largestProtected": true,
+        "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+        "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+      },
+      "meshReduction": {
+        "inputVertices": 2471830,
+        "inputTriangles": 4994657,
+        "vertices": 242376,
+        "triangles": 535749,
+        "conservativeRadiusLimitMm": 0.3176,
+        "maximumConservativeRadiusMm": 0.3176,
+        "radiusRejections": 1319381,
+        "linkRejections": 851795,
+        "frozenBoundaryVertices": true,
+        "interiorEdgeLinkConstraint": true,
+        "seconds": 16.4364,
+        "peakRssMiB": 1351.12,
+        "deliveredSourceToSurface": {
+          "samples": 12000,
+          "meanMm": 0.01389254095393722,
+          "rmsMm": 0.021218488230340803,
+          "medianMm": 0.008543509972274436,
+          "p95Mm": 0.04474647865491009,
+          "p99Mm": 0.0781365211339639,
+          "maximumSampledMm": 0.16763493981396127
+        },
+        "deliveredSurfaceToSource": {
+          "samples": 12000,
+          "meanMm": 0.011696704444843761,
+          "rmsMm": 0.016395907409457934,
+          "medianMm": 0.008022046240504864,
+          "p95Mm": 0.03530305480786406,
+          "p99Mm": 0.051254015095624494,
+          "maximumSampledMm": 0.08968647614972876
+        },
+        "quantizationMaximumErrorMm": 0.0018885106737372929,
+        "quantizationZeroAreaFacesRemoved": 215,
+        "orphanVerticesCompacted": 38,
+        "cancellingNormalFallbacks": 5,
+        "finiteSampleSeed": 2800714,
+        "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+      },
+      "sourceRoiSha256": "806f0b2d12128b1c88ac2ae43621fd677a6fdc3b30942b3139d0c42ab0c859c6",
+      "sourcePaddedRoiSha256": "17facc33b5206cd9b619ff315a10d79b5ee4cf088ca8ae6b27e35e340afaa1f7"
+    }
+  ],
+  "totalCompressedBytes": 12497761,
+  "totalDecodedBytes": 28138400,
+  "totalMaskBytes": 8245872,
+  "totalTriangles": 1120840,
+  "originalSourceAndGeometryUnchanged": true,
+  "publicationState": "Published and live-verified in Site version 47, source commit 537c7e1046f34a1166d8ba440a27933cf17e6f16. All 11 combined source-pinned views pass exact restoration and original-cleanup-off checks. See docs/release-v28/publication.json.",
+  "combinedReview": "docs/cleanup-v28/final-review/validation.json",
+  "runtimeValidation": "docs/local-refinement-v28/validation.json"
+}

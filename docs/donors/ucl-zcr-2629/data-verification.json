@@ -1,0 +1,62 @@
+{
+  "specimen": "UCL-ZCR-2629",
+  "datasetId": "2298522198",
+  "passed": true,
+  "checks": [
+    {
+      "name": "OME XYZ C-order byte offsets versus internal ZYX source voxels",
+      "samples": 1181,
+      "maximumIntegerError": 0
+    },
+    {
+      "name": "OME half-voxel translations and common first/last centers",
+      "samples": 4096,
+      "maximumDisplayByteError": 0,
+      "correctedOffsetUmPerAxis": 42.192,
+      "maximumRawInterpolationRounding": 0.5,
+      "terminalXColumnOutsideRetainedSupport": true
+    },
+    {
+      "name": "Clean and original volume prediction/gzip round trips",
+      "parts": 4,
+      "maximumByteError": 0
+    },
+    {
+      "name": "Fine display source intensities and donor-specific support",
+      "samples": 20000,
+      "maximumByteError": 0,
+      "window": [
+        35893,
+        38534
+      ],
+      "sourceSpacingUm": 28.128
+    },
+    {
+      "name": "All served objects match immutable size/hash allowlists",
+      "inventory": {
+        "ultra-sections": {
+          "objects": 1032,
+          "bytes": 529374944
+        },
+        "ultra-volume": {
+          "objects": 5055,
+          "bytes": 855356088
+        }
+      }
+    },
+    {
+      "name": "Orthogonal cut-face pixels, crop origins, and exact plane positions",
+      "images": 51,
+      "comparedPixels": 55658623,
+      "maximumDisplayByteError": 0
+    },
+    {
+      "name": "Fine brick interiors and all positive halos",
+      "bricks": 80,
+      "voxels": 21970000,
+      "maximumByteError": 0
+    }
+  ],
+  "elapsedSeconds": 16.67,
+  "scope": "Source decoding, physical registration, intensity preservation, compression, and object integrity. No clinical segmentation accuracy is asserted."
+}

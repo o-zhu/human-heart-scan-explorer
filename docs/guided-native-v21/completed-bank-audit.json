@@ -1,0 +1,666 @@
+{
+  "schema": "guided-native-completed-bank-local-audit-v21.1",
+  "passed": true,
+  "completedAt": "2026-11-06T16:13:26.193465+00:00",
+  "scope": "whole-plan",
+  "readOnly": true,
+  "networkRequests": 0,
+  "processingFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a",
+  "planSha256": "3be68c22b4f7a000b6e17b4c159f4d9a630b52884ea434624fc70c25999c6e94",
+  "runManifestSha256": "85e63be2416dfb098463db520404ba6c7d74aace2bf50949714cc4742dd29da7",
+  "progressSha256": "6925b1753c3579ca6e8e68dc86d21824cf342ab8dd594c2e689a31e25171ea47",
+  "configuration": {
+    "schema": "guided-native-processing-v21.1",
+    "halo": 16,
+    "thresholdRaw": 17133.4,
+    "tvWeightRaw": 800,
+    "tvIterations": 16,
+    "tvStoppingEpsilon": 0,
+    "priorGaussianSigmaVoxels": 0.8,
+    "thinGuard": true,
+    "nativeBandInnerVoxels": 8,
+    "nativeBandOuterVoxels": 12,
+    "nativeSourceSpacingUm": 19.85,
+    "edgeCrossingBits": 5,
+    "overviewSamplingStepNative": 4
+  },
+  "processingIdentity": {
+    "inputPlan": "3be68c22b4f7a000b6e17b4c159f4d9a630b52884ea434624fc70c25999c6e94",
+    "corePlan": "3be68c22b4f7a000b6e17b4c159f4d9a630b52884ea434624fc70c25999c6e94",
+    "configuration": {
+      "schema": "guided-native-processing-v21.1",
+      "halo": 16,
+      "thresholdRaw": 17133.4,
+      "tvWeightRaw": 800,
+      "tvIterations": 16,
+      "tvStoppingEpsilon": 0,
+      "priorGaussianSigmaVoxels": 0.8,
+      "thinGuard": true,
+      "nativeBandInnerVoxels": 8,
+      "nativeBandOuterVoxels": 12,
+      "nativeSourceSpacingUm": 19.85,
+      "edgeCrossingBits": 5,
+      "overviewSamplingStepNative": 4
+    },
+    "processingCode": {
+      "source.py": "bbc3b4ecbc5d7e731f4c4723408b1cdff65c4e013f72434776a049e317a7bed6",
+      "prior.py": "540d6f663addc0cee3e70c565321446f56a2a0dde479e750637809937ef355de",
+      "edge_codec.py": "a487ab160022000028b31e111c043f72d8ebdd4604368c23d1ac1ef32bb314f6",
+      "refine.py": "98c9193a2f41521adf514fb48c24efa3519db6259def8b9e128ae4eb60e5b90b",
+      "tv_kernel.py": "a5fa7838bf25c6e750d007f425bc25289a589e1261c82184f69f6ec6c0854a77",
+      "tv_kernel.c": "7477e070c336ee66927f61a090675c50f8c6b07f7d3fd615f2218c6184197f61"
+    },
+    "priorManifest": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c"
+  },
+  "exactPlanCoverage": {
+    "plannedBlocks": 37612,
+    "completedBlocks": 37612,
+    "duplicates": 0,
+    "missing": 0,
+    "foreignFingerprint": 0,
+    "unplannedCoreTiles": 0
+  },
+  "totals": {
+    "overviewCheckpointTriangles": 542112884,
+    "overviewCheckpointVertices": 305659740,
+    "overviewCheckpointCompressedBytes": 264393716,
+    "overviewCheckpointDecodedBytes": 362477933,
+    "overviewNonemptyTiles": 32298,
+    "coreSampleRecords": 80741266668,
+    "nativeWeightFullPointRecords": 46957687644,
+    "nativeWeightNonzeroPointRecords": 52629570351,
+    "emptyTiles": 4566,
+    "nonemptyNativeTiles": 33046,
+    "nativeVertices": 6192976842,
+    "nativeTriangles": 12168077800,
+    "nativeCompressedBytes": 5810515698,
+    "nativeDecodedBytes": 12740233271
+  },
+  "surfaceContribution": {
+    "nativeOnlyEdgeVertices": 6122635215,
+    "blendedEdgeVertices": 70341627,
+    "priorOnlyEdgeVertices": 0
+  },
+  "storedCrossingFractions": {
+    "nativeOnlyEdgeVertices": 0.9886417099894591,
+    "blendedEdgeVertices": 0.011358290010540943,
+    "priorOnlyEdgeVertices": 0.0
+  },
+  "contributionScope": "Stored edge crossings, including shared-tile duplicates; not distinct mesh vertices, area fractions or anatomical completeness.",
+  "weightPointAccounting": {
+    "noNativeWeightTiles": 2863,
+    "partlyNativeWeightTiles": 34545,
+    "allFullNativeWeightTiles": 204
+  },
+  "overviewNativeNonemptyButStep4EmptyTiles": 748,
+  "source": {
+    "logSha256": "2418296a32e8d6229e7a46cca9a52d860aec901d74b032f5a8f0a5a90643679d",
+    "observations": 47805,
+    "duplicateCoordinateObservations": 10193,
+    "uniqueObjects": 37612,
+    "uniqueObjectEncodedBytes": 125300097139,
+    "observedReadBytes": 159388868233,
+    "cachedObservations": 5613,
+    "networkTaggedObservationBytes": 140537590593,
+    "plannedInputObjects": 37612,
+    "additionalContextObjects": 0,
+    "networkAccountingCaveat": "Ledger observations are not network transfer totals; retries and unsuccessful requests are not represented.",
+    "deduplicatedObjectsCanonicalSha256": "1ade726b163e1c1180e99a137741989a4ecdc81cf1bdf177d3049320d9b129f6",
+    "additionalContextEncodedBytes": 0,
+    "plannedInputEncodedBytes": 125300097139,
+    "allAdditionalContextWithinOneBlockOfCore": true,
+    "additionalContextXYZ": [],
+    "generationUnavailableUniqueObjects": 213,
+    "multipleGenerationSameBytesUniqueObjects": 0,
+    "conflictingHashOrSizeObjects": 0,
+    "uniqueObjectRawBytes": 157756162048,
+    "sourceObjectCoordinatesBoundsXYZ": [
+      [
+        13,
+        10,
+        1
+      ],
+      [
+        50,
+        50,
+        63
+      ]
+    ],
+    "allSourceBlocksFull128Cubed": true,
+    "accountingScope": "Original compressed N5 object identities observed by this scientific run. Repeated reads and final-invocation counters are distinct; none is a complete end-to-end network-transfer measurement.",
+    "outsidePlanInterpretation": "All additional source coordinates are immediate 3x3x3 neighbors of at least one planned core. The frozen refine.missing_source_blocks code requests such context only when nonzero native weight needs real original samples through the finite TV halo; no extra core tiles were added."
+  },
+  "retainedSourceValidation": {
+    "objects": 158,
+    "encodedBytes": 532603501,
+    "allHashesMatchRunLedger": true,
+    "allFourStreamN5HeadersValid": true,
+    "bloscVersion": 2,
+    "bloscCodecVersion": 1,
+    "bloscFlags": 148,
+    "typesize": 2,
+    "decodedUint16Endianness": "big",
+    "decodedBlockShapeXYZ": [
+      128,
+      128,
+      128
+    ],
+    "fourIndependentStreamsRawBytes": 1048576,
+    "otherCacheObjectsOutsideRunSkipped": 0,
+    "scope": "Existing retained network-pilot bytes only; the full original volume was not redownloaded or re-decoded.",
+    "objectsCanonicalSha256": "d4098ad113d35fe83b99ccc5f9e35c2dca8e125289b5ae0cba85f160c7c84cdb"
+  },
+  "nativeReceipts": {
+    "count": 33046,
+    "allHistoricalFullPublicGetVerified": true,
+    "allShaBytesUrlFilenameXYZMatch": true,
+    "freshNetworkProbe": false,
+    "earliestVerifiedAt": "2026-11-06T13:52:47.259206+00:00",
+    "latestVerifiedAt": "2026-11-06T16:04:28.142360+00:00",
+    "canonicalSha256": "ff40cb267bbdfe4d38c15be92283926594a8c0c6798ded2816b0cc68fe2229f2"
+  },
+  "localOverviewVerification": {
+    "count": 37612,
+    "compressedAndDecodedHashesAndSizes": true,
+    "nbeHeaderThresholdOriginStepCountsMatch": true,
+    "canonicalSha256": "44638549397eed2edf3cdfd4571115d40272f67aeb27a52cd9a7ea093a3868f8"
+  },
+  "encoding": {
+    "nativeCrossingBits": 5,
+    "nativeEncodingBoundUm": 0.31015625,
+    "maximumRecordedEncodingMovementUm": 0.31015625,
+    "weightedRmsEncodingMovementUm": 0.17906753349774654,
+    "overviewEncodingBoundUm": 1.240625,
+    "scope": "Relative to the processed scalar isosurface; excludes TV, guidance, registration, simplification and anatomical error."
+  },
+  "finalProgressLastInvocationOnly": {
+    "networkBytesThisRun": 35143299264,
+    "requestsThisRun": 10451,
+    "retriesThisRun": 0,
+    "elapsedSeconds": 1923.0006813819928
+  },
+  "overviewPartition": {
+    "groupBlocks": 4,
+    "leafFaceCap": 750000,
+    "totalOriginalOverviewTriangles": 542112884,
+    "leaves": 3284,
+    "leavesBySpan": {
+      "4": 534,
+      "2": 2750
+    },
+    "totalHierarchyNodes": 3838,
+    "nodesBySpan": {
+      "64": 1,
+      "32": 8,
+      "16": 37,
+      "8": 164,
+      "4": 878,
+      "2": 2750
+    },
+    "maximumLeafRawTriangles": 748808,
+    "scope": "Exact partition only; no meshes constructed and no prediction of final merge cap feasibility."
+  },
+  "finalRecoveryControl": {
+    "sha256": "874f82813bc0d791416751384d3a143a6cfd5b7c4e3f7129ce3bbdf0b64e2809",
+    "bytes": 3518734,
+    "decodedSha256": "d3d4efc3162c3d2cc70b60dc1727f73c5c5db94f5b789260e3fa1a0e2f99f710",
+    "decodedBytes": 11707601,
+    "verifiedAt": "2026-11-06T16:05:31.865839+00:00",
+    "parts": 43,
+    "partCompressedBytes": 309503292,
+    "partCoordinatesCoverPlanExactly": true,
+    "allPartHistoricalReceiptsValid": true,
+    "sourceLedgerEmbeddedByteExact": true,
+    "scope": "Control and part metadata/receipts validated locally; archive parts not re-downloaded or restored in this audit."
+  },
+  "zLayers": [
+    {
+      "z": 1,
+      "plannedTiles": 12,
+      "emptyTiles": 10,
+      "nativeTriangles": 44,
+      "overviewTriangles": 0
+    },
+    {
+      "z": 2,
+      "plannedTiles": 34,
+      "emptyTiles": 17,
+      "nativeTriangles": 1726276,
+      "overviewTriangles": 70268
+    },
+    {
+      "z": 3,
+      "plannedTiles": 51,
+      "emptyTiles": 14,
+      "nativeTriangles": 8451044,
+      "overviewTriangles": 362214
+    },
+    {
+      "z": 4,
+      "plannedTiles": 85,
+      "emptyTiles": 30,
+      "nativeTriangles": 14142176,
+      "overviewTriangles": 611522
+    },
+    {
+      "z": 5,
+      "plannedTiles": 131,
+      "emptyTiles": 44,
+      "nativeTriangles": 19602280,
+      "overviewTriangles": 833302
+    },
+    {
+      "z": 6,
+      "plannedTiles": 201,
+      "emptyTiles": 58,
+      "nativeTriangles": 34907328,
+      "overviewTriangles": 1460780
+    },
+    {
+      "z": 7,
+      "plannedTiles": 278,
+      "emptyTiles": 75,
+      "nativeTriangles": 53943676,
+      "overviewTriangles": 2305858
+    },
+    {
+      "z": 8,
+      "plannedTiles": 331,
+      "emptyTiles": 70,
+      "nativeTriangles": 77306548,
+      "overviewTriangles": 3316834
+    },
+    {
+      "z": 9,
+      "plannedTiles": 382,
+      "emptyTiles": 79,
+      "nativeTriangles": 99588904,
+      "overviewTriangles": 4415220
+    },
+    {
+      "z": 10,
+      "plannedTiles": 427,
+      "emptyTiles": 70,
+      "nativeTriangles": 119295118,
+      "overviewTriangles": 5346090
+    },
+    {
+      "z": 11,
+      "plannedTiles": 467,
+      "emptyTiles": 77,
+      "nativeTriangles": 147187124,
+      "overviewTriangles": 6616224
+    },
+    {
+      "z": 12,
+      "plannedTiles": 514,
+      "emptyTiles": 76,
+      "nativeTriangles": 171527458,
+      "overviewTriangles": 7749326
+    },
+    {
+      "z": 13,
+      "plannedTiles": 546,
+      "emptyTiles": 83,
+      "nativeTriangles": 206574914,
+      "overviewTriangles": 9301604
+    },
+    {
+      "z": 14,
+      "plannedTiles": 575,
+      "emptyTiles": 94,
+      "nativeTriangles": 209701886,
+      "overviewTriangles": 9423202
+    },
+    {
+      "z": 15,
+      "plannedTiles": 614,
+      "emptyTiles": 92,
+      "nativeTriangles": 204014220,
+      "overviewTriangles": 9166970
+    },
+    {
+      "z": 16,
+      "plannedTiles": 644,
+      "emptyTiles": 103,
+      "nativeTriangles": 206061400,
+      "overviewTriangles": 9096676
+    },
+    {
+      "z": 17,
+      "plannedTiles": 677,
+      "emptyTiles": 106,
+      "nativeTriangles": 192892848,
+      "overviewTriangles": 8508734
+    },
+    {
+      "z": 18,
+      "plannedTiles": 707,
+      "emptyTiles": 112,
+      "nativeTriangles": 201001632,
+      "overviewTriangles": 8929038
+    },
+    {
+      "z": 19,
+      "plannedTiles": 738,
+      "emptyTiles": 129,
+      "nativeTriangles": 209939180,
+      "overviewTriangles": 9248908
+    },
+    {
+      "z": 20,
+      "plannedTiles": 761,
+      "emptyTiles": 133,
+      "nativeTriangles": 191145472,
+      "overviewTriangles": 8484722
+    },
+    {
+      "z": 21,
+      "plannedTiles": 798,
+      "emptyTiles": 126,
+      "nativeTriangles": 187166360,
+      "overviewTriangles": 8263272
+    },
+    {
+      "z": 22,
+      "plannedTiles": 837,
+      "emptyTiles": 133,
+      "nativeTriangles": 192355896,
+      "overviewTriangles": 8467770
+    },
+    {
+      "z": 23,
+      "plannedTiles": 870,
+      "emptyTiles": 145,
+      "nativeTriangles": 213329590,
+      "overviewTriangles": 9502452
+    },
+    {
+      "z": 24,
+      "plannedTiles": 884,
+      "emptyTiles": 127,
+      "nativeTriangles": 238362000,
+      "overviewTriangles": 10569516
+    },
+    {
+      "z": 25,
+      "plannedTiles": 897,
+      "emptyTiles": 144,
+      "nativeTriangles": 251536308,
+      "overviewTriangles": 11145034
+    },
+    {
+      "z": 26,
+      "plannedTiles": 890,
+      "emptyTiles": 136,
+      "nativeTriangles": 283239386,
+      "overviewTriangles": 12693460
+    },
+    {
+      "z": 27,
+      "plannedTiles": 861,
+      "emptyTiles": 111,
+      "nativeTriangles": 303527702,
+      "overviewTriangles": 13551300
+    },
+    {
+      "z": 28,
+      "plannedTiles": 888,
+      "emptyTiles": 114,
+      "nativeTriangles": 310263770,
+      "overviewTriangles": 14000050
+    },
+    {
+      "z": 29,
+      "plannedTiles": 902,
+      "emptyTiles": 112,
+      "nativeTriangles": 339751182,
+      "overviewTriangles": 15493864
+    },
+    {
+      "z": 30,
+      "plannedTiles": 921,
+      "emptyTiles": 113,
+      "nativeTriangles": 350941522,
+      "overviewTriangles": 15806972
+    },
+    {
+      "z": 31,
+      "plannedTiles": 937,
+      "emptyTiles": 105,
+      "nativeTriangles": 326097126,
+      "overviewTriangles": 14669878
+    },
+    {
+      "z": 32,
+      "plannedTiles": 937,
+      "emptyTiles": 96,
+      "nativeTriangles": 317242146,
+      "overviewTriangles": 14073986
+    },
+    {
+      "z": 33,
+      "plannedTiles": 946,
+      "emptyTiles": 115,
+      "nativeTriangles": 295470444,
+      "overviewTriangles": 13031516
+    },
+    {
+      "z": 34,
+      "plannedTiles": 935,
+      "emptyTiles": 101,
+      "nativeTriangles": 282767366,
+      "overviewTriangles": 12551220
+    },
+    {
+      "z": 35,
+      "plannedTiles": 934,
+      "emptyTiles": 86,
+      "nativeTriangles": 303407342,
+      "overviewTriangles": 13183518
+    },
+    {
+      "z": 36,
+      "plannedTiles": 941,
+      "emptyTiles": 72,
+      "nativeTriangles": 330880038,
+      "overviewTriangles": 14530720
+    },
+    {
+      "z": 37,
+      "plannedTiles": 960,
+      "emptyTiles": 74,
+      "nativeTriangles": 344957340,
+      "overviewTriangles": 15418570
+    },
+    {
+      "z": 38,
+      "plannedTiles": 971,
+      "emptyTiles": 78,
+      "nativeTriangles": 365052034,
+      "overviewTriangles": 16146692
+    },
+    {
+      "z": 39,
+      "plannedTiles": 967,
+      "emptyTiles": 80,
+      "nativeTriangles": 354492542,
+      "overviewTriangles": 15928168
+    },
+    {
+      "z": 40,
+      "plannedTiles": 946,
+      "emptyTiles": 79,
+      "nativeTriangles": 356928502,
+      "overviewTriangles": 16108458
+    },
+    {
+      "z": 41,
+      "plannedTiles": 917,
+      "emptyTiles": 59,
+      "nativeTriangles": 346589456,
+      "overviewTriangles": 15470956
+    },
+    {
+      "z": 42,
+      "plannedTiles": 892,
+      "emptyTiles": 60,
+      "nativeTriangles": 315118636,
+      "overviewTriangles": 14138040
+    },
+    {
+      "z": 43,
+      "plannedTiles": 861,
+      "emptyTiles": 68,
+      "nativeTriangles": 299580676,
+      "overviewTriangles": 13243476
+    },
+    {
+      "z": 44,
+      "plannedTiles": 821,
+      "emptyTiles": 66,
+      "nativeTriangles": 278275056,
+      "overviewTriangles": 12219096
+    },
+    {
+      "z": 45,
+      "plannedTiles": 781,
+      "emptyTiles": 58,
+      "nativeTriangles": 246624488,
+      "overviewTriangles": 10985498
+    },
+    {
+      "z": 46,
+      "plannedTiles": 740,
+      "emptyTiles": 51,
+      "nativeTriangles": 242456008,
+      "overviewTriangles": 10651398
+    },
+    {
+      "z": 47,
+      "plannedTiles": 699,
+      "emptyTiles": 46,
+      "nativeTriangles": 230087270,
+      "overviewTriangles": 10110480
+    },
+    {
+      "z": 48,
+      "plannedTiles": 661,
+      "emptyTiles": 49,
+      "nativeTriangles": 212311004,
+      "overviewTriangles": 9410686
+    },
+    {
+      "z": 49,
+      "plannedTiles": 622,
+      "emptyTiles": 49,
+      "nativeTriangles": 200602044,
+      "overviewTriangles": 8822936
+    },
+    {
+      "z": 50,
+      "plannedTiles": 576,
+      "emptyTiles": 42,
+      "nativeTriangles": 176575122,
+      "overviewTriangles": 7928708
+    },
+    {
+      "z": 51,
+      "plannedTiles": 531,
+      "emptyTiles": 38,
+      "nativeTriangles": 165480044,
+      "overviewTriangles": 7483212
+    },
+    {
+      "z": 52,
+      "plannedTiles": 488,
+      "emptyTiles": 42,
+      "nativeTriangles": 164817018,
+      "overviewTriangles": 7391632
+    },
+    {
+      "z": 53,
+      "plannedTiles": 442,
+      "emptyTiles": 38,
+      "nativeTriangles": 144806358,
+      "overviewTriangles": 6503590
+    },
+    {
+      "z": 54,
+      "plannedTiles": 399,
+      "emptyTiles": 41,
+      "nativeTriangles": 135522716,
+      "overviewTriangles": 6020534
+    },
+    {
+      "z": 55,
+      "plannedTiles": 357,
+      "emptyTiles": 35,
+      "nativeTriangles": 128312140,
+      "overviewTriangles": 5693884
+    },
+    {
+      "z": 56,
+      "plannedTiles": 312,
+      "emptyTiles": 36,
+      "nativeTriangles": 113404054,
+      "overviewTriangles": 5075606
+    },
+    {
+      "z": 57,
+      "plannedTiles": 275,
+      "emptyTiles": 36,
+      "nativeTriangles": 100796700,
+      "overviewTriangles": 4413614
+    },
+    {
+      "z": 58,
+      "plannedTiles": 234,
+      "emptyTiles": 28,
+      "nativeTriangles": 87366154,
+      "overviewTriangles": 3872402
+    },
+    {
+      "z": 59,
+      "plannedTiles": 195,
+      "emptyTiles": 25,
+      "nativeTriangles": 76636436,
+      "overviewTriangles": 3488254
+    },
+    {
+      "z": 60,
+      "plannedTiles": 158,
+      "emptyTiles": 21,
+      "nativeTriangles": 76764290,
+      "overviewTriangles": 3583254
+    },
+    {
+      "z": 61,
+      "plannedTiles": 119,
+      "emptyTiles": 23,
+      "nativeTriangles": 67320090,
+      "overviewTriangles": 3210488
+    },
+    {
+      "z": 62,
+      "plannedTiles": 88,
+      "emptyTiles": 20,
+      "nativeTriangles": 35737160,
+      "overviewTriangles": 1725250
+    },
+    {
+      "z": 63,
+      "plannedTiles": 47,
+      "emptyTiles": 16,
+      "nativeTriangles": 6116756,
+      "overviewTriangles": 285982
+    }
+  ],
+  "issues": [],
+  "limits": [
+    "Completion means that every block in the recorded coarse-guided core plan was processed, and every nonempty native-grid NBE1 artifact has a recorded full public-GET checksum verification. The guide derives from the cleaned 79.4 micrometre prior. The reconstructed scalar field combines denoised 19.85 micrometre native samples near the guide with a smooth transition to that prior farther away. Native-only, blended and prior-only counts describe stored edge crossings, including duplicates on shared tile boundaries; they are not disjoint surface-area fractions or a measure of complete anatomical coverage. Native-only structures absent from the prior outside the searched band may be missing. The overview is a separately sampled and simplified display LOD. The 0.31015625 micrometre native crossing-encoding bound is relative to the processed scalar isosurface; it does not bound denoising, registration, prior-guidance or anatomical error.",
+    "Step-4 overview construction and hosted HFM publication are still in progress; this is a completed native bank audit, not a publishable final-viewer manifest."
+  ],
+  "seconds": 16.899711800011573,
+  "peakRssBytes": 257937408
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "LADAF X/Y/Z display as coronal/sagittal/axial with a specimen qualification; other HOA donors retain neutral planes.",
+    "Actual cMAC DICOM LPS column vectors map source X/Y/Z to coronal/axial/sagittal without altering metadata.",
+    "All three actual SlicerHeart series map source X/Y/Z to sagittal/coronal/axial from per-series RAS directions.",
+    "Acquired SAX remains cardiac short-axis; ultrasound remains probe-local even with an identity matrix, and unknown orientation stays neutral.",
+    "Anatomical naming requires finite, nondegenerate, orthogonal directions within five degrees of distinct cardinal axes.",
+    "Actual page headings, markers, tooltips, sliders, step buttons, clip choices and enlargement accessibility names update together; internal DOM IDs and axis keys stay unchanged.",
+    "The actual activation function still sets each original clip-axis number, retained side, snapped position and plane geometry; its status and 3D accessibility label use the corresponding anatomical name.",
+    "The completed Ultra cache status uses all Ultra sections; general reconstruction copy uses the active donor orientation note without raw source-axis labels.",
+    "Existing saved numeric axes and slice positions restore unchanged; no URL migration, resampling or reorientation is introduced.",
+    "Native study and whole-native source selectors use coronal/sagittal/axial; motion uses coronal/axial/sagittal for its world-axis selector. Actual clipping normals, values and specimen qualifications are verified."
+  ],
+  "scope": "Actual local metadata, DOM controls and reconstruction source functions in Node/LinkeDOM. Names do not reorient or resample source images. No clinical validation claim."
+}

@@ -1,0 +1,251 @@
+{
+  "scope": "Orthographic native scientific inspection of actual TTE pose/mesh exports.\n\nThe production procedural geometry and shading are retained. Projection is\northographic to compare positions with one stable camera. The optional opaque\nheart is a coarse source silhouette, not the user's final reconstructed surface.\nHead-center dots are review markers; this is not a browser screenshot.\n",
+  "productionMeshes": true,
+  "productionFragmentShader": true,
+  "orthographicProjection": true,
+  "browserScreenshot": false,
+  "sourceHashes": {
+    "public/tte-atlas-geometry.js": "100dd24b6719445d3020cf45ae0614c86323884ef828d56e7a6b0588affff5a2",
+    "public/probe-scene.js": "35b892dcf809258f376ee8c135e9a84659844de7ff58bb91a6adbd7e977bdcdc",
+    "public/tee-context-geometry.js": "4fc0741ee93729ef8331c41e3a499a2f163ba538ba7e41846f8619235a185df7"
+  },
+  "sourceHeart": {
+    "spacingUm": [
+      635.2,
+      635.2,
+      636.4030303030304
+    ],
+    "compressedSha256": "2fbdbed97158e5fc2cf3456130a7c92c7e468a07e9a4f4d3bcd2bff353c33ed4",
+    "triangles": 80602,
+    "threshold": 71.4,
+    "displayGaussianSigma": 0.65,
+    "marchingStep": 3
+  },
+  "camera": {
+    "direction": "anterior-oblique",
+    "forward": [
+      0.844700593501539,
+      -0.5341339124486502,
+      -0.034378349443297006
+    ],
+    "right": [
+      0.17812661699086582,
+      0.341103039488137,
+      -0.9229949213139493
+    ],
+    "up": [
+      -0.5047294479793478,
+      -0.7735306587487353,
+      -0.38327340674538174
+    ],
+    "targetMm": [
+      -11.986218693156772,
+      9.973235492645301,
+      -4.348572034611159
+    ],
+    "halfHeightMm": 107.71576216486179
+  },
+  "cases": [
+    {
+      "id": "plax_deep",
+      "window": "parasternal-long",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "plax",
+      "window": "parasternal-long",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "plax_av",
+      "window": "parasternal-long",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "plax_mv",
+      "window": "parasternal-long",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "plax_rvot",
+      "window": "parasternal-long",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "plax_rvin",
+      "window": "parasternal-long",
+      "estimated": false,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_great",
+      "window": "parasternal-short",
+      "estimated": false,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_av",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_av_zoom",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_tv",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_pv",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_mitral",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_papillary",
+      "window": "parasternal-short",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "psax_apical",
+      "window": "parasternal-short",
+      "estimated": false,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a4c",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a4c_lv",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a4c_rv",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a5c",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a4c_cs",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a2c",
+      "window": "apical",
+      "estimated": false,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a2c_lv",
+      "window": "apical",
+      "estimated": false,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a3c",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a3c_lv",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "a4c_la_pv",
+      "window": "apical",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "subcostal",
+      "window": "subcostal",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "subcostal_ivc",
+      "window": "subcostal",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "subcostal_hepatic",
+      "window": "subcostal",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "ssn_arch",
+      "window": "suprasternal",
+      "estimated": true,
+      "patientRegistered": false,
+      "glError": "GL_NO_ERROR"
+    }
+  ],
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "outputs": [
+    "probe-positions-all28.jpg",
+    "probe-positions-details.jpg"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "checkedFunction": "public/probe-geometry.js#volumeGeometry",
+  "manifestSha256": "2d57f5eccea0914b0c011a9aaabadba09e507a8111590757b7ad0301f7dff487",
+  "checks": [
+    {
+      "donorId": "ladaf-2021-17",
+      "referenceMm": 168.01040000000003,
+      "extent": [
+        0.8960302457466918,
+        1,
+        0.8960302457466918
+      ],
+      "sourceFile": "public/assets/manifest.json",
+      "sourceSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+      "pass": true
+    },
+    {
+      "donorId": "s-20-29",
+      "referenceMm": 154.66464000000002,
+      "extent": [
+        0.9814814814814815,
+        1,
+        0.9814814814814815
+      ],
+      "sourceFile": "public/assets/donors/s-20-29/manifest.json",
+      "sourceSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+      "pass": true
+    },
+    {
+      "donorId": "s-20-28",
+      "referenceMm": 161.34080000000003,
+      "extent": [
+        0.9370078740157479,
+        1,
+        0.9370078740157479
+      ],
+      "sourceFile": "public/assets/donors/s-20-28/manifest.json",
+      "sourceSha256": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+      "pass": true
+    }
+  ]
+}

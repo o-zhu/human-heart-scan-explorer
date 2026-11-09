@@ -1,0 +1,222 @@
+{
+  "datasetId": "1773963465",
+  "specimen": "S-20-29",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": true,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Approximate donor-specific source review; clinical presets remain geometric",
+  "sourceDoi": "10.15151/ESRF-DC-1773964017",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "schemaVersion": 2,
+  "revision": "s-20-29-source-regions-v17",
+  "title": "Approximate donor-specific chamber and outflow regions",
+  "dimensions": [
+    317,
+    317,
+    323
+  ],
+  "volumeUrl": "./assets/donors/s-20-29/anatomy/labels-v17-228d1bbd4896.raw.gz",
+  "arrayOrder": "ZYX; X fastest",
+  "dtype": "uint8",
+  "sourceDimensionsXYZ": [
+    478,
+    478,
+    487
+  ],
+  "sourceSpacingUm": [
+    318.24,
+    318.24,
+    318.24
+  ],
+  "labelGridSpacingUmXYZ": [
+    480.3812658227849,
+    480.3812658227849,
+    480.32496894409945
+  ],
+  "compressedBytes": 328222,
+  "decodedBytes": 32457947,
+  "sha256": "228d1bbd48966c1752b67e28b98bca08e654466ba86c5739631cde68674cbf05",
+  "compressedSha256": "d33b43f514c8590e9402a3dc272cc8003851bc65041606ef7ed0e7daddc2b15a",
+  "sourceReviewed": true,
+  "segmentationAvailable": true,
+  "method": "Independent donor-specific source cavity extraction and intensity-weighted tissue propagation. A manually reviewed compact LV envelope protects thick septum; an RV-facing surface shell follows the RV cavity. Atrial regions follow their own donor inlet continuity; great-vessel roots are identified by oblique LVOT/RVOT continuity and restricted to source-supported walls. Three candidate approaches were compared. No labels from another donor were used.",
+  "validation": "Orthogonal source/overlay panels, oblique ventricular-to-root continuity panels and four native source-derived surface/cutaway views. Internal checks establish consistency and provenance, not expert ground-truth accuracy.",
+  "limitations": [
+    "Approximate source-guided regional annotations without expert ground-truth segmentation.",
+    "Atrioventricular and great-vessel transition gates are visually estimated; uncertain shared transition tissue remains neutral.",
+    "Valve leaflets, coronary arteries, individual pulmonary/caval veins, appendages and fat are not separately segmented.",
+    "The compact septal body and RV-facing shell use an explicit shared-septum display convention.",
+    "These labels do not validate any geometric preset as a clinical TTE/TEE window and do not register an independent ultrasound recording to this donor.",
+    "Not for diagnostic, procedural, chamber-volume, wall-thickness or other quantitative measurements."
+  ],
+  "labels": [
+    {
+      "id": 0,
+      "key": "unclassified",
+      "name": "Unassigned tissue",
+      "color": "#9ba9b0",
+      "confidence": "Unassigned / uncertain",
+      "description": "Uncertain transitions and tissue without a supported regional assignment.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 28226896,
+      "boundsNormalizedXYZ": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "key": "lv",
+      "name": "Left ventricle",
+      "color": "#e36d73",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 2050548,
+      "boundsNormalizedXYZ": [
+        [
+          0.3291139240506329,
+          0.18354430379746836,
+          0.2826086956521739
+        ],
+        [
+          0.8987341772151899,
+          0.740506329113924,
+          0.9316770186335404
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "key": "rv",
+      "name": "Right ventricle",
+      "color": "#54a6e6",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 1055851,
+      "boundsNormalizedXYZ": [
+        [
+          0.14240506329113925,
+          0.2468354430379747,
+          0.391304347826087
+        ],
+        [
+          0.6329113924050633,
+          0.740506329113924,
+          0.9627329192546584
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "key": "la",
+      "name": "Left atrium",
+      "color": "#f2b36b",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 374646,
+      "boundsNormalizedXYZ": [
+        [
+          0.379746835443038,
+          0.22784810126582278,
+          0.08695652173913043
+        ],
+        [
+          0.810126582278481,
+          0.5632911392405063,
+          0.36645962732919257
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "key": "ra",
+      "name": "Right atrium",
+      "color": "#63c7ba",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 366025,
+      "boundsNormalizedXYZ": [
+        [
+          0.10126582278481013,
+          0.3291139240506329,
+          0.052795031055900624
+        ],
+        [
+          0.4620253164556962,
+          0.6424050632911392,
+          0.45962732919254656
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "key": "aorta",
+      "name": "Aortic outflow",
+      "color": "#c499e8",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 218388,
+      "boundsNormalizedXYZ": [
+        [
+          0.2310126582278481,
+          0.3259493670886076,
+          0.09937888198757763
+        ],
+        [
+          0.6075949367088608,
+          0.7626582278481012,
+          0.38509316770186336
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "key": "pulmonary",
+      "name": "Pulmonary outflow",
+      "color": "#61cce0",
+      "confidence": "Approximate source-guided region; not expert validated",
+      "description": "Regional tissue association from this donor; covering tissue shares its underlying region color.",
+      "method": "Donor-specific cavity continuity, myocardial contour and constrained tissue propagation",
+      "voxelCount": 165593,
+      "boundsNormalizedXYZ": [
+        [
+          0.3449367088607595,
+          0.5379746835443038,
+          0.15217391304347827
+        ],
+        [
+          0.6360759493670886,
+          0.7151898734177216,
+          0.41304347826086957
+        ]
+      ]
+    }
+  ],
+  "supportsQuantification": false,
+  "generatedDate": "2026-11-05",
+  "generator": "scripts/anatomy-donors-v17.py",
+  "derivativeType": "Regional educational annotation of measured tissue",
+  "sourceCoordinateOffsetToOriginalS4XYZ": [
+    -0.375,
+    -0.375,
+    -0.375
+  ],
+  "septalDisplayConvention": "The shared compact interventricular septum is displayed with the LV myocardial body. A thin RV-facing source surface and adjacent RV trabeculae are colored RV. This is regional display ownership, not a histological layer measurement.",
+  "epicardialDisplayConvention": "Outer colors indicate associated regional territory; epicardial covering, fat and small vessels are not separately classified."
+}

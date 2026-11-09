@@ -1,0 +1,57 @@
+{
+  "dimensions": {
+    "x": [
+      1.989e-05,
+      "m"
+    ],
+    "y": [
+      1.989e-05,
+      "m"
+    ],
+    "z": [
+      1.989e-05,
+      "m"
+    ]
+  },
+  "layout": "4panel",
+  "projectionOrientation": [
+    0.30000001192092896,
+    0.20000000298023224,
+    0.0,
+    -0.8999999761581421
+  ],
+  "projectionScale": 4096.0,
+  "selectedLayer": {
+    "layer": "LADAF-2020-31_heart_complete-organ_19.89um_bm18",
+    "visible": true
+  },
+  "position": [
+    3420.0,
+    3420.0,
+    4114.0
+  ],
+  "crossSectionScale": 10.0,
+  "showSlices": false,
+  "layers": [
+    {
+      "type": "image",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            10005,
+            20009
+          ]
+        }
+      },
+      "source": [
+        {
+          "url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-31/heart/19.89um_complete-organ_bm18/"
+        }
+      ],
+      "opacity": 1.0,
+      "volumeRendering": "max",
+      "volumeRenderingDepthSamples": 256.0,
+      "name": "LADAF-2020-31_heart_complete-organ_19.89um_bm18"
+    }
+  ]
+}

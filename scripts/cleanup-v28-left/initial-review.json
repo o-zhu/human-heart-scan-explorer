@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lvot-serial",
+    "title": "LV outflow residual across the newly reported section 262",
+    "lowerXYZ": [925, 970, 850],
+    "upperXYZ": [1150, 1161, 1360],
+    "ys": [984, 1004, 1024, 1044, 1064, 1084, 1104, 1132],
+    "overlay": true
+  },
+  {
+    "id": "atrial-serial",
+    "title": "LA appendage and pulmonary vein residual sheets around section 316",
+    "lowerXYZ": [1110, 1150, 590],
+    "upperXYZ": [1450, 1361, 1030],
+    "ys": [1180, 1200, 1220, 1240, 1260, 1280, 1300, 1320],
+    "overlay": true
+  }
+]

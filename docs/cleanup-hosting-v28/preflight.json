@@ -1,0 +1,55 @@
+{
+  "verified": true,
+  "mode": "check",
+  "indexSha256": "6e65869a4a197d8c0ab256a6b29632b53160fbc51af0d8f191648c38115e8bef",
+  "aliases": [
+    {
+      "url": "/assets/cleanup-v27/arterial.bits.gz",
+      "target": "/assets/cleanup-v28/arterial.bits.gz",
+      "bytes": 287953,
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "presentInBuild": true
+    },
+    {
+      "url": "/assets/cleanup-v27/rv.bits.gz",
+      "target": "/assets/cleanup-v28/rv.bits.gz",
+      "bytes": 381259,
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "presentInBuild": true
+    },
+    {
+      "url": "/assets/cleanup-v27/valve-region.bits.gz",
+      "target": "/assets/cleanup-v28/valve-region.bits.gz",
+      "bytes": 150529,
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "presentInBuild": true
+    }
+  ],
+  "bytesSavedByDeduplication": 819741,
+  "removedBuildCopies": 0,
+  "beforeStaticBytes": 265047440,
+  "projectedStaticBytes": 264227699,
+  "remainingStaticBytes": 265047440,
+  "staticBudgetBytes": 264503296,
+  "projectedStaticHeadroomBytes": 275597,
+  "beforeDistBytes": 268207444,
+  "projectedDistBytes": 267387703,
+  "remainingDistBytes": 268207444,
+  "sourceFilesUnchanged": true,
+  "sourceManifestsUnchanged": true,
+  "activeV26DebrisFilesRetained": true,
+  "historicalUrlsPreserved": "Exact same-origin 308 redirects; normal GET/HEAD fetch reaches byte-identical static v28 masks.",
+  "permissionsAndStorageUnchanged": true,
+  "referenceAudit": [
+    {
+      "file": "public/assets/cleanup-v27/lumen-manifest.json",
+      "paths": [
+        "assets/cleanup-v27/arterial.bits.gz",
+        "assets/cleanup-v27/rv.bits.gz",
+        "assets/cleanup-v27/valve-region.bits.gz"
+      ]
+    }
+  ],
+  "localTestsAndExports": "All frozen public source files remain present; no local fixture or export is removed.",
+  "limitations": "Final archive size and live redirected response bytes must still be checked after publication."
+}

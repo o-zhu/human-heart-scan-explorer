@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createTeeContextModel} from '../../public/tee-context-geometry.js';
+import {createTeeReference,teePose,sanitizeTeeState,teePresetState} from '../../public/tee-geometry.js';
+import {calibrateTeeContextPresets} from '../../public/tee-context-presets.js';
+import {dot,cross,norm,mul} from '../../public/planes.js';
+const sub=(a,b)=>a.map((v,i)=>v-b[i]);
+const data=JSON.parse(fs.readFileSync(new URL('../../public/assets/tee-atlas/plane-fit-v2.json',import.meta.url)));
+const frames=Object.fromEntries(Object.entries(data.views).map(([k,v])=>[k,v.frame]));
+const before=JSON.stringify(frames),referenceMm=168.0104,model=createTeeContextModel({frames,referenceMm,donorId:'1659197537'}),reference=createTeeReference(frames,referenceMm,model);
+const pathBefore=JSON.stringify(model.tractSamples),start=performance.now(),calibration=calibrateTeeContextPresets(reference,frames),elapsedMs=performance.now()-start;
+reference.presetStates=calibration.presetStates;
+assert.equal(JSON.stringify(frames),before,'Calibration must not edit target frames');
+assert.equal(JSON.stringify(model.tractSamples),pathBefore,'Calibration must not move the context tract');
+assert.equal(calibrateTeeContextPresets(reference,frames),calibration,'Unchanged reference/targets must reuse cached result');
+assert.deepEqual(calibrateTeeContextPresets(createTeeReference(frames,referenceMm),frames).presetStates,{},'Legacy path must remain unchanged');
+const report=[];
+for(const [id,frameKey]of [['me4c','me4c'],['me2c','me2c'],['melax','melax'],['tg','tgpapillary']]){
+ const current=sanitizeTeeState({teeVersion:1,referenceMm}),s=teePresetState(id,current,reference),pose=teePose(s,reference),normal=norm(cross(frames[frameKey].right,frames[frameKey].up)),center=mul(frames[frameKey].center,referenceMm),r=calibration.review.presets[id];
+ for(const [key,lo,hi]of [['insertionCm',25,65],['shaftRotationDeg',-180,180],['anteflexDeg',-65,90],['lateralFlexDeg',-60,60],['multiplaneDeg',0,180]])assert(s[key]>=lo&&s[key]<=hi,`${id} ${key} within sanitized bounds`);
+ const error=Math.abs(dot(sub(pose.originMm,center),normal));assert(Math.abs(error-r.planeOffsetMm)<1e-9,'Reported offset must match the actual live pose');
+ assert.equal(s.teeMirrorX,calibration.presetStates[id].teeMirrorX,'Preset image presentation must be preserved');
+ assert(r.usedNominalAngle,`${id}: this donor must fit the nominal clinical multiplane angle`);
+ assert(dot(pose.right,frames[frameKey].right)>0,`${id}: displayed image must have the selected source-frame handedness`);
+ assert(r.targetCenterInFan,`${id}: target center must lie in the returned fan`);
+ assert(r.normalAngleDeg<7,`${id}: bounded result must stay near the target plane, or calibration needs revision`);
+ assert(r.planeOffsetMm<8,`${id}: model fit must remain useful`);
+ if(r.planeOffsetMm>2||r.normalAngleDeg>3)assert.equal(r.status,'limited','Residuals cannot silently be called fitted');
+ report.push({id,...r,state:calibration.presetStates[id]});
+}
+assert.notEqual(JSON.stringify(calibration.presetStates.me4c),JSON.stringify(calibration.presetStates.me2c),'ME2C must be independently calibrated');
+assert.notEqual(JSON.stringify(calibration.presetStates.me4c),JSON.stringify(calibration.presetStates.melax),'ME LAX must be independently calibrated');
+const out={elapsedMs,presets:report,checks:['runtime pose residuals','bounds','fan center coverage','independent presets','immutable targets/tract','cache reuse','legacy reference preserved']};
+fs.writeFileSync(new URL('../../docs/tee-plane-qc-v2/free-lab-calibration.json',import.meta.url),JSON.stringify(out,null,2)+'\n');
+console.log(JSON.stringify({elapsedMs,presets:report.map(r=>({id:r.id,offset:r.planeOffsetMm,angle:r.normalAngleDeg,coverage:r.geometricCoverageFraction,status:r.status,controls:r.state}))},null,2));

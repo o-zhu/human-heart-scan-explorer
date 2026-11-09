@@ -1,0 +1,1096 @@
+{
+  "reviewScope": "Targeted diagnostic regression checks. No expert ground truth or global segmentation accuracy is asserted.",
+  "methods": {
+    "v4": {
+      "landmarkChecks": {
+        "independentFlowReview": {
+          "matched": 12,
+          "total": 12
+        },
+        "targetedErrorReview": {
+          "matched": 1,
+          "total": 5
+        },
+        "existingV4BoundaryRegression": {
+          "matched": 20,
+          "total": 20
+        }
+      },
+      "changedMeasuredTissueVoxelsFromV4": 0,
+      "connectedComponents": {
+        "1": {
+          "tissueVoxels": 1244847,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9999236854006959
+        },
+        "2": {
+          "tissueVoxels": 296311,
+          "componentsAtLeast27Voxels": 6,
+          "largestComponentFraction": 0.997728737711391
+        },
+        "3": {
+          "tissueVoxels": 253116,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.9993283711815927
+        },
+        "4": {
+          "tissueVoxels": 305482,
+          "componentsAtLeast27Voxels": 7,
+          "largestComponentFraction": 0.9967526728252402
+        },
+        "5": {
+          "tissueVoxels": 134456,
+          "componentsAtLeast27Voxels": 4,
+          "largestComponentFraction": 0.9960656274171477
+        },
+        "6": {
+          "tissueVoxels": 199908,
+          "componentsAtLeast27Voxels": 3,
+          "largestComponentFraction": 0.999034555895712
+        }
+      },
+      "transitionMatrixRowsV4ColumnsCandidate": [
+        [
+          563859,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1244847,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          296311,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          253116,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          305482,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          134456,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          199908
+        ]
+      ]
+    },
+    "watershed": {
+      "landmarkChecks": {
+        "independentFlowReview": {
+          "matched": 12,
+          "total": 12
+        },
+        "targetedErrorReview": {
+          "matched": 0,
+          "total": 5
+        },
+        "existingV4BoundaryRegression": {
+          "matched": 20,
+          "total": 20
+        }
+      },
+      "changedMeasuredTissueVoxelsFromV4": 168736,
+      "connectedComponents": {
+        "1": {
+          "tissueVoxels": 1251976,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.9996397694524496
+        },
+        "2": {
+          "tissueVoxels": 299419,
+          "componentsAtLeast27Voxels": 9,
+          "largestComponentFraction": 0.9929997762333052
+        },
+        "3": {
+          "tissueVoxels": 262716,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9988238249668844
+        },
+        "4": {
+          "tissueVoxels": 308483,
+          "componentsAtLeast27Voxels": 19,
+          "largestComponentFraction": 0.9846863522463151
+        },
+        "5": {
+          "tissueVoxels": 112763,
+          "componentsAtLeast27Voxels": 7,
+          "largestComponentFraction": 0.9930118921986822
+        },
+        "6": {
+          "tissueVoxels": 213237,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.996229547405
+        }
+      },
+      "transitionMatrixRowsV4ColumnsCandidate": [
+        [
+          549385,
+          7168,
+          2329,
+          1393,
+          1294,
+          700,
+          1590
+        ],
+        [
+          0,
+          1222375,
+          9404,
+          7358,
+          2063,
+          1041,
+          2606
+        ],
+        [
+          0,
+          9755,
+          278318,
+          62,
+          4551,
+          2,
+          3623
+        ],
+        [
+          0,
+          4770,
+          0,
+          222102,
+          12679,
+          332,
+          13233
+        ],
+        [
+          0,
+          1160,
+          5839,
+          16983,
+          275052,
+          1640,
+          4808
+        ],
+        [
+          0,
+          3099,
+          0,
+          6846,
+          10525,
+          104310,
+          9676
+        ],
+        [
+          0,
+          3649,
+          3529,
+          7972,
+          2319,
+          4738,
+          177701
+        ]
+      ]
+    },
+    "geodesic": {
+      "landmarkChecks": {
+        "independentFlowReview": {
+          "matched": 12,
+          "total": 12
+        },
+        "targetedErrorReview": {
+          "matched": 1,
+          "total": 5
+        },
+        "existingV4BoundaryRegression": {
+          "matched": 20,
+          "total": 20
+        }
+      },
+      "changedMeasuredTissueVoxelsFromV4": 66462,
+      "connectedComponents": {
+        "1": {
+          "tissueVoxels": 1262224,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9998510565478077
+        },
+        "2": {
+          "tissueVoxels": 296251,
+          "componentsAtLeast27Voxels": 6,
+          "largestComponentFraction": 0.9931409514229488
+        },
+        "3": {
+          "tissueVoxels": 254397,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9992295506629402
+        },
+        "4": {
+          "tissueVoxels": 307524,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9992813569022255
+        },
+        "5": {
+          "tissueVoxels": 126244,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9996197839105225
+        },
+        "6": {
+          "tissueVoxels": 201954,
+          "componentsAtLeast27Voxels": 4,
+          "largestComponentFraction": 0.9972468978084118
+        }
+      },
+      "transitionMatrixRowsV4ColumnsCandidate": [
+        [
+          549385,
+          7070,
+          2322,
+          1513,
+          1005,
+          750,
+          1814
+        ],
+        [
+          0,
+          1241884,
+          1572,
+          844,
+          248,
+          153,
+          146
+        ],
+        [
+          0,
+          4625,
+          289428,
+          0,
+          1504,
+          33,
+          721
+        ],
+        [
+          0,
+          3710,
+          0,
+          243123,
+          4109,
+          296,
+          1878
+        ],
+        [
+          0,
+          2126,
+          2213,
+          2238,
+          295443,
+          1272,
+          2190
+        ],
+        [
+          0,
+          2067,
+          146,
+          3043,
+          4877,
+          120686,
+          3637
+        ],
+        [
+          0,
+          742,
+          570,
+          3636,
+          338,
+          3054,
+          191568
+        ]
+      ]
+    },
+    "hybrid": {
+      "landmarkChecks": {
+        "independentFlowReview": {
+          "matched": 12,
+          "total": 12
+        },
+        "targetedErrorReview": {
+          "matched": 5,
+          "total": 5
+        },
+        "existingV4BoundaryRegression": {
+          "matched": 20,
+          "total": 20
+        }
+      },
+      "changedMeasuredTissueVoxelsFromV4": 127341,
+      "connectedComponents": {
+        "1": {
+          "tissueVoxels": 1256643,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.99980424034511
+        },
+        "2": {
+          "tissueVoxels": 334266,
+          "componentsAtLeast27Voxels": 8,
+          "largestComponentFraction": 0.9935320971920566
+        },
+        "3": {
+          "tissueVoxels": 235866,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.9991139036571612
+        },
+        "4": {
+          "tissueVoxels": 301728,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.9987770442252625
+        },
+        "5": {
+          "tissueVoxels": 123833,
+          "componentsAtLeast27Voxels": 1,
+          "largestComponentFraction": 0.999814265987257
+        },
+        "6": {
+          "tissueVoxels": 195788,
+          "componentsAtLeast27Voxels": 2,
+          "largestComponentFraction": 0.9976811653421047
+        }
+      },
+      "transitionMatrixRowsV4ColumnsCandidate": [
+        [
+          549854,
+          7231,
+          2443,
+          1669,
+          1003,
+          5,
+          1654
+        ],
+        [
+          0,
+          1237688,
+          2599,
+          884,
+          241,
+          3435,
+          0
+        ],
+        [
+          0,
+          4650,
+          290223,
+          0,
+          1425,
+          0,
+          13
+        ],
+        [
+          0,
+          3703,
+          0,
+          226353,
+          4007,
+          1463,
+          17590
+        ],
+        [
+          1,
+          2107,
+          4444,
+          2236,
+          290748,
+          2858,
+          3088
+        ],
+        [
+          0,
+          402,
+          1321,
+          1929,
+          3669,
+          114732,
+          12403
+        ],
+        [
+          0,
+          862,
+          33236,
+          2795,
+          635,
+          1340,
+          161040
+        ]
+      ]
+    }
+  },
+  "points": [
+    {
+      "name": "aorta_anterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        220,
+        226,
+        180
+      ],
+      "sourceIntensity": 21076,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 5,
+        "watershed": 5,
+        "geodesic": 5,
+        "hybrid": 5
+      }
+    },
+    {
+      "name": "aorta_posterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        303,
+        205
+      ],
+      "sourceIntensity": 21723,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 5,
+        "watershed": 5,
+        "geodesic": 5,
+        "hybrid": 5
+      }
+    },
+    {
+      "name": "pulmonary_outer",
+      "expectedRegion": 6,
+      "sourceXYZ": [
+        187,
+        351,
+        181
+      ],
+      "sourceIntensity": 19048,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 6,
+        "watershed": 6,
+        "geodesic": 6,
+        "hybrid": 6
+      }
+    },
+    {
+      "name": "pulmonary_root",
+      "expectedRegion": 6,
+      "sourceXYZ": [
+        170,
+        322,
+        200
+      ],
+      "sourceIntensity": 19708,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 6,
+        "watershed": 6,
+        "geodesic": 6,
+        "hybrid": 6
+      }
+    },
+    {
+      "name": "la_lateral",
+      "expectedRegion": 3,
+      "sourceXYZ": [
+        310,
+        350,
+        219
+      ],
+      "sourceIntensity": 18852,
+      "confidence": "medium",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 3,
+        "watershed": 3,
+        "geodesic": 3,
+        "hybrid": 3
+      }
+    },
+    {
+      "name": "la_inferior",
+      "expectedRegion": 3,
+      "sourceXYZ": [
+        339,
+        313,
+        240
+      ],
+      "sourceIntensity": 19189,
+      "confidence": "medium",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 3,
+        "watershed": 3,
+        "geodesic": 3,
+        "hybrid": 3
+      }
+    },
+    {
+      "name": "ra_free_wall",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        237,
+        142,
+        230
+      ],
+      "sourceIntensity": 19098,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_roof_side",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        282,
+        156,
+        181
+      ],
+      "sourceIntensity": 18673,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "lv_posterior",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        260,
+        325,
+        355
+      ],
+      "sourceIntensity": 19424,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_septal",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        282,
+        235,
+        335
+      ],
+      "sourceIntensity": 19896,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "rv_free_wall",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        170,
+        125,
+        330
+      ],
+      "sourceIntensity": 19641,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 2,
+        "watershed": 2,
+        "geodesic": 2,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "rv_apical_wall",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        195,
+        140,
+        370
+      ],
+      "sourceIntensity": 19136,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed.",
+      "group": "independentFlowReview",
+      "candidateLabels": {
+        "v4": 2,
+        "watershed": 2,
+        "geodesic": 2,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "aortic_root_anterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        218,
+        240
+      ],
+      "sourceIntensity": 19778,
+      "group": "targetedErrorReview",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 5
+      }
+    },
+    {
+      "name": "aortic_root_posterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        290,
+        240
+      ],
+      "sourceIntensity": 20504,
+      "group": "targetedErrorReview",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 5
+      }
+    },
+    {
+      "name": "aortic_sinus_lateral",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        225,
+        225,
+        236
+      ],
+      "sourceIntensity": 19859,
+      "group": "targetedErrorReview",
+      "candidateLabels": {
+        "v4": 5,
+        "watershed": 4,
+        "geodesic": 5,
+        "hybrid": 5
+      }
+    },
+    {
+      "name": "rvot_free_wall_1",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        150,
+        290,
+        235
+      ],
+      "sourceIntensity": 19233,
+      "group": "targetedErrorReview",
+      "candidateLabels": {
+        "v4": 6,
+        "watershed": 6,
+        "geodesic": 6,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "rvot_free_wall_2",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        155,
+        305,
+        240
+      ],
+      "sourceIntensity": 18832,
+      "group": "targetedErrorReview",
+      "candidateLabels": {
+        "v4": 6,
+        "watershed": 6,
+        "geodesic": 6,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "lv_septal_compact_225",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        225,
+        235,
+        320
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_septal_compact_250",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        250,
+        230,
+        300
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_septal_compact_200",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        200,
+        230,
+        400
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_septal_compact_237",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        237,
+        226,
+        350
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_basal_compact_237",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        237,
+        320,
+        275
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "ra_free_wall_237_lower",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        237,
+        150,
+        295
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_free_wall_237_fold",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        237,
+        165,
+        278
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_free_wall_250",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        250,
+        172,
+        278
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_free_wall_225",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        225,
+        155,
+        280
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_free_wall_200",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        200,
+        139,
+        293
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "rv_free_wall_237",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        237,
+        152,
+        350
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 2,
+        "watershed": 2,
+        "geodesic": 2,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "rv_free_wall_200",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        200,
+        140,
+        350
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 2,
+        "watershed": 2,
+        "geodesic": 2,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "lv_free_wall_237",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        237,
+        334,
+        400
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_free_wall_225",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        225,
+        325,
+        400
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "rv_heldout_180",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        180,
+        130,
+        330
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 2,
+        "watershed": 2,
+        "geodesic": 2,
+        "hybrid": 2
+      }
+    },
+    {
+      "name": "ra_heldout_190",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        190,
+        130,
+        290
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "ra_heldout_210",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        210,
+        140,
+        300
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 4,
+        "watershed": 4,
+        "geodesic": 4,
+        "hybrid": 4
+      }
+    },
+    {
+      "name": "lv_heldout_190",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        190,
+        250,
+        360
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_heldout_280",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        280,
+        220,
+        310
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    },
+    {
+      "name": "lv_heldout_y250",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        230,
+        250,
+        310
+      ],
+      "group": "existingV4BoundaryRegression",
+      "candidateLabels": {
+        "v4": 1,
+        "watershed": 1,
+        "geodesic": 1,
+        "hybrid": 1
+      }
+    }
+  ]
+}

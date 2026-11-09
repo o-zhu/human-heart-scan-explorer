@@ -1,0 +1,95 @@
+{
+  "id": "rv",
+  "label": "Detached RV and apical fragments",
+  "url": "./assets/cleanup-v27/rv.bits.gz",
+  "format": "gzip-bitset-x-zyx",
+  "bitOrder": "little",
+  "dimensionsXYZ": [
+    570,
+    440,
+    790
+  ],
+  "storageDimensionsXYZ": [
+    72,
+    440,
+    790
+  ],
+  "lowerFullFineXYZ": [
+    450,
+    760,
+    1020
+  ],
+  "upperFullFineXYZ": [
+    1020,
+    1200,
+    1810
+  ],
+  "nonzeroBoundsFullFineXYZ": [
+    [
+      450,
+      780,
+      1072
+    ],
+    [
+      1020,
+      1200,
+      1810
+    ]
+  ],
+  "compressedBytes": 381259,
+  "decodedBytes": 25027200,
+  "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+  "decodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+  "logicalMaskSha256": "08253160f7b3c99a79130290c40edde0c2c457fe6f811050e67216a5daf389ef",
+  "maskedVoxels": 1181662,
+  "maskedVolumeMm3": 591.5000381178079,
+  "policy": {
+    "inheritedV26MaskedSamples": 703123,
+    "addedDisplayExclusionSamples": 478539,
+    "restoredPriorExclusionSamples": 0,
+    "meshSupportMarginFineSamples": 9,
+    "denseGuardFineSamples": 10,
+    "newProtectedSourceGuardOverlapSamples": 0,
+    "explicitSelectedObjectExceptions": [],
+    "selectedObjectDenseSourceSamples": 0,
+    "selectedObjectComparableAnchoredGuardOverlapSamples": 0,
+    "sourceIdentity": "Material identity remains unverified; original scalar data and mesh preserved.",
+    "operations": [
+      {
+        "id": "tricuspid-chordal-fringe",
+        "mask": "rv",
+        "guardMode": "all-dense",
+        "expansion": 6,
+        "guard": 10,
+        "scope": "Bounded low-contrast fringe between bright chordal source cores; retain all dense cores plus ten fine samples in 3D and preserve leaflets/myocardium.",
+        "evidence": "source-refined/tricuspid-chord-matrix.jpg; tricuspid-222 position readback",
+        "selectedSamples": 494274,
+        "selectedDenseSourceSamples": 0,
+        "comparableAnchoredGuardRuleOverlapSamples": 0,
+        "protectedSourceSamples": 489423,
+        "protectedOverlapSamples": 0,
+        "lowerFullFineXYZ": [
+          801,
+          820,
+          1066
+        ],
+        "upperFullFineXYZ": [
+          947,
+          965,
+          1286
+        ],
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "sourcePaddingFineSamples": 13,
+        "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of every raw190/sigma0.5/0.8>=135 dense source core.",
+        "explicitSelectedObjectException": false,
+        "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+        "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+        "newExclusionsIntersectingRestorationFootprintSamples": 0,
+        "uniqueNewExclusionSamples": 478539
+      }
+    ],
+    "restorations": [],
+    "fullPolicySha256": "de5ee1a4cb39ceeddc36fd14edcb175a70833825cb1a31722c90f3410963abbf"
+  }
+}

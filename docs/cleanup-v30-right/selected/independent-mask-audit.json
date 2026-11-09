@@ -1,0 +1,22 @@
+[
+  {
+    "region": "pa",
+    "id": "pulmonary-regularized-v30",
+    "newExcludedSamples": 2116579,
+    "priorExcludedSamples": 1139693,
+    "priorExclusionsLost": 0,
+    "addedForegroundSamples": 0,
+    "allSixSignedFacesExact": true,
+    "packedMaskSha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044"
+  },
+  {
+    "region": "rv",
+    "id": "tricuspid-rv-regularized-v30",
+    "newExcludedSamples": 1564894,
+    "priorExcludedSamples": 769532,
+    "priorExclusionsLost": 0,
+    "addedForegroundSamples": 0,
+    "allSixSignedFacesExact": true,
+    "packedMaskSha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba"
+  }
+]

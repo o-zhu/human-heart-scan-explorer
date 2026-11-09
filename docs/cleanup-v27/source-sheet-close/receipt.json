@@ -1,0 +1,257 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 84,
+    "decodedBrickReads": 105,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "pv-1200",
+      "title": "Upper intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1180,
+        1000,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        850
+      ],
+      "ys": [
+        1200
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "ce8a534e395b7b045020553ce220a988c1e6c6152f3d0924a200d9e914a8e69a",
+          "excludedInPlane": 13722
+        }
+      ]
+    },
+    {
+      "id": "pv-1220",
+      "title": "Upper intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1180,
+        1000,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        850
+      ],
+      "ys": [
+        1220
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "35ef64e83586db9fd07bb26a7e18f6556888b637122503f662338f4e16704667",
+          "excludedInPlane": 8749
+        }
+      ]
+    },
+    {
+      "id": "pv-1248",
+      "title": "Upper intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1180,
+        1000,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        850
+      ],
+      "ys": [
+        1248
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "e2209c2eaa81891886b8543e6d3fa1fbd4f210d907007e6bada14de32c04a269",
+          "excludedInPlane": 3579
+        }
+      ]
+    },
+    {
+      "id": "pv-1276",
+      "title": "Upper intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1180,
+        1000,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        850
+      ],
+      "ys": [
+        1276
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "c96d626fa9dee07aacbfda8092bef73a6e909fb56949393b8ccc079c3809e66c",
+          "excludedInPlane": 2455
+        }
+      ]
+    },
+    {
+      "id": "pv-1308",
+      "title": "Upper intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1180,
+        1000,
+        650
+      ],
+      "upperXYZ": [
+        1410,
+        1400,
+        850
+      ],
+      "ys": [
+        1308
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1308,
+          "sourcePlaneSha256": "eb7ef4df5f86067e65a9fb95c71047fa348707b06b8deb2b2bf7022129489160",
+          "excludedInPlane": 377
+        }
+      ]
+    },
+    {
+      "id": "laa-1188",
+      "title": "Lower intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1140,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1355,
+        1400,
+        980
+      ],
+      "ys": [
+        1188
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1188,
+          "sourcePlaneSha256": "dadbd71991b05bff6cef1975dd4f6842b7fee3e21e971e9a8547596554cd2c42",
+          "excludedInPlane": 27820
+        }
+      ]
+    },
+    {
+      "id": "laa-1212",
+      "title": "Lower intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1140,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1355,
+        1400,
+        980
+      ],
+      "ys": [
+        1212
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1212,
+          "sourcePlaneSha256": "9529fb4291f7701637c38c02dddb262ee882400db4d6f3ec440a4ebb3b03b25f",
+          "excludedInPlane": 27407
+        }
+      ]
+    },
+    {
+      "id": "laa-1248",
+      "title": "Lower intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1140,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1355,
+        1400,
+        980
+      ],
+      "ys": [
+        1248
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "1a82db2d72a61dbe0debc00057ffacf7777c1187089498c9e547d8adf10f4e9b",
+          "excludedInPlane": 4882
+        }
+      ]
+    },
+    {
+      "id": "laa-1276",
+      "title": "Lower intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1140,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1355,
+        1400,
+        980
+      ],
+      "ys": [
+        1276
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "d4bdff682ffd80a12a0e746e2aca54356dabfe9f37a2fd2fe0ca17589c424e6e",
+          "excludedInPlane": 404
+        }
+      ]
+    },
+    {
+      "id": "laa-1292",
+      "title": "Lower intraluminal sheet: source and current display selection",
+      "lowerXYZ": [
+        1140,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1355,
+        1400,
+        980
+      ],
+      "ys": [
+        1292
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "31a8039f93a0679242f32a3043150134fffc776ae5a954c77fd4f3e7cdcb84eb",
+          "excludedInPlane": 0
+        }
+      ]
+    }
+  ]
+}

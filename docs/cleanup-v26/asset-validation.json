@@ -1,0 +1,100 @@
+{
+  "manifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+  "masks": [
+    {
+      "id": "atrial",
+      "logicalDimensionsXYZ": [
+        310,
+        437,
+        700
+      ],
+      "storageDimensionsXYZ": [
+        39,
+        437,
+        700
+      ],
+      "maskedVoxels": 15567968,
+      "inheritedV25MaskSamples": 8052055,
+      "allInheritedSamplesStillExcluded": true,
+      "paddingZero": true,
+      "encodedAndDecodedHashesVerified": true,
+      "parityFixturesVerified": 300,
+      "fullPolicyDigestVerified": true
+    },
+    {
+      "id": "arterial",
+      "logicalDimensionsXYZ": [
+        650,
+        381,
+        560
+      ],
+      "storageDimensionsXYZ": [
+        82,
+        381,
+        560
+      ],
+      "maskedVoxels": 1013562,
+      "inheritedV25MaskSamples": 179720,
+      "allInheritedSamplesStillExcluded": true,
+      "paddingZero": true,
+      "encodedAndDecodedHashesVerified": true,
+      "parityFixturesVerified": 300,
+      "fullPolicyDigestVerified": true
+    },
+    {
+      "id": "valve-region",
+      "logicalDimensionsXYZ": [
+        430,
+        270,
+        470
+      ],
+      "storageDimensionsXYZ": [
+        54,
+        270,
+        470
+      ],
+      "maskedVoxels": 533645,
+      "inheritedV25MaskSamples": 0,
+      "allInheritedSamplesStillExcluded": true,
+      "paddingZero": true,
+      "encodedAndDecodedHashesVerified": true,
+      "parityFixturesVerified": 300,
+      "fullPolicyDigestVerified": true
+    },
+    {
+      "id": "rv",
+      "logicalDimensionsXYZ": [
+        570,
+        420,
+        710
+      ],
+      "storageDimensionsXYZ": [
+        72,
+        420,
+        710
+      ],
+      "maskedVoxels": 703123,
+      "inheritedV25MaskSamples": 0,
+      "allInheritedSamplesStillExcluded": true,
+      "paddingZero": true,
+      "encodedAndDecodedHashesVerified": true,
+      "parityFixturesVerified": 300,
+      "fullPolicyDigestVerified": true
+    }
+  ],
+  "totalDecodedBytes": 57748620,
+  "totalCompressedBytes": 1237051,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 2553,
+    "decodedBrickReads": 2553,
+    "cacheMaximumBricks": 0,
+    "cacheMaximumBytes": 0,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "scope": "Independent actual-asset hash, storage, count, fixture, frozen-selection inclusion and source-context integrity checks. Source bricks cover each ROI plus forty real fine samples. This does not prove anatomical identity."
+}

@@ -1,0 +1,242 @@
+{
+  "capsAdded": false,
+  "comparison": {
+    "bytes": 2664652,
+    "height": 2348,
+    "path": "overview-comparison.png",
+    "sha256": "36d6e0bf3856f5a1d0f92795f50814d06158e351f9ea4850997b4e093ceff96f",
+    "width": 2984
+  },
+  "createdAtUtc": "2026-11-06T18:48:45.036160+00:00",
+  "displayLodNotNativeGrid": true,
+  "driver": {
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "shadingLanguage": "OpenGL ES GLSL ES 3.20",
+    "vendor": "Mesa",
+    "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2"
+  },
+  "extraSimplification": false,
+  "extraSmoothing": false,
+  "helperSha256": "be71104f18fbbc8f0e5dc8f57d4aaf16ef92a9259b19f6a4edbefe2f58958da6",
+  "limitations": [
+    "Removing coincident display sheets can expose holes and can remove a collapsed representation of genuine thin tissue.",
+    "This comparison does not show a change to native-grid reconstruction or establish anatomical truth.",
+    "Each row reuses its own exact archived LOD camera/cut; all three variants within a row have identical projection and lighting."
+  ],
+  "lods": [
+    {
+      "camera": {
+        "center": [
+          -0.0066837758308294646,
+          -0.014414035746317323,
+          -0.06292586010442502
+        ],
+        "pan": [
+          0,
+          0
+        ],
+        "pitchRadians": 0.28,
+        "right": [
+          0.8869949227792842,
+          0,
+          -0.4617791755414829
+        ],
+        "span": 1.0567472256725705,
+        "up": [
+          -0.12761528355016824,
+          0.9610554383107709,
+          -0.24512605715774508
+        ],
+        "view": [
+          0.44379538795280626,
+          0.27635564856411376,
+          0.8524512942910734
+        ],
+        "yawRadians": 0.48
+      },
+      "cutaway": {
+        "caps": false,
+        "normalNativeXYZ": [
+          0.44379538795280626,
+          -0.8524512942910734,
+          0.27635564856411376
+        ],
+        "normalWorld": [
+          0.44379538795280626,
+          0.27635564856411376,
+          0.8524512942910734
+        ],
+        "offsetNativeVoxels": -897.6888371198642,
+        "offsetWorld": -0.06059085997532854,
+        "planePolicy": "Oblique plane normal to the viewing direction; no anatomical orientation or chamber assignment is inferred.",
+        "retainedDepthFraction": 0.5,
+        "retainedInequality": "dot(world, normalWorld) <= offsetWorld"
+      },
+      "id": "overview",
+      "maskSha256": "3d659633f2a0335133e821c5e0c89abbdefedeb2bf08c9ebd1c79228cf4838c9",
+      "originalTriangles": 1499999,
+      "outputs": {
+        "original": {
+          "bytes": 494132,
+          "foregroundPixels": 251392,
+          "height": 960,
+          "matchesSavedReferenceRGBA": true,
+          "path": "overview-filter-overview-original-cutaway.png",
+          "rgbaPixelSha256": "03df3c11eb9c9b4d52edf1acd60969ff6c744ab3a0edaa4adff4d04a2f26f885",
+          "sha256": "19b67b800c46a60fb0166fc948ae80fcaab2ce513875b018753e6480cc4c9ba9",
+          "shaderHashesMatchSavedReference": true,
+          "submittedTriangles": 1499999,
+          "width": 960
+        },
+        "removed": {
+          "bytes": 554675,
+          "changedPixelsVersusOriginal": 203456,
+          "foregroundOutsideOriginalPixels": 0,
+          "foregroundPixels": 163764,
+          "height": 960,
+          "originalForegroundNowBackgroundPixels": 87628,
+          "path": "overview-filter-overview-removed-cutaway.png",
+          "rgbaPixelSha256": "df0183ff240004572e82d3fe738a846027fcb82fa4a4b57d6dbaf05386034dd0",
+          "sha256": "242dc37d17649e2c1dae9dd62540b222001148579ca0a9de7aba5f577402bce3",
+          "submittedTriangles": 508614,
+          "width": 960
+        },
+        "retained": {
+          "bytes": 475651,
+          "changedPixelsVersusOriginal": 43171,
+          "foregroundOutsideOriginalPixels": 0,
+          "foregroundPixels": 250577,
+          "height": 960,
+          "originalForegroundNowBackgroundPixels": 815,
+          "path": "overview-filter-overview-retained-cutaway.png",
+          "rgbaPixelSha256": "87aba8d1cbc2ddb0435213c79532195926b2284d12270992697d26dface25f57",
+          "sha256": "35b9e077d8c29b146e677072eb6039ef3079a1e75efa4c31af1c94d5dbe60fc5",
+          "submittedTriangles": 991385,
+          "width": 960
+        }
+      },
+      "removedTriangles": 508614,
+      "retainedTriangles": 991385,
+      "savedRenderRecord": "docs/guided-native-v21/whole-overview-render/render-record.json",
+      "savedRenderRecordSha256": "35371876501f5604b8c41f4cb404aaed234f5b4af565158485ab0c1e53920c85",
+      "sourceSha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e"
+    },
+    {
+      "camera": {
+        "center": [
+          -0.006388325879506688,
+          -0.014681259183566052,
+          -0.06192352355891321
+        ],
+        "pan": [
+          0,
+          0
+        ],
+        "pitchRadians": 0.28,
+        "right": [
+          0.8869949227792842,
+          0,
+          -0.4617791755414829
+        ],
+        "span": 1.058616983809823,
+        "up": [
+          -0.12761528355016824,
+          0.9610554383107709,
+          -0.24512605715774508
+        ],
+        "view": [
+          0.44379538795280626,
+          0.27635564856411376,
+          0.8524512942910734
+        ],
+        "yawRadians": 0.48
+      },
+      "cutaway": {
+        "caps": false,
+        "normalNativeXYZ": [
+          0.44379538795280626,
+          -0.8524512942910734,
+          0.27635564856411376
+        ],
+        "normalWorld": [
+          0.44379538795280626,
+          0.27635564856411376,
+          0.8524512942910734
+        ],
+        "offsetNativeVoxels": -889.9584166152342,
+        "offsetWorld": -0.059679146270336214,
+        "planePolicy": "Oblique plane normal to the viewing direction; no anatomical orientation or chamber assignment is inferred.",
+        "retainedDepthFraction": 0.5,
+        "retainedInequality": "dot(world, normalWorld) <= offsetWorld"
+      },
+      "id": "detail",
+      "maskSha256": "d16f2c9725d6311bb1feb20ce73383d1a8292751f8468616d521a700a7df8548",
+      "originalTriangles": 2500000,
+      "outputs": {
+        "original": {
+          "bytes": 536923,
+          "foregroundPixels": 251847,
+          "height": 960,
+          "matchesSavedReferenceRGBA": true,
+          "path": "overview-filter-detail-original-cutaway.png",
+          "rgbaPixelSha256": "42e78b688846c1469a54693a29f959fcd5d8c436b1d8876649e05afbc76bc341",
+          "sha256": "fa6ed941de16b700d8cc818d64b4097e104d938a989e7e9bd3f7e29681cbce7d",
+          "shaderHashesMatchSavedReference": true,
+          "submittedTriangles": 2500000,
+          "width": 960
+        },
+        "removed": {
+          "bytes": 502958,
+          "changedPixelsVersusOriginal": 223217,
+          "foregroundOutsideOriginalPixels": 0,
+          "foregroundPixels": 123468,
+          "height": 960,
+          "originalForegroundNowBackgroundPixels": 128379,
+          "path": "overview-filter-detail-removed-cutaway.png",
+          "rgbaPixelSha256": "e9df90566ef5a9cb02603205bb7c7620d7d37e896beded79b2f1f6bd5cca91b5",
+          "sha256": "1ecf7ad0321edb9250520840b4588439d5ce5dfbf729c29d23262b493f54af46",
+          "submittedTriangles": 442866,
+          "width": 960
+        },
+        "retained": {
+          "bytes": 527021,
+          "changedPixelsVersusOriginal": 26868,
+          "foregroundOutsideOriginalPixels": 0,
+          "foregroundPixels": 251352,
+          "height": 960,
+          "originalForegroundNowBackgroundPixels": 495,
+          "path": "overview-filter-detail-retained-cutaway.png",
+          "rgbaPixelSha256": "c09160261df1e24bf97f00c8b850edc22bcbe4a59cfd4e275811a5d1b11c2484",
+          "sha256": "e4612db9799d02f63590d8696cb31b09b8cf45a47aaf125aad196fad1e6a9fc3",
+          "submittedTriangles": 2057134,
+          "width": 960
+        }
+      },
+      "removedTriangles": 442866,
+      "retainedTriangles": 2057134,
+      "savedRenderRecord": "docs/guided-native-v21/whole-detail-render/render-record.json",
+      "savedRenderRecordSha256": "42264238185ac390ff87a735068e76b3ef6ed63e711e8911094d1c05825b7071",
+      "sourceSha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef"
+    }
+  ],
+  "maskManifestSha256": "d890eebb74d5b5168da633b07006ffdacc95665f7e0bf43a6670a00c63041e75",
+  "nativeGridPayloadBytesRead": 0,
+  "networkRequests": 0,
+  "normalsRecomputed": false,
+  "notBrowserScreenshot": true,
+  "peakRssMiB": 238.01953125,
+  "positionsModified": false,
+  "retainedFacesReordered": false,
+  "schema": "heart-overview-filter-render-v22.1",
+  "scriptSha256": "e3accafe429f1fbae1d38efd8b5952d7f1aa3e9d6e37c5eb09e649250834e740",
+  "seconds": 6.081,
+  "shaderSha256": {
+    "fragment": "cdc979a7666200a4ba23251670f4f1b1b35ac7ebc832404db867eb7f15b82e48",
+    "pickFragment": "5562458d3607a2b753ab34bf28167a075a9db47a00a7fc4800f95ab251ee5866",
+    "vertex": "772df3df50e93487a892f68c4b160b23e861bd8ec49d6689eb40d992b9254198"
+  },
+  "shaderSource": "public/whole-native.js",
+  "shaderSourceSha256": "fa2bdedb06f35615e2b2964fe192ea2f87453c6af4354bca319ce12abfcf5bd5",
+  "sourceIntensityBytesRead": 0,
+  "triangleBatchSize": 30000
+}

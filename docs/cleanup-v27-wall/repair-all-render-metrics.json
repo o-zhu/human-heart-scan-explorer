@@ -1,0 +1,86 @@
+{
+  "comparisons": [
+    {
+      "case": "overview-284",
+      "changedPixels": 1113,
+      "changedBoundsXY": [
+        424,
+        391,
+        513,
+        441
+      ],
+      "newlyVisibleComponents": {
+        "7": 1113
+      },
+      "restoredVisiblePixelsAllInDeclaredPatchBounds": true,
+      "originalGeometryComponent": 7,
+      "newlyVisibleSourceMinimumXYZ": [
+        1116.8564453125,
+        938.5018310546875,
+        947.4295043945312
+      ],
+      "newlyVisibleSourceMaximumXYZ": [
+        1287.85400390625,
+        1048.157470703125,
+        1043.4791259765625
+      ],
+      "v26RgbaSha256": "ce873982a332c5f2c5b05ef676367a75ae2cb0dfcf3e4159f7fd1a9048a46ed5",
+      "repairRgbaSha256": "3a894a07bc3fce880b20144e6296c7fc1a30795390ab2badcffd5f09275fc7f9"
+    },
+    {
+      "case": "wall-284",
+      "changedPixels": 7078,
+      "changedBoundsXY": [
+        187,
+        440,
+        396,
+        587
+      ],
+      "newlyVisibleComponents": {
+        "7": 7078
+      },
+      "restoredVisiblePixelsAllInDeclaredPatchBounds": true,
+      "originalGeometryComponent": 7,
+      "newlyVisibleSourceMinimumXYZ": [
+        1111.515380859375,
+        938.5072021484375,
+        920.76611328125
+      ],
+      "newlyVisibleSourceMaximumXYZ": [
+        1288.678955078125,
+        1051.7298583984375,
+        1057.1318359375
+      ],
+      "v26RgbaSha256": "a81c6549d21610455906c7b38ac8825ac9e7959da09e64e47206e60d38daf116",
+      "repairRgbaSha256": "4af7f4613c8ed3b0d79ff00aab742e22a97a84b68787a4f82976edd000890342"
+    },
+    {
+      "case": "wall-284-oblique",
+      "changedPixels": 7359,
+      "changedBoundsXY": [
+        279,
+        325,
+        511,
+        494
+      ],
+      "newlyVisibleComponents": {
+        "7": 7359
+      },
+      "restoredVisiblePixelsAllInDeclaredPatchBounds": true,
+      "originalGeometryComponent": 7,
+      "newlyVisibleSourceMinimumXYZ": [
+        1105.5496826171875,
+        940.501220703125,
+        920.6348876953125
+      ],
+      "newlyVisibleSourceMaximumXYZ": [
+        1281.0283203125,
+        1052.5279541015625,
+        1068.023193359375
+      ],
+      "v26RgbaSha256": "11286c6380091e66cebd8456a023e6f48a0dce5fe961967d6e4cf89f4edc1b8c",
+      "repairRgbaSha256": "20ec3a2b0442e928fd2463dff8a73a622a07755ed734223dd2bc0d31cb64329d"
+    }
+  ],
+  "scope": "Display changes restore original largest-component surfaces only in the declared bounded patch locations. These are source/geometry checks, not anatomical validation."
+}

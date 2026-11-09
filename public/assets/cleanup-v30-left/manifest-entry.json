@@ -1,0 +1,82 @@
+{
+  "id": "lvot-perivalvular-refinement",
+  "lowerFullFineXYZ": [
+    1018,
+    944,
+    916
+  ],
+  "upperFullFineXYZ": [
+    1330,
+    1240,
+    1400
+  ],
+  "surface": {
+    "format": "HFM1-gzip",
+    "vertices": 477150,
+    "triangles": 963173,
+    "vertexCount": 477150,
+    "indexCount": 2889519,
+    "positionOffset": 32,
+    "normalOffset": 2862932,
+    "indexOffset": 5725832,
+    "compressedBytes": 10313927,
+    "decodedBytes": 17283908,
+    "sha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+    "decodedSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17",
+    "bounds": {
+      "min": [
+        0.033081285655498505,
+        -0.06710775196552277,
+        -0.13752363622188568
+      ],
+      "max": [
+        0.18005670607089996,
+        0.16115312278270721,
+        0.0018903592135757208
+      ]
+    },
+    "positionEncoding": "uint16 normalized in local world bounds",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal",
+    "gpuBytes": 17283876,
+    "url": "./assets/cleanup-v30-left/lvot-perivalvular-refinement.hfm.gz"
+  },
+  "lowBandMask": {
+    "format": "gzip-bitset-x-zyx",
+    "lowerFullFineXYZ": [
+      1018,
+      944,
+      916
+    ],
+    "upperFullFineXYZ": [
+      1330,
+      1240,
+      1400
+    ],
+    "dimensionsXYZ": [
+      312,
+      296,
+      484
+    ],
+    "storageDimensionsXYZ": [
+      39,
+      296,
+      484
+    ],
+    "compressedBytes": 876540,
+    "decodedBytes": 5587296,
+    "sha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+    "decodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+    "maskedVoxels": 3563663,
+    "url": "./assets/cleanup-v30-left/lvot-perivalvular-refinement-low-band.bits.gz"
+  },
+  "reviewPolicy": {
+    "path": "docs/cleanup-v30-left/patch/lvot-perivalvular-refinement-policy.json",
+    "sha256": "9e08528156e2d22c2e931f1754b3703cfa0ec7af02d1da166d33ae78d92231d7"
+  },
+  "sourceSigmaFineSamples": 0.5,
+  "baselineDisplayIntensity": 71.4,
+  "maximumReviewedDisplayIntensity": 145.0,
+  "sourceCalibratedHU": false
+}

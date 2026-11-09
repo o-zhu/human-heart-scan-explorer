@@ -1,0 +1,105 @@
+{
+  "schema": "heart-production-browser-source-smoke-v1",
+  "observedAtUtc": "2026-11-06T16:20:39.168996+00:00",
+  "site": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/",
+  "environment": "Supported cloud Chromium browser via cua_repl",
+  "actualBrowserCaptures": true,
+  "applicationFilesChanged": false,
+  "actions": [
+    "Open the live root page",
+    "Choose cMAC from the visible source select",
+    "Wait for source initialization and inspect the loaded MRI view",
+    "Choose SlicerHeart from the same visible source select",
+    "Wait for source initialization and inspect the loaded CT view"
+  ],
+  "settingsChangedBeyondSourceSelection": false,
+  "results": [
+    {
+      "source": "cMAC",
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/?donor=cmac-case-1",
+      "pageTitle": "cMAC \u00b7 volunteer 1 \u00b7 Heart Explorer",
+      "mainHeading": "The human heart",
+      "sourceSelect": "cMAC \u00b7 volunteer 1 \u00b7 MRI + 4D echo",
+      "sourceDescription": "Measured MRI and 4D apical ultrasound from the same healthy-volunteer case.",
+      "selectedSeries": "Whole-heart MRI \u00b7 cardiac region",
+      "availableSeries": [
+        "Whole-heart MRI \u00b7 cardiac region",
+        "4D apical ultrasound",
+        "Cine short-axis MRI"
+      ],
+      "surfaceSubtitle": "MRI intensity surface \u00b7 measured source data",
+      "sectionHeading": "MRI sections",
+      "dimensionsXYZ": [
+        205,
+        245,
+        95
+      ],
+      "displayedStoredSpacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "displayedSourceSliceThicknessMm": 3,
+      "phaseState": "Static acquired volume; phase/play controls disabled",
+      "threeDimensionalSurfaceVisible": true,
+      "sourceSectionsVisible": true,
+      "loadingIndicatorAbsentAfterReady": true,
+      "userVisibleLoadingError": false
+    },
+    {
+      "source": "SlicerHeart",
+      "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/?donor=slicerheart-4d",
+      "pageTitle": "SlicerHeart \u00b7 4D CT \u00b7 Heart Explorer",
+      "mainHeading": "The human heart",
+      "sourceSelect": "SlicerHeart \u00b7 4D cardiac CT",
+      "sourceDescription": "Measured 4D CT of an adolescent with repaired truncus arteriosus; a clinical example, not a healthy reference.",
+      "selectedSeries": "Cardiac overview \u00b7 21 phases",
+      "availableSeries": [
+        "Cardiac overview \u00b7 21 phases",
+        "Valve / outflow detail \u00b7 native spacing",
+        "Cardiac reference \u00b7 native phase 0"
+      ],
+      "surfaceSubtitle": "CT intensity surface \u00b7 measured source data",
+      "sectionHeading": "CT sections",
+      "dimensionsXYZ": [
+        145,
+        125,
+        109
+      ],
+      "displayedOverviewSpacingMm": [
+        1.199,
+        1.199,
+        1.4
+      ],
+      "displayedOverviewMethod": "2\u00d72\u00d72 block means of the native source grid",
+      "phaseState": "Phase 1 / 21; phase/play controls enabled",
+      "threeDimensionalSurfaceVisible": true,
+      "sourceSectionsVisible": true,
+      "geometryVisiblyDifferentFromCmac": true,
+      "loadingIndicatorAbsentAfterReady": true,
+      "userVisibleLoadingError": false
+    }
+  ],
+  "consoleObservation": {
+    "capturedWarningsOrErrors": 5,
+    "applicationOriginErrorsOrWarnings": 0,
+    "otherErrors": "Five chrome-extension content-script errors saying Error sending browser metadata to extension: Object."
+  },
+  "transientObservation": "The common initial HTML briefly shows LADAF/generic loading-template labels after each source navigation. Both transitions settle to the correct clinical source, title, series and geometry. The shared main heading remains The human heart.",
+  "limits": "A focused browser smoke check of two default clinical sources, not an exhaustive phase/series test, performance benchmark, or independent clinical validation. Only source selection was changed.",
+  "screenshots": [
+    {
+      "source": "cmac",
+      "file": "production-source-cmac.jpg",
+      "bytes": 101658,
+      "sha256": "43be9af7cf02ffd77d5cc6ff0a9d4454da4a6ec27fa14f7e0ad69fb7eab3dfff"
+    },
+    {
+      "source": "slicerheart",
+      "file": "production-source-slicerheart.jpg",
+      "bytes": 122092,
+      "sha256": "d83f97892b16c81e6482e87c8ee648c667c61dc1a59ddafe73f7e8710e50ffdd"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,57 @@
+{
+  "dimensions": {
+    "x": [
+      7.032e-06,
+      "m"
+    ],
+    "y": [
+      7.032e-06,
+      "m"
+    ],
+    "z": [
+      7.032e-06,
+      "m"
+    ]
+  },
+  "layout": "4panel",
+  "projectionOrientation": [
+    0.30000001192092896,
+    0.20000000298023224,
+    0.0,
+    -0.8999999761581421
+  ],
+  "projectionScale": 4096.0,
+  "selectedLayer": {
+    "layer": "UCL-ZCR-2628_heart_complete-organ_7.032um_bm18",
+    "visible": true
+  },
+  "position": [
+    3038.0,
+    3750.0,
+    5252.0
+  ],
+  "crossSectionScale": 10.0,
+  "showSlices": false,
+  "layers": [
+    {
+      "type": "image",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            12319,
+            16970
+          ]
+        }
+      },
+      "source": [
+        {
+          "url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2628/heart/7.032um_complete-organ_bm18/"
+        }
+      ],
+      "opacity": 1.0,
+      "volumeRendering": "max",
+      "volumeRenderingDepthSamples": 256.0,
+      "name": "UCL-ZCR-2628_heart_complete-organ_7.032um_bm18"
+    }
+  ]
+}

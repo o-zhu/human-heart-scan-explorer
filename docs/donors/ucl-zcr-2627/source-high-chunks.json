@@ -1,0 +1,972 @@
+{
+  "source": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/",
+  "format": "zarr",
+  "dimensionsXYZ": [
+    419,
+    389,
+    548
+  ],
+  "records": [
+    {
+      "coordinateXYZ": [
+        0,
+        0,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/0/0",
+      "bytes": 2462617,
+      "sha256": "081f676305664600670083e1be11848b95e20178cb0e1a54bd9446cbf650f8ba",
+      "decodedSha256": "6154f910c40d1470213e04cd31af2905ade312f332b9d0d946ece14f9c8a7e5b",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        0,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/0/0",
+      "bytes": 2488458,
+      "sha256": "cbcb180f35d8b039d091b57b6d678bf32139e964bb3bc57e5d4024f15431aff0",
+      "decodedSha256": "becd06ae6a81bbfa85a05bb3c8a125403e82142dacde069ee1f660966e4e9d47",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        0,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/0/0",
+      "bytes": 2452201,
+      "sha256": "053c7d2495421a94762645d8421fcbe483862cc1c4b0b61b83966c0449b2261a",
+      "decodedSha256": "5270ee12a5aafc609c57543dee7795f6ce021f04ad1932e33b6aea3330092f2c",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        0,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/0/0",
+      "bytes": 693967,
+      "sha256": "f3ac0afbc7d8af0bbb161c6c9789ace03be15bc3e925ac02b8f8832c6035bdd6",
+      "decodedSha256": "a492176ff26efdbcb6cdd0695b3b696c5a05b57871b5030a1093640998c61015",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        1,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/1/0",
+      "bytes": 2588491,
+      "sha256": "193289832dd91dcf03f96ab4c99fe20b8b063d6c1f91c8f7abdfe3eab3d4e45a",
+      "decodedSha256": "9cceadd5ac4c529d5ae4705b68b9f2a500d1a939126797f6d6ac439a1c8626a4",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        1,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/1/0",
+      "bytes": 2849404,
+      "sha256": "66dfb09c313bc8b57379f5de0c0404e078f5b19c05936bb0859c1d59eb7b617e",
+      "decodedSha256": "920dde1ad91127f6bb105d848a7a0d06c17c2f209b582ad151b3905caa090d70",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        1,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/1/0",
+      "bytes": 2651414,
+      "sha256": "553dd86993319df84e5a665fbd0533c56d11210fd20697e6b6463043bf88b95e",
+      "decodedSha256": "e932882a8391e095438232dfee028a549d56e7ea8a5f56f546a0d10b5d6e290c",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        1,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/1/0",
+      "bytes": 657729,
+      "sha256": "02f964c8cd4df74e48895ff886fd0d487417442fedcd9d507de36fe7e07b4f94",
+      "decodedSha256": "9abe4a99c3d907662d2332e98c54e9ab039d3f4c5f25a834e8a04e980f1f617f",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        2,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/2/0",
+      "bytes": 2575953,
+      "sha256": "4d44d20725b9416fd4b1483e35c56a9cf8ea3b435ab2ff64271b7cfe3deeffb3",
+      "decodedSha256": "866b38a6ecf64d37cb8457f129938a683e50ebb22d6ee4146bb9579338a51bf0",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        2,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/2/0",
+      "bytes": 2619711,
+      "sha256": "548934aa2243492fd589ec465a89e72c6a1f353ca6d9991a6ef083e78c56e0bf",
+      "decodedSha256": "ca9858b913ab814a0210c99bf2da531a739ad277fb7369f3bf2e4fb451ae5601",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        2,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/2/0",
+      "bytes": 2488722,
+      "sha256": "f8c91c560ec7a2ac75027b131718282d8cda235aedc70b9bd920a5b7d7defc85",
+      "decodedSha256": "72e68e4301f0026e7c783406a603ec60cb687c7f512e8dd7d535c4327ba6a4db",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        2,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/2/0",
+      "bytes": 704237,
+      "sha256": "bd2f7ef76dedd281d67a0f34021ed47b7b4db68b72fb5c842bba471846dfbd51",
+      "decodedSha256": "a714ea8457dfd24d0b359e9b07602a57383bb1e268495269603b8ad5075097f7",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        3,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/3/0",
+      "bytes": 104020,
+      "sha256": "7428fab1520b73ff5ac0931a33be1fa0855d2a2f72de564e094af4e12ea56a7b",
+      "decodedSha256": "9c24ff4d858e786ad1857479518c210469a80b55135c9128d0e262551c554cc4",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        3,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/3/0",
+      "bytes": 99539,
+      "sha256": "4ecb2f08e527627650364b3a4b1d0749fa70f7d4e25db08deab79c81956cbf12",
+      "decodedSha256": "636eb66e70419ec7c1c7b4f6ac7ff0c34ad8788e81b2b5b450cd6a7d681ffd25",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        3,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/3/0",
+      "bytes": 104249,
+      "sha256": "7d020ba1ea09972cb4b8aa82ab46ec6d4f7874563c8100ab52ac8b914d9f3baf",
+      "decodedSha256": "56d07013d7863efb99ba49f4b002f4ee51426639ed12f152602da6f3753e77e2",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        3,
+        0
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/3/0",
+      "bytes": 25793,
+      "sha256": "8704d88a51f0529869bd9aba41a0833f11ed4b70be089b033fc73a916e978899",
+      "decodedSha256": "54aa360377d80cb540e92a29325d5eb48cafc4849f327c9acdd7fb1a3fb39a2c",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        0,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/0/1",
+      "bytes": 2503567,
+      "sha256": "3e603a1cba8ce90f68a7b72440aadb2f104e6861be4f78759c2638679763df74",
+      "decodedSha256": "3c94ed73c5165697fb1d51e8ab896dc9379123dc1e7b1677537accb286b860b4",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        0,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/0/1",
+      "bytes": 2678248,
+      "sha256": "1c8e480406f95f8cc67efb28b8ade7a7c73b413d0cb6e6dcb218bb126fcb8291",
+      "decodedSha256": "d274e49fbef2ef3d2f7fcaea9448286f69ea902fea19a6edf039b7414fac7041",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        0,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/0/1",
+      "bytes": 2546781,
+      "sha256": "1da11fc81611989c83b8298a8250cd5fb2f7e210c0c78713cce35ea7c195230f",
+      "decodedSha256": "ce21d77b437e3c3ea667ec10e773cab90a94ae1983044f86b3f9ed165a60e7e8",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        0,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/0/1",
+      "bytes": 693512,
+      "sha256": "07f77fa5e1624f85e98e996380f5444733e67c4daab7df77da6567bfc173905d",
+      "decodedSha256": "de861e52fc88a65dac41881440210c57cd8ad4be54c7ccb96b993692688fc48b",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        1,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/1/1",
+      "bytes": 2635811,
+      "sha256": "14519a77abdd096dc0ef3566fb5c46eea741008af7788a4be52fd0dba2f46e22",
+      "decodedSha256": "ef9bc14a5cf5694f4189a7d4e8cced54803eb24854751bd16dd5a9559997d8ae",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        1,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/1/1",
+      "bytes": 2782630,
+      "sha256": "5ce6c36c14f029a363a9e5669275215c4ab79843c51b041dd9b45697e40a91de",
+      "decodedSha256": "d2c46b321b54b8f43cb63d62a5e1a3dc210497b206afb181eb2b3c5a84aa1fb8",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        1,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/1/1",
+      "bytes": 2768603,
+      "sha256": "b675812a8020a0bdb49336a0310bc1258c491c8abc538c802c79db15d1e4650e",
+      "decodedSha256": "6eaef5e0773732fdc967f9659377d02c596bb5370faff2f89dea9f93ae2a8705",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        1,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/1/1",
+      "bytes": 684966,
+      "sha256": "bfa7f69d040614ce198c4a9b6db4b8ce0d3823c91b6410ba58033900dcdb2f98",
+      "decodedSha256": "a38e5ecf500823b15b441f81de77b7ac573dffdc6a47603c5da9961f3c977785",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        2,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/2/1",
+      "bytes": 2580398,
+      "sha256": "337be6ffab1d0112695d20253caca6d170a41d60cfa27d138677b65127269b26",
+      "decodedSha256": "74c8c8dd60394e699c84237071afa0a4609f34f69dbd1dd90603017a8e5dbe0c",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        2,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/2/1",
+      "bytes": 2711868,
+      "sha256": "8ec0b6ea7e98b9bb4b049759ca82f6e7c75c9df89264d9c05fd92cffab79f916",
+      "decodedSha256": "d410579499acc707ebf1aaae197c6df590249555a0e55b0d5180d44ed35a394a",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        2,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/2/1",
+      "bytes": 2518257,
+      "sha256": "6acc080c69a595d23ff9a7a085c820f9e24f529da3aa749249ecf38b4ac14c2a",
+      "decodedSha256": "fcc8f525ea0d190570583bed68ead1450130728b13edd5f6218eec9867ca4f60",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        2,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/2/1",
+      "bytes": 703494,
+      "sha256": "d57f479c38a84c2c69656e3605f6ec6502512060fc03d2a405b8b8cee4cc8f00",
+      "decodedSha256": "a6b740efc0345d4d2d376f6d5f33e012d569481c379f90a43120457ba6b6788d",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        3,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/3/1",
+      "bytes": 104725,
+      "sha256": "fc538d8ac9a93034e464a402cf4f225de6f7877914c3ab0f5ec6aee1d4ff01a2",
+      "decodedSha256": "4aec36c6f5af2e61a0e682e65c1cae2a49557e919ab650efa334e7260af4d559",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        3,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/3/1",
+      "bytes": 100270,
+      "sha256": "d6cfec6a880c774b4c35262afa999c5ce39d85dde2683d7b3dafd0bd0dd43b9f",
+      "decodedSha256": "b607b7b7079ba837f7d3600b8ab619e759d2c9cbe05eda93b228112c161e5591",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        3,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/3/1",
+      "bytes": 103781,
+      "sha256": "cba0c8c7716ac551a861c067bb1378b859e3b6814b2c39af74a062ad4a760fa2",
+      "decodedSha256": "d95b5091e321edcbacde81b733eee509afb7816131e4f6a4014b7f0bf87729ad",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        3,
+        1
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/3/1",
+      "bytes": 26217,
+      "sha256": "26f76a044cf414649a91bb4c66c417205119111bf95b5f4b5652859fd227aef7",
+      "decodedSha256": "8cc4a0d2a359d87841def338a797e2a87bfce303c522b7555eb89210280e3712",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        0,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/0/2",
+      "bytes": 2507627,
+      "sha256": "12bbdcbf6e73993164d79e2d37d41e997ddd09593f86e483ccbe58b252e147a1",
+      "decodedSha256": "f09befb014e88f1a2c99273c40c05dd0e14ba8ad395508fd4ab6afce3c51c535",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        0,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/0/2",
+      "bytes": 2623345,
+      "sha256": "74abd8d3760135f07d72a9ccf8ee02f3e3a439a07b8ceb2a1e958135a56fc288",
+      "decodedSha256": "a6e50172b31f83233af9c41c31b3272675277cb3846f9c052f48406d80ac69e4",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        0,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/0/2",
+      "bytes": 2564605,
+      "sha256": "dba9e45f64cbe220c73e44f037d3c5cb140b67983a536c823ef9949f6f5d4451",
+      "decodedSha256": "4942b3d56dc5fa58b4e94a6c79082cd687c9101fa3b67c442b6d232a45634737",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        0,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/0/2",
+      "bytes": 700444,
+      "sha256": "562d545078de19e463fc10e2ed76f1cea876c670f595b086a3ccac0d530599f5",
+      "decodedSha256": "e721cdbde06364c16d87e9489045cf2450d897a4c01f3cfc3c1722721d93c490",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        1,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/1/2",
+      "bytes": 2589310,
+      "sha256": "7d025026a69f8ca9f4978ffef13269d5c0342c8cce58bb1920054f492d043110",
+      "decodedSha256": "fa5badf362e0b0c7c7e2bdb3ddcb966215d98ee554d959d80837bae9249e5431",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        1,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/1/2",
+      "bytes": 2645401,
+      "sha256": "082c95e4d867ed40ab053ec62e3d7b976e824730e9073197e50888f618cb1fe6",
+      "decodedSha256": "bcc72cf8f71e4891637d100b890a53082e7993fa362d1b84eadc6eb848f492aa",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        1,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/1/2",
+      "bytes": 2644656,
+      "sha256": "d59a326427c8b1f8fae328f945eca782869612824c441171fbf5f9c1caec3bff",
+      "decodedSha256": "1933338ccd0b52f721317f608b37d4a7f041246c5663c94dd9a0dd4222eae23f",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        1,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/1/2",
+      "bytes": 695685,
+      "sha256": "c24c9ab5f25e572329c2e15e60d588c5799c3d83106ae477748e8050febe8f3a",
+      "decodedSha256": "d2f9b38975728f4b9cd5be0a774cb87efbce73a02877a688145222cd886c7a04",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        2,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/2/2",
+      "bytes": 2564682,
+      "sha256": "7ff0751b5d31a60608da9a6b776b4ac6ca05bf2b460d2f1709af40bd69c1d025",
+      "decodedSha256": "a685f24aa5050c846970542d53ba1c54dc593ee94f748538e73dbc5118086b84",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        2,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/2/2",
+      "bytes": 2613981,
+      "sha256": "a60e410cd99124ec752d27e610448f58d6866e942bc22063ca0c649641a1ec1a",
+      "decodedSha256": "e619c7579517aec1b110b0d08b3a8be32516e0b82e6f92bf75495e77a0783446",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        2,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/2/2",
+      "bytes": 2699697,
+      "sha256": "9b41947c0e56db6c4bbe8ed2b7e5b94b88fff6fba0f1a8dfa6360e5b06921581",
+      "decodedSha256": "558fcd835de490c3a46d361537c4ffa2e370c3d0d80cee52eb210e39e0cadfd3",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        2,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/2/2",
+      "bytes": 714882,
+      "sha256": "88d59a0eb42c05b8bcbd10842e0e560ac5f1e831176d85adad7ba87b2a4e1ef3",
+      "decodedSha256": "25bd177b10774c2f0c36f0c604b008c9cb3172c347b2803ff1e88a06409f179f",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        3,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/3/2",
+      "bytes": 104460,
+      "sha256": "35ec990e32fbe9d7ccac9387b795d2a8e668dad430909f6cd029df859f9a2d97",
+      "decodedSha256": "feac63f09e0a2ad88dc044b4bfd89651d633cb72ceb1f8dc857973f0f28fe97a",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        3,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/3/2",
+      "bytes": 97819,
+      "sha256": "89308aaab6a42fe4bce71aeb90ae17ed2e247b0ad8e12c6200e481b4b0f47abd",
+      "decodedSha256": "d68c974e1a79549e29621069566cdfd60788c62513246579ac31ad921afa9c57",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        3,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/3/2",
+      "bytes": 103858,
+      "sha256": "8fa73e39ac13a407381be92681b026e69785754526083ce7ce38a12a51114a49",
+      "decodedSha256": "1fede3923122875ba2369c33b770d5e62785129e02786cfcae61b86489511cd4",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        3,
+        2
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/3/2",
+      "bytes": 26392,
+      "sha256": "38604b54b30dfb61657046ba9c8748b8c6cf3240d89f2a9f762e096cdc6faa57",
+      "decodedSha256": "d4ed9118fd4abfe3ebaaa69878aa219feb419e279a0fbf887af6fae00e8a8978",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        0,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/0/3",
+      "bytes": 2476433,
+      "sha256": "ec210943b9c1c79b4ea9fa8acdec646c95a4731202c286925d0164a29a50184a",
+      "decodedSha256": "e45a9f5f551cf44f18936ba64756a82e757844ffd0b98b47793a378967af65fc",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        0,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/0/3",
+      "bytes": 2547597,
+      "sha256": "934535977edab9341b3db77b90eeaa9c12d37a2ef775bdc8d90b26f1fc770ecb",
+      "decodedSha256": "7daf296d317941915cf653f39467a994cd9d59cc5cdc2b96cbd35fd705eebf54",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        0,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/0/3",
+      "bytes": 2458023,
+      "sha256": "e8fc2a85c1d3b7f6ccac00dfc2b47a636eb563ed9a3349f94d29322aca37ac6a",
+      "decodedSha256": "32ea8ea9c2358ecfda5023fca111208c08f2aa29e15cd1c0c655626e217ee2ec",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        0,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/0/3",
+      "bytes": 697457,
+      "sha256": "42f11658fcfce8a03a4bef4d408b526d9dcede2f912ac0702081d1f5db2c6e79",
+      "decodedSha256": "91759341c8d50bc034f264e4b252e95babebb3e414aac58c76b57f2cd29020d8",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        1,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/1/3",
+      "bytes": 2549458,
+      "sha256": "55a25d3dd065292327b106aa8adc53075daf1d34a902db570421abbe289243b9",
+      "decodedSha256": "78d8a8a3a01fc2a2c9c73468a9fbb5f5c7d49f6bd4bdca85978f83d36a55009f",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        1,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/1/3",
+      "bytes": 2657737,
+      "sha256": "e6acf75a7a88c88853e79f8deddd3ebd6d0aa67b0ee38c0e3efce8a80e7817f5",
+      "decodedSha256": "d2aaba71a1ec2c6812a38a1f7f93a0fbd15262c75cb594c3a1d84a4a6af43185",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        1,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/1/3",
+      "bytes": 2578719,
+      "sha256": "3179ef05ad8a862b2e1788061462cbe5f88bf14bd4a33412fe63771e7e13668c",
+      "decodedSha256": "a8d1744063d3a6a6b53054ba50bef421cbf23b36c01433328aff0995477c6901",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        1,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/1/3",
+      "bytes": 666785,
+      "sha256": "0b2f04bd84169aa51b56333450b327b6dbc77019e2f658a4f4c7d90e24f5c5f8",
+      "decodedSha256": "68a85dc4239c8613a00e1c8adcc3ede5322510f5dda625b6bba0db80b04b5fd0",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        2,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/2/3",
+      "bytes": 2490469,
+      "sha256": "434e348b3f1ece62614c8748b336aed3f4eff0cbe1ce393e36828c7d82b57cc2",
+      "decodedSha256": "0571792514939440dd9f4859270000ec16ddc05727804b7c7ca7756a1f0a5123",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        2,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/2/3",
+      "bytes": 2523100,
+      "sha256": "7754ba5a8ba3cb0508f10ce4006408e10de053f71d94b1589612fed532fce862",
+      "decodedSha256": "4c2fded1c830420ac0a80e2310fb60b5638740f2d22ebb350f644e9aa1eb329a",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        2,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/2/3",
+      "bytes": 2524280,
+      "sha256": "92f2b006e352826b9d1820bab195a7d9e8be756c318559954f8a7308afce4ba2",
+      "decodedSha256": "9c28a46579fce3f2cc87da14ccd8e5ec8740e6268554b8f359830dad0b6925db",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        2,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/2/3",
+      "bytes": 710286,
+      "sha256": "87f4ee23b9810386e6d35ef0eaf690af75bb638b5433649c39de6677534ec505",
+      "decodedSha256": "9c09ab780830894307d2da80544deb9dd49dacf15fcd58d9e2569cc2f3ab5fba",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        3,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/3/3",
+      "bytes": 104722,
+      "sha256": "1e18d5720f303c4a675e657ebe417b878c6a51b594416ed9a29467fdc4c7c972",
+      "decodedSha256": "886cf665e36e8005530806321e6209d1c4842da131ed7f98ecd25412bd77fd0c",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        3,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/3/3",
+      "bytes": 100378,
+      "sha256": "c6f88bf4272fd1e2fb2a7aeac26e99ec81a57cbd5a9b67d744acd86763285a5d",
+      "decodedSha256": "ab7f2b163efe828b53ef7a3026a8b7bfb33b0457f306819118af76117a52fa18",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        3,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/3/3",
+      "bytes": 104737,
+      "sha256": "8553df21e6438986b5cecb34daf5005a53e44a8e0a98df94956ff1f3a8a5a75e",
+      "decodedSha256": "a859fc0fea23af62da423bb21b7a0d8ce9e24614b3766c201cd2e17b5744ac71",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        3,
+        3
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/3/3",
+      "bytes": 26507,
+      "sha256": "49936456cb2bb0d23bbd7b995ff211810dbfc2ca2bb1144b62b104e294fbeaa4",
+      "decodedSha256": "4e5670fadbdbf0267e6eb82dcee9fbc193feaeb65c5b340af1c76f818f2019d5",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        0,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/0/4",
+      "bytes": 734080,
+      "sha256": "c9dae52c910aaaafc55d12bc37291deecccaf50b6d4960d82e672099aa4cf5df",
+      "decodedSha256": "f174953b4b041f6b494d6bc968db850442f51749b26ec5ba37799388d66b424b",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        0,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/0/4",
+      "bytes": 728163,
+      "sha256": "95676a332490aad4d19706a81ed635bb3f125b138ace49f058041856f8214011",
+      "decodedSha256": "a1db84a32175bcb1dd389f6cf4973f25af3eb4d147c78bc3a3d215253422cb88",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        0,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/0/4",
+      "bytes": 730308,
+      "sha256": "e040997b56ccbbff3fa50533df348c52477c64bb98413665bfa941e8e3faed2c",
+      "decodedSha256": "5ba5348d944a89e7edd3461c0bf287c7b4fdb338ee7503d8ef693d0c4c82d1e6",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        0,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/0/4",
+      "bytes": 206595,
+      "sha256": "331c4e2e9196e3019620a263235eed236094a70f5d61ef4e723cf120a5cc99d2",
+      "decodedSha256": "e994c82dd4ee2bc025b10d8706044af7bf1bf7cf0e2d6ea81370593a52867640",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        1,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/1/4",
+      "bytes": 741094,
+      "sha256": "c5ac7200c2f84a6d4995802325e04d368bd0a4c58d758ee8c49f5d2d56aba688",
+      "decodedSha256": "52fe10d31dd301e4b1c5eb272d94c16d622bd865391da125407122b8d258f7c8",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        1,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/1/4",
+      "bytes": 784582,
+      "sha256": "724768660ad55222db9b78b6e4d33c2bd72ba70189c5791707691181e51bada1",
+      "decodedSha256": "17787d8468336694e6aab15c7e5ef3b045a1e62f83beba75c6d35b5ec16d5c30",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        1,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/1/4",
+      "bytes": 727236,
+      "sha256": "95ff8385395ea5b50dded9530ad074cbc35c544e287e4e17b7485541263210e2",
+      "decodedSha256": "0d6c97f0aeae2e8a006cfaad9c2b83fdbd63b68ceda4135048cee8770bf04fd6",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        1,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/1/4",
+      "bytes": 196876,
+      "sha256": "896aad09fd83a4d458c9dbb617076bbb75ffd238025a1223307b0d919087f3c8",
+      "decodedSha256": "1b034a6092e0f0322aa8d24c80a468a96cba6dd8d20c3a8ecd10499f34f4bd9f",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        2,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/2/4",
+      "bytes": 739764,
+      "sha256": "e2268ef9e2e6c559e09f4e03b62bdf1225297363ec04f3da8a4e9ddf54fc8a79",
+      "decodedSha256": "f87b315d6601f4323edba0fcf5a2d2400ac4733d8c4e625e7feca10e437bc265",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        2,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/2/4",
+      "bytes": 726087,
+      "sha256": "16f797797ec504efadb079ea333003aca7dd8411d64532f6bd4b8fe061f2ecab",
+      "decodedSha256": "8b614165b7428a0f994ce0649d9a90ec38816de4048a190b2c38a6d7f8ad2cd3",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        2,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/2/4",
+      "bytes": 733330,
+      "sha256": "3e7dd557bd14374a8325515dc93d3fb61c12a50c959cb074d34b9614f3e90410",
+      "decodedSha256": "e534cb736fb8a9834a4d8cb13cf47e4b1c22d459a25243c2cd1714a3fdcb876e",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        2,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/2/4",
+      "bytes": 209549,
+      "sha256": "25a60caff379ae620505eb5ce77ce15883785d71725a33524a2549c1a49e440a",
+      "decodedSha256": "051f13654c4f34425965b561e3d1772a5eadff999ece06b759d467281b04619b",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        0,
+        3,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/0/3/4",
+      "bytes": 32364,
+      "sha256": "5a618cfc485fc3192234e0b5f9c114c06a9cd939c989bcf7cd9ddadc71ad3446",
+      "decodedSha256": "0ed9d94af098eecdf017c7edd26c7166c85230557293581799522e570c5f679d",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        1,
+        3,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/1/3/4",
+      "bytes": 31796,
+      "sha256": "a08a639a433a0633771713b9959942c30db969d7ad2be69c615536a77462e98b",
+      "decodedSha256": "3a81f5437da26c766651810b430210203c2069b7c8be4cae336fb8d47d102729",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        2,
+        3,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/2/3/4",
+      "bytes": 32435,
+      "sha256": "b1ab7d043e0e44777eacd71eca8222ad3e93cf4bae9b3d0f9788e84745728d43",
+      "decodedSha256": "1976462b4734eaa8f7f3a6aa1c699bde3ec206808eac7c275b543c490738dc35",
+      "cached": false
+    },
+    {
+      "coordinateXYZ": [
+        3,
+        3,
+        4
+      ],
+      "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2627/heart/7.032um_complete-organ_bm18.ome.zarr/4/3/3/4",
+      "bytes": 8856,
+      "sha256": "f3ba4723134ea32887241371183f559a386dc9d79efa5461a881e98970175055",
+      "decodedSha256": "20c02c02ece895e34a6d489cf8ea476e5a6bd089624460aa6622682b0a97e3ae",
+      "cached": false
+    }
+  ],
+  "compressedBytes": 110186280
+}

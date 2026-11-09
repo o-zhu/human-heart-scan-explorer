@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual Color controls select palette 6 for each donor without fetching anatomical labels; palette IDs and selection state remain stable.",
+    "Actual Probe and TEE templates expose Atlas and share one measured-CT painter.",
+    "All 256 CT values match rail, Probe and inherited TEE display with window on/off; source CT and ultrasound remain byte-identical.",
+    "The actual app restore function preserves palette 6 in Reconstruction, Probe and TEE bookmarks.",
+    "The optional cut-face tint has finite bounded channels and monotonically increasing luminance."
+  ],
+  "scope": "Actual DOM and source functions in Node/LinkeDOM. No browser, device latency or anatomical validation claim."
+}

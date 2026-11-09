@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "donor": "ladaf-2021-17",
+  "rows": [
+    {
+      "id": "plax_av",
+      "threshold": 0.28,
+      "beforeCapPixels": 31189,
+      "afterCapPixels": 50307,
+      "restoredCutFacePixels": 19118,
+      "roiCapPixelsByteIdentical": true,
+      "unrelatedSurfacePixelsByteIdentical": true,
+      "restoredPixelsEqualResidentPlane": true,
+      "planeUnchanged": true,
+      "sourceRoiSha256": "2ced8816e4089bee59651d9dcd484d0bd35345cd12d044ff87b1f3a7d0e2e0b8"
+    },
+    {
+      "id": "plax_mv",
+      "threshold": 0.28,
+      "beforeCapPixels": 28250,
+      "afterCapPixels": 45166,
+      "restoredCutFacePixels": 16916,
+      "roiCapPixelsByteIdentical": true,
+      "unrelatedSurfacePixelsByteIdentical": true,
+      "restoredPixelsEqualResidentPlane": true,
+      "planeUnchanged": true,
+      "sourceRoiSha256": "4c1ca34ecba6d591cc3947dd9b03dc139cb0f85bd413de2e0f5d59e2c749baee"
+    },
+    {
+      "id": "psax_pv",
+      "threshold": 0.28,
+      "beforeCapPixels": 34033,
+      "afterCapPixels": 42108,
+      "restoredCutFacePixels": 8075,
+      "roiCapPixelsByteIdentical": true,
+      "unrelatedSurfacePixelsByteIdentical": true,
+      "restoredPixelsEqualResidentPlane": true,
+      "planeUnchanged": true,
+      "sourceRoiSha256": "6cd176d43543807ff47bc09f1ad350ab23f2d921b300663f5f2e59ec0052a1fa"
+    }
+  ],
+  "outputPixels": [
+    960,
+    840
+  ],
+  "beforeShaderFileSha256": "c9ad26cdcd30aefb582838c031c4a6e5b6d086b7af5054b6ec49b45bc1c77bd8",
+  "afterRendererSourceSha256": "b15f5fb4470226b4d1e324e690a1e437740cb1844f9b522877266e3de2eed507",
+  "meshManifestSha256": "759393730dc713e22b81c1a2d448893dda725b285e3804b034cfb11576ca7c2b",
+  "mesh": {
+    "id": "detail",
+    "label": "Fine surface \u00b7 detail",
+    "url": "./assets/fine-surface-v19/detail.hfm.gz",
+    "vertices": 903615,
+    "triangles": 1986313,
+    "compressedBytes": 17722926,
+    "decodedBytes": 34679172,
+    "sha256": "e68bca40df669ef4661a922a2e835c078d24cef7bb6afa35760cd39d71ccc12c",
+    "decodedSha256": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+    "quantizationMaximumMm": 0.0020660342908876105,
+    "quantizationRmsMm": 0.00119495087486053,
+    "trianglesBeforeEncoding": 2000000,
+    "removedZeroAreaTriangles": 2794,
+    "normalFallbackVertices": 24978,
+    "normalFallbackFraction": 0.02764230341461795,
+    "quantizationCollapsedTriangles": 10893
+  },
+  "sourceSpacingUm": 317.6,
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "scope": "Actual smaller high-fidelity detail mesh and production GLSL in native EGL. Identical unchanged accepted planes, probe cameras, threshold 0.28, source volume, support mask and ROI pixels. This isolates immediate 317.6 \u00b5m same-plane fallback; it does not test fine-source downloads, optional reviewed masks, browser/device frame rate or physical iOS."
+}

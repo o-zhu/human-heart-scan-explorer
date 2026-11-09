@@ -1,0 +1,194 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 164,
+    "decodedBrickReads": 196,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "lvot-detail",
+      "title": "LVOT tissue edge and low-contrast perivalvular fringe",
+      "lowerXYZ": [
+        1010,
+        1000,
+        1000
+      ],
+      "upperXYZ": [
+        1180,
+        1160,
+        1370
+      ],
+      "ys": [
+        1012,
+        1028,
+        1044,
+        1060
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1012,
+          "sourcePlaneSha256": "5723df20252fe67f0cce1d54521d59eba5d6937aacea72060e8880587e060d63",
+          "excludedInPlane": 5144
+        },
+        {
+          "fineY": 1028,
+          "sourcePlaneSha256": "8b3ea0ff9b311dbf76b75ae5a3d9a9cd33c97af26d52ae93f930cf6931d59260",
+          "excludedInPlane": 7129
+        },
+        {
+          "fineY": 1044,
+          "sourcePlaneSha256": "bd72c38294af9be4e8941d68e087e3b3cf8284471b38bc852f1a633c4b7c05f2",
+          "excludedInPlane": 9404
+        },
+        {
+          "fineY": 1060,
+          "sourcePlaneSha256": "741b56fde7bfa317d3e32cc01a9433366aa863d3ca78b8f8fbe5a1b603eedbc6",
+          "excludedInPlane": 8889
+        }
+      ]
+    },
+    {
+      "id": "atrial-attachment",
+      "title": "Pulmonary vein sheet serial attachment and end extent",
+      "lowerXYZ": [
+        1180,
+        1160,
+        650
+      ],
+      "upperXYZ": [
+        1430,
+        1365,
+        825
+      ],
+      "ys": [
+        1204,
+        1216,
+        1224,
+        1288,
+        1300,
+        1308,
+        1320,
+        1332
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1204,
+          "sourcePlaneSha256": "d4c81e18a9a0ecd182d61f5b54ed85ef890340301286e9c936cff7237d22ffc5",
+          "excludedInPlane": 8268
+        },
+        {
+          "fineY": 1216,
+          "sourcePlaneSha256": "80218d479de38893dca197ca135daeb703c63666abf90824487b4b30f4a07636",
+          "excludedInPlane": 3753
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "39d448719de2ce93a0e0c388c7a9350a9ce3614e3bc00666869ee30a6b257896",
+          "excludedInPlane": 2029
+        },
+        {
+          "fineY": 1288,
+          "sourcePlaneSha256": "fe257b3060b124b2e1c4b3674e0ea8a2241ea0658afdfa635029a9af6ad95f00",
+          "excludedInPlane": 4163
+        },
+        {
+          "fineY": 1300,
+          "sourcePlaneSha256": "0293b32d673b4ae6bd3296aae54833666bcf474b3c5d8c02617659af4cb50084",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1308,
+          "sourcePlaneSha256": "9edf2bb748fc95b37568443583464bcf0ce2a0ff4f9b235fce3c06c1efd37bd6",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "ccbbf59d1f851b434451b439f1fac4975f87d90d28d2ccce7dddb7ae1a5b0a2b",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1332,
+          "sourcePlaneSha256": "26cdb26fb909e1fa6a0bd8b6189908c8b0a51466542127bc58b26c78a7b5bee4",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "appendage-attachment",
+      "title": "Appendage sheet serial wall collars",
+      "lowerXYZ": [
+        1120,
+        1210,
+        780
+      ],
+      "upperXYZ": [
+        1390,
+        1337,
+        1030
+      ],
+      "ys": [
+        1216,
+        1232,
+        1248,
+        1260,
+        1276,
+        1292,
+        1304,
+        1320
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 1216,
+          "sourcePlaneSha256": "bd9de116a726ef5a9fd50106cdc295389bc24878dc9fa524ca4c2a85075a99fc",
+          "excludedInPlane": 31607
+        },
+        {
+          "fineY": 1232,
+          "sourcePlaneSha256": "aaa0cabc675314d0479e53f8dd26b6cd94a9774c3a468f559cac71a4438ac1ed",
+          "excludedInPlane": 14037
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "b3342b9c0ed1d686906f9bd04e6ba7ba53a421351e73c19cd3bcebb3f4de41e4",
+          "excludedInPlane": 7390
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "8697bd1840b023de3f06fc68144eff3c1c4f238dcaf47a788198256d2208e0b5",
+          "excludedInPlane": 4113
+        },
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "0ee1b1b8e55ab13192eb24aa7c491adcb95aafe9602efd3930322ef79e5f58d2",
+          "excludedInPlane": 2308
+        },
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "72d6737e93b12dedd6338b6159f4a8c8edee04514058947b7ffcea277dc987f5",
+          "excludedInPlane": 1515
+        },
+        {
+          "fineY": 1304,
+          "sourcePlaneSha256": "84a8104b0e596a4a0a0867c3e0204fe11c069c4cfe20f4259eaba6c68a8d81dd",
+          "excludedInPlane": 470
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "65252ad5fa2bc3a05d265225562877137677df138c71741b66e7f7664e468c64",
+          "excludedInPlane": 0
+        }
+      ]
+    }
+  ]
+}

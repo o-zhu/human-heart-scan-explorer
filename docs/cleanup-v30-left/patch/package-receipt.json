@@ -1,0 +1,37 @@
+{
+  "selectedCandidate": "median145-guarded",
+  "policySha256": "9e08528156e2d22c2e931f1754b3703cfa0ec7af02d1da166d33ae78d92231d7",
+  "sourceValidation": {
+    "path": "docs/cleanup-v30-left/guarded-review/source-validation.json",
+    "sha256": "9ce3634dce2bf8cac2c8545e3611432efd28088b32c9a22131feb421dd561a96"
+  },
+  "codeAndConfiguration": {
+    "scripts/cleanup-v30-left/build_patch.py": "b163bbf62a712bb0817c76798c83b956262fea64231552e0b1dcd3b31a042e28",
+    "scripts/cleanup-v30-left/cache_geometry.py": "ae28563302a2037cac9dfdced49aafa1678adf6c5a47340890a7717dfd5b7272",
+    "scripts/cleanup-v30-left/current_normals.py": "eabe42d338fd635d2da18593153118ab9e3035f2ec4e57673a94322d12a29dfc",
+    "scripts/cleanup-v30-left/explore_fields.py": "77b9519d8bee2b90e9f783ad99a1c885223aa6b296bcab1c4997261bb99a6ec7",
+    "scripts/cleanup-v30-left/locate.py": "211063c658f28f92f10510d35aa49d4ffdedafd989f817c20a2ec171dabc47f2",
+    "scripts/cleanup-v30-left/package_patch.py": "796107ea32c056a894341d8dd075c18273544117d6d7bb98401264aae8b8d4c1",
+    "scripts/cleanup-v30-left/render_review.py": "7eeec4f1155c68b97815859918c449dcfee6190b8c8e1a5c95f04ff96b21d219",
+    "scripts/cleanup-v30-left/review_index.py": "40545d16d08b515b5260ad39044ba929b3e0a05564c0e4c3fc3354599dcd89c1",
+    "scripts/cleanup-v30-left/serial_deep.py": "b6014cdfb0fa80886067f1f365d972e9259701f553c97986f886ffe39d0f471b",
+    "scripts/cleanup-v30-left/serial_review.py": "8e235f4ce4ed7bad3a7e0c00a07b3f7e47236d0aff7634e0b88898c86f4a9a45",
+    "scripts/cleanup-v30-left/validate_patch.py": "de731494f922adbddcd1c18f4599a29087e68eb676b0f9b84aaf0694a53be73d",
+    "scripts/cleanup-v30-left/regions.json": "13dce1049ee0721048d50dd423fc1ea3e46f11e97835c39d7708fd3bec58094d",
+    "scripts/cleanup-v30-left/review-cameras.json": "b56f7f3e881fc4b039ffd0a7c9cbf10c649dbfb579ffe091b95c22170d2ab67c",
+    "scripts/cleanup-v28-right/compact_patch.py": "936154554cf08451fedf4adb84a9cc857e48b7850c5fa35dbf913b86b037844f",
+    "scripts/cleanup-v28-right/adaptive_patch.py": "fa644935b5a24a8211bc634b741102dd4625740aa6d0d4585f9dbd32296f2bd1",
+    "scripts/cleanup-v27-wall/restore_wall.py": "437c774f11f5e9b8827dc4e40a8686a67e6ac01e744aff0f0557b719e35b1653"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit_image": "0.25.2",
+    "vtk": "9.5.2"
+  },
+  "artifactEntrySha256": "539098fc49ba419b361c73efe31993abd7da1ce44e1a877e4e162719ff9f2d42",
+  "surfaceReferenceLocalPath": "{source-cache}/cleanup-v30-left/median145-guarded/lvot-perivalvular-refinement.sfr.gz",
+  "surfaceReferenceSha256": "a8238042e42e15293d497691791a483009f6fda05fd345ef9224ddee44034306",
+  "purpose": "One compound LVOT/mitral replacement slot for canonical v30 assembly; original source and current hard object masks remain immutable. The root assembly can split the verified full gzip into ordered transport parts without changing decoded geometry."
+}

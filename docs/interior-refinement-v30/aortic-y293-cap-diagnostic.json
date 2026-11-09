@@ -1,0 +1,19 @@
+{
+  "case": {
+    "id": "aortic-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1080,
+      1168,
+      990
+    ],
+    "distance": 0.3
+  },
+  "changedPixels": 319592,
+  "totalPixels": 604800,
+  "capRestoreExact": true,
+  "diagnostic": "Prepared cap replaced by exact-size zeros; capReady remains true, original source raster restored byte-exactly.",
+  "onSha256": "1ae8a1372b470af7d1d14c19b53e2767ec0767c9f43d73674356d8b20c138272",
+  "offSha256": "63916764f6a2f2b2850e8e93228a9309ca5b266af29e4279c1fcaf2615c6f0e1"
+}

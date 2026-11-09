@@ -1,0 +1,1045 @@
+{
+  "schemaVersion": 1,
+  "sourceHashes": {
+    "public/echo.js": "8e140d450d088fed56329c7e6095332bbe1f8d6274e69f0e8a7870d08b5a1db5",
+    "public/tte-atlas-geometry.js": "8b6f1ec8ffd2100a4c1de3f490b0527ec98d4ce4ce05a3a2dedb2df2ec664605",
+    "public/tee-atlas-geometry.js": "0956a6af0eaf2e79162db9d46b654570ed662d941a405f7add6a4ecb3b653349",
+    "public/tee-context-geometry.js": "4fc0741ee93729ef8331c41e3a499a2f163ba538ba7e41846f8619235a185df7",
+    "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+    "public/echo-acquisition-geometry.js": "20bd90ab7d8542b4220481d954f89652b7e6123cc22c69c347db481d59e96930",
+    "public/echo-anatomy-context-v2.js": "b619f22ab57d0e526fcba918421d941bd2a93c562d367db4400cb621adbc1627",
+    "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+    "public/echo-tte-guidance.js": "1a946129c3a67beec0a405803df242735b96ae269c2139be64e9b6ccc60fac1e",
+    "public/probe-scene.js": "35b892dcf809258f376ee8c135e9a84659844de7ff58bb91a6adbd7e977bdcdc",
+    "public/tee-scene.js": "122d3d591b6a6fba198c2a1a1d38aa1799f9b97555d50d651dc65890477ca825",
+    "public/echo-correspondence.js": "145bb7fc81069b4c21511d686318069ed730bc3a4e660e50493fcb01b705abfd",
+    "public/tee-alignment.js": "2982ecdd0566a8cb67f685bfd3a64689760ab1f3bef7066bc89fa79a3151dad5"
+  },
+  "sourceStable": true,
+  "cases": [
+    {
+      "donor": "ladaf-2021-17",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-negative-limit",
+      "requestedState": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-negative-limit",
+      "requestedState": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-negative-limit",
+      "requestedState": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "baseline",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "retained-half-flipped",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": true
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-plus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-minus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-plus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-minus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 33.61058601134216,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "baseline",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "retained-half-flipped",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": true
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-plus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-minus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-plus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-minus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 33.61058601134216,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "baseline",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "retained-half-flipped",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": true
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-plus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-minus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-plus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-minus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 33.61058601134216,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 90,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-negative-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -90,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-negative-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-28",
+      "id": "meavsax",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-negative-limit",
+      "requestedState": {
+        "offsetMm": -33.61058601134216,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "baseline",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "retained-half-flipped",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": true
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-plus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-minus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-plus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-minus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 32.21980544061558,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me5c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "baseline",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "retained-half-flipped",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": true
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-plus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-minus15",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -15,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-plus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-minus10",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": -10,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 32.21980544061558,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "me4c",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-plus10",
+      "requestedState": {
+        "offsetMm": 10,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "combined",
+      "requestedState": {
+        "offsetMm": 12,
+        "rotationDeg": 20,
+        "tiltDeg": 15,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-positive-limit",
+      "requestedState": {
+        "offsetMm": 32.21980544061558,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 90,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "rotation-negative-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": -90,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "merpv",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "tilt-positive-limit",
+      "requestedState": {
+        "offsetMm": 0,
+        "rotationDeg": 0,
+        "tiltDeg": 45,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    },
+    {
+      "donor": "s-20-29",
+      "id": "meavsax",
+      "mode": "tee",
+      "planeReference": "refined",
+      "adjustment": "offset-negative-limit",
+      "requestedState": {
+        "offsetMm": -32.21980544061558,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      },
+      "outsideScan": false,
+      "reason": "No full-head-contained pose is available for this section in the fixed reference tract.",
+      "overlayHidden": true
+    }
+  ]
+}

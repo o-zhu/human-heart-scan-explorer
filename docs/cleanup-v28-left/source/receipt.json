@@ -1,0 +1,151 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 358,
+    "decodedBrickReads": 734,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "lvot-serial",
+      "title": "LV outflow residual across the newly reported section 262",
+      "lowerXYZ": [
+        925,
+        970,
+        850
+      ],
+      "upperXYZ": [
+        1150,
+        1161,
+        1360
+      ],
+      "ys": [
+        984,
+        1004,
+        1024,
+        1044,
+        1064,
+        1084,
+        1104,
+        1132
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 984,
+          "sourcePlaneSha256": "bf5a72aa457f3aadf30913f80ce6be5b07fee09e92d0f5b7342863ec2503231a",
+          "excludedInPlane": 688
+        },
+        {
+          "fineY": 1004,
+          "sourcePlaneSha256": "8ad88ad05f97734e870f3bfe7047f81a564f4a2dda8922c9be05cacd5d4e2ea0",
+          "excludedInPlane": 1611
+        },
+        {
+          "fineY": 1024,
+          "sourcePlaneSha256": "337e2e8b847b0a82eeea9ef9e79f95d516e4c74f74405bd71deb94dc9b9d12da",
+          "excludedInPlane": 3221
+        },
+        {
+          "fineY": 1044,
+          "sourcePlaneSha256": "9797d94b7d54390f8cf0a6cc7d39c21b3c64221b3fa903a2e57d02a57276b2c0",
+          "excludedInPlane": 11903
+        },
+        {
+          "fineY": 1064,
+          "sourcePlaneSha256": "74d2f08564467025963bb2c450865a08cd3d77333079f477f43a228eddb1633c",
+          "excludedInPlane": 14269
+        },
+        {
+          "fineY": 1084,
+          "sourcePlaneSha256": "7531a7f712eb5018bbc9a8b16878d08b3e7e6819f3ce85ac86d8d706eef36f23",
+          "excludedInPlane": 11940
+        },
+        {
+          "fineY": 1104,
+          "sourcePlaneSha256": "2cf29ab829383079bb50fbbb2578a9b1a8e357910532da003ea6177760f26007",
+          "excludedInPlane": 7275
+        },
+        {
+          "fineY": 1132,
+          "sourcePlaneSha256": "3c99f1ee32ae9ecdc1393d1d9761da37795f7c26127f850ef3b1b9bb2eb881bb",
+          "excludedInPlane": 2228
+        }
+      ]
+    },
+    {
+      "id": "atrial-serial",
+      "title": "LA appendage and pulmonary vein residual sheets around section 316",
+      "lowerXYZ": [
+        1110,
+        1150,
+        590
+      ],
+      "upperXYZ": [
+        1450,
+        1361,
+        1030
+      ],
+      "ys": [
+        1180,
+        1200,
+        1220,
+        1240,
+        1260,
+        1280,
+        1300,
+        1320
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "ef4faed3d3e5bb40a61c70e0d5c28258025e6db87adc6d755c217ae49b918248",
+          "excludedInPlane": 36960
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "18cc5d1817377f9724f842362c9b723adeede770a920f412ca80e69225dfdff8",
+          "excludedInPlane": 41055
+        },
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "016389ab6aba2aa50855b0866587bd28439e665b46023cc887cd2864d4a8f84f",
+          "excludedInPlane": 28803
+        },
+        {
+          "fineY": 1240,
+          "sourcePlaneSha256": "f2a8c8f5d771289f6969a199abef45bca8e4b1c1008a5b674430af498de638b5",
+          "excludedInPlane": 11722
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "e5d6f60e2abfe903bc3845e3d3f561b1fedea10ed015b2f70c1afe8f7f1cc9be",
+          "excludedInPlane": 7965
+        },
+        {
+          "fineY": 1280,
+          "sourcePlaneSha256": "38f6af7df3799080eef8e7dafab36aa519b85b72866ec6d37ea25cdce84f142e",
+          "excludedInPlane": 7193
+        },
+        {
+          "fineY": 1300,
+          "sourcePlaneSha256": "70d2c049c396679869ed9ef95fafc279ca8a62e29c6c60dd0ff22cd972b8aede",
+          "excludedInPlane": 680
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "22e0628cbfdf2622e094638bf5886dd99784976589114b638d04159871281672",
+          "excludedInPlane": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "guided-native-actual-index-validation-v21.1",
+  "verifiedAtUtc": "2026-11-06T17:12:59.206Z",
+  "passed": true,
+  "fixtureDataUsed": false,
+  "publishableGateOverridden": false,
+  "sourceFilesChanged": false,
+  "networkRequests": 0,
+  "artifact": {
+    "path": "{source-cache}/guided-native-v21/whole/final-manifest/manifest.json.gz",
+    "sha256": "afc97dc2a7e8dca3304de4296a5d6436d733e0a0c1410b84f8b1e16da41e8e5a",
+    "compressedBytes": 3678719,
+    "decodedSha256": "cbcb7130da27258951e6a0834014ab57c9b0083b320ae6bbc444aaee4154f3b4",
+    "decodedBytes": 14103268,
+    "publishable": true,
+    "fixtureOnly": false,
+    "normalWorkerByteLimit": 33554432,
+    "normalBoundedGzipReadPassed": true
+  },
+  "normalValidatorPassed": true,
+  "validatorMilliseconds": 74.99652400000002,
+  "nativeTileCount": 33046,
+  "nativeTileKeysAndUrlsNormalized": true,
+  "allAggregateSumsExactAgainstBigInt": true,
+  "totals": {
+    "nativeVertices": 6192976842,
+    "nativeTriangles": 12168077800,
+    "nativeCompressedBytes": 5810515698,
+    "nativeDecodedBytes": 12740233271
+  },
+  "coverage": {
+    "plannedBlocks": 37612,
+    "completedBlocks": 37612,
+    "emptyBlocks": 4566,
+    "nativeOnlyEdgeVertices": 6122635215,
+    "blendedEdgeVertices": 70341627,
+    "priorOnlyEdgeVertices": 0,
+    "displayedNativeMetric": "98.9% native",
+    "displayedNativeNote": "1.1% blended · 0.0% prior-only stored crossings",
+    "provenanceIntegerTextExact": true
+  },
+  "defaultRegion": {
+    "requestedNativeXYZ": [
+      3776,
+      3776,
+      4288
+    ],
+    "exactAvailableTile": true,
+    "blockXYZ": [
+      29,
+      29,
+      33
+    ],
+    "triangles": 598064,
+    "sha256": "5b89c41f2d7554b82eab7c1629ec24bb223a6f291e582539883262f53f64da56"
+  },
+  "overviewChoices": [
+    {
+      "id": "overview",
+      "label": "Overview · 1.5M triangles"
+    },
+    {
+      "id": "detail",
+      "label": "Detail · 2.5M triangles"
+    }
+  ],
+  "defaultOverviewId": "overview",
+  "lods": [
+    {
+      "id": "overview",
+      "parts": [
+        {
+          "path": "{source-cache}/guided-native-v21/whole/overview/assets/overview.hfm.gz",
+          "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-overview-0-f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e.hfm.gz",
+          "sha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+          "decodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+          "compressedBytes": 11012293,
+          "decodedBytes": 24642580,
+          "vertices": 369031,
+          "triangles": 1499999,
+          "gpuBufferBytes": 24642546,
+          "gzipAndDecodedHashesVerified": true,
+          "normalHfmParserPassed": true,
+          "normalInitialAndTransactionalGpuBudgetGuardsPassed": true
+        }
+      ],
+      "vertices": 369031,
+      "triangles": 1499999,
+      "decodedBytes": 24642580,
+      "gpuBufferBytes": 24642546,
+      "decodedBudgetBytes": 134217728,
+      "decodedBudgetPassed": true
+    },
+    {
+      "id": "detail",
+      "parts": [
+        {
+          "path": "{source-cache}/guided-native-v21/whole/overview/assets/detail.hfm.gz",
+          "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-detail-0-b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef.hfm.gz",
+          "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+          "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+          "compressedBytes": 19744361,
+          "decodedBytes": 42582052,
+          "vertices": 699001,
+          "triangles": 2500000,
+          "gpuBufferBytes": 42582018,
+          "gzipAndDecodedHashesVerified": true,
+          "normalHfmParserPassed": true,
+          "normalInitialAndTransactionalGpuBudgetGuardsPassed": true
+        }
+      ],
+      "vertices": 699001,
+      "triangles": 2500000,
+      "decodedBytes": 42582052,
+      "gpuBufferBytes": 42582018,
+      "decodedBudgetBytes": 134217728,
+      "decodedBudgetPassed": true
+    }
+  ],
+  "transactionalSwap": {
+    "normalGpuBudgetGuardPassedBothDirections": true,
+    "retainedAndReplacementGpuBytes": 67224564,
+    "paneBudgetBytes": 134217728
+  },
+  "normalCodeSha256": {
+    "native-edge-loader.js": "b1bf25281a726728b311c12fd458ce4b83dc50f623bf155f79a1fcb8c5ad6e3f",
+    "native-edge-worker.js": "940291a284d33b3dbd538709dd7e9780c8c8e989824caa56886f50f0a2d04a11",
+    "native-edge-format.js": "21bd0f9da9dfe97f9dd0734a8b1e4e4843af5b73f2b2b9d17cb775c93ec9b391",
+    "native-mesh-format.js": "266e65ab021a73e7df305d57c5afb34ab880bbaec108c2ba15d6537623d77a1b",
+    "whole-native.js": "b738c0245b3d6652011f794b7b9d1a1eedf8e13a9c1a499af22e569149027402"
+  },
+  "localOverviewManifest": {
+    "path": "{source-cache}/guided-native-v21/whole/overview/manifest.json",
+    "sha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6"
+  },
+  "executionScope": [
+    "Actual publishable whole-plan index and actual hash-matched local HFM artifacts.",
+    "Production manifest validator, controller LOD normalization and coverage labels, worker bounded decompression, HFM parser, and GPU-budget guard.",
+    "GPU guard probes stop at the first allocation boundary. No GPU memory was allocated and no browser, rendering, or FPS claim is made.",
+    "Native tile bodies were not downloaded or re-meshed; the default tile resolves to an exact nonempty entry in the verified final index."
+  ],
+  "elapsedMilliseconds": 978.127463,
+  "processPeakRssBytes": 285343744
+}

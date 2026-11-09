@@ -1,0 +1,78 @@
+{
+  "scope": "Numerical pose, geometry and production render-call audit. The torso is illustrative, not donor-registered. No browser or clinical validation.",
+  "checks": [
+    {
+      "name": "middle-column instrument retains exact v12 mesh bytes and 0.40 scale; only reference instrument is enlarged",
+      "passed": true
+    },
+    {
+      "name": "all 12 donor presets map their exact acoustic tip and axes onto fixed reference anchors",
+      "passed": true
+    },
+    {
+      "name": "contact movement and combined pan, tilt and rotation use one fixed mapping without retargeting",
+      "passed": true
+    },
+    {
+      "name": "lock-to-free transition preserves the same reference pose and free translations remain visible",
+      "passed": true
+    },
+    {
+      "name": "supplied displayed pose is authoritative even with inconsistent live-state angles or stale contact UV",
+      "passed": true
+    },
+    {
+      "name": "raised markers stay on negative probe-right and correspond to the left half of the ultrasound sector",
+      "passed": true
+    },
+    {
+      "name": "production drawGuide passes the identical displayed snapshot to torso and middle renderer",
+      "passed": true
+    },
+    {
+      "name": "reference renderer consumes supplied pose and enlarged scale around the same acoustic tip",
+      "passed": true
+    },
+    {
+      "name": "production indicator callout tracks projected points, stays inside normal pane bounds and hides offscreen",
+      "passed": true
+    }
+  ],
+  "presets": [
+    "ladaf-2021-17:apical",
+    "ladaf-2021-17:parasternal",
+    "ladaf-2021-17:short-axis",
+    "ladaf-2021-17:atrial",
+    "s-20-29:apical",
+    "s-20-29:parasternal",
+    "s-20-29:short-axis",
+    "s-20-29:atrial",
+    "s-20-28:apical",
+    "s-20-28:parasternal",
+    "s-20-28:short-axis",
+    "s-20-28:atrial"
+  ],
+  "poseCases": 288,
+  "maximumDirectionError": 7.294838783590753e-10,
+  "maximumPositionErrorMm": 1.4512654916307124e-8,
+  "mainMeshSha256": {
+    "phased": "72c97a38ea4c6e5bb97d2c460407319e340a1cd63a57e459a56044ea1f575152",
+    "tee": "4e01ca189606208099f5cdbde0d9589f7600ce662314331b206948dff065f1a3"
+  },
+  "mainLinearScale": 0.4,
+  "referenceLinearScale": 1.2,
+  "markerConvention": "Local -X = -pose.right = negative sector lateral = image-left. No camera-facing or marker polarity flip.",
+  "snapshotSource": "Both render calls receive the same displayedFrame.pose, displayedFrame.state and generated contact surface, even while live controls point to a different preset.",
+  "indicatorCallout": {
+    "checkedPlacements": 30,
+    "normalPaneWidths": [
+      220,
+      440,
+      800
+    ],
+    "offscreenHiddenCases": 5,
+    "actualProductionTemplate": true,
+    "note": "DOM attributes, anchored coordinates, box bounds and dashed-class stylesheet verified; not browser font rasterization or CSS layout."
+  },
+  "passed": true
+}

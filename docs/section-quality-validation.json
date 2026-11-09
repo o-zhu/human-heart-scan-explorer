@@ -1,0 +1,40 @@
+{
+  "jpegQuality": 92,
+  "displayRange": [
+    0,
+    255
+  ],
+  "regionDefinition": "Approximate ventricular region: s3 source Z 560 through 980 for X/Y, Z=800 for axial; display intensity100\u2013245. This is a numeric image-quality ROI, not anatomical segmentation.",
+  "sections": [
+    {
+      "axis": "x",
+      "index": 237,
+      "imageMeanAbsoluteError": 1.320385953705058,
+      "imageP95AbsoluteError": 4.0,
+      "ventricularRegionPixels": 99749,
+      "ventricularRegionMeanAbsoluteError": 2.346970896951348,
+      "ventricularRegionP95AbsoluteError": 6.0,
+      "ventricularRegionMaxAbsoluteError": 13
+    },
+    {
+      "axis": "y",
+      "index": 237,
+      "imageMeanAbsoluteError": 1.3561305524129073,
+      "imageP95AbsoluteError": 4.0,
+      "ventricularRegionPixels": 109394,
+      "ventricularRegionMeanAbsoluteError": 2.369426111121268,
+      "ventricularRegionP95AbsoluteError": 6.0,
+      "ventricularRegionMaxAbsoluteError": 14
+    },
+    {
+      "axis": "z",
+      "index": 400,
+      "imageMeanAbsoluteError": 0.8932790436608442,
+      "imageP95AbsoluteError": 3.0,
+      "ventricularRegionPixels": 89574,
+      "ventricularRegionMeanAbsoluteError": 2.334248777547056,
+      "ventricularRegionP95AbsoluteError": 6.0,
+      "ventricularRegionMaxAbsoluteError": 14
+    }
+  ]
+}

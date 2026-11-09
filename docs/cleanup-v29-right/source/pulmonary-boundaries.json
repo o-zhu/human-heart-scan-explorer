@@ -1,0 +1,48 @@
+{
+  "policySha256": "2201548e857f6eaed97edd30695ba38647343028d99b31ab3bbd8d951f95aec4",
+  "lowBandMaskSha256": "0aa0b001c60c96485b4545a7a6c39fcaf3be5d0f073da0d4f18b87a105c0ebe4",
+  "checks": [
+    {
+      "axis": 0,
+      "coordinate": 640,
+      "removedSamples": 9053,
+      "removedAtOrAbove155": 0,
+      "removedOriginal190": 0,
+      "maximumRemovedFilteredValue": 154.9813995361328
+    },
+    {
+      "axis": 0,
+      "coordinate": 680,
+      "removedSamples": 13642,
+      "removedAtOrAbove155": 0,
+      "removedOriginal190": 0,
+      "maximumRemovedFilteredValue": 154.99411010742188
+    },
+    {
+      "axis": 0,
+      "coordinate": 720,
+      "removedSamples": 6163,
+      "removedAtOrAbove155": 0,
+      "removedOriginal190": 0,
+      "maximumRemovedFilteredValue": 154.86190795898438
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 78,
+    "decodedBrickReads": 118,
+    "cacheMaximumBricks": 12,
+    "cacheMaximumBytes": 3295500,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "priorAtrialWallRestorationDisjoint": true,
+  "restorationSamples": 109928,
+  "restorationMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+  "sourceDataUnmodified": true,
+  "sourceNotCalibratedHU": true,
+  "scope": "Serial source display intensities and exact mask verification. Bright-core counts precede the separately documented inherited compact-component display filter. Not an anatomical identity or accuracy validation."
+}

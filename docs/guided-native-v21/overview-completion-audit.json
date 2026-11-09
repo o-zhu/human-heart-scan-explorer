@@ -1,0 +1,393 @@
+{
+  "schema": "guided-native-overview-completion-audit-v21.1",
+  "passed": true,
+  "scope": "whole-plan",
+  "completedAt": "2026-11-06T17:10:15.897919+00:00",
+  "readOnly": true,
+  "networkRequests": 0,
+  "overviewManifestSha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+  "overviewFingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+  "scientificRunFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a",
+  "inputManifestFileSha256": "2f4def9ca7d2260f17df8abc68e14cd6971ce76f191d30a125b6c20b880265e3",
+  "inputManifestCanonicalSha256": "f99b0d71a2c12ba10c296470104dbb4b14a22b41d5b5e1071ed31f8b3f53f0a8",
+  "exactSourceRecordCoverage": 37612,
+  "sourceRecordsStillMatchCompletedBank": true,
+  "processingCode": {
+    "codeSha256": "ddb273f7db10f723fc4d8d4bd93223714438d690c07f40005a4f7c847902f38f",
+    "edgeCodecSha256": "a487ab160022000028b31e111c043f72d8ebdd4604368c23d1ac1ef32bb314f6",
+    "collapseFilterSha256": "00270dd22ba14a21fd316f74da97bdaa75d05ea5f1bf84a28f3584d1fcc41d22"
+  },
+  "checkpointVerification": {
+    "nodes": 3838,
+    "leaves": 3284,
+    "compressedBytesHashed": 903644266,
+    "allNpzSha256MatchRecords": true,
+    "allArrayHeadersValidated": 3838,
+    "canonicalNodeRecordsSha256": "cf2d0a91f50f84367453ff5220daa93dfeadf9398e453630f078d59b75f5f058",
+    "canonicalNodeRecordsSha256Reproduced": true,
+    "exactPartitionAndChildCountsVerified": true,
+    "recordedFinalExactBoundaryAssertions": 3838,
+    "rejectedIntermediateBoundaryTrials": 9,
+    "methods": {
+      "unchanged": 134,
+      "global-grid-clustering-and-constrained-qem-replay": 3623,
+      "global-grid-vertex-clustering": 35,
+      "vtkDecimatePro": 11,
+      "unchanged-no-free-reduction": 15,
+      "parent-global-grid-clustering-fallback": 20
+    },
+    "seamAssertionScope": "All final nodes retain their runtime exact-boundary assertions, covered by the reproduced source and canonical record hash. Original input/output seam computations were not rerun for all nodes."
+  },
+  "independentRootChildSeams": {
+    "comparisons": [
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          0,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          0,
+          0
+        ],
+        "axisXYZ": 0,
+        "sharedPlaneVertices": 57416,
+        "oneFaceBoundaryEdges": 57370,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          0,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          0,
+          32,
+          0
+        ],
+        "axisXYZ": 1,
+        "sharedPlaneVertices": 48523,
+        "oneFaceBoundaryEdges": 48454,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          0,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          0,
+          0,
+          32
+        ],
+        "axisXYZ": 2,
+        "sharedPlaneVertices": 51615,
+        "oneFaceBoundaryEdges": 51584,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          0,
+          32
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          0,
+          32
+        ],
+        "axisXYZ": 0,
+        "sharedPlaneVertices": 51173,
+        "oneFaceBoundaryEdges": 51140,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          0,
+          32
+        ],
+        "rightOriginBlockXYZ": [
+          0,
+          32,
+          32
+        ],
+        "axisXYZ": 1,
+        "sharedPlaneVertices": 91006,
+        "oneFaceBoundaryEdges": 90950,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          32,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          32,
+          0
+        ],
+        "axisXYZ": 0,
+        "sharedPlaneVertices": 54646,
+        "oneFaceBoundaryEdges": 54581,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          32,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          0,
+          32,
+          32
+        ],
+        "axisXYZ": 2,
+        "sharedPlaneVertices": 34991,
+        "oneFaceBoundaryEdges": 34941,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          0,
+          32,
+          32
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          32,
+          32
+        ],
+        "axisXYZ": 0,
+        "sharedPlaneVertices": 59937,
+        "oneFaceBoundaryEdges": 59885,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          32,
+          0,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          32,
+          0
+        ],
+        "axisXYZ": 1,
+        "sharedPlaneVertices": 38551,
+        "oneFaceBoundaryEdges": 38491,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          32,
+          0,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          0,
+          32
+        ],
+        "axisXYZ": 2,
+        "sharedPlaneVertices": 32359,
+        "oneFaceBoundaryEdges": 32337,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          32,
+          0,
+          32
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          32,
+          32
+        ],
+        "axisXYZ": 1,
+        "sharedPlaneVertices": 58998,
+        "oneFaceBoundaryEdges": 58951,
+        "exact": true
+      },
+      {
+        "leftOriginBlockXYZ": [
+          32,
+          32,
+          0
+        ],
+        "rightOriginBlockXYZ": [
+          32,
+          32,
+          32
+        ],
+        "axisXYZ": 2,
+        "sharedPlaneVertices": 42057,
+        "oneFaceBoundaryEdges": 42016,
+        "exact": true
+      }
+    ],
+    "allTwelveSharedPlanesExact": true,
+    "rootOuterPlaneVertices": 0,
+    "method": "Fresh equality of sorted exact 1/16-native coordinate keys and one-face boundary-edge pairs for every adjacent S32 root-child pair."
+  },
+  "originalReferenceSamples": {
+    "count": 816640,
+    "leafGroups": 3284,
+    "emptySampleLeafGroups": 94,
+    "samplesSha256": "cafc93c3326e259787079c17e9d88f12a6f50fb1177409a16b0dd2d2d285ba75",
+    "weightsSha256": "a04ae5c5d7b7eae30ee1b01bdf4b2dada6083900bd42e8635024ee5b9868bb0d",
+    "allLeafSamplesAndWeightsRetainedByteExactlyInRoot": true
+  },
+  "hierarchyAggregates": {
+    "maximumNodeInputTriangles": 7039735,
+    "maximumPendingChildTriangles": 7039735,
+    "vertexClusteringNodes": 3678,
+    "constrainedQemNodes": 3623,
+    "parentClusteringFallbackNodes": 20,
+    "intermediateTargetMissNodes": 3687,
+    "maximumClusterCellNativeVoxels": 32
+  },
+  "assets": [
+    {
+      "lod": "overview",
+      "path": "assets/overview.hfm.gz",
+      "vertices": 369031,
+      "triangles": 1499999,
+      "compressedBytes": 11012293,
+      "decodedBytes": 24642580,
+      "sha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+      "decodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+      "format": "HFM1/version1/float32-position-flag1",
+      "headerOffsetsAndCountsValid": true,
+      "indicesInBounds": true,
+      "finitePositions": true,
+      "worldBoundsValid": true,
+      "zeroStoredNormals": 0,
+      "zeroAreaStoredTriangles": 0,
+      "recordedFloat32PositionMaximumErrorUm": 0.002969187464417982,
+      "recordedFloat32PositionRmsErrorUm": 0.0010902130512375865
+    },
+    {
+      "lod": "detail",
+      "path": "assets/detail.hfm.gz",
+      "vertices": 699001,
+      "triangles": 2500000,
+      "compressedBytes": 19744361,
+      "decodedBytes": 42582052,
+      "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+      "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+      "format": "HFM1/version1/float32-position-flag1",
+      "headerOffsetsAndCountsValid": true,
+      "indicesInBounds": true,
+      "finitePositions": true,
+      "worldBoundsValid": true,
+      "zeroStoredNormals": 0,
+      "zeroAreaStoredTriangles": 0,
+      "recordedFloat32PositionMaximumErrorUm": 0.003089840055354626,
+      "recordedFloat32PositionRmsErrorUm": 0.0010918728824878068
+    }
+  ],
+  "lodMeasurements": [
+    {
+      "id": "overview",
+      "triangles": 1499999,
+      "vertices": 369031,
+      "repairedCancellingNormals": 64708,
+      "sampledDistances": {
+        "originalOverviewToStoredDisplay": {
+          "samples": 816640,
+          "meanUm": 196.06974517414588,
+          "rmsUm": 307.2815869127226,
+          "medianUm": 117.03828277217673,
+          "p95Um": 675.886870242327,
+          "p99Um": 1173.2491026197104,
+          "maximumSampledUm": 3372.9925018356475
+        },
+        "storedDisplayToOriginalOverview": {
+          "samples": 4096,
+          "meanUm": 57.64678576775038,
+          "rmsUm": 76.0751802062529,
+          "medianUm": 45.79234153213142,
+          "p95Um": 151.8709733633329,
+          "p99Um": 224.20313435224637,
+          "maximumSampledUm": 409.1335295668645,
+          "sourceGroupsVisited": 2140,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning"
+        },
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "hausdorffBound": false,
+        "anatomicalAccuracyClaim": false
+      },
+      "seconds": 572.4891594650107
+    },
+    {
+      "id": "detail",
+      "triangles": 2500000,
+      "vertices": 699001,
+      "repairedCancellingNormals": 77312,
+      "sampledDistances": {
+        "originalOverviewToStoredDisplay": {
+          "samples": 816640,
+          "meanUm": 157.8588521395828,
+          "rmsUm": 244.654852475455,
+          "medianUm": 97.69980833205524,
+          "p95Um": 526.0017461607808,
+          "p99Um": 922.0901611685675,
+          "maximumSampledUm": 2669.8416765429743
+        },
+        "storedDisplayToOriginalOverview": {
+          "samples": 4096,
+          "meanUm": 56.769818731319326,
+          "rmsUm": 74.9131857308481,
+          "medianUm": 44.300191694136785,
+          "p95Um": 153.56326713469826,
+          "p99Um": 224.4714723124928,
+          "maximumSampledUm": 396.15779301614765,
+          "sourceGroupsVisited": 2183,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning"
+        },
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "hausdorffBound": false,
+        "anatomicalAccuracyClaim": false
+      },
+      "seconds": 600.8685161650064
+    }
+  ],
+  "capOutcome": {
+    "status": "complete",
+    "preflightSha256": "b73ebfcd4dd8fb08be825275c6b874853acb7b739714f3e0148f6f8b5cec99fb",
+    "resumeSha256": "8652d8f35d4a7c6e75a74853556823a5e84774b86d0edc7a64fd16315fdce304",
+    "originalCap": 6000000,
+    "refusedBeforeAssembly": true,
+    "exactResumedCap": 7039735,
+    "rootInputTriangles": 7039735,
+    "rootFinalTriangles": 4999999,
+    "rootMethod": "vtkDecimatePro",
+    "rootFrozenFaceFloor": 0,
+    "addressSpaceLimitBytes": 4831838208,
+    "finalResumedProcessPeakRssBytes": 2290601984,
+    "geometryFingerprintUnchanged": true,
+    "numericalSourceUnchanged": true,
+    "elapsedResumedProcessSeconds": 1219.3766015500005,
+    "timingScope": "Successful final resumed process only; excludes prior parent work and parallel leaf precomputation."
+  },
+  "limitations": [
+    "Stored sampled distance statistics were identity-checked and reconciled, not recomputed in this audit.",
+    "The lossy step-4 display is for navigation. Its error relative to the step-4 surface is not the native archive encoding bound or anatomical accuracy.",
+    "Exact seams and valid HFM storage do not establish manifold topology or absence of self-intersections."
+  ],
+  "seconds": 7.510247420999804,
+  "peakAuditRssBytes": 295219200,
+  "executedDriverSha256": "b3cd6ab65c7bd050651b5aaac4a34cf48394acdc86662a5e01cf8ef689271a91"
+}

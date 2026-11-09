@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "format": "HFM1",
+  "donorId": "ladaf-2021-17",
+  "sourceSpacingUm": 79.4,
+  "threshold": 0.28,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "referenceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "bounds": {
+    "min": [
+      -0.44801512287334594,
+      -0.5,
+      -0.44801512287334594
+    ],
+    "max": [
+      0.44801512287334594,
+      0.5,
+      0.44801512287334594
+    ]
+  },
+  "lods": [
+    {
+      "id": "balanced",
+      "label": "Fine surface",
+      "url": "./assets/fine-surface-v19/balanced.hfm.gz",
+      "vertices": 215860,
+      "triangles": 497714,
+      "compressedBytes": 4406836,
+      "decodedBytes": 8562920,
+      "sha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "decodedSha256": "e00753c085938f64718ca488535390cd1235b20df68c83d9d9698ec44d0d4de2",
+      "quantizationMaximumMm": 0.0020472234158144527,
+      "quantizationRmsMm": 0.0011947007040348325,
+      "trianglesBeforeEncoding": 500000,
+      "removedZeroAreaTriangles": 1797,
+      "normalFallbackVertices": 135,
+      "normalFallbackFraction": 0.0006254053553228945,
+      "quantizationCollapsedTriangles": 489
+    },
+    {
+      "id": "detail",
+      "label": "Fine surface \u00b7 detail",
+      "url": "./assets/fine-surface-v19/detail.hfm.gz",
+      "vertices": 903615,
+      "triangles": 1986313,
+      "compressedBytes": 17722926,
+      "decodedBytes": 34679172,
+      "sha256": "e68bca40df669ef4661a922a2e835c078d24cef7bb6afa35760cd39d71ccc12c",
+      "decodedSha256": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+      "quantizationMaximumMm": 0.0020660342908876105,
+      "quantizationRmsMm": 0.00119495087486053,
+      "trianglesBeforeEncoding": 2000000,
+      "removedZeroAreaTriangles": 2794,
+      "normalFallbackVertices": 24978,
+      "normalFallbackFraction": 0.02764230341461795,
+      "quantizationCollapsedTriangles": 10893
+    }
+  ],
+  "processing": {
+    "experimental": true,
+    "source": "Existing verified cleaned/windowed 79.4 \u00b5m source volume; not a 19.85 \u00b5m extraction.",
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedSourceBricks": 5127,
+    "coordinateConvention": "Existing Ultra endpoint convention; acquisitionXYZ maps to world(x,z,-y), centered on the full source grid. No new registration correction.",
+    "densityGaussianSigmaVoxels": 0.8,
+    "densityGaussianSigmaMm": 0.06352000000000001,
+    "referenceTriangles": 162115712,
+    "slabSimplificationTriangles": 18045184,
+    "weldedTriangles": 18044992,
+    "frozenSlabBoundaries": true,
+    "slabTopologyPreserved": true,
+    "weldToleranceMm": 0.0001,
+    "maximumWeldDisplacementMm": 8.392333984375e-05,
+    "finalSimplification": "Whole-object fast_simplification 0.1.13 quadric error simplification (aggressiveness 7) creates detail; VTK quadric decimation with its volume-preservation option creates compact. Lossy, not topology-guaranteed.",
+    "positionQuantizationBits": 16,
+    "normalQuantizationBits": 16,
+    "zeroNormalPolicy": "A cancelling point normal uses the largest incident nondegenerate face normal; this only changes shading.",
+    "degenerateFacePolicy": "Remove zero-area source triangles and triangles collapsed to zero area by position quantization; individual counts recorded for each LOD.",
+    "sourceDataChanged": false,
+    "expertValidated": false
+  },
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "validationSummary": {
+    "method": "Area-weighted sampled surface distances; not a Hausdorff bound or clinical validation.",
+    "reference": "Welded, filtered 79.4 \u00b5m intermediate after topology-preserving slab simplification; separate local raw-source audits in full report.",
+    "lossy": true,
+    "thinStructurePreservationGuaranteed": false,
+    "lods": [
+      {
+        "id": "balanced",
+        "samplesPerDirection": 50000,
+        "hostedToIntermediateP95Mm": 0.09831216219953476,
+        "intermediateToHostedP95Mm": 0.5032364164661612,
+        "hostedToIntermediateMaximumSampledMm": 0.3683128690950599,
+        "intermediateToHostedMaximumSampledMm": 6.955778256984468
+      },
+      {
+        "id": "detail",
+        "samplesPerDirection": 50000,
+        "hostedToIntermediateP95Mm": 0.06561198689115642,
+        "intermediateToHostedP95Mm": 0.11904126006701894,
+        "hostedToIntermediateMaximumSampledMm": 0.16757208391233772,
+        "intermediateToHostedMaximumSampledMm": 4.3234163772366845
+      }
+    ],
+    "details": "docs/fine-surface-v19/validation.json"
+  }
+}

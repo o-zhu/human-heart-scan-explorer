@@ -1,0 +1,128 @@
+[
+  {
+    "id": "pulmonary-x190",
+    "axis": 0,
+    "coordinate": 756,
+    "target": [
+      756,
+      1220,
+      920
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "pulmonary-x190-oblique",
+    "axis": 0,
+    "coordinate": 756,
+    "target": [
+      715,
+      1230,
+      900
+    ],
+    "distance": 0.45,
+    "direction": [
+      1,
+      0.05,
+      0.65
+    ]
+  },
+  {
+    "id": "rv-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      780,
+      1168,
+      1300
+    ],
+    "distance": 0.5
+  },
+  {
+    "id": "rv-chains-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      740,
+      1020,
+      1030
+    ],
+    "distance": 0.4
+  },
+  {
+    "id": "pulmonary-x184",
+    "axis": 0,
+    "coordinate": 732,
+    "target": [
+      732,
+      1220,
+      920
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "pulmonary-x198",
+    "axis": 0,
+    "coordinate": 788,
+    "target": [
+      788,
+      1220,
+      920
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "rv-chains-y285",
+    "axis": 1,
+    "coordinate": 1136,
+    "target": [
+      740,
+      1020,
+      1030
+    ],
+    "distance": 0.4
+  },
+  {
+    "id": "rv-chains-y301",
+    "axis": 1,
+    "coordinate": 1200,
+    "target": [
+      740,
+      1020,
+      1030
+    ],
+    "distance": 0.4
+  },
+  {
+    "id": "pulmonary-x188",
+    "axis": 0,
+    "coordinate": 748,
+    "target": [
+      748,
+      1220,
+      920
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "pulmonary-x192",
+    "axis": 0,
+    "coordinate": 764,
+    "target": [
+      764,
+      1220,
+      920
+    ],
+    "distance": 0.45
+  },
+  {
+    "id": "pulmonary-x190-close",
+    "axis": 0,
+    "coordinate": 756,
+    "target": [
+      700,
+      1210,
+      865
+    ],
+    "distance": 0.27
+  }
+]

@@ -1,0 +1,1720 @@
+{
+  "schemaVersion": 2,
+  "reviewDate": "2026-11-08",
+  "scope": "Direct engineering/anatomical plausibility inspection of all 56 final native paired anchors and 49 complete measured source rasters. Not clinical validation or a browser review.",
+  "nativeDirectory": "docs/echo-donor-qc-v6/native/ladaf-2021-17",
+  "exportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+  "nativeReviewSha256": "b91f3728d60e458cd14807dd6a1ae420bd8e984c38283f606087438e99f5c7c5",
+  "sourceSheetExportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+  "inspectionMethod": "All 56 pairs and 49 source rasters were directly reviewed in the first final export. After three material target changes, the AV, AV-zoom and deep-TG pairs and complete source rasters were opened separately at native size. All other 53 pairs and available source rasters are byte-identical to the directly inspected first-final evidence. The current source sheets are bound to the current export.",
+  "priorityViewsOpenedSeparately": [
+    "tte-psax_pv",
+    "tte-a5c",
+    "tte-a4c_cs",
+    "tee-tgrvinout"
+  ],
+  "inspectionPlates": [
+    {
+      "file": "01.jpg",
+      "ids": [
+        "tte-plax_deep",
+        "tte-plax"
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "ids": [
+        "tte-plax_av",
+        "tte-plax_mv"
+      ]
+    },
+    {
+      "file": "03.jpg",
+      "ids": [
+        "tte-plax_rvot",
+        "tte-plax_rvin"
+      ]
+    },
+    {
+      "file": "04.jpg",
+      "ids": [
+        "tte-psax_great",
+        "tte-psax_av"
+      ]
+    },
+    {
+      "file": "05.jpg",
+      "ids": [
+        "tte-psax_av_zoom",
+        "tte-psax_tv"
+      ]
+    },
+    {
+      "file": "06.jpg",
+      "ids": [
+        "tte-psax_mitral",
+        "tte-psax_papillary"
+      ]
+    },
+    {
+      "file": "07.jpg",
+      "ids": [
+        "tte-psax_apical",
+        "tte-a4c"
+      ]
+    },
+    {
+      "file": "08.jpg",
+      "ids": [
+        "tte-a4c_lv",
+        "tte-a4c_rv"
+      ]
+    },
+    {
+      "file": "09.jpg",
+      "ids": [
+        "tte-a2c",
+        "tte-a2c_lv"
+      ]
+    },
+    {
+      "file": "10.jpg",
+      "ids": [
+        "tte-a3c",
+        "tte-a3c_lv"
+      ]
+    },
+    {
+      "file": "11.jpg",
+      "ids": [
+        "tte-a4c_la_pv",
+        "tte-subcostal"
+      ]
+    },
+    {
+      "file": "12.jpg",
+      "ids": [
+        "tte-subcostal_ivc",
+        "tte-subcostal_hepatic"
+      ]
+    },
+    {
+      "file": "13.jpg",
+      "ids": [
+        "tte-ssn_arch",
+        "tee-me5c"
+      ]
+    },
+    {
+      "file": "14.jpg",
+      "ids": [
+        "tee-me4c",
+        "tee-mecommissural"
+      ]
+    },
+    {
+      "file": "15.jpg",
+      "ids": [
+        "tee-me2c",
+        "tee-melax"
+      ]
+    },
+    {
+      "file": "16.jpg",
+      "ids": [
+        "tee-meavlax",
+        "tee-meaaolax"
+      ]
+    },
+    {
+      "file": "17.jpg",
+      "ids": [
+        "tee-meaaosax",
+        "tee-merpv"
+      ]
+    },
+    {
+      "file": "18.jpg",
+      "ids": [
+        "tee-meavsax",
+        "tee-mervinout"
+      ]
+    },
+    {
+      "file": "19.jpg",
+      "ids": [
+        "tee-memodbicaval",
+        "tee-bicaval"
+      ]
+    },
+    {
+      "file": "20.jpg",
+      "ids": [
+        "tee-mepv",
+        "tee-melaa"
+      ]
+    },
+    {
+      "file": "21.jpg",
+      "ids": [
+        "tee-tgbasalsax",
+        "tee-tgpapillary"
+      ]
+    },
+    {
+      "file": "22.jpg",
+      "ids": [
+        "tee-tgapicalsax",
+        "tee-tgrvbasal"
+      ]
+    },
+    {
+      "file": "23.jpg",
+      "ids": [
+        "tee-deeptg5c",
+        "tee-tg2c"
+      ]
+    },
+    {
+      "file": "24.jpg",
+      "ids": [
+        "tee-tgrvin",
+        "tee-tglax"
+      ]
+    },
+    {
+      "file": "25.jpg",
+      "ids": [
+        "tee-daosax",
+        "tee-daolax"
+      ]
+    },
+    {
+      "file": "26.jpg",
+      "ids": [
+        "tee-uearchlax",
+        "tee-uearchsax"
+      ]
+    }
+  ],
+  "counts": {
+    "regional-anatomy-supported": 34,
+    "specific-target-unconfirmed": 14,
+    "outside-scan": 7,
+    "source-retained-probe-withheld": 1
+  },
+  "sourceRasterComparison": {
+    "byteIdentical": 28,
+    "samePlaneNewSamplingDimensions": 14,
+    "materialPlaneCorrections": 7,
+    "differences": [
+      {
+        "id": "plax_rvot",
+        "mode": "tte",
+        "shape": [
+          508,
+          303
+        ],
+        "oldShape": [
+          507,
+          302
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 2.220446049250313e-16
+      },
+      {
+        "id": "plax_rvin",
+        "mode": "tte",
+        "shape": [
+          589,
+          388
+        ],
+        "oldShape": [
+          589,
+          387
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 1.6653345369377348e-16
+      },
+      {
+        "id": "psax_av",
+        "mode": "tte",
+        "shape": [
+          372,
+          372
+        ],
+        "oldShape": [
+          372,
+          372
+        ],
+        "changedPixels": 69849,
+        "maxDisplayIntensityDifference": 241,
+        "maxPlaneVectorDelta": 0.4921350492877568
+      },
+      {
+        "id": "psax_av_zoom",
+        "mode": "tte",
+        "shape": [
+          197,
+          197
+        ],
+        "oldShape": [
+          197,
+          197
+        ],
+        "changedPixels": 36491,
+        "maxDisplayIntensityDifference": 234,
+        "maxPlaneVectorDelta": 0.4921350492877568
+      },
+      {
+        "id": "psax_pv",
+        "mode": "tte",
+        "shape": [
+          340,
+          361
+        ],
+        "oldShape": [
+          345,
+          345
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.8135360425639909
+      },
+      {
+        "id": "a5c",
+        "mode": "tte",
+        "shape": [
+          504,
+          382
+        ],
+        "oldShape": [
+          504,
+          382
+        ],
+        "changedPixels": 103242,
+        "maxDisplayIntensityDifference": 211,
+        "maxPlaneVectorDelta": 0.07103301317946076
+      },
+      {
+        "id": "a4c_cs",
+        "mode": "tte",
+        "shape": [
+          504,
+          382
+        ],
+        "oldShape": [
+          504,
+          382
+        ],
+        "changedPixels": 76340,
+        "maxDisplayIntensityDifference": 230,
+        "maxPlaneVectorDelta": 0.08887429754305032
+      },
+      {
+        "id": "melax",
+        "mode": "tee",
+        "shape": [
+          482,
+          361
+        ],
+        "oldShape": [
+          481,
+          361
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.0
+      },
+      {
+        "id": "meavlax",
+        "mode": "tee",
+        "shape": [
+          276,
+          337
+        ],
+        "oldShape": [
+          276,
+          336
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.0
+      },
+      {
+        "id": "meaaosax",
+        "mode": "tee",
+        "shape": [
+          292,
+          301
+        ],
+        "oldShape": [
+          291,
+          301
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.0
+      },
+      {
+        "id": "merpv",
+        "mode": "tee",
+        "shape": [
+          317,
+          301
+        ],
+        "oldShape": [
+          316,
+          301
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 7.771561172376096e-16
+      },
+      {
+        "id": "meavsax",
+        "mode": "tee",
+        "shape": [
+          292,
+          301
+        ],
+        "oldShape": [
+          291,
+          301
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 1.1102230246251565e-16
+      },
+      {
+        "id": "mervinout",
+        "mode": "tee",
+        "shape": [
+          392,
+          352
+        ],
+        "oldShape": [
+          391,
+          351
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 1.1102230246251565e-16
+      },
+      {
+        "id": "memodbicaval",
+        "mode": "tee",
+        "shape": [
+          392,
+          331
+        ],
+        "oldShape": [
+          391,
+          331
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 1.1102230246251565e-16
+      },
+      {
+        "id": "bicaval",
+        "mode": "tee",
+        "shape": [
+          331,
+          337
+        ],
+        "oldShape": [
+          331,
+          336
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 6.106226635438361e-16
+      },
+      {
+        "id": "mepv",
+        "mode": "tee",
+        "shape": [
+          317,
+          301
+        ],
+        "oldShape": [
+          316,
+          301
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 2.7755575615628914e-16
+      },
+      {
+        "id": "tgbasalsax",
+        "mode": "tee",
+        "shape": [
+          331,
+          342
+        ],
+        "oldShape": [
+          331,
+          341
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 3.3306690738754696e-16
+      },
+      {
+        "id": "tgrvbasal",
+        "mode": "tee",
+        "shape": [
+          342,
+          352
+        ],
+        "oldShape": [
+          341,
+          351
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 1.1102230246251565e-16
+      },
+      {
+        "id": "tgrvinout",
+        "mode": "tee",
+        "shape": [
+          392,
+          352
+        ],
+        "oldShape": [
+          391,
+          351
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.4271742341554455
+      },
+      {
+        "id": "deeptg5c",
+        "mode": "tee",
+        "shape": [
+          504,
+          382
+        ],
+        "oldShape": [
+          504,
+          382
+        ],
+        "changedPixels": 79848,
+        "maxDisplayIntensityDifference": 181,
+        "maxPlaneVectorDelta": 0.010619528827239558
+      },
+      {
+        "id": "tglax",
+        "mode": "tee",
+        "shape": [
+          361,
+          477
+        ],
+        "oldShape": [
+          361,
+          476
+        ],
+        "changedPixels": null,
+        "maxDisplayIntensityDifference": null,
+        "maxPlaneVectorDelta": 0.0
+      }
+    ]
+  },
+  "views": [
+    {
+      "id": "plax_deep",
+      "mode": "tte",
+      "pair": "tte-plax_deep-pair.jpg",
+      "pairSha256": "a8e83142446c8e5869b6a3e16be1b853c4a59436d1f8bd74ccd935db5e1f105c",
+      "source": "tte-plax_deep-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "d32f730e59f54276d3727c38e3554ec0e06601eace3a04d0cf7fbe6720882baa",
+      "baselineSourceSha256": "d32f730e59f54276d3727c38e3554ec0e06601eace3a04d0cf7fbe6720882baa",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Longitudinal thick LV wall and narrow trabecular cavity; basal chamber/outflow lumens to the right. Same cardiac section family as PLAX.",
+      "qualification": "Gross long-axis topology supported. A deep pleural/pericardial survey is not supplied by this isolated-heart scan.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "plax",
+      "mode": "tte",
+      "pair": "tte-plax-pair.jpg",
+      "pairSha256": "2de71148d1a984179c4be5fee46adcd3aeaccea7cd5a768c2a607a8b8379f133",
+      "source": "tte-plax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "6dc09cfd9eb840d181a3e7f69c155cd53fa7d78f4798f4622e49a3600bdd8916",
+      "baselineSourceSha256": "6dc09cfd9eb840d181a3e7f69c155cd53fa7d78f4798f4622e49a3600bdd8916",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Long LV region, slit-like cavity, basal inflow/outflow channels and several lumens.",
+      "qualification": "Gross long-axis topology supported; leaflet identity and normal opening are not established.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "plax_av",
+      "mode": "tte",
+      "pair": "tte-plax_av-pair.jpg",
+      "pairSha256": "62888407b0de1781bfd3fe6442eaffb5ae308cf25788aa53f0be1050b8f3806c",
+      "source": "tte-plax_av-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "1207e60775a9fddd93a41538d7ff4ee189547787485eeddaf88b44c532d1a990",
+      "baselineSourceSha256": "1207e60775a9fddd93a41538d7ff4ee189547787485eeddaf88b44c532d1a990",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "A smaller crop of the same basal/outflow region; a bright bordered lumen and adjacent narrow channel are visible.",
+      "qualification": "Target unconfirmed: source ROI is magnified, but AV cusps{local-home} identity needs independent landmarks. The 3D camera still includes the retained heart.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "plax_mv",
+      "mode": "tte",
+      "pair": "tte-plax_mv-pair.jpg",
+      "pairSha256": "49268beb050c6fe7652b6693abf180215636d3891294d562b45f8fc4dde8d509",
+      "source": "tte-plax_mv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "b805fdd5937ddb87a661b565877e7c4f047e72ce91ea1838fa9071f08f5ec2b2",
+      "baselineSourceSha256": "b805fdd5937ddb87a661b565877e7c4f047e72ce91ea1838fa9071f08f5ec2b2",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "LV cavity approaches the basal atrioventricular region; thin bright internal structures are visible in the crop.",
+      "qualification": "Target unconfirmed: an inflow-region crop is present, but individual MV leaflets/chordae cannot be certified.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "plax_rvot",
+      "mode": "tte",
+      "pair": "tte-plax_rvot-pair.jpg",
+      "pairSha256": "420569de84bad01648b549761f7f940e0dde3a2041bdcabe1f38ab1695b9a627",
+      "source": "tte-plax_rvot-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "bcdde92541373367d4281d386399d7131a3afc5097902b2c140740cc173523ae",
+      "baselineSourceSha256": "4d7581ec995775594f34d8533e2652ac8c6e5bbc50698b8629898a81d1059a64",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "A long tube-like basal lumen with internal thin tissue, neighboring chamber spaces, and a ventricular wall/cavity below.",
+      "qualification": "Target unconfirmed: an outflow-like longitudinal structure is present, but the RVOT\u2013PV\u2013PA chain is not independently identified.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "plax_rvin",
+      "mode": "tte",
+      "pair": "tte-plax_rvin-pair.jpg",
+      "pairSha256": "8379ef52744b96107cab583779cb1d324139b4ba0236e707ab535f227abf2e59",
+      "source": "tte-plax_rvin-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "4cd0e91f9a3d1e8e47adf254f768fa98ec40cafd31e09bc1df45da56abb385ca",
+      "baselineSourceSha256": "bf535a7af12f8800b657ea2d3fae0ddc566db1dce02cdf194e682dd05ff808ff",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Large thin-walled/trabeculated chamber spaces beside a thick LV wall wedge; an angled inlet region crosses the middle.",
+      "qualification": "Gross right-heart inflow-like topology supported; TV leaflet identity remains unconfirmed.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_great",
+      "mode": "tte",
+      "pair": "tte-psax_great-pair.jpg",
+      "pairSha256": "d7d63a9fae79ca5184b6b872a0e2081b1d18ebed89fa4b3eabf9110450eb1e49",
+      "source": "tte-psax_great-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "2dbeb3323052ca06675067976059d8bda91b7e9e28666a0302267e96f05e44c9",
+      "baselineSourceSha256": "2dbeb3323052ca06675067976059d8bda91b7e9e28666a0302267e96f05e44c9",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Basal short-axis section with a central trilobed semilunar-root-like structure and surrounding right-heart/basal lumens.",
+      "qualification": "Broad basal{local-home} topology supported. This clear root cross-section provided an independent source comparator for the corrected AV-specific presets; individual cusp identity remains unconfirmed.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_av",
+      "mode": "tte",
+      "pair": "tte-psax_av-pair.jpg",
+      "pairSha256": "8d9d47670fe108f63ce3c00fa30b3585611a5885ea6d42d5c89db02a6ee75a3d",
+      "source": "tte-psax_av-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "ff6a0bbfd951b89a9597c550b4a8d29ce24565dab3d06f423e925d8a055f8f54",
+      "baselineSourceSha256": "b814df86f24b9e73de668b09bcaab3262011a68fc99c8845a11419ec6138ae78",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Basal short-axis section with a distinct three-lobed semilunar-root region, thin internal tissue profiles and surrounding right-heart/basal lumens. Both anchors retain the same source-preserved section and illustrative skin contact.",
+      "qualification": "Regional aortic-root/valve-level topology supported by independent reviewed source landmarks. The selected plane is 3 mm from the reviewed cusp-region ROI center and 0.36 mm from the independent proximal aortic-lumen point. Individual cusp names, exact annular dimensions and clinical probe registration remain unvalidated.",
+      "baselineComparison": "Material correction: the prior oblique C-shaped basal/LVOT section is replaced by the source-preserving reviewed-root plane at +3 mm.",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": true
+    },
+    {
+      "id": "psax_av_zoom",
+      "mode": "tte",
+      "pair": "tte-psax_av_zoom-pair.jpg",
+      "pairSha256": "6c6f8b9d5bf3573c110afc5e17a649ee51cc1e21d8821fdb755345fbce2de944",
+      "source": "tte-psax_av_zoom-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "f1e53d60d517112a34362c402b2e74cc4881691c9a2a8b699932f7857af69a8e",
+      "baselineSourceSha256": "526606074445305b4ab212263815ad429084cb388abc8c3543abefac2c22bd18",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Tighter crop of the identical AV source plane, clearly retaining the three-lobed root region and fine internal profiles. The anatomy camera still shows the retained heart.",
+      "qualification": "Regional root topology supported. Zoom changes only the crop; center and plane basis are identical to psax_av. Individual cusp identity and clinical diagnostic quality remain unvalidated.",
+      "baselineComparison": "Material correction: crop of the corrected AV root plane; magnification remains linked to the same physical section.",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": true
+    },
+    {
+      "id": "psax_tv",
+      "mode": "tte",
+      "pair": "tte-psax_tv-pair.jpg",
+      "pairSha256": "ff822e73422f956b332195e14c649dfae275e4d66530a243d0ed9416b703a323",
+      "source": "tte-psax_tv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "621e7062187e88a98e48153e7175fe099808dab6e310451918067db1b1e9570d",
+      "baselineSourceSha256": "621e7062187e88a98e48153e7175fe099808dab6e310451918067db1b1e9570d",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Basal/right-heart chambers adjacent to a central root-like lumen; some thin internal structures.",
+      "qualification": "Target unconfirmed: broad neighborhood plausible, but a specific TV short-axis plane is not established.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_pv",
+      "mode": "tte",
+      "pair": "tte-psax_pv-pair.jpg",
+      "pairSha256": "d23dcef9302766b36dcee9282d61ab44b026ba5808d6f5edf77ddfa98c458316",
+      "source": "tte-psax_pv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "59b929b6629b078f0654a5cb21ca7ad0c07d03ecc3547cbca43e947a1f3ca82a",
+      "baselineSourceSha256": "ab06d8193b61d8b1a7a7862a31b599bed7755276bc74fb7f8d5e8853a0533f86",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Longitudinal outlet/pulmonary-region lumen with a narrowing and thin tissue near its ventricular junction, plus adjacent ventricular{local-home} tissue. The old isolated ventricular-looking section is gone.",
+      "qualification": "Regional outlet{local-home} topology improved and supported by the independent pulmonary source neighborhood. The source-preserving plane contains the longitudinal continuation. Individual PV cusp identity remains unconfirmed.",
+      "baselineComparison": "Material target correction",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_mitral",
+      "mode": "tte",
+      "pair": "tte-psax_mitral-pair.jpg",
+      "pairSha256": "4def83e71650c15eaf3dbe4ff3b521bf2a50cd8f7bbd9abecf75c53605f6dd88",
+      "source": "tte-psax_mitral-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "5be4111fd0bf9491bab2742cd6c7d82c3f42c5a263a4a27d8919b0eadee7b8b0",
+      "baselineSourceSha256": "5be4111fd0bf9491bab2742cd6c7d82c3f42c5a263a4a27d8919b0eadee7b8b0",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Thick circular LV myocardium, narrow central cavity with discrete internal tissue, and an adjacent RV-like cavity.",
+      "qualification": "Target unconfirmed / refit candidate: section appears ventricular; distinct paired MV leaflets or an en-face mitral opening are not demonstrated.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_papillary",
+      "mode": "tte",
+      "pair": "tte-psax_papillary-pair.jpg",
+      "pairSha256": "0dbed2970fa0aecfcf4ece61bc64d4dc0e28cfa329520d70f181eba6bc16bdc0",
+      "source": "tte-psax_papillary-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "9d1d7aa8c74c38a97908fdc7e3b00cde74207a24e53f13d307d0c955e4845e45",
+      "baselineSourceSha256": "9d1d7aa8c74c38a97908fdc7e3b00cde74207a24e53f13d307d0c955e4845e45",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Round ventricular section with thick LV wall, collapsed central LV space/internal tissue, and a larger neighboring trabeculated RV-like cavity.",
+      "qualification": "Gross midventricular short-axis topology supported. Individual papillary muscle identities are not confidently assigned.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "psax_apical",
+      "mode": "tte",
+      "pair": "tte-psax_apical-pair.jpg",
+      "pairSha256": "19bd1800313a57bcf831e266c8a6d0b872267c2588c7bac4076a2014085965b3",
+      "source": "tte-psax_apical-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "0f4805c38ec5ec2140faca6145d69684e8c3c393f34cffd0fafdeb8f57120a61",
+      "baselineSourceSha256": "0f4805c38ec5ec2140faca6145d69684e8c3c393f34cffd0fafdeb8f57120a61",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "A much smaller distal myocardial section with tiny branching/narrow residual cavity spaces.",
+      "qualification": "Gross apical short-axis progression supported; it is not an open normal LV lumen.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a4c",
+      "mode": "tte",
+      "pair": "tte-a4c-pair.jpg",
+      "pairSha256": "5a1740e4792652b17dfba9dc98629c3df8f9970bbef39329801680ce7783533d",
+      "source": "tte-a4c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "16beed6ff3006185d6c5120acb08385ac0b04256aeb24536ae43d832ce676d3d",
+      "baselineSourceSha256": "16beed6ff3006185d6c5120acb08385ac0b04256aeb24536ae43d832ce676d3d",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Two elongated ventricular cavity regions separated by thick septum, with basal atrial spaces farther from the apex.",
+      "qualification": "Gross four-chamber-like topology supported. Fixed/collapsed source anatomy limits resemblance to living ultrasound.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a4c_lv",
+      "mode": "tte",
+      "pair": "tte-a4c_lv-pair.jpg",
+      "pairSha256": "49332b612db0e25f31e920063fdf404fe860dcfad0edd0e926a99adb313ff13a",
+      "source": "tte-a4c_lv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "8169f32b0c12651284f8e3a179f478fd1ec1d56bef18eb2190db023b3ec1a8bd",
+      "baselineSourceSha256": "8169f32b0c12651284f8e3a179f478fd1ec1d56bef18eb2190db023b3ec1a8bd",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "The same biventricular longitudinal pattern with an LV-focused raster crop.",
+      "qualification": "Gross topology supported. The source crop changes; the 3D model camera still shows much of the retained heart.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a4c_rv",
+      "mode": "tte",
+      "pair": "tte-a4c_rv-pair.jpg",
+      "pairSha256": "3d4203eb57aac20fb7160392e0448b5dc2b8a226ebb95ea8d8fe27e88446bf39",
+      "source": "tte-a4c_rv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "8e39e664e4ff40c2a6afda64ec8ba391397da9793ddb9d1751025976164dd36a",
+      "baselineSourceSha256": "8e39e664e4ff40c2a6afda64ec8ba391397da9793ddb9d1751025976164dd36a",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "A larger thin-walled/trabeculated right-sided cavity and thick-walled narrow LV cavity, with basal chambers.",
+      "qualification": "Gross RV-focused four-chamber-like topology supported; no functional RV assessment is possible.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a5c",
+      "mode": "tte",
+      "pair": "tte-a5c-pair.jpg",
+      "pairSha256": "0b61a8b87aa7f9b0c495e59d903bbb1f27f47fb740262188de1f8778fc55bba7",
+      "source": "tte-a5c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "5895c26d219225dd7ceec19e5ace179cdd3183f6ec76f5a715dc8dac5d3fc1ec",
+      "baselineSourceSha256": "e912df72ebb7fe54ebf38fcd88a1ee3562e686fff78912a3344441e1a3dd4e1d",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Both ventricular regions remain visible, including a narrow longitudinal LV cavity, with a basal root region brought into the section. The LV cavity is retained rather than replaced by nearly solid myocardium.",
+      "qualification": "Broad chamber/outflow topology improved by aiming toward the independently annotated LV outflow-region guide. This preserves the useful LV cavity; the guide is distinct from the more superior aortic cusp-region ROI. Complete living five-chamber proportions, individual cusps and fine LVOT continuity remain unvalidated.",
+      "baselineComparison": "Material target correction",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a4c_cs",
+      "mode": "tte",
+      "pair": "tte-a4c_cs-pair.jpg",
+      "pairSha256": "e6401798500c155bb7db8248173f1c4cd27fddf0cd11b4c51d8ea1a07c0d247b",
+      "source": "tte-a4c_cs-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "08b10d8047f10f53513e09a29c000522280c9ae5c9b14275442cdba1839c5471",
+      "baselineSourceSha256": "0bcbec81aee48280f245a63809c03ada345635d641180724ed677cf52f9e9019",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "At 2 degrees posterior tilt, ventricular cavity tracks and AV continuity remain, with broad atrial spaces. The thin right-heart cavity is narrower than the unchanged A4C.",
+      "qualification": "Posterior four-chamber approximation improved. The coronary-sinus lumen is still unconfirmed; the preset must retain its posterior-angulation qualification.",
+      "baselineComparison": "Material target correction",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a2c",
+      "mode": "tte",
+      "pair": "tte-a2c-pair.jpg",
+      "pairSha256": "98e5e549d63e24f58da63a023cc01e8306bf967cc55367abcda8d9dacd5fe291",
+      "source": "tte-a2c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "90c0b56161e42e3b8b6d9d39e5383093f437ad60a429c4d76967f56a63cb70c7",
+      "baselineSourceSha256": "90c0b56161e42e3b8b6d9d39e5383093f437ad60a429c4d76967f56a63cb70c7",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "A single dominant elongated LV cavity with internal trabecular/papillary-like tissue and basal atrial-region spaces.",
+      "qualification": "Gross two-chamber-like topology supported. Small basal lumen identities remain unconfirmed.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a2c_lv",
+      "mode": "tte",
+      "pair": "tte-a2c_lv-pair.jpg",
+      "pairSha256": "3f4baf480b129884f0203002004fdd025aa9cbb42833c666243e7e0a3281ac17",
+      "source": "tte-a2c_lv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "af66d1ff14185e63f869f5130fb3458ad80a168394a5b07de583673121eed27f",
+      "baselineSourceSha256": "af66d1ff14185e63f869f5130fb3458ad80a168394a5b07de583673121eed27f",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Similar longitudinal LV cavity/internal tissue in a tighter raster crop.",
+      "qualification": "Gross LV-focused topology supported; leaflet/strain/functional claims are unsupported by the static scan.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a3c",
+      "mode": "tte",
+      "pair": "tte-a3c-pair.jpg",
+      "pairSha256": "ebe5a283bbd387c6f8b55ad7d896f9b4e489ceb685c33ac637a539c72dc53411",
+      "source": "tte-a3c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "a38b29e7161d70380205bcdc389c4a7645a79c39ef4936d95bf20672791fa9ca",
+      "baselineSourceSha256": "a38b29e7161d70380205bcdc389c4a7645a79c39ef4936d95bf20672791fa9ca",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Narrow longitudinal LV cavity, basal atrial space, and an elongated root/outflow-like lumen; adjacent right-heart tissue remains visible.",
+      "qualification": "Gross long-axis/outflow topology supported. Valve identities require separate landmark confirmation.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a3c_lv",
+      "mode": "tte",
+      "pair": "tte-a3c_lv-pair.jpg",
+      "pairSha256": "f7e811dea3111e77f2ca38bb5c9f93cf25f43d530468d647a7d5d508159f72fd",
+      "source": "tte-a3c_lv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "6f72a43caac1d737252e69cedde2986f22a4e66c503cf6781955fdfe72569000",
+      "baselineSourceSha256": "6f72a43caac1d737252e69cedde2986f22a4e66c503cf6781955fdfe72569000",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Same long-axis/outflow arrangement with a closer LV raster crop.",
+      "qualification": "Gross topology supported with the same limits as `a3c`.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "a4c_la_pv",
+      "mode": "tte",
+      "pair": "tte-a4c_la_pv-pair.jpg",
+      "pairSha256": "11145ccca1ef75236bb30b7eddea3c8481e53b390f9ab04388f7a423aea48591",
+      "source": "tte-a4c_la_pv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "90158eaa7c053def411f2fb9694243ac08b7de592f4bd9275462a33c39022924",
+      "baselineSourceSha256": "90158eaa7c053def411f2fb9694243ac08b7de592f4bd9275462a33c39022924",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Cropped basal atrial region of the four-chamber family; ventricular apices intentionally excluded from the raster.",
+      "qualification": "Target unconfirmed: atrial tissue/spaces are present, but no pulmonary vein ostium is independently identifiable.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "subcostal",
+      "mode": "tte",
+      "pair": "tte-subcostal-pair.jpg",
+      "pairSha256": "9243469fb9d50fc99b40518817fe4e7c866947409d0aadac8fa0ae811ab2eecc",
+      "source": "tte-subcostal-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "7c11d0381acdac748d3f473f08adca76768612ca6b7b271089b9c704cce042ef",
+      "baselineSourceSha256": "7c11d0381acdac748d3f473f08adca76768612ca6b7b271089b9c704cce042ef",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Oblique transverse screen orientation of a longitudinal biventricular section; central septal/inflow region and basal atrial spaces visible.",
+      "qualification": "Gross four-chamber-like topology supported. The body/probe route is illustrative, and small septal defects cannot be assessed.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "subcostal_ivc",
+      "mode": "tte",
+      "pair": "tte-subcostal_ivc-pair.jpg",
+      "pairSha256": "d8a92f70535448190a85695258a89f09f9da425a0fbedbe1b38e1078556cb604",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart and illustrative subcostal probe/sector; no measured CT cap.",
+      "qualification": "Outside scan. No IVC continuity or diameter can be confirmed.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "subcostal_hepatic",
+      "mode": "tte",
+      "pair": "tte-subcostal_hepatic-pair.jpg",
+      "pairSha256": "aff71e9f0676d2b0ccaa68f0f3b04f1a1eee06c618f9ac3cb59e7f113ccd7ac7",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart and sector directed below it; no measured CT cap or liver.",
+      "qualification": "Outside scan. No hepatic veins are represented by measured tissue.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "ssn_arch",
+      "mode": "tte",
+      "pair": "tte-ssn_arch-pair.jpg",
+      "pairSha256": "d985295d3ebac7fab5a53470e8bc1a4becb4a0e38c18847d83b21801b3699066",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart with superior illustrative probe/sector; no measured arch cap.",
+      "qualification": "Outside scan. The complete aortic arch is not acquired.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "me5c",
+      "mode": "tee",
+      "pair": "tee-me5c-pair.jpg",
+      "pairSha256": "730a9579a9384bba498d9eb9a54284f374f1624361a57a17e91d4d672e2aacc7",
+      "source": "tee-me5c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "3b4fa7d3a9489337f547298368064f094ba67e2df47c8279c6fe8ef41c2935de",
+      "baselineSourceSha256": "3b4fa7d3a9489337f547298368064f094ba67e2df47c8279c6fe8ef41c2935de",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Two ventricular regions, basal atrial spaces, and a bright bordered elongated root-like lumen extending toward the LV cavity.",
+      "qualification": "Gross chamber/outflow topology supported. Narrow fixed LV cavity and incomplete small-valve detail prevent clinical five-chamber confirmation.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "me4c",
+      "mode": "tee",
+      "pair": "tee-me4c-pair.jpg",
+      "pairSha256": "b5dcb65041e20d63833784d22d6caabaf712658b956a325510126a747bee6a1b",
+      "source": "tee-me4c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "ad5ebe0b6ce6d5863f2f0f22809ff429d036e74ecdf344499ab03c6df41c15c5",
+      "baselineSourceSha256": "ad5ebe0b6ce6d5863f2f0f22809ff429d036e74ecdf344499ab03c6df41c15c5",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Longitudinal RV-like trabeculated cavity and narrow thick-walled LV cavity separated by septum, with atrial-region spaces in the near field.",
+      "qualification": "Gross four-chamber-like topology supported; leaflet identity and living chamber proportions are not established.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "mecommissural",
+      "mode": "tee",
+      "pair": "tee-mecommissural-pair.jpg",
+      "pairSha256": "115c1a4c6b70409b807e6d547993767b3c93f128eab063b562f45e2264cf9111",
+      "source": "tee-mecommissural-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "1cb8191cb33424503f233fddb0fca39eea48f77e61d9c7e8e8415555596933cc",
+      "baselineSourceSha256": "1cb8191cb33424503f233fddb0fca39eea48f77e61d9c7e8e8415555596933cc",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Dominant longitudinal LV cavity and basal atrioventricular region; thin internal structures near the annular neighborhood.",
+      "qualification": "Target unconfirmed: an LV/inflow plane is present, but individual commissures or P3\u2013A2\u2013P1 scallops are not identifiable.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "me2c",
+      "mode": "tee",
+      "pair": "tee-me2c-pair.jpg",
+      "pairSha256": "444510fe65bebb7d974f7cb9fdc92721e0fae904528d221d47fb815864705432",
+      "source": "tee-me2c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "3bd5dd375b23fc465d5bb1a26e6a420eaaceb88e8f475693af7060af74c5ef47",
+      "baselineSourceSha256": "3bd5dd375b23fc465d5bb1a26e6a420eaaceb88e8f475693af7060af74c5ef47",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Single dominant elongated LV cavity with thick opposing walls and basal atrial-region tissue.",
+      "qualification": "Gross two-chamber-like topology supported.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "melax",
+      "mode": "tee",
+      "pair": "tee-melax-pair.jpg",
+      "pairSha256": "67f3389a4ff70dd4df113a2e1baaa8d94ce26fcb339e15f1a72bb516aad3ae00",
+      "source": "tee-melax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "adca55ca938c0289fce30c6078a4e9766e3bfc29b93ecf2b8cb548ec0cf1ef20",
+      "baselineSourceSha256": "d01992bac913f13a28688d7e3b45df4ef2b4f0e3e7813d04849596f0012a4bbc",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Longitudinal LV cavity, basal atrial space, and a continuous elongated bright bordered outflow/root-like lumen; adjacent RV-like cavity also visible.",
+      "qualification": "Gross long-axis/outflow topology supported. Individual cusp names remain unconfirmed.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "meavlax",
+      "mode": "tee",
+      "pair": "tee-meavlax-pair.jpg",
+      "pairSha256": "c6f640dc7001a89cd094dd38474d0033716629c1973233c80e7a95632e759a9d",
+      "source": "tee-meavlax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "09054b296d2704a2edd0221b9bfdef3c5e24184bd1ec31f7a0566b1a6d169866",
+      "baselineSourceSha256": "f45b0e90385d802cbbcca6cdce933a96f7be8a2ee413fe2ebe35c189ba1b2d86",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Tighter, horizontally presented crop of the long root/outflow lumen and its connection toward the LV; thin tissue at its base.",
+      "qualification": "Gross aortic-root long-axis neighborhood supported. Fine leaflet and annular details require independent confirmation.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "meaaolax",
+      "mode": "tee",
+      "pair": "tee-meaaolax-pair.jpg",
+      "pairSha256": "9bba7c46ab17479504fbcbbf6cf013f6ccd0c0d7113321de19c44bd7f0cd96fa",
+      "source": "tee-meaaolax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "085e1b6f55ae1a2cc142bfbc85576e70dce038689b5fc7b0b01c7f7435f763cf",
+      "baselineSourceSha256": "085e1b6f55ae1a2cc142bfbc85576e70dce038689b5fc7b0b01c7f7435f763cf",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "An elongated, open, bright bordered vessel lumen with part of its basal connection; neighboring vessel/chamber spaces.",
+      "qualification": "Gross ascending-root/vessel long-axis topology supported. Full ascending-aortic coverage is limited by the specimen.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "meaaosax",
+      "mode": "tee",
+      "pair": "tee-meaaosax-pair.jpg",
+      "pairSha256": "2c46d80d85dbebf74d093d0f9871b23036f971615bd26219d4c0978735870d2e",
+      "source": "tee-meaaosax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "aac4b78987239ece7fc0abfcf3d6915f733eb421b051610057f50cce11cf260f",
+      "baselineSourceSha256": "7825645e580a111b8bc7f403e67297027e9efe81a6962392565a1f84574bcb41",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Rounded bright bordered vessel ring adjacent to a larger differently shaped lumen and right-heart tissue.",
+      "qualification": "Gross ascending-vessel cross-section topology supported. No assessment of vessel pathology or clinical dimensions is possible.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "merpv",
+      "mode": "tee",
+      "pair": "tee-merpv-pair.jpg",
+      "pairSha256": "349dacb66bafb5de605e7f3c949691e13fa2baef7584ce1a8c92ef659a7a7850",
+      "source": "tee-merpv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "ec2947b5541da777a8566b6ed7c8d2a3295cd02742bb620451e53659d0d45a89",
+      "baselineSourceSha256": "e001b9f621c52040902567c5849d9a6acbe580946af7ff1eb38991339773f670",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Basal atrial-region space with narrow adjoining tissue channels; part of the ventricular/inflow region remains in the lower crop.",
+      "qualification": "Target unconfirmed: no independently identifiable right pulmonary vein ostium or continuous venous segment.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "meavsax",
+      "mode": "tee",
+      "pair": "tee-meavsax-pair.jpg",
+      "pairSha256": "eb21227a48f699c39ca8cb0bd0b96d5d6e5405772be0f895d6108bcdef12e984",
+      "source": "tee-meavsax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "44bf29c5ad7d7ec4a01936c50f59ee1a086d6c0f9fd47362603fe7bf2c188020",
+      "baselineSourceSha256": "2e5599ef597237f9bc6fe07006da1e8feb2fb282dc0f1a750f1ebf396e27bc14",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Multilobed semilunar-root-like cross-section with folded fine internal tissue, surrounded by right-heart/basal chambers.",
+      "qualification": "Broad root short-axis neighborhood supported. A named three-cusp assignment is not established by this resident raster.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "mervinout",
+      "mode": "tee",
+      "pair": "tee-mervinout-pair.jpg",
+      "pairSha256": "97806ef2788ee66780d5acd09abdb16c64fe95848def668dfa62427c77f6cd6a",
+      "source": "tee-mervinout-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "6471364c2b016a13f8cff7003a991873b3677efc0bb4bc9e2ec04f64244e35b3",
+      "baselineSourceSha256": "8c98c670bc3e59ad2541f51541df1a2ef61899c3064a3d24902d1034a082674c",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Broad right-heart cavity around a central semilunar-root cross-section, with inlet-region tissue and adjacent basal/outlet lumen.",
+      "qualification": "Regional right-heart neighborhood plausible; individual TV/PV identity and uninterrupted TV-RVOT-PV continuity remain unconfirmed.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "memodbicaval",
+      "mode": "tee",
+      "pair": "tee-memodbicaval-pair.jpg",
+      "pairSha256": "d41ce626b18bf71bf9a475b82fa86db1fc1fa7230985fe195e0604092a87a806",
+      "source": "tee-memodbicaval-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "a6b705e7ebb019cff6c014aeeee5ee4df760474fb4be1f17f6a01d13c5df5a4e",
+      "baselineSourceSha256": "aeaab039b2b1c2d3db39f47a7d53d00e378fb3f4edb2635be996df3a20cad3d3",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Broad thin-walled/trabeculated cavity, basal atrial-region spaces, thick LV wall wedge, and internal tissue near the inlet.",
+      "qualification": "Target unconfirmed: no separately identifiable TV leaflets or caval continuity. Substantial ventricular tissue remains in the field.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "bicaval",
+      "mode": "tee",
+      "pair": "tee-bicaval-pair.jpg",
+      "pairSha256": "34048ca55ef466849b85f293453d323dcf081644e9952c5f48eb73ee464ea25b",
+      "source": "tee-bicaval-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "9bef442405dc9a09a06bff8ff00b166f74fcb4600aab2adcabe3dc0006cc1d6d",
+      "baselineSourceSha256": "9b0c9a8a1a6f0a8eb330493133ab89a8d8b4e2e8f429ec6bf7433e98a1996291",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Large trabeculated cavity and oblique basal tissue spaces, with one superior ring-like lumen.",
+      "qualification": "Target unconfirmed / refit candidate: paired SVC\u2013RA\u2013IVC continuity and interatrial septum are not demonstrated. A preset name alone must not certify bicaval anatomy.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "mepv",
+      "mode": "tee",
+      "pair": "tee-mepv-pair.jpg",
+      "pairSha256": "2e714bab34098b0f9fdb8e39caddf4db0213b668e1c9991090f1558d72e557d8",
+      "source": "tee-mepv-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "9606c5c5c2816d51baa68a4ddfa7d21a0360d7195f5542f763ed325cda1f1c4b",
+      "baselineSourceSha256": "b82eb4e488fda00c021b587c3f597b32eab2ebeaa1d3430f1817b97633d365e9",
+      "sourceIdenticalToV5": false,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Atrial-region tissue and open/cut basal spaces above ventricular wall; crop differs from the four-chamber section.",
+      "qualification": "Target unconfirmed: both pulmonary vein sets cannot be individually identified.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "melaa",
+      "mode": "tee",
+      "pair": "tee-melaa-pair.jpg",
+      "pairSha256": "4957116d48bf2d9ca32ad4a763e12b4eb6b035e15d8c2edce61cdc19fa6d07cb",
+      "source": "tee-melaa-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "71c9a549b97dfd014f06ec0c2ea7843eea2e32e5811efd64a09c0aa55a2bec2c",
+      "baselineSourceSha256": "71c9a549b97dfd014f06ec0c2ea7843eea2e32e5811efd64a09c0aa55a2bec2c",
+      "sourceIdenticalToV5": true,
+      "verdict": "specific-target-unconfirmed",
+      "observedAnatomy": "Similar atrial-region section with a small lateral cavity-like extension and nearby narrow spaces.",
+      "qualification": "Target unconfirmed: the putative appendage is not independently localized; no claim of complete LAA lobes or thrombus exclusion.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgbasalsax",
+      "mode": "tee",
+      "pair": "tee-tgbasalsax-pair.jpg",
+      "pairSha256": "8174d244350be71b04eea756761399d8776137dd8b087a719f0b2d0cd6fd41ba",
+      "source": "tee-tgbasalsax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "176ff2202600761ecdca6de8f3c10e7941986445262c1a2929230728f06c46ae",
+      "baselineSourceSha256": "07dd212918d889dbad5897545bdbe7fbf5d0ce5f044cc611d985e8b2e5c34133",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Oblique basal ventricular section with thick wall, central folded/valve-like tissue, adjacent right-heart cavity, and basal vessel portions.",
+      "qualification": "Gross basal short-axis neighborhood supported. An en-face MV opening and named leaflets are not definitively established.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgpapillary",
+      "mode": "tee",
+      "pair": "tee-tgpapillary-pair.jpg",
+      "pairSha256": "da17881304756e1fd6cc49cf551c712185d51dbf36155dcccfb7c731f738297b",
+      "source": "tee-tgpapillary-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "83f6487ab8f3f19ae5ab3feaf6734e37d5f83bad0e556661226c0ce7db914948",
+      "baselineSourceSha256": "83f6487ab8f3f19ae5ab3feaf6734e37d5f83bad0e556661226c0ce7db914948",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Round ventricular section with narrow LV central space/internal tissue and larger trabeculated adjacent RV-like cavity.",
+      "qualification": "Gross midventricular short-axis topology supported. Individual papillary muscle assignments remain unconfirmed.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgapicalsax",
+      "mode": "tee",
+      "pair": "tee-tgapicalsax-pair.jpg",
+      "pairSha256": "a9c4aaba57de65f36c221bacc56ebe7c7d9dfad4816de5754b3c89ce34aa5471",
+      "source": "tee-tgapicalsax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "05d3f020f378803bd1ae1a003dcd4dbc8946e62a7c0982c01648ee18266d606d",
+      "baselineSourceSha256": "05d3f020f378803bd1ae1a003dcd4dbc8946e62a7c0982c01648ee18266d606d",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Smaller distal myocardial section with very small branching residual cavity spaces.",
+      "qualification": "Gross apical short-axis progression supported.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgrvbasal",
+      "mode": "tee",
+      "pair": "tee-tgrvbasal-pair.jpg",
+      "pairSha256": "73852ba0933566566b8bbfc1aed742c4058983119e55b21d78f9a5865b6cb479",
+      "source": "tee-tgrvbasal-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "24ec99ee74dd32ac586525b8dc4b50fd35823391fdadfce617ab5ea374d004e8",
+      "baselineSourceSha256": "cded4eb09dd4239ca32f1ca629c4babc3629ba5cd6cc60301732341ad3cfe97a",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Basal section emphasizing a relatively large right-heart-like cavity, central inlet-region tissue, thick neighboring LV wall, and vessel portions.",
+      "qualification": "Gross right-heart basal neighborhood supported; TV leaflets are unconfirmed.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgrvinout",
+      "mode": "tee",
+      "pair": "tee-tgrvinout-pair.jpg",
+      "pairSha256": "22d1e3370c2ea87a8928b4c9a69daa4e73172e4a35514a6940fef0c53919de23",
+      "source": "tee-tgrvinout-ct-source.png",
+      "poseAvailable": false,
+      "withheld": true,
+      "outside": false,
+      "sourceSha256": "3ef17b6ef60632b1e6e99aa0b34b19e80da27fbf602cfd5efe2d48763cf83d8a",
+      "baselineSourceSha256": "a182714ac80ea680cff7960eb9707e932ee02dc082e25cd52abbfd12c1066701",
+      "sourceIdenticalToV5": false,
+      "verdict": "source-retained-probe-withheld",
+      "observedAnatomy": "The original reviewed oblique right-heart{local-home} section is retained: broad right-heart cavity/inlet-outlet neighborhood around a central aortic-root cross-section. Both camera anchors show the fixed GI/body context with no probe or scan fan.",
+      "qualification": "Source retained; probe intentionally withheld. The old 32-degree acquired rotation and its aortic-dominant long lumen are removed. Independent regional points support this source neighborhood, while individual TV/PV leaflets remain unconfirmed. The fixed stomach cannot contain a probe origin on the unchanged source plane.",
+      "baselineComparison": "Material target correction",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "deeptg5c",
+      "mode": "tee",
+      "pair": "tee-deeptg5c-pair.jpg",
+      "pairSha256": "371c1664a362e15391b12baaaa0800ea1d51b060b4b317d02c4f5a2b676f2846",
+      "source": "tee-deeptg5c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "36f60213692b24fa49909a86cb6daff6b16d04712f87adfa9e2417894df59d5e",
+      "baselineSourceSha256": "e33d1b9003e052a5975836b9ebbf4807d9411c537650d1f7eb73ab98c233076d",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Narrow longitudinal LV cavity track with internal trabecular tissue, an adjacent RV-like cavity, basal atrial-region tissue and a long outflow/root-region lumen. Both anchors show the corresponding gastric probe and fixed GI/body context.",
+      "qualification": "Gross apex-to-outflow topology supported after using the distinct reviewed aortic cusp/root-region guide. The source preserves ventricular cavity tracks; complete living five-chamber correspondence, individual valve leaflets and Doppler alignment remain unconfirmed.",
+      "baselineComparison": "Material correction: deep transgastric guide uses the source-reviewed aortic cusp{local-home} region instead of the upstream lumen guide; ventricular cavity and outflow neighborhoods remain visible.",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": true
+    },
+    {
+      "id": "tg2c",
+      "mode": "tee",
+      "pair": "tee-tg2c-pair.jpg",
+      "pairSha256": "89136a6922426f37bd8cda6c60ef6e72cbd234efa48abd3e4dd9a08d230930d0",
+      "source": "tee-tg2c-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "321b5c03b7cb69a94f5f5bcb38abc3e24966f7cffe7f3358191bf2ad20463e9c",
+      "baselineSourceSha256": "321b5c03b7cb69a94f5f5bcb38abc3e24966f7cffe7f3358191bf2ad20463e9c",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Dominant elongated LV cavity with thick walls and basal atrial/inflow-region space.",
+      "qualification": "Gross two-chamber-like topology supported.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tgrvin",
+      "mode": "tee",
+      "pair": "tee-tgrvin-pair.jpg",
+      "pairSha256": "d0493f4b32b0904820914870e385c4daffae2bc6575c792ded47c5be11fe88c6",
+      "source": "tee-tgrvin-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "139d59463721cb76c770a973d0ee4a8099ea6573c7795de1cf021d6d82f32eab",
+      "baselineSourceSha256": "139d59463721cb76c770a973d0ee4a8099ea6573c7795de1cf021d6d82f32eab",
+      "sourceIdenticalToV5": true,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Broad thin-walled/trabeculated right-heart-like cavity, internal inlet tissue, and a thick LV wall wedge.",
+      "qualification": "Gross right-heart inflow neighborhood supported. Individual TV leaflets/chordae remain unconfirmed.",
+      "baselineComparison": "Source raster byte-identical to v5",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "tglax",
+      "mode": "tee",
+      "pair": "tee-tglax-pair.jpg",
+      "pairSha256": "c3d23173a066ab1fe5c4053ab46124a8af915f129f3653d62e6ed7fff0e9bc5a",
+      "source": "tee-tglax-ct-source.png",
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": false,
+      "sourceSha256": "7553cdbadf178a209358e92326fb68edf6058df4f4f584eb1f4d3c9649c62cd6",
+      "baselineSourceSha256": "7a51371cd03c9ef27c2028859dd4eb7db8615ea4da8f0a3dbc1ca29997fd9a4b",
+      "sourceIdenticalToV5": false,
+      "verdict": "regional-anatomy-supported",
+      "observedAnatomy": "Longitudinal LV cavity and continuous elongated root/outflow-like lumen with adjacent basal chamber spaces.",
+      "qualification": "Gross long-axis/outflow topology supported, with fixed-source and leaflet limits.",
+      "baselineComparison": "Same plane; sampling dimension changed by one pixel",
+      "directVisualInspection": true,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "daosax",
+      "mode": "tee",
+      "pair": "tee-daosax-pair.jpg",
+      "pairSha256": "7206583a00343b4e83caa2b286efff0735f4225fc7e85ce31ccbd564e69aabee",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart seen partly off-frame in the probe anchor; illustrative posterior sector and body context in the anatomy anchor. No measured cap.",
+      "qualification": "Outside scan. No descending-aortic cross-section is supplied.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "daolax",
+      "mode": "tee",
+      "pair": "tee-daolax-pair.jpg",
+      "pairSha256": "5e5765d4a929d6cab279624522aac05c365ec3e6a7a0949140aa060717dcf1b5",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart and illustrative posterior probe/sector. No measured cap or descending-vessel walls.",
+      "qualification": "Outside scan. No descending-aortic long-axis target is supplied.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "uearchlax",
+      "mode": "tee",
+      "pair": "tee-uearchlax-pair.jpg",
+      "pairSha256": "079c068c50bee40f08d7c4c18ffded7ed010d4584041f8594ec74a6abc33503a",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart and vessel stumps with superior illustrative probe/sector. No measured arch cap.",
+      "qualification": "Outside scan. Vessel stumps must not be mistaken for a complete arch long axis.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    },
+    {
+      "id": "uearchsax",
+      "mode": "tee",
+      "pair": "tee-uearchsax-pair.jpg",
+      "pairSha256": "d7d00759345e9d1427e0f413463eb3c19fee220e01db7653dc9a4c7ed01f8648",
+      "source": null,
+      "poseAvailable": true,
+      "withheld": false,
+      "outside": true,
+      "verdict": "outside-scan",
+      "observedAnatomy": "Whole uncut heart, vessel stumps, and superior illustrative sector; no measured arch cap.",
+      "qualification": "Outside scan. No arch cross-section or pulmonary artery relation is established.",
+      "baselineComparison": "Outside scan; no CT",
+      "directVisualInspection": true,
+      "sourceIdenticalToV5": false,
+      "inspectionExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "finalEvidenceByteIdenticalToDirectInspection": true,
+      "finalReinspection": false
+    }
+  ],
+  "limitations": [
+    "Not a browser screenshot or browser performance measurement.",
+    "Resident source spacing 317.6 \u00b5m; this is not a fine/Ultra/native-resolution surface.",
+    "Local fine replacement meshes/exclusions are omitted together; baseline donor source-support cleanup is applied. Reviewed lumen masks apply only to LADAF.",
+    "Illustrative body/instruments are fixed references, not clinically registered patient anatomy.",
+    "No clinical correspondence validation is inferred from geometric coplanarity."
+  ],
+  "inspectionHistory": [
+    {
+      "exportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+      "nativeReviewSha256": "63f46f1e6a1f56dfac8f6179df708557edbd760e880610eb7bd53f4ff6ab0a26",
+      "viewCount": 56,
+      "sourceRasterCount": 49,
+      "method": "Four priority pairs and their raw CT rasters opened separately at native size; all52 other complete pairs and their available complete source rasters displayed in26 two-view inspection plates, preserving aspect and without cropping. PLAX AV pair additionally opened at native size. Every current view was inspected; unchanged hashes were not substituted for inspection."
+    },
+    {
+      "exportSha256": "cc72b4e513a88deea7a38039126d5be0bb18b8b17eff05ea5d5164e0b633aff1",
+      "nativeReviewSha256": "b91f3728d60e458cd14807dd6a1ae420bd8e984c38283f606087438e99f5c7c5",
+      "reinspectedViews": [
+        "tee-deeptg5c",
+        "tte-psax_av",
+        "tte-psax_av_zoom"
+      ],
+      "unchangedPairs": 53,
+      "unchangedSourceRasters": 46,
+      "method": "Each of the three changed full paired-anchor images and complete measured source PNGs was opened separately. Hash comparison confirmed every other pair and available source PNG identical to its prior direct inspection."
+    }
+  ]
+}

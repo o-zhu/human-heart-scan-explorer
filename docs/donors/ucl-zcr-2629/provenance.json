@@ -1,0 +1,23 @@
+{
+  "datasetId": "2298522198",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/2298522198",
+  "doi": "10.15151/ESRF-DC-2299323295",
+  "officialMetadataUrl": "https://human-organ-atlas.esrf.fr/assets/index-DR901JiP.js",
+  "officialMetadataBundleSha256": "3ef7086b0e0e7201cae7b282d40e4da83c74f29bcc9263ab2d436835b81ad0a2",
+  "officialMetadataFields": {
+    "SamplePatient_number": "UCL-ZCR-2629",
+    "SamplePatient_age": "<18",
+    "SamplePatient_sex": null,
+    "SamplePatient_info": "Disease free",
+    "TOMOAcquisition_sample_pixel_size": "7.032"
+  },
+  "sceneSha256": "5cd9f474c5fbdd5edb272a4f257e351c8c80627695f82b8b719da8bd9a1e57bd",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "retrievedDate": "2026-11-05",
+  "notes": [
+    "Exact age and sex are not supplied.",
+    "Disease free is the catalog description, not a new clinical assessment.",
+    "The pixel-axis order is taken from OME-Zarr metadata."
+  ]
+}

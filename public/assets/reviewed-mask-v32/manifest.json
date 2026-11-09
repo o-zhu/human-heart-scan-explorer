@@ -1,0 +1,382 @@
+{
+  "schema": "heart-reviewed-mask-atlas-v32",
+  "version": 1,
+  "id": "ladaf-reviewed-mask-atlas-v32",
+  "donorId": "ladaf-2021-17",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "sourceManifests": {
+    "lumen": {
+      "url": "./assets/cleanup-v30/lumen-manifest.json",
+      "sha256": "cdea0c182475a0daf3db7b8cf53ec99e3d9fc53bc5d61aaba33b2e359cbcd1a6"
+    },
+    "surface": {
+      "url": "./assets/cleanup-v30/surface-manifest.json",
+      "sha256": "f12cc01dc5151df447c8c4456b5309ace7be642906923a395100eaefa03ea43d"
+    }
+  },
+  "brickSizeXYZ": [
+    8,
+    8,
+    8
+  ],
+  "brickBytes": 512,
+  "zeroBrickIndex": 0,
+  "indexConvention": "X-fast brick grid; indexOffset counts uint32 entries. Index 0 is all zero; index N>0 starts at payload byte (N-1)*512.",
+  "payloadConvention": "Each brick stores 8x8x8 original packed-mask bytes in X-fast order. RGBA channels and 2D rows are consecutive bytes; padding is zero.",
+  "header": {
+    "bytes": 32,
+    "endian": "little",
+    "magic": "RMA1",
+    "uint32Fields": [
+      "magic",
+      "version",
+      "fieldCount",
+      "indexEntryCount",
+      "indexOffsetBytes",
+      "indexByteLength",
+      "payloadOffsetBytes",
+      "payloadByteLength"
+    ]
+  },
+  "indexTexture": {
+    "format": "R32UI",
+    "width": 1024,
+    "height": 211,
+    "entryCount": 215728,
+    "offset": 32,
+    "byteLength": 864256,
+    "logicalBytes": 862912
+  },
+  "payloadTexture": {
+    "format": "RGBA8",
+    "width": 2048,
+    "height": 2124,
+    "brickCount": 33976,
+    "offset": 864288,
+    "byteLength": 17399808,
+    "logicalBytes": 17395712
+  },
+  "asset": {
+    "url": "./assets/reviewed-mask-v32/atlas.bin.gz",
+    "format": "RMA1-gzip",
+    "compressedBytes": 3080744,
+    "decodedBytes": 18264096,
+    "sha256": "a8b34103a8d58b27a66080366d433b8b21bca2a42b3975d0e0065ca5e82023d5",
+    "decodedSha256": "96cf62fdf734050d125bb851e63027ca11aec9c217f7cecdfb69de3202d380ca"
+  },
+  "transport": {
+    "url": "./assets/reviewed-mask-v32/atlas.refs.gz",
+    "format": "RMR1-gzip",
+    "compressedBytes": 139441,
+    "decodedBytes": 1136096,
+    "sha256": "fd3fbb13a44cf3c42d269a9b5cbcdb39adeac198dc0f7799b46a40b0b5acccfc",
+    "decodedSha256": "3a520b5bb6d0d66972b1139f915676cfbae1defb1758d5ab4bf1c4a72cca5537"
+  },
+  "fields": [
+    {
+      "id": "lumen:atrial",
+      "kind": "lumen",
+      "sourceId": "atrial",
+      "sourceUrl": "./assets/cleanup-v29/atrial.bits.gz",
+      "sourceCompressedBytes": 659082,
+      "sourceCompressedSha256": "67628257da875503f7c6b5b246e1ac97c70bfb328f7f0da4c7a5c7505eea47b3",
+      "sourceDecodedBytes": 19885320,
+      "sourceDecodedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "lowerFullFineXYZ": [
+        1080,
+        748,
+        432
+      ],
+      "upperFullFineXYZ": [
+        1435,
+        1355,
+        1160
+      ],
+      "dimensionsXYZ": [
+        355,
+        607,
+        728
+      ],
+      "storageDimensionsXYZ": [
+        45,
+        607,
+        728
+      ],
+      "indexOffset": 0,
+      "brickGridXYZ": [
+        6,
+        76,
+        91
+      ]
+    },
+    {
+      "id": "lumen:arterial",
+      "kind": "lumen",
+      "sourceId": "arterial",
+      "sourceUrl": "./assets/cleanup-v28/arterial.bits.gz",
+      "sourceCompressedBytes": 287953,
+      "sourceCompressedSha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "sourceDecodedBytes": 29192000,
+      "sourceDecodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "lowerFullFineXYZ": [
+        510,
+        900,
+        180
+      ],
+      "upperFullFineXYZ": [
+        1160,
+        1345,
+        980
+      ],
+      "dimensionsXYZ": [
+        650,
+        445,
+        800
+      ],
+      "storageDimensionsXYZ": [
+        82,
+        445,
+        800
+      ],
+      "indexOffset": 41496,
+      "brickGridXYZ": [
+        11,
+        56,
+        100
+      ]
+    },
+    {
+      "id": "lumen:valve-region",
+      "kind": "lumen",
+      "sourceId": "valve-region",
+      "sourceUrl": "./assets/cleanup-v28/valve-region.bits.gz",
+      "sourceCompressedBytes": 150529,
+      "sourceCompressedSha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "sourceDecodedBytes": 7740900,
+      "sourceDecodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "lowerFullFineXYZ": [
+        850,
+        900,
+        850
+      ],
+      "upperFullFineXYZ": [
+        1280,
+        1205,
+        1320
+      ],
+      "dimensionsXYZ": [
+        430,
+        305,
+        470
+      ],
+      "storageDimensionsXYZ": [
+        54,
+        305,
+        470
+      ],
+      "indexOffset": 103096,
+      "brickGridXYZ": [
+        7,
+        39,
+        59
+      ]
+    },
+    {
+      "id": "lumen:rv",
+      "kind": "lumen",
+      "sourceId": "rv",
+      "sourceUrl": "./assets/cleanup-v28/rv.bits.gz",
+      "sourceCompressedBytes": 381259,
+      "sourceCompressedSha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "sourceDecodedBytes": 25027200,
+      "sourceDecodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "lowerFullFineXYZ": [
+        450,
+        760,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        1020,
+        1200,
+        1810
+      ],
+      "dimensionsXYZ": [
+        570,
+        440,
+        790
+      ],
+      "storageDimensionsXYZ": [
+        72,
+        440,
+        790
+      ],
+      "indexOffset": 119203,
+      "brickGridXYZ": [
+        9,
+        55,
+        99
+      ]
+    },
+    {
+      "id": "local:lvot-perivalvular-refinement",
+      "kind": "local",
+      "sourceId": "lvot-perivalvular-refinement",
+      "sourceUrl": "./assets/cleanup-v30/lvot-perivalvular-refinement-low-band.bits.gz",
+      "sourceCompressedBytes": 876540,
+      "sourceCompressedSha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+      "sourceDecodedBytes": 5587296,
+      "sourceDecodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+      "lowerFullFineXYZ": [
+        1018,
+        944,
+        916
+      ],
+      "upperFullFineXYZ": [
+        1330,
+        1240,
+        1400
+      ],
+      "dimensionsXYZ": [
+        312,
+        296,
+        484
+      ],
+      "storageDimensionsXYZ": [
+        39,
+        296,
+        484
+      ],
+      "indexOffset": 168208,
+      "brickGridXYZ": [
+        5,
+        37,
+        61
+      ]
+    },
+    {
+      "id": "local:pulmonary-regularized-v30",
+      "kind": "local",
+      "sourceId": "pulmonary-regularized-v30",
+      "sourceUrl": "./assets/cleanup-v30/pulmonary-regularized-v30-low-band.bits.gz",
+      "sourceCompressedBytes": 567918,
+      "sourceCompressedSha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044",
+      "sourceDecodedBytes": 6687824,
+      "sourceDecodedSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+      "lowerFullFineXYZ": [
+        580,
+        1064,
+        540
+      ],
+      "upperFullFineXYZ": [
+        870,
+        1380,
+        1112
+      ],
+      "dimensionsXYZ": [
+        290,
+        316,
+        572
+      ],
+      "storageDimensionsXYZ": [
+        37,
+        316,
+        572
+      ],
+      "indexOffset": 179493,
+      "brickGridXYZ": [
+        5,
+        40,
+        72
+      ]
+    },
+    {
+      "id": "local:tricuspid-rv-regularized-v30",
+      "kind": "local",
+      "sourceId": "tricuspid-rv-regularized-v30",
+      "sourceUrl": "./assets/cleanup-v30/tricuspid-rv-regularized-v30-low-band.bits.gz",
+      "sourceCompressedBytes": 419824,
+      "sourceCompressedSha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba",
+      "sourceDecodedBytes": 7241640,
+      "sourceDecodedSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+      "lowerFullFineXYZ": [
+        590,
+        640,
+        894
+      ],
+      "upperFullFineXYZ": [
+        880,
+        1060,
+        1360
+      ],
+      "dimensionsXYZ": [
+        290,
+        420,
+        466
+      ],
+      "storageDimensionsXYZ": [
+        37,
+        420,
+        466
+      ],
+      "indexOffset": 193893,
+      "brickGridXYZ": [
+        5,
+        53,
+        59
+      ]
+    },
+    {
+      "id": "local:right-perivascular-v29",
+      "kind": "local",
+      "sourceId": "right-perivascular-v29",
+      "sourceUrl": "./assets/cleanup-v29/right-perivascular-v29-low-band.bits.gz",
+      "sourceCompressedBytes": 363072,
+      "sourceCompressedSha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399",
+      "sourceDecodedBytes": 3087000,
+      "sourceDecodedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "lowerFullFineXYZ": [
+        530,
+        815,
+        690
+      ],
+      "upperFullFineXYZ": [
+        1030,
+        1060,
+        890
+      ],
+      "dimensionsXYZ": [
+        500,
+        245,
+        200
+      ],
+      "storageDimensionsXYZ": [
+        63,
+        245,
+        200
+      ],
+      "indexOffset": 209528,
+      "brickGridXYZ": [
+        8,
+        31,
+        25
+      ]
+    }
+  ],
+  "budget": {
+    "sourceMaskBytes": 104449180,
+    "atlasTextureBytes": 18264064,
+    "savedTextureBytes": 86185116,
+    "maximumTextureBytes": 67108864,
+    "maximumTextureDimension": 4096
+  },
+  "scope": "Lossless storage derivative of the eight existing reviewed masks. Source values, masks, coordinates, surface meshes and anatomical interpretations are unchanged."
+}

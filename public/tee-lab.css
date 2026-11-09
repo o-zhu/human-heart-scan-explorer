@@ -1,0 +1,104 @@
+/* TEE shares the measured image surfaces, with its own always-visible probe console. */
+.tee-panel{background:#0b1215}
+.tee-starting-views .probe-preset-grid button{grid-template-columns:30px minmax(0,1fr) 10px}
+.tee-workspace{display:grid;grid-template-columns:245px minmax(0,1fr);gap:20px;padding:20px 26px;height:clamp(700px,calc(100dvh - 255px),1000px);min-height:0}
+.tee-console{min-height:0;min-width:0;overflow:auto;border:1px solid #344749;border-radius:6px;background:#101d20;padding:17px 17px 20px;scrollbar-width:thin;scrollbar-color:#405b54 #101d20}
+.tee-console-heading{display:flex;justify-content:space-between;align-items:center;gap:9px;margin-bottom:18px}
+.tee-console-heading h3{margin:0;font-weight:500;font-size:14px;color:#d5e1d5}
+.tee-console-heading button{border:1px solid #49645d;border-radius:4px;background:#18312a;color:#bcd3c0;font-size:14px;padding:7px 9px;cursor:pointer}
+.tee-console-heading button[aria-pressed=true]{background:#c4d3b6;color:#1b3527;border-color:#e0e8d5}
+.tee-depth-readout{display:flex;flex-direction:column;gap:6px;border-bottom:1px solid #2c4243;padding-bottom:17px;margin-bottom:17px}
+.tee-depth-readout>span{color:#91ada2;font-size:14px}
+.tee-depth-readout>strong{font:26px/1.2 ui-monospace,monospace;letter-spacing:-.7px;color:#d3e4c9}
+.tee-depth-readout small{font:14px ui-monospace,monospace;color:#92a99f;letter-spacing:0}
+.tee-range{margin-bottom:20px}
+.tee-range>span{font-size:14px;margin-bottom:8px}
+.tee-range output{min-width:44px;padding:3px 5px;font-size:14px}
+.tee-range>small{display:flex;justify-content:space-between;color:#78988f;font-size:14px;margin-top:6px}
+.tee-range input:disabled{opacity:.4;cursor:default}
+.tee-step-actions{display:flex;gap:7px;margin:-8px 0 20px}
+.tee-step-actions button,.tee-plane-stops button{border:1px solid #3e5854;border-radius:3px;background:#182b28;color:#b5cec1;font:14px ui-monospace,monospace;padding:7px 8px;cursor:pointer}
+.tee-step-actions button{flex:1}
+.tee-step-actions button:hover,.tee-plane-stops button:hover{border-color:#a5c6a7}
+.tee-step-actions button:disabled,.tee-plane-stops button:disabled{opacity:.45;cursor:default}
+.tee-multiplane{border-top:1px solid #2f4542;border-bottom:1px solid #2f4542;padding:13px 0 12px}
+.tee-angle-dial{margin:0 auto 3px;width:126px;height:80px}
+.tee-angle-dial svg{width:100%;height:100%;fill:none;stroke:#47695a;stroke-width:1}
+.tee-angle-dial [data-tee=dial-line]{stroke:#c6d9a8;stroke-width:2}
+.tee-angle-dial circle{stroke:#c6d9a8;fill:#c6d9a8}
+.tee-angle-dial text{fill:#90a695;stroke:none;font:6px ui-monospace,monospace}
+.tee-multiplane .tee-range{margin-bottom:11px}
+.tee-plane-stops{display:flex;gap:4px}
+.tee-plane-stops button{flex:1;padding:6px 2px;font-size:14px}
+.tee-plane-stops button[aria-pressed=true]{color:#152c22;background:#b8cba7;border-color:#d3e1bd}
+.tee-multiplane>p{font-size:14px;color:#8fa79b;line-height:1.5;margin:9px 0 0}
+.tee-reset{margin-top:15px;font-size:14px;line-height:1.5}
+.tee-keyboard{margin-top:17px;border-top:1px solid #2e4543;padding-top:13px}
+.tee-keyboard summary{color:#a8c0b4;font-size:14px;cursor:pointer;line-height:1.5}
+.tee-keyboard>p{color:#8ba398;font-size:14px;line-height:1.5;margin:7px 0 12px}
+.tee-keyboard .probe-steer-pad{height:61px;margin:12px 0}
+.tee-keyboard .probe-steer-pad span{margin:0;font-size:14px}
+.tee-keyboard .probe-key-guide{font-size:14px;gap:8px;margin:0;display:grid}
+.tee-keyboard .probe-key-guide span{display:flex}
+.tee-comparison{gap:12px}
+.tee-comparison .probe-view-pair{min-height:370px}
+.tee-comparison .probe-viewport-mount{cursor:grab}
+.tee-model-badge{background:#251c25e0;border-color:#775c6d;color:#d0adbf;font-size:14px}
+.tee-model-badge i{background:#c98fad}
+.tee-displayed-pose{position:absolute;z-index:5;bottom:58px;left:10px;right:10px;color:#acc3b6;font:14px/1.5 ui-monospace,monospace;padding:6px 9px;background:#132320d9;border:1px solid #355247;border-radius:3px;pointer-events:none;max-width:270px;text-align:center;margin:auto}
+.tee-orbit-hint{font-size:14px;line-height:1.5;color:#73928b;margin:1px 0 0}
+.tee-imaging-settings .probe-controls-group>.tee-range:last-child{margin-bottom:0}
+.tee-is-locked .tee-keyboard .probe-steer-pad{opacity:.4;cursor:default}
+#teePanel:is(:fullscreen,:-webkit-full-screen){width:100%;height:100dvh;min-height:0;padding:0;overflow:auto;box-sizing:border-box}
+#teePanel:is(:fullscreen,:-webkit-full-screen) .tee-heading{display:none}
+#teePanel:is(:fullscreen,:-webkit-full-screen) .tee-starting-views{padding-top:12px;padding-bottom:9px}
+#teePanel:is(:fullscreen,:-webkit-full-screen) .tee-workspace{height:calc(100dvh - 155px);min-height:620px}
+@media(min-width:1800px){.tee-workspace{grid-template-columns:270px minmax(0,1fr);gap:24px}.tee-console{padding:20px 21px}.tee-range{margin-bottom:22px}.tee-console-heading h3{font-size:14px}.tee-comparison .probe-scene-heading strong{font-size:14px}}
+@media(max-width:1100px){.tee-workspace{grid-template-columns:220px minmax(0,1fr);gap:12px;padding:16px}.tee-console{padding:14px}.tee-comparison .probe-view-pair,.tee-comparison .probe-comparison-headings,.tee-comparison .probe-comparison-footers{gap:10px}.tee-comparison .probe-scene-heading{align-items:flex-start;flex-direction:column;gap:5px}.tee-comparison .probe-scene-heading>span{min-height:12px}.tee-starting-views{grid-template-columns:100px minmax(0,1fr);padding:13px 16px;gap:6px 10px}}
+@media(max-width:820px){.tee-workspace{display:flex;flex-direction:column;height:auto;min-height:0}.tee-comparison{order:0;min-height:650px}.tee-console{order:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;overflow:visible}.tee-console-heading,.tee-depth-readout{grid-column:1/-1;margin-bottom:0}.tee-depth-readout{flex-direction:row;justify-content:space-between;align-items:center;padding-bottom:12px}.tee-console>.tee-range{margin-bottom:3px}.tee-step-actions{margin:10px 0}.tee-multiplane{grid-row:3/span 3;grid-column:2;padding:0 0 10px;border-top:0}.tee-keyboard{grid-column:1/-1;margin-top:0}.tee-reset{margin:0;align-self:center}.tee-starting-views{grid-template-columns:1fr}.tee-starting-views .probe-preset-note{grid-column:1}.tee-starting-views .probe-preset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tee-heading{padding:18px 16px}.tee-heading h2{font-size:27px}.tee-heading>.outlined-button{font-size:14px}.tee-imaging-settings{margin:0 16px 18px}.tee-imaging-settings .probe-controls{grid-template-columns:1fr 1fr;gap:20px}.tee-imaging-settings .probe-controls-group:last-child{grid-column:1/-1}#teePanel:is(:fullscreen,:-webkit-full-screen) .tee-workspace{height:auto;min-height:0}}
+@media(max-width:520px){.tee-heading{align-items:flex-start;gap:15px}.tee-heading .eyebrow{font-size:14px}.tee-heading p{font-size:14px}.tee-heading>.outlined-button{max-width:115px;white-space:normal;line-height:1.5}.tee-comparison{min-height:600px}.tee-comparison .probe-scene-heading strong{font-size:14px}.tee-comparison .probe-scene-heading>span{font-size:14px}.tee-comparison .probe-image-modes{grid-template-columns:1fr}.tee-comparison .probe-image-modes>button{font-size:14px;padding:5px}.tee-comparison .probe-view-actions button,.tee-comparison .probe-view-actions label{font-size:14px}.tee-model-badge{font-size:14px;left:6px;right:6px;top:8px;padding:5px}.tee-displayed-pose{font-size:14px;left:6px;right:6px;padding:5px}.tee-imaging-settings .probe-controls{grid-template-columns:1fr}.tee-imaging-settings .probe-controls-group:last-child{grid-column:auto}}
+
+/* Two hands, one console. The keys stay visible; their labels live beside the
+   matching sliders so the compact keyboard keeps its familiar physical shape. */
+body #teePanel.tee-panel .tee-workspace{grid-template-columns:clamp(324px,22vw,340px) minmax(0,1fr)}
+.tee-hand-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px 6px;border:1px solid #385249;border-radius:7px;background:#132522;padding:6px;margin:0 0 15px;outline-offset:3px}
+.tee-hand{min-width:0}
+.tee-hand>span{display:block;color:#9ebbad;font-size:14px;line-height:1.3;min-height:36px;margin-bottom:5px}
+.tee-key-cluster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}
+body #teePanel .tee-control-key{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;padding:0;border:1px solid #526e60;border-bottom-width:3px;border-radius:5px;background:#1b332b;color:#d6e4cb;cursor:pointer;touch-action:none;user-select:none}
+.tee-control-key kbd{font:16px/1 ui-monospace,monospace;background:none;border:0;padding:0;color:inherit;box-shadow:none}
+.tee-tip-keys [data-tee-key=KeyI]{grid-column:2}
+.tee-tip-keys [data-tee-key=KeyJ]{grid-column:1;grid-row:2}
+.tee-tip-keys [data-tee-key=KeyK]{grid-column:2;grid-row:2}
+.tee-tip-keys [data-tee-key=KeyL]{grid-column:3;grid-row:2}
+body #teePanel .tee-control-key:hover{border-color:#b7d3af;background:#29473a}
+body #teePanel .tee-control-key.is-held{background:#c3d8aa;border-color:#e2edc9;color:#162b20;box-shadow:inset 0 2px 3px #172b2133;transform:translateY(1px)}
+body #teePanel .tee-control-key:focus-visible,.tee-hand-controls:focus-visible{outline:2px solid #d5e4bf;outline-offset:2px}
+body #teePanel .tee-control-key:disabled{opacity:.4;cursor:default}
+.tee-hand-controls>p{grid-column:1/-1;margin:2px 0 0;color:#9eb5a8;font-size:14px;line-height:1.5}
+.tee-hand-controls>p>span{margin:0 3px;color:#6e9180}
+.tee-hand-controls>p kbd,.tee-range>small kbd{display:inline-block;border:1px solid #476451;border-radius:3px;background:#1b3026;color:#d0dec2;font:12px/1.3 ui-monospace,monospace;padding:1px 4px}
+.tee-hand-controls kbd.is-held{background:#c3d8aa;color:#162b20}
+body #teePanel.tee-panel .tee-mechanical-controls .tee-range{margin-bottom:12px}
+body #teePanel.tee-panel .tee-mechanical-controls .tee-range>small{font-size:14px;gap:6px}
+body #teePanel.tee-panel .tee-mechanical-controls .tee-multiplane{position:relative;padding:12px 0 10px;grid-column:auto;grid-row:auto}
+body #teePanel.tee-panel .tee-angle-dial{position:absolute;right:0;top:8px;width:62px;height:40px;opacity:.8;pointer-events:none}
+body #teePanel.tee-panel .tee-multiplane .tee-range>span{padding-right:67px;align-items:center}
+body #teePanel.tee-panel .tee-multiplane .tee-range>span output{margin-left:5px}
+body #teePanel.tee-panel .tee-multiplane .tee-range{margin-bottom:0}
+body #teePanel.tee-panel .tee-multiplane>p{margin-top:6px;font-size:14px;line-height:1.4}
+@media(max-width:1050px){
+ body #teePanel.tee-panel .tee-workspace{grid-template-columns:minmax(0,1fr)}
+ body #teePanel.tee-panel .tee-hand-controls{grid-column:1;grid-row:3;align-self:start;margin:0;max-width:380px}
+ body #teePanel.tee-panel .tee-mechanical-controls{grid-column:2;grid-row:3/span 3;min-width:0}
+ body #teePanel.tee-panel .tee-reset{grid-column:1;align-self:start;margin:0}
+ body #teePanel.tee-panel .tee-keyboard{grid-column:1;margin:0}
+}
+@media(max-width:720px){
+ body #teePanel.tee-panel .tee-console>.tee-hand-controls,body #teePanel.tee-panel .tee-console>.tee-mechanical-controls,body #teePanel.tee-panel .tee-console>.tee-keyboard,body #teePanel.tee-panel .tee-console>.tee-reset{grid-column:auto;grid-row:auto;max-width:none}
+}
+@media(max-width:360px){
+ .tee-hand-controls{grid-template-columns:1fr;gap:10px}
+ .tee-hand{display:grid;grid-template-columns:minmax(0,1fr) 138px;align-items:center;gap:8px}
+ .tee-hand>span{min-height:0;margin:0}
+}

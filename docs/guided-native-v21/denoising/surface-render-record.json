@@ -1,0 +1,587 @@
+{
+  "schema": "native-denoising-scientific-render-v21.1",
+  "notBrowserScreenshot": true,
+  "input": {
+    "coreOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "coreShapeZYX": [
+      108,
+      108,
+      108
+    ],
+    "contextOriginXYZ": [
+      4450,
+      3938,
+      4578
+    ],
+    "contextShapeZYX": [
+      188,
+      188,
+      188
+    ],
+    "realSourceHalo": 40,
+    "sourceSpacingUm": 19.85,
+    "thresholdRaw": 17133.400390625,
+    "sourceBlocks": [
+      {
+        "xyz": [
+          34,
+          30,
+          35
+        ],
+        "bytes": 3396922,
+        "sha256": "1124a9af76b53dac54729a9bf43e3bfd336863b9eb908cf3e4676e6278014225"
+      },
+      {
+        "xyz": [
+          35,
+          30,
+          35
+        ],
+        "bytes": 3405456,
+        "sha256": "e31109c7faed464b97805ed860f17e0be4a6db253122140a7bfcd77e28d0238a"
+      },
+      {
+        "xyz": [
+          36,
+          30,
+          35
+        ],
+        "bytes": 3404794,
+        "sha256": "71720e252b4fe319d283a7a811b0aeadbd1aefc68de438590f0c96ab06fdb004"
+      },
+      {
+        "xyz": [
+          34,
+          31,
+          35
+        ],
+        "bytes": 3350084,
+        "sha256": "986a1767d950410aa892e1735d7fb27efa8c9f2bab6865d8d1754fd2c2f2ab90"
+      },
+      {
+        "xyz": [
+          35,
+          31,
+          35
+        ],
+        "bytes": 3459975,
+        "sha256": "7b7f1433e7e544dc9c0ef48cddefb39b7570f90ebbd3c8ee6afc4b3ea3849e06"
+      },
+      {
+        "xyz": [
+          36,
+          31,
+          35
+        ],
+        "bytes": 3315267,
+        "sha256": "d37915ff3720849aa941c4e76b6df6ca9d415ade88bc216481a9e572dde95c81"
+      },
+      {
+        "xyz": [
+          34,
+          32,
+          35
+        ],
+        "bytes": 3349898,
+        "sha256": "05711716f7f23a19be6674501b71280b2f752fab5e35b546dea600e2525749e5"
+      },
+      {
+        "xyz": [
+          35,
+          32,
+          35
+        ],
+        "bytes": 3397186,
+        "sha256": "71ac923b4771bda53b9c689541d94272a3250905624e37e089c78e2dadcc1653"
+      },
+      {
+        "xyz": [
+          36,
+          32,
+          35
+        ],
+        "bytes": 3343631,
+        "sha256": "39691fc1eda15ee18b6919f386cceb2cc65004b73b1de1328c35f412f10eb8b7"
+      },
+      {
+        "xyz": [
+          34,
+          30,
+          36
+        ],
+        "bytes": 3438364,
+        "sha256": "9913f26c42500c985e4fb336cb451ddc738b340cda3d8c377c8109550c6bf34b"
+      },
+      {
+        "xyz": [
+          35,
+          30,
+          36
+        ],
+        "bytes": 3450631,
+        "sha256": "99303c22495f73ab313ded866eefb881751d2af4998b23e6466ddf3fa4b98fac"
+      },
+      {
+        "xyz": [
+          36,
+          30,
+          36
+        ],
+        "bytes": 3436941,
+        "sha256": "cfdc3b2b5ded377a7cffea663c94130d1ce50a2c7e85a746d628014abe9b9bd3"
+      },
+      {
+        "xyz": [
+          34,
+          31,
+          36
+        ],
+        "bytes": 3375549,
+        "sha256": "694264dbd5d3c99df6997daf149fd8e1af895acc58cd4baa46542ef60d7b5906"
+      },
+      {
+        "xyz": [
+          35,
+          31,
+          36
+        ],
+        "bytes": 3429508,
+        "sha256": "17c3bc878e3ecc20da169b728bdef9cf75d556c9d4ce7c07cb332af35db1cc40"
+      },
+      {
+        "xyz": [
+          36,
+          31,
+          36
+        ],
+        "bytes": 3366278,
+        "sha256": "d751a490961807b490670e81b104f98b0345075a9804ed5b4dd8d795392fdb24"
+      },
+      {
+        "xyz": [
+          34,
+          32,
+          36
+        ],
+        "bytes": 3384357,
+        "sha256": "4ce0459c506bd40709e5ac5553ed5244d1c17856d71f7bf5fd0b5b65b7a97a80"
+      },
+      {
+        "xyz": [
+          35,
+          32,
+          36
+        ],
+        "bytes": 3362200,
+        "sha256": "3e67ac9ef8520f72254cbc978a94e5c89e7237e732b8266bd07d1920db524667"
+      },
+      {
+        "xyz": [
+          36,
+          32,
+          36
+        ],
+        "bytes": 3342679,
+        "sha256": "5a098977bfa1134abc37ca2f4b260a5e35a8103b310f27fe995c388a90d8d4d0"
+      },
+      {
+        "xyz": [
+          34,
+          30,
+          37
+        ],
+        "bytes": 3477710,
+        "sha256": "4449b8f5aa2854e25249b7076c2c866d91d0e58fa11c7df97c2ccd59f4171e8e"
+      },
+      {
+        "xyz": [
+          35,
+          30,
+          37
+        ],
+        "bytes": 3446451,
+        "sha256": "96732616723146300ff7f345b268696e704abe8ab2f678f76347d5c4ea242abe"
+      },
+      {
+        "xyz": [
+          36,
+          30,
+          37
+        ],
+        "bytes": 3445758,
+        "sha256": "df261e383b153b6f65620009f4404bb7d7fc7aa0ff8fd9f1d108c655090c68cd"
+      },
+      {
+        "xyz": [
+          34,
+          31,
+          37
+        ],
+        "bytes": 3438869,
+        "sha256": "d9204a364d7dd78a22f3ee66cec1c0555bc2a6f3a97c639747f6fb39a465ddea"
+      },
+      {
+        "xyz": [
+          35,
+          31,
+          37
+        ],
+        "bytes": 3374155,
+        "sha256": "366490d70f5abba6400d0aee0f14a8c69c895e228bad9a22b3c717db2db2d757"
+      },
+      {
+        "xyz": [
+          36,
+          31,
+          37
+        ],
+        "bytes": 3461318,
+        "sha256": "71e6bfda20ea110aca998251345ce0c8b9e093e0c1a5b04be1782ac731f630a3"
+      },
+      {
+        "xyz": [
+          34,
+          32,
+          37
+        ],
+        "bytes": 3368512,
+        "sha256": "1e9cdd38062323298fb5d595994b9929afcbdb46009e3b1f9d15b12f20038734"
+      },
+      {
+        "xyz": [
+          35,
+          32,
+          37
+        ],
+        "bytes": 3350644,
+        "sha256": "60f6d3410111e7d201748241d752e0c846245d3a7774f851703bf8405d894781"
+      },
+      {
+        "xyz": [
+          36,
+          32,
+          37
+        ],
+        "bytes": 3325137,
+        "sha256": "6b38c0b2fc97232b5a2ead79ca5e3b0a8ee064fbb40d4bb44684e87393f1b316"
+      }
+    ],
+    "contextFloat32LeSha256": "3335929b28897f298ec5267f84a5905dea1e4e46e281cbe8890201f8acb35297",
+    "methods": {
+      "raw": {
+        "filterSeconds": 0.018861491000279784,
+        "coreFloat32LeSha256": "7dcd2ddb8f2e888aa9c46d4fe47dfc51909ab5fe72c4f06b4e22f71641f14d92"
+      },
+      "gaussian_1p5": {
+        "filterSeconds": 0.17892518499866128,
+        "coreFloat32LeSha256": "b41111f77a651a69bd9e092602187cf40189b22f5107e5b98242c34c77657e90"
+      },
+      "tv800_16": {
+        "filterSeconds": 2.6590137500024866,
+        "coreFloat32LeSha256": "d74114718020ff5241aec4b857fa9e0d8a1da4629e14757feb1cae966d9add52"
+      },
+      "tv800_40": {
+        "filterSeconds": 6.346246931992937,
+        "coreFloat32LeSha256": "fb6db356fb152fad84bc8ea8ff6ea883e359684de01fe20139202d0a1147284f"
+      }
+    },
+    "peakRssMiB": 475.578125
+  },
+  "methods": [
+    {
+      "method": "raw",
+      "vertices": 378565,
+      "triangles": 723491,
+      "geometrySha256": "de2d57e60d98c433118c5a6f17e67f8d201fa0088fc325972cd2ba594417de5d",
+      "geometryHashLayout": "Concatenated local native XYZ float32 little-endian vertices, then uint32 little-endian triangle indices; XYZ axis swap accompanied by reversed triangle winding.",
+      "positionsMmFloat32LeSha256": "a7da0118345eac49f2361560781b0a74080c746425cb49a9d3aeb34867de95ae",
+      "normalsFloat32LeSha256": "3d8138be29a4192d57801e9f4763b5e1225852acbb37ac6cb80d5300281dc1ef",
+      "normalPolicy": "Area-weighted incident triangle normals; no geometry smoothing. Exact cancellation falls back to +Z.",
+      "fallbackNormalVertices": 0,
+      "rendererPath": "scripts/native-surface-v20/render_egl.py",
+      "rendererSha256": "cc82af61b7dcdaec4ce409cd96a8d2565afd984fad49ac3296ce7e099969b78c",
+      "rendererDriver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "versions": {
+        "numpy": "2.3.5",
+        "skimage": "0.26.0"
+      },
+      "frameSizePixels": [
+        620,
+        600
+      ],
+      "orthographicHalfHeightMm": 1.7416389999999997,
+      "cropCenterLocalMm": [
+        1.0619750022888184,
+        1.0619750022888184,
+        1.0619750022888184
+      ],
+      "cropSampleCenterSpanMm": 2.12395,
+      "cameraDirectionUnnormalized": [
+        1.3,
+        -1.8,
+        0.85
+      ],
+      "cameraWorldUp": [
+        0,
+        0,
+        1
+      ],
+      "primaryLight": "normalize(cameraDirection + [-0.45,0.25,0.7])",
+      "fillLight": "normalize([-0.7,-0.2,0.2])",
+      "surfaceRgb": [
+        0.8,
+        0.46,
+        0.29
+      ],
+      "backgroundRgb": [
+        0.035,
+        0.047,
+        0.058
+      ],
+      "fullViewClipNormalizedZ": 1.0,
+      "sectionClipNormalizedZ": 0.004672897196261682,
+      "sectionLocalNativeZ": 54,
+      "sectionGlobalNativeZ": 4672,
+      "clipping": "Discard fragments above the common Z plane; no cap is synthesized.",
+      "outputs": {
+        "full": {
+          "path": "raw-full.png",
+          "sha256": "f5024bb3eb269143dab806cd72b7cb3208e2babd3767afd3f28f6bba032bfcf1"
+        },
+        "section": {
+          "path": "raw-section.png",
+          "sha256": "97aa7a6b0899c38875b664cedc7b69d38129a0fcd5f77648887848864bd44362"
+        }
+      },
+      "peakRssMiB": 301.87109375
+    },
+    {
+      "method": "gaussian_1p5",
+      "vertices": 81757,
+      "triangles": 160231,
+      "geometrySha256": "a8140d4918fff1b2db6fbec444e0c3c291fd1bd65d654327d6a007c27079c81f",
+      "geometryHashLayout": "Concatenated local native XYZ float32 little-endian vertices, then uint32 little-endian triangle indices; XYZ axis swap accompanied by reversed triangle winding.",
+      "positionsMmFloat32LeSha256": "3a2ec035ed2bf0f137efe7509f589fc5dc2c4ab0a8111df3f14b4831a9957723",
+      "normalsFloat32LeSha256": "b5a91b4b3e6850aa9405a88c0f6576c99e7c50a64ab092d01df98431b830d54f",
+      "normalPolicy": "Area-weighted incident triangle normals; no geometry smoothing. Exact cancellation falls back to +Z.",
+      "fallbackNormalVertices": 0,
+      "rendererPath": "scripts/native-surface-v20/render_egl.py",
+      "rendererSha256": "cc82af61b7dcdaec4ce409cd96a8d2565afd984fad49ac3296ce7e099969b78c",
+      "rendererDriver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "versions": {
+        "numpy": "2.3.5",
+        "skimage": "0.26.0"
+      },
+      "frameSizePixels": [
+        620,
+        600
+      ],
+      "orthographicHalfHeightMm": 1.7416389999999997,
+      "cropCenterLocalMm": [
+        1.0619750022888184,
+        1.0619750022888184,
+        1.0619750022888184
+      ],
+      "cropSampleCenterSpanMm": 2.12395,
+      "cameraDirectionUnnormalized": [
+        1.3,
+        -1.8,
+        0.85
+      ],
+      "cameraWorldUp": [
+        0,
+        0,
+        1
+      ],
+      "primaryLight": "normalize(cameraDirection + [-0.45,0.25,0.7])",
+      "fillLight": "normalize([-0.7,-0.2,0.2])",
+      "surfaceRgb": [
+        0.8,
+        0.46,
+        0.29
+      ],
+      "backgroundRgb": [
+        0.035,
+        0.047,
+        0.058
+      ],
+      "fullViewClipNormalizedZ": 1.0,
+      "sectionClipNormalizedZ": 0.004672897196261682,
+      "sectionLocalNativeZ": 54,
+      "sectionGlobalNativeZ": 4672,
+      "clipping": "Discard fragments above the common Z plane; no cap is synthesized.",
+      "outputs": {
+        "full": {
+          "path": "gaussian_1p5-full.png",
+          "sha256": "64abd96d44eaeca11406bf83b72ca839b3f42e8f7a820657ce7b5409e2841824"
+        },
+        "section": {
+          "path": "gaussian_1p5-section.png",
+          "sha256": "9a49a5e4bff340c4c4515b483546ef74e22be6c8dd2f067c31ca591fad4b8261"
+        }
+      },
+      "peakRssMiB": 139.56640625
+    },
+    {
+      "method": "tv800_16",
+      "vertices": 97701,
+      "triangles": 191251,
+      "geometrySha256": "4503cf10f38ee8e451b2e91f2964b797bd373dd3c443fed4ab529561092dab28",
+      "geometryHashLayout": "Concatenated local native XYZ float32 little-endian vertices, then uint32 little-endian triangle indices; XYZ axis swap accompanied by reversed triangle winding.",
+      "positionsMmFloat32LeSha256": "9e440e0a352e533488cb8a6c06f950b959a64bdf5fe4b798b748375832df9dd6",
+      "normalsFloat32LeSha256": "3492e50a5c927e422e3dcdd7c3ee54a4ec46cb01daa99ef0cc61862a0dd11218",
+      "normalPolicy": "Area-weighted incident triangle normals; no geometry smoothing. Exact cancellation falls back to +Z.",
+      "fallbackNormalVertices": 0,
+      "rendererPath": "scripts/native-surface-v20/render_egl.py",
+      "rendererSha256": "cc82af61b7dcdaec4ce409cd96a8d2565afd984fad49ac3296ce7e099969b78c",
+      "rendererDriver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "versions": {
+        "numpy": "2.3.5",
+        "skimage": "0.26.0"
+      },
+      "frameSizePixels": [
+        620,
+        600
+      ],
+      "orthographicHalfHeightMm": 1.7416389999999997,
+      "cropCenterLocalMm": [
+        1.0619750022888184,
+        1.0619750022888184,
+        1.0619750022888184
+      ],
+      "cropSampleCenterSpanMm": 2.12395,
+      "cameraDirectionUnnormalized": [
+        1.3,
+        -1.8,
+        0.85
+      ],
+      "cameraWorldUp": [
+        0,
+        0,
+        1
+      ],
+      "primaryLight": "normalize(cameraDirection + [-0.45,0.25,0.7])",
+      "fillLight": "normalize([-0.7,-0.2,0.2])",
+      "surfaceRgb": [
+        0.8,
+        0.46,
+        0.29
+      ],
+      "backgroundRgb": [
+        0.035,
+        0.047,
+        0.058
+      ],
+      "fullViewClipNormalizedZ": 1.0,
+      "sectionClipNormalizedZ": 0.004672897196261682,
+      "sectionLocalNativeZ": 54,
+      "sectionGlobalNativeZ": 4672,
+      "clipping": "Discard fragments above the common Z plane; no cap is synthesized.",
+      "outputs": {
+        "full": {
+          "path": "tv800_16-full.png",
+          "sha256": "dc8b3bdbc8e6463347bce4a7363131bb9b35e89ad9daf7592644e4e7c5a93879"
+        },
+        "section": {
+          "path": "tv800_16-section.png",
+          "sha256": "95f7dac5b18e4ff6bc84d5533362f4ede103496a1520537ebe75322f29c212e2"
+        }
+      },
+      "peakRssMiB": 149.7109375
+    },
+    {
+      "method": "tv800_40",
+      "vertices": 92742,
+      "triangles": 181763,
+      "geometrySha256": "40a54e4e1afdb40bea22a9c455f1d40e0952b6864884485ed5aab56f427d419a",
+      "geometryHashLayout": "Concatenated local native XYZ float32 little-endian vertices, then uint32 little-endian triangle indices; XYZ axis swap accompanied by reversed triangle winding.",
+      "positionsMmFloat32LeSha256": "1abeba61b753f5fec401168e6af4eae1fe70fe2343107af7441b1ac29f7bb961",
+      "normalsFloat32LeSha256": "7eb1cd4f225d9b30f4ac26fc9279bf32f927b7218c27cbda829b20e41763cc67",
+      "normalPolicy": "Area-weighted incident triangle normals; no geometry smoothing. Exact cancellation falls back to +Z.",
+      "fallbackNormalVertices": 0,
+      "rendererPath": "scripts/native-surface-v20/render_egl.py",
+      "rendererSha256": "cc82af61b7dcdaec4ce409cd96a8d2565afd984fad49ac3296ce7e099969b78c",
+      "rendererDriver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "versions": {
+        "numpy": "2.3.5",
+        "skimage": "0.26.0"
+      },
+      "frameSizePixels": [
+        620,
+        600
+      ],
+      "orthographicHalfHeightMm": 1.7416389999999997,
+      "cropCenterLocalMm": [
+        1.0619750022888184,
+        1.0619750022888184,
+        1.0619750022888184
+      ],
+      "cropSampleCenterSpanMm": 2.12395,
+      "cameraDirectionUnnormalized": [
+        1.3,
+        -1.8,
+        0.85
+      ],
+      "cameraWorldUp": [
+        0,
+        0,
+        1
+      ],
+      "primaryLight": "normalize(cameraDirection + [-0.45,0.25,0.7])",
+      "fillLight": "normalize([-0.7,-0.2,0.2])",
+      "surfaceRgb": [
+        0.8,
+        0.46,
+        0.29
+      ],
+      "backgroundRgb": [
+        0.035,
+        0.047,
+        0.058
+      ],
+      "fullViewClipNormalizedZ": 1.0,
+      "sectionClipNormalizedZ": 0.004672897196261682,
+      "sectionLocalNativeZ": 54,
+      "sectionGlobalNativeZ": 4672,
+      "clipping": "Discard fragments above the common Z plane; no cap is synthesized.",
+      "outputs": {
+        "full": {
+          "path": "tv800_40-full.png",
+          "sha256": "5a31c42869cae821c2aeeced05f0b241d2fd346ba87b3e2560fdf4f55a377d10"
+        },
+        "section": {
+          "path": "tv800_40-section.png",
+          "sha256": "ade0800e9cffd5115107488543fb3c92a2b94265a920eaa326c238761c125605"
+        }
+      },
+      "peakRssMiB": 145.74609375
+    }
+  ],
+  "allMethodsShareCameraLightingCropNormalPolicy": true,
+  "processingOrder": "Prepare scalar cores; exit. Render each method in a fresh serial subprocess; exit. Compose images.",
+  "memoryCapMiB": 500,
+  "maximumMeasuredChildRssMiB": 475.578125,
+  "figure": {
+    "path": "surface-comparison.png",
+    "width": 2536,
+    "height": 1462,
+    "bytes": 1437606,
+    "sha256": "c7448caa1a1c20d8fe682dc24ba9c0149f1bb34ed9699e5604d5cda5fa3d28ac"
+  },
+  "publicDerivative": {
+    "path": "public/assets/guided-native-v21/surface-comparison.webp",
+    "width": 1800,
+    "height": 1038,
+    "bytes": 187778,
+    "sha256": "7a1543d6f41cf125277c3b8834e5987aecf702aa5187bb73d1edf5f2f7cc7b1a",
+    "format": "WebP",
+    "quality": 86,
+    "resampling": "Lanczos",
+    "sourceFigureSha256": "c7448caa1a1c20d8fe682dc24ba9c0149f1bb34ed9699e5604d5cda5fa3d28ac"
+  },
+  "peakRssMiB": 57.06640625
+}

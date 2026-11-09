@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-08T14:54:23.157Z",
+  "testFile": "tests/echo-refinement-transition-v40.mjs",
+  "scope": "Actual production mask hashes and controller lifecycle, CPU exclusion, scene uniforms and recorded GL submissions. No complete mesh allocation, native render, browser or anatomical validation claim.",
+  "sources": {
+    "surface": {
+      "path": "public/assets/display-compact-v29/surface-manifest.json",
+      "sha256": "3323cbb6c623699219ae20eff988046baba049d968163b60248cca45f06c3b63"
+    },
+    "local": {
+      "path": "public/assets/cleanup-v30/surface-manifest.json",
+      "sha256": "f12cc01dc5151df447c8c4456b5309ace7be642906923a395100eaefa03ea43d"
+    },
+    "atlas": {
+      "path": "public/assets/reviewed-mask-v32/manifest.json",
+      "sha256": "23466336a7becdaef676bca4a7347ebce5b5899bc3269edad5fe5080e09ef2b2"
+    }
+  },
+  "runtimeHashes": {
+    "public/local-surface-refinement.js": "facb60f5715a4f20418e5a5fe9042cce1e7883e92109a9788cfd60f68900658b",
+    "public/fine-surface.js": "ff3e512133e50b62a04f0125efb05760fcabb7e2ff091f8a1be0dafa0c7df2b4",
+    "public/mesh-draw.js": "2e79794915f7a929221b295ad5150418aa93fd3b39374022a58f435ade0d9581",
+    "tests/echo-refinement-transition-v40.mjs": "52b16e563ab521302efb4051be691a3c1ffa6c426b6562d15fe2f22a5345874c"
+  },
+  "masks": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "atlasField": 4,
+      "decodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+      "sourceSampleXYZ": [
+        1099,
+        998,
+        929
+      ],
+      "triangles": 963173
+    },
+    {
+      "id": "pulmonary-regularized-v30",
+      "atlasField": 5,
+      "decodedSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+      "sourceSampleXYZ": [
+        693,
+        1282,
+        607
+      ],
+      "triangles": 846757
+    },
+    {
+      "id": "tricuspid-rv-regularized-v30",
+      "atlasField": 6,
+      "decodedSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+      "sourceSampleXYZ": [
+        648,
+        1005,
+        916
+      ],
+      "triangles": 714790
+    },
+    {
+      "id": "right-perivascular-v29",
+      "atlasField": 7,
+      "decodedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "sourceSampleXYZ": [
+        819,
+        884,
+        703
+      ],
+      "triangles": 682317
+    }
+  ],
+  "cases": [
+    {
+      "name": "completed base geometry, all four replacement surfaces and their masks survive Echo and return",
+      "passed": false,
+      "error": "echoTTE\n\nfalse !== true\n"
+    },
+    {
+      "name": "Echo reports completed interior geometry as ready without an unready overlay",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n'paused' !== 'active'\n"
+    },
+    {
+      "name": "source, cleanup, threshold, extent and mode compatibility remain required in Echo",
+      "passed": true
+    },
+    {
+      "name": "leaving Reconstruction still aborts incomplete preparation and frees only staged resources",
+      "passed": true
+    },
+    {
+      "name": "a queued preparation cancelled by the workspace transition never starts fetching",
+      "passed": true
+    }
+  ],
+  "transitions": {
+    "reconstruction": {
+      "baseActive": true,
+      "retainedRegions": 4,
+      "interiorsActive": true,
+      "refinementReady": 1,
+      "refinementCount": 4,
+      "atlasFields": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "excludedSourceSamples": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "submittedIndices": {
+        "base": 70856055,
+        "lvot-perivalvular-refinement": 2889519,
+        "pulmonary-regularized-v30": 2540271,
+        "tricuspid-rv-regularized-v30": 2144370,
+        "right-perivascular-v29": 2046951
+      },
+      "status": "active",
+      "noticeHidden": true
+    },
+    "echoTTE": {
+      "baseActive": true,
+      "retainedRegions": 4,
+      "interiorsActive": false,
+      "refinementReady": 0,
+      "refinementCount": 0,
+      "atlasFields": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "excludedSourceSamples": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "submittedIndices": {
+        "base": 70856055,
+        "lvot-perivalvular-refinement": 0,
+        "pulmonary-regularized-v30": 0,
+        "tricuspid-rv-regularized-v30": 0,
+        "right-perivascular-v29": 0
+      },
+      "status": "paused",
+      "noticeHidden": true
+    },
+    "echoTEE": {
+      "baseActive": true,
+      "retainedRegions": 4,
+      "interiorsActive": false,
+      "refinementReady": 0,
+      "refinementCount": 0,
+      "atlasFields": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "excludedSourceSamples": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "submittedIndices": {
+        "base": 70856055,
+        "lvot-perivalvular-refinement": 0,
+        "pulmonary-regularized-v30": 0,
+        "tricuspid-rv-regularized-v30": 0,
+        "right-perivascular-v29": 0
+      },
+      "status": "paused",
+      "noticeHidden": true
+    },
+    "returnToReconstruction": {
+      "baseActive": true,
+      "retainedRegions": 4,
+      "interiorsActive": true,
+      "refinementReady": 1,
+      "refinementCount": 4,
+      "atlasFields": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "excludedSourceSamples": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "submittedIndices": {
+        "base": 70856055,
+        "lvot-perivalvular-refinement": 2889519,
+        "pulmonary-regularized-v30": 2540271,
+        "tricuspid-rv-regularized-v30": 2144370,
+        "right-perivascular-v29": 2046951
+      },
+      "status": "active",
+      "noticeHidden": true
+    }
+  },
+  "passed": false
+}

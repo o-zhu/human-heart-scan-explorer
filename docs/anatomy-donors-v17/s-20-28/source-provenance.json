@@ -1,0 +1,37 @@
+{
+  "sourceSha256": "fecb093667a162ea8fff8b180f2b5b47aac7a30f96f8f4cac78f507261e30e73",
+  "dimensionsXYZ": [
+    317,
+    317,
+    338
+  ],
+  "displayDimensionsXYZ": [
+    477,
+    477,
+    509
+  ],
+  "sourceCoordinateOffsetXYZ": [
+    -0.375,
+    -0.375,
+    -0.375
+  ],
+  "sigmaLabelGridVoxels": 0.25,
+  "datasetId": "1966162746",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+  "originalDimensionsXYZ": [
+    476,
+    476,
+    508
+  ],
+  "sourceOrder": "ZYX; X fastest",
+  "sourceDtype": "uint16",
+  "sourceSpacingMmXYZ": [
+    0.31760000000000005,
+    0.31760000000000005,
+    0.31760000000000005
+  ],
+  "sourceCoordinateRule": "At display-normalized t, original s4 coordinate = t * (displayHighDimensions - 1) - 0.375. The offset registers original s4 centers to the first source fine voxel center.",
+  "expertValidated": false,
+  "otherDonorLabelsUsed": false,
+  "sourceIntensityChanged": false
+}

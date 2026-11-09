@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "ladaf-2020-31",
+  "specimen": "LADAF-2020-31",
+  "datasetId": "1966161627",
+  "doi": "10.15151/ESRF-DC-1965462390",
+  "donorAge": "69",
+  "donorSex": "female",
+  "donorMedicalInfo": "Type 2 diabetes, pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+  "metadataDirectory": "docs/donors/ladaf-2020-31",
+  "source": {
+    "format": "n5",
+    "baseUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-31/heart/19.89um_complete-organ_bm18/",
+    "nativeSpacingUm": 19.89,
+    "fineLevel": "2",
+    "highLevel": "4",
+    "window": [
+      10005,
+      22000
+    ],
+    "levels": {
+      "0": {
+        "dimensionsXYZ": [
+          6840,
+          6840,
+          8228
+        ],
+        "voxelMicrons": 19.89,
+        "rawBytes": 769903833600
+      },
+      "2": {
+        "dimensionsXYZ": [
+          1710,
+          1710,
+          2057
+        ],
+        "voxelMicrons": 79.56,
+        "rawBytes": 12029747400
+      },
+      "4": {
+        "dimensionsXYZ": [
+          428,
+          428,
+          515
+        ],
+        "voxelMicrons": 318.24,
+        "rawBytes": 188679520
+      }
+    }
+  },
+  "cleanup": {
+    "thresholdRaw": 13200,
+    "connectivity": 18,
+    "marginHighVoxels": 3,
+    "samplingGuardVoxels": 1,
+    "componentPolicy": "largest"
+  },
+  "viewsConfig": null,
+  "anatomyConfig": null,
+  "defaultThreshold": 0.26636098374322636,
+  "displayWindow": {
+    "windowEnabled": true,
+    "windowLow": 0.20800333472280116,
+    "windowHigh": 0.8749478949562317,
+    "windowGamma": 0.9,
+    "capContrast": 1
+  }
+}

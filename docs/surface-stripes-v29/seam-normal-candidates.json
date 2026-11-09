@@ -1,0 +1,29 @@
+{
+  "sourceGeometrySha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "positionsExact": true,
+  "triangleOrderExact": true,
+  "sourceScalarDataExact": true,
+  "seamPlanes": "fine Z=59+64*k",
+  "shadingBlendHalfWidthMm": 0.6352,
+  "method": "Area-weighted bilateral adjacency diffusion on source topology with angle-weighted initial normals and raised-cosine seam-only blend. No point movement.",
+  "candidates": [
+    {
+      "name": "seam2",
+      "sha256": "51561e6c16fa0c822ff64e822c6f242662268da960ce1f7c4c96e3d07e20fc19",
+      "changedNormals": 4491814,
+      "outside8SamplesUnchanged": true
+    },
+    {
+      "name": "seam4",
+      "sha256": "8ab3a276938a03a308c44835232866a182cd77d464a9942442d781ed6c2e3646",
+      "changedNormals": 4492843,
+      "outside8SamplesUnchanged": true
+    },
+    {
+      "name": "seam6",
+      "sha256": "ae8b2fe6bdf3f4bfb154dad679a870b799b7f74d4a2b248dea4001c76e360ecb",
+      "changedNormals": 4493160,
+      "outside8SamplesUnchanged": true
+    }
+  ]
+}

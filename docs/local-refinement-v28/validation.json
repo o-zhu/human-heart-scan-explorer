@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-07T04:06:02.235Z",
+  "testFile": "tests/local-refinement-v28.mjs",
+  "scope": "Actual asset hashes/layout and instrumented WebGL lifecycle; no browser speed or anatomical validation claim.",
+  "cases": [
+    {
+      "name": "real available patch meshes and masks match their exact encoded/decoded hashes and source provenance",
+      "passed": true,
+      "milliseconds": 510.51998799999996
+    },
+    {
+      "name": "manifest validation rejects wrong sources, unsafe paths, overlapping regions and memory overruns",
+      "passed": true,
+      "milliseconds": 2.5290390000000116
+    },
+    {
+      "name": "decoder rejects corrupt layout, coordinates, normals and indices, and respects byte offsets",
+      "passed": true,
+      "milliseconds": 9.702360999999996
+    },
+    {
+      "name": "geometry and packed masks remain inactive until every patch is verified and uploaded together",
+      "passed": true,
+      "milliseconds": 28.41342099999997
+    },
+    {
+      "name": "checksum, stream-size, padding and GPU failures release staged resources and preserve the old surface",
+      "passed": true,
+      "milliseconds": 46.88701299999991
+    },
+    {
+      "name": "cancelled staged work is disposed; a newer successful load ignores stale non-abort failures",
+      "passed": true,
+      "milliseconds": 24.155416999999943
+    },
+    {
+      "name": "active replacement requires the verified Gentle mesh, matching extent, lumen cleanup and active workspace",
+      "passed": true,
+      "milliseconds": 14.727018999999927
+    },
+    {
+      "name": "nearest CPU picking agrees with actual packed mask samples, byte boundaries and outside-box points",
+      "passed": true,
+      "milliseconds": 17.383129000000054
+    },
+    {
+      "name": "actual fine/native draw hooks preserve native priority and never apply the low-band discard to their own replacement",
+      "passed": true,
+      "milliseconds": 17.087733999999955
+    },
+    {
+      "name": "a synchronous fetch failure is retryable and disposal cancels unresolved preparation",
+      "passed": true,
+      "milliseconds": 28.73167000000001
+    }
+  ],
+  "assets": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "surfaceSha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+      "decodedSurfaceSha256": "92cec7c8107f4327e566b93a1cf6497e9e48bf36fc4da21ce9d8bfed1c2622bc",
+      "triangles": 282600,
+      "maskSha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+      "decodedMaskSha256": "ae767162fde094550f552da414ad5de04a3845282fbaa1c3025340c0ca0295cc",
+      "maskedVoxels": 581627,
+      "decodedBytes": 6153504
+    },
+    {
+      "id": "tricuspid-core-surface",
+      "surfaceSha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+      "decodedSurfaceSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+      "triangles": 302706,
+      "maskSha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+      "decodedMaskSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+      "maskedVoxels": 769532,
+      "decodedBytes": 9747360
+    },
+    {
+      "id": "pulmonary-valve-lumen-surface",
+      "surfaceSha256": "01887f732cb6f8fbc2d2d2e0e53b926c022c0a696bd66c1b091dbb17b430ca3e",
+      "decodedSurfaceSha256": "90f1c07ba2f9126dfc163803417cdaf31212bdc6f8df35ed336892904e991802",
+      "triangles": 535534,
+      "maskSha256": "4ed772ebefff497501ed9500bbdcd80c91619909894171640e34af8e0426e18b",
+      "decodedMaskSha256": "6334a47920260536ab51b007708c71ddc3550f4b304bcf073fe6d28a9d34ce5a",
+      "maskedVoxels": 970563,
+      "decodedBytes": 12237536
+    }
+  ],
+  "assetScope": "final public manifest",
+  "manifest": {
+    "path": "public/assets/cleanup-v28/surface-manifest.json",
+    "sha256": "b3e9a7654ace71bdad6fe94e8f5fa10811340d36c4224ec83d33f331367af7fc"
+  },
+  "budget": {
+    "regions": 3,
+    "compressedBytes": 12497761,
+    "decodedBytes": 28138400,
+    "maskDecodedBytes": 8245872,
+    "maximumDecodedBytes": 134217728,
+    "maximumMaskDecodedBytes": 16777216
+  },
+  "passed": true,
+  "memory": {
+    "rss": 138170368,
+    "heapTotal": 21024768,
+    "heapUsed": 14235968,
+    "external": 34860461,
+    "arrayBuffers": 30515447
+  },
+  "runtimeHashes": {
+    "public/local-surface-refinement.js": "3d6c463144542e565c426553646a0b6ed0baedd36ea720425b1645b358be5c8c",
+    "public/fine-surface.js": "2d6f7c8c3c88f275f6d313ddf0d2a6cd9c8c60ea25e5bdf62a04feeea13fe603",
+    "public/renderer.js": "781bb1e723c2af81fbf8e54bda72769a7bee7a6fc1f4dea8076035ebeed5b574",
+    "public/volume-picking.js": "ca64a11260fce41a41e8dfaf831491d662ab4c18df2a6d27fabeac4378f22a02"
+  }
+}

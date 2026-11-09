@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-11-07T04:59:30.796Z",
+  "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/",
+  "versionNumber": 47,
+  "checks": {
+    "coronalSagittalAxialHeadings": true,
+    "sectionMarkers": true,
+    "sectionPositionAccessibleNames": true,
+    "sagittalCutawayLink": true,
+    "enlargeAndRestoreSection": true,
+    "atlasCinematicSelected": true,
+    "backgroundCacheCopyUpdated": true,
+    "tabMarkedDeliverable": true
+  },
+  "sourceResolutionDisplayed": "317.6 µm software fallback",
+  "ctSectionsDisplayed": "Ultra · 79.4 µm",
+  "fineSurfaceBrowserVerified": false,
+  "fineSurfaceAlternativeEvidence": "../cleanup-v28/final-review/validation.json",
+  "screenshotExport": {
+    "saved": false,
+    "reason": "Cloud browser shared-file write returned ENOSPC; no broken screenshot link is delivered."
+  },
+  "limitation": "The cloud browser lacks WebGL2. Native production-GLSL rendered comparisons and exact live asset hashes verify fine geometry separately from this live UI check.",
+  "completionSummaryAttempt": {
+    "submitted": true,
+    "runtimeAccepted": false,
+    "reason": "The advertised completion_summary union was rejected by the tool adapter as missing code."
+  }
+}

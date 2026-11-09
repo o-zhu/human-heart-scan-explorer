@@ -1,0 +1,52 @@
+{
+  "experimental": true,
+  "method": "Exact opposite-face pair cancellation, then same-orientation deduplication.",
+  "nativeBankModified": false,
+  "normalsModified": false,
+  "positionsModified": false,
+  "records": [
+    {
+      "bit1": "retain",
+      "bitOrder": "little",
+      "id": "overview",
+      "mask": {
+        "bytes": 141917,
+        "decodedBytes": 187500,
+        "decodedSha256": "0572aaa7ed16165a8caccc793503992720983f814232ce4f16c3c8bb92dcb966",
+        "sha256": "3d659633f2a0335133e821c5e0c89abbdefedeb2bf08c9ebd1c79228cf4838c9",
+        "url": "/assets/noise-cleanup-v22/overview.keep-3d659633f2a0335133e821c5e0c89abbdefedeb2bf08c9ebd1c79228cf4838c9.bin.gz"
+      },
+      "originalTriangles": 1499999,
+      "removedTriangles": 508614,
+      "retainedTriangleIndexSha256": "54f370aa66d399ee67fe26e7a84b9ec5bb1343a6f3498feff31223a2cd24533e",
+      "retainedTriangles": 991385,
+      "sourceDecodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+      "sourceSha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+      "sourceUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-overview-0-f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e.hfm.gz",
+      "triangleIndexing": "zero-based original HFM triangle order"
+    },
+    {
+      "bit1": "retain",
+      "bitOrder": "little",
+      "id": "detail",
+      "mask": {
+        "bytes": 163259,
+        "decodedBytes": 312500,
+        "decodedSha256": "e7efd60d9cc3785c6879b9d0214d2a2d71419fdee27d5bfabaa54c793e451d25",
+        "sha256": "d16f2c9725d6311bb1feb20ce73383d1a8292751f8468616d521a700a7df8548",
+        "url": "/assets/noise-cleanup-v22/detail.keep-d16f2c9725d6311bb1feb20ce73383d1a8292751f8468616d521a700a7df8548.bin.gz"
+      },
+      "originalTriangles": 2500000,
+      "removedTriangles": 442866,
+      "retainedTriangleIndexSha256": "fbeb2a5d7138c83cc7c000f053aed061105935d9f4c6858c5c9fade5a0bdf4e5",
+      "retainedTriangles": 2057134,
+      "sourceDecodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+      "sourceSha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+      "sourceUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-detail-0-b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef.hfm.gz",
+      "triangleIndexing": "zero-based original HFM triangle order"
+    }
+  ],
+  "retainedFaceOrderModified": false,
+  "schema": "heart-overview-face-filter-v22.1",
+  "scope": "The two existing lossy whole-heart display LODs only; no native-grid tissue classification."
+}

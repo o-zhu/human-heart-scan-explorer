@@ -1,0 +1,64 @@
+{
+  "method": "baseline",
+  "nativeTile": null,
+  "input": {
+    "sourceRecord": "{source-cache}/guided-native-v21/denoise/surface-render/source-record.json",
+    "sourceOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "fieldHash": "d74114718020ff5241aec4b857fa9e0d8a1da4629e14757feb1cae966d9add52",
+    "threshold": 17133.400390625,
+    "encodedMesh": {
+      "format": "NBE1",
+      "bytes": 98693,
+      "decodedBytes": 218588,
+      "sha256": "3628193ba3680fa803ccda47ba9d909af9daa9b46b9c524e93daa07ccc83c30c",
+      "decodedSha256": "9c6b5fce150ed1d95c2d649e1d0a2f6833a3d25cf40503d8efefa449016b118d",
+      "sampleShapeZYX": [
+        108,
+        108,
+        108
+      ],
+      "originXYZ": [
+        0,
+        0,
+        0
+      ],
+      "vertices": 97693,
+      "triangles": 191211,
+      "activeCells": 96088,
+      "edgeCountsXYZ": [
+        33189,
+        25686,
+        38818
+      ],
+      "crossingBits": 5,
+      "sourceSpacingUm": 19.85,
+      "samplingStepNative": 1,
+      "meshSampleSpacingUm": 19.85,
+      "maximumEncodingMovementUm": 0.3101554016090456,
+      "rmsEncodingMovementUm": 0.1793537411145474,
+      "encodingMovementBoundUm": 0.31015625,
+      "connectivity": "Standard marching-cubes cases; original native integer grid edges"
+    }
+  },
+  "unfilteredTriangles": 191211,
+  "renderedTriangles": 191211,
+  "originalVertexBufferSha256": "3a674290f9d5189cecc53c57e4ce57019185933da8ecea736898253ec8cf5990",
+  "retainedFaceMaskSha256": "63f4aeeb31584f5f97102af0817e12964ab349bfe8c0368b8ad540fb5b85afd7",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": 0,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": -0.004672897196261682,
+  "cropSpanMm": 2.12395,
+  "geometryModification": "input scalar geometry",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/scalar-baseline.png",
+    "sha256": "570a872f363e253386adfc7c092a352720b6e22e4161e37089bc3b9ed6403c13"
+  },
+  "seconds": 0.5344111519953003,
+  "peakRssMiB": 225.26171875
+}

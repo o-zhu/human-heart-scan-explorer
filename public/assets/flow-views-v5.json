@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 1,
+  "revision": "source-reviewed-flow-v5",
+  "specimen": "LADAF-2021-17",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doi": "10.15151/ESRF-DC-1634390196",
+  "sourceSpacingUm": 79.4,
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "coordinateSystem": "s4 voxel-center XYZ, 317.6 um; first and last voxel centers registered to the viewer",
+  "sourceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "boundsSourceXYZ": [
+    [
+      109.0,
+      88.0,
+      14.0
+    ],
+    [
+      402.0,
+      405.0,
+      512.0
+    ]
+  ],
+  "boundsWorldXYZ": [
+    [
+      -0.241965973535,
+      -0.473534971645,
+      -0.317580340265
+    ],
+    [
+      0.31190926276,
+      0.46786389414,
+      0.281663516068
+    ]
+  ],
+  "sampling": "Trilinear oblique reformat of the existing windowed s2 display array. Lossless WebP preserves the resulting 8-bit plane pixels; original quantitative uint16 voxels are not supplied.",
+  "sourceSupport": "Existing conservative clean-scan support. Omitted exterior is zero; no texture synthesis.",
+  "references": [
+    {
+      "title": "Original complete-heart dataset",
+      "url": "https://human-organ-atlas.esrf.fr/datasets/1659197537"
+    },
+    {
+      "title": "Brunet et al., Radiology 2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39012246/"
+    },
+    {
+      "title": "Brunet et al., source anatomy and valve figures, 2023 preprint",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592740/"
+    }
+  ],
+  "presets": [
+    {
+      "id": "rv-inflow",
+      "chamber": "RV",
+      "kind": "Inflow",
+      "title": "RV inflow",
+      "subtitle": "Tricuspid apparatus",
+      "description": "An oblique long section follows the right atrial outlet into the right ventricular cavity. Rotate slightly to look behind the cut face at the leaflet and chordal region.",
+      "structures": [
+        "Tricuspid region",
+        "RV cavity",
+        "Subvalvular tissue"
+      ],
+      "cameraDistance": 0.94,
+      "closeDistance": 0.63,
+      "flip": false,
+      "review": "The open right-heart cavity, thin free wall and tricuspid-side folds were reviewed in Y150\u2013200 and X195\u2013282 source sections. Individual leaflets are not assigned names.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.032135994612,
+          0.013686867595,
+          0.103834693267
+        ],
+        "right": [
+          0.984183323974,
+          0.177152998315,
+          -0.0
+        ],
+        "up": [
+          0.175627488081,
+          -0.975708267117,
+          0.130951757946
+        ],
+        "normal": [
+          0.023198496555,
+          -0.128880536416,
+          -0.99138874166
+        ],
+        "width": 0.7296786389413988,
+        "height": 1.111531190926276,
+        "target": [
+          -0.009451795841,
+          0.063327032136,
+          0.09640831758
+        ]
+      },
+      "source": {
+        "center": [
+          253.999941149986,
+          182.07144726161,
+          271.74035295784
+        ],
+        "right": [
+          0.984183323974,
+          0.0,
+          0.177152998315
+        ],
+        "up": [
+          0.175627488081,
+          -0.130951757946,
+          -0.975708267117
+        ],
+        "normal": [
+          0.023198496555,
+          0.99138874166,
+          -0.128880536416
+        ],
+        "width": 386.0,
+        "height": 588.0,
+        "target": [
+          232.0,
+          186.0,
+          298.0
+        ]
+      },
+      "focusWidthMm": 73.048,
+      "focusHeightMm": 85.752,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/rv-inflow.webp",
+        "width": 1545,
+        "height": 2353,
+        "bytes": 546334,
+        "spacingUm": 79.4,
+        "sha256": "f88f602feeef9e88607ad4a0fb940ca28c8b4607220cb976f3dd0a5038e70358",
+        "decodedSha256": "8460a15ac87557f81907ca5e17827299b3cb1d6d922368a7f612b315c1b9a6ee",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/rv-inflow-preview.webp"
+    },
+    {
+      "id": "rv-outflow",
+      "chamber": "RV",
+      "kind": "Outflow",
+      "title": "RV outflow",
+      "subtitle": "Pulmonary valve & infundibulum",
+      "description": "The cut follows the muscular outlet toward the pulmonary root. The cusp profiles are best inspected near the superior end of the outflow tract.",
+      "structures": [
+        "RV outflow tract",
+        "Pulmonary root",
+        "Cusp region"
+      ],
+      "cameraDistance": 0.8,
+      "closeDistance": 0.55,
+      "flip": false,
+      "review": "Y260, 275, 290 and 305 candidates were compared with X145\u2013190 sections. Y292 preserves the thin cusp profiles and their muscular outlet connection more clearly than the more anterior candidates.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.034971644612,
+          -0.002835538752,
+          -0.103969754253
+        ],
+        "right": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "width": 0.5689981096408318,
+        "height": 0.9565217391304348,
+        "target": [
+          -0.119092627599,
+          -0.072778827977,
+          -0.103969754253
+        ]
+      },
+      "source": {
+        "center": [
+          255.5,
+          292.0,
+          263.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "normal": [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        "width": 301.0,
+        "height": 506.0,
+        "target": [
+          174.0,
+          292.0,
+          226.0
+        ]
+      },
+      "focusWidthMm": 57.168000000000006,
+      "focusHeightMm": 69.872,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/rv-outflow.webp",
+        "width": 1205,
+        "height": 2025,
+        "bytes": 882398,
+        "spacingUm": 79.4,
+        "sha256": "2b93b1651a8e71aac6dd4b8f8dc9358bf3ac42a1647c5eaec0aa64d2873bfff7",
+        "decodedSha256": "6dd996ed9f478d897ed08fd3dd1c10aa5833c07d63d3b69caf69d02a6423a869",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/rv-outflow-preview.webp"
+    },
+    {
+      "id": "ra-inflow",
+      "chamber": "RA",
+      "kind": "Inflow",
+      "title": "RA inflow",
+      "subtitle": "Caval-side atrial wall",
+      "description": "A broad atrial view toward the preserved venous-entry side. Follow the thin atrial wall and its folds, then turn toward the inferior outlet.",
+      "structures": [
+        "Right atrial cavity",
+        "Venous entry region",
+        "Atrial folds"
+      ],
+      "cameraDistance": 0.97,
+      "closeDistance": 0.66,
+      "flip": false,
+      "review": "The right atrial cavity and superior venous-side continuity were reviewed in Y175\u2013225 and X237\u2013310 sections. Preserved vessel ends are truncated; this view does not claim that both complete caval veins are visible.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.034971644612,
+          -0.040205129058,
+          0.128053282702
+        ],
+        "right": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "up": [
+          0.0,
+          -0.967822506788,
+          -0.251633851765
+        ],
+        "normal": [
+          -0.0,
+          0.251633851765,
+          -0.967822506788
+        ],
+        "width": 0.5689981096408318,
+        "height": 1.0793950850661627,
+        "target": [
+          0.015122873346,
+          -0.169187145558,
+          0.094517958412
+        ]
+      },
+      "source": {
+        "center": [
+          255.5,
+          169.259813450571,
+          243.231486728573
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.251633851765,
+          -0.967822506788
+        ],
+        "normal": [
+          -0.0,
+          0.967822506788,
+          0.251633851765
+        ],
+        "width": 301.0,
+        "height": 571.0,
+        "target": [
+          245.0,
+          187.0,
+          175.0
+        ]
+      },
+      "focusWidthMm": 74.636,
+      "focusHeightMm": 82.576,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/ra-inflow.webp",
+        "width": 1205,
+        "height": 2285,
+        "bytes": 471220,
+        "spacingUm": 79.4,
+        "sha256": "fb06455f2a3b5f846daba0a29a9bff70e8992444f96b8514beb4aadbfc46d07e",
+        "decodedSha256": "d403dc0dc6ab329ca096a1a0082d125225ffcb4c26a1e800a66b5ab0e15de9e6",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/ra-inflow-preview.webp"
+    },
+    {
+      "id": "ra-outflow",
+      "chamber": "RA",
+      "kind": "Outflow",
+      "title": "RA outflow",
+      "subtitle": "Tricuspid opening, atrial side",
+      "description": "Look toward the tricuspid opening from the atrial side. The cut sits just above a best-fit plane through the reviewed hinge region, leaving the ventricular side in view.",
+      "structures": [
+        "Tricuspid opening",
+        "Leaflet margins",
+        "RV beyond the opening"
+      ],
+      "cameraDistance": 0.78,
+      "closeDistance": 0.53,
+      "flip": true,
+      "review": "A plane was fitted to 14 previously reviewed tricuspid hinge landmarks, then moved 1.588 mm toward the atrium. Four nearby sections were compared. The hinge landmarks have a 1.84 mm RMS departure from the flat plane, so the view is not an annular measurement.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.044585028241,
+          -0.01757696212,
+          -0.006625005724
+        ],
+        "right": [
+          0.887256416221,
+          0.358060193174,
+          -0.290807410392
+        ],
+        "up": [
+          -0.0,
+          -0.630440487217,
+          -0.776237587391
+        ],
+        "normal": [
+          -0.461276545984,
+          0.688721779924,
+          -0.559362367329
+        ],
+        "width": 1.0189035916824196,
+        "height": 1.0756143667296787,
+        "target": [
+          0.005170045668,
+          0.046960501675,
+          0.105340989159
+        ]
+      },
+      "source": {
+        "center": [
+          260.585479939682,
+          240.504628027854,
+          255.20178703856
+        ],
+        "right": [
+          0.887256416221,
+          0.290807410392,
+          0.358060193174
+        ],
+        "up": [
+          -0.0,
+          0.776237587391,
+          -0.630440487217
+        ],
+        "normal": [
+          -0.461276545984,
+          0.559362367329,
+          0.688721779924
+        ],
+        "width": 539.0,
+        "height": 569.0,
+        "target": [
+          239.734954158491,
+          181.274616734786,
+          289.342105386094
+        ]
+      },
+      "focusWidthMm": 58.75600000000001,
+      "focusHeightMm": 57.168000000000006,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/ra-outflow.webp",
+        "width": 2157,
+        "height": 2277,
+        "bytes": 659224,
+        "spacingUm": 79.4,
+        "sha256": "d283f54ac5e231963600246f78c51ebdbc88e581fc63b20d2831351c80fb3c2d",
+        "decodedSha256": "785e5ce02b9f4a1d3cc48db1dc8cbffe3f76a149a736f32f9efadfbd1c2a8717",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/ra-outflow-preview.webp"
+    },
+    {
+      "id": "lv-inflow",
+      "chamber": "LV",
+      "kind": "Inflow",
+      "title": "LV inflow",
+      "subtitle": "Mitral apparatus & chordal region",
+      "description": "A long-axis cut through the mitral-side entrance and the collapsed left ventricular cavity. The oblique 3D angle exposes the tissue behind the cut face.",
+      "structures": [
+        "Mitral region",
+        "Chordal region",
+        "LV myocardium"
+      ],
+      "cameraDistance": 0.86,
+      "closeDistance": 0.58,
+      "flip": false,
+      "review": "The left atrial/LV connection and subvalvular tissue were reviewed in X260\u2013335 and Y250\u2013325 planes. The LV lumen is markedly collapsed, so it does not resemble a distended clinical chamber.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.027944365079,
+          -0.004635481957,
+          -0.048946003587
+        ],
+        "right": [
+          0.976187060184,
+          0.0,
+          -0.216930457819
+        ],
+        "up": [
+          0.013152230927,
+          -0.998160382884,
+          0.059185039173
+        ],
+        "normal": [
+          -0.216531388836,
+          -0.060628788874,
+          -0.97439124976
+        ],
+        "width": 0.6862003780718336,
+        "height": 0.998109640831758,
+        "target": [
+          0.100189035917,
+          0.044423440454,
+          -0.068052930057
+        ]
+      },
+      "source": {
+        "center": [
+          251.782569126847,
+          262.892435897655,
+          262.047830045009
+        ],
+        "right": [
+          0.976187060184,
+          0.216930457819,
+          0.0
+        ],
+        "up": [
+          0.013152230927,
+          -0.059185039173,
+          -0.998160382884
+        ],
+        "normal": [
+          -0.216531388836,
+          0.97439124976,
+          -0.060628788874
+        ],
+        "width": 363.0,
+        "height": 528.0,
+        "target": [
+          290.0,
+          273.0,
+          288.0
+        ]
+      },
+      "focusWidthMm": 61.93200000000001,
+      "focusHeightMm": 76.224,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/lv-inflow.webp",
+        "width": 1453,
+        "height": 2113,
+        "bytes": 817174,
+        "spacingUm": 79.4,
+        "sha256": "8d4d40103a7ea60c6f11112c0b4a0c2fefe958ec2d2e9770e3ec230c3fe24298",
+        "decodedSha256": "525d65aacecf3a097648a982f6dc1b50951f0649d081df9e4536614e75ea467a",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/lv-inflow-preview.webp"
+    },
+    {
+      "id": "lv-outflow",
+      "chamber": "LV",
+      "kind": "Outflow",
+      "title": "LV outflow",
+      "subtitle": "Aortic valve & outflow tract",
+      "description": "Follow the LV outflow tract into the aortic root. This oblique cut shows the bright arterial wall, cusp profiles and adjacent aortomitral region.",
+      "structures": [
+        "LV outflow tract",
+        "Aortic cusps",
+        "Aortomitral region"
+      ],
+      "cameraDistance": 0.86,
+      "closeDistance": 0.56,
+      "flip": false,
+      "review": "Long-axis candidate rotations of \u221230, \u221210, +10 and +30 degrees were compared. The +30 degree source-XY direction includes the cusp profiles and LV continuation with less ventricular foreshortening. Source-paper valve figures support the regional identification.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.02200047335,
+          -0.004674472214,
+          -0.039090978387
+        ],
+        "right": [
+          0.866025403784,
+          0.0,
+          -0.5
+        ],
+        "up": [
+          0.041199169128,
+          -0.996599475142,
+          0.07135905416
+        ],
+        "normal": [
+          -0.498299737571,
+          -0.082398338257,
+          -0.863080462871
+        ],
+        "width": 0.7958412098298677,
+        "height": 1.0207939508506616,
+        "target": [
+          0.04347826087,
+          0.010396975425,
+          -0.052930056711
+        ]
+      },
+      "source": {
+        "center": [
+          248.638250401937,
+          257.67912756672,
+          262.027204198867
+        ],
+        "right": [
+          0.866025403784,
+          0.5,
+          0.0
+        ],
+        "up": [
+          0.041199169128,
+          -0.07135905416,
+          -0.996599475142
+        ],
+        "normal": [
+          -0.498299737571,
+          0.863080462871,
+          -0.082398338257
+        ],
+        "width": 421.0,
+        "height": 540.0,
+        "target": [
+          260.0,
+          265.0,
+          270.0
+        ]
+      },
+      "focusWidthMm": 61.93200000000001,
+      "focusHeightMm": 76.224,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/lv-outflow.webp",
+        "width": 1685,
+        "height": 2161,
+        "bytes": 967742,
+        "spacingUm": 79.4,
+        "sha256": "c1ff3c639e70d54057b4967bf32c4ceeb698d93218dcd2962330059aa26168c6",
+        "decodedSha256": "4151441aa04fcf5aab114f83f9f97aea293ea1b94129353d344eea1d443d434c",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/lv-outflow-preview.webp"
+    },
+    {
+      "id": "la-inflow",
+      "chamber": "LA",
+      "kind": "Inflow",
+      "title": "LA inflow",
+      "subtitle": "Pulmonary venous entry region",
+      "description": "A lateral atrial cut across the preserved pulmonary venous entry region. Inspect the folded atrial lining and the transition into the short vessel ends.",
+      "structures": [
+        "Left atrial cavity",
+        "Venous entry region",
+        "Atrial folds"
+      ],
+      "cameraDistance": 0.88,
+      "closeDistance": 0.59,
+      "flip": false,
+      "review": "X300, 310, 320 and 330 planes were compared. X310 shows continuity between the atrial cavity and the preserved venous-side openings; it does not show or individually identify all four pulmonary veins.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.137996219282,
+          -0.002835538752,
+          -0.017958412098
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        "width": 0.6143667296786389,
+        "height": 0.9565217391304348,
+        "target": [
+          0.137996219282,
+          -0.140831758034,
+          -0.122873345936
+        ]
+      },
+      "source": {
+        "center": [
+          310.0,
+          246.5,
+          263.0
+        ],
+        "right": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "width": 325.0,
+        "height": 506.0,
+        "target": [
+          310.0,
+          302.0,
+          190.0
+        ]
+      },
+      "focusWidthMm": 61.93200000000001,
+      "focusHeightMm": 74.636,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/la-inflow.webp",
+        "width": 1301,
+        "height": 2025,
+        "bytes": 642038,
+        "spacingUm": 79.4,
+        "sha256": "c169cfee252a38608286014d223ea3a9592c94ba5657ffdca55797169158cb1c",
+        "decodedSha256": "d6ea66084c7d5e513e8e9f9d075df96f877443b928e33776565bd9dbdc624355",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/la-inflow-preview.webp"
+    },
+    {
+      "id": "la-outflow",
+      "chamber": "LA",
+      "kind": "Outflow",
+      "title": "LA outflow",
+      "subtitle": "Mitral opening, atrial side",
+      "description": "View the mitral-side outlet from above the ventricular cavity. Use the close-up and a small rotation to inspect the folded leaflet tissue below the cut.",
+      "structures": [
+        "Mitral opening",
+        "Leaflet tissue",
+        "LV beyond the opening"
+      ],
+      "cameraDistance": 0.76,
+      "closeDistance": 0.51,
+      "flip": false,
+      "review": "Four nearby oblique levels centered at source Z262, 270, 277 and 285 were compared. The most atrial level leaves the leaflet/subvalvular region behind the plane rather than cutting deeply through it.",
+      "note": "These are anatomical starting views of a fixed, partly collapsed specimen. The plane is manually placed; it is not a segmented valve annulus or a clinical ultrasound window.",
+      "world": {
+        "center": [
+          0.04738217715,
+          -0.036285887995,
+          -0.017958412098
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.934783580588,
+          0.355217760624,
+          -0.0
+        ],
+        "normal": [
+          0.355217760624,
+          -0.934783580588,
+          -0.0
+        ],
+        "width": 0.6143667296786389,
+        "height": 0.8695652173913043,
+        "target": [
+          0.130434782609,
+          -0.004725897921,
+          -0.066162570888
+        ]
+      },
+      "source": {
+        "center": [
+          262.065171712348,
+          246.5,
+          245.304765250692
+        ],
+        "right": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "up": [
+          0.934783580588,
+          0.0,
+          0.355217760624
+        ],
+        "normal": [
+          0.355217760624,
+          0.0,
+          -0.934783580588
+        ],
+        "width": 325.0,
+        "height": 460.0,
+        "target": [
+          306.0,
+          272.0,
+          262.0
+        ]
+      },
+      "focusWidthMm": 55.580000000000005,
+      "focusHeightMm": 58.75600000000001,
+      "threshold": 0.28,
+      "texture": {
+        "url": "./assets/flow-textures/la-outflow.webp",
+        "width": 1301,
+        "height": 1841,
+        "bytes": 496912,
+        "spacingUm": 79.4,
+        "sha256": "39581ce63e26c4ef96b802c740e4c9912a203e48bb5d7fdba7f5c069034d088d",
+        "decodedSha256": "e73f6cc0dee9321c1c450dc91fc547501068d21e0e9d8499564a3f3bb9648555",
+        "format": "lossless WebP",
+        "maximumRoundTripError": 0
+      },
+      "previewUrl": "./assets/flow-textures/la-outflow-preview.webp"
+    }
+  ]
+}

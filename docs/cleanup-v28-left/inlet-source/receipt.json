@@ -1,0 +1,96 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 119,
+    "decodedBrickReads": 144,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "early-inlet-y-serial",
+      "title": "Separate X313-view inlet sheet followed in serial Y planes",
+      "lowerXYZ": [
+        1120,
+        720,
+        380
+      ],
+      "upperXYZ": [
+        1390,
+        941,
+        750
+      ],
+      "ys": [
+        740,
+        760,
+        780,
+        800,
+        820,
+        840,
+        860,
+        880,
+        900,
+        920
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 740,
+          "sourcePlaneSha256": "3b11c1d93c240f7be61eef751e4786af7a8eb33740aa384e0e0a478609155f8d",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 760,
+          "sourcePlaneSha256": "253b08587ac894f4aaf4c28aafccf6cf524c805084810d6415992cc68cb76732",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 780,
+          "sourcePlaneSha256": "eb3dadc93c98f466ed53d086f0326d465bf8b91845860f48411d48952fa391a6",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 800,
+          "sourcePlaneSha256": "37b9c2ee3e8a126b19d7b1a512cf165340f9be92e5de8c326e8a20d54fe94870",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 820,
+          "sourcePlaneSha256": "8c384ef01b4b5914fa36739b892c84f1fffb9f37e8cf3ec4f674b320f9894d32",
+          "excludedInPlane": 7120
+        },
+        {
+          "fineY": 840,
+          "sourcePlaneSha256": "e2278c15c4e33bdd2e48eb744a6ca2de506c93db8839d879ab6c68d39642d388",
+          "excludedInPlane": 17067
+        },
+        {
+          "fineY": 860,
+          "sourcePlaneSha256": "d48e0f4ff36ba9779704584ba55f8e1ac128e4d2b41e6d2e12a635bb7ec3e7d8",
+          "excludedInPlane": 15431
+        },
+        {
+          "fineY": 880,
+          "sourcePlaneSha256": "69cb887553732b9974d29647585e508a22a7eed384be29a9dbf704d7dbdb5f79",
+          "excludedInPlane": 12514
+        },
+        {
+          "fineY": 900,
+          "sourcePlaneSha256": "9cb358f216a8a714f628e93254cac46b4ac0eb139209de7c509e34ae701ef275",
+          "excludedInPlane": 12207
+        },
+        {
+          "fineY": 920,
+          "sourcePlaneSha256": "2affc426dd1b047a8ec04c2e9a1cef5914d7fb831c24df7ca3aed8c0e9c7331e",
+          "excludedInPlane": 12003
+        }
+      ]
+    }
+  ]
+}

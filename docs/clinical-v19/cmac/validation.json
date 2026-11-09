@@ -1,0 +1,55 @@
+{
+  "totalCompressedBytes": 59548571,
+  "totalDecodedBytes": 167972399,
+  "frames": 45,
+  "series": [
+    {
+      "id": "whole-heart-mri",
+      "dimensions": [
+        205,
+        245,
+        95
+      ],
+      "spacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "frameCount": 1,
+      "compressedBytes": 3707588,
+      "maximumHighClippedFraction": 0.0
+    },
+    {
+      "id": "ultrasound",
+      "dimensions": [
+        208,
+        224,
+        208
+      ],
+      "spacingMm": [
+        0.658114,
+        0.667832,
+        0.580462
+      ],
+      "frameCount": 14,
+      "compressedBytes": 42293623,
+      "maximumHighClippedFraction": 0.0
+    },
+    {
+      "id": "cine-sax",
+      "dimensions": [
+        256,
+        256,
+        14
+      ],
+      "spacingMm": [
+        1.25,
+        1.25,
+        8.000000622375808
+      ],
+      "frameCount": 30,
+      "compressedBytes": 13547360,
+      "maximumHighClippedFraction": 0.0008065359933035714
+    }
+  ]
+}

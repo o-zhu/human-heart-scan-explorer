@@ -1,0 +1,144 @@
+{
+  "scope": "Native production GLSL and mesh review; no browser, DOM/SVG callout, clinical registration or performance claim.",
+  "referenceAnatomy": "BodyParts3D / DBCLS, CC BY 4.0; not donor-registered.",
+  "baselineCommit": "4b22b2f9fd66314e716c39b1148f8682bdac06f1",
+  "runtimeSha256": "8b27c9846b364f4469a64bd2632c5e9bd6154e91dbf25470314a61d3d73940a2",
+  "mainMeshComparison": {
+    "phased": {
+      "beforeSha256": "72c97a38ea4c6e5bb97d2c460407319e340a1cd63a57e459a56044ea1f575152",
+      "afterSha256": "72c97a38ea4c6e5bb97d2c460407319e340a1cd63a57e459a56044ea1f575152"
+    },
+    "tee": {
+      "beforeSha256": "4e01ca189606208099f5cdbde0d9589f7600ce662314331b206948dff065f1a3",
+      "afterSha256": "4e01ca189606208099f5cdbde0d9589f7600ce662314331b206948dff065f1a3"
+    }
+  },
+  "scales": {
+    "beforeReference": 0.45,
+    "afterReference": 1.2,
+    "beforeMain": 0.4,
+    "afterMain": 0.4
+  },
+  "shaders": [
+    {
+      "name": "VERTEX",
+      "compiled": true,
+      "sha256": "8877fc8aea7c79abf449455759f84092f96e9cf230e72e61ca980ae45913a539"
+    },
+    {
+      "name": "FRAGMENT",
+      "compiled": true,
+      "sha256": "e744244941dd20ce2bc4c5003bc0dfed8b9b2d67f1ab486e70db7eeac72c8864"
+    }
+  ],
+  "views": [
+    {
+      "id": "apical",
+      "camera": "front",
+      "beforeVisibleProbePixels": 1048,
+      "afterVisibleProbePixels": 8874,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.98732,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "parasternal",
+      "camera": "front",
+      "beforeVisibleProbePixels": 627,
+      "afterVisibleProbePixels": 5643,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.68285,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "parasternal-moved-rotated",
+      "camera": "front",
+      "beforeVisibleProbePixels": 921,
+      "afterVisibleProbePixels": 5688,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.48039,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "short-axis",
+      "camera": "front",
+      "beforeVisibleProbePixels": 388,
+      "afterVisibleProbePixels": 3331,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.31682,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "atrial",
+      "camera": "front",
+      "beforeVisibleProbePixels": 0,
+      "afterVisibleProbePixels": 131,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.66206,
+      "verticesOutsideView": 0,
+      "vertexCount": 8544
+    },
+    {
+      "id": "apical",
+      "camera": "oblique",
+      "beforeVisibleProbePixels": 803,
+      "afterVisibleProbePixels": 6737,
+      "afterVisibleIndicatorPixels": 23,
+      "maxNormalizedExtent": 0.76267,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "parasternal",
+      "camera": "oblique",
+      "beforeVisibleProbePixels": 611,
+      "afterVisibleProbePixels": 5257,
+      "afterVisibleIndicatorPixels": 106,
+      "maxNormalizedExtent": 0.85624,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "parasternal-moved-rotated",
+      "camera": "oblique",
+      "beforeVisibleProbePixels": 344,
+      "afterVisibleProbePixels": 4197,
+      "afterVisibleIndicatorPixels": 11,
+      "maxNormalizedExtent": 0.61573,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "short-axis",
+      "camera": "oblique",
+      "beforeVisibleProbePixels": 586,
+      "afterVisibleProbePixels": 5052,
+      "afterVisibleIndicatorPixels": 101,
+      "maxNormalizedExtent": 0.87765,
+      "verticesOutsideView": 0,
+      "vertexCount": 19860
+    },
+    {
+      "id": "atrial",
+      "camera": "oblique",
+      "beforeVisibleProbePixels": 39,
+      "afterVisibleProbePixels": 451,
+      "afterVisibleIndicatorPixels": 0,
+      "maxNormalizedExtent": 0.59503,
+      "verticesOutsideView": 0,
+      "vertexCount": 8544
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "middleUnchanged": {
+    "meshBytes": true,
+    "scale": true,
+    "modelMatrix": true,
+    "nativePixels": true
+  },
+  "verified": true
+}

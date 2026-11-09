@@ -1,0 +1,89 @@
+{
+  "verifiedAt": "2026-11-06T23:04:12.000588+00:00",
+  "baseUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "checks": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 60008,
+      "sha256": "c0b34c21cfc41d7d56e51d57f2e752c59ffccf1507a0b207b10024eaed64939e",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "renderer.js",
+      "status": 200,
+      "bytes": 55104,
+      "sha256": "ca20ea32903b0b55e71bfc9ad91a05049ade8b014e5949d6366e454fee3eef07",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "fine-surface.js",
+      "status": 200,
+      "bytes": 27200,
+      "sha256": "b4fe471a36c8ce7a4d98027ec47ae1c23dbd47b20bb5e5b5c0abcb7d19d045db",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "native-main-detail.js",
+      "status": 200,
+      "bytes": 18097,
+      "sha256": "f5c62ccccf95cd3a4b6b70ef35d0e644b483d431b7d80af743202756495b02a1",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "mesh-debris-cleanup-v25.js",
+      "status": 200,
+      "bytes": 3440,
+      "sha256": "1db42a531aaefc64b57c63389855cd61b5ff259fcc5091a7db11deaf193c1903",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "lumen-cleanup-v23.js",
+      "status": 200,
+      "bytes": 6257,
+      "sha256": "ae18681c6226f5bbc4e03699e47391f2182da08337290b6c20b8ade8c18d12ae",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v25/lumen-manifest.json",
+      "status": 200,
+      "bytes": 25710,
+      "sha256": "7e6606144d4c0f197969b383880bf866929ceec0432b529ab05be044d4ae7567",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v25/debris-manifest.json",
+      "status": 200,
+      "bytes": 2206,
+      "sha256": "d78edee7299217c23a8dc94ba805829e3fbd044614fdc53cb9ac8b0319c64d75",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v25/atrial-reviewed.raw.gz",
+      "status": 200,
+      "bytes": 567757,
+      "sha256": "392fd09683b270b33b303627f01790c2049bdbc2782316f83bbd93ac130a4459",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v25/outflow-reviewed.raw.gz",
+      "status": 200,
+      "bytes": 48040,
+      "sha256": "d44550c30be4eb09667290ebdf9a3144deeb5b8005da35b7c916708c0a0ad1dc",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "assets/cleanup-v25/debris-gentle-vertices.raw.gz",
+      "status": 200,
+      "bytes": 893225,
+      "sha256": "a99de5d5fc7813914c5a23f060b33dadd057e1633baa9442e8feab2817fd718f",
+      "matchesTestedSource": true
+    }
+  ],
+  "allMatch": true,
+  "fineBankComplete": true,
+  "fineUploadsEnabled": false,
+  "emptyPutStatus": 405,
+  "siteServiceAuthorizationUsed": true,
+  "credentialsRecorded": false
+}

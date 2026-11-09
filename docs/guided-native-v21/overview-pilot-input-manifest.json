@@ -1,0 +1,142 @@
+{
+  "schema": "guided-native-overview-v21.1-inputs",
+  "donorId": "ladaf-2021-17",
+  "runFingerprint": "823633a3946754bad34fa6fed008c709c9ae44ff8666c890ebde41e5132d960f",
+  "runManifestSha256": "80415a329c27945f5fee6981d2ba710a607b9c72378f30767d73d9f9f5f992bd",
+  "corePlanSha256": "af6bbc35991a0e6d2d0e309958b72e56ba66ac8904897f151302a1b049805ef8",
+  "corePlanCoordinateSetVerified": true,
+  "sourceObjectLedgerSha256": "e57ef99e2638d634e00ed296d9bc7357c5d543c3e6533f7c220e0385da886166",
+  "completeCorePlan": true,
+  "pilot": true,
+  "plannedCoreBlocks": 8,
+  "completedOverviewBlocks": 8,
+  "nativeDimensionsXYZ": [
+    7614,
+    7614,
+    8480
+  ],
+  "sourceSpacingUm": 19.85,
+  "overviewSamplingStepNative": 4,
+  "overviewSampleSpacingUm": 79.4,
+  "sourceConfiguration": {
+    "schema": "guided-native-processing-v21.1",
+    "halo": 16,
+    "thresholdRaw": 17133.4,
+    "tvWeightRaw": 800,
+    "tvIterations": 16,
+    "tvStoppingEpsilon": 0,
+    "priorGaussianSigmaVoxels": 0.8,
+    "thinGuard": true,
+    "nativeBandInnerVoxels": 8,
+    "nativeBandOuterVoxels": 12,
+    "nativeSourceSpacingUm": 19.85,
+    "edgeCrossingBits": 5,
+    "overviewSamplingStepNative": 4
+  },
+  "records": [
+    {
+      "coordinatesXYZ": [
+        35,
+        30,
+        36
+      ],
+      "path": "tiles/35_30_36.lod.nbe.gz",
+      "bytes": 8996,
+      "sha256": "1b00c6ed3ac615f4697ce7ae8a5e87bf6d367b6ac46b3c54e9ff430c8b4d7d86",
+      "triangles": 17283,
+      "vertices": 9776,
+      "recordSha256": "81eca36427365dcc281fb5d0aef93f0936c1008650cc75edf11e855798e33db5"
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        30,
+        37
+      ],
+      "path": "tiles/35_30_37.lod.nbe.gz",
+      "bytes": 9362,
+      "sha256": "e71dd04069b92dcd3839be6479a0275f3fbc2d3af9b861f0f15fe4cebe130da6",
+      "triangles": 17411,
+      "vertices": 10543,
+      "recordSha256": "a0d58f416b5592653a8fdb6e9a41ff85ff14687d9530a0008b52a130be9a6e8b"
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        31,
+        36
+      ],
+      "path": "tiles/35_31_36.lod.nbe.gz",
+      "bytes": 8892,
+      "sha256": "c1aae72f3161835376e56366b4e33123d3cf11f5a54196da26b50fe9a9443438",
+      "triangles": 17752,
+      "vertices": 9747,
+      "recordSha256": "41d90b225e6472c8e178a3cfe6e823a2217592b275a741e858ba662a95e55840"
+    },
+    {
+      "coordinatesXYZ": [
+        35,
+        31,
+        37
+      ],
+      "path": "tiles/35_31_37.lod.nbe.gz",
+      "bytes": 9661,
+      "sha256": "799c01389350fbe8fed4bf1533fcfcc2193a146e074ae90bbad546b817a03d19",
+      "triangles": 18947,
+      "vertices": 10927,
+      "recordSha256": "0f99c1c0c934c4647abf5ac825cbd9303b222177886ad9661d0e22569303821e"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        30,
+        36
+      ],
+      "path": "tiles/36_30_36.lod.nbe.gz",
+      "bytes": 10156,
+      "sha256": "db54a61dc58cb9b4d636d12edaf20f605c9791b3ee57f34120ea7bd1eccfda67",
+      "triangles": 20496,
+      "vertices": 11471,
+      "recordSha256": "34e58f073e703ecf3f688982da88d1aae296dbb369843960455acacf6e9bf4b7"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        30,
+        37
+      ],
+      "path": "tiles/36_30_37.lod.nbe.gz",
+      "bytes": 11666,
+      "sha256": "a129e5db5d1417300644fe9ba32da6634123e592768109b968173a7aeb90dd03",
+      "triangles": 23962,
+      "vertices": 13443,
+      "recordSha256": "92bb7a23e4262cee332afa72db723f763c2ebc7544528710e7a25a7bcaea215c"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        31,
+        36
+      ],
+      "path": "tiles/36_31_36.lod.nbe.gz",
+      "bytes": 9395,
+      "sha256": "bfb8a938070bb1b13ff85ef051d1e7bede85a52d0cb83441dc793df4a35547e7",
+      "triangles": 18111,
+      "vertices": 10290,
+      "recordSha256": "18be35f355a3e19d5da123abdcc699bccd00dec3bbb5d7864c15d3bc6d81d40e"
+    },
+    {
+      "coordinatesXYZ": [
+        36,
+        31,
+        37
+      ],
+      "path": "tiles/36_31_37.lod.nbe.gz",
+      "bytes": 15159,
+      "sha256": "800bedf634ba1c872ffc17198bd2800a2614139788daa744f3e4e2baa300019d",
+      "triangles": 33211,
+      "vertices": 17865,
+      "recordSha256": "f62a2c5547bd9ec4fbd4dbd5f2703e0cbabe4b3d6e1b5882eec482250ecc8fdc"
+    }
+  ]
+}

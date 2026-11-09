@@ -1,0 +1,126 @@
+{
+  "points": [
+    {
+      "xyz": [
+        893,
+        1207,
+        602
+      ],
+      "raw": 63,
+      "sigma05": 66.55091857910156,
+      "sigma08": 67.59091186523438,
+      "denseWallDistanceFine": 5.0,
+      "denseWallDistanceMm": 0.397,
+      "nearestForegroundDistanceFine": 1.0,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    },
+    {
+      "xyz": [
+        932,
+        1240,
+        694
+      ],
+      "raw": 72,
+      "sigma05": 74.79483032226562,
+      "sigma08": 74.44644927978516,
+      "denseWallDistanceFine": 3.1622776601683795,
+      "denseWallDistanceMm": 0.2510848462173693,
+      "nearestForegroundDistanceFine": 0.0,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    },
+    {
+      "xyz": [
+        957,
+        1268,
+        738
+      ],
+      "raw": 62,
+      "sigma05": 65.23632049560547,
+      "sigma08": 68.52470397949219,
+      "denseWallDistanceFine": 2.449489742783178,
+      "denseWallDistanceMm": 0.1944894855769843,
+      "nearestForegroundDistanceFine": 1.0,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    },
+    {
+      "xyz": [
+        900,
+        1216,
+        630
+      ],
+      "raw": 69,
+      "sigma05": 67.14910125732422,
+      "sigma08": 65.1368637084961,
+      "denseWallDistanceFine": 4.898979485566356,
+      "denseWallDistanceMm": 0.3889789711539686,
+      "nearestForegroundDistanceFine": 2.449489742783178,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    },
+    {
+      "xyz": [
+        910,
+        1224,
+        660
+      ],
+      "raw": 76,
+      "sigma05": 74.55886840820312,
+      "sigma08": 73.2630844116211,
+      "denseWallDistanceFine": 2.23606797749979,
+      "denseWallDistanceMm": 0.1775437974134833,
+      "nearestForegroundDistanceFine": 0.0,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    },
+    {
+      "xyz": [
+        940,
+        1250,
+        700
+      ],
+      "raw": 62,
+      "sigma05": 63.181602478027344,
+      "sigma08": 64.73988342285156,
+      "denseWallDistanceFine": 7.54983443527075,
+      "denseWallDistanceMm": 0.5994568541604975,
+      "nearestForegroundDistanceFine": 1.0,
+      "nearestForegroundComponentSamples": 2067090,
+      "nearestForegroundConnectedToDenseWall": true,
+      "originalMeshComponent": 7
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 42,
+    "decodedBrickReads": 42,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "sourceLowerXYZ": [
+    845,
+    1165,
+    550
+  ],
+  "sourceUpperExclusiveXYZ": [
+    1015,
+    1305,
+    795
+  ],
+  "localDenseWallSamples": 1285300,
+  "localForegroundMainWallComponentSamples": 2067090,
+  "result": "The sampled retained strip lies inside the existing nine-sample mesh allowance of anchored dense source, with nearest foreground in the same local connected component as that wall. A broad exclusion cannot safely separate it from the original supported wall.",
+  "limit": "Local source/geometry evidence only. It does not classify the material as normal anatomy, clot or artifact, and does not prove every point on the strip has the same relationship."
+}

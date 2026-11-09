@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "revision": "continuity-gated-v5",
+  "title": "Source-guided regional anatomy",
+  "specimen": "LADAF-2021-17",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "sourceDoi": "10.15151/ESRF-DC-1634390196",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "dimensions": [
+    317,
+    317,
+    354
+  ],
+  "volumeUrl": "./assets/anatomy/labels.raw.gz",
+  "arrayOrder": "ZYX in NumPy; X-fastest bytes",
+  "dtype": "uint8",
+  "registration": "Endpoints match original s4 voxel centers [0,0,0] and [474,474,529]. Sample nearest at round(sourceNormalizedXYZ*(dimensions-1)).",
+  "sourceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "sourceSpacingUm": 317.6,
+  "labelGridSpacingUmXYZ": [
+    476.4,
+    476.4,
+    475.950142
+  ],
+  "rendering": "Labels tint independently measured tissue density; labels must never be rendered as filled chamber contents.",
+  "compressedBytes": 316865,
+  "decodedBytes": 35573106,
+  "sha256": "e15ebb51b895aa325fe1f71993f1acfe2af24cc1f1e67b1bd4e26b65cffde055",
+  "compressedSha256": "777feccaf18010283acbdb1123b5f71d83b2c02fba98bd9af44808a0fe7e5864",
+  "method": "Source-guided LV and tricuspid geometry, connected measured arterial-wall cores, an independently reviewed pulmonary hinge and RV outflow corridor, followed by constrained tissue-geodesic propagation. Edge watershed and unconstrained geodesic alternatives were compared and rejected where they retained incorrect wall identities. Image intensities and rendering geometry are unchanged.",
+  "methodParameters": {
+    "baselineRevision": "source-contours-v4",
+    "workingGaussianSigma": 0.35,
+    "gridDimensionsXYZ": [
+      317,
+      317,
+      354
+    ],
+    "seedBoundaryBandWorkingVoxels": 5,
+    "geodesicConnectivity": 6,
+    "edgeDifferenceScale": 600,
+    "lowDensityGapPenalty": 4,
+    "maximumGeodesicCost": 85,
+    "aorticCoreThreshold": 20100,
+    "pulmonaryCoreThreshold": 19050,
+    "aorticCoreVoxels": 65947,
+    "pulmonaryCoreVoxels": 80567,
+    "rvotNewSeedVoxels": 53442,
+    "newAorticIdentityMaximumDistanceWorkingVoxels": 3,
+    "pulmonaryGate": "sourceZ = 220 + 0.50*(sourceX-175) + 0.13*(sourceY-290), visually estimated"
+  },
+  "septalDisplayConvention": "The continuous compact interventricular myocardium is assigned to the LV myocardial body. RV free wall and its nonseptal trabeculated structures remain RV. The septum is shared anatomy; this color convention is not a separate septal segmentation.",
+  "validation": "Twelve independent pre-candidate chamber/arterial control points, five separately recorded source-reviewed aortic/RVOT error points, and twenty existing v4 boundary regression points pass. Multiplanar source/overlay comparisons were reviewed. These are targeted diagnostic checks, not global segmentation accuracy, expert ground truth, a Dice score or clinical validation.",
+  "limitations": [
+    "Approximate regional annotations; no expert reference segmentation or trained segmentation model.",
+    "The compact interventricular septum is displayed with the LV myocardial body as a regional convention.",
+    "Pulmonary hinge and LV/atrial{local-home} transitions are visually estimated. Shared fibrous tissue, valve attachment zones and small vessels remain uncertain.",
+    "Arterial-wall intensity is used only with spatial and continuity constraints; it does not independently establish tissue identity.",
+    "Valves, coronary vessels, individual pulmonary veins, caval veins and appendages are not separately segmented.",
+    "No fiber tractography, deformation, slice realignment or synthetic anatomical reconstruction is performed.",
+    "These labels are not for quantitative chamber volume, wall thickness, procedural or diagnostic measurements."
+  ],
+  "sourceReferences": [
+    {
+      "title": "Original LADAF-2021-17 complete-heart dataset",
+      "url": "https://human-organ-atlas.esrf.fr/datasets/1659197537"
+    },
+    {
+      "title": "Brunet et al., 2023 preprint, Figures 3 and 5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592740/"
+    },
+    {
+      "title": "Brunet et al., Radiology 2024;312(1):e232731",
+      "url": "https://doi.org/10.1148/radiol.232731"
+    }
+  ],
+  "labels": [
+    {
+      "id": 0,
+      "key": "unclassified",
+      "name": "Unclassified tissue",
+      "color": "#9ba9b0",
+      "confidence": "Unclassified",
+      "description": "Tissue outside the six regional annotations remains neutral. Coronary, cardiac venous, individual pulmonary-vein and caval identities are not separately inferred.",
+      "method": "No anatomical identity is asserted."
+    },
+    {
+      "id": 1,
+      "key": "lv",
+      "name": "Left ventricle",
+      "color": "#e36d73",
+      "confidence": "Approximate",
+      "description": "Continuous LV myocardial body, including compact septal myocardium under the stated display convention. Source-guided contours are retained; a local arterial-shell correction prevents aortic root wall from being mistaken for compact LV muscle.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 1498455,
+      "boundsNormalizedXYZ": [
+        [
+          0.2848101265822785,
+          0.3575949367088608,
+          0.42209631728045327
+        ],
+        [
+          0.8354430379746836,
+          0.7784810126582279,
+          0.9461756373937678
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        237.0,
+        235.5,
+        340.1785
+      ]
+    },
+    {
+      "id": 2,
+      "key": "rv",
+      "name": "Right ventricle",
+      "color": "#54a6e6",
+      "confidence": "Approximate",
+      "description": "RV free wall, nonseptal trabeculated structures and muscular outflow. The ventricular side of the pulmonary hinge is explicitly connected to the RV, preventing a tricuspid-divider rule from recoloring the RV outflow as atrium or artery.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 552330,
+      "boundsNormalizedXYZ": [
+        [
+          0.23417721518987342,
+          0.2088607594936709,
+          0.3626062322946176
+        ],
+        [
+          0.7879746835443038,
+          0.7246835443037974,
+          0.9150141643059491
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        153.0,
+        184.5,
+        347.6714
+      ]
+    },
+    {
+      "id": 3,
+      "key": "la",
+      "name": "Left atrium",
+      "color": "#f2b36b",
+      "confidence": "Provisional",
+      "description": "Collapsed LA territory refined along connected measured tissue. Mitral, appendage and individual pulmonary-vein transitions remain provisional.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 447661,
+      "boundsNormalizedXYZ": [
+        [
+          0.4778481012658228,
+          0.27531645569620256,
+          0.0906515580736544
+        ],
+        [
+          0.8291139240506329,
+          0.7943037974683544,
+          0.5439093484419264
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        322.5,
+        267.0,
+        221.7904
+      ]
+    },
+    {
+      "id": 4,
+      "key": "ra",
+      "name": "Right atrium",
+      "color": "#63c7ba",
+      "confidence": "Approximate",
+      "description": "RA wall and pectinate territory extending to the reviewed curved tricuspid junction. The muscular RV outflow is excluded from this atrial division.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 611407,
+      "boundsNormalizedXYZ": [
+        [
+          0.25,
+          0.1930379746835443,
+          0.1558073654390935
+        ],
+        [
+          0.8322784810126582,
+          0.5917721518987342,
+          0.6373937677053825
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        231.0,
+        157.5,
+        280.2351
+      ]
+    },
+    {
+      "id": 5,
+      "key": "aorta",
+      "name": "Aortic outflow",
+      "color": "#c499e8",
+      "confidence": "Approximate",
+      "description": "Connected aortic arterial wall and proximal root, using its measured intensity, source location and continuity. Color extension into adjacent LV muscle and the atrial/mitral junction is constrained; exact annular boundaries remain approximate.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 194825,
+      "boundsNormalizedXYZ": [
+        [
+          0.26582278481012656,
+          0.4462025316455696,
+          0.0906515580736544
+        ],
+        [
+          0.6107594936708861,
+          0.7468354430379747,
+          0.5042492917847026
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        193.5,
+        241.5,
+        163.3456
+      ]
+    },
+    {
+      "id": 6,
+      "key": "pulmonary",
+      "name": "Pulmonary outflow",
+      "color": "#61cce0",
+      "confidence": "Approximate",
+      "description": "Pulmonary arterial wall and root proximal to a source-reviewed, oblique pulmonary hinge. The muscular RV outflow below that transition retains ventricular identity; distal branches are not separately identified.",
+      "method": "Source-guided anatomy and arterial-wall continuity with constrained tissue-geodesic refinement.",
+      "voxelCount": 379428,
+      "boundsNormalizedXYZ": [
+        [
+          0.3037974683544304,
+          0.3924050632911392,
+          0.0339943342776204
+        ],
+        [
+          0.6518987341772152,
+          0.8481012658227848,
+          0.49291784702549574
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        204.0,
+        364.5,
+        160.3484
+      ]
+    }
+  ],
+  "generatedDate": "2026-11-04",
+  "generator": "scripts/anatomy-v5-prepare.py",
+  "supportsQuantification": false
+}

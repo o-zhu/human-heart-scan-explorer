@@ -1,0 +1,913 @@
+{
+  "id": "lvot-perivalvular-refinement",
+  "surface": {
+    "format": "HFM1-gzip",
+    "file": "lvot-perivalvular-refinement.hfm.gz",
+    "vertices": 477150,
+    "triangles": 963173,
+    "vertexCount": 477150,
+    "indexCount": 2889519,
+    "positionOffset": 32,
+    "normalOffset": 2862932,
+    "indexOffset": 5725832,
+    "compressedBytes": 10313927,
+    "decodedBytes": 17283908,
+    "sha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+    "decodedSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17",
+    "bounds": {
+      "min": [
+        0.033081285655498505,
+        -0.06710775196552277,
+        -0.13752363622188568
+      ],
+      "max": [
+        0.18005670607089996,
+        0.16115312278270721,
+        0.0018903592135757208
+      ]
+    },
+    "positionEncoding": "uint16 normalized in local world bounds",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal",
+    "gpuBytes": 17283876
+  },
+  "lowBandMask": {
+    "file": "lvot-perivalvular-refinement-low-band.bits.gz",
+    "format": "gzip-bitset-x-zyx",
+    "lowerFullFineXYZ": [
+      1018,
+      944,
+      916
+    ],
+    "upperFullFineXYZ": [
+      1330,
+      1240,
+      1400
+    ],
+    "dimensionsXYZ": [
+      312,
+      296,
+      484
+    ],
+    "storageDimensionsXYZ": [
+      39,
+      296,
+      484
+    ],
+    "compressedBytes": 876540,
+    "decodedBytes": 5587296,
+    "sha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+    "decodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+    "maskedVoxels": 3563663
+  },
+  "lowerFullFineXYZ": [
+    1018,
+    944,
+    916
+  ],
+  "upperFullFineXYZ": [
+    1330,
+    1240,
+    1400
+  ],
+  "dimensionsXYZ": [
+    312,
+    296,
+    484
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 275,
+    "decodedBrickReads": 338,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "sourceRoiSha256": "03ec7d8461f6690d9142f64e582d0e882bef57c9e3b4e582ba789c79b200460e",
+  "sourcePaddedRoiSha256": "ee64248b5443888b716a286bfe04c70fca6cf4852e9ffa5d70eb10aa8d644510",
+  "sourceSigmaFineSamples": 0.5,
+  "sourceSpacingUm": 79.4,
+  "baselineThreshold": 71.4,
+  "maximumReviewedDisplayIntensity": 145.0,
+  "sourceCalibratedHU": false,
+  "originalSourceModified": false,
+  "unchangedBoxCollar": true,
+  "method": "median",
+  "regularizer": {
+    "kind": "median",
+    "medianWindow": [
+      3,
+      3,
+      3
+    ],
+    "tvWeight": null,
+    "tvIterations": null,
+    "seconds": 19.52956533432007
+  },
+  "coreCollar": {
+    "enabled": true,
+    "fullPreservationDistanceSamples": 1.5,
+    "taperDistanceSamples": 2.0,
+    "marker": "Median3Gaussian.5 >=155 or raw>=170 supported by five consecutive Gaussian.5 >=150 samples along any of13 3D orientations"
+  },
+  "config": {
+    "id": "lvot-perivalvular-refinement",
+    "lowerXYZ": [
+      1018,
+      944,
+      916
+    ],
+    "upperXYZ": [
+      1330,
+      1240,
+      1400
+    ],
+    "regions": [
+      {
+        "id": "aortic-root-depth",
+        "lowerXYZ": [
+          1018,
+          944,
+          916
+        ],
+        "upperXYZ": [
+          1212,
+          1232,
+          1096
+        ],
+        "interiorThreshold": 130,
+        "polygonCollarSamples": 8,
+        "boxCollarSamples": 8,
+        "endCollarSamples": 12,
+        "polygons": {
+          "952": [
+            [
+              1026,
+              940
+            ],
+            [
+              1100,
+              932
+            ],
+            [
+              1130,
+              995
+            ],
+            [
+              1115,
+              1080
+            ],
+            [
+              1040,
+              1086
+            ],
+            [
+              1026,
+              1050
+            ]
+          ],
+          "984": [
+            [
+              1026,
+              928
+            ],
+            [
+              1100,
+              928
+            ],
+            [
+              1130,
+              990
+            ],
+            [
+              1132,
+              1085
+            ],
+            [
+              1030,
+              1085
+            ]
+          ],
+          "1016": [
+            [
+              1026,
+              928
+            ],
+            [
+              1115,
+              928
+            ],
+            [
+              1138,
+              1000
+            ],
+            [
+              1158,
+              1085
+            ],
+            [
+              1040,
+              1085
+            ]
+          ],
+          "1048": [
+            [
+              1026,
+              928
+            ],
+            [
+              1126,
+              928
+            ],
+            [
+              1147,
+              1026
+            ],
+            [
+              1190,
+              1065
+            ],
+            [
+              1182,
+              1085
+            ],
+            [
+              1032,
+              1085
+            ]
+          ],
+          "1080": [
+            [
+              1026,
+              928
+            ],
+            [
+              1125,
+              928
+            ],
+            [
+              1150,
+              1022
+            ],
+            [
+              1200,
+              1040
+            ],
+            [
+              1200,
+              1085
+            ],
+            [
+              1030,
+              1085
+            ]
+          ],
+          "1112": [
+            [
+              1026,
+              928
+            ],
+            [
+              1132,
+              928
+            ],
+            [
+              1160,
+              1016
+            ],
+            [
+              1200,
+              1038
+            ],
+            [
+              1200,
+              1085
+            ],
+            [
+              1030,
+              1085
+            ]
+          ],
+          "1144": [
+            [
+              1026,
+              928
+            ],
+            [
+              1130,
+              928
+            ],
+            [
+              1165,
+              1004
+            ],
+            [
+              1200,
+              1037
+            ],
+            [
+              1190,
+              1084
+            ],
+            [
+              1080,
+              1084
+            ],
+            [
+              1030,
+              1000
+            ]
+          ],
+          "1176": [
+            [
+              1060,
+              950
+            ],
+            [
+              1115,
+              938
+            ],
+            [
+              1180,
+              1015
+            ],
+            [
+              1200,
+              1060
+            ],
+            [
+              1170,
+              1084
+            ],
+            [
+              1110,
+              1060
+            ]
+          ],
+          "1200": [
+            [
+              1080,
+              964
+            ],
+            [
+              1138,
+              958
+            ],
+            [
+              1186,
+              1020
+            ],
+            [
+              1190,
+              1060
+            ],
+            [
+              1160,
+              1075
+            ],
+            [
+              1120,
+              1030
+            ]
+          ],
+          "1220": [
+            [
+              1110,
+              975
+            ],
+            [
+              1158,
+              975
+            ],
+            [
+              1190,
+              1018
+            ],
+            [
+              1180,
+              1060
+            ],
+            [
+              1150,
+              1050
+            ]
+          ]
+        }
+      },
+      {
+        "id": "mitral-and-chordal-support",
+        "lowerXYZ": [
+          1048,
+          984,
+          1036
+        ],
+        "upperXYZ": [
+          1330,
+          1240,
+          1400
+        ],
+        "interiorThreshold": 130,
+        "polygonCollarSamples": 10,
+        "boxCollarSamples": 8,
+        "endCollarSamples": 12,
+        "polygons": {
+          "992": [
+            [
+              1060,
+              1060
+            ],
+            [
+              1190,
+              1060
+            ],
+            [
+              1240,
+              1130
+            ],
+            [
+              1250,
+              1250
+            ],
+            [
+              1170,
+              1350
+            ],
+            [
+              1070,
+              1388
+            ]
+          ],
+          "1024": [
+            [
+              1060,
+              1050
+            ],
+            [
+              1210,
+              1050
+            ],
+            [
+              1310,
+              1120
+            ],
+            [
+              1300,
+              1200
+            ],
+            [
+              1190,
+              1300
+            ],
+            [
+              1110,
+              1388
+            ],
+            [
+              1060,
+              1370
+            ]
+          ],
+          "1056": [
+            [
+              1060,
+              1050
+            ],
+            [
+              1220,
+              1050
+            ],
+            [
+              1320,
+              1120
+            ],
+            [
+              1310,
+              1200
+            ],
+            [
+              1190,
+              1330
+            ],
+            [
+              1120,
+              1388
+            ],
+            [
+              1060,
+              1388
+            ]
+          ],
+          "1088": [
+            [
+              1060,
+              1050
+            ],
+            [
+              1240,
+              1050
+            ],
+            [
+              1320,
+              1110
+            ],
+            [
+              1320,
+              1200
+            ],
+            [
+              1240,
+              1280
+            ],
+            [
+              1130,
+              1388
+            ],
+            [
+              1060,
+              1388
+            ]
+          ],
+          "1120": [
+            [
+              1070,
+              1050
+            ],
+            [
+              1250,
+              1050
+            ],
+            [
+              1320,
+              1120
+            ],
+            [
+              1320,
+              1210
+            ],
+            [
+              1240,
+              1270
+            ],
+            [
+              1145,
+              1388
+            ],
+            [
+              1060,
+              1388
+            ]
+          ],
+          "1152": [
+            [
+              1090,
+              1050
+            ],
+            [
+              1260,
+              1050
+            ],
+            [
+              1320,
+              1100
+            ],
+            [
+              1320,
+              1200
+            ],
+            [
+              1230,
+              1270
+            ],
+            [
+              1130,
+              1388
+            ],
+            [
+              1060,
+              1388
+            ],
+            [
+              1060,
+              1270
+            ]
+          ],
+          "1184": [
+            [
+              1110,
+              1048
+            ],
+            [
+              1260,
+              1048
+            ],
+            [
+              1320,
+              1090
+            ],
+            [
+              1310,
+              1170
+            ],
+            [
+              1210,
+              1260
+            ],
+            [
+              1110,
+              1388
+            ],
+            [
+              1060,
+              1388
+            ],
+            [
+              1070,
+              1240
+            ]
+          ],
+          "1216": [
+            [
+              1125,
+              1050
+            ],
+            [
+              1255,
+              1050
+            ],
+            [
+              1290,
+              1100
+            ],
+            [
+              1210,
+              1210
+            ],
+            [
+              1120,
+              1340
+            ],
+            [
+              1060,
+              1380
+            ],
+            [
+              1080,
+              1280
+            ]
+          ],
+          "1232": [
+            [
+              1120,
+              1140
+            ],
+            [
+              1200,
+              1150
+            ],
+            [
+              1160,
+              1270
+            ],
+            [
+              1090,
+              1350
+            ],
+            [
+              1070,
+              1330
+            ]
+          ]
+        }
+      }
+    ],
+    "scope": "Explicitly reviewed full visible source depth of proximal aortic/LVOT and mitral/chordal fringe. Independent smoothly tapered envelopes; neutral baseline and legacy exact field everywhere else."
+  },
+  "configSha256": "13dce1049ee0721048d50dd423fc1ea3e46f11e97835c39d7708fd3bec58094d",
+  "counts": {
+    "originalForeground": 26307358,
+    "refinedForeground": 22743695,
+    "removedForeground": 3563663,
+    "raw190": 2369369,
+    "removedRaw190": 6035,
+    "medianSupported190": 1835962,
+    "removedMedianSupported190": 0,
+    "fieldAdditions": 0,
+    "boxBoundaryNonBaselineSamples": 0,
+    "restoredWallOverlap": 0,
+    "coherentMarkerSamples": 7196535,
+    "removedCoherentMarkers": 1119
+  },
+  "serial": [
+    {
+      "y": 944,
+      "removed": 0,
+      "newEnvelopeSamples": 0,
+      "maximumThreshold": 71.4000015258789
+    },
+    {
+      "y": 960,
+      "removed": 502,
+      "newEnvelopeSamples": 11878,
+      "maximumThreshold": 125.91851806640625
+    },
+    {
+      "y": 976,
+      "removed": 2021,
+      "newEnvelopeSamples": 12299,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 992,
+      "removed": 3756,
+      "newEnvelopeSamples": 12193,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1008,
+      "removed": 17919,
+      "newEnvelopeSamples": 55863,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1024,
+      "removed": 20302,
+      "newEnvelopeSamples": 61176,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1040,
+      "removed": 21200,
+      "newEnvelopeSamples": 66978,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1056,
+      "removed": 19624,
+      "newEnvelopeSamples": 67820,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1072,
+      "removed": 21073,
+      "newEnvelopeSamples": 64686,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1088,
+      "removed": 24450,
+      "newEnvelopeSamples": 68269,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1104,
+      "removed": 21562,
+      "newEnvelopeSamples": 64068,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1120,
+      "removed": 16540,
+      "newEnvelopeSamples": 59477,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1136,
+      "removed": 14136,
+      "newEnvelopeSamples": 57485,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1152,
+      "removed": 9944,
+      "newEnvelopeSamples": 58632,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1168,
+      "removed": 8939,
+      "newEnvelopeSamples": 42775,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1184,
+      "removed": 7717,
+      "newEnvelopeSamples": 34430,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1200,
+      "removed": 4727,
+      "newEnvelopeSamples": 25144,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1216,
+      "removed": 4818,
+      "newEnvelopeSamples": 20149,
+      "maximumThreshold": 145.0
+    },
+    {
+      "y": 1232,
+      "removed": 0,
+      "newEnvelopeSamples": 0,
+      "maximumThreshold": 71.4000015258789
+    }
+  ],
+  "preservationChecks": {
+    "priorLowBandLostSamples": 0,
+    "restoredWallMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+    "restoredWallMaskSamples": 109928,
+    "restoredWallLowBandOverlap": 0
+  },
+  "limitations": [
+    "Source-guided visualization cleanup, not clinically validated segmentation.",
+    "Bright isolated samples inside reviewed envelopes may be excluded if neighborhood support is insufficient.",
+    "Local source scalar can only decrease; no synthesized density or cap closure.",
+    "Crop collar is original source level but not welded to decimated whole-heart geometry."
+  ],
+  "surfaceReference": {
+    "format": "SFR1-gzip",
+    "file": "lvot-perivalvular-refinement.sfr.gz",
+    "vertices": 5860472,
+    "triangles": 11483092,
+    "vertexCount": 5860472,
+    "indexCount": 34449276,
+    "positionOffset": 32,
+    "normalOffset": 70325696,
+    "indexOffset": 105488528,
+    "compressedBytes": 114720073,
+    "decodedBytes": 243285632,
+    "sha256": "a8238042e42e15293d497691791a483009f6fda05fd345ef9224ddee44034306",
+    "decodedSha256": "94ec17931d858c412e0bf892e21519e566af658a6dc3cb31b588f203436c41f0",
+    "bounds": {
+      "min": [
+        0.033081285655498505,
+        -0.06710775196552277,
+        -0.13752363622188568
+      ],
+      "max": [
+        0.18005670607089996,
+        0.16115312278270721,
+        0.0018903592135757208
+      ]
+    },
+    "positionEncoding": "float32 world XYZ",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal"
+  },
+  "inheritedDetachedDisplayCleanup": {
+    "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+    "inputComponents": 66510,
+    "removedCompleteComponents": 62058,
+    "removedTriangles": 1160456,
+    "removedVertices": 703816,
+    "retainedCropBoundaryComponents": 3151,
+    "largestProtected": true,
+    "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+    "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+  },
+  "meshReduction": {
+    "inputVertices": 5156655,
+    "inputTriangles": 10322636,
+    "vertices": 477241,
+    "triangles": 963808,
+    "conservativeRadiusLimitMm": 0.3176,
+    "maximumConservativeRadiusMm": 0.3176,
+    "radiusRejections": 2675475,
+    "linkRejections": 887285,
+    "frozenBoundaryVertices": true,
+    "interiorEdgeLinkConstraint": true,
+    "seconds": 28.6786,
+    "peakRssMiB": 2796.5,
+    "deliveredSourceToSurface": {
+      "samples": 12000,
+      "meanMm": 0.011635512591646711,
+      "rmsMm": 0.018186163921235943,
+      "medianMm": 0.0071815061654594324,
+      "p95Mm": 0.037712168835416,
+      "p99Mm": 0.06963661332299143,
+      "maximumSampledMm": 0.15454758798282622
+    },
+    "deliveredSurfaceToSource": {
+      "samples": 12000,
+      "meanMm": 0.010048531687790995,
+      "rmsMm": 0.01432156881092088,
+      "medianMm": 0.006816808267491776,
+      "p95Mm": 0.0313384770624434,
+      "p99Mm": 0.04814824779463861,
+      "maximumSampledMm": 0.08484295653163612
+    },
+    "quantizationMaximumErrorMm": 0.00038900196198268805,
+    "quantizationZeroAreaFacesRemoved": 635,
+    "orphanVerticesCompacted": 91,
+    "cancellingNormalFallbacks": 33,
+    "finiteSampleSeed": 2800714,
+    "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+  }
+}

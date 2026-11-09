@@ -1,0 +1,49 @@
+{
+  "release": "v15",
+  "date": "2026-11-05",
+  "baselineCommit": "b77382f7c400b29c82651d75b32e85c6e6bfbefe",
+  "audience": "public",
+  "sourceAssetsChanged": false,
+  "downloadCacheKeysChanged": false,
+  "browserAutomationUsed": false,
+  "checks": {
+    "rendererProbePaintBrightnessWindowing": {"passed": 37, "failed": 0},
+    "sectionsLoadingPriorityRunway": {"passed": 34, "failed": 0},
+    "domBootModulesSettingsFullscreen": {"passed": 15, "failed": 0},
+    "existingPrefetch": {"passed": 19, "failed": 0},
+    "existingRendererMotion": {"passed": 7, "failed": 0},
+    "nativeEglComparisons": {"passed": 18, "failed": 0},
+    "largestCropSourceHashes": {"passedDonors": 3, "failedDonors": 0},
+    "exactScalarPaintingCases": 324,
+    "exactRealPaintingCases": 48,
+    "identicalRealPaintingRgbaChannels": 376796352
+  },
+  "textureAllocations": {
+    "sectionPresentations": 6758,
+    "before": 2998,
+    "after": 183,
+    "reductionPercent": 93.9,
+    "scope": "Actual upload-method command counts over all nonempty orthogonal manifests, both directions; not GPU timing."
+  },
+  "nativePainting": {
+    "representativeBeforeMedianMs": [8.88, 10.30, 17.09, 10.10],
+    "representativeAfterMedianMs": [1.79, 2.17, 2.40, 1.65],
+    "exactOutput": true,
+    "scope": "Warmed Node CPU color conversion on real Ultra images, excluding Canvas, GPU, decoding, network and browser input latency."
+  },
+  "limitations": [
+    "No browser FPS or user-device input-latency measurements.",
+    "Cold or evicted slices still require decoding; cached encoded data is not always decoded data.",
+    "CT-card work can follow the prioritized 3D update by one render/task opportunity.",
+    "Larger GPU allocations cause bounded interpolation rounding: at most 14 changed pixels per 289100-pixel native comparison, including one isolated near-threshold S-20-29 classification change. Source pixels and physical geometry are unchanged."
+  ],
+  "reports": [
+    "../section-paint-v15/README.md",
+    "../section-paint-v15/benchmark.json",
+    "../renderer-latency-v15/README.md",
+    "../renderer-latency-v15/cap-storage-counts.json",
+    "../renderer-latency-v15/cap-storage-validation.json",
+    "../ultra-runway-v15-benchmark.json",
+    "../ultra-native-v15-check.json"
+  ]
+}

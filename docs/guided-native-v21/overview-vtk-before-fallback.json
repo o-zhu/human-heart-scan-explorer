@@ -1,0 +1,500 @@
+{
+  "schema": "guided-native-vtk-before-fallback-v21.1",
+  "scope": "Four real completed overview tiles probed before the clustering/replay fix; historical observations, not whole-bank validation",
+  "priorBuilderCommit": "7d02441b72460fecd82c663ca9561c43ae135790",
+  "sourceFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a",
+  "inputs": [
+    {
+      "xyz": [
+        19,
+        33,
+        15
+      ],
+      "role": "overview",
+      "samplingStepNative": 4,
+      "sha256": "3c10e3c649b40ebe34ba07c3948531c920932549db09cf2e18615c5b1ad8b359",
+      "bytes": 2325
+    },
+    {
+      "xyz": [
+        17,
+        36,
+        10
+      ],
+      "role": "overview",
+      "samplingStepNative": 4,
+      "sha256": "099a634b8e7b3af1a143e4eae82496ce1b63920036c387dcf98b3143c98d6263",
+      "bytes": 7178
+    },
+    {
+      "xyz": [
+        21,
+        28,
+        15
+      ],
+      "role": "overview",
+      "samplingStepNative": 4,
+      "sha256": "d3b38f7dca5f5e41906d32f8e18079bf2c032186470792772b61e64ba16e3571",
+      "bytes": 17361
+    },
+    {
+      "xyz": [
+        36,
+        20,
+        15
+      ],
+      "role": "overview",
+      "samplingStepNative": 4,
+      "sha256": "a4df75f605165366258d8d8257676372554bcd240f57b98c169990347f765db3",
+      "bytes": 29560
+    }
+  ],
+  "measurements": [
+    {
+      "xyz": [
+        19,
+        33,
+        15
+      ],
+      "boundsScope": "One original 128-cell tile; all six tile planes protected",
+      "before": {
+        "vertices": 1930,
+        "triangles": 3588,
+        "components": 20,
+        "closedComponents": 11,
+        "closedComponentFaces": 180,
+        "closedGenusSum": 0.0,
+        "boundaryEdges": 212,
+        "nonmanifoldEdges": 0
+      },
+      "trials": [
+        {
+          "preserveTopology": true,
+          "targetTriangles": 36,
+          "achievedTarget": false,
+          "frozenBoundaryExact": true,
+          "method": {
+            "method": "unchanged-boundary-check-fallback",
+            "attemptedMethod": "vtkDecimatePro",
+            "frozenBoundaryExact": true,
+            "attemptedFrozenBoundaryExact": false
+          },
+          "seconds": 0.0800549349951325,
+          "vertices": 1930,
+          "triangles": 3588,
+          "components": 20,
+          "closedComponents": 11,
+          "closedComponentFaces": 180,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 212,
+          "nonmanifoldEdges": 0
+        },
+        {
+          "preserveTopology": false,
+          "targetTriangles": 36,
+          "achievedTarget": false,
+          "frozenBoundaryExact": false,
+          "method": {
+            "method": "vtkDecimatePro",
+            "preserveTopology": false,
+            "splitting": false,
+            "boundaryVertexDeletion": false,
+            "frozenBoundaryExact": false,
+            "removedDegenerateFaces": 0
+          },
+          "seconds": 0.017698002004181035,
+          "vertices": 263,
+          "triangles": 254,
+          "components": 20,
+          "closedComponents": 7,
+          "closedComponentFaces": 14,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 211,
+          "nonmanifoldEdges": 9
+        }
+      ],
+      "peakRssMiB": 46.92578125
+    },
+    {
+      "xyz": [
+        17,
+        36,
+        10
+      ],
+      "boundsScope": "One original 128-cell tile; all six tile planes protected",
+      "before": {
+        "vertices": 7052,
+        "triangles": 12112,
+        "components": 358,
+        "closedComponents": 282,
+        "closedComponentFaces": 4056,
+        "closedGenusSum": 0.0,
+        "boundaryEdges": 752,
+        "nonmanifoldEdges": 0
+      },
+      "trials": [
+        {
+          "preserveTopology": true,
+          "targetTriangles": 122,
+          "achievedTarget": false,
+          "frozenBoundaryExact": true,
+          "method": {
+            "method": "vtkDecimatePro",
+            "vtkVersion": "9.3.1",
+            "preserveTopology": true,
+            "splitting": false,
+            "boundaryVertexDeletion": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 0
+          },
+          "seconds": 0.05492982899886556,
+          "vertices": 2298,
+          "triangles": 2604,
+          "components": 358,
+          "closedComponents": 99,
+          "closedComponentFaces": 198,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 752,
+          "nonmanifoldEdges": 484
+        },
+        {
+          "preserveTopology": false,
+          "targetTriangles": 122,
+          "achievedTarget": false,
+          "frozenBoundaryExact": true,
+          "method": {
+            "method": "vtkDecimatePro",
+            "preserveTopology": false,
+            "splitting": false,
+            "boundaryVertexDeletion": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 0
+          },
+          "seconds": 0.042127553999307565,
+          "vertices": 2298,
+          "triangles": 2604,
+          "components": 358,
+          "closedComponents": 99,
+          "closedComponentFaces": 198,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 752,
+          "nonmanifoldEdges": 484
+        }
+      ],
+      "peakRssMiB": 50.25390625
+    },
+    {
+      "xyz": [
+        21,
+        28,
+        15
+      ],
+      "boundsScope": "One original 128-cell tile; all six tile planes protected",
+      "before": {
+        "vertices": 21271,
+        "triangles": 40099,
+        "components": 336,
+        "closedComponents": 253,
+        "closedComponentFaces": 4252,
+        "closedGenusSum": 2.0,
+        "boundaryEdges": 1863,
+        "nonmanifoldEdges": 0
+      },
+      "trials": [
+        {
+          "preserveTopology": true,
+          "targetTriangles": 401,
+          "achievedTarget": false,
+          "frozenBoundaryExact": true,
+          "method": {
+            "method": "unchanged-boundary-check-fallback",
+            "attemptedMethod": "vtkDecimatePro",
+            "frozenBoundaryExact": true,
+            "attemptedFrozenBoundaryExact": false
+          },
+          "seconds": 0.29066431301180273,
+          "vertices": 21271,
+          "triangles": 40099,
+          "components": 336,
+          "closedComponents": 253,
+          "closedComponentFaces": 4252,
+          "closedGenusSum": 2.0,
+          "boundaryEdges": 1863,
+          "nonmanifoldEdges": 0
+        },
+        {
+          "preserveTopology": false,
+          "targetTriangles": 401,
+          "achievedTarget": false,
+          "frozenBoundaryExact": false,
+          "method": {
+            "method": "vtkDecimatePro",
+            "preserveTopology": false,
+            "splitting": false,
+            "boundaryVertexDeletion": false,
+            "frozenBoundaryExact": false,
+            "removedDegenerateFaces": 0
+          },
+          "seconds": 0.21386895199248102,
+          "vertices": 4895,
+          "triangles": 7347,
+          "components": 336,
+          "closedComponents": 115,
+          "closedComponentFaces": 230,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 1862,
+          "nonmanifoldEdges": 1094
+        }
+      ],
+      "peakRssMiB": 58.0546875
+    },
+    {
+      "xyz": [
+        36,
+        20,
+        15
+      ],
+      "boundsScope": "One original 128-cell tile; all six tile planes protected",
+      "before": {
+        "vertices": 39979,
+        "triangles": 77223,
+        "components": 579,
+        "closedComponents": 394,
+        "closedComponentFaces": 4948,
+        "closedGenusSum": 0.0,
+        "boundaryEdges": 4559,
+        "nonmanifoldEdges": 0
+      },
+      "trials": [
+        {
+          "preserveTopology": true,
+          "targetTriangles": 773,
+          "achievedTarget": false,
+          "frozenBoundaryExact": true,
+          "method": {
+            "method": "unchanged-boundary-check-fallback",
+            "attemptedMethod": "vtkDecimatePro",
+            "frozenBoundaryExact": true,
+            "attemptedFrozenBoundaryExact": false
+          },
+          "seconds": 0.7280647680017864,
+          "vertices": 39979,
+          "triangles": 77223,
+          "components": 579,
+          "closedComponents": 394,
+          "closedComponentFaces": 4948,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 4559,
+          "nonmanifoldEdges": 0
+        },
+        {
+          "preserveTopology": false,
+          "targetTriangles": 773,
+          "achievedTarget": false,
+          "frozenBoundaryExact": false,
+          "method": {
+            "method": "vtkDecimatePro",
+            "preserveTopology": false,
+            "splitting": false,
+            "boundaryVertexDeletion": false,
+            "frozenBoundaryExact": false,
+            "removedDegenerateFaces": 0
+          },
+          "seconds": 0.6519448629987892,
+          "vertices": 12089,
+          "triangles": 21443,
+          "components": 579,
+          "closedComponents": 178,
+          "closedComponentFaces": 356,
+          "closedGenusSum": 0.0,
+          "boundaryEdges": 4555,
+          "nonmanifoldEdges": 2898
+        }
+      ],
+      "peakRssMiB": 66.81640625
+    }
+  ],
+  "oppositeFaceCleanupProbe": [
+    {
+      "xyz": [
+        19,
+        33,
+        15
+      ],
+      "rawOutputTriangles": 254,
+      "duplicateFaceGroups": 17,
+      "oppositePairsCancelled": 17,
+      "sameOrientationSurplus": 0,
+      "rawBoundaryExact": false,
+      "deduplicatedBoundaryExact": false,
+      "deduplicated": {
+        "vertices": 228,
+        "triangles": 220,
+        "components": 11,
+        "closedComponents": 2,
+        "closedComponentFaces": 8,
+        "closedGenusSum": 0.0,
+        "boundaryEdges": 211,
+        "nonmanifoldEdges": 1
+      },
+      "seamDeltas": [
+        {
+          "plane": 5,
+          "original": [
+            52,
+            51
+          ],
+          "decimated": [
+            52,
+            50
+          ],
+          "deduplicated": [
+            52,
+            50
+          ]
+        }
+      ],
+      "peakRssMiB": 47.27734375
+    },
+    {
+      "xyz": [
+        17,
+        36,
+        10
+      ],
+      "rawOutputTriangles": 2604,
+      "duplicateFaceGroups": 684,
+      "oppositePairsCancelled": 683,
+      "sameOrientationSurplus": 1,
+      "rawBoundaryExact": true,
+      "deduplicatedBoundaryExact": true,
+      "deduplicated": {
+        "vertices": 1127,
+        "triangles": 1237,
+        "components": 107,
+        "closedComponents": 20,
+        "closedComponentFaces": 92,
+        "closedGenusSum": -0.5,
+        "boundaryEdges": 752,
+        "nonmanifoldEdges": 46
+      },
+      "seamDeltas": [],
+      "peakRssMiB": 50.1953125
+    },
+    {
+      "xyz": [
+        21,
+        28,
+        15
+      ],
+      "rawOutputTriangles": 7347,
+      "duplicateFaceGroups": 1053,
+      "oppositePairsCancelled": 1053,
+      "sameOrientationSurplus": 0,
+      "rawBoundaryExact": false,
+      "deduplicatedBoundaryExact": true,
+      "deduplicated": {
+        "vertices": 3503,
+        "triangles": 5241,
+        "components": 116,
+        "closedComponents": 23,
+        "closedComponentFaces": 100,
+        "closedGenusSum": 0.0,
+        "boundaryEdges": 1863,
+        "nonmanifoldEdges": 180
+      },
+      "seamDeltas": [
+        {
+          "plane": 3,
+          "original": [
+            228,
+            223
+          ],
+          "decimated": [
+            228,
+            222
+          ],
+          "deduplicated": [
+            228,
+            223
+          ]
+        }
+      ],
+      "peakRssMiB": 58.62109375
+    },
+    {
+      "xyz": [
+        36,
+        20,
+        15
+      ],
+      "rawOutputTriangles": 21443,
+      "duplicateFaceGroups": 2077,
+      "oppositePairsCancelled": 2075,
+      "sameOrientationSurplus": 2,
+      "rawBoundaryExact": false,
+      "deduplicatedBoundaryExact": false,
+      "deduplicated": {
+        "vertices": 9739,
+        "triangles": 17291,
+        "components": 225,
+        "closedComponents": 30,
+        "closedComponentFaces": 178,
+        "closedGenusSum": -1.0,
+        "boundaryEdges": 4556,
+        "nonmanifoldEdges": 824
+      },
+      "seamDeltas": [
+        {
+          "plane": 0,
+          "original": [
+            804,
+            779
+          ],
+          "decimated": [
+            804,
+            778
+          ],
+          "deduplicated": [
+            804,
+            778
+          ]
+        },
+        {
+          "plane": 2,
+          "original": [
+            753,
+            735
+          ],
+          "decimated": [
+            753,
+            734
+          ],
+          "deduplicated": [
+            753,
+            734
+          ]
+        },
+        {
+          "plane": 4,
+          "original": [
+            756,
+            738
+          ],
+          "decimated": [
+            756,
+            736
+          ],
+          "deduplicated": [
+            756,
+            737
+          ]
+        }
+      ],
+      "peakRssMiB": 68.63671875
+    }
+  ],
+  "finding": "At approximately1% triangle targets, preserved-topology VTK often changed exact one-face seam edges and triggered the old full-input fallback. Disabling topology preservation or cancelling opposite faces did not reliably fix it. Counts-only boundary validation would have missed these failures.",
+  "nativeBankModified": false,
+  "originalIntensityDownloads": 0
+}

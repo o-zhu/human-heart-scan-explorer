@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-08T16:00:50.712Z",
+  "scope": "Actual source hashes and instrumented lifecycle/GL allocation; independent full-byte parity and native renders are separate v41 receipts.",
+  "cases": [
+    {
+      "name": "four exact fields load sequentially and retain only the 10.44 MiB sparse CPU representation",
+      "passed": true
+    },
+    {
+      "name": "source coordinates, layout and capability identity fail closed",
+      "passed": true
+    },
+    {
+      "name": "oversized or altered metadata stops before any mask request",
+      "passed": true
+    },
+    {
+      "name": "all four masks preserve nearest-cell CPU picking, byte boundaries and reversible visibility",
+      "passed": true
+    },
+    {
+      "name": "two-texture activation is atomic and failure retains the prior exact cleanup",
+      "passed": true
+    },
+    {
+      "name": "a corrupt later mask never installs an atlas or fetches later sources",
+      "passed": true
+    },
+    {
+      "name": "aborting mobile cleanup stops later source requests and cannot publish stale GPU state",
+      "passed": true
+    },
+    {
+      "name": "mobile controller failure is retryable without reloading its verified atlas, then toggles without network",
+      "passed": true
+    },
+    {
+      "name": "desktop preparation cannot mistake the four mobile masks for complete local-surface coverage",
+      "passed": true
+    }
+  ],
+  "indexSha256": "4c9142e6cc54ffabab17b47ca1baedc523787cf29451b672c64d58ab275499ad",
+  "payloadSha256": "4e4354def962c1a985e26abf28406ae071632525d2812f8c499dafc6604f424a",
+  "retainedAtlasBytes": 10948608,
+  "requests": [
+    "./assets/reviewed-mask-v32/manifest.json",
+    "./assets/reviewed-mask-v32/atlas.refs.gz",
+    "./assets/cleanup-v29/atrial.bits.gz",
+    "./assets/cleanup-v28/arterial.bits.gz",
+    "./assets/cleanup-v28/valve-region.bits.gz",
+    "./assets/cleanup-v28/rv.bits.gz"
+  ],
+  "peakRequests": 1,
+  "runtimeHashes": {
+    "public/mobile-lumen-atlas.js": "e9a21a30b7523d8c7257566f9e6a2879a3c4687c3aba427b8dd6f8dfedf0458e",
+    "public/reviewed-mask-atlas.js": "c963dd8e81e91f1e8b5daddfeac4e086ef0f157b7d40641cbaf3ab880729ce50",
+    "public/lumen-cleanup-v23.js": "06ff68a6850b2266cbcd4d8434602647a2f3415a62c961b3a11905f7c0cfc611",
+    "public/renderer.js": "832f9a40eb56575cf7f3e5aab76819e6aa7dc7908c302ea9252e7c65d9d997f7",
+    "public/volume-picking.js": "90a71e216ad3c9fef4c04f04db0b6f6b2eeaeff72ae436bd845f4d4d42262acd",
+    "public/fine-surface.js": "1d5793fd13cca1f7b68f60773c9dd99e778ad74925a4ac694e750fc595e6fd04"
+  },
+  "cpuSamples": {
+    "checked": 12120,
+    "positive": 412
+  },
+  "passed": true
+}

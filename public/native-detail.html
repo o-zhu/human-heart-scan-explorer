@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1013">
+  <meta name="description" content="Inspect a targeted native-resolution human-heart reconstruction and compare gentle surface treatments against the measured 19.85 micrometre reference.">
+  <title>Native detail · Heart Explorer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./native-detail.css">
+</head>
+<body>
+  <header class="lab-header">
+    <a class="lab-brand" href="./?donor=ladaf-2021-17"><span class="brand-cross" aria-hidden="true">＋</span><span><small>FROM THE HUMAN ORGAN ATLAS</small><strong>HEART EXPLORER</strong></span></a>
+    <a class="back-link" href="./?donor=ladaf-2021-17">← Whole-Heart Explorer</a>
+  </header>
+  <main id="nativeViewer">
+    <section class="introduction">
+      <div><p class="eyebrow"><span class="status-dot"></span> NATIVE DETAIL STUDY · LADAF-2021-17</p><h1>Closer to the measured surface.</h1><p class="intro-copy">A targeted region reconstructed at <strong>19.85 µm</strong>. Compare the original surface with treatments designed to preserve its small folds and thin structures.</p></div>
+      <div class="resolution-card"><strong>19.85 <span>µm</span></strong><span>native sample spacing</span><small id="regionSize">Loading the measured region…</small></div>
+    </section>
+    <section class="comparison-workspace" id="comparisonWorkspace" aria-label="Synchronized native-surface comparison">
+      <div class="comparison-toolbar">
+        <div class="toolbar-label"><span class="linked-mark" aria-hidden="true">↔</span><strong>Linked views</strong><span>Same region, camera and lighting</span></div>
+        <div class="toolbar-actions"><button id="resetView" type="button">Reset View</button><button id="fullscreen" type="button">Fullscreen</button></div>
+      </div>
+      <div class="view-grid">
+        <article class="view-panel">
+          <header><div><span class="pane-label">REFERENCE</span><label for="referenceChoice" class="sr-only">Reference Surface</label><select id="referenceChoice" disabled><option>Loading Surfaces…</option></select></div><span class="resolution-pill" id="referenceSpacing">—</span></header>
+          <div class="canvas-wrap"><canvas id="referenceCanvas" tabindex="0" aria-label="Reference surface. Drag to rotate, arrow keys to orbit, plus or minus to zoom."></canvas><span class="region-label">TARGETED REGION</span><div class="canvas-message" id="referenceMessage" role="status">Opening the surface study…</div><div class="scale-bar"><span></span><small id="referenceScale">—</small></div></div>
+          <footer><strong id="referenceLabel">Measured surface</strong><span id="referenceDetail">The selected surface loads on demand.</span></footer>
+        </article>
+        <article class="view-panel candidate-panel">
+          <header><div><span class="pane-label">COMPARISON</span><label for="candidateChoice" class="sr-only">Comparison Surface Treatment</label><select id="candidateChoice" disabled><option>Loading Surfaces…</option></select></div><span class="resolution-pill" id="candidateSpacing">—</span></header>
+          <div class="canvas-wrap"><canvas id="candidateCanvas" tabindex="0" aria-label="Comparison surface. Its camera moves with the reference view."></canvas><span class="region-label">TARGETED REGION</span><div class="canvas-message" id="candidateMessage" role="status">Preparing the comparison…</div><div class="scale-bar"><span></span><small id="candidateScale">—</small></div></div>
+          <footer><strong id="candidateLabel">Native detail</strong><span id="candidateDetail">The original geometry is retained for comparison.</span></footer>
+        </article>
+      </div>
+      <div class="interaction-row"><p>Drag to rotate <span>·</span> Scroll or pinch to zoom <span>·</span> Shift-drag to pan<br><span id="sectionOrientationNote">Approximate anatomical planes for this specimen; no patient-position registration.</span></p><label for="cutAxis">Open Section</label><select id="cutAxis" aria-describedby="sectionOrientationNote"><option value="none">Whole Region</option><option value="x">Coronal Section</option><option value="y">Sagittal Section</option><option value="z">Axial Section</option></select><label class="sr-only" for="cutPosition">Section Position</label><input id="cutPosition" type="range" min="0" max="100" value="50" disabled><output id="cutPositionText">50%</output><button id="flipSection" type="button" disabled>Flip Side</button></div>
+    </section>
+    <section class="evidence-strip" aria-label="Selected surface measurements">
+      <div><span>MEASURED GRID</span><strong id="gridMetric">19.85 µm</strong><small>Native acquisition samples</small></div>
+      <div><span>SURFACE MOVEMENT</span><strong id="movementMetric">—</strong><small id="movementNote">Relative to the native reference</small></div>
+      <div><span>RETAINED TRIANGLES</span><strong id="triangleMetric">—</strong><small id="triangleNote">Internal and external interfaces</small></div>
+      <div><span>SELECTED DOWNLOAD</span><strong id="downloadMetric">—</strong><small>Only the chosen surface is needed</small></div>
+    </section>
+    <section class="method-notes">
+      <div><p class="eyebrow">READ THE COMPARISON</p><h2>Preserve the shape. Inspect the difference.</h2></div>
+      <div><p id="methodDescription">The native reference is extracted from the original 16-bit scan without blurring the source or reducing its triangle count. A normals-only treatment changes the lighting response while keeping the same surface geometry.</p><p id="scopeNote">This is a clipped region of one preserved heart, not a complete native-resolution reconstruction. Open section boundaries are left uncapped. Voxel spacing describes sampling and does not itself establish anatomical accuracy.</p><details><summary>Source, Processing and Measurements</summary><div id="provenance"><p>Loading the processing record…</p></div><p><a href="https://human-organ-atlas.esrf.fr/datasets/1659197537" target="_blank" rel="noopener">ESRF Human Organ Atlas · original dataset ↗</a></p></details></div>
+    </section>
+    <section id="staticComparison" class="static-comparison" hidden><h2>Matched surface comparison</h2><p>Recorded from the same region with matched views. These are scientific renderings, not browser performance measurements.</p><img id="comparisonImage" alt="Matched renderings of the native surface and its surface treatments" loading="lazy"></section>
+    <section class="static-comparison"><h2>The measured region</h2><p>The small box locates the selected tissue interface in the source overview. The enlarged sections show original native samples through the patch; brightness is a display window, not a change to the source data.</p><img src="./assets/native-surface-v20/quickcontext.webp" alt="Source overview with the selected region marked, alongside three original native-resolution sections" loading="lazy"></section>
+    <footer class="lab-footer"><span id="pageStatus" role="status" aria-live="polite">Opening native data…</span><span>Brunet et al. / ESRF · CC BY 4.0</span></footer>
+  </main>
+  <script type="module" src="./native-detail.js"></script>
+</body>
+</html>

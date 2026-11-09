@@ -1,0 +1,77 @@
+{
+  "verified": true,
+  "indexSha256": "1543d72de3edae846cefab4fb9eed3086cc43a841b0e53c0b642f1ef092169b5",
+  "objects": 10,
+  "bytes": 28024416,
+  "finalPublicReadback": true,
+  "GETChecksums": "10/10 matched",
+  "checks": [
+    {
+      "path": "/assets/cleanup-v30/lvot-perivalvular-refinement-low-band.bits.gz",
+      "bytes": 876540,
+      "sha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c"
+    },
+    {
+      "path": "/assets/cleanup-v30/lvot-perivalvular-refinement.hfm.part-000.gz",
+      "bytes": 4194304,
+      "sha256": "c71d535100974636caf6011f5ca266ff405262fbb35274ed541f396240a9f962"
+    },
+    {
+      "path": "/assets/cleanup-v30/lvot-perivalvular-refinement.hfm.part-001.gz",
+      "bytes": 4194304,
+      "sha256": "98e47139105b99840450b6f99e6abbde7204f542c1ef2b63f2353462c43818bd"
+    },
+    {
+      "path": "/assets/cleanup-v30/lvot-perivalvular-refinement.hfm.part-002.gz",
+      "bytes": 1925319,
+      "sha256": "41a9f68e155651a1b654e291026c53ac34edf15672e6b4ac19939416348c5f28"
+    },
+    {
+      "path": "/assets/cleanup-v30/pulmonary-regularized-v30-low-band.bits.gz",
+      "bytes": 567918,
+      "sha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044"
+    },
+    {
+      "path": "/assets/cleanup-v30/pulmonary-regularized-v30.hfm.part-000.gz",
+      "bytes": 4194304,
+      "sha256": "8203cc54bb7766eee4952765234e14df01992b26f02838f8bcaec3e02cd53c48"
+    },
+    {
+      "path": "/assets/cleanup-v30/pulmonary-regularized-v30.hfm.part-001.gz",
+      "bytes": 4194304,
+      "sha256": "48bacaa2f3b87f9865ac031d33aff467f30fed649f6775c7100c1a0570199341"
+    },
+    {
+      "path": "/assets/cleanup-v30/pulmonary-regularized-v30.hfm.part-002.gz",
+      "bytes": 61569,
+      "sha256": "4222325dba525edcb8b858ebacd161863fde9dddac5d13ebd316fd34d39875c0"
+    },
+    {
+      "path": "/assets/cleanup-v30/tricuspid-rv-regularized-v30-low-band.bits.gz",
+      "bytes": 419824,
+      "sha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba"
+    },
+    {
+      "path": "/assets/cleanup-v30/tricuspid-rv-regularized-v30.hfm.gz",
+      "bytes": 7396030,
+      "sha256": "de06e1adf4c7c0c4f63f69f2cceb17e22552d9ca3a2fd1c5325b464d55975d37"
+    }
+  ],
+  "activeStaticFilesChecked": [
+    "app.js",
+    "clinical-app.js",
+    "workbench.css",
+    "section-names.js",
+    "volume-picking.js",
+    "fine-surface.js",
+    "refinement.css",
+    "local-surface-refinement.js",
+    "lumen-cleanup-v23.js",
+    "assets/cleanup-v30/surface-manifest.json",
+    "assets/cleanup-v30/lumen-manifest.json"
+  ],
+  "uploadsEnabled": false,
+  "seconds": 20.97793298200122,
+  "sourceBanksChanged": false,
+  "retainedTokenWriteStatus": 405
+}

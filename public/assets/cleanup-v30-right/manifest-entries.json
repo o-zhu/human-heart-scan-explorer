@@ -1,0 +1,170 @@
+{
+  "schema": "cleanup-v30-right-manifest-entries-v1",
+  "sourceHfmDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "replacements": [
+    {
+      "id": "pulmonary-regularized-v30",
+      "lowerFullFineXYZ": [
+        580,
+        1064,
+        540
+      ],
+      "upperFullFineXYZ": [
+        870,
+        1380,
+        1112
+      ],
+      "sourceSigmaFineSamples": 0.5,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 382586,
+        "triangles": 846757,
+        "vertexCount": 382586,
+        "indexCount": 2540271,
+        "positionOffset": 32,
+        "normalOffset": 2295548,
+        "indexOffset": 4591064,
+        "compressedBytes": 8450177,
+        "decodedBytes": 14752148,
+        "sha256": "b68a7c12e3d57b00bf80991f7d7c3c8fc0c082452ccfb84dd661b2b688d63561",
+        "decodedSha256": "0ae81892eb07de0899e1a251b89d2f96b8a0049c391df79de45144edf5a090b6",
+        "bounds": {
+          "min": [
+            -0.17391304671764374,
+            -0.24480150640010834,
+            -0.2036862075328827
+          ],
+          "max": [
+            -0.03733459487557411,
+            0.025047259405255318,
+            -0.05482041463255882
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 14752116,
+        "url": "./assets/cleanup-v30-right/pulmonary-regularized-v30.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          580,
+          1064,
+          540
+        ],
+        "upperFullFineXYZ": [
+          870,
+          1380,
+          1112
+        ],
+        "dimensionsXYZ": [
+          290,
+          316,
+          572
+        ],
+        "storageDimensionsXYZ": [
+          37,
+          316,
+          572
+        ],
+        "compressedBytes": 567918,
+        "decodedBytes": 6687824,
+        "sha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044",
+        "decodedSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+        "maskedVoxels": 2116579,
+        "url": "./assets/cleanup-v30-right/pulmonary-regularized-v30-low-band.bits.gz"
+      },
+      "reviewPolicy": {
+        "path": "docs/cleanup-v30-right/selected/pulmonary-regularized-v30-policy.json",
+        "sha256": "4c9753b7aaf1b676f587f758302cf502a5b6218c042d1c672f15f7f98b2c7e4a"
+      },
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 175
+    },
+    {
+      "id": "tricuspid-rv-regularized-v30",
+      "lowerFullFineXYZ": [
+        590,
+        640,
+        894
+      ],
+      "upperFullFineXYZ": [
+        880,
+        1060,
+        1360
+      ],
+      "sourceSigmaFineSamples": 0.5,
+      "sourceCalibratedHU": false,
+      "surface": {
+        "format": "HFM1-gzip",
+        "vertices": 346626,
+        "triangles": 714790,
+        "vertexCount": 346626,
+        "indexCount": 2144370,
+        "positionOffset": 32,
+        "normalOffset": 2079788,
+        "indexOffset": 4159544,
+        "compressedBytes": 7396030,
+        "decodedBytes": 12737024,
+        "sha256": "de06e1adf4c7c0c4f63f69f2cceb17e22552d9ca3a2fd1c5325b464d55975d37",
+        "decodedSha256": "784b47b42a17ffbde1dfdab5f34667e9aa0f939e616aa1ec64db55b92d639675",
+        "bounds": {
+          "min": [
+            -0.16918714344501495,
+            -0.0775047242641449,
+            -0.05245746672153473
+          ],
+          "max": [
+            -0.032608695328235626,
+            0.14224952459335327,
+            0.14555765688419342
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 12736992,
+        "url": "./assets/cleanup-v30-right/tricuspid-rv-regularized-v30.hfm.gz"
+      },
+      "lowBandMask": {
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          590,
+          640,
+          894
+        ],
+        "upperFullFineXYZ": [
+          880,
+          1060,
+          1360
+        ],
+        "dimensionsXYZ": [
+          290,
+          420,
+          466
+        ],
+        "storageDimensionsXYZ": [
+          37,
+          420,
+          466
+        ],
+        "compressedBytes": 419824,
+        "decodedBytes": 7241640,
+        "sha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba",
+        "decodedSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+        "maskedVoxels": 1564894,
+        "url": "./assets/cleanup-v30-right/tricuspid-rv-regularized-v30-low-band.bits.gz"
+      },
+      "reviewPolicy": {
+        "path": "docs/cleanup-v30-right/selected/tricuspid-rv-regularized-v30-policy.json",
+        "sha256": "e1fffffa478f3d2d498d90489ab8847220a1eae1900209ca09d3eca1f6846d20"
+      },
+      "baselineDisplayIntensity": 71.4,
+      "maximumReviewedDisplayIntensity": 165
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 704,
+    "decodedBrickReads": 704,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "patches": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "surface": {
+        "format": "HFM1-gzip",
+        "file": "lvot-perivalvular-refinement.hfm.gz",
+        "vertices": 349748,
+        "triangles": 652053,
+        "vertexCount": 349748,
+        "indexCount": 1956159,
+        "positionOffset": 32,
+        "normalOffset": 2098520,
+        "indexOffset": 4197008,
+        "compressedBytes": 7193628,
+        "decodedBytes": 12021644,
+        "sha256": "d9afa457b3ffbc56bb29c72e5e0f07d5bad867a074b2f30ac4dc5aefd0119348",
+        "decodedSha256": "f756218fdf8c67ca34b496c04ed48669a831a05ccdf0739a9f3c032daa665da2",
+        "bounds": {
+          "min": [
+            0.04725898057222366,
+            0.010396975092589855,
+            -0.08081285655498505
+          ],
+          "max": [
+            0.12429111450910568,
+            0.1479206085205078,
+            0.0018903592135757208
+          ]
+        },
+        "positionEncoding": "uint16 normalized in local world bounds",
+        "normalEncoding": "int16 normalized world XYZ",
+        "indexEncoding": "uint32",
+        "winding": "Triangle geometric normal agrees with outward encoded normal",
+        "gpuBytes": 12021612
+      },
+      "lowBandMask": {
+        "file": "lvot-perivalvular-refinement-low-band.bits.gz",
+        "format": "gzip-bitset-x-zyx",
+        "lowerFullFineXYZ": [
+          1048,
+          944,
+          1080
+        ],
+        "upperFullFineXYZ": [
+          1212,
+          1120,
+          1372
+        ],
+        "dimensionsXYZ": [
+          164,
+          176,
+          292
+        ],
+        "storageDimensionsXYZ": [
+          21,
+          176,
+          292
+        ],
+        "compressedBytes": 201716,
+        "decodedBytes": 1079232,
+        "sha256": "44ce552c70de9b99b196d9fc75eb68ef0c99aeb1a7587e8a111ddbe7a04655be",
+        "decodedSha256": "04391a827a9b6362e83110cb92404a56e6c509bd9031dcb8fc5c9afd723e35e5",
+        "maskedVoxels": 460893
+      },
+      "replacementBounds": {
+        "min": [
+          0.047258979206049136,
+          0.01039697542533081,
+          -0.08081285444234403
+        ],
+        "max": [
+          0.12429111531190924,
+          0.1479206049149338,
+          0.0018903591682419656
+        ]
+      }
+    }
+  ],
+  "sourceTransport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "maskManifestSha256": {
+    "v27": "d97ac73a657df879fdfb8c88004cb63a429b568455b45b2dfceb2ae6258742f8",
+    "v28": "6ac7fac5a19834ed6a1c189a923976fc70ec8f4bfd3b768f52c748ba4e702fa5"
+  },
+  "productionShaders": true,
+  "rendererSha256": "781bb1e723c2af81fbf8e54bda72769a7bee7a6fc1f4dea8076035ebeed5b574",
+  "fineSurfaceSha256": "96174bd10b142738fdd2a039eae46804d7bae7bb0482f5a3a63044317940f840",
+  "checks": [
+    {
+      "case": {
+        "id": "lvot-y262",
+        "axis": 1,
+        "coordinate": 1044,
+        "target": [
+          1080,
+          1044,
+          1120
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 47843,
+      "totalPixels": 604800,
+      "reversible": null,
+      "originalOffExact": null,
+      "sourceCapSha256": "0b100a7c641a9408e6a2e2be9a08fe3f9463659b98c95a56623a97732ecbfad8",
+      "imageHashes": {
+        "v27": "d843b99b117f645c0fa8cc01b2b6ca4a6a684f1f3d2ba141b7b129031a2f4a98",
+        "v28": "b245ff7ae4251c4cda20a6aa4530c0aa7cf1366f90bb4bf8919af74b8ebe5851"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.04536862003780717
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.10224208850422889,
+          0.016844243372674213,
+          -0.5436215694408573
+        ],
+        "_target": [
+          0.06238185255198487,
+          0.029300567107750464,
+          -0.04536862003780717
+        ],
+        "_whole": false
+      }
+    },
+    {
+      "case": {
+        "id": "la-y316",
+        "axis": 1,
+        "coordinate": 1260,
+        "target": [
+          1270,
+          1260,
+          810
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 9730,
+      "totalPixels": 604800,
+      "reversible": null,
+      "originalOffExact": null,
+      "sourceCapSha256": "c30fd5f228387c47112fdde0d70b66c01d32c25c7a9f4fea9debe0749e518ae0",
+      "imageHashes": {
+        "v27": "f522768f355e30a972c10f372830394447274d75257638aecd3964df288f7d8e",
+        "v28": "ce5d93fceb707a6696097e032c10fd61663be5d08beab79d085f462b097fafca"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.1474480151228733
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6457009645259234
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.1474480151228733
+        ],
+        "_whole": false
+      }
+    }
+  ],
+  "scope": "Full verified Gentle source geometry, exact production GLSL and local replacement drawing, same-camera before/after, unchanged measured source caps. Nearby reproducible views, not exact screenshot registration. No clinical-validation or browser-performance claim."
+}

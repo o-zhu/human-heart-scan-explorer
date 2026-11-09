@@ -1,0 +1,18 @@
+{
+  "scope": "Numerical clearance between authored illustrative context and a coarse thresholded source-heart envelope; not donor anatomy, patient registration or clinical collision validation.",
+  "source": "assets/volume-v5/heart-low-clean.raw.gz",
+  "compressedSourceSha256": "2fbdbed97158e5fc2cf3456130a7c92c7e468a07e9a4f4d3bcd2bff353c33ed4",
+  "sourceSpacingMmXYZ": [
+    0.6352000000000001,
+    0.6352000000000001,
+    0.6364030303030305
+  ],
+  "tissueThresholdByte": 72,
+  "centerlineMinimumSampledDistanceMm": 8.921795574634421,
+  "esophagealWallMinimumSampledDistanceMm": 3.7045789363533452,
+  "esophagealExpandedVerticesWithin03mmOfCoarseTissue": 0,
+  "esophagealExpandedVertices": 25344,
+  "diaphragmMinimumVerticalGapToCoarseEnvelopeMm": 4.376343260381763,
+  "diaphragmGapMethod": "Generated diaphragm triangles linearly interpolated in body L/A; source envelope from Gaussian0.65 low-volume threshold71.4, marching cubes step3; actual hiatus excluded.",
+  "caveat": "Source pixels and the procedural organ are distinct. Positive coarse clearance does not prove contact clearance against every fine source fold or every steered probe pose."
+}

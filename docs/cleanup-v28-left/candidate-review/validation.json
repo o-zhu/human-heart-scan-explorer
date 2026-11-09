@@ -1,0 +1,225 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 151,
+    "decodedBrickReads": 1321,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "comparisons": [
+    {
+      "operation": "pulmonary-vein-complete-sheet",
+      "previouslyVisibleCoreSourceSamples": 80239,
+      "newlyHiddenCoreSourceSamples": 69271,
+      "remainingCoreSourceSamples": 10968,
+      "uniqueAdditionalMaskSamples": 284073,
+      "newlyHiddenFractionOfPreviouslyVisibleSelectedCoreSource": 0.863308,
+      "serialChecks": [
+        {
+          "y": 1216,
+          "previouslyVisibleCoreSourceSamples": 2382,
+          "newlyHiddenCoreSourceSamples": 2215,
+          "remainingCoreSourceSamples": 167,
+          "uniqueAdditionalMaskSamples": 4925
+        },
+        {
+          "y": 1248,
+          "previouslyVisibleCoreSourceSamples": 47,
+          "newlyHiddenCoreSourceSamples": 47,
+          "remainingCoreSourceSamples": 0,
+          "uniqueAdditionalMaskSamples": 953
+        },
+        {
+          "y": 1260,
+          "previouslyVisibleCoreSourceSamples": 118,
+          "newlyHiddenCoreSourceSamples": 102,
+          "remainingCoreSourceSamples": 16,
+          "uniqueAdditionalMaskSamples": 793
+        },
+        {
+          "y": 1288,
+          "previouslyVisibleCoreSourceSamples": 61,
+          "newlyHiddenCoreSourceSamples": 60,
+          "remainingCoreSourceSamples": 1,
+          "uniqueAdditionalMaskSamples": 1224
+        },
+        {
+          "y": 1300,
+          "previouslyVisibleCoreSourceSamples": 965,
+          "newlyHiddenCoreSourceSamples": 904,
+          "remainingCoreSourceSamples": 61,
+          "uniqueAdditionalMaskSamples": 3719
+        },
+        {
+          "y": 1308,
+          "previouslyVisibleCoreSourceSamples": 848,
+          "newlyHiddenCoreSourceSamples": 725,
+          "remainingCoreSourceSamples": 123,
+          "uniqueAdditionalMaskSamples": 2733
+        },
+        {
+          "y": 1320,
+          "previouslyVisibleCoreSourceSamples": 602,
+          "newlyHiddenCoreSourceSamples": 415,
+          "remainingCoreSourceSamples": 187,
+          "uniqueAdditionalMaskSamples": 1537
+        },
+        {
+          "y": 1332,
+          "previouslyVisibleCoreSourceSamples": 194,
+          "newlyHiddenCoreSourceSamples": 65,
+          "remainingCoreSourceSamples": 129,
+          "uniqueAdditionalMaskSamples": 955
+        }
+      ],
+      "selectionSha256": "f3fa7005b5c46dbe1c44317d9b99512ea71f2e02e5b5d51255f26f7c746fa709"
+    },
+    {
+      "operation": "appendage-complete-free-sheet",
+      "previouslyVisibleCoreSourceSamples": 62596,
+      "newlyHiddenCoreSourceSamples": 37569,
+      "remainingCoreSourceSamples": 25027,
+      "uniqueAdditionalMaskSamples": 186770,
+      "newlyHiddenFractionOfPreviouslyVisibleSelectedCoreSource": 0.600182,
+      "serialChecks": [
+        {
+          "y": 1232,
+          "previouslyVisibleCoreSourceSamples": 883,
+          "newlyHiddenCoreSourceSamples": 609,
+          "remainingCoreSourceSamples": 274,
+          "uniqueAdditionalMaskSamples": 2062
+        },
+        {
+          "y": 1248,
+          "previouslyVisibleCoreSourceSamples": 560,
+          "newlyHiddenCoreSourceSamples": 357,
+          "remainingCoreSourceSamples": 203,
+          "uniqueAdditionalMaskSamples": 1855
+        },
+        {
+          "y": 1260,
+          "previouslyVisibleCoreSourceSamples": 732,
+          "newlyHiddenCoreSourceSamples": 341,
+          "remainingCoreSourceSamples": 391,
+          "uniqueAdditionalMaskSamples": 2312
+        },
+        {
+          "y": 1276,
+          "previouslyVisibleCoreSourceSamples": 863,
+          "newlyHiddenCoreSourceSamples": 488,
+          "remainingCoreSourceSamples": 375,
+          "uniqueAdditionalMaskSamples": 2275
+        },
+        {
+          "y": 1292,
+          "previouslyVisibleCoreSourceSamples": 867,
+          "newlyHiddenCoreSourceSamples": 540,
+          "remainingCoreSourceSamples": 327,
+          "uniqueAdditionalMaskSamples": 2339
+        },
+        {
+          "y": 1304,
+          "previouslyVisibleCoreSourceSamples": 615,
+          "newlyHiddenCoreSourceSamples": 334,
+          "remainingCoreSourceSamples": 281,
+          "uniqueAdditionalMaskSamples": 2131
+        },
+        {
+          "y": 1312,
+          "previouslyVisibleCoreSourceSamples": 202,
+          "newlyHiddenCoreSourceSamples": 22,
+          "remainingCoreSourceSamples": 180,
+          "uniqueAdditionalMaskSamples": 953
+        }
+      ],
+      "selectionSha256": "b4eb7112f0420744d6c07c0b842d4cd478e0ffbf5e75e7bf6c101ae16c4e0376"
+    },
+    {
+      "operation": "atrial-inlet-early-continuation",
+      "previouslyVisibleCoreSourceSamples": 202025,
+      "newlyHiddenCoreSourceSamples": 188458,
+      "remainingCoreSourceSamples": 13567,
+      "uniqueAdditionalMaskSamples": 590239,
+      "newlyHiddenFractionOfPreviouslyVisibleSelectedCoreSource": 0.932845,
+      "serialChecks": [
+        {
+          "y": 756,
+          "previouslyVisibleCoreSourceSamples": 1,
+          "newlyHiddenCoreSourceSamples": 1,
+          "remainingCoreSourceSamples": 0,
+          "uniqueAdditionalMaskSamples": 3986
+        },
+        {
+          "y": 764,
+          "previouslyVisibleCoreSourceSamples": 546,
+          "newlyHiddenCoreSourceSamples": 543,
+          "remainingCoreSourceSamples": 3,
+          "uniqueAdditionalMaskSamples": 5020
+        },
+        {
+          "y": 780,
+          "previouslyVisibleCoreSourceSamples": 1958,
+          "newlyHiddenCoreSourceSamples": 1950,
+          "remainingCoreSourceSamples": 8,
+          "uniqueAdditionalMaskSamples": 5641
+        },
+        {
+          "y": 796,
+          "previouslyVisibleCoreSourceSamples": 2969,
+          "newlyHiddenCoreSourceSamples": 2744,
+          "remainingCoreSourceSamples": 225,
+          "uniqueAdditionalMaskSamples": 8210
+        },
+        {
+          "y": 812,
+          "previouslyVisibleCoreSourceSamples": 5152,
+          "newlyHiddenCoreSourceSamples": 4732,
+          "remainingCoreSourceSamples": 420,
+          "uniqueAdditionalMaskSamples": 11069
+        },
+        {
+          "y": 820,
+          "previouslyVisibleCoreSourceSamples": 2935,
+          "newlyHiddenCoreSourceSamples": 2599,
+          "remainingCoreSourceSamples": 336,
+          "uniqueAdditionalMaskSamples": 7621
+        },
+        {
+          "y": 828,
+          "previouslyVisibleCoreSourceSamples": 1532,
+          "newlyHiddenCoreSourceSamples": 1377,
+          "remainingCoreSourceSamples": 155,
+          "uniqueAdditionalMaskSamples": 4124
+        },
+        {
+          "y": 840,
+          "previouslyVisibleCoreSourceSamples": 554,
+          "newlyHiddenCoreSourceSamples": 478,
+          "remainingCoreSourceSamples": 76,
+          "uniqueAdditionalMaskSamples": 2001
+        },
+        {
+          "y": 848,
+          "previouslyVisibleCoreSourceSamples": 214,
+          "newlyHiddenCoreSourceSamples": 13,
+          "remainingCoreSourceSamples": 201,
+          "uniqueAdditionalMaskSamples": 1198
+        },
+        {
+          "y": 856,
+          "previouslyVisibleCoreSourceSamples": 22,
+          "newlyHiddenCoreSourceSamples": 0,
+          "remainingCoreSourceSamples": 22,
+          "uniqueAdditionalMaskSamples": 610
+        }
+      ],
+      "selectionSha256": "e4f7ca5d646f5007d04d3c4921029589e1fec4200fb34cc0976c3cbfefabc34d"
+    }
+  ],
+  "scope": "Source-space display exclusion and retained core contrast. This does not establish anatomical identity or prove final mesh fidelity; production rendering is a separate gate."
+}

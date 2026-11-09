@@ -1,0 +1,131 @@
+{
+  "donor": "ladaf-2021-17",
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.12,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sourceHash": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+  "sourceCalibration": "Windowed uint8 HiP-CT display intensities; not calibrated HU.",
+  "checks": [
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.28,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 9181776,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.31751460899977246,
+      "file": "ladaf-2021-17-raw-0.280.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.32,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 8246752,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.33127543500449974,
+      "file": "ladaf-2021-17-raw-0.320.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.36,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7590331,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.3450018449948402,
+      "file": "ladaf-2021-17-raw-0.360.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.4,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7057204,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.3328407029985101,
+      "file": "ladaf-2021-17-raw-0.400.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.44,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 6446603,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.34644036700046854,
+      "file": "ladaf-2021-17-raw-0.440.png"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "method": "raw",
+      "threshold": 0.48,
+      "grid": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 5689065,
+      "fieldSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.372005499433726e-06,
+      "nativeRenderSeconds": 0.31201538699679077,
+      "file": "ladaf-2021-17-raw-0.480.png"
+    }
+  ],
+  "scope": "Native EGL production GLSL. Image comparison is not anatomical segmentation accuracy or clinical validation. Original sources remain immutable."
+}

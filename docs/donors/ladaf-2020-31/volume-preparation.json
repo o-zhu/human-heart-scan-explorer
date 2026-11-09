@@ -1,0 +1,616 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "specimen": "LADAF-2020-31",
+    "organ": "heart",
+    "datasetId": "1966161627",
+    "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966161627",
+    "doi": "10.15151/ESRF-DC-1965462390",
+    "doiUrl": "https://doi.org/10.15151/ESRF-DC-1965462390",
+    "title": "Overview scan at 19.89 um of the heart of the body donor LADAF-2020-31",
+    "attribution": "Human Organ Atlas Collaboration / ESRF",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "donorAge": "69",
+    "donorSex": "female",
+    "donorMedicalInfo": "Type 2 diabetes, pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+    "nativeDimensions": [
+      6840,
+      6840,
+      8228
+    ],
+    "nativeSpacingUm": 19.89,
+    "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-31/heart/19.89um_complete-organ_bm18/",
+    "sourceFormat": "N5",
+    "sourceScale": "s4",
+    "sourceScaleDimensions": [
+      428,
+      428,
+      515
+    ],
+    "sourceScaleSpacingUm": 318.24,
+    "sourceWindow": [
+      10005.0,
+      22000.0
+    ],
+    "sourceDtype": "uint16",
+    "sourcePhysicalOriginUm": [
+      39.78,
+      39.78,
+      39.78
+    ],
+    "sourceAxes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "sourceScaleCenterExtentUm": [
+      136206.72,
+      136206.72,
+      163575.36000000002
+    ],
+    "levels": {
+      "low": {
+        "label": "Fast \u00b7 636.480 \u00b5m",
+        "dimensions": [
+          215,
+          215,
+          258
+        ],
+        "spacingUm": [
+          636.48,
+          636.48,
+          636.48
+        ],
+        "parts": [
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/low-clean.raw.gz",
+            "bytes": 1587291,
+            "uncompressedBytes": 11926050,
+            "sha256": "51c9e06a83800bed39caf13c03271ab52a52b4d4a08106eea6128328118eaa89",
+            "rawSha256": "9b91d1c37f931eddf0e7f763f75913d70ad5bec553033f8aa735e848ec4fe0e4",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              258
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/low-original.raw.gz",
+            "bytes": 4525607,
+            "uncompressedBytes": 11926050,
+            "sha256": "51cea489ee29e96d68a05ed450874123be6d9ad4d8c838550a094ce79094cc0e",
+            "rawSha256": "660ada6e7c6cdd59a2679185fa578f0f9bf9a48f224315ce6d94c0281f6f2cd2",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              258
+            ]
+          }
+        ],
+        "originalCompressedBytes": 4525607,
+        "compressedBytes": 1587291,
+        "uncompressedBytes": 11926050,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          136206.72,
+          136206.72,
+          163575.36000000002
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      },
+      "high": {
+        "label": "Detailed \u00b7 318.240 \u00b5m",
+        "dimensions": [
+          429,
+          429,
+          515
+        ],
+        "spacingUm": 318.24,
+        "parts": [
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-00.raw.gz",
+            "bytes": 172199,
+            "uncompressedBytes": 11778624,
+            "sha256": "2aeee12e5cac34847ff2155a7fae3f3d7be04ea054ded03bdce62f831165b44b",
+            "rawSha256": "6ca2e590b0d5ff7fe1add0c4b2559dcaac5618f8ae8f4a1e9feaf299ec36fa57",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-01.raw.gz",
+            "bytes": 768390,
+            "uncompressedBytes": 11778624,
+            "sha256": "c288e576218b3f825ba61202160feb6fd03948b871e8945ea14d5a86488a9caa",
+            "rawSha256": "a82e52bf7117619ea9ca8ab10bb3475fca50e8193f8ecfe5deed6228fb1df424",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-02.raw.gz",
+            "bytes": 1236439,
+            "uncompressedBytes": 11778624,
+            "sha256": "1e35912f0fcee50310686d309f6c7f4d89bdb079c0d6b967b21701b2f4d38275",
+            "rawSha256": "e38dc9ccb42078f20c4bdfc79df631166848b31d6e95aa35fef328bdad6a75b8",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-03.raw.gz",
+            "bytes": 1707932,
+            "uncompressedBytes": 11778624,
+            "sha256": "9ed058a58c0d77be5da70c1907368b2e6bc56b3e1b8dadffc28e989cbaeb7a77",
+            "rawSha256": "5a8b184fcd3d9d24f318f8f63b50606dbe15c0197feb289b63b8d9412dea47ab",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-04.raw.gz",
+            "bytes": 2195297,
+            "uncompressedBytes": 11778624,
+            "sha256": "39dd9e2888b362319a555562b12115eabc7da416d52c0337f41c53a09c3e1a91",
+            "rawSha256": "39f20bc17881b0ba86c785fca15c4e8208654749d0a06b5c920b4de8f07cbe0e",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-05.raw.gz",
+            "bytes": 2064292,
+            "uncompressedBytes": 11778624,
+            "sha256": "78f5da1a356f27c08e56fcf10799154f9b8cd88f60e56a1974611131ddfe3e1c",
+            "rawSha256": "121863a480b08d4d2d18ace0c2114be148ae3eab01316444f686dfc6ad3c3c9c",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-06.raw.gz",
+            "bytes": 1399483,
+            "uncompressedBytes": 11778624,
+            "sha256": "c2c2172e4a29693dfd3846318544482c7f9bd590971746b0f9e3951643a826f5",
+            "rawSha256": "20f099130ae882f0f990c75392de8859efcad4b35b955e803d3f9cf18444f0a5",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              384,
+              448
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-07.raw.gz",
+            "bytes": 604076,
+            "uncompressedBytes": 11778624,
+            "sha256": "366da79aef2865aae8e7d8e8e64e60a32e6ff7201a1fdcc9ea077e4b34929816",
+            "rawSha256": "b70484cf8e83d45fbe7282b7f79d40d02b71aa55ff13c337bf31aa1d4b009bfd",
+            "predictor": "delta-z",
+            "cleaned": true,
+            "zRange": [
+              448,
+              512
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-clean-08.raw.gz",
+            "bytes": 8238,
+            "uncompressedBytes": 552123,
+            "sha256": "e5ebcd84b9d654af7a6852e69d7d60b4afa0a2409a5d2b8b1715b711c17c28e2",
+            "rawSha256": "71242acd9f4c6a389cd9a7753368bdf83e4f688eb281c0858941f45c7132bd44",
+            "predictor": "delta-x",
+            "cleaned": true,
+            "zRange": [
+              512,
+              515
+            ]
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-00.raw.gz",
+            "bytes": 2990769,
+            "uncompressedBytes": 11778624,
+            "sha256": "21ec4a58f1c3f04efa08757ffb98ac5be6b36f9c21ed88f35ec3f8ce322c8bfc",
+            "rawSha256": "ebd46234c36f1d33da609d51293a7b0182038eb89c603f4960d56027b862cf8d",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              0,
+              64
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-01.raw.gz",
+            "bytes": 3313159,
+            "uncompressedBytes": 11778624,
+            "sha256": "3015345d4153359577875491e814f008a441a9666ccb5bbf4d3914f01a97ec1f",
+            "rawSha256": "66c080482e4efb11c7e9a0bd2ef07868ffd545fa029084cc996e975115809970",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              64,
+              128
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-02.raw.gz",
+            "bytes": 3612094,
+            "uncompressedBytes": 11778624,
+            "sha256": "4e05c1bec887e0833732df7c414e661568b91c25c2aa36b004a24128b07f4265",
+            "rawSha256": "e5d9f80a2b4768be6373307bf6a3cfb6d6af1e4631ca558ffc04990aefdff30d",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              128,
+              192
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-03.raw.gz",
+            "bytes": 3892782,
+            "uncompressedBytes": 11778624,
+            "sha256": "991190701d9449741046d0b4b06695bab080d45a9beb7d600fc3bbd823d6ba29",
+            "rawSha256": "774bf9b3946d647226afc7d042e95e2db0999ccab23ff42d9fd51649f93df17a",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              192,
+              256
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-04.raw.gz",
+            "bytes": 4198329,
+            "uncompressedBytes": 11778624,
+            "sha256": "46deb603dc88f28216a01ed0e3b644edbc2980068d55e03db5dab59aa0256757",
+            "rawSha256": "b79af8b1d5ba74609af1a97d41817097f6c0c1e6e338ae91a0081e9d64b5681d",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              256,
+              320
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-05.raw.gz",
+            "bytes": 4173081,
+            "uncompressedBytes": 11778624,
+            "sha256": "2c5f81a32100a2d2602540c8088b34a805970d8143849965f49150526d7dc37b",
+            "rawSha256": "3e425adfa4ee345ec72a56ad20dc4f2bdb120f659d7a0229b0d7564b9aee4f3c",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              320,
+              384
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-06.raw.gz",
+            "bytes": 3711698,
+            "uncompressedBytes": 11778624,
+            "sha256": "9ca3b099ad872099f0ce778a7888da74b214afabf9d81e0ae8abef0b6380b2c5",
+            "rawSha256": "cafe230bd52b580f49b95ca935e100d3127bd7c4984b11c1a6b9c21b1f25ba74",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              384,
+              448
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-07.raw.gz",
+            "bytes": 3147475,
+            "uncompressedBytes": 11778624,
+            "sha256": "ba1c5559f8d5525ae496ecd67c82f222f10f79d359c65def7d14fa838e818e00",
+            "rawSha256": "e45b36b24b970907249280f0ae4b7dbba85d2200195bbad507546655d797a834",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              448,
+              512
+            ]
+          },
+          {
+            "url": "assets/donors/ladaf-2020-31/volume/high-original-08.raw.gz",
+            "bytes": 161549,
+            "uncompressedBytes": 552123,
+            "sha256": "ddc09e40eaea9307e28a1b8500783e90c9a343f107acce0aa8672b418c31443a",
+            "rawSha256": "c1869cfe4ebfa56ce0f2d07a2357a8a6b103748a8ea9a4fb4c65da6260082bac",
+            "predictor": "delta-z",
+            "cleaned": false,
+            "zRange": [
+              512,
+              515
+            ]
+          }
+        ],
+        "originalCompressedBytes": 29200936,
+        "compressedBytes": 10156346,
+        "uncompressedBytes": 94781115,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          136206.72,
+          136206.72,
+          163575.36000000002
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts"
+        },
+        "processing": "Source high pyramid resampled at derived fine-registered physical centers; preview Gaussian sigma0.5 and endpoint-preserving trilinear resampling; display window encoded once."
+      }
+    },
+    "previewLevel": "low",
+    "defaultLevel": "high",
+    "defaultThreshold": 0.26636098374322636,
+    "registration": "Fine source first sample center anchors every level. High centers use exact integer fine-index stride; preview shares endpoints. All acquired fine voxels retained; added terminal columns are zero.",
+    "registrationPadding": {
+      "sourceFineDimensionsXYZ": [
+        1710,
+        1710,
+        2057
+      ],
+      "displayFineDimensionsXYZ": [
+        1713,
+        1713,
+        2057
+      ],
+      "zeroPaddedFineColumnsXYZ": [
+        3,
+        3,
+        0
+      ],
+      "sourceVoxelsOmitted": 0
+    },
+    "processingSummary": "Authentic LADAF-2020-31 whole-heart voxels. Donor metadata are recorded independently for this source. Source-specific display encoding and reversible exterior cleanup. Clinical orientation and anatomical labels require donor-specific review.",
+    "retrievedDate": "2026-11-05",
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.20800333472280116,
+      "windowHigh": 0.8749478949562317,
+      "windowGamma": 0.9,
+      "capContrast": 1
+    }
+  },
+  "compression": {
+    "low": {
+      "chosenPredictors": [
+        "delta-z"
+      ],
+      "compressedBytes": 1587291,
+      "alternatives": [
+        {
+          "none": 1792705,
+          "delta-x": 1684665,
+          "delta-z": 1587291
+        }
+      ],
+      "originalCompressedBytes": 4525607,
+      "partCount": 1,
+      "roundTripExact": true
+    },
+    "high": {
+      "chosenPredictors": [
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-z",
+        "delta-x"
+      ],
+      "compressedBytes": 10156346,
+      "alternatives": [
+        {
+          "none": 211256,
+          "delta-x": 203688,
+          "delta-z": 172199
+        },
+        {
+          "none": 925382,
+          "delta-x": 848470,
+          "delta-z": 768390
+        },
+        {
+          "none": 1515810,
+          "delta-x": 1360048,
+          "delta-z": 1236439
+        },
+        {
+          "none": 2110101,
+          "delta-x": 1856433,
+          "delta-z": 1707932
+        },
+        {
+          "none": 2717061,
+          "delta-x": 2352076,
+          "delta-z": 2195297
+        },
+        {
+          "none": 2507471,
+          "delta-x": 2188552,
+          "delta-z": 2064292
+        },
+        {
+          "none": 1648416,
+          "delta-x": 1475800,
+          "delta-z": 1399483
+        },
+        {
+          "none": 684518,
+          "delta-x": 627201,
+          "delta-z": 604076
+        },
+        {
+          "none": 8281,
+          "delta-x": 8238,
+          "delta-z": 8849
+        }
+      ],
+      "originalCompressedBytes": 29200936,
+      "partCount": 9,
+      "roundTripExact": true
+    }
+  },
+  "cleanup": {
+    "schemaVersion": 1,
+    "specimen": "LADAF-2020-31",
+    "datasetId": "1966161627",
+    "dimensions": [
+      215,
+      215,
+      258
+    ],
+    "volumeUrl": "assets/donors/ladaf-2020-31/cleanup/heart-support.raw.gz",
+    "dtype": "uint8",
+    "arrayOrder": "ZYX, X fastest",
+    "values": {
+      "0": "excluded",
+      "255": "retained"
+    },
+    "physicalCenterExtentUm": [
+      136206.72,
+      136206.72,
+      163575.36000000002
+    ],
+    "sourceThresholdRaw": 13200.0,
+    "sourceThresholdDisplay": 0.26636098374322636,
+    "sourceDimensions": [
+      429,
+      429,
+      515
+    ],
+    "sourceSpacingUm": 318.24,
+    "method": "Reviewed largest 18-connected source-threshold support, 3-voxel Manhattan margin and conservative sampling guard; endpoint-registered support.",
+    "componentPolicy": "largest",
+    "retainedComponentIds": [
+      17
+    ],
+    "reviewedSupportSeeds": [],
+    "reviewedHeartRoi": null,
+    "coreConnectivity": 18,
+    "marginVoxels": 3,
+    "coreComponentVoxels": 8404897,
+    "sourceForegroundVoxels": 8440377,
+    "sourceComponents": 2563,
+    "coreVoxelsRetained": 8404897,
+    "topComponentSizes": [
+      8404897,
+      2965,
+      2438,
+      1884,
+      1810,
+      1429,
+      1089,
+      1039,
+      1022,
+      978,
+      710,
+      710
+    ],
+    "rawBytes": 11926050,
+    "compressedBytes": 103085,
+    "sha256": "27e992e9ac09f46e6ba22beb1bcbea37a11dfd52d8183a82ecf7418432a5eb1a",
+    "intensitiesModified": false,
+    "limitations": "Exterior display support is not anatomical segmentation. Original windowed volume is available by disabling cleanup."
+  },
+  "registration": {
+    "highDimensionsXYZ": [
+      429,
+      429,
+      515
+    ],
+    "lowDimensionsXYZ": [
+      215,
+      215,
+      258
+    ],
+    "fullFineDimensionsXYZ": [
+      1713,
+      1713,
+      2057
+    ],
+    "sourceFineDimensionsXYZ": [
+      1710,
+      1710,
+      2057
+    ],
+    "highSpacingUm": 318.24,
+    "lowSpacingUmXYZ": [
+      636.48,
+      636.48,
+      636.48
+    ],
+    "fineSpacingUm": 79.56,
+    "longestMm": 163.57536000000002,
+    "extent": [
+      0.8326848249027237,
+      1.0,
+      0.8326848249027237
+    ],
+    "fineSourcePhysicalOriginUm": [
+      39.78,
+      39.78,
+      39.78
+    ],
+    "highOriginalSourceIndexShift": [
+      -0.375,
+      -0.375,
+      -0.375
+    ],
+    "paddingFineColumnsXYZ": [
+      3,
+      3,
+      0
+    ],
+    "worldMapping": "Centered physical source coordinates [X,Z,-Y], normalized by longest physical center extent.",
+    "sourceCenterConvention": "Neuroglancer N5 zero-offset cell grid: sample center=(index+0.5)*resolution*downsamplingFactor."
+  }
+}

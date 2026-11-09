@@ -1,0 +1,136 @@
+[
+  {
+    "phase": 0,
+    "sourceZ": 130,
+    "axis": 2,
+    "position": 0.5050505050505051,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.04447091600013664,
+    "foregroundPixels": 226155
+  },
+  {
+    "phase": 0,
+    "sourceZ": 135,
+    "axis": 2,
+    "position": 0.5555555555555556,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.025239567999960855,
+    "foregroundPixels": 210834
+  },
+  {
+    "phase": 0,
+    "sourceZ": 140,
+    "axis": 2,
+    "position": 0.6060606060606061,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.026550004004093353,
+    "foregroundPixels": 201978
+  },
+  {
+    "phase": 10,
+    "sourceZ": 130,
+    "axis": 2,
+    "position": 0.5050505050505051,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.025726136002049316,
+    "foregroundPixels": 220883
+  },
+  {
+    "phase": 10,
+    "sourceZ": 135,
+    "axis": 2,
+    "position": 0.5555555555555556,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.019325378998473752,
+    "foregroundPixels": 215735
+  },
+  {
+    "phase": 10,
+    "sourceZ": 140,
+    "axis": 2,
+    "position": 0.6060606060606061,
+    "oblique": false,
+    "threshold": 0.36,
+    "distance": 1.65,
+    "normalizedExtent": [
+      1.0,
+      0.7268883289287688,
+      0.8113207547169812
+    ],
+    "stepSize": 0.0056603773584905665,
+    "secondsOffline": 0.022445540998887736,
+    "foregroundPixels": 206970
+  },
+  {
+    "series": "cmac",
+    "axis": 2,
+    "position": 0.5,
+    "oblique": false,
+    "threshold": 0.12,
+    "distance": 1.85,
+    "normalizedExtent": [
+      0.8360655737704918,
+      0.7704918032786885,
+      1.0
+    ],
+    "stepSize": 0.0036885245901639345,
+    "secondsOffline": 0.016938802000368014,
+    "foregroundPixels": 231159
+  },
+  {
+    "series": "cmac",
+    "axis": 2,
+    "position": 0.5,
+    "oblique": false,
+    "threshold": 0.12,
+    "distance": 2.0,
+    "normalizedExtent": [
+      0.8360655737704918,
+      0.7704918032786885,
+      1.0
+    ],
+    "stepSize": 0.0036885245901639345,
+    "secondsOffline": 0.01160997000260977,
+    "foregroundPixels": 197964
+  }
+]

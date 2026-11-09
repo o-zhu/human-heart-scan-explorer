@@ -1,0 +1,15 @@
+{
+  "datasetId": "1773963465",
+  "sourceWindow": [
+    19300,
+    23000
+  ],
+  "rawUint16ValuesChecked": 65536,
+  "reference": "45-digit Decimal linear ratio, round-half-even",
+  "maximumCorrectedByteError": 0,
+  "previousMaximumByteError": 0,
+  "previousDifferingValues": [],
+  "sourceWindowChanged": false,
+  "sourceRawDataChanged": false,
+  "correction": "Exact integer nearest-even uint16 lookup table removes reciprocal half-step error."
+}

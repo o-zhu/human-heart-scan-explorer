@@ -1,0 +1,108 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 24,
+    "decodedBrickReads": 24,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "early-inlet-detail",
+      "title": "Unmasked early continuation of the already selected atrial inlet material",
+      "lowerXYZ": [
+        1200,
+        744,
+        470
+      ],
+      "upperXYZ": [
+        1320,
+        833,
+        675
+      ],
+      "ys": [
+        748,
+        756,
+        764,
+        772,
+        780,
+        788,
+        796,
+        804,
+        812,
+        820,
+        828,
+        832
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 748,
+          "sourcePlaneSha256": "e2a2b1db64cd8a1a4d547104a7d8f4b2e7755a00b0805f765484c01d2d4190a6",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 756,
+          "sourcePlaneSha256": "f6a0091e7b124efd33c648d781fcb1d4beefcd9a135109f158f90c5eda2a0761",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 764,
+          "sourcePlaneSha256": "4347852ba0f1973b21ea0e44512bf2d4eb09632f17eea2f9fcda5a0c1720aa4d",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 772,
+          "sourcePlaneSha256": "ec4c049d1dbcb6485a94e1a22ae6b4242cc6cfc688575de307e258166ed9e4e3",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 780,
+          "sourcePlaneSha256": "f9c075dcd02c5b4bd7a7cbf0bcb3b70e1b1b3b93608a36416b798af578dd3e3c",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 788,
+          "sourcePlaneSha256": "5f01f2ebe89bce9cd12adc3f2853c24d632dba0d8bdd5ae30bbd2df8f17039d9",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 796,
+          "sourcePlaneSha256": "6763d728764b860d30ce40c3241e1ec6ca52c956e185040fb00952098bfc8f29",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 804,
+          "sourcePlaneSha256": "97dfc889b3866a5f3fb3c53f536c9a17dc61b0d87688fc2cb1787bbc6b784930",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 812,
+          "sourcePlaneSha256": "0938da75c4431c7a8c94d3e08124b6a995fd34370f2397cfe2e121a640958ddf",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 820,
+          "sourcePlaneSha256": "c5ead5a69e3711115982bbca09fb72f592272592ad5c3f1755a716d42d76698c",
+          "excludedInPlane": 6142
+        },
+        {
+          "fineY": 828,
+          "sourcePlaneSha256": "7043fa2ae5bb97e054ca9df0efbdbfa7eb7d1a5c47e7a4cfa010ddd99b5ec8a8",
+          "excludedInPlane": 10112
+        },
+        {
+          "fineY": 832,
+          "sourcePlaneSha256": "31682bfd257ba9aafae14a705d53c042742107b9abe783d0c00b86e4f439fb65",
+          "excludedInPlane": 11457
+        }
+      ]
+    }
+  ]
+}

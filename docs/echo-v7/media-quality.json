@@ -1,0 +1,282 @@
+[
+  {
+    "id": "tte-plax",
+    "previous": {
+      "width": 600,
+      "height": 370,
+      "frames": 40,
+      "averageFrameRate": "10/1",
+      "bytes": 800435,
+      "sourceUrl": "https://www.thepocusatlas.com/normal-cardiac-anatomy"
+    },
+    "width": 624,
+    "height": 480,
+    "frames": 51,
+    "averageFrameRate": "51/1",
+    "bytes": 208087,
+    "crop": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm",
+    "sourceDimensions": [
+      624,
+      480
+    ],
+    "interpretation": "Original 51 fps recorded motion replaces a 10\u201312 fps GIF."
+  },
+  {
+    "id": "tte-psax_papillary",
+    "previous": {
+      "width": 440,
+      "height": 506,
+      "frames": 29,
+      "averageFrameRate": "12000/1001",
+      "bytes": 1664140,
+      "sourceUrl": "https://www.thepocusatlas.com/normal-cardiac-anatomy"
+    },
+    "width": 624,
+    "height": 480,
+    "frames": 93,
+    "averageFrameRate": "51/1",
+    "bytes": 375472,
+    "crop": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAXPAP_normal_(CardioNetworks_ECHOpedia).webm",
+    "sourceDimensions": [
+      624,
+      480
+    ],
+    "interpretation": "Original 51 fps recorded motion replaces a 10\u201312 fps GIF."
+  },
+  {
+    "id": "tte-a4c",
+    "previous": {
+      "width": 600,
+      "height": 472,
+      "frames": 100,
+      "averageFrameRate": "10/1",
+      "bytes": 4013030,
+      "sourceUrl": "https://www.thepocusatlas.com/normal-cardiac-anatomy"
+    },
+    "width": 624,
+    "height": 480,
+    "frames": 50,
+    "averageFrameRate": "51/1",
+    "bytes": 215551,
+    "crop": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm",
+    "sourceDimensions": [
+      624,
+      480
+    ],
+    "interpretation": "Original 51 fps recorded motion replaces a 10\u201312 fps GIF."
+  },
+  {
+    "id": "tte-a2c",
+    "previous": {
+      "width": 600,
+      "height": 450,
+      "frames": 21,
+      "averageFrameRate": "10/1",
+      "bytes": 416775,
+      "sourceUrl": "https://www.thepocusatlas.com/normal-cardiac-anatomy"
+    },
+    "width": 624,
+    "height": 480,
+    "frames": 91,
+    "averageFrameRate": "51/1",
+    "bytes": 407118,
+    "crop": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A2Cnormal_(CardioNetworks_ECGpedia).avi.webm",
+    "sourceDimensions": [
+      624,
+      480
+    ],
+    "interpretation": "Original 51 fps recorded motion replaces a 10\u201312 fps GIF."
+  },
+  {
+    "id": "tte-subcostal",
+    "previous": {
+      "width": 600,
+      "height": 354,
+      "frames": 60,
+      "averageFrameRate": "10/1",
+      "bytes": 2189430,
+      "sourceUrl": "https://www.thepocusatlas.com/normal-cardiac-anatomy"
+    },
+    "width": 624,
+    "height": 480,
+    "frames": 44,
+    "averageFrameRate": "51/1",
+    "bytes": 170931,
+    "crop": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm",
+    "sourceDimensions": [
+      624,
+      480
+    ],
+    "interpretation": "Original 51 fps recorded motion replaces a 10\u201312 fps GIF."
+  },
+  {
+    "id": "tee-me4c",
+    "previous": {
+      "width": 1280,
+      "height": 720,
+      "frames": 39,
+      "averageFrameRate": "25/1",
+      "bytes": 450723,
+      "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+    },
+    "width": 792,
+    "height": 568,
+    "frames": 39,
+    "averageFrameRate": "25/1",
+    "bytes": 549072,
+    "crop": {
+      "x": 248,
+      "y": 88,
+      "width": 792,
+      "height": 568,
+      "visibleThreshold": 12,
+      "marginPixels": 8,
+      "inspectedFrames": 39,
+      "maximumDiscardedChannelValue": 2,
+      "retainedFrameArea": 0.488125
+    },
+    "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+    "sourceDimensions": [
+      1280,
+      720
+    ],
+    "interpretation": "Black margins removed at native pixels; no increase in acquisition resolution."
+  },
+  {
+    "id": "tee-melax",
+    "previous": {
+      "width": 1280,
+      "height": 720,
+      "frames": 19,
+      "averageFrameRate": "25/1",
+      "bytes": 200934,
+      "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+    },
+    "width": 870,
+    "height": 610,
+    "frames": 19,
+    "averageFrameRate": "25/1",
+    "bytes": 243634,
+    "crop": {
+      "x": 216,
+      "y": 68,
+      "width": 870,
+      "height": 610,
+      "visibleThreshold": 12,
+      "marginPixels": 8,
+      "inspectedFrames": 19,
+      "maximumDiscardedChannelValue": 1,
+      "retainedFrameArea": 0.5758463541666666
+    },
+    "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+    "sourceDimensions": [
+      1280,
+      720
+    ],
+    "interpretation": "Black margins removed at native pixels; no increase in acquisition resolution."
+  },
+  {
+    "id": "tee-me2c",
+    "previous": {
+      "width": 1920,
+      "height": 1080,
+      "frames": 31,
+      "averageFrameRate": "25/1",
+      "bytes": 849949,
+      "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+    },
+    "width": 1074,
+    "height": 810,
+    "frames": 31,
+    "averageFrameRate": "25/1",
+    "bytes": 1137327,
+    "crop": {
+      "x": 402,
+      "y": 50,
+      "width": 1074,
+      "height": 810,
+      "visibleThreshold": 12,
+      "marginPixels": 8,
+      "inspectedFrames": 31,
+      "maximumDiscardedChannelValue": 4,
+      "retainedFrameArea": 0.41953125
+    },
+    "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+    "sourceDimensions": [
+      1920,
+      1080
+    ],
+    "interpretation": "Black margins removed at native pixels; no increase in acquisition resolution."
+  },
+  {
+    "id": "tee-bicaval",
+    "previous": {
+      "width": 1280,
+      "height": 720,
+      "frames": 42,
+      "averageFrameRate": "25/1",
+      "bytes": 520653,
+      "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+    },
+    "width": 804,
+    "height": 596,
+    "frames": 42,
+    "averageFrameRate": "25/1",
+    "bytes": 625027,
+    "crop": {
+      "x": 238,
+      "y": 80,
+      "width": 804,
+      "height": 596,
+      "visibleThreshold": 12,
+      "marginPixels": 8,
+      "inspectedFrames": 42,
+      "maximumDiscardedChannelValue": 0,
+      "retainedFrameArea": 0.5199479166666666
+    },
+    "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+    "sourceDimensions": [
+      1280,
+      720
+    ],
+    "interpretation": "Black margins removed at native pixels; no increase in acquisition resolution."
+  },
+  {
+    "id": "tee-tgpapillary",
+    "previous": {
+      "width": 1920,
+      "height": 1080,
+      "frames": 38,
+      "averageFrameRate": "25/1",
+      "bytes": 1185920,
+      "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0"
+    },
+    "width": 1224,
+    "height": 880,
+    "frames": 38,
+    "averageFrameRate": "25/1",
+    "bytes": 1435222,
+    "crop": {
+      "x": 352,
+      "y": 120,
+      "width": 1224,
+      "height": 880,
+      "visibleThreshold": 12,
+      "marginPixels": 8,
+      "inspectedFrames": 38,
+      "maximumDiscardedChannelValue": 1,
+      "retainedFrameArea": 0.5194444444444445
+    },
+    "sourceUrl": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+    "sourceDimensions": [
+      1920,
+      1080
+    ],
+    "interpretation": "Black margins removed at native pixels; no increase in acquisition resolution."
+  }
+]

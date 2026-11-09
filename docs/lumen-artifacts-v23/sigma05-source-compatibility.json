@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 110,
+    "decodedBrickReads": 110,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "manifestSha256": "8f46d7ce4dc07c41f1c50717d4fe63a60e667fb89862fae97b213bd1e4aee077",
+  "checks": [
+    {
+      "id": "outflow",
+      "sourceSigmaFineVoxels": 0.5,
+      "sourceThreshold": 0.28,
+      "selectedCandidateVoxels": 62833,
+      "selectedCandidateCoveredVoxels": 62267,
+      "selectedCandidateCoverage": 0.9909919946524915,
+      "candidateBoundaryVoxels": 33061,
+      "candidateBoundaryCoveredVoxels": 32495,
+      "candidateBoundaryCoverage": 0.9828801306675539,
+      "maskedAnchoredStrongSigma05Voxels": 0,
+      "maskedGuardSigma05Voxels": 0,
+      "outsideReviewedEnvelopeMaskedVoxels": 0,
+      "maskExpanded": false,
+      "protectionCompatible": true,
+      "scopeCompatible": true,
+      "candidateCoverageAbove99Percent": true
+    },
+    {
+      "id": "atrial",
+      "sourceSigmaFineVoxels": 0.5,
+      "sourceThreshold": 0.28,
+      "selectedCandidateVoxels": 89207,
+      "selectedCandidateCoveredVoxels": 88944,
+      "selectedCandidateCoverage": 0.9970518008676449,
+      "candidateBoundaryVoxels": 27925,
+      "candidateBoundaryCoveredVoxels": 27663,
+      "candidateBoundaryCoverage": 0.9906177260519248,
+      "maskedAnchoredStrongSigma05Voxels": 0,
+      "maskedGuardSigma05Voxels": 0,
+      "outsideReviewedEnvelopeMaskedVoxels": 0,
+      "maskExpanded": false,
+      "protectionCompatible": true,
+      "scopeCompatible": true,
+      "candidateCoverageAbove99Percent": true,
+      "thinAttachmentPlaneY1224MaskedVoxels": 0,
+      "longSheetZ800AndBeyondMaskedVoxels": 0
+    }
+  ],
+  "scope": "Local candidate-mask/source-contour correspondence and protection checks only. New whole-organ mesh visual verification is separate. Material identity remains unknown."
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "heart-explorer-ui-verification-v1",
+  "dateUtc": "2026-11-06",
+  "scope": "Main explorer reconstruction detail controls, source labels, and asynchronous fine-surface selection",
+  "implementation": [
+    "page.html",
+    "public/workbench.css",
+    "public/fine-surface.js: FineSurfaceController and surfaceProfiles only",
+    "public/app.js: afterFirstUsableView optional controller initialization"
+  ],
+  "checks": [
+    {
+      "command": "node tests/fine-surface-controller-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 19,
+      "failed": 0,
+      "coverage": [
+        "Actual page markup, first Settings section, direct Detail shortcut and native inspector link",
+        "Standard and prefixed fullscreen exit before opening Settings",
+        "No metadata or mesh requests at startup or when opening Settings",
+        "No-WebGL fallback and unsupported-donor isolation",
+        "Gentle v23 and polished v19 metadata isolation under delayed responses",
+        "Cancellation, late progress, latest-selection-wins and safe renderer fallback",
+        "Active source badge follows committed geometry, with resident volume resolution separate",
+        "Retained mesh reactivation avoids repeat downloads",
+        "Measured scan arrays and cut-face data remain unchanged",
+        "Static deployment gate and manifest.available false retain existing surfaces",
+        "Multipart immutable checksums and byte counts forwarded to decoder",
+        "Malformed transport metadata and worker dispatch failure release the decoder",
+        "Static download size is visible before any metadata or mesh request"
+      ]
+    },
+    {
+      "command": "node tests/module-loading-v16.mjs",
+      "passed": 3,
+      "failed": 0,
+      "coverage": ["Lazy module boundaries and shared exports"]
+    },
+    {
+      "command": "node tests/quick-views-v12.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 8,
+      "failed": 0,
+      "coverage": ["Measured view selection, donor sources, camera preservation, legacy bookmarks, and module return"]
+    },
+    {
+      "command": "node tests/clinical-ui-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 11,
+      "failed": 0,
+      "coverage": ["Actual page source selector, independent clinical source routing, measured phases, fullscreen, and shared view restoration"]
+    }
+  ],
+  "syntaxChecks": {
+    "public/fine-surface.js": "pass",
+    "public/app.js": "pass",
+    "git diff --check": "pass"
+  },
+  "deploymentGate": {
+    "element": "fineSurfaceControls",
+    "attribute": "data-gentle-ready",
+    "seedValue": "false",
+    "enableAfter": "New gentle manifest and every immutable transport part have been uploaded and verified",
+    "fallback": "An explicitly requested manifest with available=false disables the new choice without starting a decoder or replacing the current mesh"
+  },
+  "limits": [
+    "DOM fixtures and mock WebGL resources do not establish browser pixel appearance or device frame rate",
+    "These controller tests do not validate final scientific mesh geometry, original scan resolution, or anatomical artifact removal",
+    "Actual multipart download, hash verification and reconstruction quality have separate transport and scientific checks",
+    "No live website publication is claimed by this receipt"
+  ]
+}

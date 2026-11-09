@@ -1,0 +1,55 @@
+{
+  "source": "Original uint16 s4; published cleanup; raw isovalue 17100.",
+  "geometryHeldIdentical": true,
+  "meaning": "Coverage of fixed native surface projections, not segmentation accuracy.",
+  "views": {
+    "posterior": {
+      "v12": {
+        "visiblePixels": 217601,
+        "laPixels": 55878,
+        "neutralPixels": 5426
+      },
+      "v17": {
+        "visiblePixels": 217601,
+        "laPixels": 57030,
+        "neutralPixels": 4274
+      }
+    },
+    "lateral": {
+      "v12": {
+        "visiblePixels": 230949,
+        "laPixels": 73690,
+        "neutralPixels": 6885
+      },
+      "v17": {
+        "visiblePixels": 230949,
+        "laPixels": 75017,
+        "neutralPixels": 5558
+      }
+    },
+    "superior": {
+      "v12": {
+        "visiblePixels": 200390,
+        "laPixels": 77505,
+        "neutralPixels": 5388
+      },
+      "v17": {
+        "visiblePixels": 200390,
+        "laPixels": 79036,
+        "neutralPixels": 3857
+      }
+    },
+    "y352-cut": {
+      "v12": {
+        "visiblePixels": 62394,
+        "laPixels": 6828,
+        "neutralPixels": 357
+      },
+      "v17": {
+        "visiblePixels": 62394,
+        "laPixels": 6939,
+        "neutralPixels": 246
+      }
+    }
+  }
+}

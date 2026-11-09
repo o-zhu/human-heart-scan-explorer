@@ -1,0 +1,88 @@
+{
+  "case": {
+    "id": "atrial",
+    "axis": 1,
+    "coordinate": 1184,
+    "target": [
+      1050,
+      1184,
+      760
+    ],
+    "distance": 0.78,
+    "normal": [
+      0,
+      0,
+      -1
+    ],
+    "right": [
+      1,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      -1,
+      0
+    ],
+    "roi": [
+      [
+        1120,
+        1040,
+        680
+      ],
+      [
+        1340,
+        1260,
+        1050
+      ]
+    ]
+  },
+  "world": {
+    "center": [
+      0.0,
+      0.0,
+      -0.11153119092627599
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "width": 0.8960302457466919,
+    "height": 1.0,
+    "_eye": [
+      0.11038612687567079,
+      -0.1602636230607454,
+      -0.8888057919950341
+    ],
+    "_target": [
+      0.04820415879017013,
+      -0.14083175803402645,
+      -0.11153119092627599
+    ]
+  },
+  "exactScreenshotCamera": false,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 377,
+    "decodedBrickReads": 377,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "scope": "Production mesh/cap rendering at screenshot plane with a nearby reproducible camera. Highlight is a region of interest, not a removal mask or anatomical segmentation."
+}

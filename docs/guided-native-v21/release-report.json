@@ -1,0 +1,336 @@
+{
+  "complete": true,
+  "completeScope": "whole-plan",
+  "coordinateTransform": {
+    "handedness": "right-handed rotation",
+    "hfmPositionFlag": 1,
+    "hfmVersion": 1,
+    "indexFormat": "uint32",
+    "nativeDimensionsXYZ": [
+      7614,
+      7614,
+      8480
+    ],
+    "nativeXYZCenter": [
+      3806.5,
+      3806.5,
+      4239.5
+    ],
+    "normalFormat": "normalized signed int16 XYZ",
+    "positionFormat": "float32",
+    "scaleNativeVoxels": 8479.0,
+    "worldXYZ": "((nativeX-3806.5),(nativeZ-4239.5),-(nativeY-3806.5))/8479"
+  },
+  "coverage": {
+    "availableSurfaceBlocks": 33046,
+    "blendedEdgeVertices": 70341627,
+    "caveat": "Completion means that every block in the recorded coarse-guided core plan was processed, and every nonempty native-grid NBE1 artifact has a recorded full public-GET checksum verification. The guide derives from the cleaned 79.4 micrometre prior. The reconstructed scalar field combines denoised 19.85 micrometre native samples near the guide with a smooth transition to that prior farther away. Native-only, blended and prior-only counts describe stored edge crossings, including duplicates on shared tile boundaries; they are not disjoint surface-area fractions or a measure of complete anatomical coverage. Native-only structures absent from the prior outside the searched band may be missing. The overview is a separately sampled and simplified display LOD. The 0.31015625 micrometre native crossing-encoding bound is relative to the processed scalar isosurface; it does not bound denoising, registration, prior-guidance or anatomical error.",
+    "completedBlocks": 37612,
+    "emptyBlocks": 4566,
+    "nativeOnlyEdgeVertices": 6122635215,
+    "nativeOnlyStructureSearchOutsidePrior": false,
+    "plannedBlocks": 37612,
+    "plannedInputBlocks": 37612,
+    "priorOnlyEdgeVertices": 0,
+    "storedCrossingsIncludeSharedBoundaryDuplicates": true,
+    "wholeAnatomicalCoverageEstablished": false
+  },
+  "encoding": {
+    "boundReference": "Processed scalar isosurface; not denoising, prior-guidance, registration or anatomical error",
+    "connectivity": "Standard marching-cubes cases",
+    "crossingBits": 5,
+    "crossingPositionBoundNativeVoxels": 0.015625,
+    "crossingPositionBoundUm": 0.31015625,
+    "format": "NBE1",
+    "maximumMeasuredCrossingMovementUm": 0.31015625,
+    "rmsStoredCrossingMovementUm": 0.17906753349774654,
+    "sourceGridPreserved": true
+  },
+  "evidenceLedger": {
+    "browserLoadRequired": false,
+    "bytes": 14297934,
+    "decodedBytes": 58396062,
+    "decodedSha256": "0a87005f6ff626ec3263a1da63a90c4a4c93610b46d0c5cb850078962a957e5c",
+    "format": "gzip JSON evidence ledger",
+    "sha256": "0a5dd46f5e1fa450994daca8f7163e2019e4aa30c72e76dd0d7fd6972fc218a1",
+    "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/manifest-0a5dd46f5e1fa450994daca8f7163e2019e4aa30c72e76dd0d7fd6972fc218a1.json.gz",
+    "verified": true,
+    "verifiedAt": "2026-11-06T17:07:19.123421+00:00"
+  },
+  "fixtureOnly": false,
+  "generatorDoesNotPublish": true,
+  "generatorSha256": "88233d1a3041e4f43491cb1b015d245a2c5672989570e838810e2fa4eacd2e2a",
+  "inputHashes": {
+    "finalizationReport": "571767394c4738ee957cde36d7291f88d3ef9a12b7f60e758992484ac2021dbf",
+    "localEvidence": {
+      "browser-edge-decoder.json": "7a1dac8a8a8629a0ce88631babc5ced6d868f37a93c575fc152d4d3d150cec0c",
+      "denoising/measurements.json": "a47126644689d047903d0f03ee77068478e63f43fefcfd3cd6a918202c871a06",
+      "denoising/seam-validation.json": "c052cac81b79ec4c2ba788ed603d90080824fb91de4efe30a4f1f0f630da6495",
+      "denoising/surface-render-record.json": "bc5933c55e89f2d9f5681e5241b94f5de344e823d6acf65bd8b41a6a206bc187",
+      "production-recovery-verification.json": "592a3856c84aeb72a451225e2b6faafa39eca365877fc16fd9122a8b668bfaf7",
+      "pyramid-alignment.json": "62700b1f89114fa4becc6054f0f714110d5f38925bfce551980b8a8624fbf3e5",
+      "tv-kernel-verification.json": "e1f0ae3479420c9f414d1d83738f91196ace6b9d13475ee5598399d39f1fb4c8",
+      "whole-viewer-gl-check.json": "aaebeedb53dd92cd3784b80b2b1602ce72bee2de5c5c539da6d6a85d936ad4fb"
+    },
+    "manifest": "cbcb7130da27258951e6a0834014ab57c9b0083b320ae6bbc444aaee4154f3b4",
+    "overview": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+    "progress": "6925b1753c3579ca6e8e68dc86d21824cf342ab8dd594c2e689a31e25171ea47",
+    "run": "85e63be2416dfb098463db520404ba6c7d74aace2bf50949714cc4742dd29da7"
+  },
+  "manifestArtifact": {
+    "bytes": 3678719,
+    "completeScope": "whole-plan",
+    "decodedBytes": 14103268,
+    "decodedSha256": "cbcb7130da27258951e6a0834014ab57c9b0083b320ae6bbc444aaee4154f3b4",
+    "fixtureOnly": false,
+    "path": "manifest.json.gz",
+    "publishable": true,
+    "sha256": "afc97dc2a7e8dca3304de4296a5d6436d733e0a0c1410b84f8b1e16da41e8e5a",
+    "suggestedManifestUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/manifest-afc97dc2a7e8dca3304de4296a5d6436d733e0a0c1410b84f8b1e16da41e8e5a.json.gz",
+    "suggestedRemotePath": "manifest-afc97dc2a7e8dca3304de4296a5d6436d733e0a0c1410b84f8b1e16da41e8e5a.json.gz",
+    "uploadPerformed": false
+  },
+  "maximumRecordedWorkerRssMiB": 2521.5,
+  "overviewLods": [
+    {
+      "bounds": {
+        "max": [
+          0.44893265715296615,
+          0.5,
+          0.44893265715296615
+        ],
+        "min": [
+          -0.44893265715296615,
+          -0.5,
+          -0.44893265715296615
+        ]
+      },
+      "compressedBytes": 11012293,
+      "decodedBytes": 24642580,
+      "id": "overview",
+      "label": "Whole-heart display overview",
+      "lossy": true,
+      "parts": [
+        {
+          "bytes": 11012293,
+          "compressedBytes": 11012293,
+          "decodedBytes": 24642580,
+          "decodedSha256": "a79ed6db80689d4c5a5b91c6feda8ba44195046d13ecbf72cb4eaedd74e19122",
+          "format": "HFM1",
+          "positionFlag": 1,
+          "positionFormat": "float32",
+          "sha256": "f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e",
+          "triangles": 1499999,
+          "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-overview-0-f4d04fcc0eca1beda15f78794debb84c370b937cb64230a6b33ca583f3a2664e.hfm.gz",
+          "vertices": 369031
+        }
+      ],
+      "sampledDistances": {
+        "anatomicalAccuracyClaim": false,
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "hausdorffBound": false,
+        "originalOverviewToStoredDisplay": {
+          "maximumSampledUm": 3372.9925018356475,
+          "meanUm": 196.06974517414588,
+          "medianUm": 117.03828277217673,
+          "p95Um": 675.886870242327,
+          "p99Um": 1173.2491026197104,
+          "rmsUm": 307.2815869127226,
+          "samples": 816640
+        },
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "storedDisplayToOriginalOverview": {
+          "maximumSampledUm": 409.1335295668645,
+          "meanUm": 57.64678576775038,
+          "medianUm": 45.79234153213142,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning",
+          "p95Um": 151.8709733633329,
+          "p99Um": 224.20313435224637,
+          "rmsUm": 76.0751802062529,
+          "samples": 4096,
+          "sourceGroupsVisited": 2140
+        }
+      },
+      "simplification": {
+        "aggressiveness": 7.0,
+        "inputTriangles": 4999999,
+        "method": "fast_simplification",
+        "topologyPreserved": false,
+        "version": "0.1.13"
+      },
+      "triangles": 1499999,
+      "vertices": 369031
+    },
+    {
+      "bounds": {
+        "max": [
+          0.44893265715296615,
+          0.5,
+          0.44893265715296615
+        ],
+        "min": [
+          -0.44893265715296615,
+          -0.5,
+          -0.44893265715296615
+        ]
+      },
+      "compressedBytes": 19744361,
+      "decodedBytes": 42582052,
+      "id": "detail",
+      "label": "Whole-heart display detail",
+      "lossy": true,
+      "parts": [
+        {
+          "bytes": 19744361,
+          "compressedBytes": 19744361,
+          "decodedBytes": 42582052,
+          "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+          "format": "HFM1",
+          "positionFlag": 1,
+          "positionFormat": "float32",
+          "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef",
+          "triangles": 2500000,
+          "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/api/guided-native-v21/overview/whole-detail-0-b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef.hfm.gz",
+          "vertices": 699001
+        }
+      ],
+      "sampledDistances": {
+        "anatomicalAccuracyClaim": false,
+        "forwardSampling": "Uniform-area samples within every original leaf group; statistics weighted by group surface area",
+        "hausdorffBound": false,
+        "originalOverviewToStoredDisplay": {
+          "maximumSampledUm": 2669.8416765429743,
+          "meanUm": 157.8588521395828,
+          "medianUm": 97.69980833205524,
+          "p95Um": 526.0017461607808,
+          "p99Um": 922.0901611685675,
+          "rmsUm": 244.654852475455,
+          "samples": 816640
+        },
+        "reference": "Step-4/79.4um NBE1 overview of the processed native-plus-prior field",
+        "reverseSampling": "Uniform-area samples on the float32-stored display surface",
+        "storedDisplayToOriginalOverview": {
+          "maximumSampledUm": 396.15779301614765,
+          "meanUm": 56.769818731319326,
+          "medianUm": 44.300191694136785,
+          "method": "Closest triangle over all original overview groups, with exact group-AABB lower-bound pruning",
+          "p95Um": 153.56326713469826,
+          "p99Um": 224.4714723124928,
+          "rmsUm": 74.9131857308481,
+          "samples": 4096,
+          "sourceGroupsVisited": 2183
+        }
+      },
+      "simplification": {
+        "aggressiveness": 7.0,
+        "inputTriangles": 4999999,
+        "method": "fast_simplification",
+        "topologyPreserved": false,
+        "version": "0.1.13"
+      },
+      "triangles": 2500000,
+      "vertices": 699001
+    }
+  ],
+  "overviewSampling": {
+    "inputOverviewBlocks": 37612,
+    "inputOverviewEmptyBlocks": 5314,
+    "inputOverviewNonemptyBlocks": 32298,
+    "meshSampleSpacingUm": 79.4,
+    "nativeIndexEntriesRetained": 33046,
+    "nativeIndexIncludesEveryNonemptyRecord": true,
+    "nativeTrianglesInThoseBlocks": 78946,
+    "nonemptyNativeBlocksWithoutOverviewCrossings": 748,
+    "samplingStepNative": 4,
+    "scope": "Display omission at step-4 sampling before simplification; all nonempty native artifacts remain in the complete native index."
+  },
+  "processing": {
+    "edgeCrossingBits": 5,
+    "halo": 16,
+    "nativeBandInnerVoxels": 8,
+    "nativeBandOuterVoxels": 12,
+    "nativeSourceSpacingUm": 19.85,
+    "overviewSamplingStepNative": 4,
+    "priorGaussianSigmaVoxels": 0.8,
+    "schema": "guided-native-processing-v21.1",
+    "thinGuard": true,
+    "thresholdRaw": 17133.4,
+    "tvIterations": 16,
+    "tvStoppingEpsilon": 0,
+    "tvWeightRaw": 800
+  },
+  "publishable": true,
+  "remoteVerificationScope": "Historical full public GET receipts; no new network requests",
+  "reportSha256": "bd1632b0170900678145715c47c90d8fb56628b028f4964eca98792df08a8621",
+  "requiredWholeScopeIdentity": {
+    "planSha256": "3be68c22b4f7a000b6e17b4c159f4d9a630b52884ea434624fc70c25999c6e94",
+    "runFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a"
+  },
+  "schema": "guided-native-release-report-v21.1",
+  "source": {
+    "deduplicatedObjectsCanonicalSha256": "1ade726b163e1c1180e99a137741989a4ecdc81cf1bdf177d3049320d9b129f6",
+    "dimensionsXYZ": [
+      7614,
+      7614,
+      8480
+    ],
+    "dtype": "uint16 big-endian",
+    "n5BlockShapeXYZ": [
+      128,
+      128,
+      128
+    ],
+    "spacingUm": 19.85,
+    "uniqueObjectEncodedBytes": 125300097139,
+    "uniqueObjectsRead": 37612,
+    "url": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s0/"
+  },
+  "sourceGenerationMetadata": {
+    "allObjectsRetainExactSha256AndBytes": true,
+    "deduplicatedObjectsCanonicalSha256": "1ade726b163e1c1180e99a137741989a4ecdc81cf1bdf177d3049320d9b129f6",
+    "generationRecordedObjects": 37399,
+    "generationUnavailableEncodedBytes": 721775569,
+    "generationUnavailableObjects": 213,
+    "generationUnavailableObjectsObservedOnlyFromCache": 213,
+    "logSha256": "2418296a32e8d6229e7a46cca9a52d860aec901d74b032f5a8f0a5a90643679d",
+    "multipleGenerationsWithIdenticalBytesObjects": 0,
+    "observations": 47805,
+    "scope": "Missing GCS generation metadata does not remove the recorded original-object SHA-256, byte count or source coordinate.",
+    "uniqueObjects": 37612
+  },
+  "totals": {
+    "coreSampleRecords": 80741266668,
+    "nativeCompressedBytes": 5810515698,
+    "nativeDecodedBytes": 12740233271,
+    "nativeTriangles": 12168077800,
+    "nativeVertices": 6192976842,
+    "nativeWeightFullPointRecords": 46957687644,
+    "nativeWeightNonzeroPointRecords": 52629570351,
+    "overviewCheckpointBytes": 264393716,
+    "overviewCheckpointTriangles": 542112884
+  },
+  "wholeFigureProvenance": {
+    "displayLodNotNativeGrid": true,
+    "figure": "docs/guided-native-v21/whole-detail-render/whole-overview.png",
+    "figureBytes": 1103233,
+    "figureSha256": "0c31eab0388c7250d8615459a5da63c55b404f6d935c65b614551ee4a134eb77",
+    "inputOverviewSamplingUm": 79.4,
+    "lod": "detail",
+    "notBrowserScreenshot": true,
+    "overviewFingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+    "overviewManifestSha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+    "parts": [
+      {
+        "compressedBytes": 19744361,
+        "decodedBytes": 42582052,
+        "decodedSha256": "2ecd1073efa32094823df8fbcd0c7aa1899891f3ffea1d5ede80b113c52cef6c",
+        "sha256": "b690678f8a19fa24e5237e499275e8ac8aa94f1002365d441d6468e0f12cd2ef"
+      }
+    ],
+    "renderRecord": "docs/guided-native-v21/whole-detail-render/render-record.json",
+    "renderRecordSha256": "42264238185ac390ff87a735068e76b3ef6ed63e711e8911094d1c05825b7071",
+    "triangles": 2500000
+  },
+  "wordCount": 1836
+}

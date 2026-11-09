@@ -1,0 +1,517 @@
+{
+  "id": "proximal-aortic-nodule",
+  "mask": "valve-region",
+  "guardMode": "reviewed-object",
+  "expansion": 9,
+  "guard": 10,
+  "scope": "Bright core and low contrast envelope of the user-selected nodule proximal to the aortic valve. Preserve a source-supported collar at myocardium/valve attachment.",
+  "evidence": "source-refined/nodule-boundaries.jpg; nodule-284 production coordinate readback; primary mesh component 7",
+  "polygons": {
+    "1048": [
+      [
+        994,
+        989
+      ],
+      [
+        1010,
+        985
+      ],
+      [
+        1023,
+        1004
+      ],
+      [
+        1024,
+        1022
+      ],
+      [
+        1010,
+        1019
+      ]
+    ],
+    "1060": [
+      [
+        992,
+        981
+      ],
+      [
+        1023,
+        986
+      ],
+      [
+        1040,
+        1018
+      ],
+      [
+        1055,
+        1050
+      ],
+      [
+        1080,
+        1081
+      ],
+      [
+        1071,
+        1091
+      ],
+      [
+        1041,
+        1068
+      ],
+      [
+        1018,
+        1028
+      ],
+      [
+        994,
+        1005
+      ]
+    ],
+    "1072": [
+      [
+        1001,
+        971
+      ],
+      [
+        1019,
+        970
+      ],
+      [
+        1036,
+        984
+      ],
+      [
+        1049,
+        1012
+      ],
+      [
+        1059,
+        1040
+      ],
+      [
+        1079,
+        1069
+      ],
+      [
+        1083,
+        1088
+      ],
+      [
+        1061,
+        1090
+      ],
+      [
+        1040,
+        1065
+      ],
+      [
+        1018,
+        1030
+      ],
+      [
+        1007,
+        1006
+      ]
+    ],
+    "1084": [
+      [
+        1004,
+        965
+      ],
+      [
+        1025,
+        965
+      ],
+      [
+        1042,
+        982
+      ],
+      [
+        1053,
+        1008
+      ],
+      [
+        1064,
+        1035
+      ],
+      [
+        1079,
+        1068
+      ],
+      [
+        1081,
+        1087
+      ],
+      [
+        1064,
+        1088
+      ],
+      [
+        1045,
+        1054
+      ],
+      [
+        1026,
+        1022
+      ],
+      [
+        1007,
+        994
+      ]
+    ],
+    "1096": [
+      [
+        1006,
+        967
+      ],
+      [
+        1028,
+        967
+      ],
+      [
+        1048,
+        985
+      ],
+      [
+        1056,
+        1010
+      ],
+      [
+        1069,
+        1040
+      ],
+      [
+        1072,
+        1063
+      ],
+      [
+        1060,
+        1070
+      ],
+      [
+        1047,
+        1043
+      ],
+      [
+        1026,
+        1011
+      ],
+      [
+        1010,
+        992
+      ]
+    ],
+    "1108": [
+      [
+        1002,
+        972
+      ],
+      [
+        1023,
+        968
+      ],
+      [
+        1041,
+        976
+      ],
+      [
+        1047,
+        995
+      ],
+      [
+        1061,
+        1023
+      ],
+      [
+        1067,
+        1055
+      ],
+      [
+        1057,
+        1063
+      ],
+      [
+        1041,
+        1044
+      ],
+      [
+        1021,
+        1015
+      ],
+      [
+        1005,
+        996
+      ]
+    ],
+    "1120": [
+      [
+        1010,
+        971
+      ],
+      [
+        1033,
+        972
+      ],
+      [
+        1050,
+        988
+      ],
+      [
+        1064,
+        1010
+      ],
+      [
+        1069,
+        1032
+      ],
+      [
+        1076,
+        1054
+      ],
+      [
+        1066,
+        1063
+      ],
+      [
+        1053,
+        1043
+      ],
+      [
+        1036,
+        1022
+      ],
+      [
+        1016,
+        996
+      ]
+    ],
+    "1132": [
+      [
+        1019,
+        978
+      ],
+      [
+        1040,
+        979
+      ],
+      [
+        1062,
+        997
+      ],
+      [
+        1071,
+        1020
+      ],
+      [
+        1073,
+        1047
+      ],
+      [
+        1080,
+        1055
+      ],
+      [
+        1070,
+        1060
+      ],
+      [
+        1056,
+        1038
+      ],
+      [
+        1041,
+        1017
+      ],
+      [
+        1024,
+        996
+      ]
+    ],
+    "1140": [
+      [
+        1035,
+        981
+      ],
+      [
+        1053,
+        983
+      ],
+      [
+        1069,
+        1002
+      ],
+      [
+        1074,
+        1023
+      ],
+      [
+        1070,
+        1037
+      ],
+      [
+        1057,
+        1015
+      ],
+      [
+        1042,
+        1000
+      ]
+    ],
+    "1148": [
+      [
+        1045,
+        982
+      ],
+      [
+        1061,
+        984
+      ],
+      [
+        1070,
+        998
+      ],
+      [
+        1070,
+        1010
+      ],
+      [
+        1060,
+        1004
+      ],
+      [
+        1050,
+        991
+      ]
+    ],
+    "1156": [
+      [
+        1054,
+        985
+      ],
+      [
+        1063,
+        984
+      ],
+      [
+        1067,
+        990
+      ],
+      [
+        1061,
+        994
+      ]
+    ]
+  },
+  "selectedSamples": 272170,
+  "selectedDenseSourceSamples": 31014,
+  "comparableAnchoredGuardRuleOverlapSamples": 29,
+  "protectedSourceSamples": 676984,
+  "protectedOverlapSamples": 0,
+  "lowerFullFineXYZ": [
+    981,
+    1048,
+    954
+  ],
+  "upperFullFineXYZ": [
+    1095,
+    1157,
+    1103
+  ],
+  "meshSupportMarginFineSamples": 9,
+  "denseGuardFineSamples": 10,
+  "sourcePaddingFineSamples": 13,
+  "serialChecks": [
+    {
+      "y": 1048,
+      "selectedSamples": 966,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 3766,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1060,
+      "selectedSamples": 4773,
+      "selectedDenseSourceSamples": 90,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4087,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1072,
+      "selectedSamples": 5533,
+      "selectedDenseSourceSamples": 573,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4270,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1084,
+      "selectedSamples": 3827,
+      "selectedDenseSourceSamples": 547,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4491,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1096,
+      "selectedSamples": 2472,
+      "selectedDenseSourceSamples": 253,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4978,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1108,
+      "selectedSamples": 2764,
+      "selectedDenseSourceSamples": 612,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 5629,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1120,
+      "selectedSamples": 2185,
+      "selectedDenseSourceSamples": 452,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 6592,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1132,
+      "selectedSamples": 974,
+      "selectedDenseSourceSamples": 127,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 7938,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1140,
+      "selectedSamples": 170,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 9333,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1148,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 10635,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1156,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 11403,
+      "protectedOverlapSamples": 0
+    }
+  ],
+  "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of dense source outside the explicitly selected object core; the object may contain bright material. The source-defined attachment collar is retained.",
+  "explicitSelectedObjectException": true,
+  "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+  "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue."
+}

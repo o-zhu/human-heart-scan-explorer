@@ -1,0 +1,708 @@
+{
+  "schema": "heart-reviewed-mask-gpu-validation-v32",
+  "version": 1,
+  "passed": true,
+  "test": "tests/reviewed-mask-atlas-v32-native.py",
+  "testSha256": "78f4580b1da5e2755397e5c3b731ce2a31958f432d05b3643ed440216f9b7be1",
+  "environment": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+    "shadingLanguageVersion": "OpenGL ES GLSL ES 3.20"
+  },
+  "elapsedSeconds": 1.494,
+  "productionShadersCompiled": [
+    "volume vertex/fragment",
+    "composite vertex/fragment",
+    "fine-surface mesh vertex/fragment"
+  ],
+  "shaderSha256": {
+    "volume": "40e01c5683ca6053be066d048dc698b64524baf134b400525a24366a42bc4132",
+    "composite": "3e845f88172e0b5a55229fce04b1b315ccff0755aa3b93e031a6135aeb1e6f3b",
+    "fineSurfaceVertex": "bd144a7498ac7d06eeba816e8a4614830564dacd3cfcae089efc09b8250504d8",
+    "fineSurfaceFragment": "5ff04415665f7c5925ba7e00da6d0407778f6edd74e0d26b06de665286ac0fe8",
+    "samplingFixture": "78eb4e684a82db94eaf7e5d3ee9e827e4188617a547d7b52e22e0bad75153464"
+  },
+  "atlas": {
+    "compressedSha256": "a8b34103a8d58b27a66080366d433b8b21bca2a42b3975d0e0065ca5e82023d5",
+    "decodedSha256": "96cf62fdf734050d125bb851e63027ca11aec9c217f7cecdfb69de3202d380ca",
+    "indexTexture": {
+      "format": "R32UI",
+      "width": 1024,
+      "height": 211,
+      "entryCount": 215728,
+      "offset": 32,
+      "byteLength": 864256,
+      "logicalBytes": 862912
+    },
+    "payloadTexture": {
+      "format": "RGBA8",
+      "width": 2048,
+      "height": 2124,
+      "brickCount": 33976,
+      "offset": 864288,
+      "byteLength": 17399808,
+      "logicalBytes": 17395712
+    },
+    "productionBindings": {
+      "indexUnit": 6,
+      "payloadUnit": 7
+    },
+    "textureBytes": 18264064
+  },
+  "originalMaskSourceBytesVerified": 104449180,
+  "allByteBuilderProof": {
+    "path": "docs/verified-model-v32/mask-atlas.json",
+    "sha256": "7914aa1dd9764de6f7f368416826b79b2e26d51a4b7f44304ef4147d575dde62",
+    "sourceBytesCompared": 104449180,
+    "mismatchedBytes": 0
+  },
+  "comparisons": 13535136,
+  "mismatches": 0,
+  "fields": [
+    {
+      "id": "lumen:atrial",
+      "sourceDecodedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "logicalBrickReferences": 41496,
+      "zeroSentinelReferences": 32520,
+      "globallyDeduplicatedReferences": 735,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 81,
+      "payloadTextureRowBoundaryQueries": 33248,
+      "packedMaskAndByteEdgeQueries": 24560,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 397720,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 74019
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 397720,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 74019
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 397720,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 74019
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "lumen:arterial",
+      "sourceDecodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "logicalBrickReferences": 61600,
+      "zeroSentinelReferences": 57847,
+      "globallyDeduplicatedReferences": 107,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 120,
+      "payloadTextureRowBoundaryQueries": 14848,
+      "packedMaskAndByteEdgeQueries": 24568,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 540160,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 19817
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 540160,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 19817
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 540160,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 19817
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "lumen:valve-region",
+      "sourceDecodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "logicalBrickReferences": 16107,
+      "zeroSentinelReferences": 13500,
+      "globallyDeduplicatedReferences": 73,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 32,
+      "payloadTextureRowBoundaryQueries": 10432,
+      "packedMaskAndByteEdgeQueries": 24568,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 171800,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 14754
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 171800,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 14754
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 171800,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 14754
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "lumen:rv",
+      "sourceDecodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "logicalBrickReferences": 49005,
+      "zeroSentinelReferences": 43435,
+      "globallyDeduplicatedReferences": 142,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 96,
+      "payloadTextureRowBoundaryQueries": 22048,
+      "packedMaskAndByteEdgeQueries": 24536,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 446568,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 21207
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 446568,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 21207
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 446568,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 21207
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "local:lvot-perivalvular-refinement",
+      "sourceDecodedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+      "logicalBrickReferences": 11285,
+      "zeroSentinelReferences": 5859,
+      "globallyDeduplicatedReferences": 52,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 22,
+      "payloadTextureRowBoundaryQueries": 21632,
+      "packedMaskAndByteEdgeQueries": 24568,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 144424,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 27827
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 144424,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 27827
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 144424,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 27827
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "local:pulmonary-regularized-v30",
+      "sourceDecodedSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+      "logicalBrickReferences": 14400,
+      "zeroSentinelReferences": 10681,
+      "globallyDeduplicatedReferences": 50,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 28,
+      "payloadTextureRowBoundaryQueries": 14880,
+      "packedMaskAndByteEdgeQueries": 24568,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 162592,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 22023
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 162592,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 22023
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 162592,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 22023
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "local:tricuspid-rv-regularized-v30",
+      "sourceDecodedSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+      "logicalBrickReferences": 15635,
+      "zeroSentinelReferences": 12446,
+      "globallyDeduplicatedReferences": 56,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 30,
+      "payloadTextureRowBoundaryQueries": 12736,
+      "packedMaskAndByteEdgeQueries": 24536,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 170296,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 17633
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 170296,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 17633
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 170296,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 17633
+        }
+      ],
+      "mismatches": 0
+    },
+    {
+      "id": "local:right-perivascular-v29",
+      "sourceDecodedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "logicalBrickReferences": 6200,
+      "zeroSentinelReferences": 4445,
+      "globallyDeduplicatedReferences": 26,
+      "allBitPositions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "indexTextureRowBoundaryReferences": 12,
+      "payloadTextureRowBoundaryQueries": 7072,
+      "packedMaskAndByteEdgeQueries": 24560,
+      "sourceBoundingFaceQueries": 768,
+      "brickEdgeQueries": 3072,
+      "halfCellBoundaryQueries": 1536,
+      "checks": [
+        {
+          "offsetXYZ": [
+            -0.499,
+            -0.499,
+            -0.499
+          ],
+          "queries": 89176,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 12543
+        },
+        {
+          "offsetXYZ": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "queries": 89176,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 12543
+        },
+        {
+          "offsetXYZ": [
+            0.499,
+            0.499,
+            0.499
+          ],
+          "queries": 89176,
+          "directMismatches": 0,
+          "productionWorldPathMismatches": 0,
+          "expectedOneCount": 12543
+        }
+      ],
+      "mismatches": 0
+    }
+  ],
+  "guards": [
+    {
+      "field": "lumen:atrial",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:atrial",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:atrial",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:arterial",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:arterial",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:arterial",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:valve-region",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:valve-region",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:valve-region",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:rv",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:rv",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "lumen:rv",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:lvot-perivalvular-refinement",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:lvot-perivalvular-refinement",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:lvot-perivalvular-refinement",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:pulmonary-regularized-v30",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:pulmonary-regularized-v30",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:pulmonary-regularized-v30",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:tricuspid-rv-regularized-v30",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:tricuspid-rv-regularized-v30",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:tricuspid-rv-regularized-v30",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:right-perivascular-v29",
+      "guard": "not-ready",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:right-perivascular-v29",
+      "guard": "negative-field",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    },
+    {
+      "field": "local:right-perivascular-v29",
+      "guard": "field-after-last",
+      "queries": 16384,
+      "directMismatches": 0,
+      "productionWorldPathMismatches": 0
+    }
+  ],
+  "scope": "Native EGL executes production GLSL and checks sampled logical mask bits against original verified packed source masks. All original mask bytes are separately proven by the linked builder report. No mesh is decoded or changed.",
+  "limits": "Software EGL correctness check, not browser/device performance, full mesh rendering, or new anatomical validation. Exact half-cell ties are checked directly; production world-coordinate paths use offsets -0.499, 0, +0.499."
+}

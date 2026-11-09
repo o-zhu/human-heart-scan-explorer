@@ -1,0 +1,84 @@
+{
+  "scope": "Actual production DOM event handlers in Linkedom; numerical geometry and source-plane checks. Not browser permission or CSS pixel-layout verification.",
+  "checks": [
+    "Always-visible reference chest precedes equal-grid heart/US pair; four starting presets remain outside collapsed settings.",
+    "One Escape releases an active lock and held movement keys; trailing click cannot relock; explicit Control button works on its next first click.",
+    "Pending void-returning pointer-lock request is cancelled by a single Escape; late grant exits immediately.",
+    "Cancelled Promise-returning requests stay cancelled after late resolution or rejection.",
+    "Browser-native unlock alone clears keyboard motion and disarms scene click capture without affecting fullscreen.",
+    "Steering-pad pointer capture releases with one Escape and subsequent movement has no effect; unowned Escape remains available.",
+    "Blur / module exit cancel pending lock. Unsupported native capture reveals and focuses the steering-pad fallback.",
+    "All 12 donor starting planes retain center, contact origin and orientation while the main instrument is 60% shorter/narrower.",
+    "GL mesh transform and software fallback agree on reduced geometry and unchanged tip coordinates.",
+    "Actual rib, spine and reference-heart vertices remain inside both camera views at aspect ratios 0.38–1.5; no donor registration applied."
+  ],
+  "preservedStartingPlanes": [
+    "ladaf-2021-17:apical",
+    "ladaf-2021-17:parasternal",
+    "ladaf-2021-17:short-axis",
+    "ladaf-2021-17:atrial",
+    "s-20-29:apical",
+    "s-20-29:parasternal",
+    "s-20-29:short-axis",
+    "s-20-29:atrial",
+    "s-20-28:apical",
+    "s-20-28:parasternal",
+    "s-20-28:short-axis",
+    "s-20-28:atrial"
+  ],
+  "referenceCamera": [
+    {
+      "mode": "front",
+      "aspect": 0.38,
+      "maxNormalizedExtent": 0.83306
+    },
+    {
+      "mode": "front",
+      "aspect": 0.5,
+      "maxNormalizedExtent": 0.807485
+    },
+    {
+      "mode": "front",
+      "aspect": 0.72,
+      "maxNormalizedExtent": 0.764458
+    },
+    {
+      "mode": "front",
+      "aspect": 1,
+      "maxNormalizedExtent": 0.76363
+    },
+    {
+      "mode": "front",
+      "aspect": 1.5,
+      "maxNormalizedExtent": 0.76363
+    },
+    {
+      "mode": "oblique",
+      "aspect": 0.38,
+      "maxNormalizedExtent": 0.754898
+    },
+    {
+      "mode": "oblique",
+      "aspect": 0.5,
+      "maxNormalizedExtent": 0.756801
+    },
+    {
+      "mode": "oblique",
+      "aspect": 0.72,
+      "maxNormalizedExtent": 0.760314
+    },
+    {
+      "mode": "oblique",
+      "aspect": 1,
+      "maxNormalizedExtent": 0.729801
+    },
+    {
+      "mode": "oblique",
+      "aspect": 1.5,
+      "maxNormalizedExtent": 0.729801
+    }
+  ],
+  "mainProbeLinearScale": 0.4,
+  "referenceProbeLinearScale": 0.45,
+  "fullscreenExitCalls": 0
+}

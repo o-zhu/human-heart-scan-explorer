@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "thresholdStoredIntensity": 232.0,
+  "triangleCap": null,
+  "frames": [
+    {
+      "phase": 0,
+      "surfaces": {
+        "native": {
+          "sourceTriangles": 3087748,
+          "sourceVertices": 1582972,
+          "deliveredTriangles": 3087748,
+          "deliveredVertices": 1582972,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.6816259649049494e-14,
+              "rmsMm": 4.441735270474208e-14,
+              "p50Mm": 1.464821375527116e-14,
+              "p95Mm": 1.191086668529821e-13,
+              "p99Mm": 1.3681923515151593e-13,
+              "sampleMaxMm": 2.4640188860767675e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.717360366949464e-14,
+              "rmsMm": 4.493602008135437e-14,
+              "p50Mm": 1.429730741645998e-14,
+              "p95Mm": 1.188519109650079e-13,
+              "p99Mm": 1.3481600519334532e-13,
+              "sampleMaxMm": 2.4981034504244176e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.6994931659272067e-14,
+              "rmsMm": 4.46774390607236e-14,
+              "p50Mm": 1.432144669219779e-14,
+              "p95Mm": 1.191086668529821e-13,
+              "p99Mm": 1.3598150833520123e-13,
+              "sampleMaxMm": 2.4981034504244176e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        },
+        "overview": {
+          "sourceTriangles": 483076,
+          "sourceVertices": 249776,
+          "deliveredTriangles": 483076,
+          "deliveredVertices": 249776,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.4310232767295318e-14,
+              "rmsMm": 4.021090025509254e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1457157353758233e-13,
+              "p99Mm": 1.319874594508889e-13,
+              "sampleMaxMm": 2.639549112047733e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.4392547055395854e-14,
+              "rmsMm": 4.056035704154294e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.154495294690031e-13,
+              "p99Mm": 1.3411904040271757e-13,
+              "sampleMaxMm": 2.5579538487363607e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.4351389911345588e-14,
+              "rmsMm": 4.0386006627682585e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1463089999421787e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.639549112047733e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        }
+      },
+      "nativeVersusOverviewFullSurfaceDistance": {
+        "nativeToOverview": {
+          "samples": 6000,
+          "meanMm": 0.5954131955305066,
+          "rmsMm": 1.3087651120572916,
+          "p50Mm": 0.22459328820460894,
+          "p95Mm": 2.8158020132450403,
+          "p99Mm": 5.940033073322011,
+          "sampleMaxMm": 20.975790193475756
+        },
+        "overviewToNative": {
+          "samples": 6000,
+          "meanMm": 0.15691534018087958,
+          "rmsMm": 0.20215428751418502,
+          "p50Mm": 0.12428542881050876,
+          "p95Mm": 0.4158108803778804,
+          "p99Mm": 0.552336301498723,
+          "sampleMaxMm": 0.793673238917299
+        },
+        "method": "6000 triangle-area-weighted samples in each direction; original unsimplified intensity surfaces; mm; sampled maximum, not Hausdorff."
+      },
+      "seconds": 19.72
+    },
+    {
+      "phase": 5,
+      "surfaces": {
+        "native": {
+          "sourceTriangles": 2424532,
+          "sourceVertices": 1228180,
+          "deliveredTriangles": 2424532,
+          "deliveredVertices": 1228180,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.6572861836237543e-14,
+              "rmsMm": 4.394088333069232e-14,
+              "p50Mm": 1.432144669219779e-14,
+              "p95Mm": 1.180442248897588e-13,
+              "p99Mm": 1.352417724782596e-13,
+              "sampleMaxMm": 2.458313572902596e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.648743084422072e-14,
+              "rmsMm": 4.485685305478913e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.180442248897588e-13,
+              "p99Mm": 1.4228654313028717e-13,
+              "sampleMaxMm": 2.5460839292419616e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.653014634022913e-14,
+              "rmsMm": 4.4401230241179465e-14,
+              "p50Mm": 1.430185182120232e-14,
+              "p95Mm": 1.180442248897588e-13,
+              "p99Mm": 1.3880180481237495e-13,
+              "sampleMaxMm": 2.5460839292419616e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        },
+        "overview": {
+          "sourceTriangles": 445044,
+          "sourceVertices": 227494,
+          "deliveredTriangles": 445044,
+          "deliveredVertices": 227494,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.4037205064179034e-14,
+              "rmsMm": 3.976164787768939e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1436482767251642e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.4490543551698474e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.4511142878648155e-14,
+              "rmsMm": 4.1475188544651934e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.154495294690031e-13,
+              "p99Mm": 1.3704451988861812e-13,
+              "sampleMaxMm": 2.5981002663090496e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.4274173971413593e-14,
+              "rmsMm": 4.062745319832261e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.14571745667769e-13,
+              "p99Mm": 1.3408409609882225e-13,
+              "sampleMaxMm": 2.5981002663090496e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        }
+      },
+      "nativeVersusOverviewFullSurfaceDistance": {
+        "nativeToOverview": {
+          "samples": 6000,
+          "meanMm": 0.40690377898674385,
+          "rmsMm": 1.0678420009783165,
+          "p50Mm": 0.17767716857001958,
+          "p95Mm": 1.3609051885107668,
+          "p99Mm": 3.8661564849204653,
+          "sampleMaxMm": 19.153399716554382
+        },
+        "overviewToNative": {
+          "samples": 6000,
+          "meanMm": 0.14478353967806304,
+          "rmsMm": 0.18965537585791634,
+          "p50Mm": 0.11213251049875861,
+          "p95Mm": 0.3900500613790309,
+          "p99Mm": 0.5392873830172904,
+          "sampleMaxMm": 0.8706148336366291
+        },
+        "method": "6000 triangle-area-weighted samples in each direction; original unsimplified intensity surfaces; mm; sampled maximum, not Hausdorff."
+      },
+      "seconds": 14.615
+    },
+    {
+      "phase": 10,
+      "surfaces": {
+        "native": {
+          "sourceTriangles": 2392558,
+          "sourceVertices": 1212057,
+          "deliveredTriangles": 2392558,
+          "deliveredVertices": 1212057,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.7181112007439627e-14,
+              "rmsMm": 4.499494223534263e-14,
+              "p50Mm": 1.464821375527116e-14,
+              "p95Mm": 1.191086668529821e-13,
+              "p99Mm": 1.3406540590462047e-13,
+              "sampleMaxMm": 2.5599884484532497e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.601273806348067e-14,
+              "rmsMm": 4.342584481619164e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.180442248897588e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.639549112047733e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.659692503546015e-14,
+              "rmsMm": 4.4217354199238216e-14,
+              "p50Mm": 1.432144669219779e-14,
+              "p95Mm": 1.180442248897588e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.639549112047733e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        },
+        "overview": {
+          "sourceTriangles": 434728,
+          "sourceVertices": 222229,
+          "deliveredTriangles": 434728,
+          "deliveredVertices": 222229,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.4814965830254267e-14,
+              "rmsMm": 4.130244243759859e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1568160125746916e-13,
+              "p99Mm": 1.3482021163118623e-13,
+              "sampleMaxMm": 2.6963201038669064e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.455244514202654e-14,
+              "rmsMm": 4.068449645648172e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1462819103180742e-13,
+              "p99Mm": 1.3106720993054884e-13,
+              "sampleMaxMm": 2.6963201038669064e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.4683705486140402e-14,
+              "rmsMm": 4.099463381485813e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1506624801925828e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.6963201038669064e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        }
+      },
+      "nativeVersusOverviewFullSurfaceDistance": {
+        "nativeToOverview": {
+          "samples": 6000,
+          "meanMm": 0.3922509473739609,
+          "rmsMm": 0.9697744723922801,
+          "p50Mm": 0.17276469180552056,
+          "p95Mm": 1.341513562016724,
+          "p99Mm": 4.233637561184001,
+          "sampleMaxMm": 17.63923025082041
+        },
+        "overviewToNative": {
+          "samples": 6000,
+          "meanMm": 0.14853001808990368,
+          "rmsMm": 0.1937642604193369,
+          "p50Mm": 0.11597466511862832,
+          "p95Mm": 0.40163841144900625,
+          "p99Mm": 0.5459781285009468,
+          "sampleMaxMm": 0.9858821216077482
+        },
+        "method": "6000 triangle-area-weighted samples in each direction; original unsimplified intensity surfaces; mm; sampled maximum, not Hausdorff."
+      },
+      "seconds": 16.089
+    },
+    {
+      "phase": 15,
+      "surfaces": {
+        "native": {
+          "sourceTriangles": 3131784,
+          "sourceVertices": 1604446,
+          "deliveredTriangles": 3131784,
+          "deliveredVertices": 1604446,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.7024702068702468e-14,
+              "rmsMm": 4.5183242945250737e-14,
+              "p50Mm": 1.4597550660080323e-14,
+              "p95Mm": 1.1880361659568426e-13,
+              "p99Mm": 1.386978586197527e-13,
+              "sampleMaxMm": 2.595563718477734e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.7603097855565628e-14,
+              "rmsMm": 4.5735685907345096e-14,
+              "p50Mm": 1.517719948885615e-14,
+              "p95Mm": 1.185244067699804e-13,
+              "p99Mm": 1.3923737144427707e-13,
+              "sampleMaxMm": 2.4654911460540734e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.731389996213405e-14,
+              "rmsMm": 4.546030360910976e-14,
+              "p50Mm": 1.464821375527116e-14,
+              "p95Mm": 1.186607698327035e-13,
+              "p99Mm": 1.3923737144427707e-13,
+              "sampleMaxMm": 2.595563718477734e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        },
+        "overview": {
+          "sourceTriangles": 485348,
+          "sourceVertices": 250891,
+          "deliveredTriangles": 485348,
+          "deliveredVertices": 250891,
+          "simplificationError": {
+            "referenceToDelivered": {
+              "samples": 6000,
+              "meanMm": 2.396936441650107e-14,
+              "rmsMm": 3.98137963166645e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 9.958889573030572e-14,
+              "p99Mm": 1.3350452056511504e-13,
+              "sampleMaxMm": 2.5478580734588857e-13
+            },
+            "deliveredToReference": {
+              "samples": 6000,
+              "meanMm": 2.3848708778733862e-14,
+              "rmsMm": 3.951119417903624e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.1457157353758233e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.5579538487363607e-13
+            },
+            "pooled": {
+              "samples": 12000,
+              "meanMm": 2.3909036597617466e-14,
+              "rmsMm": 3.9662783831939705e-14,
+              "p50Mm": 1.4210854715202004e-14,
+              "p95Mm": 1.137192723007405e-13,
+              "p99Mm": 1.3406493525361332e-13,
+              "sampleMaxMm": 2.5579538487363607e-13
+            },
+            "method": "6000 triangle-area-weighted samples per direction; exact point-to-triangle closest distances through vtkStaticCellLocator; deterministic seed; sample maximum is not a Hausdorff bound."
+          }
+        }
+      },
+      "nativeVersusOverviewFullSurfaceDistance": {
+        "nativeToOverview": {
+          "samples": 6000,
+          "meanMm": 0.590708645710027,
+          "rmsMm": 1.279651010686429,
+          "p50Mm": 0.23106659799070414,
+          "p95Mm": 2.6764090523164676,
+          "p99Mm": 5.514548818720864,
+          "sampleMaxMm": 17.33212966354366
+        },
+        "overviewToNative": {
+          "samples": 6000,
+          "meanMm": 0.15791531720338103,
+          "rmsMm": 0.20225323722196714,
+          "p50Mm": 0.1283398132418903,
+          "p95Mm": 0.41208544397343727,
+          "p99Mm": 0.5530014678829177,
+          "sampleMaxMm": 0.7825784442549035
+        },
+        "method": "6000 triangle-area-weighted samples in each direction; original unsimplified intensity surfaces; mm; sampled maximum, not Hausdorff."
+      },
+      "seconds": 21.049
+    }
+  ],
+  "limitations": [
+    "Threshold surfaces include structures and intensity noise outside cardiac tissue; these are not anatomical segmentations.",
+    "All extracted triangles are retained. Float32 normalized positions and int16 normals are delivery encodings; no geometry smoothing or decimation was applied.",
+    "Distances quantify delivery simplification and sampling effects, not anatomical accuracy or clinical validity.",
+    "Frame indices are acquisition indices; physical times and RR percentage were not supplied. Phase 20 duplicates phase 0."
+  ],
+  "software": {
+    "numpy": "2.3.5",
+    "vtk": "9.3.1"
+  },
+  "totalSeconds": 71.584
+}

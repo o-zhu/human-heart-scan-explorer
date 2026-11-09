@@ -1,0 +1,1082 @@
+{
+  "schemaVersion": 1,
+  "id": "tee-regional-sanity-v3",
+  "datasetId": "1659197537",
+  "reviewedDate": "2026-11-07",
+  "clinicalRegistrationValidated": false,
+  "expertValidated": false,
+  "source": {
+    "url": "assets/volume-v5/heart-high-clean.raw.gz",
+    "decodedSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+    "dimensionsXYZ": [
+      475,
+      475,
+      530
+    ],
+    "spacingMm": 0.3176,
+    "displayValues": "uint8 windowed source; no HU calibration"
+  },
+  "labelRevision": "la-exterior-v17",
+  "labelDecodedSha256": "e29a218fdf42947a550b2c73711f66cbc4aaa0daca852f55529859e4fdb6ac54",
+  "basis": "All 24 current acquired CT sections compared with the same endpoint-registered v17 regional labels; 135 bounded TG candidate entries reviewed, including repeated current frames. Four extra-thoracic vessel targets are outside the acquired heart volume.",
+  "clinicalReference": {
+    "url": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "section": "ASE/SCA 2013 comprehensive TEE, Table 10 and corresponding view descriptions"
+  },
+  "statusDefinitions": {
+    "supported": "The intended broad regional anatomy and relation are supported by source inspection; not clinical or leaflet validation.",
+    "partial": "Some defining anatomy or the modeled acquisition approach remains unconfirmed.",
+    "unsupported": "The defining named target is not identified in the available CT; use only as a regional comparison.",
+    "outside": "The target is not included in this isolated-heart acquisition."
+  },
+  "globalLimits": [
+    "Regional labels are approximate tissue ownership, not blood-pool volumes, valve identities or expert ground truth.",
+    "The compact shared septum is assigned to LV; only the thin RV-facing layer is assigned to RV. Do not score view identity by the LV/RV tissue ratio.",
+    "The 317.6 \u00b5m display bank is windowed uint8 source data, not calibrated HU. No source pixels or masks were changed.",
+    "The ultrasound examples come from different subjects; CT-versus-cine alignment and probe/esophagus/stomach placement are educational approximations."
+  ],
+  "views": {
+    "me5c": {
+      "aseNumber": 1,
+      "name": "Midesophageal five-chamber",
+      "status": "supported",
+      "summary": "The section includes both atrial and ventricular regions and opens the LV outflow into the aortic root. The fixed LV cavity is narrower than the live ultrasound example.",
+      "visibleRegions": [
+        "LV",
+        "RV",
+        "LA",
+        "RA",
+        "aortic root"
+      ],
+      "targetRegions": [
+        "LV",
+        "RV",
+        "LA",
+        "RA",
+        "LVOT",
+        "AV"
+      ],
+      "remainingLimits": [
+        "Regional continuity is supported; individual valve leaflet identity and clinical beam alignment are not validated."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg"
+    },
+    "me4c": {
+      "aseNumber": 2,
+      "name": "Midesophageal four-chamber",
+      "status": "supported",
+      "summary": "Both atrial and ventricular regions cross the section, with the aortic outflow excluded. The large open cavity is RV; the thick, collapsed cavity beside it is LV.",
+      "visibleRegions": [
+        "LV",
+        "RV",
+        "LA",
+        "RA"
+      ],
+      "targetRegions": [
+        "LV",
+        "RV",
+        "LA",
+        "RA",
+        "AV junctions"
+      ],
+      "remainingLimits": [
+        "Fixed-specimen cavity collapse prevents the chamber proportions of a living four-chamber view.",
+        "Individual mitral and tricuspid leaflets are not separately segmented."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.700441,
+            0.581758
+          ],
+          "world": [
+            0.086096468,
+            0.232689699,
+            -0.168702699
+          ],
+          "sourceXYZ": [
+            282.545032,
+            326.243728,
+            387.592851
+          ],
+          "sourceValue": 140,
+          "interiorDistanceMm": 8.9612,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.069016,
+            0.628476
+          ],
+          "world": [
+            -0.11949042,
+            0.128395039,
+            0.225645961
+          ],
+          "sourceXYZ": [
+            173.789568,
+            117.633287,
+            332.420976
+          ],
+          "sourceValue": 142,
+          "interiorDistanceMm": 5.0022,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "mecommissural": {
+      "aseNumber": 3,
+      "name": "Midesophageal mitral commissural",
+      "status": "partial",
+      "summary": "The section follows the LA\u2013mitral\u2013LV region, with little right-ventricular tissue. The defining mitral commissures and leaflet scallops cannot be confirmed in this CT section.",
+      "visibleRegions": [
+        "LV",
+        "LA",
+        "mitral region"
+      ],
+      "targetRegions": [
+        "LV",
+        "LA",
+        "mitral commissures"
+      ],
+      "remainingLimits": [
+        "Do not identify P3, A2 or P1 from these regional labels.",
+        "Some pulmonary-root tissue lies outside the intended left-heart focus."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg"
+    },
+    "me2c": {
+      "aseNumber": 4,
+      "name": "Midesophageal two-chamber",
+      "status": "supported",
+      "summary": "A longitudinal LV\u2013LA section is present, with the right ventricle and aortic root largely excluded. The narrow LV lumen reflects the preserved specimen.",
+      "visibleRegions": [
+        "LV",
+        "LA",
+        "mitral region"
+      ],
+      "targetRegions": [
+        "LV",
+        "LA",
+        "MV"
+      ],
+      "remainingLimits": [
+        "Individual leaflet and LV wall-segment identities are not independently validated."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg"
+    },
+    "melax": {
+      "aseNumber": 5,
+      "name": "Midesophageal long-axis",
+      "status": "supported",
+      "summary": "The LV, LA and aortic-root pathway are present in a longitudinal section. The LV cavity is collapsed, so its outline differs from the ultrasound reference.",
+      "visibleRegions": [
+        "LV",
+        "LA",
+        "aortic root",
+        "adjacent RV"
+      ],
+      "targetRegions": [
+        "LV",
+        "LA",
+        "MV",
+        "LVOT",
+        "AV"
+      ],
+      "remainingLimits": [
+        "The coarse regions establish the ventricular\u2013aortic relationship, not individual aortic cusps or mitral scallops."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg"
+    },
+    "meavlax": {
+      "aseNumber": 6,
+      "name": "Midesophageal aortic valve long-axis",
+      "status": "supported",
+      "summary": "The aortic root is cut lengthwise where it joins the LV outflow. Adjacent LV, LA and RV tissue is retained as context.",
+      "visibleRegions": [
+        "LV outflow region",
+        "aortic root",
+        "LA",
+        "adjacent RV"
+      ],
+      "targetRegions": [
+        "LVOT",
+        "AV",
+        "proximal aorta"
+      ],
+      "remainingLimits": [
+        "Individual aortic cusp identity and a clinical LVOT measurement axis are not established."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-1.jpg"
+    },
+    "meaaolax": {
+      "aseNumber": 7,
+      "name": "Midesophageal ascending aorta long-axis",
+      "status": "supported",
+      "summary": "The acquired ascending-aortic segment is cut lengthwise. The neighboring pulmonary root and left atrial region are also visible; the scan does not contain the full arch.",
+      "visibleRegions": [
+        "ascending aorta",
+        "pulmonary root",
+        "LA"
+      ],
+      "targetRegions": [
+        "ascending aorta"
+      ],
+      "remainingLimits": [
+        "The available ascending vessel ends within the isolated-heart acquisition.",
+        "This section cannot establish the aortic arch branches or complete pulmonary-artery branching."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg"
+    },
+    "meaaosax": {
+      "aseNumber": 8,
+      "name": "Midesophageal ascending aorta short-axis",
+      "status": "partial",
+      "summary": "An ascending-aortic cross-section is present beside the larger pulmonary-root section. A separate superior vena cava is not confirmed.",
+      "visibleRegions": [
+        "ascending aorta",
+        "pulmonary root",
+        "LA",
+        "RA"
+      ],
+      "targetRegions": [
+        "ascending aorta",
+        "SVC",
+        "pulmonary artery"
+      ],
+      "remainingLimits": [
+        "Aortic versus pulmonary tissue ownership supports the main vessel distinction.",
+        "SVC and individual pulmonary-artery branch identities remain unconfirmed."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg"
+    },
+    "merpv": {
+      "aseNumber": 9,
+      "name": "Midesophageal right pulmonary vein",
+      "status": "unsupported",
+      "summary": "This is a left-atrial neighborhood section. The named right pulmonary-vein ostia are not identified, so the CT is not a confirmed right pulmonary-vein view.",
+      "visibleRegions": [
+        "LA",
+        "adjacent RA",
+        "adjacent LV"
+      ],
+      "targetRegions": [
+        "LA",
+        "right pulmonary-vein ostia"
+      ],
+      "remainingLimits": [
+        "No separate pulmonary-vein segmentation or reliable vein-to-atrium ostial continuity is available.",
+        "Use the real ultrasound example to learn the named vein view; this CT supplies only nearby anatomy."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg"
+    },
+    "meavsax": {
+      "aseNumber": 10,
+      "name": "Midesophageal aortic valve short-axis",
+      "status": "supported",
+      "summary": "The section crosses the aortic root at a cusp-like short-axis profile, surrounded by atrial and right-ventricular regions.",
+      "visibleRegions": [
+        "aortic root",
+        "LA",
+        "RA",
+        "RV"
+      ],
+      "targetRegions": [
+        "AV",
+        "aortic root"
+      ],
+      "remainingLimits": [
+        "Cusp-like morphology is visible, but right, left and noncoronary cusp identities are not validated by these labels."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg"
+    },
+    "mervinout": {
+      "aseNumber": 11,
+      "name": "Midesophageal RV inflow-outflow",
+      "status": "supported",
+      "summary": "The RA and RV inflow region connect to an RV outflow and pulmonary-root region in this section. The aortic root is a central landmark; very little LV-labelled tissue is included.",
+      "visibleRegions": [
+        "RA",
+        "RV",
+        "RV outflow region",
+        "pulmonary root",
+        "aortic root"
+      ],
+      "targetRegions": [
+        "RA",
+        "TV",
+        "RV",
+        "RVOT",
+        "PV",
+        "PA"
+      ],
+      "remainingLimits": [
+        "The regional right-heart pathway is supported; individual tricuspid and pulmonary leaflets are not separately labelled.",
+        "A region-matched CT section does not validate the modeled probe depth or flexion in this donor."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg",
+      "regionAnchors": [
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.679058,
+            0.496107
+          ],
+          "world": [
+            -0.158548333,
+            -0.031730458,
+            -0.097504722
+          ],
+          "sourceXYZ": [
+            153.127932,
+            288.579998,
+            247.714588
+          ],
+          "sourceValue": 128,
+          "interiorDistanceMm": 3.4436,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RA tissue",
+          "regionId": 4,
+          "normalizedXY": [
+            0.169765,
+            0.205784
+          ],
+          "world": [
+            0.193352873,
+            -0.124605482,
+            0.066492372
+          ],
+          "sourceXYZ": [
+            339.28367,
+            201.825535,
+            198.5837
+          ],
+          "sourceValue": 137,
+          "interiorDistanceMm": 3.7899,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "Pulmonary wall",
+          "regionId": 6,
+          "normalizedXY": [
+            0.517968,
+            0.092325
+          ],
+          "world": [
+            0.078956445,
+            -0.239516554,
+            -0.117302979
+          ],
+          "sourceXYZ": [
+            278.767959,
+            299.053276,
+            137.795743
+          ],
+          "sourceValue": 127,
+          "interiorDistanceMm": 4.0159,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "memodbicaval": {
+      "aseNumber": 12,
+      "name": "Midesophageal modified bicaval tricuspid valve",
+      "status": "partial",
+      "summary": "RA, tricuspid-region and RV tissue are present. The superior and inferior caval entries are not both confirmed, so this is a partial comparison to the modified bicaval view.",
+      "visibleRegions": [
+        "RA",
+        "RV",
+        "tricuspid region",
+        "adjacent LA"
+      ],
+      "targetRegions": [
+        "RA",
+        "TV",
+        "RV",
+        "caval entries"
+      ],
+      "remainingLimits": [
+        "Do not infer named caval ostia or tricuspid leaflet identity from the broad regional labels."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-2.jpg"
+    },
+    "bicaval": {
+      "aseNumber": 13,
+      "name": "Midesophageal bicaval",
+      "status": "unsupported",
+      "summary": "Both atrial regions are present, but the SVC and IVC openings are not identified together. This CT section is not a confirmed bicaval view.",
+      "visibleRegions": [
+        "RA",
+        "LA",
+        "adjacent LV",
+        "pulmonary-root fragment"
+      ],
+      "targetRegions": [
+        "RA",
+        "LA",
+        "IAS",
+        "SVC",
+        "IVC"
+      ],
+      "remainingLimits": [
+        "The broad atrial correspondence does not prove the named caval entries or fossa ovalis.",
+        "The clinical ultrasound example remains the source for the complete bicaval target."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg"
+    },
+    "mepv": {
+      "aseNumber": 14,
+      "name": "Midesophageal right and left pulmonary veins",
+      "status": "unsupported",
+      "summary": "The section samples the left atrial neighborhood. Right and left pulmonary-vein ostia cannot be distinguished reliably, so the named pulmonary-vein view is unconfirmed in CT.",
+      "visibleRegions": [
+        "LA",
+        "adjacent RA",
+        "adjacent LV"
+      ],
+      "targetRegions": [
+        "LA",
+        "right and left pulmonary-vein ostia"
+      ],
+      "remainingLimits": [
+        "No separate pulmonary-vein labels or confirmed bilateral ostial continuity are available."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg"
+    },
+    "melaa": {
+      "aseNumber": 15,
+      "name": "Midesophageal left atrial appendage",
+      "status": "unsupported",
+      "summary": "Left atrial tissue is visible, but an appendage with confirmed ostial continuity is not established. This CT section is not a verified LAA view.",
+      "visibleRegions": [
+        "LA",
+        "adjacent RA",
+        "adjacent LV"
+      ],
+      "targetRegions": [
+        "LA",
+        "LAA",
+        "LAA ostium"
+      ],
+      "remainingLimits": [
+        "A left-atrial region label alone cannot identify the appendage or its pectinate muscles."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg"
+    },
+    "tgbasalsax": {
+      "aseNumber": 16,
+      "name": "Transgastric basal short-axis",
+      "status": "partial",
+      "summary": "The section crosses the basal LV and mitral region, with the RV beside it. A basal opening is visible, but a complete mitral fish-mouth profile is not confirmed.",
+      "visibleRegions": [
+        "basal LV",
+        "mitral region",
+        "RV",
+        "adjacent LA"
+      ],
+      "targetRegions": [
+        "basal LV",
+        "MV short axis"
+      ],
+      "remainingLimits": [
+        "Mitral leaflet boundaries are not separately segmented.",
+        "Nearby source sections either enter the aortic root or pass below the intended basal level; this plane is retained as the most defensible regional comparison."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.397108,
+            0.687285
+          ],
+          "world": [
+            0.021819171,
+            -0.016639936,
+            -0.12020548
+          ],
+          "sourceXYZ": [
+            248.542342,
+            300.588699,
+            255.697474
+          ],
+          "sourceValue": 150,
+          "interiorDistanceMm": 8.6783,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.166852,
+            0.860252
+          ],
+          "world": [
+            -0.15831905,
+            -0.042626469,
+            -0.099748204
+          ],
+          "sourceXYZ": [
+            153.249222,
+            289.7668,
+            241.950598
+          ],
+          "sourceValue": 129,
+          "interiorDistanceMm": 3.6354,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "tgpapillary": {
+      "aseNumber": 17,
+      "name": "Transgastric midpapillary short-axis",
+      "status": "partial",
+      "summary": "The LV cavity is narrow and collapsed. The larger open cavity and prominent separated muscular profiles belong to RV; paired LV papillary muscles are not confirmed in this fixed specimen.",
+      "visibleRegions": [
+        "midventricular LV",
+        "midventricular RV"
+      ],
+      "targetRegions": [
+        "mid-LV short axis",
+        "paired LV papillary muscles"
+      ],
+      "remainingLimits": [
+        "This is a midventricular regional comparison, not a verified paired-LV-papillary view.",
+        "The source LV is collapsed. Regional ownership cannot label individual papillary muscles or convert RV profiles into LV anatomy."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.463849,
+            0.37931
+          ],
+          "world": [
+            0.052159327,
+            0.208173738,
+            0.021015938
+          ],
+          "sourceXYZ": [
+            264.592284,
+            225.882569,
+            374.623908
+          ],
+          "sourceValue": 132,
+          "interiorDistanceMm": 8.7968,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.068966,
+            0.365962
+          ],
+          "world": [
+            -0.109739616,
+            0.103645169,
+            0.230277521
+          ],
+          "sourceXYZ": [
+            178.947743,
+            115.183191,
+            319.328294
+          ],
+          "sourceValue": 142,
+          "interiorDistanceMm": 4.5132,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "tgapicalsax": {
+      "aseNumber": 18,
+      "name": "Transgastric apical short-axis",
+      "status": "supported",
+      "summary": "This more distal section crosses the LV apex region with an adjacent RV crescent. The LV cavity is almost closed in the preserved specimen.",
+      "visibleRegions": [
+        "apical LV",
+        "apical RV"
+      ],
+      "targetRegions": [
+        "apical LV short axis"
+      ],
+      "remainingLimits": [
+        "The source level is apical relative to the basal and midventricular sections.",
+        "Exact clinical wall segments and the beating-heart cavity contour are not independently validated."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-3.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.538376,
+            0.638487
+          ],
+          "world": [
+            -0.095685566,
+            0.314808748,
+            -0.115727024
+          ],
+          "sourceXYZ": [
+            186.382336,
+            298.219595,
+            431.033827
+          ],
+          "sourceValue": 153,
+          "interiorDistanceMm": 7.9908,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.101224,
+            0.437152
+          ],
+          "world": [
+            -0.170247706,
+            0.240674542,
+            0.163533113
+          ],
+          "sourceXYZ": [
+            146.938964,
+            150.490983,
+            391.816833
+          ],
+          "sourceValue": 134,
+          "interiorDistanceMm": 4.7633,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "tgrvbasal": {
+      "aseNumber": 19,
+      "name": "Transgastric RV basal",
+      "status": "partial",
+      "summary": "The basal RV and tricuspid region are present beside the shared septal/LV tissue. Aortic and pulmonary-root tissue is also visible, but the complete tricuspid short-axis and RVOT combination is not confirmed.",
+      "visibleRegions": [
+        "basal RV",
+        "tricuspid region",
+        "RA",
+        "shared septal/LV tissue",
+        "aortic root",
+        "pulmonary root"
+      ],
+      "targetRegions": [
+        "basal RV",
+        "TV short axis",
+        "RVOT"
+      ],
+      "remainingLimits": [
+        "A higher RV colour fraction in neighboring sections does not prove the correct tricuspid or RVOT level.",
+        "Individual tricuspid leaflets and a continuous RVOT-to-pulmonary-valve axis remain unverified."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.696329,
+            0.371134
+          ],
+          "world": [
+            0.133124058,
+            0.10875362,
+            0.043049111
+          ],
+          "sourceXYZ": [
+            307.422627,
+            214.22702,
+            322.030665
+          ],
+          "sourceValue": 148,
+          "interiorDistanceMm": 9.0017,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.220245,
+            0.56701
+          ],
+          "world": [
+            -0.158608095,
+            0.043605786,
+            0.20341111
+          ],
+          "sourceXYZ": [
+            153.096317,
+            129.395523,
+            287.567461
+          ],
+          "sourceValue": 149,
+          "interiorDistanceMm": 5.9171,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RA tissue",
+          "regionId": 4,
+          "normalizedXY": [
+            0.378198,
+            0.747995
+          ],
+          "world": [
+            -0.144304236,
+            -0.048680422,
+            0.077986948
+          ],
+          "sourceXYZ": [
+            160.663059,
+            195.744905,
+            238.748057
+          ],
+          "sourceValue": 107,
+          "interiorDistanceMm": 4.0503,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "tgrvinout": {
+      "aseNumber": 20,
+      "name": "Transgastric RV inflow-outflow",
+      "status": "supported",
+      "summary": "The section contains the RA\u2013RV inflow and the RV outflow/pulmonary-root pathway. It does not substitute an LV-dominant section for the right-heart target.",
+      "visibleRegions": [
+        "RA",
+        "RV",
+        "RV outflow region",
+        "pulmonary root",
+        "aortic root"
+      ],
+      "targetRegions": [
+        "TV",
+        "RV",
+        "RVOT",
+        "PV",
+        "PA"
+      ],
+      "remainingLimits": [
+        "The inflow\u2013outflow regional relationship is supported; valve leaflet identities are not separately segmented.",
+        "The modeled transgastric probe approach is illustrative, not measured in this donor."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg",
+      "regionAnchors": [
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.371747,
+            0.388209
+          ],
+          "world": [
+            -0.158802901,
+            -0.031133521,
+            -0.097146985
+          ],
+          "sourceXYZ": [
+            152.993265,
+            288.390755,
+            248.030368
+          ],
+          "sourceValue": 121,
+          "interiorDistanceMm": 3.4519,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RA tissue",
+          "regionId": 4,
+          "normalizedXY": [
+            0.49938,
+            0.916574
+          ],
+          "world": [
+            0.192641677,
+            -0.124592975,
+            0.066003389
+          ],
+          "sourceXYZ": [
+            338.907447,
+            202.084207,
+            198.590316
+          ],
+          "sourceValue": 136,
+          "interiorDistanceMm": 3.8198,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "Pulmonary wall",
+          "regionId": 6,
+          "normalizedXY": [
+            0.169765,
+            0.793103
+          ],
+          "world": [
+            0.090525727,
+            -0.242292715,
+            -0.111662016
+          ],
+          "sourceXYZ": [
+            284.88811,
+            296.069207,
+            136.327154
+          ],
+          "sourceValue": 114,
+          "interiorDistanceMm": 3.2127,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "deeptg5c": {
+      "aseNumber": 21,
+      "name": "Deep transgastric five-chamber",
+      "status": "partial",
+      "summary": "The LV outflow and aortic-root pathway are present with four-chamber context. This CT section does not confirm that the modeled deep-transgastric probe can acquire the ideal Doppler-aligned view.",
+      "visibleRegions": [
+        "LV",
+        "RV",
+        "LA",
+        "RA",
+        "aortic root"
+      ],
+      "targetRegions": [
+        "LVOT",
+        "AV",
+        "proximal aorta",
+        "MV"
+      ],
+      "remainingLimits": [
+        "The physical section has useful anatomy, but the gastric probe route and beam alignment are schematic.",
+        "This is not evidence of a patient-specific acoustic window or Doppler alignment."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg"
+    },
+    "tg2c": {
+      "aseNumber": 22,
+      "name": "Transgastric two-chamber",
+      "status": "supported",
+      "summary": "A longitudinal LV\u2013LA section is present with little right-ventricular tissue and no aortic-root section. The collapsed LV lumen is retained as acquired.",
+      "visibleRegions": [
+        "LV",
+        "LA",
+        "mitral region"
+      ],
+      "targetRegions": [
+        "LV",
+        "LA",
+        "MV"
+      ],
+      "remainingLimits": [
+        "Individual papillary, chordal and leaflet identities are not independently established.",
+        "The modeled transgastric approach is illustrative."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg"
+    },
+    "tgrvin": {
+      "aseNumber": 23,
+      "name": "Transgastric RV inflow",
+      "status": "supported",
+      "summary": "RA and RV tissue surround the inflow pathway. The thick adjacent tissue belongs to the shared septal/LV region, not a second RV cavity.",
+      "visibleRegions": [
+        "RA",
+        "RV",
+        "tricuspid region",
+        "shared septal/LV tissue"
+      ],
+      "targetRegions": [
+        "RA",
+        "TV",
+        "RV inflow"
+      ],
+      "remainingLimits": [
+        "The compact septal core is assigned to LV by the regional-label convention; its area is not proof of a wrong right-heart view.",
+        "Individual tricuspid leaflets, chordae and papillary muscles are not independently identified."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg",
+      "regionAnchors": [
+        {
+          "text": "LV tissue",
+          "regionId": 1,
+          "normalizedXY": [
+            0.478309,
+            0.223188
+          ],
+          "world": [
+            0.130773914,
+            0.138878696,
+            0.036394484
+          ],
+          "sourceXYZ": [
+            306.1794,
+            217.747318,
+            337.96683
+          ],
+          "sourceValue": 129,
+          "interiorDistanceMm": 11.6507,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RV tissue",
+          "regionId": 2,
+          "normalizedXY": [
+            0.363737,
+            0.718841
+          ],
+          "world": [
+            -0.173761619,
+            0.228822451,
+            0.095082182
+          ],
+          "sourceXYZ": [
+            145.080104,
+            186.701526,
+            385.547077
+          ],
+          "sourceValue": 125,
+          "interiorDistanceMm": 3.5464,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        },
+        {
+          "text": "RA tissue",
+          "regionId": 4,
+          "normalizedXY": [
+            0.690768,
+            0.114493
+          ],
+          "world": [
+            0.208635841,
+            -0.027281158,
+            0.063791721
+          ],
+          "sourceXYZ": [
+            347.36836,
+            203.254179,
+            250.068268
+          ],
+          "sourceValue": 127,
+          "interiorDistanceMm": 6.2635,
+          "kind": "regional tissue ownership; not a blood pool or valve label"
+        }
+      ]
+    },
+    "tglax": {
+      "aseNumber": 24,
+      "name": "Transgastric long-axis",
+      "status": "supported",
+      "summary": "The LV, mitral/LA region and aortic outflow are present in a longitudinal section. The gastric presentation is a modeled orientation of the measured anatomy.",
+      "visibleRegions": [
+        "LV",
+        "LA",
+        "aortic root",
+        "adjacent RV"
+      ],
+      "targetRegions": [
+        "LV",
+        "MV",
+        "LVOT",
+        "AV"
+      ],
+      "remainingLimits": [
+        "The regional long-axis relationship is supported; clinical beam alignment and leaflet identity are not validated."
+      ],
+      "physicalPlaneAction": "retain reviewed v2 physical plane",
+      "sourceReviewPlate": "current-source-labels-4.jpg"
+    },
+    "daosax": {
+      "aseNumber": 25,
+      "name": "Descending aorta short-axis",
+      "status": "outside",
+      "summary": "The descending thoracic aorta is outside this isolated-heart CT acquisition. Learn the target from the clinical ultrasound example and schematic probe context.",
+      "visibleRegions": [],
+      "targetRegions": [
+        "descending aorta short axis"
+      ],
+      "remainingLimits": [
+        "No acquired CT plane can verify this target."
+      ],
+      "physicalPlaneAction": "none: outside acquired volume",
+      "sourceReviewPlate": null
+    },
+    "daolax": {
+      "aseNumber": 26,
+      "name": "Descending aorta long-axis",
+      "status": "outside",
+      "summary": "The descending thoracic aorta is outside this isolated-heart CT acquisition. The heart reconstruction cannot supply a measured long-axis section of that vessel.",
+      "visibleRegions": [],
+      "targetRegions": [
+        "descending aorta long axis"
+      ],
+      "remainingLimits": [
+        "No acquired CT plane can verify this target."
+      ],
+      "physicalPlaneAction": "none: outside acquired volume",
+      "sourceReviewPlate": null
+    },
+    "uearchlax": {
+      "aseNumber": 27,
+      "name": "Upper esophageal aortic arch long-axis",
+      "status": "outside",
+      "summary": "The complete aortic arch and its branches are outside this isolated-heart acquisition. The spatial guide is schematic; the ultrasound example supplies the real target view.",
+      "visibleRegions": [],
+      "targetRegions": [
+        "aortic arch long axis"
+      ],
+      "remainingLimits": [
+        "No acquired CT plane can verify this target."
+      ],
+      "physicalPlaneAction": "none: outside acquired volume",
+      "sourceReviewPlate": null
+    },
+    "uearchsax": {
+      "aseNumber": 28,
+      "name": "Upper esophageal aortic arch short-axis",
+      "status": "outside",
+      "summary": "The aortic arch target is outside this isolated-heart acquisition. A nearby ascending-aortic section must not be presented as the arch short-axis view.",
+      "visibleRegions": [],
+      "targetRegions": [
+        "aortic arch short axis"
+      ],
+      "remainingLimits": [
+        "No acquired CT plane can verify this target."
+      ],
+      "physicalPlaneAction": "none: outside acquired volume",
+      "sourceReviewPlate": null
+    }
+  }
+}

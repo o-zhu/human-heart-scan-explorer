@@ -1,0 +1,529 @@
+{
+  "scope": "Targeted regression controls, not a clinical accuracy estimate. All controls predate v12; earlier contour-refinement points were not independent v4 validation.",
+  "landmarkGroups": {
+    "independent-flow-landmarks-v5.json": {
+      "matched": 12,
+      "total": 12,
+      "points": [
+        {
+          "name": "aorta_anterior",
+          "sourceXYZ": [
+            220,
+            226,
+            180
+          ],
+          "expected": 5,
+          "actual": 5,
+          "matched": true
+        },
+        {
+          "name": "aorta_posterior",
+          "sourceXYZ": [
+            237,
+            303,
+            205
+          ],
+          "expected": 5,
+          "actual": 5,
+          "matched": true
+        },
+        {
+          "name": "pulmonary_outer",
+          "sourceXYZ": [
+            187,
+            351,
+            181
+          ],
+          "expected": 6,
+          "actual": 6,
+          "matched": true
+        },
+        {
+          "name": "pulmonary_root",
+          "sourceXYZ": [
+            170,
+            322,
+            200
+          ],
+          "expected": 6,
+          "actual": 6,
+          "matched": true
+        },
+        {
+          "name": "la_lateral",
+          "sourceXYZ": [
+            310,
+            350,
+            219
+          ],
+          "expected": 3,
+          "actual": 3,
+          "matched": true
+        },
+        {
+          "name": "la_inferior",
+          "sourceXYZ": [
+            339,
+            313,
+            240
+          ],
+          "expected": 3,
+          "actual": 3,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall",
+          "sourceXYZ": [
+            237,
+            142,
+            230
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_roof_side",
+          "sourceXYZ": [
+            282,
+            156,
+            181
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "lv_posterior",
+          "sourceXYZ": [
+            260,
+            325,
+            355
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_septal",
+          "sourceXYZ": [
+            282,
+            235,
+            335
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "rv_free_wall",
+          "sourceXYZ": [
+            170,
+            125,
+            330
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        },
+        {
+          "name": "rv_apical_wall",
+          "sourceXYZ": [
+            195,
+            140,
+            370
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        }
+      ]
+    },
+    "targeted-landmarks-v5.json": {
+      "matched": 5,
+      "total": 5,
+      "points": [
+        {
+          "name": "aortic_root_anterior",
+          "sourceXYZ": [
+            237,
+            218,
+            240
+          ],
+          "expected": 5,
+          "actual": 5,
+          "matched": true
+        },
+        {
+          "name": "aortic_root_posterior",
+          "sourceXYZ": [
+            237,
+            290,
+            240
+          ],
+          "expected": 5,
+          "actual": 5,
+          "matched": true
+        },
+        {
+          "name": "aortic_sinus_lateral",
+          "sourceXYZ": [
+            225,
+            225,
+            236
+          ],
+          "expected": 5,
+          "actual": 5,
+          "matched": true
+        },
+        {
+          "name": "rvot_free_wall_1",
+          "sourceXYZ": [
+            150,
+            290,
+            235
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        },
+        {
+          "name": "rvot_free_wall_2",
+          "sourceXYZ": [
+            155,
+            305,
+            240
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        }
+      ]
+    },
+    "v4-independentLandmarks": {
+      "matched": 20,
+      "total": 20,
+      "points": [
+        {
+          "name": "lv_septal_compact_225",
+          "sourceXYZ": [
+            225,
+            235,
+            320
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_septal_compact_250",
+          "sourceXYZ": [
+            250,
+            230,
+            300
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_septal_compact_200",
+          "sourceXYZ": [
+            200,
+            230,
+            400
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_septal_compact_237",
+          "sourceXYZ": [
+            237,
+            226,
+            350
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_basal_compact_237",
+          "sourceXYZ": [
+            237,
+            320,
+            275
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall_237_lower",
+          "sourceXYZ": [
+            237,
+            150,
+            295
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall_237_fold",
+          "sourceXYZ": [
+            237,
+            165,
+            278
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall_250",
+          "sourceXYZ": [
+            250,
+            172,
+            278
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall_225",
+          "sourceXYZ": [
+            225,
+            155,
+            280
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_free_wall_200",
+          "sourceXYZ": [
+            200,
+            139,
+            293
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "rv_free_wall_237",
+          "sourceXYZ": [
+            237,
+            152,
+            350
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        },
+        {
+          "name": "rv_free_wall_200",
+          "sourceXYZ": [
+            200,
+            140,
+            350
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        },
+        {
+          "name": "lv_free_wall_237",
+          "sourceXYZ": [
+            237,
+            334,
+            400
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_free_wall_225",
+          "sourceXYZ": [
+            225,
+            325,
+            400
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "rv_heldout_180",
+          "sourceXYZ": [
+            180,
+            130,
+            330
+          ],
+          "expected": 2,
+          "actual": 2,
+          "matched": true
+        },
+        {
+          "name": "ra_heldout_190",
+          "sourceXYZ": [
+            190,
+            130,
+            290
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "ra_heldout_210",
+          "sourceXYZ": [
+            210,
+            140,
+            300
+          ],
+          "expected": 4,
+          "actual": 4,
+          "matched": true
+        },
+        {
+          "name": "lv_heldout_190",
+          "sourceXYZ": [
+            190,
+            250,
+            360
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_heldout_280",
+          "sourceXYZ": [
+            280,
+            220,
+            310
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "lv_heldout_y250",
+          "sourceXYZ": [
+            230,
+            250,
+            310
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        }
+      ]
+    },
+    "v4-refinementLandmarks": {
+      "matched": 6,
+      "total": 6,
+      "points": [
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            275,
+            225,
+            395
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            280,
+            230,
+            400
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            280,
+            245,
+            410
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            350,
+            235,
+            340
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            360,
+            255,
+            340
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        },
+        {
+          "name": "outer-contour-control",
+          "sourceXYZ": [
+            365,
+            275,
+            340
+          ],
+          "expected": 1,
+          "actual": 1,
+          "matched": true
+        }
+      ]
+    }
+  },
+  "existingAtrialArterialVoxelsPreserved": true,
+  "components": {
+    "1": {
+      "componentCount": 9,
+      "largestFraction": 0.9999891912413926
+    },
+    "2": {
+      "componentCount": 4,
+      "largestFraction": 0.9999938428289737
+    },
+    "3": {
+      "componentCount": 1,
+      "largestFraction": 1.0
+    },
+    "4": {
+      "componentCount": 1,
+      "largestFraction": 1.0
+    },
+    "5": {
+      "componentCount": 4,
+      "largestFraction": 0.9999599411134368
+    },
+    "6": {
+      "componentCount": 1,
+      "largestFraction": 1.0
+    }
+  }
+}

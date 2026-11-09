@@ -1,0 +1,112 @@
+{
+  "schema": "guided-native-manifest-compiler-verification-v21.1",
+  "allChecksPassed": true,
+  "fixtureNotice": "Only local overview/evidence receipt fixtures were used; verified=false and example.invalid. Native receipts were the real hosted pilot receipts. No network calls or uploads occurred.",
+  "checks": [
+    {
+      "check": "Real native receipts and exact completed pilot plan",
+      "passed": true
+    },
+    {
+      "check": "Completed alternate small plan cannot be mislabeled whole-plan",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Whole-plan publication requires the independently pinned whole-heart census plan and processing fingerprint; use --allow-pilot for an alternate plan"
+    },
+    {
+      "check": "Deterministic JSON and gzip from identical evidence",
+      "passed": true
+    },
+    {
+      "check": "Second-pass evidence link has no hash cycle; fixture publication stays disabled",
+      "passed": true
+    },
+    {
+      "check": "Production browser manifest validator accepts compact multipart contract",
+      "passed": true
+    },
+    {
+      "check": "Fixture receipt rejected without explicit fixture option",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Fixture receipts are forbidden in production"
+    },
+    {
+      "check": "Missing overview receipt rejected outside dry-run",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Missing overview upload receipt for assets/overview.hfm.gz"
+    },
+    {
+      "check": "Incomplete run rejected even in pilot mode",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Native run is incomplete; --allow-pilot does not waive exact-plan completion"
+    },
+    {
+      "check": "Missing completed core rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Completed tile records do not exactly cover the core plan"
+    },
+    {
+      "check": "Duplicate completed core rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Duplicate or unplanned completed tile"
+    },
+    {
+      "check": "Foreign processing fingerprint rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: A completed tile has a foreign fingerprint"
+    },
+    {
+      "check": "Wrong remote SHA rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: native receipt SHA or byte count differs"
+    },
+    {
+      "check": "Unverified remote receipt rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: native receipt is unverified or has a foreign URL"
+    },
+    {
+      "check": "Foreign remote origin rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: native receipt is unverified or has a foreign URL"
+    },
+    {
+      "check": "Crossing accounting mismatch rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Native tile counts or crossing contribution accounting disagree"
+    },
+    {
+      "check": "Receipt filename from another tile rejected",
+      "passed": true,
+      "refusal": "Manifest finalization refused: Native receipt filename belongs to a different tile"
+    },
+    {
+      "check": "Repeated source observations deduplicate; conflicting source hashes reject",
+      "passed": true
+    }
+  ],
+  "productionNativeReceiptsValidated": 8,
+  "sourceObjectsValidated": 64,
+  "nativeTriangles": 3519377,
+  "surfaceContribution": {
+    "nativeOnlyEdgeVertices": 1786641,
+    "blendedEdgeVertices": 8480,
+    "priorOnlyEdgeVertices": 0
+  },
+  "viewer": {
+    "decodedBytes": 13312,
+    "bytes": 4281,
+    "browser": {
+      "tiles": 8,
+      "parts": 1,
+      "scope": "pilot-only"
+    },
+    "evidenceLedgerNotEmbedded": true
+  },
+  "evidence": {
+    "decodedBytes": 33293,
+    "bytes": 10296,
+    "secondPassBytesUnchanged": true
+  },
+  "sourceBankUnchanged": true,
+  "compilerSha256": "4323e47591ed4a816f648fa1355de524695cd8caad0401d1c78e12283da440e2"
+}

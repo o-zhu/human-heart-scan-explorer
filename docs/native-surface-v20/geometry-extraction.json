@@ -1,0 +1,317 @@
+{
+  "schema": "native-surface-v20.1",
+  "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+  "sourceManifest": "{source-cache}/native-surface-v20/source-ready.json",
+  "shapeZYX": [
+    128,
+    128,
+    128
+  ],
+  "roiOriginXYZ": [
+    4480,
+    3968,
+    4608
+  ],
+  "sourceSpacingUm": 19.85,
+  "rawThreshold": 17133.4,
+  "normalizedThreshold": 0.28,
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "blockCells": 64,
+  "ownedCells": 2048383,
+  "expectedCells": 2048383,
+  "activeCells": 639524,
+  "triangles": 1288570,
+  "rawSampleValuesChanged": false,
+  "scalarSmoothing": false,
+  "decimation": false,
+  "componentRemoval": false,
+  "outerCropCapped": false,
+  "cellOwnership": "Disjoint integer cells; shared endpoint samples; no outside-crop zero padding.",
+  "caseAmbiguity": "Standard marching-cubes cases. This is a fixed-threshold intensity surface, not an anatomical segmentation.",
+  "surfaceBand": {
+    "blocks": 8,
+    "roundTripExact": true,
+    "compressedBytes": 7796529,
+    "decodedBytes": 12790480,
+    "scope": "Every active cell retains all eight original uint16 samples. Full lossless slices retain gradient neighborhoods and other thresholds."
+  },
+  "peakRssMiB": 134.8671875,
+  "seconds": 0.04015297500154702,
+  "blocks": [
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        0,
+        0,
+        0
+      ],
+      "endExclusiveCellXYZ": [
+        64,
+        64,
+        64
+      ],
+      "sampleShapeZYX": [
+        65,
+        65,
+        65
+      ],
+      "cells": 262144,
+      "minimum": 10044,
+      "maximum": 37309,
+      "activeCells": 114558,
+      "vertices": 121882,
+      "triangles": 237104,
+      "sha256": "4eb95fa113db6f0378ae8987aaada42c3a6d74ac22fef0479a9e9ecb5de1c024",
+      "band": {
+        "path": "surface-band/0000_0000_0000.npz",
+        "compressedBytes": 1459136,
+        "decodedBytes": 2291160,
+        "sha256": "26066094c338ac7463315209e84b0f77148a13eb3649e96c92232457eb578dab",
+        "rawCornerSha256": "965fa55a73383556cb714a0ea45c6773b69538ef5dc394ec9f2a8b409333df27",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        64,
+        0,
+        0
+      ],
+      "endExclusiveCellXYZ": [
+        127,
+        64,
+        64
+      ],
+      "sampleShapeZYX": [
+        65,
+        65,
+        64
+      ],
+      "cells": 258048,
+      "minimum": 7587,
+      "maximum": 65535,
+      "activeCells": 63376,
+      "vertices": 67104,
+      "triangles": 127309,
+      "sha256": "22784c26ee15da9fd3b20223d86a540225d95106ee29da315fa38cccb270f14c",
+      "band": {
+        "path": "surface-band/0064_0000_0000.npz",
+        "compressedBytes": 766910,
+        "decodedBytes": 1267520,
+        "sha256": "0a8b21c460f705a4516dfe8627c513ccae6a28a36422b6909884f4530ef42f88",
+        "rawCornerSha256": "681cf463f188eaa53507254da92932520c6bed79c412000b53322fdf8f33fe9c",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        0,
+        64,
+        0
+      ],
+      "endExclusiveCellXYZ": [
+        64,
+        127,
+        64
+      ],
+      "sampleShapeZYX": [
+        65,
+        64,
+        65
+      ],
+      "cells": 258048,
+      "minimum": 10271,
+      "maximum": 54941,
+      "activeCells": 81030,
+      "vertices": 86142,
+      "triangles": 166884,
+      "sha256": "d86898230bcf9e131dd73524ebd4269a2efcf9f166d16b4bf5a4bf9d22c0e833",
+      "band": {
+        "path": "surface-band/0000_0064_0000.npz",
+        "compressedBytes": 955978,
+        "decodedBytes": 1620600,
+        "sha256": "2e67c262a90efed461a5fd61274e1e282b28df6a262b435113e2c5dfc5a7d3dd",
+        "rawCornerSha256": "02b429da75c9b6629184baba7e2f911436fabe74ebc2422136132c0c953de56c",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        64,
+        64,
+        0
+      ],
+      "endExclusiveCellXYZ": [
+        127,
+        127,
+        64
+      ],
+      "sampleShapeZYX": [
+        65,
+        64,
+        64
+      ],
+      "cells": 254016,
+      "minimum": 6880,
+      "maximum": 65497,
+      "activeCells": 88921,
+      "vertices": 94567,
+      "triangles": 182878,
+      "sha256": "39e0c1b2e6d5526ee0d006bc1b6a6041f01fcaf365e421403464eadd72efebea",
+      "band": {
+        "path": "surface-band/0064_0064_0000.npz",
+        "compressedBytes": 1065932,
+        "decodedBytes": 1778420,
+        "sha256": "3cb396650e24fefd59df8fea00c480da230b6bd26789f101d9986b925377f818",
+        "rawCornerSha256": "ca7d128af4d98cdd72e3a1d45c4bddf1a405ca7e0e0e643408411d3baeaf84f1",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        0,
+        0,
+        64
+      ],
+      "endExclusiveCellXYZ": [
+        64,
+        64,
+        127
+      ],
+      "sampleShapeZYX": [
+        64,
+        65,
+        65
+      ],
+      "cells": 258048,
+      "minimum": 8026,
+      "maximum": 64207,
+      "activeCells": 46743,
+      "vertices": 48204,
+      "triangles": 89311,
+      "sha256": "a45237f344fb7a25ea94e26d819eadc457e147420989ba7bfc22eb18975165d3",
+      "band": {
+        "path": "surface-band/0000_0000_0064.npz",
+        "compressedBytes": 574327,
+        "decodedBytes": 934860,
+        "sha256": "bcd508d3957e648e2bcf01f33aa283c49b76beb4c16e1c146457fcb86fbe80c1",
+        "rawCornerSha256": "3f1235183c8dfb0c4df6cb950fd148581b1216223056bb2f0b8f573c1aad9292",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        64,
+        0,
+        64
+      ],
+      "endExclusiveCellXYZ": [
+        127,
+        64,
+        127
+      ],
+      "sampleShapeZYX": [
+        64,
+        65,
+        64
+      ],
+      "cells": 254016,
+      "minimum": 7866,
+      "maximum": 65535,
+      "activeCells": 78608,
+      "vertices": 82486,
+      "triangles": 155691,
+      "sha256": "9e108ffd45905a9df6f7726daf13a94f8e1d2b6cedabb89f246fcf136ddd3e36",
+      "band": {
+        "path": "surface-band/0064_0000_0064.npz",
+        "compressedBytes": 960168,
+        "decodedBytes": 1572160,
+        "sha256": "3e0069b5811d91a57ce10054f029036cc02b4dba645e6c23c7e01033c42b861c",
+        "rawCornerSha256": "f23a7f63588232a2cb6975f0cdc3f5c352d6f029a851f58a39dac8b4b268ad50",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        0,
+        64,
+        64
+      ],
+      "endExclusiveCellXYZ": [
+        64,
+        127,
+        127
+      ],
+      "sampleShapeZYX": [
+        64,
+        64,
+        65
+      ],
+      "cells": 254016,
+      "minimum": 10325,
+      "maximum": 49522,
+      "activeCells": 74340,
+      "vertices": 76033,
+      "triangles": 142600,
+      "sha256": "b509cd28255ecbd3237a50d21f9de3bb8f2edf9eb260633470a5f0632fe4dae3",
+      "band": {
+        "path": "surface-band/0000_0064_0064.npz",
+        "compressedBytes": 895474,
+        "decodedBytes": 1486800,
+        "sha256": "2752bd3403a133aa54979c8995cd7577bed0569ad8c1098bff4ea6a6294066f9",
+        "rawCornerSha256": "516c8a470214bd939f37cab13051d1e5d89d5dbc82f2c7a73740655e99aa7848",
+        "roundTripExact": true
+      }
+    },
+    {
+      "schema": "native-surface-v20.1",
+      "sourceManifestSha256": "26d93a07b049b730789a255dd5df4b838b805fbd487ed1eb228e34324d926a38",
+      "startXYZ": [
+        64,
+        64,
+        64
+      ],
+      "endExclusiveCellXYZ": [
+        127,
+        127,
+        127
+      ],
+      "sampleShapeZYX": [
+        64,
+        64,
+        64
+      ],
+      "cells": 250047,
+      "minimum": 9783,
+      "maximum": 39201,
+      "activeCells": 91948,
+      "vertices": 97942,
+      "triangles": 186793,
+      "sha256": "1f7390fb5bfa6676131cbcf7a237e7a3d06278d0293d6fdd8fea55c516937761",
+      "band": {
+        "path": "surface-band/0064_0064_0064.npz",
+        "compressedBytes": 1118604,
+        "decodedBytes": 1838960,
+        "sha256": "e21f0c40fee57590a38544986c8500f5e9d79899039c628091e86b58a6788f58",
+        "rawCornerSha256": "880cab4179074d02eeb9bd5cd062746f74e20db64adc8a5a021d502a90c0f24c",
+        "roundTripExact": true
+      }
+    }
+  ]
+}

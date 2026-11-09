@@ -1,0 +1,1322 @@
+{
+  "donorId": "ladaf-2021-17",
+  "sampling": "nearest",
+  "sourceManifestUrl": "./assets/ultra-volume-v7.json",
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "sourceFullDimensionsXYZ": [
+    1897,
+    1897,
+    2117
+  ],
+  "sourceSpacingUm": 79.4,
+  "longestMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "coordinateConvention": "Main explorer endpoint convention: acquisition XYZ maps to world (x,z,-y).",
+  "worldToFine": "vec3(world.x, -world.z, world.y) * (longestMm / (sourceSpacingUm / 1000)) + (sourceFullDimensionsXYZ - 1) / 2",
+  "version": 3,
+  "id": "ladaf-reviewed-lumen-display-v27",
+  "defaultEnabled": true,
+  "title": "Reviewed lumen cleanup",
+  "format": "gzip-bitset-x-zyx",
+  "description": "Targeted source-supported wall restoration and explicitly selected nodule/sheets plus guarded perivalvular fragments. Reversible 3D display edits; tissue identity is not classified.",
+  "fineToMaskUv": "Nearest original fine sample; eight adjacent X samples per byte, least-significant bit first. No mask resampling.",
+  "masks": [
+    {
+      "id": "atrial",
+      "label": "Reviewed atrial material",
+      "url": "./assets/cleanup-v27/atrial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        355,
+        535,
+        700
+      ],
+      "storageDimensionsXYZ": [
+        45,
+        535,
+        700
+      ],
+      "lowerFullFineXYZ": [
+        1080,
+        820,
+        460
+      ],
+      "upperFullFineXYZ": [
+        1435,
+        1355,
+        1160
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          1080,
+          820,
+          460
+        ],
+        [
+          1410,
+          1305,
+          1160
+        ]
+      ],
+      "compressedBytes": 603123,
+      "decodedBytes": 16852500,
+      "sha256": "561b55f2b3f64d437ff4c52264a363eeb0d9352e975e46c64caf7dd6a7840938",
+      "decodedSha256": "933f33187478f022bd0aab173a11f0c27f27908e9a58074e61784febaf08f258",
+      "logicalMaskSha256": "6024fa4d4b2c4ad843473b4ddbb1a4b5e2a7cf81d96e76668865bb8fd11f9697",
+      "maskedVoxels": 15863144,
+      "maskedVolumeMm3": 7940.553458322495,
+      "policy": {
+        "inheritedV26MaskedSamples": 15567968,
+        "addedDisplayExclusionSamples": 405104,
+        "restoredPriorExclusionSamples": 109928,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "newProtectedSourceGuardOverlapSamples": 0,
+        "explicitSelectedObjectExceptions": [
+          "atrial-appendage-sheet",
+          "atrial-pulmonary-vein-sheet"
+        ],
+        "selectedObjectDenseSourceSamples": 11427,
+        "selectedObjectComparableAnchoredGuardOverlapSamples": 95752,
+        "sourceIdentity": "Material identity remains unverified; original scalar data and mesh preserved.",
+        "operations": [
+          {
+            "id": "atrial-appendage-sheet",
+            "mask": "atrial",
+            "guardMode": "reviewed-object",
+            "expansion": 9,
+            "guard": 10,
+            "scope": "Source-traced free portion of the thin residual lower atrial sheet. Preserve the left and right source-supported wall collars.",
+            "evidence": "source-sheet-boundaries/laa-1236.jpg; source-sheet-boundaries/laa-1248.jpg; source-sheet-boundaries/laa-1260.jpg; source-sheet-boundaries/laa-1276.jpg; source-sheet-boundaries/laa-1292.jpg; source-sheet-boundaries/laa-1304.jpg",
+            "selectedSamples": 176397,
+            "selectedDenseSourceSamples": 8959,
+            "comparableAnchoredGuardRuleOverlapSamples": 95752,
+            "protectedSourceSamples": 820970,
+            "protectedOverlapSamples": 0,
+            "lowerFullFineXYZ": [
+              1169,
+              1232,
+              808
+            ],
+            "upperFullFineXYZ": [
+              1354,
+              1305,
+              973
+            ],
+            "meshSupportMarginFineSamples": 9,
+            "denseGuardFineSamples": 10,
+            "sourcePaddingFineSamples": 13,
+            "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of dense source outside the explicitly selected object core; the object may contain bright material. The source-defined attachment collar is retained.",
+            "explicitSelectedObjectException": true,
+            "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+            "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+            "newExclusionsIntersectingRestorationFootprintSamples": 0,
+            "uniqueNewExclusionSamples": 141557
+          },
+          {
+            "id": "atrial-pulmonary-vein-sheet",
+            "mask": "atrial",
+            "guardMode": "reviewed-object",
+            "expansion": 9,
+            "guard": 10,
+            "scope": "Isolated two-dimensional source foreground of the upper intraluminal sheet, tracked by serial seeds. The connected attachment planes and neighboring wall are retained.",
+            "componentMode": "isolated-sheet",
+            "componentRangeY": [
+              1224,
+              1304
+            ],
+            "componentCoreAllowance": 2,
+            "componentSeeds": {
+              "1224": [
+                1355,
+                776
+              ],
+              "1232": [
+                1346,
+                764
+              ],
+              "1248": [
+                1350,
+                748
+              ],
+              "1260": [
+                1340,
+                741
+              ],
+              "1276": [
+                1320,
+                715
+              ],
+              "1292": [
+                1300,
+                726
+              ],
+              "1304": [
+                1280,
+                723
+              ]
+            },
+            "evidence": "source-refined/upper-pv-sheet.jpg; vein-320 production coordinate readback",
+            "selectedSamples": 263554,
+            "selectedDenseSourceSamples": 2468,
+            "comparableAnchoredGuardRuleOverlapSamples": 0,
+            "protectedSourceSamples": 1425219,
+            "protectedOverlapSamples": 0,
+            "lowerFullFineXYZ": [
+              1209,
+              1180,
+              671
+            ],
+            "upperFullFineXYZ": [
+              1410,
+              1337,
+              838
+            ],
+            "meshSupportMarginFineSamples": 9,
+            "denseGuardFineSamples": 10,
+            "sourcePaddingFineSamples": 13,
+            "method": "Serial seeded two-dimensional sigma0.5>=71.4 source foreground. Reject components touching the padded source boundary or exceeding5000samples; retain connected attachment planes. Two-sample allowance defines the selected object edge. Nine-sample mesh support and a ten-sample 3D collar protect every dense source core outside this explicitly selected sheet.",
+            "explicitSelectedObjectException": true,
+            "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+            "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+            "newExclusionsIntersectingRestorationFootprintSamples": 0,
+            "uniqueNewExclusionSamples": 263547
+          }
+        ],
+        "restorations": [
+          {
+            "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+            "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+            "restoreLowerXYZ": [
+              1098,
+              930,
+              921
+            ],
+            "restoreUpperExclusiveXYZ": [
+              1304,
+              1063,
+              1085
+            ],
+            "restoreSamples": 109928,
+            "restoreMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+            "patches": [
+              {
+                "patch": "oval-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1220,
+                  928,
+                  950
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1315,
+                  949,
+                  1045
+                ],
+                "sourceSeedXYZ": [
+                  1268,
+                  938,
+                  995
+                ],
+                "sourceConnectedForegroundSamples": 111547,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 3826,
+                "lostSupportLowerXYZ": [
+                  1233,
+                  939,
+                  952
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1295,
+                  946,
+                  1031
+                ],
+                "restoreLowerXYZ": [
+                  1224,
+                  930,
+                  943
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1304,
+                  955,
+                  1040
+                ],
+                "restoreSamples": 21809,
+                "meshSupportHaloFineSamples": 9,
+                "restoreMaskSha256": "17aa4a06038e518b7a2434cb58066f6ad57ebfc2648c71d406ad043872552267",
+                "serialSupport": [
+                  {
+                    "fullFineY": 928,
+                    "connectedForegroundSamples": 8935,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 929,
+                    "connectedForegroundSamples": 8901,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 930,
+                    "connectedForegroundSamples": 8881,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 931,
+                    "connectedForegroundSamples": 8877,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 932,
+                    "connectedForegroundSamples": 8795,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 933,
+                    "connectedForegroundSamples": 8728,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 934,
+                    "connectedForegroundSamples": 8609,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 935,
+                    "connectedForegroundSamples": 8392,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 936,
+                    "connectedForegroundSamples": 8066,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 937,
+                    "connectedForegroundSamples": 7645,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 938,
+                    "connectedForegroundSamples": 6931,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 939,
+                    "connectedForegroundSamples": 5984,
+                    "previouslyExcludedSamples": 32
+                  },
+                  {
+                    "fullFineY": 940,
+                    "connectedForegroundSamples": 4902,
+                    "previouslyExcludedSamples": 11
+                  },
+                  {
+                    "fullFineY": 941,
+                    "connectedForegroundSamples": 3698,
+                    "previouslyExcludedSamples": 67
+                  },
+                  {
+                    "fullFineY": 942,
+                    "connectedForegroundSamples": 2400,
+                    "previouslyExcludedSamples": 1959
+                  },
+                  {
+                    "fullFineY": 943,
+                    "connectedForegroundSamples": 1263,
+                    "previouslyExcludedSamples": 1217
+                  },
+                  {
+                    "fullFineY": 944,
+                    "connectedForegroundSamples": 534,
+                    "previouslyExcludedSamples": 534
+                  },
+                  {
+                    "fullFineY": 945,
+                    "connectedForegroundSamples": 6,
+                    "previouslyExcludedSamples": 6
+                  }
+                ],
+                "mechanism": "Subtract prior exclusion bits within nine fine samples of previously excluded source foreground connected in 3D to the reviewed wall seed. The source component tapers out before Y946, with no foreground in Y946\u2013948 inside the bounded selection.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "A source-supported restoration of original visibility, not synthetic mesh filling or anatomical validation. The original gentle mesh remains decimated and locally irregular.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 18,
+                  "decodedBrickReads": 18,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              },
+              {
+                "patch": "irregular-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1060,
+                  930,
+                  900
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1220,
+                  1080,
+                  1100
+                ],
+                "sourceReviewLowerXYZ": [
+                  1085,
+                  975,
+                  930
+                ],
+                "sourceReviewUpperExclusiveXYZ": [
+                  1180,
+                  1060,
+                  1080
+                ],
+                "sourceSeedXYZ": [
+                  1125,
+                  990,
+                  990
+                ],
+                "protectedClumpSeedXYZ": [
+                  1180,
+                  1020,
+                  1025
+                ],
+                "sourceConnectedForegroundSamples": 1633295,
+                "protectedClumpForegroundSamples": 940303,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 18208,
+                "lostSupportLowerXYZ": [
+                  1107,
+                  985,
+                  930
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1168,
+                  1054,
+                  1076
+                ],
+                "restoreLowerXYZ": [
+                  1098,
+                  976,
+                  921
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1177,
+                  1063,
+                  1085
+                ],
+                "restoreSamples": 88119,
+                "meshSupportHaloFineSamples": 9,
+                "protectedClumpHaloFineSamples": 9,
+                "protectedClumpSourceOverlap": 0,
+                "protectedClumpHaloOverlap": 0,
+                "unrecoveredWallSupportAtClumpGuard": 2,
+                "restoreMaskSha256": "f8472b87b709de5f5d68417bc64e37cc6b1ab4356c37a03428d1d8b24467d204",
+                "mechanism": "Within the reviewed source window, identify the distinct wall and retained-cleanup lumen-object foreground components from explicit seeds. Restore only the prior-masked wall support plus its nine-sample mesh halo, while retaining all exclusion bits within nine samples of the lumen-object component.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "The component separation is local to the reviewed bounded window. This does not establish that the lumen object is globally disconnected or that it is a clot/artifact. Guard-adjacent wall samples are deliberately left excluded.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 86,
+                  "decodedBrickReads": 98,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              }
+            ],
+            "scope": "Only prior atrial exclusion bits inside the declared source-supported patch footprints may be cleared. No source image, source mesh vertex, source normal, source triangle or CT card is modified.",
+            "source": {
+              "sourceManifest": "public/assets/ultra-volume-v7.json",
+              "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+              "verifiedUniqueBricks": 86,
+              "decodedBrickReads": 98,
+              "cacheMaximumBricks": 32,
+              "cacheMaximumBytes": 8788000,
+              "sourceSpacingUm": 79.4,
+              "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+              "sourceUnchanged": true,
+              "originalQuantitativeIntensities": false
+            },
+            "appliedMaskId": "atrial",
+            "clearedBits": 109928
+          }
+        ],
+        "fullPolicySha256": "1985e10562ff58787d13eb040e413cbaa24c1abc678450c18d55cba1b3173bef"
+      }
+    },
+    {
+      "id": "arterial",
+      "label": "Arterial lumen fragments",
+      "url": "./assets/cleanup-v27/arterial.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        650,
+        445,
+        800
+      ],
+      "storageDimensionsXYZ": [
+        82,
+        445,
+        800
+      ],
+      "lowerFullFineXYZ": [
+        510,
+        900,
+        180
+      ],
+      "upperFullFineXYZ": [
+        1160,
+        1345,
+        980
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          590,
+          920,
+          181
+        ],
+        [
+          1159,
+          1277,
+          950
+        ]
+      ],
+      "compressedBytes": 287953,
+      "decodedBytes": 29192000,
+      "sha256": "4f09b82a3040f3b7cb7094c0f19298657bb9a74484ddaf9e200335e35b3c1e8a",
+      "decodedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "logicalMaskSha256": "d2d9d077c7e1d0a86b8e96a5729dca90aa1031ed83cdabca2110ec494fa02e66",
+      "maskedVoxels": 1169504,
+      "maskedVolumeMm3": 585.4141544527359,
+      "policy": {
+        "inheritedV26MaskedSamples": 1013562,
+        "addedDisplayExclusionSamples": 155942,
+        "restoredPriorExclusionSamples": 0,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "newProtectedSourceGuardOverlapSamples": 0,
+        "explicitSelectedObjectExceptions": [],
+        "selectedObjectDenseSourceSamples": 0,
+        "selectedObjectComparableAnchoredGuardOverlapSamples": 0,
+        "sourceIdentity": "Material identity remains unverified; original scalar data and mesh preserved.",
+        "operations": [
+          {
+            "id": "pulmonary-retrovalvular-material",
+            "mask": "arterial",
+            "guardMode": "all-dense",
+            "expansion": 6,
+            "guard": 10,
+            "scope": "Low contrast irregular material posterior to the pulmonic valve; all dense source cores, vessel wall and valve leaflets protected.",
+            "evidence": "source-refined/pa-posterior-source.jpg; pulmonary-335 position readback",
+            "selectedSamples": 155942,
+            "selectedDenseSourceSamples": 0,
+            "comparableAnchoredGuardRuleOverlapSamples": 0,
+            "protectedSourceSamples": 1369884,
+            "protectedOverlapSamples": 0,
+            "lowerFullFineXYZ": [
+              769,
+              1080,
+              782
+            ],
+            "upperFullFineXYZ": [
+              938,
+              1265,
+              964
+            ],
+            "meshSupportMarginFineSamples": 9,
+            "denseGuardFineSamples": 10,
+            "sourcePaddingFineSamples": 13,
+            "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of every raw190/sigma0.5/0.8>=135 dense source core.",
+            "explicitSelectedObjectException": false,
+            "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+            "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+            "newExclusionsIntersectingRestorationFootprintSamples": 0,
+            "uniqueNewExclusionSamples": 155942
+          }
+        ],
+        "restorations": [
+          {
+            "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+            "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+            "restoreLowerXYZ": [
+              1098,
+              930,
+              921
+            ],
+            "restoreUpperExclusiveXYZ": [
+              1304,
+              1063,
+              1085
+            ],
+            "restoreSamples": 109928,
+            "restoreMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+            "patches": [
+              {
+                "patch": "oval-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1220,
+                  928,
+                  950
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1315,
+                  949,
+                  1045
+                ],
+                "sourceSeedXYZ": [
+                  1268,
+                  938,
+                  995
+                ],
+                "sourceConnectedForegroundSamples": 111547,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 3826,
+                "lostSupportLowerXYZ": [
+                  1233,
+                  939,
+                  952
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1295,
+                  946,
+                  1031
+                ],
+                "restoreLowerXYZ": [
+                  1224,
+                  930,
+                  943
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1304,
+                  955,
+                  1040
+                ],
+                "restoreSamples": 21809,
+                "meshSupportHaloFineSamples": 9,
+                "restoreMaskSha256": "17aa4a06038e518b7a2434cb58066f6ad57ebfc2648c71d406ad043872552267",
+                "serialSupport": [
+                  {
+                    "fullFineY": 928,
+                    "connectedForegroundSamples": 8935,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 929,
+                    "connectedForegroundSamples": 8901,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 930,
+                    "connectedForegroundSamples": 8881,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 931,
+                    "connectedForegroundSamples": 8877,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 932,
+                    "connectedForegroundSamples": 8795,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 933,
+                    "connectedForegroundSamples": 8728,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 934,
+                    "connectedForegroundSamples": 8609,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 935,
+                    "connectedForegroundSamples": 8392,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 936,
+                    "connectedForegroundSamples": 8066,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 937,
+                    "connectedForegroundSamples": 7645,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 938,
+                    "connectedForegroundSamples": 6931,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 939,
+                    "connectedForegroundSamples": 5984,
+                    "previouslyExcludedSamples": 32
+                  },
+                  {
+                    "fullFineY": 940,
+                    "connectedForegroundSamples": 4902,
+                    "previouslyExcludedSamples": 11
+                  },
+                  {
+                    "fullFineY": 941,
+                    "connectedForegroundSamples": 3698,
+                    "previouslyExcludedSamples": 67
+                  },
+                  {
+                    "fullFineY": 942,
+                    "connectedForegroundSamples": 2400,
+                    "previouslyExcludedSamples": 1959
+                  },
+                  {
+                    "fullFineY": 943,
+                    "connectedForegroundSamples": 1263,
+                    "previouslyExcludedSamples": 1217
+                  },
+                  {
+                    "fullFineY": 944,
+                    "connectedForegroundSamples": 534,
+                    "previouslyExcludedSamples": 534
+                  },
+                  {
+                    "fullFineY": 945,
+                    "connectedForegroundSamples": 6,
+                    "previouslyExcludedSamples": 6
+                  }
+                ],
+                "mechanism": "Subtract prior exclusion bits within nine fine samples of previously excluded source foreground connected in 3D to the reviewed wall seed. The source component tapers out before Y946, with no foreground in Y946\u2013948 inside the bounded selection.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "A source-supported restoration of original visibility, not synthetic mesh filling or anatomical validation. The original gentle mesh remains decimated and locally irregular.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 18,
+                  "decodedBrickReads": 18,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              },
+              {
+                "patch": "irregular-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1060,
+                  930,
+                  900
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1220,
+                  1080,
+                  1100
+                ],
+                "sourceReviewLowerXYZ": [
+                  1085,
+                  975,
+                  930
+                ],
+                "sourceReviewUpperExclusiveXYZ": [
+                  1180,
+                  1060,
+                  1080
+                ],
+                "sourceSeedXYZ": [
+                  1125,
+                  990,
+                  990
+                ],
+                "protectedClumpSeedXYZ": [
+                  1180,
+                  1020,
+                  1025
+                ],
+                "sourceConnectedForegroundSamples": 1633295,
+                "protectedClumpForegroundSamples": 940303,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 18208,
+                "lostSupportLowerXYZ": [
+                  1107,
+                  985,
+                  930
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1168,
+                  1054,
+                  1076
+                ],
+                "restoreLowerXYZ": [
+                  1098,
+                  976,
+                  921
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1177,
+                  1063,
+                  1085
+                ],
+                "restoreSamples": 88119,
+                "meshSupportHaloFineSamples": 9,
+                "protectedClumpHaloFineSamples": 9,
+                "protectedClumpSourceOverlap": 0,
+                "protectedClumpHaloOverlap": 0,
+                "unrecoveredWallSupportAtClumpGuard": 2,
+                "restoreMaskSha256": "f8472b87b709de5f5d68417bc64e37cc6b1ab4356c37a03428d1d8b24467d204",
+                "mechanism": "Within the reviewed source window, identify the distinct wall and retained-cleanup lumen-object foreground components from explicit seeds. Restore only the prior-masked wall support plus its nine-sample mesh halo, while retaining all exclusion bits within nine samples of the lumen-object component.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "The component separation is local to the reviewed bounded window. This does not establish that the lumen object is globally disconnected or that it is a clot/artifact. Guard-adjacent wall samples are deliberately left excluded.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 86,
+                  "decodedBrickReads": 98,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              }
+            ],
+            "scope": "Only prior atrial exclusion bits inside the declared source-supported patch footprints may be cleared. No source image, source mesh vertex, source normal, source triangle or CT card is modified.",
+            "source": {
+              "sourceManifest": "public/assets/ultra-volume-v7.json",
+              "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+              "verifiedUniqueBricks": 86,
+              "decodedBrickReads": 98,
+              "cacheMaximumBricks": 32,
+              "cacheMaximumBytes": 8788000,
+              "sourceSpacingUm": 79.4,
+              "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+              "sourceUnchanged": true,
+              "originalQuantitativeIntensities": false
+            },
+            "appliedMaskId": "arterial",
+            "clearedBits": 0
+          }
+        ],
+        "fullPolicySha256": "4a0ea81259116b7329868a15e7c179e93e37d65e0c0c6500fad3f2af757d9fb5"
+      }
+    },
+    {
+      "id": "valve-region",
+      "label": "Reviewed aortic sheet and valve fragments",
+      "url": "./assets/cleanup-v27/valve-region.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        430,
+        305,
+        470
+      ],
+      "storageDimensionsXYZ": [
+        54,
+        305,
+        470
+      ],
+      "lowerFullFineXYZ": [
+        850,
+        900,
+        850
+      ],
+      "upperFullFineXYZ": [
+        1280,
+        1205,
+        1320
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          850,
+          900,
+          850
+        ],
+        [
+          1280,
+          1170,
+          1320
+        ]
+      ],
+      "compressedBytes": 150529,
+      "decodedBytes": 7740900,
+      "sha256": "a5c401877b3d3521b505a840be579a4ec25df8473fcaa1c56e57d1f048477767",
+      "decodedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "logicalMaskSha256": "4f3ec84adb2e777108069887ad3bb754ad5cf86fa72aaaf48ae6958e07a89574",
+      "maskedVoxels": 733345,
+      "maskedVolumeMm3": 367.08770820547994,
+      "policy": {
+        "inheritedV26MaskedSamples": 533645,
+        "addedDisplayExclusionSamples": 199700,
+        "restoredPriorExclusionSamples": 0,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "newProtectedSourceGuardOverlapSamples": 0,
+        "explicitSelectedObjectExceptions": [
+          "proximal-aortic-nodule"
+        ],
+        "selectedObjectDenseSourceSamples": 31014,
+        "selectedObjectComparableAnchoredGuardOverlapSamples": 29,
+        "sourceIdentity": "Material identity remains unverified; original scalar data and mesh preserved.",
+        "operations": [
+          {
+            "id": "proximal-aortic-nodule",
+            "mask": "valve-region",
+            "guardMode": "reviewed-object",
+            "expansion": 9,
+            "guard": 10,
+            "scope": "Bright core and low contrast envelope of the user-selected nodule proximal to the aortic valve. Preserve a source-supported collar at myocardium/valve attachment.",
+            "evidence": "source-refined/nodule-boundaries.jpg; nodule-284 production coordinate readback; primary mesh component 7",
+            "selectedSamples": 272170,
+            "selectedDenseSourceSamples": 31014,
+            "comparableAnchoredGuardRuleOverlapSamples": 29,
+            "protectedSourceSamples": 676984,
+            "protectedOverlapSamples": 0,
+            "lowerFullFineXYZ": [
+              981,
+              1048,
+              954
+            ],
+            "upperFullFineXYZ": [
+              1095,
+              1157,
+              1103
+            ],
+            "meshSupportMarginFineSamples": 9,
+            "denseGuardFineSamples": 10,
+            "sourcePaddingFineSamples": 13,
+            "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of dense source outside the explicitly selected object core; the object may contain bright material. The source-defined attachment collar is retained.",
+            "explicitSelectedObjectException": true,
+            "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+            "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+            "newExclusionsIntersectingRestorationFootprintSamples": 0,
+            "uniqueNewExclusionSamples": 199700
+          }
+        ],
+        "restorations": [
+          {
+            "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+            "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+            "restoreLowerXYZ": [
+              1098,
+              930,
+              921
+            ],
+            "restoreUpperExclusiveXYZ": [
+              1304,
+              1063,
+              1085
+            ],
+            "restoreSamples": 109928,
+            "restoreMaskSha256": "ac5d0d8771272e5bb14e0ae8ef13aea171c8abeda24d754e0345e1328aa5fbea",
+            "patches": [
+              {
+                "patch": "oval-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1220,
+                  928,
+                  950
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1315,
+                  949,
+                  1045
+                ],
+                "sourceSeedXYZ": [
+                  1268,
+                  938,
+                  995
+                ],
+                "sourceConnectedForegroundSamples": 111547,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 3826,
+                "lostSupportLowerXYZ": [
+                  1233,
+                  939,
+                  952
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1295,
+                  946,
+                  1031
+                ],
+                "restoreLowerXYZ": [
+                  1224,
+                  930,
+                  943
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1304,
+                  955,
+                  1040
+                ],
+                "restoreSamples": 21809,
+                "meshSupportHaloFineSamples": 9,
+                "restoreMaskSha256": "17aa4a06038e518b7a2434cb58066f6ad57ebfc2648c71d406ad043872552267",
+                "serialSupport": [
+                  {
+                    "fullFineY": 928,
+                    "connectedForegroundSamples": 8935,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 929,
+                    "connectedForegroundSamples": 8901,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 930,
+                    "connectedForegroundSamples": 8881,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 931,
+                    "connectedForegroundSamples": 8877,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 932,
+                    "connectedForegroundSamples": 8795,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 933,
+                    "connectedForegroundSamples": 8728,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 934,
+                    "connectedForegroundSamples": 8609,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 935,
+                    "connectedForegroundSamples": 8392,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 936,
+                    "connectedForegroundSamples": 8066,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 937,
+                    "connectedForegroundSamples": 7645,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 938,
+                    "connectedForegroundSamples": 6931,
+                    "previouslyExcludedSamples": 0
+                  },
+                  {
+                    "fullFineY": 939,
+                    "connectedForegroundSamples": 5984,
+                    "previouslyExcludedSamples": 32
+                  },
+                  {
+                    "fullFineY": 940,
+                    "connectedForegroundSamples": 4902,
+                    "previouslyExcludedSamples": 11
+                  },
+                  {
+                    "fullFineY": 941,
+                    "connectedForegroundSamples": 3698,
+                    "previouslyExcludedSamples": 67
+                  },
+                  {
+                    "fullFineY": 942,
+                    "connectedForegroundSamples": 2400,
+                    "previouslyExcludedSamples": 1959
+                  },
+                  {
+                    "fullFineY": 943,
+                    "connectedForegroundSamples": 1263,
+                    "previouslyExcludedSamples": 1217
+                  },
+                  {
+                    "fullFineY": 944,
+                    "connectedForegroundSamples": 534,
+                    "previouslyExcludedSamples": 534
+                  },
+                  {
+                    "fullFineY": 945,
+                    "connectedForegroundSamples": 6,
+                    "previouslyExcludedSamples": 6
+                  }
+                ],
+                "mechanism": "Subtract prior exclusion bits within nine fine samples of previously excluded source foreground connected in 3D to the reviewed wall seed. The source component tapers out before Y946, with no foreground in Y946\u2013948 inside the bounded selection.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "A source-supported restoration of original visibility, not synthetic mesh filling or anatomical validation. The original gentle mesh remains decimated and locally irregular.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 18,
+                  "decodedBrickReads": 18,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              },
+              {
+                "patch": "irregular-wall",
+                "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+                "priorMaskId": "atrial",
+                "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+                "sourceSelectionLowerXYZ": [
+                  1060,
+                  930,
+                  900
+                ],
+                "sourceSelectionUpperExclusiveXYZ": [
+                  1220,
+                  1080,
+                  1100
+                ],
+                "sourceReviewLowerXYZ": [
+                  1085,
+                  975,
+                  930
+                ],
+                "sourceReviewUpperExclusiveXYZ": [
+                  1180,
+                  1060,
+                  1080
+                ],
+                "sourceSeedXYZ": [
+                  1125,
+                  990,
+                  990
+                ],
+                "protectedClumpSeedXYZ": [
+                  1180,
+                  1020,
+                  1025
+                ],
+                "sourceConnectedForegroundSamples": 1633295,
+                "protectedClumpForegroundSamples": 940303,
+                "sourceForegroundFilterSigmaFineSamples": 0.5,
+                "sourceForegroundThreshold": 71.4,
+                "lostSourceSupportSamples": 18208,
+                "lostSupportLowerXYZ": [
+                  1107,
+                  985,
+                  930
+                ],
+                "lostSupportUpperExclusiveXYZ": [
+                  1168,
+                  1054,
+                  1076
+                ],
+                "restoreLowerXYZ": [
+                  1098,
+                  976,
+                  921
+                ],
+                "restoreUpperExclusiveXYZ": [
+                  1177,
+                  1063,
+                  1085
+                ],
+                "restoreSamples": 88119,
+                "meshSupportHaloFineSamples": 9,
+                "protectedClumpHaloFineSamples": 9,
+                "protectedClumpSourceOverlap": 0,
+                "protectedClumpHaloOverlap": 0,
+                "unrecoveredWallSupportAtClumpGuard": 2,
+                "restoreMaskSha256": "f8472b87b709de5f5d68417bc64e37cc6b1ab4356c37a03428d1d8b24467d204",
+                "mechanism": "Within the reviewed source window, identify the distinct wall and retained-cleanup lumen-object foreground components from explicit seeds. Restore only the prior-masked wall support plus its nine-sample mesh halo, while retaining all exclusion bits within nine samples of the lumen-object component.",
+                "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+                "limit": "The component separation is local to the reviewed bounded window. This does not establish that the lumen object is globally disconnected or that it is a clot/artifact. Guard-adjacent wall samples are deliberately left excluded.",
+                "source": {
+                  "sourceManifest": "public/assets/ultra-volume-v7.json",
+                  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+                  "verifiedUniqueBricks": 86,
+                  "decodedBrickReads": 98,
+                  "cacheMaximumBricks": 32,
+                  "cacheMaximumBytes": 8788000,
+                  "sourceSpacingUm": 79.4,
+                  "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+                  "sourceUnchanged": true,
+                  "originalQuantitativeIntensities": false
+                }
+              }
+            ],
+            "scope": "Only prior atrial exclusion bits inside the declared source-supported patch footprints may be cleared. No source image, source mesh vertex, source normal, source triangle or CT card is modified.",
+            "source": {
+              "sourceManifest": "public/assets/ultra-volume-v7.json",
+              "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+              "verifiedUniqueBricks": 86,
+              "decodedBrickReads": 98,
+              "cacheMaximumBricks": 32,
+              "cacheMaximumBytes": 8788000,
+              "sourceSpacingUm": 79.4,
+              "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+              "sourceUnchanged": true,
+              "originalQuantitativeIntensities": false
+            },
+            "appliedMaskId": "valve-region",
+            "clearedBits": 0
+          }
+        ],
+        "fullPolicySha256": "17d6cced99dc08c036cab7b2b771b26689721c5e92d8ec90250eef07b16910c8"
+      }
+    },
+    {
+      "id": "rv",
+      "label": "Detached RV and apical fragments",
+      "url": "./assets/cleanup-v27/rv.bits.gz",
+      "format": "gzip-bitset-x-zyx",
+      "bitOrder": "little",
+      "dimensionsXYZ": [
+        570,
+        440,
+        790
+      ],
+      "storageDimensionsXYZ": [
+        72,
+        440,
+        790
+      ],
+      "lowerFullFineXYZ": [
+        450,
+        760,
+        1020
+      ],
+      "upperFullFineXYZ": [
+        1020,
+        1200,
+        1810
+      ],
+      "nonzeroBoundsFullFineXYZ": [
+        [
+          450,
+          780,
+          1072
+        ],
+        [
+          1020,
+          1200,
+          1810
+        ]
+      ],
+      "compressedBytes": 381259,
+      "decodedBytes": 25027200,
+      "sha256": "6066b2b6e8f56435242c772616c37fc1619453db98cccdfcf144d64197e5a0f3",
+      "decodedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "logicalMaskSha256": "08253160f7b3c99a79130290c40edde0c2c457fe6f811050e67216a5daf389ef",
+      "maskedVoxels": 1181662,
+      "maskedVolumeMm3": 591.5000381178079,
+      "policy": {
+        "inheritedV26MaskedSamples": 703123,
+        "addedDisplayExclusionSamples": 478539,
+        "restoredPriorExclusionSamples": 0,
+        "meshSupportMarginFineSamples": 9,
+        "denseGuardFineSamples": 10,
+        "newProtectedSourceGuardOverlapSamples": 0,
+        "explicitSelectedObjectExceptions": [],
+        "selectedObjectDenseSourceSamples": 0,
+        "selectedObjectComparableAnchoredGuardOverlapSamples": 0,
+        "sourceIdentity": "Material identity remains unverified; original scalar data and mesh preserved.",
+        "operations": [
+          {
+            "id": "tricuspid-chordal-fringe",
+            "mask": "rv",
+            "guardMode": "all-dense",
+            "expansion": 6,
+            "guard": 10,
+            "scope": "Bounded low-contrast fringe between bright chordal source cores; retain all dense cores plus ten fine samples in 3D and preserve leaflets/myocardium.",
+            "evidence": "source-refined/tricuspid-chord-matrix.jpg; tricuspid-222 position readback",
+            "selectedSamples": 494274,
+            "selectedDenseSourceSamples": 0,
+            "comparableAnchoredGuardRuleOverlapSamples": 0,
+            "protectedSourceSamples": 489423,
+            "protectedOverlapSamples": 0,
+            "lowerFullFineXYZ": [
+              801,
+              820,
+              1066
+            ],
+            "upperFullFineXYZ": [
+              947,
+              965,
+              1286
+            ],
+            "meshSupportMarginFineSamples": 9,
+            "denseGuardFineSamples": 10,
+            "sourcePaddingFineSamples": 13,
+            "method": "Serial reviewed signed-distance outlines. Source sigma0.5 threshold71.4 support with a nine-sample 3D mesh allowance. Ten-sample 3D protection of every raw190/sigma0.5/0.8>=135 dense source core.",
+            "explicitSelectedObjectException": false,
+            "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+            "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue.",
+            "newExclusionsIntersectingRestorationFootprintSamples": 0,
+            "uniqueNewExclusionSamples": 478539
+          }
+        ],
+        "restorations": [],
+        "fullPolicySha256": "de5ee1a4cb39ceeddc36fd14edcb175a70833825cb1a31722c90f3410963abbf"
+      }
+    }
+  ],
+  "limitations": [
+    "Material identity and anatomical completeness are not validated.",
+    "Explicit user-selected bright objects can be hidden; their source-defined attachment collars and surrounding dense anatomy remain protected.",
+    "Connected ambiguous structures and very near-wall roughness can remain.",
+    "Original CT cards, scalar arrays and mesh payloads are unchanged."
+  ],
+  "predecessorManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+  "originalDebrisManifestUrl": "./assets/cleanup-v26/debris-manifest.json",
+  "buildProvenance": {
+    "completeFourMaskRebuild": true,
+    "inputSha256": {
+      "scripts/cleanup-v27/build_masks.py": "c4f91ed6b1fe6133efed12a322eb80f578daca09e9242d0b0430f2bdcf419767",
+      "scripts/cleanup-v27/reviewed_selections.py": "0d882dc9a5d91ff9dc4a116186ea7a3423e7d540898fe87c00adaa26014af397",
+      "scripts/fine-detail-v23/source.py": "f7f7868025f0e1b1adbd3e23a057288edaf6f5389d6a1ecd4b5be511da0afaf9",
+      "scripts/cleanup-v27-wall/restore_wall.py": "437c774f11f5e9b8827dc4e40a8686a67e6ac01e744aff0f0557b719e35b1653"
+    }
+  }
+}

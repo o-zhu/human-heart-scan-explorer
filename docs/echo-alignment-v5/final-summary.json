@@ -1,0 +1,80 @@
+{
+  "sourceStable": true,
+  "changed": [],
+  "cases": 2576,
+  "available": 2512,
+  "acquired": 2254,
+  "availableAcquired": 2190,
+  "outside": 322,
+  "rejected": 64,
+  "rejectedDefaults": 5,
+  "rejectedFlipOnly": 5,
+  "rejectedManual": 54,
+  "primaryRejected": [
+    {
+      "id": "me5c",
+      "reference": "refined",
+      "adjustment": "offset-negative-limit",
+      "state": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      }
+    },
+    {
+      "id": "me4c",
+      "reference": "refined",
+      "adjustment": "offset-negative-limit",
+      "state": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      }
+    },
+    {
+      "id": "merpv",
+      "reference": "refined",
+      "adjustment": "offset-negative-limit",
+      "state": {
+        "offsetMm": -35,
+        "rotationDeg": 0,
+        "tiltDeg": 0,
+        "flip": false
+      }
+    }
+  ],
+  "byDonor": [
+    {
+      "donor": "ladaf-2021-17",
+      "allCases": 896,
+      "rejected": 3,
+      "manual": 3
+    },
+    {
+      "donor": "s-20-28",
+      "allCases": 840,
+      "rejected": 34,
+      "manual": 28
+    },
+    {
+      "donor": "s-20-29",
+      "allCases": 840,
+      "rejected": 27,
+      "manual": 23
+    }
+  ],
+  "geometricFailures": 0,
+  "handoffFailures": 0,
+  "skinFailures": 0,
+  "markerFailures": 0,
+  "fanFailures": 0,
+  "zoomFailures": 0,
+  "apicalFailures": 0,
+  "landmarkFailures": 0,
+  "unhiddenRejected": 0,
+  "maxOriginResidualMm": 2.255973186038318e-13,
+  "maxFanResidualMm": 2.255973186038318e-13,
+  "maxPlaneAngleDeg": 0.0000017075472925031877
+}

@@ -1,0 +1,20 @@
+{
+  "case": {
+    "id": "pulmonary-x194",
+    "axis": 0,
+    "coordinate": 772,
+    "target": [
+      772,
+      1260,
+      825
+    ],
+    "distance": 0.37
+  },
+  "originalRoiTriangles": 1113087,
+  "refinedTriangles": 535534,
+  "changedPixels": 188023,
+  "offOnOffExact": true,
+  "sourceCapSha256": "67317f080ee17d7b91e4640c83523c970eeb7f53208a212ff9d21d33e702c37e",
+  "shaderSha256": "2d6f7c8c3c88f275f6d313ddf0d2a6cd9c8c60ea25e5bdf62a04feeea13fe603",
+  "scope": "Actual production GLSL, bounded originalGentleROI and source-refined local patch. The before/after sourcecap is heldfixed here; integrated density/cap low-band exclusion is tested by root. No fullGentleGLupload or browserperformance claim."
+}

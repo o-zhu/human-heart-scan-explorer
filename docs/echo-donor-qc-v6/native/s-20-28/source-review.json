@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "donor": "s-20-28",
+  "exportSha256": "50895912227e178d426f4dfee3921648d1568dbcbacf7b70483b5f7c4fe8fe53",
+  "sampling": "Actual production MPR worker, trilinear interpolation, zero outside source, source-oriented complete plane raster; no source edit.",
+  "sourceSpacingUm": 317.6,
+  "display": {
+    "windowEnabled": true,
+    "windowLow": 0.33,
+    "windowHigh": 0.761,
+    "windowGamma": 0.95,
+    "capContrast": 1
+  },
+  "scope": "Compact, display-windowed contact sheets of exact production MPR rasters.\n\nThis is a source-image review aid. It adds no anatomy, labels no unconfirmed\nstructure, and applies no clipping or cleanup beyond the exported source data.\nThe complete rectangular raster is shown without changing its aspect ratio.\n",
+  "sourceScriptSha256": "24166157110ab12920a3adcd6755c239e5d5043ec48a9e069a9585dcb09c6a57",
+  "outputs": [
+    {
+      "mode": "tte",
+      "file": "tte-source-gallery.jpg",
+      "views": 28,
+      "sha256": "92be9c0cae1e422635348558008a114723db0c3120e4f6ae68021e0caf56de2e"
+    },
+    {
+      "mode": "tee",
+      "file": "tee-source-gallery.jpg",
+      "views": 28,
+      "sha256": "6b07a89a413cfdc11a5e62695387cdc6bf8feb92d8881bd63acdfccc0d7b068a"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "comparedIntensityValues": 256,
+  "flowMatchesEcho": true,
+  "flowMatchesWindowedCPU": true,
+  "constructorInheritsAppearance": true,
+  "resetPreservesAppearance": true,
+  "restoreWithoutAppearancePreservesDonor": true,
+  "explicitAppearanceRestoreWorks": true,
+  "globalAppearanceUpdatesControls": true,
+  "planeChangesPreserveAppearance": true,
+  "thresholdsAboveFiftyPercentSupported": true,
+  "unassignedAnatomyDisabled": true
+}

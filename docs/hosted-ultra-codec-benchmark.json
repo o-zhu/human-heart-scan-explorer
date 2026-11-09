@@ -1,0 +1,238 @@
+{
+  "benchmarkSource": "N5 s2 Z index 1452 (viewer Z363), same linear 8-bit window and conservative support",
+  "preliminaryCrop": [
+    468,
+    444,
+    977,
+    1025
+  ],
+  "note": "Preliminary codec benchmark excludes the final 2-pixel guard. Final production uses lossless WebP and zero added quantization; encoding quality controls compression effort in lossless mode. Error metrics restrict to source values above 81/255 so empty space does not dilute the result.",
+  "results": [
+    {
+      "format": "PNG",
+      "options": {
+        "compress_level": 9
+      },
+      "grayQuantization": 1,
+      "bytes": 539551,
+      "elapsed": 0.09556770324707031,
+      "tissueMAE": 0.0,
+      "tissuePSNR": null,
+      "maxError": 0
+    },
+    {
+      "format": "PNG",
+      "options": {
+        "compress_level": 9
+      },
+      "grayQuantization": 2,
+      "bytes": 461406,
+      "elapsed": 0.08847689628601074,
+      "tissueMAE": 0.4988864719287342,
+      "tissuePSNR": 51.15078633329526,
+      "maxError": 1
+    },
+    {
+      "format": "PNG",
+      "options": {
+        "compress_level": 9
+      },
+      "grayQuantization": 4,
+      "bytes": 383591,
+      "elapsed": 0.1679985523223877,
+      "tissueMAE": 1.0002783820178165,
+      "tissuePSNR": 46.365213747983546,
+      "maxError": 2
+    },
+    {
+      "format": "WEBP",
+      "options": {
+        "lossless": true,
+        "method": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 506894,
+      "elapsed": 0.8608341217041016,
+      "tissueMAE": 0.0,
+      "tissuePSNR": null,
+      "maxError": 0
+    },
+    {
+      "format": "WEBP",
+      "options": {
+        "lossless": true,
+        "method": 6
+      },
+      "grayQuantization": 2,
+      "bytes": 437178,
+      "elapsed": 0.7548952102661133,
+      "tissueMAE": 0.4988864719287342,
+      "tissuePSNR": 51.15078633329526,
+      "maxError": 1
+    },
+    {
+      "format": "WEBP",
+      "options": {
+        "lossless": true,
+        "method": 6
+      },
+      "grayQuantization": 4,
+      "bytes": 357666,
+      "elapsed": 0.6814627647399902,
+      "tissueMAE": 1.0002783820178165,
+      "tissuePSNR": 46.365213747983546,
+      "maxError": 2
+    },
+    {
+      "format": "WEBP",
+      "options": {
+        "quality": 97,
+        "method": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 363506,
+      "elapsed": 0.4305286407470703,
+      "tissueMAE": 0.8701337096885574,
+      "tissuePSNR": 46.622581426295014,
+      "maxError": 5
+    },
+    {
+      "format": "WEBP",
+      "options": {
+        "quality": 99,
+        "method": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 400908,
+      "elapsed": 0.45776915550231934,
+      "tissueMAE": 0.650835577653477,
+      "tissuePSNR": 48.52799423206412,
+      "maxError": 4
+    },
+    {
+      "format": "AVIF",
+      "options": {
+        "quality": 94,
+        "speed": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 361188,
+      "elapsed": 0.9985260963439941,
+      "tissueMAE": 0.8569958048477315,
+      "tissuePSNR": 46.894474755388075,
+      "maxError": 6
+    },
+    {
+      "format": "AVIF",
+      "options": {
+        "quality": 96,
+        "speed": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 409242,
+      "elapsed": 0.5427820682525635,
+      "tissueMAE": 0.5891599337062358,
+      "tissuePSNR": 49.56185761053527,
+      "maxError": 5
+    },
+    {
+      "format": "AVIF",
+      "options": {
+        "quality": 98,
+        "speed": 6
+      },
+      "grayQuantization": 1,
+      "bytes": 443959,
+      "elapsed": 0.5222785472869873,
+      "tissueMAE": 0.49455752365168154,
+      "tissuePSNR": 50.61430998432187,
+      "maxError": 4
+    }
+  ],
+  "additionalResults": [
+    {
+      "fmt": "WEBP",
+      "options": {
+        "quality": 90,
+        "method": 6
+      },
+      "bytes": 265156,
+      "seconds": 2.3435118198394775,
+      "MAE": 1.9963659277674193,
+      "PSNR": 40.059938239522054,
+      "max": 11.0
+    },
+    {
+      "fmt": "WEBP",
+      "options": {
+        "quality": 85,
+        "method": 6
+      },
+      "bytes": 221918,
+      "seconds": 0.4818589687347412,
+      "MAE": 2.8658263414128857,
+      "PSNR": 36.99196777678359,
+      "max": 16.0
+    },
+    {
+      "fmt": "AVIF",
+      "options": {
+        "quality": 85,
+        "speed": 6
+      },
+      "bytes": 258815,
+      "seconds": 0.6223373413085938,
+      "MAE": 2.106374300807955,
+      "PSNR": 39.52609097365597,
+      "max": 13.0
+    },
+    {
+      "fmt": "AVIF",
+      "options": {
+        "quality": 90,
+        "speed": 6
+      },
+      "bytes": 313906,
+      "seconds": 1.197251558303833,
+      "MAE": 1.2624818727988398,
+      "PSNR": 43.824741041220506,
+      "max": 8.0
+    },
+    {
+      "fmt": "AVIF",
+      "options": {
+        "quality": 90,
+        "speed": 4
+      },
+      "bytes": 313910,
+      "seconds": 2.1979453563690186,
+      "MAE": 1.2227271942545404,
+      "PSNR": 44.086599796794175,
+      "max": 8.0
+    },
+    {
+      "fmt": "AVIF",
+      "options": {
+        "quality": 88,
+        "speed": 4
+      },
+      "bytes": 301773,
+      "seconds": 2.6746485233306885,
+      "MAE": 1.3519676645259304,
+      "PSNR": 43.26212070608701,
+      "max": 8.0
+    },
+    {
+      "fmt": "AVIF",
+      "options": {
+        "quality": 85,
+        "speed": 4
+      },
+      "bytes": 261652,
+      "seconds": 2.2538211345672607,
+      "MAE": 1.9750621504039776,
+      "PSNR": 40.07840485613073,
+      "max": 13.0
+    }
+  ]
+}

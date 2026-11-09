@@ -1,0 +1,340 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "specimen": "UCL-ZCR-2629",
+    "organ": "heart",
+    "datasetId": "2298522198",
+    "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/2298522198",
+    "doi": "10.15151/ESRF-DC-2299323295",
+    "doiUrl": "https://doi.org/10.15151/ESRF-DC-2299323295",
+    "title": "Overview at 7.032um of the heart of donor UCL-ZCR-2629, scanned at ESRF on beamline BM18.",
+    "attribution": "Human Organ Atlas Collaboration / ESRF",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "donorAge": "<18",
+    "donorSex": null,
+    "donorMedicalInfo": "Disease free",
+    "nativeDimensions": [
+      4615,
+      4675,
+      7300
+    ],
+    "nativeSpacingUm": 7.032,
+    "portalReconstructionDimensionsXYZ": [
+      4675,
+      4615,
+      7300
+    ],
+    "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2629/heart/7.032um_complete-organ_bm18.ome.zarr/",
+    "sourceFormat": "OME-Zarr v2",
+    "sourceScale": "4",
+    "sourceScaleDimensions": [
+      289,
+      293,
+      457
+    ],
+    "sourceScaleSpacingUm": 112.512,
+    "sourceWindow": [
+      35893,
+      38534
+    ],
+    "sourceDtype": "uint16",
+    "sourcePhysicalOriginUm": [
+      14.064,
+      14.064,
+      14.064
+    ],
+    "sourceAxes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "sourceScaleCenterExtentUm": [
+      32403.456,
+      32853.504,
+      51305.472
+    ],
+    "sourceScaleVoxelExtentUm": [
+      32515.968,
+      32966.016,
+      51417.984
+    ],
+    "levels": {
+      "low": {
+        "label": "Fast \u00b7 225.024 \u00b5m",
+        "dimensions": [
+          145,
+          147,
+          229
+        ],
+        "spacingUm": 225.024,
+        "parts": [
+          {
+            "url": "assets/donors/ucl-zcr-2629/volume/low-clean.raw.gz",
+            "bytes": 1741458,
+            "uncompressedBytes": 4881135,
+            "zRange": [
+              0,
+              229
+            ],
+            "sha256": "ddc1eeeb40023c780080d07bad3b033ed02788f8141d02d07127afdf16608faf",
+            "rawSha256": "92a8d472265118afeeb32d42b6c2286ec397d1401a928634d036651488436cfd",
+            "predictor": "delta-z"
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ucl-zcr-2629/volume/low-original.raw.gz",
+            "bytes": 2839076,
+            "uncompressedBytes": 4881135,
+            "zRange": [
+              0,
+              229
+            ],
+            "sha256": "9493c355b609ab240e713d222fbea7a0dc751ef5d3766ae92718411c518dd12f",
+            "rawSha256": "30f52f656560958463130e500bfbf33331a3b2dbed3a7d8edee92186c6762cbf",
+            "predictor": "delta-z"
+          }
+        ],
+        "originalCompressedBytes": 2839076,
+        "compressedBytes": 1741458,
+        "uncompressedBytes": 4881135,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          32403.456,
+          32853.504,
+          51305.472
+        ],
+        "downsampleFactor": 32.0,
+        "downsampleFactorsXYZ": [
+          32.0,
+          32.0,
+          32.0
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus a 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "guardVoxels": 3,
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts when cleanup is disabled",
+          "boundsXYZ": [
+            [
+              0,
+              144
+            ],
+            [
+              0,
+              146
+            ],
+            [
+              0,
+              228
+            ]
+          ]
+        },
+        "processing": "Official OME level4 trilinearly aligned to the level2 first-center grid; display window35893\u201338534; low uses Gaussian sigma0.5 andexact alternate coarse samples."
+      },
+      "high": {
+        "label": "Detailed \u00b7 112.512 \u00b5m",
+        "dimensions": [
+          289,
+          293,
+          457
+        ],
+        "spacingUm": 112.512,
+        "parts": [
+          {
+            "url": "assets/donors/ucl-zcr-2629/volume/high-clean.raw.gz",
+            "bytes": 10494022,
+            "uncompressedBytes": 38697389,
+            "zRange": [
+              0,
+              457
+            ],
+            "sha256": "e1b373bd8b7e619cbeedde75cd87998dd9f7500545a3ce3ef18ddbeb931efbdd",
+            "rawSha256": "cce6eee9c22596d12d52d0b2f88339a7bd7993b5a4a0098a229aa56ecacda92a",
+            "predictor": "delta-z"
+          }
+        ],
+        "originalParts": [
+          {
+            "url": "assets/donors/ucl-zcr-2629/volume/high-original.raw.gz",
+            "bytes": 17997881,
+            "uncompressedBytes": 38697389,
+            "zRange": [
+              0,
+              457
+            ],
+            "sha256": "ec0c3c418d054d714931d3c73b9761496988f471d232ab899737eddebefda886",
+            "rawSha256": "e86a5a4fd65f2625c96dc5ce1b3df54ae866abc0399cf7aacf5a83a6d8d81351",
+            "predictor": "delta-z"
+          }
+        ],
+        "originalCompressedBytes": 17997881,
+        "compressedBytes": 10494022,
+        "uncompressedBytes": 38697389,
+        "sourceOffset": [
+          0,
+          0,
+          0
+        ],
+        "dtype": "uint8",
+        "arrayOrder": "ZYX, X fastest",
+        "physicalCenterExtentUm": [
+          32403.456,
+          32853.504,
+          51305.472
+        ],
+        "downsampleFactor": 16.0,
+        "downsampleFactorsXYZ": [
+          16.0,
+          16.0,
+          16.0
+        ],
+        "supportCompressed": true,
+        "supportCompression": {
+          "method": "Conservative support plus a 3-voxel interpolation halo; reversible byte prediction and gzip.",
+          "guardVoxels": 3,
+          "maximumRetainedByteError": 0,
+          "originalRestoration": "Load originalParts when cleanup is disabled",
+          "boundsXYZ": [
+            [
+              0,
+              285
+            ],
+            [
+              0,
+              292
+            ],
+            [
+              0,
+              456
+            ]
+          ]
+        },
+        "processing": "Official OME level4 trilinearly aligned to the level2 first-center grid; display window35893\u201338534; low uses Gaussian sigma0.5 andexact alternate coarse samples."
+      }
+    },
+    "previewLevel": "low",
+    "defaultLevel": "high",
+    "defaultThreshold": 0.32,
+    "registration": "Browserextent shares exact first andlast centers withthecropped OMElevel2 lattice[1153,1169,1825]. Level4 samples use indexi\u22120.375 on eachaxis torespectOMEhalfvoxeltranslations. Native OMEaxisorderXYZ takesprecedence overportalX/Yfieldordering.",
+    "processingSummary": "Authentic UCL-ZCR-2629 complete-heart voxels. Official donor record: under18, disease free; exact age andsex notsupplied. Preview225.024\u00b5m, detailed112.512\u00b5m, Ultra28.128\u00b5m. Conservative exterior cleanup is reversible for3Ddisplay. Regional annotations andclinical window orientation require donor-specific review.",
+    "retrievedDate": "2026-11-05",
+    "registrationTrim": {
+      "sourceFineDimensionsXYZ": [
+        1154,
+        1169,
+        1825
+      ],
+      "displayFineDimensionsXYZ": [
+        1153,
+        1169,
+        1825
+      ],
+      "omittedFineColumns": {
+        "x": [
+          1153
+        ],
+        "y": [],
+        "z": []
+      },
+      "reason": "One terminal X column omitted to keep fine/coarse voxel-center extents identical and exact alternate-pixel crops odd-sized.",
+      "omittedColumnInsideConservativeSupport": false,
+      "supportCheck": "The entire terminal X cell of the compact support is zero; the excluded fine column maps to this cell."
+    }
+  },
+  "compression": {
+    "low": {
+      "chosenPredictor": "delta-z",
+      "compressedBytes": 1741458,
+      "uncompressedBytes": 4881135,
+      "alternatives": {
+        "none": 2132510,
+        "delta-x": 1834480,
+        "delta-z": 1741458
+      },
+      "originalCompressedBytes": 2839076,
+      "roundTripExact": true
+    },
+    "high": {
+      "chosenPredictor": "delta-z",
+      "compressedBytes": 10494022,
+      "uncompressedBytes": 38697389,
+      "alternatives": {
+        "none": 14131491,
+        "delta-x": 11506230,
+        "delta-z": 10494022
+      },
+      "originalCompressedBytes": 17997881,
+      "roundTripExact": true
+    }
+  },
+  "cleanup": {
+    "schemaVersion": 1,
+    "specimen": "UCL-ZCR-2629",
+    "dimensions": [
+      145,
+      147,
+      229
+    ],
+    "volumeUrl": "assets/donors/ucl-zcr-2629/cleanup/heart-support.raw.gz",
+    "dtype": "uint8",
+    "arrayOrder": "ZYX, X fastest",
+    "values": {
+      "0": "excluded",
+      "255": "retained"
+    },
+    "physicalCenterExtentUm": [
+      32403.456,
+      32853.504,
+      51305.472
+    ],
+    "registration": "Fine level2 first and last voxel centers; OME half-voxel translations accounted for.",
+    "sourceScale": "OME-Zarr level4",
+    "sourceDimensions": [
+      289,
+      293,
+      457
+    ],
+    "sourceThresholdRaw": 36738.12,
+    "sourceThresholdDisplay": 0.32,
+    "method": "Largest 18-connected tissue component plus 3 Manhattan voxels and one conservative resampling guard.",
+    "coreConnectivity": 18,
+    "marginVoxelsS4": 3,
+    "sourceSpacingUm": 112.512,
+    "coreComponentVoxels": 12904540,
+    "sourceForegroundVoxels": 13006891,
+    "sourceComponents": 957,
+    "coreVoxelsRetained": 12904540,
+    "topComponentSizes": [
+      12904540,
+      54164,
+      19098,
+      2943,
+      2405,
+      2157,
+      1884,
+      1080,
+      1048,
+      832,
+      794,
+      668
+    ],
+    "rawBytes": 4881135,
+    "compressedBytes": 73480,
+    "sha256": "b1e36b52271b7549933375ea78488ddce6391d28dc4b98dfa3d512e4bf469242",
+    "limitations": "Conservative display support removes exterior debris; it is not an anatomical segmentation. Original windowed intensities remain available by disabling Clean Scan.",
+    "intensitiesModified": false
+  },
+  "downloadedSourceBytes": 43444829,
+  "sourceChunkCount": 36,
+  "sourceWindowOrigin": "Official linked Neuroglancer shaderControls.normalized.range",
+  "maximumRetainedByteError": 0
+}

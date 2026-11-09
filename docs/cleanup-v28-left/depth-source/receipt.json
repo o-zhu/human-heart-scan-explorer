@@ -1,0 +1,218 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 210,
+    "decodedBrickReads": 392,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v27",
+  "cases": [
+    {
+      "id": "lvot-front-depth",
+      "title": "Production-localized LVOT foreground fringe at Y below cut262",
+      "lowerXYZ": [
+        1020,
+        930,
+        1060
+      ],
+      "upperXYZ": [
+        1210,
+        1101,
+        1380
+      ],
+      "ys": [
+        940,
+        960,
+        980,
+        1000,
+        1020,
+        1044,
+        1060,
+        1080
+      ],
+      "overlay": false,
+      "sourcePlanes": [
+        {
+          "fineY": 940,
+          "sourcePlaneSha256": "8477498b57e7ef7a54dc6873a389239e58dc4692d39e12a758fcca106463e2f3",
+          "excludedInPlane": 18
+        },
+        {
+          "fineY": 960,
+          "sourcePlaneSha256": "64756b6a69008543f9aaa384afd9b91308db48e7f7a938b81fdd401dfda43158",
+          "excludedInPlane": 3064
+        },
+        {
+          "fineY": 980,
+          "sourcePlaneSha256": "0015bae1f11d1fe4dbb4bb5fd22ff3bc0fb39183119262b20c62711da639f6bc",
+          "excludedInPlane": 4934
+        },
+        {
+          "fineY": 1000,
+          "sourcePlaneSha256": "87a1f91f8dbd87854c866439b2d13d9e7e5a5759132a00d07ddab2de02c5a0ff",
+          "excludedInPlane": 6455
+        },
+        {
+          "fineY": 1020,
+          "sourcePlaneSha256": "0b563d33ff793fd3d946df1edeba3882a840108ed9ab1021d797712ace0ccac7",
+          "excludedInPlane": 5801
+        },
+        {
+          "fineY": 1044,
+          "sourcePlaneSha256": "d81581a788067864f03cd2305dd2ed367326c44283df383387b63ac0a125b94a",
+          "excludedInPlane": 6587
+        },
+        {
+          "fineY": 1060,
+          "sourcePlaneSha256": "0b4eecc63d64abef67183a0d20539cf7ba22eae1304e319e4c8185e8c1164ad0",
+          "excludedInPlane": 5992
+        },
+        {
+          "fineY": 1080,
+          "sourcePlaneSha256": "afeb88d818c2217a6ac9c4a354ca5dd4a6899f30a78100e444fe8c54dc16d26b",
+          "excludedInPlane": 5325
+        }
+      ]
+    },
+    {
+      "id": "la-sheet-front-depth",
+      "title": "Production-localized lower LA sheet remains at Y1136 behind its visible edge",
+      "lowerXYZ": [
+        1120,
+        1000,
+        780
+      ],
+      "upperXYZ": [
+        1450,
+        1241,
+        1120
+      ],
+      "ys": [
+        1040,
+        1080,
+        1110,
+        1136,
+        1150,
+        1170,
+        1200,
+        1232
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 1040,
+          "sourcePlaneSha256": "b6049448eb00ac7473f158492b12d698d5e27fc115a46d4b53c8d68f8068b5b4",
+          "excludedInPlane": 39090
+        },
+        {
+          "fineY": 1080,
+          "sourcePlaneSha256": "d6107abe91baf1c61f8e4a491598a85395844089262308e5d9c66662b16d00aa",
+          "excludedInPlane": 37264
+        },
+        {
+          "fineY": 1110,
+          "sourcePlaneSha256": "8f3cd3e664a94f7fc2d5be08b9379a6cf7ab8a27019af17c0b4d2b304c19c600",
+          "excludedInPlane": 36918
+        },
+        {
+          "fineY": 1136,
+          "sourcePlaneSha256": "7b8b1ad344f4dc9adb434e859f6552eb883ba000508f2789fa3d9a472d43ae79",
+          "excludedInPlane": 37190
+        },
+        {
+          "fineY": 1150,
+          "sourcePlaneSha256": "e3fc7b9da471faf660c78f22c11b39a480a1642c0e646e3e748a1a1439ccedf0",
+          "excludedInPlane": 34697
+        },
+        {
+          "fineY": 1170,
+          "sourcePlaneSha256": "399929d04c6fee6aa7ed8cb9a5d90e0210c7d22b57beef458316a7626763bb17",
+          "excludedInPlane": 32445
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "22cf97d89a4f765aa32d67d5363ac32e5c202fa19928f7be651c01bd6cbb48a7",
+          "excludedInPlane": 39850
+        },
+        {
+          "fineY": 1232,
+          "sourcePlaneSha256": "61bfc8e420b768e50d41fb9bcf84f22a01de5f0af21d64200645f3227d9ab79c",
+          "excludedInPlane": 14037
+        }
+      ]
+    },
+    {
+      "id": "pv-early-depth",
+      "title": "Production-localized upper PV material before Y1224 isolated-sheet range",
+      "lowerXYZ": [
+        1180,
+        1100,
+        650
+      ],
+      "upperXYZ": [
+        1430,
+        1241,
+        850
+      ],
+      "ys": [
+        1120,
+        1140,
+        1160,
+        1180,
+        1200,
+        1216,
+        1224,
+        1232
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 1120,
+          "sourcePlaneSha256": "a81b5a0674ab393678a0f2a8e97a920861372a17b49495941db597148f292185",
+          "excludedInPlane": 3046
+        },
+        {
+          "fineY": 1140,
+          "sourcePlaneSha256": "c1d58ca3ceda80bf63c83073e3a32b4a5ed3c08da0877e790b096e85263eb976",
+          "excludedInPlane": 7229
+        },
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "fc5c4f9891c4641015e17a5a43feae18b58adc772ea4799fcdcbb01e2b6282f6",
+          "excludedInPlane": 10782
+        },
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "ae00381e584ea89d9d81149cac80c55d92aa3f7187d4267277fd379daa83d718",
+          "excludedInPlane": 14981
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "54eec9c4c7b8a928908361a9bd30c4bec5487536d18be8b4a6fbcbc38c1fbde8",
+          "excludedInPlane": 13285
+        },
+        {
+          "fineY": 1216,
+          "sourcePlaneSha256": "0a8dfa67baa1bff917a77c43480a1ddb28fb20f8b64c7980a81a2f82f52b98ce",
+          "excludedInPlane": 6920
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "0c6ccdbf3baf4a0b857973d53509a75e59388e250eef2eb13f4e4c9db9c070a7",
+          "excludedInPlane": 4864
+        },
+        {
+          "fineY": 1232,
+          "sourcePlaneSha256": "19ed4e771573aa994ac4ae83c2f6c0611f8ea64e73351b8c94857bcbab598949",
+          "excludedInPlane": 3227
+        }
+      ]
+    }
+  ]
+}

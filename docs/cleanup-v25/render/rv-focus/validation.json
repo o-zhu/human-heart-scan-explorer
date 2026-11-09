@@ -1,0 +1,154 @@
+{
+  "productionShaders": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 377,
+    "decodedBrickReads": 377,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "maskManifestSha256": "7e6606144d4c0f197969b383880bf866929ceec0432b529ab05be044d4ae7567",
+  "debrisManifestSha256": "d78edee7299217c23a8dc94ba805829e3fbd044614fdc53cb9ac8b0319c64d75",
+  "rendererShaderSha256": "ca20ea32903b0b55e71bfc9ad91a05049ade8b014e5949d6366e454fee3eef07",
+  "fineSurfaceShaderSha256": "b4fe471a36c8ce7a4d98027ec47ae1c23dbd47b20bb5e5b5c0abcb7d19d045db",
+  "checks": [
+    {
+      "case": {
+        "id": "right-ventricle",
+        "axis": 1,
+        "coordinate": 1124,
+        "target": [
+          720,
+          1124,
+          1020
+        ],
+        "distance": 0.42,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "changedPixels": 8870,
+      "totalPixels": 604800,
+      "offOnOffRestoresExactly": true,
+      "sourceCapSha256": "3351a00321293f99b1f3bc310abc7f5cfb1c3ae3042e82504ae813dd2e1f61ac",
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08317580340264649
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.07426787438990708,
+          -0.02842172403576273,
+          -0.5017082809012086
+        ],
+        "_target": [
+          -0.10775047258979205,
+          -0.017958412098298675,
+          -0.08317580340264649
+        ],
+        "_whole": false
+      }
+    }
+  ],
+  "scope": "Exact source asset decoding, actual production GLSL, unchanged source cap bytes and reversible display. Nearby reproducible cameras, not exact screenshot registration. No biological or browser-performance validation."
+}

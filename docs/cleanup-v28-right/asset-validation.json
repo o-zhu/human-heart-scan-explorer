@@ -1,0 +1,30 @@
+[
+  {
+    "id": "tricuspid-core-surface",
+    "transportAndDecodedHashes": true,
+    "validIndices": true,
+    "unitNormals": true,
+    "logicalMaskedSamples": 769532,
+    "zeroPackedTailBits": true,
+    "zeroExclusionOnBoxFaces": true,
+    "disjointFromAtrialRepairs": true,
+    "disjointFromOtherRightPatch": true,
+    "sourceToSurfaceP95Mm": 0.041335316645076,
+    "surfaceToSourceP95Mm": 0.03166076177343849,
+    "scope": "Asset integrity and declared display-selection scope; no anatomical or clinical validation."
+  },
+  {
+    "id": "pulmonary-valve-lumen-surface",
+    "transportAndDecodedHashes": true,
+    "validIndices": true,
+    "unitNormals": true,
+    "logicalMaskedSamples": 970563,
+    "zeroPackedTailBits": true,
+    "zeroExclusionOnBoxFaces": true,
+    "disjointFromAtrialRepairs": true,
+    "disjointFromOtherRightPatch": true,
+    "sourceToSurfaceP95Mm": 0.04474647865491009,
+    "surfaceToSourceP95Mm": 0.03530305480786406,
+    "scope": "Asset integrity and declared display-selection scope; no anatomical or clinical validation."
+  }
+]

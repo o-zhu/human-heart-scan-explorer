@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "collection": "display-compact-v29",
+  "index": "server/display-compact-index-v29.json",
+  "indexSha256": "4a88afd3c5bcca95c1fa784e18c1520e9ea2c43390c5fbb78bc8ac8cfedcafab",
+  "verifiedObjects": 1139,
+  "verifiedBytes": 587787154,
+  "groupCounts": {
+    "cleanup": 7,
+    "metadata": 3,
+    "mesh": 32,
+    "sections": 1097
+  },
+  "installationMethods": {
+    "retained-public-source": 10,
+    "hardlink": 1129
+  },
+  "sourceAndLocalTargetChecks": "Every object has exact indexed byte count and SHA-256; original source-bank files and paths are unchanged.",
+  "completePortableArchiveCreated": false
+}

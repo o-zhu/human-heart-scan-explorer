@@ -1,0 +1,198 @@
+{
+  "schema": "native-surface-selection-v20.1",
+  "donor": "LADAF-2021-17",
+  "sourceGrid": {
+    "shapeXYZ": [
+      7614,
+      7614,
+      8480
+    ],
+    "spacingUm": 19.85,
+    "dtype": "uint16",
+    "level": "s0",
+    "fullRawBytes": 983222012160
+  },
+  "selectionRationale": "Actual original uint16 slices show a continuous folded tissue/cavity interface and opposing walls. The chosen patch has a lower active-cell fraction at the unchanged threshold than the initial central probe. It is a morphology-selected patch near the existing LV-inflow preset; no expert-validated valve, chordal or chamber label is assigned.",
+  "coarseSourcePath": "{source-cache}/anatomy-v12/source-s4.npy",
+  "coarseSpacingUm": 317.6,
+  "coarseShapeZYX": [
+    530,
+    475,
+    475
+  ],
+  "coarseToNativeFactor": 16,
+  "registrationCaveat": "Existing viewer uses endpoint-aligned scale indices. A subvoxel center translation between N5 scale levels has not been independently established. Native ROI has exact original s0 integer indices.",
+  "acquiredCandidates": [
+    {
+      "chunkXYZ": [
+        34,
+        31,
+        36
+      ],
+      "sourceOriginXYZ": [
+        4352,
+        3968,
+        4608
+      ],
+      "shapeZYX": [
+        128,
+        128,
+        128
+      ],
+      "sourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s0/34/31/36",
+      "encodedBytes": 3375549,
+      "sha256": "694264dbd5d3c99df6997daf149fd8e1af895acc58cd4baa46542ef60d7b5906",
+      "aboveThresholdFraction": 0.33220863342285156,
+      "activeCellFraction": 0.4203901321188469,
+      "selected": false
+    },
+    {
+      "chunkXYZ": [
+        34,
+        32,
+        36
+      ],
+      "sourceOriginXYZ": [
+        4352,
+        4096,
+        4608
+      ],
+      "shapeZYX": [
+        128,
+        128,
+        128
+      ],
+      "sourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s0/34/32/36",
+      "encodedBytes": 3384357,
+      "sha256": "4ce0459c506bd40709e5ac5553ed5244d1c17856d71f7bf5fd0b5b65b7a97a80",
+      "aboveThresholdFraction": 0.5686044692993164,
+      "activeCellFraction": 0.3447226422011899,
+      "selected": false
+    },
+    {
+      "chunkXYZ": [
+        35,
+        31,
+        36
+      ],
+      "sourceOriginXYZ": [
+        4480,
+        3968,
+        4608
+      ],
+      "shapeZYX": [
+        128,
+        128,
+        128
+      ],
+      "sourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s0/35/31/36",
+      "encodedBytes": 3429508,
+      "sha256": "17c3bc878e3ecc20da169b728bdef9cf75d556c9d4ce7c07cb332af35db1cc40",
+      "aboveThresholdFraction": 0.6007390022277832,
+      "activeCellFraction": 0.31220919134751657,
+      "selected": true
+    },
+    {
+      "chunkXYZ": [
+        35,
+        32,
+        36
+      ],
+      "sourceOriginXYZ": [
+        4480,
+        4096,
+        4608
+      ],
+      "shapeZYX": [
+        128,
+        128,
+        128
+      ],
+      "sourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s0/35/32/36",
+      "encodedBytes": 3362200,
+      "sha256": "3e67ac9ef8520f72254cbc978a94e5c89e7237e732b8266bd07d1920db524667",
+      "aboveThresholdFraction": 0.864044189453125,
+      "activeCellFraction": 0.19849852298129794,
+      "selected": false
+    }
+  ],
+  "totalAcquiredCandidateBlocks": 4,
+  "totalAcquiredCandidateEncodedBytes": 13551614,
+  "totalAcquiredCandidateDecodedBytes": 16777216,
+  "selectedChunkXYZ": [
+    35,
+    31,
+    36
+  ],
+  "selectedROIOriginXYZ": [
+    4480,
+    3968,
+    4608
+  ],
+  "selectedShapeZYX": [
+    128,
+    128,
+    128
+  ],
+  "selectedBoundsXYZHalfOpen": [
+    [
+      4480,
+      3968,
+      4608
+    ],
+    [
+      4608,
+      4096,
+      4736
+    ]
+  ],
+  "selectedVoxelCenterSpanMm": [
+    2.5209500000000005,
+    2.5209500000000005,
+    2.5209500000000005
+  ],
+  "selectedRawBytes": 4194304,
+  "selectedOriginalN5EncodedBytes": 3429508,
+  "selectedLosslessSliceEncodedBytes": 3788654,
+  "selectedSlicesVerified": 128,
+  "rawRoundTripEqual": true,
+  "selectedRawLittleEndianSha256": "1fd1bbd809ff989c16e147f1baa798c3616231d2213628d1a2a681fb14491949",
+  "maximumAcquisitionSlabBytes": 4194304,
+  "sourceThreshold": 17133.4,
+  "thresholdChangesApplied": false,
+  "denoisingOrSmoothingAppliedToSource": false,
+  "selectedSourceRawPreserved": true,
+  "rawBackgroundCaveat": "Empty-looking regions contain nonzero, noisy measured intensities. Raw uint16 compression is therefore modest; it must not be equated with sparse binary-surface storage. Original source samples are preserved independently of mesh smoothing.",
+  "overviewFigure": {
+    "path": "public/assets/native-surface-v20/quickcontext.webp",
+    "bytes": 62804,
+    "sha256": "e54d28bd789c388f8cceee68d540bfde397a4adaaa7d6e0d692488da0108f51d",
+    "window": [
+      14640,
+      23545
+    ],
+    "nativeZIndices": [
+      4624,
+      4672,
+      4720
+    ],
+    "coarseZIndex": 292,
+    "coarseCropXYHalfOpen": [
+      [
+        264,
+        240
+      ],
+      [
+        304,
+        280
+      ]
+    ],
+    "sourceValuesChanged": false
+  },
+  "limitations": [
+    "Small targeted patch, not a complete-heart reconstruction at native spacing.",
+    "A fixed intensity isosurface is not an expert-validated anatomical segmentation.",
+    "Threshold-related native noise remains in the raw reconstruction.",
+    "The immutable uint16 source remains separate from all downstream experiments. Primary methods alter shading or surface coordinates; a separately labeled bilateral scalar-denoising experiment may change topology and remove weak structures."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "baselineRevision": "surface-ownership-v12",
+    "baselineSha256": "da41d280d86b5b458494e45f76435f457c771cfe4d7380d412f4109cf4940e44",
+    "sourceTissueThresholdRaw": 17100,
+    "maximumDistanceFromExistingLAMm": 2.4,
+    "otherRegionProtectionMarginMm": 0.95,
+    "sourceOccupancyRule": "Maximum original uint16 intensity among source voxel centers assigned to each endpoint-registered annotation cell; no source smoothing or intensity change.",
+    "geodesicConnectivity": 6,
+    "edgeDifferenceScale": 1200,
+    "lowDensityGapPenalty": 3,
+    "maximumGeodesicCost": 14,
+    "existingNonzeroIdentitiesFrozen": true
+  },
+  "selected": "source-connected",
+  "selectionReason": "Source occupancy recovers thin measured walls. A physical collar, source-connected geodesic and competing-region guard constrain spread. Nearest completion reaches adjacent disputed boundaries; closing can bridge folds and also enters the guard region.",
+  "candidates": {
+    "nearest-unprotected": {
+      "addedLACells": 4578,
+      "existingNonzeroCellsChanged": 0,
+      "cellsWithoutMeasuredSourceTissue": 0,
+      "cellsNearCompetingRegion": 1054,
+      "maximumAddedDistanceMm": 3.4986071586608887,
+      "addedCellsMissedBySmoothedSourceThreshold": 2250
+    },
+    "morphological-closing": {
+      "addedLACells": 2207,
+      "existingNonzeroCellsChanged": 0,
+      "cellsWithoutMeasuredSourceTissue": 0,
+      "cellsNearCompetingRegion": 294,
+      "maximumAddedDistanceMm": 1.9055999517440796,
+      "addedCellsMissedBySmoothedSourceThreshold": 1066
+    },
+    "source-connected": {
+      "addedLACells": 3096,
+      "existingNonzeroCellsChanged": 0,
+      "cellsWithoutMeasuredSourceTissue": 0,
+      "cellsNearCompetingRegion": 0,
+      "maximumAddedDistanceMm": 2.381999969482422,
+      "addedCellsMissedBySmoothedSourceThreshold": 1219
+    }
+  }
+}

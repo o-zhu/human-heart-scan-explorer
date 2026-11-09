@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "seed": 1900794,
+  "sourceSpacingUm": 79.4,
+  "methodology": "Uniform-area random surface points; exact point-to-triangle distance through vtkImplicitPolyDataDistance. Quantized hosted HFM1 tested after decoding.",
+  "clinicalValidation": false,
+  "hausdorffBound": false,
+  "assets": [
+    {
+      "id": "balanced",
+      "vertices": 215860,
+      "triangles": 497714,
+      "compressedBytes": 4406836,
+      "decodedBytes": 8562920,
+      "sha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "decodedSha256": "e00753c085938f64718ca488535390cd1235b20df68c83d9d9698ec44d0d4de2",
+      "zeroAreaTrianglesAfterQuantization": 0,
+      "normalizedNormalLengthRange": [
+        0.9999748012122852,
+        1.0000252791807165
+      ]
+    },
+    {
+      "id": "detail",
+      "vertices": 903615,
+      "triangles": 1986313,
+      "compressedBytes": 17722926,
+      "decodedBytes": 34679172,
+      "sha256": "e68bca40df669ef4661a922a2e835c078d24cef7bb6afa35760cd39d71ccc12c",
+      "decodedSha256": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+      "zeroAreaTrianglesAfterQuantization": 0,
+      "normalizedNormalLengthRange": [
+        0.9999745320368135,
+        1.0000254491531495
+      ]
+    }
+  ],
+  "fullObject": [
+    {
+      "lod": "balanced",
+      "hostedToWelded": {
+        "samples": 50000,
+        "meanMm": 0.03764568665570503,
+        "rmsMm": 0.04869682629802276,
+        "medianMm": 0.03037574197981352,
+        "p95Mm": 0.09831216219953476,
+        "p99Mm": 0.13658035910345695,
+        "maximumSampledMm": 0.3683128690950599
+      },
+      "weldedToHosted": {
+        "samples": 50000,
+        "meanMm": 0.13288813282469442,
+        "rmsMm": 0.38272777660687557,
+        "medianMm": 0.04624383049649078,
+        "p95Mm": 0.5032364164661612,
+        "p99Mm": 1.4970822909744377,
+        "maximumSampledMm": 6.955778256984468
+      }
+    },
+    {
+      "lod": "detail",
+      "hostedToWelded": {
+        "samples": 50000,
+        "meanMm": 0.024899583238931617,
+        "rmsMm": 0.032349857588113026,
+        "medianMm": 0.01974142318343361,
+        "p95Mm": 0.06561198689115642,
+        "p99Mm": 0.09107398960723079,
+        "maximumSampledMm": 0.16757208391233772
+      },
+      "weldedToHosted": {
+        "samples": 50000,
+        "meanMm": 0.0458849522675729,
+        "rmsMm": 0.11886077027987929,
+        "medianMm": 0.024102791096816782,
+        "p95Mm": 0.11904126006701894,
+        "p99Mm": 0.4919992114943421,
+        "maximumSampledMm": 4.3234163772366845
+      }
+    }
+  ],
+  "localSource": [
+    {
+      "paddedSourceZRange": [
+        312,
+        328
+      ],
+      "interiorSourceMm": [
+        -54.38900000000001,
+        -53.43620000000001
+      ],
+      "rawTriangles": 3485622,
+      "smoothedTriangles": 1345756,
+      "rawToSmoothed": {
+        "samples": 12000,
+        "meanMm": 0.12266581814074899,
+        "rmsMm": 0.21432460786719196,
+        "medianMm": 0.053387460157291886,
+        "p95Mm": 0.482831668041381,
+        "p99Mm": 0.8732600588342139,
+        "maximumSampledMm": 1.5854282894080756
+      },
+      "smoothedToRaw": {
+        "samples": 12000,
+        "meanMm": 0.02076327217518497,
+        "rmsMm": 0.024576835021402524,
+        "medianMm": 0.01954996610835274,
+        "p95Mm": 0.04424576258837879,
+        "p99Mm": 0.05501373874180836,
+        "maximumSampledMm": 0.07545162876361229
+      },
+      "lods": [
+        {
+          "id": "balanced",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.26166844227731145,
+            "rmsMm": 0.40807520329438474,
+            "medianMm": 0.14377212871644315,
+            "p95Mm": 0.8968251825213273,
+            "p99Mm": 1.4920424615489303,
+            "maximumSampledMm": 2.6917968098137717
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.10029945676312906,
+            "rmsMm": 0.18262106144752788,
+            "medianMm": 0.047368978824555374,
+            "p95Mm": 0.4088542052780153,
+            "p99Mm": 0.7748378847846944,
+            "maximumSampledMm": 1.70180012083826
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.03249384526043365,
+            "rmsMm": 0.04142782211954788,
+            "medianMm": 0.026935729462158928,
+            "p95Mm": 0.08219389172919274,
+            "p99Mm": 0.1140102213078998,
+            "maximumSampledMm": 0.1826871176888001
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.04463620873924102,
+            "rmsMm": 0.05563135954614395,
+            "medianMm": 0.038201830972108414,
+            "p95Mm": 0.10879453450192741,
+            "p99Mm": 0.13911472784108234,
+            "maximumSampledMm": 0.20585440464183924
+          }
+        },
+        {
+          "id": "detail",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.18747052451719529,
+            "rmsMm": 0.3047426617062407,
+            "medianMm": 0.09610656508931333,
+            "p95Mm": 0.6896910963082872,
+            "p99Mm": 1.169736511942973,
+            "maximumSampledMm": 1.9704217634551222
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.044864327653356365,
+            "rmsMm": 0.08463146387439426,
+            "medianMm": 0.02564597923544078,
+            "p95Mm": 0.13329730453401722,
+            "p99Mm": 0.37413504067110426,
+            "maximumSampledMm": 1.105985949480599
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.028330446800581843,
+            "rmsMm": 0.03515740708782851,
+            "medianMm": 0.024483314214079697,
+            "p95Mm": 0.06683956815587261,
+            "p99Mm": 0.08966472677344497,
+            "maximumSampledMm": 0.19435092862776493
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.0292254007449451,
+            "rmsMm": 0.037419741577080744,
+            "medianMm": 0.023662685311329257,
+            "p95Mm": 0.07430812887509188,
+            "p99Mm": 0.10125752737762489,
+            "maximumSampledMm": 0.18639032131092392
+          }
+        }
+      ]
+    },
+    {
+      "paddedSourceZRange": [
+        696,
+        712
+      ],
+      "interiorSourceMm": [
+        -23.899400000000007,
+        -22.946600000000007
+      ],
+      "rawTriangles": 4672704,
+      "smoothedTriangles": 1856648,
+      "rawToSmoothed": {
+        "samples": 12000,
+        "meanMm": 0.15921998810846172,
+        "rmsMm": 0.31004103577081077,
+        "medianMm": 0.051484762548302365,
+        "p95Mm": 0.6930474953034881,
+        "p99Mm": 1.2822849150205669,
+        "maximumSampledMm": 2.9973900892586296
+      },
+      "smoothedToRaw": {
+        "samples": 12000,
+        "meanMm": 0.022275271525678795,
+        "rmsMm": 0.026195308656978087,
+        "medianMm": 0.021024393097075197,
+        "p95Mm": 0.047017412464447475,
+        "p99Mm": 0.057916385560276194,
+        "maximumSampledMm": 0.07963724064230565
+      },
+      "lods": [
+        {
+          "id": "balanced",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.3163270847333167,
+            "rmsMm": 0.5435906962797867,
+            "medianMm": 0.14179956698171647,
+            "p95Mm": 1.2449537248043554,
+            "p99Mm": 2.17380269816656,
+            "maximumSampledMm": 3.495054169062538
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.09601232869111692,
+            "rmsMm": 0.2029046820556253,
+            "medianMm": 0.04444541479093,
+            "p95Mm": 0.3693615882501439,
+            "p99Mm": 0.8574992391866118,
+            "maximumSampledMm": 3.069967986748883
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.03623804676738482,
+            "rmsMm": 0.045597627904461854,
+            "medianMm": 0.03086218469622206,
+            "p95Mm": 0.09017163322475678,
+            "p99Mm": 0.11923649588207319,
+            "maximumSampledMm": 0.1984402642212709
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.04384645381720175,
+            "rmsMm": 0.05525279193286488,
+            "medianMm": 0.03676489208044151,
+            "p95Mm": 0.10831999284791692,
+            "p99Mm": 0.13888880038208493,
+            "maximumSampledMm": 0.28376463754342124
+          }
+        },
+        {
+          "id": "detail",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.23254454106090913,
+            "rmsMm": 0.41319498101464414,
+            "medianMm": 0.09328588154205555,
+            "p95Mm": 0.9704827848691028,
+            "p99Mm": 1.6673087545106837,
+            "maximumSampledMm": 2.7634107522919544
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.04255859946965042,
+            "rmsMm": 0.09083746467703567,
+            "medianMm": 0.025155106068178584,
+            "p95Mm": 0.11662968479076773,
+            "p99Mm": 0.3559518309969226,
+            "maximumSampledMm": 1.6321589207959861
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.029975648446101597,
+            "rmsMm": 0.03713033779004024,
+            "medianMm": 0.026011560174709885,
+            "p95Mm": 0.07129788730274754,
+            "p99Mm": 0.0950192003553457,
+            "maximumSampledMm": 0.13914190607638402
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.029453944147086956,
+            "rmsMm": 0.037670748532118825,
+            "medianMm": 0.02416690816344383,
+            "p95Mm": 0.07476129393038256,
+            "p99Mm": 0.10190158242231409,
+            "maximumSampledMm": 0.18483800719487056
+          }
+        }
+      ]
+    },
+    {
+      "paddedSourceZRange": [
+        1080,
+        1096
+      ],
+      "interiorSourceMm": [
+        6.590199999999997,
+        7.542999999999997
+      ],
+      "rawTriangles": 6758828,
+      "smoothedTriangles": 1837150,
+      "rawToSmoothed": {
+        "samples": 12000,
+        "meanMm": 0.2948374443267932,
+        "rmsMm": 0.557955531636382,
+        "medianMm": 0.11073427258859342,
+        "p95Mm": 1.2913668022570062,
+        "p99Mm": 2.342235426168449,
+        "maximumSampledMm": 4.599670294492171
+      },
+      "smoothedToRaw": {
+        "samples": 12000,
+        "meanMm": 0.022317602943126246,
+        "rmsMm": 0.02629410438891139,
+        "medianMm": 0.02068724435603987,
+        "p95Mm": 0.047414840633521305,
+        "p99Mm": 0.05782170441040681,
+        "maximumSampledMm": 0.07743077483982747
+      },
+      "lods": [
+        {
+          "id": "balanced",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.9608381947520575,
+            "rmsMm": 1.6809968838251126,
+            "medianMm": 0.390946167086771,
+            "p95Mm": 4.253577540617459,
+            "p99Mm": 6.326992844501097,
+            "maximumSampledMm": 8.507242389355245
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.1952680325183763,
+            "rmsMm": 0.5502398755276684,
+            "medianMm": 0.05559744018937919,
+            "p95Mm": 0.8564887349151403,
+            "p99Mm": 2.5087012074698984,
+            "maximumSampledMm": 8.132684709141001
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.03760044669264705,
+            "rmsMm": 0.04761582108543886,
+            "medianMm": 0.03153820834688044,
+            "p95Mm": 0.09343974685070552,
+            "p99Mm": 0.12732222611852437,
+            "maximumSampledMm": 0.22905285411563805
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.04501708479376695,
+            "rmsMm": 0.05668357734060247,
+            "medianMm": 0.03764389788514026,
+            "p95Mm": 0.11120732378755548,
+            "p99Mm": 0.1494941334636094,
+            "maximumSampledMm": 0.2575669337586002
+          }
+        },
+        {
+          "id": "detail",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.5106591041041092,
+            "rmsMm": 0.8438509038641835,
+            "medianMm": 0.23554145932300102,
+            "p95Mm": 1.993678208669116,
+            "p99Mm": 3.015898126172032,
+            "maximumSampledMm": 4.720537369770836
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.06527074335024084,
+            "rmsMm": 0.17561579300846433,
+            "medianMm": 0.02906828441350893,
+            "p95Mm": 0.21980816634230557,
+            "p99Mm": 0.7581497462189289,
+            "maximumSampledMm": 3.0544508890541295
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.030689616691619223,
+            "rmsMm": 0.03813334667884214,
+            "medianMm": 0.026492594626366214,
+            "p95Mm": 0.07270264621291453,
+            "p99Mm": 0.0987949483602052,
+            "maximumSampledMm": 0.16615128196246692
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.029441944890568263,
+            "rmsMm": 0.037842228109316624,
+            "medianMm": 0.02379877053916119,
+            "p95Mm": 0.07574546944068929,
+            "p99Mm": 0.10209106949675033,
+            "maximumSampledMm": 0.17400932007307496
+          }
+        }
+      ]
+    },
+    {
+      "paddedSourceZRange": [
+        1464,
+        1480
+      ],
+      "interiorSourceMm": [
+        37.079800000000006,
+        38.03260000000001
+      ],
+      "rawTriangles": 4140122,
+      "smoothedTriangles": 1240178,
+      "rawToSmoothed": {
+        "samples": 12000,
+        "meanMm": 0.46545915338629024,
+        "rmsMm": 0.8223561702382729,
+        "medianMm": 0.12165732730512235,
+        "p95Mm": 1.9668610834907034,
+        "p99Mm": 2.9382102690704355,
+        "maximumSampledMm": 4.561898028050652
+      },
+      "smoothedToRaw": {
+        "samples": 12000,
+        "meanMm": 0.02483344419182457,
+        "rmsMm": 0.028592603877799962,
+        "medianMm": 0.02407798528191929,
+        "p95Mm": 0.049488798850817584,
+        "p99Mm": 0.05908333751223966,
+        "maximumSampledMm": 0.08430904865120298
+      },
+      "lods": [
+        {
+          "id": "balanced",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 1.084048029790436,
+            "rmsMm": 1.7912211383151866,
+            "medianMm": 0.36118392148875733,
+            "p95Mm": 4.2760914020918355,
+            "p99Mm": 5.668774684128339,
+            "maximumSampledMm": 6.593377232063191
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.15613571768682202,
+            "rmsMm": 0.4656346618298317,
+            "medianMm": 0.04632743212719452,
+            "p95Mm": 0.6269954458003227,
+            "p99Mm": 2.3233503565507014,
+            "maximumSampledMm": 6.2110375082626215
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.03850272567437231,
+            "rmsMm": 0.049460058538664184,
+            "medianMm": 0.03140062338540466,
+            "p95Mm": 0.09883580299738964,
+            "p99Mm": 0.14138847657923673,
+            "maximumSampledMm": 0.21865890773459007
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.04798182565469229,
+            "rmsMm": 0.060593507565709456,
+            "medianMm": 0.04060993277035885,
+            "p95Mm": 0.11797847354383895,
+            "p99Mm": 0.16299149126148862,
+            "maximumSampledMm": 0.2667430411667273
+          }
+        },
+        {
+          "id": "detail",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.677788948696986,
+            "rmsMm": 1.1240151663450615,
+            "medianMm": 0.22003118266753158,
+            "p95Mm": 2.5875144379525117,
+            "p99Mm": 3.7029392805143844,
+            "maximumSampledMm": 4.910125424498793
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.05255492419293983,
+            "rmsMm": 0.15275579498484373,
+            "medianMm": 0.024918100279166935,
+            "p95Mm": 0.13654332222089322,
+            "p99Mm": 0.6150523023517781,
+            "maximumSampledMm": 3.0610362680338095
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.03239120049129075,
+            "rmsMm": 0.04010205529572877,
+            "medianMm": 0.028248116054431782,
+            "p95Mm": 0.07595138985188439,
+            "p99Mm": 0.10177534472530007,
+            "maximumSampledMm": 0.1888143578814395
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.02885419456071735,
+            "rmsMm": 0.03745051670413132,
+            "medianMm": 0.023049141795148685,
+            "p95Mm": 0.0756374808015536,
+            "p99Mm": 0.10617554853605102,
+            "maximumSampledMm": 0.17152306297664516
+          }
+        }
+      ]
+    },
+    {
+      "paddedSourceZRange": [
+        1848,
+        1864
+      ],
+      "interiorSourceMm": [
+        67.56940000000002,
+        68.52220000000001
+      ],
+      "rawTriangles": 1792328,
+      "smoothedTriangles": 523510,
+      "rawToSmoothed": {
+        "samples": 12000,
+        "meanMm": 0.15451674753576317,
+        "rmsMm": 0.31262244506053966,
+        "medianMm": 0.07368043494976745,
+        "p95Mm": 0.5301287767699103,
+        "p99Mm": 1.605995411873545,
+        "maximumSampledMm": 3.081790223627313
+      },
+      "smoothedToRaw": {
+        "samples": 12000,
+        "meanMm": 0.021510125558500705,
+        "rmsMm": 0.02628273040203829,
+        "medianMm": 0.019058689606593873,
+        "p95Mm": 0.04956749748428401,
+        "p99Mm": 0.060846468873396814,
+        "maximumSampledMm": 0.086195365964138
+      },
+      "lods": [
+        {
+          "id": "balanced",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.3322063202542223,
+            "rmsMm": 0.5504199610446371,
+            "medianMm": 0.18654189557604398,
+            "p95Mm": 1.2280588988121384,
+            "p99Mm": 2.285468262675558,
+            "maximumSampledMm": 3.8149000470252217
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.12445219774753657,
+            "rmsMm": 0.22644419515418765,
+            "medianMm": 0.06948182271633987,
+            "p95Mm": 0.41857374595254593,
+            "p99Mm": 1.0556778944371552,
+            "maximumSampledMm": 2.4889688548318865
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.030493615408294667,
+            "rmsMm": 0.038851987615856905,
+            "medianMm": 0.02545702607296277,
+            "p95Mm": 0.07439230669850677,
+            "p99Mm": 0.10797208252932669,
+            "maximumSampledMm": 0.18903827350583352
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.048839951000317405,
+            "rmsMm": 0.060352285427823046,
+            "medianMm": 0.04257869473074857,
+            "p95Mm": 0.11446013234773722,
+            "p99Mm": 0.15168423559931904,
+            "maximumSampledMm": 0.2233020496481707
+          }
+        },
+        {
+          "id": "detail",
+          "rawToHosted": {
+            "samples": 12000,
+            "meanMm": 0.24968126190341164,
+            "rmsMm": 0.44330078339597284,
+            "medianMm": 0.13043309048965512,
+            "p95Mm": 0.9542584032039224,
+            "p99Mm": 2.0254674843654206,
+            "maximumSampledMm": 2.8699038878859056
+          },
+          "smoothedToHosted": {
+            "samples": 12000,
+            "meanMm": 0.05929918512867986,
+            "rmsMm": 0.13063615986656715,
+            "medianMm": 0.03451462544032389,
+            "p95Mm": 0.1682501966900646,
+            "p99Mm": 0.4555268672953119,
+            "maximumSampledMm": 2.3393054722284248
+          },
+          "hostedToRaw": {
+            "samples": 12000,
+            "meanMm": 0.027635259438348162,
+            "rmsMm": 0.03447625284580602,
+            "medianMm": 0.0237146749848987,
+            "p95Mm": 0.06562527105366933,
+            "p99Mm": 0.08949491032642302,
+            "maximumSampledMm": 0.18989143325685845
+          },
+          "hostedToSmoothed": {
+            "samples": 12000,
+            "meanMm": 0.03124642019015128,
+            "rmsMm": 0.03937901890276674,
+            "medianMm": 0.026205489916606317,
+            "p95Mm": 0.0774135184983629,
+            "p99Mm": 0.10401194124380987,
+            "maximumSampledMm": 0.15251149616225013
+          }
+        }
+      ]
+    }
+  ],
+  "seconds": 90.25513187899924,
+  "limits": [
+    "Full-object reference already includes sigma-0.8-voxel Gaussian surface filtering and the topology-preserving slab simplification; its distances isolate the final LOD/quantization stage.",
+    "Dense unsmoothed-source comparisons cover five 16-cell slabs, not every acquired voxel or every small anatomical feature.",
+    "Local contour-to-contour and hosted-to-local-source distances can overestimate error if the closest counterpart lies outside the finite slab halo. Raw-local-source to the full hosted object does not have that target-cropping limitation.",
+    "Sampled distance is neither a maximum geometric guarantee nor evidence of preserved valve/chordal topology.",
+    "The canonical input is the existing cleaned, windowed uint8 79.4 \u00b5m display bank, not the original quantitative 19.85 \u00b5m acquisition.",
+    "Smoothing and QEM simplification are lossy derived-display operations; source CT images and existing Ultra cut faces are unchanged."
+  ]
+}

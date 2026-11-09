@@ -1,0 +1,359 @@
+{
+  "scriptSha256": "567ed8f9f344756367cec2394c7e8421a08c3e17778e8e1741c3bbb6a7048f61",
+  "width": 720,
+  "height": 840,
+  "scope": "Independent float32 homogeneous polygon-clipping oracle, shipped quantized geometry sample and exact attribute/order checks. No new GL run in this test.",
+  "cameraChecks": [
+    {
+      "case": "lvot-y262",
+      "maximumAbsoluteBasisOrPositionError": 6.938893903907228e-18
+    },
+    {
+      "case": "la-y316",
+      "maximumAbsoluteBasisOrPositionError": 1.1102230246251565e-16
+    },
+    {
+      "case": "tricuspid-y263",
+      "maximumAbsoluteBasisOrPositionError": 0.0
+    },
+    {
+      "case": "pulmonary-x194",
+      "maximumAbsoluteBasisOrPositionError": 0.0
+    },
+    {
+      "case": "pulmonary-x313",
+      "maximumAbsoluteBasisOrPositionError": 0.0
+    },
+    {
+      "case": "inlet-x313",
+      "maximumAbsoluteBasisOrPositionError": 2.7755575615628914e-17
+    },
+    {
+      "case": "wall-y284",
+      "maximumAbsoluteBasisOrPositionError": 5.551115123125783e-17
+    },
+    {
+      "case": "wall-y284-oblique",
+      "maximumAbsoluteBasisOrPositionError": 2.7755575615628914e-17
+    },
+    {
+      "case": "survey-y249",
+      "maximumAbsoluteBasisOrPositionError": 0.0
+    },
+    {
+      "case": "survey-y361",
+      "maximumAbsoluteBasisOrPositionError": 3.469446951953614e-18
+    },
+    {
+      "case": "survey-apex-y253",
+      "maximumAbsoluteBasisOrPositionError": 5.551115123125783e-17
+    },
+    {
+      "case": "survey-exterior",
+      "maximumAbsoluteBasisOrPositionError": 0.0
+    }
+  ],
+  "edgeCases": [
+    {
+      "case": "all-vertices-outside-different-planes",
+      "retained": true
+    },
+    {
+      "case": "crosses-near-plane",
+      "retained": true
+    },
+    {
+      "case": "outside-near-plane",
+      "retained": false
+    },
+    {
+      "case": "outside-far-plane",
+      "retained": false
+    },
+    {
+      "case": "outside-right-plane",
+      "retained": false
+    },
+    {
+      "case": "crosses-right-plane",
+      "retained": true
+    },
+    {
+      "case": "crosses-cut",
+      "retained": true
+    },
+    {
+      "case": "fully-cut",
+      "retained": false
+    },
+    {
+      "case": "retained-cut-side",
+      "retained": true
+    }
+  ],
+  "sampleSource": {
+    "url": "./assets/fine-surface-v19/balanced.hfm.gz",
+    "sha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+    "decodedSha256": "e00753c085938f64718ca488535390cd1235b20df68c83d9d9698ec44d0d4de2",
+    "trianglesPerCamera": 2400
+  },
+  "meshChecks": [
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 564,
+      "removedOffscreenOrClippedTriangles": 1836,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "lvot-y262",
+        "axis": 1,
+        "coordinate": 1044,
+        "target": [
+          1080,
+          1044,
+          1120
+        ],
+        "distance": 0.5
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 775,
+      "removedOffscreenOrClippedTriangles": 1625,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "la-y316",
+        "axis": 1,
+        "coordinate": 1260,
+        "target": [
+          1270,
+          1260,
+          810
+        ],
+        "distance": 0.5
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 767,
+      "removedOffscreenOrClippedTriangles": 1633,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "tricuspid-y263",
+        "axis": 1,
+        "coordinate": 1048,
+        "target": [
+          760,
+          1048,
+          1220
+        ],
+        "distance": 0.55
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 220,
+      "removedOffscreenOrClippedTriangles": 2180,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "pulmonary-x194",
+        "axis": 0,
+        "coordinate": 772,
+        "target": [
+          772,
+          1280,
+          750
+        ],
+        "distance": 0.55
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 954,
+      "removedOffscreenOrClippedTriangles": 1446,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "pulmonary-x313",
+        "axis": 0,
+        "coordinate": 1248,
+        "target": [
+          1100,
+          1280,
+          710
+        ],
+        "distance": 0.6
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 1037,
+      "removedOffscreenOrClippedTriangles": 1363,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "inlet-x313",
+        "axis": 0,
+        "coordinate": 1248,
+        "target": [
+          1248,
+          850,
+          650
+        ],
+        "distance": 0.55
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 536,
+      "removedOffscreenOrClippedTriangles": 1864,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "wall-y284",
+        "axis": 1,
+        "coordinate": 1132,
+        "target": [
+          1270,
+          1132,
+          900
+        ],
+        "distance": 0.5
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 418,
+      "removedOffscreenOrClippedTriangles": 1982,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "wall-y284-oblique",
+        "axis": 1,
+        "coordinate": 1132,
+        "target": [
+          1240,
+          1132,
+          950
+        ],
+        "distance": 0.52,
+        "direction": [
+          -0.3,
+          0.025,
+          -1
+        ]
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 1293,
+      "removedOffscreenOrClippedTriangles": 1107,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "survey-y249",
+        "axis": 1,
+        "coordinate": 992,
+        "target": [
+          948,
+          992,
+          1100
+        ],
+        "distance": 1.08
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 2314,
+      "removedOffscreenOrClippedTriangles": 86,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "survey-y361",
+        "axis": 1,
+        "coordinate": 1440,
+        "target": [
+          948,
+          1440,
+          1000
+        ],
+        "distance": 1.08
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 572,
+      "removedOffscreenOrClippedTriangles": 1828,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "survey-apex-y253",
+        "axis": 1,
+        "coordinate": 1008,
+        "target": [
+          880,
+          1008,
+          1640
+        ],
+        "distance": 0.56
+      }
+    },
+    {
+      "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+      "sourceTriangles": 2400,
+      "submittedTriangles": 2314,
+      "removedOffscreenOrClippedTriangles": 86,
+      "sourceAttributesUnchanged": true,
+      "safetyMarginWorld": 1e-05,
+      "camera": {
+        "id": "survey-exterior",
+        "axis": 1,
+        "coordinate": 1132,
+        "target": [
+          948,
+          948,
+          1058
+        ],
+        "distance": 1.25,
+        "whole": true,
+        "direction": [
+          0.55,
+          0.15,
+          -1
+        ]
+      }
+    }
+  ],
+  "pixelParity": [
+    {
+      "case": "lvot-y262",
+      "status": "Exact decoded RGBA equality",
+      "rawSha256": "d843b99b117f645c0fa8cc01b2b6ca4a6a684f1f3d2ba141b7b129031a2f4a98"
+    },
+    {
+      "case": "la-y316",
+      "status": "Exact decoded RGBA equality",
+      "rawSha256": "f522768f355e30a972c10f372830394447274d75257638aecd3964df288f7d8e"
+    },
+    {
+      "case": "inlet-x313",
+      "status": "Exact decoded RGBA equality",
+      "rawSha256": "64ee35bebc8f312eca2f4b879a4c50824a8455b680a54efbcd0028c2d5afe519"
+    }
+  ],
+  "maximumResidentBytes": 54923264
+}

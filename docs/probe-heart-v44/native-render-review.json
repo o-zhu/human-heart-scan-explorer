@@ -1,0 +1,114 @@
+{
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "kind": "Offline HFM/EGL model review, not browser rendering or clinical validation",
+  "records": [
+    {
+      "donor": "ladaf-2021-17",
+      "view": 1,
+      "direction": [
+        0.546793151927797,
+        -0.7570982103615651,
+        0.3575185993374057
+      ],
+      "triangles": 497714,
+      "encodedSha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "pixelsSha256": "6d04f6520c8bbc8246a63ed0de293f772ad1cf92857f65b95d7278ce7d3c73af"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "view": 2,
+      "direction": [
+        -0.8217814036133181,
+        -0.18964186237230415,
+        0.5373186100548618
+      ],
+      "triangles": 497714,
+      "encodedSha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "pixelsSha256": "a723ef7e090f65aa7c994bdde4212f9a3d6898e47b6af8fb7b3e6b62977241b6"
+    },
+    {
+      "donor": "ladaf-2021-17",
+      "view": 3,
+      "direction": [
+        0.16058631827165676,
+        0.2141150910288757,
+        0.9635179096299405
+      ],
+      "triangles": 497714,
+      "encodedSha256": "68c07a62ec8ac16900766ae357e12ffe122c22c23c58f89105d4cb5fb262d97f",
+      "pixelsSha256": "5b491dc955babf69ee4689b174f8cdd6144dd92d1f4a916bbee9eba25d5cd7b8"
+    },
+    {
+      "donor": "s-20-29",
+      "view": 1,
+      "direction": [
+        0.546793151927797,
+        -0.7570982103615651,
+        0.3575185993374057
+      ],
+      "triangles": 299956,
+      "encodedSha256": "1056b73b72c8243648c0c16b12d2ad1c198649b2b808a2dd18d12c981de028e3",
+      "pixelsSha256": "064b6b9a1cad2bdb55a69a200f42a9ca78327684ba9384224904a2d502b65dd2"
+    },
+    {
+      "donor": "s-20-29",
+      "view": 2,
+      "direction": [
+        -0.8217814036133181,
+        -0.18964186237230415,
+        0.5373186100548618
+      ],
+      "triangles": 299956,
+      "encodedSha256": "1056b73b72c8243648c0c16b12d2ad1c198649b2b808a2dd18d12c981de028e3",
+      "pixelsSha256": "0d96c3d672bc5d4e55e70b808b0faf9e5695d4dc0384aa4f26c1d44ace93b123"
+    },
+    {
+      "donor": "s-20-29",
+      "view": 3,
+      "direction": [
+        0.16058631827165676,
+        0.2141150910288757,
+        0.9635179096299405
+      ],
+      "triangles": 299956,
+      "encodedSha256": "1056b73b72c8243648c0c16b12d2ad1c198649b2b808a2dd18d12c981de028e3",
+      "pixelsSha256": "5cae1dcbe9fd2da398f9c4f9581afc9cf301368092b3294df6348d4cc2f5b3c9"
+    },
+    {
+      "donor": "s-20-28",
+      "view": 1,
+      "direction": [
+        0.546793151927797,
+        -0.7570982103615651,
+        0.3575185993374057
+      ],
+      "triangles": 299940,
+      "encodedSha256": "1b656a9c7b86284e01c1ed32c86e6a5e458242326bff5d76541d0d2202875118",
+      "pixelsSha256": "639e582b64b4c20007f932a17a4ae4ec6b3a6b463e457a7da2674dfdaf6651ad"
+    },
+    {
+      "donor": "s-20-28",
+      "view": 2,
+      "direction": [
+        -0.8217814036133181,
+        -0.18964186237230415,
+        0.5373186100548618
+      ],
+      "triangles": 299940,
+      "encodedSha256": "1b656a9c7b86284e01c1ed32c86e6a5e458242326bff5d76541d0d2202875118",
+      "pixelsSha256": "67374f7c9d3eaa8ab2f9ec85bd7669a9962360cc2836e9acbac992bad188e032"
+    },
+    {
+      "donor": "s-20-28",
+      "view": 3,
+      "direction": [
+        0.16058631827165676,
+        0.2141150910288757,
+        0.9635179096299405
+      ],
+      "triangles": 299940,
+      "encodedSha256": "1b656a9c7b86284e01c1ed32c86e6a5e458242326bff5d76541d0d2202875118",
+      "pixelsSha256": "b423d64fc39745f1259d28e2dbe95b6fd4e8e9d67c247ee98e239c33c73952fe"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "verified": true,
+  "sourceSpacingUm": 19.85,
+  "fixedRawThreshold": 17133.4,
+  "nativeCandidatesRetainConnectivity": true,
+  "normalsOnlyPositionsIdentical": true,
+  "originalScanUnfilteredForReference": true,
+  "assets": [
+    {
+      "id": "overview",
+      "vertices": 395,
+      "triangles": 639,
+      "compressedBytes": 6914,
+      "decodedBytes": 12444,
+      "positionFormat": "uint16",
+      "positionsSha256": "119844a5beab50140a2def674883a0685f6c5517a62b7a9c1e73fe194dabe1ba",
+      "indicesSha256": "ef0ca49d9bf24ef57c533686992952d75b0ad3f0463cd22e4f2846ddc5872376",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    },
+    {
+      "id": "native",
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 12867151,
+      "decodedBytes": 27438308,
+      "positionFormat": "float32",
+      "positionsSha256": "7ccffe785c93a9117ca6d02d3b81d62c3935ca45f233b99f7cf337d5cccb2963",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    },
+    {
+      "id": "normals",
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 13037466,
+      "decodedBytes": 27438308,
+      "positionFormat": "float32",
+      "positionsSha256": "7ccffe785c93a9117ca6d02d3b81d62c3935ca45f233b99f7cf337d5cccb2963",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    },
+    {
+      "id": "gentle",
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 16180481,
+      "decodedBytes": 27438308,
+      "positionFormat": "float32",
+      "positionsSha256": "35d0d2e66d065836df78bc5191273b851e7103cb815d5d8ccb37cff7deccb9a6",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    },
+    {
+      "id": "moderate",
+      "vertices": 665302,
+      "triangles": 1288570,
+      "compressedBytes": 16146765,
+      "decodedBytes": 27438308,
+      "positionFormat": "float32",
+      "positionsSha256": "63120324d7c64e606de7438c07f8398b38e3f5d54dc50e4c4f53883f0cce485a",
+      "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    },
+    {
+      "id": "bilateral",
+      "vertices": 533438,
+      "triangles": 1026542,
+      "compressedBytes": 10286290,
+      "decodedBytes": 21920420,
+      "positionFormat": "float32",
+      "positionsSha256": "de668552dd08fcf065ee14c3ee1703b682ea7c34a3d2892dd1e251dd05827ccc",
+      "indicesSha256": "f5d7d505594062660611b1710166f0a2e11554290bfb4afae8ae0f5010cb23dd",
+      "compressedAndDecodedHashesMatch": true,
+      "browserParserAccepted": true
+    }
+  ]
+}

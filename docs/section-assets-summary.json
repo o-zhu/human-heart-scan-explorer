@@ -1,0 +1,69 @@
+{
+  "assetRoot": "{local-workspace}/sections-q92",
+  "sections": "{local-workspace}/sections-q92/sections",
+  "imageCount": 1480,
+  "totalBytes": 197508157,
+  "axisBytes": {
+    "x": 64603424,
+    "y": 64754128,
+    "z": 68150605
+  },
+  "quality": 92,
+  "elapsedSeconds": 42.697043895721436,
+  "validation": [
+    {
+      "path": "x/0000.jpg",
+      "sourceIndex": 0,
+      "meanAbsoluteDisplayError": 0.0,
+      "maximumAbsoluteDisplayError": 0
+    },
+    {
+      "path": "x/0237.jpg",
+      "sourceIndex": 474,
+      "meanAbsoluteDisplayError": 1.320385953705058,
+      "maximumAbsoluteDisplayError": 14
+    },
+    {
+      "path": "x/0474.jpg",
+      "sourceIndex": 948,
+      "meanAbsoluteDisplayError": 0.0,
+      "maximumAbsoluteDisplayError": 0
+    },
+    {
+      "path": "y/0000.jpg",
+      "sourceIndex": 0,
+      "meanAbsoluteDisplayError": 0.0,
+      "maximumAbsoluteDisplayError": 0
+    },
+    {
+      "path": "y/0237.jpg",
+      "sourceIndex": 474,
+      "meanAbsoluteDisplayError": 1.3561305524129073,
+      "maximumAbsoluteDisplayError": 14
+    },
+    {
+      "path": "y/0474.jpg",
+      "sourceIndex": 948,
+      "meanAbsoluteDisplayError": 0.0,
+      "maximumAbsoluteDisplayError": 0
+    },
+    {
+      "path": "z/0000.jpg",
+      "sourceIndex": 0,
+      "meanAbsoluteDisplayError": 1.0286886201547634,
+      "maximumAbsoluteDisplayError": 17
+    },
+    {
+      "path": "z/0265.jpg",
+      "sourceIndex": 530,
+      "meanAbsoluteDisplayError": 0.9537542152407115,
+      "maximumAbsoluteDisplayError": 20
+    },
+    {
+      "path": "z/0529.jpg",
+      "sourceIndex": 1058,
+      "meanAbsoluteDisplayError": 0.8538120654984838,
+      "maximumAbsoluteDisplayError": 14
+    }
+  ]
+}

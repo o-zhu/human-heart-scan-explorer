@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-11-07T00:38:38.714948+00:00",
+  "url": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site/",
+  "versionNumber": 39,
+  "sourceCommit": "6d7a3727cc11a6e4ec7320c9b4329675e7d293cd",
+  "workspace": "TEE lab",
+  "liveChecks": [
+    "TEE tab and controls visible",
+    "Initial source refinement reaches 79.4 \u00b5m Ultra",
+    "Advance 35.0 to 35.5 cm model",
+    "Electronic multiplane angle changes to 90 degrees",
+    "Lock steering disables manual controls",
+    "Unlock steering restores manual controls",
+    "Changed pose reaches 79.4 \u00b5m matched fine plane",
+    "Measured CT and simulated ultrasound switch without pose change"
+  ],
+  "finalDisplayedPose": {
+    "insertionCmModel": 35.5,
+    "multiplaneDegrees": 90,
+    "steeringLocked": false,
+    "image": "Simulated ultrasound"
+  },
+  "sourceLabel": "79.4 \u00b5m source \u00b7 Ultra",
+  "screenshot": "tee-lab-live-v39.jpg",
+  "screenshotSha256": "fb87e56955a7c6f4954d7be7f3948bda0edf1da64cff2d3910733180519f9aa6",
+  "applicationErrorsObserved": [],
+  "excludedExtensionMessages": "Browser metadata extension errors, unrelated to Site",
+  "limits": [
+    "No browser FPS or end-to-end latency measurement",
+    "Production cleanup surface comparisons validated separately using native EGL and immutable source data"
+  ]
+}

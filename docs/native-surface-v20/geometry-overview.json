@@ -1,0 +1,31 @@
+{
+  "schema": "native-surface-v20.1",
+  "id": "overview",
+  "sourceSpacingUm": 317.6,
+  "sourcePath": "{source-cache}/anatomy-v12/source-s4.npy",
+  "sourceSha256": null,
+  "actualSourceSamples": true,
+  "upsampled": false,
+  "rawThreshold": 17133.4,
+  "sourceGridOriginXYZ": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cropSampleStartXYZ": [
+    280,
+    248,
+    288
+  ],
+  "cropSampleEndXYZ": [
+    288,
+    256,
+    296
+  ],
+  "vertices": 395,
+  "triangles": 639,
+  "surfaceClippedToNativeRoi": true,
+  "cropCapped": false,
+  "sourceDescription": "Actual s4 uint16 samples of the same LADAF N5 acquisition. Factor16 is explicit metadata; zero center translation is an index-scaling assumption, not an independently established spatial registration.",
+  "peakRssMiB": 134.1171875
+}

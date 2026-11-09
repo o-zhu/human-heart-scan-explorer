@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "specimen": "LADAF-2021-17",
+  "dimensions": [
+    238,
+    238,
+    265
+  ],
+  "volumeUrl": "assets/cleanup/heart-support.raw.gz",
+  "dtype": "uint8",
+  "arrayOrder": "ZYX, X fastest",
+  "values": {
+    "0": "excluded",
+    "255": "retained"
+  },
+  "physicalCenterExtentUm": [
+    150542.4,
+    150542.4,
+    168010.4
+  ],
+  "registration": "First and last voxel centers match the s4 display extent on each axis.",
+  "sourceScale": "s4",
+  "sourceDimensions": [
+    475,
+    475,
+    530
+  ],
+  "sourceThresholdRaw": 17490,
+  "sourceThresholdDisplay": 0.32004491858506456,
+  "method": "Largest 18-connected tissue component, expanded by 3 Manhattan voxels plus a conservative one-voxel resampling guard.",
+  "coreConnectivity": 18,
+  "marginVoxelsS4": 3,
+  "sourceSpacingUm": 317.6,
+  "coreComponentVoxels": 8228877,
+  "sourceForegroundVoxels": 8242419,
+  "sourceComponents": 4758,
+  "nonCoreComponents": 4757,
+  "coreVoxelsRetained": 8228877,
+  "boundsXYZ": [
+    [
+      111,
+      398
+    ],
+    [
+      90,
+      402
+    ],
+    [
+      16,
+      509
+    ]
+  ],
+  "rawBytes": 15010660,
+  "compressedBytes": 129177,
+  "sha256": "63a4ac9d6ec9e5e241dcd0990f50621752a8d84c2da18a13917ac9585114f85b",
+  "statistics": [
+    {
+      "displayThreshold": 0.25,
+      "visibleVoxelsBefore": 13154047,
+      "excludedVoxels": 3302487,
+      "excludedFraction": 0.2510624296841877
+    },
+    {
+      "displayThreshold": 0.28,
+      "visibleVoxelsBefore": 9281096,
+      "excludedVoxels": 118353,
+      "excludedFraction": 0.012752049973408314
+    },
+    {
+      "displayThreshold": 0.3,
+      "visibleVoxelsBefore": 8705251,
+      "excludedVoxels": 29053,
+      "excludedFraction": 0.0033374109488629334
+    },
+    {
+      "displayThreshold": 0.32,
+      "visibleVoxelsBefore": 8244706,
+      "excludedVoxels": 7389,
+      "excludedFraction": 0.0008962114598143342
+    },
+    {
+      "displayThreshold": 0.4,
+      "visibleVoxelsBefore": 7031284,
+      "excludedVoxels": 1056,
+      "excludedFraction": 0.00015018594043420805
+    },
+    {
+      "displayThreshold": 0.5,
+      "visibleVoxelsBefore": 5166622,
+      "excludedVoxels": 401,
+      "excludedFraction": 7.761357420767379e-05
+    }
+  ],
+  "limitations": "Conservative display cleanup. It suppresses disconnected bright fragments and background outside the organ-support region. Nearby or attached debris can remain. It neither reconstructs missing tissue nor establishes a clinical tissue segmentation. Disable cleanup to inspect the original display volume.",
+  "intensitiesModified": false
+}

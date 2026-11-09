@@ -1,0 +1,150 @@
+{
+  "coordinateSystem": "s4 voxel centers XYZ; 317.6 um; source dimensions [475,475,530]",
+  "reviewPurpose": "Independent targeted chamber and arterial-wall checks for v5. No expert reference or global segmentation accuracy claim.",
+  "landmarks": [
+    {
+      "name": "aorta_anterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        220,
+        226,
+        180
+      ],
+      "sourceIntensity": 21076,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "aorta_posterior",
+      "expectedRegion": 5,
+      "sourceXYZ": [
+        237,
+        303,
+        205
+      ],
+      "sourceIntensity": 21723,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "pulmonary_outer",
+      "expectedRegion": 6,
+      "sourceXYZ": [
+        187,
+        351,
+        181
+      ],
+      "sourceIntensity": 19048,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "pulmonary_root",
+      "expectedRegion": 6,
+      "sourceXYZ": [
+        170,
+        322,
+        200
+      ],
+      "sourceIntensity": 19708,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "la_lateral",
+      "expectedRegion": 3,
+      "sourceXYZ": [
+        310,
+        350,
+        219
+      ],
+      "sourceIntensity": 18852,
+      "confidence": "medium",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "la_inferior",
+      "expectedRegion": 3,
+      "sourceXYZ": [
+        339,
+        313,
+        240
+      ],
+      "sourceIntensity": 19189,
+      "confidence": "medium",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "ra_free_wall",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        237,
+        142,
+        230
+      ],
+      "sourceIntensity": 19098,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "ra_roof_side",
+      "expectedRegion": 4,
+      "sourceXYZ": [
+        282,
+        156,
+        181
+      ],
+      "sourceIntensity": 18673,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "lv_posterior",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        260,
+        325,
+        355
+      ],
+      "sourceIntensity": 19424,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "lv_septal",
+      "expectedRegion": 1,
+      "sourceXYZ": [
+        282,
+        235,
+        335
+      ],
+      "sourceIntensity": 19896,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "rv_free_wall",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        170,
+        125,
+        330
+      ],
+      "sourceIntensity": 19641,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    },
+    {
+      "name": "rv_apical_wall",
+      "expectedRegion": 2,
+      "sourceXYZ": [
+        195,
+        140,
+        370
+      ],
+      "sourceIntensity": 19136,
+      "confidence": "source morphology reviewed",
+      "selection": "Manual location on uncolored orthogonal source images; local intensity confirmed before any v5 candidate labels were viewed."
+    }
+  ]
+}

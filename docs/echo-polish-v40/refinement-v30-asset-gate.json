@@ -1,0 +1,109 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-name-pattern=real available patch meshes|decoder rejects corrupt",
+    "tests/local-refinement-v30.mjs"
+  ],
+  "exitCode": 0,
+  "receipt": {
+    "version": 1,
+    "createdAt": "2026-11-08T14:55:39.681Z",
+    "testFile": "tests/local-refinement-v30.mjs",
+    "scope": "Actual asset hashes/layout and instrumented WebGL lifecycle; no browser speed or anatomical validation claim.",
+    "runtimeFixture": {
+      "enabled": false,
+      "changes": [],
+      "originalModuleSha256": "0e2c1e447645c34482220823bc05e04380280734de067ea88204a4d9ccae7103",
+      "testedModuleSha256": "0e2c1e447645c34482220823bc05e04380280734de067ea88204a4d9ccae7103",
+      "scope": "Actual active routing module."
+    },
+    "cases": [
+      {
+        "name": "real available patch meshes and masks match their exact encoded/decoded hashes and source provenance",
+        "passed": true,
+        "milliseconds": 1248.08717
+      },
+      {
+        "name": "decoder rejects corrupt layout, coordinates, normals and indices, and respects byte offsets",
+        "passed": true,
+        "milliseconds": 9.020669999999882
+      }
+    ],
+    "assets": [
+      {
+        "id": "lvot-perivalvular-refinement",
+        "surfaceSha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+        "decodedSurfaceSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17",
+        "surfaceParts": 3,
+        "triangles": 963173,
+        "maskSha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+        "decodedMaskSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+        "maskedVoxels": 3563663,
+        "decodedBytes": 22871204
+      },
+      {
+        "id": "pulmonary-regularized-v30",
+        "surfaceSha256": "b68a7c12e3d57b00bf80991f7d7c3c8fc0c082452ccfb84dd661b2b688d63561",
+        "decodedSurfaceSha256": "0ae81892eb07de0899e1a251b89d2f96b8a0049c391df79de45144edf5a090b6",
+        "surfaceParts": 3,
+        "triangles": 846757,
+        "maskSha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044",
+        "decodedMaskSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+        "maskedVoxels": 2116579,
+        "decodedBytes": 21439972
+      },
+      {
+        "id": "tricuspid-rv-regularized-v30",
+        "surfaceSha256": "de06e1adf4c7c0c4f63f69f2cceb17e22552d9ca3a2fd1c5325b464d55975d37",
+        "decodedSurfaceSha256": "784b47b42a17ffbde1dfdab5f34667e9aa0f939e616aa1ec64db55b92d639675",
+        "surfaceParts": 1,
+        "triangles": 714790,
+        "maskSha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba",
+        "decodedMaskSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+        "maskedVoxels": 1564894,
+        "decodedBytes": 19978664
+      },
+      {
+        "id": "right-perivascular-v29",
+        "surfaceSha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f",
+        "decodedSurfaceSha256": "594dba5bdbbc38893d1aa8aae206dac2058b9a907d03f816b0627c774759d156",
+        "surfaceParts": 1,
+        "triangles": 682317,
+        "maskSha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399",
+        "decodedMaskSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+        "maskedVoxels": 831493,
+        "decodedBytes": 15067044
+      }
+    ],
+    "assetScope": "canonical four-patch public v30 manifest",
+    "manifest": {
+      "path": "public/assets/cleanup-v30/surface-manifest.json",
+      "sha256": "f12cc01dc5151df447c8c4456b5309ace7be642906923a395100eaefa03ea43d"
+    },
+    "budget": {
+      "regions": 4,
+      "compressedBytes": 35389896,
+      "decodedBytes": 79356884,
+      "maskDecodedBytes": 22603760,
+      "maximumDecodedBytes": 134217728,
+      "maximumMaskDecodedBytes": 25165824
+    },
+    "passed": true,
+    "memory": {
+      "rss": 160063488,
+      "heapTotal": 19595264,
+      "heapUsed": 8556344,
+      "external": 60730938,
+      "arrayBuffers": 56437884
+    },
+    "runtimeHashes": {
+      "public/local-surface-refinement.js": "0e2c1e447645c34482220823bc05e04380280734de067ea88204a4d9ccae7103",
+      "public/fine-surface.js": "fab5405c1cb4d1c748d7b97644af06ca706ba8893ba3aa0542efc6d431162e35",
+      "public/renderer.js": "1e533e0e44205c86722217e2768e22d8662bd4866be26403789da5fb364cc6e0",
+      "public/volume-picking.js": "a836cecff8cbf94dfccf892b47335b032a90fc2030550d66ad553a672bb1d3a0",
+      "public/compact-surface-codec.js": "5a9473d532dcce0ed4d21106c8be279e926cee9f6042b13745bb33dd0e6e64ec",
+      "public/fine-surface-worker.js": "86895089c4dd7834d93ee686205ca0650fa43955bb5bfc6ddcf82b3617da3a24"
+    }
+  }
+}

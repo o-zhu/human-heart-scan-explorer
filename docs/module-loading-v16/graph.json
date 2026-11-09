@@ -1,0 +1,903 @@
+{
+  "method": "ESM lexer follows literal static imports/re-exports from public/app.js; dynamic imports, workers, CSS, framework bootstrap and data fetches excluded. gzipBytes sums per-file gzip level 9, a transport-size estimate rather than measured wire traffic.",
+  "before": {
+    "revision": "6ee683ee505b36e212e1b0f12a987a863d71ddf4",
+    "entries": [
+      "public/app.js"
+    ],
+    "moduleCount": 29,
+    "bytes": 455036,
+    "gzipBytes": 144820,
+    "externalImports": [],
+    "modules": [
+      {
+        "file": "public/anatomy-data.js",
+        "bytes": 2254,
+        "gzipBytes": 989,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/app.js",
+        "bytes": 56836,
+        "gzipBytes": 16949,
+        "imports": [
+          "public/appearance.js",
+          "public/cpu-renderer.js",
+          "public/donors.js",
+          "public/download-priority.js",
+          "public/echo.js",
+          "public/hosted-ultra.js",
+          "public/planes.js",
+          "public/probe-lab.js",
+          "public/quick-views.js",
+          "public/renderer.js",
+          "public/section-detail.js",
+          "public/section-layout.js",
+          "public/ultra-volume.js",
+          "public/volume-loader.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/appearance.js",
+        "bytes": 12268,
+        "gzipBytes": 4134,
+        "imports": [
+          "public/anatomy-data.js",
+          "public/download-priority.js",
+          "public/section-paint.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/cpu-renderer.js",
+        "bytes": 4378,
+        "gzipBytes": 1811,
+        "imports": [
+          "public/render-styles.js",
+          "public/renderer.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/donors.js",
+        "bytes": 3888,
+        "gzipBytes": 1535,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/download-priority.js",
+        "bytes": 4708,
+        "gzipBytes": 1582,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/echo-correspondence.js",
+        "bytes": 5835,
+        "gzipBytes": 2286,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/echo-media-cache.js",
+        "bytes": 5022,
+        "gzipBytes": 1999,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/echo.js",
+        "bytes": 60013,
+        "gzipBytes": 17483,
+        "imports": [
+          "public/download-priority.js",
+          "public/echo-correspondence.js",
+          "public/echo-media-cache.js",
+          "public/mpr.js",
+          "public/planes.js",
+          "public/render-styles.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/flow-views.js",
+        "bytes": 32334,
+        "gzipBytes": 10123,
+        "imports": [
+          "public/download-priority.js",
+          "public/mpr.js",
+          "public/planes.js",
+          "public/render-styles.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/hosted-ultra.js",
+        "bytes": 41486,
+        "gzipBytes": 10402,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-prefetch.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/mpr.js",
+        "bytes": 1031,
+        "gzipBytes": 503,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/planes.js",
+        "bytes": 1332,
+        "gzipBytes": 632,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/probe-acoustics.js",
+        "bytes": 16047,
+        "gzipBytes": 5903,
+        "imports": [
+          "public/probe-geometry.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/probe-geometry.js",
+        "bytes": 17089,
+        "gzipBytes": 5523,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/probe-lab.js",
+        "bytes": 60994,
+        "gzipBytes": 18105,
+        "imports": [
+          "public/planes.js",
+          "public/probe-acoustics.js",
+          "public/probe-geometry.js",
+          "public/probe-scene.js",
+          "public/render-styles.js"
+        ],
+        "dynamicImports": [
+          "./probe-acoustics.js"
+        ]
+      },
+      {
+        "file": "public/probe-scene.js",
+        "bytes": 19694,
+        "gzipBytes": 7459,
+        "imports": [
+          "public/planes.js",
+          "public/probe-geometry.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/quick-views.js",
+        "bytes": 11840,
+        "gzipBytes": 3950,
+        "imports": [
+          "public/download-priority.js",
+          "public/echo.js",
+          "public/flow-views.js",
+          "public/mpr.js",
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-styles.js",
+        "bytes": 4637,
+        "gzipBytes": 1909,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-v5-acceleration.js",
+        "bytes": 2353,
+        "gzipBytes": 924,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/renderer.js",
+        "bytes": 39131,
+        "gzipBytes": 12845,
+        "imports": [
+          "public/planes.js",
+          "public/render-styles.js",
+          "public/render-v5-acceleration.js",
+          "public/volume-picking.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-detail.js",
+        "bytes": 2395,
+        "gzipBytes": 1079,
+        "imports": [
+          "public/hosted-ultra.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-layout.js",
+        "bytes": 1143,
+        "gzipBytes": 523,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-paint.js",
+        "bytes": 5989,
+        "gzipBytes": 2429,
+        "imports": [
+          "public/render-styles.js",
+          "public/section-layout.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-prefetch.js",
+        "bytes": 23355,
+        "gzipBytes": 6422,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume-core.js",
+        "bytes": 6123,
+        "gzipBytes": 2503,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume.js",
+        "bytes": 7589,
+        "gzipBytes": 2486,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-volume-core.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-loader.js",
+        "bytes": 1695,
+        "gzipBytes": 775,
+        "imports": [
+          "public/download-priority.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-picking.js",
+        "bytes": 3577,
+        "gzipBytes": 1557,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      }
+    ]
+  },
+  "after": {
+    "revision": "working tree",
+    "entries": [
+      "public/app.js"
+    ],
+    "moduleCount": 20,
+    "bytes": 239478,
+    "gzipBytes": 75572,
+    "externalImports": [],
+    "modules": [
+      {
+        "file": "public/anatomy-data.js",
+        "bytes": 2254,
+        "gzipBytes": 989,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/app.js",
+        "bytes": 58400,
+        "gzipBytes": 17407,
+        "imports": [
+          "public/appearance.js",
+          "public/donors.js",
+          "public/download-priority.js",
+          "public/hosted-ultra.js",
+          "public/planes.js",
+          "public/renderer.js",
+          "public/resident-sections.js",
+          "public/section-detail.js",
+          "public/section-layout.js",
+          "public/ultra-volume.js",
+          "public/volume-loader.js",
+          "public/workbench-modules.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/appearance.js",
+        "bytes": 12268,
+        "gzipBytes": 4134,
+        "imports": [
+          "public/anatomy-data.js",
+          "public/download-priority.js",
+          "public/section-paint.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/donors.js",
+        "bytes": 3888,
+        "gzipBytes": 1535,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/download-priority.js",
+        "bytes": 5017,
+        "gzipBytes": 1725,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/hosted-ultra.js",
+        "bytes": 43872,
+        "gzipBytes": 11172,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-prefetch.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/planes.js",
+        "bytes": 1332,
+        "gzipBytes": 632,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-styles.js",
+        "bytes": 4637,
+        "gzipBytes": 1909,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-v5-acceleration.js",
+        "bytes": 2353,
+        "gzipBytes": 924,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/renderer.js",
+        "bytes": 45957,
+        "gzipBytes": 14462,
+        "imports": [
+          "public/planes.js",
+          "public/render-styles.js",
+          "public/render-v5-acceleration.js",
+          "public/volume-picking.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/resident-sections.js",
+        "bytes": 4722,
+        "gzipBytes": 1899,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-detail.js",
+        "bytes": 2395,
+        "gzipBytes": 1079,
+        "imports": [
+          "public/hosted-ultra.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-layout.js",
+        "bytes": 1143,
+        "gzipBytes": 523,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-paint.js",
+        "bytes": 5989,
+        "gzipBytes": 2429,
+        "imports": [
+          "public/render-styles.js",
+          "public/section-layout.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-prefetch.js",
+        "bytes": 25741,
+        "gzipBytes": 7116,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume-core.js",
+        "bytes": 6123,
+        "gzipBytes": 2503,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume.js",
+        "bytes": 7589,
+        "gzipBytes": 2486,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-volume-core.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-loader.js",
+        "bytes": 1695,
+        "gzipBytes": 775,
+        "imports": [
+          "public/download-priority.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-picking.js",
+        "bytes": 3577,
+        "gzipBytes": 1557,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/workbench-modules.js",
+        "bytes": 526,
+        "gzipBytes": 316,
+        "imports": [],
+        "dynamicImports": [
+          "./cpu-renderer.js",
+          "./echo.js",
+          "./probe-lab.js",
+          "./quick-views.js"
+        ]
+      }
+    ]
+  },
+  "quickViews": {
+    "before": {
+      "revision": "6ee683ee505b36e212e1b0f12a987a863d71ddf4",
+      "entries": [
+        "public/quick-views.js"
+      ],
+      "moduleCount": 9,
+      "bytes": 126752,
+      "gzipBytes": 40467,
+      "externalImports": [],
+      "modules": [
+        {
+          "file": "public/download-priority.js",
+          "bytes": 4708,
+          "gzipBytes": 1582,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/echo-correspondence.js",
+          "bytes": 5835,
+          "gzipBytes": 2286,
+          "imports": [
+            "public/planes.js"
+          ],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/echo-media-cache.js",
+          "bytes": 5022,
+          "gzipBytes": 1999,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/echo.js",
+          "bytes": 60013,
+          "gzipBytes": 17483,
+          "imports": [
+            "public/download-priority.js",
+            "public/echo-correspondence.js",
+            "public/echo-media-cache.js",
+            "public/mpr.js",
+            "public/planes.js",
+            "public/render-styles.js"
+          ],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/flow-views.js",
+          "bytes": 32334,
+          "gzipBytes": 10123,
+          "imports": [
+            "public/download-priority.js",
+            "public/mpr.js",
+            "public/planes.js",
+            "public/render-styles.js"
+          ],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/mpr.js",
+          "bytes": 1031,
+          "gzipBytes": 503,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/planes.js",
+          "bytes": 1332,
+          "gzipBytes": 632,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/quick-views.js",
+          "bytes": 11840,
+          "gzipBytes": 3950,
+          "imports": [
+            "public/download-priority.js",
+            "public/echo.js",
+            "public/flow-views.js",
+            "public/mpr.js",
+            "public/planes.js"
+          ],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/render-styles.js",
+          "bytes": 4637,
+          "gzipBytes": 1909,
+          "imports": [],
+          "dynamicImports": []
+        }
+      ]
+    },
+    "after": {
+      "revision": "working tree",
+      "entries": [
+        "public/quick-views.js"
+      ],
+      "moduleCount": 6,
+      "bytes": 27663,
+      "gzipBytes": 9919,
+      "externalImports": [],
+      "modules": [
+        {
+          "file": "public/download-priority.js",
+          "bytes": 5017,
+          "gzipBytes": 1725,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/echo-texture-cache.js",
+          "bytes": 7351,
+          "gzipBytes": 2571,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/flow-plane.js",
+          "bytes": 1078,
+          "gzipBytes": 532,
+          "imports": [
+            "public/planes.js"
+          ],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/mpr.js",
+          "bytes": 1031,
+          "gzipBytes": 503,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/planes.js",
+          "bytes": 1332,
+          "gzipBytes": 632,
+          "imports": [],
+          "dynamicImports": []
+        },
+        {
+          "file": "public/quick-views.js",
+          "bytes": 11854,
+          "gzipBytes": 3956,
+          "imports": [
+            "public/download-priority.js",
+            "public/echo-texture-cache.js",
+            "public/flow-plane.js",
+            "public/mpr.js",
+            "public/planes.js"
+          ],
+          "dynamicImports": []
+        }
+      ]
+    }
+  },
+  "afterFirstView": {
+    "revision": "working tree",
+    "entries": [
+      "public/app.js",
+      "public/quick-views.js"
+    ],
+    "moduleCount": 24,
+    "bytes": 260792,
+    "gzipBytes": 83134,
+    "externalImports": [],
+    "modules": [
+      {
+        "file": "public/anatomy-data.js",
+        "bytes": 2254,
+        "gzipBytes": 989,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/app.js",
+        "bytes": 58400,
+        "gzipBytes": 17407,
+        "imports": [
+          "public/appearance.js",
+          "public/donors.js",
+          "public/download-priority.js",
+          "public/hosted-ultra.js",
+          "public/planes.js",
+          "public/renderer.js",
+          "public/resident-sections.js",
+          "public/section-detail.js",
+          "public/section-layout.js",
+          "public/ultra-volume.js",
+          "public/volume-loader.js",
+          "public/workbench-modules.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/appearance.js",
+        "bytes": 12268,
+        "gzipBytes": 4134,
+        "imports": [
+          "public/anatomy-data.js",
+          "public/download-priority.js",
+          "public/section-paint.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/donors.js",
+        "bytes": 3888,
+        "gzipBytes": 1535,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/download-priority.js",
+        "bytes": 5017,
+        "gzipBytes": 1725,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/echo-texture-cache.js",
+        "bytes": 7351,
+        "gzipBytes": 2571,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/flow-plane.js",
+        "bytes": 1078,
+        "gzipBytes": 532,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/hosted-ultra.js",
+        "bytes": 43872,
+        "gzipBytes": 11172,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-prefetch.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/mpr.js",
+        "bytes": 1031,
+        "gzipBytes": 503,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/planes.js",
+        "bytes": 1332,
+        "gzipBytes": 632,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/quick-views.js",
+        "bytes": 11854,
+        "gzipBytes": 3956,
+        "imports": [
+          "public/download-priority.js",
+          "public/echo-texture-cache.js",
+          "public/flow-plane.js",
+          "public/mpr.js",
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-styles.js",
+        "bytes": 4637,
+        "gzipBytes": 1909,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/render-v5-acceleration.js",
+        "bytes": 2353,
+        "gzipBytes": 924,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/renderer.js",
+        "bytes": 45957,
+        "gzipBytes": 14462,
+        "imports": [
+          "public/planes.js",
+          "public/render-styles.js",
+          "public/render-v5-acceleration.js",
+          "public/volume-picking.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/resident-sections.js",
+        "bytes": 4722,
+        "gzipBytes": 1899,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-detail.js",
+        "bytes": 2395,
+        "gzipBytes": 1079,
+        "imports": [
+          "public/hosted-ultra.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-layout.js",
+        "bytes": 1143,
+        "gzipBytes": 523,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/section-paint.js",
+        "bytes": 5989,
+        "gzipBytes": 2429,
+        "imports": [
+          "public/render-styles.js",
+          "public/section-layout.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-prefetch.js",
+        "bytes": 25741,
+        "gzipBytes": 7116,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume-core.js",
+        "bytes": 6123,
+        "gzipBytes": 2503,
+        "imports": [],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/ultra-volume.js",
+        "bytes": 7589,
+        "gzipBytes": 2486,
+        "imports": [
+          "public/download-priority.js",
+          "public/ultra-volume-core.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-loader.js",
+        "bytes": 1695,
+        "gzipBytes": 775,
+        "imports": [
+          "public/download-priority.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/volume-picking.js",
+        "bytes": 3577,
+        "gzipBytes": 1557,
+        "imports": [
+          "public/planes.js"
+        ],
+        "dynamicImports": []
+      },
+      {
+        "file": "public/workbench-modules.js",
+        "bytes": 526,
+        "gzipBytes": 316,
+        "imports": [],
+        "dynamicImports": [
+          "./cpu-renderer.js",
+          "./echo.js",
+          "./probe-lab.js",
+          "./quick-views.js"
+        ]
+      }
+    ]
+  },
+  "change": {
+    "modules": -9,
+    "bytes": -215558,
+    "gzipBytes": -69248,
+    "byteReductionPercent": 47.37,
+    "gzipReductionPercent": 47.82,
+    "removed": [
+      "public/cpu-renderer.js",
+      "public/echo-correspondence.js",
+      "public/echo-media-cache.js",
+      "public/echo.js",
+      "public/flow-views.js",
+      "public/mpr.js",
+      "public/probe-acoustics.js",
+      "public/probe-geometry.js",
+      "public/probe-lab.js",
+      "public/probe-scene.js",
+      "public/quick-views.js"
+    ],
+    "added": [
+      "public/resident-sections.js",
+      "public/workbench-modules.js"
+    ]
+  }
+}

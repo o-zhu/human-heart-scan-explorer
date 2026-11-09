@@ -1,0 +1,82 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-name-pattern=completed replacement requires",
+    "tests/local-refinement-v28.mjs"
+  ],
+  "exitCode": 1,
+  "receipt": {
+    "version": 1,
+    "createdAt": "2026-11-08T14:56:13.635Z",
+    "testFile": "tests/local-refinement-v28.mjs",
+    "scope": "Actual asset hashes/layout and instrumented WebGL lifecycle; no browser speed or anatomical validation claim.",
+    "cases": [
+      {
+        "name": "completed replacement requires compatible geometry and cleanup across workspaces",
+        "passed": false,
+        "error": "The expression evaluated to a falsy value:\n\n  assert.ok(h.controller.active())\n",
+        "milliseconds": 626.303727
+      }
+    ],
+    "assets": [
+      {
+        "id": "lvot-perivalvular-refinement",
+        "surfaceSha256": "58b2b3407b22dee22f4131f17408415a85ad02b77815f0e5059abe147b98045c",
+        "decodedSurfaceSha256": "92cec7c8107f4327e566b93a1cf6497e9e48bf36fc4da21ce9d8bfed1c2622bc",
+        "triangles": 282600,
+        "maskSha256": "df7f4d6310acdf3600d8d7a23dfbfefac893dd38615c550cd7aa5fee745e6c14",
+        "decodedMaskSha256": "ae767162fde094550f552da414ad5de04a3845282fbaa1c3025340c0ca0295cc",
+        "maskedVoxels": 581627,
+        "decodedBytes": 6153504
+      },
+      {
+        "id": "tricuspid-core-surface",
+        "surfaceSha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+        "decodedSurfaceSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+        "triangles": 302706,
+        "maskSha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+        "decodedMaskSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+        "maskedVoxels": 769532,
+        "decodedBytes": 9747360
+      },
+      {
+        "id": "pulmonary-valve-lumen-surface",
+        "surfaceSha256": "01887f732cb6f8fbc2d2d2e0e53b926c022c0a696bd66c1b091dbb17b430ca3e",
+        "decodedSurfaceSha256": "90f1c07ba2f9126dfc163803417cdaf31212bdc6f8df35ed336892904e991802",
+        "triangles": 535534,
+        "maskSha256": "4ed772ebefff497501ed9500bbdcd80c91619909894171640e34af8e0426e18b",
+        "decodedMaskSha256": "6334a47920260536ab51b007708c71ddc3550f4b304bcf073fe6d28a9d34ce5a",
+        "maskedVoxels": 970563,
+        "decodedBytes": 12237536
+      }
+    ],
+    "assetScope": "final public manifest",
+    "manifest": {
+      "path": "public/assets/cleanup-v28/surface-manifest.json",
+      "sha256": "b3e9a7654ace71bdad6fe94e8f5fa10811340d36c4224ec83d33f331367af7fc"
+    },
+    "passed": false,
+    "memory": {
+      "rss": 98967552,
+      "heapTotal": 19070976,
+      "heapUsed": 13062320,
+      "external": 34378788,
+      "arrayBuffers": 29623407
+    },
+    "runtimeHashes": {
+      "public/local-surface-refinement.js": "0e2c1e447645c34482220823bc05e04380280734de067ea88204a4d9ccae7103",
+      "public/fine-surface.js": "fab5405c1cb4d1c748d7b97644af06ca706ba8893ba3aa0542efc6d431162e35",
+      "public/renderer.js": "1e533e0e44205c86722217e2768e22d8662bd4866be26403789da5fb364cc6e0",
+      "public/volume-picking.js": "a836cecff8cbf94dfccf892b47335b032a90fc2030550d66ad553a672bb1d3a0"
+    }
+  },
+  "fixtureRoutingDiagnostic": {
+    "scope": "Replays the historical fixture URL policy with its real public manifest; no assets or production routing changed.",
+    "requests": [
+      "./assets/cleanup-v30/surface-manifest.json"
+    ],
+    "installationError": "Unexpected asset URL ./assets/cleanup-v30/surface-manifest.json",
+    "currentInstalled": false
+  }
+}

@@ -1,0 +1,1106 @@
+{
+  "rv-inflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 414,
+        "hullVertices": 306,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 489,
+        "hullVertices": 452,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 306,
+        "criticalVertices": 16,
+        "cameraNormal": [
+          0.2680531958866201,
+          -0.1780160877884691,
+          -0.9468145312908213
+        ],
+        "cameraUp": [
+          0.15039069368442823,
+          -0.9630001976584208,
+          0.22363644283291326
+        ],
+        "cameraRight": [
+          0.9515934654189708,
+          0.2023385573694012,
+          0.2313633176922906
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 306,
+        "criticalVertices": 21,
+        "cameraNormal": [
+          0.023198496555,
+          -0.128880536416,
+          -0.99138874166
+        ],
+        "cameraUp": [
+          0.17562748808105383,
+          -0.975708267117299,
+          0.13095175794657
+        ],
+        "cameraRight": [
+          0.9841833239737029,
+          0.17715299831522277,
+          1.248133540965633e-13
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 452,
+        "criticalVertices": 21,
+        "cameraNormal": [
+          -0.23405794873154484,
+          -0.010846396406601627,
+          0.9721621430196571
+        ],
+        "cameraUp": [
+          0.19921534380538,
+          -0.9792555661759909,
+          0.03703758774331614
+        ],
+        "cameraRight": [
+          -0.9515934654189707,
+          -0.2023385573694012,
+          -0.2313633176922906
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 452,
+        "criticalVertices": 26,
+        "cameraNormal": [
+          -0.023198496555,
+          0.128880536416,
+          0.99138874166
+        ],
+        "cameraUp": [
+          0.17562748808105383,
+          -0.975708267117299,
+          0.13095175794657
+        ],
+        "cameraRight": [
+          -0.9841833239737029,
+          -0.17715299831522277,
+          -1.248133540965633e-13
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "rv-outflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 376,
+        "hullVertices": 425,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 377,
+        "hullVertices": 375,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 425,
+        "criticalVertices": 22,
+        "cameraNormal": [
+          -0.2937627218207277,
+          -0.7927762157056674,
+          0.5340499368784525
+        ],
+        "cameraUp": [
+          0.40079905276223693,
+          -0.6093725236694938,
+          -0.6841237071623565
+        ],
+        "cameraRight": [
+          -0.8677923614398616,
+          -0.013076666550515871,
+          -0.4967548874631787
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 425,
+        "criticalVertices": 19,
+        "cameraNormal": [
+          -0.11951003967651043,
+          -0.7068669785302734,
+          0.6971774702900267
+        ],
+        "cameraUp": [
+          0.3704865159623155,
+          -0.6832385390499345,
+          -0.6292255877243204
+        ],
+        "cameraRight": [
+          -0.9211173062681126,
+          -0.1830960770207636,
+          -0.34353854903486847
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 375,
+        "criticalVertices": 19,
+        "cameraNormal": [
+          0.365475759542708,
+          0.6605254885861346,
+          -0.6558456740077875
+        ],
+        "cameraUp": [
+          0.33669553993676443,
+          -0.7506897359894931,
+          -0.5684197688915434
+        ],
+        "cameraRight": [
+          0.8677923614398616,
+          0.013076666550515788,
+          0.4967548874631787
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 375,
+        "criticalVertices": 22,
+        "cameraNormal": [
+          0.11951003967651043,
+          0.7068669785302734,
+          -0.6971774702900267
+        ],
+        "cameraUp": [
+          0.3704865159623155,
+          -0.6832385390499345,
+          -0.6292255877243204
+        ],
+        "cameraRight": [
+          0.9211173062681126,
+          0.1830960770207636,
+          0.34353854903486847
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "lv-inflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 489,
+        "hullVertices": 482,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 470,
+        "hullVertices": 342,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 482,
+        "criticalVertices": 30,
+        "cameraNormal": [
+          0.018455144812527784,
+          -0.15528211482549126,
+          -0.9876977637138152
+        ],
+        "cameraUp": [
+          0.011419709396951023,
+          -0.9877688328924508,
+          0.15550666546349332
+        ],
+        "cameraRight": [
+          0.9997644711967104,
+          0.01414911946407225,
+          0.016456140226480648
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 482,
+        "criticalVertices": 19,
+        "cameraNormal": [
+          -0.216531388836,
+          -0.060628788874,
+          -0.97439124976
+        ],
+        "cameraUp": [
+          0.013152230927106994,
+          -0.9981603828842706,
+          0.05918503917348148
+        ],
+        "cameraRight": [
+          0.9761870601838631,
+          -3.511045620906783e-13,
+          -0.21693045781905967
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 342,
+        "criticalVertices": 19,
+        "cameraNormal": [
+          -0.01590933979140403,
+          -0.03792630196237642,
+          0.9991538863092414
+        ],
+        "cameraUp": [
+          0.01476126824374623,
+          -0.9991803631166147,
+          -0.03769226607655894
+        ],
+        "cameraRight": [
+          -0.9997644711967103,
+          -0.014149119464072246,
+          -0.01645614022648064
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 342,
+        "criticalVertices": 18,
+        "cameraNormal": [
+          0.216531388836,
+          0.060628788874,
+          0.97439124976
+        ],
+        "cameraUp": [
+          0.013152230927106994,
+          -0.9981603828842706,
+          0.05918503917348148
+        ],
+        "cameraRight": [
+          -0.9761870601838631,
+          3.511045620906783e-13,
+          0.21693045781905967
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "lv-outflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 489,
+        "hullVertices": 450,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 487,
+        "hullVertices": 294,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 450,
+        "criticalVertices": 22,
+        "cameraNormal": [
+          -0.27712022229771316,
+          -0.17620010651661314,
+          -0.9445411080822264
+        ],
+        "cameraUp": [
+          0.0683403061062704,
+          -0.984166524080745,
+          0.1635416015579084
+        ],
+        "cameraRight": [
+          0.9584017868070611,
+          0.019229543477643583,
+          -0.2847740151465266
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 450,
+        "criticalVertices": 16,
+        "cameraNormal": [
+          -0.498299737571,
+          -0.082398338257,
+          -0.863080462871
+        ],
+        "cameraUp": [
+          0.04119916912819566,
+          -0.9965994751415878,
+          0.0713590541603389
+        ],
+        "cameraRight": [
+          0.8660254037844003,
+          -3.479230792357319e-13,
+          -0.5000000000000664
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 294,
+        "criticalVertices": 15,
+        "cameraNormal": [
+          0.2850949189263402,
+          -0.016706173942499715,
+          0.958353687818118
+        ],
+        "cameraUp": [
+          0.013671219675516632,
+          -0.999675511558548,
+          -0.021493472095950643
+        ],
+        "cameraRight": [
+          -0.9584017868070611,
+          -0.01922954347764358,
+          0.2847740151465265
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 294,
+        "criticalVertices": 13,
+        "cameraNormal": [
+          0.498299737571,
+          0.082398338257,
+          0.863080462871
+        ],
+        "cameraUp": [
+          0.04119916912819566,
+          -0.9965994751415878,
+          0.0713590541603389
+        ],
+        "cameraRight": [
+          -0.8660254037844003,
+          3.479230792357319e-13,
+          0.5000000000000664
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "ra-inflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 379,
+        "hullVertices": 305,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 488,
+        "hullVertices": 419,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 305,
+        "criticalVertices": 29,
+        "cameraNormal": [
+          0.23227740162924038,
+          0.14986886474345917,
+          -0.9610340951666986
+        ],
+        "cameraUp": [
+          -0.0225863595881299,
+          -0.9869603600843653,
+          -0.15937096342400534
+        ],
+        "cameraRight": [
+          0.9723873019805042,
+          -0.05872453492916478,
+          0.22586359588129526
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 305,
+        "criticalVertices": 9,
+        "cameraNormal": [
+          -0.0,
+          0.251633851765,
+          -0.967822506788
+        ],
+        "cameraUp": [
+          0.0,
+          -0.9678225067882428,
+          -0.25163385176506314
+        ],
+        "cameraRight": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 419,
+        "criticalVertices": 21,
+        "cameraNormal": [
+          -0.23227740162924038,
+          -0.337204945672638,
+          0.9123267141250889
+        ],
+        "cameraUp": [
+          0.022586359588129906,
+          -0.9395979212467781,
+          -0.3415341897223309
+        ],
+        "cameraRight": [
+          -0.9723873019805043,
+          0.058724534929164775,
+          -0.22586359588129526
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 419,
+        "criticalVertices": 11,
+        "cameraNormal": [
+          0.0,
+          -0.251633851765,
+          0.967822506788
+        ],
+        "cameraUp": [
+          0.0,
+          -0.9678225067882428,
+          -0.25163385176506314
+        ],
+        "cameraRight": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "ra-outflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 415,
+        "hullVertices": 403,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 319,
+        "hullVertices": 397,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 403,
+        "criticalVertices": 24,
+        "cameraNormal": [
+          0.24034420811819715,
+          -0.8107451800948215,
+          0.533785457442456
+        ],
+        "cameraUp": [
+          -0.02337076560772458,
+          -0.5545781672533483,
+          -0.8318033804456592
+        ],
+        "cameraRight": [
+          -0.9704063421778248,
+          -0.1874441499725518,
+          0.15223738601973563
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 403,
+        "criticalVertices": 17,
+        "cameraNormal": [
+          0.461276545984,
+          -0.688721779924,
+          0.559362367329
+        ],
+        "cameraUp": [
+          2.4694958917439894e-13,
+          -0.6304404872170508,
+          -0.7762375873903091
+        ],
+        "cameraRight": [
+          -0.8872564162209144,
+          -0.358060193174401,
+          0.2908074103917063
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 397,
+        "criticalVertices": 19,
+        "cameraNormal": [
+          -0.24034420811816787,
+          0.6887142815509208,
+          -0.6840374989807574
+        ],
+        "cameraUp": [
+          0.02337076560802587,
+          -0.7003837012872776,
+          -0.7133838225569937
+        ],
+        "cameraRight": [
+          0.9704063421778248,
+          0.18744414997255177,
+          -0.15223738601973563
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 397,
+        "criticalVertices": 13,
+        "cameraNormal": [
+          -0.461276545984,
+          0.688721779924,
+          -0.559362367329
+        ],
+        "cameraUp": [
+          2.4694958917439894e-13,
+          -0.6304404872170508,
+          -0.7762375873903091
+        ],
+        "cameraRight": [
+          0.8872564162209144,
+          0.358060193174401,
+          -0.2908074103917063
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "la-inflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 333,
+        "hullVertices": 176,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 489,
+        "hullVertices": 470,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 176,
+        "criticalVertices": 11,
+        "cameraNormal": [
+          -0.9678225067882721,
+          -0.0967822506788272,
+          -0.23227740162918528
+        ],
+        "cameraUp": [
+          0.0941098316171869,
+          -0.9953055791833685,
+          0.022586359588124855
+        ],
+        "cameraRight": [
+          0.2333729524753242,
+          0.0,
+          -0.9723873019805175
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 176,
+        "criticalVertices": 5,
+        "cameraNormal": [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        "cameraUp": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "cameraRight": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 470,
+        "criticalVertices": 26,
+        "cameraNormal": [
+          0.9678225067882721,
+          -0.0967822506788272,
+          0.23227740162918528
+        ],
+        "cameraUp": [
+          -0.0941098316171869,
+          -0.9953055791833685,
+          -0.022586359588124855
+        ],
+        "cameraRight": [
+          -0.2333729524753242,
+          0.0,
+          0.9723873019805175
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 470,
+        "criticalVertices": 13,
+        "cameraNormal": [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        "cameraUp": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "cameraRight": [
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  },
+  "la-outflow": {
+    "sourceHalves": {
+      "false": {
+        "rowEndpoints": 325,
+        "hullVertices": 460,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      },
+      "true": {
+        "rowEndpoints": 265,
+        "hullVertices": 352,
+        "sourceThreshold": 72,
+        "sourceBounds": [
+          [
+            109.0,
+            88.0,
+            14.0
+          ],
+          [
+            402.0,
+            405.0,
+            512.0
+          ]
+        ],
+        "meaning": "Exact convex hull of retained source voxel centers meeting uint8 display threshold 72 within reviewed heart bounds. Background/blank plane corners omitted; no labels used for cropping."
+      }
+    },
+    "poses": {
+      "overview": {
+        "fullHullVertices": 460,
+        "criticalVertices": 28,
+        "cameraNormal": [
+          0.43425820236983115,
+          -0.8703258139150629,
+          -0.23227740162918523
+        ],
+        "cameraUp": [
+          0.89696582944864,
+          0.44152254434181415,
+          0.022586359588124848
+        ],
+        "cameraRight": [
+          -0.08289821756851028,
+          0.21815320412731473,
+          -0.9723873019805175
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "section": {
+        "fullHullVertices": 460,
+        "criticalVertices": 14,
+        "cameraNormal": [
+          0.3552177606240619,
+          -0.934783580588163,
+          -0.0
+        ],
+        "cameraUp": [
+          0.934783580588163,
+          0.3552177606240619,
+          0.0
+        ],
+        "cameraRight": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedOverview": {
+        "fullHullVertices": 352,
+        "criticalVertices": 31,
+        "cameraNormal": [
+          -0.25331728471596066,
+          0.9390833626236422,
+          0.23227740162918528
+        ],
+        "cameraUp": [
+          0.9638247967281692,
+          0.265577893606488,
+          -0.022586359588124858
+        ],
+        "cameraRight": [
+          0.0828982175685103,
+          -0.21815320412731476,
+          0.9723873019805175
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      },
+      "flippedSection": {
+        "fullHullVertices": 352,
+        "criticalVertices": 16,
+        "cameraNormal": [
+          -0.3552177606240619,
+          0.934783580588163,
+          0.0
+        ],
+        "cameraUp": [
+          0.934783580588163,
+          0.3552177606240619,
+          0.0
+        ],
+        "cameraRight": [
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "exactSupportVerifiedAspects": [
+          0.2,
+          8
+        ],
+        "denseChecks": 100
+      }
+    }
+  }
+}

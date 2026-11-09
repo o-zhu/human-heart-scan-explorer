@@ -1,0 +1,153 @@
+{
+  "revision": "specimen-torso-clearance-v6",
+  "donors": {
+    "s-20-29": {
+      "bodyTransform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          -10.22346,
+          -15.63354,
+          13.56498
+        ],
+        "left": [
+          0.9724325182334559,
+          0.2283898846429329,
+          0.047043151201078076
+        ],
+        "superior": [
+          0.19951293589402191,
+          -0.7104782734280493,
+          -0.6748445831431458
+        ],
+        "anterior": [
+          -0.12070453965401451,
+          0.6656265346119294,
+          -0.7364589129934042
+        ],
+        "scale": 1.2427639241380295,
+        "bodyReferenceScale": 1.35,
+        "referenceMm": 154.66464,
+        "donorId": "s-20-29",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform."
+      },
+      "sourceHullVertices": 973,
+      "referenceBounds": {
+        "min": [
+          -22.270969302570137,
+          -40.64700868798517,
+          -27.37351521692034
+        ],
+        "max": [
+          80.61254229311936,
+          55.581367403446535,
+          64.42085773638127
+        ]
+      },
+      "missingSkinIntersections": 0,
+      "minimumAnteriorSkinGapMm": 53.13768980735961,
+      "referenceSkinSha256": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+      "sourceMaskSha256": "71ea53294da694b0e812c1961815b223922972a4e9405df2cd3cbfb3fa55d231",
+      "meshes": {
+        "bodyparts3d-skin": {
+          "triangles": 4038,
+          "continuousConvexEnvelopeSeparationMm": 43.42382647306131,
+          "trianglesWithout2MmGuard": 0
+        },
+        "bodyparts3d-bones": {
+          "triangles": 14349,
+          "continuousConvexEnvelopeSeparationMm": 3.554983700000306,
+          "trianglesWithout2MmGuard": 0
+        },
+        "bodyparts3d-spine": {
+          "triangles": 3469,
+          "continuousConvexEnvelopeSeparationMm": 29.5463984715565,
+          "trianglesWithout2MmGuard": 0
+        }
+      }
+    },
+    "s-20-28": {
+      "bodyTransform": {
+        "revision": "echo-bodyparts3d-context-v2",
+        "referenceOriginMm": [
+          20,
+          5,
+          8
+        ],
+        "originMm": [
+          1.8659,
+          -19.2545,
+          13.537700000000001
+        ],
+        "left": [
+          0.7115787206081885,
+          0.6751364907556991,
+          -0.19454162338094572
+        ],
+        "superior": [
+          0.14911545203161283,
+          -0.4156932455806125,
+          -0.8971976970233841
+        ],
+        "anterior": [
+          -0.686600543506209,
+          0.6094176272710993,
+          -0.3964717508577908
+        ],
+        "scale": 1.1715689981096407,
+        "bodyReferenceScale": 1.22,
+        "referenceMm": 161.3408,
+        "donorId": "s-20-28",
+        "patientRegistered": false,
+        "method": "One fixed reference-center-to-AV-frame similarity with specimen-envelope torso scaling; no view-dependent transform."
+      },
+      "sourceHullVertices": 1303,
+      "referenceBounds": {
+        "min": [
+          -32.924664989831605,
+          -48.508631908816135,
+          -35.27669335775657
+        ],
+        "max": [
+          78.32104863021544,
+          69.97352394837911,
+          73.40490240860161
+        ]
+      },
+      "missingSkinIntersections": 0,
+      "minimumAnteriorSkinGapMm": 42.467871707780105,
+      "referenceSkinSha256": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+      "sourceMaskSha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+      "meshes": {
+        "bodyparts3d-skin": {
+          "triangles": 4038,
+          "continuousConvexEnvelopeSeparationMm": 36.36384121472211,
+          "trianglesWithout2MmGuard": 0
+        },
+        "bodyparts3d-bones": {
+          "triangles": 14349,
+          "continuousConvexEnvelopeSeparationMm": 3.3782890454741326,
+          "trianglesWithout2MmGuard": 0
+        },
+        "bodyparts3d-spine": {
+          "triangles": 3469,
+          "continuousConvexEnvelopeSeparationMm": 20.45589682332575,
+          "trianglesWithout2MmGuard": 0
+        }
+      }
+    }
+  },
+  "sourceHashes": {
+    "public/echo-donor-calibration.js": "e11d13f8f537a0b18046bbe91ca1a4cd9f84198f329e1a007c535c24237b5e9f",
+    "public/echo-donor-support.js": "1a8a49c56245a792a8392cf49038709c0d8be4a6f2416d50f17a8622e599548a",
+    "public/tee-context-geometry.js": "bd78662cb61b68c9a324b4563c41ed1ae51bc73417d1b4ba8201b80aaedc4cf1",
+    "public/echo-anatomy-context-v2.js": "703ba732d8cf597d126ea269c38dc8caeb0fd4b127ec9bf41d665f063c7ab6c7",
+    "scripts/echo-donor-context-v6.py": "b0b94758502467e471c8b1203d8c638cc8b07a53f1d20df6f257478176a5b09e",
+    "docs/anatomy-donors-v17/source-guides.json": "3afd33fd140a48113f4e84414e690dc803cd38f020cf949099207a79d0de561e"
+  }
+}

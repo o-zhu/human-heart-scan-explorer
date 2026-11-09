@@ -1,0 +1,1704 @@
+{
+  "me5c": {
+    "candidate": 2366,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        275.57603923958663,
+        267.15371613511417,
+        309.3651338579397
+      ],
+      "right": [
+        0.6394134980700095,
+        0.6628576360552328,
+        0.3895768638011535
+      ],
+      "up": [
+        0.27236484464202776,
+        0.2785559423611977,
+        -0.9209907591167185
+      ],
+      "normal": [
+        -0.7190047078350728,
+        0.695000964962304,
+        -0.0024266875506039343
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        275.57603923958663,
+        267.15371613511417,
+        309.3651338579397
+      ],
+      "right": [
+        0.6394134980700095,
+        0.6628576360552328,
+        0.3895768638011535
+      ],
+      "up": [
+        0.27236484464202776,
+        0.2785559423611977,
+        -0.9209907591167185
+      ],
+      "normal": [
+        -0.7190047078350728,
+        0.695000964962304,
+        -0.0024266875506039343
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "summary": "Both ventricular/AV-junction regions are retained with a stronger LV outflow and aortic-root section; some apical foreshortening is accepted.",
+    "remainingLimits": [
+      "Some apical foreshortening is accepted for the five-chamber target."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 2.0597907034892033,
+      "distancesMm": {
+        "MV": 4.937079325775329,
+        "TV": 9.777406498769167,
+        "LVOT": 1.4926079649198205,
+        "AV": 3.8656721176397992,
+        "LA": 9.393966269148311,
+        "RA": 13.70126219343707,
+        "apex": 15.617820549367961
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "me4c": {
+    "candidate": 1933,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        271.0048208797327,
+        264.7413797937102,
+        327.58602017313956
+      ],
+      "right": [
+        0.40598719978293374,
+        0.8579226292149045,
+        0.31487006191983014
+      ],
+      "up": [
+        0.4734898740486887,
+        0.09722522171085247,
+        -0.8754168124023165
+      ],
+      "normal": [
+        -0.7816532049353916,
+        0.5044958062702415,
+        -0.3667454821398211
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        271.0048208797327,
+        264.7413797937102,
+        327.58602017313956
+      ],
+      "right": [
+        0.40598719978293374,
+        0.8579226292149045,
+        0.31487006191983014
+      ],
+      "up": [
+        0.4734898740486887,
+        0.09722522171085247,
+        -0.8754168124023165
+      ],
+      "normal": [
+        -0.7816532049353916,
+        0.5044958062702415,
+        -0.3667454821398211
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "summary": "The plane now follows both AV-junction regions and the LV apex while removing the previously dominant aortic-outflow profile.",
+    "remainingLimits": [
+      "AV-junction and septal identities are approximate source landmarks, not an expert reference registration."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.05862038361680425,
+      "distancesMm": {
+        "MV": 0.2900027321202679,
+        "TV": 1.0074770997914966,
+        "apex": 0.1397149778581838,
+        "LA": 1.826994535365377,
+        "RA": 3.5630366430896463,
+        "RVmid": 5.650233624408403
+      },
+      "exclusionDistancesMm": {
+        "AV": 13.171446888091284
+      }
+    }
+  },
+  "mecommissural": {
+    "candidate": 2249,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        262.964516128387,
+        273.5257371004342,
+        324.75010986243774
+      ],
+      "right": [
+        0.8126044990995,
+        -0.4967872830926243,
+        0.3047561704062766
+      ],
+      "up": [
+        0.4159025038227542,
+        0.12797000094546282,
+        -0.900360364616292
+      ],
+      "normal": [
+        0.4082879319269854,
+        0.8583857374254695,
+        0.3106040734235762
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        262.964516128387,
+        273.5257371004342,
+        324.75010986243774
+      ],
+      "right": [
+        0.8126044990995,
+        -0.4967872830926243,
+        0.3047561704062766
+      ],
+      "up": [
+        0.4159025038227542,
+        0.12797000094546282,
+        -0.900360364616292
+      ],
+      "normal": [
+        0.4082879319269854,
+        0.8583857374254695,
+        0.3106040734235762
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "summary": "A broader mitral-region and long-LV section replaces the outflow-containing starting plane; scallop correspondence remains unresolved.",
+    "remainingLimits": [
+      "Individual P3/A2/P1 scallops and paired papillary identities are not independently annotated."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.37294110472477005,
+      "distancesMm": {
+        "MV": 0.3605219993834307,
+        "LA": 6.714721173103979,
+        "apex": 0.3550687919546437,
+        "LVmid": 2.769910749842472
+      },
+      "exclusionDistancesMm": {
+        "AV": 13.287753684896455
+      },
+      "regionalTissueFractions": {
+        "0": 0.14727540500736377,
+        "1": 0.5949926362297496,
+        "2": 0.013254786450662739,
+        "3": 0.12002945508100148,
+        "4": 0.009572901325478646,
+        "5": 0.008836524300441826,
+        "6": 0.10603829160530191
+      }
+    }
+  },
+  "me2c": {
+    "candidate": 1777,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        265.5740079739994,
+        276.97395852491627,
+        326.63359099708083
+      ],
+      "right": [
+        0.6004864204013922,
+        -0.7821701049713419,
+        0.16621066693399258
+      ],
+      "up": [
+        0.4394842813814722,
+        0.14917311619005477,
+        -0.885777030535766
+      ],
+      "normal": [
+        0.6680341498247926,
+        0.6049440538556178,
+        0.4333278970624878
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        265.5740079739994,
+        276.97395852491627,
+        326.63359099708083
+      ],
+      "right": [
+        0.6004864204013922,
+        -0.7821701049713419,
+        0.16621066693399258
+      ],
+      "up": [
+        0.4394842813814722,
+        0.14917311619005477,
+        -0.885777030535766
+      ],
+      "normal": [
+        0.6680341498247926,
+        0.6049440538556178,
+        0.4333278970624878
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "summary": "Long LA\u2013mitral-region\u2013LV continuity is retained with little right-heart tissue; visually cleaner than lower-cost candidates that resembled four-chamber sections.",
+    "remainingLimits": [
+      "Anterior/inferior wall identity is not independently registered to a living-patient TEE acquisition."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.45514812968399476,
+      "distancesMm": {
+        "MV": 0.4709256306767773,
+        "LA": 7.29800037417027,
+        "apex": 0.019218585301894672,
+        "LVmid": 0.8283426639371682
+      },
+      "exclusionDistancesMm": {
+        "AV": 17.496465025495915,
+        "RVmid": 32.37332747740797,
+        "TV": 27.396020788956612
+      },
+      "regionalTissueFractions": {
+        "0": 0.12470402525651145,
+        "1": 0.6479873717442778,
+        "2": 0.009471191791633781,
+        "3": 0.15469613259668508,
+        "4": 0.018942383583267563,
+        "5": 0.0,
+        "6": 0.04419889502762431
+      }
+    }
+  },
+  "melax": {
+    "candidate": 2225,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        251.26349690137386,
+        261.96209436491836,
+        301.81056804986906
+      ],
+      "right": [
+        0.8826294575539033,
+        0.185197828006824,
+        0.4320497716231977
+      ],
+      "up": [
+        0.42514561857210237,
+        0.07760800812756964,
+        -0.9017916611298952
+      ],
+      "normal": [
+        -0.20054037914357017,
+        0.9796319521003927,
+        -0.010236931030695298
+      ],
+      "width": 360.0,
+      "height": 480.0
+    },
+    "presentedFrame": {
+      "center": [
+        251.26349690137386,
+        261.96209436491836,
+        301.81056804986906
+      ],
+      "right": [
+        -0.8826294575539033,
+        -0.185197828006824,
+        -0.43204977162319763
+      ],
+      "up": [
+        0.42514561857210237,
+        0.07760800812756964,
+        -0.9017916611298952
+      ],
+      "normal": [
+        0.20054037914357017,
+        -0.9796319521003927,
+        0.010236931030695298
+      ],
+      "width": 360.0,
+      "height": 480.0
+    },
+    "summary": "A continuous source section connects the LV/mitral region with the LV outflow and elongated aortic root; display orientation places outflow to the right.",
+    "remainingLimits": [
+      "The collapsed LV and adjoining fibrous/valvar tissue do not reproduce a normal clinical echo cavity."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "Horizontal display reflection; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.06732348978721492,
+      "distancesMm": {
+        "MV": 0.01796650765066939,
+        "LVOT": 0.2384958337312158,
+        "AV": 0.9838075667495932,
+        "AAprox": 2.685267534279557,
+        "apex": 0.14520432145484333,
+        "LA": 3.343186886161572
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "meavlax": {
+    "candidate": 2264,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        261.10361510623176,
+        258.96983442743596,
+        238.03671243734928
+      ],
+      "right": [
+        0.9993952171013966,
+        0.0055150478711439785,
+        0.03433342805243167
+      ],
+      "up": [
+        0.03403118231118874,
+        0.04780735221866665,
+        -0.9982766829413292
+      ],
+      "normal": [
+        -0.007146933982845102,
+        0.998841349424832,
+        0.047590755550059455
+      ],
+      "width": 255.0,
+      "height": 315.0
+    },
+    "presentedFrame": {
+      "center": [
+        256.19329675571055,
+        258.9448981237191,
+        237.82267276275326
+      ],
+      "right": [
+        -0.4598115265583203,
+        0.03897956494551067,
+        -0.8871606131703357
+      ],
+      "up": [
+        0.8879877709623889,
+        0.028223256294045457,
+        -0.459000181291259
+      ],
+      "normal": [
+        0.007146933982845102,
+        -0.998841349424832,
+        -0.047590755550059455
+      ],
+      "width": 335.0,
+      "height": 275.0
+    },
+    "summary": "Root/cusp and proximal ascending-aortic continuity were selected together with the LA near-field region; the root axis is displayed horizontally.",
+    "remainingLimits": [
+      "Valve annulus, sinotubular junction and cusp identities are not separate measured segmentations."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "In-plane roll: aortic axis horizontal/rightward, LA side near field; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.43037720035344573,
+      "distancesMm": {
+        "LVOT": 2.954611174280993,
+        "AV": 0.10163582076435003,
+        "AVcusps": 2.2147262589216563,
+        "AAprox": 1.1806056984349018,
+        "AA": 0.6520577181892312,
+        "LA": 0.8880779505653656
+      },
+      "exclusionDistancesMm": {},
+      "regionalTissueFractions": {}
+    }
+  },
+  "meaaolax": {
+    "candidate": 2644,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        225.30456939721938,
+        257.18369479418186,
+        215.4994018970356
+      ],
+      "right": [
+        0.5599194132360734,
+        -0.09148818587985925,
+        0.823480517392964
+      ],
+      "up": [
+        0.8259256377051429,
+        0.1406290947492526,
+        -0.5459581473806933
+      ],
+      "normal": [
+        -0.06585659923443021,
+        0.9858262369983963,
+        0.1543033984812311
+      ],
+      "width": 343.85,
+      "height": 365.01
+    },
+    "presentedFrame": {
+      "center": [
+        203.81185479813124,
+        265.33175648749733,
+        154.26931764251847
+      ],
+      "right": [
+        0.46701547005215854,
+        -0.10620420170590625,
+        0.8778480610401624
+      ],
+      "up": [
+        0.8817933199277692,
+        0.12987416211700128,
+        -0.45340185591279825
+      ],
+      "normal": [
+        -0.06585659923443024,
+        0.9858262369983963,
+        0.15430339848123112
+      ],
+      "width": 320,
+      "height": 260
+    },
+    "summary": "A long section follows the retained ascending-aortic lumen and walls; the LA region constrains the plane azimuth.",
+    "remainingLimits": [
+      "The ascending vessel ends are specimen-truncated; no aortic arch is present."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "In-plane roll to horizontal retained aorta, with LA-side near field; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.2146135456906413,
+      "distancesMm": {
+        "AAprox": 1.6469191258763825,
+        "AA": 1.1892558934085493,
+        "AAtop": 1.3609824371518275,
+        "LAroof": 0.37498726055148834
+      },
+      "exclusionDistancesMm": {},
+      "regionalTissueFractions": {}
+    }
+  },
+  "meaaosax": {
+    "candidate": 1094,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        206.0,
+        260.0,
+        165.0
+      ],
+      "right": [
+        -0.09125831113915307,
+        0.9836194104032576,
+        0.15545023681544373
+      ],
+      "up": [
+        0.9216916363106858,
+        0.14253163026479257,
+        -0.3607897752556061
+      ],
+      "normal": [
+        -0.3770364016947964,
+        0.11035211756920875,
+        -0.9196009797434057
+      ],
+      "width": 300.0,
+      "height": 290.0
+    },
+    "presentedFrame": {
+      "center": [
+        206.0,
+        260.0,
+        165.0
+      ],
+      "right": [
+        -0.09125831113915307,
+        0.9836194104032576,
+        0.15545023681544373
+      ],
+      "up": [
+        0.9216916363106858,
+        0.14253163026479257,
+        -0.3607897752556061
+      ],
+      "normal": [
+        -0.3770364016947964,
+        0.11035211756920875,
+        -0.9196009797434057
+      ],
+      "width": 300.0,
+      "height": 290.0
+    },
+    "summary": "The selected section is perpendicular to the retained ascending-aortic segment, separate from the valve-level short-axis target.",
+    "remainingLimits": [
+      "SVC and right pulmonary-artery identities are not independently established.",
+      "The nearby SVC and right pulmonary artery have not been individually verified."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.0,
+      "distancesMm": {
+        "AA": 0.0
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "merpv": {
+    "candidate": 1516,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        308.611765261063,
+        302.0,
+        190.17756985835734
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        -0.10452846326765344,
+        0.0,
+        -0.9945218953682733
+      ],
+      "normal": [
+        -0.9945218953682734,
+        0.0,
+        0.10452846326765346
+      ],
+      "width": 310.0,
+      "height": 345.0
+    },
+    "presentedFrame": {
+      "center": [
+        311.7271493284799,
+        270.0,
+        219.81846929064048
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        -0.10452846326765344,
+        0.0,
+        -0.9945218953682733
+      ],
+      "normal": [
+        -0.9945218953682734,
+        0.0,
+        0.10452846326765346
+      ],
+      "width": 300,
+      "height": 315
+    },
+    "summary": "The closest available LA/venous-entry region was reviewed in multiple planes; the two right pulmonary-vein ostia are not individually confirmed.",
+    "remainingLimits": [
+      "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.013239555497520473,
+      "distancesMm": {
+        "LA": 0.39601630904115304,
+        "LAvenous": 0.44438304514846444,
+        "LAroof": 0.17121501742035913
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "meavsax": {
+    "candidate": 1094,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        242.5,
+        252.0,
+        235.0
+      ],
+      "right": [
+        -0.11081089916277209,
+        0.9747255018947545,
+        0.19398747532445773
+      ],
+      "up": [
+        0.860659743339184,
+        0.19172143498871969,
+        -0.4717072159308103
+      ],
+      "normal": [
+        -0.49697660993458015,
+        0.1146869099849031,
+        -0.8601518248867736
+      ],
+      "width": 300.0,
+      "height": 290.0
+    },
+    "presentedFrame": {
+      "center": [
+        242.5,
+        252.0,
+        235.0
+      ],
+      "right": [
+        -0.11081089916277209,
+        0.9747255018947545,
+        0.19398747532445773
+      ],
+      "up": [
+        0.860659743339184,
+        0.19172143498871969,
+        -0.4717072159308103
+      ],
+      "normal": [
+        -0.49697660993458015,
+        0.1146869099849031,
+        -0.8601518248867736
+      ],
+      "width": 300.0,
+      "height": 290.0
+    },
+    "summary": "The plane is moved from ventricular/outflow tissue to the source-observed three-sinus/cusp region of the aortic root.",
+    "remainingLimits": [
+      "The root/cusp level is source-reviewed; individual cusp labels and exact annular dimensions are unvalidated."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 2.1647584496104277e-15,
+      "distancesMm": {
+        "AVcusps": 0.0
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "mervinout": {
+    "candidate": 1094,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        195.9,
+        245.2,
+        262.5
+      ],
+      "right": [
+        0.6957868021903584,
+        -0.6846428009884831,
+        0.21712890400027274
+      ],
+      "up": [
+        0.5487247337332262,
+        0.31163412743007235,
+        -0.7757482434464789
+      ],
+      "normal": [
+        0.46344567371712003,
+        0.6588993896457501,
+        0.5925113516527282
+      ],
+      "width": 350.0,
+      "height": 390.0
+    },
+    "presentedFrame": {
+      "center": [
+        195.9,
+        245.2,
+        262.5
+      ],
+      "right": [
+        -0.6957868021903584,
+        0.6846428009884831,
+        -0.21712890400027274
+      ],
+      "up": [
+        0.5487247337332262,
+        0.31163412743007235,
+        -0.7757482434464789
+      ],
+      "normal": [
+        -0.46344567371712003,
+        -0.6588993896457501,
+        -0.5925113516527282
+      ],
+      "width": 350.0,
+      "height": 390.0
+    },
+    "summary": "An anatomy-fitted section connects the tricuspid-side RV with the muscular outflow/pulmonary-valve region; inflow is displayed to the left.",
+    "remainingLimits": [
+      "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "Horizontal display reflection; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.007126377554255515,
+      "distancesMm": {
+        "TV": 0.030241211696111162,
+        "RVOT": 0.34729276448401264,
+        "PV": 0.298427489808347,
+        "RVmid": 0.23731945911531518
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "memodbicaval": {
+    "candidate": 2270,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        228.88888888888889,
+        181.11111111111111,
+        271.77777777777777
+      ],
+      "right": [
+        0.9791848899194179,
+        0.11371566247782243,
+        0.16812405973187608
+      ],
+      "up": [
+        0.17956827972049091,
+        -0.09921762910705037,
+        -0.978729326725525
+      ],
+      "normal": [
+        -0.09461598317261732,
+        0.9885467162363173,
+        -0.11757212912367129
+      ],
+      "width": 330.0,
+      "height": 390.0
+    },
+    "presentedFrame": {
+      "center": [
+        228.88888888888889,
+        181.11111111111111,
+        271.77777777777777
+      ],
+      "right": [
+        0.9791848899194179,
+        0.11371566247782243,
+        0.16812405973187608
+      ],
+      "up": [
+        0.17956827972049091,
+        -0.09921762910705037,
+        -0.978729326725525
+      ],
+      "normal": [
+        -0.09461598317261732,
+        0.9885467162363173,
+        -0.11757212912367129
+      ],
+      "width": 330.0,
+      "height": 390.0
+    },
+    "summary": "The section is centered on RA\u2013tricuspid-region\u2013RV continuity, while individual caval and leaflet identities remain uncertain.",
+    "remainingLimits": [
+      "Caval ostia and leaflet identities remain unresolved."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.1360719726409617,
+      "distancesMm": {
+        "TV": 0.371240218208317,
+        "RA": 2.8902655237520696,
+        "RAroof": 4.7929816146515645,
+        "RVmid": 0.2487057199903529
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "bicaval": {
+    "candidate": 1094,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        250.6,
+        192.6,
+        196.0
+      ],
+      "right": [
+        0.634676671171235,
+        0.6682244200436722,
+        0.38815157803144124
+      ],
+      "up": [
+        0.10144856140468651,
+        0.4258877665423701,
+        -0.8990705198695323
+      ],
+      "normal": [
+        -0.7660898853658882,
+        0.6099965038972351,
+        0.20251062385275204
+      ],
+      "width": 350.0,
+      "height": 365.0
+    },
+    "presentedFrame": {
+      "center": [
+        271.68027987518434,
+        218.0695894827621,
+        199.0271431750853
+      ],
+      "right": [
+        0.634676671171235,
+        0.6682244200436722,
+        0.38815157803144124
+      ],
+      "up": [
+        0.10144856140468651,
+        0.4258877665423701,
+        -0.8990705198695323
+      ],
+      "normal": [
+        -0.7660898853658882,
+        0.6099965038972351,
+        0.20251062385275204
+      ],
+      "width": 335,
+      "height": 330
+    },
+    "summary": "Atrial and septal-side continuity is favored over ventricular/outflow tissue; the preserved specimen does not establish both caval ostia.",
+    "remainingLimits": [
+      "Both caval ostia and continuous IAS cannot be confidently identified in the truncated specimen."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 5.4562913185657894e-31,
+      "distancesMm": {
+        "RAroof": 3.2087221768506422e-15,
+        "RA": 1.7630341631047487e-16,
+        "LA": 7.193179385467375e-15
+      },
+      "exclusionDistancesMm": {
+        "LVmid": 28.405970501870755,
+        "AV": 16.289386074189192
+      }
+    }
+  },
+  "mepv": {
+    "candidate": 1516,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        308.25300483442004,
+        301.97236702041675,
+        190.1944177493878
+      ],
+      "right": [
+        -1.2686915604467536e-18,
+        0.9900497563131911,
+        0.14071773173339186
+      ],
+      "up": [
+        -0.10452846326765344,
+        0.1399468652754171,
+        -0.9846261601574919
+      ],
+      "normal": [
+        -0.9945218953682733,
+        -0.014709008252601364,
+        0.10348837958593264
+      ],
+      "width": 310.0,
+      "height": 345.0
+    },
+    "presentedFrame": {
+      "center": [
+        311.8074324336809,
+        270.02673197916187,
+        219.81192143215367
+      ],
+      "right": [
+        -1.2686915604467536e-18,
+        0.9900497563131911,
+        0.14071773173339186
+      ],
+      "up": [
+        -0.10452846326765344,
+        0.1399468652754171,
+        -0.9846261601574919
+      ],
+      "normal": [
+        -0.9945218953682733,
+        -0.014709008252601364,
+        0.10348837958593264
+      ],
+      "width": 300,
+      "height": 315
+    },
+    "summary": "A source-reviewed LA/venous-entry plane is shown; right and left pulmonary-vein acquisitions are distinct clinical maneuvers, and all four ostia are not established here.",
+    "remainingLimits": [
+      "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.013564618779836706,
+      "distancesMm": {
+        "LA": 0.33767687804237156,
+        "LAvenous": 0.5583253566502686,
+        "LAroof": 0.22408134742761687
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "melaa": {
+    "candidate": 0,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        322.0,
+        302.0,
+        190.0
+      ],
+      "right": [
+        0.2588190451025208,
+        0.9659258262890685,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal": [
+        -0.9659258262890683,
+        0.25881904510252074,
+        0.0
+      ],
+      "width": 338.56,
+      "height": 338.56
+    },
+    "presentedFrame": {
+      "center": [
+        322.0,
+        302.0,
+        190.0
+      ],
+      "right": [
+        0.2588190451025208,
+        0.9659258262890685,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal": [
+        -0.9659258262890683,
+        0.25881904510252074,
+        0.0
+      ],
+      "width": 338.56,
+      "height": 338.56
+    },
+    "summary": "Multiple lateral-LA sections were examined. The original lateral atrial region is retained because no candidate established a more defensible LAA ostial/lobe section.",
+    "remainingLimits": [
+      "Individual pulmonary-vein ostia and LAA are not separately annotated; no complete named-target correspondence is asserted."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.026012838630981704,
+      "distancesMm": {
+        "LA": 0.4448338383931899,
+        "LAlateral": 0.0,
+        "LAroof": 1.724638131081501
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tgbasalsax": {
+    "candidate": 11201,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        314.0,
+        280.0,
+        274.0
+      ],
+      "right": [
+        0.7577469700500704,
+        0.6489274219244636,
+        -0.06864932959910727
+      ],
+      "up": [
+        0.6302032157962298,
+        -0.7004440571794934,
+        0.3349955664811421
+      ],
+      "normal": [
+        0.1693027943656818,
+        -0.297104903756905,
+        -0.9397155101324932
+      ],
+      "width": 340.0,
+      "height": 330.0
+    },
+    "presentedFrame": {
+      "center": [
+        314.0,
+        280.0,
+        274.0
+      ],
+      "right": [
+        0.7577469700500704,
+        0.6489274219244636,
+        -0.06864932959910727
+      ],
+      "up": [
+        0.6302032157962298,
+        -0.7004440571794934,
+        0.3349955664811421
+      ],
+      "normal": [
+        0.1693027943656818,
+        -0.297104903756905,
+        -0.9397155101324932
+      ],
+      "width": 340.0,
+      "height": 330.0
+    },
+    "summary": "An independently oriented basal LA\u2013LV interface section shows a broader mitral-region opening and removes the dominant arterial-root star of the earlier plane.",
+    "remainingLimits": [
+      "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed.",
+      "This is a mitral-region correspondence; exact leaflet/annular boundaries and the clinical fishmouth appearance remain unvalidated."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {}
+  },
+  "tgpapillary": {
+    "candidate": 0,
+    "status": "retained",
+    "physicalFrame": {
+      "center": [
+        241.050000195,
+        267.400000151,
+        369.650000243
+      ],
+      "right": [
+        0.592746856,
+        0.712704291,
+        0.375104995
+      ],
+      "up": [
+        0.689692882,
+        -0.689692882,
+        0.220561683
+      ],
+      "normal": [
+        0.41590250338423423,
+        0.12797000103284445,
+        -0.9003603648064373
+      ],
+      "width": 380.88,
+      "height": 380.88
+    },
+    "presentedFrame": {
+      "center": [
+        241.050000195,
+        267.400000151,
+        369.650000243
+      ],
+      "right": [
+        0.592746856,
+        0.712704291,
+        0.375104995
+      ],
+      "up": [
+        0.689692882,
+        -0.689692882,
+        0.220561683
+      ],
+      "normal": [
+        0.41590250338423423,
+        0.12797000103284445,
+        -0.9003603648064373
+      ],
+      "width": 380.88,
+      "height": 380.88
+    },
+    "summary": "The original plane is retained after broad exploration and 21 close neighbors: its two principal muscular profiles are clearer than the newly proposed level.",
+    "remainingLimits": [
+      "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 1,
+      "cost": 2.8343363326491366,
+      "distancesMm": {
+        "tgpapillary-level": 6.67210802075007
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tgapicalsax": {
+    "candidate": 0,
+    "status": "retained",
+    "physicalFrame": {
+      "center": [
+        210.24826076188683,
+        257.922541880979,
+        436.3306888464826
+      ],
+      "right": [
+        0.592746856345657,
+        0.7127042913190476,
+        0.3751049952050159
+      ],
+      "up": [
+        0.6896928823549421,
+        -0.6896928823549421,
+        0.2205616831135094
+      ],
+      "normal": [
+        0.41590250338423423,
+        0.12797000103284448,
+        -0.9003603648064372
+      ],
+      "width": 327.98,
+      "height": 327.98
+    },
+    "presentedFrame": {
+      "center": [
+        210.24826076188683,
+        257.922541880979,
+        436.3306888464826
+      ],
+      "right": [
+        0.592746856345657,
+        0.7127042913190476,
+        0.3751049952050159
+      ],
+      "up": [
+        0.6896928823549421,
+        -0.6896928823549421,
+        0.2205616831135094
+      ],
+      "normal": [
+        0.41590250338423423,
+        0.12797000103284448,
+        -0.9003603648064372
+      ],
+      "width": 327.98,
+      "height": 327.98
+    },
+    "summary": "The original distal ventricular plane is retained after broad exploration and 21 close neighbors; it avoids the dominant papillary profile seen in more proximal candidates.",
+    "remainingLimits": [
+      "Papillary/leaflet profiles are assessed on measured pixels; the fixed LV cavity is collapsed."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 1,
+      "cost": 7.958993086835989,
+      "distancesMm": {
+        "tgapicalsax-level": 11.24773459446599
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tgrvbasal": {
+    "candidate": 1094,
+    "status": "limited",
+    "physicalFrame": {
+      "center": [
+        235.24999832096486,
+        186.7132533541514,
+        296.0384934730132
+      ],
+      "right": [
+        0.7176290444819696,
+        0.6916837301026548,
+        -0.08113058626173815
+      ],
+      "up": [
+        0.5217590465349555,
+        -0.4568231162363892,
+        0.7204721631201365
+      ],
+      "normal": [
+        0.46127654598389184,
+        -0.5593623673285076,
+        -0.6887217799240983
+      ],
+      "width": 350.0,
+      "height": 340.0
+    },
+    "presentedFrame": {
+      "center": [
+        235.24999832096486,
+        186.7132533541514,
+        296.0384934730132
+      ],
+      "right": [
+        0.7176290444819696,
+        0.6916837301026548,
+        -0.08113058626173815
+      ],
+      "up": [
+        0.5217590465349555,
+        -0.4568231162363892,
+        0.7204721631201365
+      ],
+      "normal": [
+        0.46127654598389184,
+        -0.5593623673285076,
+        -0.6887217799240983
+      ],
+      "width": 350.0,
+      "height": 340.0
+    },
+    "summary": "A plane based on the reviewed tricuspid hinge neighborhood replaces the duplicated LV/root-level cut; exact en-face tricuspid correspondence remains partial.",
+    "remainingLimits": [
+      "The curved tricuspid hinge departs from a flat plane; this is not an annular measurement.",
+      "A flat cut cannot reproduce the curved TV hinge perfectly; a complete en-face three-leaflet view is not established."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.0,
+      "distancesMm": {
+        "TVplane": 0.0
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tgrvinout": {
+    "candidate": 1094,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        195.9,
+        245.2,
+        262.5
+      ],
+      "right": [
+        0.10077653016451063,
+        -0.7035069619300157,
+        0.7035069619300159
+      ],
+      "up": [
+        -0.8803761687374815,
+        0.2663260198336943,
+        0.3924388521523529
+      ],
+      "normal": [
+        -0.46344567371711987,
+        -0.6588993896457502,
+        -0.5925113516527282
+      ],
+      "width": 350.0,
+      "height": 390.0
+    },
+    "presentedFrame": {
+      "center": [
+        195.9,
+        245.2,
+        262.5
+      ],
+      "right": [
+        0.10077653016451063,
+        -0.7035069619300157,
+        0.7035069619300159
+      ],
+      "up": [
+        -0.8803761687374815,
+        0.2663260198336943,
+        0.3924388521523529
+      ],
+      "normal": [
+        -0.46344567371711987,
+        -0.6588993896457502,
+        -0.5925113516527282
+      ],
+      "width": 350.0,
+      "height": 390.0
+    },
+    "summary": "The selected measured plane follows RV inflow and outflow regions around the aortic root, replacing a nonspecific transverse cut.",
+    "remainingLimits": [
+      "Regional inflow/outflow continuity is visually reviewed; individual valve leaflets/cusps are not segmented or verified."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.00712637755425551,
+      "distancesMm": {
+        "TV": 0.03024121169610665,
+        "RVOT": 0.34729276448401547,
+        "PV": 0.2984274898083436,
+        "RVmid": 0.23731945911531743
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "deeptg5c": {
+    "candidate": 1565,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        260.00868588076906,
+        244.6611465298637,
+        366.0518796537951
+      ],
+      "right": [
+        0.6770888704524247,
+        0.605917134689328,
+        0.4176303238503335
+      ],
+      "up": [
+        -0.29388172413508706,
+        -0.29765678246693555,
+        0.9083138070462323
+      ],
+      "normal": [
+        0.6746733978221228,
+        -0.7377430892535058,
+        -0.023472122397549006
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        260.00868588076906,
+        244.6611465298637,
+        366.0518796537951
+      ],
+      "right": [
+        0.6770888704524247,
+        0.605917134689328,
+        0.4176303238503335
+      ],
+      "up": [
+        -0.29388172413508706,
+        -0.29765678246693555,
+        0.9083138070462323
+      ],
+      "normal": [
+        0.6746733978221228,
+        -0.7377430892535058,
+        -0.023472122397549006
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "summary": "The section brings both ventricular regions and LV outflow into one measured plane with a gastric-side presentation.",
+    "remainingLimits": [
+      "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+    ],
+    "originalCandidate": 0,
+    "presentation": [],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 2.1856978781935963,
+      "distancesMm": {
+        "MV": 3.278275249981275,
+        "TV": 9.994471159951617,
+        "LVOT": 2.698186437134655,
+        "AV": 4.404876071910781,
+        "LA": 8.146635366901789,
+        "RA": 14.6891046012976,
+        "apex": 17.106707738381687
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tg2c": {
+    "candidate": 2804,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        242.3897639605795,
+        272.27128600817633,
+        369.9075327185242
+      ],
+      "right": [
+        0.5175178928891205,
+        -0.8178184837372068,
+        0.2516906001371148
+      ],
+      "up": [
+        -0.4962138022101328,
+        -0.04720470471960979,
+        0.8669161310925629
+      ],
+      "normal": [
+        -0.6970990553972715,
+        -0.5735369591491996,
+        -0.4302420986539105
+      ],
+      "width": 380.88,
+      "height": 502.54999999999995
+    },
+    "presentedFrame": {
+      "center": [
+        242.3897639605795,
+        272.27128600817633,
+        369.9075327185242
+      ],
+      "right": [
+        0.4962138022101328,
+        0.0472047047196098,
+        -0.8669161310925629
+      ],
+      "up": [
+        0.5175178928891205,
+        -0.8178184837372068,
+        0.2516906001371148
+      ],
+      "normal": [
+        -0.6970990553972715,
+        -0.5735369591491997,
+        -0.4302420986539106
+      ],
+      "width": 502.54999999999995,
+      "height": 380.88
+    },
+    "summary": "The new measured plane excludes the long aortic pathway seen previously and isolates the LA\u2013mitral-region\u2013LV sequence; the apex is displayed to the left.",
+    "remainingLimits": [
+      "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.42902029941043085,
+      "distancesMm": {
+        "MV": 0.04293587692562883,
+        "LA": 6.539900995924564,
+        "apex": 0.4820198165427992,
+        "LVmid": 0.6711588706258677
+      },
+      "exclusionDistancesMm": {
+        "AV": 17.299446550711956,
+        "RVmid": 32.024276636501085,
+        "TV": 26.61624231948106
+      },
+      "regionalTissueFractions": {
+        "0": 0.1326530612244898,
+        "1": 0.6389324960753532,
+        "2": 0.01020408163265306,
+        "3": 0.15855572998430142,
+        "4": 0.022762951334379906,
+        "5": 0.0,
+        "6": 0.036891679748822605
+      }
+    }
+  },
+  "tgrvin": {
+    "candidate": 1094,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        218.88888888888889,
+        190.66666666666666,
+        329.1111111111111
+      ],
+      "right": [
+        0.9630119066469464,
+        0.26945596940600397,
+        -0.0012442699401868586
+      ],
+      "up": [
+        -0.07274906640483189,
+        0.26443940020814927,
+        0.9616544997839815
+      ],
+      "normal": [
+        0.2594525794696186,
+        -0.9259942138960832,
+        0.27426096119852045
+      ],
+      "width": 330.0,
+      "height": 430.0
+    },
+    "presentedFrame": {
+      "center": [
+        218.88888888888889,
+        190.66666666666666,
+        329.1111111111111
+      ],
+      "right": [
+        0.07274906640483189,
+        -0.26443940020814927,
+        -0.9616544997839815
+      ],
+      "up": [
+        0.9630119066469464,
+        0.26945596940600397,
+        -0.0012442699401868586
+      ],
+      "normal": [
+        0.2594525794696186,
+        -0.9259942138960832,
+        0.27426096119852045
+      ],
+      "width": 430.0,
+      "height": 330.0
+    },
+    "summary": "An independent TV\u2013RV-body\u2013apical-RV plane replaces the generic tilted starting frame, with RV/apical tissue to the left and the tricuspid/atrial side to the right.",
+    "remainingLimits": [
+      "Tricuspid leaflet and subvalvular identities are not individually segmented."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.0003563342148065902,
+      "distancesMm": {
+        "TV": 0.05368439889954034,
+        "RVmid": 0.06956978374594706,
+        "RVapex": 0.06327364114256033,
+        "RA": 0.22732988080493685
+      },
+      "exclusionDistancesMm": {}
+    }
+  },
+  "tglax": {
+    "candidate": 1546,
+    "status": "refined",
+    "physicalFrame": {
+      "center": [
+        251.2682214431686,
+        261.9314668156486,
+        301.81338475688096
+      ],
+      "right": [
+        0.9431141196424437,
+        0.19641361857623518,
+        0.26824885417993455
+      ],
+      "up": [
+        -0.26356726138623304,
+        -0.050101383928903793,
+        0.9633390628713079
+      ],
+      "normal": [
+        0.20265255008615035,
+        -0.9792402880632506,
+        0.0045168769501222755
+      ],
+      "width": 360.0,
+      "height": 475.0
+    },
+    "presentedFrame": {
+      "center": [
+        251.2682214431686,
+        261.9314668156486,
+        301.81338475688096
+      ],
+      "right": [
+        0.26356726138623304,
+        0.050101383928903793,
+        -0.9633390628713079
+      ],
+      "up": [
+        0.9431141196424437,
+        0.19641361857623518,
+        0.26824885417993455
+      ],
+      "normal": [
+        0.20265255008615035,
+        -0.9792402880632506,
+        0.0045168769501222755
+      ],
+      "width": 475.0,
+      "height": 360.0
+    },
+    "summary": "The section follows the long LV into its outflow/root, with the ventricular/apical side to the left and basal outflow to the right.",
+    "remainingLimits": [
+      "Gastric approach orientation is illustrative; esophagus and stomach are absent from the scan."
+    ],
+    "originalCandidate": 0,
+    "presentation": [
+      "Quarter-turn display roll: ventricular/apical side left, basal valve/atrial or outflow side right; physical plane unchanged."
+    ],
+    "geometricEvidence": {
+      "gates": 0,
+      "cost": 0.07075644792369917,
+      "distancesMm": {
+        "MV": 0.09394014806279886,
+        "LVOT": 0.20969357430249197,
+        "AV": 1.066757326859834,
+        "AAprox": 2.537261869036039,
+        "apex": 0.22650050203845304,
+        "LA": 3.523521289998392
+      },
+      "exclusionDistancesMm": {}
+    }
+  }
+}

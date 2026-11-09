@@ -1,0 +1,15 @@
+{
+  "schema": "guided-native-processing-v21.1",
+  "halo": 16,
+  "thresholdRaw": 17133.4,
+  "tvWeightRaw": 800,
+  "tvIterations": 16,
+  "tvStoppingEpsilon": 0,
+  "priorGaussianSigmaVoxels": 0.8,
+  "thinGuard": true,
+  "nativeBandInnerVoxels": 8,
+  "nativeBandOuterVoxels": 12,
+  "nativeSourceSpacingUm": 19.85,
+  "edgeCrossingBits": 5,
+  "overviewSamplingStepNative": 4
+}

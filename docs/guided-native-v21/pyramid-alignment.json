@@ -1,0 +1,169 @@
+{
+  "schema": "guided-native-pyramid-alignment-v21.1",
+  "formula": "native_index=(s2_index+0.5)*(native_dimension/s2_dimension)-0.5",
+  "nativeDimensionsXYZ": [
+    7614,
+    7614,
+    8480
+  ],
+  "s2DimensionsXYZ": [
+    1903,
+    1903,
+    2120
+  ],
+  "operator": "Gaussian sigma1.2 native voxels, radius6, followed by trilinear sampling",
+  "limitation": "Approximate source-pyramid operator; offsets test registration consistency, not anatomical accuracy.",
+  "blocks": [
+    {
+      "nativeBlockXYZ": [
+        27,
+        41,
+        9
+      ],
+      "s2BlockXYZ": [
+        6,
+        10,
+        2
+      ],
+      "nativeSha256": "40f1dae99e81a3a524d127e4f267244ea0700558c5c231c7d8a398f6d4174b61",
+      "s2Sha256": "ae95532e158ffeb0ac66109c71aa59a436d41ed46171abf8549455d77c342f33",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        0.03300294754201301,
+        -0.10296343046592131,
+        0.020040708501776403
+      ],
+      "expectedMappingRmseRaw": 133.5001879691073,
+      "fittedMappingRmseRaw": 131.57524859860706,
+      "naiveFactorFourRmseRaw": 442.15565110543713,
+      "expectedMappingCorrelation": 0.9908979993707345,
+      "fitSucceeded": true
+    },
+    {
+      "nativeBlockXYZ": [
+        33,
+        30,
+        24
+      ],
+      "s2BlockXYZ": [
+        8,
+        7,
+        6
+      ],
+      "nativeSha256": "7e3e72ff8b8a13e0a91e06fea6cb9d8719c63eb08c721377d82140ec86d1be5b",
+      "s2Sha256": "3635de736a060cffc5a67fb0ad3609a5b3bb660dca1d57f3b9c4dfc99ce83c48",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        -0.020566013133834816,
+        0.010352084542363048,
+        -0.0038357657094702105
+      ],
+      "expectedMappingRmseRaw": 131.78985403520878,
+      "fittedMappingRmseRaw": 131.69437813353295,
+      "naiveFactorFourRmseRaw": 453.6866427165378,
+      "expectedMappingCorrelation": 0.9943287687758959,
+      "fitSucceeded": true
+    },
+    {
+      "nativeBlockXYZ": [
+        26,
+        37,
+        30
+      ],
+      "s2BlockXYZ": [
+        6,
+        9,
+        7
+      ],
+      "nativeSha256": "df76d4c172e5cc94ee6a9ac6be7f0498472641ebfc365c829e029d9e04a49894",
+      "s2Sha256": "ed9e3940c00eca41bca441be9434f597e215a308cd5b61e3755bbc509bd97c93",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        0.006636725341924018,
+        -0.06709028500811712,
+        0.023663339597424476
+      ],
+      "expectedMappingRmseRaw": 104.12942977937466,
+      "fittedMappingRmseRaw": 103.63106459478635,
+      "naiveFactorFourRmseRaw": 194.3886604024741,
+      "expectedMappingCorrelation": 0.9678746526687194,
+      "fitSucceeded": true
+    },
+    {
+      "nativeBlockXYZ": [
+        22,
+        23,
+        38
+      ],
+      "s2BlockXYZ": [
+        5,
+        5,
+        9
+      ],
+      "nativeSha256": "ca04118bf39c4aa9a61d6e1a1b3d950bc721e072686503fc72225a91640038f0",
+      "s2Sha256": "13983e32d285bdd77708b9e90d316536d97c8eb61be527a2cbf4992145bcaee3",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        0.02483500358684798,
+        0.030758879988014617,
+        0.0003663106403108627
+      ],
+      "expectedMappingRmseRaw": 131.22610492900688,
+      "fittedMappingRmseRaw": 130.7984745773864,
+      "naiveFactorFourRmseRaw": 284.2946543802309,
+      "expectedMappingCorrelation": 0.9921097376742426,
+      "fitSucceeded": true
+    },
+    {
+      "nativeBlockXYZ": [
+        16,
+        30,
+        43
+      ],
+      "s2BlockXYZ": [
+        4,
+        7,
+        10
+      ],
+      "nativeSha256": "6c0fd83cebfc6728b4f1840534ac8d063b0697eef2ceacd69b7853e9b1988024",
+      "s2Sha256": "df7a23fb4c1a64cd579fb1a56ae31d7b7d905e871442c888231a5f7aef201c3f",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        0.07493692850491143,
+        0.0019246138775778885,
+        -0.008388251144390143
+      ],
+      "expectedMappingRmseRaw": 138.0422696518665,
+      "fittedMappingRmseRaw": 136.4152083039256,
+      "naiveFactorFourRmseRaw": 295.69883781758614,
+      "expectedMappingCorrelation": 0.9932089070469772,
+      "fitSucceeded": true
+    },
+    {
+      "nativeBlockXYZ": [
+        23,
+        32,
+        63
+      ],
+      "s2BlockXYZ": [
+        5,
+        8,
+        15
+      ],
+      "nativeSha256": "11c50407d6af1abb418f924f49a37c87bc79b2def37f5cc928eb302a01083a17",
+      "s2Sha256": "9ef6092fe4d26d72d9636b4059f2004ddc5dd5fca793077a63fb2c8052b18371",
+      "samples": 18954,
+      "fittedResidualShiftNativeXYZ": [
+        0.04964218241906511,
+        -0.019903958919352073,
+        0.0012552052092581797
+      ],
+      "expectedMappingRmseRaw": 52.41365181577324,
+      "fittedMappingRmseRaw": 52.29289457758491,
+      "naiveFactorFourRmseRaw": 82.4840503592091,
+      "expectedMappingCorrelation": 0.9631862798558549,
+      "fitSucceeded": true
+    }
+  ],
+  "maximumAbsoluteFittedShiftNative": 0.10296343046592131
+}

@@ -1,0 +1,165 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 210,
+    "decodedBrickReads": 406,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v28",
+  "cases": [
+    {
+      "id": "lvot-y294-residual",
+      "title": "Source follow-through of dark proximal aortic valve fringe at sagittal294",
+      "lowerXYZ": [
+        1015,
+        1080,
+        880
+      ],
+      "upperXYZ": [
+        1185,
+        1201,
+        1065
+      ],
+      "ys": [
+        1096,
+        1112,
+        1128,
+        1144,
+        1152,
+        1160,
+        1168,
+        1176
+      ],
+      "overlay": true,
+      "points": [
+        [
+          1075,
+          964
+        ],
+        [
+          1086,
+          980
+        ],
+        [
+          1095,
+          1002
+        ]
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1096,
+          "sourcePlaneSha256": "a195656952bb97f4470d98fe6bc7cace9dea1b137e9afcb1c758589f46e71254",
+          "excludedInPlane": 12819
+        },
+        {
+          "fineY": 1112,
+          "sourcePlaneSha256": "2b89f53b5145e424f2927c5c4e9f701e6295d655dfc9c0bd48821d38d977825f",
+          "excludedInPlane": 11570
+        },
+        {
+          "fineY": 1128,
+          "sourcePlaneSha256": "0aa8e0dd429bcda90f6ececa497411ffd08edee3205f33f52556a8ce340905fa",
+          "excludedInPlane": 8585
+        },
+        {
+          "fineY": 1144,
+          "sourcePlaneSha256": "254e9fae6cf7c987fa84fdcaaa6bc40307ba90d52d831dd8f86270ec2f57cf9b",
+          "excludedInPlane": 3974
+        },
+        {
+          "fineY": 1152,
+          "sourcePlaneSha256": "f2e448355730e4303b34e5976648e85a96d0833ad7815e9eb9a540434991ea27",
+          "excludedInPlane": 3197
+        },
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "45b8dc499fae9030a5dba6bad1856c794595131ef8b20d2f02a808ad82e235c9",
+          "excludedInPlane": 2375
+        },
+        {
+          "fineY": 1168,
+          "sourcePlaneSha256": "f315f428955a197eb60ff21b40c6430426ba998ec8c58d55d55e50c7a9ee1725",
+          "excludedInPlane": 1764
+        },
+        {
+          "fineY": 1176,
+          "sourcePlaneSha256": "e8c2ba2d0b4e8e85bc746ddae88f38b7cc341256f4856f76fb6fb0c1e60b8941",
+          "excludedInPlane": 1061
+        }
+      ]
+    },
+    {
+      "id": "la-y316-residual",
+      "title": "Remaining atrial sheets at sagittal316 after v28 masks",
+      "lowerXYZ": [
+        1110,
+        1150,
+        590
+      ],
+      "upperXYZ": [
+        1450,
+        1361,
+        1030
+      ],
+      "ys": [
+        1180,
+        1200,
+        1220,
+        1240,
+        1260,
+        1280,
+        1300,
+        1320
+      ],
+      "overlay": true,
+      "sourcePlanes": [
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "ef4faed3d3e5bb40a61c70e0d5c28258025e6db87adc6d755c217ae49b918248",
+          "excludedInPlane": 36960
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "18cc5d1817377f9724f842362c9b723adeede770a920f412ca80e69225dfdff8",
+          "excludedInPlane": 41879
+        },
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "016389ab6aba2aa50855b0866587bd28439e665b46023cc887cd2864d4a8f84f",
+          "excludedInPlane": 33416
+        },
+        {
+          "fineY": 1240,
+          "sourcePlaneSha256": "f2a8c8f5d771289f6969a199abef45bca8e4b1c1008a5b674430af498de638b5",
+          "excludedInPlane": 15578
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "e5d6f60e2abfe903bc3845e3d3f561b1fedea10ed015b2f70c1afe8f7f1cc9be",
+          "excludedInPlane": 11070
+        },
+        {
+          "fineY": 1280,
+          "sourcePlaneSha256": "38f6af7df3799080eef8e7dafab36aa519b85b72866ec6d37ea25cdce84f142e",
+          "excludedInPlane": 10183
+        },
+        {
+          "fineY": 1300,
+          "sourcePlaneSha256": "70d2c049c396679869ed9ef95fafc279ca8a62e29c6c60dd0ff22cd972b8aede",
+          "excludedInPlane": 6879
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "22e0628cbfdf2622e094638bf5886dd99784976589114b638d04159871281672",
+          "excludedInPlane": 1537
+        }
+      ]
+    }
+  ]
+}

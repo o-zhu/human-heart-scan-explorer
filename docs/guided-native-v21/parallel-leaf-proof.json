@@ -1,0 +1,164 @@
+{
+  "schema": "heart-overview-parallel-leaf-proof-v21.1",
+  "passed": true,
+  "pilotOnly": true,
+  "inputTiles": 8,
+  "builderCodeSha256": {
+    "{local-workspace}/scripts/guided-native-v21/build_overview.py": "ddb273f7db10f723fc4d8d4bd93223714438d690c07f40005a4f7c847902f38f",
+    "{local-workspace}/scripts/guided-native-v21/edge_codec.py": "a487ab160022000028b31e111c043f72d8ebdd4604368c23d1ac1ef32bb314f6",
+    "{local-workspace}/scripts/guided-native-v21/overview_collapse.c": "00270dd22ba14a21fd316f74da97bdaa75d05ea5f1bf84a28f3584d1fcc41d22"
+  },
+  "numericalMethodsUnchanged": true,
+  "twoWorkersExecutedDistinctLeaves": true,
+  "leafChecks": [
+    {
+      "node": "s004_32_28_36",
+      "sha256": "749e6ea88d9a66078276a06ee4297f4d6469691102d81c7d6d34702c65db8488",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s004_36_28_36",
+      "sha256": "3fedf5dd95fc4676256a149b97b4490978d02996e38fd4a840299999385386dc",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    }
+  ],
+  "allNodeChecks": [
+    {
+      "node": "s004_32_28_36",
+      "sha256": "749e6ea88d9a66078276a06ee4297f4d6469691102d81c7d6d34702c65db8488",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s004_36_28_36",
+      "sha256": "3fedf5dd95fc4676256a149b97b4490978d02996e38fd4a840299999385386dc",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s008_32_24_32",
+      "sha256": "61e111e54d25b9cecc9f91e5087c93bf7b770ad6f30c95a361aa88627372580b",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s016_32_16_32",
+      "sha256": "61e111e54d25b9cecc9f91e5087c93bf7b770ad6f30c95a361aa88627372580b",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s032_32_0_32",
+      "sha256": "61e111e54d25b9cecc9f91e5087c93bf7b770ad6f30c95a361aa88627372580b",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s064_0_0_0",
+      "sha256": "61e111e54d25b9cecc9f91e5087c93bf7b770ad6f30c95a361aa88627372580b",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    }
+  ],
+  "resumeChecks": [
+    {
+      "node": "s004_32_28_36",
+      "sha256": "749e6ea88d9a66078276a06ee4297f4d6469691102d81c7d6d34702c65db8488",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    },
+    {
+      "node": "s004_36_28_36",
+      "sha256": "3fedf5dd95fc4676256a149b97b4490978d02996e38fd4a840299999385386dc",
+      "numericalMetadataIdentical": true,
+      "npzBytesIdentical": true
+    }
+  ],
+  "exactCompressedMeshAssets": true,
+  "metadataDifferenceAllowlist": [
+    "seconds",
+    "elapsedSeconds",
+    "peakProcessRssBytes",
+    "nodeRecordsCanonicalSha256 (contains real node timings; independently recomputed and verified)"
+  ],
+  "actualNodeRecordProvenanceHashesRecomputedAndVerified": true,
+  "sharedMetadataUnchangedByWorkers": true,
+  "normalTraversalReusedVerifiedLeafBytes": true,
+  "workerFailurePreservedCompletedCheckpoint": true,
+  "resumePreservedCompletedCheckpointMtime": true,
+  "allWorkersClosedBeforeParentMerges": true,
+  "phases": [
+    {
+      "phase": "original-sequential",
+      "seconds": 1.686784533012542,
+      "summary": {
+        "stage": "original",
+        "fingerprint": "c46a903c22d041b59a2d19e36803b3f06e054c4ee21c7c9e150c5037ead5fbe7",
+        "nodes": 6,
+        "peakRssBytes": 118870016,
+        "triangles": 3620
+      },
+      "stderr": ""
+    },
+    {
+      "phase": "parallel-leaf-precompute",
+      "seconds": 0.7550276419933653,
+      "summary": {
+        "complete": true,
+        "leaves": 2,
+        "workers": 2,
+        "seconds": 0.6036091329879127,
+        "aggregatePeakUpperBoundBytes": 198914048,
+        "sharedMetadataUnchangedByWorkers": true,
+        "allWorkersClosedBeforeReturn": true
+      },
+      "stderr": ""
+    },
+    {
+      "phase": "original-after-pool-closed",
+      "seconds": 1.0034970859996974,
+      "summary": {
+        "stage": "original",
+        "fingerprint": "c46a903c22d041b59a2d19e36803b3f06e054c4ee21c7c9e150c5037ead5fbe7",
+        "nodes": 6,
+        "peakRssBytes": 114397184,
+        "triangles": 3620
+      },
+      "stderr": ""
+    },
+    {
+      "phase": "intentional-worker-failure",
+      "seconds": 0.6193365959916264,
+      "summary": {
+        "stage": "expected-failure",
+        "checkpointsPreserved": true,
+        "aggregatePeakUpperBoundBytes": 120643584
+      },
+      "stderr": ""
+    },
+    {
+      "phase": "resume-completed-leaves",
+      "seconds": 0.7368171639973298,
+      "summary": {
+        "complete": true,
+        "leaves": 2,
+        "workers": 2,
+        "seconds": 0.597243106996757,
+        "aggregatePeakUpperBoundBytes": 176676864,
+        "sharedMetadataUnchangedByWorkers": true,
+        "allWorkersClosedBeforeReturn": true
+      },
+      "stderr": ""
+    }
+  ],
+  "proofParentPeakRssBytes": 15204352,
+  "maximumConcurrentRssUpperBoundBytes": 214118400,
+  "seconds": 4.810674266991555,
+  "outputs": {
+    "reference": "{temporary-cache}/reference",
+    "parallel": "{temporary-cache}/parallel",
+    "resume": "{temporary-cache}/resume"
+  }
+}

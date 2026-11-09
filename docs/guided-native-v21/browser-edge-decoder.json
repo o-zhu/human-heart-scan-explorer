@@ -1,0 +1,1001 @@
+{
+  "schema": "native-edge-browser-decoder-v21.1",
+  "pilot": "{source-cache}/guided-native-v21/pilot/run",
+  "nodeVersion": "v24.22.1",
+  "decoderSha256": "21bd0f9da9dfe97f9dd0734a8b1e4e4843af5b73f2b2b9d17cb775c93ec9b391",
+  "baselineSha256": "ea8e161092f31b1c7aaf57ef76bf9a972e851716fe7b3e9b23debf618b81b3ce",
+  "decodedTiles": 8,
+  "subregions": 64,
+  "totalNativeTriangles": 3519377,
+  "exactPythonPositionMatches": 64,
+  "exactPythonIndexMatches": 64,
+  "exactPythonCompleteTileNormalMatches": 64,
+  "nonfinitePositions": 0,
+  "zeroNormals": 0,
+  "crossingCacheBytesPer129CubedTile": 6390144,
+  "normalPolicy": "Area-weighted normals from exact native-grid crossings, including the complete tile one-cell incident-face halo at each 64-cell piece. Outer tile normals use only their own tile.",
+  "internalSeams": {
+    "pairs": 96,
+    "sharedVertices": 27359,
+    "positionsExact": true,
+    "packedNormalsExact": true
+  },
+  "outerTileSeams": {
+    "pairs": 12,
+    "sharedVertices": 15056,
+    "positionsExact": true,
+    "packedNormalMismatches": 15046,
+    "normalAngleDegreesMedian": 14.24449705649333,
+    "normalAngleDegreesP95": 56.069608256700846,
+    "normalAngleDegreesMax": 154.56341557102354
+  },
+  "performance": {
+    "optimizedMilliseconds": 2684.7757789999832,
+    "baselineMilliseconds": 10938.441950999997,
+    "speedup": 4.074247852114605,
+    "scope": "Eight interleaved baseline/new 64-piece tile decodes in Node; includes lazy cache build and normal halos, excludes fetch/decompression/hash verification and GPU rendering. Concurrent reconstruction load makes these timings runtime-specific."
+  },
+  "pythonReferencePeakRssMiB": 264.78125,
+  "results": [
+    {
+      "tile": "35_30_36",
+      "triangles": 367839,
+      "milliseconds": 421.1372289999981,
+      "baselineMilliseconds": 1439.2366059999986,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 27772,
+          "triangles": 53510,
+          "milliseconds": 128.9589759999999,
+          "baselineMilliseconds": 254.92900999999983,
+          "positionsSha256": "cf594e980ffd9da94a1f66dae8ba1630465b74c17a12164d257cf1702bba08cd",
+          "indicesSha256": "8b6567c6631e718df8b28bdc263acbc3bf38f549d8da7e80cd53bf8789607b1e",
+          "normalsSha256": "44d08c25821bf5f62871bda2755cca6f3a5916a93c600b437756286244aa1740"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 24719,
+          "triangles": 47767,
+          "milliseconds": 37.00840900000003,
+          "baselineMilliseconds": 227.54446499999995,
+          "positionsSha256": "246ad61128e64a2f42f0079ed30e15fdf6adb47e3100b9ed3c5b70df72a5c20b",
+          "indicesSha256": "d1a834c72deb3a3f641ba1d4adb75ffe51e4ac43976910b4286b941bbbed1420",
+          "normalsSha256": "f2035219204af9bdecbcbfbc65c247adda58112cbc3540de79e515dfb6fea042"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 18720,
+          "triangles": 35967,
+          "milliseconds": 32.00527199999942,
+          "baselineMilliseconds": 186.0415670000002,
+          "positionsSha256": "7cafc0181954c34d0094208b1f74e8480ed0fe0e33be971092d8b7d6ce68843f",
+          "indicesSha256": "98ab196540c5a12f12c6534bf9933f6e3fafbc0ca49e892b40934ca99a6df046",
+          "normalsSha256": "23bd683920667d4c8edfa02a01bc1724959a5b5a53b92ad7a026b271533031f8"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 29718,
+          "triangles": 57606,
+          "milliseconds": 37.20189399999981,
+          "baselineMilliseconds": 170.3970929999996,
+          "positionsSha256": "6f0dda0fccefe8e2c2787bdab49d4b244a1a498fad88c1c491f367eac6e6b5bb",
+          "indicesSha256": "52cd7a0e57f9ca03cd92036a8150dfffde2d7b86ddd1357b15df8052944b290b",
+          "normalsSha256": "0851a9aa88ca3364ad4a964ffd0ac333fca7b76f45fc187f88782e85d983d45c"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 35473,
+          "triangles": 68959,
+          "milliseconds": 48.12612099999933,
+          "baselineMilliseconds": 158.07857799999965,
+          "positionsSha256": "f2b954d052e53c2cabf9454d32ada8b601fb0d321611027f319b1e03a40152c5",
+          "indicesSha256": "cdffe50b965a500390a50bcdc4abcacd68322979eaf35640e4943486729ba8d0",
+          "normalsSha256": "ea9b63a8e50df80f722252afc087bc8b78d6f20bf0ae573c9e16ed1254147818"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 22562,
+          "triangles": 43580,
+          "milliseconds": 35.71604899999966,
+          "baselineMilliseconds": 148.04287099999965,
+          "positionsSha256": "c4bb2a4a970eec56781ba8f5650400234c05a3647be12ddd7b8885c8a7ae37b3",
+          "indicesSha256": "e0d30ff4570482938bd5d24811b50c1633b3f825c74b7b254da5befbdfa7951a",
+          "normalsSha256": "bdfce74d1c2405e44c19712d8872b1f2de1502a51b6d2352d78af5a3e80508fb"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 18138,
+          "triangles": 34738,
+          "milliseconds": 26.754429999999957,
+          "baselineMilliseconds": 144.13405799999964,
+          "positionsSha256": "f4811d7149ebda2dab5c0980c590fbbfbfbced4d60be07b3db014bee7bdb3a2c",
+          "indicesSha256": "83963220be242052649077ccb99019c247cb4422d4f0cbd35ca7ab3490b7657a",
+          "normalsSha256": "7249b923b9c261b28562143b1dafdc6585780a25269aa950a95eb3e815ed59c5"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 13543,
+          "triangles": 25712,
+          "milliseconds": 75.36607800000002,
+          "baselineMilliseconds": 150.06896400000005,
+          "positionsSha256": "582dd90827fea5353a9d9da087d2ab98bd543f634979eaf67483327affa913b0",
+          "indicesSha256": "39ac31c91325c5fc3633f198b595e701013af0e4fec0bdf7b851e3e12e1b47f8",
+          "normalsSha256": "9dc34064723b50e92327961a37f1bc2a8a1949f25fffb5236671eb6ba0cf331a"
+        }
+      ]
+    },
+    {
+      "tile": "35_30_37",
+      "triangles": 407293,
+      "milliseconds": 346.924626,
+      "baselineMilliseconds": 1356.8818029999993,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 32566,
+          "triangles": 62989,
+          "milliseconds": 64.55014299999948,
+          "baselineMilliseconds": 281.79225899999983,
+          "positionsSha256": "0cf6156640248572a6c5184661c736ca3319641489b41b803176eb6b65186c43",
+          "indicesSha256": "6898c49d95a3554f0a4e5260dea8b81e68fecf68b9a628cc578c7daca3ffc89b",
+          "normalsSha256": "dad43de428ae3bb1a73e45caf64da0ea5bdd3a5bf9f4e3c8774cadf69de8a198"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 18120,
+          "triangles": 34438,
+          "milliseconds": 26.40365600000041,
+          "baselineMilliseconds": 174.79374500000085,
+          "positionsSha256": "17d66f39870c775d7bea89eb52fd62f6499ae8cc61654fa779a89c0fae1f3549",
+          "indicesSha256": "298d9d4a0e86d832404cf30282313f4b6ce81efcf94242fa47a21178931e0e57",
+          "normalsSha256": "9ef96aa2f7a9db6e9ca853611f598f5bb044575319a6cc1a1fdb97b7d5cd19c4"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 25427,
+          "triangles": 49212,
+          "milliseconds": 60.69768499999918,
+          "baselineMilliseconds": 145.4209439999995,
+          "positionsSha256": "a99f82a243558a087712bb481d4a1cd794c56b8da66e1bd684e3274edff32065",
+          "indicesSha256": "56368798d2a90d96e9edc98410fb715dfbbb084406cda1b3b6b896c6323c4981",
+          "normalsSha256": "bf57a0d43737819d2c6a4dd1fe664017646b509ae75bce7f51970cd2cff9959c"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 22543,
+          "triangles": 43592,
+          "milliseconds": 27.942360000000008,
+          "baselineMilliseconds": 155.83791199999996,
+          "positionsSha256": "f6b73760eb7850f03802788d1547340526fb69ffef47e48ac342fdf8cb675e84",
+          "indicesSha256": "2ba81113b3a0812adbb94a76faf81ec13c79e924b7461ef85c571f38482e8472",
+          "normalsSha256": "ac9d06a42d064740eac8352aa62293d6dd7d79a21e8f6519adb81af4edfbb4c4"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 40105,
+          "triangles": 77426,
+          "milliseconds": 29.469396000000415,
+          "baselineMilliseconds": 144.4766609999997,
+          "positionsSha256": "c2f5f25a3d342c5d3c690515366fe5497d0557c073064bb22ec2c02c2dbeaeb0",
+          "indicesSha256": "6864a4a47ac87cd9075d7f4ad7950517ec4bc660e87f7dc4492111000721ab72",
+          "normalsSha256": "9729de503260161d05282a0820aa5cf6ff9d396862d5d5ecfb50d39afcda02f5"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 29728,
+          "triangles": 56526,
+          "milliseconds": 29.227004000000306,
+          "baselineMilliseconds": 145.1693779999996,
+          "positionsSha256": "d6bae28e56e139a04aeaf3e127378fb7343f1f240919414398d28d0e9db7a1ae",
+          "indicesSha256": "4a87fc35621eb599708733f6c1bb91ae68cb3db9f0e022d8a1c86965188506db",
+          "normalsSha256": "27437d62ccdd60e530a7973e744475372accf8ed002b22dc8960547ffdf62e63"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 23978,
+          "triangles": 46013,
+          "milliseconds": 82.57555300000058,
+          "baselineMilliseconds": 174.31838400000015,
+          "positionsSha256": "b94056727fdaae7a10a8f74668f0c2fd6ff03de45a2b159d7e29317dc85b73cf",
+          "indicesSha256": "fb5949d3c7cd57cd162332fd867d3e7d301aa3849bfd82cd7a02ade440cbb039",
+          "normalsSha256": "eeac10870c1bff3a94c39952d69949a539cdff7d21ef66c71456eb953c5de85e"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 19275,
+          "triangles": 37097,
+          "milliseconds": 26.058828999999605,
+          "baselineMilliseconds": 135.0725199999997,
+          "positionsSha256": "7508bcbe2b89977f68a8cdb4cbb6be9274d80d1b130d2a2855344e1ebfe9308a",
+          "indicesSha256": "8edbb7c4665cad36b0bee52140a758962cb3ceec7d7be6574fdd31d3b732acaf",
+          "normalsSha256": "b0ec8d4dec5f2b677d25e29b8f6e01b0837c00beb25739f0ca7d786d43999d65"
+        }
+      ]
+    },
+    {
+      "tile": "35_31_36",
+      "triangles": 346106,
+      "milliseconds": 277.08451199999763,
+      "baselineMilliseconds": 1266.828383,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 11218,
+          "triangles": 21558,
+          "milliseconds": 55.11942199999976,
+          "baselineMilliseconds": 138.33892100000048,
+          "positionsSha256": "99c8734c3d83f5d8b8dee0e02b7c05ed889872d7eb80bf80a62c2844220c0966",
+          "indicesSha256": "d41e1721fbf440d887eb1abaa7257f95f7fbfa0cb8de9332b4ede390bb1ff1b4",
+          "normalsSha256": "83bd7e76ee15b80c60bbde43c72634eaf54b9fc5a18d1066233c61000d927bab"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 23291,
+          "triangles": 44851,
+          "milliseconds": 28.834414000000834,
+          "baselineMilliseconds": 143.76613700000053,
+          "positionsSha256": "b1f725493b517755a0b27c55d15c54379fb9ecdd7c7d26d9fba77058cc465a12",
+          "indicesSha256": "02b9fdcab08a992ba1427593d367c5c05501bf4e4981e9b50913b99b3e76b98d",
+          "normalsSha256": "2abc14efb369bc302ff726f35044825d9e58149286b5bd7851add590d71c1383"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 20105,
+          "triangles": 38798,
+          "milliseconds": 27.01664299999902,
+          "baselineMilliseconds": 143.94727799999964,
+          "positionsSha256": "33ca809aaa1bedcae26551b7db83f3823024470265d5bffae85034f74921b79d",
+          "indicesSha256": "525ea9c0e1e95980996b960429176548e2a0dbe4f0bd041b97eb8a6c468fcca5",
+          "normalsSha256": "f815701e0d8c397a4e0502cebfe6ac9dddfce38e99c9eaa87a0383f136a4f0ab"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 39662,
+          "triangles": 77156,
+          "milliseconds": 34.84736499999963,
+          "baselineMilliseconds": 147.96256600000015,
+          "positionsSha256": "4a3e3fed62df0fecdef30ba98101631b63e0ca5d606f8bee014df95f4a616b13",
+          "indicesSha256": "84506779d680966b999e38e5736f317d9cc5f1a8341b5a419753879a20d09efe",
+          "normalsSha256": "b697a25d109a2da653774a04eccdff6d1562525f464ae71935d94ea0557bef33"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 13412,
+          "triangles": 25858,
+          "milliseconds": 28.628663999999844,
+          "baselineMilliseconds": 158.64656300000024,
+          "positionsSha256": "a19ad234ef6679f2703fdde666849a59262f6fc6267e8485f0cc270c111db0db",
+          "indicesSha256": "b9a3a87dea2113455db91f26a58a55121915861b5275772290858cd9328fcf03",
+          "normalsSha256": "995ebe32aca237a6a4e97e19d71100bf38c50df3dbefd42fe26ed287b654c110"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 20156,
+          "triangles": 38773,
+          "milliseconds": 29.830103999998755,
+          "baselineMilliseconds": 172.48193699999865,
+          "positionsSha256": "ff525dab68c4526171faab1fccfb21d3f34c6c66f57998886efbdc5676378e34",
+          "indicesSha256": "0c4c483b3c44323315548b85a79a9325966748bc20b1e3e387c7f04600787af0",
+          "normalsSha256": "59b5e1f2872e03fd572864fae74ed2640cc44adf620e0963af44828539ad281a"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 21472,
+          "triangles": 41432,
+          "milliseconds": 34.445402999999715,
+          "baselineMilliseconds": 205.58901700000024,
+          "positionsSha256": "a7fe77cede2837f4cb0ac1debcde5cafdf8f4bfcdf8ca0c3cd543f66e2c2a9bf",
+          "indicesSha256": "ef070bcf8288fb23cd549491b860d40ada6bd928bf32c68fccdabc84c90b394f",
+          "normalsSha256": "c710e3057d79745c80d6d6b974f3b45a08681eea819510aad84b2ccf0c0d48a5"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 29878,
+          "triangles": 57680,
+          "milliseconds": 38.362497000000076,
+          "baselineMilliseconds": 156.0959640000001,
+          "positionsSha256": "acc1a0cd2b65e1d0caddf073121b175c466d29a24c1518450b2e0895b53c7a38",
+          "indicesSha256": "445b2812e24434f19d3b1ac4be47f5a8a584f453ba29adeeaa5a3f4e3e98b943",
+          "normalsSha256": "707b5cdc17106b424dab3db0c2bd5f4869ea64d4cfbc0391df0ff00f237629dd"
+        }
+      ]
+    },
+    {
+      "tile": "35_31_37",
+      "triangles": 418771,
+      "milliseconds": 457.8935309999997,
+      "baselineMilliseconds": 1552.6293209999985,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 13929,
+          "triangles": 26624,
+          "milliseconds": 64.9730099999997,
+          "baselineMilliseconds": 291.5824510000002,
+          "positionsSha256": "c1812e6797d4ada33574cc1278bc3fcea6e5c9dfab23cd7b17dbc9fa29b76b19",
+          "indicesSha256": "945938f5c8d30991190cba360bbe8a679eca02d5a7db0167f054c2ad91daf3aa",
+          "normalsSha256": "0fd451e4b82d2fa653f782bac407983044093fedf1bd18c77d225fb2e7a148da"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 21631,
+          "triangles": 41546,
+          "milliseconds": 136.26281799999924,
+          "baselineMilliseconds": 145.08457699999963,
+          "positionsSha256": "674ba07d6c8af51d1ab9b23388c18d0b7dc5f8d1dbf30814741a094fe75aca30",
+          "indicesSha256": "91de25ba60eb206a96c455422e8ad913633e0e8e8f505b4e59d879391c72e602",
+          "normalsSha256": "ae07122d97ba7e61f16194d9aa4d7245f39fac5a55e83fc52a246f332ee6226d"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 23704,
+          "triangles": 45450,
+          "milliseconds": 88.77933400000074,
+          "baselineMilliseconds": 203.59984299999996,
+          "positionsSha256": "6e5c003c6d4deae9ebdae9b530ea0ef7044801c9869acb1e1085cafe731b4b4f",
+          "indicesSha256": "83f8454982c2c6bb5280d824d1d758a74cf80a4da9bbdd3441375b711726ae10",
+          "normalsSha256": "7c38124a50199647d7b4549534c5f7d18255e3ede3e2ead8087f5878347e6eea"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 28601,
+          "triangles": 54725,
+          "milliseconds": 33.06598699999995,
+          "baselineMilliseconds": 205.11118100000022,
+          "positionsSha256": "3c08cee7b21b7aaaa78867ceb9ab1d815b2955b00f04bab4d5b1a6e9c9faea96",
+          "indicesSha256": "1d1fb5c66a39114c691e8bf0d2f2bbbdf25835410d3afc12e5794f156ec68de9",
+          "normalsSha256": "da5d5eca465ce1d29843d594696823a86a331105701128f36de2d88cbb7c8481"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 34306,
+          "triangles": 66488,
+          "milliseconds": 40.87688800000069,
+          "baselineMilliseconds": 242.09208099999887,
+          "positionsSha256": "a96fb6c06d35a7c17576250dff222b58c33f133957ff9717b74c7c1f58d68acd",
+          "indicesSha256": "aebe998286c718edf02d10c768da38b6e5e98b0bdd6cff2fcca463840c74a451",
+          "normalsSha256": "c22edbd8e62f35ccc94557fa8715fd033b17efa458937e85bc0d32db3073e877"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 34719,
+          "triangles": 67836,
+          "milliseconds": 30.219245000000228,
+          "baselineMilliseconds": 165.51130100000046,
+          "positionsSha256": "32d6c040542b845b7070003e5682fac42aabd18e3d008557356b9a9f83f81450",
+          "indicesSha256": "7374a541cc9db640c7543d2ae056ba365fcd0567c070a554daf8b5bcb760cf23",
+          "normalsSha256": "4b5eba4a61ed3f8fb134188e30ded478eac49eb9956a0a992ca0c19637917159"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 38787,
+          "triangles": 74973,
+          "milliseconds": 31.173984999999448,
+          "baselineMilliseconds": 147.7346149999994,
+          "positionsSha256": "ad83ed4bb7d1cf2b9c8311de662722f85a88b886888a8ea45a4bd973925ec001",
+          "indicesSha256": "ccd12304631bccfbe8799e5b9146223c15ac93d42c4532f518e46002bcc461a3",
+          "normalsSha256": "1e9b5495d2d9ba195057547b9747ff624e832f7876b7783b3b618f8e83d6a670"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 21302,
+          "triangles": 41129,
+          "milliseconds": 32.542263999999705,
+          "baselineMilliseconds": 151.91327199999978,
+          "positionsSha256": "120d194c4cd1325149b841e8287c3a041bf1951d31bbeacf642e746d850d55e3",
+          "indicesSha256": "52fccb4bc27b3c162f60e71cd231f521a7009f5de3787244b9c1af536f66ce43",
+          "normalsSha256": "506842b41ee37ade7edd152f49321552280e2a7b9a050faf7ce6a1e2dba42c5a"
+        }
+      ]
+    },
+    {
+      "tile": "36_30_36",
+      "triangles": 441538,
+      "milliseconds": 287.30921699999817,
+      "baselineMilliseconds": 1271.1705379999985,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 23154,
+          "triangles": 44784,
+          "milliseconds": 71.69724799999858,
+          "baselineMilliseconds": 171.66124900000068,
+          "positionsSha256": "368d8b4e6fa802ffcd154df99f10e371c0a6ec24e4154e2cca752356f72c9d02",
+          "indicesSha256": "26bd8bf0e11b3c649064da597aadd595b90abae0f8dabe7d6cab8ae44de42add",
+          "normalsSha256": "cb319e5b321de1dd04c6705060ed5aae40ed796d0a59db52b15c4cc05f8f6f12"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 30034,
+          "triangles": 58188,
+          "milliseconds": 31.32524100000046,
+          "baselineMilliseconds": 160.78846899999917,
+          "positionsSha256": "cc7c70081b66e403468248c72590cc3807a5d9f1a8769cda126893ba09ab6d19",
+          "indicesSha256": "e9652f6d6143decf09ac496e0c71fce5c1729b216ba81fc533034092b8903a10",
+          "normalsSha256": "7e5c7bf90ee691dec8759853889d4b0fdced9e72d4e982288ed36dce6e445128"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 30706,
+          "triangles": 58895,
+          "milliseconds": 30.904952000000776,
+          "baselineMilliseconds": 156.8568839999989,
+          "positionsSha256": "e087d761ebc554e4fc5b72f111b9f000833abab16000abfeef6ce9c2ca179e51",
+          "indicesSha256": "f9da6568274acddcc8e2518197a0811b545d91f23a82d71fab876aca07d0f69c",
+          "normalsSha256": "3fb7fd317549e62507e34a476de721215a24ad07006b988bcefec355037ec3d4"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 28142,
+          "triangles": 54569,
+          "milliseconds": 29.939667000000554,
+          "baselineMilliseconds": 160.57196599999952,
+          "positionsSha256": "39f5d3ed62ab0ebd669fcffcdb3ef864f666d85781245da2cc36d6f2555dab4d",
+          "indicesSha256": "db98b3ec1a20d5d5d30b8e92dc68c575f0263a36958421fba84cdb66daefca1e",
+          "normalsSha256": "371486c3b44e41fc063364d75ed37bba921e27b035650123af52677b21fc4b9e"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 20339,
+          "triangles": 39244,
+          "milliseconds": 25.80512599999929,
+          "baselineMilliseconds": 147.41493599999922,
+          "positionsSha256": "ec4d4f920acd2ad82b800f1b4342f0c398af2772efa2d671d6be180c7e05e735",
+          "indicesSha256": "457dd4cdde50d21bde0f7bdd942cffa94eaa829deec4c0212565da34a103077b",
+          "normalsSha256": "e1c331f62f4987543ef4febfa33e9ce81a6851c8aac4afca5bbd2f805aa689ce"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 30107,
+          "triangles": 58271,
+          "milliseconds": 31.399062999998932,
+          "baselineMilliseconds": 168.71694000000025,
+          "positionsSha256": "082997b91179bb6bd19cf30b7503672c03b484e6aeae276374d378d4a1ea63d9",
+          "indicesSha256": "2d905d513ea5cf22f7f67c49c7985f570786a719a7c19b360044ea2d4db2096a",
+          "normalsSha256": "060d8f03e94379968af63ff6a6f61f157603471d437d0f7cc7806e55cfbfdd5f"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 36083,
+          "triangles": 69378,
+          "milliseconds": 35.08531700000094,
+          "baselineMilliseconds": 151.41612700000042,
+          "positionsSha256": "27991af96d46b5bdf0df01b266fe142a1d889f5e0aafb8aab6188ec01bf107f3",
+          "indicesSha256": "1195660ec7891f85f55870858d14d986c0dda048ac314a9f3c9bb55d5f2b888d",
+          "normalsSha256": "56dd638ac9b8676dd5c376735651beeab7c8067bbf32275a1548f9ce1ded0aaf"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 30357,
+          "triangles": 58209,
+          "milliseconds": 31.152602999998635,
+          "baselineMilliseconds": 153.74396700000034,
+          "positionsSha256": "47cc71a93c29f2444ffddb7e124b3a189b5e31f1e4b88f41dc90b9f04b347f45",
+          "indicesSha256": "0e9be669a3d9cba37805fb5efa19a571f7460d0bd2239703553c405f5c471dad",
+          "normalsSha256": "2ff8c8123597d3b86827f6f3f7d1dbb310aed2bc6cfdf06cccaadc4f50dcb411"
+        }
+      ]
+    },
+    {
+      "tile": "36_30_37",
+      "triangles": 483418,
+      "milliseconds": 314.0033339999991,
+      "baselineMilliseconds": 2169.041460000002,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 15081,
+          "triangles": 28690,
+          "milliseconds": 57.89638500000001,
+          "baselineMilliseconds": 195.51207900000009,
+          "positionsSha256": "27634383bca3c7275fd144a2dc6eb7a652dc599a4d7f010ffabe5c7fa15f8559",
+          "indicesSha256": "643608c936c22df0a4ebfd0070fd36711a476ec5ec2484c2bd854a0197b7636c",
+          "normalsSha256": "5cd8f448b3ee8ab40aefb42c186570dbbb36173df82f117fd6e265e4c436e8f3"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 16205,
+          "triangles": 31120,
+          "milliseconds": 27.388451999999234,
+          "baselineMilliseconds": 205.003345000001,
+          "positionsSha256": "0fed4e2ab888b14d7232796125a983dc36c19457c77eca5e3be63264c21f3f28",
+          "indicesSha256": "f02002bd0e8448aac08bfb9eefde1a2e07aeccd0a0b2621376ab76df96a7a3b9",
+          "normalsSha256": "7b6012e19fa83e0e5cb0f7d094652129f30d744079d112a13cb3c7d3c189e0ec"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 40752,
+          "triangles": 79207,
+          "milliseconds": 36.61963800000012,
+          "baselineMilliseconds": 327.40183100000104,
+          "positionsSha256": "2bee80006aa89daa396b45f36a5d143989e0b1ce0d2fd4c08c72cb7d28f11348",
+          "indicesSha256": "ec36c17b01cd1fc2a53c5b7c9adc73ea0f4c7c999af2ec4b7ded03a4d7f2cd5a",
+          "normalsSha256": "48c2ad8e78105d2270ab51fd55cd02d53ea23b128ff68b7ec02a966e70d985f3"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 45690,
+          "triangles": 88488,
+          "milliseconds": 33.53832499999953,
+          "baselineMilliseconds": 879.6572809999998,
+          "positionsSha256": "68413b1961c15f36c5bb0d83ed66a31c18cf35c638e9767c1e4f5690a630304f",
+          "indicesSha256": "6e2fa60a04283752b8dcf74098baea9cf352bece8bb53c4c3fbbbc88a26162e7",
+          "normalsSha256": "942d1f3814989922f2d7450b45479b58c08db7c0538d445dca2bb5f5f9a28ef4"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 36879,
+          "triangles": 70924,
+          "milliseconds": 31.963787999999113,
+          "baselineMilliseconds": 213.5206330000001,
+          "positionsSha256": "9849d482f243f8527c8a22a667ab5e2bc358bafecebd03f4625dcc53aba6185e",
+          "indicesSha256": "722a142e27634c5d2cc93f5a424f7b859803e960d577c5fc03e21f3bba89bdca",
+          "normalsSha256": "8801122839f67a823512c89cbdb38c3a2ab79540bf65c3491e4450aee8cf74b9"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 23351,
+          "triangles": 45011,
+          "milliseconds": 32.8687919999993,
+          "baselineMilliseconds": 119.14632100000017,
+          "positionsSha256": "2c74b4750eeeef7d87bef26c929eeb19e70d631c58779a18c350fd41a8597dc1",
+          "indicesSha256": "027c1f2127444615b226d3acaa55ad0b39e36e3330aaf24e0aacd18411b2e2ea",
+          "normalsSha256": "e4d038e95693c76ffc29c81054863b107db63cfc6bf3834edba5f8aa3e5181e5"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 18901,
+          "triangles": 35888,
+          "milliseconds": 49.249879000000874,
+          "baselineMilliseconds": 112.4909260000004,
+          "positionsSha256": "cbc6f936a7262f5834ce4e4cdf9c9e497da598f0ff35e3bf36ed1e0bf7939683",
+          "indicesSha256": "657bfe61bbb1566feb2ee194339b4279ee24fb83ae0d18857ae04b1256c4b155",
+          "normalsSha256": "5b476cfdf5b11b2da68239578ddf88f71cac4f631f6e7b89c926e84f1e81f1d9"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 53315,
+          "triangles": 104090,
+          "milliseconds": 44.4780750000009,
+          "baselineMilliseconds": 116.30904399999963,
+          "positionsSha256": "1d8c8ec4a2b80e0a3e59f8cf56505f12779b5b3ab011118c198948753e06d7b0",
+          "indicesSha256": "57f28c74ad5093446ec132e7a6fe06178e58b61f99ae27c8122fa80754abfadb",
+          "normalsSha256": "3484c9591980eaa21d75fe28b3389b9450758e50524301117ebdb75c2a4cbcd3"
+        }
+      ]
+    },
+    {
+      "tile": "36_31_36",
+      "triangles": 388551,
+      "milliseconds": 259.969930999996,
+      "baselineMilliseconds": 875.4285540000019,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 32988,
+          "triangles": 64291,
+          "milliseconds": 58.137917000000016,
+          "baselineMilliseconds": 117.55172299999867,
+          "positionsSha256": "0623d5a6ed47dc98a932689e9b689d800f7544455e948e51ac36b1d78baa74f5",
+          "indicesSha256": "cf0f16f902370aa8bcda60b8e193d1d96bd9d5bb107ac7c719017dbe72ccc254",
+          "normalsSha256": "2b08e305b935b98c559b08b252d0ca0e09c68ee0e296bc12698ceb5e468d4351"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 33974,
+          "triangles": 65866,
+          "milliseconds": 30.512613999999303,
+          "baselineMilliseconds": 111.32129600000007,
+          "positionsSha256": "0487a300643f12b65d1aca632460dea5cc3aac42fbe3aff52700b0e4499bef77",
+          "indicesSha256": "2aeff59cb06f9d0a7d88b174c81f8ba3f8171a3924a14c6fad016903f4d86b10",
+          "normalsSha256": "5cfb8d01a2648789f26297297b8cee133228cf3f367051ec91da5325beca5819"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 21911,
+          "triangles": 42033,
+          "milliseconds": 26.634377999998833,
+          "baselineMilliseconds": 101.53386099999989,
+          "positionsSha256": "31b60db41a920e64ec602fc312b825744f3167aeb9b3d444cc033d9fa4aebabf",
+          "indicesSha256": "a291b1ca65ce0ebb919458d9fc905a15caa9cefff2a559e647cbc1a3dcc3fa3d",
+          "normalsSha256": "c136e72be591f3cd2076256d20dde8ad99c2fec929bda6db001fa97cfccb198d"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 10044,
+          "triangles": 19066,
+          "milliseconds": 25.00403699999879,
+          "baselineMilliseconds": 99.88326999999845,
+          "positionsSha256": "474f7fab1b24b2f358f999d9de580a9f2e0b7399ab44d4a457a079898a787092",
+          "indicesSha256": "8df7a5d8aa1dc33700a233b5d76d1fa5bb75f4b9fc07c62f3cb3b9c90df7dbec",
+          "normalsSha256": "979a1a8994d340a1f311759917a2c11377d8f125bb933f39b45c25b23c8b5b17"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 26787,
+          "triangles": 51534,
+          "milliseconds": 28.925224000002345,
+          "baselineMilliseconds": 106.28539699999965,
+          "positionsSha256": "d852e98d96bf85ca4a5c2fb481b807510ec44ac302811b2a71724ef33eea1e56",
+          "indicesSha256": "d37f3a8daa30d314e803629e9abb15569fd5f5b4788300ae36182b62c840bc81",
+          "normalsSha256": "191289de4b50a201a24bdbcf5d7c3cce98acabdae5fa8483a9c2668318632892"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 25028,
+          "triangles": 47791,
+          "milliseconds": 29.453809999999066,
+          "baselineMilliseconds": 113.61065600000074,
+          "positionsSha256": "749dea7a00ea7675e6a93a0f4a69d562764558b1812213cc64d55f29f9688898",
+          "indicesSha256": "c4b3afc730f5cab8616c888089bf4f463489807ee262b3e0856d12824cf826a8",
+          "normalsSha256": "19f4e7335f4a8ee8647f829da0e33c27ae00a4182fb022756d2c6c4547cb9e8e"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 31795,
+          "triangles": 61894,
+          "milliseconds": 29.488057999999,
+          "baselineMilliseconds": 116.99796400000196,
+          "positionsSha256": "2529c192e66f05af050e6d5728a1e52e7df18137c99c60c5c77912bad8e26549",
+          "indicesSha256": "34e9625235968e239cd517884ef65e5857a2183a390730ebbca50cc055339455",
+          "normalsSha256": "2d4f3c8b9110f9bda34cea3abdb00b1f37690555048c78eb026167a4408775e5"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 18624,
+          "triangles": 36076,
+          "milliseconds": 31.813892999998643,
+          "baselineMilliseconds": 108.24438700000246,
+          "positionsSha256": "e3bb53fa51449a4ba9f3966983801578770cfa2e7f99ad6e88d6eacc29bb6ebd",
+          "indicesSha256": "5990e3ba3d274184663b1e92926b0008460891e7e43b29f252a17387449cc0a2",
+          "normalsSha256": "eeb95712deec4ab1c1e13b2fa72f74fa4c460d0972dbe0dbc9a49f5504345391"
+        }
+      ]
+    },
+    {
+      "tile": "36_31_37",
+      "triangles": 665861,
+      "milliseconds": 320.45339899999453,
+      "baselineMilliseconds": 1007.2252859999971,
+      "pieces": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "vertices": 35234,
+          "triangles": 67478,
+          "milliseconds": 60.319831000000704,
+          "baselineMilliseconds": 116.8097319999979,
+          "positionsSha256": "d75af9d83cfb64cb3307494bf7910391f8cb45c164548770746bda8a2b3f3e78",
+          "indicesSha256": "ce760a998301cc06e1c0b2b2332c04d6cbaa0922b3115ca386179daee07ed6ff",
+          "normalsSha256": "0e4ee9c45f2005a99900d4b1fe35b8979b443f49d55ab7503b0d42e166829e2c"
+        },
+        {
+          "start": [
+            64,
+            0,
+            0
+          ],
+          "vertices": 54148,
+          "triangles": 105223,
+          "milliseconds": 36.64922699999806,
+          "baselineMilliseconds": 117.45498399999997,
+          "positionsSha256": "34e3fc93d6733274c47fe9453d93b183503239444c2d648f31e75bca23a98271",
+          "indicesSha256": "1fcb5e70ae1e4f656ffc2dbc54fcace6c5128ed60e8a80a308fdcac47fd120fb",
+          "normalsSha256": "6957036591700cbdded1a4292bb9cd61e5ef5788d56d8cfa4bfe0855a26e8def"
+        },
+        {
+          "start": [
+            0,
+            64,
+            0
+          ],
+          "vertices": 38190,
+          "triangles": 73605,
+          "milliseconds": 31.977139000002353,
+          "baselineMilliseconds": 139.70772099999886,
+          "positionsSha256": "8a87d4b88b4b4b1f0a89a82cc0f205d7a30af3a9222a8a5db013dc6f234c9ddc",
+          "indicesSha256": "c4d0ad24df44df3615ce76cc72176efdecb322f6aa599dc7b238fe7a6f2df895",
+          "normalsSha256": "6328c238278ff2904688e60bb8be92e43527d84f714b0617ef849bd3bb134e54"
+        },
+        {
+          "start": [
+            64,
+            64,
+            0
+          ],
+          "vertices": 16666,
+          "triangles": 31837,
+          "milliseconds": 26.675310999999056,
+          "baselineMilliseconds": 106.05782299999919,
+          "positionsSha256": "bfd42dfc13f380d29583a5ee817f8820e74f0c383247b5aa3cf5d3785e5c216b",
+          "indicesSha256": "9a79d908c33d1e71dab32348054208b7923d46c459a187f2ab1db52d4b35e7ec",
+          "normalsSha256": "0a4f1fdf7530055ec5966b5d582ab5954f6a5624be8437aee13311c019d074e7"
+        },
+        {
+          "start": [
+            0,
+            0,
+            64
+          ],
+          "vertices": 55043,
+          "triangles": 106811,
+          "milliseconds": 37.607130999997025,
+          "baselineMilliseconds": 128.0064319999983,
+          "positionsSha256": "a36d4b30b0bee481221a2df989fea97b0ccb8e7307d015c5c9320adddaf4988b",
+          "indicesSha256": "c111cbcad2e9d03e3ad586a3bb6d42f7adf9e852033de495b95039902e0fdd05",
+          "normalsSha256": "42c1d7c22a5fa4b3b20900ac5c5aa42997ba8c6df443e24ff6ba4c01804720de"
+        },
+        {
+          "start": [
+            64,
+            0,
+            64
+          ],
+          "vertices": 73827,
+          "triangles": 144109,
+          "milliseconds": 39.591661999998905,
+          "baselineMilliseconds": 140.41385600000285,
+          "positionsSha256": "491c1272375ff937f72151d8d17feb58c47ed7515185d26c1b593b355a0822f8",
+          "indicesSha256": "489d784599ceca1c9a558ce7701c2c2e68e005c3bbaaf2fe0bc7f4dd55a50c99",
+          "normalsSha256": "286cffd87db2dc239f8e895a70db431483ba0a384aa9efb3e945f40ec79a9271"
+        },
+        {
+          "start": [
+            0,
+            64,
+            64
+          ],
+          "vertices": 47459,
+          "triangles": 92704,
+          "milliseconds": 49.083997999998246,
+          "baselineMilliseconds": 122.26058900000135,
+          "positionsSha256": "2a89a5f6a7456599314738f5b52852dc0809566261591d84c9f1db3f32f33752",
+          "indicesSha256": "76f5065d4cb3835e74be7df84aaa99bf968da94c69ab0a2c43e5ab58a401570d",
+          "normalsSha256": "ad5cd956fd78ab21161da15f6ecadc3b5db9163586778777d013c5a4cae63c21"
+        },
+        {
+          "start": [
+            64,
+            64,
+            64
+          ],
+          "vertices": 23002,
+          "triangles": 44094,
+          "milliseconds": 38.54910000000018,
+          "baselineMilliseconds": 136.51414899999872,
+          "positionsSha256": "fe05527903a61214e011ed4fd841fd89ab9b70998b1eecdbf87d2e7baa59a6e5",
+          "indicesSha256": "90eb08b91412e1fdc568d6a93ce7d57fd4432e709ace430fb964b6f997ac6fb4",
+          "normalsSha256": "49ff6d7b38e63cba6f3e3d7a53e6eafc2389adbbc06b52fe8a0d54daf053109e"
+        }
+      ]
+    }
+  ]
+}

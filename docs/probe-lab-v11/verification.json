@@ -1,0 +1,47 @@
+{
+  "presetButtons": [
+    "01Apical long axis↗",
+    "02Parasternal long axis↗",
+    "03Ventricular short axis↗",
+    "04Atrial / TEE side↗"
+  ],
+  "mouseMapping": {
+    "horizontal": "roll",
+    "vertical": "tilt",
+    "altHorizontal": "fan",
+    "contactPointUnchanged": true
+  },
+  "modes": {
+    "captureOnFirstClick": true,
+    "orbitReleases": true,
+    "escapeReleases": true
+  },
+  "unreviewedLabels": [
+    "Long-axis reference",
+    "Crossed long-axis reference",
+    "Short-axis reference",
+    "Opposite-side reference"
+  ],
+  "meshes": {
+    "phased": {
+      "triangles": 5804,
+      "drawCalls": 8
+    },
+    "tee": {
+      "triangles": 1888,
+      "drawCalls": 4
+    }
+  },
+  "referenceTorso": {
+    "compressedBytes": 495691,
+    "triangles": 30096,
+    "groups": [
+      "skin",
+      "bones",
+      "spine",
+      "heart"
+    ],
+    "licensed": true,
+    "donorRegistration": false
+  }
+}

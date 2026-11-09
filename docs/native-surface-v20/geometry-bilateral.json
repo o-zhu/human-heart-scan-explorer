@@ -1,0 +1,64 @@
+{
+  "schema": "native-surface-v20.1",
+  "id": "bilateral",
+  "label": "Native \u00b7 noise-reduction experiment",
+  "scalarSmoothing": true,
+  "method": "3D intensity bilateral filter followed by the same raw-value isosurface threshold",
+  "sourceSpacingUm": 19.85,
+  "resampled": false,
+  "rawThreshold": 17133.4,
+  "sigmaSpatialVoxels": 0.65,
+  "sigmaSpatialUm": 12.902500000000002,
+  "sigmaRangeRawIntensity": 600.0,
+  "radiusVoxels": 2,
+  "rawBoundaryBandVoxels": 2,
+  "boundaryBandCaveat": "The two-voxel raw boundary band preserves measured crop edges but its transition can show a local filtering artifact.",
+  "originalRawSamplesChanged": false,
+  "maximumDerivedScalarValueChange": 428.3994140625,
+  "thresholdedSamples": {
+    "rawAbove": 1259841,
+    "filteredAbove": 1243828,
+    "aboveToBelow": 27170,
+    "belowToAbove": 11157,
+    "rawAboveRetainedFraction": 0.978433786485755
+  },
+  "topology": {
+    "vertices": 533438,
+    "triangles": 1026542,
+    "edges": 1551007,
+    "components": 6701,
+    "eulerCharacteristic": 8973,
+    "boundaryEdges": 22388,
+    "nonmanifoldEdges": 0,
+    "roiBoundaryVertices": 22388,
+    "pinnedVertices": 22388,
+    "zeroAreaTriangles": 0,
+    "areaMm2": 125.52705703219713,
+    "boundaryPolicy": "Every topological boundary and nonmanifold edge endpoint is pinned; the ROI is deliberately open."
+  },
+  "topologyPreserved": false,
+  "componentRemoval": false,
+  "decimation": false,
+  "surfaceDistances": {
+    "method": "20,000 deterministic area-weighted barycentric samples per direction, closest triangle via vtkStaticCellLocator; sampled, not a Hausdorff guarantee.",
+    "rawToFiltered": {
+      "samples": 20000,
+      "medianUm": 0.9188871142773969,
+      "p95Um": 12.015822809404286,
+      "p99Um": 37.49592763693456,
+      "maximumSampledUm": 116.11948882772356,
+      "rmsUm": 7.343324259338346
+    },
+    "filteredToRaw": {
+      "samples": 20000,
+      "medianUm": 0.567456044833524,
+      "p95Um": 3.9357565268470753,
+      "p99Um": 6.2978758502097945,
+      "maximumSampledUm": 11.316092877262053,
+      "rmsUm": 1.7661343135349186
+    }
+  },
+  "conclusion": "The filter can remove noise-scale components and can also remove real weak thin structures. Compare with native reference and the untouched source slice; no anatomical no-loss guarantee.",
+  "peakRssMiB": 400.76171875,
+  "seconds": 3.417275805004465
+}

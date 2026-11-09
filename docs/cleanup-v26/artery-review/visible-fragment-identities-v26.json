@@ -1,0 +1,221 @@
+{
+  "displayVersion": "v26",
+  "sourceHfmSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "componentCount": 1406359,
+  "points": [
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        245,
+        465
+      ],
+      "sourceXYZ": [
+        918.63818359375,
+        1142.6256103515625,
+        482.9704895019531
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        325,
+        450
+      ],
+      "sourceXYZ": [
+        964.9324340820312,
+        1080.953857421875,
+        473.9571533203125
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        285,
+        550
+      ],
+      "sourceXYZ": [
+        946.1182861328125,
+        1150.3824462890625,
+        538.0404052734375
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        320,
+        575
+      ],
+      "sourceXYZ": [
+        969.3780517578125,
+        1153.728271484375,
+        553.7763061523438
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        335,
+        605
+      ],
+      "sourceXYZ": [
+        980.6586303710938,
+        1169.2867431640625,
+        571.0623168945312
+      ],
+      "component": 287135
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        300,
+        635
+      ],
+      "sourceXYZ": [
+        959.1774291992188,
+        1176.5411376953125,
+        589.3154907226562
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        280,
+        680
+      ],
+      "sourceXYZ": [
+        948.4380493164062,
+        1190.861328125,
+        615.2794189453125
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        390,
+        400
+      ],
+      "sourceXYZ": [
+        1007.0953979492188,
+        1020.1464233398438,
+        437.593994140625
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        365,
+        460
+      ],
+      "sourceXYZ": [
+        992.1417236328125,
+        1068.892578125,
+        481.1886901855469
+      ],
+      "component": 7
+    },
+    {
+      "case": "pulmonary",
+      "comparisonPixel": [
+        260,
+        710
+      ],
+      "sourceXYZ": [
+        937.4881591796875,
+        1201.2203369140625,
+        631.9913330078125
+      ],
+      "component": 7
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        360,
+        420
+      ],
+      "sourceXYZ": [
+        683.090087890625,
+        999.3455810546875,
+        458.7751770019531
+      ],
+      "component": 7
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        250,
+        540
+      ],
+      "sourceXYZ": [
+        614.8306274414062,
+        1154.192626953125,
+        547.5908813476562
+      ],
+      "component": 7
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        420,
+        560
+      ],
+      "sourceXYZ": [
+        732.9488525390625,
+        976.3530883789062,
+        578.7830810546875
+      ],
+      "component": 7
+    },
+    {
+      "case": "aortic",
+      "comparisonPixel": [
+        400,
+        650
+      ],
+      "sourceXYZ": [
+        727.3909301757812,
+        1212.94140625,
+        616.9158935546875
+      ],
+      "component": 7
+    }
+  ],
+  "components": [
+    {
+      "component": 7,
+      "vertices": 6202459,
+      "triangles": 15863437,
+      "v26Excluded": false,
+      "largestComponent": true
+    },
+    {
+      "component": 287135,
+      "vertices": 38,
+      "triangles": 70,
+      "v26Excluded": false,
+      "largestComponent": false,
+      "lowerFineXYZ": [
+        979.4915083543146,
+        1166.1839322499427,
+        566.8497138933394
+      ],
+      "upperFineXYZ": [
+        988.1419089036393,
+        1172.4330510414284,
+        573.6625009536888
+      ],
+      "bboxDiagonalMm": 1.0052647801278323
+    }
+  ],
+  "scope": "Exact production-camera first visible mesh surface, complete uncut mesh connectivity, no biological classification.",
+  "reviewStage": "First v26 candidate, before actual-geometry membership refinement",
+  "isFinalReleaseAcceptance": false,
+  "vertexFlagsDecodedSha256AtReview": "c2674c639c084ee04589979020930032e5305fc473f25a138186097526b715f9",
+  "reviewedArterialMaskDecodedSha256": "8ec1d5c2e550804f931665b940c5a0a94411f9c235a0f0c90c7433456a554fcd"
+}

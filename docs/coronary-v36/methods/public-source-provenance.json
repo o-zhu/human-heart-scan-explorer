@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-07",
+  "purpose": "Public research-data provenance for the coronary display derivative; not a private clinical record upload.",
+  "authoritativeSources": [
+    {
+      "url": "https://human-organ-atlas.esrf.fr/",
+      "evidence": "The official portal says each dataset on the portal is distributed under CC-BY-4.0 and images are released openly for exploration and reuse."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12978218/",
+      "doi": "10.1126/sciadv.adz2240",
+      "evidence": "The Human Organ Atlas publication states the portal data are made available under CC-BY-4.0, reports informed donor consent, lists these three coded donors, and describes public browser visualization and download."
+    }
+  ],
+  "inputs": [
+    {
+      "specimen": "LADAF-2021-17",
+      "datasetId": "1659197537",
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+      "doi": "10.15151/ESRF-DC-1634390196",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/"
+    },
+    {
+      "specimen": "S-20-29",
+      "datasetId": "1773963465",
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+      "doi": "10.15151/ESRF-DC-1773964017",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/"
+    },
+    {
+      "specimen": "S-20-28",
+      "datasetId": "1966162746",
+      "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+      "doi": "10.15151/ESRF-DC-1966163810",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/19.85um_complete-organ_bm18/"
+    }
+  ],
+  "derivative": "Prepared grayscale visualization fields generated solely from the already-published Heart Explorer source volumes and source-guided region maps. No private records, identifying donor names, or new personal information are added.",
+  "destination": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "sameExistingPublicSite": true,
+  "attribution": "Original source DOI, authors, and CC-BY attribution remain in the existing dataset citations and source manifests."
+}

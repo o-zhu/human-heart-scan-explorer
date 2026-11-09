@@ -1,0 +1,264 @@
+{
+  "schema": "heart-reviewed-mask-atlas-verification-v32",
+  "version": 1,
+  "builder": "scripts/prepare-reviewed-mask-atlas-v32.py",
+  "builderSha256": "0e23fa6fbe8022535db9eb841af1d32a30763fcee07e1f1b0494f93ea9939399",
+  "sourceManifests": {
+    "lumen": {
+      "url": "./assets/cleanup-v30/lumen-manifest.json",
+      "sha256": "cdea0c182475a0daf3db7b8cf53ec99e3d9fc53bc5d61aaba33b2e359cbcd1a6"
+    },
+    "surface": {
+      "url": "./assets/cleanup-v30/surface-manifest.json",
+      "sha256": "f12cc01dc5151df447c8c4456b5309ace7be642906923a395100eaefa03ea43d"
+    }
+  },
+  "sourceFilesChanged": false,
+  "sourceBytesCompared": 104449180,
+  "mismatchedBytes": 0,
+  "verification": "Every source byte reconstructed from the final serialized index/payload and compared with its verified original; exact gzip round trip; all padding zero.",
+  "fields": [
+    {
+      "id": "lumen:atrial",
+      "sourceBytes": 19885320,
+      "logicalVoxels": 156873080,
+      "maskedVoxels": 16941205,
+      "nonzeroStoredBytes": 2392046,
+      "brickGridXYZ": [
+        6,
+        76,
+        91
+      ],
+      "bricks": 41496,
+      "nonzeroBricks": 8976,
+      "uniqueBricksReferenced": 8311,
+      "newGlobalBricks": 8311,
+      "sourceBytesCompared": 19885320,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "8011250557ade5201d00d3fa9a7b9cc95e885bac6a2c0519e484d8ee5384f6e1",
+      "exact": true
+    },
+    {
+      "id": "lumen:arterial",
+      "sourceBytes": 29192000,
+      "logicalVoxels": 231400000,
+      "maskedVoxels": 1169504,
+      "nonzeroStoredBytes": 224625,
+      "brickGridXYZ": [
+        11,
+        56,
+        100
+      ],
+      "bricks": 61600,
+      "nonzeroBricks": 3753,
+      "uniqueBricksReferenced": 3725,
+      "newGlobalBricks": 3703,
+      "sourceBytesCompared": 29192000,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "5e296ed795b22ef90a0b3c4dc7959b94e1c6f7868753dfad715297388c7efa38",
+      "exact": true
+    },
+    {
+      "id": "lumen:valve-region",
+      "sourceBytes": 7740900,
+      "logicalVoxels": 61640500,
+      "maskedVoxels": 733345,
+      "nonzeroStoredBytes": 150699,
+      "brickGridXYZ": [
+        7,
+        39,
+        59
+      ],
+      "bricks": 16107,
+      "nonzeroBricks": 2607,
+      "uniqueBricksReferenced": 2599,
+      "newGlobalBricks": 2565,
+      "sourceBytesCompared": 7740900,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "404b8c552c906d13b72dba3940883f74188d7b688873a659a75e92cc01c9677d",
+      "exact": true
+    },
+    {
+      "id": "lumen:rv",
+      "sourceBytes": 25027200,
+      "logicalVoxels": 198132000,
+      "maskedVoxels": 1181662,
+      "nonzeroStoredBytes": 294566,
+      "brickGridXYZ": [
+        9,
+        55,
+        99
+      ],
+      "bricks": 49005,
+      "nonzeroBricks": 5570,
+      "uniqueBricksReferenced": 5536,
+      "newGlobalBricks": 5475,
+      "sourceBytesCompared": 25027200,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "aac23435be1a7484d4ed9aed86c78f69a6c85a2af800425f7640ce860af7a342",
+      "exact": true
+    },
+    {
+      "id": "local:lvot-perivalvular-refinement",
+      "sourceBytes": 5587296,
+      "logicalVoxels": 44698368,
+      "maskedVoxels": 3563663,
+      "nonzeroStoredBytes": 824674,
+      "brickGridXYZ": [
+        5,
+        37,
+        61
+      ],
+      "bricks": 11285,
+      "nonzeroBricks": 5426,
+      "uniqueBricksReferenced": 5418,
+      "newGlobalBricks": 5385,
+      "sourceBytesCompared": 5587296,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+      "exact": true
+    },
+    {
+      "id": "local:pulmonary-regularized-v30",
+      "sourceBytes": 6687824,
+      "logicalVoxels": 52418080,
+      "maskedVoxels": 2116579,
+      "nonzeroStoredBytes": 504762,
+      "brickGridXYZ": [
+        5,
+        40,
+        72
+      ],
+      "bricks": 14400,
+      "nonzeroBricks": 3719,
+      "uniqueBricksReferenced": 3706,
+      "newGlobalBricks": 3673,
+      "sourceBytesCompared": 6687824,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+      "exact": true
+    },
+    {
+      "id": "local:tricuspid-rv-regularized-v30",
+      "sourceBytes": 7241640,
+      "logicalVoxels": 56758800,
+      "maskedVoxels": 1564894,
+      "nonzeroStoredBytes": 377195,
+      "brickGridXYZ": [
+        5,
+        53,
+        59
+      ],
+      "bricks": 15635,
+      "nonzeroBricks": 3189,
+      "uniqueBricksReferenced": 3182,
+      "newGlobalBricks": 3135,
+      "sourceBytesCompared": 7241640,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+      "exact": true
+    },
+    {
+      "id": "local:right-perivascular-v29",
+      "sourceBytes": 3087000,
+      "logicalVoxels": 24500000,
+      "maskedVoxels": 831493,
+      "nonzeroStoredBytes": 271258,
+      "brickGridXYZ": [
+        8,
+        31,
+        25
+      ],
+      "bricks": 6200,
+      "nonzeroBricks": 1755,
+      "uniqueBricksReferenced": 1754,
+      "newGlobalBricks": 1729,
+      "sourceBytesCompared": 3087000,
+      "mismatchedBytes": 0,
+      "reconstructedSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "exact": true
+    }
+  ],
+  "fieldOrder": [
+    "lumen:atrial",
+    "lumen:arterial",
+    "lumen:valve-region",
+    "lumen:rv",
+    "local:lvot-perivalvular-refinement",
+    "local:pulmonary-regularized-v30",
+    "local:tricuspid-rv-regularized-v30",
+    "local:right-perivascular-v29"
+  ],
+  "globalUniqueBricks": 33976,
+  "indexEntries": 215728,
+  "indexTexture": {
+    "format": "R32UI",
+    "width": 1024,
+    "height": 211,
+    "entryCount": 215728,
+    "offset": 32,
+    "byteLength": 864256,
+    "logicalBytes": 862912
+  },
+  "payloadTexture": {
+    "format": "RGBA8",
+    "width": 2048,
+    "height": 2124,
+    "brickCount": 33976,
+    "offset": 864288,
+    "byteLength": 17399808,
+    "logicalBytes": 17395712
+  },
+  "budget": {
+    "sourceMaskBytes": 104449180,
+    "atlasTextureBytes": 18264064,
+    "savedTextureBytes": 86185116,
+    "maximumTextureBytes": 67108864,
+    "maximumTextureDimension": 4096,
+    "reductionPercent": 82.51392303893626
+  },
+  "asset": {
+    "url": "./assets/reviewed-mask-v32/atlas.bin.gz",
+    "format": "RMA1-gzip",
+    "compressedBytes": 3080744,
+    "decodedBytes": 18264096,
+    "sha256": "a8b34103a8d58b27a66080366d433b8b21bca2a42b3975d0e0065ca5e82023d5",
+    "decodedSha256": "96cf62fdf734050d125bb851e63027ca11aec9c217f7cecdfb69de3202d380ca"
+  },
+  "transport": {
+    "url": "./assets/reviewed-mask-v32/atlas.refs.gz",
+    "format": "RMR1-gzip",
+    "compressedBytes": 139441,
+    "decodedBytes": 1136096,
+    "sha256": "fd3fbb13a44cf3c42d269a9b5cbcdb39adeac198dc0f7799b46a40b0b5acccfc",
+    "decodedSha256": "3a520b5bb6d0d66972b1139f915676cfbae1defb1758d5ab4bf1c4a72cca5537"
+  },
+  "referencePlan": {
+    "headerUint32LE": [
+      827477330,
+      1,
+      8,
+      864256,
+      33976,
+      32,
+      864288,
+      271808
+    ],
+    "recordCount": 33976,
+    "recordLayout": "uint32 sourceFieldIndex, uint32 sourceLocalBrickOrdinal; record 0 supplies atlas brick ID 1.",
+    "ordinalConvention": "X-fast within source storageDimensionsXYZ rounded up to 8-byte bricks.",
+    "selection": "First field/grid occurrence of each nonzero brick ID in manifest order.",
+    "reconstructedFullAtlasSha256": "96cf62fdf734050d125bb851e63027ca11aec9c217f7cecdfb69de3202d380ca",
+    "fullAtlasBytesCompared": 18264096,
+    "mismatchedBytes": 0,
+    "sourceBytesChanged": false,
+    "edgePaddingZero": true
+  },
+  "manifest": {
+    "path": "public/assets/reviewed-mask-v32/manifest.json",
+    "bytes": 9596,
+    "sha256": "23466336a7becdaef676bca4a7347ebce5b5899bc3269edad5fe5080e09ef2b2"
+  },
+  "passed": true,
+  "limits": "Byte equivalence and storage-budget verification; not browser/GPU performance or new anatomical validation."
+}

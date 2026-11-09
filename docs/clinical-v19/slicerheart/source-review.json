@@ -1,0 +1,61 @@
+{
+  "sourceUrl": "https://github.com/SlicerHeart/SlicerHeart/releases/download/TestingData/TruncalValve_4DCT.seq.nrrd",
+  "sourceSha256": "7573f1bc7ca92d7d1012eecf98211cfd9939c1d22d87aee1db91c8ab72031cfb",
+  "sourceBytes": 1267650314,
+  "decodedBytes": 1832957952,
+  "shapeZYXT": [
+    218,
+    391,
+    512,
+    21
+  ],
+  "spacingMm": [
+    0.599609375,
+    0.599609375,
+    0.6999999999999998
+  ],
+  "intensityUnits": "Stored CT scalar values; the NRRD does not declare a Hounsfield calibration.",
+  "sampledMin": -1024,
+  "sampledMax": 3071,
+  "sampledPercentiles": {
+    "0": -1024.0,
+    "0.1": -1023.0,
+    "1": -1021.0,
+    "5": -1005.0,
+    "25": -794.0,
+    "50": -129.0,
+    "75": 47.0,
+    "95": 565.0,
+    "99": 831.0,
+    "99.9": 1350.0,
+    "100": 3071.0
+  },
+  "phaseIndexValues": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "physicalPhaseTimesKnown": false,
+  "pathology": "Adolescent with repaired truncus arteriosus, as described by the official SlicerHeart sample registration.",
+  "exactAgeKnown": false,
+  "sexKnown": false,
+  "pairedUltrasoundIdentified": false
+}

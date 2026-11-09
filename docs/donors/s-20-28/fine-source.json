@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "identity": {
+      "maskSha256": "868bae1335b6e23c93d05931ab9d7a8a285422cc7135f9e8e666a5c664e04158",
+      "window": [
+        14938.0,
+        22708.0
+      ],
+      "fullXYZ": [
+        1905,
+        1905,
+        2033
+      ],
+      "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/19.85um_complete-organ_bm18/s2/",
+      "sourceSpacingUm": 79.4
+    },
+    "originXYZ": [
+      172,
+      356,
+      0
+    ],
+    "shapeXYZ": [
+      1433,
+      1313,
+      1957
+    ],
+    "sourceSpacingUm": 79.4,
+    "sourceFineDimensionsXYZ": [
+      1904,
+      1904,
+      2032
+    ],
+    "outsideSupportValue": 0,
+    "cleaned": true,
+    "quantitativeIntensityData": false,
+    "processing": "Support-selected source chunks decoded and windowed directly into cropped uint8. No full fine uint16 intermediate. Padding beyond acquired source is zero."
+  },
+  "sourceChunkCount": 1061,
+  "compressedSourceBytes": 3053996958,
+  "decodedDisplayBytes": 3682152253,
+  "nativeDetailSynthesized": false,
+  "sourceVoxelsOmittedByRegistration": 0
+}

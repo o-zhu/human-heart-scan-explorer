@@ -1,0 +1,123 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 704,
+    "decodedBrickReads": 704,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "checks": [
+    {
+      "case": {
+        "id": "lvot-y262",
+        "axis": 1,
+        "coordinate": 1044,
+        "target": [
+          1080,
+          1044,
+          1120
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.04536862003780717
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.10224208850422889,
+          0.016844243372674213,
+          -0.5436215694408573
+        ],
+        "_target": [
+          0.06238185255198487,
+          0.029300567107750464,
+          -0.04536862003780717
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 291605,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/lvot-y262-fine-xyz.npy"
+    },
+    {
+      "case": {
+        "id": "la-y316",
+        "axis": 1,
+        "coordinate": 1260,
+        "target": [
+          1270,
+          1260,
+          810
+        ],
+        "distance": 0.5
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.1474480151228733
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6457009645259234
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.1474480151228733
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 213132,
+      "fineXYZArray": "{source-cache}/cleanup-v28/locate/la-y316-fine-xyz.npy"
+    }
+  ],
+  "scope": "Unchanged v27 source geometry and cleanup. Actual production color render; diagnostic Float32 world-position attachment excludes visible measured cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

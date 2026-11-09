@@ -1,0 +1,96 @@
+{
+  "kind": "Local largest-crop native dataset check",
+  "description": "Pillow WebP decode and SHA-256 source-pixel checks. CPU codec timing only; no browser, GPU or network measurement.",
+  "samples": [
+    {
+      "donor": "LADAF-2021-17",
+      "path": "data/ultra-sections/x/0223.webp",
+      "crop": [
+        426,
+        74,
+        1181,
+        1897
+      ],
+      "encodedBytes": 833540,
+      "decodedBytes": 2240357,
+      "encodedSha256Matches": true,
+      "sourcePixelsSha256Matches": true,
+      "cpuDecodeMedianMs": 24.233,
+      "cpuDecodeSamplesMs": [
+        62.103,
+        26.662,
+        20.335,
+        23.884,
+        24.804,
+        24.278,
+        18.677,
+        24.189
+      ],
+      "imageDimensionsXYZ": [
+        1897,
+        1897,
+        2117
+      ]
+    },
+    {
+      "donor": "S-20-29",
+      "path": "data/donors/s-20-29/ultra-sections/y/0221.webp",
+      "crop": [
+        202,
+        106,
+        1505,
+        1755
+      ],
+      "encodedBytes": 1181232,
+      "decodedBytes": 2641275,
+      "encodedSha256Matches": true,
+      "sourcePixelsSha256Matches": true,
+      "cpuDecodeMedianMs": 35.772,
+      "cpuDecodeSamplesMs": [
+        37.757,
+        28.323,
+        29.047,
+        32.884,
+        36.108,
+        37.518,
+        39.963,
+        35.436
+      ],
+      "imageDimensionsXYZ": [
+        1909,
+        1909,
+        1945
+      ]
+    },
+    {
+      "donor": "S-20-28",
+      "path": "data/donors/s-20-28/ultra-sections/x/0233.webp",
+      "crop": [
+        378,
+        0,
+        1277,
+        1935
+      ],
+      "encodedBytes": 954542,
+      "decodedBytes": 2470995,
+      "encodedSha256Matches": true,
+      "sourcePixelsSha256Matches": true,
+      "cpuDecodeMedianMs": 27.518,
+      "cpuDecodeSamplesMs": [
+        31.855,
+        30.918,
+        31.438,
+        27.732,
+        27.159,
+        25.295,
+        23.678,
+        27.303
+      ],
+      "imageDimensionsXYZ": [
+        1905,
+        1905,
+        2033
+      ]
+    }
+  ]
+}

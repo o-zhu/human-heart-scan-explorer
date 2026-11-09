@@ -1,0 +1,879 @@
+{
+  "version": 1,
+  "id": "slicerheart-truncal-valve-4dct",
+  "label": "SlicerHeart \u00b7 4D cardiac CT",
+  "modality": "CT",
+  "sourceUrl": "https://github.com/SlicerHeart/SlicerHeart/releases/download/TestingData/TruncalValve_4DCT.seq.nrrd",
+  "source": {
+    "originalFilename": "TruncalValve_4DCT.seq.nrrd",
+    "url": "https://github.com/SlicerHeart/SlicerHeart/releases/download/TestingData/TruncalValve_4DCT.seq.nrrd",
+    "bytes": 1267650314,
+    "sha256": "7573f1bc7ca92d7d1012eecf98211cfd9939c1d22d87aee1db91c8ab72031cfb",
+    "dimensions": [
+      512,
+      391,
+      218
+    ],
+    "spacingMm": [
+      0.599609375,
+      0.599609375,
+      0.6999999999999998
+    ],
+    "space": "right-anterior-superior",
+    "originRASmm": [
+      -145.1999969482422,
+      8.94163990020752,
+      903.0999755859374
+    ],
+    "directionsRAS": [
+      [
+        0.599609375,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.599609375,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.6999999999999998
+      ]
+    ],
+    "dtype": "int16",
+    "phaseIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "uniqueSpatialFrames": 20,
+    "closingFrameIdenticalToFirst": true,
+    "phaseTiming": "The NRRD supplies numeric indices 0\u201320, without physical phase times or ECG percentages.",
+    "citation": "SlicerHeart sample data, Truncal Valve 4D CT. Lasso et al., SlicerHeart: An open-source computing platform for cardiac image analysis and modeling. Frontiers in Cardiovascular Medicine 9 (2022), doi:10.3389/fcvm.2022.886549.",
+    "license": "The SlicerHeart project BSD-3-Clause notice is preserved. No separate data-specific license statement was found attached to this public sample release asset."
+  },
+  "clinicalContext": "Adolescent with repaired truncus arteriosus, according to the official SlicerHeart sample registration.",
+  "healthyReference": false,
+  "exactAgeKnown": false,
+  "sexKnown": false,
+  "pairedUltrasoundIdentified": false,
+  "sourceAttribution": {
+    "project": "SlicerHeart",
+    "sourceCode": "https://github.com/SlicerHeart/SlicerHeart/blob/master/ValveAnnulusAnalysis/ValveAnnulusAnalysis.py",
+    "projectLicense": "BSD-3-Clause",
+    "licenseNotice": "/assets/clinical-v19/slicerheart/SlicerHeart-LICENSE.txt",
+    "dataLicenseNote": "Public project sample data; no separate data-specific license statement was found attached to this release asset. The repository BSD-3-Clause notice is preserved; it is not represented as a separate clinical-data license.",
+    "paperDoi": "10.3389/fcvm.2022.886549"
+  },
+  "notes": [
+    "Measured source phases; no generated intermediate phases.",
+    "Playback timing is illustrative because physical acquisition phase timing is absent.",
+    "The native detail series is a heart-base ROI, not a whole-heart segmentation.",
+    "Air and high-density structures outside the recorded display window are clipped in this uint8 display derivative.",
+    "Original acquisition noise and metal-related artifacts remain present."
+  ],
+  "totalUniqueCompressedBytes": 67775852,
+  "series": [
+    {
+      "id": "overview",
+      "label": "Cardiac overview \u00b7 21 phases",
+      "modality": "CT",
+      "description": "Fixed cardiac crop at 2\u00d7 overview spacing; each sample averages its 2\u00d72\u00d72 native source block.",
+      "dimensions": [
+        145,
+        125,
+        109
+      ],
+      "spacingMm": [
+        1.19921875,
+        1.19921875,
+        1.3999999999999997
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-00.raw.gz",
+          "compressedBytes": 1271156,
+          "decodedBytes": 1975625,
+          "sha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+          "decodedSha256": "8668e3156c21cdb75f2dd87348e057e32c48f47b866f2faa60bdacf9d2018613"
+        },
+        {
+          "index": 1,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-01.raw.gz",
+          "compressedBytes": 1270163,
+          "decodedBytes": 1975625,
+          "sha256": "c2eb3823976349202ffcb526150b7269ee2dfcaa0d6214d95253a9e080aaa662",
+          "decodedSha256": "644ada6502248005f30662a7718632a41384aaf20020af6a6e35f74fa17b208d"
+        },
+        {
+          "index": 2,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-02.raw.gz",
+          "compressedBytes": 1266749,
+          "decodedBytes": 1975625,
+          "sha256": "636c24057187598e8077d4fc80925e048fc30e9f49819a89ffb83dd55a574049",
+          "decodedSha256": "3f3204ec336370992d4a2f48ab11f2aa4e36226c365e2d0af1a1516052a9f16e"
+        },
+        {
+          "index": 3,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-03.raw.gz",
+          "compressedBytes": 1263101,
+          "decodedBytes": 1975625,
+          "sha256": "d40349f695d9e85a9f28d430f37fa17ad6680a94636f23242e489ba1c38e64c5",
+          "decodedSha256": "2297cc1b6b761a35700706623b45396b53bfc39ac5d7124ae05442ba1be582a2"
+        },
+        {
+          "index": 4,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-04.raw.gz",
+          "compressedBytes": 1249328,
+          "decodedBytes": 1975625,
+          "sha256": "212ec7aa43e660f4579414267e130743fbbd72ccf0e8bdd4a8dd225922e935de",
+          "decodedSha256": "f8cbc2db1c12a76bb061968cc145dc2f33476165153938f8d7c0c8d537901536"
+        },
+        {
+          "index": 5,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-05.raw.gz",
+          "compressedBytes": 1226266,
+          "decodedBytes": 1975625,
+          "sha256": "966e8f44e7885ff808e91e215b46380d05af45a1b9a058bd6947e3d20e136857",
+          "decodedSha256": "ccb3962b7812206695760756e33790d735c8e6c56029b8ba9e6918380239528a"
+        },
+        {
+          "index": 6,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-06.raw.gz",
+          "compressedBytes": 1220424,
+          "decodedBytes": 1975625,
+          "sha256": "e732146658b469617af0d2c50dad866ed05a86493b7902c3f0f4adc416903542",
+          "decodedSha256": "2d3bd2b6c3b66d1346b5291e51930db0a7c68e7eb35af1278deb946986338d6f"
+        },
+        {
+          "index": 7,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-07.raw.gz",
+          "compressedBytes": 1216266,
+          "decodedBytes": 1975625,
+          "sha256": "4c6b5f91148b3469c3549064543fcf415efcfcaf0bde3dc382655e7d9df96883",
+          "decodedSha256": "de344513d7fbd30d48ee7dc035efb654e1532e56585d4a887409ce09cdf555c8"
+        },
+        {
+          "index": 8,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-08.raw.gz",
+          "compressedBytes": 1219893,
+          "decodedBytes": 1975625,
+          "sha256": "c9f1530735bca3309b045c4604337bed5fb56ac67bdea6d292c82fe06a20273e",
+          "decodedSha256": "96ac5cc18cdd5afe1316b66b2c33ab52f4839bef5a4d8c223c96c9b7ba89ed4f"
+        },
+        {
+          "index": 9,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-09.raw.gz",
+          "compressedBytes": 1220710,
+          "decodedBytes": 1975625,
+          "sha256": "c1be15b7f1af76d0b61b8f72bec318940236411651d2ac63c70d6200a6caac1c",
+          "decodedSha256": "cde1574af4ce6e7184a227b3ff36c2679e5693c0118e0b37d2cdc545d6f39575"
+        },
+        {
+          "index": 10,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-10.raw.gz",
+          "compressedBytes": 1227670,
+          "decodedBytes": 1975625,
+          "sha256": "6142b0d67541cda3b72928594dcc0f950db2933964582196a4e735587c934306",
+          "decodedSha256": "2ba377bc18e910dc14131166479226f8fae022e39240606d622b756dad741c97"
+        },
+        {
+          "index": 11,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-11.raw.gz",
+          "compressedBytes": 1247549,
+          "decodedBytes": 1975625,
+          "sha256": "a5f0c12b42f9c7862a289a87ee260193f28cbf2ba2606d565ed29210f29fbfb0",
+          "decodedSha256": "f1f5b4f422948951083144e476406a018e8398951ac7715f2cc04907d2ec3511"
+        },
+        {
+          "index": 12,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-12.raw.gz",
+          "compressedBytes": 1258100,
+          "decodedBytes": 1975625,
+          "sha256": "edd90c1cacf3f9e81d606917023bc1acd9b4a251da1b73f3019f7af89e3aff3d",
+          "decodedSha256": "295cc41453c0e011542ef0d7d4344ad0ec97b7cbfbb560166ad24c87a1d97819"
+        },
+        {
+          "index": 13,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-13.raw.gz",
+          "compressedBytes": 1259559,
+          "decodedBytes": 1975625,
+          "sha256": "20df57eee87b36acce7f322245eb31a01e586aded0c38adc7c4a8b81d20ab5f2",
+          "decodedSha256": "44b415155393ff93d40e92afd7781e6bcfdf515f499ae5fed9fb255a612c0a53"
+        },
+        {
+          "index": 14,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-14.raw.gz",
+          "compressedBytes": 1263912,
+          "decodedBytes": 1975625,
+          "sha256": "e36beff6291ec9bbe49fb3aae802d382840900b87b4857f97d511cd9d03e2ece",
+          "decodedSha256": "ff98f7206ef3fef6671c6080779e74cec361e7aee157a43efe274f6c72a6232c"
+        },
+        {
+          "index": 15,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-15.raw.gz",
+          "compressedBytes": 1266198,
+          "decodedBytes": 1975625,
+          "sha256": "3fffb6e2c0692e22fa193469f26d06239c7e3390e29d6964d699b94eeaf2dcd9",
+          "decodedSha256": "0c86e4c3d01d1094bab8e5217dd03c59760b9e1f4eb7b285ced5c05035016714"
+        },
+        {
+          "index": 16,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-16.raw.gz",
+          "compressedBytes": 1269283,
+          "decodedBytes": 1975625,
+          "sha256": "ed0aad691862d90e151d06935844080870cf67af950cc0a884150c60178f8fad",
+          "decodedSha256": "3fd56802f1c6fe8562a9726aefce3e2d82307b8306c8daa9efcaa8b10e26f727"
+        },
+        {
+          "index": 17,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-17.raw.gz",
+          "compressedBytes": 1270407,
+          "decodedBytes": 1975625,
+          "sha256": "4bf1f1d67fad2655bb339ef4b845fd91b0692478224231bcaf1f87028292f737",
+          "decodedSha256": "e50d308c8acd7716d4b98ee81356508eef95d7eb0676974390442d2455b4d73f"
+        },
+        {
+          "index": 18,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-18.raw.gz",
+          "compressedBytes": 1269526,
+          "decodedBytes": 1975625,
+          "sha256": "2702e8332068923629eeb30577f92c793130a8c808288fe0d7d34926df5b4b51",
+          "decodedSha256": "b1977bc28a4e412b5a69aa77bfb01a5891e7394d5975bade451ab82aad11532a"
+        },
+        {
+          "index": 19,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-19.raw.gz",
+          "compressedBytes": 1269773,
+          "decodedBytes": 1975625,
+          "sha256": "6937c6d0ab953d8886bcb0d316f575ee1cb70e007073033f5db9565689f30254",
+          "decodedSha256": "8ab2b04dc0b1387c13077f208acfc115e51891e6609850b672f3b7a0bfe59778"
+        },
+        {
+          "index": 20,
+          "url": "/assets/clinical-v19/slicerheart/overview/frame-00.raw.gz",
+          "compressedBytes": 1271156,
+          "decodedBytes": 1975625,
+          "sha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+          "decodedSha256": "8668e3156c21cdb75f2dd87348e057e32c48f47b866f2faa60bdacf9d2018613",
+          "duplicatesFrameIndex": 0
+        }
+      ],
+      "sourceWindow": [
+        -200,
+        1000
+      ],
+      "defaultThreshold": 0.36,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0.05,
+        "windowHigh": 0.917,
+        "windowGamma": 0.9,
+        "capContrast": 1,
+        "cutFaceExposure": 1
+      },
+      "encoding": {
+        "dtype": "uint8",
+        "compression": "gzip",
+        "voxelOrder": "X-fastest; ZYX C order",
+        "transfer": "round(clamp((source - (-200)) / 1200, 0, 1) * 255)",
+        "storedIntensityLevels": 256,
+        "maximumWithinWindowQuantizationError": 2.3529411764705883,
+        "intensityUnits": "Stored CT scalar values; HU calibration is not declared by the source NRRD."
+      },
+      "sourceCrop": {
+        "boundsXYZ": [
+          [
+            60,
+            350
+          ],
+          [
+            115,
+            365
+          ],
+          [
+            0,
+            218
+          ]
+        ],
+        "endExclusive": true,
+        "nativeDimensions": [
+          290,
+          250,
+          218
+        ],
+        "fixedAcrossAllPhases": true,
+        "physicalSupportRASmm": [
+          [
+            -109.52323913574219,
+            77.59691333770752,
+            902.7499755859374
+          ],
+          [
+            64.36347961425781,
+            227.49925708770752,
+            1055.3499755859373
+          ]
+        ]
+      },
+      "geometry": {
+        "space": "right-anterior-superior",
+        "originRASmm": [
+          -108.92362976074219,
+          78.19652271270752,
+          903.4499755859374
+        ],
+        "directionsRAS": [
+          [
+            1.19921875,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.19921875,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.3999999999999997
+          ]
+        ],
+        "nativeSpacingMm": [
+          0.599609375,
+          0.599609375,
+          0.6999999999999998
+        ],
+        "resampling": "2\u00d72\u00d72 arithmetic block mean, then intensity encoding"
+      },
+      "measuredPhaseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "physicalPhaseTimesKnown": false,
+      "temporalInterpolation": false,
+      "playbackFrameCount": 20,
+      "loopClosingFrameIndex": 20,
+      "uniqueCompressedBytes": 25026033,
+      "uniqueFrameFiles": 20,
+      "staticReference": false,
+      "isOverview": true,
+      "spatialResampling": true,
+      "samplingDescription": "1.199 \u00d7 1.199 \u00d7 1.4 mm overview; 2\u00d72\u00d72 block means of the native source grid",
+      "phaseDescription": "Source indices 0\u201320; index 20 exactly repeats index 0. Playback uses the 20 unique volumes; physical phase timing is not supplied.",
+      "notes": [
+        "Fixed cardiac crop at 2\u00d7 overview spacing; each sample averages its 2\u00d72\u00d72 native source block.",
+        "Acquired CT anatomy with a fixed 8-bit display window; the original signed-short source remains available.",
+        "This case has repaired congenital heart disease; no matched ultrasound is identified."
+      ],
+      "defaultFrame": 0,
+      "defaultSlice": {
+        "axis": 2,
+        "position": 0.5,
+        "flipVertical": false
+      }
+    },
+    {
+      "id": "native-detail",
+      "label": "Valve / outflow detail \u00b7 native spacing",
+      "modality": "CT",
+      "description": "Native-spacing heart-base region containing the truncal valve/outflow; peripheral chambers are outside this detail crop.",
+      "dimensions": [
+        160,
+        130,
+        100
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-00.raw.gz",
+          "compressedBytes": 1667017,
+          "decodedBytes": 2080000,
+          "sha256": "718bc878bb2b1804f91de1eac128d5bb0c4fe91144a12ff1d2af20a9ae2fbc2c",
+          "decodedSha256": "bcc06fecdbe76edd322115c7c8ae7171618be52da0bbe059aee56d3bcbbeab60"
+        },
+        {
+          "index": 1,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-01.raw.gz",
+          "compressedBytes": 1655677,
+          "decodedBytes": 2080000,
+          "sha256": "e25e1f3f41feb6a6c4f3f2ea0d6bda21605f0c64e7402ba6b95cc2942bf153c2",
+          "decodedSha256": "5881c6b2b64311af0ac05e95ee2bfe976c4d5b346a6cdf68f376e1a49d0bbb1d"
+        },
+        {
+          "index": 2,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-02.raw.gz",
+          "compressedBytes": 1644752,
+          "decodedBytes": 2080000,
+          "sha256": "a595ddd6b66cd0f44a6eafa04b5a2d5ba7befd34735bf0203bcd586c3e6f6c72",
+          "decodedSha256": "2bc22aa109974b03074816d0c93bdd2444632962edf45f2e7e0ee0b8bd557160"
+        },
+        {
+          "index": 3,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-03.raw.gz",
+          "compressedBytes": 1646549,
+          "decodedBytes": 2080000,
+          "sha256": "a1577ea2b0aac6fffd41af6738bc1e25bbc8e8579c21d307d35d82c24f791c7e",
+          "decodedSha256": "c579cd761368f4839a634996e397ebfafc357898703018f5c09193ff97f4c35e"
+        },
+        {
+          "index": 4,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-04.raw.gz",
+          "compressedBytes": 1635364,
+          "decodedBytes": 2080000,
+          "sha256": "dbfc127b27fc284b7d52fba4a35dc7bccae57510f05f4369588473cd67ef9740",
+          "decodedSha256": "e8ade525178a1cfb1312ff8e8b412505db31662831afb2045ad4f70ec66a463b"
+        },
+        {
+          "index": 5,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-05.raw.gz",
+          "compressedBytes": 1617667,
+          "decodedBytes": 2080000,
+          "sha256": "5fa0c5ee238df05c620a647981313b20c7fae11297d06d574f656b795545a637",
+          "decodedSha256": "a3a3eef0dd2a82d25f49b0ca635afc155d4ac65826849f1ae89745a1a8f81131"
+        },
+        {
+          "index": 6,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-06.raw.gz",
+          "compressedBytes": 1617797,
+          "decodedBytes": 2080000,
+          "sha256": "cb7d14a8f0719930d0d192f8a1a585fdeb6b89a6a88f5fe898c2be7c85db497e",
+          "decodedSha256": "4666217f4f53e852581080f5032372318fe98ae30222eb43396edb1e0bec4fae"
+        },
+        {
+          "index": 7,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-07.raw.gz",
+          "compressedBytes": 1626515,
+          "decodedBytes": 2080000,
+          "sha256": "4ce3a32e51b263106c2eae3c5d6e13c3af03a09fce1d0b8371a3609a2e7739d6",
+          "decodedSha256": "3d1a6d1679ea44eebbc06f2adbc1bb3a3eba0f2601748cdea593de0982437034"
+        },
+        {
+          "index": 8,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-08.raw.gz",
+          "compressedBytes": 1636696,
+          "decodedBytes": 2080000,
+          "sha256": "3fff54a28bbc8e1f9741597b1175422ed1862c3086dc5cf35cb9e36a218da556",
+          "decodedSha256": "563b78ef5c36dcdac7cc8a64380c0aefbf93a6291cbe00bcaf8be3cee9bc9354"
+        },
+        {
+          "index": 9,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-09.raw.gz",
+          "compressedBytes": 1638751,
+          "decodedBytes": 2080000,
+          "sha256": "d3d3de32c2868cce5158f8a8465dc23f70f34d38d5f8a5f2dbe094bb3f9cb6e0",
+          "decodedSha256": "16bd4412d8eb67aff4e9b5ac319c940b5f5e84134f74dd367e723d8b68a645e8"
+        },
+        {
+          "index": 10,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-10.raw.gz",
+          "compressedBytes": 1636394,
+          "decodedBytes": 2080000,
+          "sha256": "6aff6b839073a366f7258914ae299eccbe47b23a47c9e6f520def991e419174f",
+          "decodedSha256": "c59aa3377afea42d09ed39a05bcd9cac22ddaff04f1a1da2e32b7800477d5d39"
+        },
+        {
+          "index": 11,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-11.raw.gz",
+          "compressedBytes": 1650058,
+          "decodedBytes": 2080000,
+          "sha256": "07712a367e0916ef386bacbec267148c4f0f5de499dfe44a72687752afc9f73f",
+          "decodedSha256": "231a323f25c5c95128fe1497e6712d2913359d4c909f970ef9b1e35e5d47dc1d"
+        },
+        {
+          "index": 12,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-12.raw.gz",
+          "compressedBytes": 1657304,
+          "decodedBytes": 2080000,
+          "sha256": "717f5635662969e72b6e6886b274a94a76b4663e942973f957bd9391b776f704",
+          "decodedSha256": "921963e47adc609dfa8fe8e13b6611101ee8951f85667dce61793ed281c0783f"
+        },
+        {
+          "index": 13,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-13.raw.gz",
+          "compressedBytes": 1659151,
+          "decodedBytes": 2080000,
+          "sha256": "bd3c8a9c7dbb4d0ce536e2258bd55da61741c5d0257eba32c6e608e65ff9db41",
+          "decodedSha256": "abf0f0df54ad2ad9203edfda0f81367ef3bc231f5e8fc2d81337167da756a28e"
+        },
+        {
+          "index": 14,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-14.raw.gz",
+          "compressedBytes": 1663607,
+          "decodedBytes": 2080000,
+          "sha256": "da666f2f0c47499b7afa8d47de283d5198b56796a01077266fabca55da34043a",
+          "decodedSha256": "7e93fc799e6e0269c94b10dc71fe3dc78e968b87bd19e7e654cd827d3ca62b64"
+        },
+        {
+          "index": 15,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-15.raw.gz",
+          "compressedBytes": 1668907,
+          "decodedBytes": 2080000,
+          "sha256": "8e020eee8b208556f12e3e97dc86b0f40fbaac3246252e55f24a184c22a103cf",
+          "decodedSha256": "8b911c8755200f2512f8f73668885f7e4047c177f39935ae1a06e8002c2f1b74"
+        },
+        {
+          "index": 16,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-16.raw.gz",
+          "compressedBytes": 1666575,
+          "decodedBytes": 2080000,
+          "sha256": "4cea718d437413a07b7e1052d5e3976d4dd43189f296a7c6012b60bd73f62244",
+          "decodedSha256": "2448edf6b85346f34c45fa6e26d8657505aed1bb2f6822c7c73a8cb0e746ea82"
+        },
+        {
+          "index": 17,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-17.raw.gz",
+          "compressedBytes": 1668069,
+          "decodedBytes": 2080000,
+          "sha256": "38b0c8d9f2cda8a5499d8d406c9e33f9c545c8dd8da44e2520b7d796f61a9d46",
+          "decodedSha256": "695e7bc6c3283128a6e765894557f7752a063492910a7fa5d15608b36bca18b9"
+        },
+        {
+          "index": 18,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-18.raw.gz",
+          "compressedBytes": 1666586,
+          "decodedBytes": 2080000,
+          "sha256": "943eca400796a794d1a2d66f01be7aa7e51169eb412392a804bbc74a4ccb8ca8",
+          "decodedSha256": "5d243e1f7d54992ef2216b1c1b77a7c2e54242c615f6c758d3725e5598e469a1"
+        },
+        {
+          "index": 19,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-19.raw.gz",
+          "compressedBytes": 1665362,
+          "decodedBytes": 2080000,
+          "sha256": "31fbe7c7ec7850b7850efef2ef596485d466c860941e357819b94af97b737ce7",
+          "decodedSha256": "148fd843ec22dc608cfa6e5a8ca2ea28329c0a19ad6c23db1a5b4e5eab0400a3"
+        },
+        {
+          "index": 20,
+          "url": "/assets/clinical-v19/slicerheart/native-detail/frame-00.raw.gz",
+          "compressedBytes": 1667017,
+          "decodedBytes": 2080000,
+          "sha256": "718bc878bb2b1804f91de1eac128d5bb0c4fe91144a12ff1d2af20a9ae2fbc2c",
+          "decodedSha256": "bcc06fecdbe76edd322115c7c8ae7171618be52da0bbe059aee56d3bcbbeab60",
+          "duplicatesFrameIndex": 0
+        }
+      ],
+      "sourceWindow": [
+        -200,
+        1000
+      ],
+      "defaultThreshold": 0.36,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0.05,
+        "windowHigh": 0.917,
+        "windowGamma": 0.9,
+        "capContrast": 1,
+        "cutFaceExposure": 1
+      },
+      "encoding": {
+        "dtype": "uint8",
+        "compression": "gzip",
+        "voxelOrder": "X-fastest; ZYX C order",
+        "transfer": "round(clamp((source - (-200)) / 1200, 0, 1) * 255)",
+        "storedIntensityLevels": 256,
+        "maximumWithinWindowQuantizationError": 2.3529411764705883,
+        "intensityUnits": "Stored CT scalar values; HU calibration is not declared by the source NRRD."
+      },
+      "sourceCrop": {
+        "boundsXYZ": [
+          [
+            140,
+            300
+          ],
+          [
+            180,
+            310
+          ],
+          [
+            80,
+            180
+          ]
+        ],
+        "endExclusive": true,
+        "nativeDimensions": [
+          160,
+          130,
+          100
+        ],
+        "fixedAcrossAllPhases": true,
+        "physicalSupportRASmm": [
+          [
+            -61.55448913574219,
+            116.57152271270752,
+            958.7499755859374
+          ],
+          [
+            34.38301086425781,
+            194.52074146270752,
+            1028.7499755859374
+          ]
+        ]
+      },
+      "geometry": {
+        "space": "right-anterior-superior",
+        "originRASmm": [
+          -61.25468444824219,
+          116.87132740020752,
+          959.0999755859374
+        ],
+        "directionsRAS": [
+          [
+            0.599609375,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.599609375,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.6999999999999998
+          ]
+        ],
+        "nativeSpacingMm": [
+          0.599609375,
+          0.599609375,
+          0.6999999999999998
+        ],
+        "resampling": "none; native source samples"
+      },
+      "measuredPhaseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "physicalPhaseTimesKnown": false,
+      "temporalInterpolation": false,
+      "playbackFrameCount": 20,
+      "loopClosingFrameIndex": 20,
+      "uniqueCompressedBytes": 32988798,
+      "uniqueFrameFiles": 20,
+      "staticReference": false,
+      "isOverview": false,
+      "spatialResampling": false,
+      "samplingDescription": "0.600 \u00d7 0.600 \u00d7 0.700 mm native stored grid; no spatial resampling",
+      "phaseDescription": "Source indices 0\u201320; index 20 exactly repeats index 0. Playback uses the 20 unique volumes; physical phase timing is not supplied.",
+      "notes": [
+        "Native-spacing heart-base region containing the truncal valve/outflow; peripheral chambers are outside this detail crop.",
+        "Acquired CT anatomy with a fixed 8-bit display window; the original signed-short source remains available.",
+        "This case has repaired congenital heart disease; no matched ultrasound is identified."
+      ],
+      "defaultFrame": 10,
+      "defaultSlice": {
+        "axis": 2,
+        "position": 0.5555555555555556,
+        "flipVertical": false
+      }
+    },
+    {
+      "id": "native-reference",
+      "label": "Cardiac reference \u00b7 native phase 0",
+      "modality": "CT",
+      "description": "Full cardiac crop at native spacing, source phase 0 only. This reference is static.",
+      "dimensions": [
+        290,
+        250,
+        218
+      ],
+      "spacingMm": [
+        0.599609375,
+        0.599609375,
+        0.6999999999999998
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/slicerheart/native-reference/frame-00.raw.gz",
+          "compressedBytes": 9761021,
+          "decodedBytes": 15805000,
+          "sha256": "dff67b3a9a3186cf1b906f0ca0c885e503365c7ab7594a5dc7f36a506b6da288",
+          "decodedSha256": "bf84183fb16b2f642e6fb8b8b510e21c123fe0efd4df5bab4fe144f5cc4045e8"
+        }
+      ],
+      "sourceWindow": [
+        -200,
+        1000
+      ],
+      "defaultThreshold": 0.36,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0.05,
+        "windowHigh": 0.917,
+        "windowGamma": 0.9,
+        "capContrast": 1,
+        "cutFaceExposure": 1
+      },
+      "encoding": {
+        "dtype": "uint8",
+        "compression": "gzip",
+        "voxelOrder": "X-fastest; ZYX C order",
+        "transfer": "round(clamp((source - (-200)) / 1200, 0, 1) * 255)",
+        "storedIntensityLevels": 256,
+        "maximumWithinWindowQuantizationError": 2.3529411764705883,
+        "intensityUnits": "Stored CT scalar values; HU calibration is not declared by the source NRRD."
+      },
+      "sourceCrop": {
+        "boundsXYZ": [
+          [
+            60,
+            350
+          ],
+          [
+            115,
+            365
+          ],
+          [
+            0,
+            218
+          ]
+        ],
+        "endExclusive": true,
+        "nativeDimensions": [
+          290,
+          250,
+          218
+        ],
+        "fixedAcrossAllPhases": true,
+        "physicalSupportRASmm": [
+          [
+            -109.52323913574219,
+            77.59691333770752,
+            902.7499755859374
+          ],
+          [
+            64.36347961425781,
+            227.49925708770752,
+            1055.3499755859373
+          ]
+        ]
+      },
+      "geometry": {
+        "space": "right-anterior-superior",
+        "originRASmm": [
+          -109.22343444824219,
+          77.89671802520752,
+          903.0999755859374
+        ],
+        "directionsRAS": [
+          [
+            0.599609375,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.599609375,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.6999999999999998
+          ]
+        ],
+        "nativeSpacingMm": [
+          0.599609375,
+          0.599609375,
+          0.6999999999999998
+        ],
+        "resampling": "none; native source samples"
+      },
+      "measuredPhaseIndices": [
+        0
+      ],
+      "physicalPhaseTimesKnown": false,
+      "temporalInterpolation": false,
+      "playbackFrameCount": 1,
+      "loopClosingFrameIndex": null,
+      "uniqueCompressedBytes": 9761021,
+      "uniqueFrameFiles": 1,
+      "staticReference": true,
+      "isOverview": false,
+      "spatialResampling": false,
+      "samplingDescription": "0.600 \u00d7 0.600 \u00d7 0.700 mm native stored grid; no spatial resampling",
+      "phaseDescription": "Source phase 0 only, retained as a static native-spacing reference.",
+      "notes": [
+        "Full cardiac crop at native spacing, source phase 0 only. This reference is static.",
+        "Acquired CT anatomy with a fixed 8-bit display window; the original signed-short source remains available.",
+        "This case has repaired congenital heart disease; no matched ultrasound is identified."
+      ],
+      "defaultFrame": 0,
+      "defaultSlice": {
+        "axis": 2,
+        "position": 0.5,
+        "flipVertical": false
+      }
+    }
+  ],
+  "defaultSeries": "overview",
+  "description": "Measured 4D CT of an adolescent with repaired truncus arteriosus; a clinical example, not a healthy reference."
+}

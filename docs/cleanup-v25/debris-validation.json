@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "syntheticChecks": [
+    "shared-vertex connectivity",
+    "unreferenced vertices",
+    "C++ covariance agrees with independent NumPy covariance",
+    "compact detached speck excluded",
+    "main and attached branch retained",
+    "subthreshold rod retained",
+    "subthreshold sheet retained",
+    "large compact component retained",
+    "quantized boundary component retained"
+  ],
+  "assetChecks": [
+    "compressed hashes and lengths",
+    "decoded hashes and lengths",
+    "vertex flag domain and count",
+    "face mask bit order, count and padding"
+  ],
+  "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae"
+}

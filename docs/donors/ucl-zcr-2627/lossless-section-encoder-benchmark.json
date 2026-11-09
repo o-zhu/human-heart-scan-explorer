@@ -1,0 +1,82 @@
+{
+  "axis": "y",
+  "index": 200,
+  "shape": [
+    2147,
+    1593
+  ],
+  "results": [
+    {
+      "method": 0,
+      "quality": 75,
+      "bytes": 2037266,
+      "seconds": 2.4790190019994043,
+      "cpuSeconds": 2.4667598900000005,
+      "losslessExact": true
+    },
+    {
+      "method": 1,
+      "quality": 60,
+      "bytes": 1589502,
+      "seconds": 3.2311945669935085,
+      "cpuSeconds": 3.0433207410000005,
+      "losslessExact": true
+    },
+    {
+      "method": 2,
+      "quality": 75,
+      "bytes": 1587052,
+      "seconds": 3.0404854399967007,
+      "cpuSeconds": 2.648738623,
+      "losslessExact": true
+    },
+    {
+      "method": 4,
+      "quality": 100,
+      "bytes": 1577870,
+      "seconds": 5.607138718994975,
+      "cpuSeconds": 5.010037951000001,
+      "losslessExact": true
+    },
+    {
+      "method": 0,
+      "quality": 0,
+      "bytes": 2047326,
+      "seconds": 0.7270908220016281,
+      "cpuSeconds": 0.6824507689999999,
+      "losslessExact": true
+    },
+    {
+      "method": 1,
+      "quality": 0,
+      "bytes": 1589814,
+      "seconds": 2.9682705759987584,
+      "cpuSeconds": 2.507438543,
+      "losslessExact": true
+    },
+    {
+      "method": 2,
+      "quality": 0,
+      "bytes": 1587242,
+      "seconds": 0.7142746229947079,
+      "cpuSeconds": 0.6831979199999996,
+      "losslessExact": true
+    },
+    {
+      "method": 2,
+      "quality": 30,
+      "bytes": 1587242,
+      "seconds": 1.170924805002869,
+      "cpuSeconds": 1.049430266,
+      "losslessExact": true
+    },
+    {
+      "method": 2,
+      "quality": 50,
+      "bytes": 1587242,
+      "seconds": 1.5077398670036928,
+      "cpuSeconds": 1.344332884,
+      "losslessExact": true
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 516,
+    "decodedBrickReads": 922,
+    "cacheMaximumBricks": 32,
+    "cacheMaximumBytes": 8788000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "version": "v26",
+  "cases": [
+    {
+      "id": "nodule-boundaries",
+      "title": "Nodule boundaries and myocardial attachment",
+      "lowerXYZ": [
+        960,
+        1040,
+        930
+      ],
+      "upperXYZ": [
+        1120,
+        1180,
+        1120
+      ],
+      "ys": [
+        1060,
+        1072,
+        1084,
+        1096,
+        1108,
+        1120,
+        1132,
+        1144,
+        1156,
+        1168,
+        1180,
+        1192
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1060,
+          "sourcePlaneSha256": "3fe222fd6f5eda500e99bea8f82cbbb803598478a01445b66b72b86f0fd32387",
+          "excludedInPlane": 6313
+        },
+        {
+          "fineY": 1072,
+          "sourcePlaneSha256": "ed736da6a23c539e90c3423c52ef01c7325e8e4af7bcb21f2cf3e8dcb0508b2e",
+          "excludedInPlane": 3306
+        },
+        {
+          "fineY": 1084,
+          "sourcePlaneSha256": "30b4e5aef8a6ee70053eb0ab614adc7bec7aefcba2959e99f95ce7db3d7604c3",
+          "excludedInPlane": 2536
+        },
+        {
+          "fineY": 1096,
+          "sourcePlaneSha256": "2efe0ca6686ec79540830ed0df25c16fbd91a08a78e59aaa8e8e1b1618ff9378",
+          "excludedInPlane": 1402
+        },
+        {
+          "fineY": 1108,
+          "sourcePlaneSha256": "9861d3be69699d887073a2e3fedb2a909341e64d2349a8cc0bee45936d6b7f5f",
+          "excludedInPlane": 922
+        },
+        {
+          "fineY": 1120,
+          "sourcePlaneSha256": "dec2ea8e75e2d558f663c85c0f394e1754608b986ba2d582f88660d399e77898",
+          "excludedInPlane": 600
+        },
+        {
+          "fineY": 1132,
+          "sourcePlaneSha256": "3256405940a1c4984063da5dbe743ebb91ce930a12335dce89aade8b6c5b3b67",
+          "excludedInPlane": 363
+        },
+        {
+          "fineY": 1144,
+          "sourcePlaneSha256": "62666827590530b0c28e11dd8935b372901fcf1ef98b4d488830e9233a39b687",
+          "excludedInPlane": 27
+        },
+        {
+          "fineY": 1156,
+          "sourcePlaneSha256": "ce37e4b2b80645dbb61c3e8785a49bdcc05f22031442017db78fc88b870f89ed",
+          "excludedInPlane": 142
+        },
+        {
+          "fineY": 1168,
+          "sourcePlaneSha256": "c83a90449fe2af1db57d30ed7f53f8ee8fcd650f0ba57d77c05f28d3fa48a269",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "a4f02528d92b659e287a543670954ab2d8fd4c06ad79d35f7d7ee447c31e9182",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1192,
+          "sourcePlaneSha256": "96678ba3a879d0dae4b389807404d7794c9593cc2e167c47044b40fe90b2934e",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "lower-atrial-sheet",
+      "title": "Lower atrial sheet next to excluded core",
+      "lowerXYZ": [
+        1120,
+        1050,
+        800
+      ],
+      "upperXYZ": [
+        1410,
+        1290,
+        1080
+      ],
+      "ys": [
+        1080,
+        1104,
+        1128,
+        1152,
+        1176,
+        1200,
+        1224,
+        1248,
+        1260,
+        1276,
+        1292,
+        1308
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1080,
+          "sourcePlaneSha256": "4df0f9716a77cbdc749ef9c4f0abbc3fdf389835537e1a2a14b7777d84dac832",
+          "excludedInPlane": 28780
+        },
+        {
+          "fineY": 1104,
+          "sourcePlaneSha256": "863c719953b0bf8a9abc9982d2fad91c2ba4a18a76117390cd0a454e612d32b6",
+          "excludedInPlane": 29723
+        },
+        {
+          "fineY": 1128,
+          "sourcePlaneSha256": "d13421edce5a31fd00eebc60d79d1bdea94ea337812110b27f9e2065dd23ea02",
+          "excludedInPlane": 32437
+        },
+        {
+          "fineY": 1152,
+          "sourcePlaneSha256": "b95b55cf0ef7bdb2457711ef84d9ad9cada5b909fe30429e500d11b8561c9a87",
+          "excludedInPlane": 30397
+        },
+        {
+          "fineY": 1176,
+          "sourcePlaneSha256": "7b8f97832d01bfb19858b3c44403670b844855cb9d8f268438768e905e1d7017",
+          "excludedInPlane": 29266
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "310ccea4ce805dfe927cc74d5df110a9952c96a9688ca6d7549294a87c268379",
+          "excludedInPlane": 36147
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "e70206c677e3c640c7f028d564b441c0b17e546b979d3e572f50f87e47b96ce7",
+          "excludedInPlane": 25267
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "0d4552dbaab405deba021f7f351a8dbf987d7a53ce011d1fd9292975a7741f31",
+          "excludedInPlane": 3977
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "d8f2b1019867dc03ae40288c62b9be744cbe66ad910b0df3527f55f90a67a8a1",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "199a38b0f82a63098b8b557dd0219818a0f2eb0afc47449407b6714ccda51671",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "e5b1321a272df445deebdf1119c72fd172a19652c14122a0319436899267d2d3",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1308,
+          "sourcePlaneSha256": "1f8ac776d0596dce3c89a2595eec60472ccac1093f1fb3e756713dc8deaf6e07",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "upper-pv-sheet",
+      "title": "Upper atrial / pulmonary vein sheet",
+      "lowerXYZ": [
+        1160,
+        1100,
+        620
+      ],
+      "upperXYZ": [
+        1450,
+        1360,
+        850
+      ],
+      "ys": [
+        1160,
+        1180,
+        1200,
+        1220,
+        1240,
+        1248,
+        1260,
+        1276,
+        1292,
+        1308,
+        1324,
+        1340
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1160,
+          "sourcePlaneSha256": "971af93ca2fe3d2dbc841c0d22c061bb026b9243a9d1c792b200fcb507309b0c",
+          "excludedInPlane": 13841
+        },
+        {
+          "fineY": 1180,
+          "sourcePlaneSha256": "feb13575072edce7e7c9d3bafb3fa9f9e424136d42d58999b90417647f974fe1",
+          "excludedInPlane": 16608
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "04d82b35dde0893db95be8d5c36162bfd0ee696bf7d29730d31cffe08722f6b2",
+          "excludedInPlane": 14160
+        },
+        {
+          "fineY": 1220,
+          "sourcePlaneSha256": "b82595b41a45d0e3107006e5134114ae2e800c4c6bcdc32e201ee9e3ee364363",
+          "excludedInPlane": 6344
+        },
+        {
+          "fineY": 1240,
+          "sourcePlaneSha256": "08bb1f5a7f41da2a047c4cbeb3807f7aeacaa0fab8f9d951983b800bd601e782",
+          "excludedInPlane": 530
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "c20865a22abcf5bee73afd1e5e48205ee9c17ca538b1d9e53aa3f4a1eba56a69",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1260,
+          "sourcePlaneSha256": "573c005af209166a107db375ecdee65525e23f8560518cb98bfff3a05c18d288",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1276,
+          "sourcePlaneSha256": "dc3e96df162353070666a60774ddb0c5b8a73ae428fadc3f2c83541af92041eb",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1292,
+          "sourcePlaneSha256": "05b6cb2ae0f970e299cdd6f9d6f1157bb62b4d2a41d96e7c5a32e7636aa9e03c",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1308,
+          "sourcePlaneSha256": "360e6e70affc4ab8f4c0c4d5caaa1610cceda26ff025e81c7b0848927be61c9c",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1324,
+          "sourcePlaneSha256": "241d04279addb989e248cc9c88aaf9d5b88319ba45db4d57848161e53be187bc",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1340,
+          "sourcePlaneSha256": "7cb5b01a8feca586d8f1a6934f7123fba65c7f64ca4990baba44ed29bb96c6e2",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "pa-posterior-source",
+      "title": "Posterior pulmonary artery surface sampled in section335",
+      "lowerXYZ": [
+        740,
+        1060,
+        450
+      ],
+      "upperXYZ": [
+        1040,
+        1340,
+        960
+      ],
+      "ys": [
+        1104,
+        1128,
+        1152,
+        1176,
+        1200,
+        1224,
+        1248,
+        1272,
+        1296,
+        1320,
+        1344,
+        1368
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 1104,
+          "sourcePlaneSha256": "52b06d73498a4fd8fc7e797fca62e6803652e6fd83e46d8931425c3ef1f57c92",
+          "excludedInPlane": 269
+        },
+        {
+          "fineY": 1128,
+          "sourcePlaneSha256": "115fa2115b83768fb99c81c20f5e54880dda42f153be02284a5f30ed5012d455",
+          "excludedInPlane": 939
+        },
+        {
+          "fineY": 1152,
+          "sourcePlaneSha256": "7e18f693a04dd98d290523daf1c501f8c5f3d71a83ed221ca4fa789fbd8d0e1e",
+          "excludedInPlane": 1572
+        },
+        {
+          "fineY": 1176,
+          "sourcePlaneSha256": "6a03b2da5ad5afc5c627f25bcc62bbc9c6d4fc1c082ac033780a3cd222b77a11",
+          "excludedInPlane": 3591
+        },
+        {
+          "fineY": 1200,
+          "sourcePlaneSha256": "539ecdf42977bf6f934a53ec90acf1d238b73417a2e9bcf872e4846d04320ce8",
+          "excludedInPlane": 984
+        },
+        {
+          "fineY": 1224,
+          "sourcePlaneSha256": "777173a22023951bb4a9845399b3126f0bd01da61953951c851c8cb5732954f6",
+          "excludedInPlane": 2705
+        },
+        {
+          "fineY": 1248,
+          "sourcePlaneSha256": "ca4e46cb74d4ef2e01553fed48f2b3249dc600d53158039d82eb7f4eb087f653",
+          "excludedInPlane": 5224
+        },
+        {
+          "fineY": 1272,
+          "sourcePlaneSha256": "dce9c68afd5974d1e2efeac9cb1b0414e4c7383ab300200bad10e7fa6d46a3e0",
+          "excludedInPlane": 1224
+        },
+        {
+          "fineY": 1296,
+          "sourcePlaneSha256": "ccd15adaf55d74075d7aacaea8c2060e46701a64743761c464cf2e83edd53ef1",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1320,
+          "sourcePlaneSha256": "9e738dfd0a91f5223462a25d6fe11c7225df3b892741ece998f2edb7d8ea3a06",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1344,
+          "sourcePlaneSha256": "df1647d0b0bdbbcf1fe286e1997130b6455ec68552027b90a8c361883accebab",
+          "excludedInPlane": 0
+        },
+        {
+          "fineY": 1368,
+          "sourcePlaneSha256": "42c649a24d178f86fdc814553b1dff46a1f33b740d85d721958efb982067805e",
+          "excludedInPlane": 0
+        }
+      ]
+    },
+    {
+      "id": "tricuspid-chord-matrix",
+      "title": "Low contrast material around bright tricuspid chordal cores",
+      "lowerXYZ": [
+        770,
+        780,
+        1030
+      ],
+      "upperXYZ": [
+        950,
+        960,
+        1310
+      ],
+      "ys": [
+        788,
+        804,
+        820,
+        836,
+        852,
+        868,
+        884,
+        900,
+        916,
+        932,
+        948,
+        964
+      ],
+      "sourcePlanes": [
+        {
+          "fineY": 788,
+          "sourcePlaneSha256": "1083d4fe4d254ca203ed5db5b9ebee565431bb3e07eb379dc9ff45cb232627c7",
+          "excludedInPlane": 434
+        },
+        {
+          "fineY": 804,
+          "sourcePlaneSha256": "71ec3912d1c76a7b8a367f7707347b81312a3082c6820cbbe3ce3e078ff8b8d8",
+          "excludedInPlane": 397
+        },
+        {
+          "fineY": 820,
+          "sourcePlaneSha256": "a959af6478d16cb2313ba8fe0af50f0d674138c1efc073327a203a31987db521",
+          "excludedInPlane": 204
+        },
+        {
+          "fineY": 836,
+          "sourcePlaneSha256": "7abaf4c114944eb7528f4510dc60cb4f03d04d0228a6a765472f40e950b7485f",
+          "excludedInPlane": 916
+        },
+        {
+          "fineY": 852,
+          "sourcePlaneSha256": "9b22484886110d75e3284c2a3b8d827204197c01c117b6347343382963a6eb3f",
+          "excludedInPlane": 1126
+        },
+        {
+          "fineY": 868,
+          "sourcePlaneSha256": "0f62ee556d6e0f39b0d27943e3f682ecef3c6a0d78db6f388e0e145d4fc252c9",
+          "excludedInPlane": 487
+        },
+        {
+          "fineY": 884,
+          "sourcePlaneSha256": "bd5dc980f0574573cf5385c58cbbe09fbeb040929113e49f4e40e5a756f32dff",
+          "excludedInPlane": 428
+        },
+        {
+          "fineY": 900,
+          "sourcePlaneSha256": "fa192f394ff820d39b7e4890e09874c4819e97f5344efd8c68085775ffa65420",
+          "excludedInPlane": 549
+        },
+        {
+          "fineY": 916,
+          "sourcePlaneSha256": "38306b4f555678671bc8a7a0474a6217e618333c571506f53274cf0d032efe10",
+          "excludedInPlane": 362
+        },
+        {
+          "fineY": 932,
+          "sourcePlaneSha256": "9e8a193e1e9455280f777509c22ec05327db42ce8290248f3a878cd210aee800",
+          "excludedInPlane": 519
+        },
+        {
+          "fineY": 948,
+          "sourcePlaneSha256": "e2e8344df9b51dc6b279ee5a14fbf8ded634decbf075e65d76278a4794831c01",
+          "excludedInPlane": 568
+        },
+        {
+          "fineY": 964,
+          "sourcePlaneSha256": "fded7f6b5c813cad5edbd16a0303a5f9d870ec105e2608a4c157f8f3c5d4f994",
+          "excludedInPlane": 152
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "donor": "s-20-28",
+  "sourceWindow": [
+    14938.0,
+    22708.0
+  ],
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.12,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sourceHash": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+  "sourceCalibration": "Windowed uint8 HiP-CT display intensities; not calibrated HU.",
+  "checks": [
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.4,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 8301082,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.1050003599375486e-06,
+      "nativeRenderSeconds": 0.4729343630024232,
+      "file": "s-20-28-raw-0.400.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.42,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7614235,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.1050003599375486e-06,
+      "nativeRenderSeconds": 0.4929739969957154,
+      "file": "s-20-28-raw-0.420.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "raw",
+      "threshold": 0.44,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7052017,
+      "fieldSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 3.1050003599375486e-06,
+      "nativeRenderSeconds": 0.45282665999548044,
+      "file": "s-20-28-raw-0.440.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "protect-guided12",
+      "threshold": 0.4,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 8809445,
+      "fieldSha256": "86590cb9f6845ac27f3fe9cde35c37f8333280f9ddffc822ca18bc6ac800db2c",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 4.310355248999258,
+      "nativeRenderSeconds": 0.4967707430041628,
+      "file": "s-20-28-protect-guided12-0.400.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "protect-guided12",
+      "threshold": 0.42,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 8344512,
+      "fieldSha256": "b93ce15399e140e999f3dbf62b85d86a21056e3db4cf8563b17b006aeea0d15c",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 4.310355248999258,
+      "nativeRenderSeconds": 0.4953954660013551,
+      "file": "s-20-28-protect-guided12-0.420.png"
+    },
+    {
+      "donor": "s-20-28",
+      "method": "protect-guided12",
+      "threshold": 0.44,
+      "grid": [
+        477,
+        477,
+        509
+      ],
+      "spacingUm": 317.6,
+      "foregroundSamples": 7950560,
+      "fieldSha256": "17978eedc9bea60077c762bb57e2575c1101832e49d4bad07f585232232023fb",
+      "sourceSha256": "91f96aa513afd5c97d9ce8fc2ad1b9001e07307e260d5a57e2fd42e3cd9f3497",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 4.310355248999258,
+      "nativeRenderSeconds": 0.4881093570002122,
+      "file": "s-20-28-protect-guided12-0.440.png"
+    }
+  ],
+  "scope": "Native EGL production GLSL. Image comparison is not anatomical segmentation accuracy or clinical validation. Original sources remain immutable."
+}

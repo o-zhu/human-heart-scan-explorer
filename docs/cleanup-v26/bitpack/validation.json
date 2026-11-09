@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "productionShaderSha256": "c6b53b558471fc0245e99be0db2313ebf13a9e5cd1e0e9cba0d13dda1aab5bc3",
+  "checks": [
+    {
+      "bitPacked": false,
+      "offset": -0.499,
+      "samples": 9061,
+      "exact": true
+    },
+    {
+      "bitPacked": false,
+      "offset": 0,
+      "samples": 9061,
+      "exact": true
+    },
+    {
+      "bitPacked": false,
+      "offset": 0.499,
+      "samples": 9061,
+      "exact": true
+    },
+    {
+      "bitPacked": true,
+      "offset": -0.499,
+      "samples": 9061,
+      "exact": true
+    },
+    {
+      "bitPacked": true,
+      "offset": 0,
+      "samples": 9061,
+      "exact": true
+    },
+    {
+      "bitPacked": true,
+      "offset": 0.499,
+      "samples": 9061,
+      "exact": true
+    }
+  ],
+  "logicalSamples": 3310,
+  "packedBytes": 547,
+  "scope": "Production GLSL in native EGL; exact dense-versus-bitpacked logical samples and off restoration, not browser performance or anatomy validation."
+}

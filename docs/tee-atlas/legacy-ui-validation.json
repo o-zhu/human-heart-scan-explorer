@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "scope": "Actual Echo DOM and state with controlled density service, canvas and native media APIs. No browser/GPU visual-quality claim.",
+  "prepared": [
+    {
+      "key": "a4c",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "a2c",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "a3c",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "plax",
+      "width": 2011,
+      "height": 1525,
+      "cleaned": true
+    },
+    {
+      "key": "psax_papillary",
+      "width": 1525,
+      "height": 1525,
+      "cleaned": true
+    },
+    {
+      "key": "psax_mitral",
+      "width": 1525,
+      "height": 1525,
+      "cleaned": true
+    },
+    {
+      "key": "subcostal",
+      "width": 2011,
+      "height": 1525,
+      "cleaned": true
+    },
+    {
+      "key": "me4c",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "me2c",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "melax",
+      "width": 1525,
+      "height": 2011,
+      "cleaned": true
+    },
+    {
+      "key": "tgpapillary",
+      "width": 1525,
+      "height": 1525,
+      "cleaned": true
+    },
+    {
+      "key": "bicaval",
+      "width": 1525,
+      "height": 1525,
+      "cleaned": true
+    }
+  ],
+  "checks": [
+    "Two equal-grid comparison screens share one height; a single native CT canvas replaces the left 3D pane.",
+    "All 12 retained prepared presets upload full native R8 dimensions, 79.4 µm metadata and cleaned provenance.",
+    "CT fit and 1:1 modes preserve all 1525 × 2011 A4C pixels; no 640-pixel preview cap remains.",
+    "Prepared clean pixels bypass the unrelated coarse cleanup mask and input density data is unchanged.",
+    "Adjusted planes show the accurately labeled coarse section while a debounced interactive fine request loads.",
+    "Fine progress is visible; a superseded request is aborted and late completion cannot replace the current plane.",
+    "Completed fine samples require exact world-plane identity and complete density/spacing metadata.",
+    "Leaving cancels fine work; reentry retries; failure keeps the correctly labeled coarse section visible.",
+    "Original-volume comparison never requests or labels cleaned fine source data as original.",
+    "Reset restores prepared Ultra; left-pane and native-pixel preferences persist through state restore."
+  ]
+}

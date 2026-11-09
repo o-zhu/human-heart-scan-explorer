@@ -1,0 +1,642 @@
+{
+  "productionShaders": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 1504,
+    "decodedBrickReads": 3343,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "maskManifestSha256": {
+    "v25": "7e6606144d4c0f197969b383880bf866929ceec0432b529ab05be044d4ae7567",
+    "v26": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086"
+  },
+  "debrisManifestSha256": {
+    "v25": "d78edee7299217c23a8dc94ba805829e3fbd044614fdc53cb9ac8b0319c64d75",
+    "v26": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de"
+  },
+  "rendererShaderSha256": "3398f946d2da51aea352c9ce2eab5b77a1506c2a0e5545f0432cb9f0a12ca20b",
+  "fineSurfaceShaderSha256": "7292342f7437c1c73487c575cf09ae60bdc2de3711a48611ad16155216531581",
+  "checks": [
+    {
+      "case": {
+        "id": "atrial-section-305",
+        "coordinate": 1216,
+        "target": [
+          1220,
+          1216,
+          870
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 54086,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "7e4b2ce578fa9afe04882c2291845c727086f996f027674fedbc2f0f5e09f412",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "6a9094ca1ed2a096ab2902204e82437a8a373d3e62b13f9c6a5362e18ed7d26a",
+        "v26": "4a6330e7da8e74c036be30436a2fcbd277cf690406b7588c6118a939b34b3f53",
+        "originalOff": "a6215144876536628407fe3f0871e23dd752fe614d145ce788c14a90cc0533bc"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.12665406427221168
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.16840465939269766,
+          -0.10130320464244863,
+          -0.6249070136752618
+        ],
+        "_target": [
+          0.12854442344045366,
+          -0.08884688090737237,
+          -0.12665406427221168
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "atrial-section-289",
+        "coordinate": 1152,
+        "target": [
+          1210,
+          1152,
+          870
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 51116,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "bed917e7ea6987b06d98adcac72227599cb2b0982ba9d58674e74e2a716e38ec",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "a196e8c8c33e6f0bcf81af54f40efcd32e88dfbd06d35a1f95948aedb2b0a854",
+        "v26": "1116ea320cf1bd27d66cc3c086fab864972b25bd27ef2e9fb8cf14ce1e5e3e07",
+        "originalOff": "76bbc641edfa070fd4a8b885e20068cbe5bf850d06cf4cbd8bd9080485349a8f"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.09640831758034026
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.16367876147209276,
+          -0.10130320464244863,
+          -0.5946612669833904
+        ],
+        "_target": [
+          0.12381852551984876,
+          -0.08884688090737237,
+          -0.09640831758034026
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "atrial-section-310",
+        "coordinate": 1236,
+        "target": [
+          1220,
+          1236,
+          870
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 36052,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "85077c405af8799fe496cf512460373b4616aa376362125aef8da0c7f805c32e",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "30d194a7d6200bed6b684237ec89f72855fe182f3841d4f75c73b606bc0f0e1b",
+        "v26": "63b349073a42cf2796af3f428afd1fba53791284b167ae5342e24a004eda2f77",
+        "originalOff": "f390f8e04d2662634de2afe2c408cf35fa3cd866cf3beaa6ec7b1b24b8345235"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.13610586011342152
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.16840465939269766,
+          -0.10130320464244863,
+          -0.6343588095164716
+        ],
+        "_target": [
+          0.12854442344045366,
+          -0.08884688090737237,
+          -0.13610586011342152
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "arterial-lumens-305",
+        "coordinate": 1216,
+        "target": [
+          900,
+          1216,
+          500
+        ],
+        "distance": 0.59
+      },
+      "changedPixels": 9657,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "7e4b2ce578fa9afe04882c2291845c727086f996f027674fedbc2f0f5e09f412",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "fc4c9589edf41b117fc4973293fc98bdb16e1f9222ed69fdfe69f7ece9fcc3d5",
+        "v26": "b64c9bc9ec54c713d04339c554cf24cb3f0adde160c69bca246670ccc9435c57",
+        "originalOff": "77f890f5f692748ec22904b9dad5352e24a50a152d016a6e04a683f27e3908ea"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.12665406427221168
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.024350768404744344,
+          -0.2784035659771442,
+          -0.7145925445678107
+        ],
+        "_target": [
+          -0.022684310018903586,
+          -0.2637051039697542,
+          -0.12665406427221168
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "pulmonary-artery-305",
+        "coordinate": 1216,
+        "target": [
+          1000,
+          1216,
+          480
+        ],
+        "distance": 0.37
+      },
+      "changedPixels": 5761,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "7e4b2ce578fa9afe04882c2291845c727086f996f027674fedbc2f0f5e09f412",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "0050050e9a5c8aefc577887f2c86043121bac1d38374dc4933c66ca30c5a21c5",
+        "v26": "c7f5239d334ea77e08ec1d778fdce9ac357670ed90b2808ba5641454a1c75129",
+        "originalOff": "6d0a5639706aa0249eba64e3c59c6b83a144d34a4e0eff409300b587a5a364f6"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.12665406427221168
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.054071243791806126,
+          -0.28237457937492044,
+          -0.4953612468304688
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.273156899810964,
+          -0.12665406427221168
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "aortic-lumen-305",
+        "coordinate": 1216,
+        "target": [
+          700,
+          1216,
+          490
+        ],
+        "distance": 0.42
+      },
+      "changedPixels": 1240,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "7e4b2ce578fa9afe04882c2291845c727086f996f027674fedbc2f0f5e09f412",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "cee94f5bfc95b409beb1a2a08681eeaf4dd018ab39ce46d0ecfaee74a2aa3de1",
+        "v26": "abda5961c7570394f2a455623f6d589674502d5e33f1dff2439f6289ba63db06",
+        "originalOff": "f7d9233771e383952e66a992fd716c3f77b3929922ce4314e4d4bb12f76e0951"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.12665406427221168
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.08371967023111689,
+          -0.2788943138278231,
+          -0.5451865417707737
+        ],
+        "_target": [
+          -0.11720226843100186,
+          -0.26843100189035907,
+          -0.12665406427221168
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "aortic-sheet-mitral-265",
+        "coordinate": 1056,
+        "target": [
+          1060,
+          1056,
+          1070
+        ],
+        "distance": 0.42
+      },
+      "changedPixels": 60902,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "1b7cb663f80ecc4f9a49ff24397fb60d3e1ffb286bb4af41d083d4126916c940",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "679c02b83b431b4f0af207aff595ecdb1e02165d96b6c2f1d5aeaff6f85062f2",
+        "v26": "b010683dbdd60f2e54725bc7de5205f5d3afcbef9bbec98fba68be284fa3b135",
+        "originalOff": "6961ff3a64c2e46f66a4f687006081fa70d0a06c700adf4c70a4b497a6f6b73b"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.051039697542533076
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.08641265491066,
+          -0.0047922344327381555,
+          -0.4695721750410951
+        ],
+        "_target": [
+          0.05293005671077503,
+          0.0056710775047258966,
+          -0.051039697542533076
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "tricuspid-region-256",
+        "coordinate": 1020,
+        "target": [
+          740,
+          1020,
+          1200
+        ],
+        "distance": 0.42
+      },
+      "changedPixels": 1904,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "9776e10e4eeb82c319643de6c7f42449140ca80521e0073209b13398ae8bd8fe",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "945f018e288ba56eb6ed52581edeff28e234997465cc8add8bab6142275d9392",
+        "v26": "7bb354cd4e8ec253ea474ff37a2c2df96482799a27fbcc415185bf9a73073392",
+        "originalOff": "189ecea73792039c1139a9cb6c95dad71c9eb75ab9581e7afe12d4e60f6e508c"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.03402646502835538
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.06481607854869724,
+          0.05664443853512571,
+          -0.4525589425269174
+        ],
+        "_target": [
+          -0.09829867674858221,
+          0.06710775047258977,
+          -0.03402646502835538
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "rv-apex-249",
+        "coordinate": 992,
+        "target": [
+          640,
+          992,
+          1460
+        ],
+        "distance": 0.37
+      },
+      "changedPixels": 913,
+      "totalPixels": 604800,
+      "v25V26V25RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "0cedc3bca84832953a0a27f4de54e68c65ef52d8883801c6d87146b10fae45ef",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v25": "39a7dca0d3ac7bcf04d49f5975fac7e575eef3040030e84a83f045d6d299541c",
+        "v26": "49356f8588ebc4ebe2d928fe4f7b59f692d7c8271e77ff0d2bb02e251e98944f",
+        "originalOff": "d68075a128f883be99a3e140ff0dde1def2af10cfbd14d528e2b337f2fe821ac"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.02079395085066162
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.11606108134997076,
+          0.18076341684436115,
+          -0.3895011334089187
+        ],
+        "_target": [
+          -0.14555765595463133,
+          0.18998109640831756,
+          -0.02079395085066162
+        ]
+      }
+    }
+  ],
+  "scope": "Exact verified source assets, actual production GLSL, same-camera v25-to-v26 comparison, unchanged source pixels and reversible display. Nearby reproducible cameras, not exact screenshot registration. No anatomical-identity or browser-performance claim."
+}

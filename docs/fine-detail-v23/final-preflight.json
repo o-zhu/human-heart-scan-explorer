@@ -1,0 +1,30 @@
+{
+  "schema": "fine-detail-v23-final-preflight",
+  "verified": true,
+  "slabsVerified": 31,
+  "fullProcessingFingerprint": "950fbc2caf1b1f24086decf15edf53d1b54bea52f96b4f6ac18ba7b5b2fe2fb1",
+  "dependencies": {
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "vtk": "9.3.1",
+      "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "importedV19PrepareSha256": "4351c41a8c253f543c3523dd5c9a1de7213149eb9418061f5cf7b8277cff709a",
+      "upstreamQemSha256": "4168edd04021ceb761d2237867224a1cb0514757f404fc642476bfa43021364d"
+    },
+    "extractionFingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e",
+    "extractionSha256": "700c9179379b917dba8b83624bb79d3ab85b544485a4b9d55814a1b35b424bf6",
+    "weldedSha256": "ce8629ecf558f226f8b53f1b3feee60c33473deccdb13076d533a140afbbe5ac",
+    "weldReceiptSha256": "e882bfadcb5eaf046365649862f6ab0d6f6ccce18e6f71cfcbce7510705ce666",
+    "welderScriptSha256": "9b427c7da63214caa3cc9a66899e385b72a8d23cbd13017a4cea9967c6829485",
+    "seamAuditSha256": "42a61b5ca7f7a225c788d9fefbb69a132275c54c48b1f33472434955f19e09a4",
+    "encoderScriptSha256": "2c2912d73de1ae100dc3d9a8f23a68bfc303d0514a9cbe48398a17f41ad3fa8d",
+    "resumeScriptSha256": "a9d3a28a86fcce3af46cd90a7bc78161e01083f3bda1435e1ea9333b8c1cc78d",
+    "independentRecoveryReviewSha256": {
+      "1536": "6dcc55a8ed14c93f7c1f4173ae9acf75aafb577ea1085084b62721ddc9cd0341"
+    }
+  },
+  "checkedAtUtc": "2026-11-06T20:28:21Z"
+}

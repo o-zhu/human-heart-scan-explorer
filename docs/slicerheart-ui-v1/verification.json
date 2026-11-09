@@ -1,0 +1,46 @@
+{
+  "review": "SlicerHeart layout and camera orientation",
+  "baseCommit": "590cbf9ec7545f83159a57f811b8c92642b49028",
+  "nativePanelPixels": [
+    480,
+    480
+  ],
+  "nativePanels": 8,
+  "selectedCamera": {
+    "yaw": 1.15,
+    "pitch": 0.12,
+    "roll": 0
+  },
+  "reviewedSections": [
+    {
+      "axis": 0,
+      "indexOneBased": 55,
+      "total": 145
+    },
+    {
+      "axis": 1,
+      "indexOneBased": 63,
+      "total": 125
+    }
+  ],
+  "sourceFrameSha256": "14e6cf77e8d82fa1e4a5be00adf89482d51d0e53e2e47d7dafc7b189035ab83c",
+  "rendererSha256": "e5e54d65cb405b5ba57c00cce6e0ca332261419dbdff459f4eda3bca709083ee",
+  "contactSheetSha256": "d69cd58b3bd23909dd810bdb0f5941bc024183ad403727bcaa5f846aeaa37785",
+  "verification": {
+    "clinicalDomTests": 20,
+    "workspaceLayoutTests": 3,
+    "sectionNamingTests": 10,
+    "cssParse": "passed",
+    "nativeOrientation": "visually reviewed",
+    "browserLayout": "unverified: CUA backend connection closed"
+  },
+  "preserved": [
+    "source samples",
+    "physical plane normals and centers",
+    "retained clipping halves",
+    "axial display orientation",
+    "explicit shared-view cameras",
+    "HOA workspace code and styling",
+    "cMAC presentation"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "requireFine": true,
+  "scope": "Actual module geometry and DOM fixtures with controlled requests; no browser, device performance or human anatomical validation.",
+  "activeDonors": [
+    "ladaf-2021-17",
+    "s-20-29",
+    "s-20-28"
+  ],
+  "donors": [
+    {
+      "id": "s-20-29",
+      "physicalReferenceMm": 154.66464000000002,
+      "preparedSourceSpacingUm": 79.56,
+      "preparedProbePlanes": 4,
+      "neutralEchoPlanes": 13,
+      "neutralCompactViews": 8,
+      "sourceSpecificFineTextureSelections": 8,
+      "unassignedAnatomy": true,
+      "networkSilentConstruction": true,
+      "foreignDonorFramesRejected": true,
+      "cutFaceExposure": 1.8
+    },
+    {
+      "id": "s-20-28",
+      "physicalReferenceMm": 161.34080000000003,
+      "preparedSourceSpacingUm": 79.4,
+      "preparedProbePlanes": 4,
+      "neutralEchoPlanes": 13,
+      "neutralCompactViews": 8,
+      "sourceSpecificFineTextureSelections": 8,
+      "unassignedAnatomy": true,
+      "networkSilentConstruction": true,
+      "foreignDonorFramesRejected": true,
+      "cutFaceExposure": 1.8
+    }
+  ],
+  "checks": [
+    {
+      "name": "both comparison donor levels preserve physical endpoints and normalize to their own longest physical axis",
+      "passed": true
+    },
+    {
+      "name": "prepared probe planes match runtime physical poses and truthful source resolution",
+      "passed": true
+    },
+    {
+      "name": "fine-lattice coordinates map both physical endpoints on all axes, including cropped origins",
+      "passed": true
+    },
+    {
+      "name": "detail derivation retains measured alternate pixels and physical crop coordinates",
+      "passed": true
+    },
+    {
+      "name": "s-20-29: Echo, Probe and compact views use donor-specific measured labels and assets",
+      "passed": true
+    },
+    {
+      "name": "s-20-28: Echo, Probe and compact views use donor-specific measured labels and assets",
+      "passed": true
+    }
+  ]
+}

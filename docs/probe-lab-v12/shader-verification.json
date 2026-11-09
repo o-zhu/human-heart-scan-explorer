@@ -1,0 +1,36 @@
+{
+  "scope": "Exact probe-scene.js GLSL and geometry in native offscreen EGL; not browser layout, pointer permission, speed or clinical validation.",
+  "shaderSha256": "0ed87f303be5b4883c36e94d5e2e751034d674fc54fe09b7c0a69547322dc5e8",
+  "shaders": [
+    {
+      "name": "VERTEX",
+      "compiled": true,
+      "log": ""
+    },
+    {
+      "name": "FRAGMENT",
+      "compiled": true,
+      "log": ""
+    }
+  ],
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "views": [
+    {
+      "id": "original probe",
+      "nonBackgroundPixels": 14582
+    },
+    {
+      "id": "compact probe",
+      "nonBackgroundPixels": 2241
+    },
+    {
+      "id": "chest front",
+      "nonBackgroundPixels": 70086
+    },
+    {
+      "id": "chest oblique",
+      "nonBackgroundPixels": 57802
+    }
+  ],
+  "compactProbePixelFraction": 0.1537
+}

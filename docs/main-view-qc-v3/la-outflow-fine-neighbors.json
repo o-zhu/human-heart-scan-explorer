@@ -1,0 +1,681 @@
+[
+  {
+    "offsetMm": 0,
+    "sourceFrame": {
+      "center": [
+        262.06517171236527,
+        246.499999999842,
+        245.30476525065083
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        306.000000000161,
+        271.999999999752,
+        261.999999999791
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        306.000000000161,
+        271.999999999752,
+        261.999999999791
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        306.000000000161,
+        271.999999999752,
+        261.999999999791
+      ]
+    },
+    "metrics": {
+      "pixelCount": 168234,
+      "regionPixels": {
+        "neutral": 889,
+        "LV": 88629,
+        "RV": 1007,
+        "LA": 19301,
+        "RA": 22637,
+        "aorta": 24806,
+        "pulmonary": 10965
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.005284,
+        "LV": 0.52682,
+        "RV": 0.005986,
+        "LA": 0.114727,
+        "RA": 0.134557,
+        "aorta": 0.147449,
+        "pulmonary": 0.065177
+      },
+      "sampledAreaMm2": {
+        "neutral": 9.936,
+        "LV": 990.591,
+        "RV": 11.255,
+        "LA": 215.724,
+        "RA": 253.01,
+        "aorta": 277.252,
+        "pulmonary": 122.554
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 1.5,
+    "sourceFrame": {
+      "center": [
+        263.74283745838574,
+        246.499999999842,
+        240.88985539270925
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        307.67766574618145,
+        271.999999999752,
+        257.58509014184943
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        307.67766574618145,
+        271.999999999752,
+        257.58509014184943
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        307.67766574618145,
+        271.999999999752,
+        257.58509014184943
+      ]
+    },
+    "metrics": {
+      "pixelCount": 161544,
+      "regionPixels": {
+        "neutral": 447,
+        "LV": 69272,
+        "RV": 169,
+        "LA": 24572,
+        "RA": 30027,
+        "aorta": 25280,
+        "pulmonary": 11777
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.002767,
+        "LV": 0.428812,
+        "RV": 0.001046,
+        "LA": 0.152107,
+        "RA": 0.185875,
+        "aorta": 0.15649,
+        "pulmonary": 0.072903
+      },
+      "sampledAreaMm2": {
+        "neutral": 4.996,
+        "LV": 774.241,
+        "RV": 1.889,
+        "LA": 274.637,
+        "RA": 335.607,
+        "aorta": 282.55,
+        "pulmonary": 131.63
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 2.25,
+    "sourceFrame": {
+      "center": [
+        264.5816703313959,
+        246.499999999842,
+        238.68240046373847
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        308.5164986191916,
+        271.999999999752,
+        255.37763521287863
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        308.5164986191916,
+        271.999999999752,
+        255.37763521287863
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        308.5164986191916,
+        271.999999999752,
+        255.37763521287863
+      ]
+    },
+    "metrics": {
+      "pixelCount": 163166,
+      "regionPixels": {
+        "neutral": 408,
+        "LV": 52842,
+        "RV": 0,
+        "LA": 40062,
+        "RA": 32924,
+        "aorta": 24579,
+        "pulmonary": 12351
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.002501,
+        "LV": 0.323854,
+        "RV": 0.0,
+        "LA": 0.245529,
+        "RA": 0.201782,
+        "aorta": 0.150638,
+        "pulmonary": 0.075696
+      },
+      "sampledAreaMm2": {
+        "neutral": 4.56,
+        "LV": 590.606,
+        "RV": 0.0,
+        "LA": 447.766,
+        "RA": 367.986,
+        "aorta": 274.715,
+        "pulmonary": 138.045
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 3,
+    "sourceFrame": {
+      "center": [
+        265.42050320440615,
+        246.499999999842,
+        236.47494553476767
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        309.35533149220186,
+        271.999999999752,
+        253.17018028390783
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        309.35533149220186,
+        271.999999999752,
+        253.17018028390783
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        309.35533149220186,
+        271.999999999752,
+        253.17018028390783
+      ]
+    },
+    "metrics": {
+      "pixelCount": 162997,
+      "regionPixels": {
+        "neutral": 291,
+        "LV": 36633,
+        "RV": 0,
+        "LA": 56829,
+        "RA": 33075,
+        "aorta": 22948,
+        "pulmonary": 13221
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.001785,
+        "LV": 0.224746,
+        "RV": 0.0,
+        "LA": 0.348651,
+        "RA": 0.202918,
+        "aorta": 0.140788,
+        "pulmonary": 0.081112
+      },
+      "sampledAreaMm2": {
+        "neutral": 3.252,
+        "LV": 409.441,
+        "RV": 0.0,
+        "LA": 635.168,
+        "RA": 369.674,
+        "aorta": 256.486,
+        "pulmonary": 147.769
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 3.75,
+    "sourceFrame": {
+      "center": [
+        266.2593360774164,
+        246.499999999842,
+        234.2674906057969
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        310.1941643652121,
+        271.999999999752,
+        250.96272535493705
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        310.1941643652121,
+        271.999999999752,
+        250.96272535493705
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        310.1941643652121,
+        271.999999999752,
+        250.96272535493705
+      ]
+    },
+    "metrics": {
+      "pixelCount": 160238,
+      "regionPixels": {
+        "neutral": 151,
+        "LV": 23935,
+        "RV": 0,
+        "LA": 67089,
+        "RA": 32730,
+        "aorta": 21553,
+        "pulmonary": 14780
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.000942,
+        "LV": 0.149372,
+        "RV": 0.0,
+        "LA": 0.418683,
+        "RA": 0.204259,
+        "aorta": 0.134506,
+        "pulmonary": 0.092238
+      },
+      "sampledAreaMm2": {
+        "neutral": 1.688,
+        "LV": 267.517,
+        "RV": 0.0,
+        "LA": 749.842,
+        "RA": 365.818,
+        "aorta": 240.894,
+        "pulmonary": 165.194
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 4.5,
+    "sourceFrame": {
+      "center": [
+        267.0981689504266,
+        246.499999999842,
+        232.0600356768261
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        311.0329972382223,
+        271.999999999752,
+        248.75527042596624
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        311.0329972382223,
+        271.999999999752,
+        248.75527042596624
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        311.0329972382223,
+        271.999999999752,
+        248.75527042596624
+      ]
+    },
+    "metrics": {
+      "pixelCount": 157909,
+      "regionPixels": {
+        "neutral": 120,
+        "LV": 16092,
+        "RV": 0,
+        "LA": 71149,
+        "RA": 33548,
+        "aorta": 20408,
+        "pulmonary": 16592
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.00076,
+        "LV": 0.101907,
+        "RV": 0.0,
+        "LA": 0.45057,
+        "RA": 0.212451,
+        "aorta": 0.129239,
+        "pulmonary": 0.105073
+      },
+      "sampledAreaMm2": {
+        "neutral": 1.341,
+        "LV": 179.858,
+        "RV": 0.0,
+        "LA": 795.22,
+        "RA": 374.96,
+        "aorta": 228.097,
+        "pulmonary": 185.446
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  },
+  {
+    "offsetMm": 6,
+    "sourceFrame": {
+      "center": [
+        268.775834696447,
+        246.499999999842,
+        227.64512581888454
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 325.0,
+      "height": 460.0,
+      "target": [
+        312.71066298424273,
+        271.999999999752,
+        244.3403605680247
+      ]
+    },
+    "reviewFrame": {
+      "center": [
+        312.71066298424273,
+        271.999999999752,
+        244.3403605680247
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.934783580588163,
+        0.0,
+        0.3552177606240619
+      ],
+      "normal": [
+        0.3552177606240619,
+        0.0,
+        -0.934783580588163
+      ],
+      "width": 189.00000000000006,
+      "height": 199.80000000000004,
+      "target": [
+        312.71066298424273,
+        271.999999999752,
+        244.3403605680247
+      ]
+    },
+    "metrics": {
+      "pixelCount": 154415,
+      "regionPixels": {
+        "neutral": 114,
+        "LV": 1822,
+        "RV": 0,
+        "LA": 83726,
+        "RA": 31869,
+        "aorta": 18350,
+        "pulmonary": 18534
+      },
+      "regionFractionOfThresholdedSection": {
+        "neutral": 0.000738,
+        "LV": 0.011799,
+        "RV": 0.0,
+        "LA": 0.542214,
+        "RA": 0.206385,
+        "aorta": 0.118836,
+        "pulmonary": 0.120027
+      },
+      "sampledAreaMm2": {
+        "neutral": 1.274,
+        "LV": 20.364,
+        "RV": 0.0,
+        "LA": 935.791,
+        "RA": 356.194,
+        "aorta": 205.095,
+        "pulmonary": 207.151
+      },
+      "pixelThreshold": 72,
+      "raster": [
+        568,
+        600
+      ],
+      "interpretation": "Approximate tissue-label support in this resampled rectangle; not chamber area, segmentation accuracy or valve validation."
+    }
+  }
+]

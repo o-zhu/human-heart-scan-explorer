@@ -1,0 +1,79 @@
+{
+  "release": "v16",
+  "baselineCommit": "6ee683ee505b36e212e1b0f12a987a863d71ddf4",
+  "liveUrl": "https://human-heart-scan-explorer.zhuou557737.chatgpt.site",
+  "scope": "Local production-method tests, DOM fixtures, source dependency inspection and native EGL. No browser FPS or user-device input latency measurement.",
+  "checks": [
+    {
+      "group": "focused-current-plane-rendering-decode-priority-windowing-probe",
+      "passed": 93,
+      "failed": 0
+    },
+    {
+      "group": "actual-app-DOM-boot-tabs-settings-fullscreen",
+      "passed": 16,
+      "failed": 0
+    },
+    {
+      "group": "donor-brightness-DOM",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "group": "module-cache-receiver-quick-views-after-extraction",
+      "passed": 21,
+      "failed": 0,
+      "note": "Overlaps receiver checks in focused suite; do not sum as unique tests."
+    },
+    {
+      "group": "renderer-motion-orchestration",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "group": "existing-ultra-prefetch",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "group": "flow-geometry-source-registration",
+      "presets": 8,
+      "transformedFrames": 32,
+      "passed": true
+    },
+    {
+      "group": "native-EGL-comparisons",
+      "passed": 18,
+      "failed": 0,
+      "shaderSourcesSha256": "5cdc6ea331b6cb33da81a1a4ccd08cb0e929ee31c81571bba7a61a006798fad4"
+    }
+  ],
+  "initialCode": {
+    "beforeModules": 29,
+    "afterModules": 20,
+    "beforeSourceBytes": 455036,
+    "afterSourceBytes": 239478,
+    "reductionPercent": 47.37,
+    "method": "ESM lexer follows literal static imports/re-exports from public/app.js; dynamic imports, workers, CSS, framework bootstrap and data fetches excluded. gzipBytes sums per-file gzip level 9, a transport-size estimate rather than measured wire traffic."
+  },
+  "runtimeLimits": {
+    "initialScenePixels": 160000,
+    "maxIdleBandPixels": 160000,
+    "idleRefineDelayMs": 260,
+    "physicalNativeDecodes": 2,
+    "compatibilityNativeDecodes": 1,
+    "residentSectionCacheBytes": 4194304
+  },
+  "tradeoffs": [
+    "Resident fallback follows the exact current plane but has coarser measured source resolution than Ultra.",
+    "The same display transfer and output size do not make coarse/fine source pixels identical.",
+    "Bounded physical decoding increases final exact Ultra delivery in the fixed 40 ms service fixture from 40 ms to 56\u201372 ms; it reduces work pressure, while immediate resident display removes the old holding delay."
+  ],
+  "dataCompatibility": "No scan source asset or encoded image URL/cache key changed.",
+  "evidence": [
+    "docs/renderer-responsiveness-v16/native-render-check.json",
+    "docs/ultra-motion-v16/benchmark.json",
+    "docs/resident-sections-v16/benchmark.json",
+    "docs/module-loading-v16/graph.json"
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "schema": "whole-native-gl-check-v21.2",
+  "scope": "Actual shader compile/link, GLES3 raster/clip/integer-pick checks under surfaceless Mesa. Not a browser screenshot, interaction validation, FPS claim, or anatomical accuracy test.",
+  "source": "public/whole-native.js",
+  "sourceSha256": "2d9c0fe35634dc0b3ce974ed038d5c9132f2a765053e004422d80ab1cf47ca95",
+  "shaderSha256": {
+    "vertex": "772df3df50e93487a892f68c4b160b23e861bd8ec49d6689eb40d992b9254198",
+    "fragment": "cdc979a7666200a4ba23251670f4f1b1b35ac7ebc832404db867eb7f15b82e48",
+    "pickFragment": "5562458d3607a2b753ab34bf28167a075a9db47a00a7fc4800f95ab251ee5866"
+  },
+  "passed": true,
+  "driver": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+    "shadingLanguage": "OpenGL ES GLSL ES 3.20"
+  },
+  "programsCompiledAndLinked": [
+    "vertex+fragment",
+    "vertex+pickFragment"
+  ],
+  "picking": {
+    "framebuffer": "RGBA32UI + DEPTH_COMPONENT24",
+    "viewportOffsetEquivalent": true,
+    "backgroundRGBA": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "expectedCenterNativeXYZ": [
+      4544,
+      4032,
+      4672
+    ],
+    "centerActualRGBA": [
+      4544,
+      4032,
+      4672,
+      1
+    ],
+    "samples": [
+      {
+        "pixelXY": [
+          64,
+          48
+        ],
+        "integerRGBA": [
+          4544,
+          4032,
+          4672,
+          1
+        ]
+      },
+      {
+        "pixelXY": [
+          0,
+          0
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "pixelXY": [
+          128,
+          96
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "pixelXY": [
+          50,
+          43
+        ],
+        "integerRGBA": [
+          4397,
+          4032,
+          4620,
+          1
+        ]
+      },
+      {
+        "pixelXY": [
+          74,
+          43
+        ],
+        "integerRGBA": [
+          4649,
+          4032,
+          4620,
+          1
+        ]
+      },
+      {
+        "pixelXY": [
+          50,
+          60
+        ],
+        "integerRGBA": [
+          4397,
+          4032,
+          4798,
+          1
+        ]
+      },
+      {
+        "pixelXY": [
+          60,
+          53
+        ],
+        "integerRGBA": [
+          4502,
+          4032,
+          4724,
+          1
+        ]
+      }
+    ]
+  },
+  "positionBranches": {
+    "float32Rendered": true,
+    "normalizedUint16Rendered": true,
+    "identicalColorPixels": true,
+    "identicalIntegerPicks": true,
+    "visiblePixels": 1225,
+    "centerColorRGBA": [
+      169,
+      141,
+      124,
+      255
+    ]
+  },
+  "clipping": {
+    "unclippedPixels": 1225,
+    "positiveSignPixels": 697,
+    "negativeSignPixels": 561,
+    "flippedUnionEqualsUnclipped": true,
+    "fullyClippedEqualsBackground": true,
+    "cutBeyondMeshPreservesImage": true,
+    "renderAndPickCoverageIdentical": true,
+    "hiddenPixelsPickZero": true,
+    "visibleCoordinatesUnchanged": true,
+    "viewportOffsetClippedSamples": [
+      {
+        "sign": 1,
+        "pixelXY": [
+          64,
+          48
+        ],
+        "integerRGBA": [
+          4544,
+          4032,
+          4672,
+          1
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          0,
+          0
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          128,
+          96
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          50,
+          43
+        ],
+        "integerRGBA": [
+          4397,
+          4032,
+          4620,
+          1
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          74,
+          43
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          50,
+          60
+        ],
+        "integerRGBA": [
+          4397,
+          4032,
+          4798,
+          1
+        ]
+      },
+      {
+        "sign": 1,
+        "pixelXY": [
+          60,
+          53
+        ],
+        "integerRGBA": [
+          4502,
+          4032,
+          4724,
+          1
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          64,
+          48
+        ],
+        "integerRGBA": [
+          4544,
+          4032,
+          4672,
+          1
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          0,
+          0
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          128,
+          96
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          50,
+          43
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          74,
+          43
+        ],
+        "integerRGBA": [
+          4649,
+          4032,
+          4620,
+          1
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          50,
+          60
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sign": -1,
+        "pixelXY": [
+          60,
+          53
+        ],
+        "integerRGBA": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "pickingPolicy": "The actual render and integer-pick fragments use the identical section discard rule and cut uniforms."
+  },
+  "depthPicking": {
+    "drawOrderIndependent": true,
+    "nearerNativeXYZ": [
+      4544,
+      3862,
+      4672
+    ],
+    "clippedFrontRevealsRearColorAndPick": true,
+    "clippedNativeAxis": "Y",
+    "remainingNativeXYZ": [
+      4544,
+      4032,
+      4672
+    ],
+    "clippedOnePixelPickDrawOrderIndependent": true
+  },
+  "actualHfmPilot": {
+    "path": "{source-cache}/guided-native-v21/overview-pilot-proof3/assets/overview.hfm.gz",
+    "compressedSha256": "92d69d8d177b789cac7ba85713123211c8b779a895485e3b11a81d429450d014",
+    "decodedSha256": "6273d6746296fdedbbdd398d93bcb7b99cb8d0fc5c7aa4aaa59732e3df8164c7",
+    "vertices": 16195,
+    "triangles": 30000,
+    "floatPositionBranch": true,
+    "visiblePixels": 26330,
+    "width": 320,
+    "height": 240,
+    "image": "{local-workspace}/docs/guided-native-v21/whole-viewer-gl.png",
+    "imageSha256": "24d735665c42bfd9dd27ee36770a5d9c9eebedea228a500c8ed33bdb71130e8c"
+  },
+  "shaderStringsUnchangedDuringCheck": true,
+  "elapsedSeconds": 0.24367478699423373,
+  "peakProcessRssMiB": 105.0078125
+}

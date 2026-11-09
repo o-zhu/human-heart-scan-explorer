@@ -1,0 +1,839 @@
+{
+  "datasetId": "1773963465",
+  "specimen": "S-20-29",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": false,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Measured geometric comparison; anatomical identity unreviewed",
+  "sourceDoi": "10.15151/ESRF-DC-1773964017",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "schemaVersion": 2,
+  "revision": "s-20-29-measured-v10",
+  "sourceSpacingUm": 79.56,
+  "title": "Measured section comparisons",
+  "description": "Eight independently placed planes through this donor's measured CT.",
+  "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+  "displayGroups": [
+    {
+      "key": "01",
+      "name": "Long sections",
+      "presetIds": [
+        "rv-inflow",
+        "rv-outflow"
+      ]
+    },
+    {
+      "key": "02",
+      "name": "Cross sections",
+      "presetIds": [
+        "ra-inflow",
+        "ra-outflow"
+      ]
+    },
+    {
+      "key": "03",
+      "name": "Oblique sections",
+      "presetIds": [
+        "lv-inflow",
+        "lv-outflow"
+      ]
+    },
+    {
+      "key": "04",
+      "name": "Offset sections",
+      "presetIds": [
+        "la-inflow",
+        "la-outflow"
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "id": "rv-inflow",
+      "title": "Long section A",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Long section A",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          -0.000131077524,
+          0.000179315829,
+          0.001262193353
+        ],
+        "right": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "up": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "normal": [
+          -0.102277435857,
+          0.139916917943,
+          0.98486678398
+        ],
+        "width": 1.543636128202645,
+        "height": 1.440866304561708,
+        "target": [
+          0.078470154806,
+          -0.000102368805,
+          0.009464871192
+        ]
+      },
+      "source": {
+        "center": [
+          238.436296323257,
+          237.886574030569,
+          243.087147492864
+        ],
+        "target": [
+          276.636495235552,
+          233.900072600618,
+          242.950248760777
+        ],
+        "rightPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ],
+        "upPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ],
+        "normalPhysicalXYZ": [
+          -0.102277435857,
+          -0.98486678398,
+          0.139916917943
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/rv-inflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/rv-inflow.webp",
+        "width": 3002,
+        "height": 2803,
+        "bytes": 956296,
+        "sha256": "82bf66d823725886a8269b2d0d8be9f74717d4e1bacdff23626b04885d4f63ce",
+        "pixelSha256": "c6727cc4f5c603534dba40ef10f70f0292daa0e41fd0ba1f86f6b52b3bc0716d",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55545686752947,
+          79.53285805965986
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "rv-outflow",
+      "title": "Long section B",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Long section B",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          0.046230922847,
+          -0.038549225123,
+          0.010277602188
+        ],
+        "right": [
+          0.102277435857,
+          -0.139916917943,
+          -0.98486678398
+        ],
+        "up": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "normal": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "width": 1.211044063750705,
+        "height": 1.440866304561708,
+        "target": [
+          0.078470154806,
+          -0.000102368805,
+          0.009464871192
+        ]
+      },
+      "source": {
+        "center": [
+          260.968228503444,
+          233.505085336421,
+          224.26507659027
+        ],
+        "target": [
+          276.636495235552,
+          233.900072600618,
+          242.950248760777
+        ],
+        "rightPhysicalXYZ": [
+          0.102277435857,
+          0.98486678398,
+          -0.139916917943
+        ],
+        "upPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ],
+        "normalPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/rv-outflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/rv-outflow.webp",
+        "width": 2356,
+        "height": 2803,
+        "bytes": 659954,
+        "sha256": "70f5b16cd22f18e2db8458f4bb397f8cf1e15e4181388443f984a09d1d5bf10d",
+        "pixelSha256": "2ca8114509ec93aebd3dc5ea0932c2fe7cede97eab09922282561f78feca1351",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.53532660048401,
+          79.53285805965986
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "ra-inflow",
+      "title": "Central cross section",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Central cross section",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          0.032370309483,
+          0.038267540489,
+          -0.002074924349
+        ],
+        "right": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "up": [
+          0.102277435857,
+          -0.139916917943,
+          -0.98486678398
+        ],
+        "normal": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "width": 1.543636128202645,
+        "height": 1.211044063750705,
+        "target": [
+          0.078470154806,
+          -0.000102368805,
+          0.009464871192
+        ]
+      },
+      "source": {
+        "center": [
+          254.231970408851,
+          239.508413233627,
+          261.598024677642
+        ],
+        "target": [
+          276.636495235552,
+          233.900072600618,
+          242.950248760777
+        ],
+        "rightPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ],
+        "upPhysicalXYZ": [
+          0.102277435857,
+          0.98486678398,
+          -0.139916917943
+        ],
+        "normalPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/ra-inflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/ra-inflow.webp",
+        "width": 3002,
+        "height": 2356,
+        "bytes": 590432,
+        "sha256": "680ce9901b3dab2333f57b9213120178cac97e3cfec1a3f91edd93aea0b48f99",
+        "pixelSha256": "7cd661d3e3aa0e730d8a5a83b49312d7039744d6c8f5b6b197d7c87f8190a72b",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55545686752947,
+          79.53532660048401
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "ra-outflow",
+      "title": "Offset cross section",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Offset cross section",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          -0.042084224594,
+          -0.049751139063,
+          0.00269758256
+        ],
+        "right": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "up": [
+          0.102277435857,
+          -0.139916917943,
+          -0.98486678398
+        ],
+        "normal": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "width": 1.543636128202645,
+        "height": 1.2110440637507047,
+        "target": [
+          0.004015620728,
+          -0.088121048357,
+          0.014237378101
+        ]
+      },
+      "source": {
+        "center": [
+          218.04706684708,
+          237.188974875881,
+          218.820946415322
+        ],
+        "target": [
+          240.451591673781,
+          231.580634242872,
+          200.173170498456
+        ],
+        "rightPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ],
+        "upPhysicalXYZ": [
+          0.102277435857,
+          0.98486678398,
+          -0.139916917943
+        ],
+        "normalPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/ra-outflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/ra-outflow.webp",
+        "width": 3002,
+        "height": 2356,
+        "bytes": 503414,
+        "sha256": "cce841ae71801696f348a42ef29e41e82fae1961406ceccd30d4ea1e5be6e99b",
+        "pixelSha256": "a0bae019a3639da71ead9f2596c019d697895008c3be0d22c1d265ab6cef14db",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55545686752947,
+          79.535326600484
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "lv-inflow",
+      "title": "Oblique long section",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Oblique long section",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          0.00917513106,
+          -0.006153453855,
+          0.029651340041
+        ],
+        "right": [
+          0.706783704079,
+          -0.616661933952,
+          -0.346676873851
+        ],
+        "up": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "normal": [
+          0.28996195156,
+          -0.194467793089,
+          0.937072219254
+        ],
+        "width": 1.6547292089983383,
+        "height": 1.440866304561708,
+        "target": [
+          0.078470154806,
+          -0.000102368805,
+          0.009464871192
+        ]
+      },
+      "source": {
+        "center": [
+          242.959113695334,
+          224.089448740052,
+          240.009421426504
+        ],
+        "target": [
+          276.636495235552,
+          233.900072600618,
+          242.950248760777
+        ],
+        "rightPhysicalXYZ": [
+          0.706783704079,
+          0.346676873851,
+          -0.616661933952
+        ],
+        "upPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ],
+        "normalPhysicalXYZ": [
+          0.28996195156,
+          -0.937072219254,
+          -0.194467793089
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/lv-inflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/lv-inflow.webp",
+        "width": 3218,
+        "height": 2803,
+        "bytes": 842674,
+        "sha256": "9e6ec5e7a764631273091b129666825b61ee83872cbf5c6cedc4d8209a624fdb",
+        "pixelSha256": "0c76d71b4bb1bd8a9ef26f5d9b49fcde413534fe1bd645a1a087536c57e7fdec",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55489505974907,
+          79.53285805965986
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "lv-outflow",
+      "title": "Oblique cross section",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Oblique cross section",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          0.036418669444,
+          0.020001544791,
+          0.038669815628
+        ],
+        "right": [
+          0.706783704079,
+          -0.616661933952,
+          -0.346676873851
+        ],
+        "up": [
+          0.297956830425,
+          0.703954693062,
+          -0.644724373138
+        ],
+        "normal": [
+          0.641621791129,
+          0.352385938042,
+          0.68128234075
+        ],
+        "width": 1.6547292089983383,
+        "height": 1.6332940636379902,
+        "target": [
+          0.078470154806,
+          -0.000102368805,
+          0.009464871192
+        ]
+      },
+      "source": {
+        "center": [
+          256.199473349716,
+          219.7064696049,
+          252.720750768485
+        ],
+        "target": [
+          276.636495235552,
+          233.900072600618,
+          242.950248760777
+        ],
+        "rightPhysicalXYZ": [
+          0.706783704079,
+          0.346676873851,
+          -0.616661933952
+        ],
+        "upPhysicalXYZ": [
+          0.297956830425,
+          0.644724373138,
+          0.703954693062
+        ],
+        "normalPhysicalXYZ": [
+          0.641621791129,
+          -0.68128234075,
+          0.352385938042
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/lv-outflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/lv-outflow.webp",
+        "width": 3218,
+        "height": 3177,
+        "bytes": 664398,
+        "sha256": "8851d882188edf475d7d5d5abd66dbcf5bd0efba1832ad2645a89733350f840f",
+        "pixelSha256": "4b440f13e891fd15e65aee42505c772b7e492c0ddabcc9f020648e34b5fb7612",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55489505974907,
+          79.538047344681
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "la-inflow",
+      "title": "Offset long section A",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Offset long section A",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          -0.01054945556,
+          0.008796565422,
+          -0.002345250773
+        ],
+        "right": [
+          0.102277435857,
+          -0.139916917943,
+          -0.98486678398
+        ],
+        "up": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "normal": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "width": 1.211044063750705,
+        "height": 1.440866304561708,
+        "target": [
+          0.021689776399,
+          0.047243421739,
+          -0.00315798177
+        ]
+      },
+      "source": {
+        "center": [
+          233.372964597714,
+          239.639791875788,
+          247.27513079485
+        ],
+        "target": [
+          249.041231329822,
+          240.034779139984,
+          265.960302965357
+        ],
+        "rightPhysicalXYZ": [
+          0.102277435857,
+          0.98486678398,
+          -0.139916917943
+        ],
+        "upPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ],
+        "normalPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/la-inflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/la-inflow.webp",
+        "width": 2356,
+        "height": 2803,
+        "bytes": 653244,
+        "sha256": "d0d1a579e366201dff083d415d351c705c64dfa9e8a42fb8900400be678f5329",
+        "pixelSha256": "2fff69a8e5140debc102d340a895e8216417510deac5d16639bb7355569b5079",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.53532660048401,
+          79.53285805965986
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    },
+    {
+      "id": "la-outflow",
+      "title": "Offset cross section B",
+      "subtitle": "Measured tissue and cavity boundaries",
+      "displayLabel": "Offset cross section B",
+      "chamber": null,
+      "kind": "Comparison",
+      "world": {
+        "center": [
+          0.106824843561,
+          0.126286220041,
+          -0.006847431258
+        ],
+        "right": [
+          0.757073618493,
+          -0.631278796894,
+          0.168305129968
+        ],
+        "up": [
+          0.102277435857,
+          -0.139916917943,
+          -0.98486678398
+        ],
+        "normal": [
+          0.645274253551,
+          0.762830477016,
+          -0.041361830698
+        ],
+        "width": 1.543636128202645,
+        "height": 1.2110440637507047,
+        "target": [
+          0.152924688883,
+          0.087916310747,
+          0.004692364283
+        ]
+      },
+      "source": {
+        "center": [
+          290.416873970623,
+          241.827851591373,
+          304.375102939963
+        ],
+        "target": [
+          312.821398797323,
+          236.219510958364,
+          285.727327023097
+        ],
+        "rightPhysicalXYZ": [
+          0.757073618493,
+          -0.168305129968,
+          -0.631278796894
+        ],
+        "upPhysicalXYZ": [
+          0.102277435857,
+          0.98486678398,
+          -0.139916917943
+        ],
+        "normalPhysicalXYZ": [
+          0.645274253551,
+          0.041361830698,
+          0.762830477016
+        ]
+      },
+      "cameraDistance": 0.98,
+      "closeDistance": 0.6272,
+      "focusWidthMm": 131.464944,
+      "focusHeightMm": 131.464944,
+      "threshold": 0.16216216216216217,
+      "flip": false,
+      "previewUrl": "./assets/donors/s-20-29/flow-textures/la-outflow-preview.webp",
+      "texture": {
+        "url": "./assets/donors/s-20-29/flow-textures/la-outflow.webp",
+        "width": 3002,
+        "height": 2356,
+        "bytes": 505626,
+        "sha256": "7554626994be73846be249331400df7a2f08c83742a2eb57912b73e3ff3b67e0",
+        "pixelSha256": "70300cbdf00f9aa9bfe7dae3ad471bc649a11ecf288ae414cab7ada7c40ad336",
+        "spacingUm": 79.56,
+        "sourceSpacingUm": 79.56,
+        "spacingUmXY": [
+          79.55545686752947,
+          79.535326600484
+        ],
+        "cleaned": true,
+        "lossless": true,
+        "geometricComparisonOnly": true
+      },
+      "description": "Explore the measured walls, folds and spaces in this donor-specific section. Adjust its depth or angle to compare adjacent anatomy.",
+      "structures": [
+        "Measured tissue",
+        "Measured spaces",
+        "Anatomy unassigned"
+      ],
+      "review": "A geometric starting plane calculated from this donor's own tissue distribution. No chamber or valve label is inferred.",
+      "note": "Measured comparison plane derived independently from this donor. Chambers, valve attachments and inflow/outflow identities have not been assigned. The clinical ultrasound movie is an independent reference, not an anatomically registered or same-donor acquisition.",
+      "geometricComparisonOnly": true,
+      "anatomicIdentityAssigned": false
+    }
+  ]
+}

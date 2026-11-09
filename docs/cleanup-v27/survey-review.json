@@ -1,0 +1,149 @@
+{
+  "scope": "Bounded survey of six additional views after target review. This is not exhaustive voxel-wise annotation or anatomical validation.",
+  "maskManifestSha256": "d97ac73a657df879fdfb8c88004cb63a429b568455b45b2dfceb2ae6258742f8",
+  "records": [
+    {
+      "id": "survey-y161",
+      "region": "Earlier separated cut: right-sided chamber, trabecular and chordal structures",
+      "observation": "The displayed chamber is open; branching and sheet-like structures remain connected to source-supported walls/leaflet regions. No additional separable object was established in this view.",
+      "decision": "Retain; no new exclusion visible at this cut.",
+      "camera": {
+        "id": "survey-y161",
+        "coordinate": 640,
+        "target": [
+          948,
+          640,
+          1120
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 0,
+      "sourceCapSha256": "83854aa756ecf654893c37987712d7bb065eb4532729e910887ef8657394f399",
+      "comparison": "render/survey-y161-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    },
+    {
+      "id": "survey-y249",
+      "region": "Mid-heart cut with great vessel, atrial rear surface and ventricular interior",
+      "observation": "Bounded wall/fringe changes are visible. A small rough oval remains on the deeper-cut rear surface; this view does not by itself establish additional wrongly excluded wall support.",
+      "decision": "Retain unresolved roughness; do not extend restoration beyond the two validated footprints.",
+      "camera": {
+        "id": "survey-y249",
+        "coordinate": 992,
+        "target": [
+          948,
+          992,
+          1100
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 1155,
+      "sourceCapSha256": "0cedc3bca84832953a0a27f4de54e68c65ef52d8883801c6d87146b10fae45ef",
+      "comparison": "render/survey-y249-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    },
+    {
+      "id": "survey-y361",
+      "region": "Later great-vessel/atrial aspect and exterior-adjacent surface",
+      "observation": "The known PA wall-adjacent arc remains visible. Other surface ridges and irregular transitions remain attached or unresolved at this view.",
+      "decision": "Retain attached/ambiguous roughness; no additional blanket selection.",
+      "camera": {
+        "id": "survey-y361",
+        "coordinate": 1440,
+        "target": [
+          948,
+          1440,
+          1000
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 340,
+      "sourceCapSha256": "bc1f7f138fb81bcf5c62e954a7d1db54fc7fbb3dd0d2534337870e61f52e65fd",
+      "comparison": "render/survey-y361-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    },
+    {
+      "id": "survey-apex-y253",
+      "region": "Apical myocardium and narrow endocardial spaces",
+      "observation": "The cut reveals densely patterned myocardium with narrow channels and connected endocardial structures. No independently separable large object was established in this sampled view.",
+      "decision": "Retain; exact same readback as v26 in this view.",
+      "camera": {
+        "id": "survey-apex-y253",
+        "coordinate": 1008,
+        "target": [
+          880,
+          1008,
+          1640
+        ],
+        "distance": 0.56
+      },
+      "changedPixels": 0,
+      "sourceCapSha256": "66880ae8299a3abe2b3edeb81826a1968f9bfaea3892f0edcf13792ba19724ec",
+      "comparison": "render/survey-apex-y253-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    },
+    {
+      "id": "survey-exterior",
+      "region": "Rotated whole-organ exterior",
+      "observation": "The epicardial surface retains small pits, ridges and surface irregularity. No new isolated target was established from this exterior view.",
+      "decision": "Retain source-supported surface texture; no extra surface stripping.",
+      "camera": {
+        "id": "survey-exterior",
+        "coordinate": 1132,
+        "target": [
+          948,
+          948,
+          1058
+        ],
+        "distance": 1.25,
+        "whole": true,
+        "direction": [
+          0.55,
+          0.15,
+          -1
+        ]
+      },
+      "changedPixels": 0,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "comparison": "render/survey-exterior-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    },
+    {
+      "id": "survey-posterior-y284",
+      "region": "Opposite clipped half at Y284",
+      "observation": "Corrected reversed plane normal exposes the opposite chamber/vessel surfaces. The bounded sheet selections are visible from the opposite side; wall, leaflet and branching structures remain.",
+      "decision": "Retain remaining attached or unresolved structures; no additional free object established.",
+      "camera": {
+        "id": "survey-posterior-y284",
+        "coordinate": 1132,
+        "target": [
+          1000,
+          1132,
+          1050
+        ],
+        "distance": 1.1,
+        "side": 1,
+        "direction": [
+          0.12,
+          0.03,
+          1
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "changedPixels": 1215,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "comparison": "render/survey-posterior-y284-comparison.jpg",
+      "originalOffExact": true,
+      "v26RestoreExact": true
+    }
+  ]
+}

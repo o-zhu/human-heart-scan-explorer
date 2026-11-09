@@ -1,0 +1,515 @@
+[
+  {
+    "id": "me5c",
+    "aseNumber": 1,
+    "name": "Midesophageal five-chamber",
+    "group": "me",
+    "file": "me5c.svg",
+    "src": "/assets/tee-atlas/diagrams/me5c.svg",
+    "landmarks": [
+      "LA",
+      "RA",
+      "LV",
+      "RV",
+      "Mitral valve",
+      "Tricuspid valve",
+      "LVOT",
+      "Aortic valve"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal five-chamber. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "me4c",
+    "aseNumber": 2,
+    "name": "Midesophageal four-chamber",
+    "group": "me",
+    "file": "me4c.svg",
+    "src": "/assets/tee-atlas/diagrams/me4c.svg",
+    "landmarks": [
+      "LV",
+      "RV",
+      "LA",
+      "RA",
+      "Mitral valve",
+      "Tricuspid valve",
+      "Interatrial septum",
+      "Interventricular septum"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal four-chamber. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "mecommissural",
+    "aseNumber": 3,
+    "name": "Midesophageal mitral commissural",
+    "group": "me",
+    "file": "mecommissural.svg",
+    "src": "/assets/tee-atlas/diagrams/mecommissural.svg",
+    "landmarks": [
+      "LA",
+      "LV",
+      "Mitral commissures",
+      "P3",
+      "A2",
+      "P1",
+      "Chordae",
+      "Papillary muscles"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal mitral commissural. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "me2c",
+    "aseNumber": 4,
+    "name": "Midesophageal two-chamber",
+    "group": "me",
+    "file": "me2c.svg",
+    "src": "/assets/tee-atlas/diagrams/me2c.svg",
+    "landmarks": [
+      "LA",
+      "LV",
+      "Mitral valve",
+      "Anterior LV wall",
+      "Inferior LV wall",
+      "LAA"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal two-chamber. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "melax",
+    "aseNumber": 5,
+    "name": "Midesophageal long-axis",
+    "group": "me",
+    "file": "melax.svg",
+    "src": "/assets/tee-atlas/diagrams/melax.svg",
+    "landmarks": [
+      "LA",
+      "LV",
+      "Mitral valve (P2/A2)",
+      "LVOT",
+      "Aortic valve",
+      "Proximal aorta",
+      "Inferolateral LV wall",
+      "Anteroseptal LV wall"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "meavlax",
+    "aseNumber": 6,
+    "name": "Midesophageal aortic valve long-axis",
+    "group": "me",
+    "file": "meavlax.svg",
+    "src": "/assets/tee-atlas/diagrams/meavlax.svg",
+    "landmarks": [
+      "LVOT",
+      "Aortic valve",
+      "Aortic sinuses",
+      "Sinotubular junction",
+      "Proximal ascending aorta"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal aortic valve long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "meaaolax",
+    "aseNumber": 7,
+    "name": "Midesophageal ascending aorta long-axis",
+    "group": "me",
+    "file": "meaaolax.svg",
+    "src": "/assets/tee-atlas/diagrams/meaaolax.svg",
+    "landmarks": [
+      "Ascending aorta",
+      "Right pulmonary artery"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal ascending aorta long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "meaaosax",
+    "aseNumber": 8,
+    "name": "Midesophageal ascending aorta short-axis",
+    "group": "me",
+    "file": "meaaosax.svg",
+    "src": "/assets/tee-atlas/diagrams/meaaosax.svg",
+    "landmarks": [
+      "Ascending aorta",
+      "SVC",
+      "Main pulmonary artery",
+      "Right pulmonary artery"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal ascending aorta short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "merpv",
+    "aseNumber": 9,
+    "name": "Midesophageal right pulmonary vein",
+    "group": "me",
+    "file": "merpv.svg",
+    "src": "/assets/tee-atlas/diagrams/merpv.svg",
+    "landmarks": [
+      "Right superior pulmonary vein",
+      "Right inferior pulmonary vein",
+      "LA",
+      "SVC",
+      "Ascending aorta"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal right pulmonary vein. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "meavsax",
+    "aseNumber": 10,
+    "name": "Midesophageal aortic valve short-axis",
+    "group": "me",
+    "file": "meavsax.svg",
+    "src": "/assets/tee-atlas/diagrams/meavsax.svg",
+    "landmarks": [
+      "Left coronary cusp",
+      "Noncoronary cusp",
+      "Right coronary cusp",
+      "Aortic root",
+      "LA",
+      "RA",
+      "Interatrial septum",
+      "RVOT"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal aortic valve short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "mervinout",
+    "aseNumber": 11,
+    "name": "Midesophageal RV inflow-outflow",
+    "group": "me",
+    "file": "mervinout.svg",
+    "src": "/assets/tee-atlas/diagrams/mervinout.svg",
+    "landmarks": [
+      "LA",
+      "RA",
+      "Interatrial septum",
+      "Tricuspid valve",
+      "RV",
+      "RVOT",
+      "Pulmonic valve",
+      "Main pulmonary artery"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal RV inflow-outflow. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "memodbicaval",
+    "aseNumber": 12,
+    "name": "Midesophageal modified bicaval tricuspid valve",
+    "group": "me",
+    "file": "memodbicaval.svg",
+    "src": "/assets/tee-atlas/diagrams/memodbicaval.svg",
+    "landmarks": [
+      "RA",
+      "LA",
+      "Interatrial septum",
+      "IVC",
+      "Tricuspid valve",
+      "Septal tricuspid leaflet"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal modified bicaval tricuspid valve. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "bicaval",
+    "aseNumber": 13,
+    "name": "Midesophageal bicaval",
+    "group": "me",
+    "file": "bicaval.svg",
+    "src": "/assets/tee-atlas/diagrams/bicaval.svg",
+    "landmarks": [
+      "SVC",
+      "IVC",
+      "RA",
+      "LA",
+      "Interatrial septum",
+      "Right atrial appendage"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal bicaval. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "mepv",
+    "aseNumber": 14,
+    "name": "Midesophageal right and left pulmonary veins",
+    "group": "me",
+    "file": "mepv.svg",
+    "src": "/assets/tee-atlas/diagrams/mepv.svg",
+    "landmarks": [
+      "Right superior pulmonary vein",
+      "Right inferior pulmonary vein",
+      "Left superior pulmonary vein",
+      "Left inferior pulmonary vein",
+      "LA"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal right and left pulmonary veins. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "melaa",
+    "aseNumber": 15,
+    "name": "Midesophageal left atrial appendage",
+    "group": "me",
+    "file": "melaa.svg",
+    "src": "/assets/tee-atlas/diagrams/melaa.svg",
+    "landmarks": [
+      "LAA",
+      "LA",
+      "Left superior pulmonary vein",
+      "Ridge between LAA and left superior pulmonary vein"
+    ],
+    "description": "Original simplified teaching schematic of Midesophageal left atrial appendage. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgbasalsax",
+    "aseNumber": 16,
+    "name": "Transgastric basal short-axis",
+    "group": "tg",
+    "file": "tgbasalsax.svg",
+    "src": "/assets/tee-atlas/diagrams/tgbasalsax.svg",
+    "landmarks": [
+      "Mitral valve",
+      "Anterior mitral leaflet",
+      "Posterior mitral leaflet",
+      "LV base",
+      "Medial commissure",
+      "Lateral commissure"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric basal short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgpapillary",
+    "aseNumber": 17,
+    "name": "Transgastric midpapillary short-axis",
+    "group": "tg",
+    "file": "tgpapillary.svg",
+    "src": "/assets/tee-atlas/diagrams/tgpapillary.svg",
+    "landmarks": [
+      "LV",
+      "Anterolateral papillary muscle",
+      "Posteromedial papillary muscle",
+      "RV",
+      "Midventricular walls"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric midpapillary short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgapicalsax",
+    "aseNumber": 18,
+    "name": "Transgastric apical short-axis",
+    "group": "tg",
+    "file": "tgapicalsax.svg",
+    "src": "/assets/tee-atlas/diagrams/tgapicalsax.svg",
+    "landmarks": [
+      "LV apex",
+      "Apical myocardium",
+      "RV apex"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric apical short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgrvbasal",
+    "aseNumber": 19,
+    "name": "Transgastric RV basal",
+    "group": "tg",
+    "file": "tgrvbasal.svg",
+    "src": "/assets/tee-atlas/diagrams/tgrvbasal.svg",
+    "landmarks": [
+      "RV base",
+      "Tricuspid valve",
+      "RVOT"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric RV basal. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgrvinout",
+    "aseNumber": 20,
+    "name": "Transgastric RV inflow-outflow",
+    "group": "tg",
+    "file": "tgrvinout.svg",
+    "src": "/assets/tee-atlas/diagrams/tgrvinout.svg",
+    "landmarks": [
+      "RV",
+      "Anterior tricuspid leaflet",
+      "Posterior tricuspid leaflet",
+      "RVOT",
+      "Pulmonic valve"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric RV inflow-outflow. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "deeptg5c",
+    "aseNumber": 21,
+    "name": "Deep transgastric five-chamber",
+    "group": "tg",
+    "file": "deeptg5c.svg",
+    "src": "/assets/tee-atlas/diagrams/deeptg5c.svg",
+    "landmarks": [
+      "LV",
+      "LVOT",
+      "Aortic valve",
+      "Proximal aortic root",
+      "Mitral valve",
+      "LA",
+      "RV"
+    ],
+    "description": "Original simplified teaching schematic of Deep transgastric five-chamber. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tg2c",
+    "aseNumber": 22,
+    "name": "Transgastric two-chamber",
+    "group": "tg",
+    "file": "tg2c.svg",
+    "src": "/assets/tee-atlas/diagrams/tg2c.svg",
+    "landmarks": [
+      "LV",
+      "Anterior LV wall",
+      "Inferior LV wall",
+      "Mitral valve",
+      "Chordae",
+      "Papillary muscles",
+      "LA"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric two-chamber. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tgrvin",
+    "aseNumber": 23,
+    "name": "Transgastric RV inflow",
+    "group": "tg",
+    "file": "tgrvin.svg",
+    "src": "/assets/tee-atlas/diagrams/tgrvin.svg",
+    "landmarks": [
+      "RV",
+      "Anterior RV wall",
+      "Inferior RV wall",
+      "RA",
+      "Tricuspid valve",
+      "Chordae",
+      "Papillary muscles"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric RV inflow. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "tglax",
+    "aseNumber": 24,
+    "name": "Transgastric long-axis",
+    "group": "tg",
+    "file": "tglax.svg",
+    "src": "/assets/tee-atlas/diagrams/tglax.svg",
+    "landmarks": [
+      "LV",
+      "Inferolateral LV wall",
+      "Anteroseptal LV wall",
+      "LVOT",
+      "Aortic valve",
+      "Proximal aorta",
+      "Mitral valve"
+    ],
+    "description": "Original simplified teaching schematic of Transgastric long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "daosax",
+    "aseNumber": 25,
+    "name": "Descending aorta short-axis",
+    "group": "aortic",
+    "file": "daosax.svg",
+    "src": "/assets/tee-atlas/diagrams/daosax.svg",
+    "landmarks": [
+      "Descending thoracic aorta"
+    ],
+    "description": "Original simplified teaching schematic of Descending aorta short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "daolax",
+    "aseNumber": 26,
+    "name": "Descending aorta long-axis",
+    "group": "aortic",
+    "file": "daolax.svg",
+    "src": "/assets/tee-atlas/diagrams/daolax.svg",
+    "landmarks": [
+      "Descending thoracic aorta"
+    ],
+    "description": "Original simplified teaching schematic of Descending aorta long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "uearchlax",
+    "aseNumber": 27,
+    "name": "Upper esophageal aortic arch long-axis",
+    "group": "aortic",
+    "file": "uearchlax.svg",
+    "src": "/assets/tee-atlas/diagrams/uearchlax.svg",
+    "landmarks": [
+      "Aortic arch",
+      "Left brachiocephalic vein",
+      "Left subclavian origin"
+    ],
+    "description": "Original simplified teaching schematic of Upper esophageal aortic arch long-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  },
+  {
+    "id": "uearchsax",
+    "aseNumber": 28,
+    "name": "Upper esophageal aortic arch short-axis",
+    "group": "aortic",
+    "file": "uearchsax.svg",
+    "src": "/assets/tee-atlas/diagrams/uearchsax.svg",
+    "landmarks": [
+      "Aortic arch",
+      "Main pulmonary artery",
+      "Pulmonic valve"
+    ],
+    "description": "Original simplified teaching schematic of Upper esophageal aortic arch short-axis. Warm coral indicates left-heart anatomy; cyan indicates right-heart anatomy; amber indicates aorta. It is not patient-specific anatomy or ultrasound.",
+    "source": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "originalArtwork": true
+  }
+]

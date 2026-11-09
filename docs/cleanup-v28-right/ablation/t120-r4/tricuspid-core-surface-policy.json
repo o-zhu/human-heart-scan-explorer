@@ -1,0 +1,719 @@
+{
+  "id": "tricuspid-core-surface",
+  "surface": {
+    "format": "HFM1-gzip",
+    "file": "tricuspid-core-surface.hfm.gz",
+    "vertices": 154271,
+    "triangles": 302706,
+    "vertexCount": 154271,
+    "indexCount": 908118,
+    "positionOffset": 32,
+    "normalOffset": 925660,
+    "indexOffset": 1851288,
+    "compressedBytes": 3210789,
+    "decodedBytes": 5483760,
+    "sha256": "bcba4982bf768d8ff9e71c8f6ead86f8244c9607047e3b6e088065b2a9f5a6a3",
+    "decodedSha256": "d1e0accee83b38b85c71fdc27e8d5a41b95802d41fc06d7c0b5941b4a1aaf18c",
+    "bounds": {
+      "min": [
+        -0.16446125507354736,
+        -0.01795841194689274,
+        -0.043005671352148056
+      ],
+      "max": [
+        -0.03733459487557411,
+        0.13752363622188568,
+        0.13610586524009705
+      ]
+    },
+    "positionEncoding": "uint16 normalized in local world bounds",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal",
+    "gpuBytes": 5483724
+  },
+  "lowerFullFineXYZ": [
+    600,
+    660,
+    1020
+  ],
+  "upperFullFineXYZ": [
+    870,
+    1040,
+    1350
+  ],
+  "dimensionsXYZ": [
+    270,
+    380,
+    330
+  ],
+  "sourceSigmaFineSamples": 0.5,
+  "sourceSigmaTruncate": 3,
+  "sourceSpacingUm": 79.4,
+  "sourcePaddedRoiSha256": "f2fec4acd59cc4c4d9523ef40fd8f1c63a449cd6271125324a643ec756b8fe32",
+  "sourceRoiSha256": "25ddf564a5354b6b6983554b7fc33d8c5d1390a4eca3e79b29a9dbebb25cfa79",
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 231,
+    "decodedBrickReads": 231,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "baselineThreshold": 71.4,
+  "config": {
+    "id": "tricuspid-core-surface",
+    "lowerXYZ": [
+      600,
+      660,
+      1020
+    ],
+    "upperXYZ": [
+      870,
+      1040,
+      1350
+    ],
+    "interiorThreshold": 120,
+    "polygonCollarSamples": 10,
+    "boxCollarSamples": 8,
+    "endCollarSamples": 12,
+    "polygons": {
+      "680": [
+        [
+          627,
+          1190
+        ],
+        [
+          665,
+          1156
+        ],
+        [
+          700,
+          1148
+        ],
+        [
+          737,
+          1175
+        ],
+        [
+          736,
+          1270
+        ],
+        [
+          710,
+          1324
+        ],
+        [
+          637,
+          1329
+        ],
+        [
+          612,
+          1280
+        ]
+      ],
+      "700": [
+        [
+          622,
+          1185
+        ],
+        [
+          662,
+          1145
+        ],
+        [
+          701,
+          1127
+        ],
+        [
+          740,
+          1151
+        ],
+        [
+          744,
+          1260
+        ],
+        [
+          715,
+          1326
+        ],
+        [
+          631,
+          1333
+        ],
+        [
+          611,
+          1270
+        ]
+      ],
+      "730": [
+        [
+          632,
+          1131
+        ],
+        [
+          665,
+          1096
+        ],
+        [
+          710,
+          1092
+        ],
+        [
+          740,
+          1137
+        ],
+        [
+          762,
+          1200
+        ],
+        [
+          748,
+          1308
+        ],
+        [
+          642,
+          1332
+        ],
+        [
+          620,
+          1250
+        ]
+      ],
+      "760": [
+        [
+          646,
+          1081
+        ],
+        [
+          700,
+          1070
+        ],
+        [
+          728,
+          1100
+        ],
+        [
+          765,
+          1170
+        ],
+        [
+          768,
+          1279
+        ],
+        [
+          723,
+          1328
+        ],
+        [
+          637,
+          1332
+        ],
+        [
+          627,
+          1260
+        ],
+        [
+          640,
+          1192
+        ]
+      ],
+      "790": [
+        [
+          665,
+          1082
+        ],
+        [
+          725,
+          1070
+        ],
+        [
+          773,
+          1068
+        ],
+        [
+          796,
+          1105
+        ],
+        [
+          800,
+          1210
+        ],
+        [
+          766,
+          1293
+        ],
+        [
+          680,
+          1300
+        ],
+        [
+          651,
+          1223
+        ]
+      ],
+      "820": [
+        [
+          691,
+          1102
+        ],
+        [
+          741,
+          1078
+        ],
+        [
+          793,
+          1055
+        ],
+        [
+          818,
+          1083
+        ],
+        [
+          817,
+          1222
+        ],
+        [
+          758,
+          1287
+        ],
+        [
+          680,
+          1275
+        ],
+        [
+          670,
+          1196
+        ]
+      ],
+      "850": [
+        [
+          704,
+          1091
+        ],
+        [
+          757,
+          1047
+        ],
+        [
+          813,
+          1035
+        ],
+        [
+          843,
+          1062
+        ],
+        [
+          838,
+          1165
+        ],
+        [
+          793,
+          1235
+        ],
+        [
+          710,
+          1286
+        ],
+        [
+          673,
+          1250
+        ],
+        [
+          689,
+          1175
+        ]
+      ],
+      "880": [
+        [
+          708,
+          1094
+        ],
+        [
+          765,
+          1041
+        ],
+        [
+          838,
+          1031
+        ],
+        [
+          854,
+          1065
+        ],
+        [
+          849,
+          1135
+        ],
+        [
+          809,
+          1175
+        ],
+        [
+          731,
+          1264
+        ],
+        [
+          663,
+          1260
+        ],
+        [
+          682,
+          1190
+        ]
+      ],
+      "910": [
+        [
+          707,
+          1100
+        ],
+        [
+          760,
+          1040
+        ],
+        [
+          842,
+          1034
+        ],
+        [
+          855,
+          1085
+        ],
+        [
+          850,
+          1178
+        ],
+        [
+          780,
+          1190
+        ],
+        [
+          720,
+          1210
+        ],
+        [
+          690,
+          1175
+        ]
+      ],
+      "940": [
+        [
+          708,
+          1100
+        ],
+        [
+          766,
+          1036
+        ],
+        [
+          844,
+          1033
+        ],
+        [
+          855,
+          1090
+        ],
+        [
+          850,
+          1180
+        ],
+        [
+          774,
+          1181
+        ],
+        [
+          713,
+          1177
+        ]
+      ],
+      "970": [
+        [
+          746,
+          1085
+        ],
+        [
+          780,
+          1045
+        ],
+        [
+          842,
+          1044
+        ],
+        [
+          855,
+          1080
+        ],
+        [
+          850,
+          1145
+        ],
+        [
+          791,
+          1160
+        ],
+        [
+          752,
+          1131
+        ]
+      ],
+      "1000": [
+        [
+          768,
+          1057
+        ],
+        [
+          804,
+          1040
+        ],
+        [
+          844,
+          1047
+        ],
+        [
+          858,
+          1074
+        ],
+        [
+          844,
+          1128
+        ],
+        [
+          788,
+          1138
+        ],
+        [
+          768,
+          1104
+        ]
+      ],
+      "1028": [
+        [
+          797,
+          1065
+        ],
+        [
+          819,
+          1055
+        ],
+        [
+          839,
+          1067
+        ],
+        [
+          841,
+          1098
+        ],
+        [
+          813,
+          1105
+        ],
+        [
+          798,
+          1090
+        ]
+      ]
+    },
+    "scope": "Source-coordinate-mapped chordal matrix visible behind Y263 cut: actual foreground locationsX625\u2013790,Y726\u2013974,Z1077\u20131240. Polygons trace low-band matrix around bright cores and exclude surrounding myocardium. Previously tested old-v27-envelope patch is superseded."
+  },
+  "counts": {
+    "originalForeground": 5553483,
+    "refinedForeground": 4783951,
+    "removedForeground": 769532,
+    "protected135Samples": 2416416,
+    "lostProtected135Samples": 0,
+    "raw190Samples": 166706,
+    "lostRaw190Samples": 0,
+    "maximumLocalThreshold": 120.0,
+    "boxBoundaryNonBaselineSamples": 0
+  },
+  "serial": [
+    {
+      "fineY": 680,
+      "removedForeground": 0,
+      "maximumThreshold": 71.4000015258789
+    },
+    {
+      "fineY": 700,
+      "removedForeground": 2903,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 730,
+      "removedForeground": 2956,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 760,
+      "removedForeground": 2849,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 790,
+      "removedForeground": 2695,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 820,
+      "removedForeground": 3097,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 850,
+      "removedForeground": 2541,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 880,
+      "removedForeground": 2107,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 910,
+      "removedForeground": 2604,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 940,
+      "removedForeground": 2552,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 970,
+      "removedForeground": 732,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 1000,
+      "removedForeground": 379,
+      "maximumThreshold": 120.0
+    },
+    {
+      "fineY": 1028,
+      "removedForeground": 0,
+      "maximumThreshold": 71.4000015258789
+    }
+  ],
+  "lowBandMask": {
+    "file": "../../patch/tricuspid-core-surface-low-band.bits.gz",
+    "format": "gzip-bitset-x-zyx",
+    "lowerFullFineXYZ": [
+      600,
+      660,
+      1020
+    ],
+    "upperFullFineXYZ": [
+      870,
+      1040,
+      1350
+    ],
+    "dimensionsXYZ": [
+      270,
+      380,
+      330
+    ],
+    "storageDimensionsXYZ": [
+      34,
+      380,
+      330
+    ],
+    "compressedBytes": 342653,
+    "decodedBytes": 4263600,
+    "sha256": "f79bc9c76dab076006c5a84bce2b4c6db0c91e28418436a0a2aeafa1735fa578",
+    "decodedSha256": "aa23db0b9a83ab5863dd3491ce85341bb61f4fff2ac3d32e1e1d3db50c15188c",
+    "maskedVoxels": 769532
+  },
+  "unchangedBoxCollar": true,
+  "originalSourceModified": false,
+  "sourceCalibratedHU": false,
+  "limitations": [
+    "Local display refinement, not a clinical tissue label.",
+    "Original mesh remains available; replacement is reversible.",
+    "Boundary matches original source isovalue but is not welded to the decimated original mesh.",
+    "Fine-grid resampling cannot recover native19.85\u00b5m structure."
+  ],
+  "method": "Raise the source sigma0.5 isovalue only inside serially reviewed polygons, with cubic smoothstep collars on polygon distance, box faces and Y endpoints. Extract the complete local0 isosurface so preserved cores receive a closed local surface instead of holes in the old low-threshold surface.",
+  "surfaceReference": {
+    "format": "SFR1-gzip",
+    "file": "../../patch/tricuspid-core-surface.sfr.gz",
+    "vertices": 1809767,
+    "triangles": 3521884,
+    "vertexCount": 1809767,
+    "indexCount": 10565652,
+    "positionOffset": 32,
+    "normalOffset": 21717236,
+    "indexOffset": 32575840,
+    "compressedBytes": 35220533,
+    "decodedBytes": 74838448,
+    "sha256": "04a069d9b34bf381352daf5635aa3f0ef98ad069b0a7808fa21fc1cd7fecb847",
+    "decodedSha256": "63f04e9b50649b77841275875966f5eb674256182dda00cea106dcbe84496deb",
+    "bounds": {
+      "min": [
+        -0.16446125507354736,
+        -0.01795841194689274,
+        -0.043005671352148056
+      ],
+      "max": [
+        -0.03733459487557411,
+        0.13752363622188568,
+        0.13610586524009705
+      ]
+    },
+    "positionEncoding": "float32 world XYZ",
+    "normalEncoding": "int16 normalized world XYZ",
+    "indexEncoding": "uint32",
+    "winding": "Triangle geometric normal agrees with outward encoded normal"
+  },
+  "inheritedDetachedDisplayCleanup": {
+    "policy": "Inherited v25 compact0.85mm/PCA<3/1024faces plus v26 perivalvularcompact1.5mm/PCA<4.5/2048faces inside establishedscope; no arterial4mm expansion.",
+    "inputComponents": 24428,
+    "removedCompleteComponents": 23081,
+    "removedTriangles": 445524,
+    "removedVertices": 268724,
+    "retainedCropBoundaryComponents": 997,
+    "largestProtected": true,
+    "sourceCppSha256": "dd028eb4b1780bca2560db07623a847f72e82a343cf870487fe330f627679c05",
+    "scope": "Closed complete components only; every component reaching a patch face retained. Component counts are evaluated beforeQEM on source-adaptive geometry, not the complete originalGentle mesh."
+  },
+  "meshReduction": {
+    "inputVertices": 1541043,
+    "inputTriangles": 3076360,
+    "vertices": 154284,
+    "triangles": 302842,
+    "conservativeRadiusLimitMm": 0.3176,
+    "maximumConservativeRadiusMm": 0.3176,
+    "radiusRejections": 793352,
+    "linkRejections": 290714,
+    "frozenBoundaryVertices": true,
+    "interiorEdgeLinkConstraint": true,
+    "seconds": 8.35809,
+    "peakRssMiB": 835.25,
+    "deliveredSourceToSurface": {
+      "samples": 12000,
+      "meanMm": 0.012286835143060618,
+      "rmsMm": 0.018939445340467292,
+      "medianMm": 0.0075484798416872115,
+      "p95Mm": 0.041335316645076,
+      "p99Mm": 0.06927033017315827,
+      "maximumSampledMm": 0.17139318431583395
+    },
+    "deliveredSurfaceToSource": {
+      "samples": 12000,
+      "meanMm": 0.010297388364136007,
+      "rmsMm": 0.01460085705187008,
+      "medianMm": 0.0069100284775633425,
+      "p95Mm": 0.03166076177343849,
+      "p99Mm": 0.046979198062762025,
+      "maximumSampledMm": 0.08370817814463
+    },
+    "quantizationMaximumErrorMm": 0.00034002955813221465,
+    "quantizationZeroAreaFacesRemoved": 136,
+    "orphanVerticesCompacted": 13,
+    "cancellingNormalFallbacks": 3,
+    "finiteSampleSeed": 2800714,
+    "limitation": "Sampled surface distances are not a Hausdorff or clinical accuracy bound; the QEM original-vertex radius is a separate conservative constraint."
+  }
+}

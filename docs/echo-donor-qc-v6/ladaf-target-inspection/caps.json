@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "exportSha256": "b8fa7286ffc6db0ca97d4d7e2e1fda7afc1134f214236dad2bd9e2c1d3ee751a",
+  "donor": "ladaf-2021-17",
+  "source": "Measured ladaf-2021-17 resident display volume",
+  "sourceSpacingUm": 317.6,
+  "sourceDimensions": [
+    475,
+    475,
+    530
+  ],
+  "referenceMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1,
+    0.8960302457466919
+  ],
+  "manifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+  "sourceParts": [
+    {
+      "url": "assets/volume-v5/heart-high-clean.raw.gz",
+      "sha256": "93e9adc347fa04ed60671ea7762adcf7bf8ce677e6d5a71e9f5b618083adbb30",
+      "rawSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f"
+    }
+  ],
+  "worker": "public/mpr-worker.js",
+  "workerSha256": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54",
+  "intensity": "Windowed uint8 display contrast; not Hounsfield units.",
+  "sampling": "Actual production MPR worker, trilinear interpolation, zero outside source, source-oriented complete plane raster; no source edit.",
+  "caps": [
+    {
+      "id": "a4c-current",
+      "available": true,
+      "file": "caps/a4c-current.raw",
+      "width": 382,
+      "height": 504,
+      "sha256": "d7afc597580c1c438c52668925edf04a95ffa9ce336fbbdce38f5cba6c8f5c33",
+      "bytes": 192528,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.49996850393705,
+        317.3158648111333
+      ],
+      "planeSha256": "bf8f794190be827ae41507355d7744c4b3e171a6f3da19bef4986c33021c0236",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "cs-posterior-0",
+      "available": true,
+      "file": "caps/cs-posterior-0.raw",
+      "width": 382,
+      "height": 504,
+      "sha256": "c2bf3e3f976b671fa6b4dbc46b7d8a0a6960a8f8d5fc0d1eaa1614346ace5c00",
+      "bytes": 192528,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.49996850393705,
+        317.3158648111333
+      ],
+      "planeSha256": "f7f07111d34a4896d565c8fcb4de1ba3a5f8740b48891d87deb3a7eafd8b1ef8",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "cs-posterior-2",
+      "available": true,
+      "file": "caps/cs-posterior-2.raw",
+      "width": 382,
+      "height": 504,
+      "sha256": "55ce7514edf88968a22a0149b76748382cbf0bd0604d643bafebf3267694dbbd",
+      "bytes": 192528,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.49996850393705,
+        317.3158648111333
+      ],
+      "planeSha256": "af9b70f43e353581d68504d15d1a72a555b0ecb689091dcc48a7fd6a49e92bfa",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "cs-posterior-4",
+      "available": true,
+      "file": "caps/cs-posterior-4.raw",
+      "width": 382,
+      "height": 504,
+      "sha256": "bc4411def6b918d963e5f7fc69e3a1fef043730fe3e7c7d32ca5e1afe1e34df3",
+      "bytes": 192528,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.49996850393705,
+        317.3158648111333
+      ],
+      "planeSha256": "05a25656c7ade596b1531a166284fe5d4ee26b83fc5c140df307aec7ac035d9a",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "cs-posterior-8",
+      "available": true,
+      "file": "caps/cs-posterior-8.raw",
+      "width": 382,
+      "height": 504,
+      "sha256": "cdbb8575fd7eeccb37f63daa472fa0a5c8b823958324168f73820f50ffab67f8",
+      "bytes": 192528,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        317.49996850393705,
+        317.3158648111333
+      ],
+      "planeSha256": "08a20a1ab26cf67996fa23e34f720571360156cf5b6448943d015bb8f84382c8",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-reviewed-source",
+      "available": true,
+      "file": "caps/rv-reviewed-source.raw",
+      "width": 352,
+      "height": 392,
+      "sha256": "c1218c23f528c579339beffa3b09d9b0f6679c894d8b03bc216381af2db1bfb3",
+      "bytes": 137984,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.69515669515675,
+        316.7877237851663
+      ],
+      "planeSha256": "d16b3a35b8277264db999d57acfedc91d56ed0a44c8bc874f01288d1d727c57d",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-mid-source",
+      "available": true,
+      "file": "caps/rv-tv-pv-mid-source.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "f1dae46b097b6b6417a68755fb4669c96994ae3558bd18ec877df7710694bc55",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "b9aeaec1b2e12169f4cbbf617194378b085e3d690235088751db5e630857c0af",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-mid-acquired-10",
+      "available": true,
+      "file": "caps/rv-tv-pv-mid-acquired-10.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "a2c944d771d79b6c348c41bdcb0304709d5d9a5a5167eee6ba6adeaba9fd3d4b",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "4b8871e96a09f96dd1e31b1ed5dc6e2f2c7658fbba9c71469c8b1ed4ca82fa30",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-mid-acquired-100",
+      "available": true,
+      "file": "caps/rv-tv-pv-mid-acquired-100.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "8f36508a4b9ba8282151137b52a1dcc745eb74ff4a2edb668c6d0bf8e0626f6e",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "1be54fcc9fdb8dd689e75da5dfafcd6cb66390fe6756a0b3817765db26886546",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-apical-source",
+      "available": true,
+      "file": "caps/rv-tv-pv-apical-source.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "5404071b34b19fca4749380fbdc573a2ca54f93680c7f27a869fbe0be811bd02",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "6073b4d3e35ba13da68db10c7cdf6ca53d1a177bf7afcccce81ea2be9ab86cd3",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-apical-acquired-10",
+      "available": true,
+      "file": "caps/rv-tv-pv-apical-acquired-10.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "5d4adc4f7ba5f835d81ed89098d3c8aa6eb3fd0c187f9c11e53c1c8846a8ad10",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "4176b93c6cec9f5b7095679a374ce4e18b25eb78b99b932809cfe93b6a1c55f1",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-tv-pv-apical-acquired-100",
+      "available": true,
+      "file": "caps/rv-tv-pv-apical-acquired-100.raw",
+      "width": 404,
+      "height": 478,
+      "sha256": "a13ac0cabf915ebed7f197f328106a6f4497f9dc1e33b664893aef30fbfb9347",
+      "bytes": 193112,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.84343424317626,
+        317.00075471698125
+      ],
+      "planeSha256": "c798e82436ee77ed4b56f0ba537d64dac69b19caed3beb78ca9eb392093ade2b",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    },
+    {
+      "id": "rv-reviewed-acquired-10",
+      "available": true,
+      "file": "caps/rv-reviewed-acquired-10.raw",
+      "width": 352,
+      "height": 392,
+      "sha256": "2f0697382eb3c42f4b26244f0da431727478979e15948b9f61105647a760f223",
+      "bytes": 137984,
+      "sourceSpacingUm": 317.6,
+      "pixelSpacingUm": [
+        316.69515669515675,
+        316.7877237851663
+      ],
+      "planeSha256": "0cb4c06ae0cd9e2441c5f4a83eed7ba7b10aa1124fe5f6e7a4259ed9dfbbfe81",
+      "orientation": "Row zero is positive plane.up; columns increase along plane.right.",
+      "cleaned": false
+    }
+  ]
+}

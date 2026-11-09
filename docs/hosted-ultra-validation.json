@@ -1,0 +1,238 @@
+{
+  "specimen": "LADAF-2021-17",
+  "sourceScale": "s2",
+  "samplingUm": 79.4,
+  "sliceCounts": [
+    475,
+    475,
+    530
+  ],
+  "totalPositions": 1480,
+  "nonemptyPositions": 1096,
+  "emptyPositions": 384,
+  "uniqueAssets": 1097,
+  "totalEncodedBytes": 507669076,
+  "nonemptyImageBytes": {
+    "minimum": 136,
+    "median": 470913.0,
+    "p95": 886844.5,
+    "maximum": 956458
+  },
+  "fullFrameDisplayPixels": 5722414320,
+  "croppedDisplayPixels": 1227138985,
+  "croppingReductionFraction": 0.7855557258915848,
+  "allAssetsEncodedSha256Verified": true,
+  "allDecodedPixelSha256Verified": true,
+  "allCropBoundsAndAlternatePixelRegistrationVerified": true,
+  "losslessWindowedDisplay": true,
+  "addedGrayQuantization": false,
+  "maximumCompressionError": 0,
+  "allNonemptyImagesUnderOneMillionBytes": true,
+  "sourceComparisons": [
+    {
+      "axis": "x",
+      "index": 112,
+      "sourceIndex": 448,
+      "crop": [
+        634,
+        996,
+        189,
+        389
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "x",
+      "index": 180,
+      "sourceIndex": 720,
+      "crop": [
+        362,
+        202,
+        1069,
+        1833
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "x",
+      "index": 237,
+      "sourceIndex": 948,
+      "crop": [
+        458,
+        66,
+        1141,
+        1841
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "x",
+      "index": 380,
+      "sourceIndex": 1520,
+      "crop": [
+        842,
+        700,
+        525,
+        645
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "y",
+      "index": 100,
+      "sourceIndex": 400,
+      "crop": [
+        562,
+        876,
+        293,
+        477
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "y",
+      "index": 220,
+      "sourceIndex": 880,
+      "crop": [
+        458,
+        60,
+        1085,
+        1975
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "y",
+      "index": 237,
+      "sourceIndex": 948,
+      "crop": [
+        474,
+        82,
+        1101,
+        1945
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "y",
+      "index": 380,
+      "sourceIndex": 1520,
+      "crop": [
+        794,
+        498,
+        397,
+        319
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "z",
+      "index": 70,
+      "sourceIndex": 280,
+      "crop": [
+        498,
+        642,
+        725,
+        701
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "z",
+      "index": 220,
+      "sourceIndex": 880,
+      "crop": [
+        466,
+        394,
+        1037,
+        1085
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "z",
+      "index": 363,
+      "sourceIndex": 1452,
+      "crop": [
+        466,
+        442,
+        981,
+        1029
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "z",
+      "index": 400,
+      "sourceIndex": 1600,
+      "crop": [
+        506,
+        530,
+        797,
+        901
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    },
+    {
+      "axis": "z",
+      "index": 495,
+      "sourceIndex": 1980,
+      "crop": [
+        642,
+        794,
+        229,
+        333
+      ],
+      "maximumAbsoluteError": 0,
+      "meanAbsoluteError": 0
+    }
+  ],
+  "transferComparisons": [
+    {
+      "axis": "x",
+      "index": 237,
+      "previousN5TransferEstimateBytes": 332350000,
+      "hostedImageBytes": 842946,
+      "transferReductionFraction": 0.9974636798555739,
+      "ratio": 394.27199369829145
+    },
+    {
+      "axis": "y",
+      "index": 237,
+      "previousN5TransferEstimateBytes": 337450000,
+      "hostedImageBytes": 908334,
+      "transferReductionFraction": 0.9973082412209217,
+      "ratio": 371.50431449224624
+    },
+    {
+      "axis": "z",
+      "index": 363,
+      "previousN5TransferEstimateBytes": 52700000,
+      "hostedImageBytes": 513858,
+      "transferReductionFraction": 0.9902493738140418,
+      "ratio": 102.55751588960375
+    },
+    {
+      "axis": "z",
+      "index": 400,
+      "previousN5TransferEstimateBytes": 38250000,
+      "hostedImageBytes": 394014,
+      "transferReductionFraction": 0.9896989803921569,
+      "ratio": 97.07776881024532
+    }
+  ],
+  "previousTransfersAreEstimates": true,
+  "limitations": "Pixel equality refers to the windowed 8-bit, conservative-support display texture, not the original quantitative uint16 scan. Cropped exterior background is omitted. No anatomical segmentation accuracy is inferred from these checks."
+}

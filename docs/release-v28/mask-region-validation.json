@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "baselineCommit": "b299904716841ea26e173f6ae19e66cd4d9c84f3",
+  "manifestSha256": "59bbfff2ed2565ee98820f14f777d63041d1615841db6e80efc21a6d9bdabfb2",
+  "masks": [
+    {
+      "mask": "atrial",
+      "added": 1061082,
+      "selected": 16924226,
+      "priorBitsRetained": true,
+      "changesConfinedToReviewedFootprints": true
+    },
+    {
+      "mask": "arterial",
+      "added": 0,
+      "selected": 1169504,
+      "priorBitsRetained": true,
+      "changesConfinedToReviewedFootprints": true
+    },
+    {
+      "mask": "valve-region",
+      "added": 0,
+      "selected": 733345,
+      "priorBitsRetained": true,
+      "changesConfinedToReviewedFootprints": true
+    },
+    {
+      "mask": "rv",
+      "added": 0,
+      "selected": 1181662,
+      "priorBitsRetained": true,
+      "changesConfinedToReviewedFootprints": true
+    }
+  ],
+  "wallPatches": [
+    {
+      "patch": "oval-wall",
+      "restoredSamples": 21809,
+      "exactRestorationHash": true,
+      "noObjectOrSurfaceMaskReexcludesRestoredWall": true
+    },
+    {
+      "patch": "irregular-wall",
+      "restoredSamples": 88119,
+      "exactRestorationHash": true,
+      "noObjectOrSurfaceMaskReexcludesRestoredWall": true
+    }
+  ],
+  "localSurfaceMasksChecked": 3,
+  "protectedSourceAndPriorFilesUnchanged": true,
+  "scope": "Independent encoded bitset comparison, actual prior restored-wall footprints and archived hashes. Original scalar data and original geometry stay unchanged; new local surfaces are separate reversible display assets. Not anatomical or clinical validation."
+}

@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "1659197537",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "specimen": "LADAF-2021-17",
+  "doi": "10.15151/ESRF-DC-1634390196",
+  "license": "CC BY 4.0",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "sourceScale": "s3",
+  "sourceScaleDimensionsXYZ": [
+    951,
+    951,
+    1060
+  ],
+  "sourceCroppedDimensionsXYZ": [
+    949,
+    949,
+    1059
+  ],
+  "sourceSpacingUm": 158.8,
+  "sourceDtype": "uint16",
+  "displayDtype": "uint8",
+  "sourceIntensityWindow": [
+    14640,
+    23545
+  ],
+  "worldExtentXYZ": [
+    0.8960302457466919,
+    1.0,
+    0.8960302457466919
+  ],
+  "worldUnitUm": 168010.40000000002,
+  "worldToSourceXYZ": "[(wx/extentX+0.5)*948,(0.5-wz/extentZ)*948,(wy+0.5)*1058]",
+  "pixelSampling": "col=0..width-1 spans -widthWorld/2..+widthWorld/2 along right; row=0..height-1 spans +heightWorld/2..-heightWorld/2 along up. World point=center+u*right+v*up. Trilinear sampling of the windowed display volume, rounded to uint8.",
+  "containerMask": {
+    "centerXY": [
+      474,
+      474
+    ],
+    "radiusVoxels": 420,
+    "outsideValue": 0,
+    "anatomicalSegmentation": false
+  },
+  "jpegQuality": 95,
+  "compressionLossless": false,
+  "geometryFile": "echo-planes.json",
+  "geometrySha256": "aa260e2706c61b950e26c6e106646cea5931907da99ba1b41ede3eee3f3eb440",
+  "geometryValidation": "Manually inspected grayscale source-volume multiplanar reconstructions; no patient orientation, chamber segmentation, acoustic model or clinical validation.",
+  "geometryLimitations": [
+    "Fixed-specimen LV lumen is slit-like/collapsed.",
+    "Landmarks are approximate regions, not clinically measured coordinates.",
+    "Named windows are adjustable educational starting planes.",
+    "Probe angle labels do not constitute scanner-to-patient or scanner-to-probe registration.",
+    "AV and bicaval candidates require manual placement; bright superior tubular structure is unclassified."
+  ],
+  "displayOrientation": "Apical TTE: apex at top. Midesophageal TEE: base/atria at top, apex at bottom. PLAX/subcostal: long axis horizontal. This presentation is not patient/probe registration.",
+  "generatedDate": "2026-11-04",
+  "imageCount": 13,
+  "totalBytes": 2410077,
+  "elapsedSeconds": 2.7548296451568604,
+  "validation": [
+    {
+      "id": "plax",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8261101803334645,
+      "maximumAbsoluteCompressionError": 10,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 659084
+    },
+    {
+      "id": "psax_mitral",
+      "sourceCenterXYZ": [
+        554.8999996240001,
+        557.1999995780001,
+        581.699999912
+      ],
+      "expectedSourceCenterXYZ": [
+        554.9,
+        557.2,
+        581.7
+      ],
+      "meanAbsoluteCompressionError": 0.7959183673469388,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 486951
+    },
+    {
+      "id": "psax_papillary",
+      "sourceCenterXYZ": [
+        482.10000039,
+        534.800000302,
+        739.300000486
+      ],
+      "expectedSourceCenterXYZ": [
+        482.1,
+        534.8,
+        739.3
+      ],
+      "meanAbsoluteCompressionError": 0.8134493592066908,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 527024
+    },
+    {
+      "id": "a4c",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8482577666373972,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 648574
+    },
+    {
+      "id": "a2c",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8170296699488521,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 690130
+    },
+    {
+      "id": "a3c",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8236231366714523,
+      "maximumAbsoluteCompressionError": 10,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 659084
+    },
+    {
+      "id": "subcostal",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8519498995541821,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 648574
+    },
+    {
+      "id": "me4c",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.84902250976448,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 648574
+    },
+    {
+      "id": "me2c",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.817402270518436,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 690130
+    },
+    {
+      "id": "melax",
+      "sourceCenterXYZ": [
+        523.9599999760001,
+        547.680000256,
+        648.680000394
+      ],
+      "expectedSourceCenterXYZ": [
+        523.96,
+        547.68,
+        648.68
+      ],
+      "meanAbsoluteCompressionError": 0.8225352993441709,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 659084
+    },
+    {
+      "id": "meavsax",
+      "sourceCenterXYZ": [
+        594.940000102,
+        569.5200001320001,
+        495.020000284
+      ],
+      "expectedSourceCenterXYZ": [
+        594.94,
+        569.52,
+        495.02
+      ],
+      "meanAbsoluteCompressionError": 0.6968406081395608,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 455701
+    },
+    {
+      "id": "bicaval",
+      "sourceCenterXYZ": [
+        460.000000188,
+        350.000000456,
+        419.99999965
+      ],
+      "expectedSourceCenterXYZ": [
+        460.0,
+        350.0,
+        420.0
+      ],
+      "meanAbsoluteCompressionError": 0.8602330251181358,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 525737
+    },
+    {
+      "id": "tgpapillary",
+      "sourceCenterXYZ": [
+        482.10000039,
+        534.800000302,
+        739.300000486
+      ],
+      "expectedSourceCenterXYZ": [
+        482.1,
+        534.8,
+        739.3
+      ],
+      "meanAbsoluteCompressionError": 0.8134493592066908,
+      "maximumAbsoluteCompressionError": 9,
+      "displayIntensityRange": [
+        0,
+        255
+      ],
+      "nonzeroPixelCount": 527024
+    }
+  ]
+}

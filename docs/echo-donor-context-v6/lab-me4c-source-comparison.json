@@ -1,0 +1,315 @@
+{
+  "donorId": "s-20-29",
+  "landmarksMm": {
+    "apex": [
+      31.78422,
+      40.53582,
+      -6.961500000000001
+    ],
+    "epicardialApex": [
+      8.23446,
+      65.67678000000001,
+      4.49514
+    ],
+    "leftVentricle": [
+      24.14646,
+      21.44142,
+      -0.9149400000000001
+    ],
+    "rightVentricle": [
+      -12.132900000000001,
+      11.89422,
+      -2.5061400000000003
+    ],
+    "leftAtrium": [
+      17.781660000000002,
+      -40.61538,
+      19.770660000000003
+    ],
+    "rightAtrium": [
+      -42.365700000000004,
+      -45.388980000000004,
+      4.81338
+    ],
+    "rightAtriumSuperior": [
+      -25.18074,
+      -62.89218,
+      6.40458
+    ],
+    "mitralRegion": [
+      16.19046,
+      -22.15746,
+      21.04362
+    ],
+    "tricuspidRegion": [
+      -36.63738,
+      -9.109620000000001,
+      6.086340000000001
+    ],
+    "aorticRoot": [
+      -1.31274,
+      -19.293300000000002,
+      6.40458
+    ],
+    "aorticLumen": [
+      -16.588260000000002,
+      -32.659380000000006,
+      2.2674600000000003
+    ],
+    "aorticSuperior": [
+      -21.998340000000002,
+      -48.571380000000005,
+      -12.689820000000001
+    ],
+    "pulmonaryRoot": [
+      -1.63098,
+      -16.74738,
+      -13.96278
+    ],
+    "pulmonarySuperior": [
+      2.1879,
+      -40.61538,
+      -21.282300000000003
+    ]
+  },
+  "cases": [
+    {
+      "label": "Original specimen source target",
+      "centerMm": [
+        8.827019553341334,
+        1.5172304465483477,
+        8.31066813731534
+      ],
+      "right": [
+        0.9643563052025272,
+        -0.13939697780362992,
+        0.2249119809955538
+      ],
+      "up": [
+        -0.2214634128343807,
+        -0.8903733128239388,
+        0.3977302108046021
+      ],
+      "normal": [
+        0.1448132362454438,
+        -0.433363411457565,
+        -0.8895084486490178
+      ],
+      "widthMm": 108.6267726283611,
+      "heightMm": 119.67356306514358,
+      "landmarkPlaneMissMm": {
+        "apex": 2.8517117453262954e-16,
+        "leftVentricle": 1.7902993752061223,
+        "rightVentricle": 2.089360850050601,
+        "leftAtrium": 9.36172267591682,
+        "rightAtrium": 16.02491933243988,
+        "mitralRegion": 1.2331246726294731e-15,
+        "tricuspidRegion": 7.233371784956796e-16
+      }
+    },
+    {
+      "label": "Rejected: source fit / cropped right heart",
+      "centerMm": [
+        8.899197010199185,
+        1.292043629014841,
+        7.854777142635831
+      ],
+      "right": [
+        0.964782124180302,
+        -0.1407125892771801,
+        0.22225080445536333
+      ],
+      "up": [
+        -0.22235976862169793,
+        -0.8876608699828105,
+        0.40325465056198045
+      ],
+      "normal": [
+        0.14054033641858657,
+        -0.4384725158094538,
+        -0.8876881584875846
+      ],
+      "widthMm": 108.6267726283611,
+      "heightMm": 119.67356306514358,
+      "originMm": [
+        20.478348245705536,
+        -62.067729354448524,
+        40.984493462565894
+      ],
+      "beam": [
+        0.6193334259872078,
+        0.7384427896216779,
+        -0.2666989949563031
+      ],
+      "offsetMm": 0.1790180347601833,
+      "angleDeg": 0.3956076121279125,
+      "sectorAngleDeg": 110,
+      "depthMm": 124.27639241380295,
+      "landmarkPlaneMissMm": {
+        "apex": 0.8388147529276715,
+        "leftVentricle": 1.0926817814752487,
+        "rightVentricle": 1.5926425227456977,
+        "leftAtrium": 9.046009696111561,
+        "rightAtrium": 15.963372227672911,
+        "mitralRegion": 0.40090022443568385,
+        "tricuspidRegion": 0.269061521798991
+      }
+    },
+    {
+      "label": "Rejected: foreshortened LV tip",
+      "centerMm": [
+        9.726088020701178,
+        -2.9887819813154137,
+        1.0007810545617568
+      ],
+      "right": [
+        0.9662962896900195,
+        -0.14842144360672027,
+        0.21033914426230596
+      ],
+      "up": [
+        -0.23543220188198022,
+        -0.8400022124933212,
+        0.48884349369028907
+      ],
+      "normal": [
+        0.10413048952302358,
+        -0.521888262067679,
+        -0.8466342085385361
+      ],
+      "widthMm": 108.6267726283611,
+      "heightMm": 119.67356306514358,
+      "originMm": [
+        20.703195664091776,
+        -63.29816051635814,
+        39.52722850202958
+      ],
+      "beam": [
+        0.3882974122283713,
+        0.8050363321332575,
+        -0.4484881532461939
+      ],
+      "offsetMm": 2.041052257284207,
+      "angleDeg": 6.101569842440264,
+      "sectorAngleDeg": 110,
+      "depthMm": 124.27639241380295,
+      "landmarkPlaneMissMm": {
+        "apex": 13.676915285458039,
+        "leftVentricle": 9.626320281873088,
+        "rightVentricle": 7.074371830016026,
+        "leftAtrium": 4.584488895747569,
+        "rightAtrium": 13.475945577925595,
+        "mitralRegion": 6.291906811466933,
+        "tricuspidRegion": 5.939065277758767
+      }
+    },
+    {
+      "label": "Accepted: source + physical probe + fan",
+      "centerMm": [
+        8.847416841639504,
+        1.4558750714649613,
+        8.185253687598852
+      ],
+      "right": [
+        0.9643401290034589,
+        -0.13934830223194095,
+        0.2250114802819355
+      ],
+      "up": [
+        -0.22170001019399574,
+        -0.8896632011173069,
+        0.3991847868565244
+      ],
+      "normal": [
+        0.1445587115104946,
+        -0.43483495632571006,
+        -0.8888314461604311
+      ],
+      "widthMm": 108.6267726283611,
+      "heightMm": 119.67356306514358,
+      "originMm": [
+        20.111825374063958,
+        -61.01722889732469,
+        40.580437210367805
+      ],
+      "beam": [
+        0.1553466049718136,
+        0.8971008725860088,
+        -0.4136151069885545
+      ],
+      "offsetMm": 0.030103659782533043,
+      "angleDeg": 0.09394691164431232,
+      "sectorAngleDeg": 110,
+      "depthMm": 123.78321902293452,
+      "landmarkPlaneMissMm": {
+        "apex": 0.21470045068392332,
+        "leftVentricle": 1.6097347258595047,
+        "rightVentricle": 1.9310020819974243,
+        "leftAtrium": 9.288101593854618,
+        "rightAtrium": 15.96350569203966,
+        "mitralRegion": 0.09951594266871093,
+        "tricuspidRegion": 0.11539654846963916
+      }
+    }
+  ],
+  "runtimeHashes": {
+    "public/tee-geometry.js": "20107ece9e870f8ae26bee9d683e9566d369e70e9f4b699005f7ccb2beb4a8eb",
+    "public/tee-context-presets.js": "bc2c34ba5be18d6653c05b810e59dcb91bc49d6ba38d8069b93daebaf4dfc503",
+    "public/echo-donor-planes.js": "3adaa60cfe465f0ae162b5581895ad97c335f462e9a8ebb175b4aa6e3f367a08"
+  },
+  "sourceParts": [
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-00.raw.gz",
+      "sha256": "8033ce9db160ebfd631bedea6d98ecb99685e1c1da8323a57d1efb497d12e80d",
+      "rawSha256": "e1c5018317e5986648e363d7d7e1d381a02be4e17d1aca9ee9a2f7c70d0b05b0"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-01.raw.gz",
+      "sha256": "db71dae62fb8d7e33f076c65da27394de859caeec4f0bc9d5d539c5ae4e25c32",
+      "rawSha256": "156f760571b21fe29fb6542467f19cfaf7d4a528e15817f54a01de8dbf47aaf2"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-02.raw.gz",
+      "sha256": "39eaa08417c3c48070035448b0b2211c1f2e8b85dfd4b5f16654306b383446fa",
+      "rawSha256": "686e2f62ed3416ce2ea88b0dded172524cd658c5377a83fbb277bcc809ed3c5e"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-03.raw.gz",
+      "sha256": "683d769dc866770273ae4d1a41dd8d48aaf8331f275cce9818844ffb98199884",
+      "rawSha256": "d75719d3caf7c9504242078237dc238e6e4738378881fc70dc68cf0d3e181082"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-04.raw.gz",
+      "sha256": "0ee0d0012808bdcaf06306c63cf8de2b95360d7baff6ee37f8a033496d43c7ad",
+      "rawSha256": "9e9178c6e448fe3d3c6a97ff1d9f9f30d66a5030e36f7398ad608781d7cea933"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-05.raw.gz",
+      "sha256": "3fac97c9578416808ce05b818aaa8c65b70f5e1d47352f60d80e1280fce85c71",
+      "rawSha256": "5f10313abbd2f7b0918d482f24aa296fd8ad500526530d889d5f6f7063a29963"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-06.raw.gz",
+      "sha256": "0e65fd1b88dba286b54bc7499fb51cc98399ecb9eacf521df767db96065b51c0",
+      "rawSha256": "cdbd108b2a92e3a5706f4ff547cc663be95d886469719400619511fd07934a99"
+    },
+    {
+      "url": "assets/donors/s-20-29/volume/high-clean-07.raw.gz",
+      "sha256": "078901182e90f12981ef3cbf1dddc74d4b763bdbfdfe80e46201b496af1acaa3",
+      "rawSha256": "d55485a0b50a4ec1b8a4b39780b0f8a55446dcbac7ec14315857142ba1730079"
+    }
+  ],
+  "sourceDimensionsXYZ": [
+    478,
+    478,
+    487
+  ],
+  "sourceExtentMmXYZ": [
+    151.80048000000002,
+    151.80048000000002,
+    154.66464000000002
+  ],
+  "imageSha256": "c520d935576828dbbb503abafb34a82dd167cf31d93f0bb7cf858b23e5e434e7",
+  "patientRegistered": false,
+  "clinicalValidated": false
+}

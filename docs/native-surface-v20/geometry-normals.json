@@ -1,0 +1,30 @@
+{
+  "schema": "native-surface-v20.1",
+  "topology": {
+    "vertices": 665302,
+    "triangles": 1288570,
+    "edges": 1944049,
+    "components": 8658,
+    "eulerCharacteristic": 9823,
+    "boundaryEdges": 22388,
+    "nonmanifoldEdges": 0,
+    "roiBoundaryVertices": 22388,
+    "pinnedVertices": 22388,
+    "zeroAreaTriangles": 0,
+    "areaMm2": 154.93793621157016,
+    "boundaryPolicy": "Every topological boundary and nonmanifold edge endpoint is pinned; the ROI is deliberately open."
+  },
+  "geometryNormalFallbackVertices": 0,
+  "gradientNormalSigmaVoxels": 0.5,
+  "gradientNormalSigmaUm": 9.925,
+  "gradientHaloVoxels": 3,
+  "gradientNormalWeakFallbackVertices": 0,
+  "gradientOrientationAlignedVertices": 23569,
+  "normalOnlyGeometryIdentical": true,
+  "normalOnlyMaximumDisplacementUm": 0.0,
+  "pointsSha256": "fbdeb99c371f8b8ba15f947f9f89446dabdcf728eb7c730dd093da8ef540a983",
+  "indicesSha256": "dfa98c3d149ad90e602317550e2d1e72ae6e1195fb1fbb3fa3809afbdcae0f8d",
+  "scalarContourBlurred": false,
+  "peakRssMiB": 358.91015625,
+  "seconds": 2.0964684409991605
+}

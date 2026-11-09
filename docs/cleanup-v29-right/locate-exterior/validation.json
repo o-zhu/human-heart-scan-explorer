@@ -1,0 +1,106 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 39,
+    "decodedBrickReads": 39,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "capSources": [
+    {
+      "kind": "Verified original lossless Ultra section with exact crop placement",
+      "axis": 2,
+      "coordinate": 836,
+      "path": "z/0209.webp",
+      "sha256": "e062cf5ca231d6bd69d945dde047118783d67501797638fb49f6f20d2a9b8509",
+      "sourceDisplaySha256": "f4f624dfcb3ff360d6f6da09fc047df4a5c07246a913d306bebd8b82affe579b",
+      "crop": [
+        482,
+        418,
+        1101,
+        1085
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "case": {
+        "id": "exterior-z210",
+        "axis": 2,
+        "coordinate": 836,
+        "target": [
+          940,
+          950,
+          836
+        ],
+        "distance": 0.72
+      },
+      "world": {
+        "center": [
+          0.0,
+          -0.10491493383742909,
+          -0.0
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 0.8960302457466919,
+        "_eye": [
+          0.05361802143474744,
+          0.612569313302963,
+          0.016991926594388824
+        ],
+        "_target": [
+          -0.003780718336483931,
+          -0.10491493383742909,
+          -0.0009451795841209828
+        ],
+        "_whole": false
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 345468,
+      "fineXYZArray": "{source-cache}/cleanup-v29-right/locate-exterior/exterior-z210-fine-xyz.npy"
+    }
+  ],
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 6911112,
+    "removedOffscreenOrClippedTriangles": 16707573,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "exterior-z210",
+      "axis": 2,
+      "coordinate": 836,
+      "target": [
+        940,
+        950,
+        836
+      ],
+      "distance": 0.72
+    }
+  },
+  "scope": "Current v28 source geometry, local surfaces and masks. Actual production color GLSL; diagnostic Float32 coordinates exclude visible cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

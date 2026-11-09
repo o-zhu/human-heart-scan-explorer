@@ -1,0 +1,51 @@
+{
+  "datasetId": "1966162746",
+  "sourceWindow": [
+    14938,
+    22708
+  ],
+  "rawUint16ValuesChecked": 65536,
+  "reference": "45-digit Decimal linear ratio, round-half-even",
+  "maximumCorrectedByteError": 0,
+  "previousMaximumByteError": 1,
+  "previousDifferingValues": [
+    {
+      "raw": 15715,
+      "previousByte": 25,
+      "correctedByte": 26
+    },
+    {
+      "raw": 16751,
+      "previousByte": 59,
+      "correctedByte": 60
+    },
+    {
+      "raw": 17787,
+      "previousByte": 93,
+      "correctedByte": 94
+    },
+    {
+      "raw": 18823,
+      "previousByte": 127,
+      "correctedByte": 128
+    },
+    {
+      "raw": 19859,
+      "previousByte": 161,
+      "correctedByte": 162
+    },
+    {
+      "raw": 20895,
+      "previousByte": 195,
+      "correctedByte": 196
+    },
+    {
+      "raw": 21931,
+      "previousByte": 229,
+      "correctedByte": 230
+    }
+  ],
+  "sourceWindowChanged": false,
+  "sourceRawDataChanged": false,
+  "correction": "Exact integer nearest-even uint16 lookup table removes reciprocal half-step error."
+}

@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "revision": "source-contours-v4",
+  "title": "Source-guided regional anatomy",
+  "specimen": "LADAF-2021-17",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "sourceDoi": "10.15151/ESRF-DC-1634390196",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "dimensions": [
+    317,
+    317,
+    354
+  ],
+  "volumeUrl": "./assets/anatomy/labels.raw.gz",
+  "arrayOrder": "ZYX in NumPy; X-fastest bytes",
+  "dtype": "uint8",
+  "registration": "Endpoints match original s4 voxel centers [0,0,0] and [474,474,529]. Sample nearest at round(sourceNormalizedXYZ*(dimensions-1)).",
+  "sourceDimensionsXYZ": [
+    475,
+    475,
+    530
+  ],
+  "sourceSpacingUm": 317.6,
+  "labelGridSpacingUmXYZ": [
+    476.4,
+    476.4,
+    475.950142
+  ],
+  "rendering": "Labels tint independently measured tissue density; labels must never be rendered as filled chamber contents.",
+  "compressedBytes": 334512,
+  "decodedBytes": 35573106,
+  "sha256": "da36ab4d08bf0c114d4e5b44dfaaa4e4abad7a48680b863bd455b45a5b57d64d",
+  "compressedSha256": "5e7eccbd6bb40d63b1ef23ae6a6c015729ffa8f9e17a550ccfe1629a4b17b2c1",
+  "method": "Manually reviewed compact-LV myocardial contours are interpolated through the volume as smooth signed-distance fields. The entire compact septal wall receives LV identity under an explicit display convention. Right-heart tissue is divided using source-observed free-wall and septal tricuspid hinge curves interpolated across the heart. Actual cavity components guide atrial/outflow identities. Fixed axial chamber cutoffs and competing LV/RV nearest-cavity wall division are not used.",
+  "methodParameters": {
+    "s4ThresholdIntensity": 17500,
+    "workingGaussianSigma": 0.35,
+    "sourceReviewSamplingUm": 158.8,
+    "lvContourCount": 22,
+    "tricuspidHingeLandmarkCount": 14,
+    "tricuspidOuterGrooveLandmarkCount": 7,
+    "lvContourInterpolation": "Periodic cubic section curves; PCHIP signed-distance interpolation between axial contours",
+    "annularInterpolation": "Shape-preserving outer groove, free-wall and septal hinge curves across source X; bounded PCHIP interpolation through those three observations in source Y",
+    "rightHeartMaximumAssignmentDistanceMm": 9.528,
+    "supportDilationWorkingVoxels": 2,
+    "minimumLabelIslandVoxels": 12
+  },
+  "septalDisplayConvention": "The continuous compact interventricular myocardium is assigned to the LV myocardial body. RV free wall and its nonseptal trabeculated structures remain RV. The septum is shared anatomy; this color convention is not a separate septal segmentation.",
+  "validation": "Source morphology and held-out tissue landmarks are reviewed in central and off-axis longitudinal planes and multiple axial levels. There is no expert reference segmentation, measured Dice score or validated fiber tractography.",
+  "limitations": [
+    "Manual regional annotations, not expert ground-truth chamber, valve, myocardial-layer or vessel-lumen segmentation.",
+    "The compact interventricular septum is shared anatomy; it is colored with the LV myocardial body as an explicit display convention.",
+    "Tricuspid hinge locations are visually estimated; mitral, outflow, appendage and distal vascular boundaries remain approximate.",
+    "No muscle fiber tractography has been computed. Curves follow visible tissue morphology and continuity.",
+    "Coronary arteries, cardiac veins, separate pulmonary veins and caval veins are not individually segmented.",
+    "Do not use these regional labels for quantitative chamber volume, wall thickness, procedural or diagnostic measurements."
+  ],
+  "sourceReferences": [
+    {
+      "title": "Original LADAF-2021-17 complete-heart dataset",
+      "url": "https://human-organ-atlas.esrf.fr/datasets/1659197537"
+    },
+    {
+      "title": "Brunet et al., 2023 preprint, Figures 3 and 5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592740/"
+    },
+    {
+      "title": "Brunet et al., Radiology 2024;312(1):e232731",
+      "url": "https://doi.org/10.1148/radiol.232731"
+    }
+  ],
+  "labels": [
+    {
+      "id": 0,
+      "key": "unclassified",
+      "name": "Unclassified tissue",
+      "color": "#9ba9b0",
+      "confidence": "Unclassified",
+      "description": "Tissue outside the six regional annotations remains neutral. Coronary, cardiac venous, individual pulmonary-vein and caval identities are not separately inferred.",
+      "method": "No anatomical identity is asserted."
+    },
+    {
+      "id": 1,
+      "key": "lv",
+      "name": "Left ventricle",
+      "color": "#e36d73",
+      "confidence": "Approximate",
+      "description": "Continuous LV myocardial body, including the compact interventricular septum under this display convention. The RV-facing compact-muscle edge was traced across source sections instead of dividing the wall by distance to a cavity.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 1427873,
+      "boundsNormalizedXYZ": [
+        [
+          0.2911392405063291,
+          0.3670886075949367,
+          0.42776203966005666
+        ],
+        [
+          0.8322784810126582,
+          0.7753164556962026,
+          0.943342776203966
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        237.0,
+        235.5,
+        340.1785
+      ]
+    },
+    {
+      "id": 2,
+      "key": "rv",
+      "name": "Right ventricle",
+      "color": "#54a6e6",
+      "confidence": "Approximate",
+      "description": "RV free wall, nonseptal trabeculated structures and outflow territory. The compact septal myocardium is displayed with the LV; the RA transition follows reviewed tricuspid hinge curves.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 440481,
+      "boundsNormalizedXYZ": [
+        [
+          0.23734177215189872,
+          0.2120253164556962,
+          0.4447592067988669
+        ],
+        [
+          0.8259493670886076,
+          0.7436708860759493,
+          0.9178470254957507
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        153.0,
+        184.5,
+        347.6714
+      ]
+    },
+    {
+      "id": 3,
+      "key": "la",
+      "name": "Left atrium",
+      "color": "#f2b36b",
+      "confidence": "Provisional",
+      "description": "Collapsed left-atrial region identified from the published basal slice and followed through the source volume. Mitral, appendage and pulmonary-vein boundaries remain provisional.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 413631,
+      "boundsNormalizedXYZ": [
+        [
+          0.49683544303797467,
+          0.27848101265822783,
+          0.09631728045325778
+        ],
+        [
+          0.8259493670886076,
+          0.7911392405063291,
+          0.5439093484419264
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        322.5,
+        267.0,
+        221.7904
+      ]
+    },
+    {
+      "id": 4,
+      "key": "ra",
+      "name": "Right atrium",
+      "color": "#63c7ba",
+      "confidence": "Approximate",
+      "description": "Right-atrial wall and pectinate region above the source-guided curved tricuspid junction. Its inferior free-wall fold is retained rather than cut off at a constant scan height.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 535844,
+      "boundsNormalizedXYZ": [
+        [
+          0.25316455696202533,
+          0.1962025316455696,
+          0.10198300283286119
+        ],
+        [
+          0.8291139240506329,
+          0.7436708860759493,
+          0.6288951841359773
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        231.0,
+        157.5,
+        280.2351
+      ]
+    },
+    {
+      "id": 5,
+      "key": "aorta",
+      "name": "Aortic outflow",
+      "color": "#c499e8",
+      "confidence": "Approximate",
+      "description": "Vessel continuous with the three-sinus aortic root and LV outflow. Identity is supported by the matching published basal slice; precise root and coronary boundaries remain approximate.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 209249,
+      "boundsNormalizedXYZ": [
+        [
+          0.26582278481012656,
+          0.4430379746835443,
+          0.0906515580736544
+        ],
+        [
+          0.6107594936708861,
+          0.7468354430379747,
+          0.49575070821529743
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        193.5,
+        241.5,
+        163.3456
+      ]
+    },
+    {
+      "id": 6,
+      "key": "pulmonary",
+      "name": "Pulmonary outflow",
+      "color": "#61cce0",
+      "confidence": "Approximate",
+      "description": "Pulmonary trunk and outflow region adjacent to the aortic root and toward the RV. Distal branches and the valvar boundary remain approximate.",
+      "method": "Source-guided LV myocardial-envelope contours and tricuspid hinge curves; measured-cavity tracking for basal identities.",
+      "voxelCount": 338470,
+      "boundsNormalizedXYZ": [
+        [
+          0.27531645569620256,
+          0.3829113924050633,
+          0.036827195467422094
+        ],
+        [
+          0.6487341772151899,
+          0.8449367088607594,
+          0.49575070821529743
+        ]
+      ],
+      "referenceAnchorSourceXYZ": [
+        204.0,
+        364.5,
+        160.3484
+      ]
+    }
+  ],
+  "generatedDate": "2026-11-04",
+  "generator": "scripts/prepare_anatomy.py",
+  "supportsQuantification": false
+}

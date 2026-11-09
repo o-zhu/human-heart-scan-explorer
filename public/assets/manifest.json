@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "specimen": "LADAF-2021-17",
+  "organ": "heart",
+  "datasetId": "1659197537",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1659197537",
+  "doi": "10.15151/ESRF-DC-1634390196",
+  "doiUrl": "https://doi.org/10.15151/ESRF-DC-1634390196",
+  "title": "Complete scan at 19.85 um of the heart of the body donor LADAF-2021-17",
+  "attribution": "Brunet et al. / ESRF Human Organ Atlas",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "nativeDimensions": [
+    7614,
+    7614,
+    8480
+  ],
+  "nativeSpacingUm": 19.85,
+  "sourceN5": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/",
+  "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/",
+  "sourceScale": "s4",
+  "sourceScaleDimensions": [
+    475,
+    475,
+    530
+  ],
+  "sourceScaleSpacingUm": 317.6,
+  "sourceScaleVoxelExtentUm": [
+    150860.0,
+    150860.0,
+    168328.0
+  ],
+  "sourceScaleCenterExtentUm": [
+    150542.40000000002,
+    150542.40000000002,
+    168010.40000000002
+  ],
+  "sourceWindow": [
+    14640,
+    23545
+  ],
+  "sourceDtype": "uint16",
+  "containerMask": {
+    "kind": "cylindrical display exclusion",
+    "centerXY": [
+      237,
+      237
+    ],
+    "radiusVoxels": 210,
+    "radiusUm": 66696.0,
+    "zExtent": "all",
+    "outsideValue": 0,
+    "anatomicalSegmentation": false
+  },
+  "levels": {
+    "low": {
+      "label": "Fast \u00b7 ~635 \u00b5m",
+      "dimensions": [
+        238,
+        238,
+        265
+      ],
+      "spacingUm": [
+        635.2,
+        635.2,
+        636.4030303030304
+      ],
+      "parts": [
+        {
+          "url": "assets/volume-v5/heart-low-clean.raw.gz",
+          "bytes": 1931449,
+          "uncompressedBytes": 15010660,
+          "zRange": [
+            0,
+            265
+          ],
+          "sha256": "2fbdbed97158e5fc2cf3456130a7c92c7e468a07e9a4f4d3bcd2bff353c33ed4",
+          "rawSha256": "75faf32c86bcdfb2db561075942728f492a4c4b61f78422b576e17bb3c66c2a6",
+          "predictor": "delta-z"
+        }
+      ],
+      "compressedBytes": 1931449,
+      "uncompressedBytes": 15010660,
+      "downsampleFactor": 32,
+      "downsampleFactorsXYZ": [
+        32.0,
+        32.0,
+        32.06060606060606
+      ],
+      "sourceOffset": [
+        0,
+        0,
+        0
+      ],
+      "dtype": "uint8",
+      "byteOrder": "not-applicable",
+      "arrayOrder": "ZYX, X fastest",
+      "physicalCenterExtentUm": [
+        150542.40000000002,
+        150542.40000000002,
+        168010.40000000002
+      ],
+      "processing": "Gaussian prefilter sigma 0.5 s4 voxel; trilinear scipy.ndimage.zoom preserving first/last voxel centers; 8-bit display values",
+      "originalParts": [
+        {
+          "url": "assets/heart-low-00.raw.gz",
+          "bytes": 5849116,
+          "uncompressedBytes": 15010660,
+          "zRange": [
+            0,
+            265
+          ],
+          "sha256": "05e5305b4b5adf1905575c6ecf221f007ab490ac7aef24d4c2e7c697da776bc9",
+          "rawSha256": "f856dc46a082ef5d22720610ce924a0c2c3f7e2cbc1de9823c590dfe1eb7bb5d"
+        }
+      ],
+      "originalCompressedBytes": 5849116,
+      "supportCompressed": true,
+      "supportCompression": {
+        "method": "Existing cleanup support with conservative3-voxel interpolation halo; exterior values zeroed; reversible byte predictor plus gzip",
+        "guardVoxels": 3,
+        "maximumRetainedByteError": 0,
+        "originalRestoration": "Load originalParts when cleanup is disabled",
+        "boundsXYZ": [
+          [
+            53,
+            202
+          ],
+          [
+            42,
+            204
+          ],
+          [
+            5,
+            257
+          ]
+        ]
+      }
+    },
+    "high": {
+      "label": "Detailed \u00b7 317.6 \u00b5m",
+      "dimensions": [
+        475,
+        475,
+        530
+      ],
+      "spacingUm": 317.6,
+      "parts": [
+        {
+          "url": "assets/volume-v5/heart-high-clean.raw.gz",
+          "bytes": 13152058,
+          "uncompressedBytes": 119581250,
+          "zRange": [
+            0,
+            530
+          ],
+          "sha256": "93e9adc347fa04ed60671ea7762adcf7bf8ce677e6d5a71e9f5b618083adbb30",
+          "rawSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f",
+          "predictor": "delta-z"
+        }
+      ],
+      "compressedBytes": 13152058,
+      "uncompressedBytes": 119581250,
+      "downsampleFactor": 16,
+      "downsampleFactorsXYZ": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "sourceOffset": [
+        0,
+        0,
+        0
+      ],
+      "dtype": "uint8",
+      "byteOrder": "not-applicable",
+      "arrayOrder": "ZYX, X fastest",
+      "physicalCenterExtentUm": [
+        150542.40000000002,
+        150542.40000000002,
+        168010.40000000002
+      ],
+      "processing": "N5 s4 normalized to 8-bit; mounting-container display mask",
+      "originalParts": [
+        {
+          "url": "assets/heart-high-00.raw.gz",
+          "bytes": 4499865,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            0,
+            64
+          ],
+          "sha256": "e3a1c4f8dd5330c45ca9884a701faad63190a5d7684158d6cc7feaaa807ba5e1",
+          "rawSha256": "8372e056a9d5c86172932e877e53257d42b2447a2f217600b1e8de6251b16bb4"
+        },
+        {
+          "url": "assets/heart-high-01.raw.gz",
+          "bytes": 4917638,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            64,
+            128
+          ],
+          "sha256": "ccdc5af1c405d6a18889bc0141f281438421b5ec2861d45210fa82f4667892f3",
+          "rawSha256": "40c190527d2c237a1408d5c4a6423c279c0f6bda5d4a9d8fbc5ea3267aa8099d"
+        },
+        {
+          "url": "assets/heart-high-02.raw.gz",
+          "bytes": 5147026,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            128,
+            192
+          ],
+          "sha256": "2d857c3d2780531b288bab2ff6aeb5368481c6f881a8e2d86944299ad2ffde68",
+          "rawSha256": "9c3005eff43ebb2d5fb1954bb67574937ae4f91a76ceab268224c753c854fdf2"
+        },
+        {
+          "url": "assets/heart-high-03.raw.gz",
+          "bytes": 5352581,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            192,
+            256
+          ],
+          "sha256": "3a8022452b87f39418b58fe095800fa0ca5c271003daccd0847a3c2fc47be5d7",
+          "rawSha256": "b4c2f1591d9a3274e144152e448e3c43fb5b423bf3f7afcb6ef1faca38b00cd3"
+        },
+        {
+          "url": "assets/heart-high-04.raw.gz",
+          "bytes": 5575328,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            256,
+            320
+          ],
+          "sha256": "7fc87af098c8b85216062f6f49cab3f9c0c0bf10ac441c42c6200b6204a80f1c",
+          "rawSha256": "4f46a5837e9b7eab131210a03546b07f2ef38bc799d19e2b8914e03cc18368f1"
+        },
+        {
+          "url": "assets/heart-high-05.raw.gz",
+          "bytes": 5553992,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            320,
+            384
+          ],
+          "sha256": "e775be5a0efa0368384f8dc5d323a77666e9fdd0e492c17ea271bcbf8415468c",
+          "rawSha256": "39e98935729c06dab352f997ac8fc075a3755bd7f5dc39e808e301ed63a3d499"
+        },
+        {
+          "url": "assets/heart-high-06.raw.gz",
+          "bytes": 5141646,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            384,
+            448
+          ],
+          "sha256": "8c6214e22e315f3eff3756edfb9a1ecc4d574f69116bd87b9b43cd59b7338f7e",
+          "rawSha256": "52eff1c8bc6b0f982d83de04c40a5c8f5195ffea23f1e6b7e199e963bf8c7e65"
+        },
+        {
+          "url": "assets/heart-high-07.raw.gz",
+          "bytes": 4164731,
+          "uncompressedBytes": 14440000,
+          "zRange": [
+            448,
+            512
+          ],
+          "sha256": "31f5e463d99d28ef8b3437f83ebf3845fa4d579e8163fbc8215764cdc1de523c",
+          "rawSha256": "68f4d3ae284ca7d664fae1f4ab3fc3d782277e408c6b433eb731404a4bbdd906"
+        },
+        {
+          "url": "assets/heart-high-08.raw.gz",
+          "bytes": 1074158,
+          "uncompressedBytes": 4061250,
+          "zRange": [
+            512,
+            530
+          ],
+          "sha256": "9bf749791de7df46036cbb7b21dbff7832252c2e2cf245060e7bf30144074009",
+          "rawSha256": "f94b69bbd2047afe74085b5b6914194daadc9dd33abff43f0e0b234a0a6da1d6"
+        }
+      ],
+      "originalCompressedBytes": 41426965,
+      "supportCompressed": true,
+      "supportCompression": {
+        "method": "Existing cleanup support with conservative3-voxel interpolation halo; exterior values zeroed; reversible byte predictor plus gzip",
+        "guardVoxels": 3,
+        "maximumRetainedByteError": 0,
+        "originalRestoration": "Load originalParts when cleanup is disabled",
+        "boundsXYZ": [
+          [
+            108,
+            401
+          ],
+          [
+            86,
+            405
+          ],
+          [
+            13,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  "defaultLevel": "high",
+  "defaultThreshold": 0.32,
+  "processingSummary": "Authentic whole-organ HiP-CT voxels from LADAF-2021-17, displayed at 317.6 \u00b5m or approximately 635 \u00b5m. Lossless compression preserves all display values inside the existing clean-scan support and its interpolation halo. Original uncleaned display data load on demand. Orthogonal Ultra cut faces use hosted lossless 79.4 \u00b5m textures. Regional anatomy colors are approximate annotations; scan axes are acquisition coordinates.",
+  "retrievedDate": "2026-11-04",
+  "previewLevel": "low"
+}

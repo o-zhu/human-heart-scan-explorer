@@ -1,0 +1,371 @@
+{
+  "schema": "guided-native-overview-root-cap-review-v21.1",
+  "recordedAtUtc": "2026-11-06T16:42:22+00:00",
+  "scope": "Read-only independent verification of the eight root inputs and the launched fresh-process operational cap; no production control or numerical changes.",
+  "decision": "A fresh single-process attempt at the exact pending-face cap is justified under the enforced 4.5 GiB RLIMIT_AS. Completion and final peak remain subject to observation.",
+  "provenance": {
+    "budgetPreflight": {
+      "path": "{source-cache}/guided-native-v21/whole/overview/budget-preflight.json",
+      "sha256": "b73ebfcd4dd8fb08be825275c6b874853acb7b739714f3e0148f6f8b5cec99fb",
+      "snapshot": {
+        "schema": "guided-native-overview-v21.1-merge-budget",
+        "name": "s064_0_0_0",
+        "fingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+        "assembled": false,
+        "pendingChildTriangles": 7039735,
+        "mergeFaceCap": 6000000,
+        "maximumClusterCellNativeVoxels": 16,
+        "children": [
+          {
+            "name": "s032_0_0_0",
+            "triangles": 926326,
+            "target": 640440,
+            "frozenFaceFloor": 312113,
+            "targetReached": false
+          },
+          {
+            "name": "s032_0_0_32",
+            "triangles": 1311812,
+            "target": 1060364,
+            "frozenFaceFloor": 367618,
+            "targetReached": false
+          },
+          {
+            "name": "s032_0_32_0",
+            "triangles": 737697,
+            "target": 461063,
+            "frozenFaceFloor": 280294,
+            "targetReached": false
+          },
+          {
+            "name": "s032_0_32_32",
+            "triangles": 983646,
+            "target": 686225,
+            "frozenFaceFloor": 348557,
+            "targetReached": false
+          },
+          {
+            "name": "s032_32_0_0",
+            "triangles": 805408,
+            "target": 630225,
+            "frozenFaceFloor": 247229,
+            "targetReached": false
+          },
+          {
+            "name": "s032_32_0_32",
+            "triangles": 683331,
+            "target": 446557,
+            "frozenFaceFloor": 263996,
+            "targetReached": false
+          },
+          {
+            "name": "s032_32_32_0",
+            "triangles": 731021,
+            "target": 476403,
+            "frozenFaceFloor": 267561,
+            "targetReached": false
+          },
+          {
+            "name": "s032_32_32_32",
+            "triangles": 860494,
+            "target": 598727,
+            "frozenFaceFloor": 300949,
+            "targetReached": false
+          }
+        ],
+        "reason": "Children exceed the assembly cap after bounded reduction; checkpoints are preserved."
+      }
+    },
+    "boundedResume": {
+      "path": "{source-cache}/guided-native-v21/whole/overview/bounded-resume.json",
+      "sha256": "8652d8f35d4a7c6e75a74853556823a5e84774b86d0edc7a64fd16315fdce304",
+      "snapshot": {
+        "schema": "guided-native-overview-bounded-resume-v21.1",
+        "startedAt": "2026-11-06T16:40:33.390146+00:00",
+        "previousProcessExitCode": 1,
+        "previousCap": 6000000,
+        "exactPendingChildTriangles": 7039735,
+        "mergeFaceCap": 7039735,
+        "addressSpaceLimitBytes": 4831838208,
+        "baselineAnonymousAndKernelBytes": 2314899456,
+        "numericalSettingsChanged": false,
+        "completedCheckpointsRetained": true,
+        "overviewFingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+        "sourceSha256": "ddb273f7db10f723fc4d8d4bd93223714438d690c07f40005a4f7c847902f38f",
+        "limitation": "RLIMIT_AS also counts virtual reservations and shared libraries; allocation refusal does not by itself establish physical memory exhaustion."
+      }
+    },
+    "unchangedBuilder": {
+      "path": "{local-workspace}/scripts/guided-native-v21/build_overview.py",
+      "sha256": "ddb273f7db10f723fc4d8d4bd93223714438d690c07f40005a4f7c847902f38f",
+      "matchesLaunchedSourceSha256": true
+    }
+  },
+  "root": {
+    "name": "s064_0_0_0",
+    "fingerprint": "10cc0435ed75f4e60f8f388f17980b10f908a90ad41ef6c2638e9b9ec0428ed5",
+    "originNativeXYZ": [
+      0,
+      0,
+      0
+    ],
+    "upperGroupPlaneNativeXYZ": [
+      8192,
+      8192,
+      8192
+    ],
+    "children": [
+      {
+        "name": "s032_0_0_0",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_0_0.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_0_0.json",
+        "sha256": "ef7808b04a82e62b742d3b49a255b19c877ea42ae3e385a76f620541003bf080",
+        "sha256MatchesRecord": true,
+        "recordSha256": "7eb5693c42673cd2f6557c97506a09dc1e8d9f04b5bb8c37f94add722d3b7c2b",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 440081,
+        "triangles": 926326,
+        "referenceSamples": 96768,
+        "minNativeXYZ": [
+          1828.0,
+          1524.0,
+          305.4375
+        ],
+        "maxNativeXYZ": [
+          4096.0,
+          4096.0,
+          4096.0
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 19493460
+      },
+      {
+        "name": "s032_0_0_32",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_0_32.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_0_32.json",
+        "sha256": "e18cfb051ead3faabf2a454b2ece7eba692a57c909e3a5aac5b56b880d1dddd1",
+        "sha256MatchesRecord": true,
+        "recordSha256": "fc5fbf292bb9b3bb092ae9637dc0236e884157b33505f55ec4306ea4a0c3d256",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 614016,
+        "triangles": 1311812,
+        "referenceSamples": 178944,
+        "minNativeXYZ": [
+          1768.0,
+          1487.6875,
+          4096.0
+        ],
+        "maxNativeXYZ": [
+          4096.0,
+          4096.0,
+          8138.0625
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 28836144
+      },
+      {
+        "name": "s032_0_32_0",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_32_0.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_32_0.json",
+        "sha256": "0868f1d62478209cfe20b5faa472160ce0233264c14ba779fec57a043eb5a533",
+        "sha256MatchesRecord": true,
+        "recordSha256": "94176272e9c4acc440c0d06baac6f47c4be20e2095986ed65b62fe56e19a9621",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 368117,
+        "triangles": 737697,
+        "referenceSamples": 72192,
+        "minNativeXYZ": [
+          1991.1875,
+          4096.0,
+          624.1875
+        ],
+        "maxNativeXYZ": [
+          4096.0,
+          6396.3125,
+          4096.0
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 15579912
+      },
+      {
+        "name": "s032_0_32_32",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_32_32.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_0_32_32.json",
+        "sha256": "fefe8705f085208aeac9b877052fef42597230be2cea5737e1042e8c5019e24f",
+        "sha256MatchesRecord": true,
+        "recordSha256": "6ed69f215627e5a5e5da1a1200ef9a483fbb9185e3e8b23cd1bc68763ab4ae00",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 519370,
+        "triangles": 983646,
+        "referenceSamples": 121600,
+        "minNativeXYZ": [
+          2011.9375,
+          4096.0,
+          4096.0
+        ],
+        "maxNativeXYZ": [
+          4096.0,
+          5881.5625,
+          8133.9375
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 21927392
+      },
+      {
+        "name": "s032_32_0_0",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_0_0.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_0_0.json",
+        "sha256": "6632be0775d72e27cad81ff49bfe4197fac568cd7606466ca49105aab19683db",
+        "sha256MatchesRecord": true,
+        "recordSha256": "2cc83af63226d7bbc8eb71b76b8df2da4868da3972675af4b6fab250a45c0dfe",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 372557,
+        "triangles": 805408,
+        "referenceSamples": 97024,
+        "minNativeXYZ": [
+          4096.0,
+          1819.375,
+          358.9375
+        ],
+        "maxNativeXYZ": [
+          6000.8125,
+          4096.0,
+          4096.0
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 17240348
+      },
+      {
+        "name": "s032_32_0_32",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_0_32.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_0_32.json",
+        "sha256": "a8ffb8a4ffcd628accf9f1149635d3925a2c4d706349e3dc0890f104b943a3a0",
+        "sha256MatchesRecord": true,
+        "recordSha256": "2e72272f4cb6e09c11b4056e57208b6a43bfcf878330c524439d135164db89cb",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 359881,
+        "triangles": 683331,
+        "referenceSamples": 68608,
+        "minNativeXYZ": [
+          4096.0,
+          2137.9375,
+          4096.0
+        ],
+        "maxNativeXYZ": [
+          6321.6875,
+          4096.0,
+          7150.0625
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 14714000
+      },
+      {
+        "name": "s032_32_32_0",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_32_0.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_32_0.json",
+        "sha256": "89afd400c99f03c37eeb8c285770e4b5e8419ff8321e48df5141263cfc934506",
+        "sha256MatchesRecord": true,
+        "recordSha256": "53cfe8fabf80b095c320958a28c130c59b74b9a47566e9c668e2ff37695e9239",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 363511,
+        "triangles": 731021,
+        "referenceSamples": 73472,
+        "minNativeXYZ": [
+          4096.0,
+          4096.0,
+          664.9375
+        ],
+        "maxNativeXYZ": [
+          6292.0,
+          6220.1875,
+          4096.0
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 15485488
+      },
+      {
+        "name": "s032_32_32_32",
+        "checkpoint": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_32_32.npz",
+        "record": "{source-cache}/guided-native-v21/whole/overview/nodes/s032_32_32_32.json",
+        "sha256": "1fb3e29f145902a0ddf9d4a4ec0a9ac97f3c78403f50635096fec02c4ed415aa",
+        "sha256MatchesRecord": true,
+        "recordSha256": "e0902a6336f7cdd583702f80f4f2d3521860a80962ec3157a3354a79c709d3c7",
+        "fingerprintMatchesPreflight": true,
+        "vertices": 458279,
+        "triangles": 860494,
+        "referenceSamples": 108032,
+        "minNativeXYZ": [
+          4096.0,
+          4096.0,
+          4096.0
+        ],
+        "maxNativeXYZ": [
+          6360.1875,
+          5909.1875,
+          7361.5625
+        ],
+        "rootPlaneVertices": 0,
+        "uncompressedArrayPayloadBytes": 19282300
+      }
+    ],
+    "childCount": 8,
+    "allChildSha256ChecksPassed": true,
+    "allChildFingerprintsMatch": true,
+    "pendingChildTriangles": 7039735,
+    "inputVerticesBeforeWelding": 3495812,
+    "referenceSamples": 816640,
+    "uncompressedChildArrayPayloadBytes": 152559044,
+    "rootPlaneVertices": 0,
+    "rootTargetTriangles": 5000000,
+    "boundaryReasoning": "Every input vertex is strictly inside the root box. Exact coordinate welding and compaction select existing coordinates; they cannot introduce a root-plane vertex. The initial root frozen signature and protected ring are empty."
+  },
+  "allocationAssessment": {
+    "cgroupLimitBytes": 8589934592,
+    "actualLaunchedMergeFaceCap": 7039735,
+    "actualLaunchedAddressSpaceLimitBytes": 4831838208,
+    "recordedLaunchBaselineAnonymousAndKernelBytes": 2314899456,
+    "remainingAfterBaselineAndAddressSpaceCeilingBytes": 1443196928,
+    "actualProcLimitObservations": [
+      {
+        "pid": 170277,
+        "name": "python3",
+        "observedAtUtc": "2026-11-06T16:42:22+00:00",
+        "addressSpaceSoftLimitBytes": 4831838208,
+        "addressSpaceHardLimitBytes": 4831838208,
+        "virtualSizeBytes": 2865938432,
+        "rssBytes": 1896214528,
+        "highWaterRssBytesAtObservation": 2290601984,
+        "threads": 1,
+        "isFinalPeak": false
+      }
+    ],
+    "previousSequentialBuilderHighWaterRssBytes": 1979289600,
+    "largestPreviousCompletedMergeInputTriangles": 2993764,
+    "arrayPayloadIsNotPeakMemory": true,
+    "reasoning": [
+      "The previous process exited at preflight with assembled=false, so the new process does not inherit its allocated VTK/Python heaps.",
+      "The operational cap equals the exact pending child sum, allowing this known assembly without an unnecessary 8M allowance. The cap is excluded from the geometry fingerprint by the unchanged Builder.",
+      "The launched per-process RLIMIT_AS constrains total virtual address-space allocations, rather than relying on a linear RSS projection from a smaller mesh.",
+      "The launch baseline plus the enforced address-space ceiling leaves more than 1 GiB below the cgroup memory limit; reclaimable file cache is not counted as fixed working memory.",
+      "Empty outer-root constraints and a 5M target make direct VTK completion plausible; no claim is made that VTK will reach that target.",
+      "A separate RSS or anonymous-plus-kernel watchdog can be supplementary, but sampled polling cannot guarantee containment of native allocation spikes."
+    ],
+    "limitations": [
+      "The 152.56MB child array payload excludes NumPy sorting/inverse arrays, VTK adjacency, C++ containers, imported libraries, temporary copies, and allocator retention.",
+      "The smaller measured sequential peak is evidence about completed work, not an upper bound for this root or final export.",
+      "RLIMIT_AS includes shared libraries and virtual reservations. An allocation refusal under the ceiling does not by itself show physical memory exhaustion.",
+      "A native allocation refusal can terminate the process instead of raising a recoverable Python exception. Completed checkpoint files remain reusable; a partial .part file is not a completed checkpoint.",
+      "Other processes and kernel allocations can grow. The launch baseline is an observation, not a reservation or a guarantee about future shared-cgroup activity.",
+      "No geometry method, numerical parameter, source code, or existing child checkpoint was altered by this assessment."
+    ]
+  },
+  "outcomeAtRecordTime": {
+    "rootCheckpointPresent": true,
+    "rootTriangles": 4999999,
+    "finalManifestPresent": false,
+    "finalManifestComplete": false,
+    "status": "pending",
+    "finalPeakRssBytes": null
+  },
+  "verificationProcessPeakRssBytes": 34394112
+}

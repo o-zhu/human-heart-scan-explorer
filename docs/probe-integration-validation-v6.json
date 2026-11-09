@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Module entry prepares one worker and one live scan without requesting pointer lock.",
+    "Explicit capture, WASD movement, mouse steering, Alt-mouse roll and Escape release update actual module state correctly.",
+    "Focused inputs are respected; denied or unsupported cursor capture leaves drag and form controls available.",
+    "One accepted frame updates the 3D cap and both images together; old frames and old volume generations are ignored.",
+    "Saved probe poses round-trip and leaving releases workers, capture, movement, timers and rendering callbacks.",
+    "Rapid leave/re-enter during initialization produces one active RAF loop."
+  ],
+  "scope": "Actual ProbeLabModule and test DOM with mocked rendering, worker transport and pointer-lock permission. This does not verify real browser capture, playback or frame rate."
+}

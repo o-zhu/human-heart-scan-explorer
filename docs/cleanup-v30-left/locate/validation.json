@@ -1,0 +1,108 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 0,
+    "decodedBrickReads": 0,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 8426549,
+    "removedOffscreenOrClippedTriangles": 15192136,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "valves-y293",
+      "axis": 1,
+      "coordinate": 1168,
+      "target": [
+        1150,
+        1168,
+        1105
+      ],
+      "distance": 0.6
+    }
+  },
+  "reviewStreaming": {
+    "trianglesPerDraw": 100000,
+    "maximumBatchVertices": 70034,
+    "maximumBatchGpuBytes": 2110442,
+    "drawCalls": 170
+  },
+  "checks": [
+    {
+      "case": {
+        "id": "valves-y293",
+        "axis": 1,
+        "coordinate": 1168,
+        "target": [
+          1150,
+          1168,
+          1105
+        ],
+        "distance": 0.6
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.10396975425330811
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.14329542113891205,
+          0.00726413174475159,
+          -0.7018732935369683
+        ],
+        "_target": [
+          0.09546313799621925,
+          0.022211720226843094,
+          -0.10396975425330811
+        ]
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "sourceCap": {
+        "path": "y/0292.webp",
+        "crop": [
+          522,
+          186,
+          1069,
+          1753
+        ],
+        "bytes": 894898,
+        "empty": false,
+        "sha256": "cbaa8324df663de50876ac5bc797f6589db3727e8bb56d7e32a1270cd6d6daa5",
+        "sourceDisplaySha256": "0a99f5cda7b813f8f8007f9183e7758fc5925ab13d9e03fd7934294390bda18f"
+      },
+      "validMeshPixels": 211477,
+      "fineXYZArray": "{source-cache}/cleanup-v30-left/locate/valves-y293-fine-xyz.npy"
+    }
+  ],
+  "scope": "Unchanged v28 original geometry plus current local patches and masks. Actual production color render; diagnostic Float32 world-position attachment excludes visible measured cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Native EGL render of actual before/after production shaft and unchanged head meshes; fixed camera within each comparison. No browser claim.",
+  "sourceExportSha256": "5f3c19cfe060fbf2f61e4c6ffa2fda8ae757cdcd4b85294363ca4e6836753c5c",
+  "shaderSha256": "7141826fb463f11590d01c0502da041cf24bf301935bbba29723a9c4660d246c",
+  "checks": {
+    "reported_default": {
+      "acousticUnchanged": true,
+      "beforeMaxAdjacentTurnDegrees": 95.64394997871491,
+      "afterMaxAdjacentTurnDegrees": 3.631030852285085
+    },
+    "combined_flexion_extreme": {
+      "acousticUnchanged": true,
+      "beforeMaxAdjacentTurnDegrees": 97.73825206114059,
+      "afterMaxAdjacentTurnDegrees": 10.066954253695727
+    }
+  }
+}

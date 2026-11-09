@@ -1,0 +1,849 @@
+{
+  "schemaVersion": 1,
+  "commit": "831198eeede3a6e0afac12fc644e4862e60527b9",
+  "donor": "ladaf-2021-17",
+  "exportSha256": "8b658841ec4cb0521b2889bbe728c517f8223fc560849a86707189525ac62cd0",
+  "referenceMm": 168.01040000000003,
+  "extent": [
+    0.8960302457466919,
+    1,
+    0.8960302457466919
+  ],
+  "sourceSpacingUm": 317.6,
+  "sourceParts": [
+    {
+      "url": "assets/volume-v5/heart-high-clean.raw.gz",
+      "sha256": "93e9adc347fa04ed60671ea7762adcf7bf8ce677e6d5a71e9f5b618083adbb30",
+      "rawSha256": "10d8120c59b978528c8373fe2c0fd5cd404c843fd91e7df75e7c0c7566cdf82f"
+    }
+  ],
+  "workerSha256": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54",
+  "cleanupDecodedSha256": "6d44d3987e70bf20036b896d73d4eeb52723ef57cd8eb6e9b8aa8a5664b0d239",
+  "scope": "Hash-verified 317.6 µm resident display source, production MPR worker and unchanged accepted planes. Counts are supported display samples above 0.18 resident and 0.28 prepared-mesh thresholds; not an anatomy or clinical audit.",
+  "rows": [
+    {
+      "id": "plax_av",
+      "name": "Parasternal long axis — aortic valve zoom",
+      "roiWidthMm": 73.92457600000002,
+      "roiHeightMm": 73.92457600000002,
+      "thresholdCoverage": [
+        {
+          "threshold": 0.18,
+          "supportedTissueSamples": 73364,
+          "unsupportedByOldCap": 30033,
+          "missingCapFraction": 0.409369718117878
+        },
+        {
+          "threshold": 0.28,
+          "supportedTissueSamples": 53350,
+          "unsupportedByOldCap": 20529,
+          "missingCapFraction": 0.3847985004686036
+        }
+      ],
+      "planeResidualMm": 4.759425369005311e-9,
+      "crop": {
+        "file": "plax_av-roi.raw",
+        "width": 234,
+        "height": 234,
+        "plane": {
+          "center": [
+            0.05404230603684887,
+            0.036042647240919407,
+            -0.04232056977045246
+          ],
+          "right": [
+            0.39655351631956537,
+            -0.8734051766583328,
+            0.2826812800328571
+          ],
+          "up": [
+            -0.9146069665783535,
+            -0.34939012121889185,
+            0.20352061291424614
+          ],
+          "normal": [
+            -0.07898991044629217,
+            -0.3392490830519736,
+            -0.9373743402163738
+          ],
+          "width": 0.44,
+          "height": 0.44,
+          "outsideScan": false,
+          "atlasDerived": true,
+          "acquisitionPose": {
+            "referenceMm": 168.01040000000003,
+            "originMm": [
+              -80.74582302529556,
+              17.80232666047947,
+              -3.792282200142586
+            ],
+            "targetMm": [
+              7.933647996188801,
+              19.005184062567203,
+              -11.700384040652802
+            ],
+            "beam": [
+              0.9959564647886032,
+              0.013509255208997185,
+              -0.08881565329088006
+            ],
+            "right": [
+              -0.042793858127941405,
+              0.9405995745651244,
+              -0.33681022258006404
+            ],
+            "normal": [
+              0.07898991044629217,
+              0.3392490830519736,
+              0.9373743402163738
+            ],
+            "up": [
+              -0.9959564647886032,
+              -0.013509255208997185,
+              0.08881565329088006
+            ],
+            "instrument": {
+              "originMm": [
+                -80.74582302529556,
+                17.80232666047947,
+                -3.792282200142586
+              ],
+              "beam": [
+                0.9959564647886032,
+                0.013509255208997185,
+                -0.08881565329088006
+              ],
+              "right": [
+                -0.042793858127941405,
+                0.9405995745651244,
+                -0.33681022258006404
+              ],
+              "normal": [
+                0.07898991044629217,
+                0.3392490830519736,
+                0.9373743402163738
+              ]
+            },
+            "markerDirection": [
+              0.042793858127941405,
+              -0.9405995745651244,
+              0.33681022258006404
+            ],
+            "markerReference": [
+              0.04279385812794135,
+              -0.9405995745651244,
+              0.33681022258006404
+            ],
+            "sectorDepthMm": 127.03950539676154,
+            "contextFit": {
+              "outsideScan": false,
+              "window": "parasternal-long",
+              "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+              "skinPointMm": [
+                -80.74582302529556,
+                17.80232666047947,
+                -3.792282200142586
+              ],
+              "skinReferencePointMm": [
+                38,
+                44,
+                87.73823162867235
+              ],
+              "skinNormal": [
+                -0.9846654675013868,
+                -0.021885393845168855,
+                0.17307497406187144
+              ],
+              "skinTriangleIndex": 2351,
+              "skinDistanceMm": 0,
+              "beamInwardDot": -0.9963513602725096,
+              "markerAgreementDeg": 2.990041236457002e-15,
+              "distanceMm": 0,
+              "mode": "skin-plane-constrained",
+              "resolved": true,
+              "estimated": false,
+              "registered": false,
+              "contactKind": "reference-skin",
+              "planeResidualMm": 3.1086244689504383e-15,
+              "normalAngleDeg": 0,
+              "acquisitionAdjusted": true,
+              "correctionAngleDeg": 35.34187241889573,
+              "contactAdjusted": false,
+              "clinicalPositionMeasured": false,
+              "acquisitionParent": "plax"
+            }
+          },
+          "acquisition": {
+            "revision": "echo-acquisition-v6",
+            "adjusted": true,
+            "correctionAngleDeg": 35.34187241889573,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 3.1086244689504383e-15,
+            "patientRegistered": false,
+            "sourceCenter": [
+              0.05000690389470588,
+              0.01871123784023635,
+              -0.09020874180567713
+            ],
+            "sourceNormal": [
+              0.16848739425610493,
+              0.2145696133360042,
+              -0.9620664628858162
+            ],
+            "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide.",
+            "reframedFrom": "plax",
+            "beamTargetIsRoiCenter": false
+          }
+        },
+        "sha256": "2ced8816e4089bee59651d9dcd484d0bd35345cd12d044ff87b1f3a7d0e2e0b8"
+      },
+      "complete": {
+        "file": "plax_av-complete.raw",
+        "width": 694,
+        "height": 667,
+        "plane": {
+          "center": [
+            -1.119119380499356e-11,
+            3.601623860260972e-11,
+            -0.024722230244816422
+          ],
+          "right": [
+            0.39655351631956537,
+            -0.8734051766583328,
+            0.2826812800328571
+          ],
+          "up": [
+            -0.9146069665783535,
+            -0.34939012121889185,
+            0.20352061291424614
+          ],
+          "normal": [
+            -0.07898991044629217,
+            -0.3392490830519736,
+            -0.9373743402163738
+          ],
+          "width": 1.3096913689859637,
+          "height": 1.2579296448831507
+        },
+        "sha256": "5a6ad64900a42bf4ec17b6b47044ea4774b03bd9c03e343f315f47d1dbc55fd3"
+      },
+      "camera": {
+        "basis": {
+          "eye": [
+            -0.255305775016774,
+            -0.8193338472621952,
+            -2.440486834634095
+          ],
+          "forward": [
+            0.078989910178988,
+            0.33924908273399496,
+            0.9373743403539797
+          ],
+          "right": [
+            0.042793858101558974,
+            -0.9405995746784332,
+            0.3368102222669822
+          ],
+          "up": [
+            -0.9959564648109371,
+            -0.013509255304916742,
+            0.0888156530258464
+          ]
+        },
+        "state": {
+          "yaw": -3.0575240683153315,
+          "pitch": -0.346118525896852,
+          "roll": -1.5851577265822028,
+          "distance": 2.562600588899273,
+          "pan": [
+            -0.05288618467499866,
+            0.05002605193547843,
+            -0.038370798023918865
+          ]
+        }
+      },
+      "clipFlip": 0
+    },
+    {
+      "id": "plax_mv",
+      "name": "Parasternal long axis — mitral valve zoom",
+      "roiWidthMm": 80.64499200000002,
+      "roiHeightMm": 80.64499200000002,
+      "thresholdCoverage": [
+        {
+          "threshold": 0.18,
+          "supportedTissueSamples": 73364,
+          "unsupportedByOldCap": 29222,
+          "missingCapFraction": 0.39831524998636936
+        },
+        {
+          "threshold": 0.28,
+          "supportedTissueSamples": 53350,
+          "unsupportedByOldCap": 20116,
+          "missingCapFraction": 0.3770571696344892
+        }
+      ],
+      "planeResidualMm": 7.47223632139582e-9,
+      "crop": {
+        "file": "plax_mv-roi.raw",
+        "width": 255,
+        "height": 255,
+        "plane": {
+          "center": [
+            0.10416964856161605,
+            0.04193248606570225,
+            -0.04867627683642385
+          ],
+          "right": [
+            0.39655351631956537,
+            -0.8734051766583328,
+            0.2826812800328571
+          ],
+          "up": [
+            -0.9146069665783535,
+            -0.34939012121889185,
+            0.20352061291424614
+          ],
+          "normal": [
+            -0.07898991044629217,
+            -0.3392490830519736,
+            -0.9373743402163738
+          ],
+          "width": 0.48,
+          "height": 0.48,
+          "outsideScan": false,
+          "atlasDerived": true,
+          "acquisitionPose": {
+            "referenceMm": 168.01040000000003,
+            "originMm": [
+              -80.74582302529556,
+              17.80232666047947,
+              -3.792282200142586
+            ],
+            "targetMm": [
+              7.933647996188801,
+              19.005184062567203,
+              -11.700384040652802
+            ],
+            "beam": [
+              0.9959564647886032,
+              0.013509255208997185,
+              -0.08881565329088006
+            ],
+            "right": [
+              -0.042793858127941405,
+              0.9405995745651244,
+              -0.33681022258006404
+            ],
+            "normal": [
+              0.07898991044629217,
+              0.3392490830519736,
+              0.9373743402163738
+            ],
+            "up": [
+              -0.9959564647886032,
+              -0.013509255208997185,
+              0.08881565329088006
+            ],
+            "instrument": {
+              "originMm": [
+                -80.74582302529556,
+                17.80232666047947,
+                -3.792282200142586
+              ],
+              "beam": [
+                0.9959564647886032,
+                0.013509255208997185,
+                -0.08881565329088006
+              ],
+              "right": [
+                -0.042793858127941405,
+                0.9405995745651244,
+                -0.33681022258006404
+              ],
+              "normal": [
+                0.07898991044629217,
+                0.3392490830519736,
+                0.9373743402163738
+              ]
+            },
+            "markerDirection": [
+              0.042793858127941405,
+              -0.9405995745651244,
+              0.33681022258006404
+            ],
+            "markerReference": [
+              0.04279385812794135,
+              -0.9405995745651244,
+              0.33681022258006404
+            ],
+            "sectorDepthMm": 127.03950539676154,
+            "contextFit": {
+              "outsideScan": false,
+              "window": "parasternal-long",
+              "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+              "skinPointMm": [
+                -80.74582302529556,
+                17.80232666047947,
+                -3.792282200142586
+              ],
+              "skinReferencePointMm": [
+                38,
+                44,
+                87.73823162867235
+              ],
+              "skinNormal": [
+                -0.9846654675013868,
+                -0.021885393845168855,
+                0.17307497406187144
+              ],
+              "skinTriangleIndex": 2351,
+              "skinDistanceMm": 0,
+              "beamInwardDot": -0.9963513602725096,
+              "markerAgreementDeg": 2.990041236457002e-15,
+              "distanceMm": 0,
+              "mode": "skin-plane-constrained",
+              "resolved": true,
+              "estimated": false,
+              "registered": false,
+              "contactKind": "reference-skin",
+              "planeResidualMm": 8.881784197001252e-16,
+              "normalAngleDeg": 0,
+              "acquisitionAdjusted": true,
+              "correctionAngleDeg": 35.34187241889573,
+              "contactAdjusted": false,
+              "clinicalPositionMeasured": false,
+              "acquisitionParent": "plax"
+            }
+          },
+          "acquisition": {
+            "revision": "echo-acquisition-v6",
+            "adjusted": true,
+            "correctionAngleDeg": 35.34187241889573,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 8.881784197001252e-16,
+            "patientRegistered": false,
+            "sourceCenter": [
+              0.1016665873574319,
+              0.031182236906731334,
+              -0.07838013814651668
+            ],
+            "sourceNormal": [
+              0.16848739425610493,
+              0.2145696133360042,
+              -0.9620664628858162
+            ],
+            "method": "Source data reformatted in the acquisition plane constrained by the fixed anatomical guide.",
+            "reframedFrom": "plax",
+            "beamTargetIsRoiCenter": false
+          }
+        },
+        "sha256": "4c1ca34ecba6d591cc3947dd9b03dc139cb0f85bd413de2e0f5d59e2c749baee"
+      },
+      "complete": {
+        "file": "plax_mv-complete.raw",
+        "width": 694,
+        "height": 667,
+        "plane": {
+          "center": [
+            -3.533021097901212e-11,
+            5.858707269323915e-11,
+            -0.024722230268176448
+          ],
+          "right": [
+            0.39655351631956537,
+            -0.8734051766583328,
+            0.2826812800328571
+          ],
+          "up": [
+            -0.9146069665783535,
+            -0.34939012121889185,
+            0.20352061291424614
+          ],
+          "normal": [
+            -0.07898991044629217,
+            -0.3392490830519736,
+            -0.9373743402163738
+          ],
+          "width": 1.3096913689859635,
+          "height": 1.2579296448831507
+        },
+        "sha256": "5a6ad64900a42bf4ec17b6b47044ea4774b03bd9c03e343f315f47d1dbc55fd3"
+      },
+      "camera": {
+        "basis": {
+          "eye": [
+            -0.22641630078052996,
+            -0.8627774473657571,
+            -2.578629101290621
+          ],
+          "forward": [
+            0.078989910178988,
+            0.33924908273399496,
+            0.9373743403539797
+          ],
+          "right": [
+            0.042793858101558974,
+            -0.9405995746784332,
+            0.3368102222669822
+          ],
+          "up": [
+            -0.9959564648109371,
+            -0.013509255304916742,
+            0.0888156530258464
+          ]
+        },
+        "state": {
+          "yaw": -3.0575240683153315,
+          "pitch": -0.346118525896852,
+          "roll": -1.5851577265822028,
+          "distance": 2.704547829479277,
+          "pan": [
+            -0.01278431065518491,
+            0.0547379229953047,
+            -0.04345536367669598
+          ]
+        }
+      },
+      "clipFlip": 0
+    },
+    {
+      "id": "psax_pv",
+      "name": "Parasternal short axis — pulmonary valve and artery focus",
+      "roiWidthMm": 114.24707200000003,
+      "roiHeightMm": 107.52665600000002,
+      "thresholdCoverage": [
+        {
+          "threshold": 0.18,
+          "supportedTissueSamples": 53582,
+          "unsupportedByOldCap": 9787,
+          "missingCapFraction": 0.18265462282109662
+        },
+        {
+          "threshold": 0.28,
+          "supportedTissueSamples": 35784,
+          "unsupportedByOldCap": 7014,
+          "missingCapFraction": 0.1960093896713615
+        }
+      ],
+      "planeResidualMm": 2.3316126807060305e-15,
+      "crop": {
+        "file": "psax_pv-roi.raw",
+        "width": 361,
+        "height": 340,
+        "plane": {
+          "center": [
+            -0.10444234404536862,
+            -0.08034026465028356,
+            -0.11578449905482041
+          ],
+          "right": [
+            0.9212383155288593,
+            -0.1302217483754282,
+            -0.3665545829090081
+          ],
+          "up": [
+            0.35338168914683005,
+            0.6740565857510508,
+            0.6486671727329585
+          ],
+          "normal": [
+            0.1626079573000147,
+            -0.7271107312202751,
+            0.6669847350329943
+          ],
+          "width": 0.68,
+          "height": 0.64,
+          "outsideScan": false,
+          "atlasDerived": true,
+          "anatomyTargetsMm": [
+            {
+              "key": "pulmonaryRoot",
+              "pointMm": [
+                -20.0088,
+                -12.2276,
+                -17.468
+              ],
+              "weight": 2,
+              "toleranceMm": 7
+            },
+            {
+              "key": "pulmonarySuperior",
+              "pointMm": [
+                -10.1632,
+                -17.3092,
+                -25.408
+              ],
+              "weight": 1,
+              "toleranceMm": 7
+            },
+            {
+              "key": "lvotRegion",
+              "pointMm": [
+                7.3048,
+                1.7468000000000001,
+                -8.8928
+              ],
+              "weight": 1,
+              "toleranceMm": 7
+            }
+          ],
+          "preferSourcePlane": true,
+          "sourceTargetRevision": "ladaf-source-pulmonary-target-v6",
+          "acquisitionPose": {
+            "referenceMm": 168.01040000000003,
+            "originMm": [
+              -68.49491245721663,
+              15.856725669233033,
+              24.968716750153195
+            ],
+            "targetMm": [
+              -17.547400000000003,
+              -13.498000000000003,
+              -19.453000000000003
+            ],
+            "beam": [
+              0.691349355831955,
+              -0.3983387942461429,
+              -0.6027953825215235
+            ],
+            "right": [
+              0.7039848864950564,
+              0.5591387927365137,
+              0.43791447800192285
+            ],
+            "normal": [
+              0.1626079573000146,
+              -0.7271107312202751,
+              0.6669847350329943
+            ],
+            "up": [
+              -0.691349355831955,
+              0.3983387942461429,
+              0.6027953825215235
+            ],
+            "instrument": {
+              "originMm": [
+                -68.49491245721663,
+                15.856725669233033,
+                24.968716750153195
+              ],
+              "beam": [
+                0.691349355831955,
+                -0.3983387942461429,
+                -0.6027953825215235
+              ],
+              "right": [
+                0.7039848864950564,
+                0.5591387927365137,
+                0.43791447800192285
+              ],
+              "normal": [
+                0.1626079573000146,
+                -0.7271107312202751,
+                0.6669847350329943
+              ]
+            },
+            "markerDirection": [
+              -0.7039848864950564,
+              -0.5591387927365137,
+              -0.43791447800192285
+            ],
+            "markerReference": [
+              -0.6802782497772858,
+              -0.07778187771410479,
+              -0.7288151222218299
+            ],
+            "sectorDepthMm": 111.69286168771717,
+            "contextFit": {
+              "outsideScan": false,
+              "window": "parasternal-short",
+              "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+              "skinPointMm": [
+                -68.49491245721663,
+                15.856725669233033,
+                24.968716750153195
+              ],
+              "skinReferencePointMm": [
+                11.034502973216036,
+                28.29826063907001,
+                85.02114040402634
+              ],
+              "skinNormal": [
+                -0.9108713019740783,
+                -0.08899131014562577,
+                0.40298141143061716
+              ],
+              "skinTriangleIndex": 2199,
+              "skinDistanceMm": 0,
+              "beamInwardDot": -0.8371969307361824,
+              "markerAgreementDeg": 32.69529255602808,
+              "distanceMm": 0,
+              "mode": "skin-plane-constrained",
+              "resolved": true,
+              "estimated": false,
+              "registered": false,
+              "contactKind": "reference-skin",
+              "planeResidualMm": 7.105427357601002e-15,
+              "normalAngleDeg": 0,
+              "acquisitionAdjusted": false,
+              "correctionAngleDeg": 0,
+              "contactAdjusted": false,
+              "clinicalPositionMeasured": false,
+              "specimenTargetFit": {
+                "revision": "ladaf-source-pulmonary-target-v6",
+                "targets": [
+                  {
+                    "key": "pulmonaryRoot",
+                    "pointMm": [
+                      -20.0088,
+                      -12.2276,
+                      -17.468
+                    ],
+                    "weight": 2,
+                    "toleranceMm": 7,
+                    "residualMm": 6.661338147750939e-16,
+                    "startingResidualMm": 6.661338147750939e-16,
+                    "addedMissMm": 0,
+                    "sourceWitnessMm": [
+                      -20.0088,
+                      -12.2276,
+                      -17.468
+                    ],
+                    "sourceWitnessResidualMm": 6.661338147750939e-16
+                  },
+                  {
+                    "key": "pulmonarySuperior",
+                    "pointMm": [
+                      -10.1632,
+                      -17.3092,
+                      -25.408
+                    ],
+                    "weight": 1,
+                    "toleranceMm": 7,
+                    "residualMm": 4.440892098500626e-16,
+                    "startingResidualMm": 4.440892098500626e-16,
+                    "addedMissMm": 0,
+                    "sourceWitnessMm": [
+                      -10.1632,
+                      -17.3092,
+                      -25.408
+                    ],
+                    "sourceWitnessResidualMm": 4.440892098500626e-16
+                  },
+                  {
+                    "key": "lvotRegion",
+                    "pointMm": [
+                      7.3048,
+                      1.7468000000000001,
+                      -8.8928
+                    ],
+                    "weight": 1,
+                    "toleranceMm": 7,
+                    "residualMm": 2.6645352591003757e-15,
+                    "startingResidualMm": 2.6645352591003757e-15,
+                    "addedMissMm": 0,
+                    "sourceWitnessMm": [
+                      7.3048,
+                      1.7468000000000021,
+                      -8.892800000000001
+                    ],
+                    "sourceWitnessResidualMm": 8.881784197001252e-16
+                  }
+                ],
+                "maxLandmarkResidualMm": 2.6645352591003757e-15,
+                "clinicalValidated": false
+              }
+            }
+          },
+          "acquisition": {
+            "revision": "echo-acquisition-v6",
+            "adjusted": false,
+            "correctionAngleDeg": 0,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 7.105427357601002e-15,
+            "patientRegistered": false,
+            "sourceCenter": [
+              -0.10444234404536862,
+              -0.08034026465028356,
+              -0.11578449905482041
+            ],
+            "sourceNormal": [
+              0.1626079573000147,
+              -0.7271107312202751,
+              0.6669847350329943
+            ],
+            "method": "Source plane retained; probe contact lies in the same plane."
+          }
+        },
+        "sha256": "6cd176d43543807ff47bc09f1ad350ab23f2d921b300663f5f2e59ec0052a1fa"
+      },
+      "complete": {
+        "file": "psax_pv-complete.raw",
+        "width": 655,
+        "height": 797,
+        "plane": {
+          "center": [
+            -0.014737170593757676,
+            0.021116502867621484,
+            -0.027051539671496955
+          ],
+          "right": [
+            0.9212383155288593,
+            -0.1302217483754282,
+            -0.3665545829090081
+          ],
+          "up": [
+            0.35338168914683005,
+            0.6740565857510508,
+            0.6486671727329585
+          ],
+          "normal": [
+            0.1626079573000147,
+            -0.7271107312202751,
+            0.6669847350329943
+          ],
+          "width": 1.234840925058958,
+          "height": 1.503561363898449
+        },
+        "sha256": "67e347d78b68cd5cf6e03ac9d50875e3ca0d52de1106b887528a1eb5941f4287"
+      },
+      "camera": {
+        "basis": {
+          "eye": [
+            0.20839770124811688,
+            -1.7154695730391771,
+            1.469067335144108
+          ],
+          "forward": [
+            -0.16260795730001465,
+            0.7271107312202751,
+            -0.6669847350329942
+          ],
+          "right": [
+            0.7039848864950566,
+            0.5591387927365137,
+            0.43791447800192285
+          ],
+          "up": [
+            -0.691349355831955,
+            0.3983387942461429,
+            0.6027953825215238
+          ]
+        },
+        "state": {
+          "yaw": 0.23913077657297555,
+          "pitch": -0.8141039457173896,
+          "roll": 0.951786734975054,
+          "distance": 2.296862328488896,
+          "pan": [
+            -0.16509039018681773,
+            -0.04539632585931224,
+            -0.06290477643032433
+          ]
+        }
+      },
+      "clipFlip": 0
+    }
+  ]
+}

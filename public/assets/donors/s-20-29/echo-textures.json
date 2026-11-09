@@ -1,0 +1,238 @@
+{
+  "datasetId": "1773963465",
+  "specimen": "S-20-29",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1773963465",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": false,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Measured geometric comparison; anatomical identity unreviewed",
+  "sourceDoi": "10.15151/ESRF-DC-1773964017",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "schemaVersion": 2,
+  "sourceSpacingUm": 79.56,
+  "textures": {
+    "a4c": {
+      "url": "./assets/donors/s-20-29/echo-textures/a4c.webp",
+      "width": 3002,
+      "height": 2803,
+      "bytes": 956296,
+      "sha256": "82bf66d823725886a8269b2d0d8be9f74717d4e1bacdff23626b04885d4f63ce",
+      "pixelSha256": "c6727cc4f5c603534dba40ef10f70f0292daa0e41fd0ba1f86f6b52b3bc0716d",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "a2c": {
+      "url": "./assets/donors/s-20-29/echo-textures/a2c.webp",
+      "width": 2356,
+      "height": 2803,
+      "bytes": 659954,
+      "sha256": "70f5b16cd22f18e2db8458f4bb397f8cf1e15e4181388443f984a09d1d5bf10d",
+      "pixelSha256": "2ca8114509ec93aebd3dc5ea0932c2fe7cede97eab09922282561f78feca1351",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.53532660048401,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "a3c": {
+      "url": "./assets/donors/s-20-29/echo-textures/a3c.webp",
+      "width": 3218,
+      "height": 2803,
+      "bytes": 842674,
+      "sha256": "9e6ec5e7a764631273091b129666825b61ee83872cbf5c6cedc4d8209a624fdb",
+      "pixelSha256": "0c76d71b4bb1bd8a9ef26f5d9b49fcde413534fe1bd645a1a087536c57e7fdec",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55489505974907,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "plax": {
+      "url": "./assets/donors/s-20-29/echo-textures/plax.webp",
+      "width": 2803,
+      "height": 2356,
+      "bytes": 661208,
+      "sha256": "31c61d15d4a2d52e4047a51cebc0020d25e53e667d89bc63be7fac60248d6f5c",
+      "pixelSha256": "9bcaf68b232d8adc38c2701f91c282866940125c3177f067650ee61285478611",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.53285805965986,
+        79.53532660048401
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "psax_papillary": {
+      "url": "./assets/donors/s-20-29/echo-textures/psax_papillary.webp",
+      "width": 3002,
+      "height": 2356,
+      "bytes": 590432,
+      "sha256": "680ce9901b3dab2333f57b9213120178cac97e3cfec1a3f91edd93aea0b48f99",
+      "pixelSha256": "7cd661d3e3aa0e730d8a5a83b49312d7039744d6c8f5b6b197d7c87f8190a72b",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.53532660048401
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "psax_mitral": {
+      "url": "./assets/donors/s-20-29/echo-textures/psax_mitral.webp",
+      "width": 3002,
+      "height": 2356,
+      "bytes": 503414,
+      "sha256": "cce841ae71801696f348a42ef29e41e82fae1961406ceccd30d4ea1e5be6e99b",
+      "pixelSha256": "a0bae019a3639da71ead9f2596c019d697895008c3be0d22c1d265ab6cef14db",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.535326600484
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "subcostal": {
+      "url": "./assets/donors/s-20-29/echo-textures/subcostal.webp",
+      "width": 2803,
+      "height": 3002,
+      "bytes": 957552,
+      "sha256": "3c27202a04a335ae164bee7b54d1b95e6587bf86cc64078f259e360b7fabcd67",
+      "pixelSha256": "85ebed4af9f78e471dbcda3822367fce8adf4e4242780292e57a4dbdf7608b3b",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.53285805965986,
+        79.55545686752947
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "me4c": {
+      "url": "./assets/donors/s-20-29/echo-textures/me4c.webp",
+      "width": 3002,
+      "height": 2803,
+      "bytes": 956068,
+      "sha256": "06ff2d6445e20974582b6a10e0d20b662ccaa247c8e9a7c6f154edf1ce2509cd",
+      "pixelSha256": "367adb65f96248196cd5de1f6939e7c1867ecf577cf7ae823b08b01e5cac057a",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "me2c": {
+      "url": "./assets/donors/s-20-29/echo-textures/me2c.webp",
+      "width": 2356,
+      "height": 2803,
+      "bytes": 662506,
+      "sha256": "2662eeeed3a0fe796bd913dd403a7217b5d40900834fb8b8f3ab4140c8c28a92",
+      "pixelSha256": "d1a799d663d5ac10b5e45c38a92523d0a514fce54952129d1bf37d9105d4991e",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.53532660048401,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "melax": {
+      "url": "./assets/donors/s-20-29/echo-textures/melax.webp",
+      "width": 3218,
+      "height": 2803,
+      "bytes": 841808,
+      "sha256": "d95452dcab73a50bfd6c4f27ed9d08227e56f90ea6d34244ade37b5fed8e7c01",
+      "pixelSha256": "334a3f20f747dcf60028407750a050c5c81c1d87e7d3cbd9dc114b11544f8f02",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55489505974907,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "meavsax": {
+      "url": "./assets/donors/s-20-29/echo-textures/meavsax.webp",
+      "width": 3002,
+      "height": 2356,
+      "bytes": 503192,
+      "sha256": "927e46e02fd55d284675fff1425823818e2e3e126ecced16a74c6e9cc4db31e9",
+      "pixelSha256": "d77f0aa25430241e724671e32b940490b29895a71714bf383df862e6a0889282",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.535326600484
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "bicaval": {
+      "url": "./assets/donors/s-20-29/echo-textures/bicaval.webp",
+      "width": 2356,
+      "height": 2803,
+      "bytes": 704626,
+      "sha256": "3bd82941a3301e923dcf753887ba799ae7fc733d73a80baa1d2c48ad478904e2",
+      "pixelSha256": "63fef7fe78b61d97572b89522b570be1373b5678519b29e80863847e43f8120d",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.53532660048403,
+        79.53285805965986
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    },
+    "tgpapillary": {
+      "url": "./assets/donors/s-20-29/echo-textures/tgpapillary.webp",
+      "width": 3002,
+      "height": 2356,
+      "bytes": 504762,
+      "sha256": "f7b5325aaa1cd89007de9ee9afeec8049cbce7bd54aef8653905dc569ad0691e",
+      "pixelSha256": "834812e26f6109f5c7786cd7ebbb94a5510a85a11f3549338d9d869df9b158cc",
+      "spacingUm": 79.56,
+      "sourceSpacingUm": 79.56,
+      "spacingUmXY": [
+        79.55545686752947,
+        79.535326600484
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true
+    }
+  }
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "roi": "wide",
+    "dimensions": [
+      270,
+      245,
+      218
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 256,
+    "bytes": 14420700,
+    "gzipBytes": 9149009,
+    "belowFraction": 0.3298371785003502,
+    "aboveFraction": 0.005381638894089746
+  },
+  {
+    "roi": "wide",
+    "dimensions": [
+      270,
+      245,
+      218
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 14420700,
+    "gzipBytes": 7806855,
+    "belowFraction": 0.3298371785003502,
+    "aboveFraction": 0.005381638894089746
+  },
+  {
+    "roi": "wide",
+    "dimensions": [
+      270,
+      245,
+      218
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 64,
+    "bytes": 14420700,
+    "gzipBytes": 6238682,
+    "belowFraction": 0.3298371785003502,
+    "aboveFraction": 0.005381638894089746
+  },
+  {
+    "roi": "wide",
+    "dimensions": [
+      270,
+      245,
+      218
+    ],
+    "window": [
+      -100,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 14420700,
+    "gzipBytes": 7108629,
+    "belowFraction": 0.42493554404432515,
+    "aboveFraction": 0.005381638894089746
+  },
+  {
+    "roi": "wide",
+    "dimensions": [
+      270,
+      245,
+      218
+    ],
+    "window": [
+      -160,
+      800
+    ],
+    "levels": 128,
+    "bytes": 14420700,
+    "gzipBytes": 7786025,
+    "belowFraction": 0.3553242907764533,
+    "aboveFraction": 0.02399592252803262
+  },
+  {
+    "roi": "heart",
+    "dimensions": [
+      235,
+      205,
+      193
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 256,
+    "bytes": 9297775,
+    "gzipBytes": 6431547,
+    "belowFraction": 0.28600036030125486,
+    "aboveFraction": 0.008165286856263998
+  },
+  {
+    "roi": "heart",
+    "dimensions": [
+      235,
+      205,
+      193
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 9297775,
+    "gzipBytes": 5477187,
+    "belowFraction": 0.28600036030125486,
+    "aboveFraction": 0.008165286856263998
+  },
+  {
+    "roi": "heart",
+    "dimensions": [
+      235,
+      205,
+      193
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 64,
+    "bytes": 9297775,
+    "gzipBytes": 4350434,
+    "belowFraction": 0.28600036030125486,
+    "aboveFraction": 0.008165286856263998
+  },
+  {
+    "roi": "heart",
+    "dimensions": [
+      235,
+      205,
+      193
+    ],
+    "window": [
+      -100,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 9297775,
+    "gzipBytes": 5035937,
+    "belowFraction": 0.37712571018335034,
+    "aboveFraction": 0.008165286856263998
+  },
+  {
+    "roi": "heart",
+    "dimensions": [
+      235,
+      205,
+      193
+    ],
+    "window": [
+      -160,
+      800
+    ],
+    "levels": 128,
+    "bytes": 9297775,
+    "gzipBytes": 5427196,
+    "belowFraction": 0.3108217826307907,
+    "aboveFraction": 0.03451513937474288
+  },
+  {
+    "roi": "tight",
+    "dimensions": [
+      215,
+      185,
+      180
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 256,
+    "bytes": 7159500,
+    "gzipBytes": 5328038,
+    "belowFraction": 0.2353611285704309,
+    "aboveFraction": 0.009859347719812835
+  },
+  {
+    "roi": "tight",
+    "dimensions": [
+      215,
+      185,
+      180
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 7159500,
+    "gzipBytes": 4534135,
+    "belowFraction": 0.2353611285704309,
+    "aboveFraction": 0.009859347719812835
+  },
+  {
+    "roi": "tight",
+    "dimensions": [
+      215,
+      185,
+      180
+    ],
+    "window": [
+      -200,
+      1000
+    ],
+    "levels": 64,
+    "bytes": 7159500,
+    "gzipBytes": 3591308,
+    "belowFraction": 0.2353611285704309,
+    "aboveFraction": 0.009859347719812835
+  },
+  {
+    "roi": "tight",
+    "dimensions": [
+      215,
+      185,
+      180
+    ],
+    "window": [
+      -100,
+      1000
+    ],
+    "levels": 128,
+    "bytes": 7159500,
+    "gzipBytes": 4254452,
+    "belowFraction": 0.3115417277742859,
+    "aboveFraction": 0.009859347719812835
+  },
+  {
+    "roi": "tight",
+    "dimensions": [
+      215,
+      185,
+      180
+    ],
+    "window": [
+      -160,
+      800
+    ],
+    "levels": 128,
+    "bytes": 7159500,
+    "gzipBytes": 4495087,
+    "belowFraction": 0.25607710035617015,
+    "aboveFraction": 0.042167050771701936
+  }
+]

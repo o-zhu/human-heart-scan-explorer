@@ -1,0 +1,206 @@
+{
+    "multiscales": [
+        {
+            "axes": [
+                {
+                    "name": "x",
+                    "type": "space",
+                    "unit": "micrometer"
+                },
+                {
+                    "name": "y",
+                    "type": "space",
+                    "unit": "micrometer"
+                },
+                {
+                    "name": "z",
+                    "type": "space",
+                    "unit": "micrometer"
+                }
+            ],
+            "datasets": [
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                7.032,
+                                7.032,
+                                7.032
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                3.516,
+                                3.516,
+                                3.516
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "0"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                14.064,
+                                14.064,
+                                14.064
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                7.032,
+                                7.032,
+                                7.032
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "1"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                28.128,
+                                28.128,
+                                28.128
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                14.064,
+                                14.064,
+                                14.064
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "2"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                56.256,
+                                56.256,
+                                56.256
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                28.128,
+                                28.128,
+                                28.128
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "3"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                112.512,
+                                112.512,
+                                112.512
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                56.256,
+                                56.256,
+                                56.256
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "4"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                225.024,
+                                225.024,
+                                225.024
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                112.512,
+                                112.512,
+                                112.512
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "5"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                450.048,
+                                450.048,
+                                450.048
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                225.024,
+                                225.024,
+                                225.024
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "6"
+                },
+                {
+                    "coordinateTransformations": [
+                        {
+                            "scale": [
+                                900.096,
+                                900.096,
+                                900.096
+                            ],
+                            "type": "scale"
+                        },
+                        {
+                            "translation": [
+                                450.048,
+                                450.048,
+                                450.048
+                            ],
+                            "type": "translation"
+                        }
+                    ],
+                    "path": "7"
+                }
+            ],
+            "metadata": {
+                "description": "Downscaled using local mean in 2x2x2 blocks.",
+                "kwargs": {
+                    "block_size": 2,
+                    "func": "np.mean"
+                },
+                "method": "skimage.measure.block_reduce",
+                "version": "0.24.0"
+            },
+            "name": "UCL-ZCR-2627_heart_complete-organ_7.032um_bm18",
+            "type": "local mean",
+            "version": "0.4"
+        }
+    ],
+    "omero": null
+}

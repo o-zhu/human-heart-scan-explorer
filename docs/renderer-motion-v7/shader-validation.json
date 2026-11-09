@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "outputPixels": [
+    520,
+    590
+  ],
+  "movingVolumePixels": [
+    200,
+    227
+  ],
+  "checks": [
+    {
+      "preset": "a4c",
+      "capTexturePixels": [
+        1525,
+        2011
+      ],
+      "verifiedCapPixels": 64860,
+      "capDifferenceFromIdle": {
+        "maxChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "previousReducedCanvasCapMeanDifference": 26.009507657518757,
+      "fineCleanupProvenancePass": true,
+      "backsideOcclusionPass": true,
+      "glError": 0,
+      "softwareTimingMs": {
+        "idleFull": 53.630592999979854,
+        "previousMotionVolume": 10.209110005234834,
+        "newMotionVolume": 11.188823998963926,
+        "newMotionComposite": 1.2624289956875145,
+        "newMotionTotal": 12.45125299465144
+      }
+    },
+    {
+      "preset": "me4c",
+      "capTexturePixels": [
+        1525,
+        2011
+      ],
+      "verifiedCapPixels": 67558,
+      "capDifferenceFromIdle": {
+        "maxChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "previousReducedCanvasCapMeanDifference": 25.997735279315553,
+      "fineCleanupProvenancePass": true,
+      "backsideOcclusionPass": true,
+      "glError": 0,
+      "softwareTimingMs": {
+        "idleFull": 48.641225999745075,
+        "previousMotionVolume": 10.688271999242716,
+        "newMotionVolume": 14.259001000027638,
+        "newMotionComposite": 1.2077850042260252,
+        "newMotionTotal": 15.466786004253663
+      }
+    }
+  ],
+  "scope": "Actual production GLSL, measured Echo images and original scalar volume in native offscreen EGL. The software-driver timing sample is not a browser FPS measurement."
+}

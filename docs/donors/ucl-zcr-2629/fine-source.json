@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "identity": {
+      "maskSha256": "2a0676e309367b71646242529998dd5f7fc873d04ed7303f4054a2d7e3116f75",
+      "window": [
+        35893,
+        38534
+      ],
+      "fullXYZ": [
+        1153,
+        1169,
+        1825
+      ],
+      "source": "s2-source-u16.npy",
+      "sourceHttp": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2629/heart/7.032um_complete-organ_bm18.ome.zarr/2/",
+      "sourceAxes": "XYZ",
+      "sourceOrder": "C",
+      "sourceSpacingUm": 28.128
+    },
+    "originXYZ": [
+      0,
+      0,
+      0
+    ],
+    "shapeXYZ": [
+      1133,
+      1165,
+      1825
+    ],
+    "sourceSpacingUm": 28.128,
+    "supportMask": "Donor-specific conservative connected-component exterior support",
+    "outsideSupportValue": 0,
+    "quantitativeIntensityData": false,
+    "cleaned": true
+  },
+  "sourceChunks": 809,
+  "compressedSourceBytes": 1982006546,
+  "decodedDisplayBytes": 2408899625,
+  "fullSourceDimensionsXYZ": [
+    1154,
+    1169,
+    1825
+  ],
+  "registrationMaximumErrorUm": 0,
+  "nativeDetailSynthesized": false
+}

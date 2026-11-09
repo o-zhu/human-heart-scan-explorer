@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "generator": "ChatGPT Image via image_gen.imagegen",
+  "purpose": "Conceptual navigation artwork. Precise acquisition guidance is supplied independently from ASE Table 2; these images are not diagnostic ultrasound or acquired donor anatomy.",
+  "assets": [
+    {
+      "id": "plax_deep",
+      "tableRow": "2.1",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax_deep.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71354,
+      "sha256": "9e6519fe4ca4b21b0fef16e886653575ce651c8932d0d5edd75b3938d2e93584",
+      "promptSha256": "185e5d2a8fa493e92c2a4e4740f7163b8243be2c32e8eae61660656360d277ff"
+    },
+    {
+      "id": "plax",
+      "tableRow": "2.2",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 78308,
+      "sha256": "f0cbffea6774869eb1f0eddbff096ed2ec3968b5f5a7c0067341a09b4a9d8212",
+      "promptSha256": "b1d6115c590707af488e5c3fdb2c6944ac001a751d17cd08cc47053f66c86f6f"
+    },
+    {
+      "id": "plax_av",
+      "tableRow": "2.3",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax_av.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 84248,
+      "sha256": "a7e8ad09ae37fd7769f0b654a0837b1fddf466be6f71dae963d988763d40da1e",
+      "promptSha256": "e0750f94cb4ea267d3cf31b8cb4effb2ff63399f0b4f41f9435792cc7a4de99a"
+    },
+    {
+      "id": "plax_mv",
+      "tableRow": "2.4",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax_mv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 83946,
+      "sha256": "96026d7d2e32848baa0ec70479e19dc337df426aca8c132746df32ba2ede04ad",
+      "promptSha256": "00113a84a6b653cac300ba05ee6f0c7f8c3d4a2fa08f1ffeefbe2b2278c0198e"
+    },
+    {
+      "id": "plax_rvot",
+      "tableRow": "2.5",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax_rvot.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 61664,
+      "sha256": "b049a0ab70344138a411d2f9fca9092f0a3b77fe19083f0a43de2e7a9f326f48",
+      "promptSha256": "d1c152ccb6e283bc0318895c776c4bdf42e74d45ee6c0c8d96c1fc370daa82ec"
+    },
+    {
+      "id": "plax_rvin",
+      "tableRow": "2.6",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/plax_rvin.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 65734,
+      "sha256": "28badfd923916a2dabd7e425dbbd1dc800e090f3001bdd4ed05034a797ac7f15",
+      "promptSha256": "3f6a3ec206c8e3e036db97fa09ca61f12da6b8c07ad87f085fa387d37405b518"
+    },
+    {
+      "id": "psax_great",
+      "tableRow": "2.7",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_great.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 69376,
+      "sha256": "a1b5545d04f8ef761c6d8cba7a706fcd82f7106c4e71b0722d322073cb41dbee",
+      "promptSha256": "80a799f85cef6de027aa82600fa6e92907ba9dddf48e6c5868e30ce26bbde539"
+    },
+    {
+      "id": "psax_av",
+      "tableRow": "2.8",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_av.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 70662,
+      "sha256": "8a87f9da38c6667134eb1ef0a988d35bc68cc15f4484229e0747253a9c3e5a25",
+      "promptSha256": "2123d2ff0fc3ddb7c40fe24ceca432080eea3309b1bff1b8f75330772dfe3457"
+    },
+    {
+      "id": "psax_av_zoom",
+      "tableRow": "2.9",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_av_zoom.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71342,
+      "sha256": "064297c6de4f58291e4e4b3d63d62cef9c6180c76aa076baff711276416126d5",
+      "promptSha256": "66b36d069cf3e2ff658990b47e30e0519354e51af805369b5f4c8695b0d5f4ec"
+    },
+    {
+      "id": "psax_tv",
+      "tableRow": "2.10a",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_tv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 79018,
+      "sha256": "0cfb0957b4a509c4fa06fca317fc9a97cac0850ecf7798522a9d13cefc7336f9",
+      "promptSha256": "ee7a8a465417d8888d6ee3aa31193ef7f33421b4601474c20d61632c8da2af4c"
+    },
+    {
+      "id": "psax_pv",
+      "tableRow": "2.10b",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_pv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 74476,
+      "sha256": "35fbbbc0c19157d2093a3f6fe115f6b956ca5a23c8195493d70d7d37f4a0ce9e",
+      "promptSha256": "99b6840f5793b0b1bec8462a41e49bd016a71018025a566e88f88c10260a1e6b"
+    },
+    {
+      "id": "psax_mitral",
+      "tableRow": "2.11",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_mitral.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71024,
+      "sha256": "0db09a4fea65228e9dd59492f56ff3391e3b2212c6ccac9c5851a6018a5c5f57",
+      "promptSha256": "734a6d8195036ba96a762ac157d662c5aa9877a5d0df694912d64a0a01f6f779"
+    },
+    {
+      "id": "psax_papillary",
+      "tableRow": "2.12",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_papillary.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 63428,
+      "sha256": "8a43e505030bf9a9e6af6a9731398ca41eb2cfe5120e29b66242ab3d4b19e7dd",
+      "promptSha256": "80782e88ea4dd498cb518da0c83f4fa06efdb5419f348cd190856325c27ee045"
+    },
+    {
+      "id": "psax_apical",
+      "tableRow": "2.13",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/psax_apical.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 52800,
+      "sha256": "ca35cb131704d80fc2215842656188397e852d8e6ce9a27a78e6c8d5577454b4",
+      "promptSha256": "8a2ae6d9ac2930c988798f127f2f92bd85a87de62e3b9c5bbeb0ec1e41b46275"
+    },
+    {
+      "id": "a4c",
+      "tableRow": "2.14",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a4c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 72904,
+      "sha256": "62e678cc516808f4927e73ef79d397055818eb9eb2f75e8790e40439ea3844ae",
+      "promptSha256": "62f9e66601a499993bda245c846a9612b537aee71e52e55f20d09b4898fa10f6"
+    },
+    {
+      "id": "a4c_lv",
+      "tableRow": "2.15",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 62492,
+      "sha256": "0cf9ca105f2e5dca94a690f4adaf74dfff86ec0664d2e3fd3b73b4ce7e7fa023",
+      "promptSha256": "4e0f828fe6fd015dc9b05bddb5ce837dfcd57b0c80e590a10d2e8e58c0b33e9e"
+    },
+    {
+      "id": "a4c_rv",
+      "tableRow": "2.16",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_rv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 75566,
+      "sha256": "647d50f38617bc2f853a293c84d9eee74ab343e3c0439d2e7052b3412d953c54",
+      "promptSha256": "2e0ccbf3cfa975d24f344feeb858fb47705a93ce1a5efdf15a7a62ee7a4a36e5"
+    },
+    {
+      "id": "a5c",
+      "tableRow": "2.17",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a5c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 71148,
+      "sha256": "76c6414426a6e0ef21ede513b27018d96e343155ed43e119fb0613ed6799316b",
+      "promptSha256": "c75ec1ccd16ef4b67576723713d1e77c298d9a18c79e36e6c5d90251c144b132"
+    },
+    {
+      "id": "a4c_cs",
+      "tableRow": "2.18",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_cs.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 62794,
+      "sha256": "5a06e82be2e3dcc1f0703bbb724c4422a309384162d0be22ae93c13955203cb2",
+      "promptSha256": "3e44c391041a5333c3264cc69fbd4a2181cc6b4d5472936c5fa5747e126cd2fa"
+    },
+    {
+      "id": "a2c",
+      "tableRow": "2.19",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a2c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 42116,
+      "sha256": "fb82a10d5041296adf3a650b59e3142db2108ff1214a59585674138edb3395e9",
+      "promptSha256": "b1c7d42dcbcb51a87ea6384bae773af821f492c7da178e2562f1654be0eb592a"
+    },
+    {
+      "id": "a2c_lv",
+      "tableRow": "2.20",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a2c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 58478,
+      "sha256": "64a9da670c2fea014f3c78b15584208128e754252f4b4e974f5054f09c9e6d0f",
+      "promptSha256": "22c25f5e59647982b4d0f16c180e1da2225ad4a49dbadee47e75ad4dce99d325"
+    },
+    {
+      "id": "a3c",
+      "tableRow": "2.21",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a3c.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 60264,
+      "sha256": "7020ed053f51cbfa3f039106f33c9623ae6ddbe8ac8d40bdc1f870974b5b1f58",
+      "promptSha256": "57170aed592c793692607eb80e61eaa06cd1dcaf2493a40afce95adaf1a0ef6f"
+    },
+    {
+      "id": "a3c_lv",
+      "tableRow": "2.22",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a3c_lv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 55858,
+      "sha256": "c5c7e21eaaa92b3acb7d6850185be5d698807e9995dea03fa7f4bb4d46f0c784",
+      "promptSha256": "adc6b28aad0ab934360c589f8a62cf8c999f5b55d12ca989dd23ea79f983249c"
+    },
+    {
+      "id": "a4c_la_pv",
+      "tableRow": "2.23",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/a4c_la_pv.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 55512,
+      "sha256": "99aa07a2383d895ef8100c53482b27aae63ad95e676d11066f9193b65da2397d",
+      "promptSha256": "9212a51971b7874e6706bdb3be3b3d1d2ddd0f2ea58c31975a9abf62f9ac1b91"
+    },
+    {
+      "id": "subcostal",
+      "tableRow": "2.24",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 60132,
+      "sha256": "49bb380cded9eaf6e1517fd50de031e97442fd6b7b39b84ca03ba395ca772df5",
+      "promptSha256": "23e4f438753711831b910a440e8f9ad0148f2ec4b45c6813e541c21aef72503d"
+    },
+    {
+      "id": "subcostal_ivc",
+      "tableRow": "2.25",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal_ivc.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 56720,
+      "sha256": "a7ad661eb98e23993929b58d32686516659f3d3d4790687ac0c404deb902d2f9",
+      "promptSha256": "fdf90fe69bc6b3dc393b982539258108141dea3f8bf20c1d4bef876b398ea7fa"
+    },
+    {
+      "id": "subcostal_hepatic",
+      "tableRow": "2.26",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/subcostal_hepatic.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 50980,
+      "sha256": "0258267f3fc8223b95eeefe615c6d51bc4d436c160a6f63e96125adccd62874f",
+      "promptSha256": "04217d14d65dbcd0cb9904eafdef2aaef348d59c151d2805338090fcd6dcad63"
+    },
+    {
+      "id": "ssn_arch",
+      "tableRow": "2.27",
+      "tool": "image_gen.imagegen",
+      "asset": "public/assets/tte-atlas/art-v1/ssn_arch.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 65832,
+      "sha256": "690bc8152fe381d1c708c83a72c7eb772e6fdbe239f8237520c3eeaca56d2600",
+      "promptSha256": "7b3f2dc2024b33041ca5ec0e07a0b055624c67ace882d0ede387485558475fb5"
+    }
+  ]
+}

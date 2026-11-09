@@ -1,0 +1,226 @@
+{
+  "donors": {
+    "ladaf-2021-17": [
+      {
+        "id": "balanced-gamma-1.05",
+        "label": "Balanced gamma 1.05",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.276,
+          "windowHigh": 0.883,
+          "windowGamma": 1.05,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-1",
+        "label": "Balanced gamma 1",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.276,
+          "windowHigh": 0.883,
+          "windowGamma": 1,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.9",
+        "label": "Balanced gamma 0.9",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.276,
+          "windowHigh": 0.883,
+          "windowGamma": 0.9,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.85",
+        "label": "Balanced gamma 0.85",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.276,
+          "windowHigh": 0.883,
+          "windowGamma": 0.85,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.8",
+        "label": "Balanced gamma 0.8",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.276,
+          "windowHigh": 0.883,
+          "windowGamma": 0.8,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "strong",
+        "label": "Strong contrast",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.344,
+          "windowHigh": 0.787,
+          "windowGamma": 1.05,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      }
+    ],
+    "s-20-29": [
+      {
+        "id": "balanced-gamma-1.05",
+        "label": "Balanced gamma 1.05",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.081,
+          "windowHigh": 0.703,
+          "windowGamma": 1.05,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-1",
+        "label": "Balanced gamma 1",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.081,
+          "windowHigh": 0.703,
+          "windowGamma": 1,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.9",
+        "label": "Balanced gamma 0.9",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.081,
+          "windowHigh": 0.703,
+          "windowGamma": 0.9,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.85",
+        "label": "Balanced gamma 0.85",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.081,
+          "windowHigh": 0.703,
+          "windowGamma": 0.85,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.8",
+        "label": "Balanced gamma 0.8",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.081,
+          "windowHigh": 0.703,
+          "windowGamma": 0.8,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "strong",
+        "label": "Strong contrast",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.162,
+          "windowHigh": 0.568,
+          "windowGamma": 0.9,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      }
+    ],
+    "s-20-28": [
+      {
+        "id": "balanced-gamma-1.05",
+        "label": "Balanced gamma 1.05",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.253,
+          "windowHigh": 0.902,
+          "windowGamma": 1.05,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-1",
+        "label": "Balanced gamma 1",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.253,
+          "windowHigh": 0.902,
+          "windowGamma": 1,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.9",
+        "label": "Balanced gamma 0.9",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.253,
+          "windowHigh": 0.902,
+          "windowGamma": 0.9,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.85",
+        "label": "Balanced gamma 0.85",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.253,
+          "windowHigh": 0.902,
+          "windowGamma": 0.85,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "balanced-gamma-0.8",
+        "label": "Balanced gamma 0.8",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.253,
+          "windowHigh": 0.902,
+          "windowGamma": 0.8,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      },
+      {
+        "id": "strong",
+        "label": "Strong contrast",
+        "settings": {
+          "windowEnabled": true,
+          "windowLow": 0.33,
+          "windowHigh": 0.761,
+          "windowGamma": 1.0,
+          "cutFaceExposure": 3.0,
+          "capContrast": 1.0
+        }
+      }
+    ]
+  }
+}

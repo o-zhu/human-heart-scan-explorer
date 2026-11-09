@@ -1,0 +1,715 @@
+{
+  "id": "atrial-pulmonary-vein-sheet",
+  "mask": "atrial",
+  "guardMode": "reviewed-object",
+  "expansion": 9,
+  "guard": 10,
+  "scope": "Isolated two-dimensional source foreground of the upper intraluminal sheet, tracked by serial seeds. The connected attachment planes and neighboring wall are retained.",
+  "componentMode": "isolated-sheet",
+  "componentRangeY": [
+    1224,
+    1304
+  ],
+  "componentCoreAllowance": 2,
+  "componentSeeds": {
+    "1224": [
+      1355,
+      776
+    ],
+    "1232": [
+      1346,
+      764
+    ],
+    "1248": [
+      1350,
+      748
+    ],
+    "1260": [
+      1340,
+      741
+    ],
+    "1276": [
+      1320,
+      715
+    ],
+    "1292": [
+      1300,
+      726
+    ],
+    "1304": [
+      1280,
+      723
+    ]
+  },
+  "evidence": "source-refined/upper-pv-sheet.jpg; vein-320 production coordinate readback",
+  "polygons": {
+    "1180": [
+      [
+        1268,
+        784
+      ],
+      [
+        1285,
+        787
+      ],
+      [
+        1303,
+        800
+      ],
+      [
+        1300,
+        810
+      ],
+      [
+        1286,
+        808
+      ]
+    ],
+    "1200": [
+      [
+        1271,
+        756
+      ],
+      [
+        1306,
+        754
+      ],
+      [
+        1321,
+        761
+      ],
+      [
+        1335,
+        784
+      ],
+      [
+        1342,
+        813
+      ],
+      [
+        1331,
+        824
+      ],
+      [
+        1310,
+        813
+      ],
+      [
+        1298,
+        790
+      ],
+      [
+        1279,
+        775
+      ]
+    ],
+    "1212": [
+      [
+        1287,
+        725
+      ],
+      [
+        1310,
+        730
+      ],
+      [
+        1335,
+        746
+      ],
+      [
+        1356,
+        772
+      ],
+      [
+        1364,
+        806
+      ],
+      [
+        1353,
+        823
+      ],
+      [
+        1336,
+        820
+      ],
+      [
+        1317,
+        793
+      ],
+      [
+        1302,
+        766
+      ]
+    ],
+    "1220": [
+      [
+        1280,
+        710
+      ],
+      [
+        1304,
+        714
+      ],
+      [
+        1327,
+        733
+      ],
+      [
+        1345,
+        754
+      ],
+      [
+        1364,
+        783
+      ],
+      [
+        1370,
+        812
+      ],
+      [
+        1359,
+        826
+      ],
+      [
+        1343,
+        823
+      ],
+      [
+        1331,
+        796
+      ],
+      [
+        1314,
+        761
+      ],
+      [
+        1295,
+        733
+      ]
+    ],
+    "1232": [
+      [
+        1282,
+        697
+      ],
+      [
+        1301,
+        701
+      ],
+      [
+        1322,
+        721
+      ],
+      [
+        1346,
+        750
+      ],
+      [
+        1364,
+        780
+      ],
+      [
+        1367,
+        803
+      ],
+      [
+        1358,
+        815
+      ],
+      [
+        1348,
+        810
+      ],
+      [
+        1348,
+        785
+      ],
+      [
+        1330,
+        759
+      ],
+      [
+        1307,
+        731
+      ],
+      [
+        1287,
+        713
+      ]
+    ],
+    "1248": [
+      [
+        1287,
+        689
+      ],
+      [
+        1304,
+        695
+      ],
+      [
+        1326,
+        714
+      ],
+      [
+        1353,
+        740
+      ],
+      [
+        1374,
+        772
+      ],
+      [
+        1377,
+        789
+      ],
+      [
+        1365,
+        805
+      ],
+      [
+        1348,
+        804
+      ],
+      [
+        1346,
+        795
+      ],
+      [
+        1363,
+        789
+      ],
+      [
+        1359,
+        773
+      ],
+      [
+        1337,
+        748
+      ],
+      [
+        1314,
+        722
+      ],
+      [
+        1293,
+        707
+      ]
+    ],
+    "1260": [
+      [
+        1275,
+        686
+      ],
+      [
+        1293,
+        688
+      ],
+      [
+        1319,
+        704
+      ],
+      [
+        1349,
+        728
+      ],
+      [
+        1375,
+        756
+      ],
+      [
+        1390,
+        778
+      ],
+      [
+        1385,
+        790
+      ],
+      [
+        1367,
+        799
+      ],
+      [
+        1353,
+        797
+      ],
+      [
+        1374,
+        782
+      ],
+      [
+        1365,
+        763
+      ],
+      [
+        1338,
+        737
+      ],
+      [
+        1308,
+        714
+      ],
+      [
+        1284,
+        697
+      ]
+    ],
+    "1276": [
+      [
+        1263,
+        682
+      ],
+      [
+        1283,
+        686
+      ],
+      [
+        1315,
+        707
+      ],
+      [
+        1346,
+        728
+      ],
+      [
+        1377,
+        755
+      ],
+      [
+        1398,
+        771
+      ],
+      [
+        1395,
+        782
+      ],
+      [
+        1378,
+        786
+      ],
+      [
+        1366,
+        779
+      ],
+      [
+        1385,
+        775
+      ],
+      [
+        1363,
+        755
+      ],
+      [
+        1333,
+        731
+      ],
+      [
+        1301,
+        710
+      ],
+      [
+        1275,
+        696
+      ]
+    ],
+    "1292": [
+      [
+        1245,
+        690
+      ],
+      [
+        1264,
+        690
+      ],
+      [
+        1290,
+        700
+      ],
+      [
+        1318,
+        713
+      ],
+      [
+        1340,
+        733
+      ],
+      [
+        1354,
+        746
+      ],
+      [
+        1354,
+        756
+      ],
+      [
+        1341,
+        761
+      ],
+      [
+        1331,
+        753
+      ],
+      [
+        1339,
+        747
+      ],
+      [
+        1322,
+        731
+      ],
+      [
+        1296,
+        716
+      ],
+      [
+        1270,
+        705
+      ],
+      [
+        1247,
+        700
+      ]
+    ],
+    "1308": [
+      [
+        1222,
+        703
+      ],
+      [
+        1234,
+        700
+      ],
+      [
+        1260,
+        710
+      ],
+      [
+        1284,
+        715
+      ],
+      [
+        1310,
+        723
+      ],
+      [
+        1330,
+        736
+      ],
+      [
+        1338,
+        748
+      ],
+      [
+        1332,
+        759
+      ],
+      [
+        1324,
+        759
+      ],
+      [
+        1327,
+        749
+      ],
+      [
+        1312,
+        737
+      ],
+      [
+        1283,
+        726
+      ],
+      [
+        1252,
+        722
+      ],
+      [
+        1230,
+        716
+      ]
+    ],
+    "1324": [
+      [
+        1228,
+        739
+      ],
+      [
+        1240,
+        737
+      ],
+      [
+        1270,
+        730
+      ],
+      [
+        1286,
+        736
+      ],
+      [
+        1299,
+        747
+      ],
+      [
+        1293,
+        755
+      ],
+      [
+        1281,
+        744
+      ],
+      [
+        1264,
+        740
+      ],
+      [
+        1240,
+        748
+      ],
+      [
+        1228,
+        748
+      ]
+    ],
+    "1336": [
+      [
+        1220,
+        747
+      ],
+      [
+        1230,
+        748
+      ],
+      [
+        1238,
+        752
+      ],
+      [
+        1235,
+        756
+      ],
+      [
+        1223,
+        754
+      ]
+    ]
+  },
+  "selectedSamples": 263554,
+  "selectedDenseSourceSamples": 2468,
+  "comparableAnchoredGuardRuleOverlapSamples": 0,
+  "protectedSourceSamples": 1425219,
+  "protectedOverlapSamples": 0,
+  "lowerFullFineXYZ": [
+    1209,
+    1180,
+    671
+  ],
+  "upperFullFineXYZ": [
+    1410,
+    1337,
+    838
+  ],
+  "meshSupportMarginFineSamples": 9,
+  "denseGuardFineSamples": 10,
+  "sourcePaddingFineSamples": 13,
+  "serialChecks": [
+    {
+      "y": 1180,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 5071,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1200,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 4105,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1212,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 3569,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1220,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 3806,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1232,
+      "selectedSamples": 1375,
+      "selectedDenseSourceSamples": 1,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 6239,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1248,
+      "selectedSamples": 4037,
+      "selectedDenseSourceSamples": 15,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 8731,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1260,
+      "selectedSamples": 4438,
+      "selectedDenseSourceSamples": 63,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 9119,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1276,
+      "selectedSamples": 4982,
+      "selectedDenseSourceSamples": 60,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 11657,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1292,
+      "selectedSamples": 3195,
+      "selectedDenseSourceSamples": 5,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 13575,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1308,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 15042,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1324,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 12716,
+      "protectedOverlapSamples": 0
+    },
+    {
+      "y": 1336,
+      "selectedSamples": 0,
+      "selectedDenseSourceSamples": 0,
+      "comparableAnchoredGuardRuleOverlapSamples": 0,
+      "protectedSourceSamples": 9009,
+      "protectedOverlapSamples": 0
+    }
+  ],
+  "method": "Serial seeded two-dimensional sigma0.5>=71.4 source foreground. Reject components touching the padded source boundary or exceeding5000samples; retain connected attachment planes. Two-sample allowance defines the selected object edge. Nine-sample mesh support and a ten-sample 3D collar protect every dense source core outside this explicitly selected sheet.",
+  "explicitSelectedObjectException": true,
+  "comparableAnchoredGuardRuleDescription": "Counterfactual diagnostic: the earlier anchored-dense rule evaluated on the current operation envelope. Not an archived v26 guard, nor the exact v26 bitset delta.",
+  "sourceIdentity": "Unverified. A reversible visualization selection requested by the user, not a diagnosis of clot, artifact or tissue."
+}

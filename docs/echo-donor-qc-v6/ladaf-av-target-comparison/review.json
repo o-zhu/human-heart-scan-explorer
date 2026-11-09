@@ -1,0 +1,1810 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-08T02:20:14.729Z",
+  "donor": "ladaf-2021-17",
+  "sourceManifest": "public/assets/manifest.json",
+  "referenceMm": 168.01040000000003,
+  "sourceHashes": {
+    "public/echo.js": "c586a27b23415e014ce921fae79558520bff7f0d849127145fc54542a6abcc7c",
+    "public/tte-atlas-geometry.js": "b5895280d1101c406fc53f2171a8b750efc3879d7f5865a9620cbdfebb4583f8",
+    "public/echo-acquisition-geometry.js": "a1cbcd8f41de91546c3921222787641a5cd3be13d013c9d6c6d595b455686f9b",
+    "public/tee-context-geometry.js": "6a370c46939674a9edf73c38ac7cf719de5b034384a79272fe3c00e9dc51197a",
+    "public/assets/tee-atlas/plane-fit-v2.json": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64",
+    "public/assets/manifest.json": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+    "public/mpr-worker.js": "ce55dc9626714353c0fa810374bab9e9817bcb4a228d4918a03b384dd7adce54"
+  },
+  "changedFiles": [],
+  "currentExportSha256": "4959b5ed39006d7309e4ccc5c5fc155254371110954959ef318c0d5e45eca3a8",
+  "scope": "Measured source target-level comparison. Preserves source data and fixed reference chest. No individual cusp label or clinical validation is implied.",
+  "pointsSourceXYZ": {
+    "reviewedRootCenter": [
+      242.5,
+      252,
+      235
+    ],
+    "proximalRootTrack": [
+      244,
+      253,
+      238
+    ],
+    "rootTrack225": [
+      239,
+      254,
+      225
+    ],
+    "upstreamTrack205": [
+      224,
+      264,
+      205
+    ],
+    "lvotFocus": [
+      260,
+      265,
+      270
+    ]
+  },
+  "pointProvenance": [
+    "public/assets/tee-atlas/plane-fit-v2.json meavsax: independently source-reviewed three-sinus/cusp neighborhood center [242.5,252,235], individual cusp labels/annular dimensions unvalidated",
+    "docs/anatomy/cavity-tracks.json track5: approximate proximal aortic centers [244,253,238],[239,254,225],[224,264,205]",
+    "public/assets/flow-views-v5.json lv-outflow: longitudinal LVOT/cusp focus [260,265,270], not a segmented valve-center ground truth"
+  ],
+  "cases": [
+    {
+      "id": "current-psax_av",
+      "plane": {
+        "center": [
+          0.043478260869565216,
+          0.010396975425330813,
+          -0.052930056710775046
+        ],
+        "right": [
+          0.24536941324675754,
+          -0.49303044701344556,
+          -0.8346944526955142
+        ],
+        "up": [
+          0.8844019237840547,
+          -0.23877848402005072,
+          0.4010212871857922
+        ],
+        "normal": [
+          -0.39702278051769924,
+          -0.8366037376720287,
+          0.3774481393028536
+        ],
+        "width": 0.7,
+        "height": 0.7
+      },
+      "outsideScan": false,
+      "construction": "Current frozen production acquired section",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          260,
+          265,
+          270
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 13.064747639633266,
+          "proximalRootTrack": 11.95861241669814,
+          "rootTrack225": 15.923376575217933,
+          "upstreamTrack205": 21.93012475287112,
+          "lvotFocus": 0
+        }
+      }
+    },
+    {
+      "id": "current-psax_av_zoom",
+      "plane": {
+        "center": [
+          0.043478260869565216,
+          0.010396975425330813,
+          -0.052930056710775046
+        ],
+        "right": [
+          0.24536941324675754,
+          -0.49303044701344556,
+          -0.8346944526955142
+        ],
+        "up": [
+          0.8844019237840547,
+          -0.23877848402005072,
+          0.4010212871857922
+        ],
+        "normal": [
+          -0.39702278051769924,
+          -0.8366037376720287,
+          0.3774481393028536
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Current frozen production acquired section",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          260,
+          265,
+          270
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 13.064747639633266,
+          "proximalRootTrack": 11.95861241669814,
+          "rootTrack225": 15.923376575217933,
+          "upstreamTrack205": 21.93012475287112,
+          "lvotFocus": 0
+        }
+      }
+    },
+    {
+      "id": "current-psax_great",
+      "plane": {
+        "center": [
+          -0.01937618147448015,
+          -0.09041058601134216,
+          -0.030718336483931945
+        ],
+        "right": [
+          0.22442249677123133,
+          -0.5217800880874613,
+          -0.8230310338124607
+        ],
+        "up": [
+          0.8685365966216319,
+          -0.27589074441128597,
+          0.411738360463413
+        ],
+        "normal": [
+          -0.44190352258369636,
+          -0.8072359238931499,
+          0.3912690121955644
+        ],
+        "width": 0.76,
+        "height": 0.76
+      },
+      "outsideScan": false,
+      "construction": "Current frozen production acquired section",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          226.75,
+          253.25,
+          216.6728
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.753849256487883,
+          "proximalRootTrack": 7.857773521205459,
+          "rootTrack225": 3.9473820830458233,
+          "upstreamTrack205": 2.0427385043790838,
+          "lvotFocus": 19.79865506255737
+        }
+      }
+    },
+    {
+      "id": "current-meavsax",
+      "plane": {
+        "center": [
+          0.010396975425330813,
+          -0.055765595463137994,
+          -0.02835538752362949
+        ],
+        "right": [
+          -0.11073798153106022,
+          0.194113553356607,
+          -0.9747086887115034
+        ],
+        "up": [
+          0.8602397481177535,
+          -0.4724334075224313,
+          -0.19181827654071085
+        ],
+        "normal": [
+          -0.4977194744077539,
+          -0.8597247256302544,
+          -0.11466787228885486
+        ],
+        "width": 0.5671077504725898,
+        "height": 0.5482041587901701
+      },
+      "outsideScan": false,
+      "construction": "Current frozen production acquired section",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          242.5,
+          252,
+          235
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 0,
+          "proximalRootTrack": 1.0198407599494201,
+          "rootTrack225": 3.3565877288312294,
+          "upstreamTrack205": 11.552879924502552,
+          "lvotFocus": 11.849584177757981
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-minus3-source",
+      "plane": {
+        "center": [
+          0.0192710084006927,
+          -0.04040669223655011,
+          -0.02630753376008444
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation"
+      },
+      "construction": "Reviewed source root plane offset -3 mm along its superior/outflow-facing normal; exact source fit requested",
+      "outsideScan": false,
+      "diagnostics": {
+        "centerSourceXYZ": [
+          247.19436344396644,
+          250.91668535908468,
+          243.124859806865
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 1.9801122468862553,
+          "rootTrack225": 6.357130520666087,
+          "upstreamTrack205": 14.552657108187269,
+          "lvotFocus": 8.850124369512105
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-minus3-acquired",
+      "plane": {
+        "center": [
+          0.0192710084006927,
+          -0.04040669223655011,
+          -0.02630753376008444
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation",
+        "atlasDerived": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -74.86434397759089,
+            35.43673677465962,
+            17.331270812003336
+          ],
+          "targetMm": [
+            3.2377298298037416,
+            -6.78874452533968,
+            -4.419939270045292
+          ],
+          "beam": [
+            0.8544020890882608,
+            -0.46192805999551967,
+            -0.23794860274939902
+          ],
+          "right": [
+            0.15169482304794646,
+            -0.216243625415245,
+            0.9644829574065701
+          ],
+          "normal": [
+            -0.4969766099345803,
+            -0.8601518248867737,
+            -0.1146869099849031
+          ],
+          "up": [
+            -0.8544020890882608,
+            0.46192805999551967,
+            0.23794860274939902
+          ],
+          "instrument": {
+            "originMm": [
+              -74.86434397759089,
+              35.43673677465962,
+              17.331270812003336
+            ],
+            "beam": [
+              0.8544020890882608,
+              -0.46192805999551967,
+              -0.23794860274939902
+            ],
+            "right": [
+              0.15169482304794646,
+              -0.216243625415245,
+              0.9644829574065701
+            ],
+            "normal": [
+              -0.4969766099345803,
+              -0.8601518248867737,
+              -0.1146869099849031
+            ]
+          },
+          "markerDirection": [
+            -0.15169482304794646,
+            0.216243625415245,
+            -0.9644829574065701
+          ],
+          "markerReference": [
+            -0.3731071579325961,
+            -0.22667580906875642,
+            -0.8996716769369176
+          ],
+          "sectorDepthMm": 129.4113797295814,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "parasternal-short",
+            "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -74.86434397759089,
+              35.43673677465962,
+              17.331270812003336
+            ],
+            "skinReferencePointMm": [
+              27.594246043785493,
+              19.294591329150972,
+              96.28994342980845
+            ],
+            "skinNormal": [
+              -0.9600900904400479,
+              -0.02926872167172378,
+              0.2781552806806366
+            ],
+            "skinTriangleIndex": 2350,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.8729695955498703,
+            "markerAgreementDeg": 28.919591366192158,
+            "distanceMm": 0,
+            "mode": "skin-plane-constrained",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 1.1102230246251565e-14,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": false,
+            "correctionAngleDeg": 0,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": false,
+          "correctionAngleDeg": 0,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 1.1102230246251565e-14,
+          "patientRegistered": false,
+          "sourceCenter": [
+            0.0192710084006927,
+            -0.04040669223655011,
+            -0.02630753376008444
+          ],
+          "sourceNormal": [
+            -0.49697660993458026,
+            -0.8601518248867738,
+            -0.11468690998490312
+          ],
+          "method": "Source plane retained; probe contact lies in the same plane."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production TTE acquisition solver with source preservation enabled",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          247.19436344396644,
+          250.91668535908468,
+          243.124859806865
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 1.9801122468862553,
+          "rootTrack225": 6.357130520666087,
+          "upstreamTrack205": 14.552657108187269,
+          "lvotFocus": 8.850124369512105
+        }
+      },
+      "poseAvailable": true,
+      "rotationDeg": 0,
+      "centerShiftMm": 0,
+      "contextFit": {
+        "outsideScan": false,
+        "window": "parasternal-short",
+        "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+        "skinPointMm": [
+          -74.86434397759089,
+          35.43673677465962,
+          17.331270812003336
+        ],
+        "skinReferencePointMm": [
+          27.594246043785493,
+          19.294591329150972,
+          96.28994342980845
+        ],
+        "skinNormal": [
+          -0.9600900904400479,
+          -0.02926872167172378,
+          0.2781552806806366
+        ],
+        "skinTriangleIndex": 2350,
+        "skinDistanceMm": 0,
+        "beamInwardDot": -0.8729695955498703,
+        "markerAgreementDeg": 28.919591366192158,
+        "distanceMm": 0,
+        "mode": "skin-plane-constrained",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-skin",
+        "planeResidualMm": 1.1102230246251565e-14,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": false,
+        "correctionAngleDeg": 0,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      },
+      "metrics": {
+        "outsideScan": false,
+        "ctComparisonApplicable": true,
+        "coplanar": true,
+        "originPlaneResidualMm": 3.552713678800501e-15,
+        "sectorPlaneAngleDeg": 0,
+        "maxFanVertexResidualMm": 1.2434497875801753e-14,
+        "beamTargetMissMm": 1.5888218580782548e-14,
+        "beamTargetForwardMm": 91.4113797295814,
+        "targetPlaneResidualMm": 0,
+        "roiCenterAngleFromBeamDeg": 0,
+        "roiCenterRangeMm": 91.41137972958138,
+        "roiCenterWithinSector": true,
+        "originNearFieldMm": -67.70060536159785,
+        "beamVsImageDownDeg": 137.78379913640558,
+        "displayedBasisHandedness": 1.0000000000000002,
+        "sectorVsDisplayedNormalSignedDot": 1.0000000000000002,
+        "sectorVsDisplayedRightDeg": 137.78379913640558,
+        "reportedNormalVsSectorDeg": 0,
+        "orthogonalityError": 0,
+        "markerReferenceAngleDeg": 28.919591366192144,
+        "markerReportedAngleDeg": 0
+      }
+    },
+    {
+      "id": "reviewed-root-offset-minus3-zoom",
+      "plane": {
+        "center": [
+          0.0192710084006927,
+          -0.04040669223655011,
+          -0.02630753376008444
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Same acquired physical source plane, closer AV crop",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          247.19436344396644,
+          250.91668535908468,
+          243.124859806865
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 1.9801122468862553,
+          "rootTrack225": 6.357130520666087,
+          "upstreamTrack205": 14.552657108187269,
+          "lvotFocus": 8.850124369512105
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-0-source",
+      "plane": {
+        "center": [
+          0.010396975425330813,
+          -0.055765595463137994,
+          -0.02835538752362949
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation"
+      },
+      "construction": "Reviewed source root plane offset 0 mm along its superior/outflow-facing normal; exact source fit requested",
+      "outsideScan": false,
+      "diagnostics": {
+        "centerSourceXYZ": [
+          242.5,
+          252,
+          235
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 0,
+          "proximalRootTrack": 1.019887753113747,
+          "rootTrack225": 3.357130520666085,
+          "upstreamTrack205": 11.552657108187265,
+          "lvotFocus": 11.850124369512107
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-0-acquired",
+      "plane": {
+        "center": [
+          0.010396975425330813,
+          -0.055765595463137994,
+          -0.02835538752362949
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation",
+        "atlasDerived": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -74.8697789980915,
+            32.07916683048246,
+            16.378424429778097
+          ],
+          "targetMm": [
+            1.7468000000000004,
+            -9.369200000000001,
+            -4.764000000000001
+          ],
+          "beam": [
+            0.8547280178717089,
+            -0.4623944437132886,
+            -0.23586308292774033
+          ],
+          "right": [
+            0.149847471260051,
+            -0.21524455060937447,
+            0.9649950874434214
+          ],
+          "normal": [
+            -0.4969766099345802,
+            -0.8601518248867737,
+            -0.11468690998490311
+          ],
+          "up": [
+            -0.8547280178717089,
+            0.4623944437132886,
+            0.23586308292774033
+          ],
+          "instrument": {
+            "originMm": [
+              -74.8697789980915,
+              32.07916683048246,
+              16.378424429778097
+            ],
+            "beam": [
+              0.8547280178717089,
+              -0.4623944437132886,
+              -0.23586308292774033
+            ],
+            "right": [
+              0.149847471260051,
+              -0.21524455060937447,
+              0.9649950874434214
+            ],
+            "normal": [
+              -0.4969766099345802,
+              -0.8601518248867737,
+              -0.11468690998490311
+            ]
+          },
+          "markerDirection": [
+            -0.149847471260051,
+            0.21524455060937447,
+            -0.9649950874434214
+          ],
+          "markerReference": [
+            -0.37150663809192075,
+            -0.2275892212009238,
+            -0.9001033075413042
+          ],
+          "sectorDepthMm": 127.63854863312946,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "parasternal-short",
+            "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -74.8697789980915,
+              32.07916683048246,
+              16.378424429778097
+            ],
+            "skinReferencePointMm": [
+              26.81211789614477,
+              22.259718513782797,
+              94.6233546871263
+            ],
+            "skinNormal": [
+              -0.9600900904400479,
+              -0.02926872167172378,
+              0.2781552806806366
+            ],
+            "skinTriangleIndex": 2350,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.8726887677384619,
+            "markerAgreementDeg": 28.92219367347239,
+            "distanceMm": 0,
+            "mode": "skin-plane-constrained",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 1.3322676295501878e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": false,
+            "correctionAngleDeg": 0,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": false,
+          "correctionAngleDeg": 0,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 1.3322676295501878e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            0.010396975425330813,
+            -0.055765595463137994,
+            -0.02835538752362949
+          ],
+          "sourceNormal": [
+            -0.49697660993458026,
+            -0.8601518248867738,
+            -0.11468690998490312
+          ],
+          "method": "Source plane retained; probe contact lies in the same plane."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production TTE acquisition solver with source preservation enabled",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          242.5,
+          252,
+          235
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 0,
+          "proximalRootTrack": 1.019887753113747,
+          "rootTrack225": 3.357130520666085,
+          "upstreamTrack205": 11.552657108187265,
+          "lvotFocus": 11.850124369512107
+        }
+      },
+      "poseAvailable": true,
+      "rotationDeg": 0,
+      "centerShiftMm": 0,
+      "contextFit": {
+        "outsideScan": false,
+        "window": "parasternal-short",
+        "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+        "skinPointMm": [
+          -74.8697789980915,
+          32.07916683048246,
+          16.378424429778097
+        ],
+        "skinReferencePointMm": [
+          26.81211789614477,
+          22.259718513782797,
+          94.6233546871263
+        ],
+        "skinNormal": [
+          -0.9600900904400479,
+          -0.02926872167172378,
+          0.2781552806806366
+        ],
+        "skinTriangleIndex": 2350,
+        "skinDistanceMm": 0,
+        "beamInwardDot": -0.8726887677384619,
+        "markerAgreementDeg": 28.92219367347239,
+        "distanceMm": 0,
+        "mode": "skin-plane-constrained",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-skin",
+        "planeResidualMm": 1.3322676295501878e-15,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": false,
+        "correctionAngleDeg": 0,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      },
+      "metrics": {
+        "outsideScan": false,
+        "ctComparisonApplicable": true,
+        "coplanar": true,
+        "originPlaneResidualMm": 7.993605777301127e-15,
+        "sectorPlaneAngleDeg": 0,
+        "maxFanVertexResidualMm": 1.5987211554602254e-14,
+        "beamTargetMissMm": 0,
+        "beamTargetForwardMm": 89.63854863312945,
+        "targetPlaneResidualMm": 0,
+        "roiCenterAngleFromBeamDeg": 0,
+        "roiCenterRangeMm": 89.63854863312945,
+        "roiCenterWithinSector": true,
+        "originNearFieldMm": -66.51766914571675,
+        "beamVsImageDownDeg": 137.90765795683367,
+        "displayedBasisHandedness": 1.0000000000000002,
+        "sectorVsDisplayedNormalSignedDot": 1.0000000000000002,
+        "sectorVsDisplayedRightDeg": 137.90765795683367,
+        "reportedNormalVsSectorDeg": 0,
+        "orthogonalityError": 2.7755575615628914e-17,
+        "markerReferenceAngleDeg": 28.922193673472393,
+        "markerReportedAngleDeg": 0
+      }
+    },
+    {
+      "id": "reviewed-root-offset-0-zoom",
+      "plane": {
+        "center": [
+          0.010396975425330813,
+          -0.055765595463137994,
+          -0.02835538752362949
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Same acquired physical source plane, closer AV crop",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          242.5,
+          252,
+          235
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 0,
+          "proximalRootTrack": 1.019887753113747,
+          "rootTrack225": 3.357130520666085,
+          "upstreamTrack205": 11.552657108187265,
+          "lvotFocus": 11.850124369512107
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-3-source",
+      "plane": {
+        "center": [
+          0.0015229424499689278,
+          -0.07112449868972588,
+          -0.03040324128717454
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation"
+      },
+      "construction": "Reviewed source root plane offset 3 mm along its superior/outflow-facing normal; exact source fit requested",
+      "outsideScan": false,
+      "diagnostics": {
+        "centerSourceXYZ": [
+          237.80563655603356,
+          253.08331464091532,
+          226.875140193135
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 4.019887753113748,
+          "rootTrack225": 0.3571305206660834,
+          "upstreamTrack205": 8.552657108187264,
+          "lvotFocus": 14.85012436951211
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-3-acquired",
+      "plane": {
+        "center": [
+          0.0015229424499689278,
+          -0.07112449868972588,
+          -0.03040324128717454
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation",
+        "atlasDerived": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -76.74948201437628,
+            29.702922591664098,
+            16.18746323909305
+          ],
+          "targetMm": [
+            0.25587017019625957,
+            -11.949655474660323,
+            -5.10806072995471
+          ],
+          "beam": [
+            0.854652190767628,
+            -0.4622856215263919,
+            -0.23635066521178105
+          ],
+          "right": [
+            0.15027934653180408,
+            -0.21547817122370108,
+            0.964875782539941
+          ],
+          "normal": [
+            -0.4969766099345802,
+            -0.8601518248867737,
+            -0.11468690998490311
+          ],
+          "up": [
+            -0.854652190767628,
+            0.4622856215263919,
+            0.23635066521178105
+          ],
+          "instrument": {
+            "originMm": [
+              -76.74948201437628,
+              29.702922591664098,
+              16.18746323909305
+            ],
+            "beam": [
+              0.854652190767628,
+              -0.4622856215263919,
+              -0.23635066521178105
+            ],
+            "right": [
+              0.15027934653180408,
+              -0.21547817122370108,
+              0.964875782539941
+            ],
+            "normal": [
+              -0.4969766099345802,
+              -0.8601518248867737,
+              -0.11468690998490311
+            ]
+          },
+          "markerDirection": [
+            -0.15027934653180408,
+            0.21547817122370108,
+            -0.964875782539941
+          ],
+          "markerReference": [
+            -0.3718807377414734,
+            -0.22737548676709501,
+            -0.9000028360590228
+          ],
+          "sectorDepthMm": 128.1013921410629,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "parasternal-short",
+            "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -76.74948201437628,
+              29.702922591664098,
+              16.18746323909305
+            ],
+            "skinReferencePointMm": [
+              25.97462952671642,
+              25.119748097068385,
+              95.20225908519117
+            ],
+            "skinNormal": [
+              -0.9446085510736935,
+              -0.05018217836950387,
+              0.3243399978611154
+            ],
+            "skinTriangleIndex": 2245,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.8607712423251348,
+            "markerAgreementDeg": 28.921575204459867,
+            "distanceMm": 0,
+            "mode": "skin-plane-constrained",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 1.7763568394002505e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": false,
+            "correctionAngleDeg": 0,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": false,
+          "correctionAngleDeg": 0,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 1.7763568394002505e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            0.0015229424499689278,
+            -0.07112449868972588,
+            -0.03040324128717454
+          ],
+          "sourceNormal": [
+            -0.49697660993458026,
+            -0.8601518248867738,
+            -0.11468690998490312
+          ],
+          "method": "Source plane retained; probe contact lies in the same plane."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production TTE acquisition solver with source preservation enabled",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          237.80563655603356,
+          253.08331464091532,
+          226.875140193135
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 4.019887753113748,
+          "rootTrack225": 0.3571305206660834,
+          "upstreamTrack205": 8.552657108187264,
+          "lvotFocus": 14.85012436951211
+        }
+      },
+      "poseAvailable": true,
+      "rotationDeg": 0,
+      "centerShiftMm": 0,
+      "contextFit": {
+        "outsideScan": false,
+        "window": "parasternal-short",
+        "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+        "skinPointMm": [
+          -76.74948201437628,
+          29.702922591664098,
+          16.18746323909305
+        ],
+        "skinReferencePointMm": [
+          25.97462952671642,
+          25.119748097068385,
+          95.20225908519117
+        ],
+        "skinNormal": [
+          -0.9446085510736935,
+          -0.05018217836950387,
+          0.3243399978611154
+        ],
+        "skinTriangleIndex": 2245,
+        "skinDistanceMm": 0,
+        "beamInwardDot": -0.8607712423251348,
+        "markerAgreementDeg": 28.921575204459867,
+        "distanceMm": 0,
+        "mode": "skin-plane-constrained",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-skin",
+        "planeResidualMm": 1.7763568394002505e-15,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": false,
+        "correctionAngleDeg": 0,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      },
+      "metrics": {
+        "outsideScan": false,
+        "ctComparisonApplicable": true,
+        "coplanar": true,
+        "originPlaneResidualMm": 2.220446049250313e-15,
+        "sectorPlaneAngleDeg": 0,
+        "maxFanVertexResidualMm": 1.1546319456101628e-14,
+        "beamTargetMissMm": 3.256115871121665e-14,
+        "beamTargetForwardMm": 90.1013921410629,
+        "targetPlaneResidualMm": 0,
+        "roiCenterAngleFromBeamDeg": 2.2591826250029323e-15,
+        "roiCenterRangeMm": 90.10139214106289,
+        "roiCenterWithinSector": true,
+        "originNearFieldMm": -66.83060193394225,
+        "beamVsImageDownDeg": 137.8787063757917,
+        "displayedBasisHandedness": 1.0000000000000002,
+        "sectorVsDisplayedNormalSignedDot": 1.0000000000000002,
+        "sectorVsDisplayedRightDeg": 137.8787063757917,
+        "reportedNormalVsSectorDeg": 0,
+        "orthogonalityError": 1.1102230246251565e-16,
+        "markerReferenceAngleDeg": 28.921575204459845,
+        "markerReportedAngleDeg": 0
+      }
+    },
+    {
+      "id": "reviewed-root-offset-3-zoom",
+      "plane": {
+        "center": [
+          0.0015229424499689278,
+          -0.07112449868972588,
+          -0.03040324128717454
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Same acquired physical source plane, closer AV crop",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          237.80563655603356,
+          253.08331464091532,
+          226.875140193135
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 3.0000000000000018,
+          "proximalRootTrack": 4.019887753113748,
+          "rootTrack225": 0.3571305206660834,
+          "upstreamTrack205": 8.552657108187264,
+          "lvotFocus": 14.85012436951211
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-6-source",
+      "plane": {
+        "center": [
+          -0.007351090525392958,
+          -0.08648340191631376,
+          -0.03245109505071959
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation"
+      },
+      "construction": "Reviewed source root plane offset 6 mm along its superior/outflow-facing normal; exact source fit requested",
+      "outsideScan": false,
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.11127311206712,
+          254.16662928183067,
+          218.75028038627002
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.000000000000003,
+          "proximalRootTrack": 7.01988775311375,
+          "rootTrack225": 2.6428694793339167,
+          "upstreamTrack205": 5.5526571081872635,
+          "lvotFocus": 17.850124369512113
+        }
+      }
+    },
+    {
+      "id": "reviewed-root-offset-6-acquired",
+      "plane": {
+        "center": [
+          -0.007351090525392958,
+          -0.08648340191631376,
+          -0.03245109505071959
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation",
+        "atlasDerived": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -76.79908381428699,
+            26.389304385340175,
+            15.096368200412172
+          ],
+          "targetMm": [
+            -1.2350596596074812,
+            -14.530110949320644,
+            -5.452121459909419
+          ],
+          "beam": [
+            0.855234490360148,
+            -0.46312641116012704,
+            -0.23256804119302063
+          ],
+          "right": [
+            0.14692928801416633,
+            -0.21366507770315193,
+            0.9657945013789195
+          ],
+          "normal": [
+            -0.49697660993458015,
+            -0.8601518248867736,
+            -0.11468690998490308
+          ],
+          "up": [
+            -0.855234490360148,
+            0.46312641116012704,
+            0.23256804119302063
+          ],
+          "instrument": {
+            "originMm": [
+              -76.79908381428699,
+              26.389304385340175,
+              15.096368200412172
+            ],
+            "beam": [
+              0.855234490360148,
+              -0.46312641116012704,
+              -0.23256804119302063
+            ],
+            "right": [
+              0.14692928801416633,
+              -0.21366507770315193,
+              0.9657945013789195
+            ],
+            "normal": [
+              -0.49697660993458015,
+              -0.8601518248867736,
+              -0.11468690998490308
+            ]
+          },
+          "markerDirection": [
+            -0.14692928801416633,
+            0.21366507770315193,
+            -0.9657945013789195
+          ],
+          "markerReference": [
+            -0.368979987326536,
+            -0.22903655878235749,
+            -0.9007752348358858
+          ],
+          "sectorDepthMm": 126.35474364797744,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "parasternal-short",
+            "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -76.79908381428699,
+              26.389304385340175,
+              15.096368200412172
+            ],
+            "skinReferencePointMm": [
+              25.337675723042466,
+              28.12615657269385,
+              93.55034738387586
+            ],
+            "skinNormal": [
+              -0.9446085510736935,
+              -0.05018217836950387,
+              0.3243399978611154
+            ],
+            "skinTriangleIndex": 2245,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.8600522385779904,
+            "markerAgreementDeg": 28.926534099150278,
+            "distanceMm": 0,
+            "mode": "skin-plane-constrained",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 6.217248937900877e-15,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": false,
+            "correctionAngleDeg": 0,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": false,
+          "correctionAngleDeg": 0,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 6.217248937900877e-15,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.007351090525392958,
+            -0.08648340191631376,
+            -0.03245109505071959
+          ],
+          "sourceNormal": [
+            -0.49697660993458026,
+            -0.8601518248867738,
+            -0.11468690998490312
+          ],
+          "method": "Source plane retained; probe contact lies in the same plane."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production TTE acquisition solver with source preservation enabled",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.11127311206712,
+          254.16662928183067,
+          218.75028038627002
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.000000000000003,
+          "proximalRootTrack": 7.01988775311375,
+          "rootTrack225": 2.6428694793339167,
+          "upstreamTrack205": 5.5526571081872635,
+          "lvotFocus": 17.850124369512113
+        }
+      },
+      "poseAvailable": true,
+      "rotationDeg": 0,
+      "centerShiftMm": 0,
+      "contextFit": {
+        "outsideScan": false,
+        "window": "parasternal-short",
+        "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+        "skinPointMm": [
+          -76.79908381428699,
+          26.389304385340175,
+          15.096368200412172
+        ],
+        "skinReferencePointMm": [
+          25.337675723042466,
+          28.12615657269385,
+          93.55034738387586
+        ],
+        "skinNormal": [
+          -0.9446085510736935,
+          -0.05018217836950387,
+          0.3243399978611154
+        ],
+        "skinTriangleIndex": 2245,
+        "skinDistanceMm": 0,
+        "beamInwardDot": -0.8600522385779904,
+        "markerAgreementDeg": 28.926534099150278,
+        "distanceMm": 0,
+        "mode": "skin-plane-constrained",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-skin",
+        "planeResidualMm": 6.217248937900877e-15,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": false,
+        "correctionAngleDeg": 0,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      },
+      "metrics": {
+        "outsideScan": false,
+        "ctComparisonApplicable": true,
+        "coplanar": true,
+        "originPlaneResidualMm": 6.661338147750939e-15,
+        "sectorPlaneAngleDeg": 0,
+        "maxFanVertexResidualMm": 1.3558598688234724e-14,
+        "beamTargetMissMm": 4.973799150320701e-14,
+        "beamTargetForwardMm": 88.35474364797744,
+        "targetPlaneResidualMm": 0,
+        "roiCenterAngleFromBeamDeg": 0,
+        "roiCenterRangeMm": 88.35474364797743,
+        "roiCenterWithinSector": true,
+        "originNearFieldMm": -65.76676891888344,
+        "beamVsImageDownDeg": 138.10321712343844,
+        "displayedBasisHandedness": 1.0000000000000002,
+        "sectorVsDisplayedNormalSignedDot": 1.0000000000000002,
+        "sectorVsDisplayedRightDeg": 138.1032171234384,
+        "reportedNormalVsSectorDeg": 0,
+        "orthogonalityError": 3.3306690738754696e-16,
+        "markerReferenceAngleDeg": 28.926534099150278,
+        "markerReportedAngleDeg": 0.0000012074182697257333
+      }
+    },
+    {
+      "id": "reviewed-root-offset-6-zoom",
+      "plane": {
+        "center": [
+          -0.007351090525392958,
+          -0.08648340191631376,
+          -0.03245109505071959
+        ],
+        "right": [
+          0.46175101682465935,
+          -0.1502301426987895,
+          -0.8741950026659352
+        ],
+        "up": [
+          0.7347109959972868,
+          -0.4874112661486749,
+          0.4718368467934867
+        ],
+        "normal": [
+          -0.49697660993458026,
+          -0.8601518248867738,
+          -0.11468690998490312
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Same acquired physical source plane, closer AV crop",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.11127311206712,
+          254.16662928183067,
+          218.75028038627002
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.000000000000003,
+          "proximalRootTrack": 7.01988775311375,
+          "rootTrack225": 2.6428694793339167,
+          "upstreamTrack205": 5.5526571081872635,
+          "lvotFocus": 17.850124369512113
+        }
+      }
+    },
+    {
+      "id": "great-accepted-root-projection-source",
+      "plane": {
+        "center": [
+          -0.007367102140351274,
+          -0.08821566846097657,
+          -0.012626766395986432
+        ],
+        "right": [
+          0.23528926051797946,
+          -0.5251965409885768,
+          -0.8178065524428967
+        ],
+        "up": [
+          0.8656559597282416,
+          -0.2693301997734499,
+          0.4220201451079922
+        ],
+        "normal": [
+          -0.4419035225836965,
+          -0.8072359238931501,
+          0.39126901219556454
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation"
+      },
+      "construction": "Exact accepted PSAX great-vessel physical plane; ROI recentered in-plane at the reviewed root-center projection",
+      "outsideScan": false,
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.10280296775417,
+          243.67955942347683,
+          217.8339113841434
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.753849256487882,
+          "proximalRootTrack": 7.857773521205459,
+          "rootTrack225": 3.947382083045821,
+          "upstreamTrack205": 2.0427385043790864,
+          "lvotFocus": 19.798655062557373
+        }
+      }
+    },
+    {
+      "id": "great-accepted-root-projection-acquired",
+      "plane": {
+        "center": [
+          -0.007367102140351274,
+          -0.08821566846097657,
+          -0.012626766395986432
+        ],
+        "right": [
+          0.23528926051797946,
+          -0.5251965409885768,
+          -0.8178065524428967
+        ],
+        "up": [
+          0.8656559597282416,
+          -0.2693301997734499,
+          0.4220201451079922
+        ],
+        "normal": [
+          -0.4419035225836965,
+          -0.8072359238931501,
+          0.39126901219556454
+        ],
+        "width": 0.7,
+        "height": 0.7,
+        "preferSourcePlane": true,
+        "sourceTargetRevision": "runtime-reviewed-av-sax-investigation",
+        "atlasDerived": false,
+        "acquisitionPose": {
+          "referenceMm": 168.01040000000003,
+          "originMm": [
+            -75.44812999778932,
+            33.85048882280165,
+            14.480108190065902
+          ],
+          "targetMm": [
+            -1.237749777441274,
+            -14.821149744396061,
+            -2.121428072896239
+          ],
+          "beam": [
+            0.8219398397903563,
+            -0.5390776692892815,
+            -0.1838754095550556
+          ],
+          "right": [
+            0.3593552232729111,
+            0.24034439800005442,
+            0.9017196869628987
+          ],
+          "normal": [
+            -0.44190352258369653,
+            -0.80723592389315,
+            0.39126901219556454
+          ],
+          "up": [
+            -0.8219398397903563,
+            0.5390776692892815,
+            0.1838754095550556
+          ],
+          "instrument": {
+            "originMm": [
+              -75.44812999778932,
+              33.85048882280165,
+              14.480108190065902
+            ],
+            "beam": [
+              0.8219398397903563,
+              -0.5390776692892815,
+              -0.1838754095550556
+            ],
+            "right": [
+              0.3593552232729111,
+              0.24034439800005442,
+              0.9017196869628987
+            ],
+            "normal": [
+              -0.44190352258369653,
+              -0.80723592389315,
+              0.39126901219556454
+            ]
+          },
+          "markerDirection": [
+            -0.3593552232729111,
+            -0.24034439800005442,
+            -0.9017196869628987
+          ],
+          "markerReference": [
+            -0.3593552232729111,
+            -0.24034439800005436,
+            -0.9017196869628987
+          ],
+          "sectorDepthMm": 128.28687578798483,
+          "contextFit": {
+            "outsideScan": false,
+            "window": "parasternal-short",
+            "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+            "skinPointMm": [
+              -75.44812999778932,
+              33.85048882280165,
+              14.480108190065902
+            ],
+            "skinReferencePointMm": [
+              29.365163840717823,
+              21.90903155929837,
+              95.28263542409171
+            ],
+            "skinNormal": [
+              -0.9600900904400479,
+              -0.02926872167172378,
+              0.2781552806806366
+            ],
+            "skinTriangleIndex": 2350,
+            "skinDistanceMm": 0,
+            "beamInwardDot": -0.8245040970137857,
+            "markerAgreementDeg": 3.555968236953808e-15,
+            "distanceMm": 0,
+            "mode": "skin-plane-constrained",
+            "resolved": true,
+            "estimated": false,
+            "registered": false,
+            "contactKind": "reference-skin",
+            "planeResidualMm": 1.0658141036401503e-14,
+            "normalAngleDeg": 0,
+            "acquisitionAdjusted": false,
+            "correctionAngleDeg": 0,
+            "contactAdjusted": false,
+            "clinicalPositionMeasured": false
+          }
+        },
+        "acquisition": {
+          "revision": "echo-acquisition-v6",
+          "adjusted": false,
+          "correctionAngleDeg": 0,
+          "contactKind": "reference-skin",
+          "planeResidualMm": 1.0658141036401503e-14,
+          "patientRegistered": false,
+          "sourceCenter": [
+            -0.007367102140351274,
+            -0.08821566846097657,
+            -0.012626766395986432
+          ],
+          "sourceNormal": [
+            -0.4419035225836965,
+            -0.8072359238931501,
+            0.39126901219556454
+          ],
+          "method": "Source plane retained; probe contact lies in the same plane."
+        }
+      },
+      "outsideScan": false,
+      "construction": "Actual production TTE acquisition solver with source preservation enabled",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.10280296775417,
+          243.67955942347683,
+          217.8339113841434
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.753849256487882,
+          "proximalRootTrack": 7.857773521205459,
+          "rootTrack225": 3.947382083045821,
+          "upstreamTrack205": 2.0427385043790864,
+          "lvotFocus": 19.798655062557373
+        }
+      },
+      "poseAvailable": true,
+      "rotationDeg": 0,
+      "centerShiftMm": 0,
+      "contextFit": {
+        "outsideScan": false,
+        "window": "parasternal-short",
+        "levelLabel": "Left parasternal window, usually with the patient in the left lateral position",
+        "skinPointMm": [
+          -75.44812999778932,
+          33.85048882280165,
+          14.480108190065902
+        ],
+        "skinReferencePointMm": [
+          29.365163840717823,
+          21.90903155929837,
+          95.28263542409171
+        ],
+        "skinNormal": [
+          -0.9600900904400479,
+          -0.02926872167172378,
+          0.2781552806806366
+        ],
+        "skinTriangleIndex": 2350,
+        "skinDistanceMm": 0,
+        "beamInwardDot": -0.8245040970137857,
+        "markerAgreementDeg": 3.555968236953808e-15,
+        "distanceMm": 0,
+        "mode": "skin-plane-constrained",
+        "resolved": true,
+        "estimated": false,
+        "registered": false,
+        "contactKind": "reference-skin",
+        "planeResidualMm": 1.0658141036401503e-14,
+        "normalAngleDeg": 0,
+        "acquisitionAdjusted": false,
+        "correctionAngleDeg": 0,
+        "contactAdjusted": false,
+        "clinicalPositionMeasured": false
+      },
+      "metrics": {
+        "outsideScan": false,
+        "ctComparisonApplicable": true,
+        "coplanar": true,
+        "originPlaneResidualMm": 5.329070518200751e-15,
+        "sectorPlaneAngleDeg": 0,
+        "maxFanVertexResidualMm": 1.5987211554602254e-14,
+        "beamTargetMissMm": 1.5888218580782548e-14,
+        "beamTargetForwardMm": 90.28687578798483,
+        "targetPlaneResidualMm": 0,
+        "roiCenterAngleFromBeamDeg": 1.1272707015118235e-15,
+        "roiCenterRangeMm": 90.28687578798481,
+        "roiCenterWithinSector": true,
+        "originNearFieldMm": -70.34321730733674,
+        "beamVsImageDownDeg": 141.17896708755245,
+        "displayedBasisHandedness": 0.9999999999999999,
+        "sectorVsDisplayedNormalSignedDot": 1,
+        "sectorVsDisplayedRightDeg": 141.17896708755245,
+        "reportedNormalVsSectorDeg": 8.537736462515939e-7,
+        "orthogonalityError": 2.220446049250313e-16,
+        "markerReferenceAngleDeg": 0,
+        "markerReportedAngleDeg": 0
+      }
+    },
+    {
+      "id": "great-accepted-root-projection-zoom",
+      "plane": {
+        "center": [
+          -0.007367102140351274,
+          -0.08821566846097657,
+          -0.012626766395986432
+        ],
+        "right": [
+          0.23528926051797946,
+          -0.5251965409885768,
+          -0.8178065524428967
+        ],
+        "up": [
+          0.8656559597282416,
+          -0.2693301997734499,
+          0.4220201451079922
+        ],
+        "normal": [
+          -0.4419035225836965,
+          -0.8072359238931501,
+          0.39126901219556454
+        ],
+        "width": 0.37,
+        "height": 0.37
+      },
+      "outsideScan": false,
+      "construction": "Same acquired physical source plane, closer AV crop",
+      "diagnostics": {
+        "centerSourceXYZ": [
+          233.10280296775417,
+          243.67955942347683,
+          217.8339113841434
+        ],
+        "targetResidualMm": {
+          "reviewedRootCenter": 6.753849256487882,
+          "proximalRootTrack": 7.857773521205459,
+          "rootTrack225": 3.947382083045821,
+          "upstreamTrack205": 2.0427385043790864,
+          "lvotFocus": 19.798655062557373
+        }
+      }
+    }
+  ]
+}

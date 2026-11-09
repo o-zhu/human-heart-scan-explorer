@@ -1,0 +1,47 @@
+{
+  "schema": "heart-noise-cleanup-v22-progress",
+  "baselineCommit": "7c4bb1b9eb1ac6ff71bd491990edf5e4ca907a75",
+  "baselineVersion": 32,
+  "baselineScientificFingerprint": "44a31c3adeb20e5a9a3d31f6868f9c92479920f533d2ea3c486e22b4aefa584a",
+  "phase": "final-ui-worker-verification-before-publication",
+  "sourceBankModified": false,
+  "nativeCandidate": "26-connected foreground components; retain every outer-face component; compare physical volume, extent and elongation gates; skip original triangles rather than remesh",
+  "knownLimitation": "Attached clutter survives connected-component filtering; foreground classification is essential to avoid deleting cavity and vessel walls.",
+  "firstNativePilot": {
+    "32_31_22": {
+      "originalTriangles": 715478,
+      "candidateRemovedTriangles": 28076,
+      "removedComponents": 221
+    },
+    "35_30_36": {
+      "originalTriangles": 367839,
+      "candidateRemovedTriangles": 10196,
+      "removedComponents": 96
+    }
+  },
+  "candidateParameters": {
+    "maxVoxels": 512,
+    "maxBoundingDiagonalMm": 0.4,
+    "protectedPcaElongation": 3,
+    "shapeGuard": "sqrt((lambdaMax+1/12)/(lambdaMin+1/12)) >= 3 is retained",
+    "protectSheets": true
+  },
+  "publicationComplete": false,
+  "nativePrototypeImplemented": true,
+  "originalNativeBankPreserved": true,
+  "newFinding": "Separate optional source-pinned exact overview face cancellation implemented; original display remains default because cancellation exposes additional boundary edges.",
+  "published": false,
+  "updatedAtUtc": "2026-11-06T18:49:15.234260+00:00",
+  "sampledTotals": {
+    "tiles": 13,
+    "interiorComponents": 714,
+    "removedComponents": 662,
+    "boundaryComponentsRetained": 221,
+    "foregroundSamples": 11942037,
+    "removedForegroundSamples": 15570,
+    "originalTriangles": 4242633,
+    "removedTriangles": 68604
+  },
+  "nativeVerification": "Passed independent Python-versus-browser decoder comparison on all 13 source-hash-verified native tiles.",
+  "overviewVerification": "Passed source and mask hashes, exact original face identities, retained coordinates/normals and corruption rejection on both original HFM quality levels."
+}

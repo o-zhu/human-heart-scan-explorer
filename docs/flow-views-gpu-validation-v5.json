@@ -1,0 +1,65 @@
+{
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "shaderSha256": "13622f58b60fd6c12c3457b76773fbf441bc15a3b6ae32b4eb8f078e33ab14c5",
+  "dimensions": [
+    520,
+    590
+  ],
+  "palette": "Tissue / space",
+  "smoothing": "Gentle",
+  "renderedPresets": [
+    {
+      "id": "rv-inflow",
+      "nonBackgroundPixels": 176769,
+      "glError": 0
+    },
+    {
+      "id": "rv-outflow",
+      "nonBackgroundPixels": 185073,
+      "glError": 0
+    },
+    {
+      "id": "ra-inflow",
+      "nonBackgroundPixels": 157815,
+      "glError": 0
+    },
+    {
+      "id": "ra-outflow",
+      "nonBackgroundPixels": 208555,
+      "glError": 0
+    },
+    {
+      "id": "lv-inflow",
+      "nonBackgroundPixels": 226929,
+      "glError": 0
+    },
+    {
+      "id": "lv-outflow",
+      "nonBackgroundPixels": 271513,
+      "glError": 0
+    },
+    {
+      "id": "la-inflow",
+      "nonBackgroundPixels": 146092,
+      "glError": 0
+    },
+    {
+      "id": "la-outflow",
+      "nonBackgroundPixels": 203960,
+      "glError": 0
+    }
+  ],
+  "limitation": "Offscreen software EGL images verify actual GLSL framing; these are not browser speed measurements.",
+  "closeViewChecks": [
+    {
+      "id": "rv-outflow",
+      "sameGridMotionIdentical": true,
+      "glError": 0
+    },
+    {
+      "id": "lv-outflow",
+      "sameGridMotionIdentical": true,
+      "glError": 0
+    }
+  ]
+}

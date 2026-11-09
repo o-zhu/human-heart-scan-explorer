@@ -1,0 +1,155 @@
+{
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "priorMaskManifestSha256": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+  "priorMaskId": "atrial",
+  "priorDecodedMaskSha256": "0c7b8ef826cc23572df1cd2a637f0d04bc3fc0d7315a930600b84e2ff547cba0",
+  "sourceSelectionLowerXYZ": [
+    1220,
+    928,
+    950
+  ],
+  "sourceSelectionUpperExclusiveXYZ": [
+    1315,
+    949,
+    1045
+  ],
+  "sourceSeedXYZ": [
+    1268,
+    938,
+    995
+  ],
+  "sourceConnectedForegroundSamples": 111547,
+  "sourceForegroundFilterSigmaFineSamples": 0.5,
+  "sourceForegroundThreshold": 71.4,
+  "lostSourceSupportSamples": 3826,
+  "lostSupportLowerXYZ": [
+    1233,
+    939,
+    952
+  ],
+  "lostSupportUpperExclusiveXYZ": [
+    1295,
+    946,
+    1031
+  ],
+  "restoreLowerXYZ": [
+    1224,
+    930,
+    943
+  ],
+  "restoreUpperExclusiveXYZ": [
+    1304,
+    955,
+    1040
+  ],
+  "restoreSamples": 21809,
+  "meshSupportHaloFineSamples": 9,
+  "restoreMaskSha256": "17aa4a06038e518b7a2434cb58066f6ad57ebfc2648c71d406ad043872552267",
+  "serialSupport": [
+    {
+      "fullFineY": 928,
+      "connectedForegroundSamples": 8935,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 929,
+      "connectedForegroundSamples": 8901,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 930,
+      "connectedForegroundSamples": 8881,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 931,
+      "connectedForegroundSamples": 8877,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 932,
+      "connectedForegroundSamples": 8795,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 933,
+      "connectedForegroundSamples": 8728,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 934,
+      "connectedForegroundSamples": 8609,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 935,
+      "connectedForegroundSamples": 8392,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 936,
+      "connectedForegroundSamples": 8066,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 937,
+      "connectedForegroundSamples": 7645,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 938,
+      "connectedForegroundSamples": 6931,
+      "previouslyExcludedSamples": 0
+    },
+    {
+      "fullFineY": 939,
+      "connectedForegroundSamples": 5984,
+      "previouslyExcludedSamples": 32
+    },
+    {
+      "fullFineY": 940,
+      "connectedForegroundSamples": 4902,
+      "previouslyExcludedSamples": 11
+    },
+    {
+      "fullFineY": 941,
+      "connectedForegroundSamples": 3698,
+      "previouslyExcludedSamples": 67
+    },
+    {
+      "fullFineY": 942,
+      "connectedForegroundSamples": 2400,
+      "previouslyExcludedSamples": 1959
+    },
+    {
+      "fullFineY": 943,
+      "connectedForegroundSamples": 1263,
+      "previouslyExcludedSamples": 1217
+    },
+    {
+      "fullFineY": 944,
+      "connectedForegroundSamples": 534,
+      "previouslyExcludedSamples": 534
+    },
+    {
+      "fullFineY": 945,
+      "connectedForegroundSamples": 6,
+      "previouslyExcludedSamples": 6
+    }
+  ],
+  "mechanism": "Subtract prior exclusion bits within nine fine samples of previously excluded source foreground connected in 3D to the reviewed wall seed. The source component tapers out before Y946, with no foreground in Y946\u2013948 inside the bounded selection.",
+  "unchanged": "Original scalar samples, original HFM positions/normals/indices, display thresholds and measured CT cards.",
+  "limit": "A source-supported restoration of original visibility, not synthetic mesh filling or anatomical validation. The original gentle mesh remains decimated and locally irregular.",
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 18,
+    "decodedBrickReads": 18,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  }
+}

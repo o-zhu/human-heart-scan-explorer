@@ -1,0 +1,243 @@
+{
+  "description": "Withheld source-review tissue points. These coordinates are not read by the segmentation build, are separate from the cavity trajectories and contour controls, and are used only for internal region-identity checks. They are not an expert reference set or a whole-organ accuracy estimate. Coordinates are original s4 XYZ voxel centers.",
+  "points": {
+    "s-20-29": [
+      {
+        "name": "LV lateral compact wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          378,
+          225,
+          280
+        ]
+      },
+      {
+        "name": "LV basal lateral wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          365,
+          221,
+          210
+        ]
+      },
+      {
+        "name": "LV compact septum",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          263,
+          222,
+          310
+        ]
+      },
+      {
+        "name": "RV free wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          120,
+          240,
+          280
+        ]
+      },
+      {
+        "name": "RV apical free wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          161,
+          242,
+          389
+        ]
+      },
+      {
+        "name": "LA superior wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          293,
+          138,
+          110
+        ]
+      },
+      {
+        "name": "LA lateral wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          355,
+          170,
+          140
+        ]
+      },
+      {
+        "name": "RA outer wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          57,
+          237,
+          160
+        ]
+      },
+      {
+        "name": "RA superior wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          111,
+          211,
+          98
+        ]
+      },
+      {
+        "name": "Aortic lateral wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          123,
+          270,
+          100
+        ]
+      },
+      {
+        "name": "Aortic basal wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          237,
+          220,
+          160
+        ]
+      },
+      {
+        "name": "Pulmonary lateral wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          279,
+          301,
+          131
+        ]
+      },
+      {
+        "name": "Pulmonary basal wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          278,
+          309,
+          173
+        ]
+      }
+    ],
+    "s-20-28": [
+      {
+        "name": "LV lateral compact wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          330,
+          218,
+          310
+        ]
+      },
+      {
+        "name": "LV apical compact wall",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          268,
+          195,
+          430
+        ]
+      },
+      {
+        "name": "LV compact septum",
+        "expectedRegion": 1,
+        "sourceXYZ": [
+          182,
+          225,
+          338
+        ]
+      },
+      {
+        "name": "RV lateral wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          103,
+          167,
+          279
+        ]
+      },
+      {
+        "name": "RV apical free wall",
+        "expectedRegion": 2,
+        "sourceXYZ": [
+          116,
+          127,
+          370
+        ]
+      },
+      {
+        "name": "LA lateral wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          343,
+          208,
+          165
+        ]
+      },
+      {
+        "name": "LA superior wall",
+        "expectedRegion": 3,
+        "sourceXYZ": [
+          313,
+          139,
+          141
+        ]
+      },
+      {
+        "name": "RA lateral wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          286,
+          233,
+          70
+        ]
+      },
+      {
+        "name": "RA superior wall",
+        "expectedRegion": 4,
+        "sourceXYZ": [
+          158,
+          239,
+          50
+        ]
+      },
+      {
+        "name": "Aortic lateral wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          222,
+          279,
+          132
+        ]
+      },
+      {
+        "name": "Aortic basal wall",
+        "expectedRegion": 5,
+        "sourceXYZ": [
+          295,
+          251,
+          180
+        ]
+      },
+      {
+        "name": "Pulmonary lateral wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          299,
+          338,
+          150
+        ]
+      },
+      {
+        "name": "Pulmonary basal wall",
+        "expectedRegion": 6,
+        "sourceXYZ": [
+          318,
+          362,
+          215
+        ]
+      }
+    ]
+  }
+}

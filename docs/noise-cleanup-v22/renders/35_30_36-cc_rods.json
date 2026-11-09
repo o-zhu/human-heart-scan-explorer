@@ -1,0 +1,30 @@
+{
+  "method": "cc_rods",
+  "nativeTile": "35_30_36",
+  "input": {
+    "nativeArtifact": "{source-cache}/guided-native-v21/whole/verification-samples/35_30_36.nbe.gz",
+    "sha256": "cf016dd7a3a697cdbc2984d24112df8b10985280718327689915d4c2e77d01a7",
+    "sourceOriginXYZ": [
+      4480,
+      3840,
+      4608
+    ]
+  },
+  "unfilteredTriangles": 367839,
+  "renderedTriangles": 355359,
+  "originalVertexBufferSha256": "acfde623f076c2899e9ee162b415cb7106acdcf01f99989eea7123ed83cd0d31",
+  "retainedFaceMaskSha256": "b5e83b1c5f3e5f1e8f6e47347be7c2baeb27b25cffb22411778e0da80c437fbb",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": 0,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": 0.0,
+  "cropSpanMm": 2.5408,
+  "geometryModification": "triangle subset only",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/35_30_36-cc_rods.png",
+    "sha256": "3a6bf3206d24e1bfdf14354b25743dbe5277b437cfc09819a2507065b08f8e99"
+  },
+  "seconds": 0.6422430710081244,
+  "peakRssMiB": 236.8828125
+}

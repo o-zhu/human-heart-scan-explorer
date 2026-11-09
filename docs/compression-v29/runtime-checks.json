@@ -1,0 +1,18 @@
+{
+  "schema": "heart-compression-runtime-checks-v29",
+  "legacyTransportTests": 8,
+  "compactWorkerTests": 3,
+  "controllerLifecycleTests": 35,
+  "allPassed": true,
+  "fullMeshParts": 32,
+  "workerTestsUseProductionDecoder": true,
+  "checks": [
+    "full source geometry identities verified independently of manifest claims",
+    "all32blockchecksums and full decoded hash verified",
+    "hidden workspace fetches nothing",
+    "interrupted unfinished block alone is retried",
+    "decoded geometry waits for lab priority before installation",
+    "preserved original HFM fallback keeps later settings",
+    "cancellation during paused fallback cannot restart download"
+  ]
+}

@@ -1,0 +1,1261 @@
+{
+  "productionShaders": true,
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "transport": {
+    "orderedParts": [
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-001.gz",
+        "bytes": 25165824,
+        "sha256": "9b175dcc1ebef6003b09bdf1416f3e9231b188fd589b77becd6f7a09f962c4ec"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-002.gz",
+        "bytes": 25165824,
+        "sha256": "9eb354914eed0a4050b69a248a1f3abb4200b60c42b12dfae7d6f2bc97bb2f93"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-003.gz",
+        "bytes": 25165824,
+        "sha256": "c903439a3a6c6464cbe9baab9f4f5e6c66cda97a9f95702e4e1073ef797d0bf6"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-004.gz",
+        "bytes": 25165824,
+        "sha256": "1ab07286efe1fc0f8bbbf1fed943707b72d624ac23f2e47acffb43baa33e138b"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-005.gz",
+        "bytes": 25165824,
+        "sha256": "ddda88f5941f121c21def396660c405b3752b867a124aaef1d1e29c32337ea77"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-006.gz",
+        "bytes": 25165824,
+        "sha256": "15884aad47d0262858f6e5e516b3f4337c504ef81826476eab08752d1d922943"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-007.gz",
+        "bytes": 25165824,
+        "sha256": "0a5fdef46e9141fa859fe324afb483c98f448ffacab21062f314febf300d0175"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-008.gz",
+        "bytes": 25165824,
+        "sha256": "3e7c86ed1562f5bf194780e9dadcf18ca6c31ae032ea145b2dc431e35fad26a2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-009.gz",
+        "bytes": 25165824,
+        "sha256": "653dc5fc697537210c5d6f4952cbd0f2149aaf0720a445c9985cdf3a71d331d2"
+      },
+      {
+        "path": "public/assets/fine-surface-v23/gentle.part-010.gz",
+        "bytes": 1410044,
+        "sha256": "0f8e19ecee23fde509403f392ea00ac88cd5107564beab3384b74a973f771e03"
+      }
+    ],
+    "compressedBytes": 227902460,
+    "decodedBytes": 437470524,
+    "sha256": "d93d62cdb331c5deb507cc47102da0c9f9dd3c84ad1aa5f0f0a3ebad04691ba2",
+    "decodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "oneGzipStream": true,
+    "fullPackedCopyAllocated": false,
+    "floatPositionArrayAllocated": false,
+    "maximumReadChunkBytes": 1048576,
+    "maximumInflateChunkBytes": 8388608,
+    "decodedBufferCount": 1,
+    "maximumNormalLengthError": 2.5987625122070312e-05
+  },
+  "maskManifestSha256": {
+    "v26": "5070beb11e264f8d2cf7677f366a7a2f309e5bb0606705d71a8fd91c4342f086",
+    "v27": "d97ac73a657df879fdfb8c88004cb63a429b568455b45b2dfceb2ae6258742f8"
+  },
+  "debrisManifestSha256": {
+    "v26": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de",
+    "v27": "fa6d9eb329f76b58dbc0a7b6137b3a3d01c64c51c7b30227ae0e82c479f531de"
+  },
+  "rendererShaderSha256": "23e38f0d181b98e474570bd2c3e8023a5e6164d2c9df45c828cb526380ab4c50",
+  "fineSurfaceShaderSha256": "0229799df79b9cceedf46bd0a4273111bb101435bcb131d80bf4dddc927351fc",
+  "checks": [
+    {
+      "case": {
+        "id": "overview-284",
+        "coordinate": 1132,
+        "target": [
+          1000,
+          1132,
+          1000
+        ],
+        "distance": 1.15
+      },
+      "changedPixels": 1612,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "ce873982a332c5f2c5b05ef676367a75ae2cb0dfcf3e4159f7fd1a9048a46ed5",
+        "v27": "1c88cab2b1d956a28cc892653b43c3b3d04b3c4fb391d6fb464a7eda696079b3",
+        "originalOff": "b9dfe7e6603a98eabaecf2d4844c01f2c4f0d0891b34a7be3997cf7ef39c46eb"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.11625321187730678,
+          -0.05605975253018388,
+          -1.2329383053661456
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.0274102079395085,
+          -0.08695652173913042
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/overview-284-v26.png",
+          "fileSha256": "e4fb69ad43e391d8e0a4270064bebc41f40a5a85bba9ee62745f779694174d43",
+          "rawArraySha256": "ce873982a332c5f2c5b05ef676367a75ae2cb0dfcf3e4159f7fd1a9048a46ed5"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/overview-284-v27.png",
+          "fileSha256": "d315a982518ee8ef122985e4a8e09ff5a07bf0c99b82ff0c4fe84ba3579069a9",
+          "rawArraySha256": "1c88cab2b1d956a28cc892653b43c3b3d04b3c4fb391d6fb464a7eda696079b3"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/overview-284-cleanup-off.png",
+          "fileSha256": "825b7f9b1588ac7472f6c124fd5d9afd9000b8784d127b3d3832c2d70d830b58",
+          "rawArraySha256": "b9dfe7e6603a98eabaecf2d4844c01f2c4f0d0891b34a7be3997cf7ef39c46eb"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "wall-284",
+        "coordinate": 1132,
+        "target": [
+          1270,
+          1132,
+          900
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 9074,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "a81c6549d21610455906c7b38ac8825ac9e7959da09e64e47206e60d38daf116",
+        "v27": "f2dd3c4b84db4e9c5e75754edb8166f5d403b5545ec98b0e436ac070042c21f5",
+        "originalOff": "e3266990c42923b0ff7701fb18a7ef45904cfaf590a0c9799dc4b2ff76b86b5f"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.08712551088063389,
+          -0.5852094711421805
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.07466918714555763,
+          -0.08695652173913042
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-v26.png",
+          "fileSha256": "9ac236834019c97447568b12d0fbbac955881871ea62cf09c67ab1aaaf45f7f3",
+          "rawArraySha256": "a81c6549d21610455906c7b38ac8825ac9e7959da09e64e47206e60d38daf116"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-v27.png",
+          "fileSha256": "3b1e175e29ad6b86c95fe076113e1d701ea1ff0722ce08f9c71a4454144c6062",
+          "rawArraySha256": "f2dd3c4b84db4e9c5e75754edb8166f5d403b5545ec98b0e436ac070042c21f5"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-cleanup-off.png",
+          "fileSha256": "98e5f66769e57aea6c34d2761d53ff0a1369ed94410c236a029a6e7a00df3259",
+          "rawArraySha256": "e3266990c42923b0ff7701fb18a7ef45904cfaf590a0c9799dc4b2ff76b86b5f"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "nodule-284",
+        "coordinate": 1132,
+        "target": [
+          1080,
+          1132,
+          1030
+        ],
+        "distance": 0.43
+      },
+      "changedPixels": 9784,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "24d21e4fa18dc714cc0b15cced71a957c4ae1ff21c3ee6cb7637caac41411a6b",
+        "v27": "aa7dde94a5db582235a119a3c59a34646e1930bcea2d6f25df0dcb58e6fdffa6",
+        "originalOff": "0d71920bd0a779097974fbb03d2ecccc9a7bfb8ddef0e5e785a0a127841c4950"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.09666165547091472,
+          -0.023944952589859334,
+          -0.5154540582257535
+        ],
+        "_target": [
+          0.06238185255198487,
+          -0.013232514177693758,
+          -0.08695652173913042
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/nodule-284-v26.png",
+          "fileSha256": "dd708e65f3e1855f081de0c39242185ac29e84868e6ce3ea0172872204946d44",
+          "rawArraySha256": "24d21e4fa18dc714cc0b15cced71a957c4ae1ff21c3ee6cb7637caac41411a6b"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/nodule-284-v27.png",
+          "fileSha256": "439f0372e1ccd2248afcd227ed22f05029cb0868cc55342461f10eb82c5be862",
+          "rawArraySha256": "aa7dde94a5db582235a119a3c59a34646e1930bcea2d6f25df0dcb58e6fdffa6"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/nodule-284-cleanup-off.png",
+          "fileSha256": "47aa6f2c5290413bb64897175be1add3e1a10575da7f21504b7d3c5689768b3c",
+          "rawArraySha256": "0d71920bd0a779097974fbb03d2ecccc9a7bfb8ddef0e5e785a0a127841c4950"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "appendage-313",
+        "coordinate": 1248,
+        "target": [
+          1270,
+          1248,
+          810
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 9589,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "8b4c01e8fe34fb86e431fb754084b7a13e3ec53ca95c5c30ec6d557f9bb65c96",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "37e8727b28ee871a4d6ca8efa67d3e5a6a6afd061ec74a6034556cd03f3b87c8",
+        "v27": "7421befefaa75ab6e9994d997430c1154372d8e7cfcd0044961406eb89016056",
+        "originalOff": "6d31c0018ecef4c7344a04ff2eb9f0934197b76a89f03e0c43d9b6eabd78d4c3"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.14177693761814741
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6400298870211976
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.14177693761814741
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/appendage-313-v26.png",
+          "fileSha256": "ea17d1433d1dba820d22b2d2f6013100a429e62282652977eb2cfec6428ba564",
+          "rawArraySha256": "37e8727b28ee871a4d6ca8efa67d3e5a6a6afd061ec74a6034556cd03f3b87c8"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/appendage-313-v27.png",
+          "fileSha256": "f24bcd465945d061ea2ede48c56770e37ea715c1ba18e25c81e3958dd5142402",
+          "rawArraySha256": "7421befefaa75ab6e9994d997430c1154372d8e7cfcd0044961406eb89016056"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/appendage-313-cleanup-off.png",
+          "fileSha256": "d7bd2bd9be35b8060c061b43135c4406a02f5617dc1c16decc1d6d4d0ba7c102",
+          "rawArraySha256": "6d31c0018ecef4c7344a04ff2eb9f0934197b76a89f03e0c43d9b6eabd78d4c3"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "vein-320",
+        "coordinate": 1276,
+        "target": [
+          1270,
+          1276,
+          810
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 11298,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "2b37f431f5bfbc01d10611727694fd3926ae621fae476ff8b0570959ad3d41d5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "bd064e27f5b04be8e937dc14df65f215b2302185c945a1b6c78d260da272514a",
+        "v27": "61691314db8742c9967dedca2201a8fb69121d9b8ec9c15a2df132d07dba53aa",
+        "originalOff": "015bcdc13b5db703903c845c9c7d7bd4c9867dea5279c4760b95d4a82b66cae3"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.15500945179584116
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.19203414899572224,
+          -0.1296585921660781,
+          -0.6532624011988912
+        ],
+        "_target": [
+          0.15217391304347824,
+          -0.11720226843100186,
+          -0.15500945179584116
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/vein-320-v26.png",
+          "fileSha256": "2dbbb658609d966b7ebe5c76810dd8cf4fac01eba39748af1215f4f8ba573d8e",
+          "rawArraySha256": "bd064e27f5b04be8e937dc14df65f215b2302185c945a1b6c78d260da272514a"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/vein-320-v27.png",
+          "fileSha256": "8303bdd4a8961aadd46aec49a3b6379ea3223ca3af5ef94d2c2cdf9df782a288",
+          "rawArraySha256": "61691314db8742c9967dedca2201a8fb69121d9b8ec9c15a2df132d07dba53aa"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/vein-320-cleanup-off.png",
+          "fileSha256": "62f45e1426b81fb9efee3b57925687ab8e7938ebdc367c9035dbd9e51a7d27d5",
+          "rawArraySha256": "015bcdc13b5db703903c845c9c7d7bd4c9867dea5279c4760b95d4a82b66cae3"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "pulmonary-335",
+        "coordinate": 1336,
+        "target": [
+          1000,
+          1336,
+          570
+        ],
+        "distance": 0.48
+      },
+      "changedPixels": 5283,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "897dd58ffe29a5454f0157062e5ba4a8c42378db3f29aafde15f5ee6a446bf29",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "0a9872863986d9ad17f008b17c17c366e4dacbb3b22a1a7823f62bbd3e52f7d3",
+        "v27": "7215b5b97a85177e95f3adb1754a442cbafdc5672ea2e9a1e0f72fa6783779db",
+        "originalOff": "51408178a3087c0b7667cab6900a7fe7d0f0a738fd9a5229b367188ebbd4ca18"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.18336483931947065
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.0628404957012998,
+          -0.242581889311193,
+          -0.6616876707463987
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.2306238185255198,
+          -0.18336483931947065
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/pulmonary-335-v26.png",
+          "fileSha256": "f207669672253bc3a252503620223593f9f6bd6e68b8f222d587caaacf317738",
+          "rawArraySha256": "0a9872863986d9ad17f008b17c17c366e4dacbb3b22a1a7823f62bbd3e52f7d3"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/pulmonary-335-v27.png",
+          "fileSha256": "4052cfecaf541dca083f665db2819e07065a98fa8a3d3ce5bce69fc26459eb12",
+          "rawArraySha256": "7215b5b97a85177e95f3adb1754a442cbafdc5672ea2e9a1e0f72fa6783779db"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/pulmonary-335-cleanup-off.png",
+          "fileSha256": "555ad6cb9c3dfae06bfb817ddc3b2c4d509275a8b03da87283c66fe54e1c07f2",
+          "rawArraySha256": "51408178a3087c0b7667cab6900a7fe7d0f0a738fd9a5229b367188ebbd4ca18"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "tricuspid-222",
+        "coordinate": 884,
+        "target": [
+          760,
+          884,
+          1220
+        ],
+        "distance": 0.5
+      },
+      "changedPixels": 3080,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "3e616a0896e52f90512c6721d0fe3064623a8a6a62d27cb84bc00470da5f8db8",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "57d0f540ebfbd53700e673647927f1f1e20e4628f73df5be4f9a4bcd3c84e0ca",
+        "v27": "2632a77ed38e2dc9687ccd9449c047c12801d1681fe0b91043d4edb2f65d59ea",
+        "originalOff": "5ddd2963e6d89d4222e1cf326cea732fc3652d3ad844c65a7ca3a8521185fc7c"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          0.03024574669187145
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.04898664495512836,
+          0.06410322257872335,
+          -0.4680072027111786
+        ],
+        "_target": [
+          -0.08884688090737237,
+          0.0765595463137996,
+          0.03024574669187145
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/tricuspid-222-v26.png",
+          "fileSha256": "6a9386e1ece4a2dea6acb3f0b9f7a6f064247a067cf3fcf425afbff3311501f9",
+          "rawArraySha256": "57d0f540ebfbd53700e673647927f1f1e20e4628f73df5be4f9a4bcd3c84e0ca"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/tricuspid-222-v27.png",
+          "fileSha256": "8c6a1d02a1a33bf29a013a98966ecdd1505bd96f5b97c8520e586ac5a9c90dc2",
+          "rawArraySha256": "2632a77ed38e2dc9687ccd9449c047c12801d1681fe0b91043d4edb2f65d59ea"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/tricuspid-222-cleanup-off.png",
+          "fileSha256": "04152e40e1efdfea3decced05c294d8e9b3f263c0aaf28b1585e5d337b7fb229",
+          "rawArraySha256": "5ddd2963e6d89d4222e1cf326cea732fc3652d3ad844c65a7ca3a8521185fc7c"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "wall-284-oblique",
+        "coordinate": 1132,
+        "target": [
+          1240,
+          1132,
+          950
+        ],
+        "distance": 0.52,
+        "direction": [
+          -0.3,
+          0.025,
+          -1
+        ]
+      },
+      "changedPixels": 5528,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "b0d6600cd4284b071e8002d0ca2f8fb29604e334baa541d56c88ebca50d144c6",
+        "v27": "9e4f44e9e6901fa5b7120236c4beb18300f713adc690d2d59a73d7a9482f4f59",
+        "originalOff": "b5295acd3623435afe5ba1891db5907a8ead77fa7aea53727703e22760e4c2db"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.011381861065662413,
+          -0.038591524180255916,
+          -0.5848834562302166
+        ],
+        "_target": [
+          0.13799621928166347,
+          -0.051039697542533076,
+          -0.08695652173913042
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-oblique-v26.png",
+          "fileSha256": "6f14ad0ef90b974058f80a59707e967c2b084ee98cb37403fdaa3f44255b68f8",
+          "rawArraySha256": "b0d6600cd4284b071e8002d0ca2f8fb29604e334baa541d56c88ebca50d144c6"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-oblique-v27.png",
+          "fileSha256": "03847180076561c2b2947cd4a0668fa37962d5acc764cf8ec2125d1588d5b98a",
+          "rawArraySha256": "9e4f44e9e6901fa5b7120236c4beb18300f713adc690d2d59a73d7a9482f4f59"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/wall-284-oblique-cleanup-off.png",
+          "fileSha256": "8f43470df5108058d4fa282561cbf8a1fa9eed3fc19953d8d9c1c4ddc82ddf66",
+          "rawArraySha256": "b5295acd3623435afe5ba1891db5907a8ead77fa7aea53727703e22760e4c2db"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-y161",
+        "coordinate": 640,
+        "target": [
+          948,
+          640,
+          1120
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 0,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "83854aa756ecf654893c37987712d7bb065eb4532729e910887ef8657394f399",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "018ba41a3fecd5460b7a55da75b103f5a2548acbfa3da3afb2728d3b84aa3522",
+        "v27": "018ba41a3fecd5460b7a55da75b103f5a2548acbfa3da3afb2728d3b84aa3522",
+        "originalOff": "f24868d378bee59eeb92b5e83f15b816ec679f7dafd7dcfa8fbb00e48cd12d59"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          0.14555765595463133
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.08609810965684707,
+          0.0023949078399857562,
+          -0.930668714755957
+        ],
+        "_target": [
+          0.0,
+          0.029300567107750464,
+          0.14555765595463133
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y161-v26.png",
+          "fileSha256": "2f2711216dad458e078ebf24459f6ceaa367fe1298f7b9991ad69ed424605d8e",
+          "rawArraySha256": "018ba41a3fecd5460b7a55da75b103f5a2548acbfa3da3afb2728d3b84aa3522"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y161-v27.png",
+          "fileSha256": "2f2711216dad458e078ebf24459f6ceaa367fe1298f7b9991ad69ed424605d8e",
+          "rawArraySha256": "018ba41a3fecd5460b7a55da75b103f5a2548acbfa3da3afb2728d3b84aa3522"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y161-cleanup-off.png",
+          "fileSha256": "59b0c05095fa31c62c07356ba2ca2c2ca963833ca48f4ebbb5b2de0a36be05a8",
+          "rawArraySha256": "f24868d378bee59eeb92b5e83f15b816ec679f7dafd7dcfa8fbb00e48cd12d59"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-y249",
+        "coordinate": 992,
+        "target": [
+          948,
+          992,
+          1100
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 1155,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "0cedc3bca84832953a0a27f4de54e68c65ef52d8883801c6d87146b10fae45ef",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "d4ece4debc979effdb0c872a2e4b4012cb4606354ad0b9f7ee3fa589bc44b6f6",
+        "v27": "b5617e7ac9e52b9182aa16f2b2eee575e9a6cff7e4f045f417184172a341bce3",
+        "originalOff": "6eba9aa5e71abfa57680bbd80e6c7cc079423b79462a5bcf091df6caa5a4f0bc"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.02079395085066162
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.08609810965684707,
+          -0.00705688800122407,
+          -1.09702032156125
+        ],
+        "_target": [
+          0.0,
+          0.019848771266540638,
+          -0.02079395085066162
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y249-v26.png",
+          "fileSha256": "7ed9b816779193cb4e78a170f4f2449275c37429f213d2d10c21658a32181001",
+          "rawArraySha256": "d4ece4debc979effdb0c872a2e4b4012cb4606354ad0b9f7ee3fa589bc44b6f6"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y249-v27.png",
+          "fileSha256": "541737a1eafb0092af5a780637d81301cad51971cdb596caf92d2b6a273810b5",
+          "rawArraySha256": "b5617e7ac9e52b9182aa16f2b2eee575e9a6cff7e4f045f417184172a341bce3"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y249-cleanup-off.png",
+          "fileSha256": "9d9777a8f23812c2ad3561c96b7ebd0eaae8ae20ac28afe2fa6d4d85320b2255",
+          "rawArraySha256": "6eba9aa5e71abfa57680bbd80e6c7cc079423b79462a5bcf091df6caa5a4f0bc"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-y361",
+        "coordinate": 1440,
+        "target": [
+          948,
+          1440,
+          1000
+        ],
+        "distance": 1.08
+      },
+      "changedPixels": 340,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "bc1f7f138fb81bcf5c62e954a7d1db54fc7fbb3dd0d2534337870e61f52e65fd",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "5b5df0826df9fef8ee0dcfc38ae0fe592f7ff41ad72c545bc5cf06efb9d2aa2f",
+        "v27": "576b6b2fb721e52ed29c1066ce95457ffb4bea57eda8e6a784e1888b704d9f70",
+        "originalOff": "5491336b1e8e8975957fbac23a838300b1321a3b3258be5ce43045b2b3bbfae6"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.23251417769376176
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.08609810965684707,
+          -0.05431586720727321,
+          -1.3087405484043502
+        ],
+        "_target": [
+          0.0,
+          -0.0274102079395085,
+          -0.23251417769376176
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y361-v26.png",
+          "fileSha256": "902b494264ba5554471f848286a3b9fef3ccaefbeaab1b901443678ea76fc90a",
+          "rawArraySha256": "5b5df0826df9fef8ee0dcfc38ae0fe592f7ff41ad72c545bc5cf06efb9d2aa2f"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y361-v27.png",
+          "fileSha256": "e5a538bb54625177cddc9dd95aed2374991ca2e576e201ceb6fc08174d08726c",
+          "rawArraySha256": "576b6b2fb721e52ed29c1066ce95457ffb4bea57eda8e6a784e1888b704d9f70"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render/survey-y361-cleanup-off.png",
+          "fileSha256": "b33e0efefe3859b0f4f171e2b701ae538f2cf196897d97ccb353ec79859b8137",
+          "rawArraySha256": "5491336b1e8e8975957fbac23a838300b1321a3b3258be5ce43045b2b3bbfae6"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-apex-y253",
+        "coordinate": 1008,
+        "target": [
+          880,
+          1008,
+          1640
+        ],
+        "distance": 0.56
+      },
+      "changedPixels": 0,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "66880ae8299a3abe2b3edeb81826a1968f9bfaea3892f0edcf13792ba19724ec",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "ef4a684384509feea6b1765c7d5b6d2e5119690f0ed79c0e0135e6e5a31ce72a",
+        "v27": "ef4a684384509feea6b1765c7d5b6d2e5119690f0ed79c0e0135e6e5a31ce72a",
+        "originalOff": "25b74bc31760dd2982507f2b8716592282918e80314289307e4f0515fad7d4a5"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.028355387523629486
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.012507358406399882,
+          0.2610961763959206,
+          -0.5863986908550457
+        ],
+        "_target": [
+          -0.032136105860113416,
+          0.275047258979206,
+          -0.028355387523629486
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-apex-y253-v26.png",
+          "fileSha256": "30851644ad90eeb22a72f2352cb23427b7dd807f143eab6795ceefae33cbdc58",
+          "rawArraySha256": "ef4a684384509feea6b1765c7d5b6d2e5119690f0ed79c0e0135e6e5a31ce72a"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-apex-y253-v27.png",
+          "fileSha256": "30851644ad90eeb22a72f2352cb23427b7dd807f143eab6795ceefae33cbdc58",
+          "rawArraySha256": "ef4a684384509feea6b1765c7d5b6d2e5119690f0ed79c0e0135e6e5a31ce72a"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-apex-y253-cleanup-off.png",
+          "fileSha256": "115ee019d582c94c0f95104e381df739ae2ad21cb86dbf454e0048ca33c4c045",
+          "rawArraySha256": "25b74bc31760dd2982507f2b8716592282918e80314289307e4f0515fad7d4a5"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-exterior",
+        "coordinate": 1132,
+        "target": [
+          948,
+          948,
+          1058
+        ],
+        "distance": 1.25,
+        "whole": true,
+        "direction": [
+          0.55,
+          0.15,
+          -1
+        ]
+      },
+      "changedPixels": 0,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "a35ea3c0ea221dccdd5ee840bc207bb9d1004dc4ab6c7bfe7ecb07f6e5257f4d",
+        "v27": "a35ea3c0ea221dccdd5ee840bc207bb9d1004dc4ab6c7bfe7ecb07f6e5257f4d",
+        "originalOff": "93dd5480393ec5a49069c8d1cdbddf0af79b82e5269ed27e6a59531c6d0e955e"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.5972618337992204,
+          0.16288959103615097,
+          -1.0859306069076733
+        ],
+        "_target": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "_whole": true
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-exterior-v26.png",
+          "fileSha256": "9596adab7c626f6d57e84b7c4e965353d51e261c8e0cd7a410eaffffbd8d29d1",
+          "rawArraySha256": "a35ea3c0ea221dccdd5ee840bc207bb9d1004dc4ab6c7bfe7ecb07f6e5257f4d"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-exterior-v27.png",
+          "fileSha256": "9596adab7c626f6d57e84b7c4e965353d51e261c8e0cd7a410eaffffbd8d29d1",
+          "rawArraySha256": "a35ea3c0ea221dccdd5ee840bc207bb9d1004dc4ab6c7bfe7ecb07f6e5257f4d"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render-remainder/survey-exterior-cleanup-off.png",
+          "fileSha256": "9e36bb3470ef4c1296f6c9e61cb5edb4067490a9168fd3877a62cdca6544e135",
+          "rawArraySha256": "93dd5480393ec5a49069c8d1cdbddf0af79b82e5269ed27e6a59531c6d0e955e"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "survey-posterior-y284",
+        "coordinate": 1132,
+        "target": [
+          1000,
+          1132,
+          1050
+        ],
+        "distance": 1.1,
+        "side": 1,
+        "direction": [
+          0.12,
+          0.03,
+          1
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "changedPixels": 1215,
+      "totalPixels": 604800,
+      "v26V27V26RestoresExactly": true,
+      "originalOffViewsIdentical": true,
+      "sourceCapSha256": "6860f6c64e1d841d7414968661877cede10b4652d3c592898de875d398715fa5",
+      "rawImageArrayShape": [
+        840,
+        720,
+        4
+      ],
+      "rawImageSha256": {
+        "v26": "e9db41613a3e147b7bfcb3e3e41a38cc21fff0bdbaa783b44501c08c14767d29",
+        "v27": "4f7fa5e5927ca7fc468426f274278182709e23a17414d785dd8b0f00567c4f3a",
+        "originalOff": "a094fecaf40656c2d29e5d5d05ae2b7aa9865ca942054254112b0276e52b8101"
+      },
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.08695652173913042
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.15557631085310558,
+          0.02896969208000608,
+          1.0047238254772033
+        ],
+        "_target": [
+          0.024574669187145553,
+          -0.003780718336483931,
+          -0.08695652173913042
+        ],
+        "_whole": false
+      },
+      "losslessReadbacksVerified": {
+        "v26": {
+          "path": "{source-cache}/cleanup-v27/render-posterior/survey-posterior-y284-v26.png",
+          "fileSha256": "26bbe5b1f2cfc9289062329ce9dfce826432849cef32dcf27b113f0de212f81c",
+          "rawArraySha256": "e9db41613a3e147b7bfcb3e3e41a38cc21fff0bdbaa783b44501c08c14767d29"
+        },
+        "v27": {
+          "path": "{source-cache}/cleanup-v27/render-posterior/survey-posterior-y284-v27.png",
+          "fileSha256": "ced2ce6a612a7fd6aa330935c621de408ef325278b0af0985ab997cb032b1f76",
+          "rawArraySha256": "4f7fa5e5927ca7fc468426f274278182709e23a17414d785dd8b0f00567c4f3a"
+        },
+        "originalOff": {
+          "path": "{source-cache}/cleanup-v27/render-posterior/survey-posterior-y284-cleanup-off.png",
+          "fileSha256": "4ffe1f1ff2c656cc3aba6e0f8a02c37a4a128282ec6b79d39fbe2c579bfd9e14",
+          "rawArraySha256": "a094fecaf40656c2d29e5d5d05ae2b7aa9865ca942054254112b0276e52b8101"
+        }
+      }
+    }
+  ],
+  "scope": "Fourteen nearby reproducible production-GLSL cameras on unchanged source geometry. Matched v26/v27 and cleanup-disabled readbacks, exact display reversibility, unchanged cap hashes, and verified lossless image arrays. Bounded review, not anatomical identity, exhaustive segmentation or browser performance validation.",
+  "boundedRunSourceReceipts": {
+    "lastThreeTrialViews": {
+      "sourceManifest": "public/assets/ultra-volume-v7.json",
+      "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "verifiedUniqueBricks": 748,
+      "decodedBrickReads": 1125,
+      "cacheMaximumBricks": 16,
+      "cacheMaximumBytes": 4394000,
+      "sourceSpacingUm": 79.4,
+      "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+      "sourceUnchanged": true,
+      "originalQuantitativeIntensities": false
+    },
+    "correctedOppositeHalf": {
+      "sourceManifest": "public/assets/ultra-volume-v7.json",
+      "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "verifiedUniqueBricks": 377,
+      "decodedBrickReads": 377,
+      "cacheMaximumBricks": 16,
+      "cacheMaximumBytes": 4394000,
+      "sourceSpacingUm": 79.4,
+      "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+      "sourceUnchanged": true,
+      "originalQuantitativeIntensities": false
+    }
+  },
+  "recovery": {
+    "initialBatchCompletedViews": 11,
+    "initialBatchExitCode": 137,
+    "initialBatchLogSha256": "6712fd3c95ff949c1989b363c83c5c3ecadf98d12f3034cdba83c63ad9902c74",
+    "initialBatchSourceReadCountsUnavailable": true,
+    "retainedCompletedReadbacksVerifiedWithoutRerender": true,
+    "continuationCompletedViews": 3,
+    "cameraCorrection": "The fixture side argument moves the camera without reversing the clip plane. The initial retained-side exterior trial was replaced by one separately verified opposite-half view using normal[0,0,1].",
+    "correctedCamera": "survey-posterior-y284",
+    "sourceAndShaderInputsFrozenBetweenRuns": true,
+    "scope": "An offline native resource limit; not a browser performance result. The final14 checks reuse the11 completed records and two continuation views plus the corrected opposite-half record."
+  },
+  "palette6Overview": {
+    "path": "{source-cache}/cleanup-v27/render/overview-284-v27-palette6.png",
+    "fileSha256": "c8eaa2855b2eedd44f2dfd14d8fc24992916858a6ca66dfadde07e0b2d2dc779",
+    "rawArraySha256": "d03ee1e53f202a43e121d5239f710ee98729c923646eaaa13dbd8123783368b6",
+    "sameFinalMaskManifestSha256": "d97ac73a657df879fdfb8c88004cb63a429b568455b45b2dfceb2ae6258742f8"
+  }
+}

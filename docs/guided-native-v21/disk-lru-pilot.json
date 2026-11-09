@@ -1,0 +1,108 @@
+{
+  "schema": "guided-native-disk-lru-pilot-v21.1",
+  "purpose": "Verify compressed disk staging and bounded decoded LRU preserve reconstruction bytes",
+  "decodedCacheBlockLimit": 8,
+  "plannedCoreBlocks": 8,
+  "complete": true,
+  "progress": {
+    "schema": "guided-native-progress-v21.1",
+    "phase": "complete",
+    "zLayer": null,
+    "complete": true,
+    "plannedInputBlocks": 64,
+    "plannedCoreBlocks": 8,
+    "completedCoreBlocks": 8,
+    "plannedTileCompletionFraction": 1.0,
+    "nonemptyTiles": 8,
+    "outputBytes": 1827859,
+    "verifiedHostedNativeObjects": 0,
+    "networkBytesThisRun": 0,
+    "requestsThisRun": 0,
+    "retriesThisRun": 0,
+    "elapsedSeconds": 2.6690281609917292,
+    "surfaceContribution": {
+      "nativeOnlyEdgeVertices": 1786641,
+      "blendedEdgeVertices": 8480,
+      "priorOnlyEdgeVertices": 0
+    },
+    "diskFreeBytes": 7087284224,
+    "error": null,
+    "decodedSourceCacheBlocks": 0,
+    "residentSourceArrayBytes": 8388608
+  },
+  "comparisons": [
+    {
+      "xyz": [
+        35,
+        30,
+        36
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        35,
+        30,
+        37
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        35,
+        31,
+        36
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        35,
+        31,
+        37
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        36,
+        30,
+        36
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        36,
+        30,
+        37
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        36,
+        31,
+        36
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    },
+    {
+      "xyz": [
+        36,
+        31,
+        37
+      ],
+      "nativeShaIdentical": true,
+      "overviewShaIdentical": true
+    }
+  ],
+  "runnerSha256": "b3d7a6aab9edd98337533e70b9b212bfbd3115f002627f1965e4d5059d21230d"
+}

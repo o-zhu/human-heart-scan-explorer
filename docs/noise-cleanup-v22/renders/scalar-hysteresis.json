@@ -1,0 +1,64 @@
+{
+  "method": "hysteresis",
+  "nativeTile": null,
+  "input": {
+    "sourceRecord": "{source-cache}/guided-native-v21/denoise/surface-render/source-record.json",
+    "sourceOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "fieldHash": "d74114718020ff5241aec4b857fa9e0d8a1da4629e14757feb1cae966d9add52",
+    "threshold": 16933.400390625,
+    "encodedMesh": {
+      "format": "NBE1",
+      "bytes": 100911,
+      "decodedBytes": 219730,
+      "sha256": "8838d128110b0ec04b596125e53f797967cd0c5bc369d78eb4290ce1b3f967ca",
+      "decodedSha256": "a1108bef97d7c4557fc819d7c85aac9bb75439639c240c1a4437fc13a5ef60ce",
+      "sampleShapeZYX": [
+        108,
+        108,
+        108
+      ],
+      "originXYZ": [
+        0,
+        0,
+        0
+      ],
+      "vertices": 99521,
+      "triangles": 194847,
+      "activeCells": 98115,
+      "edgeCountsXYZ": [
+        33886,
+        26623,
+        39012
+      ],
+      "crossingBits": 5,
+      "sourceSpacingUm": 19.85,
+      "samplingStepNative": 1,
+      "meshSampleSpacingUm": 19.85,
+      "maximumEncodingMovementUm": 0.3101541540628879,
+      "rmsEncodingMovementUm": 0.1787448447470794,
+      "encodingMovementBoundUm": 0.31015625,
+      "connectivity": "Standard marching-cubes cases; original native integer grid edges"
+    }
+  },
+  "unfilteredTriangles": 194847,
+  "renderedTriangles": 188051,
+  "originalVertexBufferSha256": "d21b16c3c130db56580a91bb1f675bdaf35d6bfaf9253a5d559ae26b241ad3b0",
+  "retainedFaceMaskSha256": "8649397f395f0dca1e58ec85b367211bd768389b41c306fe3da4f73957691159",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": 0,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": -0.004672897196261682,
+  "cropSpanMm": 2.12395,
+  "geometryModification": "triangle subset only",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/scalar-hysteresis.png",
+    "sha256": "0f9ecc727972eff67f3e9da3fdb66e2669f59fdeb0514a634402b37a49a1aaae"
+  },
+  "seconds": 0.5551262619992485,
+  "peakRssMiB": 206.3515625
+}

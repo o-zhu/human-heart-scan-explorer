@@ -1,0 +1,2362 @@
+{
+  "schemaVersion": 1,
+  "id": "cmac-v1",
+  "label": "cMAC \u00b7 Volunteer 1",
+  "description": "Measured MRI and 4D apical ultrasound from the same healthy-volunteer case.",
+  "subject": {
+    "id": "v1",
+    "cohort": "Healthy volunteers",
+    "ageYears": null,
+    "sex": null,
+    "note": "Cohort description from the challenge; no inferred subject-specific age or sex."
+  },
+  "source": {
+    "name": "Cardiac Atlas Project / STACOM 2011 cMAC",
+    "url": "https://www.cardiacatlas.org/motion-tracking-2011-challenge/",
+    "citation": "Tobon-Gomez et al. Benchmarking framework for myocardial tracking and deformation algorithms: An open access database. Medical Image Analysis 17(6), 632\u2013648 (2013).",
+    "doiUrl": "https://doi.org/10.1016/j.media.2013.03.008",
+    "license": "Open access by attribution, as stated on the official challenge page; no Creative Commons license assumed.",
+    "caseArchive": {
+      "filename": "v1.zip",
+      "bytes": 396553334,
+      "sha256": "20043e37665c5d70fadddf4bbfd8a6368ddabf87ddffd9624d4dda100d833ade"
+    },
+    "readmeUrl": "https://www.cardiacatlas.org/wp-content/uploads/2024/03/readme.pdf"
+  },
+  "pairing": {
+    "sameVolunteer": true,
+    "sameAcquisition": false,
+    "spatiallyRegisteredInViewer": false,
+    "temporallySynchronizedInViewer": false,
+    "label": "Same volunteer \u00b7 separate acquisitions",
+    "note": "Whole-heart MRI and ultrasound are not co-registered here. Cine slots are separate measured phases, not simultaneous MRI/ultrasound observations.",
+    "documentedReferenceFrames": {
+      "indexBase": 0,
+      "ultrasound": {
+        "endSystole": 6,
+        "finalFrame": 13
+      },
+      "cineSax": {
+        "endSystole": 10,
+        "finalFrame": 29
+      },
+      "source": "Official readme.pdf, final-frame/end-systolic table, v1 column"
+    }
+  },
+  "format": {
+    "scalarType": "uint8",
+    "order": "X fastest, then Y, then Z",
+    "compression": "gzip",
+    "spatialResampling": false,
+    "frameInterpolation": false,
+    "sourceTransforms": "MRI: per-slice DICOM rescale followed by a fixed linear display window and 8-bit rounding. Ultrasound: exact source VTK uint8 samples."
+  },
+  "series": [
+    {
+      "id": "whole-heart-mri",
+      "label": "Whole-heart MRI \u00b7 cardiac region",
+      "modality": "MRI",
+      "dimensions": [
+        205,
+        245,
+        95
+      ],
+      "spacingMm": [
+        0.75,
+        0.75,
+        1.5
+      ],
+      "originMm": [
+        108.961540222167,
+        -88.73327779769,
+        142.57525062561
+      ],
+      "direction": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "indexToPhysicalMm": [
+        [
+          0.0,
+          0.0,
+          -1.5,
+          108.961540222167
+        ],
+        [
+          0.75,
+          0.0,
+          0.0,
+          -88.73327779769
+        ],
+        [
+          0.0,
+          -0.75,
+          0.0,
+          142.57525062561
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "coordinateSystem": "DICOM LPS",
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/cmac/whole-heart-mri/frame-000.u8.gz",
+          "compressedBytes": 3707588,
+          "decodedBytes": 4771375,
+          "sha256": "f1f1007e743970ab8e123aa58500dcf8d98a73595cac98c625867c2a85869c1b",
+          "decodedSha256": "1e029e2f29ede9db7f601c959d5622a5945053a7e2aaf448b7cb0559ca26b0a9",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 2244.200439453125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              204,
+              244,
+              94
+            ]
+          ],
+          "timeMs": 740.0,
+          "phase": null,
+          "phaseLabel": "Gated static volume"
+        }
+      ],
+      "sourceWindow": [
+        0,
+        2250
+      ],
+      "defaultThreshold": 0.12,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0,
+        "windowHigh": 0.8,
+        "windowGamma": 0.85,
+        "capContrast": 1,
+        "cutFaceExposure": 1.15
+      },
+      "defaultSlice": {
+        "axis": 2,
+        "position": 0.5,
+        "flipVertical": false
+      },
+      "crop": {
+        "lowerInclusiveXYZ": [
+          75,
+          40,
+          0
+        ],
+        "upperExclusiveXYZ": [
+          280,
+          285,
+          95
+        ],
+        "sourceSpatialHeader": {
+          "dimensions": [
+            400,
+            400,
+            95
+          ],
+          "spacingMm": [
+            0.75,
+            0.75,
+            1.5
+          ],
+          "originMm": [
+            108.961540222167,
+            -144.98327779769,
+            172.57525062561
+          ],
+          "direction": [
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ],
+          "indexToPhysicalMm": [
+            [
+              0.0,
+              0.0,
+              -1.5,
+              108.961540222167
+            ],
+            [
+              0.75,
+              0.0,
+              0.0,
+              -144.98327779769
+            ],
+            [
+              0.0,
+              -0.75,
+              0.0,
+              172.57525062561
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "coordinateSystem": "DICOM LPS"
+        },
+        "resampled": false,
+        "description": "Conservative rectangular field of view around the heart and proximal vessels; includes adjacent tissues, not an anatomical segmentation. All original left-right slices are retained."
+      },
+      "focusNormalizedXYZ": [
+        0.46568627450980393,
+        0.5942622950819673,
+        0.5
+      ],
+      "sourceHeader": {
+        "sliceThicknessMm": 3.0,
+        "frameOfReferenceHash": "cb5da3db73d4f069d4fa8f8842260a23a7aea2db2ad92ff5a4deebece9f31359",
+        "seriesDescription": "WIP WH TX TFE SENSE",
+        "bitsStored": 12,
+        "intensityUnits": "arbitrary MR signal after per-image DICOM rescale",
+        "perSliceTriggerTimesMs": [
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0,
+          740.0
+        ],
+        "triggerTimeRangeMs": [
+          740.0,
+          740.0
+        ],
+        "nominalTimeMs": 740.0
+      },
+      "samplingDescription": "0.75 \u00d7 0.75 \u00d7 1.5 mm stored grid; 3 mm source slice thickness",
+      "phaseDescription": "One whole-heart SSFP volume; source protocol gated at end-diastole and end-expiration. DICOM trigger time 740 ms.",
+      "notes": [
+        "A conservative rectangular cardiac field of view preserves the native grid; adjacent tissues remain and intensity surfaces are not anatomical segmentation.",
+        "The 1.5 mm slice interval is overlapping reconstruction spacing, not proof of 1.5 mm acquired through-plane resolution.",
+        "The whole-heart MRI has a different DICOM frame of reference from the cine/tagged MRI."
+      ],
+      "defaultCameraDistance": 2.0
+    },
+    {
+      "id": "ultrasound",
+      "label": "4D apical ultrasound",
+      "modality": "US",
+      "dimensions": [
+        208,
+        224,
+        208
+      ],
+      "spacingMm": [
+        0.658114,
+        0.667832,
+        0.580462
+      ],
+      "originMm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "direction": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "indexToPhysicalMm": [
+        [
+          0.658114,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.667832,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.580462,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "coordinateSystem": "Source VTK ultrasound-local coordinates; not DICOM LPS",
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-000.u8.gz",
+          "compressedBytes": 3025887,
+          "decodedBytes": 9691136,
+          "sha256": "1ce326489de243ce127952fce4f7b2c01e854dae094d74af8e6974561616ef80",
+          "decodedSha256": "02c0d0f69d874b102e254e8b740083a8e4c5cd8f619a5177129b0cf7d1f5e5cd",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 0.0,
+          "phase": 0.0,
+          "sourceFrameIndex": 0
+        },
+        {
+          "index": 1,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-001.u8.gz",
+          "compressedBytes": 3033094,
+          "decodedBytes": 9691136,
+          "sha256": "6052b5ca38acc265bdbf9cd9dbe72a7ad9ba308612d406911d0b47e5727e82ca",
+          "decodedSha256": "48a93552a928db00db5b2d341b692c8482afe7adc0dfa65dfdd0121f68baa3e9",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 47.2885,
+          "phase": 0.07692307692307693,
+          "sourceFrameIndex": 1
+        },
+        {
+          "index": 2,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-002.u8.gz",
+          "compressedBytes": 3028315,
+          "decodedBytes": 9691136,
+          "sha256": "7c6a24f2996c413da0e10f792d7f51d6016c8cdc670687c38e028aa438655190",
+          "decodedSha256": "7c027ffe0cb0f9946fa5d2427af92579ddf7f49e15e8715aae9faf14743178a8",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 94.577,
+          "phase": 0.15384615384615385,
+          "sourceFrameIndex": 2
+        },
+        {
+          "index": 3,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-003.u8.gz",
+          "compressedBytes": 3023156,
+          "decodedBytes": 9691136,
+          "sha256": "4d021ebbc1b4b5f8a1feb88dba5e855baa37ae1edd36aed9df299fbe0d4fd007",
+          "decodedSha256": "7ecd8531e1ec85df6ded5de896b54b1af53446559179a1c25f28d214897d9adf",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 141.8655,
+          "phase": 0.23076923076923078,
+          "sourceFrameIndex": 3
+        },
+        {
+          "index": 4,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-004.u8.gz",
+          "compressedBytes": 3008312,
+          "decodedBytes": 9691136,
+          "sha256": "fdac1ab3c5e482f41f5897f2429ce9877bb00cb48a617f41815010f5bcb176fa",
+          "decodedSha256": "0d18f19edfad8ddfff796ee74355c4b436937ae94c5b85e65a996830e1c59680",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 189.154,
+          "phase": 0.3076923076923077,
+          "sourceFrameIndex": 4
+        },
+        {
+          "index": 5,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-005.u8.gz",
+          "compressedBytes": 2996686,
+          "decodedBytes": 9691136,
+          "sha256": "ed1e31c73a3dde67d3b73d0fd31ede6e883864ef4c55386ad37c9b1baf8c71ac",
+          "decodedSha256": "d96d3745856e26398d5b6077a43ce7b376629616a6a9b8059650653e9e14c4ab",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 236.4425,
+          "phase": 0.38461538461538464,
+          "sourceFrameIndex": 5
+        },
+        {
+          "index": 6,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-006.u8.gz",
+          "compressedBytes": 3005626,
+          "decodedBytes": 9691136,
+          "sha256": "e643915c155ef8ad282dea7553b89fe3e71d80e274e1d76837213f4089deeed6",
+          "decodedSha256": "83dd9d9421657f438df1dbfefb0dc1ee9ec3436ff96bb5a2376c991ec49aaf7d",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 283.731,
+          "phase": 0.46153846153846156,
+          "sourceFrameIndex": 6
+        },
+        {
+          "index": 7,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-007.u8.gz",
+          "compressedBytes": 3013728,
+          "decodedBytes": 9691136,
+          "sha256": "28c1a563fbd0766043ecf70bf7e42c7ced4a7a186ec0192301d73a95fd93dff6",
+          "decodedSha256": "4fe634e0efecd27538607eb866183d16f408483607747d89161b0527e2578e22",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 331.0195,
+          "phase": 0.5384615384615384,
+          "sourceFrameIndex": 7
+        },
+        {
+          "index": 8,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-008.u8.gz",
+          "compressedBytes": 3019257,
+          "decodedBytes": 9691136,
+          "sha256": "ae8b9618fc9fa4a0c45a5d87c780fcd1675e1182bfeab11ed54a71b289e04063",
+          "decodedSha256": "fd1f433307b9a400d8fcf073f1522b029f2eb3d1bf3bea6537d53f4276a859ca",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 378.308,
+          "phase": 0.6153846153846154,
+          "sourceFrameIndex": 8
+        },
+        {
+          "index": 9,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-009.u8.gz",
+          "compressedBytes": 3027425,
+          "decodedBytes": 9691136,
+          "sha256": "044502d51dc6b68ed7326647d3a21426d85cccc4a70a50b4bd4059abec5fc995",
+          "decodedSha256": "daca5e8c22dd5833f338e1c65a5625d328129542265f12b07f625cbdffebd1ee",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 425.5965,
+          "phase": 0.6923076923076923,
+          "sourceFrameIndex": 9
+        },
+        {
+          "index": 10,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-010.u8.gz",
+          "compressedBytes": 3037428,
+          "decodedBytes": 9691136,
+          "sha256": "079086384fbda960be477c0655e61063043049f0f244e5b4fbfc27164c050106",
+          "decodedSha256": "ec850d60d0303fef46f732c779535749de8b2c50387971e40725775bc0e75837",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 472.885,
+          "phase": 0.7692307692307693,
+          "sourceFrameIndex": 10
+        },
+        {
+          "index": 11,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-011.u8.gz",
+          "compressedBytes": 3028904,
+          "decodedBytes": 9691136,
+          "sha256": "c1e68c2e13a9a34400fc12b82a3a260eb7dba605143f57b21919415031608cc7",
+          "decodedSha256": "cee63b3b833d259830ec2494cd7f6a2bfb1bfef16554905bed784e2f5ad480be",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 520.1735,
+          "phase": 0.8461538461538461,
+          "sourceFrameIndex": 11
+        },
+        {
+          "index": 12,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-012.u8.gz",
+          "compressedBytes": 3025170,
+          "decodedBytes": 9691136,
+          "sha256": "bd5a522e4524158f5a49410e7031bdffcc0bb9a124c18af7d629f8441d177e28",
+          "decodedSha256": "4d6d59bbbf45a621672ebaaa2ab5ffb374bdeed6fd3b03e7326353346ffc844a",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 567.462,
+          "phase": 0.9230769230769231,
+          "sourceFrameIndex": 12
+        },
+        {
+          "index": 13,
+          "url": "/assets/clinical-v19/cmac/ultrasound/frame-013.u8.gz",
+          "compressedBytes": 3020635,
+          "decodedBytes": 9691136,
+          "sha256": "aafe6cdc0f16b53993a0bf9358b974d7a0541b4dc0ada3a817aafde9f33662bc",
+          "decodedSha256": "ad2e648232e185de07c6bc54b43c0b0bd36aea0ea8fc62219250f822b49f8eae",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 255.0,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0,
+          "storedNonzeroBoundsXYZ": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              207,
+              223,
+              206
+            ]
+          ],
+          "timeMs": 614.7505,
+          "phase": 1.0,
+          "sourceFrameIndex": 13
+        }
+      ],
+      "sourceWindow": [
+        0,
+        255
+      ],
+      "defaultThreshold": 0.17,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0,
+        "windowHigh": 1,
+        "windowGamma": 1,
+        "capContrast": 1,
+        "cutFaceExposure": 1.15
+      },
+      "defaultSlice": {
+        "axis": 1,
+        "position": 0.5,
+        "flipVertical": true
+      },
+      "sourceHeader": {
+        "numberOfFrames": 14,
+        "frameTimeMs": 47.2885,
+        "manufacturer": "Philips Medical Systems",
+        "sourceScalarType": "uint8",
+        "dicomPhysicalDeltaXcm": 0.06678324052006385,
+        "dicomPhysicalDeltaYcm": 0.06581138067174935,
+        "dicomPrivateDepth": 208,
+        "dicomPrivateDepthSpacingCm": 0.058046154661361996
+      },
+      "frameIntervalMs": 47.2885,
+      "samplingDescription": "0.658 \u00d7 0.668 \u00d7 0.580 mm stored grid; 14 measured volumes",
+      "phaseDescription": "Recorded 4D apical ultrasound, 47.2885 ms per volume. Separate acquisition from MRI.",
+      "notes": [
+        "All source VTK ultrasound intensities are retained exactly, with lossless gzip compression.",
+        "Grid spacing is not the ultrasound system\u2019s spatial resolving power.",
+        "The volume contains an apical acoustic sector, not complete whole-heart coverage."
+      ]
+    },
+    {
+      "id": "cine-sax",
+      "label": "Cine short-axis MRI",
+      "modality": "MRI",
+      "dimensions": [
+        256,
+        256,
+        14
+      ],
+      "spacingMm": [
+        1.25,
+        1.25,
+        8.000000622375808
+      ],
+      "originMm": [
+        111.809579849243,
+        -205.95926731824,
+        104.612316131591
+      ],
+      "direction": [
+        [
+          0.43381428718566,
+          -0.5833969712257,
+          -0.686624463170618
+        ],
+        [
+          0.85072290897369,
+          0.01420619897544,
+          0.525422425435116
+        ],
+        [
+          -0.2967755198478,
+          -0.8120629191398,
+          0.5024720105891877
+        ]
+      ],
+      "indexToPhysicalMm": [
+        [
+          0.542267858982075,
+          -0.729246214032125,
+          -5.492996132703399,
+          111.809579849243
+        ],
+        [
+          1.0634036362171124,
+          0.0177577487193,
+          4.203379730491134,
+          -205.95926731824
+        ],
+        [
+          -0.37096939980974997,
+          -1.01507864892475,
+          4.019776397439925,
+          104.612316131591
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "coordinateSystem": "DICOM LPS",
+      "frames": [
+        {
+          "index": 0,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-000.u8.gz",
+          "compressedBytes": 449191,
+          "decodedBytes": 917504,
+          "sha256": "15d8cc8e8d40d8e0ec2c1cb1982f4f9b1b05401486d693c826b35108f7084706",
+          "decodedSha256": "f8bdabf043e05a08ab670cbc5dc93ca7be080d3e6a7d7df6706443586108e218",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5862.4052734375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00020381382533482144,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 0.0,
+          "phase": 0.0,
+          "triggerTimeRangeMs": [
+            0.0,
+            0.0
+          ],
+          "perSliceTriggerTimesMs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "sourceDirectory": "time_1"
+        },
+        {
+          "index": 1,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-001.u8.gz",
+          "compressedBytes": 445273,
+          "decodedBytes": 917504,
+          "sha256": "da43b30f50f3b340cb0aefa4d2f21b8f787444b4e0c0a8041fba62cbf03ca1cf",
+          "decodedSha256": "768f893add3f3168e2cbad5850d6dbded5df4e734024be0e4bd9351de1718236",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6200.69482421875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00019291469029017856,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 27.0,
+          "phase": 0.034482758620689655,
+          "triggerTimeRangeMs": [
+            25.0,
+            28.0
+          ],
+          "perSliceTriggerTimesMs": [
+            28.0,
+            27.0,
+            27.0,
+            27.0,
+            27.0,
+            26.0,
+            25.0,
+            25.0,
+            26.0,
+            27.0,
+            27.0,
+            27.0,
+            27.0,
+            28.0
+          ],
+          "sourceDirectory": "time_2"
+        },
+        {
+          "index": 2,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-002.u8.gz",
+          "compressedBytes": 447063,
+          "decodedBytes": 917504,
+          "sha256": "acf977241028ffd86e9fe9acc91e363a8695c470263b071753e21808f5d9106b",
+          "decodedSha256": "4839f388ed9bb132a11ac5b126672563c7ba72dc336b85c3a37ed0d8c22d2ee0",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5351.12646484375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00020381382533482144,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 54.5,
+          "phase": 0.06896551724137931,
+          "triggerTimeRangeMs": [
+            49.0,
+            56.0
+          ],
+          "perSliceTriggerTimesMs": [
+            56.0,
+            55.0,
+            55.0,
+            55.0,
+            54.0,
+            52.0,
+            50.0,
+            49.0,
+            52.0,
+            53.0,
+            55.0,
+            55.0,
+            54.0,
+            55.0
+          ],
+          "sourceDirectory": "time_3"
+        },
+        {
+          "index": 3,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-003.u8.gz",
+          "compressedBytes": 449945,
+          "decodedBytes": 917504,
+          "sha256": "a5e28e6744d04affa1dff47a165ba0199b5358501bc46a2c85845546e8edf70c",
+          "decodedSha256": "cfc22ab5c1b23a9d5d2b7690c9cde6e2072dea6842e4d19103024b5ae40488c9",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 4851.38037109375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00023651123046875,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 82.0,
+          "phase": 0.10344827586206896,
+          "triggerTimeRangeMs": [
+            74.0,
+            84.0
+          ],
+          "perSliceTriggerTimesMs": [
+            84.0,
+            82.0,
+            82.0,
+            82.0,
+            81.0,
+            78.0,
+            75.0,
+            74.0,
+            77.0,
+            80.0,
+            82.0,
+            82.0,
+            82.0,
+            83.0
+          ],
+          "sourceDirectory": "time_4"
+        },
+        {
+          "index": 4,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-004.u8.gz",
+          "compressedBytes": 453017,
+          "decodedBytes": 917504,
+          "sha256": "779d7e180674f6c98472c5c74172ed881b504f0181ea3e426063d6f62806070b",
+          "decodedSha256": "e0774bfd9c2f02de53712eee96673cab7766533bfc2f6895c61c40301cab83de",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 7400.08544921875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0004795619419642857,
+          "storedNonzeroBoundsXYZ": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 109.0,
+          "phase": 0.13793103448275862,
+          "triggerTimeRangeMs": [
+            99.0,
+            112.0
+          ],
+          "perSliceTriggerTimesMs": [
+            112.0,
+            110.0,
+            109.0,
+            110.0,
+            108.0,
+            104.0,
+            100.0,
+            99.0,
+            103.0,
+            106.0,
+            109.0,
+            109.0,
+            109.0,
+            110.0
+          ],
+          "sourceDirectory": "time_5"
+        },
+        {
+          "index": 5,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-005.u8.gz",
+          "compressedBytes": 455482,
+          "decodedBytes": 917504,
+          "sha256": "d57548e61857d41580cdca0923bddd4ec22182cc9eb0a76483720c941f0e03a5",
+          "decodedSha256": "a7f9927b9e758ba786b89726aaf061bf76d3e3a10bfcb950a50cc9ae8918074f",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 7519.25537109375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0005852835518973214,
+          "storedNonzeroBoundsXYZ": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 136.0,
+          "phase": 0.1724137931034483,
+          "triggerTimeRangeMs": [
+            123.0,
+            140.0
+          ],
+          "perSliceTriggerTimesMs": [
+            140.0,
+            137.0,
+            136.0,
+            137.0,
+            135.0,
+            130.0,
+            125.0,
+            123.0,
+            129.0,
+            133.0,
+            137.0,
+            137.0,
+            136.0,
+            138.0
+          ],
+          "sourceDirectory": "time_6"
+        },
+        {
+          "index": 6,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-006.u8.gz",
+          "compressedBytes": 456573,
+          "decodedBytes": 917504,
+          "sha256": "f79dc8ecc26bd5b2d28e3ccb0f7bf7618fbcd7f974f455c7cca1c6cc92286588",
+          "decodedSha256": "147b25b1eeba7504026141cfd3fa210e6ba9c276b31d7473ff2bc225177f6ac4",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6884.96240234375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0005711146763392857,
+          "storedNonzeroBoundsXYZ": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 163.5,
+          "phase": 0.20689655172413793,
+          "triggerTimeRangeMs": [
+            148.0,
+            167.0
+          ],
+          "perSliceTriggerTimesMs": [
+            167.0,
+            165.0,
+            164.0,
+            164.0,
+            162.0,
+            156.0,
+            151.0,
+            148.0,
+            155.0,
+            160.0,
+            164.0,
+            164.0,
+            163.0,
+            166.0
+          ],
+          "sourceDirectory": "time_7"
+        },
+        {
+          "index": 7,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-007.u8.gz",
+          "compressedBytes": 456429,
+          "decodedBytes": 917504,
+          "sha256": "ca27afe6d87f79699acdd3540e996b556e1e307f1dfde235c963adb09cb6864d",
+          "decodedSha256": "e74c6e48dbf46315cdef50e9fcc60a4ca0c64e47e0f937769be26604aad3b4a4",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6735.03857421875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0005983625139508929,
+          "storedNonzeroBoundsXYZ": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 191.0,
+          "phase": 0.2413793103448276,
+          "triggerTimeRangeMs": [
+            172.0,
+            195.0
+          ],
+          "perSliceTriggerTimesMs": [
+            195.0,
+            192.0,
+            191.0,
+            192.0,
+            189.0,
+            182.0,
+            176.0,
+            172.0,
+            180.0,
+            186.0,
+            192.0,
+            191.0,
+            191.0,
+            193.0
+          ],
+          "sourceDirectory": "time_8"
+        },
+        {
+          "index": 8,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-008.u8.gz",
+          "compressedBytes": 455451,
+          "decodedBytes": 917504,
+          "sha256": "9e670942fc91eed0fad2513a991c73fa51e49fa577bc5b7eb9d07026b4cfb743",
+          "decodedSha256": "209ee23f96b8dc3c5abae69dee28ff2d12e7b78c3933831ebbc3f0fb83bf6c41",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6900.33935546875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0006692068917410714,
+          "storedNonzeroBoundsXYZ": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 218.0,
+          "phase": 0.27586206896551724,
+          "triggerTimeRangeMs": [
+            197.0,
+            223.0
+          ],
+          "perSliceTriggerTimesMs": [
+            223.0,
+            219.0,
+            218.0,
+            219.0,
+            216.0,
+            208.0,
+            201.0,
+            197.0,
+            206.0,
+            213.0,
+            219.0,
+            219.0,
+            218.0,
+            221.0
+          ],
+          "sourceDirectory": "time_9"
+        },
+        {
+          "index": 9,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-009.u8.gz",
+          "compressedBytes": 454420,
+          "decodedBytes": 917504,
+          "sha256": "fe6ef14a5f9fdc6f3c8416b9a517c348f1f86e7902a42b1dadb3b88adb005376",
+          "decodedSha256": "7aae5eb6d87d15703f57e4a17636b135b9d94988a214f24f2b2180b589004997",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6608.18017578125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007880074637276786,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 245.0,
+          "phase": 0.3103448275862069,
+          "triggerTimeRangeMs": [
+            222.0,
+            251.0
+          ],
+          "perSliceTriggerTimesMs": [
+            251.0,
+            247.0,
+            245.0,
+            247.0,
+            244.0,
+            234.0,
+            226.0,
+            222.0,
+            232.0,
+            239.0,
+            246.0,
+            246.0,
+            245.0,
+            248.0
+          ],
+          "sourceDirectory": "time_10"
+        },
+        {
+          "index": 10,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-010.u8.gz",
+          "compressedBytes": 453612,
+          "decodedBytes": 917504,
+          "sha256": "26ee874a2a11211018d1ed4e547bd680dc183d0551199a61ac11986c0fa14baf",
+          "decodedSha256": "28cb87b48dbd007b267197b45310301e1f8f556a5268510327126468b598b24e",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6039.23828125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0008065359933035714,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 272.5,
+          "phase": 0.3448275862068966,
+          "triggerTimeRangeMs": [
+            246.0,
+            279.0
+          ],
+          "perSliceTriggerTimesMs": [
+            279.0,
+            274.0,
+            273.0,
+            274.0,
+            271.0,
+            259.0,
+            251.0,
+            246.0,
+            258.0,
+            266.0,
+            274.0,
+            273.0,
+            272.0,
+            276.0
+          ],
+          "sourceDirectory": "time_11"
+        },
+        {
+          "index": 11,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-011.u8.gz",
+          "compressedBytes": 452690,
+          "decodedBytes": 917504,
+          "sha256": "e6e5a91c50397f484b4f3c6a68ac94248e39837df8a8a70d24b860033bbe1861",
+          "decodedSha256": "412bf9003ed7c682d1743e48b378bb2e96d83e1f391dc6a318bd0cc4323b6a59",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6435.19091796875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007923671177455357,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 300.0,
+          "phase": 0.3793103448275862,
+          "triggerTimeRangeMs": [
+            271.0,
+            307.0
+          ],
+          "perSliceTriggerTimesMs": [
+            307.0,
+            302.0,
+            300.0,
+            302.0,
+            298.0,
+            285.0,
+            276.0,
+            271.0,
+            283.0,
+            292.0,
+            301.0,
+            301.0,
+            300.0,
+            304.0
+          ],
+          "sourceDirectory": "time_12"
+        },
+        {
+          "index": 12,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-012.u8.gz",
+          "compressedBytes": 451868,
+          "decodedBytes": 917504,
+          "sha256": "ab9b024bc6e7464649c636e4a5fa8a09f316b935b6fd111c98cba2b3980ffe2a",
+          "decodedSha256": "5089a27a7afaedc495c8ff7e99ffdada852c44b33f642a36a68cefbd25a41c4e",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6139.1875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007640293666294643,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 327.0,
+          "phase": 0.41379310344827586,
+          "triggerTimeRangeMs": [
+            296.0,
+            335.0
+          ],
+          "perSliceTriggerTimesMs": [
+            335.0,
+            329.0,
+            327.0,
+            329.0,
+            325.0,
+            311.0,
+            301.0,
+            296.0,
+            309.0,
+            319.0,
+            328.0,
+            328.0,
+            327.0,
+            331.0
+          ],
+          "sourceDirectory": "time_13"
+        },
+        {
+          "index": 13,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-013.u8.gz",
+          "compressedBytes": 451493,
+          "decodedBytes": 917504,
+          "sha256": "3b03a924d6fff00e31c60c89ca85d976bae1f689af8088299ae6c39c53d6db82",
+          "decodedSha256": "238cd1c11e5c3dc099157046be14680d22ba1068e54c10458918182c42bfa234",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5827.8076171875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007226126534598214,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 354.5,
+          "phase": 0.4482758620689655,
+          "triggerTimeRangeMs": [
+            320.0,
+            363.0
+          ],
+          "perSliceTriggerTimesMs": [
+            363.0,
+            356.0,
+            355.0,
+            356.0,
+            352.0,
+            337.0,
+            326.0,
+            320.0,
+            335.0,
+            346.0,
+            356.0,
+            355.0,
+            354.0,
+            359.0
+          ],
+          "sourceDirectory": "time_14"
+        },
+        {
+          "index": 14,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-014.u8.gz",
+          "compressedBytes": 451412,
+          "decodedBytes": 917504,
+          "sha256": "c2d4f371466a77970373f41a397dd78a632abe821f8b7875e6573974074ddfbc",
+          "decodedSha256": "8d2026036a8f78b50232f7f345433c4dbad8839ba4b9b4df8acd602d97374eef",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6239.13671875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007008143833705357,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 381.5,
+          "phase": 0.4827586206896552,
+          "triggerTimeRangeMs": [
+            345.0,
+            391.0
+          ],
+          "perSliceTriggerTimesMs": [
+            391.0,
+            384.0,
+            382.0,
+            384.0,
+            379.0,
+            363.0,
+            351.0,
+            345.0,
+            361.0,
+            372.0,
+            383.0,
+            382.0,
+            381.0,
+            386.0
+          ],
+          "sourceDirectory": "time_15"
+        },
+        {
+          "index": 15,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-015.u8.gz",
+          "compressedBytes": 450919,
+          "decodedBytes": 917504,
+          "sha256": "91930d3e1b47538fb017173dab4d763cfe5bfe7a3678384dd982f37617dbe82e",
+          "decodedSha256": "a1725ac2b5d029257349405f2faa81bed489629a82d5ea986f2e5ff5f18ef6b3",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6269.890625,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0006931849888392857,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 409.0,
+          "phase": 0.5172413793103449,
+          "triggerTimeRangeMs": [
+            370.0,
+            419.0
+          ],
+          "perSliceTriggerTimesMs": [
+            419.0,
+            411.0,
+            409.0,
+            411.0,
+            406.0,
+            389.0,
+            376.0,
+            370.0,
+            386.0,
+            399.0,
+            410.0,
+            410.0,
+            409.0,
+            414.0
+          ],
+          "sourceDirectory": "time_16"
+        },
+        {
+          "index": 16,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-016.u8.gz",
+          "compressedBytes": 451203,
+          "decodedBytes": 917504,
+          "sha256": "041b49e128adc74aa0f3f79f63194ded675070e6987f5883dcc2aed336d8fc4b",
+          "decodedSha256": "84ffd67564f62007ab24a31980ba5448912fdfbe03ef3c8b633c87901a87a064",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5912.3798828125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007160731724330357,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 436.0,
+          "phase": 0.5517241379310345,
+          "triggerTimeRangeMs": [
+            394.0,
+            447.0
+          ],
+          "perSliceTriggerTimesMs": [
+            447.0,
+            439.0,
+            436.0,
+            439.0,
+            433.0,
+            415.0,
+            401.0,
+            394.0,
+            412.0,
+            425.0,
+            438.0,
+            437.0,
+            436.0,
+            442.0
+          ],
+          "sourceDirectory": "time_17"
+        },
+        {
+          "index": 17,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-017.u8.gz",
+          "compressedBytes": 452413,
+          "decodedBytes": 917504,
+          "sha256": "881562f26a26f2897fa48f7b0afb0c82b661638db5494524f822157992ead9ea",
+          "decodedSha256": "7b0558d40d9c9605fc5701792796d59d5d9df9c12d78d5cfc37566aab495bebc",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6046.9267578125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007433210100446429,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 463.5,
+          "phase": 0.5862068965517241,
+          "triggerTimeRangeMs": [
+            419.0,
+            474.0
+          ],
+          "perSliceTriggerTimesMs": [
+            474.0,
+            466.0,
+            464.0,
+            466.0,
+            460.0,
+            441.0,
+            426.0,
+            419.0,
+            438.0,
+            452.0,
+            465.0,
+            464.0,
+            463.0,
+            469.0
+          ],
+          "sourceDirectory": "time_18"
+        },
+        {
+          "index": 18,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-018.u8.gz",
+          "compressedBytes": 452923,
+          "decodedBytes": 917504,
+          "sha256": "fccefebd3d3aca44433a4fc77410df9766828aefa0aec15aebe9c7770c2d6ba8",
+          "decodedSha256": "19b2659e4db981426b11b6bdeab87d5a113b58ed88802ec0f870482cbdd9eb77",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6069.9921875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007356916155133929,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 490.5,
+          "phase": 0.6206896551724138,
+          "triggerTimeRangeMs": [
+            444.0,
+            502.0
+          ],
+          "perSliceTriggerTimesMs": [
+            502.0,
+            494.0,
+            491.0,
+            493.0,
+            487.0,
+            467.0,
+            452.0,
+            444.0,
+            464.0,
+            479.0,
+            493.0,
+            492.0,
+            490.0,
+            497.0
+          ],
+          "sourceDirectory": "time_19"
+        },
+        {
+          "index": 19,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-019.u8.gz",
+          "compressedBytes": 452275,
+          "decodedBytes": 917504,
+          "sha256": "b0ee44dd9412e1ba4dcbe6f59a187ed72ae6e6b0750206706f973772110ff169",
+          "decodedSha256": "6e6137b44d2162efa92afdd43fdb804e5a939cd5bcd2d68740c1e99bbefc53bc",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6808.07861328125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007596697126116071,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 518.0,
+          "phase": 0.6551724137931034,
+          "triggerTimeRangeMs": [
+            468.0,
+            530.0
+          ],
+          "perSliceTriggerTimesMs": [
+            530.0,
+            521.0,
+            518.0,
+            521.0,
+            514.0,
+            493.0,
+            477.0,
+            468.0,
+            489.0,
+            505.0,
+            520.0,
+            519.0,
+            518.0,
+            524.0
+          ],
+          "sourceDirectory": "time_20"
+        },
+        {
+          "index": 20,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-020.u8.gz",
+          "compressedBytes": 452143,
+          "decodedBytes": 917504,
+          "sha256": "65b96dc4ff116d143472111422c8d5000ae38b6ce5d6989b1b8a2864d85fa40c",
+          "decodedSha256": "4b5da40863bd28f49a97ece8f49cf1b178fad47d4194c7b7483e9beb078dec8b",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6846.5205078125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007465907505580357,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 545.0,
+          "phase": 0.6896551724137931,
+          "triggerTimeRangeMs": [
+            493.0,
+            558.0
+          ],
+          "perSliceTriggerTimesMs": [
+            558.0,
+            548.0,
+            545.0,
+            548.0,
+            541.0,
+            519.0,
+            502.0,
+            493.0,
+            515.0,
+            532.0,
+            547.0,
+            546.0,
+            545.0,
+            552.0
+          ],
+          "sourceDirectory": "time_21"
+        },
+        {
+          "index": 21,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-021.u8.gz",
+          "compressedBytes": 451623,
+          "decodedBytes": 917504,
+          "sha256": "e89752ec8ed5477d824f616f438a07aa30a367d3683d2f5ba9f5c131a49f7fbe",
+          "decodedSha256": "d3ba875027ff60e943ca7f1ba3cf951df9ccbe7d62af4caa7b8e001ee37b3679",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6196.8505859375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.000732421875,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 572.5,
+          "phase": 0.7241379310344828,
+          "triggerTimeRangeMs": [
+            517.0,
+            586.0
+          ],
+          "perSliceTriggerTimesMs": [
+            586.0,
+            576.0,
+            573.0,
+            576.0,
+            568.0,
+            545.0,
+            527.0,
+            517.0,
+            541.0,
+            558.0,
+            575.0,
+            574.0,
+            572.0,
+            580.0
+          ],
+          "sourceDirectory": "time_22"
+        },
+        {
+          "index": 22,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-022.u8.gz",
+          "compressedBytes": 450873,
+          "decodedBytes": 917504,
+          "sha256": "875be534d1b317bbd1128f8bb4cb3fd57c6288ad28f04a6b4324d32d733f8648",
+          "decodedSha256": "e9d7ae220f717c1ddd5c25b62df022b505fef6f0c12dd1eba9a13a34c3e345bb",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5970.04296875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0007128034319196429,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 599.5,
+          "phase": 0.7586206896551724,
+          "triggerTimeRangeMs": [
+            542.0,
+            614.0
+          ],
+          "perSliceTriggerTimesMs": [
+            614.0,
+            603.0,
+            600.0,
+            603.0,
+            595.0,
+            571.0,
+            552.0,
+            542.0,
+            567.0,
+            585.0,
+            602.0,
+            601.0,
+            599.0,
+            607.0
+          ],
+          "sourceDirectory": "time_23"
+        },
+        {
+          "index": 23,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-023.u8.gz",
+          "compressedBytes": 449912,
+          "decodedBytes": 917504,
+          "sha256": "bcb8955cb1f4a73288bd397a694c147453820a91a86e34291c6f9e775685301d",
+          "decodedSha256": "9c3b4e97ed106cb24ff22c2cdc27eee4ca29bd6b7f29712c8f8799dd6da3a017",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5850.87255859375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0006888253348214286,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 627.0,
+          "phase": 0.7931034482758621,
+          "triggerTimeRangeMs": [
+            567.0,
+            642.0
+          ],
+          "perSliceTriggerTimesMs": [
+            642.0,
+            631.0,
+            627.0,
+            631.0,
+            622.0,
+            597.0,
+            577.0,
+            567.0,
+            592.0,
+            611.0,
+            629.0,
+            628.0,
+            627.0,
+            635.0
+          ],
+          "sourceDirectory": "time_24"
+        },
+        {
+          "index": 24,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-024.u8.gz",
+          "compressedBytes": 449231,
+          "decodedBytes": 917504,
+          "sha256": "4a349c3193b7afaec0250fa3cbf3364814c03bd6832a114003eed784906b72e1",
+          "decodedSha256": "e462dd41c5bb2aa9f49967bffd641d77e811f6d79d4b90211b02105a0e23b1b6",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6035.39404296875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0006365094866071429,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 654.5,
+          "phase": 0.8275862068965517,
+          "triggerTimeRangeMs": [
+            591.0,
+            670.0
+          ],
+          "perSliceTriggerTimesMs": [
+            670.0,
+            658.0,
+            655.0,
+            658.0,
+            649.0,
+            623.0,
+            602.0,
+            591.0,
+            618.0,
+            638.0,
+            657.0,
+            656.0,
+            654.0,
+            662.0
+          ],
+          "sourceDirectory": "time_25"
+        },
+        {
+          "index": 25,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-025.u8.gz",
+          "compressedBytes": 449424,
+          "decodedBytes": 917504,
+          "sha256": "859561685aadcf2c75b9babf5f97b04019b32c5684a0f43570c06ab884f00736",
+          "decodedSha256": "1b737be6bf896aca4ac1e2236740d4bd405b25dfb29ee9cfd7e16c60004314ba",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 6062.3037109375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.0005831037248883929,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 681.5,
+          "phase": 0.8620689655172413,
+          "triggerTimeRangeMs": [
+            616.0,
+            698.0
+          ],
+          "perSliceTriggerTimesMs": [
+            698.0,
+            686.0,
+            682.0,
+            685.0,
+            677.0,
+            649.0,
+            627.0,
+            616.0,
+            644.0,
+            665.0,
+            684.0,
+            683.0,
+            681.0,
+            690.0
+          ],
+          "sourceDirectory": "time_26"
+        },
+        {
+          "index": 26,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-026.u8.gz",
+          "compressedBytes": 449995,
+          "decodedBytes": 917504,
+          "sha256": "f485bb5fba2d2c099a0958bc97df8c106d48a369c0efad104f57aec58eecf910",
+          "decodedSha256": "8b88b7471f1a5471f7085e0cb7f3476bb0a52977f095810d46167cdb4ef4fa0f",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5889.314453125,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00051116943359375,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 708.5,
+          "phase": 0.896551724137931,
+          "triggerTimeRangeMs": [
+            641.0,
+            726.0
+          ],
+          "perSliceTriggerTimesMs": [
+            726.0,
+            713.0,
+            709.0,
+            713.0,
+            704.0,
+            675.0,
+            652.0,
+            641.0,
+            670.0,
+            691.0,
+            711.0,
+            710.0,
+            708.0,
+            718.0
+          ],
+          "sourceDirectory": "time_27"
+        },
+        {
+          "index": 27,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-027.u8.gz",
+          "compressedBytes": 449990,
+          "decodedBytes": 917504,
+          "sha256": "439f4155431e0c40fee38a53b91bf10437a14c7bfbfb29e7065d459399d1a212",
+          "decodedSha256": "06d6abde0e37a45724c38719ce00b13f3b421e2975855a1cdb81f14eaf3399d8",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5877.7822265625,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00039999825613839287,
+          "storedNonzeroBoundsXYZ": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 736.0,
+          "phase": 0.9310344827586207,
+          "triggerTimeRangeMs": [
+            665.0,
+            754.0
+          ],
+          "perSliceTriggerTimesMs": [
+            754.0,
+            740.0,
+            736.0,
+            740.0,
+            731.0,
+            701.0,
+            677.0,
+            665.0,
+            695.0,
+            718.0,
+            739.0,
+            738.0,
+            736.0,
+            745.0
+          ],
+          "sourceDirectory": "time_28"
+        },
+        {
+          "index": 28,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-028.u8.gz",
+          "compressedBytes": 450734,
+          "decodedBytes": 917504,
+          "sha256": "c53291245a23f29a6aeb5501c3520754461bc4d0020ad0776e3d9c9f4a07845d",
+          "decodedSha256": "283f58d4ec2a04d81500a61a0a47a22452470557792b2a00f0b84d42de70bb5b",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5966.19873046875,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00026375906808035713,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 763.5,
+          "phase": 0.9655172413793104,
+          "triggerTimeRangeMs": [
+            690.0,
+            781.0
+          ],
+          "perSliceTriggerTimesMs": [
+            781.0,
+            768.0,
+            764.0,
+            768.0,
+            758.0,
+            727.0,
+            702.0,
+            690.0,
+            721.0,
+            744.0,
+            766.0,
+            765.0,
+            763.0,
+            773.0
+          ],
+          "sourceDirectory": "time_29"
+        },
+        {
+          "index": 29,
+          "url": "/assets/clinical-v19/cmac/cine-sax/frame-029.u8.gz",
+          "compressedBytes": 449783,
+          "decodedBytes": 917504,
+          "sha256": "fe4273c70f5cb3c57c413169001c5bc7fa2d7258d3e82703cb1052071dd748d6",
+          "decodedSha256": "389b3b683b4bc23b6f70b98c92870286b7d6f0e24f88455fa460fd56879eddd3",
+          "sourceMinimum": 0.0,
+          "sourceMaximum": 5750.92333984375,
+          "displayLowClippedFraction": 0.0,
+          "displayHighClippedFraction": 0.00022125244140625,
+          "storedNonzeroBoundsXYZ": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              249,
+              255,
+              13
+            ]
+          ],
+          "timeMs": 790.5,
+          "phase": 1.0,
+          "triggerTimeRangeMs": [
+            715.0,
+            809.0
+          ],
+          "perSliceTriggerTimesMs": [
+            809.0,
+            795.0,
+            791.0,
+            795.0,
+            785.0,
+            752.0,
+            728.0,
+            715.0,
+            747.0,
+            771.0,
+            794.0,
+            792.0,
+            790.0,
+            801.0
+          ],
+          "sourceDirectory": "time_30"
+        }
+      ],
+      "sourceWindow": [
+        0,
+        2600
+      ],
+      "defaultThreshold": 0.1,
+      "displayWindow": {
+        "windowEnabled": true,
+        "windowLow": 0,
+        "windowHigh": 0.72,
+        "windowGamma": 0.85,
+        "capContrast": 1,
+        "cutFaceExposure": 1.15
+      },
+      "defaultSlice": {
+        "axis": 2,
+        "position": 0.5,
+        "flipVertical": false
+      },
+      "sourceHeader": {
+        "sliceThicknessMm": 8.0,
+        "bitsStored": 12,
+        "frameOfReferenceHash": "e712a3d124084d205153a7d5425cd0e6af49834014650f0fd884c3a27e6ac638",
+        "seriesDescription": "cSAX",
+        "intensityUnits": "arbitrary MR signal after per-image DICOM rescale"
+      },
+      "samplingDescription": "1.25 \u00d7 1.25 \u00d7 8 mm stored grid; 30 measured phase slots",
+      "phaseDescription": "Each phase slot combines 14 separately acquired SAX slices. Trigger times vary by slice; displayed time is their median, not a simultaneous 3D timestamp.",
+      "notes": [
+        "Preserves the native 8 mm slice separation. Interpolated display does not create fine through-plane anatomy.",
+        "All phases share one fixed display encoding window of 0\u20132600 arbitrary rescaled MR units.",
+        "This cine MRI and the ultrasound were acquired separately and are not synchronized in the viewer."
+      ]
+    }
+  ],
+  "compressedBytes": 59548571,
+  "decodedBytesAllFrames": 167972399,
+  "validation": {
+    "preparedFrameCount": 45,
+    "nativeSpatialSamplesPreserved": true,
+    "ultrasoundSourceU8Exact": true,
+    "allGzipRoundTripsExact": true,
+    "sourceFileCount": 530,
+    "sourceHeaderContainsPersonalDemographics": false
+  }
+}

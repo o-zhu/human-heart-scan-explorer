@@ -1,0 +1,456 @@
+{
+  "method": "Actual low-density pixels within source tissue holes, identified with donor-specific trajectories. At open tube/atrial acquisition ends, conservative low-density lumen-core pixels replace a closed hole.",
+  "fallbackSliceRegions": 42,
+  "components": [
+    {
+      "sourceZ": 53.96,
+      "id": 4,
+      "pixels": 754,
+      "centroidSourceXY": [
+        144.4903468421583,
+        229.01598646879094
+      ]
+    },
+    {
+      "sourceZ": 72.072,
+      "id": 3,
+      "pixels": 416,
+      "centroidSourceXY": [
+        271.1923457278481,
+        183.75057053310613
+      ]
+    },
+    {
+      "sourceZ": 72.072,
+      "id": 4,
+      "pixels": 856,
+      "centroidSourceXY": [
+        142.61954705430026,
+        215.59192742221697
+      ]
+    },
+    {
+      "sourceZ": 72.072,
+      "id": 5,
+      "pixels": 590,
+      "centroidSourceXY": [
+        163.22852928556105,
+        282.44782771937355
+      ]
+    },
+    {
+      "sourceZ": 90.184,
+      "id": 3,
+      "pixels": 3543,
+      "centroidSourceXY": [
+        284.48388112412783,
+        193.65181432812787
+      ]
+    },
+    {
+      "sourceZ": 90.184,
+      "id": 4,
+      "pixels": 495,
+      "centroidSourceXY": [
+        115.57850978135788,
+        219.84030494821633
+      ]
+    },
+    {
+      "sourceZ": 90.184,
+      "id": 5,
+      "pixels": 877,
+      "centroidSourceXY": [
+        168.94819255805896,
+        277.9122926980645
+      ]
+    },
+    {
+      "sourceZ": 90.184,
+      "id": 6,
+      "pixels": 289,
+      "centroidSourceXY": [
+        256.57842954754494,
+        300.13959638211213
+      ]
+    },
+    {
+      "sourceZ": 108.296,
+      "id": 3,
+      "pixels": 3450,
+      "centroidSourceXY": [
+        290.37010731975784,
+        188.0868161805173
+      ]
+    },
+    {
+      "sourceZ": 108.296,
+      "id": 4,
+      "pixels": 261,
+      "centroidSourceXY": [
+        100.28682889567875,
+        226.7662047140987
+      ]
+    },
+    {
+      "sourceZ": 108.296,
+      "id": 5,
+      "pixels": 3521,
+      "centroidSourceXY": [
+        169.79136617905584,
+        273.24934434981435
+      ]
+    },
+    {
+      "sourceZ": 108.296,
+      "id": 6,
+      "pixels": 1074,
+      "centroidSourceXY": [
+        247.96200763736655,
+        308.31505020861323
+      ]
+    },
+    {
+      "sourceZ": 126.408,
+      "id": 3,
+      "pixels": 2814,
+      "centroidSourceXY": [
+        292.8224204474913,
+        179.63614342392918
+      ]
+    },
+    {
+      "sourceZ": 126.408,
+      "id": 4,
+      "pixels": 663,
+      "centroidSourceXY": [
+        86.25126725471104,
+        236.80447763331236
+      ]
+    },
+    {
+      "sourceZ": 126.408,
+      "id": 5,
+      "pixels": 3720,
+      "centroidSourceXY": [
+        188.2001199469171,
+        251.51769855042872
+      ]
+    },
+    {
+      "sourceZ": 126.408,
+      "id": 6,
+      "pixels": 1083,
+      "centroidSourceXY": [
+        241.66805901328937,
+        306.25849872015147
+      ]
+    },
+    {
+      "sourceZ": 144.519,
+      "id": 3,
+      "pixels": 2467,
+      "centroidSourceXY": [
+        299.6409972395109,
+        177.43748043798394
+      ]
+    },
+    {
+      "sourceZ": 144.519,
+      "id": 4,
+      "pixels": 982,
+      "centroidSourceXY": [
+        90.23458648070329,
+        238.88128399804066
+      ]
+    },
+    {
+      "sourceZ": 144.519,
+      "id": 5,
+      "pixels": 3943,
+      "centroidSourceXY": [
+        205.76563618590228,
+        233.14975786283657
+      ]
+    },
+    {
+      "sourceZ": 144.519,
+      "id": 6,
+      "pixels": 1309,
+      "centroidSourceXY": [
+        235.7598575103229,
+        299.1781955014457
+      ]
+    },
+    {
+      "sourceZ": 162.631,
+      "id": 3,
+      "pixels": 1882,
+      "centroidSourceXY": [
+        294.8753850603318,
+        171.69364330970288
+      ]
+    },
+    {
+      "sourceZ": 162.631,
+      "id": 4,
+      "pixels": 939,
+      "centroidSourceXY": [
+        90.58686354996563,
+        244.95871415861208
+      ]
+    },
+    {
+      "sourceZ": 162.631,
+      "id": 5,
+      "pixels": 3063,
+      "centroidSourceXY": [
+        217.10001518739384,
+        217.47307647007773
+      ]
+    },
+    {
+      "sourceZ": 162.631,
+      "id": 6,
+      "pixels": 1428,
+      "centroidSourceXY": [
+        235.4633017764068,
+        293.6950856291884
+      ]
+    },
+    {
+      "sourceZ": 180.743,
+      "id": 4,
+      "pixels": 312,
+      "centroidSourceXY": [
+        91.39447419668939,
+        234.10935978578382
+      ]
+    },
+    {
+      "sourceZ": 180.743,
+      "id": 6,
+      "pixels": 1094,
+      "centroidSourceXY": [
+        237.34403709531858,
+        288.6461250086779
+      ]
+    },
+    {
+      "sourceZ": 198.855,
+      "id": 1,
+      "pixels": 1727,
+      "centroidSourceXY": [
+        284.487520431274,
+        193.52894552637557
+      ]
+    },
+    {
+      "sourceZ": 198.855,
+      "id": 2,
+      "pixels": 1046,
+      "centroidSourceXY": [
+        202.1092891545853,
+        285.7332181668563
+      ]
+    },
+    {
+      "sourceZ": 198.855,
+      "id": 4,
+      "pixels": 186,
+      "centroidSourceXY": [
+        103.4797876684361,
+        226.32497958350348
+      ]
+    },
+    {
+      "sourceZ": 216.967,
+      "id": 1,
+      "pixels": 1614,
+      "centroidSourceXY": [
+        301.3104971530751,
+        200.42319773187143
+      ]
+    },
+    {
+      "sourceZ": 216.967,
+      "id": 2,
+      "pixels": 2050,
+      "centroidSourceXY": [
+        204.6510574251312,
+        282.089555418339
+      ]
+    },
+    {
+      "sourceZ": 235.078,
+      "id": 1,
+      "pixels": 1057,
+      "centroidSourceXY": [
+        311.2219096918673,
+        206.5398803037017
+      ]
+    },
+    {
+      "sourceZ": 235.078,
+      "id": 2,
+      "pixels": 3639,
+      "centroidSourceXY": [
+        200.2130232084903,
+        268.879015047951
+      ]
+    },
+    {
+      "sourceZ": 253.19,
+      "id": 1,
+      "pixels": 524,
+      "centroidSourceXY": [
+        311.3008744806262,
+        223.72431515122238
+      ]
+    },
+    {
+      "sourceZ": 253.19,
+      "id": 2,
+      "pixels": 4872,
+      "centroidSourceXY": [
+        193.83071763733867,
+        260.330854040656
+      ]
+    },
+    {
+      "sourceZ": 271.302,
+      "id": 1,
+      "pixels": 530,
+      "centroidSourceXY": [
+        314.4284810126582,
+        237.7746835443038
+      ]
+    },
+    {
+      "sourceZ": 271.302,
+      "id": 2,
+      "pixels": 6087,
+      "centroidSourceXY": [
+        187.99478214622158,
+        248.2019303953435
+      ]
+    },
+    {
+      "sourceZ": 289.414,
+      "id": 1,
+      "pixels": 809,
+      "centroidSourceXY": [
+        317.9826262302264,
+        245.83293368903634
+      ]
+    },
+    {
+      "sourceZ": 289.414,
+      "id": 2,
+      "pixels": 6513,
+      "centroidSourceXY": [
+        186.7512266120145,
+        236.94994504661565
+      ]
+    },
+    {
+      "sourceZ": 307.526,
+      "id": 1,
+      "pixels": 995,
+      "centroidSourceXY": [
+        321.9694087526239,
+        251.13698715094458
+      ]
+    },
+    {
+      "sourceZ": 307.526,
+      "id": 2,
+      "pixels": 5746,
+      "centroidSourceXY": [
+        188.70103528266225,
+        234.55249661845116
+      ]
+    },
+    {
+      "sourceZ": 325.637,
+      "id": 1,
+      "pixels": 823,
+      "centroidSourceXY": [
+        324.940144500669,
+        253.27129250811328
+      ]
+    },
+    {
+      "sourceZ": 325.637,
+      "id": 2,
+      "pixels": 4912,
+      "centroidSourceXY": [
+        191.75078534098873,
+        242.70234288026225
+      ]
+    },
+    {
+      "sourceZ": 343.749,
+      "id": 1,
+      "pixels": 558,
+      "centroidSourceXY": [
+        332.04634544712127,
+        257.0585953450388
+      ]
+    },
+    {
+      "sourceZ": 343.749,
+      "id": 2,
+      "pixels": 3960,
+      "centroidSourceXY": [
+        196.74467059838898,
+        243.91291714614496
+      ]
+    },
+    {
+      "sourceZ": 361.861,
+      "id": 1,
+      "pixels": 256,
+      "centroidSourceXY": [
+        337.0027319026899,
+        260.31337767009495
+      ]
+    },
+    {
+      "sourceZ": 361.861,
+      "id": 2,
+      "pixels": 2818,
+      "centroidSourceXY": [
+        217.1335032027383,
+        250.74410997116186
+      ]
+    },
+    {
+      "sourceZ": 379.973,
+      "id": 2,
+      "pixels": 2159,
+      "centroidSourceXY": [
+        228.31643737431187,
+        247.62243493530173
+      ]
+    },
+    {
+      "sourceZ": 398.085,
+      "id": 2,
+      "pixels": 1545,
+      "centroidSourceXY": [
+        229.69137581418215,
+        245.628502519356
+      ]
+    },
+    {
+      "sourceZ": 416.196,
+      "id": 2,
+      "pixels": 775,
+      "centroidSourceXY": [
+        236.58239485504285,
+        236.02534299714168
+      ]
+    }
+  ]
+}

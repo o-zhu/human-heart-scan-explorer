@@ -1,0 +1,497 @@
+{
+  "schema": "guided-native-overview-fallback-verification-v21.1",
+  "allChecksPassed": true,
+  "scope": "One complete dense leaf and the same source with artificial child planes released; no full bank/global merge",
+  "inputArtifacts": [
+    {
+      "xyz": [
+        36,
+        20,
+        14
+      ],
+      "bytes": 13126,
+      "sha256": "73d2a4d004c5a8dd2dfd82e5dafb97385374047e1a31fcf8686dd789a508ca45",
+      "recordSha256": "d1cbbe67d0d3eced3439f42568ab60f1fa8b257a5a233927ea1f79e22ea009ab"
+    },
+    {
+      "xyz": [
+        37,
+        20,
+        14
+      ],
+      "bytes": 8757,
+      "sha256": "4cd884559b66e25fe4fd0ea314621ab8fedc1c0c33b372ce99de5bab861adb00",
+      "recordSha256": "ab18bf0003b6cddc7b06ae6774793298ced681a88afcd595f98454466dfa45b4"
+    },
+    {
+      "xyz": [
+        36,
+        21,
+        14
+      ],
+      "bytes": 26998,
+      "sha256": "bdac0db9cb0935ccb55905bac391becd5b2f5133545118b641132063090cdb17",
+      "recordSha256": "dc9b4360e5aa421773986b9a04a5d5b939cdcaced6154ce5e82517c089896ed0"
+    },
+    {
+      "xyz": [
+        37,
+        21,
+        14
+      ],
+      "bytes": 22825,
+      "sha256": "4f2b6eb28d8a2bf18ff13671c0d44ee74b0e46b03e008befb66b11895318eba5",
+      "recordSha256": "edae4e72b2251bbf45c0b40d8545cdb30d99c12143d463529fec6165622d2f72"
+    },
+    {
+      "xyz": [
+        36,
+        20,
+        15
+      ],
+      "bytes": 29560,
+      "sha256": "a4df75f605165366258d8d8257676372554bcd240f57b98c169990347f765db3",
+      "recordSha256": "886b99dad2ccccbee5d0bcba87ec82d18088df02077c14ec32e7958c4ade1c82"
+    },
+    {
+      "xyz": [
+        37,
+        20,
+        15
+      ],
+      "bytes": 26749,
+      "sha256": "fb08651c460d277c96552a331e809f15d5db4a1d539364c648d85a1cb630efd8",
+      "recordSha256": "da0e750e8c2adb7d1502ab95d669a72fda744bca9f799be7dd410e06e760e49c"
+    },
+    {
+      "xyz": [
+        36,
+        21,
+        15
+      ],
+      "bytes": 27818,
+      "sha256": "a41969c6d0eacc8b9f6997646d5e69e005958275c0c46c6aa895a0622cc8310f",
+      "recordSha256": "def7b502f9d71ae188781661288de9c077809d536894117f9ec2c9b97a76d71c"
+    },
+    {
+      "xyz": [
+        37,
+        21,
+        15
+      ],
+      "bytes": 22780,
+      "sha256": "26ff46ee7dbc75f43882f4a32d2986fad0a1c597a42fcb0ef03ce1893872565d",
+      "recordSha256": "8492207d0da62310c624b65bae87a1722efef4877dbc7eb46a446c3af94cc788"
+    }
+  ],
+  "weldedDuplicateVertices": 7568,
+  "originalDegeneratesRemoved": 0,
+  "incidenceFilter": {
+    "randomReferenceComparisons": 80,
+    "collapsedFaceDoesNotCreateCurrentEdge": true,
+    "malformedInputsRejected": 6,
+    "allPassed": true
+  },
+  "resume": {
+    "checkpoints": 6,
+    "operationalCapChangePreservesFingerprintAndCheckpointBytes": true,
+    "numericalSettingChangeRejected": true,
+    "observedCapHistory": [
+      6000000,
+      5000000
+    ]
+  },
+  "cases": [
+    {
+      "name": "complete-dense-leaf",
+      "sourceIsCompleteEightTileLeaf": true,
+      "parentStressIsNotACompleteParentMesh": false,
+      "inputVertices": 229148,
+      "inputTriangles": 448650,
+      "targetTriangles": 4487,
+      "vertices": 25085,
+      "triangles": 44227,
+      "reductionFraction": 0.9014220439095063,
+      "exactBoundarySignature": true,
+      "finitePositions": true,
+      "nondegenerateFaces": true,
+      "referenceSamplesBeforeAnyLossSha256": "d06412c97e44b43010b4ed308b0280ee3890da0ab8a21dad9ab01e1b7a23c1ca",
+      "referenceSamplesPreservedExactly": true,
+      "forwardSampledDistances": {
+        "samples": 256,
+        "meanUm": 53.781766092290496,
+        "rmsUm": 76.75069166279165,
+        "medianUm": 38.90563601504123,
+        "p95Um": 146.11044692901632,
+        "p99Um": 239.09180553819624,
+        "maximumSampledUm": 312.9214251973791
+      },
+      "reverseSampledDistances": {
+        "samples": 128,
+        "meanUm": 28.336371416431057,
+        "rmsUm": 36.53838158537327,
+        "medianUm": 23.56716331560823,
+        "p95Um": 68.88112581783034,
+        "p99Um": 94.42164938579037,
+        "maximumSampledUm": 113.85806537978671
+      },
+      "hausdorffBound": false,
+      "anatomicalAccuracyClaim": false,
+      "method": {
+        "method": "global-grid-clustering-and-constrained-qem-replay",
+        "clustering": {
+          "method": "global-grid-vertex-clustering",
+          "globalGridOriginNativeXYZ": [
+            0,
+            0,
+            0
+          ],
+          "cellNativeVoxels": 16.0,
+          "cellUm": 317.6,
+          "representative": "Actual free source point nearest cluster centroid; lattice-key tie break",
+          "freeVertices": 206271,
+          "freeClusters": 3505,
+          "fixedVertices": 22877,
+          "protectedOriginalFaces": 25988,
+          "maximumVertexMovementNativeVoxels": 21.263598590078775,
+          "topologyPreserved": false,
+          "removedDegenerateFaces": 388954,
+          "removedSameWindingDuplicates": 243,
+          "removedOppositeWindingFaces": 9932
+        },
+        "qemGlobalCellNativeVoxels": 32,
+        "qemPasses": [
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 23822,
+            "acceptedCollapses": 880,
+            "rejectedFrozen": 21441,
+            "rejectedDifferentGlobalCell": 1493,
+            "rejectedNotCurrentEdge": 8,
+            "alreadyMerged": 0,
+            "incidenceVisits": 3303,
+            "unconstrainedProposalTriangles": 4482,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 11,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 29.298170804676527,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 2970,
+            "removedSameWindingDuplicates": 9,
+            "removedOppositeWindingFaces": 998,
+            "inputTriangles": 49521,
+            "triangles": 45533
+          },
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 22862,
+            "acceptedCollapses": 317,
+            "rejectedFrozen": 21364,
+            "rejectedDifferentGlobalCell": 1175,
+            "rejectedNotCurrentEdge": 6,
+            "alreadyMerged": 0,
+            "incidenceVisits": 1218,
+            "unconstrainedProposalTriangles": 4487,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 7,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 20.717029528868274,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 907,
+            "removedSameWindingDuplicates": 16,
+            "removedOppositeWindingFaces": 376,
+            "inputTriangles": 45533,
+            "triangles": 44227
+          }
+        ],
+        "topologyPreserved": false,
+        "frozenBoundaryExact": true,
+        "frozenPlaneVertices": 12210,
+        "frozenIncidentFaces": 24006,
+        "frozenFaceFloor": 25988,
+        "targetReached": false,
+        "targetBelowFrozenFloor": true,
+        "triangleBudgetExcess": 39740,
+        "primaryClusteringCellLimitNativeVoxels": 16,
+        "maximumClusteringCellNativeVoxels": 16,
+        "parentCellFallbackUsed": false,
+        "parentCellFallbackAllowed": false,
+        "effectiveTriangleTarget": 30475,
+        "attemptedConstrainedReplayPasses": [
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 23822,
+            "acceptedCollapses": 880,
+            "rejectedFrozen": 21441,
+            "rejectedDifferentGlobalCell": 1493,
+            "rejectedNotCurrentEdge": 8,
+            "alreadyMerged": 0,
+            "incidenceVisits": 3303,
+            "unconstrainedProposalTriangles": 4482,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 11,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 29.298170804676527,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 2970,
+            "removedSameWindingDuplicates": 9,
+            "removedOppositeWindingFaces": 998,
+            "inputTriangles": 49521,
+            "triangles": 45533
+          },
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 22862,
+            "acceptedCollapses": 317,
+            "rejectedFrozen": 21364,
+            "rejectedDifferentGlobalCell": 1175,
+            "rejectedNotCurrentEdge": 6,
+            "alreadyMerged": 0,
+            "incidenceVisits": 1218,
+            "unconstrainedProposalTriangles": 4487,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 7,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 20.717029528868274,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 907,
+            "removedSameWindingDuplicates": 16,
+            "removedOppositeWindingFaces": 376,
+            "inputTriangles": 45533,
+            "triangles": 44227
+          }
+        ],
+        "trials": [
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 4,
+            "triangles": 318674,
+            "frozenBoundaryExact": true
+          },
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 8,
+            "triangles": 110356,
+            "frozenBoundaryExact": true
+          },
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 16,
+            "triangles": 49521,
+            "frozenBoundaryExact": true
+          }
+        ]
+      },
+      "simplifySeconds": 1.4172700030030683,
+      "peakProcessRssBytes": 291454976,
+      "checkpointSha256": "e770d1957f4baaf726fbd2bf588c3aad9f68681758bea3ee5a4128c48432884f"
+    },
+    {
+      "name": "released-child-plane-parent-stress",
+      "sourceIsCompleteEightTileLeaf": true,
+      "parentStressIsNotACompleteParentMesh": true,
+      "inputVertices": 229148,
+      "inputTriangles": 448650,
+      "targetTriangles": 4487,
+      "vertices": 631,
+      "triangles": 2666,
+      "reductionFraction": 0.9940577287417809,
+      "exactBoundarySignature": true,
+      "finitePositions": true,
+      "nondegenerateFaces": true,
+      "referenceSamplesBeforeAnyLossSha256": "d06412c97e44b43010b4ed308b0280ee3890da0ab8a21dad9ab01e1b7a23c1ca",
+      "referenceSamplesPreservedExactly": true,
+      "forwardSampledDistances": {
+        "samples": 256,
+        "meanUm": 110.74265762821528,
+        "rmsUm": 140.02020039557783,
+        "medianUm": 94.54686361622899,
+        "p95Um": 271.0389999805393,
+        "p99Um": 302.09222578134745,
+        "maximumSampledUm": 528.4229600151258
+      },
+      "reverseSampledDistances": {
+        "samples": 128,
+        "meanUm": 31.036454873400057,
+        "rmsUm": 39.15827982145076,
+        "medianUm": 23.805121374792726,
+        "p95Um": 75.21350758037103,
+        "p99Um": 102.47119788310769,
+        "maximumSampledUm": 113.34943903007232
+      },
+      "hausdorffBound": false,
+      "anatomicalAccuracyClaim": false,
+      "method": {
+        "method": "parent-global-grid-clustering-fallback",
+        "globalGridOriginNativeXYZ": [
+          0,
+          0,
+          0
+        ],
+        "cellNativeVoxels": 32.0,
+        "cellUm": 635.2,
+        "representative": "Actual free source point nearest cluster centroid; lattice-key tie break",
+        "freeVertices": 229148,
+        "freeClusters": 664,
+        "fixedVertices": 0,
+        "protectedOriginalFaces": 0,
+        "maximumVertexMovementNativeVoxels": 31.91810810496136,
+        "topologyPreserved": false,
+        "removedDegenerateFaces": 441314,
+        "removedSameWindingDuplicates": 264,
+        "removedOppositeWindingFaces": 4406,
+        "previousConstrainedReplayTriangles": 8434,
+        "frozenBoundaryExact": true,
+        "frozenPlaneVertices": 0,
+        "frozenIncidentFaces": 0,
+        "frozenFaceFloor": 0,
+        "targetReached": true,
+        "targetBelowFrozenFloor": false,
+        "triangleBudgetExcess": 0,
+        "primaryClusteringCellLimitNativeVoxels": 16,
+        "maximumClusteringCellNativeVoxels": 32,
+        "parentCellFallbackUsed": true,
+        "parentCellFallbackAllowed": true,
+        "effectiveTriangleTarget": 4487,
+        "attemptedConstrainedReplayPasses": [
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 3380,
+            "acceptedCollapses": 1294,
+            "rejectedFrozen": 0,
+            "rejectedDifferentGlobalCell": 2071,
+            "rejectedNotCurrentEdge": 15,
+            "alreadyMerged": 0,
+            "incidenceVisits": 4638,
+            "unconstrainedProposalTriangles": 4482,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 10,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 29.298170804676527,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 3960,
+            "removedSameWindingDuplicates": 23,
+            "removedOppositeWindingFaces": 1334,
+            "inputTriangles": 15175,
+            "triangles": 9848
+          },
+          {
+            "method": "constrained-qem-replay",
+            "fastSimplificationVersion": "0.1.13",
+            "proposedCollapses": 1887,
+            "acceptedCollapses": 355,
+            "rejectedFrozen": 0,
+            "rejectedDifferentGlobalCell": 1527,
+            "rejectedNotCurrentEdge": 5,
+            "alreadyMerged": 0,
+            "incidenceVisits": 1233,
+            "unconstrainedProposalTriangles": 4486,
+            "globalCellNativeVoxels": 32,
+            "globalCellUm": 635.2,
+            "currentTriangleWithThreeDistinctRootsRequired": true,
+            "fixedFreeUnionsForbidden": true,
+            "positionRule": "QEM replay; free-only 1/16 quantization and same-global-cell/strict-group clamp",
+            "fixedCollisionSourcePointFallbacks": 0,
+            "removedFlippedFreeFaces": 1,
+            "coincidentFreeVerticesWelded": 0,
+            "currentEdgeConstraintScope": "Accepted QEM proposals; post-quantization coincident free vertices may additionally weld",
+            "maximumVertexMovementNativeVoxels": 28.069389466107026,
+            "topologyPreserved": false,
+            "selfIntersectionFreeEstablished": false,
+            "frozenBoundaryExact": true,
+            "removedDegenerateFaces": 953,
+            "removedSameWindingDuplicates": 16,
+            "removedOppositeWindingFaces": 444,
+            "inputTriangles": 9848,
+            "triangles": 8434
+          }
+        ],
+        "trials": [
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 4,
+            "triangles": 306628,
+            "frozenBoundaryExact": true
+          },
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 8,
+            "triangles": 78996,
+            "frozenBoundaryExact": true
+          },
+          {
+            "method": "global-grid-vertex-clustering",
+            "cellNativeVoxels": 16,
+            "triangles": 15175,
+            "frozenBoundaryExact": true
+          },
+          {
+            "method": "parent-global-grid-clustering-fallback",
+            "cellNativeVoxels": 32,
+            "triangles": 2666,
+            "frozenBoundaryExact": true
+          }
+        ]
+      },
+      "simplifySeconds": 1.246677749993978,
+      "peakProcessRssBytes": 291454976,
+      "checkpointSha256": "24e80275bdcd73eb51b1fb889639df6cedc4749aed1d0d53f2cef6c0431e78f7"
+    }
+  ],
+  "originalBankFilesUnchanged": true,
+  "nativeGridBankModified": false,
+  "originalIntensityDownloads": 0,
+  "uploads": 0,
+  "defaultMergeFaceCap": 6000000,
+  "defaultPrimaryClusterCellNativeVoxels": 16,
+  "constrainedQemAndConditionalParentCellNativeVoxels": 32,
+  "fullHierarchyFitEstablished": false,
+  "hierarchyBudget": "When children meet proportional budgets, eight child ceilings/min32 add at most248 faces to the 5M aggregate target; actual protected-floor misses are measured and checked before every allocation.",
+  "builderSha256": "ddb273f7db10f723fc4d8d4bd93223714438d690c07f40005a4f7c847902f38f",
+  "collapseFilterSha256": "00270dd22ba14a21fd316f74da97bdaa75d05ea5f1bf84a28f3584d1fcc41d22"
+}

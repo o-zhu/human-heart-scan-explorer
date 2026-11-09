@@ -1,0 +1,52 @@
+{
+  "highDimensionsXYZ": [
+    420,
+    390,
+    548
+  ],
+  "lowDimensionsXYZ": [
+    211,
+    196,
+    275
+  ],
+  "fullFineDimensionsXYZ": [
+    1677,
+    1557,
+    2189
+  ],
+  "sourceFineDimensionsXYZ": [
+    1675,
+    1554,
+    2189
+  ],
+  "highSpacingUm": 112.512,
+  "lowSpacingUmXYZ": [
+    224.48822857142855,
+    224.44701538461538,
+    224.6133722627737
+  ],
+  "fineSpacingUm": 28.128,
+  "longestMm": 61.544064,
+  "extent": [
+    0.7659963436928702,
+    1.0,
+    0.7111517367458866
+  ],
+  "fineSourcePhysicalOriginUm": [
+    14.064,
+    14.064,
+    14.064
+  ],
+  "highOriginalSourceIndexShift": [
+    -0.375,
+    -0.375,
+    -0.375
+  ],
+  "paddingFineColumnsXYZ": [
+    2,
+    3,
+    0
+  ],
+  "worldMapping": "Centered physical source coordinates [X,Z,-Y], normalized by longest physical center extent.",
+  "sourceCenterConvention": "Explicit OME-Zarr scale and translation in micrometers, interpreted as source sample centers."
+}

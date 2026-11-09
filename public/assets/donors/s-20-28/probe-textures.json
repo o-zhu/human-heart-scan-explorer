@@ -1,0 +1,175 @@
+{
+  "datasetId": "1966162746",
+  "geometricComparisonOnly": true,
+  "sourceSpacingUm": 79.4,
+  "preparedPlanes": [
+    {
+      "url": "./assets/donors/s-20-28/probe-textures/apical.webp",
+      "width": 2835,
+      "height": 2751,
+      "bytes": 1098430,
+      "sha256": "a3f802823d986d9734578e168f2049ecdd9b9f25fda47795b2d87a91d374635e",
+      "pixelSha256": "70057bb46756079074765eb5b4876def0c7a94c1160d054f339d0a9b30a5191a",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.37772890600657,
+        79.38755219516366
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true,
+      "id": "apical",
+      "plane": {
+        "center": [
+          0.013027805350554374,
+          -0.008200506846890276,
+          0.031687645633800485
+        ],
+        "right": [
+          0.919785389991902,
+          0.22853185562121778,
+          -0.3190110144239033
+        ],
+        "up": [
+          -0.1313006621799323,
+          0.9452977451305126,
+          0.298617328971846
+        ],
+        "normal": [
+          0.36980396491730083,
+          -0.2327774989501591,
+          0.8994774391356088
+        ],
+        "width": 1.394293840861224,
+        "height": 1.3531342880207613
+      }
+    },
+    {
+      "url": "./assets/donors/s-20-28/probe-textures/parasternal.webp",
+      "width": 2751,
+      "height": 2901,
+      "bytes": 902852,
+      "sha256": "12850ae23ed831775ac20b47e7fccfc03e4c767bcfc06eed636557eca6919194",
+      "pixelSha256": "111cf79445ceeca47a8257a9d80ed85f1f1fc247fa29f00ee97c08e7c42d500b",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.38755219515892,
+        79.39659596272695
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true,
+      "id": "parasternal",
+      "plane": {
+        "center": [
+          -0.0035919644519771254,
+          -0.0008924672107941817,
+          0.0012458082462133424
+        ],
+        "right": [
+          -0.1313006621800457,
+          0.945297745130584,
+          0.2986173289715701
+        ],
+        "up": [
+          -0.36980396491692463,
+          0.23277749894995253,
+          -0.8994774391358167
+        ],
+        "normal": [
+          -0.9197853899920369,
+          -0.22853185562113276,
+          0.31901101442357477
+        ],
+        "width": 1.3531342880206805,
+        "height": 1.4271041688891348
+      }
+    },
+    {
+      "url": "./assets/donors/s-20-28/probe-textures/short-axis.webp",
+      "width": 2835,
+      "height": 2901,
+      "bytes": 605434,
+      "sha256": "4854fdfaa0778e97f50a9d76d7add5f8485b2a8da318807e2bc2fa8b538088da",
+      "pixelSha256": "192d1c515421dd14afed8ef664417233938370d858e8663899c08e86e5bb4908",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.37772890598373,
+        79.39659596272695
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true,
+      "id": "short-axis",
+      "plane": {
+        "center": [
+          -0.005685408194128633,
+          0.04093203687500635,
+          0.012930333943923289
+        ],
+        "right": [
+          0.9197853899920693,
+          0.22853185562089867,
+          -0.3190110144236487
+        ],
+        "up": [
+          -0.36980396491692463,
+          0.23277749894995253,
+          -0.8994774391358167
+        ],
+        "normal": [
+          -0.13130066217981798,
+          0.9452977451306407,
+          0.2986173289714911
+        ],
+        "width": 1.394293840860823,
+        "height": 1.4271041688891348
+      }
+    },
+    {
+      "url": "./assets/donors/s-20-28/probe-textures/atrial.webp",
+      "width": 2835,
+      "height": 2751,
+      "bytes": 1097346,
+      "sha256": "7617130b371ee17dd9ab3f96a9c7791c597ed118ddf73d8342e6f31c5be56c5c",
+      "pixelSha256": "e99cbe1527eabb04a009ea87abba46142e77ea04de05f8101426af85bf9a923f",
+      "spacingUm": 79.4,
+      "sourceSpacingUm": 79.4,
+      "spacingUmXY": [
+        79.37772890600657,
+        79.38755219516366
+      ],
+      "cleaned": true,
+      "lossless": true,
+      "geometricComparisonOnly": true,
+      "id": "atrial",
+      "plane": {
+        "center": [
+          0.013027805350554263,
+          -0.008200506846890498,
+          0.03168764563380047
+        ],
+        "right": [
+          0.919785389991902,
+          0.22853185562121778,
+          -0.3190110144239033
+        ],
+        "up": [
+          0.1313006621799323,
+          -0.9452977451305126,
+          -0.298617328971846
+        ],
+        "normal": [
+          -0.36980396491730083,
+          0.2327774989501591,
+          -0.8994774391356088
+        ],
+        "width": 1.394293840861224,
+        "height": 1.3531342880207613
+      }
+    }
+  ]
+}

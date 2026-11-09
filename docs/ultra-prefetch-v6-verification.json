@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-05T02:57:09.128Z",
+  "passed": 19,
+  "failed": 0,
+  "scope": "Actual JavaScript module tests with deterministic network, storage, worker and pixel mocks. No browser or live-network timing benchmark.",
+  "limits": {
+    "decodedCacheBytes": 50331648,
+    "encodedMemoryBytes": 12582912,
+    "persistentEncodedBytes": 100663296,
+    "queuedPersistentWriteBytes": 16777216,
+    "normalActiveTasks": 3,
+    "normalSpeculativeTasks": 2,
+    "currentAxisSpeculativeByteBudget": 10485760,
+    "slowAxisSpeculativeByteBudget": 2097152
+  },
+  "tests": [
+    {
+      "name": "Current face precedes directional neighbors and inactive cards",
+      "passed": true,
+      "durationMs": 34
+    },
+    {
+      "name": "Shared requests and fast scroll reversal do not duplicate current decode",
+      "passed": true,
+      "durationMs": 39
+    },
+    {
+      "name": "Cancelling a stale cap cannot cancel a card sharing its transfer",
+      "passed": true,
+      "durationMs": 51
+    },
+    {
+      "name": "Focused slice preempts lower-priority transfers when slots are occupied",
+      "passed": true,
+      "durationMs": 5
+    },
+    {
+      "name": "Pausing cancels speculative work but preserves an explicit current request",
+      "passed": true,
+      "durationMs": 20
+    },
+    {
+      "name": "Save-data and slow connections constrain speculative work",
+      "passed": true,
+      "durationMs": 35
+    },
+    {
+      "name": "Hidden tab stops background transfers and visibility restores the window",
+      "passed": true,
+      "durationMs": 39
+    },
+    {
+      "name": "Decoded cache has a hard byte budget and keeps the selected face",
+      "passed": true,
+      "durationMs": 25
+    },
+    {
+      "name": "Neighborhood plan is local, byte-limited and never walks the full volume",
+      "passed": true,
+      "durationMs": 45
+    },
+    {
+      "name": "Whole-organ focus warms current cards without selecting an arbitrary cap",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Background errors back off, explicit retry works, and observers cannot strand loads",
+      "passed": true,
+      "durationMs": 4
+    },
+    {
+      "name": "Pause and consumer cancellation also work during initial metadata loading",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Empty source records retain exact registration without a network fetch",
+      "passed": true,
+      "durationMs": 2
+    },
+    {
+      "name": "Encoded memory and persistent caches evict by byte budget",
+      "passed": true,
+      "durationMs": 23
+    },
+    {
+      "name": "Persistent-cache denial falls back to bounded memory without failing images",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Actual fetch backend streams exact bytes, reuses encoded cache and rejects truncation",
+      "passed": true,
+      "durationMs": 8
+    },
+    {
+      "name": "Decoder preserves every grayscale sample and releases bitmap resources",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Unavailable Worker falls back to the same exact-image backend",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Actual module worker returns transferred pixels and forwards progress",
+      "passed": true,
+      "durationMs": 5
+    }
+  ]
+}

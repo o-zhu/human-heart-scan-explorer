@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-07T16:36:12.666Z",
+  "testFile": "tests/local-refinement-v30.mjs",
+  "scope": "Actual asset hashes/layout and instrumented WebGL lifecycle; no browser speed or anatomical validation claim.",
+  "runtimeFixture": {
+    "enabled": false,
+    "changes": [],
+    "originalModuleSha256": "665a281bd7ca18255ff8b6f4b7b5c20062424029142738afd0d4e03a75fbeacd",
+    "testedModuleSha256": "665a281bd7ca18255ff8b6f4b7b5c20062424029142738afd0d4e03a75fbeacd",
+    "scope": "Actual active routing module."
+  },
+  "cases": [
+    {
+      "name": "real available patch meshes and masks match their exact encoded/decoded hashes and source provenance",
+      "passed": true,
+      "milliseconds": 896.7913070000001
+    },
+    {
+      "name": "manifest validation rejects wrong sources, unsafe paths, overlapping regions and memory overruns",
+      "passed": true,
+      "milliseconds": 1.9367500000000746
+    },
+    {
+      "name": "multipart manifests reject missing, reordered, oversized and unsafe parts before any payload download",
+      "passed": true,
+      "milliseconds": 5.341785999999956
+    },
+    {
+      "name": "multipart opaque chunks retain identical GPU bytes with sequential fetching and atomic activation",
+      "passed": true,
+      "milliseconds": 36.02375399999994
+    },
+    {
+      "name": "multipart corrupt, missing, wrong-length and reordered payloads roll back staged geometry without fallback",
+      "passed": true,
+      "milliseconds": 34.87156300000004
+    },
+    {
+      "name": "multipart cancellation stops later requests, releases staged GPU resources and supports a clean retry",
+      "passed": true,
+      "milliseconds": 17.244660000000067
+    },
+    {
+      "name": "decoder rejects corrupt layout, coordinates, normals and indices, and respects byte offsets",
+      "passed": true,
+      "milliseconds": 7.58184099999994
+    },
+    {
+      "name": "geometry and packed masks remain inactive until every patch is verified and uploaded together",
+      "passed": true,
+      "milliseconds": 11.922573000000057
+    },
+    {
+      "name": "all four canonical regions activate together and the fourth-slot failure preserves the original display",
+      "passed": true,
+      "milliseconds": 37.0214840000001
+    },
+    {
+      "name": "checksum, stream-size, padding and GPU failures release staged resources and preserve the old surface",
+      "passed": true,
+      "milliseconds": 40.50690000000009
+    },
+    {
+      "name": "cancelled staged work is disposed; a newer successful load ignores stale non-abort failures",
+      "passed": true,
+      "milliseconds": 18.388897999999926
+    },
+    {
+      "name": "active replacement requires the verified Gentle mesh, matching extent, lumen cleanup and active workspace",
+      "passed": true,
+      "milliseconds": 14.602169000000004
+    },
+    {
+      "name": "compact transport activates cleanup only through decoder-verified geometry identity",
+      "passed": true,
+      "milliseconds": 9.152740999999878
+    },
+    {
+      "name": "nearest CPU picking agrees with actual packed mask samples, byte boundaries and outside-box points",
+      "passed": true,
+      "milliseconds": 11.592246999999816
+    },
+    {
+      "name": "actual fine/native draw hooks preserve native priority and never apply the low-band discard to their own replacement",
+      "passed": true,
+      "milliseconds": 11.126436999999896
+    },
+    {
+      "name": "a synchronous fetch failure is retryable and disposal cancels unresolved preparation",
+      "passed": true,
+      "milliseconds": 18.241562000000158
+    }
+  ],
+  "assets": [
+    {
+      "id": "lvot-perivalvular-refinement",
+      "surfaceSha256": "777673f21f9330df3a31cdce23cecb9e317754a5b00e568ed91a7400f65ec4b8",
+      "decodedSurfaceSha256": "cc3b0deac93471f5dbec992672c6686e9efe1ca2a2fd38e2b764dac22c33ef17",
+      "surfaceParts": 3,
+      "triangles": 963173,
+      "maskSha256": "34fd7720d719f58c7e98ef7e7349945748e7159ff0b3663719eb1a0055400b4c",
+      "decodedMaskSha256": "e825a608b3875ec220b46e5fe7b774dc81f79ca7eec386415470a685a4c590f4",
+      "maskedVoxels": 3563663,
+      "decodedBytes": 22871204
+    },
+    {
+      "id": "pulmonary-regularized-v30",
+      "surfaceSha256": "b68a7c12e3d57b00bf80991f7d7c3c8fc0c082452ccfb84dd661b2b688d63561",
+      "decodedSurfaceSha256": "0ae81892eb07de0899e1a251b89d2f96b8a0049c391df79de45144edf5a090b6",
+      "surfaceParts": 3,
+      "triangles": 846757,
+      "maskSha256": "29b4a2868ba16169c43587abd16e772fbf6c6e1b4d3fc2782acf07cf885ab044",
+      "decodedMaskSha256": "7edfac07f8d54c3527d19cbe2dae3dc0f2e1fe6a5d64e57f29286e7ae16ae916",
+      "maskedVoxels": 2116579,
+      "decodedBytes": 21439972
+    },
+    {
+      "id": "tricuspid-rv-regularized-v30",
+      "surfaceSha256": "de06e1adf4c7c0c4f63f69f2cceb17e22552d9ca3a2fd1c5325b464d55975d37",
+      "decodedSurfaceSha256": "784b47b42a17ffbde1dfdab5f34667e9aa0f939e616aa1ec64db55b92d639675",
+      "surfaceParts": 1,
+      "triangles": 714790,
+      "maskSha256": "129d593f689916d5a3bb25863a1a256944cbadb63d0cd32b564fa1793e9569ba",
+      "decodedMaskSha256": "3e310a19dc454d33687ad9dc17f7efe7e7fa5dab0e2ce2ad3b288cbaf541373b",
+      "maskedVoxels": 1564894,
+      "decodedBytes": 19978664
+    },
+    {
+      "id": "right-perivascular-v29",
+      "surfaceSha256": "56c3c033dd7f537cca2255c45a2c25103060bdaa45b77d8b60e3a40e5351f19f",
+      "decodedSurfaceSha256": "594dba5bdbbc38893d1aa8aae206dac2058b9a907d03f816b0627c774759d156",
+      "surfaceParts": 1,
+      "triangles": 682317,
+      "maskSha256": "deb57646b7f69dbfff57e983e4c5d5b3ddd5b0e589932f69684e0f905f9a4399",
+      "decodedMaskSha256": "22f4db4a9d0fcf7dadc9f9019190adbad465a1cf89de980fa5a3aa6e7468cb00",
+      "maskedVoxels": 831493,
+      "decodedBytes": 15067044
+    }
+  ],
+  "assetScope": "canonical four-patch public v30 manifest",
+  "manifest": {
+    "path": "public/assets/cleanup-v30/surface-manifest.json",
+    "sha256": "f12cc01dc5151df447c8c4456b5309ace7be642906923a395100eaefa03ea43d"
+  },
+  "budget": {
+    "regions": 4,
+    "compressedBytes": 35389896,
+    "decodedBytes": 79356884,
+    "maskDecodedBytes": 22603760,
+    "maximumDecodedBytes": 134217728,
+    "maximumMaskDecodedBytes": 25165824
+  },
+  "geometryCompatibility": {
+    "legacyDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+    "verifiedCompactGeometryIdentityAccepted": true,
+    "manifestOnlyIdentityRejected": true,
+    "mismatchingVerifiedIdentityRejected": true
+  },
+  "passed": true,
+  "memory": {
+    "rss": 136232960,
+    "heapTotal": 20762624,
+    "heapUsed": 12451752,
+    "external": 10995214,
+    "arrayBuffers": 6657583
+  },
+  "runtimeHashes": {
+    "public/local-surface-refinement.js": "665a281bd7ca18255ff8b6f4b7b5c20062424029142738afd0d4e03a75fbeacd",
+    "public/fine-surface.js": "34b48d0f78b62537844ba2e23855aa2eddc7926a7c077efb441a6bc738f33a24",
+    "public/renderer.js": "9366d5fad733eb5593ebfbb4d5292bf67e43b57b9d1ee3fca25dee8b025b7be3",
+    "public/volume-picking.js": "b0caddac0a522295568aeb7da7ddd7489e61d9a3c3e103d357c09d1823dc885a",
+    "public/compact-surface-codec.js": "5a9473d532dcce0ed4d21106c8be279e926cee9f6042b13745bb33dd0e6e64ec",
+    "public/fine-surface-worker.js": "86895089c4dd7834d93ee686205ca0650fa43955bb5bfc6ddcf82b3617da3a24"
+  }
+}

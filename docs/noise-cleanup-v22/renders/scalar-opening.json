@@ -1,0 +1,43 @@
+{
+  "method": "opening",
+  "nativeTile": null,
+  "input": {
+    "sourceRecord": "{source-cache}/guided-native-v21/denoise/surface-render/source-record.json",
+    "sourceOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "fieldHash": "d74114718020ff5241aec4b857fa9e0d8a1da4629e14757feb1cae966d9add52",
+    "threshold": 17133.400390625,
+    "encodedMesh": {
+      "format": "NBE1",
+      "sha256": "4d69f1a5f6cd8841ac2ee794e10d81f4402d839b7e8b057f78bd50c043b2a0d6",
+      "decodedSha256": "e6a628076237c9e4227236cbdb845d4fdd4af53ec087557fcc69cb51011ddf05",
+      "bytes": 97115,
+      "decodedBytes": 217544,
+      "crossingRule": "Original fractions retained on unchanged edges; midpoint quantization bins on newly created binary-opening edges",
+      "unchangedOriginalCrossings": 92441,
+      "newMidpointCrossings": 3582,
+      "binaryMaskSha256": "5e2e831250d5bc1d18fddd051978cb9e8750a179b6b38fb99f9022d2648fbdc3",
+      "sourceFieldSha256": "d74114718020ff5241aec4b857fa9e0d8a1da4629e14757feb1cae966d9add52"
+    }
+  },
+  "unfilteredTriangles": 187979,
+  "renderedTriangles": 187979,
+  "originalVertexBufferSha256": "74f55c8b47b14748e662a4d12423d680f0eb78e7a35c1a50a04adde74f549852",
+  "retainedFaceMaskSha256": "fc82f05dea0bcddd912028dd5a1970531f17d6058ec1e7f29e669c553097c1d6",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": null,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": -0.004672897196261682,
+  "cropSpanMm": 2.12395,
+  "geometryModification": "input scalar geometry",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/scalar-opening.png",
+    "sha256": "047b84802a65f4aa38d502bdb6d1f93ded1f55b3e27b6c2ce1be96f8fd4e58b1"
+  },
+  "seconds": 0.5271398719924036,
+  "peakRssMiB": 219.76171875
+}

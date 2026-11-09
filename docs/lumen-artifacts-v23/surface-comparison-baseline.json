@@ -1,0 +1,199 @@
+{
+  "status": "prepared; final gentle images awaited",
+  "legacyReportSha256": "2c2238d0c62846edaf0f98adcafaa34f3b70276ac303d4dcef78cfbbb423ac8c",
+  "shaderAudit": {
+    "legacyRendererModuleRecoveredExactly": true,
+    "fineOriginalViewDeclarationsMatchV19ExceptDisabledCleanupBranch": true,
+    "review": "Subsequent CPU-picker retention and surface-controller/transport changes do not alter the image shaders."
+  },
+  "exportedGlslSha256": {
+    "volume": "d03ed5650c1076197dfe8a0fed4e45ab9410a90add7f17a5b7bc89e4187f4ab8",
+    "fine": "d8c54a07989826c3a8bf22f6370bd65966e138d527dd3acbd199238e72ac462b"
+  },
+  "renderParameters": {
+    "outputPixels": [
+      720,
+      840
+    ],
+    "fov": 0.32,
+    "palette": 4,
+    "surfaceSmoothing": 1,
+    "threshold": 0.28,
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.344,
+      "windowHigh": 0.787,
+      "windowGamma": 1,
+      "capContrast": 1,
+      "cutFaceExposure": 3
+    }
+  },
+  "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+  "images": [
+    {
+      "case": "atrial",
+      "path": "docs/lumen-artifacts-v23/atrial-detail-review.png",
+      "sha256": "b63cc728c9f2bb525cdf4d1c70836de7894afbbefe8932cfe08951279fee54d5",
+      "size": [
+        720,
+        840
+      ],
+      "world": {
+        "center": [
+          0.0,
+          0.0,
+          -0.11153119092627599
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.11038612687567079,
+          -0.1602636230607454,
+          -0.8888057919950341
+        ],
+        "_target": [
+          0.04820415879017013,
+          -0.14083175803402645,
+          -0.11153119092627599
+        ]
+      },
+      "plane": {
+        "id": "atrial",
+        "axis": 1,
+        "coordinate": 1184,
+        "target": [
+          1050,
+          1184,
+          760
+        ],
+        "distance": 0.78,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ],
+        "roi": [
+          [
+            1120,
+            1040,
+            680
+          ],
+          [
+            1340,
+            1260,
+            1050
+          ]
+        ]
+      },
+      "sourceCapSha256": "6f4359e7bce0ff885edd2c5136538121cf66a2921edc8862d98bc42811862c5d"
+    },
+    {
+      "case": "outflow",
+      "path": "docs/lumen-artifacts-v23/outflow-detail-review.png",
+      "sha256": "8554aec020476ffb0edf52cb4a810e2d8d830d63226c05976fceacdc22157bf2",
+      "size": [
+        720,
+        840
+      ],
+      "world": {
+        "center": [
+          0.015122873345935726,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          -0.6724661968302733,
+          -0.27144303488294963,
+          -0.14101846776910618
+        ],
+        "_target": [
+          0.015122873345935726,
+          -0.2542533081285444,
+          -0.08601134215500944
+        ]
+      },
+      "plane": {
+        "id": "outflow",
+        "axis": 0,
+        "coordinate": 980,
+        "target": [
+          980,
+          1130,
+          520
+        ],
+        "distance": 0.69,
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ],
+        "roi": [
+          [
+            940,
+            990,
+            260
+          ],
+          [
+            1100,
+            1110,
+            370
+          ]
+        ]
+      },
+      "sourceCapSha256": "770b1596b742912b3fa550fc8b5b4eb1075d90ff2ad9a2d8375e100371589dce"
+    }
+  ],
+  "caption": "Nearby reproducible screenshot-plane camera; no anatomical ground-truth claim. Both original views have candidate exclusion OFF."
+}

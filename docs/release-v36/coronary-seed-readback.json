@@ -1,0 +1,142 @@
+{
+  "verified": true,
+  "indexSha256": "82fbb5b049daf73ae9a81a81b149821bc8b898a8602027f03336511adcbda359",
+  "objects": 25,
+  "bytes": 36205958,
+  "releasePolicy": "coronary-v36:seed",
+  "finalPublicReadback": false,
+  "GETChecksums": "25/25 matched",
+  "checks": [
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-000.gz",
+      "bytes": 223850,
+      "sha256": "b8d923eb121618e4c5ff7b38b596fe549dba0f1ab6b13621d5f5069a5e8ae6a5"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-001.gz",
+      "bytes": 1290449,
+      "sha256": "432b9c8597d93a461d4df2dc87fc9b8613dfdf207d644c9f733fe09e24139c90"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-002.gz",
+      "bytes": 2021745,
+      "sha256": "c365b6dc955902733d10e54a69a70fb7981462149c536f094fec09125abe920e"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-003.gz",
+      "bytes": 2495874,
+      "sha256": "803ab47cd9b8d0ec3d57922120219ecc23146118541470ffee527a58edc92b11"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-004.gz",
+      "bytes": 2591288,
+      "sha256": "e4712a00cd1866da33d3b2584e2c5576038769c544e0afdc62a5a6cf995759db"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-005.gz",
+      "bytes": 2271575,
+      "sha256": "0f469346068886fb02140191d21d4c379f05c38e5bc289e1ce7a17bdf772ff29"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-006.gz",
+      "bytes": 1390185,
+      "sha256": "559f8c19e8fb08ec94ff0494e3d528216b6d2e4bcf10feccb926d1a12f5ee4c8"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-007.gz",
+      "bytes": 475282,
+      "sha256": "082b29a840217376bf61674707e3a59b64a3eaf40b305bbc7b098cf4cb161a99"
+    },
+    {
+      "path": "/api/coronary-v36/ladaf-2021-17-derived.raw.part-008.gz",
+      "bytes": 5090,
+      "sha256": "17ab1c5df69d89c4218ddabde7254cfc32b63c4708025a4c09bd6de64d2dab5f"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-000.gz",
+      "bytes": 815548,
+      "sha256": "808ba5ef02f4fb4b87f1e7549105fe80e9bd1e943af7ae32ae5d58f0ce0a2b69"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-001.gz",
+      "bytes": 1753621,
+      "sha256": "27620c0aa3c2992d75fc0e567c061a2ec418a06b46a875e24dbd6f2aba41ab15"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-002.gz",
+      "bytes": 2291286,
+      "sha256": "c89729fe571d8424c6e4e2496192a024149c9850a1ef31cc516bd444a3a5c531"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-003.gz",
+      "bytes": 2295384,
+      "sha256": "d8f2e0a3e27ee3779148184993dd9d53cd7e44d01fda56cb440ffb4b2e23c79c"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-004.gz",
+      "bytes": 2207757,
+      "sha256": "dbef59a42b5c9118a89eddd1b6be1279d7d21fb96c1137e14cd70c25a5cdb606"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-005.gz",
+      "bytes": 1958046,
+      "sha256": "aed6f0af96e7a1ef407654d85e2c484d4e6ba41bc046467cd1530c6e526321e3"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-006.gz",
+      "bytes": 1419447,
+      "sha256": "5d020d0ea758a06da7b8126b8bd2e3202fc63a2b7bffaee1555a66e1306b97c0"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-28-derived.raw.part-007.gz",
+      "bytes": 335830,
+      "sha256": "17463c94d993cdac19bd13851c120a287516aa591fcaa490a56d4835ffffe6fb"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-000.gz",
+      "bytes": 471267,
+      "sha256": "9f30a72ad12a07b913b1110bb72d138a7363607a4ff4f28ed7fee785e81b2cea"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-001.gz",
+      "bytes": 1897596,
+      "sha256": "343a0b9b02f4135ae4baa555c0093ce851f80466f0cd6c8b07d50eab51f802bb"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-002.gz",
+      "bytes": 2153627,
+      "sha256": "a427ceff34ce38e4b90757bbc5d2c7b92d7014b9453c0ef33d3d35347f988fcb"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-003.gz",
+      "bytes": 1941472,
+      "sha256": "a28122b623efd24d1129485ccdb801250de41b9f08f76ef46d876ca2ca26de7b"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-004.gz",
+      "bytes": 1646176,
+      "sha256": "d282b9d9728aeab3cd8e7ebcfcfeea667a019e3fe98ae8202b73cd71015fd706"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-005.gz",
+      "bytes": 1371837,
+      "sha256": "122898b03587f4ff25bc7a18d0c87e5178415fac2aa9e3213cf9b234c4bf412d"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-006.gz",
+      "bytes": 832138,
+      "sha256": "1420c2f4a605520690ab12da12e0f7f574e59b1a826536edcf9a368208a52e51"
+    },
+    {
+      "path": "/api/coronary-v36/s-20-29-derived.raw.part-007.gz",
+      "bytes": 49588,
+      "sha256": "bc2975428ab58da6b56c587f472d2abd8223f80e193c7f1825cb12c54cea4708"
+    }
+  ],
+  "activeStaticFilesChecked": [],
+  "uploadsEnabled": true,
+  "multipartParentCount": 0,
+  "writeRejections": [],
+  "seconds": 48.421568562000175,
+  "sourceBanksChanged": false
+}

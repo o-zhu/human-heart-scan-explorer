@@ -1,0 +1,90 @@
+{
+  "schema": "fine-detail-v23-slab-diagnostic",
+  "z0": 1536,
+  "z1": 1600,
+  "fingerprint": "0a2f6b67f6a81cc497f7e3e5a1cb53a7a1715b1615f64759b6c982b05cdbfd9e",
+  "originalAssertion": "(1536, 'boundary count changed')",
+  "scientificExtractionCodeChanged": false,
+  "checkpointRecovered": false,
+  "diagnosisScriptSha256": "c9bbd46e6a13dc50fe9b822fd15b2ed9461250fdfb6e7b5a315023fa8178d499",
+  "originalPrepareSha256": "9f43548dad027f14eb993971bff4e44e8af37f60a60b3a7812de12097ed09fd3",
+  "inputBoundarySha256": "b8d33779f006d1ca9bbbf4f733ab4e8f0a516baf204d5ee62c22ed78994efada",
+  "outputSha256": "501fb44e9e73b649426a7dfc09658ede340801baeb291769c110c62fbc857687",
+  "inputZeroAreaFaces": 0,
+  "outputZeroAreaFaces": 2,
+  "planes": [
+    {
+      "plane": "lower",
+      "planeMm": 42.63779830932617,
+      "originalFrozenVertices": 45941,
+      "outputPlaneVertices": 45941,
+      "missingOriginalFrozenVertices": 0,
+      "addedPlaneVertices": 0,
+      "originalOpenEdges": 45940,
+      "outputOpenEdges": 45940,
+      "missingOpenEdges": 0,
+      "addedOpenEdges": 0,
+      "everyAddedVertexCanBeAssignedToClosedGeometry": true,
+      "addedCoordinates": []
+    },
+    {
+      "plane": "upper",
+      "planeMm": 47.719398498535156,
+      "originalFrozenVertices": 39431,
+      "outputPlaneVertices": 39432,
+      "missingOriginalFrozenVertices": 0,
+      "addedPlaneVertices": 1,
+      "originalOpenEdges": 39426,
+      "outputOpenEdges": 39426,
+      "missingOpenEdges": 0,
+      "addedOpenEdges": 0,
+      "everyAddedVertexCanBeAssignedToClosedGeometry": true,
+      "addedCoordinates": [
+        {
+          "xyzMm": [
+            4.288294315338135,
+            -10.720017433166504,
+            47.719398498535156
+          ],
+          "multiplicity": 1
+        }
+      ]
+    }
+  ],
+  "originalRun": {
+    "source": {
+      "sourceManifest": "public/assets/ultra-volume-v7.json",
+      "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "verifiedUniqueBricks": 453,
+      "decodedBrickReads": 453,
+      "cacheMaximumBricks": 32,
+      "cacheMaximumBytes": 8788000,
+      "sourceSpacingUm": 79.4,
+      "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+      "sourceUnchanged": true,
+      "originalQuantitativeIntensities": false
+    },
+    "reduction": {
+      "inputVertices": 3917247,
+      "inputTriangles": 7696278,
+      "vertices": 352692,
+      "triangles": 567168,
+      "conservativeRadiusLimitMm": 0.6352,
+      "maximumConservativeRadiusMm": 0.635198,
+      "radiusRejections": 493319,
+      "linkRejections": 1782238,
+      "frozenBoundaryVertices": true,
+      "interiorEdgeLinkConstraint": true,
+      "seconds": 39.8543,
+      "peakRssMiB": 2095.12
+    },
+    "referenceVertices": 3917253,
+    "referenceTriangles": 7696378,
+    "removedZeroAreaTriangles": 100,
+    "vertices": 352692,
+    "triangles": 567168,
+    "lowBoundaryVertices": 45941,
+    "highBoundaryVertices": 39431,
+    "seconds": 48.11613383099029
+  }
+}

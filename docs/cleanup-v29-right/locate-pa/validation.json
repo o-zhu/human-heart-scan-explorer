@@ -1,0 +1,106 @@
+{
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 0,
+    "decodedBrickReads": 0,
+    "cacheMaximumBricks": 16,
+    "cacheMaximumBytes": 4394000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  },
+  "capSources": [
+    {
+      "kind": "Verified original lossless Ultra section with exact crop placement",
+      "axis": 0,
+      "coordinate": 760,
+      "path": "x/0190.webp",
+      "sha256": "f53c00603cc83be1cf2638f8df8f577591390bbfd822d1bfbb01ff35a146ee70",
+      "sourceDisplaySha256": "219b322ed340ad4f4ce52c59c595eefb5f8357da7a7a79d62358a8ab5962b48f",
+      "crop": [
+        370,
+        218,
+        1093,
+        1817
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "case": {
+        "id": "pulmonary-x191",
+        "axis": 0,
+        "coordinate": 760,
+        "target": [
+          760,
+          1250,
+          845
+        ],
+        "distance": 0.45
+      },
+      "world": {
+        "center": [
+          -0.08884688090737237,
+          0.0,
+          -0.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "width": 0.8960302457466919,
+        "height": 1.0,
+        "_eye": [
+          0.3595807735553727,
+          -0.1118723170704533,
+          -0.178596329559288
+        ],
+        "_target": [
+          -0.08884688090737237,
+          -0.10066162570888466,
+          -0.1427221172022684
+        ],
+        "_whole": false
+      },
+      "imageSize": [
+        720,
+        840
+      ],
+      "validMeshPixels": 326968,
+      "fineXYZArray": "{source-cache}/cleanup-v29-right/locate-pa/pulmonary-x191-fine-xyz.npy"
+    }
+  ],
+  "reviewCulling": {
+    "method": "Conservative per-triangle view-frustum and retained-cut half-space rejection only.",
+    "sourceTriangles": 23618685,
+    "submittedTriangles": 1573004,
+    "removedOffscreenOrClippedTriangles": 22045681,
+    "sourceAttributesUnchanged": true,
+    "safetyMarginWorld": 1e-05,
+    "camera": {
+      "id": "pulmonary-x191",
+      "axis": 0,
+      "coordinate": 760,
+      "target": [
+        760,
+        1250,
+        845
+      ],
+      "distance": 0.45
+    }
+  },
+  "scope": "Current v28 source geometry, local surfaces and masks. Actual production color GLSL; diagnostic Float32 coordinates exclude visible cap pixels. Nearby reproducible camera, not exact screenshot registration."
+}

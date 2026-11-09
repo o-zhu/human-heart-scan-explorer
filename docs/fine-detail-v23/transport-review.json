@@ -1,0 +1,74 @@
+{
+  "schema": "heart-explorer-transport-review-v1",
+  "dateUtc": "2026-11-06",
+  "scope": [
+    "public/fine-surface-worker.js",
+    "public/fine-surface.js controller integration",
+    "server/fine-detail-store-v23.mjs and inherited comparison-display-store-v10.mjs",
+    "scripts/prepare-fine-hosting-v23.py",
+    "scripts/upload-fine-v23.py and inherited upload-native-v20.py transport"
+  ],
+  "concreteIssuesFixed": [
+    {
+      "issue": "Size-free legacy downloads used an unbounded arrayBuffer read, and absent decoded sizes allowed unbounded decompression before validation.",
+      "resolution": "Legacy packed-size omission now uses capped streaming with cancellation; every decode requires a valid expectedBytes before fetching. Existing v19 tests continue to decode their real files."
+    },
+    {
+      "issue": "Malformed part URLs or a worker postMessage failure could leave a newly constructed worker alive.",
+      "resolution": "Resolve and validate transport URLs before worker construction, then terminate any current worker in the request failure handler."
+    },
+    {
+      "issue": "A seed build with public R2 serving enabled would intercept the previous fine-surface URLs before those objects were populated.",
+      "resolution": "Staging rejects seed mode unless public serving is false, and rejects final mode unless public serving is true. Gate changes still require rebuilding the Site."
+    },
+    {
+      "issue": "Seed staging skipped integrity and existence checks on the v19 static build copies it intended to retain.",
+      "resolution": "Seed staging now requires both retained build files to exist and match their source-index byte counts and checksums."
+    }
+  ],
+  "transportLimits": {
+    "partBytes": 33554432,
+    "compressedBytes": 268435456,
+    "decodedBytes": 536870912,
+    "maxParts": 16,
+    "parallelPartTransfers": 1,
+    "note": "These are individual transport and decoded-buffer limits, not an aggregate browser memory budget."
+  },
+  "validation": [
+    {
+      "command": "node tests/fine-surface-controller-v19.mjs {source-cache}/heart-ui-test-v11/node_modules/linkedom/esm/index.js",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "command": "node tests/fine-surface-transport-v23.mjs",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "command": "node tests/fine-surface-v19.mjs",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "node tests/fine-detail-store-v23.mjs",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "python3 tests/fine-detail-staging-v23.py",
+      "result": "pass",
+      "coverage": "Matching, mismatched and unreadable gates; missing, altered and matching retained seed files"
+    }
+  ],
+  "releaseRequirements": [
+    "Seed: disable public serving, enable only the new collection upload gate, rebuild, and stage with --seed.",
+    "Upload and verify every indexed part through actual API GET checksums.",
+    "Final: close the new upload gate, enable public serving, populate data-gentle-download-mb from the final compressed byte count, enable data-gentle-ready only after verification, rebuild, and stage without --seed.",
+    "Run the uploader's read-only verification against public URLs and confirm PUT rejection after the final release."
+  ],
+  "limitations": [
+    "This review and its local fixtures do not constitute a live upload or live publication verification.",
+    "Final scientific mesh quality, actual device memory demand, and interactive rendering performance require separate evidence."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "method": "tv40",
+  "nativeTile": null,
+  "input": {
+    "sourceRecord": "{source-cache}/guided-native-v21/denoise/surface-render/source-record.json",
+    "sourceOriginXYZ": [
+      4490,
+      3978,
+      4618
+    ],
+    "fieldHash": "fb6db356fb152fad84bc8ea8ff6ea883e359684de01fe20139202d0a1147284f",
+    "threshold": 17133.400390625,
+    "encodedMesh": {
+      "format": "NBE1",
+      "bytes": 93986,
+      "decodedBytes": 215491,
+      "sha256": "9fdd3e22cc955f30ec46eb5299eaee2fd4c706f0775fe92816d21abda7e75ef8",
+      "decodedSha256": "346708c61e034f6784ab34bffebd4b679e3133d701d11dc305fb9e60a76e3f46",
+      "sampleShapeZYX": [
+        108,
+        108,
+        108
+      ],
+      "originXYZ": [
+        0,
+        0,
+        0
+      ],
+      "vertices": 92739,
+      "triangles": 181741,
+      "activeCells": 91176,
+      "edgeCountsXYZ": [
+        31523,
+        24196,
+        37020
+      ],
+      "crossingBits": 5,
+      "sourceSpacingUm": 19.85,
+      "samplingStepNative": 1,
+      "meshSampleSpacingUm": 19.85,
+      "maximumEncodingMovementUm": 0.31015625,
+      "rmsEncodingMovementUm": 0.1794263874320969,
+      "encodingMovementBoundUm": 0.31015625,
+      "connectivity": "Standard marching-cubes cases; original native integer grid edges"
+    }
+  },
+  "unfilteredTriangles": 181741,
+  "renderedTriangles": 181741,
+  "originalVertexBufferSha256": "a59088a22447b4df5fe61cc6c0b72d7f28f23f3cb11a5beb0ebcc9bb162962c4",
+  "retainedFaceMaskSha256": "680fb8c812c5efb5028c4f53e3c8249fddbb25cf478a2488a0a97c5ecbea0469",
+  "normalPolicy": "Original area-weighted face normals retained for component-subset variants; no smoothing.",
+  "maximumRetainedCoordinateMovementVoxels": null,
+  "camera": "Same renderer, center, span and open local-Z middle section within each source ROI",
+  "clipNormalizedZ": -0.004672897196261682,
+  "cropSpanMm": 2.12395,
+  "geometryModification": "input scalar geometry",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image": {
+    "path": "renders/scalar-tv40.png",
+    "sha256": "bed6718bf48b6ae255aff87c90892cdd67aaab8a939e73db84a1c40e4aea6093"
+  },
+  "seconds": 0.6232497049932135,
+  "peakRssMiB": 222.49609375
+}

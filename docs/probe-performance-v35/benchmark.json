@@ -1,0 +1,454 @@
+{
+  "baselineCommit": "c3c55fe3b1320ab02a5e8edec5b87fcfd5cf5de0",
+  "scope": "Production acoustic/cap computation on all three real donor datasets, plus native versus screen-sized real LADAF fine-source reformats. Timings exclude browser paint, GPU upload/draw and actual network latency. Input uses a 384 px maximum live output and no fine downloads; the quiet pose refines after 190 ms. No browser FPS claim.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "frames": [
+    {
+      "donor": "ladaf-2021-17",
+      "preparedPixelSha256": "10d7838bfc98926fe1bc360174faf3af647d1cb5fc5968f3d99e0a8acd9b17ef",
+      "oldNativeMotion": {
+        "medianMs": 82.11633700000016,
+        "samplesMs": [
+          104.29815999999994,
+          69.92421300000001,
+          82.11633700000016,
+          61.694729999999936
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          3281,
+          2948
+        ],
+        "capBytes": 9672388,
+        "returnedPixelBytes": 10712388,
+        "beams": 242,
+        "radialSamples": 806,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.39797392777331
+      },
+      "oldResidentPreview": {
+        "medianMs": 207.28313500000013,
+        "samplesMs": [
+          240.639952,
+          192.11785600000007,
+          190.86854700000004,
+          207.28313500000013
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1120,
+          1006
+        ],
+        "capBytes": 1126720,
+        "returnedPixelBytes": 2166720,
+        "beams": 242,
+        "radialSamples": 806,
+        "sourceSpacingUm": 317.6,
+        "capSpacingUm": 317.6
+      },
+      "liveResident": {
+        "medianMs": 50.35920000000033,
+        "samplesMs": [
+          54.60785600000008,
+          41.76448700000037,
+          50.35920000000033,
+          43.013104999999996
+        ],
+        "medianCapMs": 30.006250000000364,
+        "medianAcousticMs": 18.485631000000012,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          374
+        ],
+        "capBytes": 155584,
+        "returnedPixelBytes": 356928,
+        "beams": 117,
+        "radialSamples": 290,
+        "sourceSpacingUm": 317.6,
+        "capSpacingUm": 627.4393762768715
+      },
+      "liveCachedFine": {
+        "medianMs": 14.001760000000104,
+        "samplesMs": [
+          56.95936100000017,
+          14.001760000000104,
+          11.60518699999966,
+          11.209362000000056
+        ],
+        "medianCapMs": 2.3254460000002837,
+        "medianAcousticMs": 11.67631399999982,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          374
+        ],
+        "capBytes": 155584,
+        "returnedPixelBytes": 356928,
+        "beams": 117,
+        "radialSamples": 290,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 627.4393762768715
+      },
+      "settledFine": {
+        "medianMs": 67.81259799999998,
+        "samplesMs": [
+          128.0107680000001,
+          67.35872599999993,
+          67.81259799999998,
+          67.1597069999998
+        ],
+        "medianCapMs": 14.35666399999991,
+        "medianAcousticMs": 56.14975400000003,
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1216,
+          1093
+        ],
+        "capBytes": 1329088,
+        "returnedPixelBytes": 2369088,
+        "beams": 242,
+        "radialSamples": 725,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 214.3105688517709
+      },
+      "motionFineSourceRequests": 0,
+      "capTextureReduction": 62.16826923076923
+    },
+    {
+      "donor": "s-20-29",
+      "preparedPixelSha256": "f70c340967c23dd81a6f5c00b76ba86e3c4c27ce79038b6af56c9c309d92fdc9",
+      "oldNativeMotion": {
+        "medianMs": 56.604762999999366,
+        "samplesMs": [
+          116.21568100000013,
+          56.604762999999366,
+          52.647539000000506,
+          52.69102500000008
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          3004,
+          2804
+        ],
+        "capBytes": 8423216,
+        "returnedPixelBytes": 9463216,
+        "beams": 242,
+        "radialSamples": 909,
+        "sourceSpacingUm": 79.56,
+        "capSpacingUm": 79.55330413240935
+      },
+      "oldResidentPreview": {
+        "medianMs": 143.23218199999974,
+        "samplesMs": [
+          143.23218199999974,
+          141.13532900000064,
+          141.17065300000013,
+          145.32436599999983
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1120,
+          1045
+        ],
+        "capBytes": 1170400,
+        "returnedPixelBytes": 2210400,
+        "beams": 242,
+        "radialSamples": 909,
+        "sourceSpacingUm": 318.24,
+        "capSpacingUm": 318.24
+      },
+      "liveResident": {
+        "medianMs": 36.69627800000035,
+        "samplesMs": [
+          36.69627800000035,
+          39.49955199999931,
+          29.018294999999853,
+          34.420782000000145
+        ],
+        "medianCapMs": 19.52867900000001,
+        "medianAcousticMs": 16.70407299999988,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          388
+        ],
+        "capBytes": 161408,
+        "returnedPixelBytes": 362752,
+        "beams": 117,
+        "radialSamples": 328,
+        "sourceSpacingUm": 318.24,
+        "capSpacingUm": 576.1961537032131
+      },
+      "liveCachedFine": {
+        "medianMs": 11.521370999999817,
+        "samplesMs": [
+          11.682092000000011,
+          11.521370999999817,
+          10.970953000000009,
+          11.27426000000014
+        ],
+        "medianCapMs": 1.6610979999995834,
+        "medianAcousticMs": 10.005632999999762,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          388
+        ],
+        "capBytes": 161408,
+        "returnedPixelBytes": 362752,
+        "beams": 117,
+        "radialSamples": 328,
+        "sourceSpacingUm": 79.56,
+        "capSpacingUm": 576.196153703213
+      },
+      "settledFine": {
+        "medianMs": 71.46654599999965,
+        "samplesMs": [
+          95.03206899999986,
+          60.91120299999966,
+          67.09737799999948,
+          71.46654599999965
+        ],
+        "medianCapMs": 13.347521999999117,
+        "medianAcousticMs": 58.178468999999495,
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1216,
+          1135
+        ],
+        "capBytes": 1380160,
+        "returnedPixelBytes": 2420160,
+        "beams": 242,
+        "radialSamples": 818,
+        "sourceSpacingUm": 79.56,
+        "capSpacingUm": 196.63836991458857
+      },
+      "motionFineSourceRequests": 0,
+      "capTextureReduction": 52.18586439333862
+    },
+    {
+      "donor": "s-20-28",
+      "preparedPixelSha256": "70057bb46756079074765eb5b4876def0c7a94c1160d054f339d0a9b30a5191a",
+      "oldNativeMotion": {
+        "medianMs": 61.888160999999855,
+        "samplesMs": [
+          61.888160999999855,
+          56.77812899999935,
+          60.21261200000026,
+          82.52603700000054
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          2835,
+          2751
+        ],
+        "capBytes": 7799085,
+        "returnedPixelBytes": 8839085,
+        "beams": 242,
+        "radialSamples": 988,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 79.38755219516366
+      },
+      "oldResidentPreview": {
+        "medianMs": 196.84749999999985,
+        "samplesMs": [
+          186.92388699999992,
+          184.07561500000065,
+          205.17384399999992,
+          196.84749999999985
+        ],
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1120,
+          1087
+        ],
+        "capBytes": 1217440,
+        "returnedPixelBytes": 2257440,
+        "beams": 242,
+        "radialSamples": 988,
+        "sourceSpacingUm": 317.6,
+        "capSpacingUm": 317.6
+      },
+      "liveResident": {
+        "medianMs": 27.09080200000062,
+        "samplesMs": [
+          25.69712299999992,
+          26.535683999999492,
+          28.01234199999999,
+          27.09080200000062
+        ],
+        "medianCapMs": 15.453932999999779,
+        "medianAcousticMs": 11.867251000000579,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          404
+        ],
+        "capBytes": 168064,
+        "returnedPixelBytes": 369408,
+        "beams": 117,
+        "radialSamples": 356,
+        "sourceSpacingUm": 317.6,
+        "capSpacingUm": 542.0638161918616
+      },
+      "liveCachedFine": {
+        "medianMs": 11.663254000000052,
+        "samplesMs": [
+          11.663254000000052,
+          12.201642999999422,
+          11.654771999999866,
+          11.320768999999927
+        ],
+        "medianCapMs": 1.6998060000005353,
+        "medianAcousticMs": 10.001035000000229,
+        "width": 352,
+        "height": 286,
+        "cap": [
+          416,
+          404
+        ],
+        "capBytes": 168064,
+        "returnedPixelBytes": 369408,
+        "beams": 117,
+        "radialSamples": 356,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 542.0638161918616
+      },
+      "settledFine": {
+        "medianMs": 66.8352189999996,
+        "samplesMs": [
+          66.30756500000007,
+          66.63310499999989,
+          66.8352189999996,
+          69.38403000000017
+        ],
+        "medianCapMs": 13.487095999999838,
+        "medianAcousticMs": 53.71353199999976,
+        "width": 800,
+        "height": 650,
+        "cap": [
+          1216,
+          1180
+        ],
+        "capBytes": 1434880,
+        "returnedPixelBytes": 2474880,
+        "beams": 242,
+        "radialSamples": 889,
+        "sourceSpacingUm": 79.4,
+        "capSpacingUm": 185.17028713884656
+      },
+      "motionFineSourceRequests": 0,
+      "capTextureReduction": 46.4054467345773
+    }
+  ],
+  "sourceExtraction": {
+    "warmup": {
+      "elapsedMs": 1384.420420999999,
+      "localFileRequests": 756,
+      "localCompressedBytes": 131386093,
+      "decodedBytes": 207616500,
+      "decodedLimit": 402653184
+    },
+    "sourceSpacingUm": 79.4,
+    "screenSpacingUm": 214.3105688517709,
+    "capLongest": 1216,
+    "native": [
+      {
+        "elapsedMs": 88.33303899999919,
+        "width": 3281,
+        "height": 2948,
+        "capBytes": 9672388,
+        "capSpacingUm": 79.39797392777331,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      },
+      {
+        "elapsedMs": 100.64737700000114,
+        "width": 3281,
+        "height": 2948,
+        "capBytes": 9672388,
+        "capSpacingUm": 79.39797392777331,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      },
+      {
+        "elapsedMs": 88.9838520000012,
+        "width": 3281,
+        "height": 2948,
+        "capBytes": 9672388,
+        "capSpacingUm": 79.39797392777331,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      }
+    ],
+    "screen": [
+      {
+        "elapsedMs": 22.5172709999988,
+        "width": 1216,
+        "height": 1093,
+        "capBytes": 1329088,
+        "capSpacingUm": 214.3105688517709,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      },
+      {
+        "elapsedMs": 22.077940000001036,
+        "width": 1216,
+        "height": 1093,
+        "capBytes": 1329088,
+        "capSpacingUm": 214.3105688517709,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      },
+      {
+        "elapsedMs": 29.869704000000638,
+        "width": 1216,
+        "height": 1093,
+        "capBytes": 1329088,
+        "capSpacingUm": 214.3105688517709,
+        "sourceSpacingUm": 79.4,
+        "bricks": 741,
+        "additionalSourceReads": 0
+      }
+    ],
+    "nativeMedianMs": 88.9838520000012,
+    "screenMedianMs": 22.5172709999988
+  },
+  "assertions": [
+    "All prepared image pixels retain their manifest hashes",
+    "All resident display volumes retain their compressed and decoded hashes",
+    "Each computed cap, CT and ultrasound retains one accepted source pose",
+    "Native cached rasters remain unchanged; only the displayed texture is reduced",
+    "Source spacing and actual displayed cap spacing remain distinct",
+    "Live frames stay at or below 384 px output and 448 px cap",
+    "Quiet frames stay at or below 896 px output and 1280 px cap",
+    "Live input requests zero fine-source downloads",
+    "Warm source measurements read no additional local files and stay within the bounded cache",
+    "Timings are not Safari, GPU, network or browser FPS measurements"
+  ],
+  "passed": true
+}

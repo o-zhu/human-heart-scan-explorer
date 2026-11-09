@@ -1,0 +1,2308 @@
+{
+  "id": "arterial",
+  "label": "Arterial lumen fragments",
+  "url": "./assets/cleanup-v26/arterial.bits.gz",
+  "format": "gzip-bitset-x-zyx",
+  "bitOrder": "little",
+  "dimensionsXYZ": [
+    650,
+    381,
+    560
+  ],
+  "storageDimensionsXYZ": [
+    82,
+    381,
+    560
+  ],
+  "lowerFullFineXYZ": [
+    510,
+    900,
+    180
+  ],
+  "upperFullFineXYZ": [
+    1160,
+    1281,
+    740
+  ],
+  "nonzeroBoundsFullFineXYZ": [
+    [
+      590,
+      920,
+      181
+    ],
+    [
+      1159,
+      1277,
+      739
+    ]
+  ],
+  "compressedBytes": 222719,
+  "decodedBytes": 17495520,
+  "sha256": "ba7e69ed85f0d51585bf7ca433be85a0e0cf27f1a9d6a809bdadc5e4afbfab29",
+  "decodedSha256": "8ec1d5c2e550804f931665b940c5a0a94411f9c235a0f0c90c7433456a554fcd",
+  "logicalMaskSha256": "aac80a2cdf515a4175bc828f2911ef11fef48c7e60918cb8cbd2f7570e799961",
+  "maskedVoxels": 1013562,
+  "maskedVolumeMm3": 507.3548625874079,
+  "policy": {
+    "method": "Source-derived aortic and pulmonary lumen flood regions selected by reviewed serial seeds, above the valve apparatus; suppress supported interior fragments outside a ten-sample in-plane dense-wall guard. Reject leaky or absent lumen regions.",
+    "reviewedSeeds": {
+      "aortic": {
+        "940": [
+          880,
+          625
+        ],
+        "960": [
+          865,
+          590
+        ],
+        "1000": [
+          815,
+          560
+        ],
+        "1040": [
+          780,
+          520
+        ],
+        "1080": [
+          750,
+          510
+        ],
+        "1120": [
+          735,
+          460
+        ],
+        "1160": [
+          710,
+          445
+        ],
+        "1200": [
+          690,
+          420
+        ],
+        "1240": [
+          690,
+          420
+        ],
+        "1280": [
+          690,
+          430
+        ]
+      },
+      "pulmonary": {
+        "920": [
+          1060,
+          300
+        ],
+        "960": [
+          1055,
+          310
+        ],
+        "1000": [
+          1040,
+          330
+        ],
+        "1040": [
+          1030,
+          350
+        ],
+        "1080": [
+          1020,
+          390
+        ],
+        "1120": [
+          1020,
+          420
+        ],
+        "1160": [
+          1020,
+          460
+        ],
+        "1200": [
+          1010,
+          490
+        ],
+        "1240": [
+          1020,
+          550
+        ],
+        "1280": [
+          1050,
+          610
+        ]
+      }
+    },
+    "meshSupportMarginFineSamples": 9,
+    "denseGuardFineSamples": 10,
+    "addedSamples": 833842,
+    "serialChecks": [
+      {
+        "y": 900,
+        "cavityPixels": 0,
+        "selectedSamples": 0,
+        "guardOverlap": 0
+      },
+      {
+        "y": 920,
+        "cavityPixels": 23310,
+        "selectedSamples": 1022,
+        "guardOverlap": 0
+      },
+      {
+        "y": 940,
+        "cavityPixels": 65369,
+        "selectedSamples": 1485,
+        "guardOverlap": 0
+      },
+      {
+        "y": 960,
+        "cavityPixels": 78078,
+        "selectedSamples": 2104,
+        "guardOverlap": 0
+      },
+      {
+        "y": 980,
+        "cavityPixels": 91071,
+        "selectedSamples": 720,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1000,
+        "cavityPixels": 103720,
+        "selectedSamples": 1944,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1020,
+        "cavityPixels": 120456,
+        "selectedSamples": 4972,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1040,
+        "cavityPixels": 134480,
+        "selectedSamples": 7335,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1060,
+        "cavityPixels": 43543,
+        "selectedSamples": 5879,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1080,
+        "cavityPixels": 45565,
+        "selectedSamples": 4880,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1100,
+        "cavityPixels": 45287,
+        "selectedSamples": 162,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1120,
+        "cavityPixels": 44077,
+        "selectedSamples": 958,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1140,
+        "cavityPixels": 43974,
+        "selectedSamples": 1498,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1160,
+        "cavityPixels": 45080,
+        "selectedSamples": 2300,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1180,
+        "cavityPixels": 144806,
+        "selectedSamples": 4012,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1200,
+        "cavityPixels": 52525,
+        "selectedSamples": 1612,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1220,
+        "cavityPixels": 58018,
+        "selectedSamples": 1871,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1240,
+        "cavityPixels": 67528,
+        "selectedSamples": 4904,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1260,
+        "cavityPixels": 84314,
+        "selectedSamples": 1945,
+        "guardOverlap": 0
+      },
+      {
+        "y": 1280,
+        "cavityPixels": 0,
+        "selectedSamples": 0,
+        "guardOverlap": 0
+      }
+    ],
+    "rejectedPlaneSeeds": [
+      {
+        "y": 949,
+        "artery": "pulmonary",
+        "seed": [
+          1056.375,
+          307.25
+        ],
+        "componentPixels": 247021
+      },
+      {
+        "y": 950,
+        "artery": "pulmonary",
+        "seed": [
+          1056.25,
+          307.5
+        ],
+        "componentPixels": 245302
+      },
+      {
+        "y": 951,
+        "artery": "pulmonary",
+        "seed": [
+          1056.125,
+          307.75
+        ],
+        "componentPixels": 245379
+      },
+      {
+        "y": 952,
+        "artery": "pulmonary",
+        "seed": [
+          1056.0,
+          308.0
+        ],
+        "componentPixels": 245970
+      },
+      {
+        "y": 953,
+        "artery": "pulmonary",
+        "seed": [
+          1055.875,
+          308.25
+        ],
+        "componentPixels": 244764
+      },
+      {
+        "y": 954,
+        "artery": "pulmonary",
+        "seed": [
+          1055.75,
+          308.5
+        ],
+        "componentPixels": 243491
+      },
+      {
+        "y": 955,
+        "artery": "pulmonary",
+        "seed": [
+          1055.625,
+          308.75
+        ],
+        "componentPixels": 241468
+      },
+      {
+        "y": 956,
+        "artery": "pulmonary",
+        "seed": [
+          1055.5,
+          309.0
+        ],
+        "componentPixels": 239871
+      },
+      {
+        "y": 957,
+        "artery": "pulmonary",
+        "seed": [
+          1055.375,
+          309.25
+        ],
+        "componentPixels": 240001
+      },
+      {
+        "y": 958,
+        "artery": "pulmonary",
+        "seed": [
+          1055.25,
+          309.5
+        ],
+        "componentPixels": 241689
+      },
+      {
+        "y": 1057,
+        "artery": "aortic",
+        "seed": [
+          767.25,
+          515.75
+        ],
+        "componentPixels": 100286
+      },
+      {
+        "y": 1058,
+        "artery": "aortic",
+        "seed": [
+          766.5,
+          515.5
+        ],
+        "componentPixels": 100561
+      },
+      {
+        "y": 1059,
+        "artery": "aortic",
+        "seed": [
+          765.75,
+          515.25
+        ],
+        "componentPixels": 100821
+      },
+      {
+        "y": 1060,
+        "artery": "aortic",
+        "seed": [
+          765.0,
+          515.0
+        ],
+        "componentPixels": 101098
+      },
+      {
+        "y": 1061,
+        "artery": "aortic",
+        "seed": [
+          764.25,
+          514.75
+        ],
+        "componentPixels": 101346
+      },
+      {
+        "y": 1062,
+        "artery": "aortic",
+        "seed": [
+          763.5,
+          514.5
+        ],
+        "componentPixels": 101595
+      },
+      {
+        "y": 1063,
+        "artery": "aortic",
+        "seed": [
+          762.75,
+          514.25
+        ],
+        "componentPixels": 101849
+      },
+      {
+        "y": 1064,
+        "artery": "aortic",
+        "seed": [
+          762.0,
+          514.0
+        ],
+        "componentPixels": 102076
+      },
+      {
+        "y": 1065,
+        "artery": "aortic",
+        "seed": [
+          761.25,
+          513.75
+        ],
+        "componentPixels": 102330
+      },
+      {
+        "y": 1066,
+        "artery": "aortic",
+        "seed": [
+          760.5,
+          513.5
+        ],
+        "componentPixels": 102561
+      },
+      {
+        "y": 1067,
+        "artery": "aortic",
+        "seed": [
+          759.75,
+          513.25
+        ],
+        "componentPixels": 102796
+      },
+      {
+        "y": 1068,
+        "artery": "aortic",
+        "seed": [
+          759.0,
+          513.0
+        ],
+        "componentPixels": 103064
+      },
+      {
+        "y": 1069,
+        "artery": "aortic",
+        "seed": [
+          758.25,
+          512.75
+        ],
+        "componentPixels": 103278
+      },
+      {
+        "y": 1070,
+        "artery": "aortic",
+        "seed": [
+          757.5,
+          512.5
+        ],
+        "componentPixels": 103506
+      },
+      {
+        "y": 1071,
+        "artery": "aortic",
+        "seed": [
+          756.75,
+          512.25
+        ],
+        "componentPixels": 103713
+      },
+      {
+        "y": 1072,
+        "artery": "aortic",
+        "seed": [
+          756.0,
+          512.0
+        ],
+        "componentPixels": 103941
+      },
+      {
+        "y": 1073,
+        "artery": "aortic",
+        "seed": [
+          755.25,
+          511.75
+        ],
+        "componentPixels": 104144
+      },
+      {
+        "y": 1074,
+        "artery": "aortic",
+        "seed": [
+          754.5,
+          511.5
+        ],
+        "componentPixels": 104361
+      },
+      {
+        "y": 1075,
+        "artery": "aortic",
+        "seed": [
+          753.75,
+          511.25
+        ],
+        "componentPixels": 104543
+      },
+      {
+        "y": 1076,
+        "artery": "aortic",
+        "seed": [
+          753.0,
+          511.0
+        ],
+        "componentPixels": 104730
+      },
+      {
+        "y": 1077,
+        "artery": "aortic",
+        "seed": [
+          752.25,
+          510.75
+        ],
+        "componentPixels": 104921
+      },
+      {
+        "y": 1078,
+        "artery": "aortic",
+        "seed": [
+          751.5,
+          510.5
+        ],
+        "componentPixels": 105115
+      },
+      {
+        "y": 1079,
+        "artery": "aortic",
+        "seed": [
+          750.75,
+          510.25
+        ],
+        "componentPixels": 105294
+      },
+      {
+        "y": 1080,
+        "artery": "aortic",
+        "seed": [
+          750.0,
+          510.0
+        ],
+        "componentPixels": 105475
+      },
+      {
+        "y": 1081,
+        "artery": "aortic",
+        "seed": [
+          749.625,
+          508.75
+        ],
+        "componentPixels": 105681
+      },
+      {
+        "y": 1082,
+        "artery": "aortic",
+        "seed": [
+          749.25,
+          507.5
+        ],
+        "componentPixels": 105850
+      },
+      {
+        "y": 1083,
+        "artery": "aortic",
+        "seed": [
+          748.875,
+          506.25
+        ],
+        "componentPixels": 106033
+      },
+      {
+        "y": 1084,
+        "artery": "aortic",
+        "seed": [
+          748.5,
+          505.0
+        ],
+        "componentPixels": 106173
+      },
+      {
+        "y": 1085,
+        "artery": "aortic",
+        "seed": [
+          748.125,
+          503.75
+        ],
+        "componentPixels": 106356
+      },
+      {
+        "y": 1086,
+        "artery": "aortic",
+        "seed": [
+          747.75,
+          502.5
+        ],
+        "componentPixels": 106508
+      },
+      {
+        "y": 1087,
+        "artery": "aortic",
+        "seed": [
+          747.375,
+          501.25
+        ],
+        "componentPixels": 106666
+      },
+      {
+        "y": 1088,
+        "artery": "aortic",
+        "seed": [
+          747.0,
+          500.0
+        ],
+        "componentPixels": 106801
+      },
+      {
+        "y": 1089,
+        "artery": "aortic",
+        "seed": [
+          746.625,
+          498.75
+        ],
+        "componentPixels": 106931
+      },
+      {
+        "y": 1090,
+        "artery": "aortic",
+        "seed": [
+          746.25,
+          497.5
+        ],
+        "componentPixels": 107060
+      },
+      {
+        "y": 1091,
+        "artery": "aortic",
+        "seed": [
+          745.875,
+          496.25
+        ],
+        "componentPixels": 107189
+      },
+      {
+        "y": 1092,
+        "artery": "aortic",
+        "seed": [
+          745.5,
+          495.0
+        ],
+        "componentPixels": 107312
+      },
+      {
+        "y": 1093,
+        "artery": "aortic",
+        "seed": [
+          745.125,
+          493.75
+        ],
+        "componentPixels": 107421
+      },
+      {
+        "y": 1094,
+        "artery": "aortic",
+        "seed": [
+          744.75,
+          492.5
+        ],
+        "componentPixels": 107527
+      },
+      {
+        "y": 1095,
+        "artery": "aortic",
+        "seed": [
+          744.375,
+          491.25
+        ],
+        "componentPixels": 107658
+      },
+      {
+        "y": 1096,
+        "artery": "aortic",
+        "seed": [
+          744.0,
+          490.0
+        ],
+        "componentPixels": 107766
+      },
+      {
+        "y": 1097,
+        "artery": "aortic",
+        "seed": [
+          743.625,
+          488.75
+        ],
+        "componentPixels": 107872
+      },
+      {
+        "y": 1098,
+        "artery": "aortic",
+        "seed": [
+          743.25,
+          487.5
+        ],
+        "componentPixels": 107958
+      },
+      {
+        "y": 1099,
+        "artery": "aortic",
+        "seed": [
+          742.875,
+          486.25
+        ],
+        "componentPixels": 108050
+      },
+      {
+        "y": 1100,
+        "artery": "aortic",
+        "seed": [
+          742.5,
+          485.0
+        ],
+        "componentPixels": 108137
+      },
+      {
+        "y": 1101,
+        "artery": "aortic",
+        "seed": [
+          742.125,
+          483.75
+        ],
+        "componentPixels": 108239
+      },
+      {
+        "y": 1102,
+        "artery": "aortic",
+        "seed": [
+          741.75,
+          482.5
+        ],
+        "componentPixels": 108305
+      },
+      {
+        "y": 1103,
+        "artery": "aortic",
+        "seed": [
+          741.375,
+          481.25
+        ],
+        "componentPixels": 108388
+      },
+      {
+        "y": 1104,
+        "artery": "aortic",
+        "seed": [
+          741.0,
+          480.0
+        ],
+        "componentPixels": 108480
+      },
+      {
+        "y": 1105,
+        "artery": "aortic",
+        "seed": [
+          740.625,
+          478.75
+        ],
+        "componentPixels": 108566
+      },
+      {
+        "y": 1106,
+        "artery": "aortic",
+        "seed": [
+          740.25,
+          477.5
+        ],
+        "componentPixels": 108602
+      },
+      {
+        "y": 1107,
+        "artery": "aortic",
+        "seed": [
+          739.875,
+          476.25
+        ],
+        "componentPixels": 108677
+      },
+      {
+        "y": 1108,
+        "artery": "aortic",
+        "seed": [
+          739.5,
+          475.0
+        ],
+        "componentPixels": 108753
+      },
+      {
+        "y": 1109,
+        "artery": "aortic",
+        "seed": [
+          739.125,
+          473.75
+        ],
+        "componentPixels": 108797
+      },
+      {
+        "y": 1110,
+        "artery": "aortic",
+        "seed": [
+          738.75,
+          472.5
+        ],
+        "componentPixels": 108859
+      },
+      {
+        "y": 1111,
+        "artery": "aortic",
+        "seed": [
+          738.375,
+          471.25
+        ],
+        "componentPixels": 108902
+      },
+      {
+        "y": 1112,
+        "artery": "aortic",
+        "seed": [
+          738.0,
+          470.0
+        ],
+        "componentPixels": 108931
+      },
+      {
+        "y": 1113,
+        "artery": "aortic",
+        "seed": [
+          737.625,
+          468.75
+        ],
+        "componentPixels": 108951
+      },
+      {
+        "y": 1114,
+        "artery": "aortic",
+        "seed": [
+          737.25,
+          467.5
+        ],
+        "componentPixels": 108987
+      },
+      {
+        "y": 1115,
+        "artery": "aortic",
+        "seed": [
+          736.875,
+          466.25
+        ],
+        "componentPixels": 109018
+      },
+      {
+        "y": 1116,
+        "artery": "aortic",
+        "seed": [
+          736.5,
+          465.0
+        ],
+        "componentPixels": 109017
+      },
+      {
+        "y": 1117,
+        "artery": "aortic",
+        "seed": [
+          736.125,
+          463.75
+        ],
+        "componentPixels": 109034
+      },
+      {
+        "y": 1118,
+        "artery": "aortic",
+        "seed": [
+          735.75,
+          462.5
+        ],
+        "componentPixels": 109038
+      },
+      {
+        "y": 1119,
+        "artery": "aortic",
+        "seed": [
+          735.375,
+          461.25
+        ],
+        "componentPixels": 109031
+      },
+      {
+        "y": 1120,
+        "artery": "aortic",
+        "seed": [
+          735.0,
+          460.0
+        ],
+        "componentPixels": 109000
+      },
+      {
+        "y": 1121,
+        "artery": "aortic",
+        "seed": [
+          734.375,
+          459.625
+        ],
+        "componentPixels": 108983
+      },
+      {
+        "y": 1122,
+        "artery": "aortic",
+        "seed": [
+          733.75,
+          459.25
+        ],
+        "componentPixels": 108994
+      },
+      {
+        "y": 1123,
+        "artery": "aortic",
+        "seed": [
+          733.125,
+          458.875
+        ],
+        "componentPixels": 108956
+      },
+      {
+        "y": 1124,
+        "artery": "aortic",
+        "seed": [
+          732.5,
+          458.5
+        ],
+        "componentPixels": 108935
+      },
+      {
+        "y": 1125,
+        "artery": "aortic",
+        "seed": [
+          731.875,
+          458.125
+        ],
+        "componentPixels": 108904
+      },
+      {
+        "y": 1126,
+        "artery": "aortic",
+        "seed": [
+          731.25,
+          457.75
+        ],
+        "componentPixels": 108833
+      },
+      {
+        "y": 1127,
+        "artery": "aortic",
+        "seed": [
+          730.625,
+          457.375
+        ],
+        "componentPixels": 108746
+      },
+      {
+        "y": 1128,
+        "artery": "aortic",
+        "seed": [
+          730.0,
+          457.0
+        ],
+        "componentPixels": 108706
+      },
+      {
+        "y": 1129,
+        "artery": "aortic",
+        "seed": [
+          729.375,
+          456.625
+        ],
+        "componentPixels": 108635
+      },
+      {
+        "y": 1130,
+        "artery": "aortic",
+        "seed": [
+          728.75,
+          456.25
+        ],
+        "componentPixels": 108551
+      },
+      {
+        "y": 1131,
+        "artery": "aortic",
+        "seed": [
+          728.125,
+          455.875
+        ],
+        "componentPixels": 108466
+      },
+      {
+        "y": 1132,
+        "artery": "aortic",
+        "seed": [
+          727.5,
+          455.5
+        ],
+        "componentPixels": 108398
+      },
+      {
+        "y": 1133,
+        "artery": "aortic",
+        "seed": [
+          726.875,
+          455.125
+        ],
+        "componentPixels": 108311
+      },
+      {
+        "y": 1134,
+        "artery": "aortic",
+        "seed": [
+          726.25,
+          454.75
+        ],
+        "componentPixels": 108202
+      },
+      {
+        "y": 1135,
+        "artery": "aortic",
+        "seed": [
+          725.625,
+          454.375
+        ],
+        "componentPixels": 108107
+      },
+      {
+        "y": 1136,
+        "artery": "aortic",
+        "seed": [
+          725.0,
+          454.0
+        ],
+        "componentPixels": 107989
+      },
+      {
+        "y": 1137,
+        "artery": "aortic",
+        "seed": [
+          724.375,
+          453.625
+        ],
+        "componentPixels": 107901
+      },
+      {
+        "y": 1138,
+        "artery": "aortic",
+        "seed": [
+          723.75,
+          453.25
+        ],
+        "componentPixels": 107759
+      },
+      {
+        "y": 1139,
+        "artery": "aortic",
+        "seed": [
+          723.125,
+          452.875
+        ],
+        "componentPixels": 107645
+      },
+      {
+        "y": 1140,
+        "artery": "aortic",
+        "seed": [
+          722.5,
+          452.5
+        ],
+        "componentPixels": 107525
+      },
+      {
+        "y": 1141,
+        "artery": "aortic",
+        "seed": [
+          721.875,
+          452.125
+        ],
+        "componentPixels": 107385
+      },
+      {
+        "y": 1142,
+        "artery": "aortic",
+        "seed": [
+          721.25,
+          451.75
+        ],
+        "componentPixels": 107222
+      },
+      {
+        "y": 1143,
+        "artery": "aortic",
+        "seed": [
+          720.625,
+          451.375
+        ],
+        "componentPixels": 107083
+      },
+      {
+        "y": 1144,
+        "artery": "aortic",
+        "seed": [
+          720.0,
+          451.0
+        ],
+        "componentPixels": 106916
+      },
+      {
+        "y": 1145,
+        "artery": "aortic",
+        "seed": [
+          719.375,
+          450.625
+        ],
+        "componentPixels": 106751
+      },
+      {
+        "y": 1146,
+        "artery": "aortic",
+        "seed": [
+          718.75,
+          450.25
+        ],
+        "componentPixels": 106624
+      },
+      {
+        "y": 1147,
+        "artery": "aortic",
+        "seed": [
+          718.125,
+          449.875
+        ],
+        "componentPixels": 106469
+      },
+      {
+        "y": 1148,
+        "artery": "aortic",
+        "seed": [
+          717.5,
+          449.5
+        ],
+        "componentPixels": 106296
+      },
+      {
+        "y": 1149,
+        "artery": "aortic",
+        "seed": [
+          716.875,
+          449.125
+        ],
+        "componentPixels": 106091
+      },
+      {
+        "y": 1150,
+        "artery": "aortic",
+        "seed": [
+          716.25,
+          448.75
+        ],
+        "componentPixels": 105902
+      },
+      {
+        "y": 1151,
+        "artery": "aortic",
+        "seed": [
+          715.625,
+          448.375
+        ],
+        "componentPixels": 105696
+      },
+      {
+        "y": 1152,
+        "artery": "aortic",
+        "seed": [
+          715.0,
+          448.0
+        ],
+        "componentPixels": 105523
+      },
+      {
+        "y": 1153,
+        "artery": "aortic",
+        "seed": [
+          714.375,
+          447.625
+        ],
+        "componentPixels": 105289
+      },
+      {
+        "y": 1154,
+        "artery": "aortic",
+        "seed": [
+          713.75,
+          447.25
+        ],
+        "componentPixels": 105054
+      },
+      {
+        "y": 1155,
+        "artery": "aortic",
+        "seed": [
+          713.125,
+          446.875
+        ],
+        "componentPixels": 104805
+      },
+      {
+        "y": 1156,
+        "artery": "aortic",
+        "seed": [
+          712.5,
+          446.5
+        ],
+        "componentPixels": 104555
+      },
+      {
+        "y": 1157,
+        "artery": "aortic",
+        "seed": [
+          711.875,
+          446.125
+        ],
+        "componentPixels": 104342
+      },
+      {
+        "y": 1158,
+        "artery": "aortic",
+        "seed": [
+          711.25,
+          445.75
+        ],
+        "componentPixels": 104095
+      },
+      {
+        "y": 1159,
+        "artery": "aortic",
+        "seed": [
+          710.625,
+          445.375
+        ],
+        "componentPixels": 103837
+      },
+      {
+        "y": 1160,
+        "artery": "aortic",
+        "seed": [
+          710.0,
+          445.0
+        ],
+        "componentPixels": 103594
+      },
+      {
+        "y": 1161,
+        "artery": "aortic",
+        "seed": [
+          709.5,
+          444.375
+        ],
+        "componentPixels": 103329
+      },
+      {
+        "y": 1162,
+        "artery": "aortic",
+        "seed": [
+          709.0,
+          443.75
+        ],
+        "componentPixels": 103057
+      },
+      {
+        "y": 1163,
+        "artery": "aortic",
+        "seed": [
+          708.5,
+          443.125
+        ],
+        "componentPixels": 102794
+      },
+      {
+        "y": 1164,
+        "artery": "aortic",
+        "seed": [
+          708.0,
+          442.5
+        ],
+        "componentPixels": 102504
+      },
+      {
+        "y": 1165,
+        "artery": "aortic",
+        "seed": [
+          707.5,
+          441.875
+        ],
+        "componentPixels": 102222
+      },
+      {
+        "y": 1166,
+        "artery": "aortic",
+        "seed": [
+          707.0,
+          441.25
+        ],
+        "componentPixels": 101924
+      },
+      {
+        "y": 1167,
+        "artery": "aortic",
+        "seed": [
+          706.5,
+          440.625
+        ],
+        "componentPixels": 101639
+      },
+      {
+        "y": 1168,
+        "artery": "aortic",
+        "seed": [
+          706.0,
+          440.0
+        ],
+        "componentPixels": 101313
+      },
+      {
+        "y": 1169,
+        "artery": "aortic",
+        "seed": [
+          705.5,
+          439.375
+        ],
+        "componentPixels": 100998
+      },
+      {
+        "y": 1170,
+        "artery": "aortic",
+        "seed": [
+          705.0,
+          438.75
+        ],
+        "componentPixels": 100677
+      },
+      {
+        "y": 1171,
+        "artery": "aortic",
+        "seed": [
+          704.5,
+          438.125
+        ],
+        "componentPixels": 100345
+      },
+      {
+        "y": 1183,
+        "artery": "aortic",
+        "seed": [
+          698.5,
+          430.625
+        ],
+        "componentPixels": 231528
+      },
+      {
+        "y": 1184,
+        "artery": "aortic",
+        "seed": [
+          698.0,
+          430.0
+        ],
+        "componentPixels": 229759
+      },
+      {
+        "y": 1185,
+        "artery": "aortic",
+        "seed": [
+          697.5,
+          429.375
+        ],
+        "componentPixels": 231182
+      },
+      {
+        "y": 1186,
+        "artery": "aortic",
+        "seed": [
+          697.0,
+          428.75
+        ],
+        "componentPixels": 231201
+      },
+      {
+        "y": 1187,
+        "artery": "aortic",
+        "seed": [
+          696.5,
+          428.125
+        ],
+        "componentPixels": 230350
+      },
+      {
+        "y": 1188,
+        "artery": "aortic",
+        "seed": [
+          696.0,
+          427.5
+        ],
+        "componentPixels": 227738
+      },
+      {
+        "y": 1189,
+        "artery": "aortic",
+        "seed": [
+          695.5,
+          426.875
+        ],
+        "componentPixels": 227573
+      },
+      {
+        "y": 1190,
+        "artery": "aortic",
+        "seed": [
+          695.0,
+          426.25
+        ],
+        "componentPixels": 226567
+      },
+      {
+        "y": 1191,
+        "artery": "aortic",
+        "seed": [
+          694.5,
+          425.625
+        ],
+        "componentPixels": 225410
+      },
+      {
+        "y": 1192,
+        "artery": "aortic",
+        "seed": [
+          694.0,
+          425.0
+        ],
+        "componentPixels": 225876
+      },
+      {
+        "y": 1193,
+        "artery": "aortic",
+        "seed": [
+          693.5,
+          424.375
+        ],
+        "componentPixels": 225194
+      },
+      {
+        "y": 1194,
+        "artery": "aortic",
+        "seed": [
+          693.0,
+          423.75
+        ],
+        "componentPixels": 222399
+      },
+      {
+        "y": 1195,
+        "artery": "aortic",
+        "seed": [
+          692.5,
+          423.125
+        ],
+        "componentPixels": 223994
+      },
+      {
+        "y": 1196,
+        "artery": "aortic",
+        "seed": [
+          692.0,
+          422.5
+        ],
+        "componentPixels": 223382
+      },
+      {
+        "y": 1197,
+        "artery": "aortic",
+        "seed": [
+          691.5,
+          421.875
+        ],
+        "componentPixels": 222332
+      },
+      {
+        "y": 1198,
+        "artery": "aortic",
+        "seed": [
+          691.0,
+          421.25
+        ],
+        "componentPixels": 222129
+      },
+      {
+        "y": 1199,
+        "artery": "aortic",
+        "seed": [
+          690.5,
+          420.625
+        ],
+        "componentPixels": 220488
+      },
+      {
+        "y": 1200,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 221980
+      },
+      {
+        "y": 1201,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 222078
+      },
+      {
+        "y": 1202,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 223046
+      },
+      {
+        "y": 1203,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 221855
+      },
+      {
+        "y": 1204,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 221144
+      },
+      {
+        "y": 1205,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 219034
+      },
+      {
+        "y": 1206,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 219537
+      },
+      {
+        "y": 1207,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 218179
+      },
+      {
+        "y": 1208,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 217573
+      },
+      {
+        "y": 1209,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 218223
+      },
+      {
+        "y": 1210,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 216638
+      },
+      {
+        "y": 1211,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 216732
+      },
+      {
+        "y": 1212,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214554
+      },
+      {
+        "y": 1213,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214279
+      },
+      {
+        "y": 1214,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 216603
+      },
+      {
+        "y": 1215,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 215712
+      },
+      {
+        "y": 1216,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213846
+      },
+      {
+        "y": 1217,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213880
+      },
+      {
+        "y": 1218,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214764
+      },
+      {
+        "y": 1219,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 215241
+      },
+      {
+        "y": 1220,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 215131
+      },
+      {
+        "y": 1221,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213467
+      },
+      {
+        "y": 1222,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214773
+      },
+      {
+        "y": 1223,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214095
+      },
+      {
+        "y": 1224,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213951
+      },
+      {
+        "y": 1225,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213465
+      },
+      {
+        "y": 1226,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212632
+      },
+      {
+        "y": 1227,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212346
+      },
+      {
+        "y": 1228,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 211534
+      },
+      {
+        "y": 1229,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212637
+      },
+      {
+        "y": 1230,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 211853
+      },
+      {
+        "y": 1231,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 211635
+      },
+      {
+        "y": 1232,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212193
+      },
+      {
+        "y": 1233,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 211971
+      },
+      {
+        "y": 1234,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212188
+      },
+      {
+        "y": 1235,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212363
+      },
+      {
+        "y": 1236,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213163
+      },
+      {
+        "y": 1237,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 212195
+      },
+      {
+        "y": 1238,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214023
+      },
+      {
+        "y": 1239,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 213625
+      },
+      {
+        "y": 1240,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.0
+        ],
+        "componentPixels": 214288
+      },
+      {
+        "y": 1241,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.25
+        ],
+        "componentPixels": 213144
+      },
+      {
+        "y": 1242,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.5
+        ],
+        "componentPixels": 213333
+      },
+      {
+        "y": 1243,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          420.75
+        ],
+        "componentPixels": 214100
+      },
+      {
+        "y": 1244,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          421.0
+        ],
+        "componentPixels": 216172
+      },
+      {
+        "y": 1245,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          421.25
+        ],
+        "componentPixels": 214385
+      },
+      {
+        "y": 1246,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          421.5
+        ],
+        "componentPixels": 214195
+      },
+      {
+        "y": 1247,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          421.75
+        ],
+        "componentPixels": 215206
+      },
+      {
+        "y": 1248,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          422.0
+        ],
+        "componentPixels": 215655
+      },
+      {
+        "y": 1249,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          422.25
+        ],
+        "componentPixels": 214581
+      },
+      {
+        "y": 1250,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          422.5
+        ],
+        "componentPixels": 214143
+      },
+      {
+        "y": 1251,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          422.75
+        ],
+        "componentPixels": 215572
+      },
+      {
+        "y": 1252,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          423.0
+        ],
+        "componentPixels": 215315
+      },
+      {
+        "y": 1253,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          423.25
+        ],
+        "componentPixels": 215619
+      },
+      {
+        "y": 1254,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          423.5
+        ],
+        "componentPixels": 215827
+      },
+      {
+        "y": 1255,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          423.75
+        ],
+        "componentPixels": 215374
+      },
+      {
+        "y": 1256,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          424.0
+        ],
+        "componentPixels": 215372
+      },
+      {
+        "y": 1257,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          424.25
+        ],
+        "componentPixels": 214568
+      },
+      {
+        "y": 1258,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          424.5
+        ],
+        "componentPixels": 215124
+      },
+      {
+        "y": 1259,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          424.75
+        ],
+        "componentPixels": 214991
+      },
+      {
+        "y": 1260,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          425.0
+        ],
+        "componentPixels": 213338
+      },
+      {
+        "y": 1261,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          425.25
+        ],
+        "componentPixels": 214019
+      },
+      {
+        "y": 1262,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          425.5
+        ],
+        "componentPixels": 215643
+      },
+      {
+        "y": 1263,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          425.75
+        ],
+        "componentPixels": 216321
+      },
+      {
+        "y": 1264,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          426.0
+        ],
+        "componentPixels": 214280
+      },
+      {
+        "y": 1265,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          426.25
+        ],
+        "componentPixels": 215423
+      },
+      {
+        "y": 1266,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          426.5
+        ],
+        "componentPixels": 215406
+      },
+      {
+        "y": 1267,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          426.75
+        ],
+        "componentPixels": 214543
+      },
+      {
+        "y": 1268,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          427.0
+        ],
+        "componentPixels": 215076
+      },
+      {
+        "y": 1269,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          427.25
+        ],
+        "componentPixels": 216062
+      },
+      {
+        "y": 1270,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          427.5
+        ],
+        "componentPixels": 218119
+      },
+      {
+        "y": 1271,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          427.75
+        ],
+        "componentPixels": 217112
+      },
+      {
+        "y": 1272,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          428.0
+        ],
+        "componentPixels": 217172
+      },
+      {
+        "y": 1273,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          428.25
+        ],
+        "componentPixels": 217488
+      },
+      {
+        "y": 1274,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          428.5
+        ],
+        "componentPixels": 217331
+      },
+      {
+        "y": 1275,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          428.75
+        ],
+        "componentPixels": 218531
+      },
+      {
+        "y": 1276,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          429.0
+        ],
+        "componentPixels": 218350
+      },
+      {
+        "y": 1277,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          429.25
+        ],
+        "componentPixels": 219524
+      },
+      {
+        "y": 1277,
+        "artery": "pulmonary",
+        "seed": [
+          1047.75,
+          605.5
+        ],
+        "componentPixels": 0
+      },
+      {
+        "y": 1278,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          429.5
+        ],
+        "componentPixels": 218564
+      },
+      {
+        "y": 1278,
+        "artery": "pulmonary",
+        "seed": [
+          1048.5,
+          607.0
+        ],
+        "componentPixels": 0
+      },
+      {
+        "y": 1279,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          429.75
+        ],
+        "componentPixels": 220250
+      },
+      {
+        "y": 1279,
+        "artery": "pulmonary",
+        "seed": [
+          1049.25,
+          608.5
+        ],
+        "componentPixels": 0
+      },
+      {
+        "y": 1280,
+        "artery": "aortic",
+        "seed": [
+          690.0,
+          430.0
+        ],
+        "componentPixels": 219763
+      },
+      {
+        "y": 1280,
+        "artery": "pulmonary",
+        "seed": [
+          1050.0,
+          610.0
+        ],
+        "componentPixels": 0
+      }
+    ],
+    "inheritedV25MaskedSamples": 179720,
+    "distanceMetrics": "2D in-plane Euclidean margins around the 3D-filtered arterial source",
+    "newSelectionDenseGuardOverlap": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "Actual app state functions with a test DOM and deterministic loader/renderer mocks. No browser UI or frame-rate claim.",
+  "checks": [
+    "Preview then background refinement retain the visible viewer and Tissue / space.",
+    "An older original-scan request respects a newer Clean scan selection.",
+    "Changing scan resolution during original restoration keeps the newest resolution and cleanup intent.",
+    "A failed original load preserves the usable clean volume and reports the failure.",
+    "Flow entry is awaitable; returning restores reconstruction framing while preserving material and surface choices.",
+    "Echo initializes its first plane, preserves later orbit/zoom, and releases replaced or inactive MPR workers."
+  ]
+}

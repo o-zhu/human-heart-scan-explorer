@@ -1,0 +1,139 @@
+{
+  "UCL-ZCR-2337": {
+    "thresholdRaw": 24100,
+    "normalizedThreshold": 0.4123401053423627,
+    "encodingWindow": [
+      20264.0,
+      29567.0
+    ],
+    "displayRawWindow": [
+      23700,
+      27700
+    ],
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.3693432226163603,
+      "windowHigh": 0.7993120498763839,
+      "windowGamma": 0.9,
+      "capContrast": 1
+    },
+    "mainSampledTissueVoxels": 1931069,
+    "mainRawPercentiles1_5_25_50_75_95_99": [
+      24134.0,
+      24262.0,
+      24770.0,
+      25286.0,
+      25711.0,
+      26374.0,
+      27320.0
+    ],
+    "newPalettePositionPercentiles5_25_50_75_95": [
+      0.17508304260528104,
+      0.3097735865768086,
+      0.4380293446350681,
+      0.5358555236457696,
+      0.6918829611599786
+    ],
+    "sourceUpperClippedPercent": 0.05815431763442943,
+    "displayUpperClippedPercent": 0.5711862186177707,
+    "heartRegionHighGridBoxXYZ": [
+      [
+        280,
+        404
+      ],
+      [
+        134,
+        310
+      ],
+      [
+        180,
+        300
+      ]
+    ],
+    "heartRegionAboveThresholdSampleVoxels": 152875,
+    "heartRegionLargestComponentRetentionPercent": 99.91954210956663,
+    "heartRegionTissueRawPercentiles5_25_50_75_95": [
+      24598.0,
+      25457.0,
+      25700.0,
+      25869.0,
+      26092.0
+    ]
+  },
+  "UCL-ZCR-2627": {
+    "thresholdRaw": 10800,
+    "normalizedThreshold": 0.3239970824215901,
+    "encodingWindow": [
+      8579.0,
+      15434.0
+    ],
+    "displayRawWindow": [
+      10500,
+      15434
+    ],
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.2802334062727936,
+      "windowHigh": 1.0,
+      "windowGamma": 1.1,
+      "capContrast": 1
+    },
+    "mainSampledTissueVoxels": 3109527,
+    "mainRawPercentiles1_5_25_50_75_95_99": [
+      10955.0,
+      11535.0,
+      12532.0,
+      13211.0,
+      13858.0,
+      14407.0,
+      15534.0
+    ],
+    "newPalettePositionPercentiles5_25_50_75_95": [
+      0.1796403098268222,
+      0.3766107131194567,
+      0.5157865384661654,
+      0.6527344598250525,
+      0.7747777401847368
+    ],
+    "sourceUpperClippedPercent": 1.1914995431781104,
+    "displayUpperClippedPercent": 1.1914995431781104
+  },
+  "UCL-ZCR-2628": {
+    "thresholdRaw": 14100,
+    "normalizedThreshold": 0.38292840249408727,
+    "encodingWindow": [
+      12319.0,
+      16970.0
+    ],
+    "displayRawWindow": [
+      13700,
+      16970
+    ],
+    "displayWindow": {
+      "windowEnabled": true,
+      "windowLow": 0.2969253923887336,
+      "windowHigh": 1.0,
+      "windowGamma": 1.1,
+      "capContrast": 1
+    },
+    "mainSampledTissueVoxels": 2735726,
+    "mainRawPercentiles1_5_25_50_75_95_99": [
+      14167.0,
+      14430.0,
+      15158.0,
+      15572.0,
+      15931.0,
+      16495.0,
+      17075.0
+    ],
+    "newPalettePositionPercentiles5_25_50_75_95": [
+      0.19353093234552174,
+      0.4132342386660593,
+      0.5393775142197822,
+      0.6564640450781903,
+      0.8416874123398619
+    ],
+    "sourceUpperClippedPercent": 1.3610281146576813,
+    "displayUpperClippedPercent": 1.3610281146576813
+  }
+}

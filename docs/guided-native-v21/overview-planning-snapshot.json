@@ -1,0 +1,29 @@
+{
+  "schema": "guided-native-overview-planning-snapshot-v21.1",
+  "scope": "In-progress counts for bounded overview runtime planning, not final whole-bank results",
+  "plannedCoreBlocks": 37612,
+  "maximumCoordinateXYZ": [
+    50,
+    50,
+    63
+  ],
+  "plannedOccupiedGroupsBySpanBlocks": {
+    "1": 37612,
+    "2": 5501,
+    "4": 878,
+    "8": 164,
+    "16": 37,
+    "32": 8,
+    "64": 1
+  },
+  "observedCompletedRecords": 31352,
+  "observedOverviewTriangles": 446586697,
+  "completeSpan4GroupsObserved": 682,
+  "completeSpan4GroupsRequiringSplit": 248,
+  "span2ChildrenRequiringFurtherSplit": 0,
+  "baseHierarchyNodesThroughSpan4": 1088,
+  "additionalObservedNodesForCompleteGroups": 1982,
+  "roughFullNodeCountUsingObservedCompleteGroupSplitRate": 3640,
+  "roughWholeOverviewTrianglesByRecordScaling": 535755896,
+  "predictionLimit": "Density and group splits vary spatially; projected counts are only a runtime-planning estimate. No final surface count is asserted."
+}

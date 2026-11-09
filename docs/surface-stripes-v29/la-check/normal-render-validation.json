@@ -1,0 +1,27 @@
+{
+  "productionShaders": true,
+  "positionsUnchanged": true,
+  "trianglesUnchanged": true,
+  "exactOriginalRestoration": true,
+  "checks": [
+    {
+      "case": {
+        "id": "la-y316",
+        "axis": 1,
+        "coordinate": 1260,
+        "target": [
+          1270,
+          1260,
+          810
+        ],
+        "distance": 0.5
+      },
+      "normalCandidate": "seam6",
+      "changedPixels": 50792,
+      "measuredCapIdentical": true,
+      "originalGeometryUnchanged": true,
+      "sourceNormals": "{source-cache}/heart-v29-stripes/seam6-normals.npy"
+    }
+  ],
+  "scope": "Shading-only native EGL comparison; no claim of browser performance or anatomical validation."
+}

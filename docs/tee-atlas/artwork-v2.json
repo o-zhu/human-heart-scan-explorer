@@ -1,0 +1,1399 @@
+{
+  "schema": "heart-explorer-tee-artwork/2",
+  "createdDate": "2026-11-07",
+  "source": {
+    "title": "Guidelines for Performing a Comprehensive Transesophageal Echocardiographic Examination",
+    "authors": "Hahn et al.",
+    "year": 2013,
+    "table": "Table 10",
+    "journal": "Journal of the American Society of Echocardiography",
+    "journalPages": [
+      934,
+      935,
+      936,
+      937
+    ],
+    "url": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "sha256": "bfa36d7fb9990ef0db218e69e5b7253cb35806fabe648f9896ec64a59f8ab385",
+    "copyright": "Copyright 2013 American Society of Echocardiography. Extracted reference material; not newly created art or an open-license asset."
+  },
+  "purpose": "Reference-guided scientific navigation illustrations. Not measured anatomy, synthetic ultrasound, or clinically validated views.",
+  "sourceDetail": "Table 10 first-column schematics are native raster crops around 150 dpi. Generation is an illustrative reinterpretation rather than an exact tracing.",
+  "style": "Muted terracotta tissue, ivory anatomical boundaries, dark blood spaces, sage sector boundary, transparent outside sector. Native HTML provides exact names and acquisition angles.",
+  "encoding": "Only resizing and format encoding after image generation; anatomical refinements use the image tool.",
+  "totalEncodedBytes": 1221794,
+  "views": [
+    {
+      "id": "me5c",
+      "aseNumber": 1,
+      "name": "Midesophageal five-chamber",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          112,
+          133,
+          206
+        ],
+        "nativeDimensions": [
+          118,
+          94
+        ],
+        "sha256": "08f3e181cc5fcdf8298f62ad48b527bd4cc9651dbbf6d97b048a05ba83174721"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nAsset: one refined medical-atlas navigation illustration of the Midesophageal five-chamber TEE view.\nInput image 1 is the PRIMARY ANATOMICAL AND COMPOSITION reference for this exact section. Input image 2 is ONLY the approved rendering STYLE reference. Re-illustrate the section in image 1, not image 2's anatomy.\nAnatomical invariants: Preserve the FOUR cardiac chambers shown in image 1 plus the small continuous left-ventricular outflow tract and aortic valve at the basal septal region: this is the five-chamber section, not the four-chamber pilot. The outflow is an actual anatomical passage, not a fifth atrium. Follow image 1 for its chamber proportions, right/left orientation, septum, mitral and tricuspid attachments, and the visible small outflow opening.\nRendering: a flat frontal 2D anatomical cross-section within the same echocardiographic fan orientation as image 1. Use sophisticated restrained medical-atlas tissue rendering like image 2: muted terracotta/coral myocardium and vessel walls, delicate subtle fiber texture, controlled tonal depth, crisp thin ivory endocardial edges and clean leaflet silhouettes. Dark blue-black #101a1c blood spaces and empty fan region, with a thin muted sage fan perimeter. No glossy plastic or neon.\nComposition: landscape 4:3 canvas, the fan and anatomical section filling about 85% of the canvas with even clear margins; anatomically correct dominant silhouette readable at a 104-pixel thumbnail. Transparent background outside the fan; preserve dark opaque spaces inside it.\nRemove all source typography and source angle gauge. No text, labels, letters, numbers, arrows, watermarks, angle gauges, external whole-heart illustration, extra vessels or extra valves. Do not invent anatomical detail absent from the primary reference. Final output is original illustrative navigation art, not ultrasound or measured anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1436446,
+        "sha256": "1b20b90fb6f7090a90d3e14dba92cfd32748d6045c217abd6de09d8484155b8d",
+        "generatedFile": "exec-5636d19d-803b-4c64-af93-030e341c6a50.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/me5c.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 48666,
+        "sha256": "4da86542e0f667cf30b04e914717f26c48fc971b8699dccac09cc95a07fdb6e5",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "me4c",
+      "aseNumber": 2,
+      "name": "Midesophageal four-chamber",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          255,
+          133,
+          349
+        ],
+        "nativeDimensions": [
+          118,
+          94
+        ],
+        "sha256": "207d550d0f0f8449f417565cfe40d01ba175e5977fdbf13e61adedb3b36f8a33"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": null,
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nCreate ONE premium medical-atlas navigation illustration for the MIDESOPHAGEAL FOUR-CHAMBER TEE view. The input image is the anatomy and spatial-layout reference from ASE Table 10; faithfully preserve its cross-sectional chamber topology and orientation while redrawing it cleanly at high resolution. This is a small recognition icon, not a full poster.\nComposition: a front-facing, two-dimensional echocardiographic fan cross-section, near field at the top, ventricular apex at the bottom; use the reference fan silhouette and fill about 85% of a landscape 4:3 canvas. Transparent outside the fan. Fill empty fan interior and blood cavities with very dark blue-black #101a1c. Thin muted sage fan boundary.\nAnatomy invariants: RA/RV on screen left, LA/LV on screen right; atria above ventricles; smaller thinner-walled RV, larger thick-walled LV, distinct tricuspid and mitral leaflets, intact atrial and ventricular septa. Preserve the reference's shapes and proportions. Exclude aortic valve, aorta and LV outflow tract. No additional chambers, vessels or structures. Keep leaflet edges clearly separable from the septum.\nArt direction: sophisticated surgical-atlas illustration, precise organic contours, muted terracotta/coral myocardium with a light ivory endocardial edge, subtle controlled tonal shading that gives the cut myocardium a little depth, finely suggested myocardial fiber texture at most, clean valve leaflets. The right-sided tissue may have a restrained cool desaturated tint, but retain one cohesive palette. Scientific, minimal, elegant, immediately readable at 110 pixels wide. Avoid simplistic geometric blobs and flat cartoon shapes. Avoid glossy plastic, neon, ornate gradients, heavy 3D perspective, external whole-heart anatomy, decorative vessels, arrows, symbols, panel borders, labels, letters, numbers, watermarks. Do not reproduce the little angle gauge in the reference. No text.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1427334,
+        "sha256": "1848f3b4431fa7c013b0e55e1de80034f89978df7a0cd199cfc4549143700ba1",
+        "generatedFile": "exec-31d789f7-0b1f-4e5a-b44f-0850c1af4ae7.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/me4c.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 48306,
+        "sha256": "b86ad88a1da343c00c39013d32b676cf69c7ba429388e2f158fa904e5fdb4932",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "mecommissural",
+      "aseNumber": 3,
+      "name": "Midesophageal mitral commissural",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          392,
+          133,
+          483
+        ],
+        "nativeDimensions": [
+          118,
+          91
+        ],
+        "sha256": "aa62dfbc3760910f56e429fd54252bbae763bfa290e6353e632135b71d46a5b1"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nCreate a clearly recognizable cardiology textbook illustration of the MIDESOPHAGEAL MITRAL COMMISSURAL ECHOCARDIOGRAPHIC VIEW. This is a stylized medical model of internal HEART anatomy in a 2D ultrasound fan.\nImage 1 is the exact anatomical reference: keep its complete fan, its source orientation, its rounded upper left atrial cavity, its lower elongated left ventricular cavity surrounded by a thick continuous cardiac muscle wall, its mitral leaflet intersection, and the small attached papillary/chordal supports within the ventricle. Preserve the commissural relationship; do not add right-sided heart chambers or an aortic outlet.\nImage 2 supplies ONLY the warm terracotta palette, ivory edge treatment, thin sage fan outline and restrained rendering quality. Do not copy its four-chamber anatomy.\nMake the anatomy an unmistakably diagrammatic medical-atlas model: smooth matte coral cardiac muscle with very faint fine fiber detail, clean crisp ivory endocardial outlines and fine valve/chordal lines; dark blue-black #101a1c cavities and dark empty fan area. Render the cardiac structures with tidy simple surfaces and clear cavity boundaries, without photographic flesh detail. Maintain high-quality scientific minimalist finish.\nKeep the full fan on a landscape 4:3 canvas, about 85% composition coverage and even margins. The background outside the fan must be transparent.\nNo text, letters, numbers, labels, gauge, watermark, arrows, decorative objects or additional anatomy. The result is an educational illustration of a heart section, not a clinical image.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1331161,
+        "sha256": "e51a1756be091392cbb1841067d4955c4b80e581bda35107475a79aca446b277",
+        "generatedFile": "exec-a61f4315-7456-424c-a527-207ed44e9a8c.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/mecommissural.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 41576,
+        "sha256": "07168de0d4e1b5c574fd5d4b982579310e0c61b34f679c5aa2bc6411ebb3aa10",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "me2c",
+      "aseNumber": 4,
+      "name": "Midesophageal two-chamber",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          535,
+          133,
+          631
+        ],
+        "nativeDimensions": [
+          118,
+          96
+        ],
+        "sha256": "4c224b8bb3d5348ee27565cfc4477dd5e008d132b0f1ef683c1ff30d827afecc"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nAsset: one refined medical-atlas navigation illustration of the Midesophageal two-chamber TEE view.\nInput image 1 is the PRIMARY ANATOMICAL AND COMPOSITION reference for this exact section. Input image 2 is ONLY the approved rendering STYLE reference. Re-illustrate the section in image 1, not image 2's anatomy.\nAnatomical invariants: Preserve image 1's two-chamber left-heart section: left atrium at the near-field top, mitral valve between the atrium and the elongated oblique left ventricle with the apex toward the lower left as in the source. Keep the actual source orientation and wall shape. Do not add a right ventricle, right atrium, interventricular septum or aortic outflow. Image 2 is style only, never its four-chamber topology.\nRendering: a flat frontal 2D anatomical cross-section within the same echocardiographic fan orientation as image 1. Use sophisticated restrained medical-atlas tissue rendering like image 2: muted terracotta/coral myocardium and vessel walls, delicate subtle fiber texture, controlled tonal depth, crisp thin ivory endocardial edges and clean leaflet silhouettes. Dark blue-black #101a1c blood spaces and empty fan region, with a thin muted sage fan perimeter. No glossy plastic or neon.\nComposition: landscape 4:3 canvas, the fan and anatomical section filling about 85% of the canvas with even clear margins; anatomically correct dominant silhouette readable at a 104-pixel thumbnail. Transparent background outside the fan; preserve dark opaque spaces inside it.\nRemove all source typography and source angle gauge. No text, labels, letters, numbers, arrows, watermarks, angle gauges, external whole-heart illustration, extra vessels or extra valves. Do not invent anatomical detail absent from the primary reference. Final output is original illustrative navigation art, not ultrasound or measured anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1363797,
+        "sha256": "099d6641281cf093c6856edb2774b3e4a116c567e13be8c34754c94159d09a7d",
+        "generatedFile": "exec-81bc250c-5df8-41b3-8bce-188e9dfe9011.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/me2c.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 37788,
+        "sha256": "228a71c6b23bb1945eb0f6cf2aedf00a8ed038b378fe8e1b0f5c9950dfc488d7",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "melax",
+      "aseNumber": 5,
+      "name": "Midesophageal long-axis",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          686,
+          133,
+          782
+        ],
+        "nativeDimensions": [
+          118,
+          96
+        ],
+        "sha256": "2ba13f7889e51f22be4e77ca0c8293f9ae7cc787c3e38359623be6301528fffe"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nAsset: one refined medical-atlas navigation illustration of the Midesophageal long-axis TEE view.\nInput image 1 is the PRIMARY ANATOMICAL AND COMPOSITION reference for this exact section. Input image 2 is ONLY the approved rendering STYLE reference. Re-illustrate the section in image 1, not image 2's anatomy.\nAnatomical invariants: Preserve image 1's specific longitudinal left-heart section and its small continuous left-ventricular outflow/aortic valve region alongside mitral inflow, with the source-visible right-ventricular outflow context. Keep the long narrow ventricular profile, valve-plane geometry and exact source screen orientation. This is not a four-chamber section and not a generic whole-heart cutaway. Do not copy the symmetric chamber layout of image 2.\nRendering: a flat frontal 2D anatomical cross-section within the same echocardiographic fan orientation as image 1. Use sophisticated restrained medical-atlas tissue rendering like image 2: muted terracotta/coral myocardium and vessel walls, delicate subtle fiber texture, controlled tonal depth, crisp thin ivory endocardial edges and clean leaflet silhouettes. Dark blue-black #101a1c blood spaces and empty fan region, with a thin muted sage fan perimeter. No glossy plastic or neon.\nComposition: landscape 4:3 canvas, the fan and anatomical section filling about 85% of the canvas with even clear margins; anatomically correct dominant silhouette readable at a 104-pixel thumbnail. Transparent background outside the fan; preserve dark opaque spaces inside it.\nRemove all source typography and source angle gauge. No text, labels, letters, numbers, arrows, watermarks, angle gauges, external whole-heart illustration, extra vessels or extra valves. Do not invent anatomical detail absent from the primary reference. Final output is original illustrative navigation art, not ultrasound or measured anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1258788,
+        "sha256": "46d5f79469b10e24ebdef6cdbdc6db7ed68778ad003c4d006093803bd31a938d",
+        "generatedFile": "exec-579a6aee-e320-4a4b-9736-1f117cdf22bf.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/melax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 43132,
+        "sha256": "c537043cebe4e1de3433ddc587d4e81ab793045f8f72d7f6180fffe487451f16",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "meavlax",
+      "aseNumber": 6,
+      "name": "Midesophageal aortic valve long-axis",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          831,
+          133,
+          923
+        ],
+        "nativeDimensions": [
+          118,
+          92
+        ],
+        "sha256": "4dea27d3315c16b186710229e95cf2454d004f67417a1d2124c559bc259b56e1"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 2,
+        "prompt": "Make one very localized correction to this existing scientific TEE atlas illustration. The near-field LEFT ATRIAL BLOOD CAVITY is the upper triangular/arched region from the fan's upper interior down to the mitral leaflet / atrial wall boundary (the long ivory boundary running from left-middle upward toward right). Its interior is currently a brown-red fiber-textured gradient, which can be mistaken for solid tissue. Change ONLY the interior of that near-field atrial cavity to smooth deep blue-black #101a1c, matching the other dark cavities already in the image; remove its interior fiber texture. Preserve the actual thin tissue walls and ivory endocardial boundaries; do not darken the coral wall band at the upper right. Keep every anatomical boundary, leaflet and vessel opening exactly where it is: especially the mitral leaflet, the central aortic valve long-axis profile, ascending-aortic lumen on screen right, LVOT on screen left, and the lower tract. Retain existing framing, fan shape, fine sage border, tissue texture outside that cavity, all valve detail, and transparent background. This is only a lumen-color correction. Do not redraw a whole heart, change orientation, create any new cavity/wall, or add text, gauge, labels, arrows or ornaments.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1457401,
+        "sha256": "914ca2294a575265dd1ee86b626668013468f42709d39dffac0c018031045f76",
+        "generatedFile": "exec-a1154b9a-3edd-4874-a79e-b722facff8e1.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/meavlax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 45876,
+        "sha256": "6ee2f4956b4024bf5212d4b1ad69aaa715062fbde15aa9d7984ac4dcf5a325d9",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "meaaolax",
+      "aseNumber": 7,
+      "name": "Midesophageal ascending aorta long-axis",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          972,
+          133,
+          1059
+        ],
+        "nativeDimensions": [
+          118,
+          87
+        ],
+        "sha256": "16c005edbe77ec16247c7e0a03761c348aaae7f10a0d09eebc634bfb183c6800"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nAsset: one refined medical-atlas navigation illustration of the Midesophageal ascending aorta long-axis TEE view.\nInput image 1 is the PRIMARY ANATOMICAL AND COMPOSITION reference for this exact section. Input image 2 is ONLY the approved rendering STYLE reference. Re-illustrate the section in image 1, not image 2's anatomy.\nAnatomical invariants: Follow image 1 exactly in topology: a broad, gently curving horizontal tubular ascending-aortic lumen across the middle/lower fan, plus the small round right-pulmonary-artery cross-section above it. These are vessel sections, not cardiac chambers. Keep the aortic lumen as one open longitudinal passage between continuous roughly parallel walls. No aortic valve leaflets, no four chambers, no ventricular apex.\nRendering: a flat frontal 2D anatomical cross-section within the same echocardiographic fan orientation as image 1. Use sophisticated restrained medical-atlas tissue rendering like image 2: muted terracotta/coral myocardium and vessel walls, delicate subtle fiber texture, controlled tonal depth, crisp thin ivory endocardial edges and clean leaflet silhouettes. Dark blue-black #101a1c blood spaces and empty fan region, with a thin muted sage fan perimeter. No glossy plastic or neon.\nComposition: landscape 4:3 canvas, the fan and anatomical section filling about 85% of the canvas with even clear margins; anatomically correct dominant silhouette readable at a 104-pixel thumbnail. Transparent background outside the fan; preserve dark opaque spaces inside it.\nRemove all source typography and source angle gauge. No text, labels, letters, numbers, arrows, watermarks, angle gauges, external whole-heart illustration, extra vessels or extra valves. Do not invent anatomical detail absent from the primary reference. Final output is original illustrative navigation art, not ultrasound or measured anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1386450,
+        "sha256": "3e1389c49024db8b586edda83a5d58ae73f9a3187473d6742f1648c1ed1f36b9",
+        "generatedFile": "exec-9c2183f1-fef0-4082-84fa-cedec22823de.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/meaaolax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 43440,
+        "sha256": "df2a4b4dbe2516aa2d86c8466d12a6f41fc8914c5aedf4f7dfbcd75042972472",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "meaaosax",
+      "aseNumber": 8,
+      "name": "Midesophageal ascending aorta short-axis",
+      "reference": {
+        "pdfPage": 14,
+        "journalPage": 934,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 41,
+        "cropNativePixels": [
+          15,
+          1117,
+          133,
+          1205
+        ],
+        "nativeDimensions": [
+          118,
+          88
+        ],
+        "sha256": "d30af3684597dbc66728e14412971ec7faf1a2e5ae72e8a724781d3cbb3dcd95"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational.\nAsset: one refined medical-atlas navigation illustration of the Midesophageal ascending aorta short-axis TEE view.\nInput image 1 is the PRIMARY ANATOMICAL AND COMPOSITION reference for this exact section. Input image 2 is ONLY the approved rendering STYLE reference. Re-illustrate the section in image 1, not image 2's anatomy.\nAnatomical invariants: Follow image 1's vessel-only cross section: a plain round ascending-aortic lumen near the lower center, the separate small superior-vena-cava section at upper left, and the source-visible pulmonary-artery region wrapping above/right. Preserve these relative positions, source wall boundaries and open vessel cavities. The ascending aorta is ABOVE the valve: its round lumen must contain no cusps, no three-spoke valve, and no leaflet. No cardiac chamber silhouette.\nRendering: a flat frontal 2D anatomical cross-section within the same echocardiographic fan orientation as image 1. Use sophisticated restrained medical-atlas tissue rendering like image 2: muted terracotta/coral myocardium and vessel walls, delicate subtle fiber texture, controlled tonal depth, crisp thin ivory endocardial edges and clean leaflet silhouettes. Dark blue-black #101a1c blood spaces and empty fan region, with a thin muted sage fan perimeter. No glossy plastic or neon.\nComposition: landscape 4:3 canvas, the fan and anatomical section filling about 85% of the canvas with even clear margins; anatomically correct dominant silhouette readable at a 104-pixel thumbnail. Transparent background outside the fan; preserve dark opaque spaces inside it.\nRemove all source typography and source angle gauge. No text, labels, letters, numbers, arrows, watermarks, angle gauges, external whole-heart illustration, extra vessels or extra valves. Do not invent anatomical detail absent from the primary reference. Final output is original illustrative navigation art, not ultrasound or measured anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1308688,
+        "sha256": "87c074ee1f899a840ae46b3910578e8e2563782e53ba04446635fd951b71051b",
+        "generatedFile": "exec-d991cbd3-b63f-4992-aa24-69dd0e2149c1.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/meaaosax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 38178,
+        "sha256": "05a3c496c32ae1ad14f5a71df2e72f5545909a592e03fbaf4bbc2ceeac2fca01",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "merpv",
+      "aseNumber": 9,
+      "name": "Midesophageal right pulmonary vein",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          20,
+          141,
+          115
+        ],
+        "nativeDimensions": [
+          125,
+          95
+        ],
+        "sha256": "4ecdadd88df8fd7287ad3c0f1e169af6d6f5067b6ab3437367c849e947eea789"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: precise-object-edit.\nImage 1 is the ASE anatomical reference for the midesophageal right pulmonary vein view. Image 2 is the approved rendering style. IMAGE 3 IS THE IMAGE TO EDIT.\nMake exactly one correction to image 3: REMOVE the small isolated semicircular motif at the upper-right of the fan, around 58% image width and 21% image height. It has a nearly horizontal straight upper edge and a rounded bowl-shaped lower edge. This motif was accidentally copied from the source angle gauge and is NOT anatomy. Remove its entire coral/ivory rim and dark center, replacing that little area with the same uninterrupted dark blue-black #101a1c fan background that surrounds it.\nPreserve all three genuine vessel openings in the central/lower anatomy exactly as they are: the long curved opening on the left, the smaller diagonal oval in the middle, and the large round opening on the right. Keep all genuine walls, fiber texture, ivory lining, positions, sizes and source-derived connectivity unchanged. Keep the fan outline, framing, dimensions, background inside the fan and transparent background outside the fan unchanged.\nDo not add anything. No text, labels, numbers, gauge, arrows, watermark or new anatomy.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1365010,
+        "sha256": "f6c7bf9a62555d21fc98b629f43f3a1221237cafbb353940da6a8b7a8693aabe",
+        "generatedFile": "exec-99d3a105-1ba8-4edd-a255-8259c147fd98.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/merpv.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 40210,
+        "sha256": "81aacb16c6fdea809cb0431b454c4651dd13203e0a6e3ca58ea6c898b5817b17",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "meavsax",
+      "aseNumber": 10,
+      "name": "Midesophageal aortic valve short-axis",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          175,
+          141,
+          276
+        ],
+        "nativeDimensions": [
+          125,
+          101
+        ],
+        "sha256": "2e217a68f344f3f02402612560f49d10229f71b47e0a239e46dd30a5ebc7a5f2"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 2,
+        "prompt": "Make one very localized correction to this existing scientific TEE atlas illustration. The near-field LEFT ATRIAL BLOOD CAVITY is the large upper triangular/arched region above the central circular three-cusp aortic valve. Its interior is currently red-brown with muscle fibers, which is anatomically misleading. Change ONLY the interior of that atrial cavity to smooth deep blue-black #101a1c, matching the other dark chamber cavities already in the image. Remove its interior fiber texture. The affected region sits roughly between the upper curved rim near y15% and the lower curved atrial wall near y31%, centered at x50%; use the actual cavity boundaries, not a rectangular patch. Preserve the narrow outer tissue rim and fine ivory endocardial outline around it. Retain the existing exact shape and position of all anatomy, including the central three-cusp aortic valve, surrounding myocardial and atrial walls, the chambers below, the small valve profile at right, the fan shape, border, palette and transparent background. This is a cavity-color correction, not a new anatomy illustration. Do not add or remove walls, chambers, valves, vessels, labels, gauges or any other feature. Do not add texture, tissue, masses or clots inside the atrial blood cavity. Keep the same framing and dimensions.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1404090,
+        "sha256": "bfeee18b859850f72559bf71701b7aa5022bdcc49705869a4beef378932cc09e",
+        "generatedFile": "exec-782a41e3-61f2-41f5-811b-8fa0052adfd8.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/meavsax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 46398,
+        "sha256": "cd7ea31c614d5dc0a92200aa54f43a6c2302017f786ebb90042500bc73e66eee",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "mervinout",
+      "aseNumber": 11,
+      "name": "Midesophageal RV inflow-outflow",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          322,
+          141,
+          414
+        ],
+        "nativeDimensions": [
+          125,
+          92
+        ],
+        "sha256": "210e7162f764a3da783d75367c4128f7dddc2c9353bfeef64970cca6d2d4ebe2"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Midesophageal RV inflow-outflow, ASE view 11.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, valve locations and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and crisp delicate valve leaflets. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: Show a continuous curved right-heart section from tricuspid inflow on the left through RV to outflow and pulmonic valve on the right. Retain a restrained central aortic-root cross section and near-field atrial context. The two right-heart valves should be recognizable at different points of the same path.\nOrientation: Standard ME acquisition: inflow/RV screen left; RVOT/PV screen right; atrial structures closer to the top.\nCritical distinguishing feature: Two valve pathways through one curved RV, with central aortic-root context.\nAvoid anatomical failures: Disconnected TV and PV tubes.; An LV long-axis cavity substituted for the RV.; Generic AV short-axis icon with no tricuspid or pulmonic pathway.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1470140,
+        "sha256": "7044962d30085bacb2a05af3ee33da2310db447dc41531c6bfc1ad46ce6bc9c4",
+        "generatedFile": "exec-de076720-446e-4111-a95d-c325e8801ef0.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/mervinout.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 50758,
+        "sha256": "e7af0c00a242026b9e76f833a5f191ee7d64ff4bce980f3cc1c77954134252a1",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "memodbicaval",
+      "aseNumber": 12,
+      "name": "Midesophageal modified bicaval tricuspid valve",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          472,
+          141,
+          566
+        ],
+        "nativeDimensions": [
+          125,
+          94
+        ],
+        "sha256": "597f0c3d88865e1b06f74e429058aeab40b09c566cce0161aa0fc1cf8ea2aedd"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Midesophageal modified bicaval tricuspid valve, ASE view 12.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, valve locations and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and crisp delicate valve leaflets. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: A tricuspid-focused oblique atrial cut: near-field LA and atrial septum, RA and venous inflow context, and a prominent tricuspid junction leading toward RV. Preserve the septal-leaflet relationship. Keep the emphasis on TV rather than a symmetric SVC/IVC diagram.\nOrientation: Near-field LA/IAS above RA/TV context; preserve the reference orientation rather than using a generic two-caval icon.\nCritical distinguishing feature: A large, clearly identifiable tricuspid orifice/leaflet profile in an atrial-septal view.\nAvoid anatomical failures: Copying standard bicaval art with no tricuspid valve.; Depicting two symmetric ventricles.; Inventing a third AV valve or labeling an uncertain small vascular profile.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1427436,
+        "sha256": "9ef4d9de603649026c85800909d7179685d5e41f9facb73bf3c13c0e78b056ed",
+        "generatedFile": "exec-2802e20f-c20e-4251-96d3-3666c4ad9cda.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/memodbicaval.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 51482,
+        "sha256": "4b59b58a082186959d5edc1a6a8189a58471841e1471a75f902cfdd1b113f571",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "bicaval",
+      "aseNumber": 13,
+      "name": "Midesophageal bicaval",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          622,
+          141,
+          723
+        ],
+        "nativeDimensions": [
+          125,
+          101
+        ],
+        "sha256": "13241a01fea3fa67849725a7bfa9ed5f3ee935cc9ae1c3bec811d6c1795ad069"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Midesophageal bicaval, ASE view 13.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, valve locations and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and crisp delicate valve leaflets. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: Create an atrial long-axis section: a broad RA cavity bounded above by the interatrial septum and adjacent LA, with inferior caval entry on the left and superior caval entry on the right. Keep the two veins continuous with RA and omit ventricular distractions.\nOrientation: At the standard approximately 100° view, IVC is toward screen left/inferior and SVC toward screen right/superior. LA/IAS are nearer the top; RA is deeper.\nCritical distinguishing feature: Two caval entries flanking one RA with the atrial septum above it.\nAvoid anatomical failures: Cavae connected to LA.; A central circular AV or a large LV.; A symmetric Y-shaped pulmonary-vein tree.; Atrial septal hole invented as a decorative gap.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1328499,
+        "sha256": "7805ed5fb692c8b2dd4c813201b7f33808afcf8a1189319d4261b1a8f395fc16",
+        "generatedFile": "exec-23090716-abdb-40c7-9134-172473f28a57.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/bicaval.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 40434,
+        "sha256": "bd60fd16d635f67b9d0e7f7e24980cf6a74d9c29a5ac96e78fa930553fea7acf",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "mepv",
+      "aseNumber": 14,
+      "name": "Midesophageal right and left pulmonary veins",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          777,
+          141,
+          872
+        ],
+        "nativeDimensions": [
+          125,
+          95
+        ],
+        "sha256": "bdcb3d01662684c412719bb4e9fe778477c16d4398e17e7a6ec5309ade075a26"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Midesophageal right and left pulmonary veins, ASE view 14.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, internal landmarks and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and anatomically appropriate fine internal contours. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: Render one single representative pulmonary-vein section matching the supplied ASE schematic. Preserve its specific paired-channel geometry, orientation and LA continuity. Do not split into two fans and do not add all four veins. The associated UI explains separate right- and left-sided acquisition.\nOrientation: Use the single representative sector in the supplied Table10 reference. In the standard approximately100° clinical acquisition, the superior vein is toward screen right. The UI describes separate right and left acquisitions.\nCritical distinguishing feature: Representative pulmonary-vein entry section; bilateral acquisition remains a clinical/UI instruction, not an invented simultaneous four-vein picture.\nAvoid anatomical failures: All four veins placed symmetrically into a single 2D section.; Four separate disconnected round holes.; SVC/IVC entering RA substituted for pulmonary veins.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\nABSOLUTE ANATOMY CONSTRAINT: No valve leaflet, flap, cusp, chord, or free floating ivory structure anywhere in this view. Pulmonary vein and appendage openings are unvalved. All ivory marks must simply line the existing tissue-to-lumen boundary. Preserve the smooth source contours, and do not make an ostium into a valve.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1320298,
+        "sha256": "06570012e4777076ee101ff26e1b057703ed23807ec28736d36f47ee2dac3f05",
+        "generatedFile": "exec-34ad5bc7-3869-4b1c-a70b-ad77d70d653d.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/mepv.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 41056,
+        "sha256": "956c40861d8706280a0d9e7497fe4760cbca954b96751326a2e1e0e5e997fd3e",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "melaa",
+      "aseNumber": 15,
+      "name": "Midesophageal left atrial appendage",
+      "reference": {
+        "pdfPage": 15,
+        "journalPage": 935,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 44,
+        "cropNativePixels": [
+          16,
+          929,
+          141,
+          1023
+        ],
+        "nativeDimensions": [
+          125,
+          94
+        ],
+        "sha256": "152beba88149422ffcd820321051d4157b4d268e2d1e3f25cea461b110beed6f"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Create a single unlabeled scientific medical-atlas illustration of the midesophageal left atrial appendage section. SOURCE GEOMETRY IS IMAGE 1; image 2 supplies color and tissue texture only. Do not draw any of the chambers or valves from image 2.\n\nPlease preserve the very sparse, asymmetric silhouette of IMAGE 1:\n- The tissue lies predominantly along the LEFT diagonal of the fan, extending from the upper point down toward the lower-left fan edge.\n- A small smooth finger-like appendage pouch projects DOWNWARD near the CENTER-LEFT. Its dark lumen is a blind-ended extension of the adjoining left-atrial blood space.\n- A neighboring open pulmonary vein channel is visible by the left/upper tissue boundary. A simple rounded tissue ridge separates the vein opening from the appendage opening.\n- Most of the RIGHT HALF and LOWER-RIGHT of the fan remains EMPTY dark blue-black, representing continuation of the left-atrial blood space/outside the cropped section. Do NOT encircle this area with a thick myocardial wall.\n- Preserve the distinctive source concavity and slim hooked tongue of atrial tissue rather than inventing a whole heart or a ventricular section.\nThis is an atrial appendage-focused detail with no ventricles, no ventricular septum, no mitral/tricuspid/aortic/pulmonary valves and no chamber-enclosing large U-shaped myocardial ring. No leaflet, cusp, flap, chord, free-floating ivory mark or artificial membrane anywhere. Openings are smooth and unvalved. Do not add a pair of lips at any junction.\n\nStyle: flat frontal 2D anatomical section in a single echocardiographic fan; transparent outside fan; dark blue-black #101a1c background and blood spaces; very fine muted sage fan border; terracotta/coral tissue with subtle fiber texture and fine ivory endocardial outlines. Every ivory mark hugs an actual tissue edge. Restrained scientific atlas illustration with anatomical rather than decorative forms, readable at104px. Landscape4:3. Delicate atrial tissue, not massive ventricular myocardium.\n\nNo labels, text, letters, numbers, gauges, probe, scale, arrows, watermark or external heart. Remove the tiny gauge from image1. Be faithful to the source sectional silhouette and lumen connections.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1302888,
+        "sha256": "e9ed345ddfa723e7b7a0a79a1d6507e141b0dcf93d1bb9fa798fb68cdb513da1",
+        "generatedFile": "exec-79247d2f-e3ad-4b2a-be2b-816f1d81cfd5.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/melaa.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 36442,
+        "sha256": "bb76182ddf27a72c3ed6f91601ba7e64c53718296d6ab49497d89abbfbc9e4d3",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgbasalsax",
+      "aseNumber": 16,
+      "name": "Transgastric basal short-axis",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          44,
+          125,
+          133
+        ],
+        "nativeDimensions": [
+          111,
+          89
+        ],
+        "sha256": "dc9b66fe664a577bcf5803b06afec3df6dc8b9b51792b22068610d252dbe920b"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Transgastric basal short-axis, ASE view 16.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, valve locations and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and crisp delicate valve leaflets. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: A transverse basal LV ring containing the characteristic mitral fish-mouth opening. Give the two leaflets refined, asymmetric anatomical contours, with anterior leaflet on screen left and posterior leaflet right. No papillary-muscle pair or aortic-valve star in the central opening.\nOrientation: Sector vertex at top; mitral medial commissure toward top, lateral commissure toward bottom. Preserve anterior-left/posterior-right leaflet orientation.\nCritical distinguishing feature: Mitral fish-mouth inside the basal LV ring, replacing the papillary profiles of the midventricular view.\nAvoid anatomical failures: Two papillary dots instead of a valve opening.; Three-cusp aortic Mercedes sign.; An isolated valve with no surrounding LV myocardium.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1542455,
+        "sha256": "b7ff0a86316d0e3713c935efa6354015f0ea5a2bc55a45302b1d281e7f2b4dc7",
+        "generatedFile": "exec-e7396ef2-3afa-4e83-b54f-e44dc594dc4c.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgbasalsax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 47874,
+        "sha256": "0d4f30a3e2abd3a6ebc35f94d29e05063aebcbfaa78f6c6a362c1ca2ee1e450b",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgpapillary",
+      "aseNumber": 17,
+      "name": "Transgastric midpapillary short-axis",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          180,
+          125,
+          263
+        ],
+        "nativeDimensions": [
+          111,
+          83
+        ],
+        "sha256": "07bea17def4b12eeb5ead5bcd454847f992e6dbe6697f54a8533dd0e5025156c"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Transgastric midpapillary short-axis, ASE view 17.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, internal landmarks and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and anatomically appropriate fine internal contours. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: A refined midpapillary transgastric cross section: a near-circular LV lumen bounded by a continuous thick myocardial ring, two dominant papillary-muscle profiles projecting into that lumen, and a thinner RV crescent on screen left sharing the septal wall. Give the section subtle anatomical asymmetry and restrained trabeculation, not a perfect geometric doughnut. Preserve the two principal papillary groups without forcing both attachments to be visible in-plane. No valve, atria or full external heart silhouette.\nOrientation: Use the ASE transgastric short-axis presentation: RV crescent screen left and dominant LV ring centrally/right. Preserve the reference papillary-profile placement rather than imposing clock-face precision.\nCritical distinguishing feature: LV ring plus two papillary profiles and an adjacent thin RV crescent.\nAvoid anatomical failures: An empty doughnut, losing the midpapillary identity.; Two mitral leaflets or a central Mercedes sign.; A second full round chamber beside LV instead of a thin RV crescent.; Many randomly scattered muscular nodules.; A free-standing pair of balls presented as unconnected anatomy; attachment may be outside the actual slice, so the profiles need not both touch the wall in-plane.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1484738,
+        "sha256": "b70a8b14a89ef5cc17eb7c300dbe595cb1d710b5c7f89e1cc2c30df6862d24cc",
+        "generatedFile": "exec-238b588e-9207-49d9-94eb-df01d55ecc08.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgpapillary.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 54226,
+        "sha256": "283868af77a9c659e5f77253c487570e795f2cf76d254d42dfd9e5093e217a6b",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgapicalsax",
+      "aseNumber": 18,
+      "name": "Transgastric apical short-axis",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          316,
+          125,
+          403
+        ],
+        "nativeDimensions": [
+          111,
+          87
+        ],
+        "sha256": "4a37ba2efc8355e478672705577f335d13936e38df815c012471fbe21f1934ab"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for Transgastric apical short-axis, ASE view 18.\nInput image 1 is the PRIMARY anatomy and orientation reference for this exact view: preserve its sectional silhouette, visible lumina, wall connections, internal landmarks and handedness. Input image 2 is ONLY the approved style reference: borrow its palette, subtle tissue rendering, ivory edges and quiet fan treatment, NEVER its four-chamber anatomy.\nCreate an original refined, flat frontal 2D anatomical cross section in a single echocardiographic fan. This is scientific navigation artwork, not simulated ultrasound or a measured patient image. Landscape4:3 composition, fan fills about85% with safe margins. True transparent background outside the fan; dark blue-black #101a1c in empty fan area and blood cavities. Thin muted sage sector outline. Muted terracotta/coral myocardium, subtle fiber texture, controlled tonal depth, fine ivory endocardial edges and anatomically appropriate fine internal contours. Elegant surgical-atlas quality, restrained and readable at104px. Tissue shape and lumen topology must match image1.\nSpecific anatomy: Show a compact apical short-axis LV ring with a small open lumen and restrained irregular endocardial contour, plus only a small RV apical crescent if visible in the reference. Keep it distinct from the midpapillary image by removing the two dominant papillary profiles and all valves.\nOrientation: Keep the same short-axis orientation family as TG basal and midpapillary; RV contribution remains on the left in the reference.\nCritical distinguishing feature: Apical LV ring without the two prominent papillary profiles or basal valve.\nAvoid anatomical failures: Reusing TG midpapillary with two large internal muscles.; A mitral valve or aortic cusps in the lumen.; A generic heart-tip silhouette instead of an actual cross section.\nNo text, letters, labels, numbers, watermarks, arrows, angle gauge, probe icon, scale bar, decorative vessels or unrelated external whole-heart anatomy. Remove any tiny gauge and source-caption fragments from image1. No neon, glossy plastic, exaggerated3D perspective or extra structures. Do not copy image2's chamber geometry. Preserve genuine transparency outside the fan.\n"
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1359591,
+        "sha256": "669640b15345e0d312065e485fc8939a27607f7cbf8b595e8629fa7840833ab7",
+        "generatedFile": "exec-19a3e3f8-e057-4c31-8e6b-d0c26a51765b.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgapicalsax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 38688,
+        "sha256": "b613e65b6e3ede5fb03cc4dd63a2a06fadc4852567e18a629755813287bc3fad",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgrvbasal",
+      "aseNumber": 19,
+      "name": "Transgastric RV basal",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          450,
+          125,
+          537
+        ],
+        "nativeDimensions": [
+          111,
+          87
+        ],
+        "sha256": "4c3571b9e80706e7cad3f08694193b0e2cc2c942f6768aeb9bbd998c26999a49"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 2,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Transgastric RV basal.\nAnatomical orientation: Follow the supplied mixed-axis reference: tricuspid orifice toward the upper-right portion and longitudinal RVOT extending distally. This is not a generic ventricular ring.\nRequired anatomy: Tricuspid valve appears in short axis. RVOT appears longitudinally in the same oblique section. The right-ventricular basal cavity links these structures; adjacent LV can be partial context. A distal pulmonic-valve profile may appear with the longitudinal RVOT.\nSource-specific composition: A coherent right-ventricular basal cut combining an irregular tricuspid orifice in short axis with a connected RV outflow channel in long axis. Preserve the reference relative placement and include only restrained partial LV context. The valve opening should read as atrioventricular, not as a small aortic-root emblem.\nAvoid these particular errors: LV/papillary ring copied from TG midpapillary. Tiny perfect arterial Mercedes-sign substituted for the larger irregular tricuspid orifice. TV and RVOT drawn as unrelated floating objects.\nCritical correction: the upper-right cross-section is an ATRIOVENTRICULAR TRICUSPID orifice, broad and irregularly oval with asymmetric leaflets. Do not draw a perfect circular arterial root with three equal Mercedes-sign cusps there. The TV opening and longitudinal right-ventricular/RVOT section are parts of one coherent cut. Distal pulmonic valve, if shown, belongs only at the far end of the RVOT. Match the source rather than adding valve emblems.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1473302,
+        "sha256": "aad7c84c01765157b9a2e36d1bb1a14b84f87bd97de19c3c6066cf4117d33421",
+        "generatedFile": "exec-b0b27635-3522-4ed9-8830-1ef3c6b0c7af.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgrvbasal.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 44840,
+        "sha256": "96708394a4d5a208e7453f33ded524dcf6287fff8d4bf213bd90a1e132357e38",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgrvinout",
+      "aseNumber": 20,
+      "name": "Transgastric RV inflow-outflow",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          586,
+          125,
+          670
+        ],
+        "nativeDimensions": [
+          111,
+          84
+        ],
+        "sha256": "c5aa6bc8e7430227b4311b96b6d9a838e98dad4347878f4a9a6d9896fad1d47a"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 2,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Transgastric RV inflow-outflow.\nAnatomical orientation: Follow the supplied standard TG reference exactly for left/right handedness; the alternative acquisition reverses the image.\nRequired anatomy: One RV cavity connects tricuspid inflow to RVOT and pulmonic outflow. TV and PV are separate structures at the two parts of that path. Typical TV leaflet profiles are anterior and posterior. Use the standard right-flexed 0–20° acquisition, not the mirrored 90–120° alternative.\nSource-specific composition: Depict a continuous right-ventricular inflow-to-outflow section from the gastric window, following the supplied 0–20° right-flexed orientation. Show the tricuspid inflow, curved RV cavity, muscular RVOT and distal pulmonic valve as one coherent path. Keep the geometry distinct from the ME inflow/outflow icon.\nAvoid these particular errors: A mirrored alternate image blended with standard orientation. An ME inflow/outflow copy with unchanged atrial near-field geometry. Disconnected inflow/outflow cavities or an LV substituted for RV.\nCRITICAL TOPOLOGY: exactly TWO valvular apparatuses in this section: tricuspid valve at the inflow on the left, and pulmonic valve only at the terminal distal end of the long outflow tract near the bottom. The broad bent RV body and the RVOT between them are ONE CONTINUOUS unobstructed cavity. There must be NO extra leaflets, valve, transverse partition, or membranous barrier at the upper-right bend between RV and RVOT. Keep that bend visibly open. Do not add a third valve at a change in direction. Preserve the source's gastric orientation.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1438096,
+        "sha256": "6e71b4c349d21b9b0115ee73406137d5ea8715f55f30f98edf1d04371ec3f39d",
+        "generatedFile": "exec-57c965d8-bbb9-40bb-b704-0c89f76560c8.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgrvinout.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 46470,
+        "sha256": "ce90f9b49fec6f4756da7e2da56ca5fff3bd95d26cfa55fe1ed3fa0fbd591710",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "deeptg5c",
+      "aseNumber": 21,
+      "name": "Deep transgastric five-chamber",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          722,
+          125,
+          804
+        ],
+        "nativeDimensions": [
+          111,
+          82
+        ],
+        "sha256": "553543d2c09bfb046e97200dedfeec7711fc57b5a1de5f2fa1e6630d040ce752"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Deep transgastric five-chamber view.\nCritical source constraints: This is the deep transgastric five-chamber section, not midesophageal. Keep the apex and long LV toward the upper/central fan as in the source, with the atrial/inlet and aortic outflow structures toward the lower part of the source. Preserve the distinct source cavities, IVS and LVOT/aortic continuity in the exact orientation. Do not reuse the upright midesophageal four-chamber layout from the style reference.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1421228,
+        "sha256": "f722ea4da2cc57fb2b549f6433c004a8d2eafe37ea1f9fa48c6cdb0f48ba211a",
+        "generatedFile": "exec-1d89d8c9-a68d-47dd-bbb9-f565ec94f4f8.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/deeptg5c.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 44102,
+        "sha256": "b1560bbb66d7029438af29ca7b5f44b48b1c3734ed9b0544389b30384ae0b09f",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tg2c",
+      "aseNumber": 22,
+      "name": "Transgastric two-chamber",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          857,
+          125,
+          943
+        ],
+        "nativeDimensions": [
+          111,
+          86
+        ],
+        "sha256": "0dc60d6abe5eb24ebbd3743f8de83e0443c1035716e7e2bd599b1cfdc38cffd4"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Transgastric two-chamber.\nAnatomical orientation: Use the oblique/transverse-running TG long-axis reference, with the LV toward screen left and basal MV/LA toward screen right; the gastric-facing LV wall is near-field.\nRequired anatomy: LV long axis with anterior/inferior walls, mitral valve, chordae and papillary apparatus. LA lies beyond the mitral junction in the far field. The section contains neither a full RV nor a defining aortic-outflow branch.\nSource-specific composition: A transgastric two-chamber section running obliquely across the sector: LV and subvalvular apparatus dominate the left side, while the mitral junction and far-field LA sit toward the right as in the reference. Preserve the gastric near-field wall and exclude aortic outflow.\nAvoid these particular errors: Vertical atria-top ME two-chamber copy. A full four-chamber layout. Adding an AV{local-home} branch, turning it into TG long-axis.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1633721,
+        "sha256": "c919be45013d4c9bf33aef3b6858abe1cb0167da95bee354e099c02924788be9",
+        "generatedFile": "exec-28116b42-bf1d-4c59-96a1-b5fd10056a9c.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tg2c.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 54654,
+        "sha256": "155a7fcf29864736b3ede66d6f4100691edd0452d931c3bbc35e5afd2ac5055d",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tgrvin",
+      "aseNumber": 23,
+      "name": "Transgastric RV inflow",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          992,
+          125,
+          1078
+        ],
+        "nativeDimensions": [
+          111,
+          86
+        ],
+        "sha256": "41459a1f8bbdf42edcb0f43ea6040293da817ddce6987fc9b9a229a29cf35140"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Transgastric RV inflow.\nAnatomical orientation: Follow the gastric right-heart long-axis reference, with RV screen left and RA/TV toward the right rather than a vertical ME chamber stack.\nRequired anatomy: RV and RA connected through TV in long axis. Anterior/inferior RV walls and restrained subvalvular apparatus are recognizable. The proximal RVOT may be partly visible but need not become the defining second outflow branch.\nSource-specific composition: Show a gastric-side right-ventricular inflow section across the sector. A thin-walled, irregular/trabeculated RV cavity on the left connects through the tricuspid apparatus to the RA on the right. Follow the reference obliquity and retain only a modest proximal RVOT glimpse if present.\nAvoid these particular errors: Thick circular LV substituted for RV. Generic TG two-chamber art merely recolored. A large pulmonic-outflow branch overwhelming the inflow view.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1477914,
+        "sha256": "bdc41a01957cb5272badd49999eacf164d94cac3fd937d7c7132862e68a96694",
+        "generatedFile": "exec-1e858759-12c0-43da-95f0-28af23f4abc3.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tgrvin.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 48396,
+        "sha256": "6da86743defc41268a9107261f2c1507e8d8986e5ff77cdc3950d750ae88b19d",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "tglax",
+      "aseNumber": 24,
+      "name": "Transgastric long-axis",
+      "reference": {
+        "pdfPage": 16,
+        "journalPage": 936,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 48,
+        "cropNativePixels": [
+          14,
+          1127,
+          125,
+          1214
+        ],
+        "nativeDimensions": [
+          111,
+          87
+        ],
+        "sha256": "2786609f28eeb5cc2088b9963efce86245506d90e8006887dff636c4d188c06c"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Transgastric long-axis.\nAnatomical orientation: Transgastric long axis lies obliquely across the sector: LV/apical side toward screen left and basal/outflow anatomy toward screen right in the reference.\nRequired anatomy: LV long axis with both mitral inflow and LVOT/AV/proximal-aortic outflow. The inferolateral and anteroseptal LV walls are the defining walls. The aortic-outflow channel is distinct from but continuous with the LV.\nSource-specific composition: A refined transgastric LV long-axis cut across the sector, with the LV toward the left, mitral inflow at its base and a separate connected LVOT leading through the aortic valve into proximal aorta toward the right. Preserve the reference gastric viewpoint and avoid a vertical ME arrangement.\nAvoid these particular errors: TG two-chamber image with no outflow. ME long-axis orientation copied unchanged. Two disconnected parallel tubes used for mitral and aortic pathways.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1427221,
+        "sha256": "868eef6d9c91608212eeb8a7621084dc8b88c83731b3ad4ecd7827da93b83f70",
+        "generatedFile": "exec-5cd70328-8dd5-4d4f-8c06-dd3cca0c9199.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/tglax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 42252,
+        "sha256": "dcb9e33a71c0397d0b24cd1079dd3919f93981359f3752be9add87b1ff13e8f7",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "daosax",
+      "aseNumber": 25,
+      "name": "Descending aorta short-axis",
+      "reference": {
+        "pdfPage": 17,
+        "journalPage": 937,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 51,
+        "cropNativePixels": [
+          18,
+          49,
+          157,
+          155
+        ],
+        "nativeDimensions": [
+          139,
+          106
+        ],
+        "sha256": "1263cf22cb860fb4566d9f8fd2acbe183647175000941bba2b4c9b204b9d5fea"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Descending aorta short-axis.\nAnatomical orientation: Near-field vessel cross section centered within the sector; no full-heart orientation is implied.\nRequired anatomy: One circular/oval descending-aortic lumen with a continuous vascular wall. The plane is through a vessel, not the valve or a ventricle. Any small adjacent venous profile is secondary and optional.\nSource-specific composition: A clean descending-aortic short-axis section: one smooth circular vascular lumen with a restrained layered wall, comfortably inside the near-field sector. Keep the center open and free of valve cusps, internal flaps, nodules or other pathology.\nAvoid these particular errors: Aortic-valve star inside the lumen. Thick LV-like myocardial doughnut. Dissection flap, plaque or aneurysm invented to make the icon interesting.\nThis is a vascular section: use a restrained layered coral VASCULAR WALL, not thick myocardium. There are no valve leaflets, papillary muscles, internal flaps, plaque, nodules, or added disease anywhere in this aortic segment. Let its precise sparse geometry be the subject.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1265517,
+        "sha256": "533e9589a1819c823968e1ae39103a0612ae0fd361bfb4279db9c527a262595b",
+        "generatedFile": "recovered-daosax.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/daosax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 37064,
+        "sha256": "b212f8a48eafcfe76e5612d64234440c04c6fb8e56c97a45e83e2c6d4312bcac",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "daolax",
+      "aseNumber": 26,
+      "name": "Descending aorta long-axis",
+      "reference": {
+        "pdfPage": 17,
+        "journalPage": 937,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 51,
+        "cropNativePixels": [
+          18,
+          219,
+          157,
+          325
+        ],
+        "nativeDimensions": [
+          139,
+          106
+        ],
+        "sha256": "c78d919d6857df4d97c1b89be57566fd107b37edff18efa70ca667ecb8a08137"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Descending aorta long-axis.\nAnatomical orientation: The reference vessel spans left-to-right across the sector; preserve a long-axis tube rather than a round cross section.\nRequired anatomy: One elongated descending-aortic lumen between two roughly parallel walls. No semilunar valve lies in this descending segment. No complete arch loop or cardiac chambers are required.\nSource-specific composition: Depict the descending aorta in long axis as one continuous broad lumen crossing the sector between two smooth parallel walls. Keep the art sparse, with no valve, whole-heart silhouette, branch tree or internal pathological flap.\nAvoid these particular errors: Arch candy-cane silhouette. Valve leaflets added to the descending aorta. A dissection flap or fake branch tree.\nThis is a vascular section: use a restrained layered coral VASCULAR WALL, not thick myocardium. There are no valve leaflets, papillary muscles, internal flaps, plaque, nodules, or added disease anywhere in this aortic segment. Let its precise sparse geometry be the subject.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1233386,
+        "sha256": "8c09b35bfd2d7c4d9a7a54dbcb5d6d1c9dafdc5b63a80dcc39907cc8ab2921b3",
+        "generatedFile": "recovered-daolax.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/daolax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 36050,
+        "sha256": "bc8bbdf8fa847e1a9f9d241fbb41a22d29d39bbd175e6db0d9fccde7bd82be68",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "uearchlax",
+      "aseNumber": 27,
+      "name": "Upper esophageal aortic arch long-axis",
+      "reference": {
+        "pdfPage": 17,
+        "journalPage": 937,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 51,
+        "cropNativePixels": [
+          18,
+          390,
+          157,
+          495
+        ],
+        "nativeDimensions": [
+          139,
+          105
+        ],
+        "sha256": "c295e48618244ebc6727583253a800145743a961596a191c7e152b8ad455b88c"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral tissue palette, subtle fine fiber texture, precise ivory vascular luminal borders, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Upper esophageal aortic arch long-axis.\nAnatomical orientation: Follow the reference elongated oblique arch segment, extending from lower-left toward upper-right within the sector.\nRequired anatomy: Aortic arch segment is imaged longitudinally, with gentle curvature/obliquity. This is a limited 2D segment, not a complete external 3D arch with every branch. A nearby left brachiocephalic vein is optional contextual anatomy.\nSource-specific composition: A minimalist arch long-axis section showing only the elongated, gently curved oblique lumen captured by this imaging plane. Preserve the bounded sectional contour in the reference. Avoid drawing an external whole arch, all three branch vessels or any aortic-valve leaflets.\nAvoid these particular errors: A complete candy-cane aorta with three perfectly visible branch trunks. A circular aortic cross section. Aortic valve{local-home} attached to a segment that does not show them.\nVASCULAR VIEW: display only the limited gently curved oblique aortic arch lumen visible in the source, within a restrained layered vascular wall. No myocardium, chambers, valve leaflets, internal flaps, or added disease. Do not draw a whole arch loop, any branching tree, or aortic root. This limited view has no visible arch branches. Its long oblique segment is sufficient; do not decorate it.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1246300,
+        "sha256": "732c10dee3f24e705312713112eba803d1e80662a81280d2594d0b7ce9451504",
+        "generatedFile": "exec-92aa4c53-8ebf-4522-abb0-0d3f3df8c9db.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/uearchlax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 36228,
+        "sha256": "7e56c4bbc3a2baf53b92d7a572365fb618668ab35fcf5477819e55ea875eee80",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    },
+    {
+      "id": "uearchsax",
+      "aseNumber": 28,
+      "name": "Upper esophageal aortic arch short-axis",
+      "reference": {
+        "pdfPage": 17,
+        "journalPage": 937,
+        "column": "Imaging Plane (schematic anatomical section)",
+        "sourceImageXref": 51,
+        "cropNativePixels": [
+          18,
+          559,
+          157,
+          666
+        ],
+        "nativeDimensions": [
+          139,
+          107
+        ],
+        "sha256": "5e551253538be9217eb16dfcc370da31a2d28ebb5ba8172d14cf4a55fc34902e"
+      },
+      "generation": {
+        "tool": "ChatGPT Image (built-in image_gen__imagegen)",
+        "referenceGuided": true,
+        "transparentBackground": true,
+        "styleReference": "me4c approved pilot",
+        "revision": 1,
+        "prompt": "Use case: scientific-educational. Asset: one premium medical-atlas navigation illustration for a TEE teaching website.\nInput image 1 is the PRIMARY ANATOMICAL REFERENCE: its particular ASE Table 10 schematic section. Preserve its anatomical topology, relative chamber/vessel positions, section contours, valve locations, and left/right and near-field/far-field orientation. Do not rotate, mirror, or replace its cross-section with a generic heart.\nInput image 2 is STYLE ONLY: use its muted terracotta/coral myocardium, subtle fine fiber texture, precise ivory endocardial lines and delicate valve leaflets, restrained tonal depth, dark blue-black #101a1c cavities, and thin muted sage sector perimeter. Do not copy image 2's four-chamber anatomy.\nRender a flat frontal 2D anatomical cross-section within the echocardiographic fan sector shown in input image 1. Match the source shape and internal continuity closely while creating crisp high-quality original atlas art. Dark blue-black #101a1c empty area INSIDE the fan, with a genuinely transparent alpha background OUTSIDE the fan. Landscape 4:3 composition, fan filling about 85% of the canvas, no cropping of sector or anatomy. Keep it sophisticated, restrained, scientifically recognizable, and legible at 104px; details should clarify anatomy, not clutter it.\nNo text, letters, labels, numbers, captions, watermarks, arrows, angle gauges, probe symbols, decorative branches/vessels, or unrelated external whole-heart anatomy. Remove the small gauge symbol in the source. Do not invent vessels, valves, or chamber connections. No neon, glossy plastic, perspective rotation, or 3D whole heart.\n\nView-specific subject: Upper esophageal aortic arch short-axis.\nAnatomical orientation: Near-field arch cross section is toward the upper sector; the longitudinal PA/PV pathway lies deeper, following the supplied reference.\nRequired anatomy: Aortic arch appears in short axis near the probe. Main PA and pulmonic valve can be shown longitudinally in the far field. The arterial lumina remain distinct rather than merging into one vessel.\nSource-specific composition: Show the aortic arch as a near-field round/oval cross section, with a separate deeper long-axis main pulmonary artery and pulmonic-valve profile. Keep the two arteries clearly separate and use the reference orientation. The valve belongs to the pulmonary pathway, not to the arch lumen.\nAvoid these particular errors: A plain descending-aortic circle with no pulmonary context. Aortic cusps mistakenly placed inside the arch. PA fused to the aortic arch.\nCRITICAL SEPARATION: the near-field round aortic arch lumen at the upper part of the fan contains NO valve. Deeper toward the left/lower fan, the longitudinal main pulmonary artery/PV tract is a separate lumen. Only this separate pulmonary pathway has a pulmonic valve. Keep the two arterial lumens distinct with no fusion or invented connecting vessel. No arch branches.\nProduce exactly one standalone illustration."
+      },
+      "original": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 1330256,
+        "sha256": "0caef7c2cb6dedef7466fa935d5ef1537729ea08bc38e3b03afafaf5f00d56dc",
+        "generatedFile": "exec-16203ffe-a4b0-4315-bb40-216f6b9c5b5b.png"
+      },
+      "output": {
+        "path": "public/assets/tee-atlas/art-v2/uearchsax.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 37208,
+        "sha256": "e164ec0a627e4069bfb826738806f245c70e3a305ead4314f974df80b34abf9b",
+        "encoding": "WebP quality 90, fit within 1024 × 768, alpha retained"
+      },
+      "review": {
+        "scope": "Illustrative navigation artwork; coarse topology, source orientation, distinct view identity, extraneous markings, thumbnail readability. Not clinical validation.",
+        "status": "Visually reviewed against its own Table 10 source."
+      }
+    }
+  ]
+}

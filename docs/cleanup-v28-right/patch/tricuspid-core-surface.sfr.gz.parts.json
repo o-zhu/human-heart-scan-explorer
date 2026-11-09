@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "format": "concatenated-encoded-parts",
+  "file": "tricuspid-core-surface.sfr.gz",
+  "compressedBytes": 35220533,
+  "sha256": "04a069d9b34bf381352daf5635aa3f0ef98ad069b0a7808fa21fc1cd7fecb847",
+  "decodedBytes": 74838448,
+  "decodedSha256": "63f04e9b50649b77841275875966f5eb674256182dda00cea106dcbe84496deb",
+  "parts": [
+    {
+      "file": "tricuspid-core-surface.sfr.gz.part-001",
+      "bytes": 25165824,
+      "sha256": "0bc20cbd8c125f80549bcb6b6599f70fc9351bdbe9297deb5b7b31dd27fca827"
+    },
+    {
+      "file": "tricuspid-core-surface.sfr.gz.part-002",
+      "bytes": 10054709,
+      "sha256": "2fd1079de708e489f13194e33aaf827046e6b48fc6f72834a0a3675d84c2f45a"
+    }
+  ]
+}

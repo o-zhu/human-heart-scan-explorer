@@ -1,0 +1,142 @@
+{
+  "referenceCanvas": [
+    944,
+    856
+  ],
+  "introRect": [
+    0,
+    0,
+    365,
+    220
+  ],
+  "toolbarRect": [
+    674,
+    0,
+    944,
+    90
+  ],
+  "guardPixels": 8,
+  "threshold": 45,
+  "checks": {
+    "rv-inflow": {
+      "tissuePixels": 50606,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          216,
+          97
+        ],
+        [
+          451,
+          525
+        ]
+      ]
+    },
+    "rv-outflow": {
+      "tissuePixels": 76714,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          233,
+          73
+        ],
+        [
+          535,
+          525
+        ]
+      ]
+    },
+    "ra-inflow": {
+      "tissuePixels": 65893,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          193,
+          73
+        ],
+        [
+          473,
+          521
+        ]
+      ]
+    },
+    "ra-outflow": {
+      "tissuePixels": 94009,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          190,
+          72
+        ],
+        [
+          565,
+          521
+        ]
+      ]
+    },
+    "lv-inflow": {
+      "tissuePixels": 66365,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          219,
+          74
+        ],
+        [
+          481,
+          526
+        ]
+      ]
+    },
+    "lv-outflow": {
+      "tissuePixels": 68585,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          208,
+          72
+        ],
+        [
+          501,
+          525
+        ]
+      ]
+    },
+    "la-inflow": {
+      "tissuePixels": 76539,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          248,
+          87
+        ],
+        [
+          572,
+          529
+        ]
+      ]
+    },
+    "la-outflow": {
+      "tissuePixels": 66795,
+      "introOverlapPixels": 0,
+      "toolbarOverlapPixels": 0,
+      "renderedBounds": [
+        [
+          152,
+          165
+        ],
+        [
+          483,
+          527
+        ]
+      ]
+    }
+  }
+}

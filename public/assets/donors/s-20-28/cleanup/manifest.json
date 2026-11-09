@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "specimen": "S-20-28",
+  "datasetId": "1966162746",
+  "dimensions": [
+    239,
+    239,
+    255
+  ],
+  "volumeUrl": "assets/donors/s-20-28/cleanup/heart-support.raw.gz",
+  "dtype": "uint8",
+  "arrayOrder": "ZYX, X fastest",
+  "values": {
+    "0": "excluded",
+    "255": "retained"
+  },
+  "physicalCenterExtentUm": [
+    151177.6,
+    151177.6,
+    161340.80000000002
+  ],
+  "sourceThresholdRaw": 17500.0,
+  "sourceThresholdDisplay": 0.32972972972972975,
+  "sourceDimensions": [
+    477,
+    477,
+    509
+  ],
+  "sourceSpacingUm": 317.6,
+  "method": "Reviewed largest 18-connected source-threshold support, 3-voxel Manhattan margin and conservative sampling guard; endpoint-registered support.",
+  "componentPolicy": "largest",
+  "retainedComponentIds": [
+    29
+  ],
+  "reviewedSupportSeeds": [],
+  "reviewedHeartRoi": null,
+  "coreConnectivity": 18,
+  "marginVoxels": 3,
+  "coreComponentVoxels": 10478848,
+  "sourceForegroundVoxels": 12165569,
+  "sourceComponents": 2939,
+  "coreVoxelsRetained": 10478848,
+  "topComponentSizes": [
+    10478848,
+    1662278,
+    1420,
+    843,
+    602,
+    510,
+    472,
+    410,
+    395,
+    359,
+    340,
+    318
+  ],
+  "rawBytes": 14565855,
+  "compressedBytes": 187994,
+  "sha256": "57ff06517abfbb56e5d3225697d222dd6a4041614f0e9fe7093c27acbc3196c4",
+  "intensitiesModified": false,
+  "limitations": "Exterior display support is not anatomical segmentation. Original windowed volume is available by disabling cleanup."
+}

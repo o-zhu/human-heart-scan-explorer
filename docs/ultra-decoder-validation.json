@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "codec": "numcodecs0.3.2 / Blosc WASM",
+  "byteExactFixtures": [
+    {
+      "source": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s2/7/7/11",
+      "dimensions": [
+        128,
+        128,
+        128
+      ],
+      "compressedBytes": 3456124,
+      "rawBytes": 4194304,
+      "partialBlocks": 4,
+      "rawSha256": "4dfa4a32b8a9627ca09c8431cc32f17a0b383d652fc0e162053561b15b2340b2"
+    },
+    {
+      "source": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s2/14/14/16",
+      "dimensions": [
+        128,
+        128,
+        128
+      ],
+      "compressedBytes": 474,
+      "rawBytes": 4194304,
+      "partialBlocks": 4,
+      "rawSha256": "ff0a007d482badef71106de9041d2fc571788de1c86f23c3fda69d07628de440"
+    }
+  ],
+  "geometry": "XYZ sample4*i, plane orientation, display window, and physical endpoints verified",
+  "cacheRegression": {
+    "fixtureMode": "Actual Z363 and Z364 support plans; repeated independently validated compressed source fixture responses",
+    "persistentCacheAvailable": false,
+    "decodedMemoryMiB": 64,
+    "compressedMemoryMiB": 12,
+    "firstPlaneBlocks": 62,
+    "neighborPlaneBlocks": 61,
+    "initialHttpRequests": 124,
+    "neighborCacheStatus": true,
+    "neighborAdditionalHttpRequests": 0,
+    "fix": "Use resident decoded quarters directly, independent of evicted compressed header entries."
+  }
+}

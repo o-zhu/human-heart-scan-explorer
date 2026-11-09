@@ -1,0 +1,15 @@
+{
+  "comparisons": [
+    {
+      "selection": "pulmonary-vein-complete-sheet-selection.npz",
+      "currentlyVisibleSelectedMeshPixels": 4950,
+      "validMeshPixels": 213132
+    },
+    {
+      "selection": "appendage-complete-free-sheet-selection.npz",
+      "currentlyVisibleSelectedMeshPixels": 2226,
+      "validMeshPixels": 213132
+    }
+  ],
+  "scope": "Mask projected onto existing production source-coordinate readback; excludes cap samples and does not render surfaces revealed behind the selection."
+}

@@ -1,0 +1,131 @@
+{
+  "donor": "s-20-29",
+  "sourceWindow": [
+    19300.0,
+    23000.0
+  ],
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.12,
+    "roll": 3.141592653589793,
+    "distance": 1.65,
+    "pan": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sourceHash": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+  "sourceCalibration": "Windowed uint8 HiP-CT display intensities; not calibrated HU.",
+  "checks": [
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.162162,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 10023893,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.7931510650014388,
+      "file": "s-20-29-raw-0.162.png"
+    },
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.2,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 8961212,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.9316661240009125,
+      "file": "s-20-29-raw-0.200.png"
+    },
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.24,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 7825511,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.8559936989986454,
+      "file": "s-20-29-raw-0.240.png"
+    },
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.28,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 6366961,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.6276560600017547,
+      "file": "s-20-29-raw-0.280.png"
+    },
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.32,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 4287717,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.5982753909993335,
+      "file": "s-20-29-raw-0.320.png"
+    },
+    {
+      "donor": "s-20-29",
+      "method": "raw",
+      "threshold": 0.36,
+      "grid": [
+        478,
+        478,
+        487
+      ],
+      "spacingUm": 318.24,
+      "foregroundSamples": 2311457,
+      "fieldSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceSha256": "637ca1ec6b353cae2fa2816f625f8286b78a10e3c67edffe8ab8e703f41b2f17",
+      "sourceUnchanged": true,
+      "scalarProcessingSeconds": 1.9229992176406085e-06,
+      "nativeRenderSeconds": 0.6415249589990708,
+      "file": "s-20-29-raw-0.360.png"
+    }
+  ],
+  "scope": "Native EGL production GLSL. Image comparison is not anatomical segmentation accuracy or clinical validation. Original sources remain immutable."
+}

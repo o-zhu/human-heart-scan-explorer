@@ -1,0 +1,17 @@
+{
+  "schema": "heart-compact-browser-decoder-check-v29",
+  "passed": true,
+  "environment": "Node v24.22.1; the same JS/WASM and DecompressionStream decoder used by the browser worker",
+  "parts": 32,
+  "workspaceGateChecks": 22705,
+  "bytesTransferred": 131645142,
+  "decodedBytes": 437470524,
+  "decodedSha256": "ef468a2ebf15f11cf57f8443e7d3555f8d53fc1a43b9582125bbbabe304d6ad8",
+  "positionBytesExact": true,
+  "indexBytesExact": true,
+  "triangleCornerOrderExact": true,
+  "decodedNormalSha256": "9cc15f96fd590299653ebe2a0dab85e4b66df1da11083956a179d4bdd1a16ea1",
+  "decodeAndHashMilliseconds": 3616.509506,
+  "maxResidentSetMiB": 607.06640625,
+  "note": "Local file reads, gzip, meshopt, normal reconstruction, all part hashes and final full-buffer hash are included. This is not a browser network timing or a slow-device benchmark."
+}

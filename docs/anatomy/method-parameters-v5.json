@@ -1,0 +1,17 @@
+{
+  "seedVoxels": 1972077,
+  "candidateMaskVoxels": 3705004,
+  "contestedVoxels": 1732927,
+  "boundaryBandWorkingVoxels": 5,
+  "hybrid": {
+    "aorticCoreThreshold": 20100,
+    "pulmonaryCoreThreshold": 19050,
+    "aorticCoreVoxels": 65947,
+    "pulmonaryCoreVoxels": 80567,
+    "rvotNewSeedVoxels": 53442,
+    "newAorticIdentityMaximumDistanceWorkingVoxels": 3,
+    "pulmonaryGate": "sourceZ = 220 + 0.50*(sourceX-175) + 0.13*(sourceY-290), visually estimated"
+  },
+  "hybridSeconds": 72.861,
+  "elapsedSeconds": 75.369
+}

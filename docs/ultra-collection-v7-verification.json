@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-05T02:58:53.012Z",
+  "passed": 16,
+  "failed": 0,
+  "scope": "Actual JavaScript orchestration/cache/backend modules, deterministic network/Cache Storage/quota fixtures; no browser automation or full-pack network transfer.",
+  "tests": [
+    {
+      "name": "Automatic preparation visits every nonempty record, without decoding the collection",
+      "passed": true,
+      "durationMs": 22
+    },
+    {
+      "name": "A new session inventories committed files and resumes with no repeated download",
+      "passed": true,
+      "durationMs": 10
+    },
+    {
+      "name": "Idle preparation uses one slot; current and nearby sections preempt it",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "An urgent selected slice preempts a collection fetch on a one-slot connection",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "A foreground consumer joins an encoded collection fetch and decodes it without refetching",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Explicit pause cancels pending collection work and resume retains committed progress",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Pausing neighbor warming in Echo or Probe leaves collection preparation running",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Quota estimate blocks the full download, keeps current images usable, and can resume",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "A real Cache.put quota failure pauses rather than evicting/re-downloading completed files",
+      "passed": true,
+      "durationMs": 2
+    },
+    {
+      "name": "Storage denial avoids a throwaway full download and preserves decoded foreground loading",
+      "passed": true,
+      "durationMs": 2
+    },
+    {
+      "name": "Save-data pauses automatic preparation and explicit Resume permits one low-priority task",
+      "passed": true,
+      "durationMs": 2
+    },
+    {
+      "name": "Hidden-page pause resumes automatically when the page becomes visible",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Network failures retry finitely while other collection files finish",
+      "passed": true,
+      "durationMs": 5
+    },
+    {
+      "name": "Persistent budget covers the complete real manifest and protects its entries from LRU eviction",
+      "passed": true,
+      "durationMs": 9
+    },
+    {
+      "name": "Actual worker protocol configures and stores encoded collection files without image decoding",
+      "passed": true,
+      "durationMs": 2
+    },
+    {
+      "name": "Disposing during worker storage inventory cannot start a fallback operation",
+      "passed": true,
+      "durationMs": 1
+    }
+  ]
+}

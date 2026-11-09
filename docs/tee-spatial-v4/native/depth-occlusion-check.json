@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "scope": "Independent native EGL review of production TEE depth composition.\n\nSynthetic slabs/cavities exercise the actual volume, fine-surface, cut-face and\nshared-context GLSL. They establish rendering behavior, not anatomical accuracy,\nbrowser compatibility, performance, or acquired source detail.\n",
+  "baselineCommit": "5ee02eb261e372b1e864a282434939d92ea6c391",
+  "driver": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "shaderHashes": {
+    "volume": "f9a510b90ebec4757a8e7bbe8dd1fcbea93fbe112062710aba8c20afe5d44016",
+    "composite": "5a5e16b8294449e378c48daef6e7369e63a3b09161f19bcedc3b998691c58222",
+    "fineVertex": "bd144a7498ac7d06eeba816e8a4614830564dacd3cfcae089efc09b8250504d8",
+    "fineFragment": "ed094fda8460744f586655466c806d87daca4bbf9e86519fc64527b4779e78ab",
+    "contextVertex": "4b5cdead148b1aed14c5c46d80de50d199c3d604dbde47dfe93f662d39798fdf",
+    "contextFragment": "20643470a53bb9342bed8d47e1a4a8cc1e83a1b402345f2e11e18e284b3d40a2"
+  },
+  "checks": [
+    {
+      "case": "No-context color invariance",
+      "clipped": false,
+      "exactRGBAEquality": true
+    },
+    {
+      "case": "No-context color invariance",
+      "clipped": true,
+      "exactRGBAEquality": true
+    },
+    {
+      "case": "Resident surface",
+      "tissuePixels": 24240,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context visible through open cavity"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Resident cut face",
+      "tissuePixels": 22338,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context visible through open cavity"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Exact fine cut face",
+      "tissuePixels": 23711,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context occluded by fine-only cap island"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Preview + resident surface",
+      "tissuePixels": 24392,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context visible through open cavity"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Preview + exact fine cap",
+      "tissuePixels": 23544,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context occluded by fine-only cap island"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Fine mesh + depth composite",
+      "tissuePixels": 22236,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context visible through open cavity"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Fine mesh + exact cap",
+      "tissuePixels": 18820,
+      "rearContextUnchanged": true,
+      "rearContourUnchanged": true,
+      "foregroundContextVisible": true,
+      "centerAssertion": {
+        "passed": true,
+        "expected": "rear context occluded by fine-only cap island"
+      },
+      "tissueFootprint": {
+        "mode": "full fixture footprint, including interpolation edges",
+        "threshold": "maximum RGB channel > 22",
+        "excludedEdgePixels": 0
+      }
+    },
+    {
+      "case": "Fine-mesh no-context composite",
+      "exactRGBAEquality": true
+    }
+  ],
+  "glError": 0
+}

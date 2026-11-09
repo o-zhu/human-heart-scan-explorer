@@ -1,0 +1,415 @@
+{
+  "schema": "fine-detail-v23-mesh-pilot",
+  "sigmaVoxels": 0.5,
+  "targetRatio": 0.02,
+  "boundaryPolicy": "All mesh boundary vertices are frozen.",
+  "linkPolicy": "Interior two-face edge-link constraint with tetrahedron preservation.",
+  "radiusMeaning": "Conservative accumulated original-vertex displacement bound, not an anatomical error bound.",
+  "regions": [
+    {
+      "id": "lv-inflow",
+      "originFineXYZ": [
+        1096,
+        1028,
+        1088
+      ],
+      "shapeXYZ": [
+        129,
+        129,
+        129
+      ],
+      "reference": {
+        "vertices": 472848,
+        "faces": 927916,
+        "edges": 1399531,
+        "euler": 1233,
+        "components": 2883,
+        "boundaryEdges": 15314,
+        "nonmanifoldEdges": 0
+      },
+      "zeroAreaRemoved": 3,
+      "candidates": [
+        {
+          "inputVertices": 472848,
+          "inputTriangles": 927916,
+          "vertices": 109479,
+          "triangles": 201178,
+          "conservativeRadiusLimitMm": 0.1588,
+          "maximumConservativeRadiusMm": 0.158799,
+          "radiusRejections": 593591,
+          "linkRejections": 63565,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 2.87206,
+          "peakRssMiB": 426.066,
+          "topology": {
+            "vertices": 109479,
+            "faces": 201178,
+            "edges": 309424,
+            "euler": 1233,
+            "components": 2883,
+            "boundaryEdges": 15314,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.006617930796379741,
+            "rmsMm": 0.010030410274237112,
+            "medianMm": 0.004144883031832863,
+            "p95Mm": 0.021428911735986003,
+            "p99Mm": 0.03573721663079419,
+            "maximumSampledMm": 0.08815601775371917
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 472848,
+          "inputTriangles": 927916,
+          "vertices": 61084,
+          "triangles": 104388,
+          "conservativeRadiusLimitMm": 0.3176,
+          "maximumConservativeRadiusMm": 0.317598,
+          "radiusRejections": 227416,
+          "linkRejections": 107954,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 3.04236,
+          "peakRssMiB": 426.066,
+          "topology": {
+            "vertices": 61084,
+            "faces": 104388,
+            "edges": 164239,
+            "euler": 1233,
+            "components": 2883,
+            "boundaryEdges": 15314,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.012890244185980853,
+            "rmsMm": 0.01959315617783882,
+            "medianMm": 0.008142682380984752,
+            "p95Mm": 0.04190193055540184,
+            "p99Mm": 0.07187467605394757,
+            "maximumSampledMm": 0.1413204530757099
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 472848,
+          "inputTriangles": 927916,
+          "vertices": 42188,
+          "triangles": 66596,
+          "conservativeRadiusLimitMm": 0.6352,
+          "maximumConservativeRadiusMm": 0.635131,
+          "radiusRejections": 65015,
+          "linkRejections": 173776,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 3.44078,
+          "peakRssMiB": 426.066,
+          "topology": {
+            "vertices": 42188,
+            "faces": 66596,
+            "edges": 107551,
+            "euler": 1233,
+            "components": 2883,
+            "boundaryEdges": 15314,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.022935723554882465,
+            "rmsMm": 0.03443280769719513,
+            "medianMm": 0.014697508232935051,
+            "p95Mm": 0.07461312789371054,
+            "p99Mm": 0.1228649528726058,
+            "maximumSampledMm": 0.2466376319895062
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        }
+      ],
+      "seconds": 14.136099883005954
+    },
+    {
+      "id": "rv-inflow",
+      "originFineXYZ": [
+        864,
+        680,
+        1128
+      ],
+      "shapeXYZ": [
+        129,
+        129,
+        129
+      ],
+      "reference": {
+        "vertices": 132216,
+        "faces": 258545,
+        "edges": 389698,
+        "euler": 1063,
+        "components": 954,
+        "boundaryEdges": 3761,
+        "nonmanifoldEdges": 0
+      },
+      "zeroAreaRemoved": 0,
+      "candidates": [
+        {
+          "inputVertices": 132216,
+          "inputTriangles": 258545,
+          "vertices": 30565,
+          "triangles": 55243,
+          "conservativeRadiusLimitMm": 0.1588,
+          "maximumConservativeRadiusMm": 0.158799,
+          "radiusRejections": 162303,
+          "linkRejections": 18006,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 0.642084,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 30565,
+            "faces": 55243,
+            "edges": 84745,
+            "euler": 1063,
+            "components": 954,
+            "boundaryEdges": 3761,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.006000332952024145,
+            "rmsMm": 0.00978726376125707,
+            "medianMm": 0.0033141999355512713,
+            "p95Mm": 0.021546730362534773,
+            "p99Mm": 0.03795295815508648,
+            "maximumSampledMm": 0.08530590850741013
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 132216,
+          "inputTriangles": 258545,
+          "vertices": 16943,
+          "triangles": 27999,
+          "conservativeRadiusLimitMm": 0.3176,
+          "maximumConservativeRadiusMm": 0.317589,
+          "radiusRejections": 61014,
+          "linkRejections": 28726,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 0.699123,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 16943,
+            "faces": 27999,
+            "edges": 43879,
+            "euler": 1063,
+            "components": 954,
+            "boundaryEdges": 3761,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.011656921734298128,
+            "rmsMm": 0.018837614500719527,
+            "medianMm": 0.006510847766918843,
+            "p95Mm": 0.040847415336175634,
+            "p99Mm": 0.07051228066751758,
+            "maximumSampledMm": 0.15999104772559936
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 132216,
+          "inputTriangles": 258545,
+          "vertices": 11510,
+          "triangles": 17133,
+          "conservativeRadiusLimitMm": 0.6352,
+          "maximumConservativeRadiusMm": 0.63502,
+          "radiusRejections": 16724,
+          "linkRejections": 42972,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 0.776785,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 11510,
+            "faces": 17133,
+            "edges": 27580,
+            "euler": 1063,
+            "components": 954,
+            "boundaryEdges": 3761,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.020808181739469724,
+            "rmsMm": 0.0330944331720506,
+            "medianMm": 0.012015822510228783,
+            "p95Mm": 0.07206883243889295,
+            "p99Mm": 0.12593400388682666,
+            "maximumSampledMm": 0.27588045199899
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        }
+      ],
+      "seconds": 2.9133399819984334
+    },
+    {
+      "id": "outer-wall",
+      "originFineXYZ": [
+        1328,
+        968,
+        1312
+      ],
+      "shapeXYZ": [
+        129,
+        129,
+        129
+      ],
+      "reference": {
+        "vertices": 236056,
+        "faces": 455482,
+        "edges": 686647,
+        "euler": 4891,
+        "components": 3659,
+        "boundaryEdges": 6848,
+        "nonmanifoldEdges": 0
+      },
+      "zeroAreaRemoved": 16,
+      "candidates": [
+        {
+          "inputVertices": 236056,
+          "inputTriangles": 455482,
+          "vertices": 59729,
+          "triangles": 102828,
+          "conservativeRadiusLimitMm": 0.1588,
+          "maximumConservativeRadiusMm": 0.158799,
+          "radiusRejections": 279580,
+          "linkRejections": 75361,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 1.92825,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 59729,
+            "faces": 102828,
+            "edges": 157666,
+            "euler": 4891,
+            "components": 3659,
+            "boundaryEdges": 6848,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.006388866850712013,
+            "rmsMm": 0.009796039548312412,
+            "medianMm": 0.0039831282669821055,
+            "p95Mm": 0.020122972372562123,
+            "p99Mm": 0.03623725414659731,
+            "maximumSampledMm": 0.0862544565245312
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 236056,
+          "inputTriangles": 455482,
+          "vertices": 39000,
+          "triangles": 61370,
+          "conservativeRadiusLimitMm": 0.3176,
+          "maximumConservativeRadiusMm": 0.317587,
+          "radiusRejections": 104242,
+          "linkRejections": 113933,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 2.26179,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 39000,
+            "faces": 61370,
+            "edges": 95479,
+            "euler": 4891,
+            "components": 3659,
+            "boundaryEdges": 6848,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.012301077584530858,
+            "rmsMm": 0.019613712392837625,
+            "medianMm": 0.007554327333680559,
+            "p95Mm": 0.04049777163357766,
+            "p99Mm": 0.07788653950311211,
+            "maximumSampledMm": 0.1933757165461481
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        },
+        {
+          "inputVertices": 236056,
+          "inputTriangles": 455482,
+          "vertices": 30932,
+          "triangles": 45234,
+          "conservativeRadiusLimitMm": 0.6352,
+          "maximumConservativeRadiusMm": 0.635185,
+          "radiusRejections": 25831,
+          "linkRejections": 155442,
+          "frozenBoundaryVertices": true,
+          "interiorEdgeLinkConstraint": true,
+          "seconds": 2.42268,
+          "peakRssMiB": 509.727,
+          "topology": {
+            "vertices": 30932,
+            "faces": 45234,
+            "edges": 71275,
+            "euler": 4891,
+            "components": 3659,
+            "boundaryEdges": 6848,
+            "nonmanifoldEdges": 0
+          },
+          "sourceToCandidate": {
+            "samples": 10000,
+            "meanMm": 0.022590367379152747,
+            "rmsMm": 0.03817943671063156,
+            "medianMm": 0.012198776330479149,
+            "p95Mm": 0.08770033426767614,
+            "p99Mm": 0.1573885604944721,
+            "maximumSampledMm": 0.2587647785514001
+          },
+          "sameComponents": true,
+          "sameEuler": true,
+          "sameBoundaryEdges": true
+        }
+      ],
+      "seconds": 8.076406516003772
+    }
+  ],
+  "source": {
+    "sourceManifest": "public/assets/ultra-volume-v7.json",
+    "sourceManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "verifiedUniqueBricks": 80,
+    "decodedBrickReads": 80,
+    "cacheMaximumBricks": 48,
+    "cacheMaximumBytes": 13182000,
+    "sourceSpacingUm": 79.4,
+    "coordinateConvention": "Original main-view fine-grid endpoint convention; acquisition XYZ maps to world (x,z,-y).",
+    "sourceUnchanged": true,
+    "originalQuantitativeIntensities": false
+  }
+}

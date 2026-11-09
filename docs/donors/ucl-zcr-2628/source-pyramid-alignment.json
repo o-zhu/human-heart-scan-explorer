@@ -1,0 +1,17 @@
+{
+  "fineChunkXYZ": [
+    8,
+    6,
+    12
+  ],
+  "coarseBlockXYZ": [
+    256,
+    192,
+    384
+  ],
+  "meanAbsoluteRawDifference": 0.26217174530029297,
+  "maximumAbsoluteRawDifference": 0.859375,
+  "medianDifference": 0.0,
+  "fineChunkSha256": "c57fdb807a3d235d2cd39e41fb4fd9425007023f8f6fff71a6d3361dd2608681",
+  "interpretation": "Nested block averages compare fine source samples to declared high pyramid; tests source downsample alignment independently of browser interpolation."
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "Actual app state functions with a test DOM and deterministic loader/renderer mocks. No browser UI or frame-rate claim.",
+  "checks": [
+    "Preview then background refinement retain the visible viewer and Tissue / space.",
+    "An older original-scan request respects a newer Clean scan selection.",
+    "Changing scan resolution during original restoration keeps the newest resolution and cleanup intent.",
+    "A failed original load preserves the usable clean volume and reports the failure.",
+    "Flow entry is awaitable; returning restores reconstruction framing while preserving material and surface choices.",
+    "Viewed Ultra requests start immediately, canceled prior requests cannot win, and all visible source indices are passed to the scheduler.",
+    "Warm-cache sections apply synchronously, duplicate cap uploads are avoided, and irrelevant prefetch results stay off screen.",
+    "Probe entry is awaitable; module switches stop obsolete section work and preserve shared appearance while restoring reconstruction framing."
+  ]
+}

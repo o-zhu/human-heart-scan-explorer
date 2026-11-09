@@ -1,0 +1,105 @@
+[
+  {
+    "id": "valves-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1150,
+      1168,
+      1105
+    ],
+    "distance": 0.6
+  },
+  {
+    "id": "valves-y293-oblique",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1150,
+      1168,
+      1105
+    ],
+    "distance": 0.64,
+    "direction": [
+      0.25,
+      0.14,
+      -1.0
+    ]
+  },
+  {
+    "id": "aortic-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1080,
+      1168,
+      990
+    ],
+    "distance": 0.3
+  },
+  {
+    "id": "mitral-y293",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1200,
+      1168,
+      1170
+    ],
+    "distance": 0.34
+  },
+  {
+    "id": "valves-y291",
+    "axis": 1,
+    "coordinate": 1160,
+    "target": [
+      1150,
+      1160,
+      1105
+    ],
+    "distance": 0.6
+  },
+  {
+    "id": "valves-y295",
+    "axis": 1,
+    "coordinate": 1176,
+    "target": [
+      1150,
+      1176,
+      1105
+    ],
+    "distance": 0.6
+  },
+  {
+    "id": "aortic-y293-oblique",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1080,
+      1168,
+      990
+    ],
+    "distance": 0.3,
+    "direction": [
+      0.35,
+      0.15,
+      -1
+    ]
+  },
+  {
+    "id": "aortic-y293-reverse-oblique",
+    "axis": 1,
+    "coordinate": 1168,
+    "target": [
+      1080,
+      1168,
+      990
+    ],
+    "distance": 0.3,
+    "direction": [
+      -0.35,
+      0.15,
+      -1
+    ]
+  }
+]

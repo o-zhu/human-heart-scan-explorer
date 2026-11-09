@@ -1,0 +1,218 @@
+{
+  "revision": "echo-correspondence-v11",
+  "reviewedDate": "2026-11-05",
+  "preparedPlanes": 13,
+  "sourceLabelsChecked": 12,
+  "displayCorrections": 4,
+  "validation": "Exact scalar permutation round-trip and unchanged immutable source-image checksums. Native source planes and movie posters inspected; labels checked with publishers. No browser QA or expert clinical registration.",
+  "planes": [
+    {
+      "key": "plax",
+      "sourceImageSha256": "7c3b28beb0457b39ed18baf8541a79b73a50d564a31a7d00fa3df08749baff2a",
+      "sourceScalarSha256": "c846bf2a6d559ae8ccdd0bddc1a39b8ec76889cba23238e92197d6499bea304a",
+      "displayScalarSha256": "c846bf2a6d559ae8ccdd0bddc1a39b8ec76889cba23238e92197d6499bea304a",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        2011,
+        1525
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tte-plax",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "psax_papillary",
+      "sourceImageSha256": "fd50089f70583d87f1055225bd18d9ae48e7e50dc969ff08458a085ce77f6576",
+      "sourceScalarSha256": "89f28b439111920f3a05e4ff2bed1ce944a7b3c971b669d8076f6df95c6a94e3",
+      "displayScalarSha256": "22b6b287c116ce3e84586440073ad1a5beda6441f31c9d6319f76358d32a1de3",
+      "mirrorX": false,
+      "rotate180": true,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        1525
+      ],
+      "reviewStatus": "partial",
+      "movie": "tte-psax_papillary",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "psax_mitral",
+      "sourceImageSha256": "f130c4f622542dec65133048e496e90de2dac8ed42e1acfa32afb9ba7e140b22",
+      "sourceScalarSha256": "89baeaf1551393389475cfb46fb405b3aa088b3524d65ae08b3bf876a8219664",
+      "displayScalarSha256": "89baeaf1551393389475cfb46fb405b3aa088b3524d65ae08b3bf876a8219664",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        1525
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tte-psax_mitral",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "a4c",
+      "sourceImageSha256": "aeff13c6a83fa12ca774ca97c0ce9cfd5f8d117c46145cf9747f7b779bc0aa05",
+      "sourceScalarSha256": "ce24da49e884b3913fa5edf9ecdcc0bd6b04928149d8310a8545e3031aee3933",
+      "displayScalarSha256": "ce24da49e884b3913fa5edf9ecdcc0bd6b04928149d8310a8545e3031aee3933",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "partial",
+      "movie": "tte-a4c",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "a2c",
+      "sourceImageSha256": "c01631177e2fa74c8c8552e07227bb59098237cd42a4dc8ca0711c0e619ec263",
+      "sourceScalarSha256": "1f36bcf3fe343747532dc325a977dce3032d58d8cc48eb039b5902686a806940",
+      "displayScalarSha256": "1f36bcf3fe343747532dc325a977dce3032d58d8cc48eb039b5902686a806940",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "partial",
+      "movie": "tte-a2c",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "a3c",
+      "sourceImageSha256": "1317a528b3ac27460ffef59d923da6e8224b7452d6e5a6b656dbd06f87752d35",
+      "sourceScalarSha256": "23d4b36d1f6e4250b31e796cb9db0a5d114c455ef414d9bebbf982d329654459",
+      "displayScalarSha256": "23d4b36d1f6e4250b31e796cb9db0a5d114c455ef414d9bebbf982d329654459",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tte-a3c",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "subcostal",
+      "sourceImageSha256": "5a8cb2fb5e74e006ad98d6e8c757dc9f4b580bdd6dbdc153c93a682f89437a56",
+      "sourceScalarSha256": "b09dd8a14bbae8e90e41562162f22877fb9ffea9afa062945e17cb8d39691a5e",
+      "displayScalarSha256": "a362a3797be5f4af1f09f09bcc7573ea4fc647b1215d227f4cfe423900019cab",
+      "mirrorX": false,
+      "rotate180": true,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        2011,
+        1525
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tte-subcostal",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "me4c",
+      "sourceImageSha256": "a4f7a085d8fd7834c66e645e1088be65eaef73bb220ef1801483979be27d1e7c",
+      "sourceScalarSha256": "fcccbc4f0cc79977208990418eb06f2f8b0e10c5e9c2c340d2092c0d8b417325",
+      "displayScalarSha256": "a4c5ce7985f2700b3a8df3a39953de33d73f28f751620bf9edf02aa75e4bb169",
+      "mirrorX": true,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "partial",
+      "movie": "tee-me4c",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "me2c",
+      "sourceImageSha256": "6397de781366d0cbb416dcb636830533c5800d9f2b6648110ff49aa465798f8c",
+      "sourceScalarSha256": "cbda86fdfbaf2d463d47893fdc2469507dc4ce5f77bf789ba344c4e0da7b0ddc",
+      "displayScalarSha256": "cbda86fdfbaf2d463d47893fdc2469507dc4ce5f77bf789ba344c4e0da7b0ddc",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "partial",
+      "movie": "tee-me2c",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "melax",
+      "sourceImageSha256": "5a0d8df52fd81367ef4a9c62297b86b969ce976a892bad1e8ce5dbd07a905e24",
+      "sourceScalarSha256": "c77aa36312ae140629d5f6e9597b05026c7a6edfbdb70abb6a86a46c91a3df7b",
+      "displayScalarSha256": "c77aa36312ae140629d5f6e9597b05026c7a6edfbdb70abb6a86a46c91a3df7b",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        2011
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tee-melax",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "meavsax",
+      "sourceImageSha256": "14c9b714b466c0ade1c7f087c77c8e426849898bee58e4fc96e1a95c36ab2a97",
+      "sourceScalarSha256": "effb30eb944fb9b70b63ab02de91a99342e8fe0cbde612e30ca62371e429180d",
+      "displayScalarSha256": "effb30eb944fb9b70b63ab02de91a99342e8fe0cbde612e30ca62371e429180d",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        1525
+      ],
+      "reviewStatus": "unverified",
+      "movie": null,
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "bicaval",
+      "sourceImageSha256": "b02dc70fa5bd3a014dc0272517bb2711e5f45b1c91c77361ed18670f6ed2e287",
+      "sourceScalarSha256": "fd4d5f9a6ef949e1a582f45a4e9592848b633804eb77fd4d7e92e330d3950644",
+      "displayScalarSha256": "fd4d5f9a6ef949e1a582f45a4e9592848b633804eb77fd4d7e92e330d3950644",
+      "mirrorX": false,
+      "rotate180": false,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        1525
+      ],
+      "reviewStatus": "unverified",
+      "movie": "tee-bicaval",
+      "clinicalRegistrationVerified": false
+    },
+    {
+      "key": "tgpapillary",
+      "sourceImageSha256": "fd50089f70583d87f1055225bd18d9ae48e7e50dc969ff08458a085ce77f6576",
+      "sourceScalarSha256": "89f28b439111920f3a05e4ff2bed1ce944a7b3c971b669d8076f6df95c6a94e3",
+      "displayScalarSha256": "22b6b287c116ce3e84586440073ad1a5beda6441f31c9d6319f76358d32a1de3",
+      "mirrorX": false,
+      "rotate180": true,
+      "pixelValuesPreservedExactly": true,
+      "sourceDimensions": [
+        1525,
+        1525
+      ],
+      "reviewStatus": "partial",
+      "movie": "tee-tgpapillary",
+      "clinicalRegistrationVerified": false
+    }
+  ]
+}

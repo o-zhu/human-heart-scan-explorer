@@ -1,0 +1,57 @@
+{
+  "schema": "guided-native-final-scientific-figure-review-v21.1",
+  "observedAtUtc": "2026-11-06T17:04:42.446272+00:00",
+  "manifestSha256": "e8c3e1e58fcc3bb612b210589c529b34ef5c59c0f29163b8153062de6b7ae3b6",
+  "finalManifestComplete": true,
+  "standardRendererUsedWithoutGuardChanges": true,
+  "realWholePlanScope": true,
+  "figures": [
+    {
+      "lod": "overview",
+      "figure": "docs/guided-native-v21/whole-overview-render/whole-overview.png",
+      "figureSha256": "e86b705d9153c12b567da4a0ab173619287ead280a53af4ff2faed8560e16631",
+      "figureBytes": 998315,
+      "renderRecord": "docs/guided-native-v21/whole-overview-render/render-record.json",
+      "triangles": 1499999,
+      "vertices": 369031,
+      "scaleBarMm": 20,
+      "cameraSpanMm": 177.85917057058282,
+      "rasterPeakRssMiB": 118.15234375,
+      "combinedRendererAndParentPeakMiB": 131.52734375,
+      "storedZeroNormals": 0,
+      "forwardP95Um": 675.886870242327,
+      "reverseP95Um": 151.8709733633329
+    },
+    {
+      "lod": "detail",
+      "figure": "docs/guided-native-v21/whole-detail-render/whole-overview.png",
+      "figureSha256": "0c31eab0388c7250d8615459a5da63c55b404f6d935c65b614551ee4a134eb77",
+      "figureBytes": 1103233,
+      "renderRecord": "docs/guided-native-v21/whole-detail-render/render-record.json",
+      "triangles": 2500000,
+      "vertices": 699001,
+      "scaleBarMm": 20,
+      "cameraSpanMm": 178.17386610361123,
+      "rasterPeakRssMiB": 114.33984375,
+      "combinedRendererAndParentPeakMiB": 127.71484375,
+      "storedZeroNormals": 0,
+      "forwardP95Um": 526.0017461607808,
+      "reverseP95Um": 153.56326713469826
+    }
+  ],
+  "visualInspection": {
+    "performed": true,
+    "method": "Direct inspection of both saved PNG figures with the image-view tool",
+    "observations": [
+      "Both full exterior views show a coherent compact global organ surface without obvious exploded geometry or scrambled triangles.",
+      "Both matched-camera open cutaways expose internal cavities and retain the same global form.",
+      "Detail LOD contains denser visible surface texture; this is not independent evidence of greater anatomical accuracy.",
+      "Mottled and faceted surface appearance remains in both display LODs.",
+      "Source, sample spacing, lossy display qualification, physical scale, acquisition axes and non-browser-render captions are legible."
+    ],
+    "limitations": "Two-view visual QA cannot establish anatomical accuracy, topology, structures outside the guide, exhaustive local defect absence or browser performance."
+  },
+  "browserScreenshot": false,
+  "geometryModifiedByRendering": false,
+  "sourceIntensitiesRead": false
+}

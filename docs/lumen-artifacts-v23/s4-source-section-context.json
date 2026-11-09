@@ -1,0 +1,25 @@
+{
+  "source": "{source-cache}/anatomy-v12/source-s4.npy",
+  "sourceShapeZYX": [
+    530,
+    475,
+    475
+  ],
+  "sourceDtype": "uint16",
+  "spacingUm": 317.6,
+  "displayWindowOriginalUnits": [
+    14640,
+    23545
+  ],
+  "screenshotSections": [
+    {
+      "axis": "y",
+      "index0": 296
+    },
+    {
+      "axis": "x",
+      "index0": 245
+    }
+  ],
+  "scope": "Context only. Raw s4 differs from fine display bank; no tissue classification or removal is justified by this image alone."
+}

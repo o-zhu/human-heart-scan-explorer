@@ -1,0 +1,253 @@
+{
+  "scope": "Orthographic native scientific inspection of actual TEE pose/mesh exports.\n\nThe production procedural geometry and shading are retained. Projection is\northographic to compare positions with one stable camera. The optional opaque\nheart is a coarse source silhouette, not the user's final reconstructed surface.\nHead-center dots are review markers; this is not a browser screenshot.\n",
+  "productionMeshes": true,
+  "productionFragmentShader": true,
+  "orthographicProjection": true,
+  "browserScreenshot": false,
+  "sourceHashes": {
+    "public/tee-atlas-geometry.js": "e2a6d25c82d901b3a3ea705990524f70e2148a3cb2655de469423cbac3b012d0",
+    "public/tee-scene.js": "b496849f613260496a3ddd246db5388c50d26d190ee9eb7ecb38f796e9982ced",
+    "public/probe-scene.js": "35b892dcf809258f376ee8c135e9a84659844de7ff58bb91a6adbd7e977bdcdc",
+    "public/tee-context-geometry.js": "4fc0741ee93729ef8331c41e3a499a2f163ba538ba7e41846f8619235a185df7",
+    "public/assets/tee-atlas/plane-fit-v2.json": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64"
+  },
+  "sourceHeart": {
+    "spacingUm": [
+      635.2,
+      635.2,
+      636.4030303030304
+    ],
+    "compressedSha256": "2fbdbed97158e5fc2cf3456130a7c92c7e468a07e9a4f4d3bcd2bff353c33ed4",
+    "triangles": 80602,
+    "threshold": 71.4,
+    "displayGaussianSigma": 0.65,
+    "marchingStep": 3
+  },
+  "camera": {
+    "direction": "posterior-oblique",
+    "forward": [
+      -0.6947180222616257,
+      0.262029323021308,
+      0.6698563304335419
+    ],
+    "right": [
+      0.4202192364285281,
+      -0.6079710301579119,
+      0.6736371573956949
+    ],
+    "up": [
+      -0.5837659315858713,
+      -0.7494743893994794,
+      -0.31225866962176957
+    ],
+    "targetMm": [
+      47.60428610814571,
+      23.856795647392502,
+      27.811111554482906
+    ],
+    "halfHeightMm": 187.34853661483035
+  },
+  "cases": [
+    {
+      "id": "me5c",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 31.43014173913316,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "me4c",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 33.88765916805259,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "mecommissural",
+      "level": "le",
+      "estimated": false,
+      "insertionModelCm": 38.01826239403961,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "me2c",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 35.44993257655915,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "melax",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 33.88765916805259,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "meavlax",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 35,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "meaaolax",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 33.88765916805259,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "meaaosax",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 33.45934200870602,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "merpv",
+      "level": "me",
+      "estimated": true,
+      "insertionModelCm": 33.67314279436209,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "meavsax",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 35.44993257655915,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "mervinout",
+      "level": "me",
+      "estimated": true,
+      "insertionModelCm": 34.32595749262298,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "memodbicaval",
+      "level": "me",
+      "estimated": true,
+      "insertionModelCm": 34.32595749262298,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "bicaval",
+      "level": "me",
+      "estimated": false,
+      "insertionModelCm": 31.175560901617963,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "mepv",
+      "level": "me",
+      "estimated": true,
+      "insertionModelCm": 34.104984150635254,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "melaa",
+      "level": "me",
+      "estimated": true,
+      "insertionModelCm": 34.549459196073734,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgbasalsax",
+      "level": "tg",
+      "estimated": true,
+      "insertionModelCm": 45.99689689453061,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgpapillary",
+      "level": "tg",
+      "estimated": false,
+      "insertionModelCm": 47.75399780484583,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgapicalsax",
+      "level": "tg",
+      "estimated": false,
+      "insertionModelCm": 48.23575136399553,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgrvbasal",
+      "level": "tg",
+      "estimated": true,
+      "insertionModelCm": 45.99689689453061,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgrvinout",
+      "level": "tg",
+      "estimated": true,
+      "insertionModelCm": 46.83229666455405,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "deeptg5c",
+      "level": "deep-tg",
+      "estimated": true,
+      "insertionModelCm": 50.10500397422294,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tg2c",
+      "level": "tg",
+      "estimated": true,
+      "insertionModelCm": 47.537558021534764,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tgrvin",
+      "level": "tg",
+      "estimated": false,
+      "insertionModelCm": 47.537558021534764,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "tglax",
+      "level": "tg",
+      "estimated": false,
+      "insertionModelCm": 46.27196205358724,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "daosax",
+      "level": "le",
+      "estimated": true,
+      "insertionModelCm": 41.02423258949988,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "daolax",
+      "level": "le",
+      "estimated": true,
+      "insertionModelCm": 41.02423258949988,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "uearchlax",
+      "level": "ue",
+      "estimated": true,
+      "insertionModelCm": 28.57821648942584,
+      "glError": "GL_NO_ERROR"
+    },
+    {
+      "id": "uearchsax",
+      "level": "ue",
+      "estimated": true,
+      "insertionModelCm": 28.57821648942584,
+      "glError": "GL_NO_ERROR"
+    }
+  ],
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "outputs": [
+    "probe-positions-all28.jpg",
+    "probe-positions-details.jpg"
+  ]
+}

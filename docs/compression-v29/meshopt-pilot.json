@@ -1,0 +1,140 @@
+{
+  "schema": "heart-meshopt-pilot-v29",
+  "rows": [
+    {
+      "candidate": "positions",
+      "codecBytes": 1664603,
+      "gzipBytes": 1503620,
+      "decodedBytes": 3600000,
+      "equal": true
+    },
+    {
+      "candidate": "normals",
+      "codecBytes": 2752733,
+      "gzipBytes": 2729895,
+      "decodedBytes": 3600000,
+      "equal": true
+    },
+    {
+      "candidate": "normals-oct-16",
+      "codecBytes": 1824487,
+      "gzipBytes": 1817591,
+      "decodedBytes": 1800000,
+      "equal": true,
+      "angularErrorDegrees": {
+        "max": 0.004283175274883819,
+        "rms": 0.0016466322462953913,
+        "p99": 0.003028352574526277
+      }
+    },
+    {
+      "candidate": "normals-oct-14",
+      "codecBytes": 1809845,
+      "gzipBytes": 1753522,
+      "decodedBytes": 1800000,
+      "equal": true,
+      "angularErrorDegrees": {
+        "max": 0.015735933368148117,
+        "rms": 0.005822868121919352,
+        "p99": 0.01185609022347178
+      }
+    },
+    {
+      "candidate": "normals-oct-12",
+      "codecBytes": 1613802,
+      "gzipBytes": 1561721,
+      "decodedBytes": 1800000,
+      "equal": true,
+      "angularErrorDegrees": {
+        "max": 0.05927178173094647,
+        "rms": 0.02314429129710506,
+        "p99": 0.04727456801951706
+      }
+    },
+    {
+      "candidate": "normals-oct-11",
+      "codecBytes": 1373120,
+      "gzipBytes": 1353565,
+      "decodedBytes": 1800000,
+      "equal": true,
+      "angularErrorDegrees": {
+        "max": 0.11794593167040789,
+        "rms": 0.04634818472462036,
+        "p99": 0.09471465428328674
+      }
+    },
+    {
+      "candidate": "normals-oct-10",
+      "codecBytes": 1358007,
+      "gzipBytes": 1298073,
+      "decodedBytes": 1800000,
+      "equal": true,
+      "angularErrorDegrees": {
+        "max": 0.23522494604365263,
+        "rms": 0.09256811662437026,
+        "p99": 0.18901636812658817
+      }
+    },
+    {
+      "candidate": "index-triangles",
+      "codecBytes": 1098434,
+      "gzipBytes": 792806,
+      "decodedBytes": 5400000,
+      "equal": false,
+      "rotationBitsGzipBytes": 104233,
+      "cyclicRotationsOnly": true
+    },
+    {
+      "candidate": "index-sequence",
+      "codecBytes": 1505834,
+      "gzipBytes": 1072398,
+      "decodedBytes": 5400000,
+      "equal": true
+    },
+    {
+      "candidate": "oct16-planes",
+      "codecBytes": 1800000,
+      "gzipBytes": 1799273,
+      "decodedBytes": 2700000,
+      "maxResidual": 2,
+      "exactResidualGzipBytes": 347813,
+      "exactResidualInt8GzipBytes": 291998
+    },
+    {
+      "candidate": "oct14-planes",
+      "codecBytes": 1800000,
+      "gzipBytes": 1599765,
+      "decodedBytes": 2700000,
+      "maxResidual": 7,
+      "exactResidualGzipBytes": 682714,
+      "exactResidualInt8GzipBytes": 580057
+    },
+    {
+      "candidate": "oct12-planes",
+      "codecBytes": 1350000,
+      "gzipBytes": 1349531,
+      "decodedBytes": 2700000,
+      "maxResidual": 30,
+      "exactResidualGzipBytes": 1117629,
+      "exactResidualInt8GzipBytes": 892461
+    },
+    {
+      "candidate": "oct11-planes",
+      "codecBytes": 1350000,
+      "gzipBytes": 1239010,
+      "decodedBytes": 2700000,
+      "maxResidual": 59,
+      "exactResidualGzipBytes": 1334489,
+      "exactResidualInt8GzipBytes": 1018121
+    },
+    {
+      "candidate": "oct10-planes",
+      "codecBytes": 1350000,
+      "gzipBytes": 1149213,
+      "decodedBytes": 2700000,
+      "maxResidual": 118,
+      "exactResidualGzipBytes": 1541923,
+      "exactResidualInt8GzipBytes": 1177366
+    }
+  ]
+}

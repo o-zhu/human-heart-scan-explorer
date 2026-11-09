@@ -1,0 +1,57 @@
+{
+  "datasetId": "1966162746",
+  "specimen": "S-20-28",
+  "datasetUrl": "https://human-organ-atlas.esrf.fr/datasets/1966162746",
+  "geometricComparisonOnly": true,
+  "anatomicIdentityAssigned": false,
+  "clinicalPresetsReviewed": false,
+  "expertValidated": false,
+  "reviewStatus": "Measured geometric comparison; anatomical identity unreviewed",
+  "sourceDoi": "10.15151/ESRF-DC-1966163810",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Human Organ Atlas Collaboration / ESRF",
+  "sourceSpacingUm": 79.4,
+  "method": "Intensity-weighted principal axes of this donor's sampled cleaned tissue; geometric axes only.",
+  "sampleStride": 3,
+  "thresholdByte": 75.0,
+  "sampledVoxelCount": 455862,
+  "centerSourceHighXYZ": [
+    239.905219813957,
+    214.701195785582,
+    270.174243911056
+  ],
+  "majorPhysicalXYZ": [
+    -0.13130066218,
+    -0.298617328972,
+    0.945297745131
+  ],
+  "rightPhysicalXYZ": [
+    0.919785389992,
+    0.319011014424,
+    0.228531855621
+  ],
+  "acrossPhysicalXYZ": [
+    -0.369803964917,
+    0.899477439136,
+    0.23277749895
+  ],
+  "eigenvaluesUmSquared": [
+    1194885722.532309,
+    590238569.1261662,
+    400189289.93145585
+  ],
+  "offsetUm": 20897.420774517497,
+  "framingBoundsSourceHighXYZ": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      476.0,
+      476.0,
+      508.0
+    ]
+  ],
+  "anatomicalAxisClaim": false
+}
