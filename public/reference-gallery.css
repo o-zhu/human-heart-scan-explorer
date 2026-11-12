@@ -34,8 +34,9 @@ body #echoPanel:is(:fullscreen,:-webkit-full-screen) .reference-fullscreen-exit{
 .reference-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:12px}
 .reference-card{display:flex;flex-direction:column;width:100%;min-width:0;overflow:hidden;text-align:left;padding:0;background:#13201d;border:1px solid #3b4b42;border-radius:7px;color:#e3e8de;transition:border-color .15s,background .15s}
 .reference-card:hover{background:#21332b}
-.reference-card-image{display:block;aspect-ratio:1;background:#f6f3ee;overflow:hidden;width:100%}
+.reference-card-image{display:block;position:relative;aspect-ratio:1;background:#f6f3ee;overflow:hidden;width:100%}
 .reference-card-image img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:normal}
+.reference-card-image .reference-card-angle{position:absolute;top:6px;right:6px;width:52px;padding:3px 4px;border-radius:4px;background:#f6f3eeeb;box-sizing:border-box;pointer-events:none}
 .reference-card-copy{display:flex;flex-direction:column;gap:6px;padding:12px 12px 14px;min-height:65px}
 .reference-card-code{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font:12px/1.25 ui-monospace,monospace;color:#e1b19b;letter-spacing:.1px}
 .reference-card-code>span{color:#94a89d;font-size:11px;white-space:nowrap;letter-spacing:0}
@@ -50,14 +51,22 @@ body #echoPanel:is(:fullscreen,:-webkit-full-screen) .reference-fullscreen-exit{
 .reference-gallery-footer summary{cursor:pointer;color:#b2c2b7;min-height:36px}
 .reference-gallery-footer details div{display:flex;gap:10px 20px;flex-wrap:wrap}
 .reference-gallery-footer a{color:#d0b29e;text-underline-offset:3px;min-height:32px}
-.reference-detail-navigation{display:flex;align-items:center;gap:18px;padding:8px 16px;border-bottom:1px solid #2b4036;background:#101b18;min-height:40px;box-sizing:border-box}
-.reference-detail-navigation button{border:1px solid #57735e;border-radius:4px;background:#253b2e;color:#e0e9d9;min-height:36px;padding:6px 12px;font-size:13px}
-.reference-detail-navigation>span{color:#97ac9d;font-size:12px}
+.reference-detail-navigation{display:inline-flex;align-items:center;flex:0 0 auto;box-sizing:border-box;padding-right:11px;margin-right:1px;border-right:1px solid #34483f}
+body #echoPanel .reference-detail-navigation button{display:inline-flex;align-items:center;gap:7px;border:1px solid transparent;border-radius:5px;background:transparent;color:#b7cbb9;min-height:34px;padding:5px 7px;font-size:13px;line-height:1.25;white-space:nowrap}
+body #echoPanel .reference-detail-navigation button:hover{border-color:#526e5a;background:#1b3025;color:#e1ecd9}
+.reference-detail-navigation svg,.reference-back-compact svg{display:block;flex:none;width:16px;height:16px}
+body #echoPanel.echo-compact .echo-compact-navigation{grid-template-columns:var(--echo-control-size) auto minmax(90px,1fr) max(42px,var(--echo-control-size)) var(--echo-control-size) minmax(200px,auto)}
+body #echoPanel.echo-compact .reference-back-compact{display:inline-flex;align-items:center;justify-content:center;gap:6px;color:#c8dcbf;background:#21362a;border-color:#526d56}
+body #echoPanel.echo-compact .reference-back-compact>span{display:none}
+body #echoPanel.echo-compact.echo-phone .echo-compact-navigation{grid-template-columns:auto minmax(0,1fr) max(42px,var(--echo-control-size)) var(--echo-control-size)}
+body #echoPanel.echo-compact.echo-phone .reference-back-compact{grid-row:2;grid-column:1;min-width:0}
+body #echoPanel.echo-compact.echo-phone .echo-compact-view-switch{grid-row:2;grid-column:2/-1}
+body #echoPanel.echo-compact.echo-phone .reference-back-compact>span{display:inline;font-size:12px}
 /* Square, labelled icons replace the old decorative thumbnails in every picker. */
 body #echoPanel .echo-illustrated-preset img{object-fit:contain;aspect-ratio:1;background:#f6f3ee;height:auto!important}
 body #echoPanel [data-echo="diagram-image"]{object-fit:contain;background:#f6f3ee}
 @media(min-width:1600px){.reference-card-grid{grid-template-columns:repeat(auto-fill,minmax(205px,1fr))}}
-@media(max-width:760px){.reference-gallery{padding-top:17px}.reference-gallery-header{align-items:flex-start;margin-bottom:16px}.reference-gallery h2{font-size:23px}.reference-gallery-header p{max-width:260px;font-size:13px}.reference-level button{padding:8px 11px;font-size:13px}.reference-gallery-tools{flex-wrap:wrap;gap:12px}.reference-modalities{width:100%}.reference-modalities button{flex:1;justify-content:center}.reference-search{width:100%}.reference-gallery-summary{margin-top:16px}.reference-card-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px}.reference-card-copy{padding:10px;min-height:64px}.reference-card-code{font-size:11px}.reference-card-code>span{font-size:10px}.reference-card-name{font-size:13px}.reference-detail-navigation{padding:5px 7px;gap:10px}.reference-detail-navigation>span{display:none}}
+@media(max-width:760px){.reference-gallery{padding-top:17px}.reference-gallery-header{align-items:flex-start;margin-bottom:16px}.reference-gallery h2{font-size:23px}.reference-gallery-header p{max-width:260px;font-size:13px}.reference-level button{padding:8px 11px;font-size:13px}.reference-gallery-tools{flex-wrap:wrap;gap:12px}.reference-modalities{width:100%}.reference-modalities button{flex:1;justify-content:center}.reference-search{width:100%}.reference-gallery-summary{margin-top:16px}.reference-card-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px}.reference-card-copy{padding:10px;min-height:64px}.reference-card-code{font-size:11px}.reference-card-code>span{font-size:10px}.reference-card-name{font-size:13px}.reference-card-image .reference-card-angle{top:4px;right:4px;width:46px}}
 @media(max-width:370px){.reference-gallery-header{flex-wrap:wrap;gap:10px}.reference-gallery-header>div:first-child{width:100%}.reference-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-card-code{flex-wrap:wrap;gap:3px}.reference-card-copy{padding:8px}.reference-modalities button{padding:8px}.reference-modalities button span{font-size:11px}.reference-gallery-summary>span{max-width:150px;text-align:right}.reference-groups{gap:5px}.reference-groups button{font-size:12px;padding:6px 8px}}
 @media(max-width:760px){.reference-groups{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding:3px 2px 7px;scrollbar-width:thin}.reference-groups button{white-space:nowrap;flex-shrink:0}}
 @media(any-pointer:coarse){.reference-level button,.reference-groups button,.reference-detail-navigation button{min-height:44px}}

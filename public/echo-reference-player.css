@@ -6,6 +6,7 @@
 .echo-cine-source-line a{color:#bdd2c5;text-decoration:underline;text-underline-offset:3px}
 .echo-cine-angle{position:absolute;left:var(--echo-angle-left,0);top:var(--echo-angle-top,0);right:auto;z-index:2;display:block;width:var(--echo-angle-width,112px);padding:0;border:0;border-radius:0;background:transparent;color:#fff;visibility:hidden;pointer-events:none;user-select:none}
 .echo-cine-angle[hidden]{display:none}
+.echo-cine-angle>.multiplane-indicator{width:100%}
 .echo-cine-angle svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 0 1px #000)}
 .echo-cine-angle .echo-angle-arc{fill:none;stroke:#5354bd;stroke-width:1.8;stroke-linejoin:round}
 .echo-cine-angle svg line{stroke:#fff;stroke-width:5;stroke-linecap:butt}

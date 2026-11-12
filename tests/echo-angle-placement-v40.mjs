@@ -4,7 +4,7 @@ import {referenceAngleLayout,createReferenceAnglePlacement,supplementalTeeAngle,
 import {TEE_ATLAS_VIEWS} from '../public/tee-atlas-data.js';
 
 const source={sourceWidth:1280,sourceHeight:720,focusAspect:1.4};
-const near=(actual,expected)=>assert.ok(Math.abs(actual-expected)<1e-6,`${actual} ≠ ${expected}`);
+const near=(actual,expected,tolerance=1e-6)=>assert.ok(Math.abs(actual-expected)<tolerance,`${actual} ≠ ${expected}`);
 const nearRect=(actual,expected)=>Object.entries(expected).forEach(([key,value])=>near(actual[key],value));
 
 test('scanner dial stays with the ultrasound content, including source padding and player letterboxing',()=>{
@@ -49,16 +49,20 @@ test('unavailable source dimensions wait for metadata rather than placing an arb
  assert.deepEqual(noCrop.crop,noCrop.frame);
 });
 
-test('representative reference values retain guideline ranges in the explanation; only missing readouts receive a dial',()=>{
- for(const [id,range,angle] of [['me5c','0–10°',5],['memodbicaval','50–70°',60]]){
-  const dial=supplementalTeeAngle(TEE_ATLAS_VIEWS.find(view=>view.id===id));
+test('all 28 TEE recordings receive a numeric reference without claiming a measured acquisition angle',()=>{
+ assert.equal(TEE_ATLAS_VIEWS.length,28);
+ for(const view of TEE_ATLAS_VIEWS){
+  const [min,max]=view.angleRange,range=`${min===max?min:`${min}–${max}`}°`,angle=(min+max)/2;
+  const dial=supplementalTeeAngle(view);
+  assert.ok(dial,view.id);
   assert.equal(dial.label,`${angle}°`);assert.equal(dial.angle,angle);
-  assert.match(dial.explanation,/Representative reference angle/);assert.ok(dial.explanation.includes(`guideline range ${range}`));assert.match(dial.explanation,/acquired angle is not displayed/);
-  near(Math.hypot(dial.x-64,dial.y-34),52);
+  assert.match(dial.explanation,/Reference angle:/);assert.ok(dial.explanation.includes(range));assert.match(dial.explanation,/representative view angle, not a measured angle from this recording/);
+  // SVG coordinates are deliberately rounded to four decimal places.
+  near(Math.hypot(dial.x-64,dial.y-34),52,1e-4);
  }
- for(const view of TEE_ATLAS_VIEWS.filter(view=>!['me5c','memodbicaval'].includes(view.id)))assert.equal(supplementalTeeAngle(view),null);
  assert.match(referenceAngleMarkup,/role="img"/);assert.match(referenceAngleMarkup,/>REF<\/text>/);
  assert.equal(supplementalTeeAngle({id:'me5c',angleRange:[80,20]}),null);
+ assert.equal(supplementalTeeAngle({mode:'tte',angleRange:[0,10]}),null);
 });
 
 test('one bounded observer follows pane and video resize and metadata, then disconnects on disposal',()=>{

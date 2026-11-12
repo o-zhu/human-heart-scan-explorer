@@ -81,17 +81,37 @@ assert.equal(video.classList.contains('is-framed'),false,'The default preserves 
 assert.equal(echo.cineLoadedId,null,'A URL assignment is not evidence of a decoded frame.');
 video.dispatchEvent(new window.Event('loadeddata'));assert.equal(echo.cineLoadedId,clip.id);
 assert.equal(echo.$('cine-visible-source').getAttribute('href'),clip.sourceUrl);
-assert.equal(echo.$('cine-angle').hidden,false);assert.equal(echo.$('cine-angle-value').textContent,'5°');assert.match(echo.$('cine-angle-note').textContent,/guideline range 0–10°/);assert.match(echo.$('cine-angle-note').textContent,/acquired angle is not displayed/);
+assert.equal(echo.$('cine-angle').hidden,false);assert.equal(echo.$('cine-angle-value').textContent,'5°');assert.match(echo.$('cine-angle-note').textContent,/range 0–10°/);assert.match(echo.$('cine-angle-note').textContent,/not a measured angle from this recording/);
 const priorLoads=loads;echo.updateCine();assert.equal(loads,priorLoads,'Unrelated plane updates preserve playback.');
 echo.setMediaCatalog({clips:[{...clip,url:'https://publisher.example/revised.mp4'}]});assert.equal(plays,2,'Same-id catalog corrections still replace the actual source.');
 video.error=null;video.dispatchEvent(new window.Event('error'));assert.equal(echo.$('cine-retry').hidden,true,'A queued empty media error cannot fail the replacement.');
 rejectAutoplay=true;echo.startCine({...clip,url:'https://publisher.example/retry.mp4'});await settle();assert.match(echo.$('cine-status').textContent,/press Play/);
 echo.state.preset='memodbicaval';echo.setMediaCatalog({clips:[{...clip,id:'tee-two',preset:'memodbicaval'}]});
-assert.equal(echo.$('cine-angle-value').textContent,'60°');assert.match(echo.$('cine-angle-note').textContent,/guideline range 50–70°/);assert.equal(supplementalTeeAngle(TEE_ATLAS_VIEWS.find(v=>v.id==='me4c')),null);
+assert.equal(echo.$('cine-angle-value').textContent,'60°');assert.match(echo.$('cine-angle-note').textContent,/range 50–70°/);assert.ok(supplementalTeeAngle(TEE_ATLAS_VIEWS.find(v=>v.id==='me4c')));
+// Exercise every selected source through the real controller, including the
+// zero-degree RPV view. Metadata is fixture state, not a playback assertion.
+const screen=echo.mount.querySelector('.echo-cine-screen');
+Object.defineProperties(screen,{clientWidth:{value:640,configurable:true},clientHeight:{value:480,configurable:true}});
+screen.getBoundingClientRect=()=>({left:0,top:0,width:640,height:480});
+video.getBoundingClientRect=()=>({left:0,top:0,width:640,height:480});
+for(const view of TEE_ATLAS_VIEWS){
+ echo.state.preset=view.id;
+ const source={...clip,id:`ase-2013-tee-${String(view.aseNumber).padStart(2,'0')}`,preset:view.id,url:`https://publisher.example/${view.id}.mp4`};
+ echo.setMediaCatalog({clips:[source]});
+ video.readyState=1;video.videoWidth=1280;video.videoHeight=720;video.currentSrc=source.url;
+ video.dispatchEvent(new window.Event('loadedmetadata'));
+ const expected=supplementalTeeAngle(view);
+ assert.equal(echo.$('cine-angle').hidden,false,view.id);
+ assert.equal(echo.$('cine-angle').style.visibility,'visible',`${view.id}: metadata reveals the angle`);
+ assert.equal(echo.$('cine-angle-value').textContent,expected.label,view.id);
+ assert.equal(echo.$('cine-angle').querySelector('[data-multiplane="indicator"]').getAttribute('aria-label'),expected.explanation);
+ assert.equal(echo.$('cine-angle-pointer').getAttribute('x2'),String(expected.x));
+ assert.equal(echo.$('cine-angle-pointer').getAttribute('y2'),String(expected.y));
+}
 echo.state={...echo.state,mode:'tte',preset:'a4c'};echo.setMediaCatalog({clips:[{...selected,preset:'a4c',mode:'tte',kind:'youtube',sourceUrl:clip.sourceUrl}]});await settle();
 const embedded=echo.$('cine-embed'),embeddedPlayer=players.at(-1);assert.equal(echo.$('cine-angle').hidden,true);assert.equal(echo.$('cine-empty').hidden,false);
 embedded.dispatchEvent(new window.Event('load'));assert.equal(echo.cineLoadedId,null);
 embeddedPlayer.ready();assert.equal(echo.cineLoadedId,selected.id);assert.equal(echo.$('cine-empty').hidden,true);
 echo.leave();embeddedPlayer.events.onError();assert.equal(echo.$('cine-embed').hasAttribute('src'),false);assert.equal(echo.$('cine-embed').hidden,true);assert.equal(echo.cineLoadedId,null);
 echo.destroy();
-console.log('PASS source-player v39: fresh iframe identity; actual API readiness; bounded playback-start and repeated buffering; stopped/destroyed failed players; pause/cue/end/blocked-autoplay exemptions; queued state events; stale selection/timeout/error rejection; same-id URL replacement; original-frame TEE display; visible attribution; representative 5° and 60° reference dials with guideline ranges preserved.');
+console.log('PASS source-player v39: fresh iframe identity; actual API readiness; bounded playback-start and repeated buffering; stopped/destroyed failed players; pause/cue/end/blocked-autoplay exemptions; queued state events; stale selection/timeout/error rejection; same-id URL replacement; original-frame TEE display; visible attribution; visible numeric reference dials for all 28 TEE sources with truthful angle qualification.');

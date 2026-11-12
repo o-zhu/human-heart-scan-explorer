@@ -22,11 +22,8 @@
 .tee-step-actions button:hover,.tee-plane-stops button:hover{border-color:#a5c6a7}
 .tee-step-actions button:disabled,.tee-plane-stops button:disabled{opacity:.45;cursor:default}
 .tee-multiplane{border-top:1px solid #2f4542;border-bottom:1px solid #2f4542;padding:13px 0 12px}
-.tee-angle-dial{margin:0 auto 3px;width:126px;height:80px}
-.tee-angle-dial svg{width:100%;height:100%;fill:none;stroke:#47695a;stroke-width:1}
-.tee-angle-dial [data-tee=dial-line]{stroke:#c6d9a8;stroke-width:2}
-.tee-angle-dial circle{stroke:#c6d9a8;fill:#c6d9a8}
-.tee-angle-dial text{fill:#90a695;stroke:none;font:6px ui-monospace,monospace}
+.tee-angle-dial{margin:0 auto 3px;width:126px}
+.tee-angle-dial>.multiplane-indicator{display:block;width:100%}
 .tee-multiplane .tee-range{margin-bottom:11px}
 .tee-plane-stops{display:flex;gap:4px}
 .tee-plane-stops button{flex:1;padding:6px 2px;font-size:14px}
@@ -82,7 +79,7 @@ body #teePanel .tee-control-key:disabled{opacity:.4;cursor:default}
 body #teePanel.tee-panel .tee-mechanical-controls .tee-range{margin-bottom:12px}
 body #teePanel.tee-panel .tee-mechanical-controls .tee-range>small{font-size:14px;gap:6px}
 body #teePanel.tee-panel .tee-mechanical-controls .tee-multiplane{position:relative;padding:12px 0 10px;grid-column:auto;grid-row:auto}
-body #teePanel.tee-panel .tee-angle-dial{position:absolute;right:0;top:8px;width:62px;height:40px;opacity:.8;pointer-events:none}
+body #teePanel.tee-panel .tee-angle-dial{position:absolute;right:0;top:5px;width:62px;height:auto;opacity:.9;pointer-events:none}
 body #teePanel.tee-panel .tee-multiplane .tee-range>span{padding-right:67px;align-items:center}
 body #teePanel.tee-panel .tee-multiplane .tee-range>span output{margin-left:5px}
 body #teePanel.tee-panel .tee-multiplane .tee-range{margin-bottom:0}
@@ -102,3 +99,10 @@ body #teePanel.tee-panel .tee-multiplane>p{margin-top:6px;font-size:14px;line-he
  .tee-hand{display:grid;grid-template-columns:minmax(0,1fr) 138px;align-items:center;gap:8px}
  .tee-hand>span{min-height:0;margin:0}
 }
+
+/* The accepted image owns this readout in both ultrasound and CT modes. Keep it
+   in the unused near-field corner, below the orientation marker, with no input
+   interception or new layout row. */
+body #teePanel .tee-image-angle{position:absolute;z-index:3;left:clamp(9px,2.4%,22px);top:clamp(29px,5%,43px);width:clamp(68px,15%,112px);pointer-events:none;user-select:none}
+body #teePanel .tee-image-angle[hidden]{display:none}
+body #teePanel .tee-image-angle>.multiplane-indicator{display:block;width:100%;filter:drop-shadow(0 1px 2px #000)}

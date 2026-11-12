@@ -1,4 +1,5 @@
 /** Selection-scoped source players. A frame load is not evidence that YouTube is ready. */
+import {multiplaneIndicatorMarkup,multiplanePoint,multiplaneRange} from './multiplane-indicator.js';
 let youtubeAPI;
 let nextPlayerId=0;
 
@@ -132,24 +133,25 @@ export function createYouTubeReference({placeholder,selected,isCurrent,onReady,o
  }};
 }
 
-/** These source recordings omit a readable acquired-angle display. */
+/** Every TEE view has a numeric reference. A guideline midpoint is not a
+ * measured acquisition angle and must remain explicitly labelled REF. */
 export function supplementalTeeAngle(view){
- if(!['me5c','memodbicaval'].includes(view?.id))return null;
- const [min,max]=view.angleRange||[];
- if(!Number.isFinite(min)||!Number.isFinite(max)||min<0||max>180||min>max)return null;
- const angle=(min+max)/2,radians=angle*Math.PI/180;
- return {label:`${angle}°`,angle,x:64-52*Math.cos(radians),y:34+52*Math.sin(radians),
-  explanation:`Representative reference angle: ${angle}° (guideline range ${min}–${max}°). The acquired angle is not displayed in this source clip.`};
+ const range=multiplaneRange(view?.angleRange);if(!range||view?.mode==='tte')return null;
+ const [min,max]=range,angle=(min+max)/2,point=multiplanePoint(angle);
+ return {label:`${angle}°`,angle,...point,range,
+  explanation:`Reference angle: ${angle}° (guideline range ${min===max?min:`${min}–${max}`}°). REF is a representative view angle, not a measured angle from this recording.`};
 }
 
 /** Match the scanner readout without representing a reference as an acquired angle. */
-export const referenceAngleMarkup=`<div class="echo-cine-angle" data-echo="cine-angle" role="img" hidden><svg viewBox="0 0 128 104" aria-hidden="true"><text class="echo-angle-end" x="12" y="23" text-anchor="middle">0</text><text class="echo-angle-value" data-echo="cine-angle-value" x="64" y="23" text-anchor="middle"></text><text class="echo-angle-end" x="115" y="23" text-anchor="middle">180</text><path class="echo-angle-arc" d="M12 34H116A52 52 0 0 1 12 34"/><line data-echo="cine-angle-pointer" x1="64" y1="34" x2="12" y2="34"/><circle cx="64" cy="34" r="2.4"/><text class="echo-angle-qualification" x="64" y="102" text-anchor="middle">REF</text></svg></div>`;
+export const referenceAngleMarkup=`<div class="echo-cine-angle" data-echo="cine-angle" hidden>${multiplaneIndicatorMarkup({label:'REF'})
+ .replace('data-multiplane="value"','data-multiplane="value" data-echo="cine-angle-value"')
+ .replace('data-multiplane="pointer"','data-multiplane="pointer" data-echo="cine-angle-pointer"')}</div>`;
 
 /** CSS pixels relative to the player's inner box. sourceWidth/sourceHeight are
  * the browser's display dimensions, including the MP4 pixel aspect ratio, not
  * its encoded raster dimensions. Measure the actual video box: responsive CSS
  * can size it independently of the surrounding screen or --echo-screen-height. */
-export function referenceAngleLayout({width,height,sourceWidth,sourceHeight,focusAspect,fullFrame=true,videoRect,objectFit,positionX=.5,positionY=.5}){
+export function referenceAngleLayout({width,height,sourceWidth,sourceHeight,focusAspect,fullFrame=true,videoRect,objectFit,positionX=.5,positionY=.5,placement='reviewed'}){
  if(![width,height,sourceWidth,sourceHeight].every(value=>Number.isFinite(value)&&value>0))return null;
  const sourceAspect=sourceWidth/sourceHeight;
  const focused=Number.isFinite(focusAspect)&&focusAspect>=1&&focusAspect<=2?focusAspect:sourceAspect;
@@ -168,8 +170,9 @@ export function referenceAngleLayout({width,height,sourceWidth,sourceHeight,focu
  // of its FR/depth/2D column, and left of the sector. The size cap is in image
  // space as well as CSS pixels, so a small full-frame video cannot grow a dial
  // over the scanner settings or heart merely to satisfy a CSS minimum size.
- const insetX=crop.width*.17,insetY=crop.height*.12;
- const dialWidth=Math.min(160,Math.max(80,crop.width*.16),crop.width*.17);
+ const corner=placement==='corner';
+ const insetX=crop.width*(corner?.025:.17),insetY=crop.height*(corner?.025:.12);
+ const dialWidth=corner?Math.min(100,crop.width*.16):Math.min(160,Math.max(80,crop.width*.16),crop.width*.17);
  const left=crop.left+insetX,top=crop.top+insetY;
  // Do not move a clipped dial into unreviewed anatomy to keep it on screen.
  const visible={left:Math.max(0,box.left),top:Math.max(0,box.top),right:Math.min(width,box.left+box.width),bottom:Math.min(height,box.top+box.height)};
@@ -213,7 +216,7 @@ export function createReferenceAnglePlacement({screen,indicator,video,window:win
  for(const event of events)video.addEventListener(event,measure);
  return {
   update(next){
-   const key=[!!next.enabled,next.sourceUrl,next.sourceKey,next.focusAspect,!!next.fullFrame].join('|');
+   const key=[!!next.enabled,next.sourceUrl,next.sourceKey,next.focusAspect,!!next.fullFrame,next.placement].join('|');
    if(disposed||(key===stateKey&&indicator.style.visibility!=='hidden'))return;
    state=next;stateKey=key;measure();
   },

@@ -1,5 +1,6 @@
 import {ProbeLabModule} from './probe-lab.js';
 import {titleCaseUi} from './ui-text.js';
+import {multiplaneIndicatorMarkup,updateMultiplaneIndicator} from './multiplane-indicator.js';
 import {add,mul,norm} from './planes.js';
 import {beamPoint,projectProbePoint,probePhysicalLimits,probePhysicalScale,rescaleProbeState} from './probe-geometry.js';
 import {RENDER_STYLES} from './render-styles.js';
@@ -48,7 +49,7 @@ export class TeeLabModule extends ProbeLabModule{
    ${range('shaftRotationDeg','Turn the shaft',-180,180,1,'°','<span><kbd>A</kbd> Left</span><span>Right <kbd>D</kbd></span>')}
    ${range('anteflexDeg','Tip flexion',-65,90,1,'°','<span><kbd>K</kbd> Retroflex</span><span>Anteflex <kbd>I</kbd></span>')}
    ${range('lateralFlexDeg','Side flexion',-60,60,1,'°','<span><kbd>J</kbd> Left</span><span>Right <kbd>L</kbd></span>')}
-   <div class="tee-multiplane"><div class="tee-angle-dial" aria-hidden="true"><svg viewBox="0 0 100 64"><path d="M10 51A40 40 0 0 1 90 51"/><path data-tee="dial-line" d="M50 51L87 51"/><circle cx="50" cy="51" r="3"/><text x="6" y="62">180°</text><text x="42" y="9">90°</text><text x="84" y="62">0°</text></svg></div>${range('multiplaneDeg','Multiplane angle',0,180,1,'°','<span><kbd>Q</kbd> Decrease</span><span>Increase <kbd>E</kbd></span>')}<p>Rotates the image plane within the tip.</p></div>
+   <div class="tee-multiplane"><div class="tee-angle-dial" data-tee="control-angle" aria-hidden="true">${multiplaneIndicatorMarkup({label:''})}</div>${range('multiplaneDeg','Multiplane angle',0,180,1,'°','<span><kbd>Q</kbd> Decrease</span><span>Increase <kbd>E</kbd></span>')}<p>Rotates the image plane within the tip.</p></div>
    </div>
    <button class="probe-reset tee-reset" type="button" data-tee="reset">↺ Reset This Starting View</button>
    <details class="tee-keyboard"><summary>Drag Steering &amp; Help</summary><div class="probe-steer-pad" data-tee="steer-pad" tabindex="0" role="group" aria-label="Drag horizontally to turn the TEE shaft and vertically to flex the tip"><span>Drag: turn ↔ · flex ↕</span></div><p>Keyboard controls work anywhere on this page. Arrow keys also flex the tip; focused sliders keep their native arrow keys. Typing fields keep their normal keys. Leaving this workspace stops steering. Starting views and Reset unlock steering.</p></details>
@@ -61,7 +62,7 @@ export class TeeLabModule extends ProbeLabModule{
      <section class="probe-starting-views tee-starting-views workspace-starting-views" aria-labelledby="teeStartView"><span class="probe-select-label" id="teeStartView">Starting View</span><div class="probe-preset-grid" role="group" aria-labelledby="teeStartView">${TEE_PRESETS.map(p=>`<button type="button" data-tee-preset="${p.id}" aria-pressed="false"><img class="tee-start-diagram" src="${viewIllustration(p.id)}" alt="" width="38" height="28"><span data-tee-preset-label>${titleCaseUi(p.label)}</span><span class="probe-preset-number">${p.angle}°</span></button>`).join('')}</div></section>
      <canvas class="probe-scene-mesh" data-probe="scene-mesh" aria-hidden="true"></canvas><canvas class="probe-guide" data-probe="guide" aria-hidden="true"></canvas><div class="tee-displayed-pose" data-tee="displayed-pose">Preparing the matched pose…</div>
     </div>
-    <div class="probe-image-panel" aria-label="Image from the same TEE probe plane"><figure class="probe-image-wrap" data-probe="ultrasound-figure"><canvas data-probe="ultrasound" width="720" height="584" aria-label="Simulated TEE ultrasound derived from this fixed CT volume"></canvas></figure><figure class="probe-image-wrap" data-probe="ct-figure" hidden><canvas data-probe="ct" width="720" height="584" aria-label="Measured CT intensities in the same TEE scan sector"></canvas></figure><span class="probe-image-marker" aria-label="Marked image side">●</span><p class="probe-image-status" data-probe="image-status">Preparing the matched scan plane…</p><div class="probe-image-overlay"><span data-probe="simulation-label">Simulated ultrasound · CT-derived</span><span data-probe="acoustic-meta">5.0 MHz proxy · 135 mm</span></div></div>
+    <div class="probe-image-panel" aria-label="Image from the same TEE probe plane"><figure class="probe-image-wrap" data-probe="ultrasound-figure"><canvas data-probe="ultrasound" width="720" height="584" aria-label="Simulated TEE ultrasound derived from this fixed CT volume"></canvas></figure><figure class="probe-image-wrap" data-probe="ct-figure" hidden><canvas data-probe="ct" width="720" height="584" aria-label="Measured CT intensities in the same TEE scan sector"></canvas></figure><span class="probe-image-marker" aria-label="Marked image side">●</span><div class="tee-image-angle" data-tee="image-angle" hidden>${multiplaneIndicatorMarkup({label:'SIM',ariaLabel:'Simulated multiplane angle; awaiting an image'})}</div><p class="probe-image-status" data-probe="image-status">Preparing the matched scan plane…</p><div class="probe-image-overlay"><span data-probe="simulation-label">Simulated ultrasound · CT-derived</span><span data-probe="acoustic-meta">5.0 MHz proxy · 135 mm</span></div></div>
    </div>
    <div class="probe-comparison-footers"><div class="probe-scene-footer"><div class="probe-view-actions"><button type="button" data-tee="explore">Oblique</button><button type="button" data-tee="face">Face Plane</button><button type="button" data-tee="frame">Frame Anatomy</button><button type="button" data-tee="skeleton" aria-pressed="true" aria-label="Hide skeleton">Skeleton</button><label><input type="checkbox" data-probe="cutaway" checked> Cutaway</label><button type="button" data-probe="flip" aria-pressed="false">Flip Cut</button></div><div class="probe-contact-badge tee-model-badge"><i aria-hidden="true"></i>Illustrative Anatomy · Unregistered</div><p class="tee-orbit-hint">Drag to Orbit · Scroll to Zoom</p></div><div class="probe-image-footer"><div class="probe-image-modes" role="group" aria-label="TEE Comparison Image"><button type="button" data-probe-image="ultrasound" aria-pressed="true">Simulated Ultrasound</button><button type="button" data-probe-image="ct" aria-pressed="false">Measured CT</button></div><div class="probe-image-meta"><span data-probe="resolution">Volume Resolution</span><span data-probe="sampling">Awaiting Volume</span></div><p class="probe-fine-status" data-probe="fine-status" role="status">Fine detail follows the TEE probe.</p></div></div>
   </section>
@@ -291,10 +292,20 @@ export class TeeLabModule extends ProbeLabModule{
   });
   for(const b of this.mount.querySelectorAll('[data-tee-key]'))b.disabled=s.probeLocked;
   this.updateKeyFeedback();
-  const a=s.multiplaneDeg*Math.PI/180;this.tee('dial-line').setAttribute('d',`M50 51L${50+37*Math.cos(a)} ${51-37*Math.sin(a)}`);
+  updateMultiplaneIndicator(this.tee('control-angle'),{angle:s.multiplaneDeg,label:'',ariaLabel:`Requested multiplane angle ${Number(s.multiplaneDeg.toFixed(1))} degrees`});
   this.$('cutaway').checked=s.cutaway;this.$('flip').setAttribute('aria-pressed',String(s.flip));this.$('show-guide').checked=s.showGuide;this.$('show-surface').checked=s.showSurface;
   this.updateSkeletonButton();
   this.updateImageLabels();this.compactLayout?.sync();
+ }
+ updateImageLabels(){
+  super.updateImageLabels();
+  // The image follows an accepted worker frame, which may trail the controls.
+  // Reuse its exact pose for the overlay; never label old pixels with a pending
+  // angle. Source replacement clears displayedFrame and hides this indicator.
+  const indicator=this.tee('image-angle'),angle=this.displayedFrame?.state?.multiplaneDeg;
+  if(!indicator)return;
+  indicator.hidden=!Number.isFinite(angle);
+  if(Number.isFinite(angle))updateMultiplaneIndicator(indicator,{angle,label:'SIM',ariaLabel:`Displayed simulated multiplane angle ${Number(angle.toFixed(1))} degrees`});
  }
  acceptFrame(frame){super.acceptFrame(frame);if(this.displayedFrame===frame){const s=frame.state;this.tee('displayed-pose').textContent=`Displayed · ${s.insertionCm.toFixed(1)} cm model · ${Math.round(s.multiplaneDeg)}° multiplane`;}}
  ensureScene(){if(!this.sceneOverlay&&!this.sceneUnavailable){try{this.sceneOverlay=new TeeSceneOverlay(this.$('scene-mesh'),{renderer:this.renderer});}catch{this.sceneUnavailable=true;}}this.sceneOverlay?.setActive?.(this.active);}

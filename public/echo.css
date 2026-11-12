@@ -282,7 +282,13 @@
 .echo-diagram-dialog header span{color:#a5bea9;letter-spacing:1.8px;font-size:14px}
 .echo-diagram-dialog h3{font-weight:400;font-size:21px;line-height:1.4;margin:8px 0 14px}
 .echo-diagram-dialog button{border:1px solid #43574d;background:#192b23;color:#c8dbcc;border-radius:50%;width:32px;height:32px;font-size:20px;cursor:pointer;flex-shrink:0}
-.echo-diagram-dialog>img{display:block;width:100%;height:auto;max-height:53vh;object-fit:contain;padding:10px;box-sizing:border-box;border:1px solid #2b433a;border-radius:8px;background:#0b1418}
+.echo-diagram-art{position:relative;display:flex;justify-content:center;background:#f6f3ee;border:1px solid #2b433a;border-radius:8px;overflow:hidden}
+.echo-diagram-art>img{display:block;width:100%;height:auto;max-height:53vh;object-fit:contain;box-sizing:border-box}
+.echo-diagram-angle{position:absolute;top:14px;right:14px;padding:6px;border-radius:5px;background:#f6f3eee8}
+.echo-diagram-angle[hidden]{display:none}
+.echo-diagram-angle .multiplane-indicator{width:clamp(52px,9vw,76px)}
+.echo-preset-art{position:relative;display:block;grid-column:1;grid-row:1 / span 2;min-width:0;align-self:center;flex:none;line-height:0}
+.echo-preset-art .echo-preset-angle{position:absolute;top:3px;right:3px;width:25px;padding:2px;border-radius:3px;background:#f6f3eee8;box-sizing:content-box}
 .echo-diagram-dialog p{font-size:14px;line-height:1.8;color:#b2c4b9}
 .echo-diagram-dialog small{font-size:14px;color:#7b9a8b}
 .echo-diagram-dialog small a{color:#adc5b7;text-underline-offset:3px}

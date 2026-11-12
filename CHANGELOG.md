@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-11-12 — Compact reference navigation and TEE multiplane displays
+
+- Integrated All Reference Views into the existing view heading and compact
+  navigation controls, removing its separate full-width banner.
+- Added one shared 0–180° multiplane display for every TEE reference video,
+  with a numeric REF angle derived from the existing view range. REF denotes a
+  representative teaching angle, not a measured acquisition angle in the clip.
+- Added small shaded range semicircles to all 28 TEE Reference Views gallery
+  illustrations, sidebar thumbnails, and enlarged illustrations.
+- Added a dynamic SIM angle to the TEE Lab image and aligned the control dial
+  with the same 0° left / 90° down / 180° right convention. The image display
+  follows the accepted scan frame during asynchronous steering.
+- Preserved reference filtering, return focus, playback teardown, original
+  illustration bytes, existing clinical ranges, and public asset exclusions.
+
+Implementation and focused verification are documented in
+[`docs/multiplane-v55/README.md`](docs/multiplane-v55/README.md).
+
 ## Unreleased — source synchronization through website v89
 
 Prepared November 12, 2026, from the initial public import and verified updates

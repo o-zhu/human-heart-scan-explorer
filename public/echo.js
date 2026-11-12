@@ -2,6 +2,7 @@ import {EchoTextureCache,isUltra} from './echo-texture-cache.js';
 import {titleCaseUi} from './ui-text.js';
 import {mountEchoCompactWorkspace} from './echo-mobile-v47.js';
 import {referenceGalleryTemplate,mountReferenceGallery} from './reference-gallery.js';
+import {teeIllustrationAngleMarkup,updateMultiplaneIndicator} from './multiplane-indicator.js';
 export {EchoTextureCache} from './echo-texture-cache.js';
 import { MPRSampler } from './mpr.js';
 import { add, mul, norm, cross, dot } from './planes.js';
@@ -173,7 +174,7 @@ export class EchoModule {
     <details class="echo-anatomy"><summary>Donor Alignment &amp; View Checks</summary><p data-echo="alignment-note"></p><p data-echo="orientation-note" hidden></p><p data-echo="view-check"></p><p>Clinical target structures; their presence in this donor is not implied by this list.</p><div data-echo="anatomy"></div></details>
    </aside></details>
    </div>
-  </div><dialog class="echo-diagram-dialog" data-echo="diagram-dialog" aria-labelledby="echoDiagramTitle"><header><div><span>CONCEPTUAL VIEW ILLUSTRATION</span><h3 id="echoDiagramTitle" data-echo="diagram-title"></h3></div><button type="button" data-echo="diagram-close" aria-label="Close view illustration">×</button></header><img data-echo="diagram-image" alt=""><p data-echo="diagram-caption"></p><small>ChatGPT Image artwork · <a data-echo="diagram-source" href="${TEE_SOURCE}" target="_blank" rel="noopener">ASE reference ↗</a> · conceptual navigation art, not acquired anatomy or ultrasound.</small></dialog>`;}
+  </div><dialog class="echo-diagram-dialog" data-echo="diagram-dialog" aria-labelledby="echoDiagramTitle"><header><div><span>CONCEPTUAL VIEW ILLUSTRATION</span><h3 id="echoDiagramTitle" data-echo="diagram-title"></h3></div><button type="button" data-echo="diagram-close" aria-label="Close view illustration">×</button></header><div class="echo-diagram-art"><img data-echo="diagram-image" alt=""><span class="echo-diagram-angle" data-echo="diagram-angle" hidden></span></div><p data-echo="diagram-caption"></p><small>ChatGPT Image artwork · <a data-echo="diagram-source" href="${TEE_SOURCE}" target="_blank" rel="noopener">ASE reference ↗</a> · conceptual navigation art, not acquired anatomy or ultrasound.</small></dialog>`;}
 
  $(name){return this.mount.querySelector(`[data-echo="${name}"]`);}
  setLeftView(view){this.state.leftView=view==='ct'&&!this.frames[this.frameKey()]?.outsideScan?'ct':'3d';this.updateLeftView();this.updateProbe();}
@@ -283,14 +284,15 @@ export class EchoModule {
   const selected=clips.find(c=>c.id===this.mediaSelection),select=this.$('cine-select'),video=this.$('cine-video');
   const angle=selected?.mode==='tee'?supplementalTeeAngle(TEE_ATLAS_VIEWS.find(view=>view.id===key)):null;
   this.$('cine-angle').hidden=!angle;this.$('cine-angle-note').hidden=!angle;
-  if(angle){this.$('cine-angle-value').textContent=angle.label;this.$('cine-angle-pointer').setAttribute('x2',angle.x);this.$('cine-angle-pointer').setAttribute('y2',angle.y);this.$('cine-angle-note').textContent=angle.explanation;this.$('cine-angle').setAttribute('aria-label',`Reference multiplane angle ${angle.label}. ${angle.explanation}`);}
+  if(angle){updateMultiplaneIndicator(this.$('cine-angle'),{angle:angle.angle,label:'REF',ariaLabel:angle.explanation});this.$('cine-angle-note').textContent=angle.explanation;}
   this.$('cine-guideline').hidden=!selected;this.$('cine-guideline').href=selected?.pdfUrl||ECHO_PRESETS.find(view=>view.id===key)?.sourceUrl||(this.state.mode==='tee'?TEE_SOURCE:TTE_SOURCE);
   const institution=selected?.institutionalAlternative;this.$('cine-institution').hidden=!institution?.viewerUrl;this.$('cine-institution').href=institution?.viewerUrl||'';
   this.$('cine-institution-note').hidden=!institution?.viewerUrl;this.$('cine-institution-note').textContent=institution?`${institution.note||''} ${institution.deepLinkNote||''}`:'';
   const focusAspect=Number(selected?.focusAspect),canFrame=focusAspect>=1&&focusAspect<=2;
   this.$('cine-fit').hidden=!canFrame;this.$('cine-fit').textContent=this.cineFullFrame?'Fit Ultrasound':'Full Frame';
   video.classList.toggle('is-framed',canFrame&&!this.cineFullFrame);video.style.setProperty('--echo-cine-aspect',canFrame?String(focusAspect):'1.4');
-  this.cineAnglePlacement.update({enabled:!!angle,sourceUrl:selected?.url||'',sourceKey:selected?mediaIdentity(selected):'',focusAspect,fullFrame:!canFrame||this.cineFullFrame});
+  const reviewedSlot=selected?.id===`ase-2013-tee-${key==='me5c'?'01':key==='memodbicaval'?'12':''}`;
+  this.cineAnglePlacement.update({enabled:!!angle,sourceUrl:selected?.url||'',sourceKey:selected?mediaIdentity(selected):'',focusAspect,fullFrame:!canFrame||this.cineFullFrame,placement:reviewedSlot?'reviewed':'corner'});
   select.disabled=!clips.length;select.innerHTML=(!exact?'<option value="">No Example Available for This View</option>':'')+clips.map(c=>`<option value="${escapeHTML(c.id)}">${escapeHTML(titleCaseUi(this.state.mode==='tee'?(c.aseNumber?'ASE / SCA Guideline Cine':c.title||'Additional Clinical Example'):c.title))}</option>`).join('');select.value=selected?.id||'';
   this.updateCorrespondence(selected);
   if(!selected){
@@ -838,7 +840,7 @@ export class EchoModule {
   const all=ECHO_PRESETS.filter(p=>p.mode===this.state.mode),filtered=all.filter(p=>query?terms.every(term=>`${p.id} ${p.code} ${p.name} ${p.tableRow||''} ${(p.anatomy||[]).join(' ')}`.toLowerCase().replace(/[-–]/g,' ').includes(term)):p.group===this.atlasGroup);
   this.$('presets').innerHTML=filtered.map(original=>{
    const p=original,selected=p.id===this.state.preset;
-   return `<button type="button" class="echo-preset echo-illustrated-preset ${selected?'is-selected':''}" data-preset="${p.id}" aria-pressed="${selected}" title="${escapeHTML(titleCaseUi(p.name))}"><img src="${p.thumbnail||p.illustration||p.diagram}" width="104" height="104" alt="" loading="lazy" decoding="async"><span class="echo-preset-copy"><span class="echo-preset-code">${escapeHTML(p.code)}${isTee?`<span>${p.angles}</span>`:''}</span><span class="echo-preset-name">${escapeHTML(titleCaseUi(p.shortName||p.name))}</span></span><span class="echo-ase-number">${isTee?String(p.aseNumber).padStart(2,'0'):p.tableRow}</span></button>`;
+   return `<button type="button" class="echo-preset echo-illustrated-preset ${selected?'is-selected':''}" data-preset="${p.id}" aria-pressed="${selected}" title="${escapeHTML(titleCaseUi(p.name))}"><span class="echo-preset-art"><img src="${p.thumbnail||p.illustration||p.diagram}" width="104" height="104" alt="" loading="lazy" decoding="async">${teeIllustrationAngleMarkup(p,{className:'echo-preset-angle'})}</span><span class="echo-preset-copy"><span class="echo-preset-code">${escapeHTML(p.code)}${isTee?`<span>${p.angles}</span>`:''}</span><span class="echo-preset-name">${escapeHTML(titleCaseUi(p.shortName||p.name))}</span></span><span class="echo-ase-number">${isTee?String(p.aseNumber).padStart(2,'0'):p.tableRow}</span></button>`;
   }).join('');
   this.$('search-empty').hidden=!!filtered.length;
   this.$('library-caption').textContent=query?`${filtered.length} results across all views`:`${groups.find(g=>g.id===this.atlasGroup)?.name||this.state.mode.toUpperCase()} · ${filtered.length} views`;
@@ -901,6 +903,7 @@ export class EchoModule {
    this.$('depth-evidence').textContent=original.depthEvidence||original.coverageNote||'';this.$('maneuvers').innerHTML=(original.maneuvers||[]).map(m=>`<li>${escapeHTML(m)}</li>`).join('');this.$('teaching-point').textContent=original.teachingPoint;this.$('display-orientation').textContent=original.displayOrientation||'';
    this.$('acquisition-qualification').textContent=isTee?'Clinical angle ranges guide acquisition; individual anatomy requires adjustment. The probe tract and insertion depth are not registered to this excised specimen.':'Patient position, rib spaces and marker direction guide acquisition. The chest and external probe shown here are illustrative and unregistered to this donor.';
    this.$('diagram-title').textContent=titleCaseUi(original.name);this.$('diagram-image').src=original.illustration||original.diagram;this.$('diagram-image').alt=`${original.name}: ${original.anatomy.join(', ')}`;this.$('diagram-caption').textContent=original.teachingPoint;
+   this.$('diagram-angle').hidden=!isTee;this.$('diagram-angle').innerHTML=teeIllustrationAngleMarkup(original);
    this.$('diagram-source').href=original.sourceUrl||(isTee?TEE_SOURCE:TTE_SOURCE);this.$('diagram-source').textContent=isTee?'ASE / SCA Table 10 ↗':`ASE Table ${original.tableRow} ↗`;
   }
   this.$('alignment-note').textContent=isTee?(this.currentRegionalEvidence()?.summary||'The current CT section is a regional comparison. Its named target structures need confirmation.'):this.frames[this.frameKey()]?.note||'This donor has independent starting planes. Their anatomical landmarks and clinical echo correspondence have not been verified.';
