@@ -14,11 +14,13 @@ const asset=lod=>readFile(new URL('public/'+lod.url.replace(/^\.\//,''),root));
 
 async function decode(bytes,metadata={}){
  let result,fetchOptions;
- const context=vm.createContext({self:{postMessage(message){result=message;}},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage(message){result=message;}},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async(_url,options)=>{fetchOptions=options;return new Response(bytes);},
   Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error});
  vm.runInContext(worker,context,{filename:'fine-surface-worker.js'});
- await context.self.onmessage({data:{url:'https://example.test/verified-fine-surface.hfm.gz',...metadata}});
+ // This VM fixture exercises the native-digest transport path. The real ESM
+ // worker's bounded digest, priority and cancellation have v47 integration tests.
+ await context.self.onmessage({data:{url:'https://example.test/verified-fine-surface.hfm.gz',boundedSurfaceHash:false,...metadata}});
  return {result,fetchOptions};
 }
 

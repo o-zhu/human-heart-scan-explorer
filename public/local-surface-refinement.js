@@ -1,5 +1,6 @@
 /** Reversible local surfaces derived from the unchanged 79.4 µm source. */
-import {ensureReviewedMaskAtlas,isolatedReviewedUpload,reviewedSourceMask} from './reviewed-mask-atlas.js';
+import {ensureReviewedMaskAtlas,isolatedReviewedUpload,reviewedSourceMask,sampleReviewedMask} from './reviewed-mask-atlas.js';
+import {getDeviceResourcePolicy} from './device-resources.js';
 import {drawIndexedTriangles} from './mesh-draw.js';
 const MANIFEST='./assets/cleanup-v30/surface-manifest.json';
 const FINE_SOURCE='e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c';
@@ -136,7 +137,7 @@ function upload(gl,mesh){
 export class LocalSurfaceRefinementController{
  // Keep the native fetch receiver on the global object: calling a captured
  // Window.fetch as this.fetcher makes the controller its receiver in Safari.
- constructor({renderer,donor,fetcher=(...args)=>globalThis.fetch(...args),onChange=()=>{}}){this.renderer=renderer;this.fetcher=fetcher;this.onChange=onChange;this.available=donor.id==='ladaf-2021-17'&&!!renderer.gl;this.workspaceActive=true;this.revision=0;this.current=null;this.staging=null;if(this.available)renderer.localSurfaceRefinement=this;}
+ constructor({renderer,donor,fetcher=(...args)=>globalThis.fetch(...args),resourcePolicy=getDeviceResourcePolicy(),onChange=()=>{}}){this.renderer=renderer;this.fetcher=fetcher;this.resourcePolicy=resourcePolicy;this.onChange=onChange;this.available=donor.id==='ladaf-2021-17'&&!!renderer.gl;this.workspaceActive=true;this.revision=0;this.current=null;this.staging=null;if(this.available)renderer.localSurfaceRefinement=this;}
  // Workspace priority pauses preparation, not completed geometry in the shared
  // viewer. Echo must retain the same replacement surfaces and exclusion masks.
  active(){const r=this.renderer,p=r.fineSurface;return !!r.reviewedMaskAtlas?.ready&&!!this.current&&r.settings.lumenCleanupEnabled===true&&r.settings.debrisCleanupEnabled!==false&&!!r.lumenCleanup&&p?.lod?.id==='gentle'&&(p.geometrySourceSha256||p.lod.decodedSha256)===GENTLE&&this.current.manifest.extent.every((n,i)=>Math.abs(n-r.extent[i])<1e-6)&&p.activeFor(r);}
@@ -151,12 +152,20 @@ export class LocalSurfaceRefinementController{
    current(signal);
    const reply=await this.fetcher(MANIFEST,{signal,priority:'low'});if(!reply.ok)throw new Error('Local surface metadata is unavailable.');
    const manifest=validateRefinementManifest(await reply.json(),this.renderer.extent);current(signal);
-   const atlas=await ensureReviewedMaskAtlas(this.renderer,{fetcher:this.fetcher,signal});current(signal);
+   const atlas=await ensureReviewedMaskAtlas(this.renderer,{fetcher:this.fetcher,signal,retainSourceMasks:!this.resourcePolicy.sparseReviewedMasks});current(signal);
    for(const item of manifest.patches){
-    const bytes=await loadAsset(item.surface,this.fetcher,signal),mesh=await decodeRefinementMesh(bytes,item.surface,signal),data=reviewedSourceMask(atlas,'local:'+item.id,{...item.lowBandMask,lowerFullFineXYZ:item.lowerFullFineXYZ})||await loadAsset(item.lowBandMask,this.fetcher,signal);
-    const mask={...item.lowBandMask,data,lowerFullFineXYZ:item.lowerFullFineXYZ},remainder=mask.dimensionsXYZ[0]&7;
+    const bytes=await loadAsset(item.surface,this.fetcher,signal),mesh=await decodeRefinementMesh(bytes,item.surface,signal);
+    const mask={...item.lowBandMask,lowerFullFineXYZ:item.lowerFullFineXYZ},remainder=mask.dimensionsXYZ[0]&7;
     const atlasField=atlas.fieldIndex('local:'+item.id,mask);if(atlasField<0)throw new Error('The completed model atlas does not match this local mask.');
-    if(remainder)for(let i=mask.storageDimensionsXYZ[0]-1;i<data.length;i+=mask.storageDimensionsXYZ[0])if(data[i]&(~((1<<remainder)-1)&255))throw new Error('Invalid local refinement mask padding.');
+    const source=reviewedSourceMask(atlas,'local:'+item.id,mask);
+    if(!source&&atlas.collection){
+     // The same verified sparse bricks serve picking and GPU exclusion. Do not
+     // redownload a dense field merely because its CPU source was released.
+     mask.sparseAtlas=atlas.collection;
+    }else{
+     const data=mask.data=source||await loadAsset(item.lowBandMask,this.fetcher,signal);
+     if(remainder)for(let i=mask.storageDimensionsXYZ[0]-1;i<data.length;i+=mask.storageDimensionsXYZ[0])if(data[i]&(~((1<<remainder)-1)&255))throw new Error('Invalid local refinement mask padding.');
+    }
     current(signal);if(revision!==this.revision)throw abort();staged.push({...item,mask,atlasField,...upload(this.renderer.gl,mesh)});await pause();
    }
    current(signal);if(revision!==this.revision)throw abort();this.current={manifest,pieces:staged};if(this.staging===staged)this.staging=null;this.error=null;this.renderer.requestRender('scene');
@@ -175,7 +184,7 @@ export class LocalSurfaceRefinementController{
  }
  excludedAt(p){
   if(!this.active())return false;const e=this.renderer.extent,f=[p[0]/e[0]+.5,.5-p[2]/e[2],p[1]/e[1]+.5].map((n,i)=>n*(FULL[i]-1));
-  return this.current.pieces.some(({mask:m})=>{const q=f.map((n,i)=>n-m.lowerFullFineXYZ[i]);if(q.some((n,i)=>n<-.5||n>=m.dimensionsXYZ[i]-.5))return false;const [x,y,z]=q.map(n=>Math.floor(n+.5)),d=m.storageDimensionsXYZ;return !!((m.data[(x>>3)+d[0]*(y+d[1]*z)]>>(x&7))&1);});
+  return this.current.pieces.some(({id,mask:m})=>{if(m.sparseAtlas)return sampleReviewedMask(m.sparseAtlas,'local:'+id,f);const q=f.map((n,i)=>n-m.lowerFullFineXYZ[i]);if(q.some((n,i)=>n<-.5||n>=m.dimensionsXYZ[i]-.5))return false;const [x,y,z]=q.map(n=>Math.floor(n+.5)),d=m.storageDimensionsXYZ;return !!((m.data[(x>>3)+d[0]*(y+d[1]*z)]>>(x&7))&1);});
  }
  dispose(){this.revision++;this.abort?.abort();this.abort=null;this.discardStaging();for(const piece of this.current?.pieces||[])dispose(this.renderer.gl,piece);this.current=null;this.loading=null;}
 }

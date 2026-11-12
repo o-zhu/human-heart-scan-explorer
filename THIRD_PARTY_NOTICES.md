@@ -40,9 +40,11 @@ Retained records describe silent conversion, native-frame preservation, and any 
 
 ## Original teaching illustrations
 
+The current Reference Views artwork under `public/assets/reference-views-v54/` contains 56 newly generated original teaching schematics, each with a full image and thumbnail. View-specific anatomical diagrams and ultrasound examples informed their orientation and content; those published figures and crops are not redistributed by this update. The [asset manifest](docs/reference-views-v54/asset-manifest.json) retains each prompt, reference source, input hash, generated/output hash, and review record. The [guidelines](docs/reference-views-v54/GUIDELINES.md) identify the 2019 comprehensive TTE, 2013 comprehensive TEE, and 2013 basic perioperative TEE documents used as authorities. Retain these citations and provenance. These schematics are project illustrations, not measured anatomy or independent clinical validation.
+
 The original TTE text-prompt artwork under `public/assets/tte-atlas/art-v1/` and original abstract TEE SVGs under `public/assets/tee-atlas/diagrams/` are project illustrations. Their recorded generation methods are retained. They are not measured anatomy and do not establish clinical accuracy.
 
-The separate ASE-reference-derived TEE `art-v2/` images are **excluded** from the public package pending clarification of derivative rights. Do not replace the original SVGs with those files merely because they appear on the hosted demonstration.
+The separate older ASE-reference-derived TEE `art-v2/` images are **excluded** from the public package pending clarification of derivative rights. The new original v54 schematics do not change that exclusion. Do not restore the excluded files merely because they appeared on an earlier hosted demonstration.
 
 ## Omitted or externally linked material
 

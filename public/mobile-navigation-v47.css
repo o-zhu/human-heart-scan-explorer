@@ -1,0 +1,101 @@
+/* Compact navigation follows available space, independently of model quality.
+   Explicit span visibility overrides the older mobile badge-hiding rule. */
+.compact-donor-picker { display: none; }
+.workspace-tabs button > .workspace-tab-label-full,
+.workspace-tabs button > .workspace-tab-label-short { font: inherit; color: inherit; border: 0; padding: 0; margin: 0; }
+.workspace-tabs button > .workspace-tab-label-full { display: inline; }
+.workspace-tabs button > .workspace-tab-label-short { display: none; }
+
+@media (max-width: 1050px), (max-height: 760px), (any-pointer: coarse) {
+ :root {
+  --ui-font-size: clamp(.8125rem, .75rem + .2vw, .875rem);
+  --ui-copy: clamp(.875rem, .8rem + .25vw, 1rem);
+  --ui-control: var(--ui-font-size);
+  --ui-secondary: .8125rem;
+  --ui-control-height: 36px;
+  --ui-header-height: calc(var(--ui-control-height) + 8px);
+  --ui-tab-height: calc(var(--ui-control-height) + 4px);
+  --ui-gutter: clamp(8px, 1.2vw, 14px);
+ }
+ body.compact-navigation-ready .topbar {
+  height: var(--ui-header-height); min-height: var(--ui-header-height);
+  padding: 4px var(--ui-gutter); gap: 7px; flex-wrap: nowrap; box-sizing: border-box;
+ }
+ body.compact-navigation-ready .topbar .brand { flex: 0 0 26px; min-width: 0; padding: 0; }
+ body.compact-navigation-ready .topbar .brand-mark { width: 26px; height: 26px; }
+ body.compact-navigation-ready :is(.brand-copy,.topbar-context) { display: none; }
+ body.compact-navigation-ready .topbar-actions {
+  display: flex; width: auto; min-width: 0; gap: 2px; margin-left: auto; flex: 0 0 auto;
+ }
+ body.compact-navigation-ready .topbar-actions button {
+  width: var(--ui-control-height); height: var(--ui-control-height);
+  min-width: var(--ui-control-height); min-height: var(--ui-control-height) !important;
+  padding: 8px; justify-content: center; box-sizing: border-box;
+ }
+ body.compact-navigation-ready .topbar-actions button svg { width: 19px; height: 19px; }
+ body.compact-navigation-ready .topbar-actions button span { display: none; }
+ body.compact-navigation-ready .compact-donor-picker {
+  display: flex; align-items: center; justify-content: flex-start; gap: 6px;
+  flex: 0 1 220px; min-width: 0; min-height: var(--ui-control-height) !important; height: var(--ui-control-height);
+  padding: 4px 9px; border: 1px solid #486154; border-radius: 6px;
+  background: #172720; color: #e0eadb; font: inherit; font-size: var(--ui-font-size) !important;
+  text-align: left; cursor: pointer; box-sizing: border-box;
+ }
+ .compact-donor-caption { color: #b4c8ba; font-size: .75rem; }
+ .compact-donor-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+ .compact-donor-chevron { margin-left: auto; }
+ .compact-donor-picker:focus-visible { outline: 2px solid #d0e0bb; outline-offset: 2px; }
+ body.compact-navigation-ready .dataset-browser {
+  display: block; height: 0; min-height: 0; margin: 0; padding: 0; border: 0; position: relative; z-index: 30;
+ }
+ body.compact-navigation-ready .dataset-intro { display: none; }
+ body.compact-navigation-ready .dataset-browser:not(.compact-donor-open) .dataset-shortcuts { display: none; }
+ body.compact-navigation-ready .dataset-browser.compact-donor-open .dataset-shortcuts {
+  position: absolute; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px;
+  top: 0; left: var(--ui-gutter); width: min(600px,calc(100vw - 2 * var(--ui-gutter)));
+  max-height: min(70dvh,480px); overflow: auto; margin: 0; padding: 8px;
+  border: 1px solid #58735f; border-radius: 8px; background: #12201cf7;
+  box-shadow: 0 8px 28px #0009; box-sizing: border-box; overscroll-behavior: contain;
+ }
+ body.compact-navigation-ready .dataset-shortcuts .dataset-choice > a {
+  min-height: 48px; padding: 6px 38px 6px 9px; gap: 1px; font-size: .875rem;
+ }
+ body.compact-navigation-ready .dataset-shortcuts a span { font-size: .75rem; }
+ body.compact-navigation-ready .dataset-info-button { min-height: 44px !important; }
+ body .workspace-tabs {
+  display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px;
+  height: var(--ui-tab-height); min-height: var(--ui-tab-height);
+  padding: 2px var(--ui-gutter); box-sizing: border-box; overflow: visible;
+ }
+ body .workspace-tabs button {
+  width: 100%; height: var(--ui-control-height); min-height: var(--ui-control-height) !important;
+  min-width: 0; padding: 4px; font-size: var(--ui-font-size) !important;
+  line-height: 1.2; white-space: nowrap; border-radius: 5px;
+ }
+ body .workspace-tabs button > .workspace-tab-label-full { display: none; }
+ body .workspace-tabs button > .workspace-tab-label-short { display: inline; }
+ body #reconstructionWorkspace { padding-top: 8px; gap: 10px; }
+}
+
+/* Touch-capable iPads keep generous hit areas even with a trackpad connected.
+   Compact typography does not disable browser zoom or scale the document. */
+@media (any-pointer: coarse) {
+ :root { --ui-control-height: 44px; }
+}
+@media (max-width: 420px) {
+ body.compact-navigation-ready .compact-donor-caption { display: none; }
+ body.compact-navigation-ready .dataset-browser.compact-donor-open .dataset-shortcuts { grid-template-columns: minmax(0,1fr); }
+}
+
+/* In short landscape, donor/actions and all four pages share one compact row. */
+@media (min-width: 640px) and (max-height: 550px) {
+ body.compact-navigation-ready { --ui-header-height: calc(var(--ui-control-height) + 4px); }
+ body.compact-navigation-ready .topbar {
+  position: absolute; top: 0; left: 0; width: 240px; height: var(--ui-header-height); min-height: var(--ui-header-height);
+  padding: 2px 8px; gap: 4px; z-index: 25;
+ }
+ body.compact-navigation-ready .topbar .brand { display: none; }
+ body.compact-navigation-ready .compact-donor-caption { display: none; }
+ body.compact-navigation-ready .workspace-tabs { margin-left: 240px; padding: 2px 8px; }
+ body.compact-navigation-ready .dataset-browser.compact-donor-open .dataset-shortcuts { top: var(--ui-header-height); left: 8px; }
+}

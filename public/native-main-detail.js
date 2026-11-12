@@ -163,6 +163,7 @@ export class NativeMainDetailController {
   }
   setPicking(value) {
     if (value && !this.compatible()) { this.toast('Enable Ultra-high Fidelity and detached-debris cleanup before selecting a native region.'); return; }
+    if (value) this.renderer.measurementController?.cancelPlacement();
     this.picking = value; this.pickDown = null; this.renderer.canvas.style.cursor = value ? 'crosshair' : '';
     if (value) { this.focusViewport(); this.toast('Click visible tissue in the heart view. Escape cancels.'); }
     this.sync();

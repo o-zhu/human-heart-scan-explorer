@@ -1,5 +1,6 @@
 import {ALL_SOURCES,donorFromSearch,donorUrl} from './donors.js';
 import {attachDatasetCitation,renderDatasetCitations} from './dataset-citations.js';
+import {initializeCompactNavigation} from './compact-navigation-v47.js';
 
 /** Navigation stays usable while the selected scan is still preparing. */
 export function initializeDatasetBrowser(document,location){
@@ -21,6 +22,7 @@ export function initializeDatasetBrowser(document,location){
   attachDatasetCitation(document,link,source.id);
  }
  renderDatasetCitations(document);
+ initializeCompactNavigation(document);
 }
 
 if(typeof document!=='undefined'&&typeof location!=='undefined')initializeDatasetBrowser(document,location);

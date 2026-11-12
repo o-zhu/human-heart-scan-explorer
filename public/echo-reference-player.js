@@ -2,6 +2,41 @@
 let youtubeAPI;
 let nextPlayerId=0;
 
+// Only these source-reviewed, named acquisitions are default replacements for
+// their remote examples. A broad short-axis sweep is not a midpapillary view,
+// and a normal PLAX loop is not an increased-depth or valve-zoom acquisition.
+const localReferenceIds=Object.freeze({
+ 'tte:plax':'tte-plax','tte:psax_papillary':'tte-psax_papillary',
+ 'tte:a4c':'tte-a4c','tte:a2c':'tte-a2c','tte:a3c':'tte-a3c','tte:subcostal':'tte-subcostal',
+ 'tee:me4c':'tee-me4c','tee:melax':'tee-melax','tee:me2c':'tee-me2c','tee:bicaval':'tee-bicaval',
+});
+
+/** Select an already hosted, licensed example without relaxing acquisition
+ * correspondence or changing a user's explicit selection. Media bytes and
+ * attribution remain in the existing, hash-checked media catalog. */
+export function localEchoReference(clips,{mode,preset}){
+ const id=localReferenceIds[`${mode}:${preset}`];
+ return id&&clips.find(clip=>clip.id===id&&clip.mode===mode&&clip.preset===preset&&
+  !clip.external&&(!clip.kind||clip.kind==='video')&&clip.mimeType==='video/mp4'&&
+  /^\.\/assets\/echo-media-v[67]\/(tte|tee)-[a-z0-9_]+\.mp4$/.test(clip.url||'')&&
+  ['CC BY-SA 3.0','CC BY 4.0'].includes(clip.license)&&
+  clip.correspondence?.sourceLabelVerified===true&&clip.correspondence.kind==='named-view'&&
+  Number.isSafeInteger(clip.bytes)&&clip.bytes>0&&clip.bytes<=4*1024*1024&&/^[a-f0-9]{64}$/.test(clip.sha256||''))||null;
+}
+
+export function preferredEchoReference(clips,view){
+ return localEchoReference(clips,view)||clips.find(clip=>clip.mode===view.mode&&clip.preset===view.preset)||null;
+}
+
+/** Warm only the origins needed by an actually selected YouTube reference.
+ * Local-loop visits do not initialize YouTube or download speculative media. */
+export function warmYouTubeReference(doc=globalThis.document){
+ for(const origin of ['https://www.youtube-nocookie.com','https://www.youtube.com','https://i.ytimg.com']){
+  if(doc.head.querySelector(`link[data-echo-preconnect="${origin}"]`))continue;
+  const link=doc.createElement('link');link.rel='preconnect';link.href=origin;link.dataset.echoPreconnect=origin;doc.head.append(link);
+ }
+}
+
 export function loadYouTubeAPI({window:win=globalThis.window,document:doc=globalThis.document}={}){
  if(win?.YT?.Player)return Promise.resolve(win.YT);
  if(youtubeAPI)return youtubeAPI;
@@ -37,10 +72,15 @@ export function youtubeReferenceURL(source,origin=globalThis.location?.origin){
 
 /** Replaces the iframe rather than navigating a reused frame through about:blank. */
 export function createYouTubeReference({placeholder,selected,isCurrent,onReady,onPlaying,onBuffering,onPaused,onBlocked,onError,apiLoader=loadYouTubeAPI,timeoutMs=18000,playbackTimeoutMs=25000}){
+ warmYouTubeReference(placeholder.ownerDocument||globalThis.document);
  const frame=placeholder.cloneNode(false);frame.removeAttribute('src');frame.id=`echo-source-player-${++nextPlayerId}`;
  frame.title=`${selected.title}. Independent clinical ultrasound reference.`;
  frame.setAttribute('allow','autoplay; fullscreen; picture-in-picture; encrypted-media');
  frame.setAttribute('referrerpolicy','strict-origin-when-cross-origin');frame.hidden=false;frame.style.opacity='0';
+ // Reserve the same box before iframe/API/style loading and every retry. The
+ // remote player must never contribute its intrinsic 300 x 150 size to layout.
+ frame.width='640';frame.height='360';
+ Object.assign(frame.style,{position:'absolute',inset:'0',width:'100%',height:'100%',minWidth:'0',minHeight:'0',border:'0'});
  frame.src=youtubeReferenceURL(selected.url);
  let disposed=false,failed=false,player=null,ready=false,playbackTimer=null,detached=false,autoplayBlocked=false;
  const current=()=>!disposed&&!failed&&isCurrent();

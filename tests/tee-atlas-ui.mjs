@@ -28,6 +28,7 @@ echo.setFrames(json('echo-planes.json'));echo.setAtlasFlowFrames(json('flow-view
 echo.setVolume(new Uint8Array(1),{dimensions:[475,475,530],spacingUm:317.6});
 echo.mediaCatalog={clips:[]};echo.ensureSampler=()=>({sample:async()=>({data:new Uint8Array(16),width:4,height:4})});echo.drawSection=()=>{};echo.message=()=>{};echo.prefetchNeighbors=()=>{};
 echo.enter();
+echo.openReferenceView('a4c');
 const event=type=>new window.Event(type,{bubbles:true});
 const click=selector=>echo.mount.querySelector(selector).dispatchEvent(event('click'));
 click('[data-mode="tee"]');

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "scope": "Node standard vectors, actual source identities, tracked ArrayBuffer bytes and unmodified worker lifecycle; not a physical iPad or browser peak-memory measurement.",
+  "cases": [
+    {
+      "name": "SHA-256 standard vectors, block padding boundaries and nonzero byte offsets match independent native hashes",
+      "passed": true,
+      "milliseconds": 212.30049000000002
+    },
+    {
+      "name": "bounded hashing yields to workspace priority and cancellation never returns an identity",
+      "passed": true,
+      "milliseconds": 81.94131299999998
+    },
+    {
+      "name": "the actual Compact Detail decoded source retains its pinned SHA-256 with bounded working storage",
+      "passed": true,
+      "milliseconds": 495.31594100000007
+    },
+    {
+      "name": "the production worker verifies a real surface without large native digest inputs and resumes its paused hash",
+      "passed": true,
+      "milliseconds": 399.1499910000001
+    },
+    {
+      "name": "terminating the actual worker during bounded verification cannot publish late geometry",
+      "passed": true,
+      "milliseconds": 239.13731299999995
+    },
+    {
+      "name": "all 437 MB of the preserved original Ultra match their pinned identity using bounded verification",
+      "passed": true,
+      "milliseconds": 7266.092411
+    }
+  ],
+  "assets": [
+    {
+      "id": "detail",
+      "inputBytes": 34679172,
+      "sha256": "44c3f85f504b63f821f475ba037016b5ea2f86ace121a887e0fdb077f4338941",
+      "milliseconds": 328.783131,
+      "progressUpdates": 35,
+      "trackedArrayBufferIncreaseBytes": 0,
+      "algorithmWorkingBytes": 416
+    },
+    {
+      "id": "gentle",
+      "inputBytes": 437470524,
+      "sha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "milliseconds": 3605.7228639999994,
+      "progressUpdates": 419,
+      "trackedArrayBufferIncreaseBytes": 384,
+      "algorithmWorkingBytes": 416
+    }
+  ],
+  "passed": true,
+  "createdAt": "2026-11-10T05:25:24.673Z"
+}

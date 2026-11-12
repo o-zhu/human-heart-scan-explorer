@@ -33,3 +33,7 @@ For a fork, follow [deployment](deployment.md), choose a rights-cleared asset se
 ## Bringing changes back
 
 Move fixes between site source and public repository as reviewed commits or patches. Reconcile concurrent work explicitly and retain authorship. Rebuild after resolving conflicts that affect shipped inputs. Update the release record with the exact resulting commit and assets so maintainers can distinguish the active website version from the latest public source.
+
+## Chat update queue and batched GitHub integration
+
+Follow the [official update workflow](../UPDATE_WORKFLOW.md) for each new website change. It defines immutable patch archives, dependency and file-hash checks, separate website/Box/GitHub status, and the user-controlled integration cadence. Use the [Codex sync prompt](../CODEX_SYNC_PROMPT.md) when the user requests a repository update. Install the [agent instruction section](../AGENTS_UPDATE_INSTRUCTIONS.md) in the public repository without copying private hosted-project notes.

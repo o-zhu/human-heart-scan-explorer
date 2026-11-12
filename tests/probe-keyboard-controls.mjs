@@ -129,6 +129,39 @@ test('keycaps support multi-touch holds, cancellation and one-step accessible ac
  f.up('ShiftLeft');const normal=m.state.rollDeg;f.tick();near(m.state.rollDeg,normal+36*.04);
 });
 
+test('steering long presses suppress text selection and callouts without ending a valid hold or affecting prose',()=>{
+ const f=environment(),m=f.module,roll=f.key('KeyE');
+ f.pointer(roll,'pointerdown',7,{pointerType:'touch'});const tapped=m.state.rollDeg;
+ for(const target of [roll.querySelector('kbd'),m.$('steer-pad').querySelector('span')])for(const type of ['selectstart','contextmenu','dragstart']){
+  const e=f.event(type);target.dispatchEvent(e);assert.equal(e.defaultPrevented,true,`${type} on steering content`);
+ }
+ f.tick();near(m.state.rollDeg,tapped+36*.04);assert.equal(m.pointerControls.size,1);
+ f.pointer(roll,'pointerup',7);const released=m.state.rollDeg;f.tick();near(m.state.rollDeg,released);
+ for(const target of [m.$('lock-status'),f.document.getElementById('outside')])for(const type of ['selectstart','contextmenu','dragstart']){
+  const e=f.event(type);target.dispatchEvent(e);assert.equal(e.defaultPrevented,false,`${type} remains native elsewhere`);
+ }
+ f.pointer(roll,'pointerdown',8);f.down('KeyI');const menu=f.event('contextmenu');menu.preventDefault=()=>{};
+ roll.dispatchEvent(menu);assert.equal(m.pointerControls.size,0);assert.equal(m.keys.size,0);assert.equal(f.captures.size,0);
+ const stopped=m.state.rollDeg;f.tick();near(m.state.rollDeg,stopped);
+});
+
+test('each touch owns its key or drag pad until its own release, including failed native capture',()=>{
+ const f=environment(),m=f.module,pad=m.$('steer-pad'),roll=f.key('KeyE');
+ f.pointer(roll,'pointerdown',7);const once=m.state.rollDeg;
+ f.pointer(roll,'pointerdown',7);f.pointer(f.key('KeyI'),'pointerdown',7);near(m.state.rollDeg,once);assert.equal(m.pointerControls.get(7).button,roll);
+ m.releaseControl();
+ f.pointer(pad,'pointerdown',10,{clientX:10,clientY:20,pointerType:'touch'});
+ f.pointer(pad,'pointerdown',11,{clientX:90,clientY:90,pointerType:'touch'});assert.equal(m.drag.id,10);assert.equal(f.captures.get(10),pad);assert.equal(f.captures.has(11),false);
+ for(const type of ['pointerup','pointercancel','lostpointercapture'])f.pointer(pad,type,11);
+ assert.equal(m.drag.id,10,'An unrelated touch must not end the accepted drag.');
+ f.pointer(roll,'pointerdown',12);f.pointer(f.window,'pointerup',10);assert.equal(m.drag,null);assert.equal(f.captures.has(10),false);assert.equal(m.pointerControls.size,1);
+ const held=m.state.rollDeg;f.tick();near(m.state.rollDeg,held+36*.04);f.pointer(roll,'pointercancel',12);const stopped=m.state.rollDeg;f.tick();near(m.state.rollDeg,stopped);
+ pad.setPointerCapture=()=>{throw new Error('Capture unavailable');};
+ assert.doesNotThrow(()=>f.pointer(pad,'pointerdown',13,{clientX:0,clientY:0}));assert.equal(m.drag.id,13);
+ f.pointer(f.window,'pointercancel',13);assert.equal(m.drag,null);assert.equal(pad.classList.contains('is-dragging'),false);
+ f.document.hidden=true;f.pointer(roll,'pointerdown',14);f.pointer(pad,'pointerdown',15,{clientX:0,clientY:0});assert.equal(m.pointerControls.size,0);assert.equal(m.drag,null);
+});
+
 test('free-position keys remain disabled on contact and move only the free pose',()=>{
  const f=environment(),m=f.module;const before=[...m.state.originMm];
  assert.equal(f.key('KeyR').disabled,true);f.down('KeyR');f.tick();assert.deepEqual(m.state.originMm,before);assert.equal(m.keys.has('KeyR'),false);
@@ -139,7 +172,7 @@ test('free-position keys remain disabled on contact and move only the free pose'
 
 test('blur, hidden tab, reset, restore and exit release both hands; inactive labs never consume keys',()=>{
  const f=environment(),m=f.module;
- const stops=[()=>f.window.dispatchEvent(f.event('blur')),()=>{f.document.hidden=true;f.document.dispatchEvent(f.event('visibilitychange'));f.document.hidden=false;},()=>m.reset(),()=>m.restore({interactionMode:'orbit'})];
+ const stops=[()=>f.window.dispatchEvent(f.event('blur')),()=>f.window.dispatchEvent(f.event('pagehide')),()=>{f.document.hidden=true;f.document.dispatchEvent(f.event('visibilitychange'));f.document.hidden=false;},()=>m.reset(),()=>m.restore({interactionMode:'orbit'})];
  for(const stop of stops){
   f.document.body.focus();f.down('KeyW');f.pointer(f.key('KeyI'),'pointerdown');assert.ok(m.keys.size&&m.pointerControls.size);stop();
   assert.equal(m.keys.size,0);assert.equal(m.pointerControls.size,0);assert.equal(f.captures.size,0);assert.equal(m.mount.querySelectorAll('.probe-control-key.is-held').length,0);

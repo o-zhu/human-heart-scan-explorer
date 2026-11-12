@@ -35,6 +35,11 @@ const camera=()=>structuredClone(renderer.camera),plane=()=>structuredClone(echo
 let checks=0;const passed=name=>{checks++;console.log('PASS '+name);};
 try{
  echo.enter();
+ assert.equal(echo.active,false,'The default catalogue must not run the comparison');
+ assert.equal(echo.referenceGallery.visible,true);assert.equal(echo.mount.querySelector('.echo-workspace').hidden,true);
+ assert.equal(echo.mount.querySelectorAll('[data-reference-view]').length,28);
+ click('[data-reference-view="a4c"]');assert.equal(echo.active,true);assert.equal(echo.referenceGallery.visible,false);
+ passed('Reference Views defaults to the complete grid and starts comparison only after selection');
  assert.equal(echo.mount.querySelector('.echo-heading'),null);assert.equal(echo.$('exit'),null);
  assert.ok(echo.mount.querySelector('.echo-library .echo-library-heading'));
  assert.equal(echo.$('anchor-probe').textContent,'Anchor by Probe View');assert.equal(echo.$('anchor-anatomy').textContent,'Anchor by Anatomy');
@@ -112,5 +117,17 @@ try{
  await echo.loadMediaCatalog();assert.equal(echo.mediaCatalog.incompleteSources.length,0);assert.equal(echo.mediaSelection,'recovered');
  for(const [url,count]of loads)assert.equal(count,url.includes('/tte-atlas/')?2:1,'Only the failed catalog should be retried');
  passed('A transient TTE catalog failure recovers while retaining successfully loaded catalogs');
+
+ click('[data-reference="back"]');assert.equal(echo.active,false);assert.equal(echo.sampler,null);
+ assert.equal(echo.overlay.running,false);assert.equal(echo.tteOverlay.running,false);assert.equal(echo.referenceGallery.visible,true);
+ assert.equal(echo.mount.querySelector('.echo-workspace').hidden,true);
+ click('[data-reference-mode="tee"]');click('[data-reference-level="basic"]');
+ const savedGallery=echo.getState();assert.equal(savedGallery.presentation,'gallery');assert.equal(savedGallery.gallery.mode,'tee');
+ echo.restore(savedGallery);echo.enter();assert.equal(echo.active,false);assert.equal(echo.referenceGallery.state.mode,'tee');
+ assert.equal(echo.mount.querySelectorAll('[data-reference-view]').length,11);
+ echo.restore({preset:'a4c',mode:'tte',offsetMm:2});echo.enter();
+ assert.equal(echo.active,true);assert.equal(echo.state.preset,'a4c');assert.equal(echo.referenceGallery.visible,false);
+ echo.leave();echo.enter();assert.equal(echo.referenceGallery.visible,true);assert.equal(echo.active,false);
+ passed('Returning pauses comparison; gallery bookmarks retain filters; legacy links still open detail');
 }finally{echo.destroy();}
 console.log(`TTE atlas passed ${checks} controller/camera checks.`);

@@ -1,0 +1,78 @@
+{
+  "reviewer": "echo_research (independent of generating agent)",
+  "source": "ASE2019 Comprehensive TTE Table2, exact anatomy and echo pairs",
+  "scope": "Full-size anatomy, orientation, chamber/vessel topology and labels. Root separately reviewed thumbnails.",
+  "results": [
+    {
+      "code": "2-14",
+      "status": "pass",
+      "observation": "Four chambers, TTE apex-near orientation, RV/RA left and LV/LA right."
+    },
+    {
+      "code": "2-15",
+      "status": "pass",
+      "observation": "LV-focused zoom with atria cropped, RV visible on left."
+    },
+    {
+      "code": "2-16",
+      "status": "pass",
+      "observation": "LV forms apex; shorter RV at left; four chambers, no outflow."
+    },
+    {
+      "code": "2-17a",
+      "status": "pass",
+      "observation": "Continuous LVOT to thin-walled Ao vessel; no isolated fake fifth chamber."
+    },
+    {
+      "code": "2-18",
+      "status": "pass",
+      "observation": "Posterior coronary sinus enters RA, separated from small LA."
+    },
+    {
+      "code": "2-19",
+      "status": "pass",
+      "observation": "LV and LA only; MV between; no right heart/outflow."
+    },
+    {
+      "code": "2-20",
+      "status": "pass",
+      "observation": "Two-chamber LV zoom crops LA while preserving MV."
+    },
+    {
+      "code": "2-21",
+      "status": "pass",
+      "observation": "Apical long-axis LV/LA left, LVOT/Ao right, appropriate valve continuity."
+    },
+    {
+      "code": "2-22",
+      "status": "pass",
+      "observation": "Zoomed three-chamber plane preserves MV and LVOT while cropping bases."
+    },
+    {
+      "code": "2-23",
+      "status": "pass",
+      "observation": "Atrial-focused A4C with generic PV stubs entering LA only."
+    },
+    {
+      "code": "2-24",
+      "status": "pass",
+      "observation": "Oblique transverse subcostal heart; RV near field, RA left, LV lower-right and LA lower-left."
+    },
+    {
+      "code": "2-25",
+      "status": "pass",
+      "observation": "IVC under liver openly continues into RA on right."
+    },
+    {
+      "code": "2-26",
+      "status": "pass",
+      "observation": "Hepatic vein branches within liver converge into IVC and then RA."
+    },
+    {
+      "code": "2-27",
+      "status": "pass",
+      "observation": "Continuous ascending/arch/descending aorta, branch order BCA/LCCA/LSA and separate RPA cross-section."
+    }
+  ],
+  "limitations": "Simplified navigational schematics with selective labels and representative vessel detail; not complete anatomical inventories or independent clinical validation."
+}

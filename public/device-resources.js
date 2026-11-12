@@ -18,16 +18,24 @@ export function getDeviceResourcePolicy({navigator: nav = globalThis.navigator, 
   const low = memory !== null && memory <= 2;
   const limitedCpu = cores !== null && cores <= 4;
   const constrained = recovery || mobile || (memory !== null && memory <= 4) || limitedCpu;
+  // Device hints control scheduling, not attainable detail. iPadOS usually
+  // omits memory and even a reported value is not a GPU allocation test. Give
+  // every normal visit one progressive Ultra attempt; actual failed loads or
+  // graphics allocations keep the cleaned smaller surface and expose Retry.
+  const allowUltraSurface = !recovery;
   const cautious = constrained || memory === null;
   const tier = recovery ? 'recovery' : low ? 'low-memory' : mobile ? 'mobile' : memory !== null && memory <= 4 ? 'limited-memory' : limitedCpu ? 'limited-cpu' : memory === null ? 'unknown-memory' : 'desktop';
   return Object.freeze({
     tier, constrained, mobile, appleTouch, reportedMemoryGiB: memory, reportedCores: cores,
-    defaultSurface: constrained ? (low || recovery ? 'balanced' : 'detail') : 'gentle',
-    // New visits start with the cleaned compact model. The complete desktop
-    // model remains an explicit choice, and eligible saved choices are honored.
+    defaultSurface: allowUltraSurface ? 'gentle' : low || recovery ? 'balanced' : 'detail',
+    // New visits show the cleaned compact model, then continue to the highest
+    // permitted surface. Explicit user selections still take precedence.
     startupSurface: low || recovery ? 'balanced' : 'detail',
-    allowUltraSurface: !constrained,
-    maxSurfaceDecodedBytes: constrained ? 64 * MiB : 512 * MiB,
+    allowUltraSurface,
+    sparseReviewedMasks: cautious,
+    boundedSurfaceHash: cautious,
+    surfaceLookahead: !cautious && !limitedCpu,
+    maxSurfaceDecodedBytes: allowUltraSurface ? 512 * MiB : 64 * MiB,
     fineBrickBytes: (low || recovery ? 48 : constrained ? 64 : memory === null ? 128 : memory < 8 ? 256 : 384) * MiB,
     preparedPlaneBytes: (low || recovery ? 12 : constrained ? 16 : 32) * MiB,
     resultCacheBytes: (low || recovery ? 12 : constrained ? 16 : 32) * MiB,

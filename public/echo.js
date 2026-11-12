@@ -1,12 +1,14 @@
 import {EchoTextureCache,isUltra} from './echo-texture-cache.js';
 import {titleCaseUi} from './ui-text.js';
+import {mountEchoCompactWorkspace} from './echo-mobile-v47.js';
+import {referenceGalleryTemplate,mountReferenceGallery} from './reference-gallery.js';
 export {EchoTextureCache} from './echo-texture-cache.js';
 import { MPRSampler } from './mpr.js';
 import { add, mul, norm, cross, dot } from './planes.js';
 import { capColor, capAnatomyColor as anatomyColor, buildAnatomyPalette } from './render-styles.js';
 import { EchoMediaCache } from './echo-media-cache.js';
 import {fullEchoCutFacePlane,validateEchoFineSection} from './echo-cut-face.js';
-import {createYouTubeReference,ensureEchoReferenceStyles,supplementalTeeAngle,referenceAngleMarkup,createReferenceAnglePlacement} from './echo-reference-player.js';
+import {createYouTubeReference,ensureEchoReferenceStyles,supplementalTeeAngle,referenceAngleMarkup,createReferenceAnglePlacement,localEchoReference,preferredEchoReference} from './echo-reference-player.js';
 import { scanActivity } from './download-priority.js';
 import {TEE_ATLAS_VIEWS,TEE_ATLAS_GROUPS} from './tee-atlas-data.js';
 import {TTE_ATLAS_VIEWS,TTE_ATLAS_GROUPS,TTE_SOURCE} from './tte-atlas-data.js';
@@ -89,14 +91,19 @@ export class EchoModule {
   ensureEchoReferenceStyles();
   this.fineSource=null;this.fineController=null;this.fineTimer=null;
   this.mount.classList.add('echo-panel');this.mount.innerHTML=this.template();this.cineAnglePlacement=createReferenceAnglePlacement({screen:this.mount.querySelector('.echo-cine-screen'),indicator:this.$('cine-angle'),video:this.$('cine-video')});const overlayOptions={renderer,meshCanvas:this.$('probe-mesh'),guideCanvas:this.$('probe-guide'),mount:this.mount.querySelector('#echoViewportMount')};this.overlay=new TeeAtlasOverlay(overlayOptions);this.tteOverlay=new TteAtlasOverlay(overlayOptions);this.bind();this.updateUI();
+  this.compactUI=mountEchoCompactWorkspace({mount:this.mount,presets:ECHO_PRESETS,getState:()=>this.state,onSelect:id=>this.selectPreset(id),onLayout:()=>this.renderer.requestRender()});
+  this.referenceGallery=mountReferenceGallery({mount:this.mount,presets:ECHO_PRESETS,groups:{tte:TTE_ATLAS_GROUPS,tee:TEE_ATLAS_GROUPS},onSelect:id=>this.openReferenceView(id),onBack:()=>this.showReferenceGallery({focus:true})});
+  this.referenceGallery.show();
   if(frames)this.setFrames(frames);
   if(String(donor.datasetId)===TEE_REFINEMENT_DATASET&&!donor.geometricComparisonOnly){this.loadPlaneReview();this.loadRegionReview();}
  }
 
  template(){return `
+  ${referenceGalleryTemplate()}
   <div class="echo-workspace">
-   <aside class="echo-library" aria-label="Echocardiography window presets">
-    <header class="echo-library-heading"><div><h2 data-echo="heading-title">TTE Views</h2><p data-echo="heading-subtitle">28 guideline views</p></div></header>
+   <aside id="echoViewLibrary" class="echo-library" aria-label="Echocardiography window presets">
+    <header class="echo-library-heading"><div><h2 data-echo="heading-title">TTE Views</h2><p data-echo="heading-subtitle">28 guideline views</p></div><button class="echo-compact-close" type="button" data-echo="compact-library-close" aria-label="Close View Library" hidden>×</button></header>
+    <div class="echo-compact-library-actions" data-echo="compact-library-actions"></div>
     <div class="echo-approach" role="group" aria-label="Echo approach"><button type="button" data-mode="tte" aria-pressed="true">TTE<span>Transthoracic</span></button><button type="button" data-mode="tee" aria-pressed="false">TEE<span>Transesophageal</span></button></div>
     <div class="echo-atlas-browser" data-echo="atlas-browser" hidden>
      <label class="echo-search"><span class="sr-only" data-echo="search-label">Search All Reference Views</span><input type="search" data-echo="search" placeholder="Search all views…" autocomplete="off"></label>
@@ -107,20 +114,29 @@ export class EchoModule {
     <div class="echo-source"><span>VIEW REFERENCES</span><a href="${TTE_SOURCE}" target="_blank" rel="noopener">ASE Adult TTE Guidance ↗</a><a href="${TEE_SOURCE}" target="_blank" rel="noopener">ASE / SCA Comprehensive TEE ↗</a></div>
    </aside>
    <div class="echo-comparison">
+   <nav class="echo-compact-navigation" data-echo="compact-navigation" aria-label="Echo Workspace" hidden>
+    <div class="echo-compact-approach" data-echo="compact-approach"></div>
+    <select class="echo-compact-view" data-echo="compact-view" aria-label="Reference View"></select>
+    <button type="button" data-echo="compact-browse" aria-controls="echoViewLibrary" aria-expanded="false" title="Browse and Search Views">Views</button>
+    <button class="echo-compact-settings-toggle" type="button" data-echo="compact-settings-toggle" aria-label="Echo Settings" aria-controls="echoCompactSettings" aria-expanded="false" title="Echo Settings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M9 3v6m6 0v6M9 15v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    <div class="echo-compact-view-switch" role="group" aria-label="Visible Echo Panes"><button type="button" data-echo-pane="anatomy" aria-controls="echoAnatomyPane" aria-pressed="false">Anatomy</button><button type="button" data-echo-pane="ultrasound" aria-controls="echoUltrasoundPane" aria-pressed="false">Ultrasound</button><button type="button" data-echo-pane="both" aria-controls="echoAnatomyPane echoUltrasoundPane" aria-pressed="true">Both</button></div>
+   </nav>
+   <section id="echoCompactSettings" class="echo-compact-settings" data-echo="compact-settings" aria-label="Echo Settings" hidden><header><h2>Echo Settings</h2><button class="echo-compact-close" type="button" data-echo="compact-settings-close" aria-label="Close Echo Settings">×</button></header><section data-echo="compact-model-controls"><h3>Anatomy</h3></section><section data-echo="compact-reference-controls"><h3>Ultrasound</h3></section><section data-echo="compact-plane-controls"></section></section>
    <header class="echo-active-view"><div><span data-echo="active-code">PLAX</span><h3 data-echo="active-name">Parasternal Long-Axis</h3><span class="echo-view-index" data-echo="view-index"></span></div><nav aria-label="Browse Reference Views"><button type="button" data-echo="previous" aria-label="Previous View">←</button><button type="button" data-echo="next" aria-label="Next View">→</button><button type="button" data-echo="diagram-open" aria-label="Enlarge View Illustration" hidden>Illustration ↗</button></nav></header>
-   <section class="echo-view-column" aria-label="CT anatomy comparison pane">
+   <section id="echoAnatomyPane" class="echo-view-column" aria-label="CT anatomy comparison pane">
     <div class="echo-scene-heading"><div><strong>3D Anatomy</strong></div></div>
     <div class="echo-panel-toolbar"><div class="echo-toolbar-content"><div class="echo-left-switch" role="group" aria-label="Left Comparison Pane"><button type="button" data-echo-view="3d" aria-pressed="true">3D Cutaway</button><button type="button" data-echo-view="ct" aria-pressed="false">CT Slice</button></div><div class="echo-anchor-controls" role="group" aria-label="Anchor the 3D View"><button type="button" data-echo="anchor-probe" aria-pressed="true" title="Face the scan sector with the probe at the top">Anchor by Probe View</button><button type="button" data-echo="anchor-anatomy" aria-pressed="false" title="Keep a fixed anatomical camera across views">Anchor by Anatomy</button></div><button class="echo-region-toggle" data-echo="region-toggle" type="button" aria-pressed="false" title="Show approximate chamber and vessel tissue regions">Region Colors</button><button class="echo-native-toggle" data-echo="ct-native" type="button" aria-pressed="false" hidden>1:1 Pixels</button></div></div>
     <div class="echo-comparison-screen echo-anatomy-screen">
      <div id="echoViewportMount" class="echo-viewport-mount" aria-label="Three-dimensional echo reference cutaway"><canvas class="echo-probe-mesh" data-echo="probe-mesh" aria-hidden="true" hidden></canvas><canvas class="echo-probe-guide" data-echo="probe-guide" aria-hidden="true" hidden></canvas></div><span class="echo-coverage-badge" data-echo="coverage-badge" hidden>Outside this heart scan · spatial context</span>
      <div class="echo-mpr-wrap" data-echo="ct-view" hidden><canvas data-echo="mpr" width="768" height="768" tabindex="0" role="img" aria-label="Oblique CT section. Click to face this plane in 3D; scroll or use arrow keys to move through sections."></canvas><p class="echo-mpr-message" data-echo="mpr-message" role="status">Loading reference planes</p></div>
     </div>
-    <div class="echo-mpr-caption"><span data-echo="resolution" role="status">Waiting for Scan</span><button type="button" data-echo="retry-detail" hidden>Retry Detail</button><button type="button" data-echo="align">Face This Plane ↗</button></div>
+    <div class="echo-mpr-caption"><button type="button" data-echo="retry-detail" hidden>Retry Detail</button><button type="button" data-echo="align">Face This Plane ↗</button></div>
     <p class="echo-tissue-caption" data-echo="tissue-caption" hidden>Labels identify measured tissue regions, not blood pools or valve leaflets.</p>
     <div data-echo="region-legend" class="echo-region-legend" hidden></div>
     <div class="echo-probe-options" data-echo="probe-options" hidden><label><input type="checkbox" data-echo="probe-visible" checked> Probe</label><label><input type="checkbox" data-echo="sector-visible" checked> Scan Sector</label><label><input type="checkbox" data-echo="context-visible" checked> Anatomy Context</label></div>
     <p class="echo-context-alert" data-echo="context-alert" role="status" hidden></p>
-    <details class="echo-model-details"><summary><span>Model Details</span><span class="echo-approx-badge" data-echo="ct-correspondence">CT Correspondence Unverified</span></summary><div class="echo-model-details-body">
+    <details class="echo-model-details"><summary><span>Model Details</span></summary><div class="echo-model-details-body">
+    <p class="echo-resolution-diagnostic" data-echo="resolution" role="status">Waiting for Scan</p><p class="echo-approx-badge" data-echo="ct-correspondence">CT Correspondence Unverified</p>
     <div class="echo-notice" data-echo="evidence-notice"><span aria-hidden="true">i</span><p data-echo="correspondence-note">Reviewing the correspondence of this measured CT plane.</p></div>
     <p class="echo-context-caption" data-echo="context-caption" hidden>Translucent esophagus, diaphragm and stomach · illustrative, unregistered anatomy</p>
     <p class="echo-probe-fit-note" data-echo="probe-fit-note" hidden></p>
@@ -130,15 +146,15 @@ export class EchoModule {
     </div></details>
     <p class="echo-section-hint" data-echo="section-hint" hidden>Scroll to Move the Plane · 1:1 Pixels for Detail</p>
    </section>
-    <section class="echo-cine" aria-labelledby="echoCineTitle">
-     <div class="echo-section-heading"><h3 id="echoCineTitle">Real Ultrasound</h3><span data-echo="cine-match">Independent Reference</span></div>
+    <section id="echoUltrasoundPane" class="echo-cine" aria-labelledby="echoCineTitle">
+     <div class="echo-section-heading"><h3 id="echoCineTitle">Real Ultrasound</h3><span class="echo-reference-qualifier" title="Clinical recording from another person; not registered to this donor">Independent reference</span></div>
      <div class="echo-panel-toolbar"><div class="echo-toolbar-content"><label class="sr-only" for="echoCineSelect">Reference View</label><select id="echoCineSelect" data-echo="cine-select" disabled><option>Loading Reference Library</option></select><button class="echo-cine-fit" type="button" data-echo="cine-fit" hidden>Full Frame</button></div></div>
      <div class="echo-cine-screen echo-comparison-screen"><video data-echo="cine-video" controls playsinline autoplay muted loop preload="metadata" aria-label="Independent echocardiography reference movie" hidden></video><img data-echo="cine-image" class="echo-reference-image" alt="" hidden><iframe data-echo="cine-embed" class="echo-reference-embed" title="Independent clinical ultrasound source player" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" hidden></iframe><p class="echo-reference-loading" data-echo="cine-empty" role="status">Clinical reference loops load when this module opens.</p>${referenceAngleMarkup}</div>
      <p class="echo-cine-source-line"><span>Source:</span><a data-echo="cine-visible-source" target="_blank" rel="noopener">Clinical reference</a></p>
      <p class="echo-cine-angle-note" data-echo="cine-angle-note" hidden></p>
-     <div class="echo-cine-loading" data-echo="cine-loading" hidden><progress data-echo="cine-progress" max="1" value="0" aria-label="Reference movie download progress"></progress><span data-echo="cine-status" role="status" aria-live="polite"></span><button data-echo="cine-retry" type="button" hidden>Retry Reference</button></div>
+     <div class="echo-cine-status-slot"><div class="echo-cine-loading" data-echo="cine-loading" hidden><progress data-echo="cine-progress" max="1" value="0" aria-label="Reference movie download progress"></progress><span data-echo="cine-status" role="status" aria-live="polite"></span><button data-echo="cine-fallback" type="button" hidden>Play Local Example</button><button data-echo="cine-retry" type="button" aria-label="Retry reference movie" hidden>Retry</button></div></div>
      <div class="echo-cine-playback"><label data-echo="rate-label" for="echoCineRate">Speed <select id="echoCineRate" data-echo="cine-rate"><option value="0.25">¼×</option><option value="0.5">½×</option><option value="1" selected>1×</option><option value="1.5">1½×</option></select></label><label data-echo="loop-label"><input type="checkbox" data-echo="cine-loop" checked> Loop</label><a class="echo-media-open" data-echo="media-open" target="_blank" rel="noopener">Original ↗</a><button type="button" data-echo="cine-expand" aria-pressed="false">Enlarge Pair</button></div>
-     <details class="echo-cine-credit"><summary><span>Source Details</span><span class="echo-source-qualifier">Independent Recording</span></summary><div class="echo-cine-credit-body"><p class="echo-cine-quality" data-echo="cine-quality"></p><p class="echo-cine-description" data-echo="cine-description">Named teaching examples from published sources.</p><p class="echo-cine-separation" data-echo="reference-note">Different person · fixed donor CT · no spatial or heartbeat registration.</p><p data-echo="cine-credit"></p><div><a data-echo="cine-source" target="_blank" rel="noopener">View Original Source ↗</a><a data-echo="cine-license" target="_blank" rel="noopener"></a><a data-echo="cine-guideline" target="_blank" rel="noopener" hidden>ASE Acquisition Reference ↗</a><a data-echo="cine-institution" target="_blank" rel="noopener" hidden>University of Toronto Viewer ↗</a></div><p data-echo="cine-institution-note" hidden></p></div></details>
+     <details class="echo-cine-credit"><summary><span>Source Details</span><span class="echo-source-qualifier">Independent Recording</span></summary><div class="echo-cine-credit-body"><p data-echo="cine-match">Independent Reference</p><p class="echo-cine-quality" data-echo="cine-quality"></p><p class="echo-cine-description" data-echo="cine-description">Named teaching examples from published sources.</p><p class="echo-cine-separation" data-echo="reference-note">Different person · fixed donor CT · no spatial or heartbeat registration.</p><p data-echo="cine-credit"></p><div><a data-echo="cine-source" target="_blank" rel="noopener">View Original Source ↗</a><a data-echo="cine-license" target="_blank" rel="noopener"></a><a data-echo="cine-guideline" target="_blank" rel="noopener" hidden>ASE Acquisition Reference ↗</a><a data-echo="cine-institution" target="_blank" rel="noopener" hidden>University of Toronto Viewer ↗</a></div><p data-echo="cine-institution-note" hidden></p></div></details>
     </section>
    <details class="echo-detail-fold"><summary>View Guidance &amp; Plane Controls</summary>
    <section class="echo-acquisition" data-echo="acquisition" aria-label="Echo acquisition reference" hidden><div><span data-echo="angle-label">Multiplane</span><strong data-echo="target-angle"></strong></div><div><span data-echo="depth-label">Probe level</span><strong data-echo="target-depth"></strong></div><p data-echo="maneuver-summary"></p><button type="button" data-echo="steer">Free Steering ↗</button><a data-echo="table-source" target="_blank" rel="noopener" hidden>ASE Table 2 ↗</a></section>
@@ -212,6 +228,7 @@ export class EchoModule {
   this.$('cine-loop').addEventListener('change',()=>{this.$('cine-video').loop=this.$('cine-loop').checked;});
   this.$('cine-expand').addEventListener('click',()=>{const expanded=this.mount.classList.toggle('echo-cine-expanded');this.$('cine-expand').setAttribute('aria-pressed',String(expanded));this.$('cine-expand').textContent=expanded?'Show Presets':'Enlarge Pair';this.renderer.requestRender();});
   this.$('cine-retry').addEventListener('click',()=>{const selected=this.mediaCatalog?.clips.find(clip=>clip.id===this.mediaSelection);if(this.active&&selected)this.startCine(selected);});
+  this.$('cine-fallback').addEventListener('click',()=>{const local=this.localCineReference();if(this.active&&local){this.mediaSelection=local.id;this.updateCine();}});
   this.$('cine-video').addEventListener('error',()=>{
    const video=this.$('cine-video');
    // Clearing a superseded source can queue a media event. It cannot fail the
@@ -234,7 +251,12 @@ export class EchoModule {
 
  setMediaCatalog(catalog){
   const clips=(catalog?.clips||[]).filter(c=>['tte','tee'].includes(c.mode)&&typeof c.id==='string'&&typeof c.url==='string'&&typeof c.sourceUrl==='string');
-  this.mediaCatalog={...catalog,clips};this.mediaFrameKey=null;this.updateCine();
+  // Retrying a missing catalog must not replace a chosen source or restart a
+  // playing movie that is still present. Changed source URLs retain their
+  // existing mediaIdentity invalidation below.
+  this.mediaCatalog={...catalog,clips};
+  if(!clips.some(clip=>clip.id===this.mediaSelection&&clip.mode===this.state.mode&&clip.preset===this.frameKey()))this.mediaFrameKey=null;
+  this.updateCine();
  }
  async loadMediaCatalog(){
   if(this.mediaCatalog&&!this.mediaCatalog.incompleteSources?.length)return this.mediaCatalog;
@@ -250,26 +272,26 @@ export class EchoModule {
    if(!this.destroyed)this.setMediaCatalog(catalog);return catalog;
   }).catch(error=>{
    if(this.destroyed)return null;
-   this.$('cine-empty').textContent='The reference library is temporarily unavailable. Reopen Echo windows to retry.';this.$('cine-select').innerHTML='<option>Reference Library Unavailable</option>';console.warn('Echo cine library:',error);return null;
+   this.$('cine-empty').textContent='The reference library is temporarily unavailable. Reopen Reference Views to retry.';this.$('cine-select').innerHTML='<option>Reference Library Unavailable</option>';console.warn('Echo cine library:',error);return null;
   }).finally(()=>{this.mediaPromise=null;});
   return this.mediaPromise;
  }
  updateCine(){
   if(!this.mediaCatalog)return;
-  const key=this.frameKey(),clips=this.mediaCatalog.clips.filter(c=>c.mode===this.state.mode&&c.preset===key),exact=clips.find(c=>c.preset===key);
+  const key=this.frameKey(),clips=this.mediaCatalog.clips.filter(c=>c.mode===this.state.mode&&c.preset===key),exact=preferredEchoReference(clips,{mode:this.state.mode,preset:key});
   if(this.mediaFrameKey!==key){this.mediaFrameKey=key;this.mediaSelection=exact?.id||'';}
   const selected=clips.find(c=>c.id===this.mediaSelection),select=this.$('cine-select'),video=this.$('cine-video');
   const angle=selected?.mode==='tee'?supplementalTeeAngle(TEE_ATLAS_VIEWS.find(view=>view.id===key)):null;
   this.$('cine-angle').hidden=!angle;this.$('cine-angle-note').hidden=!angle;
   if(angle){this.$('cine-angle-value').textContent=angle.label;this.$('cine-angle-pointer').setAttribute('x2',angle.x);this.$('cine-angle-pointer').setAttribute('y2',angle.y);this.$('cine-angle-note').textContent=angle.explanation;this.$('cine-angle').setAttribute('aria-label',`Reference multiplane angle ${angle.label}. ${angle.explanation}`);}
-  this.$('cine-guideline').hidden=!selected?.pdfUrl;this.$('cine-guideline').href=selected?.pdfUrl||TTE_SOURCE;
+  this.$('cine-guideline').hidden=!selected;this.$('cine-guideline').href=selected?.pdfUrl||ECHO_PRESETS.find(view=>view.id===key)?.sourceUrl||(this.state.mode==='tee'?TEE_SOURCE:TTE_SOURCE);
   const institution=selected?.institutionalAlternative;this.$('cine-institution').hidden=!institution?.viewerUrl;this.$('cine-institution').href=institution?.viewerUrl||'';
   this.$('cine-institution-note').hidden=!institution?.viewerUrl;this.$('cine-institution-note').textContent=institution?`${institution.note||''} ${institution.deepLinkNote||''}`:'';
   const focusAspect=Number(selected?.focusAspect),canFrame=focusAspect>=1&&focusAspect<=2;
   this.$('cine-fit').hidden=!canFrame;this.$('cine-fit').textContent=this.cineFullFrame?'Fit Ultrasound':'Full Frame';
   video.classList.toggle('is-framed',canFrame&&!this.cineFullFrame);video.style.setProperty('--echo-cine-aspect',canFrame?String(focusAspect):'1.4');
   this.cineAnglePlacement.update({enabled:!!angle,sourceUrl:selected?.url||'',sourceKey:selected?mediaIdentity(selected):'',focusAspect,fullFrame:!canFrame||this.cineFullFrame});
-  select.disabled=!clips.length;select.innerHTML=(!exact?'<option value="">No Example Available for This View</option>':'')+clips.map(c=>`<option value="${escapeHTML(c.id)}">${escapeHTML(titleCaseUi(this.state.mode==='tee'?(c.aseNumber?'ASE / SCA Guideline Cine':'Additional Clinical Example'):c.title))}</option>`).join('');select.value=selected?.id||'';
+  select.disabled=!clips.length;select.innerHTML=(!exact?'<option value="">No Example Available for This View</option>':'')+clips.map(c=>`<option value="${escapeHTML(c.id)}">${escapeHTML(titleCaseUi(this.state.mode==='tee'?(c.aseNumber?'ASE / SCA Guideline Cine':c.title||'Additional Clinical Example'):c.title))}</option>`).join('');select.value=selected?.id||'';
   this.updateCorrespondence(selected);
   if(!selected){
    this.stopCine();video.hidden=true;this.$('cine-loading').hidden=true;
@@ -294,6 +316,7 @@ export class EchoModule {
  }
  stopCine(){
   this.cineRequestId++;this.mediaCache.cancel();
+  this.$('cine-fallback').hidden=true;
   this.cineNativeCleanup?.();this.cineNativeCleanup=null;
   this.cineEmbedController?.destroy();this.cineEmbedController=null;
   const still=this.$('cine-image');still.onload=null;still.onerror=null;still.removeAttribute('src');still.hidden=true;
@@ -303,10 +326,13 @@ export class EchoModule {
   // Detach first: an LRU eviction must never revoke a source still in use.
   this.mediaCache.setActive(null);this.cineTargetId=null;this.cineTargetKey=null;this.cineLoadedId=null;this.cineSourceUrl=null;this.cineResume=false;
  }
+ localCineReference(){return localEchoReference(this.mediaCatalog?.clips||[],{mode:this.state.mode,preset:this.frameKey()});}
+ showCineFallback(){const local=this.localCineReference();this.$('cine-fallback').hidden=!local||local.id===this.mediaSelection;}
  cineError(message){
   this.cineLoadedId=null;this.cineNativeCleanup?.();this.cineNativeCleanup=null;
   this.$('cine-video').hidden=true;this.$('cine-image').hidden=true;this.$('cine-embed').hidden=true;this.$('cine-empty').hidden=false;this.$('cine-empty').textContent=message;
   this.$('cine-loading').hidden=false;this.$('cine-progress').hidden=true;this.$('cine-status').textContent='Reference unavailable · original source remains linked.';this.$('cine-retry').hidden=false;
+  this.showCineFallback();
  }
  startCine(selected){
   if(selected.kind==='youtube'){this.startYouTubeReference(selected);return;}
@@ -341,6 +367,7 @@ export class EchoModule {
   this.$('cine-video').hidden=true;this.$('cine-image').hidden=true;this.$('cine-empty').hidden=false;this.$('cine-empty').textContent='Loading source player…';
   this.$('cine-loading').hidden=false;this.$('cine-progress').hidden=true;this.$('cine-retry').hidden=true;
   this.$('cine-status').textContent='Loading source player · muted autoplay.';
+  this.showCineFallback();
   try{this.cineEmbedController=createYouTubeReference({placeholder:this.$('cine-embed'),selected,isCurrent:current,
    onReady:()=>{this.cineLoadedId=selected.id;this.$('cine-empty').hidden=true;this.$('cine-status').textContent='Starting Muted Playback…';},
    onPlaying:()=>{this.$('cine-status').textContent='Playing · Muted';this.$('cine-loading').hidden=true;},
@@ -356,6 +383,7 @@ export class EchoModule {
   const isImage=selected.kind==='image',element=this.$(isImage?'cine-image':'cine-video');
   this.$('cine-video').hidden=isImage;this.$('cine-image').hidden=!isImage;this.$('cine-empty').hidden=true;this.$('cine-loading').hidden=false;this.$('cine-progress').hidden=true;this.$('cine-retry').hidden=true;
   this.$('cine-status').textContent=isImage?'Loading clinical ultrasound image…':'Loading clinical reference movie…';
+  this.showCineFallback();
   if(isImage){
    element.alt=selected.title+'. Independent clinical ultrasound reference.';
    element.onload=()=>{if(!current())return;this.cineLoadedId=selected.id;this.$('cine-status').textContent=selected.correspondence?.sourceLabelVerified?'Clinical ultrasound still · source label checked.':'Independent clinical ultrasound still.';this.$('cine-loading').hidden=true;};
@@ -550,15 +578,26 @@ export class EchoModule {
   },700);
  }
 
- enter(){if(this.destroyed)return;this.active=true;this.mount.hidden=false;this.updateUI();this.updateAppearance();this.applyPlane(true);this.loadMediaCatalog();this.updateCine();}
- leave(){this.overlay?.stop();this.tteOverlay?.stop();this.$('diagram-dialog')?.close?.();this.active=false;this.requestId++;this.pendingFineToken=null;this.cancelFine();this.cutFaceSample=null;this.cutFacePlane=null;clearTimeout(this.sampleTimer);clearTimeout(this.prefetchTimer);this.textureCache.pause();this.queuedSample=null;this.preparedPresentation=null;this.sampler?.destroy();this.sampler=null;this.samplerVolume=null;this.stopCine();this.renderer.clearCapData();}
+ enter(){if(this.destroyed)return;this.mount.hidden=false;if(this.restoreReferenceDetail){this.restoreReferenceDetail=false;this.openReferenceView();}else this.showReferenceGallery();}
+ showReferenceGallery({focus=false}={}){const mode=this.referenceGallery?.visible?this.referenceGallery.state.mode:this.state.mode;this.leave();this.referenceGallery?.show({mode,focus});}
+ openReferenceView(id){
+  if(this.destroyed)return;
+  this.referenceGallery?.hide();this.active=true;
+  if(id)this.selectPreset(id);else{this.updateUI();this.updateAppearance();this.applyPlane(true);}
+  this.loadMediaCatalog();this.updateCine();this.renderer.requestRender();
+  const back=this.mount.querySelector('[data-reference="back"]');back?.scrollIntoView({block:'nearest',behavior:'instant'});back?.focus({preventScroll:true});
+ }
+ leave(){this.compactUI?.close();this.overlay?.stop();this.tteOverlay?.stop();this.$('diagram-dialog')?.close?.();this.active=false;this.requestId++;this.pendingFineToken=null;this.cancelFine();this.cutFaceSample=null;this.cutFacePlane=null;clearTimeout(this.sampleTimer);clearTimeout(this.prefetchTimer);this.textureCache.pause();this.queuedSample=null;this.preparedPresentation=null;this.sampler?.destroy();this.sampler=null;this.samplerVolume=null;this.stopCine();this.renderer.clearCapData();}
  reset({preserveUpright=false}={}){Object.assign(this.state,{offsetMm:0,rotationDeg:0,tiltDeg:0,flip:false});this.updateUI();if(this.active)this.applyPlane(true,preserveUpright&&this.state.alignment==='upright');}
- getState(){return {...this.state,contrast:this.renderer.settings.capContrast??this.state.contrast,donorPlaneRevision:echoDonorPlaneRevision(this.frames)};}
+ getState(){return {...this.state,presentation:this.referenceGallery?.visible?'gallery':'detail',gallery:this.referenceGallery?.state,contrast:this.renderer.settings.capContrast??this.state.contrast,donorPlaneRevision:echoDonorPlaneRevision(this.frames)};}
  restore(saved={}){
+  // Existing shared view links retain their exact selected comparison and pose.
+  this.restoreReferenceDetail=!this.active&&saved.presentation!=='gallery';
   const revision=echoDonorPlaneRevision(this.frames);
   if(revision&&saved.donorPlaneRevision!==revision)saved={...saved,offsetMm:0,rotationDeg:0,tiltDeg:0,flip:false,planeReference:'refined',donorPlaneRevision:revision};
   const savedId=saved.preset==='psax'?`psax_${saved.psaxLevel==='mitral'?'mitral':'papillary'}`:saved.preset;
   const preset=ECHO_PRESETS.find(p=>p.id===savedId)||ECHO_PRESETS[0];
+  this.referenceGallery?.restore(saved.gallery||{mode:preset.mode});
   if(preset.group)this.atlasGroup=preset.group;
   const contrast=Number.isFinite(this.renderer.settings.capContrast)?clamp(this.renderer.settings.capContrast,.5,3):DEFAULT_STATE.contrast;
   this.state={...DEFAULT_STATE,contrast,...saved,mode:preset.mode,preset:preset.id};
@@ -570,9 +609,10 @@ export class EchoModule {
   for(const [key,min,max] of [['offsetMm',-this.offsetLimitMm,this.offsetLimitMm],['rotationDeg',-90,90],['tiltDeg',-45,45],['contrast',.5,3]])this.state[key]=clamp(Number(this.state[key])||(key==='contrast'?contrast:DEFAULT_STATE[key]),min,max);
   this.renderer.set({capContrast:this.state.contrast});
   this.state.flip=!!this.state.flip;this.state.lockCamera=!!this.state.lockCamera;this.updateUI();if(this.active)this.applyPlane(true);
+  if(this.active&&saved.presentation==='gallery')this.showReferenceGallery();
  }
 
- selectPreset(id){if(id==='psax')id=`psax_${this.state.psaxLevel==='mitral'?'mitral':'papillary'}`;const preset=ECHO_PRESETS.find(p=>p.id===id);if(!preset)return;const preserveUpright=this.state.mode===preset.mode&&this.state.alignment==='upright';if(!preserveUpright&&this.frames[this.frameKey()]?.outsideScan&&!this.frames[id]?.outsideScan)this.renderer.camera.distance=1.55;this.renderer.set({anatomySelected:0});this.appearance?.changed();this.state.preset=id;this.state.mode=preset.mode;this.state.planeReference='refined';this.rebuildAtlasFrames();if(preset.group)this.atlasGroup=preset.group;if(this.frames[id]?.outsideScan)this.state.leftView='3d';this.reset({preserveUpright});this.updateAppearance();this.mount.querySelector('.echo-detail').scrollTop=0;this.mount.querySelector(`[data-preset="${id}"]`)?.focus({preventScroll:true});}
+ selectPreset(id){if(id==='psax')id=`psax_${this.state.psaxLevel==='mitral'?'mitral':'papillary'}`;const preset=ECHO_PRESETS.find(p=>p.id===id);if(!preset)return;const preserveUpright=this.state.mode===preset.mode&&this.state.alignment==='upright';if(!preserveUpright&&this.frames[this.frameKey()]?.outsideScan&&!this.frames[id]?.outsideScan)this.renderer.camera.distance=1.55;this.renderer.set({anatomySelected:0});this.appearance?.changed();this.state.preset=id;this.state.mode=preset.mode;this.state.planeReference='refined';this.rebuildAtlasFrames();if(preset.group)this.atlasGroup=preset.group;if(this.frames[id]?.outsideScan)this.state.leftView='3d';this.reset({preserveUpright});this.updateAppearance();this.mount.querySelector('.echo-detail').scrollTop=0;if(!this.compactUI?.selectionChanged())this.mount.querySelector(`[data-preset="${id}"]`)?.focus({preventScroll:true});}
  moveSection(direction){this.holdCurrentPlaneReference();this.state.offsetMm=clamp(this.state.offsetMm+direction*(this.spacingMm||.3176),-this.offsetLimitMm,this.offsetLimitMm);this.updateReadouts();this.applyPlane();}
  frameKey(){return this.state.preset==='psax'?`psax_${this.state.psaxLevel}`:this.state.preset;}
  getPlane(){
@@ -798,14 +838,14 @@ export class EchoModule {
   const all=ECHO_PRESETS.filter(p=>p.mode===this.state.mode),filtered=all.filter(p=>query?terms.every(term=>`${p.id} ${p.code} ${p.name} ${p.tableRow||''} ${(p.anatomy||[]).join(' ')}`.toLowerCase().replace(/[-–]/g,' ').includes(term)):p.group===this.atlasGroup);
   this.$('presets').innerHTML=filtered.map(original=>{
    const p=original,selected=p.id===this.state.preset;
-   return `<button type="button" class="echo-preset echo-illustrated-preset ${selected?'is-selected':''}" data-preset="${p.id}" aria-pressed="${selected}" title="${escapeHTML(titleCaseUi(p.name))}"><img src="${p.illustration||p.diagram}" width="104" height="72" alt="" loading="lazy" decoding="async"><span class="echo-preset-copy"><span class="echo-preset-code">${escapeHTML(p.code)}${isTee?`<span>${p.angles}</span>`:''}</span><span class="echo-preset-name">${escapeHTML(titleCaseUi(p.shortName||p.name))}</span></span><span class="echo-ase-number">${isTee?String(p.aseNumber).padStart(2,'0'):p.tableRow}</span></button>`;
+   return `<button type="button" class="echo-preset echo-illustrated-preset ${selected?'is-selected':''}" data-preset="${p.id}" aria-pressed="${selected}" title="${escapeHTML(titleCaseUi(p.name))}"><img src="${p.thumbnail||p.illustration||p.diagram}" width="104" height="104" alt="" loading="lazy" decoding="async"><span class="echo-preset-copy"><span class="echo-preset-code">${escapeHTML(p.code)}${isTee?`<span>${p.angles}</span>`:''}</span><span class="echo-preset-name">${escapeHTML(titleCaseUi(p.shortName||p.name))}</span></span><span class="echo-ase-number">${isTee?String(p.aseNumber).padStart(2,'0'):p.tableRow}</span></button>`;
   }).join('');
   this.$('search-empty').hidden=!!filtered.length;
   this.$('library-caption').textContent=query?`${filtered.length} results across all views`:`${groups.find(g=>g.id===this.atlasGroup)?.name||this.state.mode.toUpperCase()} · ${filtered.length} views`;
   this.mount.querySelectorAll('[data-tee-group]').forEach(button=>button.setAttribute('aria-pressed',String(!query&&button.dataset.teeGroup===this.atlasGroup)));
   this.mount.querySelectorAll('[data-tte-group]').forEach(button=>button.setAttribute('aria-pressed',String(!query&&button.dataset.tteGroup===this.atlasGroup)));
  }
- stepPreset(direction){const all=ECHO_PRESETS.filter(p=>p.mode===this.state.mode),i=all.findIndex(p=>p.id===this.state.preset);this.atlasSearch='';this.$('search').value='';this.selectPreset(all[(i+direction+all.length)%all.length].id);this.mount.querySelector(`[data-preset="${this.state.preset}"]`)?.scrollIntoView({block:'nearest'});}
+ stepPreset(direction){const all=ECHO_PRESETS.filter(p=>p.mode===this.state.mode),i=all.findIndex(p=>p.id===this.state.preset);this.atlasSearch='';this.$('search').value='';this.selectPreset(all[(i+direction+all.length)%all.length].id);if(!this.compactUI?.compact)this.mount.querySelector(`[data-preset="${this.state.preset}"]`)?.scrollIntoView({block:'nearest'});}
  updateProbe(){
   if(!this.overlay)return;
   const view=ECHO_PRESETS.find(v=>v.id===this.state.preset),plane=this.getPlane(),isTee=this.state.mode==='tee',overlay=isTee?this.overlay:this.tteOverlay;
@@ -866,7 +906,7 @@ export class EchoModule {
   this.$('alignment-note').textContent=isTee?(this.currentRegionalEvidence()?.summary||'The current CT section is a regional comparison. Its named target structures need confirmation.'):this.frames[this.frameKey()]?.note||'This donor has independent starting planes. Their anatomical landmarks and clinical echo correspondence have not been verified.';
   this.$('angle-reference').hidden=!original.angles;this.$('angle-range').textContent=original.angles||'';this.$('psax-level').hidden=preset.id!=='psax';this.mount.querySelector('#echoPsaxLevel').value=this.state.psaxLevel;
   if(this.donor.geometricComparisonOnly&&!this.frames.psax_mitral?.donorCalibration){for(const option of this.mount.querySelectorAll('#echoPsaxLevel option'))option.textContent=option.value==='mitral'?'Section B':'Section A';}
-  this.updateReadouts();this.updateLeftView(false);this.updateCorrespondence();this.updateCine();this.updateProbe();
+  this.updateReadouts();this.updateLeftView(false);this.updateCorrespondence();this.updateCine();this.updateProbe();this.compactUI?.sync();
  }
  updateReadouts(){
   this.mount.querySelectorAll('[data-control]').forEach(input=>{input.value=this.state[input.dataset.control];});
@@ -874,5 +914,5 @@ export class EchoModule {
   this.$('rotation-value').textContent=`${this.state.rotationDeg>0?'+':''}${this.state.rotationDeg}°`;this.$('tilt-value').textContent=`${this.state.tiltDeg>0?'+':''}${this.state.tiltDeg}°`;this.$('contrast-value').textContent=`${this.state.contrast.toFixed(2).replace(/0$/,'')}×`;
   this.$('lock').checked=this.state.lockCamera;this.$('flip').setAttribute('aria-pressed',String(this.state.flip));
  }
- destroy(){this.leave();this.destroyed=true;this.cineAnglePlacement?.destroy();this.sampler?.destroy();this.textureCache.destroy();this.mediaCache.destroy();this.overlay.dispose();this.tteOverlay?.dispose();}
+ destroy(){this.leave();this.destroyed=true;this.referenceGallery?.destroy();this.compactUI?.destroy();this.cineAnglePlacement?.destroy();this.sampler?.destroy();this.textureCache.destroy();this.mediaCache.destroy();this.overlay.dispose();this.tteOverlay?.dispose();}
 }

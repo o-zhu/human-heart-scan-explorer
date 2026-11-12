@@ -139,7 +139,7 @@ test('Ctrl, Meta, Alt and composition preserve browser shortcuts and stop a held
 
 test('blur, visibility, lock, reset, restore and module exit release every input and key highlight',()=>{
  const f=environment(),m=f.module;
- const stops=[()=>f.window.dispatchEvent(f.event('blur')),()=>{f.document.hidden=true;f.document.dispatchEvent(f.event('visibilitychange'));f.document.hidden=false;},()=>m.tee('lock').click(),()=>m.tee('reset').click(),()=>m.restore(m.getState())];
+ const stops=[()=>f.window.dispatchEvent(f.event('blur')),()=>f.window.dispatchEvent(f.event('pagehide')),()=>{f.document.hidden=true;f.document.dispatchEvent(f.event('visibilitychange'));f.document.hidden=false;},()=>m.tee('lock').click(),()=>m.tee('reset').click(),()=>m.restore(m.getState())];
  for(const stop of stops){
   if(m.state.probeLocked)m.tee('lock').click();f.focus.focus();f.down('KeyW');f.pointer(f.key('KeyI'),'pointerdown');assert.ok(m.keys.size&&m.pointerControls.size);
   stop();assert.equal(m.keys.size,0);assert.equal(m.pointerControls.size,0);assert.equal(f.captures.size,0);assert.equal(m.mount.querySelectorAll('.tee-control-key.is-held').length,0);
@@ -160,6 +160,39 @@ test('keycaps support pointer hold, multi-touch, cancellation and one-step acces
  for(const type of ['lostpointercapture','pointercancel']){f.pointer(advance,'pointerdown',4);f.pointer(advance,type,4);assert.equal(m.pointerControls.size,0);}
  f.pointer(advance,'pointerdown',5);f.pointer(f.window,'pointerup',5);assert.equal(m.pointerControls.size,0);
  f.pointer(advance,'pointerdown',6,{shiftKey:true});const fine=m.state.insertionCm;f.tick();near(m.state.insertionCm,fine+1.8*.04*.22);f.up('ShiftLeft');const normal=m.state.insertionCm;f.tick();near(m.state.insertionCm,normal+1.8*.04);
+});
+
+test('steering long presses suppress selection and callouts while preserving hold motion and ordinary page menus',()=>{
+ const f=environment(),m=f.module,advance=f.key('KeyW');
+ f.pointer(advance,'pointerdown',7,{pointerType:'touch'});const tapped=m.state.insertionCm;
+ for(const target of [advance.querySelector('kbd'),m.tee('steer-pad').querySelector('span')])for(const type of ['selectstart','contextmenu','dragstart']){
+  const e=f.event(type);target.dispatchEvent(e);assert.equal(e.defaultPrevented,true,`${type} on steering content`);
+ }
+ f.tick();near(m.state.insertionCm,tapped+1.8*.04);assert.equal(m.pointerControls.size,1);
+ f.pointer(advance,'pointerup',7);const released=m.state.insertionCm;f.tick();near(m.state.insertionCm,released);
+ for(const target of [m.mount.querySelector('.tee-keyboard p'),f.document.getElementById('outside')])for(const type of ['selectstart','contextmenu','dragstart']){
+  const e=f.event(type);target.dispatchEvent(e);assert.equal(e.defaultPrevented,false,`${type} remains native elsewhere`);
+ }
+ f.pointer(advance,'pointerdown',8);f.down('KeyI');const menu=f.event('contextmenu');menu.preventDefault=()=>{};
+ advance.dispatchEvent(menu);assert.equal(m.pointerControls.size,0);assert.equal(m.keys.size,0);assert.equal(f.captures.size,0);
+ const stopped=m.state.insertionCm;f.tick();near(m.state.insertionCm,stopped);
+});
+
+test('drag and key ownership survive second touches and capture failures without canceling the other hand',()=>{
+ const f=environment(),m=f.module,pad=m.tee('steer-pad'),advance=f.key('KeyW');
+ f.pointer(advance,'pointerdown',7);const once=m.state.insertionCm;
+ f.pointer(advance,'pointerdown',7);f.pointer(f.key('KeyI'),'pointerdown',7);near(m.state.insertionCm,once);assert.equal(m.pointerControls.get(7).button,advance);
+ m.releaseControl();
+ f.pointer(pad,'pointerdown',10,{clientX:10,clientY:20,pointerType:'touch'});
+ f.pointer(pad,'pointerdown',11,{clientX:90,clientY:90,pointerType:'touch'});assert.equal(m.drag.id,10);assert.equal(f.captures.get(10),pad);assert.equal(f.captures.has(11),false);
+ for(const type of ['pointerup','pointercancel','lostpointercapture'])f.pointer(pad,type,11);
+ assert.equal(m.drag.id,10,'An unrelated touch must not end the accepted drag.');
+ f.pointer(advance,'pointerdown',12);f.pointer(pad,'lostpointercapture',10);assert.equal(m.drag,null);assert.equal(f.captures.has(10),false);assert.equal(m.pointerControls.size,1);
+ const held=m.state.insertionCm;f.tick();near(m.state.insertionCm,held+1.8*.04);f.pointer(advance,'pointercancel',12);const stopped=m.state.insertionCm;f.tick();near(m.state.insertionCm,stopped);
+ pad.setPointerCapture=()=>{throw new Error('Capture unavailable');};
+ assert.doesNotThrow(()=>f.pointer(pad,'pointerdown',13,{clientX:0,clientY:0}));assert.equal(m.drag.id,13);
+ f.pointer(f.window,'pointercancel',13);assert.equal(m.drag,null);assert.equal(pad.classList.contains('is-dragging'),false);
+ f.document.hidden=true;f.pointer(advance,'pointerdown',14);f.pointer(pad,'pointerdown',15,{clientX:0,clientY:0});assert.equal(m.pointerControls.size,0);assert.equal(m.drag,null);
 });
 
 test('physical limits remain bounded and a long frame cannot cause a large jump',()=>{

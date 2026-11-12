@@ -1,0 +1,174 @@
+/* Compact TTE / TEE: a full visual first, controls when needed. The helper
+   moves the original controls, preserving listeners, focus and probe state. */
+.lab-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.lab-touch-key,.lab-compact-toolbar[hidden],.lab-compact-dock[hidden]{display:none!important}
+body :is(#probePanel,#teePanel).lab-compact [hidden]{display:none!important}
+/* A held steering control is an input surface, including its text children.
+   Keep selection/callout suppression local so explanatory text remains usable. */
+:is(.probe-control-key,.tee-control-key,.probe-steer-pad),
+:is(.probe-control-key,.tee-control-key,.probe-steer-pad) *{
+ -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+}
+:is(.probe-control-key,.tee-control-key,.probe-steer-pad){touch-action:none}
+body :is(#probePanel,#teePanel).lab-compact{
+ --lab-control-height:var(--ui-control-height,44px);
+ --lab-edge:clamp(5px,.8vw,10px);
+}
+
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar{
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(82px,104px) auto;align-items:center;gap:5px;
+ margin:4px var(--lab-edge);min-width:0;
+}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar label{display:block;min-width:0;max-width:none;margin:0}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar :is(select,button){
+ width:100%;min-width:0;max-width:none;min-height:var(--lab-control-height)!important;height:var(--lab-control-height);box-sizing:border-box;margin:0;
+ border:1px solid #49675c;border-radius:6px;background:#172b26;color:#e0e8d8;
+ font:var(--ui-font-size,14px)/1.2 var(--font-body,Arial,sans-serif);padding:4px 7px;cursor:pointer;
+}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar select{appearance:auto;-webkit-appearance:auto}
+body :is(#probePanel,#teePanel).lab-compact .lab-controls-toggle{width:auto;white-space:nowrap;padding:4px 8px}
+body :is(#probePanel,#teePanel).lab-compact .lab-controls-toggle[aria-expanded=true]{background:#b9cda9;color:#152d22;border-color:#d4e2c4}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar :is(select,button):focus-visible{outline:2px solid #d7e9bf;outline-offset:2px}
+
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-workspace,.tee-workspace){
+ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:6px;
+ height:var(--lab-workspace-height,max(280px,calc(100dvh - 200px)));
+ min-height:0;min-width:0;box-sizing:border-box;padding:0 var(--lab-edge) 6px;
+}
+body :is(#probePanel,#teePanel).lab-compact .probe-comparison{
+ display:flex;grid-column:1;grid-row:1;order:0;flex-direction:column;gap:5px;
+ height:100%;min-height:0;min-width:0;overflow:hidden;
+}
+body :is(#probePanel,#teePanel).lab-compact .workspace-starting-views,
+body #teePanel.lab-compact .tee-console,
+body #probePanel.lab-compact .probe-body-context{display:none!important}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-view-pair,.probe-comparison-headings,.probe-comparison-footers){
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;min-width:0;
+}
+body :is(#probePanel,#teePanel).lab-compact .probe-view-pair{flex:1;min-height:0;height:auto;grid-template-rows:minmax(0,1fr);align-items:stretch}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-viewport-mount,.probe-image-panel){height:100%;min-height:0;min-width:0}
+body :is(#probePanel,#teePanel).lab-compact .probe-comparison-headings{flex:none;min-height:24px;margin:0}
+body :is(#probePanel,#teePanel).lab-compact .probe-scene-heading{display:flex;flex-direction:row;align-items:center;gap:6px;padding:0 2px;min-width:0}
+body :is(#probePanel,#teePanel).lab-compact .probe-scene-heading :is(strong,span){font-size:12px;line-height:1.3;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body :is(#probePanel,#teePanel).lab-compact .probe-scene-heading>div{min-width:0;overflow:hidden;white-space:nowrap}
+body :is(#probePanel,#teePanel).lab-compact .probe-scene-heading>span{margin-left:auto}
+body :is(#probePanel,#teePanel).lab-compact .probe-comparison-footers{flex:none;align-items:start;min-height:0}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-scene-footer,.probe-image-footer){display:flex;flex-direction:column;gap:3px;min-width:0;padding:0}
+body :is(#probePanel,#teePanel).lab-compact .probe-contact-badge{position:static;max-width:100%;box-sizing:border-box;font-size:11px;line-height:1.3;padding:3px 5px;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-image-meta,.tee-orbit-hint,.probe-click-hint){display:none}
+body :is(#probePanel,#teePanel).lab-compact .probe-image-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;width:100%;margin:0}
+body :is(#probePanel,#teePanel).lab-compact .probe-image-modes>button{min-height:var(--lab-control-height)!important;min-width:0;padding:3px 5px;font-size:12px;line-height:1.25}
+body :is(#probePanel,#teePanel).lab-compact .probe-fine-status{font-size:11px;line-height:1.4;min-height:16px;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body :is(#probePanel,#teePanel).lab-compact .probe-image-overlay{font-size:11px;line-height:1.35;gap:3px;padding:5px 7px}
+body :is(#probePanel,#teePanel).lab-compact .probe-image-overlay>span{font-size:11px}
+body #teePanel.lab-compact .tee-displayed-pose{bottom:7px;left:7px;right:auto;max-width:calc(100% - 78px);padding:4px 6px;font-size:11px;line-height:1.3;text-align:left}
+
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=scene] :is(.probe-view-pair,.probe-comparison-headings,.probe-comparison-footers),
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=image] :is(.probe-view-pair,.probe-comparison-headings,.probe-comparison-footers){grid-template-columns:minmax(0,1fr)}
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=scene] :is(.probe-image-panel,.probe-image-footer),
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=scene] .probe-comparison-headings>:last-child,
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=image] :is(.probe-viewport-mount,.probe-scene-footer),
+body :is(#probePanel,#teePanel).lab-compact[data-lab-view=image] .probe-comparison-headings>:first-child{display:none!important}
+
+body #probePanel.lab-compact[data-lab-view=chest] .probe-comparison{display:none}
+body #probePanel.lab-compact[data-lab-view=chest] .probe-body-context{display:flex!important;grid-column:1;grid-row:1;order:0;flex-direction:column;gap:0;height:100%;min-height:0;overflow:hidden}
+body #probePanel.lab-compact .probe-context-heading{flex:none;min-height:28px;padding:5px 10px;margin:0}
+body #probePanel.lab-compact .probe-context-heading h3{font-size:13px}
+body #probePanel.lab-compact .probe-torso-wrap{flex:1 1 0;min-height:0;height:auto;width:100%;grid-column:auto;grid-row:auto}
+body #probePanel.lab-compact .probe-torso-wrap canvas{height:100%;width:100%;display:block}
+body #probePanel.lab-compact .probe-torso-actions{flex:none;display:flex;gap:6px;padding:4px 6px;margin:0;grid-column:auto}
+body #probePanel.lab-compact .probe-torso-actions button{min-height:var(--lab-control-height)!important;min-width:var(--lab-control-height);padding:4px 8px;font-size:12px;flex:1}
+body #probePanel.lab-compact .probe-torso-help{display:none}
+
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 6px;
+ grid-column:1;grid-row:2;min-width:0;min-height:0;
+ max-height:min(36dvh,268px,max(120px,calc(var(--lab-workspace-height,500px) - 160px)));
+ overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;box-sizing:border-box;
+ border:1px solid #3e5b4e;border-radius:7px;background:#12231f;padding:5px;
+}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-steering{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;grid-column:1/-1;min-width:0}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock :is(button,summary){min-height:var(--lab-control-height)!important;box-sizing:border-box}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock details{min-width:0;margin:0;border:1px solid #304b3e;border-radius:5px;padding:0}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock details[open],
+body #probePanel.lab-compact .lab-compact-view-options{grid-column:1/-1}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock summary{display:flex;align-items:center;gap:6px;padding:4px 7px;font-size:12px;cursor:pointer}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock summary::before{content:'+';font-size:18px;line-height:1;color:#b1c7a5}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock details[open]>summary::before{content:'−'}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock details>div{padding:6px 9px 10px}
+body :is(#probePanel,#teePanel).lab-compact .lab-steer-hint{grid-column:1/-1;margin:1px;color:#a6bcac;font-size:10px;line-height:1.3;text-align:center}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-keyboard-console,.tee-hand-controls){display:grid;grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin:0;width:100%;max-width:none;box-sizing:border-box;padding:4px}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-hand,.tee-hand){display:block;min-width:0}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-hand,.tee-hand)>span{display:block;font-size:11px;line-height:1.3;min-height:0;margin:0 0 3px}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-keyboard-console,.tee-hand-controls)>p{display:none}
+body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock :is(.probe-control-key,.tee-control-key){position:relative;min-height:var(--lab-control-height)!important;padding:2px 1px;gap:0;border-bottom-width:2px}
+body :is(#probePanel,#teePanel).lab-compact :is(.probe-control-key,.tee-control-key)>kbd{position:absolute;right:3px;top:3px;font-size:9px;line-height:1;opacity:.8}
+body :is(#probePanel,#teePanel).lab-compact.lab-touch :is(.probe-control-key,.tee-control-key)>kbd{display:none}
+body #probePanel.lab-compact .probe-control-key>span:not(.lab-touch-key){display:none}
+body :is(#probePanel,#teePanel).lab-compact .lab-touch-key{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:1px;color:inherit;font:11px/1.1 var(--font-body,Arial,sans-serif)}
+body :is(#probePanel,#teePanel).lab-compact .lab-touch-key>b{font-size:16px;line-height:1;font-weight:500}
+body :is(#probePanel,#teePanel).lab-compact .lab-touch-key>span{font-size:10px;line-height:1.1}
+body #teePanel.lab-compact .tee-console-heading{grid-column:1;grid-row:1;margin:0;min-height:var(--lab-control-height);display:flex;align-items:center}
+body #teePanel.lab-compact .tee-console-heading h3{display:none}
+body #teePanel.lab-compact .tee-console-heading button{width:100%;font-size:12px;padding:4px 6px}
+body #teePanel.lab-compact .tee-reset{grid-column:2;grid-row:1;width:100%;margin:0;padding:4px 6px;font-size:11px;line-height:1.2}
+body #teePanel.lab-compact .tee-hand-controls{grid-row:2}
+body #teePanel.lab-compact .tee-depth-readout{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px;padding:0 0 8px}
+body #teePanel.lab-compact .tee-depth-readout>span{font-size:12px;line-height:1.3}
+body #teePanel.lab-compact .tee-depth-readout>strong{font-size:19px;white-space:nowrap}
+body #teePanel.lab-compact .tee-mechanical-controls{min-width:0;grid-column:auto;grid-row:auto}
+body #teePanel.lab-compact .tee-mechanical-controls .tee-range{margin:0 0 6px}
+body #teePanel.lab-compact .tee-range>small,
+body #teePanel.lab-compact .tee-multiplane>p{display:none}
+body :is(#probePanel,#teePanel).lab-compact input[type=range]{min-height:var(--lab-control-height);margin:0;touch-action:pan-y}
+body :is(#probePanel,#teePanel).lab-compact .probe-primary-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 8px;gap:6px}
+body :is(#probePanel,#teePanel).lab-compact .probe-primary-mode{min-height:var(--lab-control-height)!important;padding:4px 6px;gap:4px}
+body :is(#probePanel,#teePanel).lab-compact .probe-primary-mode strong{font-size:12px;line-height:1.3}
+body :is(#probePanel,#teePanel).lab-compact .probe-primary-mode :is(small,kbd,.probe-mode-icon){display:none}
+body :is(#probePanel,#teePanel).lab-compact .probe-view-actions{display:flex;flex-wrap:wrap;gap:5px}
+body :is(#probePanel,#teePanel).lab-compact .probe-view-actions :is(button,label){min-height:var(--lab-control-height)!important;display:flex;align-items:center;padding:4px 7px;font-size:12px;line-height:1.3}
+body #teePanel.lab-compact .tee-workspace-links{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0}
+body #teePanel.lab-compact .tee-workspace-links button{font-size:12px;line-height:1.3;padding:6px 8px}
+
+body :is(#probePanel,#teePanel).lab-compact .workspace-secondary-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin:3px var(--lab-edge) 7px;padding:0}
+body :is(#probePanel,#teePanel).lab-compact .workspace-secondary-tools>details{margin:0;min-width:0}
+body :is(#probePanel,#teePanel).lab-compact .workspace-secondary-tools>details>summary{min-height:var(--lab-control-height);display:flex;align-items:center;font-size:12px;padding:4px 7px;box-sizing:border-box}
+body :is(#probePanel,#teePanel).lab-compact .workspace-secondary-tools>details>summary>span{display:none}
+body :is(#probePanel,#teePanel).lab-compact .workspace-secondary-tools>details[open]{grid-column:1/-1}
+
+@media(max-width:600px),(max-width:900px) and (orientation:portrait){
+ body :is(#probePanel,#teePanel).lab-compact[data-lab-view=both] .probe-view-pair{grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr))}
+ body :is(#probePanel,#teePanel).lab-compact[data-lab-view=both] .probe-comparison-headings{display:none}
+ body :is(#probePanel,#teePanel).lab-compact[data-lab-view=both] .probe-comparison-footers{grid-template-columns:minmax(0,1fr)}
+ body :is(#probePanel,#teePanel).lab-compact[data-lab-view=both] .probe-scene-footer{display:none}
+ body :is(#probePanel,#teePanel).lab-compact .probe-scene-heading strong{font-size:12px}
+ /* Both stays a single visual row while steering. The user's selected pane
+    remains unchanged, and closing Steer restores the wider stacked pair. */
+ body :is(#probePanel,#teePanel).lab-compact.lab-controls-open[data-lab-view=both] .probe-view-pair{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(0,1fr)}
+ body :is(#probePanel,#teePanel).lab-compact.lab-controls-open[data-lab-view=both] .probe-image-overlay{left:5px;right:5px;bottom:5px;padding:0;gap:2px}
+ body :is(#probePanel,#teePanel).lab-compact.lab-controls-open[data-lab-view=both] .probe-image-overlay>span{max-width:100%;font-size:10px;line-height:1.25;padding:2px 3px;box-sizing:border-box}
+ body :is(#probePanel,#teePanel).lab-compact.lab-controls-open[data-lab-view=both] .probe-image-overlay [data-probe=acoustic-meta]{display:none}
+}
+@media(max-width:360px),(min-width:640px) and (max-height:550px){
+ body :is(#probePanel,#teePanel).lab-compact :is(.probe-keyboard-console,.tee-hand-controls){grid-template-columns:minmax(0,1fr)}
+ body :is(#probePanel,#teePanel).lab-compact :is(.probe-hand,.tee-hand){display:grid;grid-template-columns:72px minmax(0,1fr);gap:5px;align-items:center}
+ body :is(#probePanel,#teePanel).lab-compact :is(.probe-hand,.tee-hand)>span{margin:0}
+}
+@media(min-width:760px) and (min-height:551px){
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock{display:grid;grid-template-columns:minmax(280px,420px) minmax(0,1fr);gap:0 10px;align-items:start}
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-steering{grid-column:1;grid-row:1/span 3}
+ body :is(#probePanel,#teePanel).lab-compact .lab-steer-hint{grid-column:1;grid-row:4}
+ body :is(#probePanel,#teePanel).lab-compact :is(.lab-compact-adjustments,.lab-compact-view-options){grid-column:2;margin-top:0}
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock details[open]{grid-column:2}
+}
+@media(any-pointer:coarse){
+ body :is(#probePanel,#teePanel).lab-compact{--lab-control-height:max(44px,var(--ui-control-height,44px))}
+ /* Native selectors retain a readable size without triggering mobile focus zoom. */
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar select{font-size:16px!important}
+}
+@media(min-width:640px) and (max-height:550px){
+ body :is(#probePanel,#teePanel).lab-compact.lab-controls-open :is(.probe-workspace,.tee-workspace){grid-template-columns:minmax(0,1fr) clamp(280px,35vw,340px);grid-template-rows:minmax(0,1fr)}
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-dock{grid-column:2;grid-row:1;height:100%;max-height:none}
+ body :is(#probePanel,#teePanel).lab-compact .lab-compact-toolbar{margin-top:3px;margin-bottom:3px}
+ body :is(#probePanel,#teePanel).lab-compact .probe-image-overlay [data-probe=acoustic-meta]{display:none}
+}

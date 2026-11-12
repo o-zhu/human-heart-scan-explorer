@@ -1,5 +1,5 @@
 .echo-cine-screen{position:relative;background:#000}
-.echo-cine-screen .echo-reference-embed{position:relative;z-index:1;background:#000}
+.echo-cine-screen .echo-reference-embed{position:absolute;inset:0;z-index:1;background:#000}
 .echo-cine-screen .echo-reference-loading{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:24px;color:#a9bcb7;background:#000;pointer-events:none}
 .echo-cine-screen .echo-reference-loading[hidden]{display:none}
 .echo-cine-source-line{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;margin:6px 0;color:#92aaa1;font-size:12px;line-height:1.5}

@@ -1,0 +1,117 @@
+/* Keep the desktop overlay intrinsic and bounded. Percentage flex bases on
+   the action rows used to enlarge the toolbar while its width was unresolved. */
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .viewer-controls {
+  inset: 16px 16px auto auto;
+  width: max-content;
+  max-width: min(320px, calc(100% - 32px));
+  align-items: stretch;
+  gap: 6px;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .preset-switch {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-between;
+  padding: 3px;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .preset-switch button {
+  min-width: 0;
+  padding: 6px 9px;
+  white-space: nowrap;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .viewer-toolbar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 6px;
+  min-width: 0;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.viewer-menu, .reconstruction-detail-shortcut) {
+  min-width: 0;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.viewer-menu > summary, .reconstruction-detail-shortcut) {
+  min-width: 0;
+  gap: 5px;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.viewer-menu > summary, .reconstruction-detail-shortcut) svg {
+  width: 16px;
+  height: 16px;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .color-swatch { width: 13px; height: 13px; }
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .menu-chevron { margin-left: 1px; }
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-control, .measurement-control) {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .measurement-toggle) {
+  width: max-content;
+  max-width: 100%;
+  padding: 6px 10px;
+  gap: 6px;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .measurement-toggle) svg {
+  width: 17px;
+  height: 17px;
+  flex-basis: 17px;
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .coronary-status {
+  width: 100%;
+  max-width: 100%;
+  contain: inline-size;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+/* The noncompact overlay stays at the top even below the old 1350px layout
+   breakpoint. Its popovers must open downwards and remain outside the grid. */
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .viewer-menu-content {
+  inset: calc(100% + 7px) 0 auto auto;
+  max-height: min(70dvh, 650px);
+}
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) {
+  font-size: 13px !important;
+  line-height: 1.3;
+}
+@media (hover: hover) and (pointer: fine) {
+  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) { min-height: 36px !important; }
+}
+@media (any-pointer: coarse) {
+  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) { min-height: 44px !important; }
+}
+
+/* A stable, high-contrast invitation matching the orange surface marker.
+   Cancel and Clear retain their full labels with quieter, distinct states. */
+body #viewport .measurement-toggle {
+  font-weight: 650;
+  line-height: 1.3;
+}
+body #viewport .measurement-toggle[data-measure-state="ready"] {
+  background: #f4bc83;
+  border-color: #ffd3a5;
+  color: #281c13;
+  box-shadow: 0 1px 2px #0005;
+}
+body #viewport .measurement-toggle[data-measure-state="ready"]:hover:not(:disabled) {
+  background: #ffd2a3;
+  border-color: #ffe5ca;
+}
+body #viewport .measurement-toggle[data-measure-state="placing"] {
+  background: #493423;
+  border-color: #f4bc83;
+  color: #ffe2c4;
+}
+body #viewport .measurement-toggle[data-measure-state="complete"] {
+  background: #172520f2;
+  border-color: #a88a68;
+  color: #f4d7b8;
+  font-weight: 500;
+}
+body #viewport .measurement-toggle[data-measure-state="complete"]:hover {
+  background: #2f372a;
+  border-color: #f4bc83;
+}
+body #viewport .measurement-toggle:focus-visible { outline: 3px solid #ffd3a5; outline-offset: 3px; }

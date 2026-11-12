@@ -3,6 +3,8 @@
  * No vertices, faces, corner order, masks, sample grids or coordinates change.
  */
 import { MeshoptDecoder } from './vendor/meshopt-decoder-0.23.js';
+import { verifiedSurfaceParts } from './surface-transport-pipeline.js';
+import { SurfaceStreamVerifier, SURFACE_TRANSFER_BYTES } from './surface-stream.js';
 
 const PART_LIMIT = 8 * 1024 * 1024;
 const DECODED_LIMIT = 512 * 1024 * 1024;
@@ -45,19 +47,62 @@ function gzipDecompressor() {
   catch { throw new Error('This browser cannot decompress gzip surface files.'); }
 }
 
+function interruptibleInflate(operation,signal){
+  signal.throwIfAborted();
+  return new Promise((resolve,reject)=>{
+    let settled=false;
+    const finish=(callback,value)=>{if(settled)return;settled=true;signal.removeEventListener('abort',cancel);callback(value);};
+    const cancel=()=>finish(reject,signal.reason||new DOMException('Surface preparation was canceled.','AbortError'));
+    signal.addEventListener('abort',cancel,{once:true});
+    Promise.resolve().then(()=>{signal.throwIfAborted();return operation();}).then(value=>finish(resolve,value),error=>finish(reject,error));
+    if(signal.aborted)cancel();
+  });
+}
+
+/** A decompressor can also strand a pending read after fetch has completed.
+ * Its byte-idle clock excludes workspace pauses and resets only on real output.
+ */
+function inflateDeadline({signal,isPaused,timeoutMs=20000}={}){
+  if(!Number.isFinite(timeoutMs)||timeoutMs<=0)throw new Error('Invalid compact preparation timeout.');
+  const controller=new AbortController(),clock=()=>globalThis.performance?.now?.()??Date.now();
+  let remaining=timeoutMs,last=clock(),wasPaused=!!isPaused?.(),timer;
+  const cancel=()=>controller.abort(signal.reason||new DOMException('Surface preparation was canceled.','AbortError'));
+  const poll=()=>{
+    const time=clock(),paused=!!isPaused?.(),elapsed=time-last;last=time;
+    if(!paused&&!wasPaused)remaining-=isPaused?Math.min(1000,Math.max(0,elapsed)):Math.max(0,elapsed);
+    wasPaused=paused;
+    if(remaining<=0){controller.abort(Object.assign(new Error('Surface preparation took too long to decompress a block.'),{resourceFailure:true}));return;}
+    timer=setTimeout(poll,Math.min(250,remaining));
+  };
+  timer=setTimeout(poll,Math.min(250,remaining));
+  signal?.addEventListener('abort',cancel,{once:true});if(signal?.aborted)cancel();
+  return {
+    signal:controller.signal,
+    progress(){remaining=timeoutMs;last=clock();wasPaused=!!isPaused?.();},
+    close(){clearTimeout(timer);signal?.removeEventListener('abort',cancel);},
+  };
+}
+
 /** A bounded block reader, also usable without allocating a full heart mesh. */
-export async function inflateCompactBlock(bytes, expectedBytes, wait = async () => {}, onProgress = () => {}) {
+export async function inflateCompactBlock(bytes, expectedBytes, wait = async () => {}, onProgress = () => {}, options = {}) {
   if (!(bytes instanceof Uint8Array) || !integer(bytes.length, PART_LIMIT) || !integer(expectedBytes, PART_LIMIT)) throw new Error('Invalid compact surface block length.');
   if (bytes[0] !== 31 || bytes[1] !== 139) throw new Error('Invalid compact surface compression.');
   const reader = new Blob([bytes]).stream().pipeThrough(gzipDecompressor()).getReader();
   const output = new Uint8Array(expectedBytes);
+  const deadline=inflateDeadline(options);
   let offset = 0;
   try {
     for (;;) {
-      await wait();
-      const { value, done } = await reader.read();
-      await wait();
+      await interruptibleInflate(wait,deadline.signal);
+      const { value, done } = await interruptibleInflate(()=>reader.read(),deadline.signal);
+      await interruptibleInflate(wait,deadline.signal);
       if (done) break;
+      if(!value?.byteLength){
+        // Empty output cannot refresh the idle clock or starve its timer with
+        // a chain of immediately resolved reads.
+        await interruptibleInflate(()=>new Promise(resolve=>setTimeout(resolve,0)),deadline.signal);continue;
+      }
+      deadline.progress();
       if (offset + value.length > output.length) throw new Error('Compact surface block exceeds its manifest.');
       output.set(value, offset); offset += value.length;
       onProgress(offset);
@@ -65,9 +110,9 @@ export async function inflateCompactBlock(bytes, expectedBytes, wait = async () 
     if (offset !== output.length) throw new Error('Compact surface block length did not match.');
     return output;
   } catch (error) {
-    await reader.cancel().catch(() => {});
+    try{Promise.resolve(reader.cancel()).catch(()=>{});}catch{}
     throw error;
-  } finally { reader.releaseLock(); }
+  } finally { deadline.close();try{reader.releaseLock();}catch{} }
 }
 
 export function decodeCompactBlock(payload, descriptor, output, layout) {
@@ -113,12 +158,67 @@ export function decodeCompactBlock(payload, descriptor, output, layout) {
   } else throw new Error('Unknown compact surface block.');
 }
 
+/** Decode only this independently compressed block. The immutable transport's
+ * largest index block expands to 24 MiB; no whole-heart destination is needed.
+ */
+export function decodeCompactBlockBytes(payload,descriptor,layout){
+  const unit=descriptor.kind===3?12:6;
+  const output=new Uint8Array(descriptor.count*unit);
+  const local={...layout,positionOffset:0,normalOffset:0,indexOffset:0};
+  local[descriptor.kind===1?'positionOffset':descriptor.kind===2?'normalOffset':'indexOffset']=-descriptor.start*unit;
+  decodeCompactBlock(payload,descriptor,output,local);
+  return output;
+}
+
+/** Transfer a bounded, verified stream into an unpublished GPU transaction.
+ * Positions, normals and original corner-ordered indices stay byte-for-byte
+ * identical to decodeCompactSurface(). Every final identity still gates commit.
+ */
+export async function streamCompactSurface(manifest,{loadPart,waitForWorkspace=async()=>{},onProgress=()=>{},hash=digest,debrisFlags,onStart,onChunk,signal,isPaused}={}){
+  const layout=validateCompactManifest(manifest);
+  if(typeof loadPart!=='function')throw new Error('A compact surface transport is required.');
+  // The published format is canonical positions -> normals -> indices. Reject
+  // reordering instead of keeping whole attributes just to rearrange them.
+  let previousKind=1;
+  for(const part of manifest.parts){if(part.kind<previousKind)throw new Error('Compact surface blocks are not in stream order.');previousKind=part.kind;}
+  gzipDecompressor();
+  if(!MeshoptDecoder.supported)throw new Error('Compact surface decoder is unavailable.');
+  try{await MeshoptDecoder.ready;}catch{throw new Error('Compact surface decoder could not initialize in this browser.');}
+  const sink=new SurfaceStreamVerifier({expectedBytes:manifest.decodedBytes,decodedSha256:manifest.decodedSha256,
+    geometrySourceSha256:ORIGINAL_GEOMETRY.decodedSha256,positionSha256:ORIGINAL_GEOMETRY.positionSha256,indexSha256:ORIGINAL_GEOMETRY.indexSha256,
+    debrisFlags,onStart,onChunk,waitForWorkspace,onProgress});
+  const header=new Uint8Array(32),headerView=new DataView(header.buffer);
+  manifest.header.forEach((value,index)=>headerView.setUint32(index*4,value,true));
+  await sink.write(header);
+  let loaded=0,verifiedParts=0,maxDecodedBlockBytes=0;
+  const progress=(stage,details={})=>onProgress({type:'progress',phase:'decode',stage,loadedBytes:loaded,totalBytes:manifest.compressedBytes,verifiedParts,totalParts:manifest.parts.length,...details});
+  const transport=verifiedSurfaceParts(manifest.parts,{loadPart,hash,waitForWorkspace,lookahead:false,
+    onProgress:message=>{loaded=message.loadedBytes;verifiedParts=message.verifiedParts;onProgress({type:'progress',...message});}});
+  for await(const block of transport){
+    const part=block.part;
+    let payload=await inflateCompactBlock(block.packed,part.payloadBytes,waitForWorkspace,
+      count=>progress('inflate',{decodedBytes:count,decodedTotalBytes:part.payloadBytes}),{signal,isPaused});
+    block.packed=null;
+    if(await hash(payload)!==part.payloadSha256)throw new Error('Compact surface payload checksum did not match.');
+    await waitForWorkspace();
+    let output=decodeCompactBlockBytes(payload,part,layout);payload=null;
+    maxDecodedBlockBytes=Math.max(maxDecodedBlockBytes,output.length);
+    const offset=(part.kind===1?layout.positionOffset:part.kind===2?layout.normalOffset:layout.indexOffset)+part.start*(part.kind===3?12:6);
+    if(offset<sink.offset)throw new Error('Compact surface blocks overlap.');
+    while(sink.offset<offset)await sink.write(new Uint8Array(Math.min(SURFACE_TRANSFER_BYTES,offset-sink.offset)));
+    await sink.write(output);output=null;
+    progress('decode-block',{processedBytes:sink.offset,processingBytes:manifest.decodedBytes});
+  }
+  const result=await sink.finish();
+  return {...result,maxDecodedBlockBytes};
+}
+
 /** loadPart must perform a bounded, abortable fetch and return Uint8Array.
  * Its optional second argument reports the current block's downloaded bytes.
  * waitForWorkspace is called before download, each inflate read and decode.
  * The caller installs the returned geometry atomically, after its priority gate.
  */
-export async function decodeCompactSurface(manifest, { loadPart, waitForWorkspace = async () => {}, onProgress = () => {}, hash = digest } = {}) {
+export async function decodeCompactSurface(manifest, { loadPart, waitForWorkspace = async () => {}, onProgress = () => {}, hash = digest, lookahead = false,signal,isPaused } = {}) {
   const layout = validateCompactManifest(manifest);
   if (typeof loadPart !== 'function') throw new Error('A compact surface transport is required.');
   if (hash === digest && typeof globalThis.crypto?.subtle?.digest !== 'function') throw new Error('This browser cannot securely verify surface files (SHA-256 unavailable).');
@@ -139,17 +239,13 @@ export async function decodeCompactSurface(manifest, { loadPart, waitForWorkspac
     type: 'progress', phase, stage, loadedBytes, totalBytes: manifest.compressedBytes,
     verifiedParts, totalParts: manifest.parts.length, ...details,
   });
-  for (const part of manifest.parts) {
-    await waitForWorkspace();
-    let packed = await loadPart(part, count => progress('download', 'download', loaded + count));
-    if (!(packed instanceof Uint8Array) || packed.length !== part.compressedBytes) throw new Error('Compact surface download length did not match.');
-    if (await hash(packed) !== part.sha256) throw new Error('Compact surface block checksum did not match.');
-    loaded += part.compressedBytes;
-    verifiedParts++;
-    progress('download', 'verify-part');
+  const transport=verifiedSurfaceParts(manifest.parts,{loadPart,hash,waitForWorkspace,lookahead,
+    onProgress:message=>{loaded=message.loadedBytes;verifiedParts=message.verifiedParts;onProgress({type:'progress',...message});}});
+  for await (const block of transport) {
+    const {part}=block;let packed=block.packed;
     const payload = await inflateCompactBlock(packed, part.payloadBytes, waitForWorkspace,
-      count => progress('decode', 'inflate', loaded, { decodedBytes: count, decodedTotalBytes: part.payloadBytes }));
-    packed = null;
+      count => progress('decode', 'inflate', loaded, { decodedBytes: count, decodedTotalBytes: part.payloadBytes }),{signal,isPaused});
+    packed = null;block.packed=null;
     if (await hash(payload) !== part.payloadSha256) throw new Error('Compact surface payload checksum did not match.');
     await waitForWorkspace();
     decodeCompactBlock(payload, part, output, layout);

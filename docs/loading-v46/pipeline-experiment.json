@@ -1,0 +1,25 @@
+{
+  "scope": "controlled synthetic transport; real 2 MiB gzip and SHA-256; not browser/GPU or whole-heart loading",
+  "blocks": 8,
+  "decodedBytesPerBlock": 2097152,
+  "packedBytesPerBlock": 2097815,
+  "simulatedTransferDelayMs": 18,
+  "rounds": 3,
+  "milliseconds": {
+    "serial": [
+      278.024,
+      246.546,
+      269.065
+    ],
+    "lookahead": [
+      166.187,
+      186.497,
+      164.222
+    ]
+  },
+  "medianMilliseconds": {
+    "serial": 269.065,
+    "lookahead": 166.187
+  },
+  "decodedIdentity": "75fccaf532fcc1c0bbefb89e3ae59b0ba689f812c4828b77b9d79c4af4248eba"
+}

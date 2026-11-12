@@ -1,0 +1,31 @@
+/* Source-anchored annotation; screen-space sizes stay readable while orbiting. */
+.viewer-toolbar > .measurement-control { display: flex; flex-basis: 100%; justify-content: flex-end; min-width: 0; }
+.measurement-control[hidden], .measurement-overlay[hidden], .measurement-prompt[hidden], .measurement-value[hidden] { display: none !important; }
+.measurement-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 8px 12px; border: 1px solid #536e63; border-radius: 6px; background: #142521ed; color: #e2ebe1; font: inherit; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.measurement-toggle svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.measurement-toggle:hover { background: #30473b; border-color: #a6ba9c; }
+.measurement-toggle[aria-pressed="true"] { color: #f8e1c4; border-color: #efa56d; background: #493423; }
+.measurement-toggle:disabled { opacity: .55; cursor: default; }
+.measurement-overlay { position: absolute; z-index: 4; pointer-events: none; overflow: hidden; }
+.measurement-overlay svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.measurement-line, .measurement-line-back { fill: none; vector-effect: non-scaling-stroke; stroke-dasharray: 6 5; stroke-linecap: round; }
+.measurement-line-back { stroke: #101914; stroke-width: 4.5px; }
+.measurement-line { stroke: #ffc18a; stroke-width: 2px; }
+.measurement-point, .measurement-preview { stroke: #161a14; stroke-width: 2px; fill: #ffc18a; }
+.measurement-preview { fill: #ff9d4a; stroke: #fff0da; stroke-width: 1.5px; filter: drop-shadow(0 1px 2px #000); }
+.measurement-value { position: absolute; transform: translate(-50%, -50%); border: 1px solid #b79369; border-radius: 5px; background: #0d1715ed; color: #ffe5c5; padding: 3px 7px; font: 600 13px/1.4 var(--font-sans, sans-serif); font-variant-numeric: tabular-nums; white-space: nowrap; box-shadow: 0 1px 6px #0006; }
+.measurement-prompt { position: absolute; z-index: 9; left: 14px; bottom: 12px; display: flex; align-items: center; gap: 10px; max-width: calc(100% - 290px); padding: 4px 5px 4px 10px; border: 1px solid #886f51; border-radius: 7px; background: #14211df5; color: #e4e6d4; box-shadow: 0 2px 10px #0005; }
+.measurement-prompt-text { font-size: 13px; line-height: 1.4; }
+.measurement-cancel { border: 0; border-radius: 4px; background: #344338; color: #e7ebdc; padding: 5px 9px; cursor: pointer; }
+.is-measuring #volumeCanvas { cursor: crosshair; }
+.is-measuring .interaction-hint { visibility: hidden; }
+.viewport-controls-compact .measurement-prompt { left: 8px; bottom: 10px; max-width: calc(100% - 75px); }
+.viewport-controls-compact .measurement-prompt-text { font-size: 12px; }
+.viewport-controls-compact .measurement-toggle { width: 100%; }
+.measurement-toggle, .measurement-cancel { touch-action: manipulation; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+@media (hover: hover) and (pointer: fine) {
+ body .measurement-toggle, body .measurement-cancel { min-height: 36px !important; }
+}
+@media (any-pointer: coarse) {
+ body .measurement-toggle, body .measurement-cancel { min-height: 44px !important; }
+}

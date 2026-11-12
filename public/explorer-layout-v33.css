@@ -107,11 +107,13 @@ body #reconstructionWorkspace .slice-card.expanded .slice-expand span { display:
 /* Four paired rows keep each chamber's inflow and outflow together. */
 body #reconstructionWorkspace .viewport-heading { top: 18px; left: 20px; }
 body #reconstructionWorkspace .viewport-heading h1 { font-size: clamp(28px, 2vw, 36px); margin: 7px 0 4px; }
-body #reconstructionWorkspace .quick-views { margin-top: 10px; width: 100%; max-width: 320px; }
+/* Both equal-column grids share the longest label's intrinsic width. */
+body #reconstructionWorkspace .quick-views { margin-top: 10px; width: max-content; max-width: 100%; }
 .quick-view-primary, .quick-view-secondary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
 .quick-view-secondary { margin-top: 6px; }
 body #reconstructionWorkspace .quick-view-row > button { min-width: 0; padding: 8px 9px; line-height: 1.2; white-space: normal; }
-.quick-view-selection { margin-top: 8px; }
+/* Status copy and secondary actions wrap without widening the preset grid. */
+.quick-view-selection { margin-top: 8px; contain: inline-size; }
 .quick-view-status { margin-bottom: 5px; }
 body #reconstructionWorkspace .quick-view-actions { gap: 6px; flex-wrap: wrap; }
 body #reconstructionWorkspace .quick-view-actions button { padding: 8px 10px; }
@@ -237,4 +239,43 @@ body #reconstructionWorkspace.clinical-paired:is(:fullscreen, :-webkit-full-scre
   body #reconstructionWorkspace .slice-footer { font-size: 14px; }
   body #reconstructionWorkspace .slice-activate { gap: 4px; font-size: 14px !important; }
   .dataset-citations > ul, .dataset-citations > ol { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+}
+
+/* Static project links remain available before any scan or module loads. */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px var(--ui-gutter, 24px) 24px;
+  border-top: 1px solid #30463c;
+  background: #101c19;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  max-width: 100%;
+  padding: 11px 16px;
+  border: 1px solid #506951;
+  border-radius: 8px;
+  color: #dce7d6;
+  background: #17261f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+.project-link-source { border-color: #82996e; background: #293c2d; color: #edf3e5; }
+.project-link:hover { border-color: #b9d2a6; background: #304632; color: #fff; }
+.project-link:focus-visible { outline: 2px solid #d3e9ba; outline-offset: 4px; }
+.project-link > svg { width: 20px; height: 20px; flex: 0 0 20px; }
+.project-link > .project-link-arrow { width: 16px; height: 16px; flex-basis: 16px; opacity: .8; }
+@media (max-width: 580px) {
+  .project-links { align-items: stretch; flex-direction: column; padding: 18px var(--ui-gutter, 16px) 22px; gap: 10px; }
+  .project-link { width: 100%; padding-inline: 12px; }
 }

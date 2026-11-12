@@ -6,7 +6,8 @@ import {gunzipSync} from 'node:zlib';
 import {webcrypto} from 'node:crypto';
 import {loadReviewedMaskAtlas,decodeReviewedMaskAtlas,validateReviewedMaskManifest,sampleReviewedMask,ReviewedMaskAtlas,ensureReviewedMaskAtlas,validateReviewedMaskReferences,decodeReviewedMaskReferences,reviewedSourceMask} from '../public/reviewed-mask-atlas.js';
 import {LocalSurfaceRefinementController} from '../public/local-surface-refinement.js';
-import {loadLumenCollection} from '../public/lumen-cleanup-v23.js';
+import {loadLumenCollection,LumenCleanupController} from '../public/lumen-cleanup-v23.js';
+import {loadMobileLumenAtlas,validateMobileLumenManifest} from '../public/mobile-lumen-atlas.js';
 import {VolumeRenderer} from '../public/renderer.js';
 import {FineSurfaceController} from '../public/fine-surface.js';
 
@@ -132,11 +133,13 @@ test('the default loader completes the finalized model with a Safari-style Windo
   const lumen=await loadLumenCollection({extent:r.extent,atlas,signal:loadAbort.signal});
   VolumeRenderer.prototype.setLumenCleanupData.call(r,lumen);
  })()};
+ const preparationStages=[];
  const selection={renderer:r,revision:1,workspaceActive:true,workspaceWaiters:new Set(),lumenCleanup,localRefinement:local,
-  loadProgress:{removeAttribute(){},setAttribute(){}},waitForWorkspace:FineSurfaceController.prototype.waitForWorkspace,setStatus(){}};
+  setLoadStage(stage){preparationStages.push(stage);},waitForWorkspace:FineSurfaceController.prototype.waitForWorkspace,setStatus(){}};
  try{
   const ready=await FineSurfaceController.prototype.prepareFinalModel.call(selection,1,loadAbort.signal);
   assert.equal(ready,true,'The real prepared-model gate must succeed before the selected surface can be installed.');
+  assert.deepEqual(preparationStages,['masks','interiors']);
   assert.equal(r.fineSurface,null,'Preparing interiors must not publish a partial base model.');
   assert.equal(local.error,null);assert.equal(local.current.pieces.length,4);
   assert.deepEqual(local.current.pieces.map(piece=>piece.atlasField),[4,5,6,7]);
@@ -180,4 +183,57 @@ test('reference copying yields so cancellation cannot commit a partial atlas',as
  const program=new Uint8Array(gunzipSync(await readFile(new URL(transportUrl.slice(2),root)))),controller=new AbortController();
  const pending=decodeReviewedMaskReferences(program,manifest,collection.sourceMasks,{signal:controller.signal});
  setTimeout(()=>controller.abort(),0);await assert.rejects(pending,{name:'AbortError'});
+});
+
+test('v47 a compact-to-Ultra sparse upgrade reuses exact cavity bricks and completes all interiors without retaining or refetching dense masks',async()=>{
+ const gl=strictGL(),r=renderer(gl),requests=[];let pending=0,peak=0;
+ const tracked=async(path,options)=>{requests.push(path);peak=Math.max(peak,++pending);try{return await fetcher(path,options);}finally{pending--;}};
+ const first=await loadMobileLumenAtlas({fetcher:tracked});r.setReviewedMaskAtlas(first,{validateManifest:validateMobileLumenManifest});
+ r.setLumenCleanupData=VolumeRenderer.prototype.setLumenCleanupData;
+ r.setLumenCleanupData(await loadLumenCollection({extent:r.extent,fetcher:tracked,atlas:r.reviewedMaskAtlas,sparse:true}));
+ const nodes=new Map(),mount={innerHTML:'',setAttribute(){},querySelector(selector){if(!nodes.has(selector))nodes.set(selector,{textContent:'',checked:false,disabled:false,addEventListener(){}});return nodes.get(selector);}};
+ const cleanup=new LumenCleanupController({renderer:r,donor:{id:'ladaf-2021-17'},mount,fetcher:tracked,compact:false,autoStart:false,resourcePolicy:{sparseReviewedMasks:true}});
+ await cleanup.setEnabled(true);assert.equal(cleanup.error,null);
+ const atlas=r.reviewedMaskAtlas,lumen=r.lumenCleanup;
+ assert.equal(peak,1);assert.equal(atlas.collection.manifest.fields.length,8);
+ assert.deepEqual(Object.keys(atlas.collection).sort(),['index','manifest','payload']);
+ assert.deepEqual(atlas.collection.index,collection.index);assert.deepEqual(atlas.collection.payload,collection.payload);
+ assert.equal(atlas.collection.index.buffer,atlas.collection.payload.buffer,'Aligned little-endian atlas views must not retain a duplicate index.');assert.equal(atlas.collection.payload.buffer.byteLength,manifest.asset.decodedBytes);
+ assert.equal(lumen.sparseAtlas,atlas.collection);assert.ok(lumen.masks.every(mask=>!mask.data));
+ const installedRequests=requests.length;await cleanup.setEnabled(false);assert.equal(r.settings.lumenCleanupEnabled,false);await cleanup.setEnabled(true);assert.equal(r.settings.lumenCleanupEnabled,true);assert.equal(requests.length,installedRequests,'Full sparse cleanup must not be mistaken for the four-field intermediate on toggles.');
+ const local=new LocalSurfaceRefinementController({renderer:r,donor:{id:'ladaf-2021-17'},fetcher:tracked,resourcePolicy:{sparseReviewedMasks:true}});
+ try{
+  await local.ensure();assert.equal(local.error,null);assert.equal(local.current.pieces.length,4);assert.equal(local.active(),true);
+  assert.deepEqual(local.current.pieces.map(piece=>piece.atlasField),[4,5,6,7]);
+  assert.ok(local.current.pieces.every(piece=>!piece.mask.data&&piece.mask.sparseAtlas===atlas.collection));
+  for(const field of manifest.fields)assert.equal(requests.filter(path=>path===field.sourceUrl).length,1,'Each verified field transfers once even though CPU picking remains enabled.');
+  const world=f=>[(f[0]/1896-.5)*r.extent[0],(f[2]/2116-.5)*r.extent[1],(.5-f[1]/1896)*r.extent[2]];
+  let checked=0,positive=0,seed=47;
+  const check=f=>{const expected=manifest.fields.slice(4).some(field=>sampleReviewedMask(collection,field.id,f));assert.equal(local.excludedAt(world(f)),expected);checked++;positive+=Number(expected);};
+  for(const field of manifest.fields.slice(4)){
+   for(let n=0;n<1000;n++)check(field.dimensionsXYZ.map((size,i)=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return field.lowerFullFineXYZ[i]+(seed/2**32)*(size-1);}));
+   const data=collection.sourceMasks.get(field.id),s=field.storageDimensionsXYZ;
+   let found=0;for(let offset=0;offset<data.length&&found<50;offset++){if(!data[offset])continue;const x=(offset%s[0])*8,y=Math.floor(offset/s[0])%s[1],z=Math.floor(offset/(s[0]*s[1]));for(let bit=0;bit<8;bit++)if(x+bit<field.dimensionsXYZ[0])check([x+bit,y,z].map((v,i)=>v+field.lowerFullFineXYZ[i]));found++;offset+=127;}
+  }
+  assert.ok(checked>5000);assert.ok(positive>100);assert.equal(gl.report().uploads,4);
+ }finally{local.dispose();atlas.dispose();}
+ assert.equal(gl.report().allocated,0);assert.equal(gl.report().buffers,0);assert.equal(gl.report().vaos,0);
+});
+
+test('v47 streamed full-atlas corruption and cancellation preserve the installed compact atlas',async()=>{
+ for(const failure of ['corrupt','abort']){
+  const gl=strictGL(),r=renderer(gl),previous={ready:true,collection:{manifest:{fields:new Array(4)}},dispose(){assert.fail('An incomplete replacement must not dispose the current compact atlas.');}};
+  r.reviewedMaskAtlas=previous;const controller=new AbortController(),requests=[];
+  const tracked=async(path,options)=>{
+   requests.push(path);const result=await fetcher(path,options);
+   if(path===manifest.fields[4].sourceUrl){
+    if(failure==='abort'){controller.abort();return result;}
+    const bytes=new Uint8Array(await result.arrayBuffer());bytes[10]^=1;return new Response(bytes);
+   }
+   return result;
+  };
+  await assert.rejects(ensureReviewedMaskAtlas(r,{fetcher:tracked,retainSourceMasks:false,signal:controller.signal}),failure==='abort'?{name:'AbortError'}:/checksum/);
+  assert.equal(r.reviewedMaskAtlas,previous);assert.equal(gl.report().allocated,0);assert.equal(r.reviewedMaskAtlasLoading,null);
+  assert.equal(requests.includes(manifest.fields[5].sourceUrl),false);
+ }
 });

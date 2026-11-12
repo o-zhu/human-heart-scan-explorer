@@ -8,6 +8,7 @@ import {REVIEWED_MASK_GLSL,REVIEWED_MASK_UNIFORMS,ReviewedMaskAtlas,cancelReview
 import {SCENE_DEPTH_GLSL} from './render-depth.js';
 import {activeCoronaryField,validateCoronaryField} from './coronary-rendering.js';
 import {getDeviceResourcePolicy} from './device-resources.js';
+import {createMeasurementFrame,presentMeasurementFrame} from './measurement-frame.js';
 
 /** Display samples, never a change to the measured source or mesh geometry. */
 export function renderOutputPixelBudget(quality='auto',profile='interactive',fineSurface=false,resourcePolicy=getDeviceResourcePolicy()){
@@ -446,6 +447,11 @@ const sceneKey=(settings,extent)=>{
  return [settings.mode,settings.threshold,settings.coronaryReveal===true,plane?.distance??'',...(plane?.normal||[])].join(',');
 };
 const isOrthogonalSurface=s=>s.mode===0&&s.clipAxis>=0&&s.clipAxis<3&&!s.showPlanes;
+// TTE/TEE plane edits keep the selected scene grid just like the section rail.
+// This only changes display sampling; the current accepted source plane, cap,
+// threshold and one-frame GPU fence remain authoritative.
+const isStableSectionSurface=(s,profile)=>isOrthogonalSurface(s)||
+ (s.mode===0&&s.clipAxis===3&&!s.showPlanes&&(profile==='probe'||profile==='tee'));
 
 export class VolumeRenderer {
  constructor(canvas,onChange=()=>{},{resourcePolicy=getDeviceResourcePolicy()}={}){
@@ -489,7 +495,7 @@ export class VolumeRenderer {
   this.cameraQuality=false;this.requestedCameraKey=cameraKey(this.camera);
   this.bindControls();
   this.observer=new ResizeObserver(()=>this.requestRender());this.observer.observe(canvas);
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();this.disposeReviewedMaskAtlas();this.onChange({error:'The graphics context was interrupted. Reload to restore the 3D view.'});});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();presentMeasurementFrame(this,null);this.disposeReviewedMaskAtlas();this.onChange({error:'The graphics context was interrupted. Reload to restore the 3D view.'});});
  }
  createProgram(vs,fs){
   const gl=this.gl,p=gl.createProgram(),shaders=[];
@@ -634,12 +640,12 @@ export class VolumeRenderer {
   const previous=sceneKey(this.settings,this.extent),mode=this.settings.mode,threshold=this.settings.threshold;
   Object.assign(this.settings,values);
   const changed=previous!==sceneKey(this.settings,this.extent);
-  const orthogonalSurface=isOrthogonalSurface(this.settings);
+  const stableSurface=isStableSectionSurface(this.settings,this.renderProfile);
   // Scrolling the main section cards must not replace every surrounding
   // surface with an enlarged preview. Keep the chosen ray grid for those
-  // plane-only changes; oblique probe/echo work retains its bounded policy.
-  const section=changed&&this.loaded&&orthogonalSurface&&mode===this.settings.mode&&threshold===this.settings.threshold;
-  this.requestRender(changed?(section?'section':'scene'):this.sectionQuality&&!orthogonalSurface?'scene':undefined);
+  // plane-only changes, including accepted oblique planes in both labs.
+  const section=changed&&this.loaded&&stableSurface&&mode===this.settings.mode&&threshold===this.settings.threshold;
+  this.requestRender(changed?(section?'section':'scene'):this.sectionQuality&&!stableSurface?'scene':undefined);
  }
  setCapData(cap){
   // Keep the plane/data snapshot immediately visible to the application, but
@@ -706,9 +712,9 @@ export class VolumeRenderer {
   orientCamera(this.camera,n,u);
  }
  alignPlane(normal,up,center=[0,0,0],{followScene=false}={}){
-  // A following camera retains the selected workload: native orthogonal cuts
-  // or bounded oblique Echo/probe work. Explicit views use camera quality.
-  const reason=followScene?(this.sectionQuality&&isOrthogonalSurface(this.settings)?'section':'scene'):'camera';
+  // A following camera retains the selected orthogonal/lab section grid.
+  // Other scene work remains bounded; explicit views use camera quality.
+  const reason=followScene?(this.sectionQuality&&isStableSectionSurface(this.settings,this.renderProfile)?'section':'scene'):'camera';
   orientCamera(this.camera,normal,up);this.camera.pan=[...center];this.autoRotate=false;this.requestRender(reason);this.onChange({camera:true});
  }
  reset(){this.camera={yaw:.32,pitch:.12,roll:Math.PI,distance:1.65,pan:[0,0,0]};this.requestRender('camera');this.onChange({camera:true});}
@@ -950,6 +956,7 @@ export class VolumeRenderer {
    this.compositeScene(this.refinementTarget.texture,w,h,b,aspect,this.refinementTarget.depthTexture);
    this.drawContextLayer(w,h,b,aspect);
    this.completedRevision=revision;this.refineRequested=false;this.refinement=null;
+   presentMeasurementFrame(this,createMeasurementFrame(this,{basis:b,width:w,height:h,aspect,kind:'volume'}));
   }else gl.bindFramebuffer(gl.FRAMEBUFFER,null);
   const fullResolutionCap=this.settings.mode===0&&this.settings.clipAxis>=0;
   this.renderStats={outputWidth:w,outputHeight:h,volumeWidth:w,volumeHeight:h,outputPixels:w*h,volumePixels:workPixels,
@@ -987,8 +994,8 @@ export class VolumeRenderer {
   const outputProfile=s.mode===0&&this.renderProfile==='reconstruction'?'reconstruction':'interactive';
   const resourcePolicy=this.resourcePolicy||getDeviceResourcePolicy();
   const maxPixels=renderOutputPixelBudget(s.quality,outputProfile,fineSurfaceActive,resourcePolicy);
-  // Camera gestures and orthogonal surface sections retain the actual ray grid.
-  // Oblique/volumetric work keeps its bounded scene and full-output cut face.
+  // Camera gestures and orthogonal/lab surface sections retain the ray grid.
+  // Other scene work keeps its bounded scene and full-output cut face.
   const outputRatio=Math.min(window.devicePixelRatio||1,resourcePolicy.maxPixelRatio,Math.sqrt(maxPixels/(rect.width*rect.height)));
   const w=Math.max(2,Math.round(rect.width*outputRatio)),h=Math.max(2,Math.round(rect.height*outputRatio));
   if(c.width!==w||c.height!==h){c.width=w;c.height=h;this.displayedRevision=-1;this.completedRevision=undefined;this.refinement=null;}
@@ -1012,6 +1019,7 @@ export class VolumeRenderer {
     fullResolutionCap:s.clipAxis>=0,capPixels:s.clipAxis>=0?w*h:0,meshTriangles:this.fineSurface.indexCount/3,
     fineSurface:true,cameraQuality:true,presented:true,motion:Boolean(active),passes:3,
     outputProfile,maxOutputPixels:maxPixels,outputPixelRatio:outputRatio};
+   presentMeasurementFrame(this,createMeasurementFrame(this,{basis:b,width:w,height:h,aspect,kind:'fine',depthTexture:this.fineSurface.target?.depthTexture||null,surface:this.fineSurface}));
    this.canvas.dataset.rendered='true';
    if(!forceHigh)this.finishGpuFrame(w*h,'camera');
    if(this.autoRotate){const now=performance.now();this.camera.yaw+=Math.min(100,now-(this.lastFrame||now))*.00018;this.lastFrame=now;this.queueFrame();}
@@ -1027,8 +1035,8 @@ export class VolumeRenderer {
    // preview. A deliberate snapshot still supports a complete single pass.
    this.refineRequested=false;
   }
-  // Startup and oblique/volumetric edits keep bounded work and idle refinement.
-  // Orthogonal surface cuts use the same rays as the finished image. The
+  // Startup and other scene edits keep bounded work and idle refinement.
+  // Orthogonal and lab surface cuts use the same rays as the finished image. The
   // one-frame fence coalesces scrolls and cap arrivals to the newest state;
   // no stale cut geometry is reused and no expensive frame queue is built.
   const cameraFrame=!forceHigh&&this.cameraQuality===true;
@@ -1056,6 +1064,7 @@ export class VolumeRenderer {
    passes:composite?2:1,motion:Boolean(active),cameraQuality:cameraFrame,sectionQuality:sectionFrame,presented:true,refining:false,workPixels:vw*vh,
    capSource:this.cap?'prepared-image':'resident-volume',targetBytes:(this.motionTarget?this.motionTarget.width*this.motionTarget.height*4:0)+(this.refinementTarget?this.refinementTarget.width*this.refinementTarget.height*4:0),
    outputProfile,maxOutputPixels:maxPixels,outputPixelRatio:outputRatio};
+  presentMeasurementFrame(this,createMeasurementFrame(this,{basis:b,width:w,height:h,aspect,kind:'volume',sceneWidth:vw,sceneHeight:vh,composite}));
   const kind=forceHigh?'snapshot':cameraFrame?'camera':sectionFrame?'section':'preview';
   if(query){gl.endQuery(this.timerExtension.TIME_ELAPSED_EXT);this.gpuQueries.push({query,pixels:vw*vh,outputPixels:w*h,fullResolutionCap,accelerated,kind});}
   if(!forceHigh)this.finishGpuFrame(vw*vh,kind);

@@ -196,8 +196,17 @@ body #viewport .fine-load-panel {
 }
 body #viewport .fine-load-title { font-size: 13px; }
 body #viewport .fine-load-source { display: none; }
+/* The progress panel keeps one fixed status slot during every loading stage.
+   Replacing the transfer label with per-block decoder text used to resize and
+   flash this panel dozens of times while the user was viewing the heart. */
+body #viewport .fine-load-panel[data-loading=true] .fine-load-status { block-size: 2.7em; }
+body #viewport .fine-load-stage, body #viewport .fine-load-detail { display: block; }
+body #viewport .fine-load-panel[data-loading=true] :is(.fine-load-stage, .fine-load-detail) { white-space: nowrap; }
+body #viewport .fine-load-announcement { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+body #viewport .fine-load-actions { display: flex; flex-wrap: wrap; column-gap: 14px; row-gap: 4px; }
 body #viewport .fine-load-panel progress { height: 3px; margin: 2px 0; }
 body #viewport .fine-load-panel button { font-size: 12px; padding: 4px 0; }
+@media (any-pointer: coarse) { body #viewport .fine-load-panel button { min-height: 44px; } }
 body #viewport.viewport-controls-compact .fine-load-panel { top: 10px; left: 10px; bottom: auto; }
 body #viewport.viewport-controls-compact #loading {
   inset: 10px auto auto 10px;

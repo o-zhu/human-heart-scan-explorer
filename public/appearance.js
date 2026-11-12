@@ -69,7 +69,7 @@ export class AppearanceController{
   };
   canvas.addEventListener('pointerdown',event=>{
    const repeated=pointers.has(event.pointerId);pointers.add(event.pointerId);
-   if(repeated||pointers.size!==1||event.button!==0||event.isPrimary===false||modified(event)||event.defaultPrevented||document.pointerLockElement||renderer.settings.palette!==5){down=null;return;}
+   if(repeated||pointers.size!==1||event.button!==0||event.isPrimary===false||modified(event)||event.defaultPrevented||renderer.measurementPlacing||document.pointerLockElement||renderer.settings.palette!==5){down=null;return;}
    down={id:event.pointerId,x:event.clientX,y:event.clientY,distance:0,moved:false};
   });
   canvas.addEventListener('pointermove',event=>{
@@ -79,7 +79,7 @@ export class AppearanceController{
   canvas.addEventListener('pointerup',event=>{
    track(event);const gesture=down?.id===event.pointerId?down:null;
    if(gesture)down=null;pointers.delete(event.pointerId);
-   if(!gesture||gesture.moved||pointers.size||event.button!==0||event.isPrimary===false||modified(event)||event.defaultPrevented||document.pointerLockElement||renderer.settings.palette!==5||!renderer.inspectAt)return;
+   if(!gesture||gesture.moved||pointers.size||event.button!==0||event.isPrimary===false||modified(event)||event.defaultPrevented||renderer.measurementPlacing||document.pointerLockElement||renderer.settings.palette!==5||!renderer.inspectAt)return;
    const rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)/rect.width,y=(event.clientY-rect.top)/rect.height;
    if(!(rect.width>0&&rect.height>0)||!Number.isFinite(x+y)||x<0||x>1||y<0||y>1)return;
    const hit=renderer.inspectAt(x,y),candidate=this.labels.get(hit?.labelId),label=candidate?.id>0?candidate:null;

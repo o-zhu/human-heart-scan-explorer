@@ -43,10 +43,18 @@ Open `http://127.0.0.1:8000/`. See [development](development.md) for supported A
 | BodyParts3D context | [CC BY 4.0](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html). Cropped/reduced/transformed skin and bone context. | Illustrative reference anatomy, not registered donor anatomy. |
 | CardioNetworks teaching clips | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Identified local MP4/poster derivatives. | Share-alike applies to adapted media; it is not replaced by the code’s MIT license. |
 | Nazerian et al. teaching clips | [CC BY 4.0 publisher license](https://link.springer.com/article/10.1186/s13089-020-00189-0). Five TEE loops and posters. | Independent clinical examples, not the specimen’s ultrasound. |
-| Original illustrations | TTE text-prompt illustrations and original TEE SVG schematics, with their provenance. | Illustrative teaching art, not measured anatomy or validation. |
+| Original illustrations | The 56 current TTE/TEE schematics in `reference-views-v54`, supplied as full images and thumbnails with per-view generation provenance; retained original TTE art-v1 and TEE SVG schematics. | Illustrative teaching art, not measured anatomy or clinical validation. Published guideline reference figures are not included. |
 | Vendor codecs/tables | Their retained MIT, BSD, and codec notices. | Includes embedded codec WASM; preserve all vendor notices. |
 
 The exact per-file decision in the manifest controls inclusion. Similar filenames or a catalog’s current source credit do not establish the license of an older media file. Original and transformed data keep distinct identities.
+
+### Reference Views artwork
+
+Website v89 adds **56 original generated schematics**: 28 TTE and 28 TEE. The 112 encoded files under `public/assets/reference-views-v54/` comprise one 960 × 960 full image and one 384 × 384 thumbnail per view. Their independent inventory is [the v54 asset manifest](../reference-views-v54/asset-manifest.json), which records generation prompts, reference input hashes, output hashes, dimensions, and review history. These small artwork files belong to the source update; restoring a scientific scan bank is not required to display them.
+
+The guidelines and ultrasound examples informed view-specific anatomy and orientation. Their original figures/crops are external reference materials, not redistributed artwork. Keep the source citations and generation provenance with the new schematics. The artwork does not alter scan calibration, donor planes, scientific meshes, or the permissions governing independent ultrasound recordings. The older excluded TEE art-v2 remains excluded; the new gallery is not a reason to restore it.
+
+The Reference Views gallery and artwork can therefore be available while a comparison's scan or recording is unavailable. Keep that distinction visible: an illustration does not substitute for missing measured anatomy or a missing reference movie.
 
 ## Deliberately omitted material
 
@@ -55,7 +63,7 @@ The exact per-file decision in the manifest controls inclusion. Similar filename
 | SlicerHeart clinical CT and derived meshes | A data-specific redistribution grant for the sample and derivatives was not established. The upstream software license alone does not establish one. | Review the [sample-source project](https://github.com/SlicerHeart/SlicerHeart/blob/master/ValveAnnulusAnalysis/ValveAnnulusAnalysis.py) and obtain the necessary permission. The original import/processing scripts remain. |
 | cMAC MRI and measured 4D ultrasound derivatives | The challenge describes access by attribution, but a grant allowing this public redistribution was not established. The applicability of general CAP transfer restrictions to this example remains unresolved. | Follow the [challenge’s access instructions](https://www.cardiacatlas.org/motion-tracking-2011-challenge/) and [CAP policies](https://www.cardiacatlas.org/policy-documents/); clarify permitted transfer/derivatives before rehosting. |
 | POCUS Atlas recordings/posters | Their known [CC BY-NC 4.0 terms](https://www.thepocusatlas.com/legal) restrict commercial use. | Acquire/use locally only under those terms or obtain additional permission; do not treat the files as unrestricted MIT assets. |
-| ASE-reference-derived TEE art-v2 and source figure crops | No open license for redistributing those guideline-derived figures was established. | Use the retained original SVG teaching diagrams, or obtain permission. Keep the original guideline citation. |
+| ASE-reference-derived TEE art-v2 and source figure crops | No open license for redistributing those older guideline-derived figures was established. | Use the current original v54 schematics or retained original SVG teaching diagrams, or obtain permission for the excluded files. Keep the original guideline citation. |
 | External ASE/Elsevier, TECHmED/YouTube, and institutional teaching media | Links and source metadata are retained, but no general right to copy their recordings or thumbnails into a release was established. | Use publisher/source links and permitted player behavior; do not claim offline playback or download/rehost the files without permission. |
 | Mixed-source documentation galleries | A rendered screenshot can contain licensed media, not just original UI. Unreviewed galleries are omitted from the public export. | Create a rights-cleared screenshot from permitted content and retain dataset/media credits. |
 
@@ -68,6 +76,8 @@ The current source checkout did not contain the six complete local HOA fine bank
 The optional guided-native inspector uses a much larger separately hosted bank and recovery/index mechanism. The complete original quantitative HiP-CT acquisition, every raw N5 cache, and every scientific processing intermediate are absent. The package includes available reconstruction, cleanup, meshing, texture, compression, and conversion scripts, but full preprocessing requires the exact external inputs and environment documented by each pipeline.
 
 No source ZIP, successful installation, or unit-test result establishes complete offline reproducibility. The release inventory records which payloads were physically included, which were retrieved and hash-checked, and which remain external or restricted.
+
+The v53 sequential loader reuses the existing verified compact Ultra transport and scientific banks. Optional browser staging and retry handling change how those bytes are acquired and prepared; they do not add missing datasets, relax checksums, or make restricted media redistributable. Temporary staged files are not a durable cross-reload asset installation.
 
 ## Credits and asset changes
 

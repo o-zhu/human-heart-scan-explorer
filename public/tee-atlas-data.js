@@ -35,7 +35,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Aortic valve"
   ],
   "diagram": "./assets/tee-atlas/diagrams/me5c.svg",
-  "illustration": "./assets/tee-atlas/diagrams/me5c.svg",
+  "illustration": "./assets/reference-views-v54/tee-me5c.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-me5c.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "Near field at the top; at the near-transverse anterior-facing window, right-heart structures are toward screen left.",
@@ -81,7 +82,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Interventricular septum"
   ],
   "diagram": "./assets/tee-atlas/diagrams/me4c.svg",
-  "illustration": "./assets/tee-atlas/diagrams/me4c.svg",
+  "illustration": "./assets/reference-views-v54/tee-me4c.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-me4c.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "RV is toward screen left and LV toward screen right. The septal tricuspid leaflet lies beside the interventricular septum.",
@@ -126,7 +128,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Papillary muscles"
   ],
   "diagram": "./assets/tee-atlas/diagrams/mecommissural.svg",
-  "illustration": "./assets/tee-atlas/diagrams/mecommissural.svg",
+  "illustration": "./assets/reference-views-v54/tee-mecommissural.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-mecommissural.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "In the standard single-plane view the mitral sequence is P3–A2–P1 from screen left to right; biplane secondary views can reverse orientation.",
@@ -165,7 +168,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "LAA"
   ],
   "diagram": "./assets/tee-atlas/diagrams/me2c.svg",
-  "illustration": "./assets/tee-atlas/diagrams/me2c.svg",
+  "illustration": "./assets/reference-views-v54/tee-me2c.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-me2c.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The two-chamber section is approximately orthogonal to ME four-chamber; secondary biplane orientation may be mirrored.",
@@ -206,7 +210,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Anteroseptal LV wall"
   ],
   "diagram": "./assets/tee-atlas/diagrams/melax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/melax.svg",
+  "illustration": "./assets/reference-views-v54/tee-melax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-melax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The standard mitral section includes P2 and A2; the aortic outflow distinguishes this from a two-chamber plane.",
@@ -245,7 +250,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Proximal ascending aorta"
   ],
   "diagram": "./assets/tee-atlas/diagrams/meavlax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/meavlax.svg",
+  "illustration": "./assets/reference-views-v54/tee-meavlax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-meavlax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The anterior far-field cusp is the right coronary cusp. The posterior near-field cusp may be noncoronary or left coronary.",
@@ -280,7 +286,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Right pulmonary artery"
   ],
   "diagram": "./assets/tee-atlas/diagrams/meaaolax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/meaaolax.svg",
+  "illustration": "./assets/reference-views-v54/tee-meaaolax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-meaaolax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The right pulmonary artery is posterior to the aorta and appears in the near field, usually in cross section.",
@@ -317,7 +324,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Right pulmonary artery"
   ],
   "diagram": "./assets/tee-atlas/diagrams/meaaosax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/meaaosax.svg",
+  "illustration": "./assets/reference-views-v54/tee-meaaosax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-meaaosax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The aorta is shown above valve level. Leftward shaft turning can show the pulmonary bifurcation; rightward turning follows the right pulmonary artery.",
@@ -355,7 +363,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Ascending aorta"
   ],
   "diagram": "./assets/tee-atlas/diagrams/merpv.svg",
-  "illustration": "./assets/tee-atlas/diagrams/merpv.svg",
+  "illustration": "./assets/reference-views-v54/tee-merpv.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-merpv.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The SVC and ascending aorta may be seen in cross section; trace pulmonary veins into the LA rather than the RA.",
@@ -397,7 +406,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "RVOT"
   ],
   "diagram": "./assets/tee-atlas/diagrams/meavsax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/meavsax.svg",
+  "illustration": "./assets/reference-views-v54/tee-meavsax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-meavsax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "LCC is posterior and near-field toward screen right; RCC is anterior and far-field beside the RVOT; NCC adjoins the interatrial septum.",
@@ -438,7 +448,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Main pulmonary artery"
   ],
   "diagram": "./assets/tee-atlas/diagrams/mervinout.svg",
-  "illustration": "./assets/tee-atlas/diagrams/mervinout.svg",
+  "illustration": "./assets/reference-views-v54/tee-mervinout.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-mervinout.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "In the standard view, RV inflow is on screen left and RV outflow on screen right.",
@@ -477,7 +488,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Septal tricuspid leaflet"
   ],
   "diagram": "./assets/tee-atlas/diagrams/memodbicaval.svg",
-  "illustration": "./assets/tee-atlas/diagrams/memodbicaval.svg",
+  "illustration": "./assets/reference-views-v54/tee-memodbicaval.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-memodbicaval.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The septal tricuspid leaflet is seen en face. The SVC and right atrial appendage may also enter the plane.",
@@ -516,7 +528,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Right atrial appendage"
   ],
   "diagram": "./assets/tee-atlas/diagrams/bicaval.svg",
-  "illustration": "./assets/tee-atlas/diagrams/bicaval.svg",
+  "illustration": "./assets/reference-views-v54/tee-bicaval.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-bicaval.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "Use the caval junctions to orient the atrial septum; further rightward turning can enter the right pulmonary vein view.",
@@ -555,7 +568,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "LA"
   ],
   "diagram": "./assets/tee-atlas/diagrams/mepv.svg",
-  "illustration": "./assets/tee-atlas/diagrams/mepv.svg",
+  "illustration": "./assets/reference-views-v54/tee-mepv.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-mepv.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "In both standard acquisitions, the superior pulmonary vein is toward screen right. Do not depict all four veins in one simultaneous section.",
@@ -593,7 +607,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Ridge between LAA and left superior pulmonary vein"
   ],
   "diagram": "./assets/tee-atlas/diagrams/melaa.svg",
-  "illustration": "./assets/tee-atlas/diagrams/melaa.svg",
+  "illustration": "./assets/reference-views-v54/tee-melaa.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-melaa.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The LAA lies next to the left superior pulmonary vein; the intervening ridge is a normal landmark.",
@@ -632,7 +647,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Lateral commissure"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgbasalsax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgbasalsax.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgbasalsax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgbasalsax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "Anterior mitral leaflet is screen left; posterior is screen right. Medial commissure is near-field and lateral commissure far-field.",
@@ -671,7 +687,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Midventricular walls"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgpapillary.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgpapillary.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgpapillary.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgpapillary.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "A circular LV surrounds the two papillary-muscle profiles; rightward shaft turning centers the mid-RV.",
@@ -707,7 +724,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "RV apex"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgapicalsax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgapicalsax.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgapicalsax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgapicalsax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The apical section lies distal to the papillary-muscle level; papillary muscles should not be the defining profiles.",
@@ -743,7 +761,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "RVOT"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgrvbasal.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgrvbasal.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgrvbasal.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgrvbasal.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "This combines a cross section of the tricuspid opening with a longitudinal RVOT section.",
@@ -782,7 +801,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Pulmonic valve"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgrvinout.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgrvinout.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgrvinout.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgrvinout.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The usual tricuspid leaflets are anterior and posterior. Verify whether the standard or mirrored alternate acquisition is displayed.",
@@ -822,7 +842,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "RV"
   ],
   "diagram": "./assets/tee-atlas/diagrams/deeptg5c.svg",
-  "illustration": "./assets/tee-atlas/diagrams/deeptg5c.svg",
+  "illustration": "./assets/reference-views-v54/tee-deeptg5c.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-deeptg5c.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The probe is on the gastric/apical side; aortic outflow is directed away through the sector.",
@@ -862,7 +883,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "LA"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tg2c.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tg2c.svg",
+  "illustration": "./assets/reference-views-v54/tee-tg2c.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tg2c.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The left atrium and appendage may lie in the far field behind the mitral apparatus.",
@@ -902,7 +924,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Papillary muscles"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tgrvin.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tgrvin.svg",
+  "illustration": "./assets/reference-views-v54/tee-tgrvin.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tgrvin.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "This is a right-ventricular long-axis/inflow section; slight advancement can bring the pulmonic valve into view.",
@@ -943,7 +966,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Mitral valve"
   ],
   "diagram": "./assets/tee-atlas/diagrams/tglax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/tglax.svg",
+  "illustration": "./assets/reference-views-v54/tee-tglax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-tglax.webp",
   "scanCoverage": "partial",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "angleEvidence": "ASE Table 10 angle range; the selected starting angle is an illustrative preset and must be refined using anatomy.",
@@ -977,7 +1001,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Descending thoracic aorta"
   ],
   "diagram": "./assets/tee-atlas/diagrams/daosax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/daosax.svg",
+  "illustration": "./assets/reference-views-v54/tee-daosax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-daosax.webp",
   "scanCoverage": "outside",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The descending thoracic aorta is posterior and left of the esophagus; the beam faces the left chest.",
@@ -1012,7 +1037,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Descending thoracic aorta"
   ],
   "diagram": "./assets/tee-atlas/diagrams/daolax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/daolax.svg",
+  "illustration": "./assets/reference-views-v54/tee-daolax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-daolax.webp",
   "scanCoverage": "outside",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "Intercostal arteries commonly arise toward screen right; a venous structure can lie farther from the probe than the aorta.",
@@ -1049,7 +1075,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Left subclavian origin"
   ],
   "diagram": "./assets/tee-atlas/diagrams/uearchlax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/uearchlax.svg",
+  "illustration": "./assets/reference-views-v54/tee-uearchlax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-uearchlax.webp",
   "scanCoverage": "outside",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "The arch is anterior to the esophagus at this level; the left brachiocephalic vein may accompany the view.",
@@ -1086,7 +1113,8 @@ export const TEE_ATLAS_VIEWS=Object.freeze([
    "Pulmonic valve"
   ],
   "diagram": "./assets/tee-atlas/diagrams/uearchsax.svg",
-  "illustration": "./assets/tee-atlas/diagrams/uearchsax.svg",
+  "illustration": "./assets/reference-views-v54/tee-uearchsax.webp",
+  "thumbnail": "./assets/reference-views-v54/thumbs/tee-uearchsax.webp",
   "scanCoverage": "outside",
   "sourceUrl": "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
   "displayOrientation": "Pulmonary artery and valve lie in the far field; branch origins may enter the near-field right side at intermediate angles.",

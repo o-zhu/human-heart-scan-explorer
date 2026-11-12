@@ -123,7 +123,7 @@ export function mountViewportControls(doc = globalThis.document, view = doc?.def
   // Clicking Detail opens the existing settings below the viewer. Keep that
   // action visible and usable instead of leaving an empty overlay in its way.
   const onAction = event => {
-    if (event.target.closest?.('#openReconstructionDetail')) close();
+    if (event.target.closest?.('#openReconstructionDetail, #measureDistance')) close();
   };
   toggle.addEventListener('click', onToggle);
   closeButton.addEventListener('click', onClose);

@@ -1,6 +1,7 @@
 import {VolumeRenderer} from './renderer.js';
 import {buildAnatomyPalette,DEFAULT_WINDOW_SETTINGS} from './render-styles.js';
 import {sameDepthBasis} from './render-depth.js';
+import {createMeasurementFrame,presentMeasurementFrame} from './measurement-frame.js';
 export class CPUVolumeRenderer {
  constructor(canvas,onChange=()=>{}){
   this.canvas=canvas;this.onChange=onChange;this.backend='software';this.ctx=canvas.getContext('2d',{alpha:false});
@@ -8,12 +9,16 @@ export class CPUVolumeRenderer {
   this.settings={mode:0,palette:4,threshold:.3,opacity:.8,clipAxis:-1,clipPosition:.5,clipFlip:0,showPlanes:0,slices:[.5,.5,.5],quality:'auto',capContrast:1.8,...DEFAULT_WINDOW_SETTINGS,cleanupEnabled:true,anatomyOpacity:.65,anatomySelected:0,surfaceSmoothing:1};
   this.camera={yaw:.32,pitch:.12,roll:Math.PI,distance:1.65,pan:[0,0,0]};this.extent=[.9,1,.9];this.dimensions=[1,1,1];this.autoRotate=false;
   this.worker=new Worker(new URL('./cpu-worker.js',import.meta.url),{type:'module'});this.busy=false;this.frameId=0;this.interactionPixels=18000;
+  this.measurementJobs=new Map();
   this.worker.onmessage=e=>{
    const f=e.data;if(f.type==='error'){this.busy=false;this.onChange({error:'Software rendering could not finish: '+f.message});return;}
    if(f.type!=='frame'||f.id!==this.frameId&&!(f.fast&&this.latestFast&&f.id>(this.displayedId||0)))return;
    this.canvas.width=f.w;this.canvas.height=f.h;this.ctx.putImageData(new ImageData(new Uint8ClampedArray(f.pixels),f.w,f.h),0,0);this.canvas.dataset.rendered='true';this.canvas.dataset.backend='software';this.displayedId=f.id;this.busy=f.id!==this.frameId;
    this.contextFrameRevision=(this.contextFrameRevision||0)+1;
    this.contextDepth=f.depth?{width:f.w,height:f.h,data:new Float32Array(f.depth),basis:f.basis,revision:this.contextFrameRevision}:null;
+   const measurementJob=this.measurementJobs.get(f.id);
+   presentMeasurementFrame(this,measurementJob&&this.contextDepth?{...measurementJob,linearDepth:this.contextDepth}:null);
+   for(const id of this.measurementJobs.keys())if(id<=f.id)this.measurementJobs.delete(id);
    if(f.elapsed>0){this.interactionPixels=Math.max(6500,Math.min(28000,f.w*f.h*70/f.elapsed));this.performanceStats={backend:'software',frameMs:f.elapsed,pixels:f.w*f.h,interactionPixels:Math.round(this.interactionPixels),accelerated:Boolean(this.acceleration)};}
    if(this.autoRotate&&!this.busy){this.camera.yaw+=.035;this.requestRender();}
   };
@@ -31,7 +36,10 @@ export class CPUVolumeRenderer {
   const rect=this.canvas.getBoundingClientRect();if(rect.width<2||rect.height<2)return;
   const fast=!forceHigh&&(this.interacting||this.autoRotate||this.settings.quality==='low'||performance.now()-(this.lastInteraction||0)<170);
   const budget=fast?this.interactionPixels:(this.settings.quality==='high'?420000:230000),ratio=Math.min(1,Math.sqrt(budget/(rect.width*rect.height))),w=Math.max(2,Math.round(rect.width*ratio)),h=Math.max(2,Math.round(rect.height*ratio));
-  this.busy=true;this.latestFast=fast;this.worker.postMessage({type:'render',id:++this.frameId,w,h,extent:this.extent,basis:this.basis(),settings:this.settings,fast});
+  this.busy=true;this.latestFast=fast;const id=++this.frameId,basis=this.basis();
+  this.measurementJobs.set(id,createMeasurementFrame(this,{basis,width:w,height:h,aspect:w/h,kind:'software',frameRevision:id}));
+  while(this.measurementJobs.size>4)this.measurementJobs.delete(this.measurementJobs.keys().next().value);
+  this.worker.postMessage({type:'render',id,w,h,extent:this.extent,basis,settings:this.settings,fast});
  }
  snapshot(){return this.canvas.toDataURL('image/png');}
  getContextOcclusion(){

@@ -128,6 +128,15 @@ test('production FineSurfacePass also prevents presentation when a patch draw fa
  assert.equal(events.includes('composite'),false);
 });
 
+test('a retained compact fallback releases only after one complete successful Ultra presentation',()=>{
+ const good=surfaceFixture();let completed=0;
+ good.pass.onPresented=()=>{completed++;};
+ good.pass.draw(good.renderer,640,480,{},4/3);assert.equal(completed,1);assert.equal(good.pass.onPresented,null);
+ good.pass.draw(good.renderer,640,480,{},4/3);assert.equal(completed,1,'The fallback-release callback runs once.');
+ const bad=surfaceFixture({reject:call=>call.vao==='local'});bad.pass.onPresented=()=>{completed++;};
+ assert.throws(()=>bad.pass.draw(bad.renderer,640,480,{},4/3),/complete detailed model/);assert.equal(completed,1,'A rejected model never releases its usable fallback.');
+});
+
 test('production renderer disables a rejected detailed pass and presents the existing volume fallback',()=>{
  const f=surfaceFixture({reject:call=>call.vao==='main'}),{pass,renderer,events}=f;
  const errors=[];pass.onError=error=>errors.push(error);
@@ -135,7 +144,7 @@ test('production renderer disables a rejected detailed pass and presents the exi
   loaded:true,fineSurface:pass,renderProfile:'reconstruction',viewRevision:1,
   canvas:{width:640,height:480,dataset:{},getBoundingClientRect:()=>({width:640,height:480})},
   camera:{yaw:0,pitch:0,distance:2,pan:[0,0,0],target:[0,0,0]},
-  pollGpuTimers(){},uploadCapData(){},basis:()=>({}),prepareSceneDepth(){},
+  pollGpuTimers(){},uploadCapData(){},basis:VolumeRenderer.prototype.basis,prepareSceneDepth(){},
   drawContextLayer(){events.push('context');},
  });
  const previousWindow=Object.getOwnPropertyDescriptor(globalThis,'window');

@@ -15,6 +15,7 @@ import {titleCaseUi} from './ui-text.js';
 import {CoronaryControls} from './coronary-controls.js';
 import {CoronaryDataSource} from './coronary-data.js';
 import {CORONARY_REVEAL_READY} from './coronary-release.js';
+import {MeasurementControls} from './measurement-controls.js';
 const $=id=>document.getElementById(id);
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const displaySpacing=level=>(Array.isArray(level.spacingUm)?level.spacingUm[0]:level.spacingUm).toFixed(1);
@@ -34,7 +35,7 @@ let volumeLoadToken=0,volumeOriginal=false,cleanupRequested=true,requestedLevel;
 const moduleReady=new Map();
 const moduleInstances=new Map();
 let postViewStarted=false,tabRevision=0;
-let fineSurfaceController,nativeMainDetailController,coronaryControls,coronarySource,restoredCoronary=false,coronaryRestoreReady=false;
+let fineSurfaceController,nativeMainDetailController,coronaryControls,coronarySource,measurements,restoredCoronary=false,coronaryRestoreReady=false;
 const pendingSectionDraws=new Set();let sectionDrawFrame=0,sectionDrawTask=0;
 const viewportHome=$('viewport').parentElement;
 const setText=(id,text)=>{if($(id)&&$(id).textContent!==text)$(id).textContent=text;};
@@ -61,7 +62,7 @@ function ensureModuleInstance(mode){
    instance=echoModule=new types.EchoModule({renderer,mount:$('echoPanel'),onExit:()=>switchTab('reconstruction'),onSteer:()=>switchTab('tee'),toast,appearance,donor});
    instance.setFineSource?.(ultraVolume);
   }else if(mode==='probe')instance=probeModule=new types.ProbeLabModule({renderer,mount:$('probePanel'),onExit:()=>switchTab('reconstruction'),toast,appearance,fineSource:ultraVolume,donor});
-  else if(mode==='tee')instance=teeModule=new types.TeeLabModule({renderer,mount:$('teePanel'),onExit:()=>switchTab('reconstruction'),onAtlas:()=>Promise.resolve(switchTab('echo')).then(()=>echoModule?.selectPreset('me4c')),toast,appearance,fineSource:ultraVolume,donor});
+  else if(mode==='tee')instance=teeModule=new types.TeeLabModule({renderer,mount:$('teePanel'),onExit:()=>switchTab('reconstruction'),onAtlas:()=>Promise.resolve(switchTab('echo')).then(()=>echoModule?.openReferenceView('me4c')),toast,appearance,fineSource:ultraVolume,donor});
   else if(mode==='quick')instance=quickViews=new types.QuickViews({renderer,mount:$('quickViews'),toast,appearance,donor,fineSource:ultraVolume,onActivate:()=>{tabRevision++;cancelUltraLoad(false);activeAxis=-1;renderer.clearCapData();setText('sectionSyncStatus','Scroll over a section to link it to 3D');syncControls();},onChange:syncControls});
   if(volumeData)instance.setVolume(volumeData,volumeMeta);
   return instance;
@@ -121,6 +122,7 @@ function afterFirstUsableView(){
 }
 function syncControls(syncAppearance=true){
  if(!renderer)return;const s=renderer.settings;
+ measurements?.sync();
  const vals={renderMode:['surface','volume','mip'][s.mode],palette:PALETTE_KEYS[s.palette],threshold:s.threshold,opacity:s.opacity,clipAxis:['none','x','y','z'][s.clipAxis+1],clipPosition:activeAxis>=0&&activeAxis===s.clipAxis?slicePositions[activeAxis]:s.clipPosition,quality:s.quality,surfaceSmoothing:renderer.coronaryActive?.()?(s.coronarySmoothing??2):(s.surfaceSmoothing??1)};
  for(const [id,val]of Object.entries(vals))if($(id))$(id).value=val;
  if($('clipPosition')&&s.clipAxis>=0&&s.clipAxis<3){$('clipPosition').step=1/(sectionCount(s.clipAxis)-1);$('clipPosition').value=activeAxis>=0&&activeAxis===s.clipAxis?slicePositions[activeAxis]:s.clipPosition;}
@@ -403,7 +405,7 @@ async function loadLevel(key,{background=Boolean(volumeData),preview=false,origi
   if(token!==volumeLoadToken)return false;const data=result.data;
   await new Promise(resolve=>requestAnimationFrame(resolve));
   if(token!==volumeLoadToken)return false;
-  renderer.load(data,level,result.acceleration,result.gpuCrop);volumeData=data;volumeMeta=level;residentSections.setVolume(data,level);volumeOriginal=original||!level.supportCompressed;currentLevel=key;slices.forEach(s=>s.cacheKey='');echoModule?.setVolume(data,level);quickViews?.setVolume(data,level);probeModule?.setVolume(data,level);teeModule?.setVolume(data,level);
+  renderer.load(data,level,result.acceleration,result.gpuCrop);volumeData=data;volumeMeta=level;measurements?.setSource(level,donor.id);residentSections.setVolume(data,level);volumeOriginal=original||!level.supportCompressed;currentLevel=key;slices.forEach(s=>s.cacheKey='');echoModule?.setVolume(data,level);quickViews?.setVolume(data,level);probeModule?.setVolume(data,level);teeModule?.setVolume(data,level);
   // A completed request follows the latest appearance intent, even if the user
   // changed cleanup or resolution while its worker was still running.
   renderer.set({cleanupEnabled:cleanupRequested||!volumeOriginal});appearance?.changed();
@@ -532,7 +534,8 @@ function switchTab(mode){
   if(reconstructionState){const appearanceSettings=Object.fromEntries(['palette','cleanupEnabled','anatomyOpacity','anatomySelected','surfaceSmoothing','coronarySmoothing','cutFaceExposure','windowEnabled','windowLow','windowHigh','windowGamma','capContrast'].map(key=>[key,renderer.settings[key]]));renderer.camera=structuredClone(reconstructionState.camera);renderer.set({...structuredClone(reconstructionState.settings),...appearanceSettings,coronaryReveal:coronaryPreference});activeAxis=reconstructionState.activeAxis;renderer.autoRotate=reconstructionState.autoRotate;appearance?.changed();}
  }
  currentTab=mode;
- renderer.renderProfile=mode==='reconstruction'?'reconstruction':'interactive';
+ measurements?.setWorkspaceActive(mode==='reconstruction');
+ renderer.renderProfile=mode;
  fineSurfaceController?.setWorkspaceActive(mode==='reconstruction');
  document.querySelectorAll('[data-reconstruction-settings]').forEach(element=>{element.hidden=mode!=='reconstruction'||element.id==='fineSurfaceControls'&&!fineSurfaceController?.select;});
  for(const key of ['reconstruction','echo','probe','tee']){$(key+'Panel').hidden=key!==mode;$(key+'Tab').classList.toggle('active',key===mode);$(key+'Tab').setAttribute('aria-selected',String(key===mode));}
@@ -540,7 +543,7 @@ function switchTab(mode){
   reconstructionState={camera:structuredClone(renderer.camera),settings:structuredClone(renderer.settings),activeAxis,autoRotate:renderer.autoRotate};
   activeAxis=-1;renderer.autoRotate=false;renderer.clearCapData();renderer.camera.distance=1.55;renderer.set({mode:0,threshold:manifest?.defaultThreshold??.32,showPlanes:0});
   if(!specializedModule(mode)){
-   const waiting=document.createElement('p');waiting.className='module-loading';waiting.setAttribute('role','status');waiting.textContent=mode==='echo'?'Opening echo windows…':mode==='tee'?'Opening the TEE lab…':'Opening the TTE Lab…';$(mode+'Panel').replaceChildren(waiting);
+   const waiting=document.createElement('p');waiting.className='module-loading';waiting.setAttribute('role','status');waiting.textContent=mode==='echo'?'Opening reference views…':mode==='tee'?'Opening the TEE lab…':'Opening the TTE Lab…';$(mode+'Panel').replaceChildren(waiting);
   }
   const entered=ensureModuleInstance(mode).then(async selected=>{
    if(tabRevision!==transition||currentTab!==mode)return;
@@ -548,7 +551,7 @@ function switchTab(mode){
    await ensureModuleData(mode);
    if(tabRevision===transition&&currentTab===mode){coronaryControls?.sync();const result=await selected.enter();if(tabRevision===transition&&currentTab===mode)void resumeCoronaryRestore();return result;}
   }).catch(error=>{console.warn(error);if(tabRevision===transition&&currentTab===mode){toast(error.message);switchTab('reconstruction');}});
-  const descriptions={echo:['Three-dimensional heart cutaway for an approximate echo reference plane. Drag to orbit; scroll to zoom.','Echo windows · fine CT sections and reference ultrasound'],probe:['Three-dimensional heart with an adjustable ultrasound probe and scan sector. Drag to orbit and scroll to zoom. Keyboard controls steer the probe; mouse steering is optional.','TTE Lab · CT-derived ultrasound simulation'],tee:['Three-dimensional heart with a controllable transesophageal probe and linked CT scan plane. Use insertion, rotation, flexion and multiplane controls.','TEE lab · CT-derived ultrasound simulation']};
+  const descriptions={echo:['Three-dimensional heart cutaway for an approximate echo reference plane. Drag to orbit; scroll to zoom.','Reference views · fine CT sections and reference ultrasound'],probe:['Three-dimensional heart with an adjustable ultrasound probe and scan sector. Drag to orbit and scroll to zoom. Keyboard controls steer the probe; mouse steering is optional.','TTE Lab · CT-derived ultrasound simulation'],tee:['Three-dimensional heart with a controllable transesophageal probe and linked CT scan plane. Use insertion, rotation, flexion and multiplane controls.','TEE lab · CT-derived ultrasound simulation']};
   $('volumeCanvas').setAttribute('aria-label',descriptions[mode][0]);status(descriptions[mode][1]);return entered;
  }else{
   void quickViews?.resume();updateUltraFocus();syncControls();void resumeCoronaryRestore();renderer?.requestRender();slices.forEach(s=>s.draw());refreshUltraCut();queueDetailedSections();status('Complete scan loaded');
@@ -602,9 +605,10 @@ async function main(){
    const previous=$('volumeCanvas'),canvas=previous.cloneNode(false);previous.replaceWith(canvas);
    renderer=new CPUVolumeRenderer(canvas,onRendererChange);
   }
-  renderer.renderProfile='reconstruction';renderer.donorId=donor.id;renderer.coronaryWorkspace='reconstruction';
+  renderer.renderProfile='reconstruction';renderer.donorId=donor.id;renderer.coronaryWorkspace='reconstruction';renderer.measurementSourceKey=donor.id;
   renderer.set({...donor.displayWindow});
   appearance=new AppearanceController({renderer,toast,donor,onCleanupChange:setCleanupMode,onChange:()=>{scheduleSectionDraw();echoModule?.updateAppearance();quickViews?.updateAppearance();probeModule?.updateAppearance();teeModule?.updateAppearance();syncControls();if(currentTab==='reconstruction')queueDetailedSections();}});
+  measurements=new MeasurementControls({renderer,viewport:$('viewport'),button:$('measureDistance'),sourceKey:donor.id,onStart:()=>nativeMainDetailController?.setPicking(false),onChange:()=>syncControls(false)});
   slices=['X','Y','Z'].map((a,i)=>new SliceView($('slice'+a),i));
   manifest=await manifestRequest;
   if(manifest.specimen!==donor.specimen)throw new Error('The scan does not match the selected donor.');

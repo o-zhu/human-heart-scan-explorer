@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "nearest actual rasterized surface and background rejection",
+    "production detached-debris discard reveals the correct deeper surface",
+    "production clip discard changes the sampled surface",
+    "current prepared cap replaces mesh depth and marks its plane",
+    "empty cap pixels expose the visible surface instead of inventing a plane",
+    "outside a focused cap crop uses resident tissue at the actual plane",
+    "prepared fine-cap cleanup is not erased by the coarser support mask",
+    "resident scalar ray and full-output cap remain coherent in a reduced scene grid"
+  ],
+  "driver": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "nativeFixturePixels": 81,
+  "nativeFixtureVertices": 6,
+  "forwardDepthToleranceWorldUnits": 8e-05,
+  "runtimeHashes": {
+    "measurement-picking.js": "fc8219e182fe0e0520e6bb2fdffb9bbc83209025eb6dbc1e7681e3d30da1869f",
+    "measurement-frame.js": "8ff8080d29816d0ab554d33090d3fc4375359a8e16cc9dbe9c28a4e4f8632d11",
+    "renderer.js": "e8194c5b145edbfca21a3cd76e2d509dd27c05ccb82b8c352d64d8c1fe8c879f",
+    "fine-surface.js": "f4a4c7c505aba3e11c8c8e0c86196d6b0d34a07bd7d2435a93ac91006c4c526c"
+  },
+  "scope": "Native EGL production-shader regression with calibrated synthetic geometry. Not browser, physical-device, performance or clinical validation."
+}

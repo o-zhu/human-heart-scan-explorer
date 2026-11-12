@@ -1,6 +1,7 @@
 import {checkFineAbort,fineAbort,finePlaneKey,sameFinePlane,reusableFineSection,fineSourceExtent,orientFineSection} from './ultra-volume-core.js';
 import {scanActivity} from './download-priority.js';
 import {getDeviceResourcePolicy} from './device-resources.js';
+import {withAbort} from './load-watchdog.js';
 /** One shared fine-volume worker, separate from the lightweight 3D surface volume. */
 export class UltraVolumeSource {
  constructor({fetcher=(...args)=>fetch(...args),workerFactory=url=>new Worker(url,{type:'module'}),
@@ -13,10 +14,11 @@ export class UltraVolumeSource {
   if(this.destroyed)throw fineAbort();if(this.ready)return this.ready;
   if(!globalThis.crypto?.subtle?.digest)throw new Error('Verified fine detail requires HTTPS or localhost. Open the secure site to load Ultra detail.');
   const generation=++this.generation,controller=new AbortController();this.initController=controller;let worker;
-  const checkAlive=()=>{if(this.destroyed||this.generation!==generation)throw fineAbort();};
+  const checkAlive=()=>{if(this.destroyed||this.generation!==generation)throw fineAbort();if(controller.signal.aborted)throw controller.signal.reason;};
+  const timeout=setTimeout(()=>{const error=new Error('Fine-detail initialization stopped responding. Retry the view.');error.name='TimeoutError';controller.abort(error);},30000);
   this.ready=(async()=>{
-   const response=await this.fetcher(this.manifestUrl,{cache:'force-cache',signal:controller.signal,priority:'high'});checkAlive();
-   if(!response.ok)throw new Error('The fine volume metadata is unavailable.');this.manifest=await response.json();checkAlive();
+   const response=await withAbort(this.fetcher(this.manifestUrl,{cache:'force-cache',signal:controller.signal,priority:'high'}),controller.signal);checkAlive();
+   if(!response.ok)throw new Error('The fine volume metadata is unavailable.');this.manifest=await withAbort(response.json(),controller.signal);checkAlive();
    worker=this.workerFactory(new URL('./ultra-volume-worker.js',import.meta.url));this.worker=worker;
    worker.onmessage=({data:m})=>{
     if(this.destroyed||this.generation!==generation)return;
@@ -25,6 +27,7 @@ export class UltraVolumeSource {
     if(m.type==='progress'){try{job.onProgress?.(m.progress);}catch{}return;}
     this.jobs.delete(m.id);job.signal?.removeEventListener('abort',job.abort);
     if(m.type==='warmed'){this.stats=m.stats;job.resolve(m.result);}
+    else if(m.type==='miss'){this.stats=m.stats;job.resolve(null);}
     else if(m.type==='result'){
      const result={...m.result,data:new Uint8Array(m.result.data)};this.stats=m.stats;
      if(!job.signal?.aborted){this.remember(job.key,result);job.resolve(result);}else job.reject(fineAbort());
@@ -33,9 +36,9 @@ export class UltraVolumeSource {
    worker.onerror=()=>{if(this.generation!==generation)return;const error=new Error('The fine scan worker could not run.');for(const job of this.jobs.values()){job.signal?.removeEventListener('abort',job.abort);job.reject(error);}this.jobs.clear();this.workerFailed?.(error);worker.terminate();this.worker=null;this.ready=null;};
    // Resolve on Window: iPadOS workers do not expose the touch information that
    // distinguishes an iPad's desktop-style user agent from a desktop Mac.
-   await new Promise((resolve,reject)=>{this.workerReady=resolve;this.workerFailed=reject;worker.postMessage({type:'init',manifest:this.manifest,baseUrl:import.meta.url,cacheName:this.cacheName,resourcePolicy:this.resourcePolicy});});checkAlive();
+   await withAbort(new Promise((resolve,reject)=>{this.workerReady=resolve;this.workerFailed=reject;worker.postMessage({type:'init',manifest:this.manifest,baseUrl:import.meta.url,cacheName:this.cacheName,resourcePolicy:this.resourcePolicy});}),controller.signal);checkAlive();
    return this.manifest;
-  })().catch(error=>{worker?.terminate();if(this.generation===generation){this.ready=null;this.worker=null;this.workerReady=null;this.workerFailed=null;}throw error;});return this.ready;
+  })().catch(error=>{worker?.terminate();if(this.generation===generation){this.ready=null;this.worker=null;this.workerReady=null;this.workerFailed=null;}throw error;}).finally(()=>clearTimeout(timeout));return this.ready;
  }
  remember(key,result){
   const old=this.results.get(key);if(old)this.bytes-=old.data.byteLength;this.results.delete(key);
@@ -43,10 +46,10 @@ export class UltraVolumeSource {
   this.results.set(key,result);this.bytes+=result.data.byteLength;
   while(this.bytes>this.limit){const first=this.results.keys().next().value;this.bytes-=this.results.get(first).data.byteLength;this.results.delete(first);}
  }
- async samplePlane(plane,{signal,onProgress,spacingUm,exactRaster=false,persistSection=false}={}){
+ async samplePlane(plane,{signal,onProgress,spacingUm,exactRaster=false,persistSection=false,residentOnly=false,priority,retainTransfers=priority==='interactive'}={}){
   checkFineAbort(signal);
-  this.cancelWarm();
-  const release=this.activity?.beginForeground('fine-plane')||(()=>{});
+  if(!residentOnly)this.cancelWarm();
+  const release=(!residentOnly&&this.activity?.beginForeground('fine-plane'))||(()=>{});
   try{
    await this.init();checkFineAbort(signal);if(this.destroyed)throw fineAbort();
    spacingUm??=this.manifest.sourceSpacingUm||79.4;
@@ -66,18 +69,19 @@ export class UltraVolumeSource {
     const id=++this.serial,abort=()=>{this.worker?.postMessage({type:'cancel',id});this.jobs.delete(id);signal?.removeEventListener('abort',abort);reject(fineAbort());};
     signal?.addEventListener('abort',abort,{once:true});this.jobs.set(id,{key,signal,onProgress,resolve,reject,abort});
     if(signal?.aborted){abort();return;}
-    try{this.worker.postMessage({type:'sample',id,plane,spacingUm,exactRaster,persistSection});}
+    try{this.worker.postMessage({type:'sample',id,plane,spacingUm,exactRaster,persistSection,residentOnly,retainTransfers});}
     catch(error){this.jobs.delete(id);signal?.removeEventListener('abort',abort);reject(error);}
    });
   }finally{release();}
  }
- async warmPlane(plane,{signal,localOnly=true}={}){
+ async sampleResidentPlane(plane,options={}){if(!this.ready||this.destroyed)return null;return this.samplePlane(plane,{...options,residentOnly:true});}
+ async warmPlane(plane,{signal,localOnly=true,paddingMm=3,retainTransfers=false,currentPlane=false}={}){
   await this.init();checkFineAbort(signal);if(this.destroyed)throw fineAbort();
   return new Promise((resolve,reject)=>{
    const id=++this.serial,abort=()=>{this.worker?.postMessage({type:'cancel',id});this.jobs.delete(id);signal?.removeEventListener('abort',abort);reject(fineAbort());};
    signal?.addEventListener('abort',abort,{once:true});this.jobs.set(id,{signal,resolve,reject,abort});
    if(signal?.aborted){abort();return;}
-   try{this.worker.postMessage({type:'warm',id,plane,localOnly});}catch(error){this.jobs.delete(id);signal?.removeEventListener('abort',abort);reject(error);}
+   try{this.worker.postMessage({type:'warm',id,plane,localOnly,paddingMm,retainTransfers,currentPlane});}catch(error){this.jobs.delete(id);signal?.removeEventListener('abort',abort);reject(error);}
   });
  }
  scheduleWarmPlane(plane){

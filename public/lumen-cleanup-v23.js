@@ -51,7 +51,7 @@ export async function loadLumenCollection({signal,extent,fetcher=fetch,atlas,spa
 export class LumenCleanupController{
  constructor({renderer,donor,mount,toast=()=>{},onChange=()=>{},autoStart=true,resourcePolicy=getDeviceResourcePolicy(),compact=resourcePolicy.constrained===true,fetcher=(...args)=>globalThis.fetch(...args)}){
   if(donor.id!=='ladaf-2021-17')return;
-  this.renderer=renderer;this.mount=mount;this.toast=toast;this.onChange=onChange;this.revision=0;this.loading=false;this.error=null;this.compact=compact;this.fetcher=fetcher;
+  this.renderer=renderer;this.mount=mount;this.toast=toast;this.onChange=onChange;this.revision=0;this.loading=false;this.error=null;this.compact=compact;this.sparse=resourcePolicy.sparseReviewedMasks===true;this.fetcher=fetcher;
   mount.innerHTML='<div class="lumen-review-heading"><h4>Lumen Cleanup</h4><span class="control-note">On by default</span></div><label class="lumen-review-toggle"><input id="lumenCleanupToggle" type="checkbox" checked><span>Hide Reviewed Lumen Material</span></label><p class="control-note">Targets reviewed atrial clumps, arterial particles and selected valve-adjacent and right-ventricular material. Turn off to compare the original reconstruction. The CT section cards retain the measured scan.</p><p id="lumenCleanupStatus" class="control-note" role="status" aria-live="polite">Preparing the reviewed lumen cleanup…</p>';
   this.toggle=mount.querySelector('#lumenCleanupToggle');this.status=mount.querySelector('#lumenCleanupStatus');
   this.toggle.checked=true;renderer.settings.lumenCleanupEnabled=false;
@@ -79,11 +79,13 @@ export class LumenCleanupController{
   this.toggle.checked=true;
   let requestAbort,abortFromParent;
   try{
-   if(!this.renderer.lumenCleanup||(!this.compact&&this.renderer.lumenCleanup.sparseAtlas)){
+   const sparseAtlas=this.renderer.lumenCleanup?.sparseAtlas;
+   const incompleteAtlas=!this.compact&&sparseAtlas&&(sparseAtlas.manifest?.fields?.length??0)<8;
+   if(!this.renderer.lumenCleanup||incompleteAtlas){
     const abort=new AbortController();this.abort=abort;this.loading=true;this.mount.setAttribute('aria-busy','true');this.status.textContent='Loading the reviewed lumen cleanup…';this.onChange();
     requestAbort=abort;abortFromParent=()=>abort.abort(signal?.reason);signal?.addEventListener('abort',abortFromParent,{once:true});if(signal?.aborted)abortFromParent();
-    const atlas=await ensureReviewedMaskAtlas(this.renderer,{signal:abort.signal,fetcher:this.fetcher,requiredFields:this.compact?4:8,...(this.compact?{loadCollection:loadMobileLumenAtlas,validateManifest:validateMobileLumenManifest}:{})});
-    const collection=await loadLumenCollection({signal:abort.signal,fetcher:this.fetcher,extent:this.renderer.extent,atlas,sparse:this.compact});
+    const atlas=await ensureReviewedMaskAtlas(this.renderer,{signal:abort.signal,fetcher:this.fetcher,requiredFields:this.compact?4:8,retainSourceMasks:!this.sparse,...(this.compact?{loadCollection:loadMobileLumenAtlas,validateManifest:validateMobileLumenManifest}:{})});
+    const collection=await loadLumenCollection({signal:abort.signal,fetcher:this.fetcher,extent:this.renderer.extent,atlas,sparse:this.compact||this.sparse});
     if(revision!==this.revision||abort.signal.aborted)return;
     this.renderer.setLumenCleanupData(collection);
    }

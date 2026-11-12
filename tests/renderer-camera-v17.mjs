@@ -1,4 +1,4 @@
-/** Stable camera/orthogonal detail and bounded, latest-only oblique work. */
+/** Stable camera, section and Lab detail with bounded latest-only GPU work. */
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {VolumeRenderer} from '../public/renderer.js';
@@ -393,7 +393,7 @@ test('main output ceilings distinguish retained fine geometry from scalar fallba
  }finally{h.close();}
 });
 
-test('paired workspaces and volumetric modes retain their existing output and oblique work budgets',()=>{
+test('paired workspaces retain output ceilings and explicit scene work remains bounded',()=>{
  const h=fixture({width:2400,height:1600,renderProfile:'reconstruction'});try{
   window.devicePixelRatio=2;h.event('wheel',{deltaY:-25});h.frame();
   assert.equal(h.renderer.renderStats.maxOutputPixels,4000000);
@@ -410,6 +410,77 @@ test('paired workspaces and volumetric modes retain their existing output and ob
   h.renderer.set({mode:2});h.frame();
   assert.equal(h.renderer.renderStats.maxOutputPixels,1500000,'MIP rendering is unchanged.');
  }finally{h.close();}
+});
+
+test('both Lab oblique cuts keep the settled scene grid across movement, pan, release and late detail',()=>{
+ for(const renderProfile of ['probe','tee']){
+  const h=fixture({renderProfile});try{
+   const plane={normal:[.6,0,.8],center:[.04,.03,.08],right:[.8,0,-.6],up:[0,1,0],width:.8,height:1};
+   h.renderer.set({clipAxis:3,oblique:plane});h.frame();assertNativeSection(h);h.clear();
+   // A genuine camera gesture followed immediately by the next accepted probe
+   // pose previously switched the same scene back to an enlarged 160k preview.
+   h.event('pointerdown',{button:2});h.event('pointermove',{clientX:132,clientY:112});
+   h.frame();assertNativeCamera(h);h.clear();
+   const latest={...plane,center:[.07,.06,.10]};
+   h.renderer.set({oblique:latest});h.renderer.setCapData({...cap(9),plane:latest});h.frame();
+   const moving=assertNativeSection(h);assert.deepEqual(moving.uniforms.capCenter,latest.center);
+   const movingUniforms=structuredClone(moving.uniforms);h.clear();h.renderer.snapshot();
+   assert.deepEqual(h.draws[0].uniforms,movingUniforms,'The moving and settled scene use identical source rays, plane, threshold and transfer.');
+   h.clear();h.event('pointerup');h.frame();h.advance(350);assert.equal(h.draws.length,0);
+   h.renderer.setCapData({...cap(10),plane:latest});h.frame();assertNativeSection(h);
+   assert.equal(h.renderer.renderStats.maxOutputPixels,1500000,'Lab output ceiling stays bounded.');
+  }finally{h.close();}
+ }
+});
+
+test('continuous Lab input coalesces behind one busy GPU frame and only uploads the newest accepted cap',()=>{
+ for(const renderProfile of ['probe','tee']){
+  const h=fixture({renderProfile});try{
+   const plane={normal:[0,0,1],center:[0,0,0],right:[1,0,0],up:[0,1,0],width:.8,height:1};
+   h.renderer.set({clipAxis:3,oblique:plane});h.frame();h.ready(false);h.clear();let latest;
+   for(let i=1;i<=24;i++){
+    latest={...cap(i),plane:{...plane,center:[0,0,i*.005]}};
+    h.renderer.set({oblique:latest.plane});h.renderer.setCapData(latest);h.frame();
+    assert.equal(h.frames.size,1);assert.equal(h.draws.length,0);
+   }
+   assert.equal(h.calls.filter(call=>call.name==='texSubImage2D').length,0);
+   assert.equal(h.renderer.interactionPixels,160000,'Slow Lab frames must not alter another workspace’s preview budget.');
+   h.ready(true);h.frame();const draw=assertNativeSection(h);
+   assert.deepEqual(draw.uniforms.capCenter,latest.plane.center);assert.equal(draw.uniforms.planeDistance,.12);
+   assert.equal(h.calls.filter(call=>call.name==='texSubImage2D').length,1);
+  }finally{h.close();}
+ }
+});
+
+test('Lab camera-following preserves sharp sections but source and display mode changes stay bounded',()=>{
+ for(const renderProfile of ['probe','tee']){
+  const h=fixture({renderProfile});try{
+   const plane={normal:[0,0,1],center:[0,0,.1],right:[1,0,0],up:[0,1,0],width:.8,height:1};
+   h.renderer.set({clipAxis:3,oblique:plane});
+   h.renderer.alignPlane(plane.normal,plane.up,plane.center,{followScene:true});h.frame();assertNativeSection(h);
+   h.clear();h.renderer.set({threshold:.39});h.frame();assert(h.renderer.renderStats.volumePixels<=161000);
+   assert.equal(h.renderer.sectionQuality,false);h.clear();
+   h.renderer.set({oblique:{...plane,center:[0,0,.2]}});h.frame();assertNativeSection(h);
+   assert.equal(h.draws[0].uniforms.threshold,.39,'Keep custom source thresholds.');
+   h.clear();h.renderer.set({mode:1});h.frame();assert(h.renderer.renderStats.volumePixels<=161000);
+   assert.equal(h.renderer.sectionQuality,false);
+  }finally{h.close();}
+ }
+});
+
+test('Lab quality controls remain a stable explicit choice on constrained devices',()=>{
+ for(const renderProfile of ['probe','tee']){
+  const h=fixture({width:1200,height:900,renderProfile});try{
+   window.devicePixelRatio=3;h.renderer.resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'iPhone'}});
+   const plane={normal:[0,0,1],center:[0,0,.1],right:[1,0,0],up:[0,1,0],width:.8,height:1};
+   for(const [quality,budget] of [['auto',1000000],['low',450000],['high',1000000]]){
+    h.clear();plane.center=[0,0,plane.center[2]+.01];
+    h.renderer.set({clipAxis:3,oblique:{...plane},quality});h.frame();assertNativeSection(h);
+    assert.equal(h.renderer.renderStats.maxOutputPixels,budget);
+    assert(h.renderer.renderStats.outputPixels<=budget+2500);
+   }
+  }finally{h.close();}
+ }
 });
 
 test('mobile camera output caps device pixel ratio and large canvas memory without changing source settings',()=>{

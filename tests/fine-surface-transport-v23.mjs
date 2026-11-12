@@ -15,7 +15,7 @@ const parts=chunks.map((b,i)=>({url:'part'+i,sha256:hash(b),compressedBytes:b.le
 const metadata={parts,compressedBytes:packed.length,sha256:hash(packed),expectedBytes:raw.length,decodedSha256:hash(raw)};
 async function run(data=metadata,alter=(b)=>b){
  const calls=[],messages=[];let active=0,maxActive=0;
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
  fetch:async(url,options)=>{calls.push(url);active++;maxActive=Math.max(maxActive,active);assert.equal(options.priority,'low');const response=new Response(alter(chunks[Number(url.slice(-1))],url));active--;return response;},
  Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error});
  vm.runInContext(worker,context);await context.self.onmessage({data});
@@ -23,8 +23,8 @@ async function run(data=metadata,alter=(b)=>b){
 }
 async function runSingle(body=packed,data={},environment={}){
  const calls=[],messages=[];
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
-  fetch:async(url,options)=>{calls.push(url);assert.equal(options.priority,'low');return new Response(body);},
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
+  fetch:async(url,options)=>{calls.push(url);assert.equal(options.priority,'low');return new Response(typeof body==='function'?body():body);},
   Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error,...environment});
  vm.runInContext(worker,context);
  await context.self.onmessage({data:{url:'single',compressedBytes:packed.length,sha256:hash(packed),expectedBytes:raw.length,decodedSha256:hash(raw),...data}});
@@ -51,11 +51,14 @@ test('single-file and legacy transfers report real download, inflate and verific
 
 test('slow sub-percent chunks refresh progress while fast tiny chunks are throttled',async()=>{
  for(const interval of [150,0]){
-  let clock=0,next=0;
-  const body=new ReadableStream({pull(controller){if(next===12)controller.close();else controller.enqueue(Uint8Array.of(++next));}},{highWaterMark:0});
-  const {result,messages}=await runSingle(body,{compressedBytes:1000000},{Date:{now:()=>{clock+=interval;return clock;}}});
+  let clock=0;
+  const body=()=>{let next=0;return new ReadableStream({pull(controller){if(next===12)controller.close();else controller.enqueue(Uint8Array.of(++next));}},{highWaterMark:0});};
+  const {result,messages}=await runSingle(body,{compressedBytes:1000000},{Date:{now:()=>{clock+=interval;return clock;}},setTimeout:(callback,delay)=>setTimeout(callback,delay===20000?delay:0)});
   assert.match(result.error,/length/);assert.equal(result.buffer,undefined);
-  const progress=messages.filter(m=>m.phase==='download'&&m.stage==='download');
+  // The intentionally short fixture now recovers three times. Verify the
+  // original progress-throttle contract within its first physical transfer.
+  const reconnect=messages.findIndex(m=>m.stage==='reconnect');
+  const progress=messages.slice(0,reconnect<0?undefined:reconnect).filter(m=>m.phase==='download'&&m.stage==='download');
   assert.equal(progress.length,interval?12:1);
   assert.equal(progress[0].loadedBytes,1);
   if(interval)assert.equal(progress.at(-1).loadedBytes,12);
@@ -86,6 +89,13 @@ test('bad part, full checksum, decoded checksum, and oversized streams never ins
  const {result}=await run(metadata,b=>Buffer.concat([b,Buffer.from([0])]));assert.match(result.error,/length/);assert.equal(result.buffer,undefined);
 });
 
+test('actual allocation failures are distinguished from retryable transport failures',async()=>{
+ const guarded=new Proxy(Uint8Array,{construct(target,args){if(args[0]===raw.length)throw new RangeError('Array buffer allocation failed');return Reflect.construct(target,args);}});
+ const {result}=await runSingle(packed,{}, {Uint8Array:guarded});
+ assert.match(result.error,/allocation failed/);assert.equal(result.resourceFailure,true);assert.equal(result.buffer,undefined);
+ const corrupt=await runSingle(packed,{sha256:'0'.repeat(64)});assert.equal(corrupt.result.resourceFailure,undefined);
+});
+
 test('invalid multipart declarations are rejected before fetching',async()=>{
  for(const changes of [{compressedBytes:packed.length+1},{expectedBytes:undefined},{expectedBytes:513*1024*1024},{parts:[]},{parts:[{...parts[0],compressedBytes:33*1024*1024}]}]){
   const {result,calls}=await run({...metadata,...changes});assert.ok(result.error);assert.equal(result.buffer,undefined);assert.equal(calls.length,0);
@@ -95,7 +105,7 @@ test('invalid multipart declarations are rejected before fetching',async()=>{
 test('a legacy response without packed-size metadata is cancelled at the streaming cap',async()=>{
  let reads=0,cancelled=false;const messages=[],chunk=new Uint8Array(1024*1024);
  const stream=new ReadableStream({pull(controller){reads++;controller.enqueue(chunk);},cancel(){cancelled=true;}});
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async()=>new Response(stream),Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error});
  vm.runInContext(worker,context);await context.self.onmessage({data:{url:'legacy',expectedBytes:raw.length}});
  assert.match(messages.at(-1).error,/exceeds the supported size/);assert.equal(messages.at(-1).buffer,undefined);
@@ -105,7 +115,7 @@ test('a legacy response without packed-size metadata is cancelled at the streami
 test('lab priority aborts only the unfinished part and resumes without re-fetching verified parts',async()=>{
  const calls=[],messages=[];let interrupted=false,startedSecond;
  const secondStarted=new Promise(resolve=>startedSecond=resolve);
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async(url,{signal})=>{
    calls.push(url);
    if(url==='part1'&&!interrupted){
@@ -124,7 +134,7 @@ test('lab priority aborts only the unfinished part and resumes without re-fetchi
 
 test('a hidden reconstruction starts paused and yields all transfer capacity to the active lab',async()=>{
  const calls=[],messages=[];
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async url=>{calls.push(url);return new Response(chunks[Number(url.slice(-1))]);},
   Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error});
  vm.runInContext(worker,context);const completed=context.self.onmessage({data:{...metadata,paused:true}});
@@ -139,7 +149,7 @@ test('workspace priority during decompression holds completed geometry until rec
  const context=vm.createContext({self:{postMessage:m=>{
   messages.push(m);
   if(m.phase==='decode'&&!pausedOnce){pausedOnce=true;queueMicrotask(()=>{context.self.onmessage({data:{type:'workspace-priority',paused:true}});beganDecode();});}
- }},crypto:webcrypto,
+ }},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async url=>{calls.push(url);return new Response(chunks[Number(url.slice(-1))]);},
   Response,Blob,DecompressionStream,AbortController,Uint8Array,Uint32Array,DataView,Error});
  vm.runInContext(worker,context);const completed=context.self.onmessage({data:metadata});
@@ -159,7 +169,7 @@ test('decoded-stream chunks stop being consumed while paused and retain all prio
    return i<decodedChunks.length?{value:decodedChunks[i],done:false}:{done:true};
   },async cancel(){},releaseLock(){}
  };
- const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,
+ const context=vm.createContext({self:{postMessage:m=>messages.push(m)},crypto:webcrypto,setTimeout,clearTimeout,DOMException,
   fetch:async url=>new Response(chunks[Number(url.slice(-1))]),Response,
   Blob:class{stream(){return {pipeThrough:()=>({getReader:()=>reader})};}},DecompressionStream:class{},
   AbortController,Uint8Array,Uint32Array,DataView,Error});

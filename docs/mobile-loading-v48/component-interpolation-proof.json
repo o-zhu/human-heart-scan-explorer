@@ -1,0 +1,16 @@
+{
+  "schema": "heart-surface-component-interpolation-v48",
+  "sourceDecodedSha256": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+  "sourceDecodedBytes": 437470524,
+  "vertexFlagsSha256": "5c22fe73b08e408e7b4815315cdcc158c18d9deb95e3e8f76a6d94aa6f505ebd",
+  "faceKeepMaskSha256": "c3a76132a635d776d748cf0a37a1e08f1577df8fffe3abcbdcdc9563260a0dab",
+  "trianglesChecked": 23618685,
+  "removedTriangles": 5832864,
+  "retainedTriangles": 17785821,
+  "mixedDecisionTriangles": 0,
+  "mismatchedFaceKeepDecisions": 0,
+  "largestDecodedStreamChunkBytes": 262144,
+  "fullDecodedMeshRetained": false,
+  "conclusion": "Ordinary and flat interpolation have identical binary visibility decisions on every validated triangle.",
+  "limitation": "Asset and shader regression proof; not a physical iPad or Safari GPU test."
+}

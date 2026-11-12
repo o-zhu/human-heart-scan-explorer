@@ -79,6 +79,39 @@ test('v35 sustained input immediately follows the probe without downloading a fi
  const latest=await resolveSource(f,1);deliver(f,latest);assert.equal(f.module.displayedFrame.poseRevision,revision+40);assert.equal(f.renderer.cap.plane,f.module.displayedFrame.plane);
 });
 
+test('v46 continuous input coalesces cache-only fine work and keeps current-plane blocks streaming',async()=>{
+ const f=environment(),resident=[],warming=[];
+ f.module.fineSource.sampleResidentPlane=(plane,options)=>new Promise(resolve=>resident.push({plane,options,resolve}));
+ f.module.fineSource.warmPlane=(plane,options)=>new Promise((resolve,reject)=>{warming.push({plane,options,resolve});options.signal.addEventListener('abort',()=>reject(options.signal.reason),{once:true});});
+ await f.module.enter();f.module.poseChanged(true);
+ const firstTimer=f.module.movingTimer;assert.ok(firstTimer);
+ for(let i=0;i<20;i++){f.module.state=steerProbe(f.module.state,{tilt:.02});f.module.poseChanged(true);}
+ assert.equal(f.module.movingTimer,firstTimer,'Continuous movement does not restart the live-detail timer');
+ f.tickTimer(firstTimer);assert.equal(resident.length,1);resident[0].resolve(null);await flush();assert.equal(warming.length,1);
+ assert.equal(warming[0].options.localOnly,false);assert.equal(warming[0].options.currentPlane,true);assert.equal(warming[0].options.retainTransfers,true);
+ f.module.poseChanged(true);f.tickTimer(f.module.movingTimer);resident[1].resolve(null);await flush();
+ assert.equal(warming[0].options.signal.aborted,true,'Latest moving plane replaces the obsolete warming request');assert.equal(warming.length,2);
+ const current=f.module.poseRevision;f.module.poseChanged(true);f.tickTimer(f.module.movingTimer);
+ const slice={data:new Uint8Array(64).fill(180),width:8,height:8,plane:resident[2].plane,spacingUm:79.4,sourceSpacingUm:79.4,complete:true,cleaned:true};resident[2].resolve(slice);await flush();
+ const fine=f.workers.at(-1).messages.findLast(x=>x.fineSlice);assert.ok(fine);assert.equal(fine.poseRevision,current+1);assert.ok(fine.capLongest>=640);deliver(f,fine);assert.equal(f.module.displayedFrame.fine,true);
+ assert.equal(f.calls.length,1,'Moving work never requests a blocking full-network reformat');
+ f.module.requestFrame(false);assert.equal(warming[1].options.signal.aborted,true);assert.equal(f.module.movingTimer,0);assert.equal(f.calls.length,2);
+});
+
+test('v46 a late moving fine plane cannot be attached to a newer probe pose or survive exit',async()=>{
+ const f=environment(),resident=[];f.module.fineSource.sampleResidentPlane=(plane,options)=>new Promise(resolve=>resident.push({plane,options,resolve}));
+ await f.module.enter();f.module.poseChanged(true);f.tickTimer(f.module.movingTimer);
+ f.module.state=steerProbe(f.module.state,{tilt:2});f.module.poseChanged(true);
+ const obsolete=resident[0];obsolete.resolve({data:new Uint8Array(64),width:8,height:8,plane:obsolete.plane,spacingUm:79.4,sourceSpacingUm:79.4,complete:true,cleaned:true});await flush();
+ assert.equal(f.workers.at(-1).messages.filter(x=>x.fineSlice).length,0);f.tickTimer(f.module.movingTimer);f.module.leave();
+ assert.equal(resident[1].options.signal.aborted,true);resident[1].resolve({});await flush();assert.equal(f.renderer.uploads,0);assert.equal(f.module.movingTimer,0);
+});
+
+test('v46 detail failure clears the loading label while preserving the usable measured preview',async()=>{
+ const f=environment();await f.module.enter();f.calls[0].reject(new Error('A fine-detail block stopped responding.'));await flush();
+ assert.match(f.module.$('frame-state').textContent,/Detail Unavailable/);assert.doesNotMatch(f.module.$('frame-state').textContent,/Loading/);assert.equal(f.module.fineRunning,null);assert.match(f.module.$('fine-status').textContent,/retry/);
+});
+
 test('late coarse frames cannot replace a finer frame for the same pose or an older pose',async()=>{
  const f=environment();await f.module.enter();const job=await resolveSource(f);deliver(f,job);const before=f.renderer.uploads;
  f.module.acceptFrame(frameFor({...job,id:job.id+100,fast:true,fineSlice:null},{fine:false}));assert.equal(f.renderer.uploads,before);assert.match(f.module.$('frame-state').textContent,/Ultra/);

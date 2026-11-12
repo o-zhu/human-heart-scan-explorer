@@ -77,8 +77,9 @@ export function decodeReviewedMaskAtlas(bytes,manifest){
  if(!(bytes instanceof Uint8Array)||bytes.length!==manifest.asset.decodedBytes)throw new Error('Invalid reviewed mask atlas decoded length.');
  const view=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),header=[0x31414d52,1,8,i.entryCount,32,i.byteLength,p.offset,p.byteLength];
  if(header.some((v,k)=>view.getUint32(k*4,true)!==v))throw new Error('Invalid reviewed mask atlas header.');
- const index=new Uint32Array(i.width*i.height);
- for(let n=0;n<index.length;n++){const value=view.getUint32(i.offset+n*4,true);if(value>p.brickCount||n>=i.entryCount&&value!==0)throw new Error('Invalid reviewed mask atlas brick index.');index[n]=value;}
+ const nativeLittleEndian=new Uint8Array(new Uint32Array([1]).buffer)[0]===1,shared=nativeLittleEndian&&(bytes.byteOffset+i.offset)%4===0;
+ const index=shared?new Uint32Array(bytes.buffer,bytes.byteOffset+i.offset,i.width*i.height):new Uint32Array(i.width*i.height);
+ for(let n=0;n<index.length;n++){const value=view.getUint32(i.offset+n*4,true);if(value>p.brickCount||n>=i.entryCount&&value!==0)throw new Error('Invalid reviewed mask atlas brick index.');if(!shared)index[n]=value;}
  const payload=bytes.subarray(p.offset,p.offset+p.byteLength);
  for(let n=p.brickCount*512;n<payload.length;n++)if(payload[n]!==0)throw new Error('Invalid reviewed mask atlas padding.');
  return {manifest,index,payload};
@@ -102,28 +103,49 @@ export function validateReviewedMaskReferences(program,manifest){
  for(let n=0;n<p.brickCount;n++){const field=view.getUint32(offset+n*8,true),ordinal=view.getUint32(offset+n*8+4,true);if(field>=manifest.fields.length||ordinal>=manifest.fields[field].brickGridXYZ.reduce((a,b)=>a*b,1))throw new Error('Invalid reviewed mask source brick reference.');}
  return {view,offset};
 }
-export async function decodeReviewedMaskReferences(program,manifest,sourceMasks,{signal}={}){
+async function assembleReviewedMaskReferences(program,manifest,getSourceMask,{signal,sourceAtlas}={}){
  current(signal);const {view,offset}=validateReviewedMaskReferences(program,manifest),i=manifest.indexTexture,p=manifest.payloadTexture;
  const bytes=new Uint8Array(manifest.asset.decodedBytes),header=new DataView(bytes.buffer);
  [0x31414d52,1,8,i.entryCount,32,i.byteLength,p.offset,p.byteLength].forEach((n,k)=>header.setUint32(k*4,n,true));bytes.set(program.subarray(32,offset),i.offset);
- for(let n=0;n<p.brickCount;n++){
-  if(n%256===0){await new Promise(resolve=>setTimeout(resolve,0));current(signal);}
-  const field=manifest.fields[view.getUint32(offset+n*8,true)],ordinal=view.getUint32(offset+n*8+4,true),data=sourceMasks.get(field.id),g=field.brickGridXYZ,s=field.storageDimensionsXYZ;
-  if(!(data instanceof Uint8Array)||data.length!==field.sourceDecodedBytes)throw new Error('A verified source mask is missing from the reference transport.');
-  const x=(ordinal%g[0])*8,y=(Math.floor(ordinal/g[0])%g[1])*8,z=Math.floor(ordinal/(g[0]*g[1]))*8,width=Math.min(8,s[0]-x),target=p.offset+n*512;
-  for(let dz=0;dz<Math.min(8,s[2]-z);dz++)for(let dy=0;dy<Math.min(8,s[1]-y);dy++){const start=x+s[0]*(y+dy+s[1]*(z+dz));bytes.set(data.subarray(start,start+width),target+8*(dy+8*dz));}
+ // Copy each source directly into its final sparse bricks. A cautious device
+ // need only retain one decoded field, not all eight dense masks at once.
+ for(const [fieldIndex,field]of manifest.fields.entries()){
+  const previous=sourceAtlas?.manifest?.fields?.find(f=>f?.id===field.id);
+  const reusable=sourceAtlas?.index instanceof Uint32Array&&sourceAtlas?.payload instanceof Uint8Array&&previous&&sourceFieldMatches(previous,{url:field.sourceUrl,sha256:field.sourceCompressedSha256,decodedSha256:field.sourceDecodedSha256,decodedBytes:field.sourceDecodedBytes,dimensionsXYZ:field.dimensionsXYZ,storageDimensionsXYZ:field.storageDimensionsXYZ,lowerFullFineXYZ:field.lowerFullFineXYZ});
+  current(signal);let data=reusable?null:await getSourceMask(field);current(signal);
+  if(!reusable&&(!(data instanceof Uint8Array)||data.length!==field.sourceDecodedBytes))throw new Error('A verified source mask is missing from the reference transport.');
+  const g=field.brickGridXYZ,s=field.storageDimensionsXYZ;let copied=0;
+  for(let n=0;n<p.brickCount;n++){
+   if(view.getUint32(offset+n*8,true)!==fieldIndex)continue;
+   if(copied++%256===0){await new Promise(resolve=>setTimeout(resolve,0));current(signal);}
+   const ordinal=view.getUint32(offset+n*8+4,true),target=p.offset+n*512;
+   if(reusable){
+    const brick=sourceAtlas.index[previous.indexOffset+ordinal];
+    if(!Number.isInteger(brick)||brick<1||brick*512>sourceAtlas.payload.length)throw new Error('The retained reviewed mask brick does not match.');
+    bytes.set(sourceAtlas.payload.subarray((brick-1)*512,brick*512),target);continue;
+   }
+   const x=(ordinal%g[0])*8,y=(Math.floor(ordinal/g[0])%g[1])*8,z=Math.floor(ordinal/(g[0]*g[1]))*8,width=Math.min(8,s[0]-x);
+   for(let dz=0;dz<Math.min(8,s[2]-z);dz++)for(let dy=0;dy<Math.min(8,s[1]-y);dy++){const start=x+s[0]*(y+dy+s[1]*(z+dz));bytes.set(data.subarray(start,start+width),target+8*(dy+8*dz));}
+  }
+  data=null;
  }
  current(signal);if(await digest(bytes)!==manifest.asset.decodedSha256)throw new Error('The reconstructed reviewed mask atlas checksum does not match.');current(signal);return bytes;
 }
-export async function loadReviewedMaskAtlas({fetcher=fetch,signal}={}){
+export function decodeReviewedMaskReferences(program,manifest,sourceMasks,options={}){
+ return assembleReviewedMaskReferences(program,manifest,field=>sourceMasks.get(field.id),options);
+}
+export async function loadReviewedMaskAtlas({fetcher=fetch,signal,retainSourceMasks=true,sourceAtlas}={}){
  current(signal);const response=await fetcher(MANIFEST,{signal,priority:'low'});
  if(!response.ok)throw new Error('The completed model mask metadata is unavailable.');
  const manifest=validateReviewedMaskManifest(await response.json());current(signal);
  if(!manifest.transport)return decodeReviewedMaskAtlas(await loadVerifiedAsset(manifest.asset,fetcher,signal),manifest);
  const program=await loadVerifiedAsset(manifest.transport,fetcher,signal);validateReviewedMaskReferences(program,manifest);
- const sourceMasks=new Map();
- for(const f of manifest.fields){current(signal);sourceMasks.set(f.id,await loadVerifiedAsset({url:f.sourceUrl,compressedBytes:f.sourceCompressedBytes,decodedBytes:f.sourceDecodedBytes,sha256:f.sourceCompressedSha256,decodedSha256:f.sourceDecodedSha256},fetcher,signal));}
- const bytes=await decodeReviewedMaskReferences(program,manifest,sourceMasks,{signal});return {...decodeReviewedMaskAtlas(bytes,manifest),sourceMasks};
+ const sourceMasks=retainSourceMasks?new Map():null;
+ const bytes=await assembleReviewedMaskReferences(program,manifest,async f=>{
+  current(signal);const data=await loadVerifiedAsset({url:f.sourceUrl,compressedBytes:f.sourceCompressedBytes,decodedBytes:f.sourceDecodedBytes,sha256:f.sourceCompressedSha256,decodedSha256:f.sourceDecodedSha256},fetcher,signal);
+  sourceMasks?.set(f.id,data);return data;
+ },{signal,sourceAtlas:retainSourceMasks?undefined:sourceAtlas});
+ return {...decodeReviewedMaskAtlas(bytes,manifest),...(sourceMasks?{sourceMasks}:{})};
 }
 export function reviewedSourceMask(atlas,id,mask){
  const collection=atlas?.collection||atlas,field=collection?.manifest?.fields.find(f=>f.id===id),data=collection?.sourceMasks?.get?.(id);
@@ -201,14 +223,17 @@ export class ReviewedMaskAtlas{
 }
 
 export function cancelReviewedMaskAtlas(renderer){const pending=renderer.reviewedMaskAtlasLoading;if(pending){renderer.reviewedMaskAtlasLoading=null;pending.controller.abort();}}
-export async function ensureReviewedMaskAtlas(renderer,{fetcher=fetch,signal,loadCollection=loadReviewedMaskAtlas,validateManifest=validateReviewedMaskManifest,requiredFields=8}={}){
+export async function ensureReviewedMaskAtlas(renderer,{fetcher=fetch,signal,loadCollection=loadReviewedMaskAtlas,validateManifest=validateReviewedMaskManifest,requiredFields=8,retainSourceMasks=true}={}){
  current(signal);if(renderer.reviewedMaskAtlas?.ready&&(renderer.reviewedMaskAtlas.collection?.manifest?.fields?.length??8)>=requiredFields)return renderer.reviewedMaskAtlas;
  if(!renderer.gl)throw new Error('The completed model requires WebGL 2.');
  let job=renderer.reviewedMaskAtlasLoading;
  if(job&&(job.requiredFields??8)<requiredFields){renderer.reviewedMaskAtlasLoading=null;job.controller.abort();job=null;}
  if(!job){
   job={controller:new AbortController(),consumers:new Set(),settled:false,promise:null,requiredFields:loadCollection===loadReviewedMaskAtlas?8:requiredFields};renderer.reviewedMaskAtlasLoading=job;
-  job.promise=loadCollection({fetcher,signal:job.controller.signal}).then(collection=>{
+  // A verified Compact atlas already contains the four exact lumen fields.
+  // Reuse those sparse bricks for cautious full-model upgrades; the final
+  // complete-atlas checksum still verifies before replacing its GPU textures.
+  job.promise=loadCollection({fetcher,signal:job.controller.signal,retainSourceMasks,sourceAtlas:!retainSourceMasks&&renderer.reviewedMaskAtlas?.ready?renderer.reviewedMaskAtlas.collection:undefined}).then(collection=>{
    current(job.controller.signal);if(renderer.reviewedMaskAtlasLoading!==job)throw interrupted();
    if(renderer.setReviewedMaskAtlas)renderer.setReviewedMaskAtlas(collection,{validateManifest});
    else{const next=new ReviewedMaskAtlas(renderer.gl,collection,{validateManifest});renderer.reviewedMaskAtlas?.dispose();renderer.reviewedMaskAtlas=next;renderer.requestRender?.('scene');}

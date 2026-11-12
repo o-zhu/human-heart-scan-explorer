@@ -1,0 +1,49 @@
+{
+  "reviewer": "echo_research (independent of generating agent)",
+  "sources": [
+    "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+    "https://www.asecho.org/wp-content/uploads/2013/05/Basic-Perioperative-TEE-Exam.pdf",
+    "https://link.springer.com/content/pdf/10.1530/ERP-20-0033.pdf",
+    "https://link.springer.com/content/pdf/10.1007/BF03011744.pdf"
+  ],
+  "scope": "Exact view anatomy/orientation/topology/labels. Additional labelled sources used for TG orientation; root separately reviewed final grid thumbnails.",
+  "results": [
+    {
+      "number": 22,
+      "status": "pass",
+      "observation": "TG two-chamber: LV left, LA right, MV between; no invented right heart or outflow."
+    },
+    {
+      "number": 23,
+      "status": "pass",
+      "observation": "TG RV inflow: RV left, RA right, TV between; thin atrium and RV wall; corroborated with BSE labelled examples."
+    },
+    {
+      "number": 24,
+      "status": "pass",
+      "observation": "TG long-axis: LV left, LA upper-right, LVOT/Ao lower-right, small RV far-field beneath LV; corroborated with labelled Canadian Figure6C."
+    },
+    {
+      "number": 25,
+      "status": "pass",
+      "observation": "Descending aorta SAX is a circular lumen with thin vessel wall, no cusps or false septum."
+    },
+    {
+      "number": 26,
+      "status": "pass",
+      "observation": "Descending aorta LAX is a longitudinal tube, no valves or invented branches."
+    },
+    {
+      "number": 27,
+      "status": "pass",
+      "observation": "UE arch LAX preserves oblique longitudinal tube at0\u201310 degrees; no inappropriate TTE suprasternal three-branch anatomy."
+    },
+    {
+      "number": 28,
+      "status": "pass",
+      "observation": "UE arch SAX at70\u201390 degrees has separate near-field round arch and far-field longitudinal PA/pulmonary valve; no false connection or arterial-branch mislabel."
+    }
+  ],
+  "correctionsRequested": [],
+  "limitations": "Selective educational navigation schematics, not independent clinical validation or complete structure inventories."
+}

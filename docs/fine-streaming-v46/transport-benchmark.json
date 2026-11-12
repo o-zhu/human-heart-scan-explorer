@@ -1,0 +1,43 @@
+{
+  "method": {
+    "moves": 8,
+    "moveIntervalMs": 40,
+    "firstChunkMs": 25,
+    "completeBlockMs": 110,
+    "concurrency": 4,
+    "brickSize": 32,
+    "sourceSpacingUm": 79.4,
+    "fixture": "synthetic measured scalar volume; delayed two-chunk HTTP body",
+    "baselineRef": "0bbbec01150ebb25d2fba932be8643338c8b688d"
+  },
+  "before": {
+    "requests": 48,
+    "completed": 16,
+    "aborted": 32,
+    "receivedBytes": 538499,
+    "active": 0,
+    "peak": 4,
+    "settledMs": 493.8,
+    "decodedBytes": 574992,
+    "finalPixels": 16384,
+    "pixelSha256": "63f538f042891c670fca23f196a2c8d478311de7c037baeb0c55ff7e64f2df68"
+  },
+  "after": {
+    "requests": 16,
+    "completed": 16,
+    "aborted": 0,
+    "receivedBytes": 269971,
+    "active": 0,
+    "peak": 4,
+    "settledMs": 130.9,
+    "decodedBytes": 574992,
+    "finalPixels": 16384,
+    "pixelSha256": "63f538f042891c670fca23f196a2c8d478311de7c037baeb0c55ff7e64f2df68"
+  },
+  "reduction": {
+    "requestsPercent": 66.7,
+    "receivedBytesPercent": 49.9,
+    "settledWaitPercent": 73.5
+  },
+  "pixelsIdentical": true
+}

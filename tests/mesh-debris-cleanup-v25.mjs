@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
-import { loadDebrisAttribute } from '../public/mesh-debris-cleanup-v25.js';
+import { loadDebrisAttribute, loadVerifiedDebrisFlags } from '../public/mesh-debris-cleanup-v25.js';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 function fixture(values = [0, 0, 0, 255, 255, 255]) {
@@ -29,6 +29,27 @@ test('authenticated visibility flags hide complete components and preserve geome
   assert.deepEqual(f.decoded.buffer, original);
   assert.deepEqual(f.decoded.debrisReport, { removedTriangles: 1, removedComponents: 1,
     sourceDecodedSha256: f.lod.decodedSha256 });
+});
+
+test('stream preparation verifies attributes without accessing or allocating a whole geometry buffer', async () => {
+  const f = fixture();
+  const geometry = { vertexCount: 6, indexCount: 6, geometrySourceSha256: f.lod.decodedSha256,
+    get buffer() { throw new Error('The whole geometry must not be retained.'); } };
+  Object.freeze(geometry);
+  const result = await loadVerifiedDebrisFlags(f.lod, geometry, { fetcher: f.fetcher });
+  assert.deepEqual(result.flags, f.flags);
+  assert.deepEqual(result.report, { removedTriangles: 1, removedComponents: 1,
+    sourceDecodedSha256: f.lod.decodedSha256 });
+  assert.equal(geometry.debrisReport, undefined);
+});
+
+test('attribute-only preparation does not claim a triangle decision before index validation', async () => {
+  const f = fixture([0, 0, 255, 255, 255, 255]);
+  const result = await loadVerifiedDebrisFlags(f.lod, f.decoded, { fetcher: f.fetcher });
+  assert.deepEqual(result.flags, f.flags);
+  assert.equal(f.decoded.debrisReport, undefined);
+  await assert.rejects(loadDebrisAttribute(f.lod, f.decoded, { fetcher: f.fetcher }), /retained structure/);
+  assert.equal(f.decoded.debrisReport, undefined);
 });
 
 test('legacy profiles never fetch or imply a matching debris filter', async () => {

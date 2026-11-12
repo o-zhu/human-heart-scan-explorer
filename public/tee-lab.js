@@ -84,9 +84,10 @@ export class TeeLabModule extends ProbeLabModule{
   this.tee('lock').addEventListener('click',()=>{this.state.probeLocked=!this.state.probeLocked;this.releaseControl();this.updateUI();});
   this.mount.querySelectorAll('[data-tee-range]').forEach(input=>input.addEventListener('input',()=>this.changeControl(input.dataset.teeRange,Number(input.value))));
   this.mount.querySelectorAll('[data-tee-key]').forEach(button=>{
+   this.bindSteeringSurface(button);
    button.addEventListener('pointerdown',event=>{
-    if(!this.active||this.state.probeLocked||event.button!==0||event.ctrlKey||event.metaKey||event.altKey)return;
-    event.preventDefault();button.focus();this.shiftHeld=!!event.shiftKey;this.pointerControls.set(event.pointerId,{code:button.dataset.teeKey,button});
+    if(!this.active||document.hidden||this.state.probeLocked||button.disabled||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||this.pointerControls.has(event.pointerId))return;
+    event.preventDefault();button.focus({preventScroll:true});this.shiftHeld=!!event.shiftKey;this.pointerControls.set(event.pointerId,{code:button.dataset.teeKey,button});
     try{button.setPointerCapture?.(event.pointerId);}catch{}
     this.nudgeKey(button.dataset.teeKey,event.shiftKey);this.updateKeyFeedback();
    });
@@ -107,13 +108,15 @@ export class TeeLabModule extends ProbeLabModule{
   this.$('material').addEventListener('change',()=>{this.renderer.set({palette:Number(this.$('material').value)});this.appearance?.changed();this.updateAppearance();});
   this.mount.querySelectorAll('[data-probe-image]').forEach(b=>b.addEventListener('click',()=>{this.state.imageMode=b.dataset.probeImage;this.updateImageLabels();}));
   const pad=this.tee('steer-pad');
-  pad.addEventListener('pointerdown',e=>{if(!this.active||this.state.probeLocked||e.button!==0||e.ctrlKey||e.metaKey||e.altKey)return;e.preventDefault();pad.focus();this.drag={id:e.pointerId,x:e.clientX,y:e.clientY};pad.setPointerCapture?.(e.pointerId);pad.classList.add('is-dragging');});
+  this.bindSteeringSurface(pad);
+  pad.addEventListener('pointerdown',e=>{if(!this.active||document.hidden||this.drag||this.state.probeLocked||e.button!==0||e.ctrlKey||e.metaKey||e.altKey)return;e.preventDefault();pad.focus({preventScroll:true});this.drag={id:e.pointerId,x:e.clientX,y:e.clientY};try{pad.setPointerCapture?.(e.pointerId);}catch{}pad.classList.add('is-dragging');});
   pad.addEventListener('pointermove',e=>{if(this.drag?.id!==e.pointerId)return;e.preventDefault();const scale=e.shiftKey ? .04 : .15;this.state=sanitizeTeeState({...this.state,shaftRotationDeg:this.state.shaftRotationDeg+(e.clientX-this.drag.x)*scale,anteflexDeg:this.state.anteflexDeg-(e.clientY-this.drag.y)*scale});this.drag.x=e.clientX;this.drag.y=e.clientY;this.poseChanged();});
-  for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,()=>this.releaseControl());
+  for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,e=>{if(this.drag?.id===e.pointerId)this.releaseDrag();});
   document.addEventListener('keydown',e=>this.keyDown(e),true);
   document.addEventListener('keyup',e=>{const held=this.keys.delete(e.code);if(precisionKey(e.code))this.shiftHeld=!!e.shiftKey;if(held&&this.active)e.preventDefault();if(held||precisionKey(e.code))this.updateKeyFeedback();},true);
-  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,e=>this.releasePointerControl(e.pointerId));
+  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,e=>{this.releasePointerControl(e.pointerId);if(this.drag?.id===e.pointerId)this.releaseDrag();});
   window.addEventListener('blur',()=>{if(this.active)this.releaseControl();});
+  window.addEventListener('pagehide',()=>{if(this.active)this.releaseControl();});
   document.addEventListener('visibilitychange',()=>{if(this.active&&document.hidden)this.releaseControl();});
   document.addEventListener('focusin',e=>{if(this.active&&(editable(e.target)||e.target?.closest?.('input')))this.releaseControl();});
   if(typeof ResizeObserver==='function'){this.resizeObserver=new ResizeObserver(()=>{this.guideKey='';if(this.active)this.drawGuide();});this.resizeObserver.observe(this.mount);}
@@ -211,9 +214,11 @@ export class TeeLabModule extends ProbeLabModule{
  }
  releaseControl(){
   this.keys.clear();this.shiftHeld=false;for(const id of this.pointerControls?.keys()||[])this.releasePointerControl(id);
+  this.releaseDrag();this.updateKeyFeedback();
+ }
+ releaseDrag(){
   const pad=this.tee('steer-pad'),id=this.drag?.id;this.drag=null;pad?.classList.remove('is-dragging');
   if(id!==undefined){try{pad.releasePointerCapture?.(id);}catch{}}
-  this.updateKeyFeedback();
  }
  releasePointerControl(id){
   const control=this.pointerControls?.get(id);if(!control)return;
@@ -289,7 +294,7 @@ export class TeeLabModule extends ProbeLabModule{
   const a=s.multiplaneDeg*Math.PI/180;this.tee('dial-line').setAttribute('d',`M50 51L${50+37*Math.cos(a)} ${51-37*Math.sin(a)}`);
   this.$('cutaway').checked=s.cutaway;this.$('flip').setAttribute('aria-pressed',String(s.flip));this.$('show-guide').checked=s.showGuide;this.$('show-surface').checked=s.showSurface;
   this.updateSkeletonButton();
-  this.updateImageLabels();
+  this.updateImageLabels();this.compactLayout?.sync();
  }
  acceptFrame(frame){super.acceptFrame(frame);if(this.displayedFrame===frame){const s=frame.state;this.tee('displayed-pose').textContent=`Displayed · ${s.insertionCm.toFixed(1)} cm model · ${Math.round(s.multiplaneDeg)}° multiplane`;}}
  ensureScene(){if(!this.sceneOverlay&&!this.sceneUnavailable){try{this.sceneOverlay=new TeeSceneOverlay(this.$('scene-mesh'),{renderer:this.renderer});}catch{this.sceneUnavailable=true;}}this.sceneOverlay?.setActive?.(this.active);}

@@ -1,0 +1,64 @@
+/* Full reference catalogue; comparison layout keeps its existing renderer and media. */
+body #echoPanel [data-reference][hidden],body #echoPanel .echo-workspace[hidden]{display:none!important}
+body #echoPanel.reference-gallery-open{display:block;overflow:visible;min-height:45vh}
+body #echoPanel.reference-gallery-open:is(:fullscreen,:-webkit-full-screen){overflow:auto;max-height:100dvh}
+.reference-gallery-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.reference-fullscreen-exit{display:none;border:1px solid #57735e;border-radius:4px;background:#253b2e;color:#e0e9d9;min-height:44px;padding:8px 12px;font-size:13px}
+body #echoPanel:is(:fullscreen,:-webkit-full-screen) .reference-fullscreen-exit{display:block}
+.reference-gallery{padding:24px clamp(12px,2.2vw,32px) 30px;max-width:1800px;margin:0 auto;box-sizing:border-box}
+.reference-gallery-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
+.reference-gallery h2{font:400 clamp(23px,2.1vw,30px)/1.2 var(--font-display,Arial,sans-serif);letter-spacing:-.6px;margin:0 0 8px;color:#f0eee5}
+.reference-gallery-header p{font-size:14px;line-height:1.5;color:#a3b0ad;margin:0}
+.reference-level,.reference-modalities{display:flex;padding:4px;gap:4px;background:#101b1b;border:1px solid #3c5149;border-radius:7px;flex-shrink:0}
+.reference-gallery button,.reference-detail-navigation button{font:inherit;cursor:pointer;touch-action:manipulation}
+.reference-level button{padding:9px 18px;min-height:38px;border:0;background:transparent;border-radius:4px;color:#a9bab1;font-size:14px}
+.reference-level button[aria-pressed=true]{background:#ceddc0;color:#192b23;font-weight:600}
+.reference-gallery-tools{display:flex;gap:16px;align-items:stretch;justify-content:space-between;margin-bottom:16px}
+.reference-modalities{background:transparent;border:0;padding:0;gap:8px}
+.reference-modalities button{display:flex;align-items:baseline;gap:9px;border:1px solid #334b42;padding:10px 16px;border-radius:5px;background:#121e1d;color:#9cafa8;font-size:13px;min-height:44px}
+.reference-modalities strong{font-size:16px;font-weight:600;letter-spacing:.3px}
+.reference-modalities button[aria-pressed=true]{background:#2b4338;border-color:#98b598;color:#eef2e7}
+.reference-search{display:flex;align-items:center;min-width:0;width:min(370px,40%)}
+.reference-search input{width:100%;min-width:0;box-sizing:border-box;min-height:44px;border:1px solid #40514b;border-radius:5px;background:#0e1717;color:#e5ebe4;font:16px var(--font-body,Arial,sans-serif);padding:10px 13px}
+.reference-search input::placeholder{color:#8ea19a;font-size:14px}
+.reference-groups{display:flex;gap:7px;flex-wrap:wrap}
+.reference-groups button{background:transparent;border:1px solid #30433c;color:#a6b7ae;padding:7px 11px;border-radius:4px;font-size:13px;min-height:36px}
+.reference-groups button[aria-pressed=true]{background:#20362c;color:#e0e9d9;border-color:#78927b}
+.reference-gallery button:hover{border-color:#b99c87}
+.reference-gallery button:focus-visible,.reference-gallery input:focus-visible,.reference-gallery summary:focus-visible,.reference-detail-navigation button:focus-visible{outline:2px solid #e9b697;outline-offset:3px}
+.reference-gallery-summary{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 12px;padding-top:16px;border-top:1px solid #293d34;color:#829a8e;font-size:12px}
+.reference-gallery-summary p{margin:0;color:#b6c6bc;font:13px ui-monospace,monospace}
+.reference-view-group{margin:0 0 25px}
+.reference-view-group h3{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;letter-spacing:.2px;color:#bbcbbf;margin:0 0 12px}
+.reference-view-group h3>span{color:#879b8d;font:12px ui-monospace,monospace}
+.reference-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:12px}
+.reference-card{display:flex;flex-direction:column;width:100%;min-width:0;overflow:hidden;text-align:left;padding:0;background:#13201d;border:1px solid #3b4b42;border-radius:7px;color:#e3e8de;transition:border-color .15s,background .15s}
+.reference-card:hover{background:#21332b}
+.reference-card-image{display:block;aspect-ratio:1;background:#f6f3ee;overflow:hidden;width:100%}
+.reference-card-image img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:normal}
+.reference-card-copy{display:flex;flex-direction:column;gap:6px;padding:12px 12px 14px;min-height:65px}
+.reference-card-code{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font:12px/1.25 ui-monospace,monospace;color:#e1b19b;letter-spacing:.1px}
+.reference-card-code>span{color:#94a89d;font-size:11px;white-space:nowrap;letter-spacing:0}
+.reference-card-name{display:block;font-size:14px;line-height:1.4;font-weight:500;color:#e1e8dd}
+.reference-empty{padding:40px 16px;text-align:center;border:1px dashed #42574a;border-radius:7px;color:#b2c0b4}
+.reference-empty h3{font-size:18px;font-weight:500;margin:0 0 8px}
+.reference-empty p{font-size:14px}
+.reference-empty button{border:1px solid #5c7663;border-radius:4px;background:#1d3328;color:#dee8d8;padding:10px 16px;font-size:14px}
+.reference-gallery-footer{border-top:1px solid #2b3e34;padding-top:16px;font-size:12px;line-height:1.6;color:#8c9f94}
+.reference-gallery-footer p{margin:0 0 10px}
+.reference-gallery-footer details{max-width:1000px}
+.reference-gallery-footer summary{cursor:pointer;color:#b2c2b7;min-height:36px}
+.reference-gallery-footer details div{display:flex;gap:10px 20px;flex-wrap:wrap}
+.reference-gallery-footer a{color:#d0b29e;text-underline-offset:3px;min-height:32px}
+.reference-detail-navigation{display:flex;align-items:center;gap:18px;padding:8px 16px;border-bottom:1px solid #2b4036;background:#101b18;min-height:40px;box-sizing:border-box}
+.reference-detail-navigation button{border:1px solid #57735e;border-radius:4px;background:#253b2e;color:#e0e9d9;min-height:36px;padding:6px 12px;font-size:13px}
+.reference-detail-navigation>span{color:#97ac9d;font-size:12px}
+/* Square, labelled icons replace the old decorative thumbnails in every picker. */
+body #echoPanel .echo-illustrated-preset img{object-fit:contain;aspect-ratio:1;background:#f6f3ee;height:auto!important}
+body #echoPanel [data-echo="diagram-image"]{object-fit:contain;background:#f6f3ee}
+@media(min-width:1600px){.reference-card-grid{grid-template-columns:repeat(auto-fill,minmax(205px,1fr))}}
+@media(max-width:760px){.reference-gallery{padding-top:17px}.reference-gallery-header{align-items:flex-start;margin-bottom:16px}.reference-gallery h2{font-size:23px}.reference-gallery-header p{max-width:260px;font-size:13px}.reference-level button{padding:8px 11px;font-size:13px}.reference-gallery-tools{flex-wrap:wrap;gap:12px}.reference-modalities{width:100%}.reference-modalities button{flex:1;justify-content:center}.reference-search{width:100%}.reference-gallery-summary{margin-top:16px}.reference-card-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px}.reference-card-copy{padding:10px;min-height:64px}.reference-card-code{font-size:11px}.reference-card-code>span{font-size:10px}.reference-card-name{font-size:13px}.reference-detail-navigation{padding:5px 7px;gap:10px}.reference-detail-navigation>span{display:none}}
+@media(max-width:370px){.reference-gallery-header{flex-wrap:wrap;gap:10px}.reference-gallery-header>div:first-child{width:100%}.reference-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-card-code{flex-wrap:wrap;gap:3px}.reference-card-copy{padding:8px}.reference-modalities button{padding:8px}.reference-modalities button span{font-size:11px}.reference-gallery-summary>span{max-width:150px;text-align:right}.reference-groups{gap:5px}.reference-groups button{font-size:12px;padding:6px 8px}}
+@media(max-width:760px){.reference-groups{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding:3px 2px 7px;scrollbar-width:thin}.reference-groups button{white-space:nowrap;flex-shrink:0}}
+@media(any-pointer:coarse){.reference-level button,.reference-groups button,.reference-detail-navigation button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.reference-card{transition:none}}

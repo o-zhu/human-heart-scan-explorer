@@ -8,12 +8,13 @@ self.onmessage=async({data:m})=>{
  const controller=new AbortController();jobs.set(m.id,controller);
  try{
   if(m.type==='warm'){
-   const result=await backend.warmPlane(m.plane,{signal:controller.signal,localOnly:m.localOnly!==false});
+   const result=await backend.warmPlane(m.plane,{signal:controller.signal,localOnly:m.localOnly!==false,paddingMm:m.paddingMm,retainTransfers:m.retainTransfers===true,currentPlane:m.currentPlane===true});
    if(!controller.signal.aborted)self.postMessage({type:'warmed',id:m.id,result,stats:backend.getStatus()});
    return;
   }
-  const result=await backend.samplePlane(m.plane,{signal:controller.signal,spacingUm:m.spacingUm,exactRaster:m.exactRaster===true,persistSection:m.persistSection===true,onProgress:progress=>self.postMessage({type:'progress',id:m.id,progress})});
+  const result=await backend.samplePlane(m.plane,{signal:controller.signal,spacingUm:m.spacingUm,exactRaster:m.exactRaster===true,persistSection:m.persistSection===true,residentOnly:m.residentOnly===true,retainTransfers:m.retainTransfers===true,onProgress:progress=>self.postMessage({type:'progress',id:m.id,progress})});
   if(controller.signal.aborted)return;
+  if(!result){self.postMessage({type:'miss',id:m.id,stats:backend.getStatus()});return;}
   // Prepared images stay cached here. An arbitrary reformat has no worker-side
   // owner after this response, so transfer it directly instead of cloning a
   // native-sized (often 8–10 MB) raster which would immediately be discarded.

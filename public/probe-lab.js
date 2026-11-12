@@ -6,6 +6,7 @@ import {ProbeSceneOverlay, ReferenceTorsoView, paintProbeFallback, labProbeDispl
 import {createSkinContactSurface,skinContactFrame,initialSkinContact,restoreSkinContact} from './probe-skin-contact.js';
 import {validFineProbeSlice,probeFrameQuality} from './probe-acoustics.js';
 import {buildDonorEchoFrames,echoDonorPlaneRevision} from './echo-donor-planes.js';
+import {createCompactLabLayout} from './lab-compact-v47.js';
 
 const probeSteeringKeys={
  KeyW:['advance',1,'Slide forward','↑'],KeyS:['advance',-1,'Slide backward','↓'],
@@ -34,6 +35,7 @@ export class ProbeLabModule{
   this.state=sanitizeProbeState({interactionMode:'orbit'});this.keys=new Set();this.captureEpoch=0;this.captureWanted=false;this.nativeWasLocked=false;this.mouseMode='rotate';this.sequence=0;this.version=0;this.displayedId=-1;this.minFrameId=0;this.fineGeneration=0;this.poseRevision=0;
   this.mount.classList.add('probe-panel');this.mount.innerHTML=this.template();this.bind();
   if(frames)this.setFrames(frames);this.updateUI();
+  this.compactLayout=createCompactLabLayout(this);
  }
 
  template(){return `
@@ -89,7 +91,7 @@ export class ProbeLabModule{
    </section>
    <section class="probe-controls-group"><h3>Image &amp; Display</h3>
     <details class="probe-detail-controls probe-image-options"><summary>Image &amp; Display Controls</summary>${range('angleDeg','Sector width',35,110,1,'°')}${range('frequencyMHz','Frequency proxy',1.5,7,.5,' MHz')}${range('dynamicRangeDb','Dynamic range',35,80,1,' dB')}${range('shadow','Attenuation & shadow',0,1,.05,'')}<label class="probe-checkbox"><input type="checkbox" data-probe="show-guide" checked> Show Probe &amp; Sector</label><label class="probe-checkbox"><input type="checkbox" data-probe="show-surface" checked> Show Contact Surface</label><label class="probe-material">Tissue Style <select data-probe="material" aria-label="Tissue color style">${RENDER_STYLES.map(p=>`<option value="${p.id}">${titleCaseUi(p.name)}</option>`).join('')}</select></label></details>
-    <details class="probe-method"><summary>What This Simulation Represents</summary><p>The fitted chest skin and illustrative esophageal wall constrain probe contact. Chest Orientation shows the complete prepared surface of this donor, with the same accepted probe origin, axes, physical instrument size and scan sector as the main view. Its fitted BodyParts3D chest is fixed across all starting views and remains illustrative, not donor-registered. Orbiting that overview changes only its camera. External probe contact follows the displayed skin triangles. Place Probe selects any visible skin surface; WASD continues sliding across that surface. W moves toward the head and S toward the feet. A/D moves left/right around the chest as seen from the Front view; these directions stay attached to the chest when you orbit. Q/E rotates counterclockwise/clockwise when looking along the beam from the handle toward the skin. I/K tilts and J/L fans relative to the selected starting plane. The finite edge of the cropped chest is the travel boundary. The amber indicator identifies the marked side of the ultrasound image.</p><p>The heart sections come from measured scan data. Ultrasound appearance uses intensity changes as interface proxies, angle-sensitive reflections, tissue-fixed speckle and attenuation. HiP-CT does not measure acoustic impedance, and the fixed scan contains no heart motion.</p><p>With Clean Scan enabled, the current ${this.fineLabel} source plane drives the cut face, measured CT and simulated image together. Nearby source blocks are retained and prepared during quiet periods. During movement, a lighter preview follows the probe. Once you pause, both views refine from the same fine source plane. Source and displayed plane spacing are shown separately.</p><a href="https://pubmed.ncbi.nlm.nih.gov/19249113/" target="_blank" rel="noopener">Background: Ray-Based CT-to-Ultrasound Simulation ↗</a></details>   </section>
+    <details class="probe-method"><summary>What This Simulation Represents</summary><p>The fitted chest skin and illustrative esophageal wall constrain probe contact. Chest Orientation shows the complete prepared surface of this donor, with the same accepted probe origin, axes, physical instrument size and scan sector as the main view. Its fitted BodyParts3D chest is fixed across all starting views and remains illustrative, not donor-registered. Orbiting that overview changes only its camera. External probe contact follows the displayed skin triangles. Place Probe selects any visible skin surface; WASD continues sliding across that surface. W moves toward the head and S toward the feet. A/D moves left/right around the chest as seen from the Front view; these directions stay attached to the chest when you orbit. Q/E rotates counterclockwise/clockwise when looking along the beam from the handle toward the skin. I/K tilts and J/L fans relative to the selected starting plane. The finite edge of the cropped chest is the travel boundary. The amber indicator identifies the marked side of the ultrasound image.</p><p>The heart sections come from measured scan data. Ultrasound appearance uses intensity changes as interface proxies, angle-sensitive reflections, tissue-fixed speckle and attenuation. HiP-CT does not measure acoustic impedance, and the fixed scan contains no heart motion.</p><p>With Clean Scan enabled, the current ${this.fineLabel} source plane drives the cut face, measured CT and simulated image together. Nearby source blocks are retained and prepared during quiet periods. During movement, a lighter preview follows the probe. Fine source blocks continue loading during movement; cached sections refine the moving plane, and a pause sharpens both views together. Source and displayed plane spacing are shown separately.</p><a href="https://pubmed.ncbi.nlm.nih.gov/19249113/" target="_blank" rel="noopener">Background: Ray-Based CT-to-Ultrasound Simulation ↗</a></details>   </section>
   </div></details></div>`;}
 
  $(key){return this.mount.querySelector(`[data-probe="${key}"]`);}
@@ -112,9 +114,10 @@ export class ProbeLabModule{
   this.mount.querySelectorAll('[data-probe-range]').forEach(input=>input.addEventListener('input',()=>{this.state=sanitizeProbeState({...this.state,[input.dataset.probeRange]:Number(input.value)});if(input.dataset.probeRange==='speedMm')this.updateUI();else this.poseChanged();}));
   this.mount.querySelectorAll('[data-probe-step]').forEach(button=>button.addEventListener('click',()=>{const [axis,direction]=button.dataset.probeStep.split(':');if(!this.frameForState())return;this.state=moveProbeState(this.state,this.frameForState(),{[axis]:Number(direction)},probePhysicalLimits(this.state.referenceMm).step);this.poseChanged();}));
   this.mount.querySelectorAll('[data-probe-key]').forEach(button=>{
+   this.bindSteeringSurface(button);
    button.addEventListener('pointerdown',event=>{
-    if(!this.active||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||button.disabled)return;
-    event.preventDefault();button.focus();this.shiftHeld=!!event.shiftKey;this.pointerControls.set(event.pointerId,{code:button.dataset.probeKey,button});
+    if(!this.active||document.hidden||event.button!==0||event.ctrlKey||event.metaKey||event.altKey||button.disabled||this.pointerControls.has(event.pointerId))return;
+    event.preventDefault();button.focus({preventScroll:true});this.shiftHeld=!!event.shiftKey;this.pointerControls.set(event.pointerId,{code:button.dataset.probeKey,button});
     try{button.setPointerCapture?.(event.pointerId);}catch{}
     this.nudgeKey(button.dataset.probeKey,event.shiftKey);this.updateKeyFeedback();
    });
@@ -132,9 +135,10 @@ export class ProbeLabModule{
   // needed. Capture phase prevents the same press from starting camera orbit.
   viewport.addEventListener('pointerdown',sceneGesture,true);viewport.addEventListener('click',sceneGesture,true);
   const pad=this.$('steer-pad');
-  pad.addEventListener('pointerdown',event=>{if(!this.active||event.button!==0)return;event.preventDefault();this.setInteractionMode('probe');pad.focus();this.drag={id:event.pointerId,x:event.clientX,y:event.clientY};pad.setPointerCapture?.(event.pointerId);pad.classList.add('is-dragging');});
+  this.bindSteeringSurface(pad);
+  pad.addEventListener('pointerdown',event=>{if(!this.active||document.hidden||this.drag||event.button!==0||event.ctrlKey||event.metaKey)return;event.preventDefault();this.setInteractionMode('probe');pad.focus({preventScroll:true});this.drag={id:event.pointerId,x:event.clientX,y:event.clientY};try{pad.setPointerCapture?.(event.pointerId);}catch{}pad.classList.add('is-dragging');});
   pad.addEventListener('pointermove',event=>{if(this.drag?.id!==event.pointerId)return;event.preventDefault();this.mouseMove(event.clientX-this.drag.x,event.clientY-this.drag.y,event.altKey,event.shiftKey);this.drag.x=event.clientX;this.drag.y=event.clientY;});
-  const endDrag=()=>this.releaseDrag();
+  const endDrag=event=>{if(this.drag?.id===event.pointerId)this.releaseDrag();};
   for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,endDrag);
   document.addEventListener('pointerlockchange',()=>this.pointerLockChanged());
   document.addEventListener('pointerlockerror',()=>{if(this.lockRequested&&this.captureWanted)this.captureUnavailable('Cursor capture is unavailable here. Drag the steering pad or use the controls below.');});
@@ -144,12 +148,24 @@ export class ProbeLabModule{
   for(const type of ['pointerdown','pointermove','pointerup','click','dblclick'])document.addEventListener(type,event=>{if(this.hasControl()){event.preventDefault();event.stopPropagation();}},true);
   document.addEventListener('keydown',event=>this.keyDown(event),true);
   document.addEventListener('keyup',event=>{const held=this.keys.delete(event.code);if(precisionKey(event.code))this.shiftHeld=!!event.shiftKey;if(held&&this.active&&!precisionKey(event.code))event.preventDefault();if(held||precisionKey(event.code))this.updateKeyFeedback();},true);
-  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,event=>this.releasePointerControl(event.pointerId));
+  for(const type of ['pointerup','pointercancel'])window.addEventListener(type,event=>{this.releasePointerControl(event.pointerId);if(this.drag?.id===event.pointerId)this.releaseDrag();});
   window.addEventListener('blur',()=>{if(this.active)this.releaseControl();});
+  window.addEventListener('pagehide',()=>{if(this.active)this.releaseControl();});
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&this.active)this.releaseControl();});
   document.addEventListener('focusin',event=>{if(this.active&&(controlIsEditable(event.target)||event.target?.closest?.('input')))this.releaseKeyboardControls();});
   this.mount.addEventListener('wheel',event=>{if(this.hasControl()){event.preventDefault();event.stopPropagation();}},{capture:true,passive:false});
   if(typeof ResizeObserver==='function'){this.resizeObserver=new ResizeObserver(()=>{this.guideKey='';if(this.active)this.drawGuide();});this.resizeObserver.observe(this.mount);}
+ }
+
+ // A steering press is an ongoing control gesture, not selectable prose. Keep
+ // this local to the keycaps/pad so descriptions, links and fields retain their
+ // native selection, context menus, scrolling and zoom behavior.
+ bindSteeringSurface(control){
+  for(const type of ['selectstart','contextmenu','dragstart'])control.addEventListener(type,event=>{
+   event.preventDefault();
+   // If a browser cannot cancel its menu, do not keep moving behind that menu.
+   if(type==='contextmenu'&&!event.defaultPrevented&&this.active)this.releaseControl();
+  });
  }
 
  setFrames(input){
@@ -383,6 +399,7 @@ export class ProbeLabModule{
  requestFrame(fast=false){
   if(!this.active||!this.data||!this.geometry)return;this.ensureOrigin();const pose=this.getPose();if(!pose)return;
   const pane=this.$(this.state.imageMode==='ct'?'ct':'ultrasound'),paneWidth=pane.getBoundingClientRect?.().width||800,width=paneWidth*Math.min(globalThis.devicePixelRatio||1,1.25);
+  if(!fast)this.stopMovingDetail();
   this.ensureWorker();const request={type:'sample',id:++this.sequence,version:this.version,poseRevision:this.poseRevision,pose,state:copy(this.state),fineSpacingUm:this.fineSpacingUm,fast,cleanupEnabled:this.renderer.settings.cleanupEnabled!==false,...probeFrameQuality(this.state,width,fast)};
   // Include the actual display budget so release requests refine once, while
   // repeats of the same settled geometry/settings remain deduplicated.
@@ -393,10 +410,10 @@ export class ProbeLabModule{
    // A turn within an already measured section can reuse its pixels immediately.
    // A shifted/tilted section must instead sample the resident 3D volume; no
    // network request or stale image is allowed on this live path.
-   if(request.cleanupEnabled&&cached?.version===this.version&&validFineProbeSlice(cached,plane,this.fineSpacingUm,this.geometry))Object.assign(request,{fineSlice:cached,refinementToken:this.fineGeneration});
+   if(request.cleanupEnabled&&cached?.version===this.version&&validFineProbeSlice(cached,plane,this.fineSpacingUm,this.geometry))Object.assign(request,{fineSlice:cached,refinementToken:this.fineGeneration,capLongest:Math.max(request.capLongest,Math.min(1280,Math.max(cached.width,cached.height)))});
    this.$('frame-state').textContent='Following Probe';
-   this.$('fine-status').textContent='Live Preview · Fine Detail Refines When You Pause';
-   this.dispatchFrame(request);return;
+   this.$('fine-status').textContent='Live Preview · Fine Detail Streams Along the Probe';
+   this.dispatchFrame(request);this.scheduleMovingDetail(request);return;
   }
   if(this.fineSource?.samplePlane&&request.cleanupEnabled){
    if(this.fineRunning?.request.workKey===request.workKey||this.fineLatest?.workKey===request.workKey)return;
@@ -412,10 +429,47 @@ export class ProbeLabModule{
  pauseFineForMotion(){
   const computing=this.fineRunning?.phase==='acoustics';
   if(this.fineRunning||this.fineLatest||this.previewLatest){
-   this.abortFine();
+   this.abortFine({keepMoving:true});
    if(computing){this.worker?.postMessage({type:'cancel'});this.fallbackEpoch=(this.fallbackEpoch||0)+1;this.fallbackLatest=null;}
   }
   this.fineSource?.cancelWarm?.();
+ }
+ // Live planes never wait for network. A coalesced cache-only reformat can
+ // sharpen the current accepted pose, while a separate bounded source queue
+ // keeps useful brick transfers alive across frequent steering changes.
+ scheduleMovingDetail(request){
+  if(!this.active||!request.cleanupEnabled||(!this.fineSource?.sampleResidentPlane&&!this.fineSource?.warmPlane))return;
+  this.movingLatest=request;this.lastMovingRequest=request;
+  if(!this.movingTimer&&!this.movingBusy)this.movingTimer=setTimeout(()=>{this.movingTimer=0;void this.refineMovingDetail();},80);
+ }
+ stopMovingDetail(){
+  this.movingEpoch=(this.movingEpoch||0)+1;clearTimeout(this.movingTimer);this.movingTimer=0;
+  this.movingController?.abort();this.movingController=null;this.motionWarmController?.abort();this.motionWarmController=null;
+  this.movingLatest=null;this.lastMovingRequest=null;this.movingBusy=null;this.motionWarmKey=null;
+ }
+ async refineMovingDetail(){
+  const request=this.movingLatest;if(!request||this.movingBusy||!this.active)return;
+  this.movingLatest=null;const epoch=this.movingEpoch||0,controller=new AbortController(),busy={request,epoch};
+  this.movingController=controller;this.movingBusy=busy;
+  const plane=probeCapPlane(request.pose,this.geometry),paneWidth=this.$('ct').getBoundingClientRect?.().width||800;
+  const capLongest=Math.round(Math.min(960,Math.max(640,paneWidth))/32)*32;
+  const spacingUm=Math.max(this.fineSpacingUm,Math.max(plane.width,plane.height)*this.geometry.longestMm*1000/(capLongest-1));
+  try{
+   const slice=await this.fineSource.sampleResidentPlane?.(plane,{signal:controller.signal,spacingUm});
+   if(controller.signal.aborted||!this.active||epoch!==(this.movingEpoch||0)||request.version!==this.version)return;
+   if(slice&&request.poseRevision===this.poseRevision&&validFineProbeSlice(slice,plane,this.fineSpacingUm,this.geometry)){
+    this.dispatchFrame({...request,capLongest,fineSlice:slice,refinementToken:this.fineGeneration,workKey:request.workKey+'|resident-fine|'+capLongest});
+   }else if(!slice&&request.poseRevision===this.poseRevision&&this.fineSource.warmPlane&&this.motionWarmKey!==request.workKey){
+    this.motionWarmController?.abort();const warm=new AbortController();this.motionWarmController=warm;this.motionWarmKey=request.workKey;
+    void this.fineSource.warmPlane(plane,{signal:warm.signal,localOnly:false,paddingMm:0,currentPlane:true,retainTransfers:true}).then(()=>{
+     if(this.active&&!warm.signal.aborted&&epoch===(this.movingEpoch||0)&&!this.fineRunning&&this.lastMovingRequest)this.scheduleMovingDetail(this.lastMovingRequest);
+    }).catch(()=>{/* A settling request reports source failures; live preview remains usable. */});
+   }
+  }catch(error){if(error.name!=='AbortError')this.motionFineError=error.message;}
+  finally{
+   if(this.movingController===controller)this.movingController=null;
+   if(this.movingBusy===busy){this.movingBusy=null;if(this.movingLatest&&this.active)this.scheduleMovingDetail(this.movingLatest);}
+  }
  }
  dispatchFrame(request){if(this.worker)this.worker.postMessage(request);else this.requestFallback(request);}
  dispatchPreview(){
@@ -425,7 +479,8 @@ export class ProbeLabModule{
   if(this.displayedFrame?.id>=this.minFrameId&&this.displayedFrame.poseRevision===request.poseRevision)return;
   this.dispatchFrame({...request,...probeFrameQuality(request.state,this.$('ultrasound').getBoundingClientRect?.().width||800,true),fast:true});
  }
- abortFine(){
+ abortFine({keepMoving=false}={}){
+  if(!keepMoving)this.stopMovingDetail();
   this.fineGeneration++;this.fineController?.abort();this.fineController=null;this.fineRunning=null;this.fineLatest=null;this.previewLatest=null;clearTimeout(this.previewTimer);this.previewTimer=0;
   const status=this.$('fine-status');if(status)status.textContent=this.renderer.settings.cleanupEnabled===false?'Original volume · enable Clean scan for Ultra sections.':this.fineSource?`${this.fineLabel} detail follows the current probe plane.`:'Fine source is preparing.';
  }
@@ -460,7 +515,7 @@ export class ProbeLabModule{
   if(this.fineLatest){void this.requestFine();if(!this.previewTimer)this.previewTimer=setTimeout(()=>{this.previewTimer=0;this.dispatchPreview();},190);}
   else if(frame.type!=='error'&&!frame.fast&&this.active)this.fineSource?.scheduleWarmPlane?.(frame.plane);
  }
- fineError(message){this.$('fine-status').textContent=String(message).includes('requires HTTPS')?`${message} The measured volume preview remains available.`:'Ultra detail could not finish; the measured volume preview remains available.';console.warn('Probe fine plane:',message);}
+ fineError(message){this.$('frame-state').textContent='Volume Preview · Detail Unavailable';this.$('fine-status').textContent=String(message).includes('requires HTTPS')?`${message} The measured volume preview remains available.`:'Fine detail could not finish. The measured preview remains available; move the probe or select a starting view to retry.';console.warn('Probe fine plane:',message);}
  async requestFallback(request){
   this.fallbackLatest=request;if(this.fallbackRunning){if(!this.fallbackRunning.fast||!request.fast)this.fallbackEpoch=(this.fallbackEpoch||0)+1;return;}
   this.fallbackRunning=request;
@@ -536,7 +591,7 @@ export class ProbeLabModule{
    this.mount.querySelector(`[data-probe-value="${key}"]`).textContent=(key==='shadow'?Math.round(value*100)+'%':key==='frequencyMHz'||(limits.scale<.75&&['depthMm','speedMm'].includes(key))?value.toFixed(1):Math.round(value))+suffix;
   }
   const origin=this.state.originMm||this.getPose()?.originMm;this.$('position').textContent=origin?origin.map(signed).join(' / '):'Preparing geometry';
-  this.$('angles').textContent=`Fan ${Math.round(this.state.sweepDeg)}° · Tilt ${Math.round(this.state.tiltDeg)}° · Rotation ${Math.round(this.state.rollDeg)}°`;this.updateControlStatus();this.updateImageLabels();
+  this.$('angles').textContent=`Fan ${Math.round(this.state.sweepDeg)}° · Tilt ${Math.round(this.state.tiltDeg)}° · Rotation ${Math.round(this.state.rollDeg)}°`;this.updateControlStatus();this.updateImageLabels();this.compactLayout?.sync();
  }
  updateImageLabels(){
   const ct=this.state.imageMode==='ct',frame=this.displayedFrame;
@@ -627,6 +682,14 @@ export class ProbeLabModule{
  }
  drawGuide(){
   if(!this.active||!this.geometry)return;const guide=this.$('guide'),target=this.mount.querySelector('#probeViewportMount'),canvas=this.renderer.canvas;
+  // The compact Chest panel has its own camera and dimensions. It must keep
+  // following the accepted scan pose when the shared 3D pane is hidden.
+  if(this.compactLayout?.compact&&this.compactLayout.view==='chest'){
+   const frame=this.displayedFrame,pose=frame?.pose||this.getPose(),state=frame?.state||this.state,torso=this.$('torso');if(!pose)return;
+   const key=['chest',torso.clientWidth,torso.clientHeight,this.displayedId,frame?.poseRevision??this.poseRevision,this.torsoView?.revision||0].join(',');if(key===this.guideKey)return;this.guideKey=key;
+   const sourceFrame=this.frameForState(state),surface=sourceFrame?probeContactSurface(state.preset,sourceFrame):null;
+   this.torsoView?.render({pose,state,surface,referenceMm:this.geometry.longestMm});return;
+  }
   const rect=canvas.getBoundingClientRect(),mountRect=target.getBoundingClientRect(),w=Math.round(rect.width),h=Math.round(rect.height);if(w<2||h<2)return;
   const camera=this.renderer.camera,key=[...camera.pan,camera.yaw,camera.pitch,camera.roll,camera.distance,w,h,this.displayedId,this.state.showGuide,this.state.showSurface,this.state.preset,this.displayedFrame?.poseRevision??this.poseRevision,this.torsoView?.revision||0,Boolean(this.sceneOverlay?.failed)].join(',');if(key===this.guideKey)return;this.guideKey=key;
   const dpr=Math.min(globalThis.devicePixelRatio||1,2);guide.width=Math.round(w*dpr);guide.height=Math.round(h*dpr);guide.style.width=w+'px';guide.style.height=h+'px';guide.style.left=(rect.left-mountRect.left)+'px';guide.style.top=(rect.top-mountRect.top)+'px';
@@ -637,7 +700,7 @@ export class ProbeLabModule{
   const sourceFrame=this.frameForState(state),surface=sourceFrame?probeContactSurface(state.preset,sourceFrame):null;
   const meshCanvas=this.$('scene-mesh');meshCanvas.style.width=w+'px';meshCanvas.style.height=h+'px';meshCanvas.style.left=(rect.left-mountRect.left)+'px';meshCanvas.style.top=(rect.top-mountRect.top)+'px';
   this.sceneOverlay?.render({basis,width:w,height:h,dpr,pose,state,surface,contextModel:this.torsoView?.model,referenceMm:this.geometry.longestMm,showSurface:this.state.showSurface,showProbe:this.state.showGuide});
-  this.torsoView?.render({pose,state,surface,referenceMm:this.geometry.longestMm});
+  if(!this.compactLayout?.compact)this.torsoView?.render({pose,state,surface,referenceMm:this.geometry.longestMm});
   if(this.state.showSurface&&surface&&surface.kind!=='body-skin'&&!this.sceneOverlay){
    const mesh=contactSurfaceLines(surface),tee=surface.kind==='esophageal',under=mesh.outline.map(p=>add(p,mul(surface.inward,1.5*deviceScale)));
    path(under,true,tee?'rgba(116,72,91,.18)':'rgba(116,81,55,.18)',tee?'rgba(161,105,126,.5)':'rgba(177,128,88,.5)',.8);

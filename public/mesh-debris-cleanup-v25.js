@@ -14,7 +14,12 @@ async function bounded(stream,length,signal){
  return out;
 }
 
-export async function loadDebrisAttribute(lod,decoded,{fetcher=fetch,signal}={}){
+/** Verify the small attribute independently of mesh storage. The caller must
+ * still validate each triangle's three flags against the verified index stream
+ * before applying the report or publishing a cleaned surface. This helper never
+ * marks geometry ready and intentionally does not require a full HFM buffer.
+ */
+export async function loadVerifiedDebrisFlags(lod,decoded,{fetcher=fetch,signal}={}){
  signal?.throwIfAborted();
  if(lod.id!=='gentle')return null;
  const response=await fetcher(MANIFEST,{signal,priority:'low'});
@@ -41,10 +46,21 @@ export async function loadDebrisAttribute(lod,decoded,{fetcher=fetch,signal}={})
  if(await digest(flags)!==item.decodedSha256)throw new Error('Decoded debris filter checksum did not match.');
  signal?.throwIfAborted();
  for(const flag of flags)if(flag!==0&&flag!==255)throw new Error('Invalid debris filter values.');
+ return {flags,report:{removedTriangles:profile.removedTriangles,removedComponents:profile.removedComponents,sourceDecodedSha256:profile.sourceDecodedSha256}};
+}
+
+/** Whole-buffer compatibility path. Streamed consumers perform the same face
+ * check while reading indices, before committing any of their staged geometry.
+ */
+export async function loadDebrisAttribute(lod,decoded,options={}){
+ const verified=await loadVerifiedDebrisFlags(lod,decoded,options);
+ if(!verified)return null;
+ const {flags,report}=verified;
+ options.signal?.throwIfAborted();
  // Every face must have a single component decision: the fragment shader can
  // then discard complete triangles without smoothing, clipping or new edges.
  const indices=new Uint32Array(decoded.buffer,decoded.indexOffset,decoded.indexCount);
  for(let i=0;i<indices.length;i+=3){const a=flags[indices[i]];if(a!==flags[indices[i+1]]||a!==flags[indices[i+2]])throw new Error('The debris filter crosses a retained structure.');}
- decoded.debrisReport={removedTriangles:profile.removedTriangles,removedComponents:profile.removedComponents,sourceDecodedSha256:profile.sourceDecodedSha256};
+ decoded.debrisReport=report;
  return flags;
 }

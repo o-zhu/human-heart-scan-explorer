@@ -1,6 +1,8 @@
 import {checkFineAbort,fineAbort,validFinePlane,sameFinePlane,reusableFineSection,fineSourceExtent,orientFineSection,planFinePlane,sampleFineBrick} from './ultra-volume-core.js';
 import {getDeviceResourcePolicy} from './device-resources.js';
 import {FineSectionStore} from './fine-section-store.js';
+import {FineBrickQueue} from './fine-brick-queue.js';
+import {withAbort} from './load-watchdog.js';
 const MiB=1024*1024;
 // Timer nesting adds a minimum delay for every brick in browsers. Yield only
 // after a bounded CPU budget, using an event task rather than hundreds of timers.
@@ -13,10 +15,10 @@ const tick=()=>new Promise(resolve=>{
 const hash=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
 const safe=(fn,value)=>{try{fn?.(value);}catch{}};
 async function runFineTasks(count,run,signal){
- const controller=new AbortController(),abort=()=>controller.abort();signal?.addEventListener('abort',abort,{once:true});
+ const controller=new AbortController(),abort=()=>controller.abort(signal?.reason);signal?.addEventListener('abort',abort,{once:true});
  if(signal?.aborted)controller.abort();
  const tasks=Array.from({length:count},()=>run(controller.signal));
- try{await Promise.all(tasks);}catch(error){controller.abort();await Promise.allSettled(tasks);throw error;}
+ try{await Promise.all(tasks);}catch(error){controller.abort(error);await Promise.allSettled(tasks);throw error;}
  finally{signal?.removeEventListener('abort',abort);}
 }
 
@@ -65,7 +67,7 @@ class BrickDisk {
 }
 
 export class FineVolumeBackend {
- constructor(manifest,{baseUrl,fetcher=(...args)=>fetch(...args),decodedLimit,decodePrepared=null,cacheName,sectionStore,resourcePolicy=getDeviceResourcePolicy(),transferPolicy=fineTransferPolicy({resourcePolicy})}={}){
+ constructor(manifest,{baseUrl,fetcher=(...args)=>fetch(...args),decodedLimit,decodePrepared=null,cacheName,sectionStore,resourcePolicy=getDeviceResourcePolicy(),transferPolicy=fineTransferPolicy({resourcePolicy}),transferTimeoutMs=20000}={}){
   if(manifest.schemaVersion!==1||manifest.codec!=='gzip-u8-zyx-positive-halo'||manifest.storedEdge!==manifest.brickSize+1||manifest.decodedBrickBytes!==manifest.storedEdge**3)throw new Error('Unsupported fine volume metadata.');
   this.manifest=manifest;this.base=new URL(manifest.assetBaseUrl,baseUrl||import.meta.url);this.pageBase=baseUrl||import.meta.url;
   // Desktops may retain a complete oblique plane (120–227 MiB of bricks).
@@ -77,6 +79,7 @@ export class FineVolumeBackend {
   this.sectionStore=sectionStore||new FineSectionStore(manifest,{baseUrl:baseUrl||import.meta.url,resourcePolicy});
   this.decodedHits=0;this.diskHits=0;this.protectedBlocks=new Map();
   this.transferPolicy={foreground:Math.max(1,Math.min(12,Math.floor(transferPolicy.foreground)||4)),background:Math.max(1,Math.min(3,Math.floor(transferPolicy.background)||1))};
+  this.transferTimeoutMs=transferTimeoutMs;this.brickQueue=new FineBrickQueue({limit:this.transferPolicy.foreground,timeoutMs:transferTimeoutMs});
  }
  remember(id,data){
   const old=this.cache.get(id);if(old)this.bytes-=old.byteLength;this.cache.delete(id);
@@ -99,12 +102,17 @@ export class FineVolumeBackend {
   if(!response.ok){await response.body?.cancel().catch(()=>{});throw new Error(`Fine scan data returned ${response.status}.`);}
   const reader=response.body?.getReader();if(!reader)throw new Error('The fine scan response has no data.');
   const bytes=new Uint8Array(expected);let offset=0;
-  try{while(true){checkFineAbort(signal);const {done,value}=await reader.read();if(done)break;if(offset+value.length>expected)throw new Error('Fine scan asset exceeds its manifest size.');bytes.set(value,offset);offset+=value.length;}
+  try{while(true){checkFineAbort(signal);const {done,value}=await withAbort(reader.read(),signal);if(done)break;if(offset+value.length>expected)throw new Error('Fine scan asset exceeds its manifest size.');bytes.set(value,offset);offset+=value.length;}
    if(offset!==expected)throw new Error('The fine scan download was incomplete.');return bytes;
-  }catch(error){await reader.cancel().catch(()=>{});throw error;}finally{reader.releaseLock();}
+  }catch(error){void reader.cancel().catch(()=>{});throw error;}finally{reader.releaseLock();}
  }
- async getBrick(block,signal,{localOnly=false,priority='high'}={}){
+ async getBrick(block,signal,{localOnly=false,residentOnly=false,priority='high',retainOnAbort=false}={}){
   checkFineAbort(signal);const cached=this.cache.get(block.id);if(cached){this.cache.delete(block.id);this.cache.set(block.id,cached);this.decodedHits++;return cached;}
+  if(residentOnly)return null;
+  return this.brickQueue.request(`${block.id}:${localOnly?'local':'source'}`,taskSignal=>this.loadBrick(block,taskSignal,{localOnly,priority}),{signal,priority,retainOnAbort});
+ }
+ async loadBrick(block,signal,{localOnly=false,priority='high'}={}){
+  checkFineAbort(signal);const cached=this.cache.get(block.id);if(cached)return cached;
   const r=block.record,url=new URL(r.path,this.base);url.searchParams.set('v',r.sha256.slice(0,16));const key=url.href;
   let encoded=await this.disk.get(key),fromDisk=!!encoded;checkFineAbort(signal);
   if(encoded&&(encoded.byteLength!==r.bytes||await hash(encoded)!==r.sha256)){await this.disk.remove(key);encoded=null;fromDisk=false;}
@@ -114,6 +122,7 @@ export class FineVolumeBackend {
   const stream=new Blob([encoded]).stream().pipeThrough(new DecompressionStream('gzip'));
   const data=await this.readBody(new Response(stream),this.manifest.decodedBrickBytes,signal);checkFineAbort(signal);
   if(await hash(data)!==r.rawSha256)throw new Error('Decoded fine scan checksum failed.');
+  checkFineAbort(signal);
   if(!fromDisk)this.disk.put(key,encoded);
   return this.remember(block.id,data);
  }
@@ -142,21 +151,29 @@ export class FineVolumeBackend {
   while(this.preparedBytes>this.preparedLimit){const first=this.prepared.keys().next().value;this.preparedBytes-=this.prepared.get(first).data.byteLength;this.prepared.delete(first);}
   safe(onProgress,{ready:1,total:1,phase:'complete',bytes:record.bytes});return result;
  }
- async samplePlane(input,{signal,onProgress,spacingUm=this.manifest.sourceSpacingUm||79.4,exactRaster=false,persistSection=false}={}){
+ async boundedPreparedPlane(record,plane,{signal,onProgress}={}){
+  const controller=new AbortController(),abort=()=>controller.abort(signal?.reason||fineAbort());
+  signal?.addEventListener('abort',abort,{once:true});if(signal?.aborted)abort();
+  const timer=setTimeout(()=>{const error=new Error('The prepared fine plane stopped responding. Move the probe or retry the view.');error.name='TimeoutError';controller.abort(error);},this.transferTimeoutMs);
+  try{return await withAbort(this.preparedPlane(record,plane,{signal:controller.signal,onProgress}),controller.signal);}
+  finally{clearTimeout(timer);signal?.removeEventListener('abort',abort);}
+ }
+ async samplePlane(input,{signal,onProgress,spacingUm=this.manifest.sourceSpacingUm||79.4,exactRaster=false,persistSection=false,residentOnly=false,retainTransfers=false}={}){
   checkFineAbort(signal);const plane=validFinePlane(input);
   const preset=this.manifest.preparedPlanes?.find(p=>sameFinePlane(p.plane,plane,exactRaster?1e-8:1e-7))||(!exactRaster&&this.manifest.preparedPlanes?.find(p=>reusableFineSection(p.plane,plane,fineSourceExtent(this.manifest))));
   // The original raster remains in its original coordinate frame. A sweep
   // inside this plane therefore reuses native pixels without another download,
   // second resampling pass, or a false claim that an old image is a new section.
   // Exact-raster consumers instead sample source bricks when axes/crop differ.
-  if(preset)return this.preparedPlane(preset,orientFineSection(preset.plane,plane),{signal,onProgress});
+  if(preset&&(!residentOnly||this.prepared.has(preset.id)))return this.boundedPreparedPlane(preset,orientFineSection(preset.plane,plane),{signal,onProgress});
   const started=performance.now(),plan=planFinePlane(this.manifest,plane,{spacingUm});
   if(exactRaster&&persistSection){
    const saved=await this.sectionStore.get(plane,plan,{signal});checkFineAbort(signal);
    if(saved){safe(onProgress,{ready:1,total:1,phase:'complete',local:true,savedSection:true,bytes:0});return saved;}
   }
-  const out=new Uint8Array(plan.width*plan.height);
   const resident=plan.blocks.every(block=>this.cache.has(block.id));
+  if(residentOnly&&!resident)return null;
+  const out=new Uint8Array(plan.width*plan.height);
   if(!resident)await this.disk.init();checkFineAbort(signal);
   const local=resident||plan.blocks.every(block=>{if(this.cache.has(block.id))return true;const url=new URL(block.record.path,this.base);url.searchParams.set('v',block.record.sha256.slice(0,16));return this.disk.items.has(url.href);});
   // Start cold reads first. While they wait on transport/decompression, other
@@ -165,18 +182,18 @@ export class FineVolumeBackend {
   const blocks=[...plan.blocks.filter(block=>!this.cache.has(block.id)),...plan.blocks.filter(block=>this.cache.has(block.id))],release=this.protect(plan.blocks);
   let index=0,ready=0,completedBytes=0,lastYield=performance.now(),lastProgress=0;
   safe(onProgress,{ready,total:plan.blocks.length,phase:resident?'sampling':'bricks',local,resident,bytes:0});
-  const run=async taskSignal=>{while(index<blocks.length){checkFineAbort(taskSignal);const block=blocks[index++],data=await this.getBrick(block,taskSignal);checkFineAbort(taskSignal);sampleFineBrick(plan,block,data,out);ready++;completedBytes+=block.record.bytes;
+  const run=async taskSignal=>{while(index<blocks.length){checkFineAbort(taskSignal);const block=blocks[index++],data=await this.getBrick(block,taskSignal,{retainOnAbort:retainTransfers,residentOnly});checkFineAbort(taskSignal);if(!data){const error=new Error('The moving fine plane left the resident cache.');error.name='FineCacheMiss';throw error;}sampleFineBrick(plan,block,data,out);ready++;completedBytes+=block.record.bytes;
    const now=performance.now();if(now-lastProgress>75||ready===plan.blocks.length){lastProgress=now;safe(onProgress,{ready,total:plan.blocks.length,phase:resident?'sampling':'bricks',local,resident,bytes:completedBytes});}
    if(now-lastYield>8){lastYield=now;await tick();}
   }};
-  try{await runFineTasks(Math.min(this.transferPolicy.foreground,blocks.length),run,signal);checkFineAbort(signal);}finally{release();}
+  try{await runFineTasks(Math.min(this.transferPolicy.foreground,blocks.length),run,signal);checkFineAbort(signal);}catch(error){if(residentOnly&&error.name==='FineCacheMiss')return null;throw error;}finally{release();}
   safe(onProgress,{ready,total:plan.blocks.length,phase:'complete',local:true,resident:true,bytes:completedBytes});
   const sourceSpacingUm=this.manifest.sourceSpacingUm||79.4;
   const result={data:out,width:plan.width,height:plan.height,plane,spacingUm:Math.max(...plan.spacingUmXY),sourceSpacingUm,spacingUmXY:plan.spacingUmXY,complete:true,cleaned:true,source:`Measured ${sourceSpacingUm} µm volume · trilinear reformat`,brickCount:plan.blocks.length,sourceElapsedMs:performance.now()-started};
   if(exactRaster&&persistSection)this.sectionStore.save(result,plan);
   return result;
  }
- async warmPlane(input,{signal,localOnly=true,paddingMm=3}={}){
+ async warmPlane(input,{signal,localOnly=true,paddingMm=3,retainTransfers=false,currentPlane=false}={}){
   checkFineAbort(signal);const plane=validFinePlane(input),plans=[planFinePlane(this.manifest,plane,{spacingUm:Math.max(this.manifest.sourceSpacingUm,500)})];
   if(plane.normal&&paddingMm>0)for(const sign of [-1,1])plans.push(planFinePlane(this.manifest,{...plane,center:plane.center.map((v,i)=>v+plane.normal[i]*sign*paddingMm/this.manifest.longestMm)},{spacingUm:Math.max(this.manifest.sourceSpacingUm,500)}));
   const blocks=new Map();for(const block of plans[0].blocks)blocks.set(block.id,block);
@@ -190,11 +207,11 @@ export class FineVolumeBackend {
   if(!localOnly)queue.length=Math.min(queue.length,maximum);
   const run=async taskSignal=>{while(index<queue.length){
    checkFineAbort(taskSignal);if(ready>=maximum)break;const block=queue[index++];
-   if(await this.getBrick(block,taskSignal,{localOnly,priority:'low'}))ready++;checked++;
+   if(await this.getBrick(block,taskSignal,{localOnly,priority:currentPlane?'high':'low',retainOnAbort:retainTransfers}))ready++;checked++;
    if(performance.now()-lastYield>6){await tick();lastYield=performance.now();}
   }};
-  await runFineTasks(Math.min(this.transferPolicy.background,queue.length),run,signal);
+  await runFineTasks(Math.min(currentPlane?this.transferPolicy.foreground:this.transferPolicy.background,queue.length),run,signal);
   return {ready,checked,localOnly,...this.getStatus()};
  }
- getStatus(){return {decodedBytes:this.bytes,decodedLimit:this.limit,decodedHits:this.decodedHits,diskHits:this.diskHits,preparedBytes:this.preparedBytes,persistentBytes:this.disk.bytes,persistentAvailable:this.disk.available,networkBytes:this.networkBytes,transferPolicy:{...this.transferPolicy},...this.sectionStore.getStatus()};}
+ getStatus(){return {decodedBytes:this.bytes,decodedLimit:this.limit,decodedHits:this.decodedHits,diskHits:this.diskHits,preparedBytes:this.preparedBytes,persistentBytes:this.disk.bytes,persistentAvailable:this.disk.available,networkBytes:this.networkBytes,transferPolicy:{...this.transferPolicy},...this.brickQueue.getStatus(),...this.sectionStore.getStatus()};}
 }

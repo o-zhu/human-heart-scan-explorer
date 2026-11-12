@@ -6,6 +6,7 @@ import {readFileSync} from 'node:fs';
 import {FineSurfacePass,FineSurfaceController,compactSurfaceEnabled} from '../public/fine-surface.js';
 import {getDeviceResourcePolicy} from '../public/device-resources.js';
 import {ActiveLoadWatchdog} from '../public/load-watchdog.js';
+import {ScanActivity} from '../public/download-priority.js';
 
 const domPath=process.argv[2];if(!domPath)throw new Error('Pass the installed LinkeDOM ESM entry point.');
 const {parseHTML}=await import(pathToFileURL(domPath));
@@ -19,13 +20,15 @@ const decoded=()=>({buffer:new ArrayBuffer(68),vertexCount:2,indexCount:3,positi
 const gentleProfileUrl=compactSurfaceEnabled?'./assets/display-compact-v29/surface-manifest.json':'./assets/fine-surface-v23/manifest.json';
 const isSurfaceManifest=url=>String(url).includes('fine-surface')||String(url).includes('display-compact-v29/surface-manifest');
 
-function gpu({failProgram=0,nullTexture=false}={}){
- const live=new Set(),deleted=[],state={vao:null},events=[];let sequence=0,programs=0;
+function gpu({failProgram=0,nullTexture=false,manualFences=false}={}){
+ const live=new Set(),deleted=[],state={vao:null,contextLost:false,manualFences},events=[],fences=[];let sequence=0,programs=0;
  const resource=kind=>{const r={kind,id:++sequence};live.add(r);return r;};
  const destroy=r=>{if(r){live.delete(r);deleted.push(r);}};
- const gl={NO_ERROR:0,UNSIGNED_SHORT:5123,SHORT:5122,UNSIGNED_INT:5125,ARRAY_BUFFER:34962,ELEMENT_ARRAY_BUFFER:34963,STATIC_DRAW:35044,TEXTURE_2D:3553,
+ const gl={NO_ERROR:0,UNSIGNED_BYTE:5121,UNSIGNED_SHORT:5123,SHORT:5122,UNSIGNED_INT:5125,ARRAY_BUFFER:34962,ELEMENT_ARRAY_BUFFER:34963,STATIC_DRAW:35044,TEXTURE_2D:3553,
+  SYNC_GPU_COMMANDS_COMPLETE:37143,ALREADY_SIGNALED:37146,CONDITION_SATISFIED:37148,TIMEOUT_EXPIRED:37147,WAIT_FAILED:37149,
   TEXTURE_MIN_FILTER:10241,TEXTURE_MAG_FILTER:10240,TEXTURE_WRAP_S:10242,TEXTURE_WRAP_T:10243,NEAREST:9728,CLAMP_TO_EDGE:33071,
-  createVertexArray:()=>resource('vao'),bindVertexArray:vao=>{state.vao=vao;},createBuffer:()=>resource('buffer'),bindBuffer(){},bufferData(){},enableVertexAttribArray(){},vertexAttribPointer(){},
+  createVertexArray:()=>resource('vao'),bindVertexArray:vao=>{state.vao=vao;},createBuffer:()=>resource('buffer'),bindBuffer(){},bufferData(target,data){events.push({type:'bufferData',target,bytes:typeof data==='number'?data:data.byteLength});},bufferSubData(target,offset,data){events.push({type:'bufferSubData',target,offset,bytes:data.byteLength});},enableVertexAttribArray(){},vertexAttribPointer(){},
+  fenceSync(){const fence=resource('sync');fence.signaled=!state.manualFences;fences.push(fence);return fence;},clientWaitSync:fence=>state.contextLost?37149:fence.signaled?37148:37147,deleteSync:destroy,flush(){events.push({type:'flush'});},isContextLost:()=>state.contextLost,
   getUniformLocation:(program,name)=>({program,name}),getError:()=>0,
   createTexture:()=>nullTexture?null:resource('texture'),createFramebuffer:()=>resource('framebuffer'),createRenderbuffer:()=>resource('renderbuffer'),bindTexture(){},texParameteri(){},
   deleteBuffer:destroy,deleteVertexArray:destroy,deleteProgram:destroy,deleteTexture:destroy,deleteFramebuffer:destroy,deleteRenderbuffer:destroy};
@@ -33,27 +36,29 @@ function gpu({failProgram=0,nullTexture=false}={}){
   data:new Uint8Array([3,19,126,252]),cap:{data:new Uint8Array([19,126]),width:2,height:1},
   createProgram(){if(++programs===failProgram)throw new Error('Fixture program allocation failed');return resource('program');},
   requestRender(reason){events.push({type:'render',reason});},set(patch){Object.assign(this.settings,patch);events.push({type:'settings',patch:{...patch}});}};
- return {renderer,live,deleted,state,events};
+ return {renderer,live,deleted,state,events,fences,releaseFences(){for(const fence of fences)fence.signaled=true;}};
 }
 
 function environment(options={}){
  const {document,window}=parseHTML(pageMarkup);
  Object.defineProperty(window.HTMLSelectElement.prototype,'value',{configurable:true,get(){return this._testValue??this.querySelector('option')?.value??'';},set(value){this._testValue=String(value);}});
- const names=['document','fetch','Worker','location','localStorage'],previous=Object.fromEntries(names.map(name=>[name,Object.getOwnPropertyDescriptor(globalThis,name)]));
+ const names=['document','fetch','Worker','location','localStorage','requestAnimationFrame'],previous=Object.fromEntries(names.map(name=>[name,Object.getOwnPropertyDescriptor(globalThis,name)]));
  const workers=[],notifications=[],fetches=[],preferences=options.preferences||new Map();
  Object.assign(globalThis,{localStorage:{getItem:key=>preferences.get(key)??null,setItem:(key,value)=>preferences.set(key,String(value))},document,location:{href:options.url||'https://fixture.invalid/'},fetch:async url=>{
   fetches.push(url);if(options.fetch)return options.fetch(url);
   return new Response(JSON.stringify((String(url).includes('fine-surface-v23')||String(url).includes('display-compact-v29/surface-manifest'))?(options.gentleManifest||gentleManifest):(options.manifest||manifest)));
  },
-  Worker:class{constructor(){workers.push(this);}postMessage(message){if(options.failPostMessage)throw new Error('Fixture worker message failed');this.message=message;}terminate(){this.terminated=true;}finish(message){this.onmessage({data:message});}}});
+  Worker:class{constructor(){this.messages=[];workers.push(this);}postMessage(message){if(options.failPostMessage)throw new Error('Fixture worker message failed');this.message=message;this.messages.push(message);}terminate(){this.terminated=true;}finish(message){this.onmessage({data:message});}}});
+ if(options.requestAnimationFrame)globalThis.requestAnimationFrame=options.requestAnimationFrame;
  const context=gpu(options),mount=document.getElementById('fineSurfaceControls');
+ context.renderer.canvas=document.getElementById('volumeCanvas');
  Object.assign(context.renderer.settings,options.settings);
  if(options.reconstructionHidden)document.getElementById('reconstructionPanel').hidden=true;
  mount.dataset.gentleReady=String(options.gentleReady!==false);
  if(options.downloadMb!==undefined)mount.dataset.gentleDownloadMb=String(options.downloadMb);
  document.getElementById('resolutionLabel').textContent='317.6 µm · 475 × 475 × 530';
  if(options.noGL)context.renderer.gl=null;
- const controller=new FineSurfaceController({renderer:context.renderer,donor:{id:options.donorId||'ladaf-2021-17'},mount,toast:message=>notifications.push(message),autoStart:options.autoStart??false,debrisLoader:options.debrisLoader||(async()=>null),resourcePolicy:options.resourcePolicy,watchdogFactory:options.watchdogFactory});
+ const controller=new FineSurfaceController({renderer:context.renderer,donor:{id:options.donorId||'ladaf-2021-17'},mount,toast:message=>notifications.push(message),autoStart:options.autoStart??false,debrisLoader:options.debrisLoader||(async()=>null),streamDebrisLoader:options.streamDebrisLoader,resourcePolicy:options.resourcePolicy,watchdogFactory:options.watchdogFactory,activity:options.activity,stagingCleanup:options.stagingCleanup});
  // This suite isolates model selection/commit. Exact prepared-mask bytes and
  // graphics bindings are exercised by the reviewed-mask atlas integration suite.
  if(controller.localRefinement){
@@ -64,35 +69,144 @@ function environment(options={}){
  }
  const choose=id=>{controller.select.value=id;return controller.choose(id);};
  return {...context,controller,document,window,workers,notifications,fetches,preferences,choose,
-  close(){controller.loadAbort?.abort();controller.loadWatchdog?.close();context.renderer.fineSurface?.dispose?.();for(const name of names){if(previous[name])Object.defineProperty(globalThis,name,previous[name]);else delete globalThis[name];}}};
+  close(){controller.disconnectLifecycle?.();controller.revision++;controller.loadAbort?.abort();controller.loadWatchdog?.close();context.renderer.fineSurface?.dispose?.();for(const name of names){if(previous[name])Object.defineProperty(globalThis,name,previous[name]);else delete globalThis[name];}}};
 }
 
-test('iPad startup redirects a saved Ultra preference before any large surface or interior request',async()=>{
+// Padded HFM layout selects the >64 MiB controller pathway without allocating a
+// full model. Actual bounded decoding/source hashes are covered by worker tests.
+const streamedSourceSha='d'.repeat(64),streamedBytes=64*1024*1024+68;
+const streamedLayout={vertexCount:2,indexCount:3,positionOffset:64*1024*1024+32,normalOffset:64*1024*1024+44,indexOffset:64*1024*1024+56,geometrySourceSha256:streamedSourceSha};
+const streamedManifest=(compact=false)=>({...gentleManifest,lods:[{...gentleManifest.lods[0],decodedBytes:streamedBytes,decodedSha256:streamedSourceSha,...(compact?{compactTransport:{assetBaseUrl:'/api/display-compact-v29/mesh/',parts:[],decodedBytes:streamedBytes,decodedSha256:streamedSourceSha,sourceDecodedSha256:streamedSourceSha}}:{})}]});
+const streamCleanup=async()=>({flags:new Uint8Array([0,0]),report:{fixture:true}});
+function streamEnvironment(options={}){return environment({gentleManifest:streamedManifest(),streamDebrisLoader:streamCleanup,...options});}
+function streamStarted(worker){return worker.messages.find(message=>message.type==='surface-ack'&&message.sequence===0);}
+function streamAck(worker,sequence){return worker.messages.find(message=>message.type==='surface-ack'&&message.sequence===sequence);}
+async function sendStreamStart(f,worker=f.workers.at(-1)){
+ worker.finish({type:'surface-start',sequence:0,expectedBytes:streamedBytes,layout:streamedLayout});await until(()=>streamStarted(worker));
+}
+async function sendStreamGeometry(f,worker=f.workers.at(-1)){
+ await sendStreamStart(f,worker);
+ for(const [index,kind,values]of [[1,'position',new Uint16Array([0,0,0,65535,65535,65535])],[2,'normal',new Int16Array([0,0,32767,0,0,32767])],[3,'index',new Uint32Array([0,1,0])]]){
+  worker.finish({type:'surface-chunk',sequence:index,kind,byteOffset:0,buffer:values.buffer});await until(()=>streamAck(worker,index));
+ }
+}
+function sendStreamComplete(worker,patch={}){worker.finish({type:'surface-complete',vertexCount:2,indexCount:3,geometrySourceSha256:streamedSourceSha,debrisValidated:true,debrisFlags:new Uint8Array([0,0]),...patch});}
+async function presentStreamedSurface(f){
+ await until(()=>f.renderer.fineSurface?.lod.id==='gentle');const pass=f.renderer.fineSurface;
+ assert.equal(typeof pass.onPresented,'function');const presented=pass.onPresented;pass.onPresented=null;presented();return pass;
+}
+function retainedCompact(f){const pass=new FineSurfacePass(f.renderer,decoded(),manifest,manifest.lods.find(lod=>lod.id==='detail'));f.renderer.fineSurface=pass;f.controller.sync();return pass;}
+
+test('v47 desktop-identified iPad migrates legacy forced detail and progressively attempts complete Ultra',async()=>{
  const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15',platform:'MacIntel',maxTouchPoints:5}});
- const preferences=new Map([['heart-explorer:surface:v25:ladaf-2021-17','gentle']]);
+ const preferences=new Map([['heart-explorer:surface:v25:ladaf-2021-17','gentle'],['heart-explorer:surface:mobile:v43:ladaf-2021-17','detail']]);
  const f=environment({resourcePolicy,preferences,autoStart:true});try{
   await until(()=>f.workers.length===1);
   assert.equal(f.controller.select.value,'detail');
   assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/detail.hfm.gz');
   assert.ok(!f.fetches.some(url=>/display-compact|fine-surface-v23|cleanup-v30|reviewed-mask/.test(String(url))));
-  assert.equal(f.controller.gentleOption.disabled,true);
-  assert.equal(f.controller.gentleButton.querySelector('strong').textContent,'Mobile Detail');
+  assert.equal(f.controller.gentleOption.disabled,false);
+  assert.equal(f.controller.gentleButton.querySelector('strong').textContent,'Ultra-High Fidelity');
+  assert.equal(f.controller.compactButton.hidden,false);
   f.workers[0].finish(decoded());await f.controller.ready;
   assert.equal(f.renderer.fineSurface.lod.id,'detail');
   assert.equal(f.controller.localRefinement.current,null);
   assert.equal(preferences.get('heart-explorer:surface:v25:ladaf-2021-17'),'gentle','Automatic device adaptation preserves the saved desktop preference.');
-  assert.equal(preferences.get(f.controller.preferenceKey),undefined,'The automatic mobile default is not recorded as an explicit choice.');
+  assert.equal(preferences.get(f.controller.preferenceKey),'auto','Only ambiguous legacy mobile intent is migrated; new choices use the v47 key.');
+  const compact=f.renderer.fineSurface;
+  await until(()=>f.workers.length===2);assert.equal(f.workers[1].message.url,'https://fixture.invalid/fixture/gentle.hfm.gz');
+  assert.equal(f.workers[1].message.surfaceLookahead,false);assert.equal(f.workers[1].message.boundedSurfaceHash,true);assert.equal(f.renderer.fineSurface,compact);
+  f.workers[1].finish(decoded());await f.controller.upgradeReady;
+  assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.ok(f.controller.localRefinement.current);assert.match(f.controller.badge.textContent,/Ultra-High Fidelity/);
  }finally{f.close();}
 });
 
-test('an explicit Ultra request on mobile cannot start the oversized decoder or full-source fallback',async()=>{
- const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'iPhone',platform:'iPhone'}});
- const f=environment({resourcePolicy,manifest:{...manifest,lods:manifest.lods.map(l=>({...l,decodedBytes:437470524}))}});try{
-  await f.choose('gentle');
-  assert.equal(f.workers.length,0);
-  assert.match(f.controller.status.textContent,/device memory budget/);
-  assert.ok(!f.fetches.some(url=>String(url).includes('fine-surface-v23')));
-  assert.equal(f.renderer.fineSurface,undefined);
+test('v48 explicit Ultra on phones and known low-memory devices uses the acknowledged stream instead of a full CPU result',async()=>{
+ for(const navigator of [{userAgent:'iPhone',platform:'iPhone'},{userAgent:'Android Mobile',deviceMemory:2},{userAgent:'Desktop',deviceMemory:4}]){
+  const resourcePolicy=getDeviceResourcePolicy({navigator}),f=streamEnvironment({resourcePolicy});try{
+   const pending=f.choose('gentle');await until(()=>f.workers.length===1);
+   assert.equal(f.workers[0].message.expectedBytes,streamedBytes);assert.equal(f.workers[0].message.surfaceLookahead,false);assert.equal(f.workers[0].message.streamSurface,true);
+   await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await presentStreamedSurface(f);await pending;
+   assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.ok(f.controller.localRefinement.current);
+   assert.equal(f.renderer.fineSurface.streamGeometry.ready,true);assert.ok(f.events.filter(event=>event.type==='bufferData').every(event=>event.bytes<1024));
+   assert.equal(f.preferences.get(f.controller.preferenceKey),'gentle');
+  }finally{f.close();}
+ }
+});
+
+test('v47 legacy mobile volume stays opted out and new explicit compact choices override migration on later visits',async()=>{
+ const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'iPhone',platform:'iPhone'}}),old='heart-explorer:surface:mobile:v43:ladaf-2021-17',current='heart-explorer:surface:mobile:v47:ladaf-2021-17';
+ for(const [legacy,newValue,expected]of [['volume',undefined,'volume'],['detail','detail','detail'],['balanced','balanced','balanced'],['detail','volume','volume']]){
+  const preferences=new Map([[old,legacy]]);if(newValue)preferences.set(current,newValue);
+  const f=environment({resourcePolicy,preferences,autoStart:true});try{
+   if(expected==='volume'){await f.controller.ready;assert.equal(f.workers.length,0);}
+   else{await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,expected);f.workers[0].finish(decoded());await f.controller.ready;}
+   await tick();assert.equal(f.controller.upgradeReady,undefined);assert.equal(preferences.get(current),newValue||'volume');
+   assert.equal(preferences.get(old),legacy,'Legacy provenance remains intact.');
+  }finally{f.close();}
+ }
+});
+
+test('v47 known low-memory mobile fresh visits and legacy balanced choices both attempt Ultra after the balanced intermediate',async()=>{
+ const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'Android Mobile',deviceMemory:2,hardwareConcurrency:4}});
+ for(const legacy of [undefined,'balanced']){
+  const preferences=new Map(legacy?[['heart-explorer:surface:mobile:v43:ladaf-2021-17',legacy]]:[]),f=environment({resourcePolicy,preferences,autoStart:true});try{
+   await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,'balanced');f.workers[0].finish(decoded());await f.controller.ready;
+   const compact=f.renderer.fineSurface;await until(()=>f.workers.length===2);assert.equal(f.controller.select.value,'gentle');assert.equal(f.renderer.fineSurface,compact);
+   f.workers[1].finish(decoded());await f.controller.upgradeReady;assert.equal(f.renderer.fineSurface.lod.id,'gentle');
+  }finally{f.close();}
+ }
+});
+
+test('v47 recovery keeps the smaller cleaned pathway and saved Ultra intent without an automatic retry loop',async()=>{
+ const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'iPhone'},recovery:true}),preferences=new Map([['heart-explorer:surface:mobile:v47:ladaf-2021-17','gentle']]);
+ const f=environment({resourcePolicy,preferences,autoStart:true});try{
+  await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,'balanced');f.workers[0].finish(decoded());await f.controller.ready;await tick();
+  assert.equal(f.workers.length,1);assert.equal(f.controller.upgradeReady,undefined);assert.equal(f.renderer.fineSurface.lod.id,'balanced');
+  assert.equal(f.preferences.get(f.controller.preferenceKey),'gentle');assert.match(f.controller.gentleOption.textContent,/recovery mode/);
+ }finally{f.close();}
+});
+
+test('v47 a complete sparse atlas is accepted while four-field cleanup is upgraded before any Ultra commit',async()=>{
+ for(const count of [4,8]){
+  const f=environment({resourcePolicy:getDeviceResourcePolicy({navigator:{userAgent:'iPhone'}})});let upgrades=0;
+  f.renderer.lumenCleanup={sparseAtlas:{manifest:{fields:new Array(count)}}};
+  f.controller.lumenCleanup.setEnabled=async()=>{upgrades++;f.renderer.lumenCleanup={sparseAtlas:{manifest:{fields:new Array(8)}}};};
+  try{
+   const pending=f.choose('gentle');await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await pending;
+   assert.equal(upgrades,count===4?1:0);assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.ok(f.controller.localRefinement.current);
+  }finally{f.close();}
+ }
+});
+
+test('v47 lab priority pauses full reviewed cleanup and resumes the same decoded Ultra over the cleaned intermediate',async()=>{
+ const f=environment({resourcePolicy:getDeviceResourcePolicy({navigator:{userAgent:'iPhone'}}),autoStart:true}),signals=[];
+ try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;const compact=f.renderer.fineSurface;
+  f.renderer.lumenCleanup={sparseAtlas:{manifest:{fields:new Array(4)}}};
+  f.controller.lumenCleanup.setEnabled=async(_enabled,{signal})=>{
+   signals.push(signal);
+   if(signals.length===1){await new Promise(resolve=>signal.addEventListener('abort',resolve,{once:true}));return;}
+   f.renderer.lumenCleanup={sparseAtlas:{manifest:{fields:new Array(8)}}};
+  };
+  await until(()=>f.workers.length===2);f.workers[1].finish(decoded());await until(()=>signals.length===1);
+  f.controller.setWorkspaceActive(false);await until(()=>f.controller.workspaceWaiters.size===1);
+  assert.equal(signals[0].aborted,true);assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.controller.localRefinement.current,null);
+  f.controller.setWorkspaceActive(true);await f.controller.upgradeReady;
+  assert.equal(signals.length,2);assert.equal(f.workers.length,2);assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(f.controller.finalCleanupAbort,null);
+ }finally{f.close();}
+});
+
+test('v47 failed full cleanup leaves the actual compact cavity cleanup active and accurately labeled',async()=>{
+ const f=environment({resourcePolicy:getDeviceResourcePolicy({navigator:{userAgent:'iPhone'}}),autoStart:true});
+ try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;const compact=f.renderer.fineSurface;
+  f.renderer.lumenCleanup={sparseAtlas:{manifest:{fields:new Array(4)}}};f.renderer.reviewedMaskAtlas={ready:true};
+  f.controller.lumenCleanup.setEnabled=async()=>{f.controller.lumenCleanup.error='Fixture full atlas unavailable';};
+  await until(()=>f.workers.length===2);f.workers[1].finish(decoded());await f.controller.upgradeReady;
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(f.renderer.settings.lumenCleanupEnabled,true);assert.equal(f.controller.lumenCleanup.compact,true);
+  assert.equal(f.controller.refinementNotice.dataset.state,'active');assert.match(f.controller.refinementStatus.textContent,/masks are active on the smaller surface/);
+  assert.equal(f.controller.retrySurface,'gentle');assert.match(f.controller.status.textContent,/Fixture full atlas unavailable/);assert.match(f.controller.badge.textContent,/Mobile Detail/);
  }finally{f.close();}
 });
 
@@ -339,7 +453,9 @@ test('download progress cannot install partial geometry or relabel a superseding
   assert.equal(worker.terminated,undefined);assert.equal(f.renderer.fineSurface,undefined);assert.equal(f.live.size,0);
   assert.match(f.controller.status.textContent,/16.0 of 48.0 MB/);
   worker.finish({type:'progress',phase:'decode',loadedBytes:32,totalBytes:32});
-  assert.equal(worker.terminated,undefined);assert.match(f.controller.status.textContent,/Preparing the downloaded surface/);
+  assert.equal(worker.terminated,undefined);assert.match(f.controller.loadStatus.textContent,/Loading and preparing surface/);
+  assert.match(f.controller.loadStatus.textContent,/16.0 of 48.0 MB/);
+  assert.notEqual(f.controller.loadProgress.getAttribute('value'),null);
   await f.choose('volume');const afterCancel=f.controller.status.textContent;
   worker.finish({type:'progress',phase:'download',loadedBytes:32000000,totalBytes:48000000});await pending;
   assert.equal(f.controller.status.textContent,afterCancel);assert.equal(f.renderer.fineSurface,undefined);
@@ -367,7 +483,7 @@ test('fresh startup loads Compact Detail behind the usable volume without changi
   assert.equal(f.fetches.some(url=>url===gentleProfileUrl),false,'Fresh startup must not request the full Ultra manifest.');
   assert.match(f.controller.loadSource.textContent,/Showing: Interactive Volume/);
   const worker=f.workers[0];worker.finish({type:'progress',phase:'download',loadedBytes:16e6,totalBytes:48e6});
-  assert.match(f.controller.loadStatus.textContent,/16.0 of 48.0 MB/);assert.equal(f.controller.loadProgress.value,1/3);
+  assert.match(f.controller.loadStatus.textContent,/16.0 of 48.0 MB/);assert.ok(Math.abs(f.controller.loadProgress.value-.7/3)<1e-12);
   f.renderer.set({mode:2});worker.finish(decoded());await f.controller.ready;
   assert.equal(f.renderer.settings.mode,2,'A later module switch survives completion.');
   for(const key of ['threshold','cleanupEnabled','showPlanes'])assert.equal(f.renderer.settings[key],restored[key]);
@@ -387,7 +503,7 @@ test('an explicit selection cancels the queued automatic default and persists ac
   await f.controller.ready;assert.equal(f.controller.select.value,'volume');assert.equal(f.fetches.length,0);
   const reset=f.controller.resetDefaults();await until(()=>f.workers.length===1);
   f.workers[0].finish(decoded());await reset;
-  assert.equal(f.renderer.fineSurface.lod.id,'detail');assert.equal(preferences.get(f.controller.preferenceKey),'detail');
+  assert.equal(f.renderer.fineSurface.lod.id,'detail');assert.equal(preferences.get(f.controller.preferenceKey),'auto');
   const retained=f.renderer.fineSurface;await f.choose('volume');await f.controller.resetDefaults();
   assert.equal(f.renderer.fineSurface,retained);assert.equal(retained.enabled,true);assert.equal(f.workers.length,1);
  }finally{f.close();}
@@ -530,7 +646,7 @@ test('the dedicated reset restores the compact startup while camera integrations
   assert.equal(f.renderer.settings.mode,0);assert.equal(f.renderer.settings.debrisCleanupEnabled,true);
   f.workers[0].finish(decoded());await until(()=>!f.controller.loading);
   assert.equal(f.renderer.fineSurface.activeFor(f.renderer),true);
-  assert.equal(f.preferences.get(f.controller.preferenceKey),'detail');
+  assert.equal(f.preferences.get(f.controller.preferenceKey),'auto');
   assert(f.document.getElementById('nativeMainDetailMount'));
  }finally{f.close();}
 });
@@ -561,6 +677,18 @@ test('a failed compact transport falls back to preserved original HFM without re
   assert.equal(f.renderer.settings.threshold,.43);assert.equal(f.renderer.settings.mode,1);
   assert.equal(f.renderer.fineSurface.lod.compactTransport,undefined);
  }finally{f.close();}
+});
+
+test('v47 an allocation or worker failure retains the mobile intermediate without retrying the larger source transport',async()=>{
+ for(const fail of [worker=>worker.finish({error:'Array buffer allocation failed',resourceFailure:true}),worker=>worker.onerror(),worker=>worker.onmessageerror()]){
+  const compact={assetBaseUrl:'/api/display-compact-v29/mesh/',parts:[],decodedBytes:68,decodedSha256:'c'.repeat(64)},compactManifest={...gentleManifest,lods:[{...gentleManifest.lods[0],compactTransport:compact,decodedSha256:compact.decodedSha256}]};
+  const f=environment({resourcePolicy:getDeviceResourcePolicy({navigator:{userAgent:'iPhone'}}),gentleManifest:compactManifest,autoStart:true});try{
+   await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;const intermediate=f.renderer.fineSurface,allocations=f.live.size;
+   await until(()=>f.workers.length===2);fail(f.workers[1]);await f.controller.upgradeReady;
+   assert.equal(f.workers.length,2);assert.equal(f.fetches.some(url=>url==='./assets/fine-surface-v23/manifest.json'),false);
+   assert.equal(f.renderer.fineSurface,intermediate);assert.equal(f.live.size,allocations);assert.equal(f.controller.retrySurface,'gentle');assert.equal(f.controller.loadRetry.hidden,false);
+  }finally{f.close();}
+ }
 });
 
 test('cancelling during a lab-paused compact fallback cannot restart the original download',async()=>{
@@ -668,14 +796,14 @@ test('phone startup replaces the legacy volume default with an actually cleaned 
   f.lumen.setEnabled=async()=>{cleanupCalls++;await new Promise(resolve=>{release=resolve;});f.installed();};
   try{
    await until(()=>f.workers.length===1);
-   assert.equal(f.controller.select.value,resourcePolicy.defaultSurface);
-   assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/'+resourcePolicy.defaultSurface+'.hfm.gz');
+   assert.equal(f.controller.select.value,resourcePolicy.startupSurface);
+   assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/'+resourcePolicy.startupSurface+'.hfm.gz');
    assert.equal(f.renderer.settings.threshold,.28);
    f.workers[0].finish(decoded());await until(()=>release);
    assert.equal(f.renderer.fineSurface,undefined,'The smaller surface must wait for its cleanup too.');
    release();await f.controller.ready;
    assert.equal(cleanupCalls,1);assert.equal(f.renderer.fineSurface.activeFor(f.renderer),true);
-   assert.equal(f.controller.gentleButton.getAttribute('aria-pressed'),'true');
+   assert.equal(f.controller.compactButton.getAttribute('aria-pressed'),'true');
    assert.match(f.controller.badge.textContent,/Mobile Detail/);
    assert.equal(f.controller.refinementNotice.dataset.state,'active');
    assert.equal(f.controller.localRefinement.current,null);
@@ -803,16 +931,16 @@ test('v45 a stalled surface worker is terminated and cannot publish or relabel a
  }finally{f.close();}
 });
 
-test('v45 a full download becomes indeterminate during interior preparation and a stuck interior cannot install partial geometry',async()=>{
+test('v48 a full download keeps one determinate progress bar during interior preparation and a stuck interior cannot install partial geometry',async()=>{
  const time=surfaceWatchdogFixture(),blocked=unresolved();let requested=false,signal;
  const f=environment({watchdogFactory:time.watchdogFactory,ensureLocal:options=>{requested=true;signal=options.signal;f.controller.localRefinement.loading=blocked.promise;return blocked.promise;}});
  try{
   // LinkeDOM does not reflect HTMLProgressElement.value into its attribute.
-  // Reflect that browser property here so removal tests indeterminate state.
+  // Reflect that browser property to exercise the real determinate attribute.
   const progress=f.controller.loadProgress;Object.defineProperty(progress,'value',{configurable:true,get(){return Number(this.getAttribute('value')||0);},set(value){this.setAttribute('value',String(value));}});
   const pending=f.choose('gentle');await until(()=>f.workers.length===1);
-  f.workers[0].finish({type:'progress',phase:'download',loadedBytes:32,totalBytes:32});assert.equal(progress.getAttribute('value'),'1');
-  f.workers[0].finish(decoded());await until(()=>requested);assert.equal(progress.hasAttribute('value'),false);assert.match(progress.getAttribute('aria-label'),/interior model/);assert.match(f.controller.status.textContent,/finalized interior model/);
+  f.workers[0].finish({type:'progress',phase:'download',loadedBytes:32,totalBytes:32});assert.equal(progress.getAttribute('value'),'0.7');
+  f.workers[0].finish(decoded());await until(()=>requested);assert.equal(progress.hasAttribute('value'),true);assert.equal(progress.value,.91);assert.match(progress.getAttribute('aria-valuetext'),/interior surfaces/);assert.match(f.controller.status.textContent,/finalized interior model/);
   assert.equal(f.renderer.fineSurface,undefined);assert.equal(f.live.size,0);time.advance(50);await pending;
   assertSurfaceTimedOut(f,time,'gentle');assert.equal(signal.aborted,true);assert.equal(f.controller.localRefinement.loading,null);assert.equal(f.controller.localRefinement.current,null);assert.equal(f.renderer.fineSurface,undefined);assert.equal(f.live.size,0);assert.equal(f.controller.loadCompact.hidden,false);
   blocked.resolve();await tick();assert.equal(f.renderer.fineSurface,undefined);assert.equal(f.live.size,0);
@@ -852,16 +980,18 @@ test('v45 switching into a lab pauses the actual watchdog and returning resumes 
  }finally{f.close();}
 });
 
-test('v45 an explicit saved desktop Ultra preference is honored while the fresh default remains compact',async()=>{
+test('v46 a saved desktop Ultra preference starts compact then automatically upgrades',async()=>{
  const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'Desktop',deviceMemory:16,hardwareConcurrency:8}}),preferences=new Map([['heart-explorer:surface:v25:ladaf-2021-17','gentle']]);
  const f=environment({resourcePolicy,preferences,autoStart:true});
  try{
-  assert.equal(f.controller.startupSurface,'detail');await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,'gentle');assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/gentle.hfm.gz');assert.equal(f.fetches.some(url=>url===gentleProfileUrl),true);
-  f.workers[0].finish(decoded());await f.controller.ready;assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.ok(f.controller.localRefinement.current);assert.equal(preferences.get(f.controller.preferenceKey),'gentle');
+  assert.equal(f.controller.startupSurface,'detail');await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,'detail');assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/detail.hfm.gz');
+  f.workers[0].finish(decoded());await f.controller.ready;const compact=f.renderer.fineSurface;assert.equal(compact.lod.id,'detail');
+  await until(()=>f.workers.length===2);assert.equal(f.controller.select.value,'gentle');assert.equal(f.workers[1].message.url,'https://fixture.invalid/fixture/gentle.hfm.gz');assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);
+  f.workers[1].finish(decoded());await f.controller.upgradeReady;assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.ok(f.controller.localRefinement.current);assert.equal(preferences.get(f.controller.preferenceKey),'gentle');
  }finally{f.close();}
 });
 
-test('v45 a fresh desktop waits for compact reviewed cleanup and never requests the full interior model',async()=>{
+test('v46 a fresh desktop waits for compact reviewed cleanup before starting the full interior model',async()=>{
  const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'Desktop',deviceMemory:16,hardwareConcurrency:8}}),f=mobileCleanupEnvironment({resourcePolicy,autoStart:true,settings:{threshold:.32}});let release,calls=0;
  f.lumen.setEnabled=async()=>{calls++;await new Promise(resolve=>{release=resolve;});f.installed();};
  try{
@@ -869,5 +999,352 @@ test('v45 a fresh desktop waits for compact reviewed cleanup and never requests 
   f.workers[0].finish(decoded());await until(()=>release);assert.equal(f.live.size,0);assert.equal(f.renderer.fineSurface,undefined);assert.equal(f.controller.localRefinement.current,null);
   assert.equal(f.fetches.some(url=>url===gentleProfileUrl||/fine-surface-v23|local-surface-refinement|cleanup-v30/.test(String(url))),false);
   release();await f.controller.ready;assert.equal(calls,1);assert.equal(f.renderer.fineSurface.lod.id,'detail');assert.equal(f.renderer.fineSurface.activeFor(f.renderer),true);assert.equal(f.renderer.settings.lumenCleanupEnabled,true);assert.equal(f.controller.refinementNotice.dataset.state,'active');assert.equal(f.controller.localRefinement.current,null);
+ }finally{f.close();}
+});
+
+test('v46 a fresh default reaches Ultra automatically while the complete compact view remains visible',async()=>{
+ let releaseInterior;
+ const resourcePolicy=getDeviceResourcePolicy({navigator:{userAgent:'Desktop',deviceMemory:8,hardwareConcurrency:8}});
+ const f=environment({autoStart:true,resourcePolicy,ensureLocal:()=>new Promise(resolve=>{releaseInterior=()=>{f.controller.localRefinement.current={manifest:{extent:[1,1,1]},pieces:[]};resolve();};})});
+ try{
+  await until(()=>f.workers.length===1);assert.equal(f.workers[0].message.url,'https://fixture.invalid/fixture/detail.hfm.gz');
+  f.workers[0].finish(decoded());await f.controller.ready;const first=f.renderer.fineSurface;
+  assert.equal(first.lod.id,'detail');assert.equal(f.controller.localRefinement.current,null);
+  await until(()=>f.workers.length===2);assert.equal(f.controller.select.value,'gentle');
+  assert.equal(f.workers[1].message.surfaceLookahead,true);assert.equal(f.renderer.fineSurface,first);assert.match(f.controller.loadSource.textContent,/Compact Detail/);
+  f.workers[1].finish(decoded());await until(()=>releaseInterior);assert.equal(f.renderer.fineSurface,first);assert.equal(first.enabled,true);
+  releaseInterior();await f.controller.upgradeReady;
+  assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(first.enabled,true,'The small fallback stays alive until the first complete Ultra draw.');
+  f.renderer.fineSurface.onPresented();assert.equal(first.enabled,false);assert.equal(f.renderer.fineSurface.fallbackSurface,null);assert.match(f.controller.badge.textContent,/Ultra-High Fidelity/);
+  assert.equal(f.preferences.get(f.controller.preferenceKey),undefined,'An automatic upgrade is not written as explicit user intent.');
+ }finally{f.close();}
+});
+
+test('v46 choosing Compact Detail or volume after the first stage cancels the queued upgrade',async()=>{
+ for(const choice of ['detail','volume']){
+  const f=environment({autoStart:true});try{
+   await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;
+   await f.choose(choice);await f.controller.upgradeReady;
+   assert.equal(f.workers.length,1);assert.equal(f.controller.select.value,choice);assert.equal(f.preferences.get(f.controller.preferenceKey),choice);
+  }finally{f.close();}
+ }
+});
+
+test('v46 a failed automatic Ultra upgrade retains compact geometry and exposes a bounded retry',async()=>{
+ const f=environment({autoStart:true});try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;const first=f.renderer.fineSurface;
+  await until(()=>f.workers.length===2);f.workers[1].finish({error:'Fixture Ultra transfer failed'});await f.controller.upgradeReady;
+  assert.equal(f.renderer.fineSurface,first);assert.equal(first.enabled,true);assert.equal(f.controller.select.value,'detail');assert.equal(f.controller.retrySurface,'gentle');
+  assert.equal(f.controller.loadRetry.hidden,false);assert.match(f.controller.status.textContent,/Fixture Ultra transfer failed/);
+ }finally{f.close();}
+});
+
+test('v46 explicit saved smaller surface remains authoritative across fresh startup',async()=>{
+ const preferences=new Map([['heart-explorer:surface:v25:ladaf-2021-17','balanced']]),f=environment({autoStart:true,preferences});
+ try{
+  await until(()=>f.workers.length===1);assert.equal(f.controller.select.value,'balanced');f.workers[0].finish(decoded());await f.controller.ready;await tick();
+  assert.equal(f.workers.length,1);assert.equal(f.controller.upgradeReady,undefined);assert.equal(f.renderer.fineSurface.lod.id,'balanced');
+ }finally{f.close();}
+});
+
+test('v46 first-draw Ultra failure restores the retained compact surface and releases Ultra allocations',async()=>{
+ const f=environment({autoStart:true});try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;
+  const compact=f.renderer.fineSurface,smallAllocations=f.live.size;
+  await until(()=>f.workers.length===2);f.workers[1].finish(decoded());await f.controller.upgradeReady;
+  const ultra=f.renderer.fineSurface;assert.equal(ultra.fallbackSurface,compact);assert.ok(f.live.size>smallAllocations);
+  ultra.onError(new Error('Fixture first Ultra draw failed'));
+  assert.equal(ultra.enabled,false);assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.live.size,smallAllocations);
+  assert.equal(f.controller.select.value,'detail');assert.equal(f.controller.retrySurface,'gentle');assert.match(f.controller.status.textContent,/Compact Detail remains available/);
+ }finally{f.close();}
+});
+
+test('v46 browser startup gives Compact two real animation-frame opportunities before starting Ultra',async()=>{
+ const frames=[],f=environment({autoStart:true,requestAnimationFrame:callback=>{frames.push(callback);return frames.length;}});
+ try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;
+  assert.equal(f.renderer.fineSurface.lod.id,'detail');assert.equal(frames.length,1);assert.equal(f.workers.length,1);
+  frames.shift()();await tick();assert.equal(frames.length,1);assert.equal(f.workers.length,1);
+  frames.shift()();await until(()=>f.workers.length===2);assert.equal(f.controller.select.value,'gentle');
+  f.workers[1].finish(decoded());await f.controller.upgradeReady;assert.equal(f.renderer.fineSurface.lod.id,'gentle');
+ }finally{f.close();}
+});
+
+test('v46 a choice between the two browser paint opportunities cancels automatic upgrading',async()=>{
+ const frames=[],f=environment({autoStart:true,requestAnimationFrame:callback=>{frames.push(callback);return frames.length;}});
+ try{
+  await until(()=>f.workers.length===1);f.workers[0].finish(decoded());await f.controller.ready;
+  frames.shift()();assert.equal(frames.length,1);await f.choose('detail');
+  frames.shift()();await f.controller.upgradeReady;
+  assert.equal(f.workers.length,1);assert.equal(f.renderer.fineSurface.lod.id,'detail');assert.equal(f.preferences.get(f.controller.preferenceKey),'detail');
+ }finally{f.close();}
+});
+
+test('v48 visibility suspension pauses the same worker and active-time budget until the page is visible',async()=>{
+ const time=surfaceWatchdogFixture(),f=environment({watchdogFactory:time.watchdogFactory});let visibility='visible';
+ Object.defineProperty(f.document,'visibilityState',{configurable:true,get:()=>visibility});
+ try{
+  const pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0],revision=f.controller.revision;
+  worker.finish({type:'progress',phase:'download',loadedBytes:16,totalBytes:32});const value=f.controller.loadProgress.value;
+  time.advance(20);visibility='hidden';f.document.dispatchEvent(new f.window.Event('visibilitychange'));
+  assert.equal(f.controller.workspaceRequested,true);assert.equal(f.controller.workspaceActive,false);assert.equal(time.watchdogs[0].active,false);
+  assert.deepEqual(worker.message,{type:'workspace-priority',paused:true});assert.equal(f.controller.loadPanel.hidden,true);
+  time.advance(5000);assert.equal(f.controller.loading,true);assert.equal(worker.terminated,undefined);
+  visibility='visible';f.document.dispatchEvent(new f.window.Event('visibilitychange'));
+  assert.equal(f.controller.workspaceActive,true);assert.equal(time.watchdogs[0].active,true);assert.equal(f.controller.loadProgress.value,value);
+  assert.equal(f.controller.revision,revision);assert.equal(f.workers.length,1);assert.deepEqual(worker.message,{type:'workspace-priority',paused:false});
+  worker.finish(decoded());await pending;assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(time.timers.size,0);
+ }finally{f.controller.disconnectLifecycle();f.close();}
+});
+
+test('v48 page-cache restore cannot override the selected lab or begin a second Ultra job',async()=>{
+ const time=surfaceWatchdogFixture(),f=environment({watchdogFactory:time.watchdogFactory});let visibility='visible';
+ Object.defineProperty(f.document,'visibilityState',{configurable:true,get:()=>visibility});
+ try{
+  const pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0],revision=f.controller.revision;
+  f.window.dispatchEvent(new f.window.Event('pagehide'));assert.equal(f.controller.workspaceActive,false);
+  f.document.dispatchEvent(new f.window.Event('visibilitychange'));assert.equal(f.controller.workspaceActive,false,'Visible alone does not override page-cache suspension.');
+  f.controller.setWorkspaceActive(false);f.window.dispatchEvent(new f.window.Event('pageshow'));
+  assert.equal(f.controller.workspaceRequested,false);assert.equal(f.controller.workspaceActive,false);assert.equal(time.watchdogs[0].active,false);
+  time.advance(1000);assert.equal(f.controller.loading,true);assert.equal(f.workers.length,1);
+  f.controller.setWorkspaceActive(true);assert.equal(f.controller.workspaceActive,true);assert.equal(f.controller.revision,revision);
+  worker.finish(decoded());await pending;assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(f.workers.length,1);
+ }finally{f.controller.disconnectLifecycle();f.close();}
+});
+
+test('v48 a completed decode waits without GPU preparation while hidden and resumes without downloading again',async()=>{
+ const time=surfaceWatchdogFixture(),f=environment({watchdogFactory:time.watchdogFactory});let visibility='visible';
+ Object.defineProperty(f.document,'visibilityState',{configurable:true,get:()=>visibility});
+ try{
+  const pending=f.choose('gentle');await until(()=>f.workers.length===1);
+  visibility='hidden';f.document.dispatchEvent(new f.window.Event('visibilitychange'));f.workers[0].finish(decoded());
+  await until(()=>f.controller.workspaceWaiters.size===1);assert.equal(f.live.size,0);assert.equal(f.renderer.fineSurface,undefined);
+  time.advance(5000);assert.equal(f.controller.loading,true);assert.equal(f.controller.retrySurface,null);
+  visibility='visible';f.document.dispatchEvent(new f.window.Event('visibilitychange'));await pending;
+  assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(f.workers.length,1);assert.equal(time.timers.size,0);
+ }finally{f.controller.disconnectLifecycle();f.close();}
+});
+
+test('v48 cancellation while the page is suspended never resurrects loading on restore',async()=>{
+ const f=environment();let visibility='visible';
+ Object.defineProperty(f.document,'visibilityState',{configurable:true,get:()=>visibility});
+ try{
+  const pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0];
+  visibility='hidden';f.document.dispatchEvent(new f.window.Event('visibilitychange'));await f.choose('volume');await pending;
+  visibility='visible';f.document.dispatchEvent(new f.window.Event('visibilitychange'));f.window.dispatchEvent(new f.window.Event('pageshow'));
+  worker.finish({type:'progress',phase:'download',loadedBytes:32,totalBytes:32});worker.finish(decoded());await tick();
+  assert.equal(f.controller.loading,false);assert.equal(f.controller.select.value,'volume');assert.equal(f.controller.loadPanel.hidden,true);
+  assert.equal(f.workers.length,1);assert.equal(f.live.size,0);assert.equal(f.renderer.fineSurface,undefined);
+ }finally{f.controller.disconnectLifecycle();f.close();}
+});
+
+test('v48 a streamed chunk is acknowledged only after its GPU fence and workspace gate complete',async()=>{
+ const f=streamEnvironment({manualFences:true});try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0];
+  await sendStreamStart(f,worker);const message={type:'surface-chunk',sequence:1,kind:'position',byteOffset:0,buffer:new ArrayBuffer(12)};worker.finish(message);
+  await until(()=>f.fences.length===1);assert.equal(streamAck(worker,1),undefined);assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);
+  f.controller.setWorkspaceActive(false);f.releaseFences();await new Promise(resolve=>setTimeout(resolve,15));
+  assert.equal(streamAck(worker,1),undefined,'A signaled GPU fence cannot override foreground lab priority.');
+  f.controller.setWorkspaceActive(true);await until(()=>streamAck(worker,1));
+  assert.equal(worker.messages.filter(item=>item.type==='surface-ack'&&item.sequence===1).length,1);assert.equal(message.buffer,null,'The main-thread chunk reference is released before the next acknowledgement.');
+  await f.choose('volume');await pending;assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,false);assert.equal(f.live.size,baseline);
+ }finally{f.close();}
+});
+
+test('v48 streamed Ultra keeps the same loading bar and compact fallback until its first GPU presentation finishes',async()=>{
+ const f=streamEnvironment();try{
+  const compact=retainedCompact(f),pending=f.choose('gentle');await until(()=>f.workers.length===1);const progress=f.controller.loadProgress;
+  await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>f.renderer.fineSurface?.lod.id==='gentle');const ultra=f.renderer.fineSurface;
+  assert.equal(f.controller.loading,true);assert.equal(f.controller.loadPanel.hidden,false);assert.equal(f.controller.loadProgress,progress);assert.equal(progress.hidden,false);assert.equal(progress.value,.99);
+  assert.equal(ultra.fallbackSurface,compact);assert.equal(compact.enabled,true);
+  f.state.manualFences=true;const fenceCount=f.fences.length;await presentStreamedSurface(f);await until(()=>f.fences.length===fenceCount+1);
+  assert.equal(f.controller.loading,true);assert.equal(progress.hidden,false);assert.equal(ultra.fallbackSurface,compact);
+  f.releaseFences();await pending;
+  assert.equal(f.controller.loading,false);assert.equal(f.controller.loadPanel.hidden,true);assert.equal(progress.value,1);assert.equal(ultra.fallbackSurface,null);assert.equal(compact.enabled,false);
+ }finally{f.close();}
+});
+
+test('v48 a fully transferred base cannot replace compact before all requested interior preparation completes',async()=>{
+ const blocked=unresolved();let requested=false;
+ const f=streamEnvironment({ensureLocal:async({signal})=>{requested=true;await blocked.promise;if(!signal.aborted)f.controller.localRefinement.current={manifest:{extent:[1,1,1]},pieces:[]};}});
+ try{
+  const compact=retainedCompact(f),pending=f.choose('gentle');await until(()=>f.workers.length===1);await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>requested);
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.controller.loading,true);assert.equal(f.controller.loadProgress.value,.91);
+  assert.match(f.controller.loadStatus.textContent,/Preparing interior surfaces/);assert.equal(f.controller.refinementNotice.hidden,true,'Only one preparation panel is visible.');
+  blocked.resolve();await presentStreamedSurface(f);await pending;assert.equal(f.renderer.fineSurface.lod.id,'gentle');assert.equal(compact.enabled,false);
+ }finally{blocked.resolve();f.close();}
+});
+
+test('v48 cancellation during streamed cleanup releases its staged buffers and cannot publish a late interior result',async()=>{
+ const blocked=unresolved();let requested=false;
+ const f=streamEnvironment({ensureLocal:async({signal})=>{requested=true;await blocked.promise;if(!signal.aborted)f.controller.localRefinement.current={manifest:{extent:[1,1,1]},pieces:[]};}});
+ try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>requested);
+  await f.choose('volume');await pending;assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size,baseline);assert.equal(f.controller.select.value,'volume');
+  blocked.resolve();await tick();assert.equal(f.renderer.fineSurface,compact);assert.equal(f.controller.loading,false);assert.equal(f.controller.localRefinement.current,null);assert.equal(f.live.size,baseline);
+ }finally{blocked.resolve();f.close();}
+});
+
+test('v48 cancellation before the first streamed frame releases complete interior graphics, restores compact and ignores a late presentation',async()=>{
+ const f=streamEnvironment();try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>f.renderer.fineSurface?.lod.id==='gentle');
+  const ultra=f.renderer.fineSurface,late=ultra.onPresented,masks=f.renderer.lumenCleanup;
+  const interiorPieces=Array.from({length:4},()=>({vao:f.renderer.gl.createVertexArray(),buffers:Array.from({length:3},()=>f.renderer.gl.createBuffer())}));
+  f.controller.localRefinement.current.pieces=interiorPieces;
+  const interiorResources=interiorPieces.flatMap(piece=>[piece.vao,...piece.buffers]);assert.ok(interiorResources.every(resource=>f.live.has(resource)));
+  await f.choose('volume');await pending;
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,false);assert.equal(ultra.enabled,false);assert.equal(f.live.size,baseline);assert.equal(f.controller.loading,false);
+  assert.equal(f.controller.localRefinement.current,null);assert.ok(interiorResources.every(resource=>!f.live.has(resource)&&f.deleted.includes(resource)));
+  assert.equal(f.renderer.lumenCleanup,masks,'The compact fallback keeps its working reviewed masks.');assert.equal(f.controller.lumenCleanup.compact,true);
+  late();await tick();await new Promise(resolve=>setTimeout(resolve,2));
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(f.controller.select.value,'volume');assert.equal(f.controller.loadPanel.hidden,true);assert.equal(f.live.size,baseline);
+ }finally{f.close();}
+});
+
+test('v48 context loss during a streamed upload aborts promptly without downloading the larger original again',async()=>{
+ const f=streamEnvironment({manualFences:true,gentleManifest:streamedManifest(true)});try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0];await sendStreamStart(f);
+  worker.finish({type:'surface-chunk',sequence:1,kind:'position',byteOffset:0,buffer:new ArrayBuffer(12)});await until(()=>f.fences.length===1);
+  f.state.contextLost=true;f.renderer.canvas.dispatchEvent(new f.window.Event('webglcontextlost'));await pending;
+  assert.equal(worker.terminated,true);assert.equal(f.controller.loading,false);assert.equal(f.controller.worker,null);assert.equal(f.workers.length,1);
+  assert.equal(f.fetches.some(url=>url==='./assets/fine-surface-v23/manifest.json'),false);assert.equal(f.controller.retrySurface,null);assert.match(f.controller.status.textContent,/Reload to restore/);
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size,baseline);assert.equal(streamAck(worker,1),undefined);
+ }finally{f.close();}
+});
+
+test('v48 corrupt completion or incomplete stream data never installs a surface and releases staged graphics',async()=>{
+ for(const corruptIdentity of [false,true]){
+  const f=streamEnvironment();try{
+   const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);
+   if(corruptIdentity)await sendStreamGeometry(f);else await sendStreamStart(f);
+   sendStreamComplete(f.workers[0],corruptIdentity?{geometrySourceSha256:'e'.repeat(64)}:{});await pending;
+   assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.live.size,baseline);assert.equal(f.controller.loading,false);assert.equal(f.controller.retrySurface,'gentle');
+   assert.match(f.controller.status.textContent,/not verified|has not arrived/);
+  }finally{f.close();}
+ }
+});
+
+test('v48 a worker that sends another chunk before GPU acknowledgement is rejected without a partial model',async()=>{
+ const f=streamEnvironment({manualFences:true});try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0];await sendStreamStart(f);
+  worker.finish({type:'surface-chunk',sequence:1,kind:'position',byteOffset:0,buffer:new ArrayBuffer(12)});await until(()=>f.fences.length===1);
+  worker.finish({type:'surface-chunk',sequence:2,kind:'normal',byteOffset:0,buffer:new ArrayBuffer(12)});await pending;
+  assert.equal(worker.terminated,true);assert.equal(streamAck(worker,1),undefined);assert.equal(streamAck(worker,2),undefined);assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size,baseline);
+  assert.match(f.controller.status.textContent,/before their graphics acknowledgement/);
+ }finally{f.close();}
+});
+
+test('v48 a stale worker stream cannot allocate or acknowledge into a newer choice',async()=>{
+ const f=streamEnvironment();try{
+  const compact=retainedCompact(f),baseline=f.live.size,oldPending=f.choose('gentle');await until(()=>f.workers.length===1);const old=f.workers[0];await sendStreamStart(f,old);
+  await f.choose('volume');await oldPending;const pending=f.choose('gentle');await until(()=>f.workers.length===2);const current=f.workers[1];
+  old.finish({type:'surface-chunk',sequence:1,kind:'position',byteOffset:0,buffer:new ArrayBuffer(12)});sendStreamComplete(old);await tick();
+  assert.equal(f.controller.worker,current);assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size,baseline);assert.equal(streamAck(old,1),undefined);
+  await f.choose('volume');await pending;assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size,baseline);
+ }finally{f.close();}
+});
+
+test('v48 a view change before the first streamed frame retains the verified surface without a timeout and later proves its presentation',async()=>{
+ const time=surfaceWatchdogFixture(),f=streamEnvironment({watchdogFactory:time.watchdogFactory});try{
+  const compact=retainedCompact(f),pending=f.choose('gentle');await until(()=>f.workers.length===1);await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>f.renderer.fineSurface?.lod.id==='gentle');const ultra=f.renderer.fineSurface;
+  assert.equal(f.controller.loading,true);f.renderer.set({mode:1});f.controller.sync();await pending;
+  assert.equal(f.controller.loading,false);assert.equal(f.controller.loadPanel.hidden,true);assert.equal(f.controller.retrySurface,null);assert.equal(ultra.enabled,true);assert.equal(ultra.activeFor(f.renderer),false);assert.equal(ultra.fallbackSurface,compact);
+  time.advance(5000);assert.equal(f.controller.retrySurface,null);assert.equal(f.workers.length,1);
+  await f.choose('gentle');assert.equal(f.renderer.fineSurface,ultra);assert.equal(ultra.activeFor(f.renderer),true);await presentStreamedSurface(f);await until(()=>ultra.fallbackSurface===null);
+  assert.equal(compact.enabled,false);assert.equal(f.controller.select.value,'gentle');assert.equal(f.workers.length,1);
+ }finally{f.close();}
+});
+
+test('v48 a failed first streamed draw restores compact and clears pending progress',async()=>{
+ const f=streamEnvironment();try{
+  const compact=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);await sendStreamGeometry(f);sendStreamComplete(f.workers[0]);await until(()=>f.renderer.fineSurface?.lod.id==='gentle');
+  f.renderer.fineSurface.onError(new Error('Fixture streamed first draw failed'));await pending;
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.controller.loading,false);assert.equal(f.live.size,baseline);assert.equal(f.controller.retrySurface,'gentle');assert.match(f.controller.status.textContent,/Fixture streamed first draw failed/);
+ }finally{f.close();}
+});
+
+test('v48 streamed cleanup allocation failures retain compact without retrying the larger original transport',async()=>{
+ for(const error of [new RangeError('Invalid typed array length'),new Error('Array buffer allocation failed')]){
+  let attempts=0;const f=streamEnvironment({gentleManifest:streamedManifest(true),streamDebrisLoader:async()=>{attempts++;throw error;}});
+  try{
+   const compact=retainedCompact(f),baseline=f.live.size;await f.choose('gentle');
+   assert.equal(attempts,1);assert.equal(f.workers.length,0);assert.equal(f.controller.loading,false);assert.equal(f.controller.retrySurface,'gentle');
+   assert.equal(f.fetches.some(url=>url==='./assets/fine-surface-v23/manifest.json'),false);assert.equal(f.renderer.fineSurface,compact);assert.equal(compact.enabled,true);assert.equal(f.live.size,baseline);
+   assert.match(f.controller.status.textContent,/Invalid typed array length|Array buffer allocation failed/);
+  }finally{f.close();}
+ }
+});
+
+test('v52 exhausted network recovery retains Compact and never starts the larger legacy transport',async()=>{
+ for(const streamed of [false,true]){
+  const compact={assetBaseUrl:'/api/display-compact-v29/mesh/',parts:[],decodedBytes:68,decodedSha256:'c'.repeat(64)};
+  const source=streamed?streamedManifest(true):{...gentleManifest,lods:[{...gentleManifest.lods[0],compactTransport:compact,decodedSha256:compact.decodedSha256}]};
+  const f=environment({gentleManifest:source,streamDebrisLoader:streamCleanup});
+  try{
+   const retained=retainedCompact(f),baseline=f.live.size,pending=f.choose('gentle');await until(()=>f.workers.length===1);
+   if(streamed)await sendStreamStart(f);
+   f.workers[0].finish({error:'The surface connection was interrupted after 3 recovery attempts.',networkFailure:true});await pending;
+   assert.equal(f.workers.length,1);assert.equal(f.fetches.includes('./assets/fine-surface-v23/manifest.json'),false);
+   assert.equal(f.renderer.fineSurface,retained);assert.equal(retained.enabled,true);assert.equal(f.live.size,baseline);
+   assert.equal(f.controller.loading,false);assert.equal(f.controller.retrySurface,'gentle');assert.equal(f.controller.loadRetry.hidden,false);
+   assert.match(f.controller.status.textContent,/connection was interrupted/);
+  }finally{f.close();}
+ }
+});
+
+test('v52 retry announcements cannot keep a stalled worker alive indefinitely',async()=>{
+ const time=surfaceWatchdogFixture(),f=environment({watchdogFactory:time.watchdogFactory});
+ try{
+  const pending=f.choose('detail');await until(()=>f.workers.length===1);
+  time.advance(20);f.workers[0].finish({type:'progress',phase:'download',stage:'reconnect',retryAttempt:1,maxRetries:3});
+  assert.match(f.controller.loadStageText.textContent,/Reconnecting/);
+  time.advance(20);f.workers[0].finish({type:'progress',phase:'download',stage:'reconnect',retryAttempt:2,maxRetries:3});
+  time.advance(20);await pending;
+  assertSurfaceTimedOut(f,time,'detail');assert.equal(f.workers[0].terminated,true);
+ }finally{f.close();}
+});
+
+test('v52 foreground surface loading yields the background download budget on pause, cancellation, failure and success',async()=>{
+ for(const finish of ['cancel','fail','complete']){
+  const activity=new ScanActivity({ready:true,idleMs:0,prefetchIdleMs:0}),f=environment({activity});
+  try{
+   assert.equal(activity.getState().allowBackground,true);
+   const pending=f.choose('detail');await until(()=>f.workers.length===1);
+   assert.equal(activity.getState().allowBackground,false);assert.equal(activity.getState().foregroundCount,1);
+   f.controller.sync();assert.equal(activity.getState().foregroundCount,1,'UI refreshes must not accumulate priority leases.');
+   f.controller.setWorkspaceActive(false);assert.equal(activity.getState().foregroundCount,0);
+   f.controller.setWorkspaceActive(true);assert.equal(activity.getState().foregroundCount,1);
+   if(finish==='cancel')await f.choose('volume');
+   else if(finish==='fail')f.workers[0].finish({error:'Connection interrupted',networkFailure:true});
+   else f.workers[0].finish(decoded());
+   await pending;
+   assert.equal(activity.getState().foregroundCount,0);assert.equal(activity.getState().allowBackground,true);
+  }finally{f.close();activity.dispose();}
+ }
+});
+
+test('v53 staging cleanup is scoped to each terminated job and never blocks cancellation',async()=>{
+ const cleaned=[],cleanupOptions=[],blocked=unresolved();const f=streamEnvironment({stagingCleanup:(id,options)=>{cleaned.push(id);cleanupOptions.push(options);return blocked.promise;}});
+ try{
+  retainedCompact(f);const first=f.choose('gentle');await until(()=>f.workers.length===1);
+  const one=f.workers[0].message.stagingId;assert.match(one,/^[a-zA-Z0-9_-]{1,100}$/);
+  await f.choose('volume');await first;await until(()=>cleaned.length===1);assert.deepEqual(cleaned,[one]);assert.deepEqual(cleanupOptions,[{afterTermination:true}]);
+  const second=f.choose('gentle');await until(()=>f.workers.length===2);const two=f.workers[1].message.stagingId;assert.notEqual(two,one);
+  f.workers[0].finish({type:'progress',stage:'download-complete',sequential:true,downloadedBytes:10,downloadTotalBytes:10});
+  assert.equal(f.controller.loadOperation.snapshot().stage,'transfer');
+  await f.choose('volume');await second;await until(()=>cleaned.length===2);assert.deepEqual(cleaned,[one,two]);assert.deepEqual(cleanupOptions,[{afterTermination:true},{afterTermination:true}]);
+ }finally{blocked.resolve(false);f.close();}
+});
+
+test('v53 completed worker staging is cleaned while the full-model and first-frame gates still hold',async()=>{
+ const cleaned=[],f=streamEnvironment({stagingCleanup:id=>{cleaned.push(id);throw new Error('Fixture optional cleanup unavailable');}});
+ try{
+  const compact=retainedCompact(f),pending=f.choose('gentle');await until(()=>f.workers.length===1);const worker=f.workers[0],id=worker.message.stagingId;
+  worker.finish({type:'progress',stage:'download-start',phase:'download',sequential:true});assert.equal(f.controller.loadStageText.textContent,'Downloading surface');
+  worker.finish({type:'progress',stage:'download-complete',phase:'decode',sequential:true,downloadedBytes:128,downloadTotalBytes:128});assert.equal(f.controller.loadStageText.textContent,'Preparing surface');
+  assert.equal(f.renderer.fineSurface,compact);assert.equal(f.live.size>0,true);
+  await sendStreamGeometry(f);sendStreamComplete(worker);await until(()=>f.renderer.fineSurface?.lod.id==='gentle');await until(()=>cleaned.length===1);
+  assert.deepEqual(cleaned,[id]);assert.equal(f.controller.loading,true);assert.equal(f.renderer.fineSurface.fallbackSurface,compact);
+  await presentStreamedSurface(f);await pending;assert.equal(f.controller.loading,false);assert.equal(f.controller.retrySurface,null);assert.deepEqual(cleaned,[id]);
  }finally{f.close();}
 });

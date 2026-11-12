@@ -1,0 +1,72 @@
+{
+  "scope": "Node scalar SHA-256 CPU timing with fixed bounded input storage; not browser, GPU, Safari or iPad loading time.",
+  "node": "v24.22.1",
+  "architecture": "x64",
+  "synthetic": {
+    "bytes": 100663367,
+    "inputChunkBytes": 2097144,
+    "sha256": "888de4078b9440f177489af3b5e478d5dbd2cb70f69d157a7ef2c8e23439afef",
+    "samples": {
+      "javascript": [
+        {
+          "milliseconds": 563.3525699999999,
+          "MiBPerSecond": 170.40850228281815
+        },
+        {
+          "milliseconds": 550.7264489999998,
+          "MiBPerSecond": 174.31533910381796
+        },
+        {
+          "milliseconds": 545.1187989999999,
+          "MiBPerSecond": 176.10852512697235
+        }
+      ],
+      "wasm": [
+        {
+          "milliseconds": 295.02060299999994,
+          "MiBPerSecond": 325.4012320992934
+        },
+        {
+          "milliseconds": 291.809448,
+          "MiBPerSecond": 328.98204074213686
+        },
+        {
+          "milliseconds": 311.0341919999996,
+          "MiBPerSecond": 308.647956334256
+        }
+      ]
+    },
+    "medianMilliseconds": {
+      "javascript": 550.7264489999998,
+      "wasm": 295.02060299999994
+    },
+    "speedup": 1.8667389443306097
+  },
+  "memory": {
+    "perHashJavascriptBytes": 416,
+    "sharedWasmBytes": 65536,
+    "maximumWasmInputCopyBytes": 64512
+  },
+  "originalGeometry": {
+    "decodedBytes": 437470524,
+    "hashedBytes": 797917878,
+    "counts": {
+      "complete": 437470524,
+      "position": 77023134,
+      "index": 283424220
+    },
+    "identities": {
+      "complete": "175548ddaad01c409d59d561df6018c5cb0c90752b2ec771899c255065398dae",
+      "position": "9d43742c2a518e7efe05ece46e6740800472ef3d0161d52d80f95b1db448bd5e",
+      "index": "871fa8ec2f06c6db6ab1e9064f51f5f0fefb89e969082725e9a19f56307a21e4"
+    },
+    "maxSourceChunkBytes": 262144,
+    "hashCpuMilliseconds": {
+      "javascript": 4620.025393999929,
+      "wasm": 2442.6123170000255
+    },
+    "speedup": 1.8914280263984606,
+    "wholeDecodedBufferAllocated": false
+  },
+  "createdAt": "2026-11-11T04:23:39.014Z"
+}
