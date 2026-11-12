@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-11-12 — Source-specific TEE video angle QC
+
+- Reviewed the actual pixels of all 33 Real Ultrasound TEE recordings: 28
+  publisher guideline videos and five locally hosted clinical examples.
+- Preserved the 26 native scanner angle displays, including the Mitral
+  Commissural recording's 86° readout and the changing angle in the upper
+  esophageal aortic arch short-axis recording. These sources receive no
+  synthetic angle or proposed-angle caption.
+- Limited the labelled REF supplement to seven reviewed recordings without a
+  native angle display: two publisher videos and the five local examples.
+- Fixed local playback binding so Four-Chamber and the other cached videos
+  show their supplements after the actual Blob URL has decoded. Source changes,
+  failed playback, retries, and stale loads cannot retain an unrelated angle.
+- Added a recording-by-recording QC manifest and regressions using real local
+  video bytes through the production media cache. Original video files,
+  illustrations, clinical ranges, and live TEE Lab behavior are unchanged.
+
+Evidence, sample limits, and checks are documented in
+[`docs/tee-video-qc-v56/README.md`](docs/tee-video-qc-v56/README.md).
+
 ## 2026-11-12 — Compact reference navigation and TEE multiplane displays
 
 - Integrated All Reference Views into the existing view heading and compact

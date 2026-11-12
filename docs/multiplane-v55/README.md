@@ -4,6 +4,10 @@ Implemented November 12, 2026, on the source synchronized through website v89.
 The feature/test suffix v55 is independent of the Sites version and archive
 queue sequence; see [the update workflow](../UPDATE_WORKFLOW.md).
 
+The video behavior described below was corrected by the subsequent
+[recording-by-recording QC pass](../tee-video-qc-v56/README.md). That review
+supersedes the original blanket-overlay policy and its catalog-URL test fixture.
+
 ## Navigation
 
 All Reference Views is an inline back action in the existing selected-view
@@ -18,12 +22,14 @@ selection, scroll position, and keyboard focus. It adds no separate banner.
 0° is left, 90° is down, and 180° is right. The display represents electronic
 multiplane rotation; it does not change the simulated plane or probe pose.
 
-- **Reference videos:** all 28 TEE entries show a numeric REF angle and pointer
-  after matching video metadata is ready. The value is the midpoint of the
-  catalog's existing typical range. The accessible explanation identifies it
-  as a representative reference angle, not a measured angle from that recording.
-  Two previously reviewed cine placements are retained; other clips use an
-  inset upper-left position within the rendered video area.
+- **Reference videos:** the current source-specific policy preserves the native
+  scanner displays in 26 recordings and adds a numeric REF angle only to the
+  seven reviewed recordings without one. REF is the midpoint of the catalog's
+  existing typical range, explicitly identified as a representative teaching
+  angle. It is not a measured angle from the recording. Placement waits for
+  matching decoded metadata from the actual playback URL, including local
+  cache Blob URLs. Two reviewed publisher placements are retained; the five
+  local examples use an inset upper-left position within the rendered video.
 - **Reference illustrations:** gallery cards, sidebar thumbnails, and enlarged
   illustrations show a small semicircle with the corresponding range shaded.
   Tiny graphics omit numerals; accessible names retain the exact range.
@@ -59,8 +65,10 @@ The following checks passed before publication:
   subtests covering slider/keyboard/preset/reset behavior, lock state, accepted
   versus requested angles, stale or canceled frames, and source reset.
 - Existing TEE plane geometry suite: 9 Node subtests.
-- Reference-player controller: all 28 TEE videos expose the correct numeric
-  reference indicator after matching source metadata.
+- The original reference-player fixture exercised all 28 catalog entries, but
+  did not model the local cache's Blob URL or distinguish native source dials.
+  The subsequent v56 source review and real-cache regression correct both
+  omissions; see the linked QC report for the current checks.
 - Reference gallery: all 56 views, 28 TEE range badges, no TTE badges, Basic and
   Advanced subsets, filtering, both return controls, focus and scroll restore,
   and media/canvas lifecycle.

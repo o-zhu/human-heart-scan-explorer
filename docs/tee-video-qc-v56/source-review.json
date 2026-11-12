@@ -1,0 +1,3763 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-12",
+  "scope": "Source-specific multiplane display QC for all 28 ASE/SCA publisher TEE recordings and all five existing local TEE alternatives.",
+  "summary": {
+    "sourcesReviewed": 33,
+    "publisherSources": 28,
+    "localSources": 5,
+    "retainNative": 26,
+    "supplementReference": 7,
+    "sourceIdsReceivingReference": [
+      "ase-2013-tee-01",
+      "ase-2013-tee-12",
+      "tee-me4c",
+      "tee-melax",
+      "tee-me2c",
+      "tee-bicaval",
+      "tee-tgpapillary"
+    ],
+    "nativeBoxesInsideCentered1_4Fit": 26,
+    "localClearAreaSampleRectangles": 15
+  },
+  "method": {
+    "metadata": "ffprobe decoded stream dimensions, sample/display aspect ratios, frame counts and presentation timestamps; SHA-256 and exact byte count of the reviewed MP4 bytes.",
+    "pixelReview": "ffmpeg source-frame extraction, SAR-corrected square-pixel frames, direct visual review of full sampled frames and native-dial crops.",
+    "sampleLimits": "Publisher 01–14: first, middle and last decoded source frames. Publisher 15–28 and five local sources: first, middle and late (~90% requested duration), with actual decoded PTS recorded. Publisher 28 additionally has all 51 decoded native-dial frames visually inspected.",
+    "bounds": "Manually reviewed native-dial boxes are conservative or approximate, as recorded in display-corrected pixels. They include the pointer, semicircle and current number; source labels remain untouched.",
+    "angleMeaning": "Native values are transcriptions of the displayed scanner readout. REF values are guideline-range midpoints for teaching, not acquired or measured angles from these recordings.",
+    "clinicalLimit": "This review does not establish anatomical correctness, acquisition calibration, CT registration, patient correspondence or clinical validation.",
+    "redistribution": "This documentation contains source metadata and observations only. No downloaded publisher media, extracted frames or screenshots are included."
+  },
+  "sourceIdentityPolicy": {
+    "module": "public/tee-reference-angle-policy.js",
+    "exports": [
+      "TEE_MULTIPLANE_SOURCE_REVIEWS",
+      "reviewedTeeAngleSource"
+    ],
+    "requiredFields": [
+      "mode=tee",
+      "kind absent or video",
+      "mimeType=video/mp4",
+      "exact catalog id",
+      "exact preset",
+      "exact catalog URL",
+      "exact catalog byte count",
+      "matching external flag",
+      "exact declared SHA-256 for the five local sources"
+    ],
+    "unreviewedOrReplacedSource": "No synthetic angle or REF explanation is assigned until the replacement source is reviewed.",
+    "runtimeHashBoundary": "Local cache bytes are hash-verified. Publisher SHA-256 values in this review identify inspected bytes; the external video playback path does not hash publisher response bytes at runtime.",
+    "nativeBehavior": "Retain the video-native angle display and existing source caption; hide the added SVG and REF explanation.",
+    "playbackBinding": "Bind placement to the selected source identity, current request token and actual installed video URL, including a verified cache Blob URL. Require matching src/currentSrc and usable metadata. Clear bindings on replacement, cancellation, error and teardown; stale downloads or metadata cannot reactivate a prior angle."
+  },
+  "clearAreaChecks": [
+    {
+      "clipId": "ase-2013-tee-01",
+      "reviewDate": "2026-11-08",
+      "evidenceDocument": "docs/echo-mobile-v41/angle-source-review.json",
+      "sha256": "f3b18fd1dfb9aae7b74a28813c43a8e3c2ab91a2e044e84186cf7aba067a1ef8",
+      "rectangleCoordinateSpace": "encoded raster pixels; left/top inclusive, right/bottom exclusive",
+      "rectangleLTRB": [
+        365,
+        86,
+        507,
+        226
+      ],
+      "framesInspected": 56,
+      "coverage": "all decoded frames, historical v41 clear-area check on the same SHA-256 source bytes",
+      "maximumRgbChannelValue": 1,
+      "pixelsWithAnyChannelAbove30": 0
+    },
+    {
+      "clipId": "ase-2013-tee-12",
+      "reviewDate": "2026-11-08",
+      "evidenceDocument": "docs/echo-mobile-v41/angle-source-review.json",
+      "sha256": "d748da7482e73c306110a0c38558f664383f2cdc1e3d44eb4a7ee0a1c4f279f8",
+      "rectangleCoordinateSpace": "encoded raster pixels; left/top inclusive, right/bottom exclusive",
+      "rectangleLTRB": [
+        411,
+        86,
+        530,
+        226
+      ],
+      "framesInspected": 28,
+      "coverage": "all decoded frames, historical v41 clear-area check on the same SHA-256 source bytes",
+      "maximumRgbChannelValue": 2,
+      "pixelsWithAnyChannelAbove30": 0
+    },
+    {
+      "clipId": "tee-me4c",
+      "reviewDate": "2026-11-12",
+      "sha256": "83eedb22414672a30080f71ccd8ad250a42c84215d54bad99168915277742cc5",
+      "rectangleCoordinateSpace": "square-pixel source frame; left/top inclusive, right/bottom exclusive; SAR is 1:1",
+      "rectangleLTRB": [
+        19,
+        14,
+        147,
+        118
+      ],
+      "construction": "Outward-rounded maximum corner placement: x=.025W, y=.025H, width=.16W, height=width*104/128.",
+      "framesInspected": 3,
+      "coverage": "the three actual sampled PTS listed for this source; not an all-frame check",
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.8,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 1.44,
+          "maximumRgbChannelValue": 0
+        }
+      ],
+      "maximumRgbChannelValue": 0,
+      "result": "All RGB channels are exactly zero throughout the rectangle in each sampled frame."
+    },
+    {
+      "clipId": "tee-melax",
+      "reviewDate": "2026-11-12",
+      "sha256": "82830ac080fca95fd8c3b8232ca22a304c46bd07244f970e92bb7de3086b1cdc",
+      "rectangleCoordinateSpace": "square-pixel source frame; left/top inclusive, right/bottom exclusive; SAR is 1:1",
+      "rectangleLTRB": [
+        21,
+        15,
+        161,
+        129
+      ],
+      "construction": "Outward-rounded maximum corner placement: x=.025W, y=.025H, width=.16W, height=width*104/128.",
+      "framesInspected": 3,
+      "coverage": "the three actual sampled PTS listed for this source; not an all-frame check",
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.4,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.72,
+          "maximumRgbChannelValue": 0
+        }
+      ],
+      "maximumRgbChannelValue": 0,
+      "result": "All RGB channels are exactly zero throughout the rectangle in each sampled frame."
+    },
+    {
+      "clipId": "tee-me2c",
+      "reviewDate": "2026-11-12",
+      "sha256": "36b240321704d70c870f3d02ffaf10c8e53ec6711ad43a29946a3c9f825bb9c1",
+      "rectangleCoordinateSpace": "square-pixel source frame; left/top inclusive, right/bottom exclusive; SAR is 1:1",
+      "rectangleLTRB": [
+        26,
+        20,
+        199,
+        160
+      ],
+      "construction": "Outward-rounded maximum corner placement: x=.025W, y=.025H, width=.16W, height=width*104/128.",
+      "framesInspected": 3,
+      "coverage": "the three actual sampled PTS listed for this source; not an all-frame check",
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.64,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 1.12,
+          "maximumRgbChannelValue": 0
+        }
+      ],
+      "maximumRgbChannelValue": 0,
+      "result": "All RGB channels are exactly zero throughout the rectangle in each sampled frame."
+    },
+    {
+      "clipId": "tee-bicaval",
+      "reviewDate": "2026-11-12",
+      "sha256": "29b51cbdb9e6b64ae36b1b45c8d0a7a5d6351684924d3d362e86eed392cdcf6d",
+      "rectangleCoordinateSpace": "square-pixel source frame; left/top inclusive, right/bottom exclusive; SAR is 1:1",
+      "rectangleLTRB": [
+        20,
+        14,
+        149,
+        120
+      ],
+      "construction": "Outward-rounded maximum corner placement: x=.025W, y=.025H, width=.16W, height=width*104/128.",
+      "framesInspected": 3,
+      "coverage": "the three actual sampled PTS listed for this source; not an all-frame check",
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.84,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 1.52,
+          "maximumRgbChannelValue": 0
+        }
+      ],
+      "maximumRgbChannelValue": 0,
+      "result": "All RGB channels are exactly zero throughout the rectangle in each sampled frame."
+    },
+    {
+      "clipId": "tee-tgpapillary",
+      "reviewDate": "2026-11-12",
+      "sha256": "1c34bbee25bbfa03cd8dd6423c16632ea1fb2ce5b6e3614d7422da791beaccff",
+      "rectangleCoordinateSpace": "square-pixel source frame; left/top inclusive, right/bottom exclusive; SAR is 1:1",
+      "rectangleLTRB": [
+        30,
+        22,
+        227,
+        182
+      ],
+      "construction": "Outward-rounded maximum corner placement: x=.025W, y=.025H, width=.16W, height=width*104/128.",
+      "framesInspected": 3,
+      "coverage": "the three actual sampled PTS listed for this source; not an all-frame check",
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 0.76,
+          "maximumRgbChannelValue": 0
+        },
+        {
+          "ptsSeconds": 1.4,
+          "maximumRgbChannelValue": 0
+        }
+      ],
+      "maximumRgbChannelValue": 0,
+      "result": "All RGB channels are exactly zero throughout the rectangle in each sampled frame."
+    }
+  ],
+  "validation": {
+    "nodeSubtests": {
+      "status": "passed",
+      "count": 18,
+      "command": "node --test tests/echo-angle-placement-v40.mjs tests/echo-angle-placement-v41.mjs tests/multiplane-indicator-v55.mjs"
+    },
+    "controllerV39": {
+      "status": "passed",
+      "test": "tests/echo-reference-player-v39.mjs",
+      "scope": "Production controller with controlled media/player events; source replacement and native SVG/REF-note suppression."
+    },
+    "realCacheV56": {
+      "status": "passed with verified retained local MP4 fixtures",
+      "test": "tests/echo-angle-source-binding-v56.mjs",
+      "scope": "Actual hash-checked MP4 bytes and generated Blob object URLs with controlled metadata events; cached Four-Chamber, stale requests/downloads, error and retry, same-view local/publisher switching, fit reuse and native Commissural deduplication.",
+      "publicCheckoutBehavior": "Explicit skip when intentionally excluded licensed MP4 fixtures are absent; a verified public fixture root can be supplied.",
+      "limit": "Controlled DOM and metadata events do not establish real-browser decoding or physical-device playback."
+    },
+    "postDeploymentBrowserReview": "Pending at documentation freeze; deployment and browser results belong in the separate release receipt."
+  },
+  "sources": [
+    {
+      "clipId": "ase-2013-tee-01",
+      "preset": "me5c",
+      "aseSupplementalVideo": 1,
+      "title": "Midesophageal five-chamber",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc1.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc1.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "f3b18fd1dfb9aae7b74a28813c43a8e3c2ab91a2e044e84186cf7aba067a1ef8",
+      "bytes": 570822,
+      "durationSeconds": 1.9019,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 57,
+        "decodedFrameCount": 56
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "frameIndexZeroBased": 28,
+          "ptsSeconds": 0.934267,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "frameIndexZeroBased": 55,
+          "ptsSeconds": 1.835167,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "bboxEncodedRasterLTRB": null,
+        "evidenceNotes": "Full source frames at beginning, middle and late loop contain no visible multiplane semicircle or readable numeric angle. Small white caliper-like line with a green center to the right of the sector and a blue P marker are not a numeric multiplane display. No angle inferred from the view name or teaching range."
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Actual acquisition angle cannot be recovered from these pixels because no native angle is visible.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 5.0,
+          "guidelineRangeDegrees": [
+            0,
+            10
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "reviewed"
+        }
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-02",
+      "preset": "me4c",
+      "aseSupplementalVideo": 2,
+      "title": "Midesophageal four-chamber",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc2.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc2.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "510f242a8d51fd50c4f95452e8db9729095079ff89c28e369bc55b82433e202f",
+      "bytes": 609025,
+      "durationSeconds": 1.935267,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 58,
+        "decodedFrameCount": 57
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 22,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 28,
+          "ptsSeconds": 0.934267,
+          "angleDegrees": 22,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 56,
+          "ptsSeconds": 1.868533,
+          "angleDegrees": 22,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          22
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          395,
+          45,
+          525,
+          140
+        ],
+        "bboxEncodedRasterLTRB": [
+          325,
+          45,
+          433,
+          140
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 22 numeral are visible in all three sampled source frames. The actual source value is 22 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.2545103092783505,
+          0.0625,
+          0.3382731958762887,
+          0.19444444444444445
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-03",
+      "preset": "mecommissural",
+      "aseSupplementalVideo": 3,
+      "title": "Midesophageal mitral commissural",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc3.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc3.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "b2a5aa020c27af5422426efb21302957aa2a21094383fca86638aef1e63344a6",
+      "bytes": 588092,
+      "durationSeconds": 1.9019,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 57,
+        "decodedFrameCount": 56
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 86,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 28,
+          "ptsSeconds": 0.934267,
+          "angleDegrees": 86,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 55,
+          "ptsSeconds": 1.835167,
+          "angleDegrees": 86,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          86
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 86 numeral are visible in all three sampled source frames. The actual source value is 86 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-04",
+      "preset": "me2c",
+      "aseSupplementalVideo": 4,
+      "title": "Midesophageal two-chamber",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc4.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc4.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "6ec082fab8e3f4edc3197fa8905716cede0af31b3bd8a4063da736b6cc590584",
+      "bytes": 572438,
+      "durationSeconds": 1.935267,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 58,
+        "decodedFrameCount": 57
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 109,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 28,
+          "ptsSeconds": 0.934267,
+          "angleDegrees": 109,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 56,
+          "ptsSeconds": 1.868533,
+          "angleDegrees": 109,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          109
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 109 numeral are visible in all three sampled source frames. The actual source value is 109 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-05",
+      "preset": "melax",
+      "aseSupplementalVideo": 5,
+      "title": "Midesophageal long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc5.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc5.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "c0613f26f40072fdaefc249907d3fcacf4593e527f86a295942308f9cb279553",
+      "bytes": 601124,
+      "durationSeconds": 2.002,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 60,
+        "decodedFrameCount": 59
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 148,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 29,
+          "ptsSeconds": 0.967633,
+          "angleDegrees": 148,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 58,
+          "ptsSeconds": 1.935267,
+          "angleDegrees": 148,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          148
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 148 numeral are visible in all three sampled source frames. The actual source value is 148 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-06",
+      "preset": "meavlax",
+      "aseSupplementalVideo": 6,
+      "title": "Midesophageal aortic valve long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc6.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc6.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "8f6ede4ac22a789113269b4556b5e41962b7662d5f5945dd30a0fe0fb757574f",
+      "bytes": 588155,
+      "durationSeconds": 1.8018,
+      "encoding": {
+        "codec": "h264",
+        "width": 800,
+        "height": 600,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "160:99",
+        "displayWidthExact": 969.6969696969697,
+        "displayHeight": 600,
+        "squarePixelReviewDimensions": [
+          970,
+          600
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 54,
+        "decodedFrameCount": 53
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 145,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 26,
+          "ptsSeconds": 0.867533,
+          "angleDegrees": 145,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 52,
+          "ptsSeconds": 1.735067,
+          "angleDegrees": 145,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          145
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          180,
+          95,
+          280,
+          180
+        ],
+        "bboxEncodedRasterLTRB": [
+          148,
+          95,
+          231,
+          180
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 145 numeral are visible in all three sampled source frames. The actual source value is 145 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.18556701030927836,
+          0.15833333333333333,
+          0.28865979381443296,
+          0.3
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.06687500000000002,
+            0.933125
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-07",
+      "preset": "meaaolax",
+      "aseSupplementalVideo": 7,
+      "title": "Midesophageal ascending aorta long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc7.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc7.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "f1712dc1d868a4bf9f07aa4558020297fb4fb103012e4249a6b93e6873c9acd3",
+      "bytes": 310001,
+      "durationSeconds": 0.967633,
+      "encoding": {
+        "codec": "h264",
+        "width": 800,
+        "height": 600,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "160:99",
+        "displayWidthExact": 969.6969696969697,
+        "displayHeight": 600,
+        "squarePixelReviewDimensions": [
+          970,
+          600
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 29,
+        "decodedFrameCount": 28
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 120,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 14,
+          "ptsSeconds": 0.467133,
+          "angleDegrees": 120,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 27,
+          "ptsSeconds": 0.9009,
+          "angleDegrees": 120,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          120
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          180,
+          95,
+          280,
+          180
+        ],
+        "bboxEncodedRasterLTRB": [
+          148,
+          95,
+          231,
+          180
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 120 numeral are visible in all three sampled source frames. The actual source value is 120 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.18556701030927836,
+          0.15833333333333333,
+          0.28865979381443296,
+          0.3
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.06687500000000002,
+            0.933125
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-08",
+      "preset": "meaaosax",
+      "aseSupplementalVideo": 8,
+      "title": "Midesophageal ascending aorta short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc8.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc8.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "c171382b926e0a304f7037c2d3fde4b0074b9b827fe6c404730c41c8e9ea947c",
+      "bytes": 359646,
+      "durationSeconds": 1.067733,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "512:351",
+        "displayAspectRatio": "8192:3159",
+        "displayWidthExact": 1867.1225071225072,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1867,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 32,
+        "decodedFrameCount": 31
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 15,
+          "ptsSeconds": 0.5005,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 30,
+          "ptsSeconds": 1.001,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          570,
+          115,
+          690,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          390,
+          115,
+          474,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 0 numeral are visible in all three sampled source frames. The actual source value is 0 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.30530262453133367,
+          0.1597222222222222,
+          0.36957686127477235,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.23006591796875003,
+            0.7699340820312499
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-09",
+      "preset": "merpv",
+      "aseSupplementalVideo": 9,
+      "title": "Midesophageal right pulmonary vein",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc9.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc9.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "592807c8b48e03fd6aa649c267979744427a8a83a3ff8d8b8099d87563a6e924",
+      "bytes": 668945,
+      "durationSeconds": 2.2022,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 66,
+        "decodedFrameCount": 65
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 32,
+          "ptsSeconds": 1.067733,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 64,
+          "ptsSeconds": 2.135467,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 0 numeral are visible in all three sampled source frames. The actual source value is 0 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-10",
+      "preset": "meavsax",
+      "aseSupplementalVideo": 10,
+      "title": "Midesophageal aortic valve short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc10.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc10.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "a5dc2decbda314530081ac53bb12bd365f805b15d0329cdb9c73d7d366afaba5",
+      "bytes": 570294,
+      "durationSeconds": 1.835167,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 55,
+        "decodedFrameCount": 54
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 61,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 27,
+          "ptsSeconds": 0.9009,
+          "angleDegrees": 61,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 53,
+          "ptsSeconds": 1.768433,
+          "angleDegrees": 61,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          61
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 61 numeral are visible in all three sampled source frames. The actual source value is 61 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-11",
+      "preset": "mervinout",
+      "aseSupplementalVideo": 11,
+      "title": "Midesophageal RV inflow-outflow",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc11.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc11.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "3e28ecd161cff14bae92f5d3fa20d90f9c61187b68e0eafcfdc494e3d82e9111",
+      "bytes": 730864,
+      "durationSeconds": 2.435767,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 73,
+        "decodedFrameCount": 72
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 70,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 36,
+          "ptsSeconds": 1.2012,
+          "angleDegrees": 70,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 71,
+          "ptsSeconds": 2.369033,
+          "angleDegrees": 70,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          70
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 70 numeral are visible in all three sampled source frames. The actual source value is 70 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-12",
+      "preset": "memodbicaval",
+      "aseSupplementalVideo": 12,
+      "title": "Midesophageal modified bicaval tricuspid valve",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc12.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc12.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "d748da7482e73c306110a0c38558f664383f2cdc1e3d44eb4a7ee0a1c4f279f8",
+      "bytes": 304133,
+      "durationSeconds": 0.967633,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "512:351",
+        "displayAspectRatio": "8192:3159",
+        "displayWidthExact": 1867.1225071225072,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1867,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 29,
+        "decodedFrameCount": 28
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "frameIndexZeroBased": 14,
+          "ptsSeconds": 0.467133,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "frameIndexZeroBased": 27,
+          "ptsSeconds": 0.9009,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "bboxEncodedRasterLTRB": null,
+        "evidenceNotes": "Full source first/middle/late frames show the ultrasound sector and machine settings, but the upper-left space where other clips carry the gauge is blank. No native semicircle and no readable numeric multiplane angle elsewhere in the frame; heart-rate/depth/temperature labels are separate. No angle inferred from the view name or teaching range."
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Actual acquisition angle cannot be recovered from these pixels because no native angle is visible.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 60.0,
+          "guidelineRangeDegrees": [
+            50,
+            70
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "reviewed"
+        }
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-13",
+      "preset": "bicaval",
+      "aseSupplementalVideo": 13,
+      "title": "Midesophageal bicaval",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc13.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc13.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "803ba9c0f1b6d55fdfabc2a76ae15dd061a8c03e09ed324763759eb1d946b782",
+      "bytes": 581237,
+      "durationSeconds": 1.868533,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 56,
+        "decodedFrameCount": 55
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 111,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 27,
+          "ptsSeconds": 0.9009,
+          "angleDegrees": 111,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 54,
+          "ptsSeconds": 1.8018,
+          "angleDegrees": 111,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          111
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 111 numeral are visible in all three sampled source frames. The actual source value is 111 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-14",
+      "preset": "mepv",
+      "aseSupplementalVideo": 14,
+      "title": "Midesophageal right and left pulmonary veins",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc14.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc14.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sha256": "2a0d973c6d45f30b9db57324b30fd02212eacee6df5e7b7201b892c4bcf66f54",
+      "bytes": 259228,
+      "durationSeconds": 0.867533,
+      "encoding": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "containerFrameCount": 26,
+        "decodedFrameCount": 25
+      },
+      "samples": [
+        {
+          "frameIndexZeroBased": 0,
+          "ptsSeconds": 0.0,
+          "angleDegrees": 89,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 12,
+          "ptsSeconds": 0.4004,
+          "angleDegrees": 89,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "frameIndexZeroBased": 24,
+          "ptsSeconds": 0.8008,
+          "angleDegrees": 89,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          89
+        ],
+        "position": "upper-left of the publisher ultrasound display, above and left of the cardiac sector",
+        "bboxSquarePixelReviewLTRB": [
+          400,
+          115,
+          530,
+          210
+        ],
+        "bboxEncodedRasterLTRB": [
+          329,
+          115,
+          438,
+          210
+        ],
+        "evidenceNotes": "Native purple/lavender lower semicircle, 0 and180 endpoint labels, white pointer and central 89 numeral are visible in all three sampled source frames. The actual source value is 89 degrees, independently of the teaching-range midpoint. The native graphic is fully inside the expected centered1.4 crop.",
+        "bboxNormalizedLTRB": [
+          0.25773195876288657,
+          0.1597222222222222,
+          0.34149484536082475,
+          0.2916666666666667
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first, middle and last decoded source frames",
+      "uncertaintyNote": "Digits and graphic are legible and consistent in all three sampled frames; unsampled frames were not separately visually reviewed.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-15",
+      "preset": "melaa",
+      "aseSupplementalVideo": 15,
+      "title": "Midesophageal left atrial appendage",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc15.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc15.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "15",
+      "sha256": "5a9fc8fd7f8e81982974831b8e030c088c71ccb5f940e658874957945ef037c5",
+      "bytes": 738669,
+      "durationSeconds": 2.4024,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 71,
+        "decodedLastFramePtsSeconds": 2.335667
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.2012,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 2.168833,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.2012,
+        2.1622
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          93
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-16",
+      "preset": "tgbasalsax",
+      "aseSupplementalVideo": 16,
+      "title": "Transgastric basal short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc16.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc16.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "16",
+      "sha256": "63fa4d081a2c81ab16ddf9a48decb19dcfcba78512c5091c8b5e166a47f99d34",
+      "bytes": 707391,
+      "durationSeconds": 2.268933,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 67,
+        "decodedLastFramePtsSeconds": 2.2022
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.167833,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 2.068733,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.1345,
+        2.042
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-17",
+      "preset": "tgpapillary",
+      "aseSupplementalVideo": 17,
+      "title": "Transgastric midpapillary short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc17.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc17.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "17",
+      "sha256": "a5a3081b42d6ddb947431522fc4486b2f5e62dcded63999e152705b8bb70ece1",
+      "bytes": 718038,
+      "durationSeconds": 2.3023,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 68,
+        "decodedLastFramePtsSeconds": 2.235567
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.167833,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 2.1021,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.1511,
+        2.0721
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-18",
+      "preset": "tgapicalsax",
+      "aseSupplementalVideo": 18,
+      "title": "Transgastric apical short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc18.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc18.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "18",
+      "sha256": "e57c4158ed2e970298ba2a952163d153f9e0c28006c4e370de61d3137df95a9e",
+      "bytes": 662592,
+      "durationSeconds": 2.1021,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 62,
+        "decodedLastFramePtsSeconds": 2.035367
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.067733,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.9019,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.0511,
+        1.8919
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-19",
+      "preset": "tgrvbasal",
+      "aseSupplementalVideo": 19,
+      "title": "Transgastric RV basal",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc19.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc19.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "19",
+      "sha256": "e6cba4ce4827ed11f6e75eaa9d17431a10e1a80cffeeb9b741c9c77102a1a3a8",
+      "bytes": 700399,
+      "durationSeconds": 2.268933,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 67,
+        "decodedLastFramePtsSeconds": 2.2022
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.167833,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 2.068733,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.1345,
+        2.042
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-20",
+      "preset": "tgrvinout",
+      "aseSupplementalVideo": 20,
+      "title": "Transgastric RV inflow-outflow",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc20.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc20.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "20",
+      "sha256": "663072a49b02962ced7e2aee4cb9be85deb2ff0f159d709d8007d9f5378bcf9e",
+      "bytes": 526418,
+      "durationSeconds": 1.7017,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 50,
+        "decodedLastFramePtsSeconds": 1.634967
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 17,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.867533,
+          "angleDegrees": 17,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.534867,
+          "angleDegrees": 17,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.8508,
+        1.5315
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          17
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-21",
+      "preset": "deeptg5c",
+      "aseSupplementalVideo": 21,
+      "title": "Deep transgastric five-chamber",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc21.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc21.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "21",
+      "sha256": "ba58ffa026e17e9bd3147a3d941cccd2715d2c11a1e73f33f943b6424904546a",
+      "bytes": 515670,
+      "durationSeconds": 1.668333,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 49,
+        "decodedLastFramePtsSeconds": 1.6016
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.867533,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.5015,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.8342,
+        1.5015
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-22",
+      "preset": "tg2c",
+      "aseSupplementalVideo": 22,
+      "title": "Transgastric two-chamber",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc22.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc22.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "22",
+      "sha256": "a6edeabee2f48ea87893ec7312c084a39f0f9bf0249b295851bde6954265e293",
+      "bytes": 681557,
+      "durationSeconds": 2.168833,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 64,
+        "decodedLastFramePtsSeconds": 2.1021
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.1011,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.968633,
+          "angleDegrees": 93,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        1.0844,
+        1.9519
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          93
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-23",
+      "preset": "tgrvin",
+      "aseSupplementalVideo": 23,
+      "title": "Transgastric RV inflow",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc23.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc23.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "23",
+      "sha256": "c5f161eba4b5ce31d11d2b46c5db94f54529d1ff9aa6a49b6994db9c8369fa4e",
+      "bytes": 549199,
+      "durationSeconds": 1.768433,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 52,
+        "decodedLastFramePtsSeconds": 1.7017
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 110,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.9009,
+          "angleDegrees": 110,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.6016,
+          "angleDegrees": 110,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.8842,
+        1.5916
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          110
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-24",
+      "preset": "tglax",
+      "aseSupplementalVideo": 24,
+      "title": "Transgastric long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc24.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc24.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "24",
+      "sha256": "55acf433e952ef50a64d92afda2fe483521a5422646214fbafb423a7ff1367b8",
+      "bytes": 590191,
+      "durationSeconds": 1.835167,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 54,
+        "decodedLastFramePtsSeconds": 1.768433
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 74,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.934267,
+          "angleDegrees": 74,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.668333,
+          "angleDegrees": 74,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.9176,
+        1.6517
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          74
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-25",
+      "preset": "daosax",
+      "aseSupplementalVideo": 25,
+      "title": "Descending aorta short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc25.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc25.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "25",
+      "sha256": "fde99be223f711c1e8db7e76896b8010469f8ee0cd32188d79debcd9921b35c7",
+      "bytes": 599931,
+      "durationSeconds": 1.9019,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 56,
+        "decodedLastFramePtsSeconds": 1.835167
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.967633,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.735067,
+          "angleDegrees": 0,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.9509,
+        1.7117
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          0
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-26",
+      "preset": "daolax",
+      "aseSupplementalVideo": 26,
+      "title": "Descending aorta long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc26.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc26.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "26",
+      "sha256": "ce3cd6c8547645c9d429d9989c3fa0dd7a87734e833bbc4e3fbfcc2dee2197a8",
+      "bytes": 588293,
+      "durationSeconds": 1.868533,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "40:33",
+        "displayAspectRatio": "640:297",
+        "displayWidthExact": 1551.5151515151515,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1552,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 55,
+        "decodedLastFramePtsSeconds": 1.8018
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 90,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.967633,
+          "angleDegrees": 90,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.7017,
+          "angleDegrees": 90,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.9343,
+        1.6817
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          90
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          425,
+          127,
+          517,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.27384020618556704,
+          0.1763888888888889,
+          0.3331185567010309,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.17515625,
+            0.82484375
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-27",
+      "preset": "uearchlax",
+      "aseSupplementalVideo": 27,
+      "title": "Upper esophageal aortic arch long-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc27.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc27.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "27",
+      "sha256": "a223735ab44cdd5a5151e05d989af4c5c1666e882008f687ddebf4ee94a7e4a4",
+      "bytes": 395858,
+      "durationSeconds": 1.368033,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "512:351",
+        "displayAspectRatio": "8192:3159",
+        "displayWidthExact": 1867.1225071225072,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1867,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 40,
+        "decodedLastFramePtsSeconds": 1.3013
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 29,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.7007,
+          "angleDegrees": 29,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.234567,
+          "angleDegrees": 29,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.684,
+        1.2312
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          29
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          583,
+          127,
+          675,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "Values transcribed from source pixels. Equal first/mid/late values do not prove constancy between or beyond samples. Preserve native dial; overlaying a guideline-derived static angle would add unsupported acquisition metadata.",
+        "bboxNormalizedLTRB": [
+          0.31226566684520624,
+          0.1763888888888889,
+          0.3615425816818425,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.23006591796875003,
+            0.7699340820312499
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "Equal sampled angles do not establish constancy in unsampled frames.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "ase-2013-tee-28",
+      "preset": "uearchsax",
+      "aseSupplementalVideo": 28,
+      "title": "Upper esophageal aortic arch short-axis",
+      "sourceType": "publisher",
+      "catalog": "public/assets/tee-atlas/media.json",
+      "sourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc28.mp4",
+      "originalSourceUrl": "https://ars.els-cdn.com/content/image/1-s2.0-S0894731713005622-mmc28.mp4",
+      "publisherPage": "https://www.sciencedirect.com/science/article/pii/S0894731713005622",
+      "sourceSupplementalVideoLabel": "28",
+      "sha256": "d76ba3353c6e02ab17871660b959d11e4145d269204492bd7deab3cabe4368e8",
+      "bytes": 517285,
+      "durationSeconds": 1.735067,
+      "encoding": {
+        "width": 1280,
+        "height": 720,
+        "sampleAspectRatio": "512:351",
+        "displayAspectRatio": "8192:3159",
+        "displayWidthExact": 1867.1225071225072,
+        "displayHeight": 720,
+        "squarePixelReviewDimensions": [
+          1867,
+          720
+        ],
+        "averageFrameRate": "30000/1001",
+        "decodedFrameCount": 51,
+        "decodedLastFramePtsSeconds": 1.668333
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": 90,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 0.867533,
+          "angleDegrees": 90,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        },
+        {
+          "ptsSeconds": 1.568233,
+          "angleDegrees": 84,
+          "semicircleVisible": true,
+          "numericReadoutVisible": true
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.8675,
+        1.5616
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": true,
+        "semicircleVisible": true,
+        "numericReadoutVisible": true,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": [
+          84,
+          90
+        ],
+        "position": "Upper-left of native scanner picture, above-left of ultrasound sector.",
+        "bboxSquarePixelReviewLTRB": [
+          583,
+          127,
+          675,
+          199
+        ],
+        "visibleText": "0 left endpoint and 180 right endpoint; current numeric angle above pointer. No degree glyph on the native current value.",
+        "evidenceNotes": "All 51 decoded dial frames visually inspected. Frames 1–44 show 90; frames 45–51 show 88,87,86,84,83,82,81. Native angle changes late in clip; no fixed numeric custom overlay can accurately describe every frame.",
+        "completeLoop": {
+          "allDecodedFramesInspected": true,
+          "frameCount": 51,
+          "observedRangeDegrees": [
+            81,
+            90
+          ],
+          "distinctAnglesDegrees": [
+            81,
+            82,
+            83,
+            84,
+            86,
+            87,
+            88,
+            90
+          ],
+          "angleByFrame": [
+            {
+              "frameNumberOneBased": 1,
+              "ptsSeconds": 0.0,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 2,
+              "ptsSeconds": 0.033367,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 3,
+              "ptsSeconds": 0.066733,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 4,
+              "ptsSeconds": 0.1001,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 5,
+              "ptsSeconds": 0.133467,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 6,
+              "ptsSeconds": 0.166833,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 7,
+              "ptsSeconds": 0.2002,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 8,
+              "ptsSeconds": 0.233567,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 9,
+              "ptsSeconds": 0.266933,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 10,
+              "ptsSeconds": 0.3003,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 11,
+              "ptsSeconds": 0.333667,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 12,
+              "ptsSeconds": 0.367033,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 13,
+              "ptsSeconds": 0.4004,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 14,
+              "ptsSeconds": 0.433767,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 15,
+              "ptsSeconds": 0.467133,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 16,
+              "ptsSeconds": 0.5005,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 17,
+              "ptsSeconds": 0.533867,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 18,
+              "ptsSeconds": 0.567233,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 19,
+              "ptsSeconds": 0.6006,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 20,
+              "ptsSeconds": 0.633967,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 21,
+              "ptsSeconds": 0.667333,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 22,
+              "ptsSeconds": 0.7007,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 23,
+              "ptsSeconds": 0.734067,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 24,
+              "ptsSeconds": 0.767433,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 25,
+              "ptsSeconds": 0.8008,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 26,
+              "ptsSeconds": 0.834167,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 27,
+              "ptsSeconds": 0.867533,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 28,
+              "ptsSeconds": 0.9009,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 29,
+              "ptsSeconds": 0.934267,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 30,
+              "ptsSeconds": 0.967633,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 31,
+              "ptsSeconds": 1.001,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 32,
+              "ptsSeconds": 1.034367,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 33,
+              "ptsSeconds": 1.067733,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 34,
+              "ptsSeconds": 1.1011,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 35,
+              "ptsSeconds": 1.134467,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 36,
+              "ptsSeconds": 1.167833,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 37,
+              "ptsSeconds": 1.2012,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 38,
+              "ptsSeconds": 1.234567,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 39,
+              "ptsSeconds": 1.267933,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 40,
+              "ptsSeconds": 1.3013,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 41,
+              "ptsSeconds": 1.334667,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 42,
+              "ptsSeconds": 1.368033,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 43,
+              "ptsSeconds": 1.4014,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 44,
+              "ptsSeconds": 1.434767,
+              "angleDegrees": 90
+            },
+            {
+              "frameNumberOneBased": 45,
+              "ptsSeconds": 1.468133,
+              "angleDegrees": 88
+            },
+            {
+              "frameNumberOneBased": 46,
+              "ptsSeconds": 1.5015,
+              "angleDegrees": 87
+            },
+            {
+              "frameNumberOneBased": 47,
+              "ptsSeconds": 1.534867,
+              "angleDegrees": 86
+            },
+            {
+              "frameNumberOneBased": 48,
+              "ptsSeconds": 1.568233,
+              "angleDegrees": 84
+            },
+            {
+              "frameNumberOneBased": 49,
+              "ptsSeconds": 1.6016,
+              "angleDegrees": 83
+            },
+            {
+              "frameNumberOneBased": 50,
+              "ptsSeconds": 1.634967,
+              "angleDegrees": 82
+            },
+            {
+              "frameNumberOneBased": 51,
+              "ptsSeconds": 1.668333,
+              "angleDegrees": 81
+            }
+          ]
+        },
+        "bboxNormalizedLTRB": [
+          0.31226566684520624,
+          0.1763888888888889,
+          0.3615425816818425,
+          0.2763888888888889
+        ],
+        "centeredFitCheck": {
+          "focusAspect": 1.4,
+          "normalizedHorizontalBounds": [
+            0.23006591796875003,
+            0.7699340820312499
+          ],
+          "normalizedVerticalBounds": [
+            0,
+            1
+          ],
+          "reviewedNativeBoxFullyInside": true,
+          "method": "Analytical comparison of the manually reviewed source-frame box with the centered 1.4-aspect crop, using SAR-corrected display geometry."
+        }
+      },
+      "inspectionCoverage": "first/middle/late source frames, plus every native-dial frame in the complete 51-frame decoded loop",
+      "uncertaintyNote": "Native dial readouts inspected in all 51 decoded frames; this records displayed numbers, not an independent calibration of acquisition geometry.",
+      "uiPolicy": {
+        "kind": "retain-native",
+        "addedSvgVisible": false,
+        "referenceExplanationVisible": false
+      }
+    },
+    {
+      "clipId": "tee-me4c",
+      "preset": "me4c",
+      "aseSupplementalVideo": null,
+      "title": "Midesophageal four-chamber",
+      "sourceType": "local",
+      "catalog": "public/assets/echo-media-v6.json",
+      "sourceUrl": "./assets/echo-media-v7/tee-me4c.mp4",
+      "originalSourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13089-020-00189-0/MediaObjects/13089_2020_189_MOESM1_ESM.wmv",
+      "publisherPage": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+      "sourceSupplementalVideoLabel": "1a",
+      "sha256": "83eedb22414672a30080f71ccd8ad250a42c84215d54bad99168915277742cc5",
+      "bytes": 549072,
+      "durationSeconds": 1.56,
+      "encoding": {
+        "width": 792,
+        "height": 568,
+        "sampleAspectRatio": "1:1",
+        "displayAspectRatio": "99:71",
+        "displayWidthExact": 792.0,
+        "displayHeight": 568,
+        "squarePixelReviewDimensions": [
+          792,
+          568
+        ],
+        "averageFrameRate": "25/1",
+        "decodedFrameCount": 39,
+        "decodedLastFramePtsSeconds": 1.52
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.8,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 1.44,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.78,
+        1.404
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "visibleText": "No multiplane angle text or dial. Right-edge sector markings are not an angle readout.",
+        "evidenceNotes": "Full first/middle/late frames visually inspected; all are cropped ultrasound sectors with no native multiplane display. No acquisition angle can be recovered from these inspected pixels. Do not infer a numeric angle from the named view alone."
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "No acquisition angle can be recovered from the inspected pixels; the named view does not establish that angle.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 15.0,
+          "guidelineRangeDegrees": [
+            10,
+            20
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "corner"
+        }
+      }
+    },
+    {
+      "clipId": "tee-melax",
+      "preset": "melax",
+      "aseSupplementalVideo": null,
+      "title": "Midesophageal long-axis · color Doppler",
+      "sourceType": "local",
+      "catalog": "public/assets/echo-media-v6.json",
+      "sourceUrl": "./assets/echo-media-v7/tee-melax.mp4",
+      "originalSourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13089-020-00189-0/MediaObjects/13089_2020_189_MOESM2_ESM.wmv",
+      "publisherPage": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+      "sourceSupplementalVideoLabel": "1b",
+      "sha256": "82830ac080fca95fd8c3b8232ca22a304c46bd07244f970e92bb7de3086b1cdc",
+      "bytes": 243634,
+      "durationSeconds": 0.76,
+      "encoding": {
+        "width": 870,
+        "height": 610,
+        "sampleAspectRatio": "1:1",
+        "displayAspectRatio": "87:61",
+        "displayWidthExact": 870.0,
+        "displayHeight": 610,
+        "squarePixelReviewDimensions": [
+          870,
+          610
+        ],
+        "averageFrameRate": "25/1",
+        "decodedFrameCount": 19,
+        "decodedLastFramePtsSeconds": 0.72
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.4,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.72,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.38,
+        0.684
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "visibleText": "No multiplane angle text. A right-edge10 in tee-melax is an ultrasound depth marking, not an angle.",
+        "evidenceNotes": "Full first/middle/late frames visually inspected; all are cropped ultrasound sectors with no native multiplane display. No acquisition angle can be recovered from these inspected pixels. Do not infer a numeric angle from the named view alone."
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "No acquisition angle can be recovered from the inspected pixels; the named view does not establish that angle.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 130.0,
+          "guidelineRangeDegrees": [
+            120,
+            140
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "corner"
+        }
+      }
+    },
+    {
+      "clipId": "tee-me2c",
+      "preset": "me2c",
+      "aseSupplementalVideo": null,
+      "title": "Midesophageal two-chamber",
+      "sourceType": "local",
+      "catalog": "public/assets/echo-media-v6.json",
+      "sourceUrl": "./assets/echo-media-v7/tee-me2c.mp4",
+      "originalSourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13089-020-00189-0/MediaObjects/13089_2020_189_MOESM3_ESM.mp4",
+      "publisherPage": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+      "sourceSupplementalVideoLabel": "1c",
+      "sha256": "36b240321704d70c870f3d02ffaf10c8e53ec6711ad43a29946a3c9f825bb9c1",
+      "bytes": 1137327,
+      "durationSeconds": 1.24,
+      "encoding": {
+        "width": 1074,
+        "height": 810,
+        "sampleAspectRatio": "1:1",
+        "displayAspectRatio": "179:135",
+        "displayWidthExact": 1074.0,
+        "displayHeight": 810,
+        "squarePixelReviewDimensions": [
+          1074,
+          810
+        ],
+        "averageFrameRate": "25/1",
+        "decodedFrameCount": 31,
+        "decodedLastFramePtsSeconds": 1.2
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.64,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 1.12,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.62,
+        1.116
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "visibleText": "No multiplane angle text or dial. Right-edge sector markings are not an angle readout.",
+        "evidenceNotes": "Full first/middle/late frames visually inspected; all are cropped ultrasound sectors with no native multiplane display. No acquisition angle can be recovered from these inspected pixels. Do not infer a numeric angle from the named view alone."
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "No acquisition angle can be recovered from the inspected pixels; the named view does not establish that angle.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 90.0,
+          "guidelineRangeDegrees": [
+            80,
+            100
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "corner"
+        }
+      }
+    },
+    {
+      "clipId": "tee-bicaval",
+      "preset": "bicaval",
+      "aseSupplementalVideo": null,
+      "title": "Midesophageal bicaval",
+      "sourceType": "local",
+      "catalog": "public/assets/echo-media-v6.json",
+      "sourceUrl": "./assets/echo-media-v7/tee-bicaval.mp4",
+      "originalSourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13089-020-00189-0/MediaObjects/13089_2020_189_MOESM4_ESM.wmv",
+      "publisherPage": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+      "sourceSupplementalVideoLabel": "1d",
+      "sha256": "29b51cbdb9e6b64ae36b1b45c8d0a7a5d6351684924d3d362e86eed392cdcf6d",
+      "bytes": 625027,
+      "durationSeconds": 1.68,
+      "encoding": {
+        "width": 804,
+        "height": 596,
+        "sampleAspectRatio": "1:1",
+        "displayAspectRatio": "201:149",
+        "displayWidthExact": 804.0,
+        "displayHeight": 596,
+        "squarePixelReviewDimensions": [
+          804,
+          596
+        ],
+        "averageFrameRate": "25/1",
+        "decodedFrameCount": 42,
+        "decodedLastFramePtsSeconds": 1.64
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.84,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 1.52,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.84,
+        1.512
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "visibleText": "No multiplane angle text or dial. Right-edge sector markings are not an angle readout.",
+        "evidenceNotes": "Full first/middle/late frames visually inspected; all are cropped ultrasound sectors with no native multiplane display. No acquisition angle can be recovered from these inspected pixels. Do not infer a numeric angle from the named view alone."
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "No acquisition angle can be recovered from the inspected pixels; the named view does not establish that angle.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 100.0,
+          "guidelineRangeDegrees": [
+            90,
+            110
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "corner"
+        }
+      }
+    },
+    {
+      "clipId": "tee-tgpapillary",
+      "preset": "tgpapillary",
+      "aseSupplementalVideo": null,
+      "title": "Transgastric short-axis",
+      "sourceType": "local",
+      "catalog": "public/assets/echo-media-v6.json",
+      "sourceUrl": "./assets/echo-media-v7/tee-tgpapillary.mp4",
+      "originalSourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13089-020-00189-0/MediaObjects/13089_2020_189_MOESM5_ESM.mp4",
+      "publisherPage": "https://link.springer.com/article/10.1186/s13089-020-00189-0",
+      "sourceSupplementalVideoLabel": "1e",
+      "sha256": "1c34bbee25bbfa03cd8dd6423c16632ea1fb2ce5b6e3614d7422da791beaccff",
+      "bytes": 1435222,
+      "durationSeconds": 1.52,
+      "encoding": {
+        "width": 1224,
+        "height": 880,
+        "sampleAspectRatio": "1:1",
+        "displayAspectRatio": "153:110",
+        "displayWidthExact": 1224.0,
+        "displayHeight": 880,
+        "squarePixelReviewDimensions": [
+          1224,
+          880
+        ],
+        "averageFrameRate": "25/1",
+        "decodedFrameCount": 38,
+        "decodedLastFramePtsSeconds": 1.48
+      },
+      "samples": [
+        {
+          "ptsSeconds": 0.0,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 0.76,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        },
+        {
+          "ptsSeconds": 1.4,
+          "angleDegrees": null,
+          "semicircleVisible": false,
+          "numericReadoutVisible": false
+        }
+      ],
+      "requestedSeekTimesSeconds": [
+        0,
+        0.76,
+        1.368
+      ],
+      "sampleTimingNote": "The inspected sample times are the first decoded frame PTS at or after the requested ffmpeg seek; first/mid/90% seeks are recorded separately.",
+      "nativeDisplay": {
+        "presentAtAllSampleTimes": false,
+        "semicircleVisible": false,
+        "numericReadoutVisible": false,
+        "textOnlyAngle": false,
+        "observedAnglesDegrees": null,
+        "position": null,
+        "bboxSquarePixelReviewLTRB": null,
+        "visibleText": "No multiplane angle text or dial. Right-edge sector markings are not an angle readout.",
+        "evidenceNotes": "Full first/middle/late frames visually inspected; all are cropped ultrasound sectors with no native multiplane display. No acquisition angle can be recovered from these inspected pixels. Do not infer a numeric angle from the named view alone."
+      },
+      "inspectionCoverage": "first decoded frame and frames at or immediately after middle and 90%-duration seeks",
+      "uncertaintyNote": "No acquisition angle can be recovered from the inspected pixels; the named view does not establish that angle.",
+      "uiPolicy": {
+        "kind": "supplement-reference",
+        "addedSvgVisible": true,
+        "referenceExplanationVisible": true,
+        "reference": {
+          "label": "REF",
+          "angleDegrees": 10.0,
+          "guidelineRangeDegrees": [
+            0,
+            20
+          ],
+          "derivation": "Midpoint of the existing TEE view angleRange in public/tee-atlas-data.js.",
+          "measuredAcquisitionAngle": false,
+          "actualAcquisitionAngleDegrees": null,
+          "placement": "corner"
+        }
+      }
+    }
+  ]
+}

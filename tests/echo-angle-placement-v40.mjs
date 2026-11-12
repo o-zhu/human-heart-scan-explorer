@@ -1,11 +1,15 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import {readFileSync} from 'node:fs';
 import {referenceAngleLayout,createReferenceAnglePlacement,supplementalTeeAngle,referenceAngleMarkup} from '../public/echo-reference-player.js';
 import {TEE_ATLAS_VIEWS} from '../public/tee-atlas-data.js';
+import {reviewedTeeAngleSource,TEE_MULTIPLANE_SOURCE_REVIEWS} from '../public/tee-reference-angle-policy.js';
 
 const source={sourceWidth:1280,sourceHeight:720,focusAspect:1.4};
 const near=(actual,expected,tolerance=1e-6)=>assert.ok(Math.abs(actual-expected)<tolerance,`${actual} ≠ ${expected}`);
 const nearRect=(actual,expected)=>Object.entries(expected).forEach(([key,value])=>near(actual[key],value));
+const catalogs=['tee-atlas/media.json','echo-media-v6.json'].flatMap(path=>JSON.parse(readFileSync(new URL(`../public/assets/${path}`,import.meta.url))).clips.filter(clip=>clip.mode==='tee'));
+const supplementalIds=new Set(['ase-2013-tee-01','ase-2013-tee-12','tee-me4c','tee-melax','tee-me2c','tee-bicaval','tee-tgpapillary']);
 
 test('scanner dial stays with the ultrasound content, including source padding and player letterboxing',()=>{
  const native=referenceAngleLayout({...source,width:1280,height:720});
@@ -49,20 +53,41 @@ test('unavailable source dimensions wait for metadata rather than placing an arb
  assert.deepEqual(noCrop.crop,noCrop.frame);
 });
 
-test('all 28 TEE recordings receive a numeric reference without claiming a measured acquisition angle',()=>{
- assert.equal(TEE_ATLAS_VIEWS.length,28);
- for(const view of TEE_ATLAS_VIEWS){
+test('all 33 reviewed sources retain native readouts or receive one of exactly seven labelled supplements',()=>{
+ assert.equal(catalogs.length,33);assert.equal(new Set(catalogs.map(clip=>clip.id)).size,33);
+ assert.equal(TEE_MULTIPLANE_SOURCE_REVIEWS.length,33);
+ const found=[];let native=0;
+ for(const clip of catalogs){
+  const view=TEE_ATLAS_VIEWS.find(view=>view.id===clip.preset),review=reviewedTeeAngleSource(clip),dial=supplementalTeeAngle(view,clip);
+  assert.ok(review,`${clip.id}: catalog source has an exact pixel-review record`);
+  if(!supplementalIds.has(clip.id)){
+   native++;assert.equal(review.kind,'native');assert.equal(dial,null,`${clip.id}: do not duplicate a baked-in readout`);continue;
+  }
+  found.push(clip.id);assert.equal(review.kind,'reference');assert.ok(dial,clip.id);
   const [min,max]=view.angleRange,range=`${min===max?min:`${min}–${max}`}°`,angle=(min+max)/2;
-  const dial=supplementalTeeAngle(view);
-  assert.ok(dial,view.id);
   assert.equal(dial.label,`${angle}°`);assert.equal(dial.angle,angle);
   assert.match(dial.explanation,/Reference angle:/);assert.ok(dial.explanation.includes(range));assert.match(dial.explanation,/representative view angle, not a measured angle from this recording/);
+  assert.equal(dial.placement,clip.external?'reviewed':'corner');
   // SVG coordinates are deliberately rounded to four decimal places.
   near(Math.hypot(dial.x-64,dial.y-34),52,1e-4);
  }
+ assert.equal(native,26);assert.deepEqual(new Set(found),supplementalIds);
  assert.match(referenceAngleMarkup,/role="img"/);assert.match(referenceAngleMarkup,/>REF<\/text>/);
- assert.equal(supplementalTeeAngle({id:'me5c',angleRange:[80,20]}),null);
- assert.equal(supplementalTeeAngle({mode:'tte',angleRange:[0,10]}),null);
+});
+
+test('replaced, unreviewed, mismatched and modified sources cannot inherit an angle review',()=>{
+ for(const id of ['ase-2013-tee-01','ase-2013-tee-03','tee-me4c']){
+  const clip=catalogs.find(clip=>clip.id===id),view=TEE_ATLAS_VIEWS.find(view=>view.id===clip.preset);
+  for(const patch of [{id:'unreviewed-reference'},{url:clip.url+'?replacement=1'},{preset:'not-this-view'},{bytes:clip.bytes+1},{bytes:undefined},{external:!clip.external},{mode:'tte'},{kind:'image'},{mimeType:'application/octet-stream'}]){
+   const replacement={...clip,...patch};assert.equal(reviewedTeeAngleSource(replacement),null,`${id}: ${JSON.stringify(patch)}`);assert.equal(supplementalTeeAngle(view,replacement),null);
+  }
+ }
+ const local=catalogs.find(clip=>clip.id==='tee-me4c'),view=TEE_ATLAS_VIEWS.find(view=>view.id===local.preset);
+ for(const sha256 of [undefined,'0'.repeat(64)])assert.equal(reviewedTeeAngleSource({...local,sha256}),null,'A local hash change invalidates source-pixel review');
+ assert.equal(supplementalTeeAngle({...view,id:'me2c'},local),null,'A valid source cannot label another view');
+ assert.equal(supplementalTeeAngle({...view,mode:'tte'},local),null);
+ assert.equal(supplementalTeeAngle({...view,angleRange:[80,20]},local),null);
+ assert.equal(supplementalTeeAngle(view),null,'The view name alone is not source evidence');
 });
 
 test('one bounded observer follows pane and video resize and metadata, then disconnects on disposal',()=>{

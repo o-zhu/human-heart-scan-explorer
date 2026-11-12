@@ -277,22 +277,31 @@ export class EchoModule {
   }).finally(()=>{this.mediaPromise=null;});
   return this.mediaPromise;
  }
+ updateCineAngle(selected){
+  const key=this.frameKey(),selectionMatches=selected?.id===this.mediaSelection&&selected?.mode===this.state.mode&&selected?.preset===key;
+  const angle=selectionMatches&&selected.mode==='tee'?supplementalTeeAngle(TEE_ATLAS_VIEWS.find(view=>view.id===key),selected):null;
+  const bound=this.cineAngleSource,selectionKey=selected?mediaIdentity(selected):'';
+  const current=!!(angle&&this.active&&!this.destroyed&&bound&&bound.requestId===this.cineRequestId&&bound.selectionKey===selectionKey&&this.cineTargetKey===selectionKey&&bound.url===this.cineSourceUrl);
+  this.$('cine-angle').hidden=!angle;this.$('cine-angle-note').hidden=!angle;
+  if(angle){updateMultiplaneIndicator(this.$('cine-angle'),{angle:angle.angle,label:'REF',ariaLabel:angle.explanation});this.$('cine-angle-note').textContent=angle.explanation;}
+  const focusAspect=Number(selected?.focusAspect),canFrame=focusAspect>=1&&focusAspect<=2;
+  // The catalog URL identifies the selection, but cached movies are played
+  // from an object URL. Bind placement to that actual source only after its
+  // assignment for this request. Decoded currentSrc/src checks remain intact.
+  this.cineAnglePlacement.update({enabled:current,sourceUrl:current?bound.url:'',sourceKey:current?`${selectionKey}|${bound.requestId}`:'',focusAspect,fullFrame:!canFrame||this.cineFullFrame,placement:angle?.placement||'corner'});
+ }
  updateCine(){
   if(!this.mediaCatalog)return;
   const key=this.frameKey(),clips=this.mediaCatalog.clips.filter(c=>c.mode===this.state.mode&&c.preset===key),exact=preferredEchoReference(clips,{mode:this.state.mode,preset:key});
   if(this.mediaFrameKey!==key){this.mediaFrameKey=key;this.mediaSelection=exact?.id||'';}
   const selected=clips.find(c=>c.id===this.mediaSelection),select=this.$('cine-select'),video=this.$('cine-video');
-  const angle=selected?.mode==='tee'?supplementalTeeAngle(TEE_ATLAS_VIEWS.find(view=>view.id===key)):null;
-  this.$('cine-angle').hidden=!angle;this.$('cine-angle-note').hidden=!angle;
-  if(angle){updateMultiplaneIndicator(this.$('cine-angle'),{angle:angle.angle,label:'REF',ariaLabel:angle.explanation});this.$('cine-angle-note').textContent=angle.explanation;}
   this.$('cine-guideline').hidden=!selected;this.$('cine-guideline').href=selected?.pdfUrl||ECHO_PRESETS.find(view=>view.id===key)?.sourceUrl||(this.state.mode==='tee'?TEE_SOURCE:TTE_SOURCE);
   const institution=selected?.institutionalAlternative;this.$('cine-institution').hidden=!institution?.viewerUrl;this.$('cine-institution').href=institution?.viewerUrl||'';
   this.$('cine-institution-note').hidden=!institution?.viewerUrl;this.$('cine-institution-note').textContent=institution?`${institution.note||''} ${institution.deepLinkNote||''}`:'';
   const focusAspect=Number(selected?.focusAspect),canFrame=focusAspect>=1&&focusAspect<=2;
   this.$('cine-fit').hidden=!canFrame;this.$('cine-fit').textContent=this.cineFullFrame?'Fit Ultrasound':'Full Frame';
   video.classList.toggle('is-framed',canFrame&&!this.cineFullFrame);video.style.setProperty('--echo-cine-aspect',canFrame?String(focusAspect):'1.4');
-  const reviewedSlot=selected?.id===`ase-2013-tee-${key==='me5c'?'01':key==='memodbicaval'?'12':''}`;
-  this.cineAnglePlacement.update({enabled:!!angle,sourceUrl:selected?.url||'',sourceKey:selected?mediaIdentity(selected):'',focusAspect,fullFrame:!canFrame||this.cineFullFrame,placement:reviewedSlot?'reviewed':'corner'});
+  this.updateCineAngle(selected);
   select.disabled=!clips.length;select.innerHTML=(!exact?'<option value="">No Example Available for This View</option>':'')+clips.map(c=>`<option value="${escapeHTML(c.id)}">${escapeHTML(titleCaseUi(this.state.mode==='tee'?(c.aseNumber?'ASE / SCA Guideline Cine':c.title||'Additional Clinical Example'):c.title))}</option>`).join('');select.value=selected?.id||'';
   this.updateCorrespondence(selected);
   if(!selected){
@@ -317,7 +326,7 @@ export class EchoModule {
   if(this.active&&this.cineTargetKey!==mediaIdentity(selected))this.startCine(selected);
  }
  stopCine(){
-  this.cineRequestId++;this.mediaCache.cancel();
+  this.cineRequestId++;this.cineAngleSource=null;this.updateCineAngle(null);this.mediaCache.cancel();
   this.$('cine-fallback').hidden=true;
   this.cineNativeCleanup?.();this.cineNativeCleanup=null;
   this.cineEmbedController?.destroy();this.cineEmbedController=null;
@@ -331,7 +340,7 @@ export class EchoModule {
  localCineReference(){return localEchoReference(this.mediaCatalog?.clips||[],{mode:this.state.mode,preset:this.frameKey()});}
  showCineFallback(){const local=this.localCineReference();this.$('cine-fallback').hidden=!local||local.id===this.mediaSelection;}
  cineError(message){
-  this.cineLoadedId=null;this.cineNativeCleanup?.();this.cineNativeCleanup=null;
+  this.cineLoadedId=null;this.cineAngleSource=null;this.updateCineAngle(null);this.cineNativeCleanup?.();this.cineNativeCleanup=null;
   this.$('cine-video').hidden=true;this.$('cine-image').hidden=true;this.$('cine-embed').hidden=true;this.$('cine-empty').hidden=false;this.$('cine-empty').textContent=message;
   this.$('cine-loading').hidden=false;this.$('cine-progress').hidden=true;this.$('cine-status').textContent='Reference unavailable · original source remains linked.';this.$('cine-retry').hidden=false;
   this.showCineFallback();
@@ -353,6 +362,7 @@ export class EchoModule {
   }}).then(entry=>{
    if(!current())return;
    this.mediaCache.setActive(entry);this.cineSourceUrl=entry.url;video.src=entry.url;video.load();
+   this.cineAngleSource={selectionKey:mediaIdentity(selected),requestId:token,url:entry.url};this.updateCineAngle(selected);
    video.playbackRate=Number(this.$('cine-rate').value);video.loop=this.$('cine-loop').checked;this.cineLoadedId=selected.id;
    this.$('cine-progress').hidden=true;this.$('cine-status').textContent='Entire movie loaded · ready to play and scrub.';
    this.cineResume=false;video.defaultMuted=true;video.autoplay=true;
@@ -399,7 +409,7 @@ export class EchoModule {
    const mediaError=()=>{if(element.error&&element.getAttribute('src')===selected.url)failed();};
    const timer=setTimeout(failed,25000);element.addEventListener('loadeddata',ready);element.addEventListener('canplay',ready);element.addEventListener('error',mediaError);
    this.cineNativeCleanup=()=>{clearTimeout(timer);element.removeEventListener('loadeddata',ready);element.removeEventListener('canplay',ready);element.removeEventListener('error',mediaError);};
-   element.src=selected.url;element.load();element.playbackRate=Number(this.$('cine-rate').value);
+   element.src=selected.url;element.load();this.cineAngleSource={selectionKey:mediaIdentity(selected),requestId:token,url:selected.url};this.updateCineAngle(selected);element.playbackRate=Number(this.$('cine-rate').value);
    element.play().then(()=>{if(current())this.$('cine-loading').hidden=true;}).catch(error=>{if(!current()||error?.name==='AbortError')return;blocked=true;this.$('cine-loading').hidden=false;this.$('cine-status').textContent='Ready · press Play to start.';});
   }
  }

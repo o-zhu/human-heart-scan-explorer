@@ -1,5 +1,6 @@
 /** Selection-scoped source players. A frame load is not evidence that YouTube is ready. */
 import {multiplaneIndicatorMarkup,multiplanePoint,multiplaneRange} from './multiplane-indicator.js';
+import {reviewedTeeAngleSource} from './tee-reference-angle-policy.js';
 let youtubeAPI;
 let nextPlayerId=0;
 
@@ -133,12 +134,15 @@ export function createYouTubeReference({placeholder,selected,isCurrent,onReady,o
  }};
 }
 
-/** Every TEE view has a numeric reference. A guideline midpoint is not a
- * measured acquisition angle and must remain explicitly labelled REF. */
-export function supplementalTeeAngle(view){
- const range=multiplaneRange(view?.angleRange);if(!range||view?.mode==='tte')return null;
+/** Supplement only a reviewed source without its own multiplane display.
+ * Native (including changing) scanner angles remain entirely in the video.
+ * A guideline midpoint is a labelled teaching reference, not an acquired angle. */
+export function supplementalTeeAngle(view,selected){
+ const review=reviewedTeeAngleSource(selected);
+ const range=multiplaneRange(view?.angleRange);
+ if(!range||view?.mode!=='tee'||view.id!==selected?.preset||review?.kind!=='reference')return null;
  const [min,max]=range,angle=(min+max)/2,point=multiplanePoint(angle);
- return {label:`${angle}°`,angle,...point,range,
+ return {label:`${angle}°`,angle,...point,range,placement:review.placement,
   explanation:`Reference angle: ${angle}° (guideline range ${min===max?min:`${min}–${max}`}°). REF is a representative view angle, not a measured angle from this recording.`};
 }
 
@@ -188,7 +192,7 @@ function objectPosition(value){
 
 /** One bounded observer for the pane and its video; no per-frame media work.
  * Metadata belongs to the selected source only. Coded catalog dimensions are
- * deliberately not a fallback: both supplemental clips have non-square pixels. */
+ * deliberately not a fallback: the two publisher supplements have non-square pixels. */
 export function createReferenceAnglePlacement({screen,indicator,video,window:win=globalThis.window}){
  let state=null,stateKey='',disposed=false;
  const absolute=value=>{try{return new URL(value,video.ownerDocument?.baseURI||globalThis.location?.href).href;}catch{return value;}};

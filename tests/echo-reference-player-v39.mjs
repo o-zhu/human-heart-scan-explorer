@@ -1,11 +1,13 @@
 /** Production controller and media lifecycle, with an explicit fake player API.
  * This does not claim browser playback or physical iOS device verification. */
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import {createYouTubeReference,youtubeReferenceURL,supplementalTeeAngle} from '../public/echo-reference-player.js';
 import {EchoModule} from '../public/echo.js';
 import {TEE_ATLAS_VIEWS} from '../public/tee-atlas-data.js';
 const {parseHTML}=await import(pathToFileURL(process.argv[2]));
+const teeSources=JSON.parse(readFileSync(new URL('../public/assets/tee-atlas/media.json',import.meta.url))).clips;
 const {document,window}=parseHTML('<html><head></head><body><main id="echo"></main><div id="fixture"><iframe data-echo="cine-embed" hidden></iframe></div></body></html>');
 Object.assign(globalThis,{document,window,requestAnimationFrame:()=>1,cancelAnimationFrame:()=>{}});
 Object.defineProperty(window.HTMLSelectElement.prototype,'value',{configurable:true,get(){return this._value??this.querySelector('option')?.value??'';},set(value){this._value=String(value);}});
@@ -71,10 +73,10 @@ const beforeDisposed=errors;await waitForWatchdog();assert.equal(errors,beforeDi
 const renderer={settings:{palette:4,threshold:.28,cleanupEnabled:true},requestRender(){},clearCapData(){},set(){}};
 const echo=new EchoModule({renderer,mount:document.getElementById('echo')});
 const video=echo.$('cine-video');let plays=0,loads=0,rejectAutoplay=false;
-video.pause=()=>{video.paused=true;};video.load=()=>{loads++;video.error=null;};video.play=()=>{plays++;return rejectAutoplay?Promise.reject(Object.assign(new Error('Blocked'),{name:'NotAllowedError'})):Promise.resolve();};
+video.pause=()=>{video.paused=true;};video.load=()=>{loads++;video.error=null;video.readyState=0;};video.play=()=>{plays++;return rejectAutoplay?Promise.reject(Object.assign(new Error('Blocked'),{name:'NotAllowedError'})):Promise.resolve();};
 Object.defineProperty(video,'src',{get(){return video.getAttribute('src');},set(value){video.setAttribute('src',value);}});
 echo.active=true;echo.state={...echo.state,mode:'tee',preset:'me5c'};
-const clip={id:'tee-one',mode:'tee',preset:'me5c',kind:'video',external:true,url:'https://publisher.example/movie.mp4',title:'ME five-chamber',sourceUrl:'https://publisher.example/article',sourceName:'ASE / SCA guideline',focusAspect:1.4};
+const clip=teeSources.find(source=>source.id==='ase-2013-tee-01');
 echo.setMediaCatalog({clips:[clip]});
 assert.equal(plays,1);assert.equal(video.muted,true);assert.equal(video.defaultMuted,true);assert.equal(video.autoplay,true);assert.equal(video.hasAttribute('playsinline'),true);
 assert.equal(video.classList.contains('is-framed'),false,'The default preserves the complete source frame and its angle display.');
@@ -84,10 +86,11 @@ assert.equal(echo.$('cine-visible-source').getAttribute('href'),clip.sourceUrl);
 assert.equal(echo.$('cine-angle').hidden,false);assert.equal(echo.$('cine-angle-value').textContent,'5°');assert.match(echo.$('cine-angle-note').textContent,/range 0–10°/);assert.match(echo.$('cine-angle-note').textContent,/not a measured angle from this recording/);
 const priorLoads=loads;echo.updateCine();assert.equal(loads,priorLoads,'Unrelated plane updates preserve playback.');
 echo.setMediaCatalog({clips:[{...clip,url:'https://publisher.example/revised.mp4'}]});assert.equal(plays,2,'Same-id catalog corrections still replace the actual source.');
+assert.equal(echo.$('cine-angle').hidden,true,'A same-id replacement URL cannot inherit the old source review');assert.equal(echo.$('cine-angle-note').hidden,true);
 video.error=null;video.dispatchEvent(new window.Event('error'));assert.equal(echo.$('cine-retry').hidden,true,'A queued empty media error cannot fail the replacement.');
 rejectAutoplay=true;echo.startCine({...clip,url:'https://publisher.example/retry.mp4'});await settle();assert.match(echo.$('cine-status').textContent,/press Play/);
-echo.state.preset='memodbicaval';echo.setMediaCatalog({clips:[{...clip,id:'tee-two',preset:'memodbicaval'}]});
-assert.equal(echo.$('cine-angle-value').textContent,'60°');assert.match(echo.$('cine-angle-note').textContent,/range 50–70°/);assert.ok(supplementalTeeAngle(TEE_ATLAS_VIEWS.find(v=>v.id==='me4c')));
+echo.state.preset='memodbicaval';echo.setMediaCatalog({clips:[teeSources.find(source=>source.id==='ase-2013-tee-12')]});
+assert.equal(echo.$('cine-angle-value').textContent,'60°');assert.match(echo.$('cine-angle-note').textContent,/range 50–70°/);
 // Exercise every selected source through the real controller, including the
 // zero-degree RPV view. Metadata is fixture state, not a playback assertion.
 const screen=echo.mount.querySelector('.echo-cine-screen');
@@ -96,17 +99,22 @@ screen.getBoundingClientRect=()=>({left:0,top:0,width:640,height:480});
 video.getBoundingClientRect=()=>({left:0,top:0,width:640,height:480});
 for(const view of TEE_ATLAS_VIEWS){
  echo.state.preset=view.id;
- const source={...clip,id:`ase-2013-tee-${String(view.aseNumber).padStart(2,'0')}`,preset:view.id,url:`https://publisher.example/${view.id}.mp4`};
+ const source=teeSources.find(source=>source.preset===view.id);
  echo.setMediaCatalog({clips:[source]});
  video.readyState=1;video.videoWidth=1280;video.videoHeight=720;video.currentSrc=source.url;
  video.dispatchEvent(new window.Event('loadedmetadata'));
- const expected=supplementalTeeAngle(view);
- assert.equal(echo.$('cine-angle').hidden,false,view.id);
- assert.equal(echo.$('cine-angle').style.visibility,'visible',`${view.id}: metadata reveals the angle`);
- assert.equal(echo.$('cine-angle-value').textContent,expected.label,view.id);
- assert.equal(echo.$('cine-angle').querySelector('[data-multiplane="indicator"]').getAttribute('aria-label'),expected.explanation);
- assert.equal(echo.$('cine-angle-pointer').getAttribute('x2'),String(expected.x));
- assert.equal(echo.$('cine-angle-pointer').getAttribute('y2'),String(expected.y));
+ const expected=supplementalTeeAngle(view,source);
+ if(expected){
+  assert.equal(echo.$('cine-angle').hidden,false,view.id);
+  assert.equal(echo.$('cine-angle').style.visibility,'visible',`${view.id}: metadata reveals the angle`);
+  assert.equal(echo.$('cine-angle-value').textContent,expected.label,view.id);
+  assert.equal(echo.$('cine-angle').querySelector('[data-multiplane="indicator"]').getAttribute('aria-label'),expected.explanation);
+  assert.equal(echo.$('cine-angle-pointer').getAttribute('x2'),String(expected.x));
+  assert.equal(echo.$('cine-angle-pointer').getAttribute('y2'),String(expected.y));
+ }else{
+  assert.equal(echo.$('cine-angle').hidden,true,`${view.id}: native or unreviewed source gets no duplicate overlay`);
+  assert.equal(echo.$('cine-angle-note').hidden,true,`${view.id}: no misleading synthetic-angle note`);
+ }
 }
 echo.state={...echo.state,mode:'tte',preset:'a4c'};echo.setMediaCatalog({clips:[{...selected,preset:'a4c',mode:'tte',kind:'youtube',sourceUrl:clip.sourceUrl}]});await settle();
 const embedded=echo.$('cine-embed'),embeddedPlayer=players.at(-1);assert.equal(echo.$('cine-angle').hidden,true);assert.equal(echo.$('cine-empty').hidden,false);
@@ -114,4 +122,4 @@ embedded.dispatchEvent(new window.Event('load'));assert.equal(echo.cineLoadedId,
 embeddedPlayer.ready();assert.equal(echo.cineLoadedId,selected.id);assert.equal(echo.$('cine-empty').hidden,true);
 echo.leave();embeddedPlayer.events.onError();assert.equal(echo.$('cine-embed').hasAttribute('src'),false);assert.equal(echo.$('cine-embed').hidden,true);assert.equal(echo.cineLoadedId,null);
 echo.destroy();
-console.log('PASS source-player v39: fresh iframe identity; actual API readiness; bounded playback-start and repeated buffering; stopped/destroyed failed players; pause/cue/end/blocked-autoplay exemptions; queued state events; stale selection/timeout/error rejection; same-id URL replacement; original-frame TEE display; visible attribution; visible numeric reference dials for all 28 TEE sources with truthful angle qualification.');
+console.log('PASS source-player v39: fresh iframe identity; actual API readiness; bounded playback-start and repeated buffering; stopped/destroyed failed players; pause/cue/end/blocked-autoplay exemptions; queued state events; stale selection/timeout/error rejection; same-id URL replacement; original-frame TEE display; visible attribution; selected-source angle policy honored across all 28 TEE references.');
