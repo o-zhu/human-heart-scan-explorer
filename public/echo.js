@@ -9,6 +9,8 @@ import { add, mul, norm, cross, dot } from './planes.js';
 import { capColor, capAnatomyColor as anatomyColor, buildAnatomyPalette } from './render-styles.js';
 import { EchoMediaCache } from './echo-media-cache.js';
 import {fullEchoCutFacePlane,validateEchoFineSection} from './echo-cut-face.js';
+import {ReferenceSectionCache} from './reference-section-cache.js';
+import {REFERENCE_SECTIONS} from './reference-sections-v57.js';
 import {createYouTubeReference,ensureEchoReferenceStyles,supplementalTeeAngle,referenceAngleMarkup,createReferenceAnglePlacement,localEchoReference,preferredEchoReference} from './echo-reference-player.js';
 import { scanActivity } from './download-priority.js';
 import {TEE_ATLAS_VIEWS,TEE_ATLAS_GROUPS} from './tee-atlas-data.js';
@@ -88,7 +90,7 @@ export class EchoModule {
   if(!this.mount)throw new Error('EchoModule needs a mount element.');
   this.onExit=onExit;this.onSteer=onSteer;this.atlasGroup='apical';this.atlasSearch='';this.toast=toast;this.appearance=appearance;this.state={...DEFAULT_STATE,alignment:readTeeAlignment(),contrast:Number.isFinite(renderer.settings.capContrast)?clamp(renderer.settings.capContrast,.5,3):DEFAULT_STATE.contrast};this.active=false;this.frames={};this.requestId=0;this.sampler=null;this.presetTextures={};this.textureCache=new EchoTextureCache();this.mediaCatalog=null;this.mediaSelection=null;this.mediaFrameKey=null;this.donor=donor;
   this.fineSpacingUm=Number(donor.fineSpacingUm)>0?Number(donor.fineSpacingUm):79.4;this.fineLabel=`${Number(this.fineSpacingUm.toFixed(3))} µm`;this.offsetLimitMm=35;
-  this.mediaCache=new EchoMediaCache();this.cineRequestId=0;this.cineTargetId=null;this.cineLoadedId=null;this.cineResume=false;this.cineFullFrame=true;this.destroyed=false;
+  this.mediaCache=new EchoMediaCache();this.cineRequestId=0;this.cineTargetId=null;this.cineLoadedId=null;this.cineResume=false;this.cineFullFrame=false;this.destroyed=false;
   ensureEchoReferenceStyles();
   this.fineSource=null;this.fineController=null;this.fineTimer=null;
   this.mount.classList.add('echo-panel');this.mount.innerHTML=this.template();this.cineAnglePlacement=createReferenceAnglePlacement({screen:this.mount.querySelector('.echo-cine-screen'),indicator:this.$('cine-angle'),video:this.$('cine-video')});const overlayOptions={renderer,meshCanvas:this.$('probe-mesh'),guideCanvas:this.$('probe-guide'),mount:this.mount.querySelector('#echoViewportMount')};this.overlay=new TeeAtlasOverlay(overlayOptions);this.tteOverlay=new TteAtlasOverlay(overlayOptions);this.bind();this.updateUI();
@@ -295,6 +297,10 @@ export class EchoModule {
   const key=this.frameKey(),clips=this.mediaCatalog.clips.filter(c=>c.mode===this.state.mode&&c.preset===key),exact=preferredEchoReference(clips,{mode:this.state.mode,preset:key});
   if(this.mediaFrameKey!==key){this.mediaFrameKey=key;this.mediaSelection=exact?.id||'';}
   const selected=clips.find(c=>c.id===this.mediaSelection),select=this.$('cine-select'),video=this.$('cine-video');
+  // Start each selected source in its reviewed fit; keep an explicit Full Frame
+  // choice through plane updates, metadata refreshes, and same-source retries.
+  const framingKey=[this.state.mode,key,selected?mediaIdentity(selected):''].join('|');
+  if(this.cineFramingKey!==framingKey){this.cineFramingKey=framingKey;this.cineFullFrame=false;}
   this.$('cine-guideline').hidden=!selected;this.$('cine-guideline').href=selected?.pdfUrl||ECHO_PRESETS.find(view=>view.id===key)?.sourceUrl||(this.state.mode==='tee'?TEE_SOURCE:TTE_SOURCE);
   const institution=selected?.institutionalAlternative;this.$('cine-institution').hidden=!institution?.viewerUrl;this.$('cine-institution').href=institution?.viewerUrl||'';
   this.$('cine-institution-note').hidden=!institution?.viewerUrl;this.$('cine-institution-note').textContent=institution?`${institution.note||''} ${institution.deepLinkNote||''}`:'';
@@ -500,7 +506,69 @@ export class EchoModule {
  setPresetTextures(map){if(map?.datasetId&&this.donor.datasetId&&String(map.datasetId)!==String(this.donor.datasetId))throw new Error('These prepared sections belong to a different donor.');const textures=map?.textures||map||{};this.presetTextures=Object.fromEntries(Object.entries(textures).map(([key,item])=>[key,{...item,fineSpacingUm:this.fineSpacingUm}]));this.textureCache.clear();if(this.active)this.applyPlane(false,true);}
  /** Shared streamed fine-volume service; the host owns its lifecycle and cache. */
  setFineSource(source){this.cancelFine();this.fineSource=source;if(this.active)this.applyPlane(false,true);}
- cancelFine(){clearTimeout(this.fineTimer);this.fineTimer=null;this.fineController?.abort();this.fineController=null;this.facePendingToken=null;}
+ cancelFine(){clearTimeout(this.fineTimer);this.fineTimer=null;this.fineController?.abort();this.fineController=null;this.referenceSections?.pause();this.facePendingToken=null;}
+ referenceSectionCache(){
+  if(this.referenceSections!==undefined)return this.referenceSections;
+  const config=REFERENCE_SECTIONS[this.donor.id];
+  const source=config?.expectedSource;
+  // The lookup is generated from the immutable fine manifests. Do not start a
+  // volume worker or download its source bank just to identify a fixed section.
+  if(!source||String(source.datasetId)!==String(this.donor.datasetId)||source.sourceSpacingUm!==this.fineSpacingUm||Math.abs(source.longestMm-this.longestMm)>1e-6)return null;
+  this.referenceSections=new ReferenceSectionCache({...config,manifestUrl:new URL(config.manifestUrl,globalThis.location?.href||'http://localhost/').href});
+  return this.referenceSections;
+ }
+ queueReferenceSections(plane,token,key){
+  if(this.renderer.settings.cleanupEnabled===false||isEchoPlaneModified(this.state)||this.state.planeReference==='previous')return false;
+  const cache=this.referenceSectionCache();if(!cache)return false;
+  const face=this.cutFacePlane;
+  this.pendingFineToken=token;this.facePendingToken=token;
+  this.fineTimer=setTimeout(async()=>{
+   if(!this.active||token!==this.requestId)return;
+   const controller=new AbortController();this.fineController=controller;
+   const current=()=>this.active&&token===this.requestId&&!controller.signal.aborted;
+   const request=role=>({viewId:key,mode:this.state.mode,donorId:this.donor.id,role,plane:role==='face'?face:plane,sourceKey:cache.expectedSource.sourceKey,cleanupEnabled:true,modified:false,planeReference:this.state.planeReference});
+   const ready={ct:false,face:false},release=scanActivity.beginForeground('echo-reference-section');
+   this.$('detail-status').textContent=`Loading measured ${this.fineLabel} detail for this reference view…`;
+   try{
+    await cache.init({signal:controller.signal});if(!current())return;
+    // Both exact rasters can arrive independently. A complete face is never
+    // held behind the CT crop, and a later crop cannot overwrite that face.
+    const roles=this.state.leftView==='ct'?['ct','face']:['face','ct'];
+    await Promise.all(roles.map(async role=>{
+     const item=request(role);if(!cache.match(item))return;
+     try{
+      const result=await cache.load(item,{signal:controller.signal});if(!result||!current())return;
+      validateEchoFineSection(result,item.plane);
+      const sample={...result,plane:item.plane,token,ultra:isUltra(result.sourceSpacingUm,result.spacingUm,this.fineSpacingUm)};
+      if(role==='ct'){
+       this.pendingFineToken=null;this.sectionError=false;this.showSample(sample,plane,token,key);
+      }else{
+       this.cutFaceSample=sample;this.facePendingToken=null;this.faceError=false;
+       this.presentCutFace(sample,face,token,key);this.updateSectionResolution();
+       this.$('detail-status').textContent=`Full cut face · ${result.width} × ${result.height} measured pixels · ${this.fineLabel} source.`;
+      }
+      ready[role]=true;
+     }catch(error){if(error.name!=='AbortError'&&current())console.warn(`Echo prepared ${role} section:`,error);}
+    }));
+   }catch(error){if(error.name!=='AbortError'&&current())console.warn('Echo prepared reference sections:',error);}
+   finally{release();if(this.fineController===controller)this.fineController=null;}
+   if(!current())return;
+   if(!ready.ct){
+    // The fine-volume path starts its own face request only after CT succeeds.
+    // A failed CT fallback must not leave the settled prepared face pending.
+    this.facePendingToken=null;
+    if(this.fineSource?.samplePlane)this.queueFinePlane(plane,token,key);
+    else{this.pendingFineToken=null;this.sectionError=true;this.facePendingToken=null;this.faceError=!ready.face;this.updateSectionResolution();}
+   }else if(!ready.face&&face!==plane){
+    if(this.fineSource?.samplePlane)this.queueFineFace(plane,token,key);
+    else{this.facePendingToken=null;this.faceError=true;this.updateSectionResolution();}
+   }else{
+    this.pendingFineToken=null;this.facePendingToken=null;this.updateSectionResolution();
+    this.$('detail-status').textContent=`Measured ${this.fineLabel} detail ready · exact reference slice and full cut face.`;
+   }
+  },25);
+  return true;
+ }
  queueFinePlane(plane,token,key){
   if(!this.fineSource?.samplePlane||this.renderer.settings.cleanupEnabled===false)return;
   this.pendingFineToken=token;
@@ -520,7 +588,7 @@ export class EchoModule {
     await this.refineCutFace(plane,token,key,controller);
    }catch(error){
     if(error.name==='AbortError'||controller.signal.aborted||!this.active||token!==this.requestId)return;
-    this.pendingFineToken=null;this.sectionError=true;this.$('detail-status').textContent='Fine detail could not load. The current-plane preview remains visible; use Retry detail.';this.updateSectionResolution();console.warn('Echo streamed section:',error);
+    this.pendingFineToken=null;if(this.facePendingToken===token)this.facePendingToken=null;this.sectionError=true;this.$('detail-status').textContent='Fine detail could not load. The current-plane preview remains visible; use Retry detail.';this.updateSectionResolution();console.warn('Echo streamed section:',error);
    }finally{if(this.fineController===controller)this.fineController=null;}
   },160);
  }
@@ -536,7 +604,7 @@ export class EchoModule {
  }
  async refineCutFace(plane,token,key,controller){
   const face=this.cutFacePlane;
-  if(!face||face===plane||!this.active||token!==this.requestId||controller.signal.aborted)return;
+  if(!face||face===plane||this.cutFaceSample?.token===token||!this.active||token!==this.requestId||controller.signal.aborted)return;
   this.facePendingToken=token;this.updateSectionResolution();
   try{
    const result=await this.fineSource.samplePlane(face,{signal:controller.signal,priority:'interactive',exactRaster:true,
@@ -573,7 +641,7 @@ export class EchoModule {
   const spacing=partial?this.sourceSpacingUm:(shown.spacingUm||this.sourceSpacingUm);
   const pending=this.pendingFineToken===this.requestId||!isCt&&this.facePendingToken===this.requestId;
   this.$('resolution').textContent=`${Number(spacing).toFixed(1)} µm${partial||!shown.ultra&&!shown.streamed?' · Preview':shown.ultra?' · Ultra':' · Fine'}${pending?' · refining…':''}${failed?' · detail unavailable':''}`;
-  this.$('resolution').dataset.resolutionUm=String(spacing);this.$('resolution').dataset.source=partial?'volume':shown.streamed?'streamed':shown.ultra?'prepared':'volume';
+  this.$('resolution').dataset.resolutionUm=String(spacing);this.$('resolution').dataset.source=partial?'volume':shown.preparedReference?'prepared-reference':shown.streamed?'streamed':shown.ultra?'prepared':'volume';
   this.$('resolution').dataset.faceCoverage=partial?'preview':'full';
  }
  loadPresetTexture(item,priority=0){const release=priority===0?scanActivity.beginForeground('echo-section'):()=>{};return this.textureCache.load(item,{priority}).finally(release);}
@@ -594,7 +662,7 @@ export class EchoModule {
  showReferenceGallery({focus=false}={}){const mode=this.referenceGallery?.visible?this.referenceGallery.state.mode:this.state.mode;this.leave();this.referenceGallery?.show({mode,focus});}
  openReferenceView(id){
   if(this.destroyed)return;
-  this.referenceGallery?.hide();this.active=true;
+  this.referenceGallery?.hide();this.active=true;this.cineFullFrame=false;
   if(id)this.selectPreset(id);else{this.updateUI();this.updateAppearance();this.applyPlane(true);}
   this.loadMediaCatalog();this.updateCine();this.renderer.requestRender();
   const back=this.mount.querySelector('[data-reference="back"]');back?.scrollIntoView({block:'nearest',behavior:'instant'});back?.focus({preventScroll:true});
@@ -624,7 +692,7 @@ export class EchoModule {
   if(this.active&&saved.presentation==='gallery')this.showReferenceGallery();
  }
 
- selectPreset(id){if(id==='psax')id=`psax_${this.state.psaxLevel==='mitral'?'mitral':'papillary'}`;const preset=ECHO_PRESETS.find(p=>p.id===id);if(!preset)return;const preserveUpright=this.state.mode===preset.mode&&this.state.alignment==='upright';if(!preserveUpright&&this.frames[this.frameKey()]?.outsideScan&&!this.frames[id]?.outsideScan)this.renderer.camera.distance=1.55;this.renderer.set({anatomySelected:0});this.appearance?.changed();this.state.preset=id;this.state.mode=preset.mode;this.state.planeReference='refined';this.rebuildAtlasFrames();if(preset.group)this.atlasGroup=preset.group;if(this.frames[id]?.outsideScan)this.state.leftView='3d';this.reset({preserveUpright});this.updateAppearance();this.mount.querySelector('.echo-detail').scrollTop=0;if(!this.compactUI?.selectionChanged())this.mount.querySelector(`[data-preset="${id}"]`)?.focus({preventScroll:true});}
+ selectPreset(id){if(id==='psax')id=`psax_${this.state.psaxLevel==='mitral'?'mitral':'papillary'}`;const preset=ECHO_PRESETS.find(p=>p.id===id);if(!preset)return;this.cineFullFrame=false;const preserveUpright=this.state.mode===preset.mode&&this.state.alignment==='upright';if(!preserveUpright&&this.frames[this.frameKey()]?.outsideScan&&!this.frames[id]?.outsideScan)this.renderer.camera.distance=1.55;this.renderer.set({anatomySelected:0});this.appearance?.changed();this.state.preset=id;this.state.mode=preset.mode;this.state.planeReference='refined';this.rebuildAtlasFrames();if(preset.group)this.atlasGroup=preset.group;if(this.frames[id]?.outsideScan)this.state.leftView='3d';this.reset({preserveUpright});this.updateAppearance();this.mount.querySelector('.echo-detail').scrollTop=0;if(!this.compactUI?.selectionChanged())this.mount.querySelector(`[data-preset="${id}"]`)?.focus({preventScroll:true});}
  moveSection(direction){this.holdCurrentPlaneReference();this.state.offsetMm=clamp(this.state.offsetMm+direction*(this.spacingMm||.3176),-this.offsetLimitMm,this.offsetLimitMm);this.updateReadouts();this.applyPlane();}
  frameKey(){return this.state.preset==='psax'?`psax_${this.state.psaxLevel}`:this.state.preset;}
  getPlane(){
@@ -715,6 +783,10 @@ export class EchoModule {
   if(!preserveCamera&&(forceAlign||this.state.lockCamera))this.applyCameraAlignment({followScene:true,fitUpright:forceAlign});
   const token=++this.requestId,key=this.frameKey();clearTimeout(this.sampleTimer);clearTimeout(this.prefetchTimer);this.updateCine();this.updateCorrespondence();this.updateProbe();
   if(outside){this.pendingFineToken=null;this.textureCache.pause();this.sample=null;this.previewGrid=null;this.$('resolution').textContent='Whole-heart context · target outside scan';this.$('detail-status').textContent='The complete extracardiac target is absent from this excised-heart scan. The estimated probe provides spatial context; no matching CT section is shown.';this.message('This target is outside the heart scan.');return;}
+  if(this.queueReferenceSections(plane,token,key)){
+   this.textureCache.pause();this.message('Preparing measured reference detail…');
+   this.sampleTimer=setTimeout(()=>this.samplePlane(plane,token,key,true),25);return;
+  }
   const item=plane.atlasDerived?null:this.presetTextures[key],unmodified=!isEchoPlaneModified(this.state);
   const fine=item?.url&&unmodified&&this.renderer.settings.cleanupEnabled!==false;
   if(fine){
@@ -758,7 +830,8 @@ export class EchoModule {
   if(result.ultra||result.streamed)this.sectionError=false;
   const face=this.cutFaceSample?.token===token?this.cutFaceSample:null;
   this.presentCutFace(face||result,face?.plane||plane,token,key);this.updateSectionResolution();
-  if(result.savedSection)this.$('detail-status').textContent=`${result.width} × ${result.height} measured pixels · exact section saved on this device · ${Number(result.sourceSpacingUm).toFixed(1)} µm source.`;
+  if(result.preparedReference)this.$('detail-status').textContent=`${result.width} × ${result.height} measured pixels · exact reference slice · ${this.fineLabel} source.`;
+  else if(result.savedSection)this.$('detail-status').textContent=`${result.width} × ${result.height} measured pixels · exact section saved on this device · ${Number(result.sourceSpacingUm).toFixed(1)} µm source.`;
   else if(result.streamed)this.$('detail-status').textContent=`${result.width} × ${result.height} measured pixels from the ${Number(result.sourceSpacingUm).toFixed(1)} µm volume · exact current plane.`;
   else if(result.ultra)this.$('detail-status').textContent=`${Math.round(result.encodedBytes/1000)} KB lossless preset texture · ${result.width} × ${result.height} measured display pixels.`;
   this.drawSection();this.message('');
@@ -927,5 +1000,5 @@ export class EchoModule {
   this.$('rotation-value').textContent=`${this.state.rotationDeg>0?'+':''}${this.state.rotationDeg}°`;this.$('tilt-value').textContent=`${this.state.tiltDeg>0?'+':''}${this.state.tiltDeg}°`;this.$('contrast-value').textContent=`${this.state.contrast.toFixed(2).replace(/0$/,'')}×`;
   this.$('lock').checked=this.state.lockCamera;this.$('flip').setAttribute('aria-pressed',String(this.state.flip));
  }
- destroy(){this.leave();this.destroyed=true;this.referenceGallery?.destroy();this.compactUI?.destroy();this.cineAnglePlacement?.destroy();this.sampler?.destroy();this.textureCache.destroy();this.mediaCache.destroy();this.overlay.dispose();this.tteOverlay?.dispose();}
+ destroy(){this.leave();this.destroyed=true;this.referenceGallery?.destroy();this.compactUI?.destroy();this.cineAnglePlacement?.destroy();this.sampler?.destroy();this.referenceSections?.destroy();this.textureCache.destroy();this.mediaCache.destroy();this.overlay.dispose();this.tteOverlay?.dispose();}
 }

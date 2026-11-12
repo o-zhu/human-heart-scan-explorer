@@ -36,7 +36,7 @@ function fixture(t,{prepared=false,deferCoarse=false,plane=roi,modified=false,cl
  const elements=new Map(),context={putImageData(image){painted.push(image);},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}};
  const element=key=>{
   if(!elements.has(key))elements.set(key,{dataset:{},hidden:false,textContent:'',width:0,height:0,clientWidth:640,clientHeight:560,
-   classList:{toggle(){}},setAttribute(k,v){this[k]=String(v);},getAttribute(k){return this[k];},getContext:()=>context,close(){}});
+   classList:{toggle(){}},setAttribute(k,v){this[k]=String(v);},getAttribute(k){return this[k];},getContext:()=>context,close(){},focus(){},scrollIntoView(){}});
   return elements.get(key);
  };
  const viewButtons=['3d','ct'].map(view=>Object.assign(element('view-'+view),{dataset:{echoView:view}}));
@@ -58,7 +58,7 @@ function fixture(t,{prepared=false,deferCoarse=false,plane=roi,modified=false,cl
  });
  t.after(()=>echo.leave());
  const advance=async ms=>{t.mock.timers.tick(ms);await tick();};
- const start=async()=>{echo.enter();await advance(25);await advance(135);};
+ const start=async()=>{echo.openReferenceView();await advance(25);await advance(135);};
  const finishRoi=async(value)=>{const request=fineRequests[0];request.resolve(value||fineFrame(request));await tick();return request;};
  return {echo,renderer,element,fineRequests,coarseRequests,caps,painted,warnings,advance,start,finishRoi};
 }
@@ -107,7 +107,7 @@ test('actual Echo lifecycle refines a separate full face while CT pixels and cro
 });
 
 test('cached prepared crop remains Preview until its separate complete face arrives',async t=>{
- const f=fixture(t,{prepared:true});f.echo.enter();
+ const f=fixture(t,{prepared:true});f.echo.openReferenceView();
  const ct=f.echo.sample;assert.equal(ct.ultra,true);assert.equal(f.coarseRequests.length,0);
  assert.match(f.element('resolution').textContent,/317\.6.*Preview/);assert.doesNotMatch(f.element('resolution').textContent,/Ultra/);
  await f.advance(160);assert.equal(f.fineRequests.length,1);
@@ -165,7 +165,7 @@ test('leaving cancels full-face sampling; a late response cannot revive a hidden
  const f=fixture(t);await f.start();await f.finishRoi();const late=f.fineRequests[1],count=f.caps.length;
  f.echo.leave();assert.equal(late.options.signal.aborted,true);assert.equal(f.renderer.cap,null);
  late.resolve(fineFrame(late));await tick();assert.equal(f.caps.length,count);assert.equal(f.echo.cutFaceSample,null);
- f.echo.enter();await f.advance(160);assert.equal(f.fineRequests.length,3,'Re-entry starts fresh work.');
+ f.echo.openReferenceView();await f.advance(160);assert.equal(f.fineRequests.length,3,'Re-entry starts fresh work.');
  assert.match(f.element('resolution').textContent,/Preview/);assert.equal(f.element('retry-detail').hidden,true);
 });
 

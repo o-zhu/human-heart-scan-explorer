@@ -63,3 +63,34 @@ Keep the existing 13 hosting stages and add
 `python3 scripts/prepare-reference-hosting-v54.py --stage` immediately before
 the final display-budget stage. It verifies all replacements and omits only
 the 56 superseded illustration build copies, retaining every source original.
+
+
+## v57 exact prepared reference cutaways and fitted video defaults
+
+Read `docs/reference-sections-v57/README.md` before changing reference sampling.
+The prepared bank is bound to the initialized default plane, donor, fine-source
+fingerprint, cleanup mask and exact physical CT/full-face crop. Preserve the
+79.4/79.56 µm source distinction, 294 acquired roles and all 21 outside-scan
+entries. Verify encoded and reconstructed pixel SHA-256 values; the versioned
+row-difference codec is lossless. A changed plane, cleanup state or source must
+use the existing bounded fine sampler, never move prepared pixels to a new cut.
+Keep CT and full-face completion independent, stale cancellation and the bounded
+24 MiB decoded cache. A pending or failed face remains clearly labelled Preview.
+
+Reference videos start in Fit Ultrasound on explicit view selection or an actual
+source change. Full Frame is a temporary choice for the current selection and
+survives retries; changing framing must not reload video bytes. Native scanner
+angle displays retain their source pixels and receive no synthetic replacement.
+
+This public update contains runtime code, generators, tests, readable QC
+summaries and an empty prepared-bank configuration template. Generated plane
+exports, donor/data indexes, scalar payloads, contact figures and detailed
+machine-readable QC are separate deliverables and are not included here.
+The empty configuration avoids requests for missing prepared assets and retains
+the existing fine-sampler fallback. Reproduce a local bank with the documented
+generators, then install its complete verified `staged-public` output, including
+the matching generated configuration. Preserve existing fine-source restoration,
+licenses and attribution; keep generated outputs outside the source-only update.
+The public hosting configuration and existing staging sequence are unchanged.
+Deployment-specific changes for the original hosted site are outside this public
+source update. Preserve existing immutable assets and closed upload gates.

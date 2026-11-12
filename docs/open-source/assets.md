@@ -56,6 +56,28 @@ The guidelines and ultrasound examples informed view-specific anatomy and orient
 
 The Reference Views gallery and artwork can therefore be available while a comparison's scan or recording is unavailable. Keep that distinction visible: an illustration does not substitute for missing measured anatomy or a missing reference movie.
 
+## Prepared reference cutaway bank
+
+The source-only v57 update includes runtime code, an empty prepared-bank
+configuration template, generators, tests and readable QC summaries. Generated
+plane exports, donor/data indexes, scalar payloads, contact figures and detailed
+machine-readable QC are separate deliverables and are not included in this
+public checkout. The original runtime/fine-data restoration commands above are
+unchanged; they do not imply that the new generated bank is installed.
+
+Use the included [generation and QC workflow](../reference-sections-v57/README.md#reproduce-the-data)
+to produce a local bank from the established source inputs. Install its complete
+verified `staged-public` output and matching configuration together. Until then,
+the empty template avoids requests for missing prepared assets and retains the
+existing fine-sampler fallback. Preserve the original dataset attribution and
+licensing with locally generated derivatives.
+
+The validated published bank has 294 CT/full-face roles for 147 acquired entries
+across LADAF-2021-17, S-20-29 and S-20-28, with 21 outside-scan entries. It uses
+the existing 79.4/79.56 µm fine source, unchanged cleanup and intensity encoding.
+It does not replace the original acquisitions or fine banks for arbitrary plane
+changes. The loader verifies compressed and reconstructed scalar-pixel hashes.
+
 ## Deliberately omitted material
 
 | Family | Why omitted | Legitimate next step |

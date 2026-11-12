@@ -61,6 +61,9 @@ assert.equal(hidden(),true,'A completed download is not decoded metadata');
 metadata(four.url);assert.equal(hidden(),true,'Catalog-path metadata cannot stand in for the played Blob URL');
 metadata(firstBlob);assert.equal(hidden(),false,'Four-chamber Blob metadata enables its supplemental dial');
 assert.equal(echo.$('cine-angle-value').textContent,angleFor(four).label);
+assert.equal(echo.cineFullFrame,false,'Fresh local selections use the default fit intent.');
+assert.equal(video.classList.contains('is-framed'),false,'Local movies without reviewed crop metadata remain uncropped.');
+assert.equal(echo.$('cine-fit').hidden,true,'An unreviewed crop is not offered for local ultrasound.');
 
 const fitLoads=loads,fitRequests=requests.length;
 echo.cineFullFrame=!echo.cineFullFrame;echo.updateCine();
@@ -77,13 +80,17 @@ releaseOld();const aborted=await staleDownload;assert.equal(aborted.name,'AbortE
 assert.equal(video.getAttribute('src'),firstBlob);assert.equal(echo.cineAngleSource.requestId,restoredRequest);
 assert.equal(echo.$('cine-angle-value').textContent,angleFor(four).label,'Superseded download cannot relabel the current movie');
 
+echo.cineFullFrame=true;echo.updateCine();
 video.error={code:3};emit('error');assert.equal(hidden(),true);assert.equal(echo.cineAngleSource,null);
 video.error=null;metadata(firstBlob);assert.equal(hidden(),true,'Late metadata cannot restore a failed source');
 echo.startCine(four);await waitForCache();assert.equal(hidden(),true,'Cached retry waits for its own ready metadata');
 assert.ok(echo.cineRequestId>restoredRequest);emit('loadedmetadata');assert.equal(hidden(),true,'Queued metadata with HAVE_NOTHING remains hidden');
 metadata(firstBlob);assert.equal(hidden(),false,'Cached retry rebinds the actual Blob URL');
+assert.equal(echo.cineFullFrame,true,'Retry preserves the current selection framing choice.');
 
 echo.mediaSelection=publisherFour.id;echo.updateCine();metadata(publisherFour.url);
+assert.equal(echo.cineFullFrame,false,'A different source in the same view returns to the default fit.');
+assert.equal(video.classList.contains('is-framed'),true,'The publisher source uses its reviewed 1.4 crop.');
 assert.equal(echo.$('cine-angle').hidden,true,'The publisher Four-Chamber movie keeps its native dial');
 assert.equal(echo.$('cine-angle-note').hidden,true,'Switching source within one view removes the synthetic-angle note');
 echo.mediaSelection=four.id;echo.updateCine();await waitForCache();metadata(firstBlob);

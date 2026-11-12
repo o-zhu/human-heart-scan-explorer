@@ -99,8 +99,15 @@ YouTube player waiting indefinitely for video data.
 Native and embedded players request muted inline autoplay. Browser policy can
 still require a user Play gesture; the controls and status explain that state.
 Every selected source has a visible publisher link immediately below the player.
-Source recordings are shown full-frame by default, preserving original scanner
-readouts. The ME five-chamber and ME modified bicaval TV recordings receive a
+The original full-frame default was superseded by the requested Fit Ultrasound
+default on November 12, 2026. Sources with reviewed `focusAspect` metadata now
+open in that fit; **Full Frame** remains available for the current selection.
+A new source or newly opened view resets to Fit, while ordinary updates,
+catalog refreshes and retries preserve an explicit Full Frame choice. Local
+movies and other sources without reviewed crop metadata remain uncropped with
+`object-fit: contain`; no crop is invented from their dimensions. The 26 native
+TEE scanner-dial bounds reviewed in v56 remain inside the existing 1.4 Fit crop.
+The ME five-chamber and ME modified bicaval TV recordings receive a
 clearly labeled guideline-reference range indicator. Its pointer is the range
 midpoint, not a measured or reconstructed acquisition angle. The text states that
 the acquired angle is not displayed in that source clip.

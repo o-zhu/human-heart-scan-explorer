@@ -96,7 +96,10 @@ try{
  echo.state={...echo.state,mode:'tee',preset:'melax'};echo.setMediaCatalog({clips});await echo.mediaCache.pending?.promise;await settle();
  assert.equal(echo.mediaSelection,'tee-melax');
  assert.match(echo.$('cine-select').querySelector('option[value="tee-melax"]').textContent,/Color Doppler/);
- assert.equal(video.classList.contains('is-framed'),false,'The native full-frame default is preserved.');
- assert.equal(echo.$('cine-angle').hidden,true,'No invented angle dial is added to a different source.');sameSlot();
+ assert.equal(video.classList.contains('is-framed'),false,'A local source without reviewed crop metadata remains uncropped.');
+ assert.equal(echo.$('cine-angle').hidden,false,'The reviewed local long-axis source receives its v56 REF supplement.');
+ assert.equal(echo.$('cine-angle-value').textContent,'130°');
+ assert.equal(echo.$('cine-angle').style.visibility,'hidden','The supplement still waits for decoded Blob metadata.');
+ assert.match(echo.$('cine-angle-note').textContent,/not a measured angle from this recording/);sameSlot();
 }finally{echo.destroy();}
-console.log('PASS media v46: ten licensed named-view defaults; specialized/sweep/NC exclusions; real local-byte delivery and cache reuse; no initial YouTube work; retained alternatives/attribution/guideline; explicit selection survives catalog refresh; bounded retry/fallback/stale-event behavior; stable frame and status-slot contracts; Doppler and full-frame semantics.');
+console.log('PASS media v46: ten licensed named-view defaults; specialized/sweep/NC exclusions; real local-byte delivery and cache reuse; no initial YouTube work; retained alternatives/attribution/guideline; explicit selection survives catalog refresh; bounded retry/fallback/stale-event behavior; stable frame and status-slot contracts; Doppler and uncropped local-source semantics.');

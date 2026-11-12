@@ -48,8 +48,15 @@ new flex row. The production workspace-height controller observes and measures
 that fixed slot unconditionally; measuring the hidden/visible inner loader
 would otherwise resize both canvases by 44 px on player state changes. A legacy
 template without the slot retains the earlier visible-loader fallback.
-The source movie's full-frame display and decoded pixel-aspect
-ratio remain unchanged, including the supplemental reference-angle placement.
+The later Fit Ultrasound default uses each source's existing reviewed
+`focusAspect` crop. Full Frame is still an explicit option for that selection;
+source/view changes restore Fit. Retries preserve the chosen framing, while
+ordinary updates and framing changes do not reload playback. Sources without
+reviewed crop
+metadata, including the local TEE/TTE examples, remain uncropped and contained
+within the same stage. Decoded pixel-aspect ratios, original video bytes and
+source-matched reference-angle placement remain unchanged. The existing 1.4
+TEE crop retains all 26 native dial bounds reviewed in v56.
 
 ## Why the TECHmED YouTube videos remain embeds
 

@@ -1,5 +1,34 @@
 # Changelog
 
+## 2026-11-12 — Fitted reference videos and prepared fine cutaways
+
+- Made Fit Ultrasound the fresh-view default. Explicit Full Frame remains
+  available for the current selection, survives retries, and resets when a
+  different view or recording is selected. Framing changes do not reload media.
+- Prepared both the full 3D cut face and CT crop for all 147 acquired default
+  TTE/TEE reference entries across LADAF-2021-17, S-20-29 and S-20-28. All 21
+  existing outside-scan entries retain their whole-heart context and explanation.
+- Bound every prepared image to its exact donor, source fingerprint, cleanup
+  mask, physical plane, crop and pixel grid. Preserved the measured 79.4/79.56 µm
+  fine-source data and the existing approximate clinical correspondence.
+- Added independently loading, verified, losslessly compressed per-view images,
+  a bounded 24 MiB decoded cache, stale-request cancellation, and the existing
+  exact fine-sampler fallback for edited planes or unavailable prepared data.
+- Preserved scanner-native TEE angle displays under fitted framing. Labelled
+  REF supplements still apply only to recordings without their own angle.
+- Added reproducible source recovery, production-sampler generation, independent
+  source-point QC, tests and readable summaries. This public update is source-only:
+  generated plane/data indexes, scalar payloads, contact figures and detailed
+  machine-readable QC remain separate deliverables. Its empty configuration
+  template retains the fine-sampler fallback until a complete locally generated
+  bank and matching configuration are installed.
+- Kept the public hosting configuration unchanged. Deployment-specific work for
+  the original hosted site is outside this source-only update.
+
+Coverage, data identities, numerical QC and limitations are documented in
+[`docs/reference-sections-v57/README.md`](docs/reference-sections-v57/README.md)
+and [`TESTS.md`](docs/reference-sections-v57/TESTS.md).
+
 ## 2026-11-12 — Source-specific TEE video angle QC
 
 - Reviewed the actual pixels of all 33 Real Ultrasound TEE recordings: 28

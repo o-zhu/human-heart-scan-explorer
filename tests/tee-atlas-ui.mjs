@@ -99,9 +99,9 @@ assert.equal(echo.$('cine-select').querySelectorAll('option').length,1,'TEE choi
 echo.$('cine-image').onerror();assert.equal(echo.$('cine-retry').hidden,false);assert.equal(echo.$('cine-empty').hidden,false);
 click('[data-echo="cine-retry"]');assert.equal(echo.$('cine-image').hidden,false);
 echo.setMediaCatalog({clips:[{...source('me2c'),kind:'video',external:true,aseNumber:4,focusAspect:1.4}]});
-assert.equal(echo.$('cine-video').classList.contains('is-framed'),false);
+assert.equal(echo.$('cine-video').classList.contains('is-framed'),true);
+click('[data-echo="cine-fit"]');assert.equal(echo.$('cine-video').classList.contains('is-framed'),false);assert.equal(echo.$('cine-fit').textContent,'Fit Ultrasound');
 click('[data-echo="cine-fit"]');assert.equal(echo.$('cine-video').classList.contains('is-framed'),true);assert.equal(echo.$('cine-fit').textContent,'Full Frame');
-click('[data-echo="cine-fit"]');assert.equal(echo.$('cine-video').classList.contains('is-framed'),false);
 click('[data-mode="tte"]');assert.equal(echo.state.preset,'a4c');assert.equal(echo.overlay.running,false);assert.equal(echo.tteOverlay.running,true);assert.equal(echo.$('atlas-browser').hidden,false);assert.equal(echo.$('presets').querySelectorAll('button').length,10);
 echo.leave();echo.destroy();
 console.log('TEE atlas DOM checks passed: all 28 selections; reviewed/previous reversible comparison and stale-work cancellation; fixed anatomy context and CT visibility; group/search navigation; wraparound; probe/sector state; outside-scan CT guard; dialog; crosslink; still-image selection, stale-event rejection and retry; TTE restoration.');
