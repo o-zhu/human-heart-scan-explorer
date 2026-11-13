@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-11-13 — Anatomy context in 3D Reconstruction
+
+- Added an Anatomy Context toggle between Reveal Coronaries and Measure. It
+  reuses the TEE skeleton, diaphragm and esophageal/gastric context for the three
+  preserved-heart donors, without changing source data or the selected cutaway.
+- Enabling context frames the heart in the existing estimated anatomical view;
+  disabling restores the previous camera and automatic-rotation preference.
+  Workspace changes keep the main context separate from the echo and lab layers.
+- Load the shared verified skeleton and optional modules on first use. Cancelled
+  or stale work cannot reactivate context, and failed transfers remain retryable.
+- Keep context behind accepted heart tissue with the shared WebGL depth pass and
+  matching accepted-frame depth in the software renderer. Added focused checks
+  for geometry reuse, camera restoration, lifecycle races and software occlusion.
+- Preserve compact-menu behavior, visible keyboard focus, a stable button label,
+  reduced-motion loading feedback, and existing measurement controls. Explain the
+  illustrative fit and BodyParts3D / DBCLS attribution in the About dialog.
+- Preserve opaque gzip asset bytes in the Vite preview so application checksums
+  and decompression receive the stored payload without automatic HTTP decoding.
+- Replace new Box handoffs with direct GitHub source updates while retaining
+  separate public/hosted configurations and all existing asset exclusions.
+
+See [implementation and verification](docs/reconstruction-anatomy-context/README.md).
+
 ## 2026-11-13 — Fresh review of all TTE/TEE illustrations (v60)
 
 - Re-reviewed all 56 active illustrations against view-specific published

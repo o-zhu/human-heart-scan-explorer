@@ -159,6 +159,8 @@ body #viewport.viewport-controls-compact .reconstruction-detail-shortcut {
 }
 body #viewport.viewport-controls-compact .coronary-control { width: 100%; }
 body #viewport.viewport-controls-compact .coronary-toggle { min-height: 44px; width: 100%; }
+body #viewport.viewport-controls-compact .anatomy-context-control { width: 100%; }
+body #viewport.viewport-controls-compact .anatomy-context-toggle { min-height: 44px; width: 100%; }
 body #viewport.viewport-controls-compact .viewport-bottom { justify-content: stretch; }
 body #viewport.viewport-controls-compact .viewport-tools {
   display: flex;

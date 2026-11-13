@@ -1,5 +1,12 @@
 # Heart Explorer — Agent Instructions to Append
 
+## Delivery policy update — November 13, 2026
+
+The user has replaced Box handoffs with direct GitHub updates. Follow the
+current policy at the top of `docs/UPDATE_WORKFLOW.md`; historical Box checkpoint,
+queue and delta-archive instructions below no longer apply to new changes.
+Preserve separate hosted/public configurations and all asset exclusions.
+
 For public GitHub, create root `AGENTS.md` from the section below when absent; otherwise append it and preserve existing public instructions. Never copy the deployed Sites `AGENTS.md`, which contains private/staging context. Store this public snippet at `docs/AGENTS_UPDATE_INSTRUCTIONS.md`.
 
 ## Update delivery and GitHub integration

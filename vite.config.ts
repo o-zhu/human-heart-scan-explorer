@@ -6,7 +6,7 @@ import { configureToolEnvironment } from "./scripts/tool-environment.mjs";
 import { sites } from "./scripts/vite/sites-vite-plugin";
 import { connectorPreview } from "./scripts/vite/connector-preview-plugin.mjs";
 import { createReadStream, statSync } from "node:fs";
-import { resolve } from "node:path";
+import { resolve, sep } from "node:path";
 import ultraIndex from "./server/ultra-upload-index.json";
 import fineVolumeIndex from "./server/ultra-volume-index-v7.json";
 
@@ -20,6 +20,20 @@ function localScanImages() {
     configureServer(server) {
       server.middlewares.use((request, response, next) => {
         const pathname = new URL(request.url || "/", "http://localhost").pathname;
+        // These .gz files are opaque, checksummed application payloads. Vite's
+        // static middleware otherwise adds HTTP gzip encoding and the browser
+        // decodes them before our verified loaders can inspect the stored bytes.
+        // Leave file resolution and transfer to Vite; override only known assets.
+        if (["GET", "HEAD"].includes(request.method || "GET") && pathname.startsWith('/assets/') && pathname.endsWith('.gz')) {
+          try {
+            const directory = resolve(process.cwd(), 'public/assets');
+            const filename = resolve(directory, decodeURIComponent(pathname.slice('/assets/'.length)));
+            if (filename.startsWith(directory + sep) && statSync(filename).isFile()) {
+              response.setHeader('Content-Type', 'application/octet-stream');
+              response.setHeader('Content-Encoding', 'identity');
+            }
+          } catch { /* Missing or malformed assets retain Vite's normal response. */ }
+        }
         const routes = [
           ...comparisonBanks.map(bank=>({prefix:bank.route,index:bank.index,directory:bank.directory,isFine:bank.kind==='volume'})),
           { prefix: '/api/ultra/v4/', index: ultraIndex, directory: 'data/ultra-sections', isFine: false },

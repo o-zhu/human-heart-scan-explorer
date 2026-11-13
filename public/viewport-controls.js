@@ -120,10 +120,10 @@ export function mountViewportControls(doc = globalThis.document, view = doc?.def
   const onFocus = event => {
     if (!menu.hidden && !menu.contains(event.target) && !toggle.contains(event.target)) close();
   };
-  // Clicking Detail opens the existing settings below the viewer. Keep that
-  // action visible and usable instead of leaving an empty overlay in its way.
+  // These actions are used in the scene or below the viewer. Reveal their
+  // result immediately instead of keeping the compact menu in the way.
   const onAction = event => {
-    if (event.target.closest?.('#openReconstructionDetail, #measureDistance')) close();
+    if (event.target.closest?.('#openReconstructionDetail, #measureDistance, [data-anatomy-context-toggle]')) close();
   };
   toggle.addEventListener('click', onToggle);
   closeButton.addEventListener('click', onClose);

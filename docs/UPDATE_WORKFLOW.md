@@ -1,5 +1,24 @@
 # Heart Explorer — Update and Release Workflow
 
+## Current delivery policy — November 13, 2026
+
+The user has replaced the Box handoff with direct GitHub delivery. For new
+updates, implement and verify the requested change, publish the corresponding
+Site revision, and integrate the public source changes into the existing GitHub
+repository. Box uploads, queue polling, delta archives and transport sidecars
+are no longer required unless the user explicitly requests them.
+
+Record the exact source baseline, affected files, checks, Site publication
+result and GitHub commit. Keep the hosted and public distributions separate:
+transplant only the intended source changes onto the current public branch,
+preserving public configuration, licensing records and excluded assets. Never
+copy a complete hosted checkout or its private AGENTS instructions into GitHub.
+Use a normal fast-forward update or the repository's required pull-request
+process; do not force-push or overwrite concurrent work.
+
+The archive procedures below are retained only for recovery of historical
+updates. They do not impose Box delivery or archive creation on new work.
+
 **Status:** official project procedure, established November 9, 2026.
 
 **Canonical repository path:** `docs/UPDATE_WORKFLOW.md`.

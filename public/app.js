@@ -16,6 +16,7 @@ import {CoronaryControls} from './coronary-controls.js';
 import {CoronaryDataSource} from './coronary-data.js';
 import {CORONARY_REVEAL_READY} from './coronary-release.js';
 import {MeasurementControls} from './measurement-controls.js';
+import {ReconstructionAnatomyContext} from './reconstruction-anatomy-context.js';
 const $=id=>document.getElementById(id);
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const displaySpacing=level=>(Array.isArray(level.spacingUm)?level.spacingUm[0]:level.spacingUm).toFixed(1);
@@ -35,7 +36,7 @@ let volumeLoadToken=0,volumeOriginal=false,cleanupRequested=true,requestedLevel;
 const moduleReady=new Map();
 const moduleInstances=new Map();
 let postViewStarted=false,tabRevision=0;
-let fineSurfaceController,nativeMainDetailController,coronaryControls,coronarySource,measurements,restoredCoronary=false,coronaryRestoreReady=false;
+let fineSurfaceController,nativeMainDetailController,coronaryControls,coronarySource,measurements,anatomyContext,restoredCoronary=false,coronaryRestoreReady=false;
 const pendingSectionDraws=new Set();let sectionDrawFrame=0,sectionDrawTask=0;
 const viewportHome=$('viewport').parentElement;
 const setText=(id,text)=>{if($(id)&&$(id).textContent!==text)$(id).textContent=text;};
@@ -123,6 +124,7 @@ function afterFirstUsableView(){
 function syncControls(syncAppearance=true){
  if(!renderer)return;const s=renderer.settings;
  measurements?.sync();
+ anatomyContext?.sync();
  const vals={renderMode:['surface','volume','mip'][s.mode],palette:PALETTE_KEYS[s.palette],threshold:s.threshold,opacity:s.opacity,clipAxis:['none','x','y','z'][s.clipAxis+1],clipPosition:activeAxis>=0&&activeAxis===s.clipAxis?slicePositions[activeAxis]:s.clipPosition,quality:s.quality,surfaceSmoothing:renderer.coronaryActive?.()?(s.coronarySmoothing??2):(s.surfaceSmoothing??1)};
  for(const [id,val]of Object.entries(vals))if($(id))$(id).value=val;
  if($('clipPosition')&&s.clipAxis>=0&&s.clipAxis<3){$('clipPosition').step=1/(sectionCount(s.clipAxis)-1);$('clipPosition').value=activeAxis>=0&&activeAxis===s.clipAxis?slicePositions[activeAxis]:s.clipPosition;}
@@ -405,7 +407,7 @@ async function loadLevel(key,{background=Boolean(volumeData),preview=false,origi
   if(token!==volumeLoadToken)return false;const data=result.data;
   await new Promise(resolve=>requestAnimationFrame(resolve));
   if(token!==volumeLoadToken)return false;
-  renderer.load(data,level,result.acceleration,result.gpuCrop);volumeData=data;volumeMeta=level;measurements?.setSource(level,donor.id);residentSections.setVolume(data,level);volumeOriginal=original||!level.supportCompressed;currentLevel=key;slices.forEach(s=>s.cacheKey='');echoModule?.setVolume(data,level);quickViews?.setVolume(data,level);probeModule?.setVolume(data,level);teeModule?.setVolume(data,level);
+  renderer.load(data,level,result.acceleration,result.gpuCrop);volumeData=data;volumeMeta=level;measurements?.setSource(level,donor.id);anatomyContext?.setVolume(data,level);residentSections.setVolume(data,level);volumeOriginal=original||!level.supportCompressed;currentLevel=key;slices.forEach(s=>s.cacheKey='');echoModule?.setVolume(data,level);quickViews?.setVolume(data,level);probeModule?.setVolume(data,level);teeModule?.setVolume(data,level);
   // A completed request follows the latest appearance intent, even if the user
   // changed cleanup or resolution while its worker was still running.
   renderer.set({cleanupEnabled:cleanupRequested||!volumeOriginal});appearance?.changed();
@@ -535,6 +537,7 @@ function switchTab(mode){
  }
  currentTab=mode;
  measurements?.setWorkspaceActive(mode==='reconstruction');
+ anatomyContext?.setWorkspaceActive(mode==='reconstruction');
  renderer.renderProfile=mode;
  fineSurfaceController?.setWorkspaceActive(mode==='reconstruction');
  document.querySelectorAll('[data-reconstruction-settings]').forEach(element=>{element.hidden=mode!=='reconstruction'||element.id==='fineSurfaceControls'&&!fineSurfaceController?.select;});
@@ -609,6 +612,7 @@ async function main(){
   renderer.set({...donor.displayWindow});
   appearance=new AppearanceController({renderer,toast,donor,onCleanupChange:setCleanupMode,onChange:()=>{scheduleSectionDraw();echoModule?.updateAppearance();quickViews?.updateAppearance();probeModule?.updateAppearance();teeModule?.updateAppearance();syncControls();if(currentTab==='reconstruction')queueDetailedSections();}});
   measurements=new MeasurementControls({renderer,viewport:$('viewport'),button:$('measureDistance'),sourceKey:donor.id,onStart:()=>nativeMainDetailController?.setPicking(false),onChange:()=>syncControls(false)});
+  anatomyContext=new ReconstructionAnatomyContext({renderer,donor,root:document,toast,onChange:()=>syncControls(false)});
   slices=['X','Y','Z'].map((a,i)=>new SliceView($('slice'+a),i));
   manifest=await manifestRequest;
   if(manifest.specimen!==donor.specimen)throw new Error('The scan does not match the selected donor.');

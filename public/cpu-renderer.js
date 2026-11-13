@@ -16,6 +16,7 @@ export class CPUVolumeRenderer {
    this.canvas.width=f.w;this.canvas.height=f.h;this.ctx.putImageData(new ImageData(new Uint8ClampedArray(f.pixels),f.w,f.h),0,0);this.canvas.dataset.rendered='true';this.canvas.dataset.backend='software';this.displayedId=f.id;this.busy=f.id!==this.frameId;
    this.contextFrameRevision=(this.contextFrameRevision||0)+1;
    this.contextDepth=f.depth?{width:f.w,height:f.h,data:new Float32Array(f.depth),basis:f.basis,revision:this.contextFrameRevision}:null;
+   this.drawContextLayer(f);
    const measurementJob=this.measurementJobs.get(f.id);
    presentMeasurementFrame(this,measurementJob&&this.contextDepth?{...measurementJob,linearDepth:this.contextDepth}:null);
    for(const id of this.measurementJobs.keys())if(id<=f.id)this.measurementJobs.delete(id);
@@ -42,6 +43,23 @@ export class CPUVolumeRenderer {
   this.worker.postMessage({type:'render',id,w,h,extent:this.extent,basis,settings:this.settings,fast});
  }
  snapshot(){return this.canvas.toDataURL('image/png');}
+ setContextLayer(layer){
+  if(this.contextLayer===layer)return;
+  this.contextLayer=layer||null;this.requestRender();
+ }
+ // Submit only after an accepted heart image and its matching depth. A fast
+ // accepted frame may precede the newest camera: use its own basis, never the
+ // current controls, and do not draw anything without acquired pixel depth.
+ drawContextLayer(frame){
+  const layer=this.contextLayer,depth=this.contextDepth;
+  if(!layer||!frame.basis||!depth?.data||depth.width!==frame.w||depth.height!==frame.h||depth.data.length!==frame.w*frame.h)return;
+  const rect=this.canvas.getBoundingClientRect(),ctx=this.ctx;
+  ctx.save();
+  try{layer.draw({renderer:this,context:ctx,basis:frame.basis,width:frame.w,height:frame.h,pixelWidth:frame.w,pixelHeight:frame.h,
+   cssWidth:rect.width>0?rect.width:frame.w,cssHeight:rect.height>0?rect.height:frame.h,aspect:frame.w/frame.h,occlusion:depth});}
+  catch(error){layer.onError?.(error);}
+  finally{ctx.restore();}
+ }
  getContextOcclusion(){
   const depth=this.contextDepth;
   if(!depth||this.displayedId!==this.frameId||!sameDepthBasis(depth.basis,this.basis()))return {pending:true,revision:this.contextFrameRevision||0};

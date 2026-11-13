@@ -1,5 +1,12 @@
 # Heart Explorer
 
+## Delivery policy update — November 13, 2026
+
+The user has replaced Box handoffs with direct GitHub updates. Follow the
+current policy at the top of `docs/UPDATE_WORKFLOW.md`; historical Box checkpoint,
+queue and delta-archive instructions below no longer apply to new changes.
+Preserve separate hosted/public configurations and all asset exclusions.
+
 Read `LOCAL-DEVELOPMENT.md` before editing. Preserve the public repository's
 asset exclusions, dataset availability guards, and licensing records.
 

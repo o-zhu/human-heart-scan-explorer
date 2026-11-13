@@ -40,7 +40,7 @@ body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-cont
 }
 body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .color-swatch { width: 13px; height: 13px; }
 body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) .menu-chevron { margin-left: 1px; }
-body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-control, .measurement-control) {
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-control, .anatomy-context-control, .measurement-control) {
   grid-column: 1 / -1;
   width: 100%;
   min-width: 0;
@@ -48,13 +48,13 @@ body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-cont
   justify-content: flex-end;
   align-items: flex-end;
 }
-body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .measurement-toggle) {
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .anatomy-context-toggle, .measurement-toggle) {
   width: max-content;
   max-width: 100%;
   padding: 6px 10px;
   gap: 6px;
 }
-body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .measurement-toggle) svg {
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.coronary-toggle, .anatomy-context-toggle, .measurement-toggle) svg {
   width: 17px;
   height: 17px;
   flex-basis: 17px;
@@ -72,15 +72,15 @@ body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-cont
   inset: calc(100% + 7px) 0 auto auto;
   max-height: min(70dvh, 650px);
 }
-body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) {
+body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .anatomy-context-toggle, .measurement-toggle) {
   font-size: 13px !important;
   line-height: 1.3;
 }
 @media (hover: hover) and (pointer: fine) {
-  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) { min-height: 36px !important; }
+  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .anatomy-context-toggle, .measurement-toggle) { min-height: 36px !important; }
 }
 @media (any-pointer: coarse) {
-  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .measurement-toggle) { min-height: 44px !important; }
+  body #reconstructionWorkspace:not(.clinical-paired) #viewport:not(.viewport-controls-compact) :is(.preset-switch button, .viewer-menu > summary, .reconstruction-detail-shortcut, .coronary-toggle, .anatomy-context-toggle, .measurement-toggle) { min-height: 44px !important; }
 }
 
 /* A stable, high-contrast invitation matching the orange surface marker.
@@ -115,3 +115,52 @@ body #viewport .measurement-toggle[data-measure-state="complete"]:hover {
   border-color: #f4bc83;
 }
 body #viewport .measurement-toggle:focus-visible { outline: 3px solid #ffd3a5; outline-offset: 3px; }
+
+/* Reuse the fixed TEE context without giving it more visual weight than the
+   measured heart. The label and icon slot stay stable while context loads. */
+.viewer-toolbar > .anatomy-context-control {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  min-width: 0;
+}
+.anatomy-context-control[hidden] { display: none !important; }
+.anatomy-context-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #607d70;
+  border-radius: 6px;
+  background: #1c3028ed;
+  color: #d8e4d9;
+  font: inherit;
+  font-weight: 550;
+  line-height: 1.3;
+  cursor: pointer;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+.anatomy-context-toggle svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.anatomy-context-toggle:hover:not(:disabled) { background: #2e4438; border-color: #9aaf9d; }
+.anatomy-context-toggle[aria-pressed="true"] {
+  background: #bbd0bc;
+  border-color: #d3e1cf;
+  color: #193025;
+}
+.anatomy-context-toggle[aria-pressed="true"]:hover:not(:disabled) { background: #cedecc; border-color: #e1ebdc; }
+.anatomy-context-toggle:focus-visible { outline: 2px solid #c9dbc6; outline-offset: 3px; }
+.anatomy-context-toggle:disabled { opacity: .55; cursor: default; }
+.anatomy-context-toggle[aria-busy="true"] { cursor: progress; }
+.anatomy-context-toggle .anatomy-context-spinner { display: none; }
+.anatomy-context-toggle[aria-busy="true"] .anatomy-context-icon { display: none; }
+.anatomy-context-toggle[aria-busy="true"] .anatomy-context-spinner {
+  display: block;
+  animation: anatomy-context-spin .9s linear infinite;
+}
+@keyframes anatomy-context-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .anatomy-context-toggle[aria-busy="true"] .anatomy-context-spinner { animation: none; }
+}
