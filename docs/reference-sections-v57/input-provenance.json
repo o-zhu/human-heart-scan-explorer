@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-input-provenance-v57",
+  "frozenExportSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+  "sourceHashes": {
+    "public/echo.js": "2c76a8597072eb78bc9e22fd170f57c63e082ff1d3e3f8900e9083f5a25b601c",
+    "public/echo-cut-face.js": "29fad5dbbe3657720bbd04e2c111b1d595ca637dd878ddeee7f1a7c613b3dad9",
+    "public/donors.js": "0b4bbad612e227290b86a5cf1b7c99d36f918ee558f064d760b0ca3702e3baeb",
+    "public/echo-donor-planes.js": "3adaa60cfe465f0ae162b5581895ad97c335f462e9a8ebb175b4aa6e3f367a08",
+    "public/echo-donor-calibration.js": "e11d13f8f537a0b18046bbe91ca1a4cd9f84198f329e1a007c535c24237b5e9f",
+    "public/echo-donor-support.js": "1a8a49c56245a792a8392cf49038709c0d8be4a6f2416d50f17a8622e599548a",
+    "public/tte-atlas-data.js": "27a6147873d5bd9977873e58b050578ef4712ce19de6b6ed49147a6d7bf39259",
+    "public/tee-atlas-data.js": "c2fa4a8b3c325749e701f85fd58492b7e4b3a2b18b6e6e5aaa56851e6d189f4f",
+    "public/tte-atlas-geometry.js": "0e371491072940caa77fee10ba8d1c9a309e002a5ac9e8429087aa4864cc6f59",
+    "public/tee-atlas-geometry.js": "77efc87844086565a5b750730029204a030ab97732c0a34e0cf91ef8b0d30748",
+    "public/echo-acquisition-geometry.js": "c5eea5b376a3a346ae33152916c568e1bbd1a909c8eb2489ba7b9dfec86777b1",
+    "public/echo-correspondence.js": "145bb7fc81069b4c21511d686318069ed730bc3a4e660e50493fcb01b705abfd",
+    "public/tee-view-refinement.js": "a035addef8159335dfa0b83fd7699f6d103c0c269767c9c68034dc1c8357237c",
+    "public/tee-context-geometry.js": "bd78662cb61b68c9a324b4563c41ed1ae51bc73417d1b4ba8201b80aaedc4cf1",
+    "public/echo-anatomy-context-v2.js": "a1998f8207408a64be6fcad39884ec1adad1ca035a1c645c30ba45f868c75868",
+    "public/echo-instrument-clearance.js": "6cf4d4811111c868318fbe3291e7cd4ac75000cbcb2c4d6850e262498240952a",
+    "public/echo-tte-guidance.js": "551d9338276066d2c870d56ccff7b5707e0ad9fd05e4de0e089756b701a72545",
+    "public/ultra-volume-core.js": "95dbbe48d5c503e62ba88cc36b8cdefa7c170d8b2d50e732baacbdd9843681ab",
+    "public/fine-section-store.js": "5fa6fd14e247afd7ae5a0d94ee0e4d0f782696e7511839c0abd83b2e128de9b0",
+    "public/assets/tee-atlas/plane-fit-v2.json": "1edcad31a1c7d819e4659c100ebb6029afdc531c9f3bc599e341c9a06e0ccd64",
+    "public/assets/probe-context-v11/manifest.json": "d8a7563803aac62012c4e78075024cbc35cd5ce53338b3797ca0068484b4408c",
+    "public/assets/probe-context-v11/torso.bin.gz": "5e02de3b94c4a527d059bc6bb0c2d58ac995d699c940e9e5e68e997c11e37a28",
+    "public/assets/manifest.json": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+    "public/assets/echo-planes.json": "b9495519020501010f5ff5b94c118ff61a61851f72777b8b39395508470be00e",
+    "public/assets/echo-textures.json": "bf2f6ae583b3fd8591af6d12008a2c114a7c9a8bd41f45471842055351df325d",
+    "public/assets/flow-views-v5.json": "de04f898e6b81cdd02d1ff2e8cc3eaa2890e779d649b2bc25f4fa4282ed19332",
+    "public/assets/ultra-volume-v7.json": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+    "public/assets/donors/s-20-29/manifest.json": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+    "public/assets/donors/s-20-29/echo-planes.json": "b600c5dbdcebe4b19ecb4fb7ae6a2f4501fe254809cc2c80deb7a31bd7374ffc",
+    "public/assets/donors/s-20-29/echo-textures.json": "ede43d65830a4cf16816dccea95e34db931fd423e0446ebdd8390c0b14f3d570",
+    "public/assets/donors/s-20-29/flow-views.json": "d8d3f3484d24883b3430ed5a9e9e1335698d97d39c9685fb4cba5334ecc2f509",
+    "public/assets/donors/s-20-29/ultra-volume.json": "2da2c9fe2744678986a3fe821c95734ff42d2c9d16d6e25e7721905daeeed248",
+    "public/assets/donors/s-20-28/manifest.json": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+    "public/assets/donors/s-20-28/echo-planes.json": "cb1b8f876583d99f33c095bfa81180455544f4496dcc411209e015fb1c00ff53",
+    "public/assets/donors/s-20-28/echo-textures.json": "98cac51f6830458f6910fa7e23a5bfe7bae129b359b26caff3f153a42666ead1",
+    "public/assets/donors/s-20-28/flow-views.json": "d78c8d8c585c4b566f9e0565a7f3a48dc9d3e5c40e1b8613b98b32d67e529519",
+    "public/assets/donors/s-20-28/ultra-volume.json": "0f713be24e0114b276f5220bc81832408b0e4a7ddfc988ce96e95973d4845b65"
+  },
+  "sources": [
+    {
+      "donorId": "ladaf-2021-17",
+      "datasetId": "1659197537",
+      "sourceKey": "4a552a651b1d0d2816e7b796f275a8506b5f27558165f2c76ac1d3c2c0066e1b",
+      "sampler": "trilinear-u8-positive-halo-v1",
+      "sourceMaskSha256": "6d44d3987e70bf20036b896d73d4eeb52723ef57cd8eb6e9b8aa8a5664b0d239",
+      "sourceSpacingUm": 79.4,
+      "sourceWindow": [
+        14640,
+        23545
+      ],
+      "sourceOriginXYZ": [
+        444,
+        356,
+        60
+      ],
+      "sourceShapeXYZ": [
+        1153,
+        1257,
+        1981
+      ],
+      "fullDimensionsXYZ": [
+        1897,
+        1897,
+        2117
+      ],
+      "longestMm": 168.01040000000003,
+      "referenceMm": 168.01040000000003,
+      "extent": [
+        0.8960302457466919,
+        1,
+        0.8960302457466919
+      ],
+      "fineManifest": "public/assets/ultra-volume-v7.json",
+      "fineManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "displayManifest": "public/assets/manifest.json",
+      "displayManifestSha256": "5b0c150fd2460954c0945713eb378b89b0dbb0d704a2dab9583293eb78e8c5f0",
+      "planeRevision": null
+    },
+    {
+      "donorId": "s-20-29",
+      "datasetId": "1773963465",
+      "sourceKey": "34c54ea554f64db71238273bfcdf6657666c9eee8be19dfc198e7af82254d186",
+      "sampler": "trilinear-u8-positive-halo-v1",
+      "sourceMaskSha256": "0cac8c865fa9e23c6dd8c64c54ee13d4e327d88a06e149d4cfecd7f8f90d58c2",
+      "sourceSpacingUm": 79.56,
+      "sourceWindow": [
+        19300,
+        23000
+      ],
+      "sourceOriginXYZ": [
+        180,
+        356,
+        100
+      ],
+      "sourceShapeXYZ": [
+        1533,
+        1133,
+        1761
+      ],
+      "fullDimensionsXYZ": [
+        1909,
+        1909,
+        1945
+      ],
+      "longestMm": 154.66464000000002,
+      "referenceMm": 154.66464000000002,
+      "extent": [
+        0.9814814814814815,
+        1,
+        0.9814814814814815
+      ],
+      "fineManifest": "public/assets/donors/s-20-29/ultra-volume.json",
+      "fineManifestSha256": "2da2c9fe2744678986a3fe821c95734ff42d2c9d16d6e25e7721905daeeed248",
+      "displayManifest": "public/assets/donors/s-20-29/manifest.json",
+      "displayManifestSha256": "1758332fc2c8b9d0add9a7329312f5a6756572efb47110de45ef7f7232b075dc",
+      "planeRevision": "s-20-29:source-specimen-calibration-v1:specimen-echo-targets-v6"
+    },
+    {
+      "donorId": "s-20-28",
+      "datasetId": "1966162746",
+      "sourceKey": "dad7ff99a5f5ff6bdfd1926fd8eba78733f098e82b94e7a6afbb79970aed0e50",
+      "sampler": "trilinear-u8-positive-halo-v1",
+      "sourceMaskSha256": "868bae1335b6e23c93d05931ab9d7a8a285422cc7135f9e8e666a5c664e04158",
+      "sourceSpacingUm": 79.4,
+      "sourceWindow": [
+        14938,
+        22708
+      ],
+      "sourceOriginXYZ": [
+        172,
+        356,
+        0
+      ],
+      "sourceShapeXYZ": [
+        1433,
+        1313,
+        1957
+      ],
+      "fullDimensionsXYZ": [
+        1905,
+        1905,
+        2033
+      ],
+      "longestMm": 161.34080000000003,
+      "referenceMm": 161.34080000000003,
+      "extent": [
+        0.9370078740157479,
+        1,
+        0.9370078740157479
+      ],
+      "fineManifest": "public/assets/donors/s-20-28/ultra-volume.json",
+      "fineManifestSha256": "0f713be24e0114b276f5220bc81832408b0e4a7ddfc988ce96e95973d4845b65",
+      "displayManifest": "public/assets/donors/s-20-28/manifest.json",
+      "displayManifestSha256": "705a93d013baab0afb8766fd45ea91ca91062e27405bc4cc013ddd7b970d21d6",
+      "planeRevision": "s-20-28:source-specimen-calibration-v1:specimen-echo-targets-v6"
+    }
+  ],
+  "rows": 168,
+  "acquiredViews": 147,
+  "outsideViews": 21,
+  "rasterRoles": 294,
+  "legacyPreparedTextureEligibleViews": 0,
+  "fullExportStorage": "Complete frozen input is preserved with generation and recovery checkpoints; public payload manifests retain the exact accepted raster planes."
+}

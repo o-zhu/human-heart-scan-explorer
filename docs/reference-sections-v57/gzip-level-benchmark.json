@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-r8-gzip-benchmark-v57",
+  "scope": "Memory-only recompression of both verified pilot rasters; original pixels and pilot payloads remain unchanged.",
+  "nodeVersion": "24.22.1",
+  "zlibVersion": "1.3.2.1-motley-285e94b",
+  "rasters": [
+    {
+      "role": "ct",
+      "decodedBytes": 4232790,
+      "pixelSha256": "da1f72ab21a602b9597045467f53502ed52ea6ffe04842d2f7bb299ae9f0d221",
+      "levels": [
+        {
+          "level": 6,
+          "encodedBytes": 1090100,
+          "sha256": "1c7020377843e1784b1642cf48c2eb0b42b51429e6479db9968172f5bbde5c26",
+          "gzipHeaderHex": "1f8b0800000000000003",
+          "elapsedMs": [
+            55.299891,
+            56.57568299999997,
+            50.92246600000004
+          ],
+          "medianElapsedMs": 55.299891
+        },
+        {
+          "level": 9,
+          "encodedBytes": 1087893,
+          "sha256": "4aada5cc6f1e5829cb4fa5f524e14f986d23e49f516ffa5e03c4e4ddf249550c",
+          "gzipHeaderHex": "1f8b0800000000000203",
+          "elapsedMs": [
+            95.90900900000003,
+            96.75074099999995,
+            97.397829
+          ],
+          "medianElapsedMs": 96.75074099999995
+        }
+      ],
+      "savingsBytes": 2207,
+      "savingsPercent": 0.2024584900467847
+    },
+    {
+      "role": "face",
+      "decodedBytes": 7406259,
+      "pixelSha256": "e401237635cab33e1237de00fea766c755f36fa0063392bb34d07a45f9d25c82",
+      "levels": [
+        {
+          "level": 6,
+          "encodedBytes": 1097081,
+          "sha256": "6c0c04f272db3949c19234b3f189db22a2336006652d4a0ff2ac61c11229382b",
+          "gzipHeaderHex": "1f8b0800000000000003",
+          "elapsedMs": [
+            47.17728899999997,
+            48.95847900000001,
+            49.107718999999975
+          ],
+          "medianElapsedMs": 48.95847900000001
+        },
+        {
+          "level": 9,
+          "encodedBytes": 1095103,
+          "sha256": "82a8b0486075f07a05fb6778592091b6e176aa02d20bd858a6ad8d8c562ae5b3",
+          "gzipHeaderHex": "1f8b0800000000000203",
+          "elapsedMs": [
+            104.84847800000011,
+            102.52967200000012,
+            106.61365100000012
+          ],
+          "medianElapsedMs": 104.84847800000011
+        }
+      ],
+      "savingsBytes": 1978,
+      "savingsPercent": 0.18029662349452774
+    }
+  ],
+  "totalSavingsBytes": 4185,
+  "totalLevel6Bytes": 2187181,
+  "totalLevel9Bytes": 2182996,
+  "savingsPercent": 0.19134218887234297
+}

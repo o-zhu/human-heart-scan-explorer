@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "approved-publication-recovery-check",
+  "checkedAt": "2026-11-13",
+  "heldFilesByteExact": 18,
+  "inventoryAssets": 272,
+  "inventoryBytes": 184060285,
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "verifiedRoles": 98
+    },
+    {
+      "donorId": "s-20-29",
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "verifiedRoles": 98
+    },
+    {
+      "donorId": "s-20-28",
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideScanViews": 7,
+      "verifiedRoles": 98
+    }
+  ],
+  "checks": [
+    "all held-file byte counts and SHA-256",
+    "all donor-manifest inventory identities",
+    "all 168 view identifiers and approach counts",
+    "all 294 role asset identities, dimensions and physical spacing",
+    "all 147 CT/full-face coplanarity",
+    "all 21 outside-scan entries retain reasons and null measured records"
+  ],
+  "scope": "Offline identity and metadata checks during approval recovery; not a fresh voxel, live-browser, network-speed or device test.",
+  "passed": true
+}

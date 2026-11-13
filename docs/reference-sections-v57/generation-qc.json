@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-section-generation-summary-v57",
+  "status": "complete",
+  "generationIdentity": {
+    "schemaVersion": 1,
+    "sampler": "trilinear-u8-positive-halo-v1",
+    "samplerFiles": {
+      "public/ultra-volume-core.js": "95dbbe48d5c503e62ba88cc36b8cdefa7c170d8b2d50e732baacbdd9843681ab",
+      "public/ultra-volume-backend.js": "0db321caa551da31a06c3cad0fd08d0c4f0f5bdf60139cb0b9cabe2496694ce0",
+      "public/fine-section-store.js": "5fa6fd14e247afd7ae5a0d94ee0e4d0f782696e7511839c0abd83b2e128de9b0"
+    },
+    "planesSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+    "urlPrefix": "/assets/reference-sections-v57/",
+    "compression": {
+      "codec": "gzip-r8-delta-v1",
+      "filter": "per-row left difference modulo 256; first byte unchanged",
+      "level": 9,
+      "mtimeSeconds": 0,
+      "implementation": "node:zlib",
+      "zlibVersion": "1.3.2.1-motley-285e94b"
+    }
+  },
+  "generator": "scripts/reference-sections-v57/generate-sections.mjs",
+  "generatorSha256": "8e1c4c339a8b05e007b3e354b1b0cedf775bbeda1dcc89694feb13c595b5505f",
+  "views": 168,
+  "acquiredViews": 147,
+  "outsideViews": 21,
+  "rasterRoles": 294,
+  "uniqueRasterPayloads": 269,
+  "runtimeFiles": 273,
+  "runtimeTotalBytes": 184062004,
+  "runtimeInventorySha256": "81a2142de936c0f2429290122a7a476092b3b3aaac401981a43e716f7a97c9c5",
+  "scope": "Production-source sampling and lossless encoding verification. Independent source-pixel QC is reported separately. No source pixels, windows, masks or planes were modified.",
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "sourceKey": "4a552a651b1d0d2816e7b796f275a8506b5f27558165f2c76ac1d3c2c0066e1b",
+      "sourceSpacingUm": 79.4,
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideViews": 7,
+      "expectedRasters": 98,
+      "readyRasters": 98,
+      "generatedRasters": 0,
+      "reencodedRasters": 96,
+      "reusedRasters": 2,
+      "uniqueReadyPayloads": 96,
+      "uniqueEncodedBytes": 68498121,
+      "uniqueDecodedBytes": 431586360,
+      "sourceSamplingTimingMs": {
+        "count": 96,
+        "minimum": 27.507720000001427,
+        "median": 346.3871464999993,
+        "maximum": 6425.033629000012,
+        "sum": 60661.96545699999
+      },
+      "encodingAndWriteTimingMs": {
+        "count": 96,
+        "minimum": 58.822409000000334,
+        "median": 161.41203849999965,
+        "maximum": 1217.8236890000007,
+        "sum": 20638.009221
+      },
+      "sourceSamplingTimingScope": "Original production-sampler runs, before lossless reencoding where applicable; local process timings, not browser latency.",
+      "manifestUrl": "/assets/reference-sections-v57/ladaf-2021-17.json",
+      "manifestBytes": 130026,
+      "manifestSha256": "f2a3247a7bf307f65de87f0400a9fe4c3adb0b05278ffbad36447b1f7b91cb5b",
+      "sourcePixelProof": "Every new source block used was verified against immutable encoded and raw hashes by the production backend. Every output round-tripped byte-exactly and final-stage verification checked all compressed and original-pixel hashes.",
+      "losslessReencoding": {
+        "priorCodec": "gzip-r8",
+        "priorManifestSha256": "cab8f91b62417fbfb29905f56e801a9f5add902bae8a880fab7f044ca8e7fab4",
+        "originalPixelHashesUnchanged": true,
+        "resampledDuringConversion": false
+      }
+    },
+    {
+      "donorId": "s-20-29",
+      "sourceKey": "34c54ea554f64db71238273bfcdf6657666c9eee8be19dfc198e7af82254d186",
+      "sourceSpacingUm": 79.56,
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideViews": 7,
+      "expectedRasters": 98,
+      "readyRasters": 98,
+      "generatedRasters": 93,
+      "reencodedRasters": 0,
+      "reusedRasters": 5,
+      "uniqueReadyPayloads": 87,
+      "uniqueEncodedBytes": 56516331,
+      "uniqueDecodedBytes": 323726943,
+      "sourceSamplingTimingMs": {
+        "count": 93,
+        "minimum": 38.434229999998934,
+        "median": 749.2736510000013,
+        "maximum": 7112.480184,
+        "sum": 109322.99775499999
+      },
+      "encodingAndWriteTimingMs": {
+        "count": 93,
+        "minimum": 35.940378000002966,
+        "median": 199.84876700000314,
+        "maximum": 1288.034231000005,
+        "sum": 23831.953597999993
+      },
+      "sourceSamplingTimingScope": "Original production-sampler runs, before lossless reencoding where applicable; local process timings, not browser latency.",
+      "manifestUrl": "/assets/reference-sections-v57/s-20-29.json",
+      "manifestBytes": 131451,
+      "manifestSha256": "16f86d75da3a065ec2526e0858f2f3e0e8aacaadec8a32914407af6a1ddd5375",
+      "sourcePixelProof": "Every new source block used was verified against immutable encoded and raw hashes by the production backend. Every output round-tripped byte-exactly and final-stage verification checked all compressed and original-pixel hashes."
+    },
+    {
+      "donorId": "s-20-28",
+      "sourceKey": "dad7ff99a5f5ff6bdfd1926fd8eba78733f098e82b94e7a6afbb79970aed0e50",
+      "sourceSpacingUm": 79.4,
+      "views": 56,
+      "acquiredViews": 49,
+      "outsideViews": 7,
+      "expectedRasters": 98,
+      "readyRasters": 98,
+      "generatedRasters": 93,
+      "reencodedRasters": 0,
+      "reusedRasters": 5,
+      "uniqueReadyPayloads": 86,
+      "uniqueEncodedBytes": 58653076,
+      "uniqueDecodedBytes": 343701998,
+      "sourceSamplingTimingMs": {
+        "count": 93,
+        "minimum": 53.237592999998014,
+        "median": 502.4124129999982,
+        "maximum": 7060.363820999999,
+        "sum": 79023.4934
+      },
+      "encodingAndWriteTimingMs": {
+        "count": 93,
+        "minimum": 51.118601000001945,
+        "median": 169.0373099999997,
+        "maximum": 725.2910839999968,
+        "sum": 17456.312378000042
+      },
+      "sourceSamplingTimingScope": "Original production-sampler runs, before lossless reencoding where applicable; local process timings, not browser latency.",
+      "manifestUrl": "/assets/reference-sections-v57/s-20-28.json",
+      "manifestBytes": 131280,
+      "manifestSha256": "7563fcefd7256c7aa8633620d8e7e6bd3690a17277d0a79e9ed78b4024e0175d",
+      "sourcePixelProof": "Every new source block used was verified against immutable encoded and raw hashes by the production backend. Every output round-tripped byte-exactly and final-stage verification checked all compressed and original-pixel hashes."
+    }
+  ],
+  "encodedPayloadBytes": 183667528,
+  "metadataAndConfigurationBytes": 394476
+}

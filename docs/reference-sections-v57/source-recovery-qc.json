@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "kind": "exact-reference-source-recovery-qc",
+  "createdAt": "2026-11-12T22:25:09.297739+00:00",
+  "status": "passed",
+  "finalPlaneExportSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+  "finalPlaneExportRows": 168,
+  "acquiredReferenceViews": 147,
+  "outsideScanViews": 21,
+  "requiredFineBricksVerified": 17121,
+  "verifiedEncodedBrickBytes": 2604389615,
+  "verifiedDecodedBrickBytes": 4701854625,
+  "originalSourceChunks": 2840,
+  "originalSourceEncodedBytes": 8015942764,
+  "perDonorUnionHashConvention": "UTF-8 decimal brick IDs sorted numerically, each followed by LF",
+  "combinedUnionHashConvention": "UTF-8 donorId:decimalBrickId followed by LF; sort donorId then numeric brickId",
+  "combinedRequiredBrickUnionSha256": "3fc4f3b2e832d4d30ab95f23a7d2498c3b53b4e74eb865be261cf720b2b68c9f",
+  "sourceManifestsModified": false,
+  "sourceWindowOrMaskChanged": false,
+  "acceptedAnySourceOrBrickIdentityMismatch": false,
+  "finalHelperPath": "scripts/reference-sections-v57/recover-bricks.py",
+  "finalHelperSha256": "3407dceacd4793460208b50baa6e3ea2bb174992d0ee882d2716092bdc19990a",
+  "finalHelperPinsLoadedPlanBytesAndHash": true,
+  "retainedExportEquivalenceChecks": [
+    {
+      "sha256": "ba53890f1d392a12b9338f6d4621f0581f3f869579175d4a0e66d455b61156fd",
+      "all168RowsDeepEqualFinal": true,
+      "allThreeSourcesDeepEqualFinal": true
+    },
+    {
+      "sha256": "4184d28457dd20c9572ba220c03ab6577e609fbc63250221010ab92b50371341",
+      "all168RowsDeepEqualFinal": true,
+      "allThreeSourcesDeepEqualFinal": true
+    }
+  ],
+  "planProvenanceNote": "Early LADAF and S29 recovery parsed the export once but reported a freshly read file hash at checkpoint time. The original execution records are preserved unchanged. All 168 rows and all three source objects in both retained prior exports exactly equal the final export; every completed brick union was independently rechecked against the final export. The finalized helper captures loaded bytes and their hash once, as used for the final S28 run.",
+  "recoveryObservations": [
+    "One S28 encoded identity check stopped acquisition. That first rejected body was not retained, so a transport cause cannot be proven. One subsequent ordinary GET returned the exact historical encoded byte count/SHA and decoded SHA, and only those verified bytes were reused; no identity expectation was changed.",
+    "A strict recovery-only shape equality check initially rejected historical padded N5 edge blocks despite exact encoded and decoded hashes. The helper was corrected to the original prepare-donor-v10 behavior: require coverage of the acquired extent, allow valid block headers up to 128 cubed, and ignore padding outside the declared source dimensions. All final output brick identities remained mandatory."
+  ],
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "acquiredReferenceViewCount": 49,
+      "outsideScanViewCount": 7,
+      "requiredFineBrickCount": 4918,
+      "retainedBankBrickCount": 5127,
+      "verifiedEncodedBrickBytes": 779425208,
+      "verifiedDecodedBrickBytes": 1350605750,
+      "originalSourceChunkCount": 821,
+      "originalSourceEncodedBytes": 2508887627,
+      "publicOriginalSourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/19.85um_complete-organ_bm18/s2/",
+      "fineManifestPath": "public/assets/ultra-volume-v7.json",
+      "fineManifestSha256": "e50ab70a52373dc774cf6077ef906a753e56b78b9f9b646fba2ffe7220ff338c",
+      "sourceMaskSha256": "6d44d3987e70bf20036b896d73d4eeb52723ef57cd8eb6e9b8aa8a5664b0d239",
+      "sourceWindow": [
+        14640,
+        23545
+      ],
+      "sourceOriginXYZ": [
+        444,
+        356,
+        60
+      ],
+      "sourceShapeXYZ": [
+        1153,
+        1257,
+        1981
+      ],
+      "originalSourceDimensionsXYZ": [
+        1903,
+        1903,
+        2120
+      ],
+      "windowMethod": "prepare_hosted_sections.py float32 subtract, multiply255, divide, clip, rint",
+      "historicalOriginalSourceEvidence": {
+        "kind": "original support-selected N5 index",
+        "path": "public/assets/ultra-support.json",
+        "originalIndexedChunkCount": 832,
+        "requiredChunksPresentInIndex": true,
+        "priorOriginalEncodedAndDecodedHashesAvailable": false,
+        "proof": "Every restored fine brick matches its retained raw and encoded identities."
+      },
+      "finalRequiredBrickUnionSha256": "1d516d8095f4e7eba93e1049a02f613e9a71a325105e17f9dc5c5a10c6b5c2bd",
+      "everyOutputFilePresentWithExactEncodedByteCount": true,
+      "reportedPlanSha256": "4184d28457dd20c9572ba220c03ab6577e609fbc63250221010ab92b50371341",
+      "executedHelperSha256": "c7172cf71bb1247fd7885ba5f6be66bf3e85825681c5901f361d276951cd0e59",
+      "planHashCapturedAtLoad": false,
+      "paddedOriginalEdgeBlockCountRecorded": 0,
+      "finalRequiredBrickUnionExactlyMatchesCompletedInventory": true,
+      "everyRestoredBrickIdentityMatchesRetainedManifest": true
+    },
+    {
+      "donorId": "s-20-29",
+      "acquiredReferenceViewCount": 49,
+      "outsideScanViewCount": 7,
+      "requiredFineBrickCount": 5787,
+      "retainedBankBrickCount": 6017,
+      "verifiedEncodedBrickBytes": 841834374,
+      "verifiedDecodedBrickBytes": 1589254875,
+      "originalSourceChunkCount": 962,
+      "originalSourceEncodedBytes": 2463646572,
+      "publicOriginalSourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/19.89um_complete-organ_bm18/s2/",
+      "fineManifestPath": "public/assets/donors/s-20-29/ultra-volume.json",
+      "fineManifestSha256": "2da2c9fe2744678986a3fe821c95734ff42d2c9d16d6e25e7721905daeeed248",
+      "sourceMaskSha256": "0cac8c865fa9e23c6dd8c64c54ee13d4e327d88a06e149d4cfecd7f8f90d58c2",
+      "sourceWindow": [
+        19300.0,
+        23000.0
+      ],
+      "sourceOriginXYZ": [
+        180,
+        356,
+        100
+      ],
+      "sourceShapeXYZ": [
+        1533,
+        1133,
+        1761
+      ],
+      "originalSourceDimensionsXYZ": [
+        1909,
+        1909,
+        1943
+      ],
+      "windowMethod": "prepare-donor-v10.py exact integer linear quantization, nearest/ties-to-even",
+      "historicalOriginalSourceEvidence": {
+        "kind": "historical original-source chunk ledger",
+        "path": "docs/donors/s-20-29/source-fine-chunks.json",
+        "originalIndexedChunkCount": 966,
+        "requiredChunksPresentInIndex": true,
+        "priorOriginalEncodedAndDecodedHashesAvailable": true,
+        "allRequiredOriginalEncodedAndDecodedIdentitiesMatch": true,
+        "retainedMaskedWindowedChunkHashesCheckedDuringAssembly": true
+      },
+      "finalRequiredBrickUnionSha256": "cec708259d07a3f7c61b60874b4901452075d01e72c338fa342cf1515486603a",
+      "everyOutputFilePresentWithExactEncodedByteCount": true,
+      "reportedPlanSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+      "executedHelperSha256": "c7172cf71bb1247fd7885ba5f6be66bf3e85825681c5901f361d276951cd0e59",
+      "planHashCapturedAtLoad": false,
+      "paddedOriginalEdgeBlockCountRecorded": 0,
+      "finalRequiredBrickUnionExactlyMatchesCompletedInventory": true,
+      "everyRestoredBrickIdentityMatchesRetainedManifest": true
+    },
+    {
+      "donorId": "s-20-28",
+      "acquiredReferenceViewCount": 49,
+      "outsideScanViewCount": 7,
+      "requiredFineBrickCount": 6416,
+      "retainedBankBrickCount": 6830,
+      "verifiedEncodedBrickBytes": 983130033,
+      "verifiedDecodedBrickBytes": 1761994000,
+      "originalSourceChunkCount": 1057,
+      "originalSourceEncodedBytes": 3043408565,
+      "publicOriginalSourceUrl": "https://storage.googleapis.com/ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-28/heart/19.85um_complete-organ_bm18/s2/",
+      "fineManifestPath": "public/assets/donors/s-20-28/ultra-volume.json",
+      "fineManifestSha256": "0f713be24e0114b276f5220bc81832408b0e4a7ddfc988ce96e95973d4845b65",
+      "sourceMaskSha256": "868bae1335b6e23c93d05931ab9d7a8a285422cc7135f9e8e666a5c664e04158",
+      "sourceWindow": [
+        14938.0,
+        22708.0
+      ],
+      "sourceOriginXYZ": [
+        172,
+        356,
+        0
+      ],
+      "sourceShapeXYZ": [
+        1433,
+        1313,
+        1957
+      ],
+      "originalSourceDimensionsXYZ": [
+        1904,
+        1904,
+        2032
+      ],
+      "windowMethod": "prepare-donor-v10.py exact integer linear quantization, nearest/ties-to-even",
+      "historicalOriginalSourceEvidence": {
+        "kind": "historical original-source chunk ledger",
+        "path": "docs/donors/s-20-28/source-fine-chunks.json",
+        "originalIndexedChunkCount": 1061,
+        "requiredChunksPresentInIndex": true,
+        "priorOriginalEncodedAndDecodedHashesAvailable": true,
+        "allRequiredOriginalEncodedAndDecodedIdentitiesMatch": true,
+        "retainedMaskedWindowedChunkHashesCheckedDuringAssembly": true
+      },
+      "finalRequiredBrickUnionSha256": "34bf43f478e2d6aa15db0577cd7c46b1b970fba5c74aa49d95dea24f5a801e2a",
+      "everyOutputFilePresentWithExactEncodedByteCount": true,
+      "reportedPlanSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+      "executedHelperSha256": "3407dceacd4793460208b50baa6e3ea2bb174992d0ee882d2716092bdc19990a",
+      "planHashCapturedAtLoad": true,
+      "paddedOriginalEdgeBlockCountRecorded": 11,
+      "finalRequiredBrickUnionExactlyMatchesCompletedInventory": true,
+      "everyRestoredBrickIdentityMatchesRetainedManifest": true
+    }
+  ]
+}

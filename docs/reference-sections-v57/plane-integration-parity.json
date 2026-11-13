@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-plane-integration-parity-v57",
+  "sourcesCompared": 3,
+  "rowsCompared": 168,
+  "allSourceObjectsDeepEqual": true,
+  "allRowObjectsDeepEqual": true,
+  "revisions": [
+    {
+      "name": "before prepared-cache integration",
+      "sha256": "ba53890f1d392a12b9338f6d4621f0581f3f869579175d4a0e66d455b61156fd"
+    },
+    {
+      "name": "after integration pilot",
+      "sha256": "4184d28457dd20c9572ba220c03ab6577e609fbc63250221010ab92b50371341"
+    },
+    {
+      "name": "after fallback pending-state fix, final",
+      "sha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5"
+    }
+  ],
+  "changedCapturedSourceFiles": [
+    "public/echo.js"
+  ],
+  "canonicalRowsSha256": "4d81e5b401e628f235efc846cc44be5f785097f90e945ec75c833d3f050eb1ed",
+  "meaning": "Both cache integration and the narrow fallback pending-state fix preserved every accepted source plane, exact CT and full-face raster, source identity and required fine-brick set. This is a source/controller comparison, not browser or clinical validation."
+}

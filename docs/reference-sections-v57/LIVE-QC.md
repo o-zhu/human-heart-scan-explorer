@@ -1,13 +1,13 @@
 # Published reference-view QC
 
-The published version 94 was checked through the normal Reference Views UI on
-12 November 2026. The pass selected every TTE and TEE reference for each of the
-three HiP-CT hearts. This readable summary is included in the source-only update;
-the detailed per-selection record is a separate generated evidence deliverable.
-The public source checkout has an empty prepared-bank configuration and does not
-include the published bank or its generated indexes/contact figures. Its existing
-fine-sampler fallback remains available until a locally generated, verified bank
-and matching configuration are installed.
+This is the saved production-browser evidence for website version **94**,
+observed on **12 November 2026 at 23:39:08.677 UTC**. It is not a new live-browser
+run performed during the subsequent GitHub approval recovery.
+
+The complete original per-selection JSON is available as
+[live-browser-qc.json.gz](live-browser-qc.json.gz). Decompression restores its
+original SHA-256:
+`ac1a38d99e367eeea531a3fee18b5f4bcde6d2e943fe06f86744d5eff5c8ce5e`.
 
 | Donor | TTE selections | TEE selections | Prepared slice and full face | Outside-scan context |
 | --- | ---: | ---: | ---: | ---: |
@@ -18,38 +18,41 @@ and matching configuration are installed.
 
 All 168 donor/approach/index combinations were unique. Every acquired view
 reached the measured-detail-ready state for both the exact reference slice and
-the full cut face. The diagnostic source was `prepared-reference`, with full
-face coverage. The 21 existing outside-scan views instead showed the whole-heart
-context and the explicit explanation that the extracardiac target is absent.
-Retained diagnostic data attributes on those outside-scan entries were not used
-to claim a measured section.
+the full cut face. Its diagnostic source was `prepared-reference`, with full
+face coverage and no failure message. The 21 existing outside-scan views instead
+showed whole-heart context and the explicit explanation that the extracardiac
+target was absent. Retained diagnostic attributes on those outside-scan entries
+were not used to claim a measured section.
 
-The S-20-28 Deep Transgastric Five-Chamber view was also switched between CT Slice
-and 3D Cutaway; both retained the prepared source and full-face detail. Final
-visual inspection of S-20-28 Four-Chamber showed the reference movie playing at
-its decoded 792 × 568 dimensions, with the 15° REF indicator visible. Source
-angle policy and the 26 native dial bounds are covered by the separate
-[regression tests](TESTS.md).
+## Video framing
 
-## Fit Ultrasound behavior
+For S-20-29 Deep Transgastric Five-Chamber, the initial state was fitted with
+video ready state 4. Choosing Full Frame removed the fitted crop and exposed the
+Fit Ultrasound action. Moving to the next reference restored fitted sizing and
+the Full Frame action. The temporary choice therefore remained scoped to the
+current selection. Recordings without a reviewed focus crop preserved their
+complete frame.
 
-On S-20-29 Deep Transgastric Five-Chamber, the initial video was fitted and fully
-ready. Choosing Full Frame removed the fitted crop and exposed the Fit Ultrasound
-action. Moving to the next reference restored the fitted video and the Full Frame
-action. The temporary choice therefore remains scoped to the current selection.
-Videos without a reviewed focus crop continue to preserve their complete frame.
+## Slice and full-face delivery
 
-## Scope of this evidence
+S-20-28 Deep Transgastric Five-Chamber was switched between CT Slice and 3D
+Cutaway. Both retained the prepared source, full-face coverage, measured-detail
+readiness and an empty error message. The contemporaneous visual review also
+recorded S-20-28 Four-Chamber playback at 792 by 568 decoded pixels with its
+15-degree REF indicator visible. The prior source-aware native-angle policy
+remains covered by the [regression tests](TESTS.md).
 
-This is a desktop cloud-browser functional pass, not a physical iPad test or a
-cold-network latency benchmark. Some browser-control transport timeouts required
-reading the actual current selection before continuing. No prepared-section data
-failure was observed. Per-action observation times in the raw record include
-automation overhead and must not be presented as load-time measurements.
+## Scope
 
-The visual review of all 147 generated full faces and the independent comparison
-of 935,946 source samples are summarized in [README.md](README.md). Detailed
-machine-readable source checks and contact figures remain separate deliverables.
-Those source-data checks are distinct from this live delivery and presentation
-pass. Anatomical registration and clinical validation retain their existing
-qualifications.
+This was a desktop cloud-browser functional pass, not a physical iPad/Safari
+pass or a cold-network latency benchmark. Some browser-control transport
+acknowledgements timed out; the actual current selection was inspected before
+continuing. No prepared-section data failure was observed in the recorded pass.
+Per-action observation times include automation overhead and are not load-time
+measurements. The separate source-data checks and contact figures do not
+constitute anatomical or clinical validation.
+
+During approval recovery, the saved file identities and metadata were checked
+offline, and ten activation safeguards passed. A fresh live-site inspection was
+not available in that continuation. See [README.md](README.md) for the current
+publication scope and verified local-restoration procedure.

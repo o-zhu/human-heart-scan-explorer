@@ -1,0 +1,203 @@
+{
+  "kind": "heart-reference-runtime-qc-v57",
+  "schemaVersion": 1,
+  "passed": true,
+  "browserClaim": false,
+  "frozenPlanesSha256": "56f93ccd1a45ff75609639d641076a970ad705a12aa3afb93a4bbe1f88257ab5",
+  "echoSourceSha256": "2c76a8597072eb78bc9e22fd170f57c63e082ff1d3e3f8900e9083f5a25b601c",
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "manifestSha256": "f2a3247a7bf307f65de87f0400a9fe4c3adb0b05278ffbad36447b1f7b91cb5b",
+      "sourceKey": "4a552a651b1d0d2816e7b796f275a8506b5f27558165f2c76ac1d3c2c0066e1b",
+      "metadataRoles": 98,
+      "outsideViews": 7,
+      "decodedRoles": 4,
+      "assetRequests": 4,
+      "assetBytes": 3720039,
+      "peakCacheBytes": 21090366,
+      "decodedCacheLimit": 25165824,
+      "cases": [
+        {
+          "viewId": "plax_deep",
+          "mode": "tte",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 2313,
+          "height": 1830,
+          "decodedBytes": 4232790,
+          "compressedSha256": "235376a81f7514e7700b13540f7c242f0e887c0531dfa8fb26ef08e9f670e0ff",
+          "pixelSha256": "da1f72ab21a602b9597045467f53502ed52ea6ffe04842d2f7bb299ae9f0d221",
+          "cacheDecodedBytes": 4232790
+        },
+        {
+          "viewId": "psax_pv",
+          "mode": "tte",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 2618,
+          "height": 3187,
+          "decodedBytes": 8343566,
+          "compressedSha256": "b443b72e5e011191c64b312a3dedbd6dc881cd7992f91d664656c7eb3fcd178b",
+          "pixelSha256": "ce2ca49fefef39e887f6855af847ec2f3ce6fe9f440ea6643da994c5df8563a7",
+          "cacheDecodedBytes": 12576356
+        },
+        {
+          "viewId": "me5c",
+          "mode": "tee",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 1525,
+          "height": 2012,
+          "decodedBytes": 3068300,
+          "compressedSha256": "3d3424cd4a11e453875bc9df4935e66d2fde3eedaef2f37045ea0ae326855ae7",
+          "pixelSha256": "c0e9c4911e0a6648aeade34fd3e613e40e1d07957841fe5ffc7b0523c7a0b0ac",
+          "cacheDecodedBytes": 15644656
+        },
+        {
+          "viewId": "me5c",
+          "mode": "tee",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 3250,
+          "height": 2978,
+          "decodedBytes": 9678500,
+          "compressedSha256": "afa93f11a45c46ef971c7c99306c10c6a1fc6c2e8ac0c4d640da3ec5a237cb12",
+          "pixelSha256": "1be14df09c562cbcd1b8f62fc656c2af9b5154c60978677a97572ffd921c2919",
+          "cacheDecodedBytes": 21090366
+        }
+      ]
+    },
+    {
+      "donorId": "s-20-29",
+      "manifestSha256": "16f86d75da3a065ec2526e0858f2f3e0e8aacaadec8a32914407af6a1ddd5375",
+      "sourceKey": "34c54ea554f64db71238273bfcdf6657666c9eee8be19dfc198e7af82254d186",
+      "metadataRoles": 98,
+      "outsideViews": 7,
+      "decodedRoles": 4,
+      "assetRequests": 4,
+      "assetBytes": 3193991,
+      "peakCacheBytes": 20121971,
+      "decodedCacheLimit": 25165824,
+      "cases": [
+        {
+          "viewId": "subcostal",
+          "mode": "tte",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 1471,
+          "height": 1540,
+          "decodedBytes": 2265340,
+          "compressedSha256": "2d4ec523e7422f67b3985c7c775fac2dfa5969ee004b2603d262fc01e483f435",
+          "pixelSha256": "4d01e67bab1a13b0e8e912c865c6fda827aae6d6f130461d571bbef7add105b9",
+          "cacheDecodedBytes": 2265340
+        },
+        {
+          "viewId": "plax_rvin",
+          "mode": "tte",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 2698,
+          "height": 2834,
+          "decodedBytes": 7646132,
+          "compressedSha256": "a606813612ecd197b22eb76f521b0cf75d8f2059f4dfc3744442c9b79c9aef64",
+          "pixelSha256": "19504964b7947c794d1664aa49a8970f04c873c2d4405b28cbb149f6411c737e",
+          "cacheDecodedBytes": 9911472
+        },
+        {
+          "viewId": "me5c",
+          "mode": "tee",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 1367,
+          "height": 1621,
+          "decodedBytes": 2215907,
+          "compressedSha256": "dbb675aaef76ed4fcd19b3296a0869114aaffe8340577a775bda06f327641c70",
+          "pixelSha256": "08daa45ff26ac14be76a5ce000ff340c31ec5052e2a28fad2f0e3393aea2dd5f",
+          "cacheDecodedBytes": 12127379
+        },
+        {
+          "viewId": "deeptg5c",
+          "mode": "tee",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 2736,
+          "height": 2922,
+          "decodedBytes": 7994592,
+          "compressedSha256": "23f2f2ee923eb65933ff04285d8b789337763f8c00c0d43a3938ccb15b5403e7",
+          "pixelSha256": "af9bcb1074493db3ffbe7382a7c7a9065c0db394bc8ee1f473514f72bee36c7a",
+          "cacheDecodedBytes": 20121971
+        }
+      ]
+    },
+    {
+      "donorId": "s-20-28",
+      "manifestSha256": "7563fcefd7256c7aa8633620d8e7e6bd3690a17277d0a79e9ed78b4024e0175d",
+      "sourceKey": "dad7ff99a5f5ff6bdfd1926fd8eba78733f098e82b94e7a6afbb79970aed0e50",
+      "metadataRoles": 98,
+      "outsideViews": 7,
+      "decodedRoles": 4,
+      "assetRequests": 4,
+      "assetBytes": 3640782,
+      "peakCacheBytes": 22974132,
+      "decodedCacheLimit": 25165824,
+      "cases": [
+        {
+          "viewId": "subcostal",
+          "mode": "tte",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 1538,
+          "height": 1610,
+          "decodedBytes": 2476180,
+          "compressedSha256": "e3e803517c5cea743d096597818ebcfbdc1c5f0e9e558b9e8ad917a14d5c4152",
+          "pixelSha256": "630fc560feafaa5f504d1548a99813908447e17c758e67aabb1dc84932225702",
+          "cacheDecodedBytes": 2476180
+        },
+        {
+          "viewId": "psax_pv",
+          "mode": "tte",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 2707,
+          "height": 3071,
+          "decodedBytes": 8313197,
+          "compressedSha256": "612ab48b2968b1f9a805be961669a4086e810898e58264c30d07a9c3a7ed4bff",
+          "pixelSha256": "7c0038da4ded9a88512137bd2114b75d512894636c2c49654da150109ca7dfc0",
+          "cacheDecodedBytes": 10789377
+        },
+        {
+          "viewId": "me5c",
+          "mode": "tee",
+          "role": "ct",
+          "codec": "gzip-r8-delta-v1",
+          "width": 1429,
+          "height": 1695,
+          "decodedBytes": 2422155,
+          "compressedSha256": "2c483f7cbfcc2534da5bfa9822df24f7a7f8e759115df908c7fe8f111cb8d95a",
+          "pixelSha256": "58a0e6d6264685b0a40eff07716792bf995e99e4f6e27bfe29438e90e096c90f",
+          "cacheDecodedBytes": 13211532
+        },
+        {
+          "viewId": "mepv",
+          "mode": "tee",
+          "role": "face",
+          "codec": "gzip-r8-delta-v1",
+          "width": 3070,
+          "height": 3180,
+          "decodedBytes": 9762600,
+          "compressedSha256": "42649b50c9338207c1b2475d38f0e247a707c6b8544d12b3ef2d036e6c151285",
+          "pixelSha256": "35255b29f2143462388cf5ff4038501e4570996e1f3b57e6ddbf2e61f63a88d8",
+          "cacheDecodedBytes": 22974132
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "donors": 3,
+    "views": 168,
+    "metadataRoles": 294,
+    "outsideViews": 21,
+    "decodedRoles": 12
+  }
+}

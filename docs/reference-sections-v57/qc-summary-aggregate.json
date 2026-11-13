@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-section-qc-aggregate",
+  "derivedFromSha256": "a71cf298688a0058875e295682ec03ce4f583fa9fee451b5762ea8d6c3089a13",
+  "sourceCompletedAt": "2026-11-12T22:36:08.940937+00:00",
+  "sourceStatus": "passed",
+  "scope": "Scalar data, orientation, grid and full-face coverage checks; no anatomical or clinical validation, browser performance or GPU-rendering claim.",
+  "totals": {
+    "views": 168,
+    "acquiredViews": 147,
+    "outsideScanViews": 21,
+    "rasterRoles": 294,
+    "uniquePayloads": 269,
+    "encodedPayloadBytes": 183667528,
+    "independentPixelComparisons": 935946,
+    "exactPointAgreements": 935946,
+    "mismatches": 0,
+    "halfIntegerTies": 0,
+    "allZeroRasters": 0,
+    "minimumSamplesPerRaster": 3056,
+    "maximumSamplesPerRaster": 3192
+  },
+  "omittedFromThisAggregate": [
+    "per-raster point and hash records; retained in the companion exact review archive"
+  ]
+}

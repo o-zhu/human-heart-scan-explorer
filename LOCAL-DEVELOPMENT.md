@@ -10,21 +10,29 @@ Historic research reports in `docs/` describe prior runs; they do not certify th
 
 ## Prepared reference cutaways
 
-This source-only update includes the prepared-section runtime, generators,
-tests and readable QC summaries. Its prepared-bank configuration is an empty
-template, so a public clone does not request missing prepared manifests and
-continues to use the existing fine-sampler fallback. The published bank's plane
-exports, donor/data indexes, scalar payloads, contact figures and detailed
-machine-readable QC are separate deliverables, not files included in this clone.
+The public source includes the prepared-section runtime, generators, tests,
+approved asset inventory, contact sheets, provenance and QC evidence. The
+approximately 184 MB generated bank remains separately downloadable instead of
+being committed as scalar binaries. After completing normal asset setup:
 
-The existing [runtime and fine-source restoration](docs/open-source/assets.md)
-remains unchanged. To create prepared data locally, follow the included
-[generation and QC workflow](docs/reference-sections-v57/README.md#reproduce-the-data).
-After generation and verification succeed, install the complete generated
-`staged-public` tree into your local `public/` directory, including its matching
-configuration. Keep those generated data outside the source-only commit.
+```sh
+python3 scripts/fetch-assets.py --manifest docs/reference-sections-v57/asset-manifest.json --group runtime
+python3 scripts/reference-sections-v57/activate-bank.py
+```
 
-The recorded published bank covers the measured 79.4/79.56 µm CT crop and full
-cut face for 147 acquired reference entries, with 21 intentional outside-scan
-entries. Arbitrary plane edits still use the existing fine-data banks. The
-generation notes explain source identity, coverage and lossless encoding.
+Run activation after restoration succeeds. It independently checks all 272
+asset sizes and SHA-256 hashes and then installs the matching configuration
+atomically. Missing or corrupt assets do not enable a partial bank; custom
+configuration is never silently replaced. Add `--check` to verify without
+writing. The empty source template intentionally retains the fine-sampler
+fallback until the complete prepared bank is available.
+
+See [prepared-bank setup and QC](docs/reference-sections-v57/README.md) for
+coverage, hashes, tests, provenance and offline regeneration. The bank supplies
+measured 79.4/79.56 micrometre CT crops and full cut faces for 147 acquired
+reference entries, with 21 explicitly outside-scan entries. Arbitrary plane
+edits still use the existing fine-data banks. This is not the original native
+19.85 micrometre acquisition or a clinically validated registration.
+
+Private hosting material and externally restricted clinical/media payloads
+remain excluded. The existing license and attribution boundaries are unchanged.

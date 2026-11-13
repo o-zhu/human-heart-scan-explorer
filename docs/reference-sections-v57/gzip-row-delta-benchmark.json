@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-r8-row-delta-benchmark-v57",
+  "scope": "Memory-only lossless codec experiment. No source, plane, original encoded file, manifest or checkpoint was changed.",
+  "algorithm": "Each row: first byte unchanged; following byte = (current original byte - preceding original byte) modulo 256. Decode in-place by a left-to-right modulo-256 cumulative sum per row.",
+  "nodeVersion": "24.22.1",
+  "zlibVersion": "1.3.2.1-motley-285e94b",
+  "rasters": [
+    {
+      "viewId": "plax_deep",
+      "role": "ct",
+      "width": 2313,
+      "height": 1830,
+      "decodedBytes": 4232790,
+      "pixelSha256": "da1f72ab21a602b9597045467f53502ed52ea6ffe04842d2f7bb299ae9f0d221",
+      "originalGzip9Bytes": 1087893,
+      "rowDeltaGzip9Bytes": 939076,
+      "rowDeltaGzipSha256": "235376a81f7514e7700b13540f7c242f0e887c0531dfa8fb26ef08e9f670e0ff",
+      "savingsBytes": 148817,
+      "savingsPercent": 13.67937839475022,
+      "byteExactInverse": true,
+      "measurements": [
+        {
+          "filterMs": 69.58610099999999,
+          "gzipMs": 318.98425699999996,
+          "gunzipMs": 88.28163299999994,
+          "inverseMs": 37.613722999999936,
+          "totalEncodeMs": 388.57035799999994,
+          "totalDecodeMs": 125.89535599999988
+        },
+        {
+          "filterMs": 72.32882799999993,
+          "gzipMs": 327.5916830000001,
+          "gunzipMs": 114.11257599999999,
+          "inverseMs": 50.65051900000003,
+          "totalEncodeMs": 399.92051100000003,
+          "totalDecodeMs": 164.76309500000002
+        },
+        {
+          "filterMs": 81.73762600000009,
+          "gzipMs": 312.25957100000005,
+          "gunzipMs": 53.088130999999976,
+          "inverseMs": 33.834473000000344,
+          "totalEncodeMs": 393.99719700000014,
+          "totalDecodeMs": 86.92260400000032
+        }
+      ]
+    },
+    {
+      "viewId": "plax_deep",
+      "role": "face",
+      "width": 2777,
+      "height": 2667,
+      "decodedBytes": 7406259,
+      "pixelSha256": "e401237635cab33e1237de00fea766c755f36fa0063392bb34d07a45f9d25c82",
+      "originalGzip9Bytes": 1095103,
+      "rowDeltaGzip9Bytes": 944882,
+      "rowDeltaGzipSha256": "299e8b63c4e309c3779f9af057cf56ca378bf75b3950c37d35f4a3e93c82cbc4",
+      "savingsBytes": 150221,
+      "savingsPercent": 13.717522461357516,
+      "byteExactInverse": true,
+      "measurements": [
+        {
+          "filterMs": 137.92211099999986,
+          "gzipMs": 339.1874520000001,
+          "gunzipMs": 71.37918600000012,
+          "inverseMs": 74.11858699999993,
+          "totalEncodeMs": 477.109563,
+          "totalDecodeMs": 145.49777300000005
+        },
+        {
+          "filterMs": 186.93178199999966,
+          "gzipMs": 342.7581530000002,
+          "gunzipMs": 149.51716799999986,
+          "inverseMs": 47.134504000000106,
+          "totalEncodeMs": 529.6899349999999,
+          "totalDecodeMs": 196.65167199999996
+        },
+        {
+          "filterMs": 102.8160899999998,
+          "gzipMs": 212.48402899999974,
+          "gunzipMs": 21.657120000000305,
+          "inverseMs": 31.44780700000001,
+          "totalEncodeMs": 315.30011899999954,
+          "totalDecodeMs": 53.104927000000316
+        }
+      ]
+    },
+    {
+      "viewId": "me4c",
+      "role": "face",
+      "width": 2392,
+      "height": 2878,
+      "decodedBytes": 6884176,
+      "pixelSha256": "99e5a17db32f7450263bfbcd779902ab514f41c38a93993004f10e1323f82a84",
+      "originalGzip9Bytes": 1207216,
+      "rowDeltaGzip9Bytes": 1050900,
+      "rowDeltaGzipSha256": "b85da8e5f4ff0793985efcdbade6e7f5124c356496756b8870450e7d8f4adc5e",
+      "savingsBytes": 156316,
+      "savingsPercent": 12.948469867861261,
+      "byteExactInverse": true,
+      "measurements": [
+        {
+          "filterMs": 73.05312399999957,
+          "gzipMs": 279.6247720000001,
+          "gunzipMs": 115.87683300000026,
+          "inverseMs": 34.43416900000011,
+          "totalEncodeMs": 352.6778959999997,
+          "totalDecodeMs": 150.31100200000037
+        },
+        {
+          "filterMs": 59.332720000000336,
+          "gzipMs": 266.11445099999946,
+          "gunzipMs": 48.65375800000038,
+          "inverseMs": 39.635879999999815,
+          "totalEncodeMs": 325.4471709999998,
+          "totalDecodeMs": 88.2896380000002
+        },
+        {
+          "filterMs": 19.972391999999672,
+          "gzipMs": 230.98810400000002,
+          "gunzipMs": 40.1737320000002,
+          "inverseMs": 37.71499899999981,
+          "totalEncodeMs": 250.9604959999997,
+          "totalDecodeMs": 77.888731
+        }
+      ]
+    }
+  ],
+  "originalBytes": 3390212,
+  "filteredBytes": 2934858,
+  "savingsPercent": 13.431431426707238,
+  "allByteExact": true
+}

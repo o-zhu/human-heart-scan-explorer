@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-reference-section-cold-payload-comparison-v57",
+  "scope": "Nominal source payload bytes for one default view with cold data caches, calculated from immutable manifests. This is not observed network latency or browser frame rate. New payloads are independently requested CT and full-face rasters, with identical payload hashes counted once per view.",
+  "donors": [
+    {
+      "donorId": "ladaf-2021-17",
+      "views": 49,
+      "pairedEncodedBytes": {
+        "count": 49,
+        "minimum": 432512,
+        "median": 1496997,
+        "maximum": 2090285,
+        "sum": 70023581
+      },
+      "originalFineBrickBytes": {
+        "count": 49,
+        "minimum": 21428179,
+        "median": 88920244,
+        "maximum": 123082127,
+        "sum": 3973678301
+      },
+      "originalFineBrickCount": {
+        "count": 49,
+        "minimum": 127,
+        "median": 501,
+        "maximum": 710,
+        "sum": 23464
+      },
+      "perViewPayloadReductionFactor": {
+        "count": 49,
+        "minimum": 43.15379792194137,
+        "median": 55.77419182415265,
+        "maximum": 71.94569495680804,
+        "sum": 2806.7470774338085
+      }
+    },
+    {
+      "donorId": "s-20-29",
+      "views": 49,
+      "pairedEncodedBytes": {
+        "count": 49,
+        "minimum": 596670,
+        "median": 1351833,
+        "maximum": 1988199,
+        "sum": 65232495
+      },
+      "originalFineBrickBytes": {
+        "count": 49,
+        "minimum": 38021325,
+        "median": 85296531,
+        "maximum": 119485886,
+        "sum": 4233614355
+      },
+      "originalFineBrickCount": {
+        "count": 49,
+        "minimum": 309,
+        "median": 571,
+        "maximum": 780,
+        "sum": 28211
+      },
+      "perViewPayloadReductionFactor": {
+        "count": 49,
+        "minimum": 48.66091321844544,
+        "median": 64.04803801847643,
+        "maximum": 103.31403654549683,
+        "sum": 3223.4190230254544
+      }
+    },
+    {
+      "donorId": "s-20-28",
+      "views": 49,
+      "pairedEncodedBytes": {
+        "count": 49,
+        "minimum": 639288,
+        "median": 1388722,
+        "maximum": 2084231,
+        "sum": 67427559
+      },
+      "originalFineBrickBytes": {
+        "count": 49,
+        "minimum": 39073037,
+        "median": 96638915,
+        "maximum": 113510346,
+        "sum": 4229895610
+      },
+      "originalFineBrickCount": {
+        "count": 49,
+        "minimum": 237,
+        "median": 631,
+        "maximum": 740,
+        "sum": 28093
+      },
+      "perViewPayloadReductionFactor": {
+        "count": 49,
+        "minimum": 49.954789418817725,
+        "median": 61.70382666775548,
+        "maximum": 99.64753706588718,
+        "sum": 3106.01156273499
+      }
+    }
+  ]
+}
