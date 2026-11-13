@@ -49,7 +49,7 @@ test('other donors retain their own geometric references rather than LADAF landm
 
 test('every study target has its own reference-guided illustration and separately verified guideline cine',()=>{
  const media=json('../public/assets/tee-atlas/media.json').clips;
- const artwork=json('../docs/reference-views-v60/asset-manifest.json').entries.filter(e=>e.mode==='tee');
+ const artwork=json('../docs/reference-views-v61/asset-manifest.json').entries.filter(e=>e.mode==='tee');
  assert.equal(media.length,28);assert.equal(new Set(media.map(c=>c.id)).size,28);
  assert.equal(artwork.length,28);assert.equal(new Set(artwork.map(v=>v.id)).size,28);
  for(const v of views){

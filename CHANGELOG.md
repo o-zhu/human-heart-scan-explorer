@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-13 — Atrial septum and mitral-valve clarity (v61)
+
+- Revised the subcostal four-chamber, deep transgastric five-chamber and
+  transgastric long-axis teaching illustrations following targeted anatomical
+  review. The accepted manifest records each view's tissue boundaries,
+  connections, cardiac phase and exact exported image hashes.
+- Preserve the previous whole-catalogue v60 work: the other 53 records and all
+  historical artwork remain unchanged. The active registry explicitly selects
+  all 56 illustrations and their thumbnails with no superseded-image fallback.
+- Add reproducible preview exports and strict release verification for the
+  three corrections, plus a public inventory for their six original WebP files.
+
+See [review and verification](docs/reference-views-v61/README.md).
+
 ## 2026-11-13 — Anatomy context in 3D Reconstruction
 
 - Added an Anatomy Context toggle between Reveal Coronaries and Measure. It

@@ -1,6 +1,6 @@
 /** Original acquisition summaries and factual ASE/SCA 2013 Table 10 reference data.
  * Named views are educational targets; donor correspondence is not validated. */
-import {referenceArtworkPaths} from './reference-artwork-v60.js';
+import {referenceArtworkPaths} from './reference-artwork-v61.js';
 
 export const TEE_ATLAS_GROUPS=Object.freeze([{"id": "me", "name": "Midesophageal", "count": 15}, {"id": "tg", "name": "Transgastric", "count": 9}, {"id": "aortic", "name": "Aortic", "count": 4}]);
 export const TEE_ATLAS_VIEWS=Object.freeze([

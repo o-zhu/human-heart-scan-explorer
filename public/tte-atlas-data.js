@@ -3,7 +3,7 @@
  * Clinical views are educational targets, not validated donor registrations.
  * PDF page numbers refer to the supplied 64-page guideline, not its upload date.
  */
-import {referenceArtworkPaths} from './reference-artwork-v60.js';
+import {referenceArtworkPaths} from './reference-artwork-v61.js';
 
 const TTE_PDF = 'https://www.asecho.org/wp-content/uploads/2025/07/Guidelines-for-Performing-a-Comprehensive-Transthoracic-Echocardiographic-Examination-in-Adults.pdf';
 

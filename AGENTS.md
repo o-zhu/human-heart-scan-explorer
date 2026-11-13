@@ -178,3 +178,20 @@ Keep gallery behavior, view IDs, source order, plane/CT calibration, scientific
 data, licensing exclusions, all15 hosting stages and closed upload gates intact.
 The public supplement `docs/open-source/reference-artwork-v60.json` inventories
 the original replacement artwork without redistributing publisher figures.
+
+## v61 targeted atrial septum and valve clarity
+
+The active artwork registry is `public/reference-artwork-v61.js`. Read
+`docs/reference-views-v61/README.md` and its accepted manifest before changing
+the subcostal four-chamber, deep transgastric five-chamber or transgastric
+long-axis artwork. Only those three views receive new reviews and assets;
+the other 53 entry objects remain exact v60 carryovers.
+
+Preserve the frozen v54/v58/v59/v60 manifests and artwork. Use
+`python3 scripts/prepare-reference-icons-v60.py --verify --historical` for v60
+and `python3 scripts/prepare-reference-icons-v61.py --verify` for the current
+catalogue. Inspect actual exported valve connections, atrial-septal tissue and
+one coherent cardiac phase; a closed thin valve is not a solid fibrous wall.
+Keep all public data exclusions, prepared-bank configuration and source-figure
+licensing unchanged. The new public artwork inventory is
+`docs/open-source/reference-artwork-v61.json`.

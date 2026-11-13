@@ -104,3 +104,13 @@ The v53 sequential loader reuses the existing verified compact Ultra transport a
 ## Credits and asset changes
 
 Keep [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md), [references](references.md), the per-family notices, and the scientific manifests with redistributed assets. Record transformations such as windowing, crop, reduction, filtering, mesh extraction, transcoding, or new annotations. When producing a new derivative, preserve the original and assign a new path/version and checksums.
+
+## Targeted reference-artwork follow-up — v61
+
+The current illustration registry is `public/reference-artwork-v61.js`.
+The [v61 supplement](reference-artwork-v61.json) adds six original generated
+WebP files for three targeted view corrections and preserves the v60 supplement
+and original scientific inventory. The remaining 53 artwork records retain
+their exact v60 mapping and historical review scope. Published source figures,
+clinical media, omitted scan data and prepared-bank configuration remain
+governed by the existing inclusion decisions above.

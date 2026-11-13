@@ -214,7 +214,7 @@ def prepare(args):
                       'manifest_sha256': sha(data), 'new_asset_bytes': sum(len(v) for p, v in writes.items() if p.endswith('.webp'))}))
 
 
-def verify(_args):
+def verify(args):
     base_data, base = baseline()
     data = regular(MANIFEST)
     manifest = json.loads(data)
@@ -228,7 +228,10 @@ def verify(_args):
             with Image.open(io.BytesIO(content)) as image:
                 require(image.format == 'WEBP' and image.size == (size, size), key(entry) + ': wrong image encoding/dimensions')
     require(regular(REGISTRY).decode() == registry_text(data, manifest['entries']), 'Explicit registry is stale')
-    code = "import {TTE_ATLAS_VIEWS as t} from './public/tte-atlas-data.js';import {TEE_ATLAS_VIEWS as e} from './public/tee-atlas-data.js';console.log(JSON.stringify([...t,...e].map(({mode,id,illustration,thumbnail})=>({mode,id,illustration,thumbnail}))));"
+    historical = bool(getattr(args, 'historical', False))
+    code = ("import {REFERENCE_ARTWORK_V60 as records} from './public/reference-artwork-v60.js';console.log(JSON.stringify(Object.entries(records).map(([key,value])=>({mode:key.split(':')[0],id:key.split(':')[1],...value}))));"
+            if historical else
+            "import {TTE_ATLAS_VIEWS as t} from './public/tte-atlas-data.js';import {TEE_ATLAS_VIEWS as e} from './public/tee-atlas-data.js';console.log(JSON.stringify([...t,...e].map(({mode,id,illustration,thumbnail})=>({mode,id,illustration,thumbnail}))));")
     runtime = json.loads(subprocess.check_output(['node', '--input-type=module', '-e', code], cwd=ROOT, text=True))
     mapped = {key(e): e for e in manifest['entries']}
     require(len(runtime) == 56 and {key(e) for e in runtime} == set(mapped), 'Runtime catalogue incomplete')
@@ -236,7 +239,8 @@ def verify(_args):
         for role, field in [('image', 'illustration'), ('thumbnail', 'thumbnail')]:
             require(entry[field] == './' + mapped[key(entry)][role]['path'].removeprefix('public/'), key(entry) + ': runtime selected wrong asset')
     print(json.dumps({'verified': True, 'views': 56, 'active_files': 112, 'fresh_review_count': 56,
-                      'replacement_count': manifest['review_scope']['replacement_count'], 'current_runtime_checked': True,
+                      'replacement_count': manifest['review_scope']['replacement_count'], 'current_runtime_checked': not historical,
+                      'frozen_registry_checked': True, 'historical_package_verified': historical,
                       'historical_manifest_and_assets_preserved': True, 'all_eight_domains_resolved': True,
                       'reviews_bound_to_exported_bytes': True, 'independent_clinician_signoff': False}))
 
@@ -246,7 +250,9 @@ if __name__ == '__main__':
     parser.add_argument('--reviews', type=Path)
     parser.add_argument('--write', action='store_true')
     parser.add_argument('--verify', action='store_true')
+    parser.add_argument('--historical', action='store_true', help='Verify the frozen v60 registry and assets without comparing a newer active atlas')
     args = parser.parse_args()
     require(args.verify != bool(args.reviews), 'Choose --verify or --reviews FILE')
     require(not (args.verify and args.write), '--verify is read-only')
+    require(not args.historical or args.verify, '--historical applies only to --verify')
     verify(args) if args.verify else prepare(args)

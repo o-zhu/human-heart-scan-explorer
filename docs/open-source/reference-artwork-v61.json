@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "kind": "heart-explorer-public-reference-artwork-v61",
+  "scope": "Supplement to the preserved public inventory. Only six original v61 replacement images and thumbnails; no publisher figures, clinical media, scan data or private delivery material.",
+  "originalAssetInventory": {
+    "path": "docs/open-source/asset-manifest.json",
+    "bytes": 22783639,
+    "sha256": "65b1ebe9639648cbf24e6a1969e0f04189a752d7fdf242ca397a7a5441b23fa8",
+    "preservedUnchanged": true,
+    "excludedEntriesPreserved": 134
+  },
+  "previousArtworkSupplement": {
+    "path": "docs/open-source/reference-artwork-v60.json",
+    "bytes": 59221,
+    "sha256": "28aa14e357fdc65cadba6294d1cef0809801dd10ad144b17d606e1720d2feb25"
+  },
+  "artworkManifests": [
+    {
+      "path": "docs/reference-views-v54/asset-manifest.json",
+      "bytes": 204125,
+      "sha256": "c0031566acde55a322ad3738d46ef566ad48529a44d132c66b20174832190826",
+      "revision": 54,
+      "views": 56
+    },
+    {
+      "path": "docs/reference-views-v58/asset-manifest.json",
+      "bytes": 484426,
+      "sha256": "03a5f5b1bcd18bb8f0a1d1488162dd48cae90d3879b2da5a1bad2e39a95106d9",
+      "revision": 58,
+      "views": 56
+    },
+    {
+      "path": "docs/reference-views-v59/asset-manifest.json",
+      "bytes": 491949,
+      "sha256": "fe0d4f1fa00a42dacf490d516e6ec8482a7533229339413e9b7291f9a16902f4",
+      "revision": 59,
+      "views": 56
+    },
+    {
+      "path": "docs/reference-views-v60/asset-manifest.json",
+      "bytes": 2422275,
+      "sha256": "c80b06ac5b51cdd7b6fe96eb2eed2de3ca364101f4947e67f8450c73a0c0c144",
+      "revision": 60,
+      "views": 56
+    },
+    {
+      "path": "docs/reference-views-v61/asset-manifest.json",
+      "bytes": 2375895,
+      "sha256": "1cf01290fe3253a7e3d0d57c3bc64743af91232abaa699c8056d31bfbbf97c57",
+      "revision": 61,
+      "views": 56
+    }
+  ],
+  "currentCatalogue": {
+    "revision": 61,
+    "registry": "public/reference-artwork-v61.js",
+    "registrySha256": "237d293026d29f0b6fd171e0d8869098978c5fdb259c5ae20c615d92ac3ab155",
+    "views": 56,
+    "activeAssets": 112,
+    "activeFilesByArtworkRevision": {
+      "54": 50,
+      "59": 2,
+      "60": 52,
+      "58": 2,
+      "61": 6
+    },
+    "freshlyReviewed": 3,
+    "carriedOverReviewCount": 53,
+    "replacedViews": 3
+  },
+  "newFiles": 6,
+  "assets": [
+    {
+      "path": "public/assets/reference-views-v61/tte-subcostal.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 52680,
+      "sha256": "5da221548e8241e2638655442f42ef2d7d5a038343c5ad69290aaffc104646ed",
+      "url": "/assets/reference-views-v61/tte-subcostal.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2025/04/2019_Comprehensive-TTE.pdf",
+        "https://asecho.org/wp-content/uploads/2015/07/2015_ASD-PFO.pdf"
+      ],
+      "viewId": "subcostal",
+      "approach": "tte",
+      "role": "image",
+      "activeInV61": true
+    },
+    {
+      "path": "public/assets/reference-views-v61/thumbs/tte-subcostal.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 15542,
+      "sha256": "219c4a89a591f7bc5d112f696cad7f792e0d36479214b1ffb92ea795d52888f1",
+      "url": "/assets/reference-views-v61/thumbs/tte-subcostal.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2025/04/2019_Comprehensive-TTE.pdf",
+        "https://asecho.org/wp-content/uploads/2015/07/2015_ASD-PFO.pdf"
+      ],
+      "viewId": "subcostal",
+      "approach": "tte",
+      "role": "thumbnail",
+      "activeInV61": true
+    },
+    {
+      "path": "public/assets/reference-views-v61/tee-deeptg5c.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 56024,
+      "sha256": "89d02c2c9a0ed54d1b3c6cb14b7655840707382ca54d607acfb0ab2a0e81f39d",
+      "url": "/assets/reference-views-v61/tee-deeptg5c.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+        "https://www.asecho.org/wp-content/uploads/2023/03/PIIS0894731720301334.pdf"
+      ],
+      "viewId": "deeptg5c",
+      "approach": "tee",
+      "role": "image",
+      "activeInV61": true
+    },
+    {
+      "path": "public/assets/reference-views-v61/thumbs/tee-deeptg5c.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 15990,
+      "sha256": "0a46fd08690460adb3ecda7d2ec4ff3ba1027a9192106f8a8db503002b09a983",
+      "url": "/assets/reference-views-v61/thumbs/tee-deeptg5c.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+        "https://www.asecho.org/wp-content/uploads/2023/03/PIIS0894731720301334.pdf"
+      ],
+      "viewId": "deeptg5c",
+      "approach": "tee",
+      "role": "thumbnail",
+      "activeInV61": true
+    },
+    {
+      "path": "public/assets/reference-views-v61/tee-tglax.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 53224,
+      "sha256": "0a5589ed302906b5370979bae0cb05deec3e96f69ea0c31ef66ef99ce1a47cdf",
+      "url": "/assets/reference-views-v61/tee-tglax.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+        "https://www.asecho.org/wp-content/uploads/2023/03/PIIS0894731720301334.pdf"
+      ],
+      "viewId": "tglax",
+      "approach": "tee",
+      "role": "image",
+      "activeInV61": true
+    },
+    {
+      "path": "public/assets/reference-views-v61/thumbs/tee-tglax.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 15948,
+      "sha256": "5f9c237d207469a62087e5e7e67a503f76c163bcdc335311d1e41d78506839c6",
+      "url": "/assets/reference-views-v61/thumbs/tee-tglax.webp",
+      "group": "runtime",
+      "redistribution": "permitted",
+      "family": "original-art",
+      "license": "MIT",
+      "attribution": "Heart Explorer contributors; original project teaching illustrations.",
+      "modifications": "Original ChatGPT Image edit; uniform resampling and WebP encoding. Published figures inform anatomy but are not redistributed. Not measured anatomy or clinical certification.",
+      "provenance": "docs/reference-views-v61/asset-manifest.json",
+      "referenceUrls": [
+        "https://www.asecho.org/wp-content/uploads/2014/05/2013_Performing-Comprehensive-TEE.pdf",
+        "https://www.asecho.org/wp-content/uploads/2023/03/PIIS0894731720301334.pdf"
+      ],
+      "viewId": "tglax",
+      "approach": "tee",
+      "role": "thumbnail",
+      "activeInV61": true
+    }
+  ]
+}
