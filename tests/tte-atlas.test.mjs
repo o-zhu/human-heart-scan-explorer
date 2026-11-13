@@ -17,7 +17,7 @@ const original=JSON.stringify(base),frames=buildTteAtlasFrames(base,views,{flowF
 const rows=['2.1','2.2','2.3','2.4','2.5','2.6','2.7','2.8','2.9','2.10a','2.10b',...Array.from({length:17},(_,i)=>'2.'+(i+11))];
 const outside=new Set(['subcostal_ivc','subcostal_hepatic','ssn_arch']);
 const near=(a,b,tol=1e-8)=>assert.ok(Math.abs(a-b)<tol,`${a} vs ${b}`);
-const artwork=JSON.parse(readFileSync(new URL('../docs/reference-views-v59/asset-manifest.json',import.meta.url))).entries.filter(e=>e.mode==='tte');
+const artwork=JSON.parse(readFileSync(new URL('../docs/reference-views-v60/asset-manifest.json',import.meta.url))).entries.filter(e=>e.mode==='tte');
 
 test('All 28 ASE Table 2 entries retain order, split 2.10 and source page links',()=>{
  assert.equal(views.length,28);assert.equal(new Set(views.map(v=>v.id)).size,28);

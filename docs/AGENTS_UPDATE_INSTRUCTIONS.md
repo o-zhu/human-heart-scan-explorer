@@ -103,3 +103,31 @@ actual encoded 960px/384px files and a 200px rendition. Run
 `python3 scripts/prepare-reference-icons-v59.py --verify` for current assets
 and runtime mapping; the v58 verifier checks only its frozen registry. Keep
 all hosting stages and public repository data/configuration exclusions.
+
+
+## v60 fresh whole-catalogue illustration QC
+
+Read `docs/reference-views-v60/GUIDELINES.md`, `AUDIT.md` and the manifest
+before editing any TTE/TEE illustration. This is a fresh review of all 56 views;
+no earlier pass is inherited. The current registry is
+`public/reference-artwork-v60.js`. Preserve all historical v54/v58/v59 assets
+and manifests. The v58/v59 verifiers validate their frozen registries only;
+`python3 scripts/prepare-reference-icons-v60.py --verify` checks the active runtime.
+
+Inventory every visible boundary before judging it: muscular, vascular, fibrous,
+valvular, genuine subvalvular apparatus, or intentional sector crop. Atrial/RV
+walls require a finite filled band where visible; genuine fibrous structures
+must remain slender. Trace cavity connections and valve hinges/free tips in the
+actual imaging plane. Semilunar opening direction is upstream/downstream, not
+a fixed screen curvature. Require one coherent cardiac phase per schematic.
+
+All eight rubric domains must be resolved for the declared teaching scope; a
+total score cannot override a failed or uncertain domain. Inspect actual full
+960px, encoded384px and decoded200px pixels, and bind acceptance to both export
+hashes. Preserve failed attempts and their reasons. The manifest is AI-assisted
+source comparison, not independent clinician certification.
+
+Keep gallery behavior, view IDs, source order, plane/CT calibration, scientific
+data, licensing exclusions, all15 hosting stages and closed upload gates intact.
+The public supplement `docs/open-source/reference-artwork-v60.json` inventories
+the original replacement artwork without redistributing publisher figures.

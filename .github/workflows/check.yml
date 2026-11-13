@@ -20,6 +20,8 @@ jobs:
           python-version: '3.12'
       - name: Core regression tests
         run: node --test tests/device-resources.mjs tests/mesh-draw-batching-v37.mjs tests/echo-angle-placement-v41.mjs tests/volume-picking-cap.mjs
+      - name: Reference artwork catalogue and exact asset hashes
+        run: node --test tests/tte-atlas.test.mjs tests/tee-atlas.test.mjs
       - name: Asset downloader integrity fixtures
         run: python tests/test_fetch_assets.py
       - name: Check Python syntax

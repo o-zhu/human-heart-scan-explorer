@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-11-13 — Fresh review of all TTE/TEE illustrations (v60)
+
+- Re-reviewed all 56 active illustrations against view-specific published
+  anatomy and echocardiographic references. Earlier passes are not inherited.
+- Repaired 28 views: 11 TTE and 17 TEE. Changes include finite atrial and vessel
+  tissue bands, correct valve attachments and opening direction, coherent cardiac
+  phases, clear cavity connections, missing chamber labels, and explicit crops.
+- Removed the floating LV strokes in PLAX RVOT; clarified A3C/A5C outflow valves,
+  A4C RV atrial walls, TG RV basal TV/PV anatomy, and TG two-chamber LA tissue.
+- Required all eight grading domains to be resolved, with no averaging away of
+  an uncertain or failed domain. Reviewed actual 960px/384px exports and200px
+  renditions, with independent second inspection and exact export hash binding.
+- Preserved rejected generation attempts and source qualifications. The review
+  is AI-assisted schematic QC, without independent clinician certification.
+- Added a complete v60 registry and reproducible before/after report. Historical
+  v54/v58/v59 image bytes and manifests remain intact. Older verifiers now check
+  their frozen packages; the v60 verifier checks the active catalogue.
+- Preserved public asset exclusions, concurrent v57 inventory/restoration work,
+  view IDs, plane/CT calibration, prepared data, and hosting access policy.
+
+See the [per-view audit](docs/reference-views-v60/AUDIT.md),
+[guidelines and grading](docs/reference-views-v60/GUIDELINES.md),
+[exact provenance](docs/reference-views-v60/asset-manifest.json), and
+[public artwork inventory](docs/open-source/reference-artwork-v60.json).
+
 ## 2026-11-12 — Targeted PLAX mitral wall and outflow repair (v59)
 
 - Replaced only `tte:plax_mv` after the follow-up identified a residual single-line

@@ -1,5 +1,7 @@
 # PLAX mitral wall and outflow repair — revision 59
 
+> Historical revision. The [fresh v60 review](../reference-views-v60/README.md) supersedes the current acceptance decision for every view. This revision's assets and manifest remain unchanged; its verifier checks the frozen registry.
+
 Only **TTE `plax_mv`** changes in this follow-up to v58. The other 55 illustrations, manifest entry objects and image bytes are carried over unchanged.
 
 The v58 PLAX image left most of the LA perimeter as a single contour and the LVOT/root junction as ambiguous overlapping curves. The replacement supplies a finite thin atrial tissue band, preserves open mitral inflow, and separates one LVOT, distinct fibrous/valve attachments, closed aortic cusp profiles and one aortic lumen. **LVOT** and **Ao** labels clarify the outflow.

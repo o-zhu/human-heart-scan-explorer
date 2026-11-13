@@ -1,5 +1,7 @@
 # Reference illustration review, revision 58
 
+> Historical revision. The [fresh v60 review](../reference-views-v60/README.md) supersedes the current acceptance decision for every view. This revision's assets and manifest remain unchanged; its verifier checks the frozen registry.
+
 > **Targeted follow-up:** the v58 PLAX mitral (`tte:plax_mv`) pass was superseded after residual atrial-wall and outflow ambiguity was identified. See [revision 59](../reference-views-v59/README.md). The v58 manifest and pixels remain historical evidence; the other 55 entries are unchanged by this follow-up.
 
 

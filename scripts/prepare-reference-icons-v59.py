@@ -200,18 +200,19 @@ def verify(args):
             with Image.open(io.BytesIO(content)) as image:
                 require(image.format == 'WEBP' and image.size == (size, size), key(entry) + ': wrong dimensions or encoding')
     require(REGISTRY.read_text() == registry_text(data, entries), 'The explicit v59 registry is stale; regenerate it')
-    code = "import {TTE_ATLAS_VIEWS as t} from './public/tte-atlas-data.js';import {TEE_ATLAS_VIEWS as e} from './public/tee-atlas-data.js';console.log(JSON.stringify([...t,...e].map(({mode,id,illustration,thumbnail})=>({mode,id,illustration,thumbnail}))));"
+    # v59 is now historical. Validate its frozen registry without comparing the newer runtime.
+    code = "import {REFERENCE_ARTWORK_V59 as records} from './public/reference-artwork-v59.js';console.log(JSON.stringify(Object.entries(records).map(([key,value])=>({mode:key.split(':')[0],id:key.split(':')[1],...value}))));"
     runtime = json.loads(subprocess.check_output(['node', '--input-type=module', '-e', code], cwd=ROOT, text=True))
     mapped = {key(entry): entry for entry in entries}
-    require(len(runtime) == 56 and {key(entry) for entry in runtime} == set(mapped), 'The current runtime catalogue is incomplete')
+    require(len(runtime) == 56 and {key(entry) for entry in runtime} == set(mapped), 'The frozen v59 catalogue is incomplete')
     for entry in runtime:
         for role, field in [('image', 'illustration'), ('thumbnail', 'thumbnail')]:
             require(entry[field] == './' + mapped[key(entry)][role]['path'].removeprefix('public/'),
-                    key(entry) + ': current runtime mapping mismatch')
+                    key(entry) + ': frozen v59 mapping mismatch')
     print(json.dumps({'verified': True, 'views': 56, 'assets': 112,
                       'newly_reviewed': [TARGET], 'replacements_in_this_revision': 1,
                       'entries_carried_over_unchanged': 55, 'historical_v58_verified': True,
-                      'current_runtime_checked': True, 'production_ready': True}))
+                      'current_runtime_checked': False, 'frozen_registry_checked': True, 'historical_package_verified': True}))
 
 
 if __name__ == '__main__':
