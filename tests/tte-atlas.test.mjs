@@ -3,6 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {TTE_ATLAS_VIEWS as views,TTE_ATLAS_GROUPS as groups,TTE_SOURCE} from '../public/tte-atlas-data.js';
 import {buildTteAtlasFrames,createTteContextModel,tteAtlasProbePose,TTE_WINDOW_ANCHORS,tteProbeFocusPoints,tteProbeCameraDistance} from '../public/tte-atlas-geometry.js';
 import {teeContextToLocal} from '../public/tee-context-geometry.js';
@@ -16,6 +17,7 @@ const original=JSON.stringify(base),frames=buildTteAtlasFrames(base,views,{flowF
 const rows=['2.1','2.2','2.3','2.4','2.5','2.6','2.7','2.8','2.9','2.10a','2.10b',...Array.from({length:17},(_,i)=>'2.'+(i+11))];
 const outside=new Set(['subcostal_ivc','subcostal_hepatic','ssn_arch']);
 const near=(a,b,tol=1e-8)=>assert.ok(Math.abs(a-b)<tol,`${a} vs ${b}`);
+const artwork=JSON.parse(readFileSync(new URL('../docs/reference-views-v59/asset-manifest.json',import.meta.url))).entries.filter(e=>e.mode==='tte');
 
 test('All 28 ASE Table 2 entries retain order, split 2.10 and source page links',()=>{
  assert.equal(views.length,28);assert.equal(new Set(views.map(v=>v.id)).size,28);
@@ -26,7 +28,14 @@ test('All 28 ASE Table 2 entries retain order, split 2.10 and source page links'
   assert.equal(v.mode,'tte');assert.equal(v.tableOrder,i+1);
   assert.ok(v.sourceUrl.startsWith(TTE_SOURCE));assert.ok(v.tablePage>=19&&v.tablePage<=25);
   assert.ok(v.maneuvers.length&&v.anatomy.length&&v.teachingPoint&&v.position);
-  assert.equal(v.illustration,`./assets/tte-atlas/art-v1/${v.id}.webp`);
+  const art=artwork.find(e=>e.id===v.id);assert.ok(art,v.id+' has current artwork provenance');
+  assert.equal(art.view_number,v.tableRow);
+  for(const [role,field,size] of [['image','illustration',960],['thumbnail','thumbnail',384]]){
+   assert.equal(v[field],'./'+art[role].path.replace(/^public\//,''));
+   const bytes=readFileSync(new URL('../'+art[role].path,import.meta.url));
+   assert.equal(bytes.length,art[role].bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),art[role].sha256);
+   assert.equal(art[role].width,size);assert.equal(art[role].height,size);
+  }
  }
 });
 

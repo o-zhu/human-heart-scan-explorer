@@ -3,6 +3,8 @@
  * Clinical views are educational targets, not validated donor registrations.
  * PDF page numbers refer to the supplied 64-page guideline, not its upload date.
  */
+import {referenceArtworkPaths} from './reference-artwork-v59.js';
+
 const TTE_PDF = 'https://www.asecho.org/wp-content/uploads/2025/07/Guidelines-for-Performing-a-Comprehensive-Transthoracic-Echocardiographic-Examination-in-Adults.pdf';
 
 export const TTE_SOURCE = TTE_PDF;
@@ -345,6 +347,5 @@ export const TTE_ATLAS_VIEWS = Object.freeze(records.map((view, index) => Object
   ...view,
   sourceUrl: `${TTE_PDF}#page=${view.tablePage}`,
   sourceTable: `ASE 2019, Table 2, row ${view.tableRow} (PDF p. ${view.tablePage})`,
-  illustration: `./assets/reference-views-v54/tte-${view.id}.webp`,
-  thumbnail: `./assets/reference-views-v54/thumbs/tte-${view.id}.webp`
+  ...referenceArtworkPaths('tte', view.id)
 })));

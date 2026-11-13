@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {TEE_ATLAS_VIEWS as views,TEE_ATLAS_GROUPS as groups} from '../public/tee-atlas-data.js';
 import {buildTeeAtlasFrames,atlasProbePose} from '../public/tee-atlas-geometry.js';
 import {orientEchoPlaneForDisplay} from '../public/echo-correspondence.js';
@@ -48,15 +49,19 @@ test('other donors retain their own geometric references rather than LADAF landm
 
 test('every study target has its own reference-guided illustration and separately verified guideline cine',()=>{
  const media=json('../public/assets/tee-atlas/media.json').clips;
- const artwork=json('../docs/tee-atlas/artwork-v2.json');
+ const artwork=json('../docs/reference-views-v59/asset-manifest.json').entries.filter(e=>e.mode==='tee');
  assert.equal(media.length,28);assert.equal(new Set(media.map(c=>c.id)).size,28);
- assert.equal(artwork.views.length,28);assert.equal(new Set(artwork.views.map(v=>v.id)).size,28);
+ assert.equal(artwork.length,28);assert.equal(new Set(artwork.map(v=>v.id)).size,28);
  for(const v of views){
   const svg=readFileSync(new URL('../public/'+v.diagram.replace(/^\.\//,''),import.meta.url),'utf8');assert.match(svg,/<svg/);assert.match(svg,/viewBox="0 0 220 150"/);
-  assert.ok(v.illustration.endsWith(`/art-v2/${v.id}.webp`));
-  const image=readFileSync(new URL('../public/'+v.illustration.replace(/^\.\//,''),import.meta.url));
-  assert.equal(image.toString('ascii',0,4),'RIFF');assert.equal(image.toString('ascii',8,12),'WEBP');
-  const entry=artwork.views.find(a=>a.id===v.id);assert.equal(entry.aseNumber,v.aseNumber);assert.equal(entry.output.bytes,image.length);assert.ok(entry.output.width>=1000);assert.ok(entry.reference.pdfPage>=14&&entry.reference.pdfPage<=17);
+  const entry=artwork.find(a=>a.id===v.id);assert.ok(entry);assert.equal(entry.view_number,v.aseNumber);
+  for(const [role,field,size] of [['image','illustration',960],['thumbnail','thumbnail',384]]){
+   assert.equal(v[field],'./'+entry[role].path.replace(/^public\//,''));
+   const image=readFileSync(new URL('../'+entry[role].path,import.meta.url));
+   assert.equal(image.toString('ascii',0,4),'RIFF');assert.equal(image.toString('ascii',8,12),'WEBP');
+   assert.equal(image.length,entry[role].bytes);assert.equal(createHash('sha256').update(image).digest('hex'),entry[role].sha256);
+   assert.equal(entry[role].width,size);assert.equal(entry[role].height,size);
+  }
   const c=media.find(c=>c.preset===v.id);assert.ok(c);assert.equal(c.aseNumber,v.aseNumber);assert.equal(c.kind,'video');assert.equal(c.external,true);assert.equal(c.correspondence.sourceLabelVerified,true);assert.equal(c.correspondence.ctRegistered,false);assert.equal(c.verification.decodedVideo,true);assert.ok(c.width>=800&&c.height>=600);assert.match(c.url,new RegExp(`mmc${v.aseNumber}\\.mp4$`));assert.match(c.license,/Publisher-hosted/);
  }
 });

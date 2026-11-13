@@ -1,5 +1,43 @@
 # Changelog
 
+## 2026-11-12 — Targeted PLAX mitral wall and outflow repair (v59)
+
+- Replaced only `tte:plax_mv` after the follow-up identified a residual single-line
+  left atrial perimeter and ambiguous LVOT/root curves in the v58 image.
+- Added a finite thin atrial tissue band, preserved open LA–mitral–LV inflow,
+  separated mitral/aortic hinge levels and one LVOT/root, and clarified LVOT/Ao
+  labels. The schematic phase pairs an open mitral valve with a closed aortic valve.
+- Inspected the generated master and actual 960px/384px exports plus a 200px
+  thumbnail rendition. Review findings, limits and the exact prompt are preserved;
+  this is source-based AI visual QC without independent clinician sign-off.
+- Carried the other 55 manifest entries and artwork bytes over exactly. The v59
+  verifier checks the current catalogue; the v58 verifier checks its frozen package.
+- Preserved public dataset/media exclusions, availability guards, hosting setup
+  and the empty prepared-bank configuration. The supplemental
+  [artwork inventory](docs/open-source/reference-artwork-v59.json) records the 16
+  newly included v58/v59 WebPs and the exact historical/current manifest hashes.
+
+See the [targeted review](docs/reference-views-v59/REVIEW.md),
+[guidelines](docs/reference-views-v59/GUIDELINES.md) and
+[exact prompt](docs/reference-views-v59/PROMPT.md). This source integration includes
+queue updates v0093 and v0094; queue IDs and website publication numbers remain
+separate. Exact archive/source hashes are in [the applied ledger](updates/applied.json).
+
+## 2026-11-12 — Individual TTE/TEE illustration QC (v58)
+
+- Reviewed all 28 TTE and 28 TEE schematics with per-view source comparisons,
+  original findings, phase/plane qualifications, acceptance gates and hash records.
+- Retained 49 illustrations and replaced seven: five anatomical corrections and
+  two framing/outlet clarity improvements. The subsequent v59 PLAX correction
+  supersedes that view's initial pass; the dated v58 record remains historical.
+- Added a complete static artwork registry, immutable image history, comprehensive
+  generation guidelines and reproducible packaging/report checks. There is no
+  image-load-error fallback to superseded artwork.
+
+See the [v58 audit](docs/reference-views-v58/AUDIT.md) and
+[correction guidelines](docs/reference-views-v58/GUIDELINES.md).
+
+
 ## 2026-11-12 — Fitted reference videos and prepared fine cutaways
 
 - Made Fit Ultrasound the fresh-view default. Explicit Full Frame remains

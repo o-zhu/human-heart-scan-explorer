@@ -62,3 +62,44 @@ Keep the existing 13 hosting stages and add
 `python3 scripts/prepare-reference-hosting-v54.py --stage` immediately before
 the final display-budget stage. It verifies all replacements and omits only
 the 56 superseded illustration build copies, retaining every source original.
+
+## v58 individual TTE/TEE anatomical QC
+
+Read `docs/reference-views-v58/README.md`, `GUIDELINES.md`, and `AUDIT.md` before
+changing reference illustrations. The current registry is
+`public/reference-artwork-v58.js`; every one of the 56 view IDs has an explicit
+source-backed retain/replace decision. Historical v54 approval flags are not
+the current review. Preserve all historical bytes and exact current mappings.
+Do not silently fall back to rejected images after an asset-load error.
+
+Generate anatomical changes with image_gen against the exact named view's
+anatomy and ultrasound examples. Inspect topology, view, orientation, labels,
+phase, and readability at full size and thumbnail size. A thick false wall
+across an expected orifice is a rejection; a closed thin valve or an out-of-plane
+vessel profile is not automatically one. Re-review revised candidates for new
+faults. Preserve exact prompts, master/input hashes and per-view limitations.
+
+Run `python3 scripts/prepare-reference-icons-v58.py --verify` without
+`--allow-pending` before release. Keep all 15 existing hosting stages. Restore
+the permitted, checksummed v57 prepared reference rasters when building from a
+clean checkout; these payloads are intentionally absent from Git. After staging,
+run `python3 scripts/verify-reference-hosting-v58.py` to verify their presence
+and hashes in both source and build. Do not re-upload unchanged scientific
+assets or open immutable-bank population gates for an illustration update.
+
+
+## v59 targeted PLAX mitral follow-up
+
+Read `docs/reference-views-v59/README.md`, `GUIDELINES.md`, and `REVIEW.md`
+before modifying PLAX mitral artwork. Its v58 pass is superseded. The current
+registry is `public/reference-artwork-v59.js`; only `tte:plax_mv` has a fresh
+review and new image/thumbnail. The other 55 records are exact v58 carryovers,
+not newly reviewed. Preserve frozen v54/v58 manifests and image bytes.
+
+Inspect the finite atrial tissue band, open mitral annulus, both mitral hinges,
+both LVOT borders, distinct aortomitral hinge levels, coherent valve phase and
+label targets separately. A prompt or image hash cannot prove anatomy. Review
+actual encoded 960px/384px files and a 200px rendition. Run
+`python3 scripts/prepare-reference-icons-v59.py --verify` for current assets
+and runtime mapping; the v58 verifier checks only its frozen registry. Keep
+all hosting stages and public repository data/configuration exclusions.
